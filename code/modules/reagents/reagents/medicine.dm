@@ -40,7 +40,7 @@
 	nerve_system_accumulations = 15 // Basic chems shouldn't hurt the body as much as higher potency ones.
 
 /datum/reagent/medicine/bicaridine/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
-	if(M.species?.reagent_tag == IS_CHTMANT)
+	if(M.species?.reagent_tag == IS_CHTMANT || M.species?.reagent_tag == IS_SLIME)
 		M.heal_organ_damage(0.15 * effect_multiplier, 0, 5 * effect_multiplier)
 		return
 	M.heal_organ_damage(0.3 * effect_multiplier, 0, 5 * effect_multiplier)
@@ -74,8 +74,9 @@
 	nerve_system_accumulations = 20
 
 /datum/reagent/medicine/varceptol/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(!(M.species?.reagent_tag == IS_SLIME))
+		M.add_chemical_effect(CE_ANTITOX, 3 * removed)
 	M.heal_organ_damage(9 * removed, 0)
-	M.add_chemical_effect(CE_ANTITOX, 3 * removed)
 
 /datum/reagent/medicine/meralyne
 	name = "Meralyne"
@@ -105,7 +106,7 @@
 	nerve_system_accumulations = 10
 
 /datum/reagent/medicine/kelotane/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
-	if(M.species?.reagent_tag == IS_CHTMANT)
+	if(M.species?.reagent_tag == IS_CHTMANT || M.species?.reagent_tag == IS_SLIME)
 		return
 	M.heal_organ_damage(0, 0.6 * effect_multiplier, 0, 3 * effect_multiplier)
 
@@ -136,6 +137,9 @@
 	nerve_system_accumulations = 0
 
 /datum/reagent/medicine/dylovene/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	if(M.species?.reagent_tag == IS_SLIME)
+		M.add_chemical_effect(CE_TOXIN, 1)
+		return
 	M.drowsyness = max(0, M.drowsyness - 0.6 * effect_multiplier)
 	M.adjust_hallucination(-0.9 * effect_multiplier)
 	M.add_chemical_effect(CE_ANTITOX, 2)
@@ -161,6 +165,9 @@
 	nerve_system_accumulations = -10
 
 /datum/reagent/medicine/carthatoline/affect_blood(var/mob/living/carbon/M, var/alien, effect_multiplier, var/removed = REM)
+	if(M.species?.reagent_tag == IS_SLIME)
+		M.add_chemical_effect(CE_TOXIN, 1.5)
+		return
 	M.add_chemical_effect(CE_ANTITOX, 3 * removed)
 	if(ishuman(M))
 		var/mob/living/carbon/human/H = M
@@ -283,9 +290,10 @@
 /datum/reagent/medicine/tricordrazine/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	if(M.species?.reagent_tag == IS_CHTMANT)
 		return
+	if(!(M.species?.reagent_tag == IS_SLIME))
+		M.add_chemical_effect(CE_ANTITOX, 1)
 	M.adjustOxyLoss(-0.6 * effect_multiplier)
 	M.heal_organ_damage(0.3 * effect_multiplier, 0.3 * effect_multiplier)
-	M.add_chemical_effect(CE_ANTITOX, 1)
 	M.add_chemical_effect(CE_BLOODCLOT, 0.1)
 
 /datum/reagent/medicine/tricordrazine/overdose(mob/living/carbon/human/user, alien)

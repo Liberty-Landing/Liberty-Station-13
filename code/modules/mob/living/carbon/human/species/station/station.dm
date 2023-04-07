@@ -1111,18 +1111,20 @@
 	siemens_coefficient = 3 //conductive
 	darksight = 3
 	virus_immune = TRUE
+	always_blood = TRUE
+	always_ingest = TRUE
 	breath_type = null
 	poison_type = null
 	hunger_factor = 2
-	spawn_flags = IS_RESTRICTED
+	spawn_flags = CAN_JOIN
 
 	burn_mod = 1.15
 	brute_mod = 1.15
-	toxins_mod = -1 // This is dumb. I hope it works. -R4d6
+	toxins_mod = 1 // fuck toxins_mod, we use a perk for this
 	oxy_mod = 0
 
 	has_process = list(
-		BP_BRAIN = /obj/item/organ/internal/brain/slime
+		BP_BRAIN = /obj/item/organ/internal/brain/slime,
 		)
 
 	breath_type = null
@@ -1142,10 +1144,9 @@
 		BP_R_LEG =  new /datum/organ_description/leg/right/slime
 	)
 
-	perks = list(PERK_SPEED, PERK_LIMB_REGEN, PERK_MIND_BOOST, PERK_BODY_BOOST)
+	perks = list(PERK_LIMB_REGEN, PERK_SLIMEBODY)
 
-/datum/species/slime/handle_death(var/mob/living/carbon/human/H)
+/*/datum/species/slime/handle_death(var/mob/living/carbon/human/H)
 	spawn(1)
 		if(H)
-			H.gib()
-
+			H.gib()*/
