@@ -5,7 +5,7 @@
 	bones_amount = 0
 
 	var/obj/item/device/radio/borg/radio = null
-	var/mob/living/silicon/ai/connected_ai = null
+
 	var/obj/item/cell/large/cell = null
 	var/obj/machinery/camera/camera = null
 	var/obj/item/device/mmi/mmi = null

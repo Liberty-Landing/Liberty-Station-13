@@ -44,7 +44,7 @@
 	title = "Robot"
 	flag = CYBORG
 	department = "Colony-Bound"
-	department_flag = MISC
+	department_flag = CIVILIAN 
 	faction = MAP_FACTION
 	total_positions = 4
 	spawn_positions = 4

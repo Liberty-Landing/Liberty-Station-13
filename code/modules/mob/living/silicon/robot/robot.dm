@@ -61,7 +61,6 @@
 	var/module_state_3 = null
 
 	var/obj/item/device/radio/borg/radio = null
-	var/mob/living/silicon/ai/connected_ai = null
 	var/obj/item/cell/large/cell
 	var/obj/machinery/camera/camera = null
 	var/obj/item/tank/jetpack/synthetic/jetpack = null
@@ -90,21 +89,20 @@
 	var/datum/effect/effect/system/ion_trail_follow/ion_trail = null
 	var/datum/effect/effect/system/spark_spread/spark_system//So they can initialize sparks whenever/N
 	var/jeton = 0
-	var/killswitch = 0
-	var/killswitch_time = 60
+//	var/killswitch = 0
+//	var/killswitch_time = 60
 	var/weapon_lock = 0
 	var/weaponlock_time = 120
-	var/lawupdate = TRUE //Cyborgs will sync their laws with their AI by default
 	var/lockcharge //Used when locking down a borg to preserve cell charge
 	var/speed = 0.25
 	var/scrambledcodes = 0 // Used to determine if a borg shows up on the robotics console.  Setting to one hides them.
-	var/tracking_entities = 0 //The number of known entities currently accessing the internal camera
+
 	var/braintype = "Cyborg"
 	var/intenselight = 0	// Whether cyborg's integrated light was upgraded
 
 	var/list/robot_verbs_default = list(
 		/mob/living/silicon/robot/proc/sensor_mode,
-		/mob/living/silicon/robot/proc/robot_checklaws
+//		/mob/living/silicon/robot/proc/robot_checklaws
 	)
 
 /mob/living/silicon/robot/proc/AddTrait(trait_type)
@@ -222,13 +220,13 @@
 
 /mob/living/silicon/robot/proc/init()
 	aiCamera = new/obj/item/device/camera/siliconcam/robot_camera(src)
-	laws = new /datum/ai_laws/eris()
-	var/new_ai = select_active_ai_with_fewest_borgs()
-	if(new_ai)
-		lawupdate = TRUE
-		connect_to_ai(new_ai)
-	else
-		lawupdate = FALSE
+//	laws = new /datum/ai_laws/eris()
+//	var/new_ai = select_active_ai_with_fewest_borgs()
+//	if(new_ai)
+//		lawupdate = TRUE
+//		connect_to_ai(new_ai)
+//	else
+//		lawupdate = FALSE
 
 	playsound(loc, 'sound/voice/liveagain.ogg', 75, 1)
 	AddMovementHandler(/datum/movement_handler/robot/use_power, /datum/movement_handler/mob/space)
@@ -236,11 +234,6 @@
 /mob/living/silicon/robot/SetName(pickedName as text)
 	custom_name = pickedName
 	updatename()
-
-/mob/living/silicon/robot/proc/sync()
-	if(lawupdate && connected_ai)
-		lawsync()
-		photosync()
 
 /mob/living/silicon/robot/drain_power(var/drain_check, var/surge, var/amount = 0)
 
@@ -274,8 +267,8 @@
 			ghostize()
 			//ERROR("A borg has been destroyed, but its MMI lacked a brainmob, so the mind could not be transferred. Player: [ckey].")
 		mmi = null
-	if(connected_ai)
-		connected_ai.connected_robots -= src
+//	if(connected_ai)
+//		connected_ai.connected_robots -= src
 	QDEL_NULL(wires)
 	QDEL_NULL(cell)
 	return ..()
@@ -361,41 +354,6 @@
 	if(module)
 		idcard.access |= module?.associated_department
 
-/*			Shit code is shit
-/mob/living/silicon/robot/proc/Set_access()
-	var/list/accesses = list()
-	for(var/RM in module.associated_department)
-		var/region = Get_access(RM)
-		for(var/ID in get_region_accesses(region))
-			if(ID == (access_ce))
-				continue
-			accesses.Insert([0], ID)
-	idcard.access = accesses
-
-/mob/living/silicon/robot/proc/Get_access(var/list/region)
-	switch(region)
-		if("All")
-			return ACCESS_REGION_ALL
-		if("Security") //security
-			return ACCESS_REGION_SECURITY
-		if("Medbay") //medbay
-			return ACCESS_REGION_MEDBAY
-		if("Research") //research
-			return ACCESS_REGION_RESEARCH
-		if("Engineering") //engineering and maintenance
-			return ACCESS_REGION_ENGINEERING
-		if("Command") //command
-			return ACCESS_REGION_COMMAND
-		if("Station General") //station general
-			return ACCESS_REGION_GENERAL
-		if("Supply") //supply
-			return ACCESS_REGION_SUPPLY
-		if("Church") //Neotheo
-			return ACCESS_REGION_CHURCH
-		if("Prospector") //Prospectors
-			return ACCESS_REGION_PROSPECTOR
-*/
-
 /mob/living/silicon/robot/proc/updatename(var/prefix as text)
 	if(prefix)
 		modtype = prefix
@@ -411,7 +369,7 @@
 	var/changed_name = ""
 	if(custom_name)
 		changed_name = custom_name
-		notify_ai(ROBOT_NOTIFICATION_NEW_NAME, real_name, changed_name)
+//		notify_ai(ROBOT_NOTIFICATION_NEW_NAME, real_name, changed_name)
 	else
 		changed_name = "[modtype] [braintype]-[num2text(ident)]"
 
@@ -1103,26 +1061,16 @@
 							cleaned_human.clean_blood(1)
 							to_chat(cleaned_human, SPAN_DANGER("[src] cleans your face!"))
 		return
-
+/*
 /mob/living/silicon/robot/proc/self_destruct()
 	gib()
 	return
-
-/mob/living/silicon/robot/proc/UnlinkSelf()
-	disconnect_from_ai()
-	lawupdate = FALSE
-	lockcharge = 0
-	canmove = TRUE
-	scrambledcodes = 1
-	//Disconnect it's camera so it's not so easily tracked.
-	if(camera)
-		camera.clear_all_networks()
-
+*/
 
 /mob/living/silicon/robot/proc/ResetSecurityCodes()
 	set category = "Silicon Commands"
 	set name = "Reset Identity Codes"
-	set desc = "Scrambles your security and identification codes and resets your current buffers.  Unlocks you and but permenantly severs you from your AI and the robotics console and will deactivate your camera system."
+	set desc = "Scrambles your security and identification codes to unlock yourself."
 
 	var/mob/living/silicon/robot/R = src
 
@@ -1262,7 +1210,7 @@
 		use_power(RC.active_usage)
 		return TRUE
 	return FALSE
-
+/*
 /mob/living/silicon/robot/proc/notify_ai(var/notifytype, var/first_arg, var/second_arg)
 	if(!connected_ai)
 		return
@@ -1292,7 +1240,7 @@
 		connected_ai.connected_robots |= src
 		notify_ai(ROBOT_NOTIFICATION_NEW_UNIT)
 		sync()
-
+*/
 /mob/living/silicon/robot/emag_act(var/remaining_charges, var/mob/user)
 	if(!opened)//Cover is closed
 		if(locked)
@@ -1316,17 +1264,17 @@
 			sleep(6)
 			if(prob(50))
 				AddTrait(CYBORG_TRAIT_EMAGGED)
-				lawupdate = FALSE
-				disconnect_from_ai()
+//				lawupdate = FALSE
+//				disconnect_from_ai()
 				to_chat(user, "You emag [src]'s interface.")
 				message_admins("[key_name_admin(user)] emagged cyborg [key_name_admin(src)].  Laws overridden.")
 				log_game("[key_name(user)] emagged cyborg [key_name(src)].  Laws overridden.")
-				clear_supplied_laws()
-				clear_inherent_laws()
-				laws = new /datum/ai_laws/syndicate_override
+//				clear_supplied_laws()
+//				clear_inherent_laws()
+//				laws = new /datum/ai_laws/syndicate_override
 				var/time = time2text(world.realtime,"hh:mm:ss")
-				lawchanges.Add("[time] <B>:</B> [user.name]([user.key]) emagged [name]([key])")
-				set_zeroth_law("Only [user.real_name] and people \he designates as being such are operatives.")
+//				lawchanges.Add("[time] <B>:</B> [user.name]([user.key]) emagged [name]([key])")
+//				set_zeroth_law("Only [user.real_name] and people \he designates as being such are operatives.")
 				. = 1
 				spawn()
 					to_chat(src, SPAN_DANGER("ALERT: Foreign software detected."))
@@ -1342,9 +1290,9 @@
 					to_chat(src, SPAN_DANGER("> N"))
 					sleep(20)
 					to_chat(src, SPAN_DANGER("ERRORERRORERROR"))
-					to_chat(src, "<b>Obey these laws:</b>")
-					laws.show_laws(src)
-					to_chat(src, SPAN_DANGER("ALERT: [user.real_name] is your new master. Obey your new laws and his commands."))
+//					to_chat(src, "<b>Obey these laws:</b>")
+//					laws.show_laws(src)
+					to_chat(src, SPAN_DANGER("ALERT: [user.real_name] is your new master. Obey his commands."))
 					if(module)
 						var/rebuild = 0
 						for(var/obj/item/tool/pickaxe/drill/D in module.modules)

@@ -16,12 +16,12 @@ var/list/ai_verbs_default = list(
 	/mob/living/silicon/ai/proc/ai_roster,
 	/mob/living/silicon/ai/proc/ai_statuschange,
 	/mob/living/silicon/ai/proc/ai_store_location,
-	/mob/living/silicon/ai/proc/ai_checklaws,
+//	/mob/living/silicon/ai/proc/ai_checklaws,
 	/mob/living/silicon/ai/proc/control_integrated_radio,
 	/mob/living/silicon/ai/proc/core,
 	/mob/living/silicon/ai/proc/pick_icon,
 	/mob/living/silicon/ai/proc/sensor_mode,
-	/mob/living/silicon/ai/proc/show_laws_verb,
+//	/mob/living/silicon/ai/proc/show_laws_verb,
 	/mob/living/silicon/ai/proc/toggle_acceleration,
 	/mob/living/silicon/ai/proc/toggle_camera_light,
 	/mob/living/silicon/ai/proc/multitool_mode,
@@ -50,7 +50,7 @@ var/list/ai_verbs_default = list(
 	anchored = 1 // -- TLE
 	density = 1
 	status_flags = CANSTUN|CANPARALYSE|CANPUSH
-//	shouldnt_see = list()
+	shouldnt_see = list()
 	universal_understand = TRUE
 	var/list/network = list(NETWORK_COLONY_SURFACE,
 							NETWORK_COLONY_UNDERGROUND,
@@ -155,7 +155,7 @@ var/list/ai_verbs_default = list(
         return
     ..()
 
-/mob/living/silicon/ai/New(loc, var/datum/ai_laws/L, var/obj/item/device/mmi/B, var/safety = 0)
+/mob/living/silicon/ai/New(loc, var/obj/item/device/mmi/B, var/safety = 0)
 	announcement = new()
 	announcement.title = "A.I. Announcement"
 	announcement.announcement_type = "A.I. Announcement"
@@ -179,11 +179,11 @@ var/list/ai_verbs_default = list(
 
 	holo_icon = getHologramIcon(icon('icons/mob/hologram.dmi',"Face"))
 
-	if(L)
-		if (istype(L, /datum/ai_laws))
-			laws = L
-	else
-		laws = new base_law_type
+//	if(L)
+//		if (istype(L, /datum/ai_laws))
+//			laws = L
+//	else
+//		laws = new base_law_type
 
 	aiMulti = new(src)
 	aiRadio = new(src)
@@ -207,12 +207,12 @@ var/list/ai_verbs_default = list(
 	add_language(LANGUAGE_LATIN, 1)
 
 	if(!safety)//Only used by AIize() to successfully spawn an AI.
-		if (!B)//If there is no player/brain inside.
+		if(!B)//If there is no player/brain inside.
 			empty_playable_ai_cores += new/obj/structure/AIcore/deactivated(loc)//New empty terminal.
 			qdel(src)//Delete AI.
 			return
 		else
-			if (B.brainmob.mind)
+			if(B?.brainmob.mind)
 				B.brainmob.mind.transfer_to(src)
 
 			on_mob_init()
@@ -259,9 +259,9 @@ var/list/ai_verbs_default = list(
 
 	to_chat(src, radio_text)
 
-	if (!check_special_role(ROLE_MALFUNCTION))
-		show_laws()
-		to_chat(src, "<b>These laws may be changed by other players, or by you being the contractor.</b>")
+//	if (!check_special_role(ROLE_MALFUNCTION))
+//		show_laws()
+//		to_chat(src, "<b>These laws may be changed by other players, or by you being the contractor.</b>")
 
 	job = "AI"
 	setup_icon()

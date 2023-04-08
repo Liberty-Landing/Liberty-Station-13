@@ -15,13 +15,13 @@
 		update_items()
 	if (src.stat != DEAD) //still using power
 		use_power()
-		process_killswitch()
+//		process_killswitch()
 		process_locks()
 		process_queued_alarms()
-	else
-		if (!src.death_notified && src.connected_ai)
-			src.notify_ai(ROBOT_NOTIFICATION_SIGNAL_LOST)
-			src.death_notified = TRUE
+//	else
+//		if (!src.death_notified && src.connected_ai)
+//			src.notify_ai(ROBOT_NOTIFICATION_SIGNAL_LOST)
+//			src.death_notified = TRUE
 	update_lying_buckled_and_verb_status()
 
 	for(var/mob/living/L in view(7)) //Sucks to put this here, but otherwise mobs will ignore them
@@ -44,13 +44,13 @@
 		update_items()
 	if (src.stat != DEAD) //still using power
 		use_power()
-		process_killswitch()
+//		process_killswitch()
 		process_locks()
 		process_queued_alarms()
-	else
-		if (!src.death_notified && src.connected_ai)
-			src.notify_ai(ROBOT_NOTIFICATION_SIGNAL_LOST)
-			src.death_notified = TRUE
+//	else
+//		if (!src.death_notified && src.connected_ai)
+//			src.notify_ai(ROBOT_NOTIFICATION_SIGNAL_LOST)
+//			src.death_notified = TRUE
 	update_lying_buckled_and_verb_status()
 
 	for(var/mob/living/L in view(7)) //Sucks to put this here, but otherwise mobs will ignore them
@@ -269,7 +269,7 @@
 	if(src.module_state_3)
 		src.module_state_3:screen_loc = find_inv_position(3)
 	updateicon()
-
+/*
 /mob/living/silicon/robot/proc/process_killswitch()
 	if(killswitch)
 		killswitch_time --
@@ -279,7 +279,7 @@
 			killswitch = 0
 			spawn(5)
 				gib()
-
+*/
 /mob/living/silicon/robot/proc/process_locks()
 	if(weapon_lock)
 		uneq_all()

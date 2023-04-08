@@ -2,10 +2,7 @@
 	gender = NEUTER
 	voice_name = "synthesized voice"
 	var/syndicate = 0
-	var/const/MAIN_CHANNEL = "Main Frequency"
-	var/lawchannel = MAIN_CHANNEL // Default channel on which to state laws
-	var/list/stating_laws = list()// Channels laws are currently being stated on
-	var/obj/item/device/radio/common_radio
+
 	//plug before baymed arrives
 	var/obj/item/device/radio/silicon_radio
 
@@ -17,7 +14,7 @@
 	var/speak_exclamation = "declares"
 	var/speak_query = "queries"
 	var/pose //Yes, now AIs can pose too.
-	var/obj/item/device/camera/siliconcam/aiCamera = null //photography
+
 	var/local_transmit //If set, can only speak to others of the same type within a short range.
 
 	var/sensor_mode = 0 //Determines the current HUD.
@@ -89,9 +86,6 @@
 	create_or_rename_email(pickedName, "root.rt")
 	recalibrate_hotkeys()
 
-/mob/living/silicon/proc/show_laws()
-	return
-
 /mob/living/silicon/drop_item()
 	if(isrobot(src))
 		var/mob/living/silicon/robot/R = src
@@ -154,14 +148,6 @@
 
 /mob/living/silicon/apply_effect(var/effect = 0,var/effecttype = STUN, var/armor_value = 0, var/check_protection = 1)
 	return FALSE//The only effect that can hit them atm is flashes and they still directly edit so this works for now
-
-/proc/islinked(var/mob/living/silicon/robot/bot, var/mob/living/silicon/ai/ai)
-	if(!istype(bot) || !istype(ai))
-		return 0
-	if (bot.connected_ai == ai)
-		return 1
-	return 0
-
 
 // this function shows the health of the AI in the Status panel
 /mob/living/silicon/proc/show_system_integrity()
@@ -362,9 +348,6 @@
 	for(var/obj/machinery/camera/C in A.cameras())
 		cameratext += "[(cameratext == "")? "" : "|"]<A HREF='?src=\ref[src];switchcamera=\ref[C]'>[C.c_tag]</A>"
 	to_chat(src, "[A.alarm_name()]! ([(cameratext)? cameratext : "No Camera"])")
-
-/mob/living/silicon/proc/is_malf_or_contractor()
-	return check_special_role(ROLE_CONTRACTOR) || check_special_role(ROLE_MALFUNCTION)
 
 /mob/living/silicon/adjustEarDamage()
 	return

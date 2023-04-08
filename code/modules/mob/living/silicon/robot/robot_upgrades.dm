@@ -37,7 +37,7 @@
 	R.uneq_all()
 	R.modtype = initial(R.modtype)
 
-	R.notify_ai(ROBOT_NOTIFICATION_MODULE_RESET, R.module.name)
+//	R.notify_ai(ROBOT_NOTIFICATION_MODULE_RESET, R.module.name)
 	R.module.Reset(R)
 	R.module = null
 	R.updatename("Default")
@@ -63,7 +63,7 @@
 
 /obj/item/borg/upgrade/rename/action(var/mob/living/silicon/robot/R)
 	if(..()) return FALSE
-	R.notify_ai(ROBOT_NOTIFICATION_NEW_NAME, R.name, heldname)
+//	R.notify_ai(ROBOT_NOTIFICATION_NEW_NAME, R.name, heldname)
 	R.name = heldname
 	R.custom_name = heldname
 	R.real_name = heldname
@@ -115,7 +115,7 @@
 	GLOB.living_mob_list |= R
 	R.death_notified = FALSE
 	R.vtech_added_speed = 0
-	R.notify_ai(ROBOT_NOTIFICATION_NEW_UNIT)
+//	R.notify_ai(ROBOT_NOTIFICATION_NEW_UNIT)
 	qdel(src)
 	return TRUE
 

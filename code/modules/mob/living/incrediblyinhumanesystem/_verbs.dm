@@ -1,9 +1,9 @@
-/mob/living/silicon/robot/verb/cmd_show_laws()
+/mob/living/verb/cmd_show_laws()
 	set category = "Silicon Commands"
 	set name = "Show Laws"
 	show_laws()
 
-/mob/living/silicon/robot/show_laws(var/everyone = 0)
+/mob/living/show_laws(var/everyone = 0)
 	laws_sanity_check()
 	var/who
 
@@ -34,13 +34,13 @@
 		to_chat(who, "<b>Remember, [connected_ai.name] is technically your master, but your objective comes first.</b>")
 	else if (connected_ai)
 		to_chat(who, "<b>Remember, [connected_ai.name] is your master, other AIs can be ignored.</b>")
-	else if (HasTrait(CYBORG_TRAIT_EMAGGED))
-		to_chat(who, "<b>Remember, you are not required to listen to the AI.</b>")
+//	else if (HasTrait(CYBORG_TRAIT_EMAGGED))
+//		to_chat(who, "<b>Remember, you are not required to listen to the AI.</b>")
 	else
 		to_chat(who, "<b>Remember, you are not bound to any AI, you are not required to listen to them.</b>")
 
 
-/mob/living/silicon/robot/lawsync()
+/mob/living/lawsync()
 	laws_sanity_check()
 	var/datum/ai_laws/master = connected_ai && lawupdate ? connected_ai.laws : null
 	if (master)
@@ -48,7 +48,7 @@
 	..()
 	return
 
-/mob/living/silicon/robot/proc/robot_checklaws()
+/mob/living/silicon/proc/robot_checklaws()
 	set category = "Silicon Commands"
 	set name = "State Laws"
 	open_subsystem(/datum/nano_module/law_manager)

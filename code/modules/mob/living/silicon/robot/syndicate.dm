@@ -4,7 +4,7 @@
 	icon_state = "securityrobot"
 	modtype = "Security"
 	lawchannel = "State"
-//	idcard_type = /obj/item/card/id/syndicate
+	idcard_type = /obj/item/card/id/syndicate
 
 /mob/living/silicon/robot/syndicate/New()
 	if(!cell)
