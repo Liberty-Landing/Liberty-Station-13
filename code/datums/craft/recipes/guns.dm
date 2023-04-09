@@ -253,7 +253,7 @@
 		list(CRAFT_MATERIAL, 2, MATERIAL_CLOTH, "time" = 40),
 		list(QUALITY_WIRE_CUTTING, 10, "time" = 10)
 	)
-
+/*
 /datum/craft_recipe/gun/multi_laser
 	name = "Pulse-Laser Cannon"
 	result = /obj/item/mecha_parts/mecha_equipment/ranged_weapon/energy/laser/heavy/auto
@@ -268,3 +268,4 @@
 		list(/obj/item/stock_parts/micro_laser , 4),
 		list(QUALITY_SCREW_DRIVING, 30)
 	)
+*/

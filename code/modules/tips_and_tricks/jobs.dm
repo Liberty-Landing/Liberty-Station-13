@@ -218,37 +218,9 @@
     jobs_list = list(/datum/job/cso, /datum/job/doctor, /datum/job/medic, /datum/job/psychiatrist)
     tipText = "You can make grenades for various purposes, from harmful (like explosion or EMPs) to helpful (like cleaning and weed killing)."
 
-/tipsAndTricks/jobs/cyborgsDontBreathe
-    jobs_list = list(/datum/job/cyborg)
-    tipText = "As a cyborg, you don't need oxygen/pressure to survive. You're also quite resistant to heat. Use it to your advantage."
-
-/tipsAndTricks/jobs/cyborgsChargersAreAmazing
-    jobs_list = list(/datum/job/cyborg)
-    tipText = "Having a cyborg recharger with better manipulators will allow it to heal brute and burn based damage. It will, however, not repair broken plating or radios."
-
-/tipsAndTricks/jobs/siliconRemoteControl
-    jobs_list = list(/datum/job/cyborg, /datum/job/ai)
-    tipText = "Silicons have the ability to remotely control machinery. You can open airlocks without bumping into them."
-
-/tipsAndTricks/jobs/siliconShortcuts
-    jobs_list = list(/datum/job/cyborg, /datum/job/ai)
-    tipText = "Most machinery has keyboard shortcuts. Try alt/shift/ctrl clicking on some. For example- airlocks, air/fire alarms, APC."
-
-/tipsAndTricks/jobs/siliconRemoteControlTwo
-    jobs_list = list(/datum/job/cyborg, /datum/job/ai)
-    tipText = "You can access some computer programs without interacting with actual computers using your \"Subsystems\", located in the silicon tab."
-
-/tipsAndTricks/jobs/ai_can_controle_shells
-    jobs_list = list(/datum/job/ai)
-    tipText = "As an AI you can remotely control drone shells."
-
 /tipsAndTricks/jobs/pda_paper_scanner
     jobs_list = list(/datum/job/premier, /datum/job/cso, /datum/job/chief_engineer, /datum/job/dc, /datum/job/pg, /datum/job/rp)
     tipText = "Your PDA has an integrated paper scanner and printer."
-
-/tipsAndTricks/jobs/aiCanBeMoved
-    jobs_list = list(/datum/job/ai)
-    tipText = "The AI core can be unwrenched and moved to a safer location, but is trackable by power consumption."
 
 /tipsAndTricks/jobs/expeditionsAreFUN
     jobs_list = list(/datum/job/rp, /datum/job/scientist, /datum/job/roboticist)

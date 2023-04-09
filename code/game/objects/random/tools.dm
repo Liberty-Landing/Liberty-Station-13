@@ -69,7 +69,6 @@
 				/obj/item/autopsy_scanner = 1,
 				/obj/item/device/scanner/health = 3,
 				/obj/item/device/scanner/mass_spectrometer = 1,
-				/obj/item/device/robotanalyzer = 1,
 				/obj/item/device/gps = 3,
 				/obj/item/device/scanner/gas = 2,
 				/obj/item/stack/cable_coil = 5,
@@ -77,15 +76,13 @@
 				/obj/item/packageWrap = 1,
 				/obj/item/device/flash = 2,
 				/obj/item/mop = 5,
-				/obj/item/inflatable_dispenser = 3,
 				/obj/item/grenade/chem_grenade/cleaner = 2,
 				/obj/item/device/lighting/toggleable/flashlight = 10,
 				/obj/item/tank/jetpack/carbondioxide = 1.5,
 				/obj/item/tank/jetpack/oxygen = 1,
 				/obj/item/storage/makeshift_grinder = 2,
 				/obj/item/device/makeshift_electrolyser = 1,
-				/obj/item/device/makeshift_centrifuge = 1,
-				/obj/item/robot_parts/robot_component/jetpack = 0.75,))
+				/obj/item/device/makeshift_centrifuge = 1))
 
 
 //Randomly spawned tools will often be in imperfect condition if they've been left lying out

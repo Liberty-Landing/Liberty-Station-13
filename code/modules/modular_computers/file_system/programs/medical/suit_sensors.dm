@@ -47,20 +47,14 @@
 	if(..()) return TOPIC_HANDLED
 
 	if(href_list["track"])
-		if(isAI(usr))
-			var/mob/living/silicon/ai/AI = usr
-			var/mob/living/carbon/human/H = locate(href_list["track"]) in SSmobs.mob_list
-			if(hassensorlevel(H, SUIT_SENSOR_TRACKING))
-				AI.ai_actual_track(H)
-		else
-			var/datum/computer_file/program/host_program = host
-			if(istype(host_program))
-				var/obj/item/modular_computer/tablet/moebius/T = host_program.computer
-				if(istype(T))
-					var/mob/living/carbon/human/H = locate(href_list["track"]) in SSmobs.mob_list
-					T.target_mob = H
-					if(!T.is_tracking)
-						T.pinpoint()
+		var/datum/computer_file/program/host_program = host
+		if(istype(host_program))
+			var/obj/item/modular_computer/tablet/moebius/T = host_program.computer
+			if(istype(T))
+				var/mob/living/carbon/human/H = locate(href_list["track"]) in SSmobs.mob_list
+				T.target_mob = H
+				if(!T.is_tracking)
+					T.pinpoint()
 		return TOPIC_HANDLED
 
 	if(href_list["search"])
@@ -94,7 +88,7 @@
 	var/datum/computer_file/program/host_program = host
 	var/tracking_tablet_used = (istype(host_program) && istype(host_program.computer, /obj/item/modular_computer/tablet/moebius))
 	data["can_mute"] = tracking_tablet_used
-	data["can_track"] = (isAI(user) || tracking_tablet_used)
+	data["can_track"] = (tracking_tablet_used)
 	var/list/crewmembers = list()
 	for(var/z_level in GLOB.maps_data.station_levels)
 		crewmembers += crew_repository.health_data(z_level)

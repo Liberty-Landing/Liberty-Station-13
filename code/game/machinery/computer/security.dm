@@ -223,7 +223,7 @@ What a mess.*/
 		active1 = null
 	if (!( data_core.security.Find(active2) ))
 		active2 = null
-	if ((usr.contents.Find(src) || (in_range(src, usr) && istype(loc, /turf))) || (issilicon(usr)))
+	if ((usr.contents.Find(src) || (in_range(src, usr) && istype(loc, /turf))))
 		usr.set_machine(src)
 		switch(href_list["choice"])
 // SORTING!
@@ -267,20 +267,7 @@ What a mess.*/
 				active2 = null
 
 			if("Log In")
-				if (isAI(usr))
-					src.active1 = null
-					src.active2 = null
-					src.authenticated = usr.name
-					src.rank = "AI"
-					src.screen = 1
-				else if (isrobot(usr))
-					src.active1 = null
-					src.active2 = null
-					src.authenticated = usr.name
-					var/mob/living/silicon/robot/R = usr
-					src.rank = "[R.modtype] [R.braintype]"
-					src.screen = 1
-				else if (istype(scan, /obj/item/card/id))
+				if (istype(scan, /obj/item/card/id))
 					active1 = null
 					active2 = null
 					if(check_access(scan))
@@ -428,7 +415,7 @@ What a mess.*/
 					return
 				var/a2 = active2
 				var/t1 = sanitize(input("Add Comment:", "Secure. records", null, null)  as message)
-				if ((!( t1 ) || !( authenticated ) || usr.stat || usr.restrained() || (!in_range(src, usr) && (!issilicon(usr))) || active2 != a2))
+				if(!( t1 ) || !( authenticated ) || usr.stat || usr.restrained() || (!in_range(src, usr) && active2 != a2))
 					return
 				var/counter = 1
 				while(active2.fields[text("com_[]", counter)])
@@ -611,17 +598,12 @@ What a mess.*/
 	return
 
 /obj/machinery/computer/secure_data/proc/is_not_allowed(var/mob/user)
-	return !src.authenticated || user.stat || user.restrained() || (!in_range(src, user) && (!issilicon(user)))
+	return !src.authenticated || user.stat || user.restrained() || (!in_range(src, user))
 
 /obj/machinery/computer/secure_data/proc/get_photo(var/mob/user)
 	if(istype(user.get_active_hand(), /obj/item/photo))
 		var/obj/item/photo/photo = user.get_active_hand()
 		return photo.img
-	if(issilicon(user))
-		var/mob/living/silicon/tempAI = usr
-		var/obj/item/photo/selection = tempAI.GetPicture()
-		if (selection)
-			return selection.img
 
 /obj/machinery/computer/secure_data/emp_act(severity)
 	if(stat & (BROKEN|NOPOWER))

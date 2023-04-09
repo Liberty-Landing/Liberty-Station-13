@@ -64,9 +64,6 @@
 	else
 		..()
 
-/obj/item/device/powersink/attack_ai()
-	return
-
 /obj/item/device/powersink/attack_hand(var/mob/user)
 	switch(mode)
 		if(0)

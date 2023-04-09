@@ -253,17 +253,6 @@
 	onclose(user, "mob[name]")
 	return
 
-// called when something steps onto a human
-// this handles mulebots and vehicles
-/mob/living/carbon/human/Crossed(var/atom/movable/AM)
-	if(istype(AM, /obj/machinery/bot/mulebot))
-		var/obj/machinery/bot/mulebot/MB = AM
-		MB.RunOver(src)
-
-	if(istype(AM, /obj/vehicle))
-		var/obj/vehicle/V = AM
-		V.RunOver(src)
-
 // Get rank from ID, ID inside PDA, PDA, ID in wallet, etc.
 /mob/living/carbon/human/proc/get_authentification_rank(var/if_no_id = "No id", var/if_no_job = "No job")
 	var/obj/item/card/id/id = GetIdCard()
@@ -415,9 +404,6 @@ var/list/rank_prefix = list(\
 							if(ishuman(usr))
 								var/mob/living/carbon/human/U = usr
 								U.handle_regular_hud_updates()
-							if(isrobot(usr))
-								var/mob/living/silicon/robot/U = usr
-								U.handle_regular_hud_updates()
 
 			if(!modified)
 				to_chat(usr, "\red Unable to locate a data core entry for this person.")
@@ -505,9 +491,6 @@ var/list/rank_prefix = list(\
 								if(ishuman(usr))
 									var/mob/living/carbon/human/U = usr
 									R.fields[text("com_[counter]")] = text("Made by [U.get_authentification_name()] ([U.get_assignment()]) on [time2text(world.realtime, "DDD MMM DD hh:mm:ss")], [game_year]<BR>[t1]")
-								if(isrobot(usr))
-									var/mob/living/silicon/robot/U = usr
-									R.fields[text("com_[counter]")] = text("Made by [U.name] ([U.modtype] [U.braintype]) on [time2text(world.realtime, "DDD MMM DD hh:mm:ss")], [game_year]<BR>[t1]")
 
 	if (href_list["medical"])
 		if(hasHUD(usr,"medical"))
@@ -537,9 +520,6 @@ var/list/rank_prefix = list(\
 									spawn()
 										if(ishuman(usr))
 											var/mob/living/carbon/human/U = usr
-											U.handle_regular_hud_updates()
-										if(isrobot(usr))
-											var/mob/living/silicon/robot/U = usr
 											U.handle_regular_hud_updates()
 
 			if(!modified)
@@ -637,9 +617,6 @@ var/list/rank_prefix = list(\
 								if(ishuman(usr))
 									var/mob/living/carbon/human/U = usr
 									R.fields[text("com_[counter]")] = text("Made by [U.get_authentification_name()] ([U.get_assignment()]) on [time2text(world.realtime, "DDD MMM DD hh:mm:ss")], [game_year]<BR>[t1]")
-								if(isrobot(usr))
-									var/mob/living/silicon/robot/U = usr
-									R.fields[text("com_[counter]")] = text("Made by [U.name] ([U.modtype] [U.braintype]) on [time2text(world.realtime, "DDD MMM DD hh:mm:ss")], [game_year]<BR>[t1]")
 
 	if (href_list["lookitem"])
 		var/obj/item/I = locate(href_list["lookitem"])
@@ -1451,8 +1428,7 @@ var/list/rank_prefix = list(\
 
 
 /mob/living/carbon/human/can_stand_overridden()
-	if(wearing_rig && wearing_rig.ai_can_move_suit(check_for_ai = 1))
-		// Actually missing a leg will screw you up. Everything else can be compensated for.
+	if(wearing_rig)
 		for(var/limbcheck in list(BP_L_LEG ,BP_R_LEG))
 			var/obj/item/organ/affecting = get_organ(limbcheck)
 			if(!affecting)

@@ -36,13 +36,6 @@
 					return target_mob
 				filteredTargets += target_mob
 
-		for (var/obj/mecha/M as anything in GLOB.mechas_list)
-			//As goofy as this looks its more optimized as were not looking at every mech outside are z-level if they are around us. - Trilby
-			if(M.z == z)
-				if(get_dist(src, M) <= viewRange)
-					if(isValidAttackTarget(M))
-						filteredTargets += M
-
 	var/atom/filteredTarget = safepick(getTargets(filteredTargets, src))
 
 	if ((filteredTarget != target_mob) && filteredTarget)
@@ -93,7 +86,7 @@
 		loseTarget()
 		return
 
-	if ((get_dist(src, targetted_mob) >= viewRange) || z != targetted_mob.z && !istype(targetted_mob, /obj/mecha))
+	if ((get_dist(src, targetted_mob) >= viewRange) || z != targetted_mob.z)
 		loseTarget()
 		return
 	if (check_if_alive())
@@ -135,11 +128,6 @@
 		if(L.friendly_to_colony && friendly_to_colony) //If are target and areselfs have the friendly to colony tag, used for chtmant protection
 			return FALSE
 		return TRUE
-
-	if (istype(O, /obj/mecha))
-		if (can_see(src, O, get_dist(src, O))) //can we even see it?
-			var/obj/mecha/M = O
-			return isValidAttackTarget(M.occupant)
 
 	return FALSE
 
@@ -192,11 +180,6 @@
 
 			for(var/obj/structure/railing/obstacle in get_step(src, dir))//Bulkwork defence... Easy to brake
 				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/mecha/obstacle in get_step(src, dir))//Hmm, notable but not everlasting.
-				if(obstacle.density == TRUE) //will always likely be dence but in cases were its somehow not
 					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
 					return
 

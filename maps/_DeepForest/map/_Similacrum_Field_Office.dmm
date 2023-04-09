@@ -188,8 +188,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "br" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /mob/living/carbon/superior_animal/robot/similacrum/synthetic,
 /turf/simulated/floor/tiled/derelict,
@@ -706,9 +705,7 @@
 "fd" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/simulated/floor/tiled/derelict,
@@ -762,8 +759,7 @@
 "fw" = (
 /obj/structure/cyberplant,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/random/mob/roomba/melee,
 /turf/simulated/floor/carpet/blucarpet,
@@ -1290,8 +1286,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "jZ" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
@@ -1662,10 +1657,6 @@
 /obj/effect/window_lwall_spawn/smartspawn/onestar,
 /turf/simulated/floor/reinforced,
 /area/liberty/outside/one_star/fo_internal)
-"mW" = (
-/obj/machinery/mech_recharger,
-/turf/simulated/floor/tiled/steel/cargo,
-/area/liberty/outside/one_star/fo_internal)
 "mX" = (
 /obj/structure/toilet{
 	dir = 4
@@ -1724,8 +1715,7 @@
 /obj/structure/table/onestar,
 /obj/random/structures/os,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_internal)
@@ -1993,8 +1983,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "pe" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_outside)
@@ -2126,9 +2115,7 @@
 /obj/item/stack/material/plastic/random,
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /obj/structure/mirror{
 	pixel_x = 26
@@ -2399,8 +2386,7 @@
 	pixel_x = -24
 	},
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_internal)
@@ -2472,9 +2458,7 @@
 "sW" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/outside/one_star/fo_internal)
@@ -2565,8 +2549,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "tD" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/item/storage/deferred/crate/iron_lock_security_uniform,
 /turf/simulated/floor/carpet/blucarpet,
@@ -2642,8 +2625,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "um" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/outside/one_star/fo_internal)
@@ -3159,8 +3141,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "xP" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /mob/living/carbon/superior_animal/robot/similacrum/custodian/chef,
 /turf/simulated/floor/carpet,
@@ -3230,8 +3211,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "yt" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/structure/closet/crate/bin,
 /turf/simulated/floor/tiled/derelict,
@@ -3423,8 +3403,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "zy" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_internal)
@@ -3639,8 +3618,7 @@
 /obj/item/pen/multi,
 /obj/item/pen/multi,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_internal)
@@ -3886,9 +3864,7 @@
 "DC" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_internal)
@@ -3998,8 +3974,7 @@
 /obj/structure/table/onestar,
 /obj/machinery/chemical_dispenser/beer,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/outside/one_star/fo_internal)
@@ -4193,9 +4168,7 @@
 "Gh" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
@@ -4226,16 +4199,14 @@
 	},
 /obj/item/haircomb,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/item/storage/firstaid/ifak,
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/outside/one_star/fo_internal)
 "Gr" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/machinery/light/small,
 /obj/effect/floor_decal/floordetail/edgedrain,
@@ -4747,8 +4718,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "Kn" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/structure/reagent_dispensers/fueltank/derelict,
 /turf/simulated/floor/tiled/derelict,
@@ -4841,10 +4811,6 @@
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot,
 /turf/simulated/floor/reinforced,
-/area/liberty/outside/one_star/fo_internal)
-"Lb" = (
-/obj/machinery/mech_recharger,
-/turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
 "Lc" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -5106,8 +5072,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "MW" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/structure/table/onestar,
 /obj/machinery/microwave,
@@ -5134,8 +5099,7 @@
 "Nh" = (
 /obj/structure/table/rack/shelf,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/item/folder/cyan,
 /obj/random/powercell/low_chance,
@@ -5159,9 +5123,7 @@
 "Nq" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/outside/one_star/fo_internal)
@@ -5636,8 +5598,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "QK" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/carpet,
 /area/liberty/outside/one_star/fo_internal)
@@ -5656,8 +5617,7 @@
 	dir = 4
 	},
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/carpet/blucarpet,
 /area/liberty/outside/one_star/fo_internal)
@@ -5678,10 +5638,6 @@
 /obj/structure/closet/crate/trashcart,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/one_star/fo_outside)
-"Rh" = (
-/obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/derelict,
-/area/liberty/outside/one_star/fo_internal)
 "Rk" = (
 /obj/effect/decal/cleanable/ash,
 /obj/random/tool_upgrade/rare/low_chance,
@@ -5833,8 +5789,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
@@ -6154,8 +6109,7 @@
 "Ve" = (
 /obj/structure/toilet,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/outside/one_star/fo_internal)
@@ -6234,8 +6188,7 @@
 "VF" = (
 /obj/machinery/vending/cola,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
@@ -6264,8 +6217,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "VO" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/structure/flora/pottedplant/dead,
 /turf/simulated/floor/tiled/derelict,
@@ -6473,8 +6425,7 @@
 	pixel_x = 24
 	},
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star/fo_internal)
@@ -6556,8 +6507,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "XR" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
@@ -8923,15 +8873,15 @@ cz
 no
 wK
 Dx
-mW
+GN
 AR
-mW
+GN
 GN
 dM
 GN
-mW
+GN
 AR
-mW
+GN
 dM
 Dx
 wK
@@ -9227,15 +9177,15 @@ no
 no
 wK
 Dx
-mW
-GN
-mW
 GN
 GN
 GN
-mW
 GN
-mW
+GN
+GN
+GN
+GN
+GN
 GN
 jy
 wK
@@ -16560,11 +16510,11 @@ ZT
 ZT
 fC
 no
-Lb
 no
-Rh
+no
+no
 Ow
-Rh
+no
 no
 mv
 no

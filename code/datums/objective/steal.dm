@@ -8,7 +8,6 @@
 		"an RCD" = /obj/item/rcd,
 		"a jetpack" = /obj/item/tank/jetpack,
 		"a captain's jumpsuit" = /obj/item/clothing/under/rank/captain,
-		"a functional AI" = /obj/item/device/aicard,
 		"the Union Chief's advanced voidsuit control module" = /obj/item/rig/ce,
 		"the station blueprints" = /obj/item/blueprints,
 		"28 moles of plasma (full tank)" = /obj/item/tank,
@@ -85,28 +84,6 @@
 				for(var/obj/item/coin/C in B)
 					found_amount++
 				return found_amount>=target
-
-		if("a functional AI")
-
-			for(var/obj/item/device/aicard/C in all_items) //Check for ai card
-				for(var/mob/living/silicon/ai/M in C)
-					//See if any AI's are alive inside that card.
-					if(isAI(M) && M.stat != DEAD)
-						return TRUE
-
-			for(var/mob/living/silicon/ai/ai in world)
-				var/turf/T = get_turf(ai)
-				if(istype(T))
-					var/area/check_area = get_area(ai)
-					if(istype(check_area, /area/shuttle/escape_pod1/centcom))
-						return TRUE
-					if(istype(check_area, /area/shuttle/escape_pod2/centcom))
-						return TRUE
-		else
-			for(var/obj/I in all_items) //Check for items
-				if(istype(I, steal_target))
-					return TRUE
-	return FALSE
 
 /datum/objective/steal/get_panel_entry()
 	return "Steal <a href='?src=\ref[src];switch_item=1'>[target_name]</a>."

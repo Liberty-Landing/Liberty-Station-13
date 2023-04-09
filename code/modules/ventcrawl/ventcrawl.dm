@@ -8,7 +8,6 @@ var/list/ventcrawl_machinery = list(
 /mob/living/var/list/can_enter_vent_with = list(
 	/obj/parallax,
 	/obj/item/implant,
-	/obj/item/device/radio/borg,
 	/obj/item/holder,
 	/obj/machinery/camera,
 	/mob/living/simple_animal/borer,
@@ -54,11 +53,6 @@ var/list/ventcrawl_machinery = list(
 /mob/living/carbon/human/is_allowed_vent_crawl_item(var/obj/item/carried_item)
 	if(carried_item in list(l_hand,r_hand))
 		return carried_item.w_class <= ITEM_SIZE_NORMAL
-	return ..()
-
-/mob/living/simple_animal/spiderbot/is_allowed_vent_crawl_item(var/obj/item/carried_item)
-	if(carried_item in list(held_item, radio, connected_ai, cell, camera, mmi))
-		return 1
 	return ..()
 
 /mob/living/proc/ventcrawl_carry()
@@ -118,7 +112,7 @@ var/list/ventcrawl_machinery = list(
 		if(vent_found.network && (vent_found.network.normal_members.len || vent_found.network.line_members.len))
 
 			to_chat(src, "You begin climbing into the ventilation system...")
-			if(vent_found.air_contents && !issilicon(src))
+			if(vent_found.air_contents)
 
 				switch(vent_found.air_contents.temperature)
 					if(0 to BODYTEMP_COLD_DAMAGE_LIMIT)

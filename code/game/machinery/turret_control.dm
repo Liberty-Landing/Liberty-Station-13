@@ -82,11 +82,8 @@
 	return
 
 /obj/machinery/turretid/proc/isLocked(mob/user)
-	if(ailock && issilicon(user))
-		to_chat(user, SPAN_NOTICE("There seems to be a firewall preventing you from accessing this device."))
-		return 1
 
-	if(locked && !issilicon(user))
+	if(locked)
 		to_chat(user, SPAN_NOTICE("Access denied."))
 		return 1
 
@@ -120,12 +117,6 @@
 		locked = 0
 		ailock = 0
 		return 1
-
-/obj/machinery/turretid/attack_ai(mob/user as mob)
-	if(isLocked(user))
-		return
-
-	nano_ui_interact(user)
 
 /obj/machinery/turretid/attack_hand(mob/user as mob)
 	if(isLocked(user))

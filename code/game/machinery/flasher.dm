@@ -59,13 +59,6 @@
 		if (!src.disable)
 			user.visible_message(SPAN_WARNING("[user] has connected the [src]'s flashbulb!"), SPAN_WARNING("You connect the [src]'s flashbulb!"))
 
-//Let the AI trigger them directly.
-/obj/machinery/flasher/attack_ai()
-	if (src.anchored)
-		return src.flash()
-	else
-		return
-
 /obj/machinery/flasher/proc/flash()
 	if (!(powered()))
 		return
@@ -89,17 +82,6 @@
 				continue
 			O.flash(strength, FALSE , TRUE , TRUE , 10)
 		else
-			if(isrobot(O))
-				var/mob/living/silicon/robot/robo = O
-				if(robo.HasTrait(CYBORG_TRAIT_FLASH_RESISTANT))
-					continue
-				else
-					robo.flash(strength, FALSE, FALSE , FALSE)
-					continue
-			else
-				if (istype(O,/mob/living/silicon/ai))
-					return
-				O.flash(strength , FALSE, FALSE ,FALSE)
 			O.Weaken(flash_time)
 
 

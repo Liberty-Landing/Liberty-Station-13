@@ -111,10 +111,6 @@
 			total_price += 199
 			if(fabricate)
 				fabricated_device.card_slot = new/obj/item/computer_hardware/card_slot(fabricated_device)
-		if(dev_aislot)
-			total_price += 499
-			if(fabricate)
-				fabricated_device.ai_slot = new/obj/item/computer_hardware/ai_slot(fabricated_device)
 
 		return total_price
 	else if(devtype == 2) 	// Tablet, more expensive, not everyone could probably afford this.
@@ -167,10 +163,6 @@
 			total_price += 399
 			if(fabricate)
 				fabricated_device.tesla_link = new/obj/item/computer_hardware/tesla_link(fabricated_device)
-		if(dev_aislot)
-			total_price += 499
-			if(fabricate)
-				fabricated_device.ai_slot = new/obj/item/computer_hardware/ai_slot(fabricated_device)
 		return total_price
 	return FALSE
 

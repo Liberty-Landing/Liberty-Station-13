@@ -397,8 +397,7 @@
 
 
 /obj/machinery/power/shield_generator/CanUseTopic(var/mob/user)
-	if(issilicon(user) && !Adjacent(user) && ai_control_disabled)
-		return STATUS_UPDATE
+
 	return ..()
 
 /obj/machinery/power/shield_generator/Topic(href, href_list)

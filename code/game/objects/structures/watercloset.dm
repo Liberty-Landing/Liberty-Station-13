@@ -58,7 +58,7 @@
 			update_icon()
 			return
 
-	if(cistern && !isrobot(user)) //STOP PUTTING YOUR MODULES IN THE TOILET.
+	if(cistern) //STOP PUTTING YOUR MODULES IN THE TOILET.
 		if(I.w_class >= ITEM_SIZE_BULKY)
 			to_chat(user, SPAN_NOTICE("\The [I] does not fit."))
 			return
@@ -463,8 +463,6 @@
 			to_chat(user, SPAN_NOTICE("You try to move your [temp.name], but cannot!"))
 			return
 
-	if(isrobot(user) || isAI(user))
-		return
 
 	if(!Adjacent(user))
 		return
@@ -523,11 +521,7 @@
 				user.Stun(10)
 				user.stuttering = 10
 				user.Weaken(10)
-				if(isrobot(user))
-					var/mob/living/silicon/robot/R = user
-					R.cell.charge -= 20
-				else
-					B.deductcharge(B.hitcost)
+				B.deductcharge(B.hitcost)
 				user.visible_message(
 					SPAN_DANGER("[user] was stunned by \his wet [O]!"),
 					"<span class='userdanger'>[user] was stunned by \his wet [O]!</span>"

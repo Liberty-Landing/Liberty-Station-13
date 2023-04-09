@@ -9,9 +9,6 @@
 /datum/vertical_travel_method/jump/can_perform(var/dir)
 	.=..()
 	if (.)
-		if (isrobot(M))
-			return FALSE //Robots can't jump
-
 		if (gravity)
 			/*
 				Jumping under gravity is not currently supported.

@@ -388,10 +388,7 @@ SUBSYSTEM_DEF(ticker)
 /datum/controller/subsystem/ticker/proc/create_characters()
 	for(var/mob/new_player/player in GLOB.player_list)
 		if(player && player.ready && player.mind)
-			if(player.mind.assigned_role == "AI")
-				player.close_spawn_windows()
-				player.AIize()
-			else if(!player.mind.assigned_role)
+			if(!player.mind.assigned_role)
 				continue
 			else
 				player.create_character()
@@ -516,8 +513,6 @@ SUBSYSTEM_DEF(ticker)
 						to_chat(Player, "<font color='green'><b>You managed to survive today's events on the [station_name()] as [Player.real_name].</b></font>")
 				else if(isAdminLevel(playerTurf.z))
 					to_chat(Player, "<font color='green'><b>You successfully underwent crew transfer after events on [station_name()] as [Player.real_name].</b></font>")
-				else if(issilicon(Player))
-					to_chat(Player, "<font color='green'><b>You remained operational after today's events on the [station_name()] as [Player.real_name].</b></font>")
 				else
 					to_chat(Player, "<font color='green'><b>You managed to survive today's events on the [station_name()] as [Player.real_name].</b></font>") //No such "crew transfer" here, unless people take the lift back home.
 			else
@@ -528,32 +523,6 @@ SUBSYSTEM_DEF(ticker)
 				else
 					to_chat(Player, "<font color='red'><b>You did not survive today's events on the [station_name()]...</b></font>")
 	to_chat(world, "<br>")
-
-	for(var/mob/living/silicon/ai/aiPlayer in SSmobs.mob_list)
-		if(aiPlayer.stat != DEAD)
-			to_chat(world, "<b>[aiPlayer.name] (Played by: [aiPlayer.key])'s laws at the end of the round were:</b>")
-		else
-			to_chat(world, "<b>[aiPlayer.name] (Played by: [aiPlayer.key])'s laws at the time of their deactivation were:</b>")
-		aiPlayer.show_laws(TRUE)
-
-		if(aiPlayer.connected_robots.len)
-			var/robolist = "<b>The AI's loyal minions were:</b> "
-			for(var/mob/living/silicon/robot/robo in aiPlayer.connected_robots)
-				robolist += "[robo.name][robo.stat?" (Deactivated) (Played by: [robo.key]), ":" (Played by: [robo.key]), "]"
-			to_chat(world, "[robolist]")
-
-	for(var/mob/living/silicon/robot/robo in SSmobs.mob_list)
-		if(!isdrone(robo) && !robo.connected_ai)
-			if(robo.stat != 2)
-				to_chat(world, "<b>[robo.name] (Played by: [robo.key]) survived as an AI-less synthetic! Its laws were:</b>")
-			else
-				to_chat(world, "<b>[robo.name] (Played by: [robo.key]) was unable to survive the rigors of being a synthetic without an AI. Its laws were:</b>")
-
-			if(robo) //How the hell do we lose robo between here and the world messages directly above this?
-				robo.laws.show_laws(world)
-	var/dronecount = GLOB.drones.len
-	if(dronecount)
-		to_chat(world, "<b>There [dronecount>1 ? "were" : "was"] [dronecount] industrious maintenance [dronecount>1 ? "drones" : "drone"] at the end of this round.</b>")
 
 	GLOB.storyteller.declare_completion()//To declare normal completion.
 	scoreboard()//scores

@@ -23,14 +23,12 @@
 			/obj/item/rig_module/grenade_launcher,
 			/obj/item/rig_module/held/energy_blade,
 			/obj/item/rig_module/held/shield,
-			/obj/item/rig_module/datajack,
 			/obj/item/rig_module/modular_injector,
 			/obj/item/rig_module/cargo_clamp/large
 		)
 	)
 	hidden_inventory = list(
 		"RIG Specialized Modules III" = list(
-			/obj/item/rig_module/electrowarfare_suite,
 			/obj/item/rig_module/modular_injector/combat,
 			/obj/item/rig_module/modular_injector/medical,
 			//obj/item/rig_module/cape

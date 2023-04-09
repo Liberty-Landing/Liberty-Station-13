@@ -3,16 +3,6 @@
 	build_path = /obj/machinery/computer/message_monitor
 	origin_tech = list(TECH_DATA = 3)
 
-/obj/item/circuitboard/aiupload
-	build_name = "AI upload console"
-	build_path = /obj/machinery/computer/aiupload
-	origin_tech = list(TECH_DATA = 4)
-
-/obj/item/circuitboard/borgupload
-	build_name = "cyborg upload console"
-	build_path = /obj/machinery/computer/borgupload
-	origin_tech = list(TECH_DATA = 4)
-
 /obj/item/circuitboard/med_data
 	build_name = "medical records console"
 	build_path = /obj/machinery/computer/med_data
@@ -44,16 +34,6 @@
 /obj/item/circuitboard/pod
 	build_name = "massdriver control"
 	build_path = /obj/machinery/computer/pod
-
-/obj/item/circuitboard/robotics
-	build_name = "robotics control console"
-	build_path = /obj/machinery/computer/robotics
-	origin_tech = list(TECH_DATA = 3)
-
-/obj/item/circuitboard/drone_control
-	build_name = "drone control console"
-	build_path = /obj/machinery/computer/drone_control
-	origin_tech = list(TECH_DATA = 3)
 
 /obj/item/circuitboard/arcade/battle
 	build_name = "battle arcade machine"
@@ -94,10 +74,6 @@
 /obj/item/circuitboard/prisoner
 	build_name = "tracker implant management console"
 	build_path = /obj/machinery/computer/prisoner
-
-/obj/item/circuitboard/mecha_control
-	build_name = "exosuit control console"
-	build_path = /obj/machinery/computer/mecha
 
 /obj/item/circuitboard/rdservercontrol
 	build_name = "R&D server control console"
@@ -148,11 +124,6 @@
 	build_path = /obj/machinery/computer/shuttle_control/research
 	origin_tech = list(TECH_DATA = 2)
 */
-
-/obj/item/circuitboard/aifixer
-	build_name = "AI integrity restorer"
-	build_path = /obj/machinery/computer/aifixer
-	origin_tech = list(TECH_DATA = 3, TECH_BIO = 2)
 
 /obj/item/circuitboard/area_atmos
 	build_name = "area air control console"

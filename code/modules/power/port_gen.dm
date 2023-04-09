@@ -365,13 +365,6 @@
 	var/data[0]
 	data["active"] = active
 
-	if(isAI(user))
-		data["is_ai"] = 1
-	else if(isrobot(user) && !Adjacent(user))
-		data["is_ai"] = 1
-	else
-		data["is_ai"] = 0
-
 	data["output_set"] = power_output
 	data["output_max"] = max_power_output
 	data["output_safe"] = max_safe_output

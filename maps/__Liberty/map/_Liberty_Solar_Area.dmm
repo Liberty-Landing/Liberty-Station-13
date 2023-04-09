@@ -2721,10 +2721,6 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/fixed/hydrotile,
 /area/liberty/outside/mountainsolars)
-"OM" = (
-/obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/techmaint_perforated,
-/area/liberty/engineering/dorm)
 "OU" = (
 /obj/structure/flora/big/bush3,
 /turf/simulated/floor/asteroid/grass,
@@ -8990,7 +8986,7 @@ ab
 ab
 aa
 nt
-OM
+yU
 Ot
 Ot
 cd

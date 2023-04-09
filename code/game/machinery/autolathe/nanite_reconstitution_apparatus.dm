@@ -399,9 +399,6 @@
 	if(!Adjacent(user) && !Adjacent(eating))
 		return FALSE
 
-	if(is_robot_module(eating))
-		return FALSE
-
 	var/filltype = 0       // Used to determine message.
 	var/reagents_filltype = 0
 	var/total_used = 0     // Amount of material used.

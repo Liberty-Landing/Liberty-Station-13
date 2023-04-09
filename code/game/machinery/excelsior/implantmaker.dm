@@ -36,7 +36,7 @@
 
 	var/accepted = FALSE
 
-	if(istype(I, /obj/item/implant) || istype(I, /obj/item/robot_parts))
+	if(istype(I, /obj/item/implant))
 	//|| istype(I,/obj/item/stack/material)) //This used to be here and has been orphaned by a merge. Somehow. If you know what the intended behaviour here is, just fix it.
 		user.remove_from_mob(I)
 		qdel(I)

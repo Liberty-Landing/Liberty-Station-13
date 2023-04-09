@@ -60,10 +60,9 @@
 
 /mob/living/carbon/superior_animal/nanobot/interact(mob/user as mob)
 	if((get_dist(src, user) > 1) || (stat & (BROKEN|NOPOWER)))
-		if(!isAI(user))
-			user.unset_machine()
-			user << browse(null, "window=Nanobot")
-			return
+		user.unset_machine()
+		user << browse(null, "window=Nanobot")
+		return
 
 	user.set_machine(src)
 

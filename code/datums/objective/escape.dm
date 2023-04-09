@@ -6,8 +6,6 @@
 /datum/objective/escape/check_completion()
 	if (failed)
 		return FALSE
-	if(issilicon(owner.current))
-		return FALSE
 	if(isbrain(owner.current))
 		return FALSE
 	if(!evacuation_controller.has_evacuated())

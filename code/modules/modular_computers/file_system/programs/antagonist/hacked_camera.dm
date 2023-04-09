@@ -29,7 +29,6 @@
 
 /datum/nano_module/camera_monitor/hacked
 	name = "Hacked Camera Monitoring Program"
-	available_to_ai = FALSE
 
 /datum/nano_module/camera_monitor/hacked/can_access_network(var/mob/user, var/network_access)
 	return 1

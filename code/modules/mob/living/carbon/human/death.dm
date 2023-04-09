@@ -57,11 +57,6 @@
 
 	callHook("death", list(src, gibbed))
 
-	if(wearing_rig)
-		wearing_rig.notify_ai(
-			SPAN_DANGER("Warning: user death event. Mobility control passed to integrated intelligence system.")
-		)
-
 	learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/rebound_case, "REBOUND_CASE", skill_gained = 1, learner = src)
 
 	if(stats.getPerk(PERK_TERRIBLE_FATE))

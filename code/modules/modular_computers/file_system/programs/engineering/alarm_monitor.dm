@@ -33,14 +33,12 @@
 	name = "Alarm monitor"
 	var/list_cameras = 0						// Whether or not to list camera references. A future goal would be to merge this with the enginering/security camera console. Currently really only for AI-use.
 	var/list/datum/alarm_handler/alarm_handlers // The particular list of alarm handlers this alarm monitor should present to the user.
-	available_to_ai = FALSE
 
 /datum/nano_module/alarm_monitor/New()
 	..()
 	alarm_handlers = list()
 
 /datum/nano_module/alarm_monitor/all
-	available_to_ai = TRUE
 
 /datum/nano_module/alarm_monitor/all/New()
 	..()
@@ -113,9 +111,6 @@
 			var/cameras[0]
 			var/lost_sources[0]
 
-			if(isAI(user))
-				for(var/obj/machinery/camera/C in A.cameras())
-					cameras[++cameras.len] = C.nano_structure()
 			for(var/datum/alarm_source/AS in A.sources)
 				if(!AS.source)
 					lost_sources[++lost_sources.len] = AS.source_name

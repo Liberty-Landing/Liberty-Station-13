@@ -40,26 +40,6 @@
 	else
 		to_chat(user, SPAN_WARNING("It seems to be offline."))
 
-/obj/machinery/power/breakerbox/attack_ai(mob/user)
-	if(update_locked)
-		to_chat(user, SPAN_WARNING("System locked. Please try again later."))
-		return
-
-	if(busy)
-		to_chat(user, SPAN_WARNING("System is busy. Please wait until current operation is finished before changing power settings."))
-		return
-
-	busy = 1
-	to_chat(user, "\green Updating power settings..")
-	if(do_after(user, 50, src))
-		set_state(!on)
-		to_chat(user, "\green Update Completed. New setting:[on ? "on": "off"]")
-		update_locked = 1
-		spawn(600)
-			update_locked = 0
-	busy = 0
-
-
 /obj/machinery/power/breakerbox/attack_hand(mob/user)
 	if(update_locked)
 		to_chat(user, SPAN_WARNING("System locked. Please try again later."))

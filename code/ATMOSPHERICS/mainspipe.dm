@@ -623,8 +623,6 @@ obj/machinery/atmospherics/mains_pipe/valve
 
 		return 1
 
-	attack_ai(mob/user as mob)
-		return
 
 	attack_paw(mob/user as mob)
 		return attack_hand(user)
@@ -643,8 +641,6 @@ obj/machinery/atmospherics/mains_pipe/valve
 		desc = "A digitally controlled valve."
 		icon_state = "dvalve0"
 
-		attack_ai(mob/user as mob)
-			return src.attack_hand(user)
 
 		attack_hand(mob/user as mob)
 			if(!src.allowed(user))

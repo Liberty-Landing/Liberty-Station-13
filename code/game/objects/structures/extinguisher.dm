@@ -20,8 +20,6 @@
 
 
 /obj/structure/extinguisher_cabinet/attackby(obj/item/O, mob/user)
-	if(isrobot(user))
-		return
 	if(istype(O, /obj/item/extinguisher))
 		if(!has_extinguisher && opened)
 			user.remove_from_mob(O)
@@ -36,8 +34,6 @@
 	update_icon()
 
 /obj/structure/extinguisher_cabinet/attack_hand(mob/user)
-	if(isrobot(user))
-		return
 	if (ishuman(user))
 		var/mob/living/carbon/human/H = user
 		var/obj/item/organ/external/temp = H.organs_by_name[BP_R_ARM]
@@ -67,8 +63,6 @@
 	update_icon()
 
 /obj/structure/extinguisher_cabinet/proc/toggle_open(mob/user)
-	if(isrobot(user))
-		return
 	if(user.incapacitated())
 		to_chat(user, SPAN_WARNING("You can't do that right now!"))
 		return

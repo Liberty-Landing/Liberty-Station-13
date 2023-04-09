@@ -14,7 +14,7 @@
 /obj/item/projectile/goo/on_hit(atom/target)
 	. = ..()
 	if (!testing)
-		if(isliving(target) && !issilicon(target) )
+		if(isliving(target))
 			var/mob/living/L = target
 			L.damage_through_armor(10, TOX, attack_flag = ARMOR_RAD)
 			if(!(locate(/obj/effect/decal/cleanable/spiderling_remains) in target.loc))

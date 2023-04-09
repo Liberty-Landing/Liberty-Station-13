@@ -15,10 +15,6 @@
 	var/stop = 0.0
 	var/screen = 0 // 0 - No Access Denied, 1 - Access allowed
 
-
-	attack_ai(var/mob/user as mob)
-		return src.attack_hand(user)
-
 	attack_hand(var/mob/user as mob)
 		if(..())
 			return
@@ -65,7 +61,7 @@
 	Topic(href, href_list)
 		if(..())
 			return
-		if((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))) || (issilicon(usr)))
+		if((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))))
 			usr.set_machine(src)
 
 			if(href_list["inject1"])

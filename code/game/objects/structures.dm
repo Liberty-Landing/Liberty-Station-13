@@ -202,9 +202,6 @@
 		return 0
 	if (user.stat || user.paralysis || user.sleeping || user.lying || user.weakened)
 		return 0
-	if (issilicon(user))
-		to_chat(user, SPAN_NOTICE("You need hands for this."))
-		return 0
 	return 1
 
 /obj/structure/attack_generic(var/mob/user, var/damage, var/attack_verb, var/wallbreaker)

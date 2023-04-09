@@ -147,11 +147,10 @@
 	for(var/mob/M in viewers(1, src))
 		if ((M.client && M.machine == src))
 			src.interact(M)
-	AutoUpdateAI(src)
 
 /obj/machinery/power/turbine/interact(mob/user)
 
-	if ( (get_dist(src, user) > 1 ) || (stat & (NOPOWER|BROKEN)) && (!isAI(user)) )
+	if ( (get_dist(src, user) > 1 ) || (stat & (NOPOWER|BROKEN)))
 		user.machine = null
 		user << browse(null, "window=turbine")
 		return
@@ -182,7 +181,7 @@
 		return
 	if(!usr.IsAdvancedToolUser())
 		return
-	if(get_dist(src, usr) <= 1 || isAI(usr))
+	if(get_dist(src, usr) <= 1)
 		if( href_list["close"] )
 			usr << browse(null, "window=turbine")
 			usr.machine = null

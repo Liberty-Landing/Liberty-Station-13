@@ -154,10 +154,6 @@
 	else if(!istype(W, /obj/item/bedsheet))
 		..()
 
-/obj/structure/bed/attack_robot(var/mob/user)
-	if(Adjacent(user)) // Robots can buckle/unbuckle but not the AI.
-		attack_hand(user)
-
 //If there's blankets on the bed, got to roll them down before you can unbuckle the mob
 /obj/structure/bed/attack_hand(var/mob/user)
 	var/obj/item/bedsheet/blankets = (locate(/obj/item/bedsheet) in loc)
@@ -346,7 +342,7 @@
 /obj/structure/bed/roller/MouseDrop(over_object, src_location, over_location)
 	..()
 	if(!CanMouseDrop(over_object))	return
-	if(!(ishuman(usr) || isrobot(usr)))	return
+	if(!(ishuman(usr)))	return
 	if(over_object == buckled_mob && beaker)
 		if(iv_attached)
 			detach_iv(buckled_mob, usr)

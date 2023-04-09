@@ -444,47 +444,6 @@ ADMIN_VERB_ADD(/client/proc/toggle_log_hrefs, R_SERVER, FALSE)
 			config.log_hrefs = 1
 			to_chat(src, "<b>Started logging hrefs</b>")
 
-ADMIN_VERB_ADD(/client/proc/check_ai_laws, R_ADMIN, TRUE)
-//shows AI and borg laws
-/client/proc/check_ai_laws()
-	set name = "Check AI Laws"
-	set category = "Admin"
-	if(holder)
-		src.holder.output_ai_laws()
-
-ADMIN_VERB_ADD(/client/proc/rename_silicon, R_ADMIN, FALSE)
-//properly renames silicons
-/client/proc/rename_silicon()
-	set name = "Rename Silicon"
-	set category = "Special Verbs"
-
-	if(!check_rights(R_ADMIN)) return
-
-	var/mob/living/silicon/S = input("Select silicon.", "Rename Silicon.") as null|anything in GLOB.silicon_mob_list
-	if(!S) return
-
-	var/new_name = sanitizeSafe(input(src, "Enter new name. Leave blank or as is to cancel.", "[S.real_name] - Enter new silicon name", S.real_name))
-	if(new_name && new_name != S.real_name)
-		log_and_message_admins("has renamed the silicon '[S.real_name]' to '[new_name]'")
-		S.SetName(new_name)
-
-
-ADMIN_VERB_ADD(/client/proc/manage_silicon_laws, R_ADMIN, TRUE)
-// Allows viewing and editing silicon laws.
-/client/proc/manage_silicon_laws()
-	set name = "Manage Silicon Laws"
-	set category = "Admin"
-
-	if(!check_rights(R_ADMIN)) return
-
-	var/mob/living/silicon/S = input("Select silicon.", "Manage Silicon Laws") as null|anything in GLOB.silicon_mob_list
-	if(!S) return
-
-	var/datum/nano_module/law_manager/L = new(S)
-	L.nano_ui_interact(usr, state = GLOB.admin_state)
-	log_and_message_admins("has opened [S]'s law manager.")
-
-
 ADMIN_VERB_ADD(/client/proc/change_human_appearance_admin, R_ADMIN, FALSE)
 // Allows an admin to change the basic appearance of human-based mobs
 /client/proc/change_human_appearance_admin()

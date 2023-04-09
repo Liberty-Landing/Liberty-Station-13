@@ -334,7 +334,6 @@
 /area/mine/hallway)
 "bl" = (
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment/low_chance,
 /obj/machinery/atmospherics/unary/vent_scrubber,
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/mine/hallway)
@@ -829,7 +828,6 @@
 /turf/simulated/floor/tiled/steel,
 /area/mine/hallway)
 "cC" = (
-/obj/machinery/recharge_station,
 /obj/machinery/light/small{
 	dir = 8
 	},
@@ -842,7 +840,6 @@
 /turf/simulated/floor/tiled/steel/monofloor,
 /area/mine/hallway)
 "cE" = (
-/obj/machinery/mech_recharger,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/steel/panels,
 /area/mine/prep)
@@ -871,7 +868,6 @@
 /obj/machinery/light/spot{
 	dir = 8
 	},
-/obj/machinery/recharge_station,
 /turf/simulated/floor/asteroid,
 /area/mine/prep)
 "cI" = (
@@ -940,7 +936,6 @@
 /area/mine/atmos)
 "cT" = (
 /obj/random/structures,
-/obj/random/mecha_equipment/low_chance,
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/mine/atmos)
 "cU" = (
@@ -1422,7 +1417,6 @@
 /turf/simulated/floor/plating,
 /area/mine/atmos)
 "es" = (
-/obj/random/mecha_equipment/low_chance,
 /turf/simulated/floor/plating,
 /area/mine/atmos)
 "et" = (
@@ -2394,7 +2388,6 @@
 /obj/machinery/light/spot{
 	dir = 8
 	},
-/obj/machinery/recharge_station,
 /turf/simulated/floor/asteroid,
 /area/mine/hallway)
 "gQ" = (
@@ -6939,7 +6932,6 @@
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/rnd/outpostmedical)
 "rN" = (
-/obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/rnd/outpostmedical)
 "rO" = (

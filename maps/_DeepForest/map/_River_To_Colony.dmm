@@ -40,11 +40,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood_old,
 /area/colony/exposedsun/crashed_shop/workshop)
-"aZ" = (
-/obj/machinery/mech_recharger,
-/obj/random/mecha/low_chance,
-/turf/simulated/floor/tiled/dark/danger,
-/area/colony/exposedsun/crashed_shop/workshop)
 "bc" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/tiled/cafe,
@@ -302,7 +297,6 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "hp" = (
-/obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/dark/danger,
 /area/colony/exposedsun/crashed_shop/workshop)
 "hx" = (
@@ -382,8 +376,7 @@
 /obj/machinery/power/port_gen/pacman/diesel/anchored,
 /obj/structure/cable{
 	d2 = 2;
-	icon_state = "0-2";
-	pixel_y = 0
+	icon_state = "0-2"
 	},
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop/workshop)
@@ -786,8 +779,7 @@
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/colony/exposedsun/crashed_shop/workshop)
@@ -1081,8 +1073,7 @@
 /area/colony/exposedsun/crashed_shop)
 "zX" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/machinery/door/window{
 	dir = 8
@@ -1977,8 +1968,7 @@
 "RF" = (
 /obj/random/closet_wardrobe,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
@@ -2067,9 +2057,7 @@
 	},
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/colony/exposedsun/crashed_shop/workshop)
@@ -2210,8 +2198,7 @@
 	id = "sh_belt"
 	},
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
@@ -11315,7 +11302,7 @@ NB
 NB
 Su
 Kq
-aZ
+hp
 oF
 ZH
 tm

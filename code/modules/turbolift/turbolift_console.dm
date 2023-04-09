@@ -33,9 +33,6 @@
 	lift = _lift
 	return ..(newloc)
 
-/obj/structure/lift/attack_ai(var/mob/user)
-	return attack_hand(user)
-
 /obj/structure/lift/attack_generic(var/mob/user)
 	return attack_hand(user)
 

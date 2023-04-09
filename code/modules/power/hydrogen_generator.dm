@@ -162,10 +162,9 @@
 
 /obj/machinery/power/hydrogen_gen/interact(mob/user as mob)
 	if((get_dist(src, user) > 1) || (stat & (BROKEN|NOPOWER)))
-		if(!isAI(user))
-			user.unset_machine()
-			user << browse(null, "window=HydrogenGenerator")
-			return
+		user.unset_machine()
+		user << browse(null, "window=HydrogenGenerator")
+		return
 
 	user.set_machine(src)
 
@@ -197,7 +196,7 @@
 
 /obj/machinery/power/hydrogen_gen/Topic(href, href_list)
 
-	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1 && !isAI(usr)))
+	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1))
 		usr.unset_machine()
 		usr << browse(null, "window=HydrogenGenerator")
 		return

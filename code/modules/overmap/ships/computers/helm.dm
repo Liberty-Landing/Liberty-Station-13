@@ -54,11 +54,6 @@
 		return 1
 
 /obj/machinery/computer/helm/check_eye(var/mob/user as mob)
-	if (isAI(user))
-		user.unset_machine()
-		if (!manual_control)
-			user.reset_view(user.eyeobj)
-		return 0
 	if (!manual_control)
 		return -1
 	if (!get_dist(user, src) > 1 || user.blinded || !linked )
@@ -72,8 +67,7 @@
 		manual_control = 0
 		return
 
-	if(!isAI(user))
-		user.set_machine(src)
+	user.set_machine(src)
 	if(linked && manual_control)
 		user.reset_view(linked)
 
@@ -207,9 +201,6 @@
 		manual_control = !manual_control
 		if(manual_control)
 			usr.reset_view(linked)
-		else
-			if (isAI(usr))
-				usr.reset_view(usr.eyeobj)
 
 	updateUsrDialog()
 
@@ -254,11 +245,6 @@
 		ui.set_auto_update(1)
 
 /obj/machinery/computer/navigation/check_eye(var/mob/user as mob)
-	if (isAI(user))
-		user.unset_machine()
-		if (!viewing)
-			user.reset_view(user.eyeobj)
-		return 0
 	if (!viewing)
 		return -1
 	if (!get_dist(user, src) > 1 || user.blinded || !linked )
@@ -273,8 +259,8 @@
 		return
 
 	if(viewing && linked)
-		if (!isAI(user))
-			user.set_machine(src)
+
+		user.set_machine(src)
 		user.reset_view(linked)
 
 	nano_ui_interact(user)
@@ -290,7 +276,4 @@
 		viewing = !viewing
 		if(viewing)
 			usr.reset_view(linked)
-		else
-			if (isAI(usr))
-				usr.reset_view(usr.eyeobj)
 		return 1

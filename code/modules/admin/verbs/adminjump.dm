@@ -1,9 +1,5 @@
 /mob/proc/on_mob_jump(var/turf/T)
-	if (istype(loc, /obj/mecha))
-		var/obj/mecha/M = loc
-		M.forceMove(T)
-	else
-		forceMove(T)
+	forceMove(T)
 
 /mob/observer/ghost/on_mob_jump()
 	stop_following()

@@ -72,10 +72,9 @@
 		viewing = 0
 		return
 
-	if(!isAI(user))
-		user.set_machine(src)
-		if(linked)
-			user.reset_view(linked)
+	user.set_machine(src)
+	if(linked)
+		user.reset_view(linked)
 	nano_ui_interact(user)
 
 /obj/machinery/computer/sensors/Topic(href, href_list, state)
@@ -87,7 +86,7 @@
 
 	if (href_list["viewing"])
 		viewing = !viewing
-		if(viewing && usr && !isAI(usr))
+		if(viewing)
 			usr.reset_view(linked)
 		return 1
 

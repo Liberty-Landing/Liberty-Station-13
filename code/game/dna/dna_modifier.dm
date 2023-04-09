@@ -285,10 +285,6 @@
 	return
 */
 
-/obj/machinery/computer/scan_consolenew/attack_ai(user as mob)
-	src.add_hiddenprint(user)
-	nano_ui_interact(user)
-
 /obj/machinery/computer/scan_consolenew/attack_hand(user as mob)
 	if(!usr.stats?.getPerk(PERK_SCIENCE) && !usr.stat_check(STAT_COG, 80)) //Again outdated tech
 		to_chat(usr, SPAN_WARNING("This is a bit beyond your cognitive understanding."))

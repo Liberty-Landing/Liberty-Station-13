@@ -191,9 +191,6 @@
 
 	return
 
-/obj/machinery/teleport/station/attack_ai()
-	src.attack_hand()
-
 /obj/machinery/computer/teleporter/attack_hand(user as mob)
 	if(..()) return
 
@@ -237,7 +234,7 @@
 	var/desc = input("Please select a location to lock in.", "Locking Computer") in L|null
 	if(!desc)
 		return
-	if(get_dist(src, usr) > 1 && !issilicon(usr))
+	if(get_dist(src, usr) > 1)
 		return
 
 	src.locked = L[desc]
@@ -318,9 +315,6 @@
 	..()
 	overlays.Cut()
 	overlays += "controller-wires"
-
-/obj/machinery/teleport/station/attack_ai()
-	src.attack_hand()
 
 /obj/machinery/teleport/station/attack_hand()
 	if(engaged)

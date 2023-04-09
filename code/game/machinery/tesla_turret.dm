@@ -135,11 +135,8 @@ GLOBAL_LIST_INIT(turret_channels, new/list(5))
 		set_light(0)
 
 /obj/machinery/tesla_turret/proc/isLocked(mob/user)
-	if(ailock && issilicon(user))
-		to_chat(user, SPAN_NOTICE("There seems to be a firewall preventing you from accessing this device."))
-		return TRUE
 
-	if(locked && !issilicon(user))
+	if(locked)
 		to_chat(user, SPAN_NOTICE("Access denied."))
 		return TRUE
 
@@ -487,13 +484,6 @@ GLOBAL_LIST_INIT(turret_channels, new/list(5))
 	for(var/mob/living/M in view(firing_range, src)) //WE USED WORLD.VIEW BEFORE THATS FUCKING PSYCHOPATHIC
 		assess_and_assign(M, targets, secondarytargets) //might want to not use a proc due to proc overhead cost
 
-	for(var/atom/A in GLOB.mechas_list)
-		if (A.z == z && (get_dist(A, src) < firing_range) && can_see(src, A, firing_range))
-			var/obj/mecha/mech = A
-			var/mob/living/occupant = mech.get_mob()
-			if (occupant)
-				assess_and_assign(occupant, targets, secondarytargets)
-
 	if(!tryToShootAt(targets))
 		tryToShootAt(secondarytargets) // if no valid targets, go for secondary targets
 
@@ -537,12 +527,6 @@ GLOBAL_LIST_INIT(turret_channels, new/list(5))
 	if(colony_allied_turret && !L.colony_friend) //If were allied with the colony and we attack things that are not are pets
 		return TURRET_SECONDARY_TARGET
 	*/
-
-	if(issilicon(L))
-		if(check_synth) // Destroy all impure inhumane detestable irredeemable robots.
-			return TURRET_PRIORITY_TARGET
-		else
-			return TURRET_NOT_TARGET
 
 	if(!check_trajectory(L, src))	//check if we have true line of sight
 		return TURRET_NOT_TARGET
@@ -641,9 +625,6 @@ GLOBAL_LIST_INIT(turret_channels, new/list(5))
 		target.electrocute_act(shock_damage, src)
 	log_game("Tesla Turret([src.x],[src.y],[src.z]) shocked [key_name(target)] for [shock_damage]dmg.")
 	//message_admins("Tesla Turret([src.x],[src.y],[src.z]) zapped [key_name_admin(target)] for [shock_damage]dmg!") - In case this needs testing Trilby
-	if(issilicon(target))
-		var/mob/living/silicon/S = target
-		S.emp_act(3 /*EMP_LIGHT*/)
 
 
 #undef TURRET_PRIORITY_TARGET

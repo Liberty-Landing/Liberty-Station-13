@@ -93,24 +93,9 @@
 	build_path = /obj/item/circuitboard/teleporter
 	category = CAT_BLUE
 
-/datum/design/research/circuit/robocontrol
-	name = "robotics control console"
-	build_path = /obj/item/circuitboard/robotics
-	category = CAT_COMP
-
-/datum/design/research/circuit/mechacontrol
-	name = "exosuit control console"
-	build_path = /obj/item/circuitboard/mecha_control
-	category = CAT_COMP
-
 /datum/design/research/circuit/rdconsole
 	name = "unlicensed R&D control console"
 	build_path = /obj/item/circuitboard/rdconsole_unlicensed
-	category = CAT_COMP
-
-/datum/design/research/circuit/aifixer
-	name = "AI integrity restorer"
-	build_path = /obj/item/circuitboard/aifixer
 	category = CAT_COMP
 
 /datum/design/research/circuit/comm_monitor
@@ -127,16 +112,6 @@
 	name = "messaging monitor console"
 	build_path = /obj/item/circuitboard/message_monitor
 	category = CAT_TCOM
-
-/datum/design/research/circuit/aiupload
-	name = "AI upload console"
-	build_path = /obj/item/circuitboard/aiupload
-	category = CAT_COMP
-
-/datum/design/research/circuit/borgupload
-	name = "cyborg upload console"
-	build_path = /obj/item/circuitboard/borgupload
-	category = CAT_COMP
 
 /datum/design/research/circuit/destructive_analyzer
 	name = "destructive analyzer"
@@ -174,25 +149,6 @@
 	build_path = /obj/item/circuitboard/rdserver
 	category = CAT_MACHINE
 
-/datum/design/research/circuit/mechfab
-	name = "exosuit fabricator"
-	build_path = /obj/item/circuitboard/mechfab
-	category = CAT_MACHINE
-
-/datum/design/research/circuit/mech_recharger
-	name = "mech recharger"
-	build_path = /obj/item/circuitboard/mech_recharger
-	category = CAT_MACHINE
-
-/datum/design/research/circuit/repair_station
-	name = "cyborg auto-repair platform"
-	build_path = /obj/item/circuitboard/repair_station
-	category = CAT_MACHINE
-
-/datum/design/research/circuit/recharge_station
-	name = "cyborg recharge station"
-	build_path = /obj/item/circuitboard/recharge_station
-	category = CAT_MACHINE
 
 /datum/design/research/circuit/recharger
 	name = "recharger"
@@ -207,11 +163,6 @@
 /datum/design/research/circuit/air_management
 	name = "atmosphere monitoring console"
 	build_path = /obj/item/circuitboard/air_management
-	category = CAT_COMP
-
-/datum/design/research/circuit/dronecontrol
-	name = "drone control console"
-	build_path = /obj/item/circuitboard/drone_control
 	category = CAT_COMP
 
 /datum/design/research/circuit/powermonitor

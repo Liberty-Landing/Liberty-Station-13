@@ -77,7 +77,7 @@
 /obj/machinery/meter/examine(mob/user)
 	var/t = "A gas flow meter. "
 
-	if(get_dist(user, src) > 3 && !(isAI(user) || isghost(user)))
+	if(get_dist(user, src) > 3 && !isghost(user))
 		t += SPAN_WARNING("You are too far away to read it.")
 
 	else if(stat & (NOPOWER|BROKEN))
@@ -95,10 +95,6 @@
 	to_chat(user, t)
 
 /obj/machinery/meter/Click()
-
-	if(isAI(usr)) // ghosts can call ..() for examine
-		usr.examinate(src)
-		return 1
 
 	return ..()
 

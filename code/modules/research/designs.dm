@@ -29,9 +29,6 @@ other types of metals and chemistry for reagents).
 	build_type = AUTOLATHE | PROTOLATHE
 	category = "Misc" //No more unsorted things
 
-/datum/design/research/item/mechfab
-	build_type = MECHFAB
-
 /datum/design/research/item/clothing
 	category = CAT_CLOTHING
 

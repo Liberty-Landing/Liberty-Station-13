@@ -79,9 +79,6 @@ Freeing yourself is much harder than freeing someone else. Calling for help is a
 			difficulty -= reduction
 			I.consume_resources(time_to_escape * 3, user)
 
-		if (issilicon(user))
-			difficulty += 5 //Robots are less dextrous
-
 		//How about your stats? Being strong or crafty helps.
 		//We'll subtract the highest of either robustness or mechanical, from the difficulty
 		var/reduction = user.stats.getMaxStat(list(STAT_ROB, STAT_MEC))
@@ -157,12 +154,6 @@ Freeing yourself is much harder than freeing someone else. Calling for help is a
 	.=..()
 
 /obj/item/beartrap/attack_generic(var/mob/user, var/damage)
-	if (buckled_mob)
-		attempt_release(user)
-		return
-	.=..()
-
-/obj/item/beartrap/attack_robot(var/mob/user)
 	if (buckled_mob)
 		attempt_release(user)
 		return

@@ -61,8 +61,6 @@
 		update_icon()
 		return
 
-/obj/machinery/holoposter/attack_ai(mob/user as mob)
-	return attack_hand(user)
 
 /obj/machinery/holoposter/power_change()
 	var/wasUnpowered = stat & NOPOWER

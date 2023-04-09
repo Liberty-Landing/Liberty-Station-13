@@ -60,16 +60,6 @@
 	dat += "<BR>"
 	dat += "Please ensure that only holographic weapons are used in the holodeck if a combat simulation has been loaded.<BR>"
 
-	if(issilicon(user))
-		dat += "<BR>"
-		if(safety_disabled)
-			if (emagged)
-				dat += "<font color=red><b>ERROR</b>: Cannot re-enable Safety Protocols.</font><BR>"
-			else
-				dat += "<A href='?src=\ref[src];AIoverride=1'>(<font color=green>Re-Enable Safety Protocols?</font>)</A><BR>"
-		else
-			dat += "<A href='?src=\ref[src];AIoverride=1'>(<font color=red>Override Safety Protocols?</font>)</A><BR>"
-
 	dat += "<BR>"
 
 	if(safety_disabled)
@@ -102,8 +92,6 @@
 			loadProgram(holodeck_programs[prog])
 
 	else if(href_list["AIoverride"])
-		if(!issilicon(usr))
-			return
 
 		if(safety_disabled && emagged)
 			return //if a contractor has gone through the trouble to emag the thing, let them keep it.

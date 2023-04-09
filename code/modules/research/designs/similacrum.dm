@@ -60,12 +60,12 @@
 	name = "SR Thermal Goggles"
 	build_path = /obj/item/clothing/glasses/powered/thermal/onestar
 	category = CAT_CLOTHING
-
+/*
 /datum/design/research/item/similacrum/combat_shield
 	name = "SR Combat Shield"
 	build_path = /obj/item/shield_projector/rectangle
 	category = CAT_CLOTHING
-
+*/
 /datum/design/research/item/similacrum/manhacks_roomba
 	name = "SR-PI roomba grenade"
 	build_path = /obj/item/grenade/spawnergrenade/manhacks/roomba

@@ -112,9 +112,6 @@
 	for(var/mob/living/silicon/robot/R in range(8, src))//Borgs too
 		victims_to_teleport += R
 
-	for(var/obj/mecha/E in range(8, src))//And exosuits too
-		victims_to_teleport += E
-
 	for(var/mob/living/M in victims_to_teleport)
 		go_to_bluespace(get_turf(src), 3, FALSE, M, get_turf(target))
 

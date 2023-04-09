@@ -34,11 +34,6 @@
 		if(1 to 4)	add_overlay("plasma-[plasmatanks]")
 		if(5 to INFINITY) add_overlay("plasma-5")
 
-/obj/structure/dispenser/attack_ai(mob/user)
-	if(user.Adjacent(src))
-		return attack_hand(user)
-	..()
-
 /obj/structure/dispenser/attack_hand(mob/user)
 	user.set_machine(src)
 	var/dat = "[src]<br><br>"

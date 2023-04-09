@@ -358,19 +358,6 @@ var/list/intents = list(I_HELP,I_DISARM,I_GRAB,I_HURT)
 //		if(hud_used && hud_used.action_intent)
 //			hud_used.action_intent.icon_state = "intent_[a_intent]"
 
-	else if(isrobot(src))
-		switch(input)
-			if(I_HELP)
-				a_intent = I_HELP
-			if(I_HURT)
-				a_intent = I_HURT
-			if("right","left")
-				a_intent = intent_numeric(intent_numeric(a_intent) - 3)
-/*		if(hud_used && hud_used.action_intent)
-			if(a_intent == I_HURT)
-				hud_used.action_intent.icon_state = I_HURT
-			else
-				hud_used.action_intent.icon_state = I_HELP*/
 	if (HUDneed.Find("intent"))
 		var/obj/screen/intent/I = HUDneed["intent"]
 		I.update_icon()
@@ -489,13 +476,6 @@ proc/is_blind(A)
 	check_eye(src)
 	return 1
 
-/mob/living/silicon/ai/switch_to_camera(var/obj/machinery/camera/C)
-	if(!C.can_use() || !is_in_chassis())
-		return 0
-
-	eyeobj.setLoc(C)
-	return 1
-
 // Returns true if the mob has a client which has been active in the last given X minutes.
 /mob/proc/is_client_active(var/active = 1)
 	return client && client.inactivity < active MINUTES
@@ -585,12 +565,6 @@ proc/is_blind(A)
 
 /mob/living/carbon/human/get_multitool()
 	return ..(get_active_hand())
-
-/mob/living/silicon/robot/get_multitool()
-	return ..(get_active_hand())
-
-/mob/living/silicon/ai/get_multitool()
-	return ..(aiMulti)
 
 
 //This proc returns true if the mob has no health problems. EG, no damaged organs, alive, not poisoned, etc

@@ -11,9 +11,7 @@
 		/datum/job/cso,
 		/datum/job/chief_engineer,
 		/datum/job/dc,
-		/datum/job/outsider,
-		/datum/job/cyborg, //To stop people auto dropping these
-		/datum/job/ai
+		/datum/job/outsider
 		)
 	allowed_depts = CHURCH
 	allow_modifications = TRUE
@@ -45,10 +43,7 @@
 		/datum/job/chief_engineer,
 		/datum/job/clubmanager,
 		/datum/job/rp,
-		/datum/job/dc,
-		/datum/job/dc,
-		/datum/job/cyborg, //To stop people auto dropping these
-		/datum/job/ai
+		/datum/job/dc
 	) // The way to restrict this to one job could be done cleaner but this way easier so fuck it. -Kaz
 	allow_modifications = FALSE
 	restricted_depts = SECURITY | PROSPECTORS | ENGINEERING | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
@@ -77,10 +72,7 @@
 		/datum/job/cso,
 		/datum/job/clubmanager,
 		/datum/job/rp,
-		/datum/job/dc,
-		/datum/job/dc,
-		/datum/job/cyborg, //To stop people auto dropping these
-		/datum/job/ai
+		/datum/job/dc
 		)
 	allow_modifications = TRUE
 	restricted_to_species = list(FORM_HUMAN, FORM_EXALT_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_TERRAYNTH)
@@ -92,9 +84,7 @@
 	particular design is an opifex original and one of the best that can be found in the galaxy."
 	implant_organ_type = "opifex nanogate"
 	restricted_jobs = list(
-		/datum/job/outsider, // Nanogates are only available to colonist or allies.
-		/datum/job/cyborg, //To stop people auto dropping these
-		/datum/job/ai
+		/datum/job/outsider
 		)
 	allow_modifications = TRUE
 	restricted_to_species = list(FORM_OPIFEX) // Opifex get their own fancy nanogate

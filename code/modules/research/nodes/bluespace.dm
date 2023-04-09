@@ -203,7 +203,6 @@
 							/datum/design/research/item/pouch_holding,
 							/datum/design/research/item/trashbag_holding,
 							/datum/design/research/item/oresatchel_holding,
-							/datum/design/research/item/robot_upgrade/satchel_of_holding_for_borgs
 						    )
 
 /*

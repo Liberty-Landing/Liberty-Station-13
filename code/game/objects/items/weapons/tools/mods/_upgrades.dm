@@ -51,9 +51,6 @@
 
 /datum/component/item_upgrade/proc/can_apply(var/atom/A, var/mob/living/user)
 
-	if(isrobot(A))
-		return check_robot(A, user)
-
 	if(isitem(A))
 		var/obj/item/T = A
 		if(is_type_in_list(parent, T.blacklist_upgrades, TRUE))
@@ -80,22 +77,6 @@
 	if(istype(A, /obj/item/rig))
 		return check_rig(A, user)
 
-	return FALSE
-
-/datum/component/item_upgrade/proc/check_robot(var/mob/living/silicon/robot/R, var/mob/living/user)
-	if(!R.opened)
-		if(user)
-			to_chat(user, SPAN_WARNING("You need to open [R]'s panel to access its tools."))
-	var/list/robotools = list()
-	for(var/obj/item/tool/robotool in R.module.modules)
-		robotools.Add(robotool)
-	if(robotools.len)
-		var/obj/item/tool/chosen_tool = input(user,"Which tool are you trying to modify?","Tool Modification","Cancel") in robotools + "Cancel"
-		if(chosen_tool == "Cancel")
-			return FALSE
-		return can_apply(chosen_tool,user)
-	if(user)
-		to_chat(user, SPAN_WARNING("[R] has no modifiable tools."))
 	return FALSE
 
 /datum/component/item_upgrade/proc/check_tool(var/obj/item/tool/T, var/mob/living/user)

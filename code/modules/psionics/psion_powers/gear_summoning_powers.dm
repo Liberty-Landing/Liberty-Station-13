@@ -92,7 +92,7 @@
 			)
 		playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
 		usr.put_in_active_hand(fist)
-
+/*
 /obj/item/organ/internal/psionic_tumor/proc/kinetic_barrier()
 	set category = "Psionic powers"
 	set name = "Kinetic Barrier (2)"
@@ -108,7 +108,7 @@
 			)
 		playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
 		spawn(timer) shield.Destroy() // Delete the shield after 10 seconds
-
+*/
 
 
 // Psionic Orbs

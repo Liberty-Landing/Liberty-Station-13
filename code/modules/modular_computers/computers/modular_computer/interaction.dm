@@ -1,7 +1,5 @@
 /obj/item/modular_computer/proc/update_verbs()
 	verbs.Cut()
-	if(ai_slot)
-		verbs |= /obj/item/modular_computer/verb/eject_ai
 	if(portable_drive)
 		verbs |= /obj/item/modular_computer/verb/eject_usb
 	if(card_slot && card_slot.stored_card)
@@ -68,16 +66,6 @@
 
 	proc_eject_usb(usr)
 
-/obj/item/modular_computer/verb/eject_ai()
-	set name = "Eject AI"
-	set category = "Object"
-	set src in view(1)
-
-	if(!can_interact(usr))
-		return
-
-	proc_eject_ai(usr)
-
 /obj/item/modular_computer/verb/remove_pen()
 	set name = "Remove Pen"
 	set category = "Object"
@@ -89,8 +77,8 @@
 	if(istype(stored_pen))
 		to_chat(usr, SPAN_NOTICE("You remove [stored_pen] from [src]."))
 		stored_pen.forceMove(get_turf(src))
-		if(!issilicon(usr))
-			usr.put_in_hands(stored_pen)
+
+		usr.put_in_hands(stored_pen)
 		stored_pen = null
 		update_verbs()
 
@@ -106,8 +94,8 @@
 		PRG.event_id_removed()
 
 	card_slot.stored_card.forceMove(get_turf(src))
-	if(!issilicon(user))
-		user.put_in_hands(card_slot.stored_card)
+
+	user.put_in_hands(card_slot.stored_card)
 	to_chat(user, SPAN_NOTICE("You remove [card_slot.stored_card] from [src]."))
 	card_slot.stored_card = null
 	update_uis()
@@ -128,19 +116,6 @@
 	user.put_in_hands(PD)
 	update_uis()
 
-/obj/item/modular_computer/proc/proc_eject_ai(mob/user)
-	if(!user)
-		user = usr
-
-	if(!ai_slot || !ai_slot.stored_card)
-		to_chat(user, "There is no intellicard connected to \the [src].")
-		return
-
-	ai_slot.stored_card.forceMove(get_turf(src))
-	ai_slot.stored_card = null
-	ai_slot.update_power_usage()
-	update_uis()
-
 /obj/item/modular_computer/attack_ghost(var/mob/observer/ghost/user)
 	if(enabled)
 		nano_ui_interact(user)
@@ -148,9 +123,6 @@
 		var/response = alert(user, "This computer is turned off. Would you like to turn it on?", "Admin Override", "Yes", "No")
 		if(response == "Yes")
 			turn_on(user)
-
-/obj/item/modular_computer/attack_ai(var/mob/user)
-	return attack_self(user)
 
 /obj/item/modular_computer/attack_hand(var/mob/user)
 	if(anchored)
@@ -203,10 +175,6 @@
 	if(istype(W, /obj/item/paper) || istype(W, /obj/item/paper_bundle))
 		if(printer)
 			printer.attackby(W, user)
-	if(istype(W, /obj/item/device/aicard))
-		if(!ai_slot)
-			return
-		ai_slot.attackby(W, user)
 
 	if(!modifiable)
 		return ..()

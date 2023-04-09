@@ -35,7 +35,6 @@
 	/obj/item/device/lighting/toggleable/flashlight,\
 	/obj/item/device/scanner/health,\
 	/obj/item/tool/multitool,\
-	/obj/item/device/paicard,\
 	/obj/item/device/radio,\
 	/obj/item/device/radio/headset,\
 	/obj/item/device/radio/beacon,\

@@ -55,14 +55,6 @@
 	if(target)
 		user.Move(get_turf(target))
 
-/obj/structure/multiz/attack_ai(mob/living/silicon/user)
-	if(target)
-		if (isAI(user))
-			var/turf/T = get_turf(target)
-			T.move_camera_by_click()
-		else if (Adjacent(user))
-			attack_hand(user)
-
 
 
 
@@ -142,12 +134,7 @@
 /obj/structure/multiz/ladder/attack_hand(var/mob/M)
 	if (M.buckled)//Prevents buckled mobs from getting stuck on ladders
 		return
-	if (isrobot(M) && !isdrone(M))
-		var/mob/living/silicon/robot/R = M
-		climb(M, (climb_delay*3)/R.speed_factor) //Robots are not built for climbing, they should go around where possible
-		//I'd rather make them unable to use ladders at all, but eris' labyrinthine maintenance necessitates it
-	else
-		climb(M, climb_delay)
+	climb(M, climb_delay)
 
 
 /obj/structure/multiz/ladder/proc/climb(mob/M, delay)
@@ -171,33 +158,18 @@
 		to_chat(M, SPAN_NOTICE("\A [tempMob] is blocking \the [src], making it harder to climb."))
 		delay = delay * 1.5
 
-	//Robots are a quarter ton of steel and most of them lack legs or arms of any appreciable sorts.
-	//Even being able to climb ladders at all is a violation of newton'slaws. It shall at least be slow and communicated as such
-	if (isrobot(M) && !isdrone(M))
-		M.visible_message(
-			"<span class='notice'>\A [M] starts slowly climbing [istop ? "down" : "up"] \a [src]!</span>",
-			"<span class='danger'>You begin the slow, laborious process of dragging your hulking frame [istop ? "down" : "up"] \the [src]</span>",
-			"<span class='danger'>You hear the tortured sound of strained metal.</span>"
-		)
-		T.visible_message(
-			"<span class='danger'>[M] gradually drags itself [istop ? "down" : "up"] \a [src]!</span>",
-			"<span class='danger'>You hear the tortured sound of strained metal.</span>"
-		)
-		playsound(src, 'sound/machines/airlock_creaking.ogg', 100, 1, 5,5)
-
-	else
-		M.visible_message(
+	M.visible_message(
 			"<span class='notice'>\A [M] climbs [istop ? "down" : "up"] \a [src]!</span>",
 			"You climb [istop ? "down" : "up"] \the [src]!",
 			"You hear the grunting and clanging of a metal ladder being used."
 		)
-		T.visible_message(
+	T.visible_message(
 			"<span class='warning'>Someone climbs [istop ? "down" : "up"] \a [src]!</span>",
 			"You hear the grunting and clanging of a metal ladder being used."
 		)
-		playsound(src, pick(climb_sound), 100, 1, 5,5)
+	playsound(src, pick(climb_sound), 100, 1, 5,5)
 
-		delay = max(delay * M.stats.getMult(STAT_VIG, STAT_LEVEL_EXPERT), delay * 0.66)
+	delay = max(delay * M.stats.getMult(STAT_VIG, STAT_LEVEL_EXPERT), delay * 0.66)
 
 
 	if(do_after(M, delay, src))
@@ -286,16 +258,6 @@
 	attack_hand(user)
 	return
 
-/obj/structure/multiz/stairs/active/attack_ai(mob/living/silicon/ai/user)
-	. = ..()
-	if(!target)
-		to_chat(user, SPAN_WARNING("There are no stairs above."))
-		log_debug("[src.type] at [src.x], [src.y], [src.z] have non-existant target")
-
-/obj/structure/multiz/stairs/active/attack_robot(mob/user)
-	. = ..()
-	if(Adjacent(user))
-		Bumped(user)
 
 /obj/structure/multiz/stairs/active/attack_hand(mob/user)
 	. = ..()

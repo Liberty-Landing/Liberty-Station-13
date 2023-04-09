@@ -163,25 +163,15 @@
 		return
 	if(tesla_link)
 		tesla_link.enabled = TRUE
-	var/issynth = issilicon(user) // Robots and AIs get different activation messages.
 	if(damage > broken_damage)
-		if(issynth)
-			to_chat(user, SPAN_WARNING("You send an activation signal to \the [src], but it responds with an error code. It must be damaged."))
-		else
-			to_chat(user, SPAN_WARNING("You press the power button, but the computer fails to boot up, displaying variety of errors before shutting down again."))
+		to_chat(user, SPAN_WARNING("You press the power button, but the computer fails to boot up, displaying variety of errors before shutting down again."))
 		return
 	if(processor_unit && try_use_power(0)) // Battery-run and charged or non-battery but powered by APC.
-		if(issynth)
-			to_chat(user, SPAN_NOTICE("You send an activation signal to \the [src], turning it on"))
-		else
-			to_chat(user, SPAN_NOTICE("You press the power button and start up \the [src]."))
+		to_chat(user, SPAN_NOTICE("You press the power button and start up \the [src]."))
 		enable_computer(user)
 
 	else // Unpowered
-		if(issynth)
-			to_chat(user, SPAN_WARNING("You send an activation signal to \the [src] but it does not respond."))
-		else
-			to_chat(user, SPAN_WARNING("You press the power button but \the [src] does not respond."))
+		to_chat(user, SPAN_WARNING("You press the power button but \the [src] does not respond."))
 
 // Relays kill program request to currently active program. Use this to quit current program.
 /obj/item/modular_computer/proc/kill_program(forced = FALSE)

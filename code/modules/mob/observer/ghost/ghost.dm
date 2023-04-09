@@ -133,8 +133,6 @@ Works together with spawning an observer, noted above.
 	var/client/C = U.client
 	for(var/mob/living/carbon/human/target in target_list)
 		C.images += target.hud_list[SPECIALROLE_HUD]
-	for(var/mob/living/silicon/target in target_list)
-		C.images += target.hud_list[SPECIALROLE_HUD]
 	return 1
 
 /mob/proc/ghostize(var/can_reenter_corpse = 1)
@@ -148,8 +146,6 @@ Works together with spawning an observer, noted above.
 		if(stat != DEAD)
 			if (isanimal(src))
 				set_death_time(ANIMAL, world.time)
-			else if (ispAI(src) || isdrone(src))
-				set_death_time(MINISYNTH, world.time)
 			else
 				set_death_time(CREW, world.time)//Crew is the fallback
 
@@ -575,9 +571,6 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 			return
 		// Otherwise, see if we can possess the target.
 		if(usr == src && try_possession(M))
-			return
-	if(istype(over, /obj/machinery/drone_fabricator))
-		if(try_drone_spawn(src, over))
 			return
 
 	return ..()

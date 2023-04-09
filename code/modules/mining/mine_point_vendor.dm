@@ -38,7 +38,6 @@
 		new /datum/data/mining_equipment("Hardsuit - Ore Scanner",								/obj/item/rig_module/device/orescanner,								1000),
 		new /datum/data/mining_equipment("Hardsuit - Meson Scanner",							/obj/item/rig_module/vision/meson,									500),
 		new /datum/data/mining_equipment("Hardsuit - Maneuvering Jets",							/obj/item/rig_module/maneuvering_jets,								1250),
-		new /datum/data/mining_equipment("Hardsuit - Intelligence Storage",						/obj/item/rig_module/ai_container,									2500),
 		new /datum/data/mining_equipment("Hardsuit - Deployable Shield",						/obj/item/rig_module/held/shield,									6000),
 		new /datum/data/mining_equipment("Industrial Equipment - Sheet-Snatcher",				/obj/item/storage/bag/sheetsnatcher,								500),
 		new /datum/data/mining_equipment("Digital Tablet - Standard",							/obj/item/modular_computer/tablet/preset/custom_loadout/standard,	500),

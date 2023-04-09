@@ -236,9 +236,6 @@
 /obj/machinery/power/apc/Destroy()
 	GLOB.apc_list -= src
 
-	// Malf AI, removes the APC from AI's hacked APCs list.
-	if((hacker) && (hacker.hacked_apcs) && (src in hacker.hacked_apcs))
-		hacker.hacked_apcs -= src
 	if(area)
 		area.power_light = FALSE
 		area.power_equip = FALSE
@@ -472,8 +469,6 @@
 //attack with an item - open/close cover, insert cell, or (un)lock interface
 
 /obj/machinery/power/apc/attackby(obj/item/I, mob/user)
-	if (issilicon(user) && get_dist(src,user)>1)
-		return attack_hand(user)
 	add_fingerprint(user)
 
 	var/list/usable_qualities = list(QUALITY_SCREW_DRIVING)
@@ -588,18 +583,6 @@
 
 		if(ABORT_CHECK)
 			return
-	if (istype(I, /obj/item/gripper))//Gripper can extract cell
-		var/obj/item/gripper/Gri = I
-		if(opened && cell)
-			if (Gri.grip_item(cell, user))
-				cell.add_fingerprint(user)
-				cell.update_icon()
-				cell = null
-				user.visible_message(SPAN_WARNING("[user.name] removes the power cell from [name]!"),\
-									 SPAN_NOTICE("You remove the power cell."))
-				charging = 0
-				update_icon()
-				return
 
 	if (istype(I, /obj/item/cell/large) && opened)	// trying to put a cell inside
 		if(cell)
@@ -686,10 +669,6 @@
 				"You replace the damaged APC frame with new one.")
 			qdel(I)
 			stat &= ~BROKEN
-			// Malf AI, removes the APC from AI's hacked APCs list.
-			if(hacker && hacker.hacked_apcs && (src in hacker.hacked_apcs))
-				hacker.hacked_apcs -= src
-				hacker = null
 			if (opened==2)
 				opened = 1
 			update_icon()
@@ -705,8 +684,6 @@
 				"You hear bang")
 			update_icon()
 		else
-			if (issilicon(user))
-				return attack_hand(user)
 			if (!opened && wiresexposed && \
 				((QUALITY_PULSING in I.tool_qualities) || \
 				(QUALITY_WIRE_CUTTING in I.tool_qualities) || \
@@ -772,7 +749,7 @@
 				beenhit += 1
 			return
 
-	if(usr == user && opened && (!issilicon(user)))
+	if(usr == user && opened)
 		if(cell)
 			user.put_in_hands(cell)
 			cell.add_fingerprint(user)
@@ -794,7 +771,7 @@
 	if(!user)
 		return
 
-	if(wiresexposed && !isAI(user))
+	if(wiresexposed)
 		wires.Interact(user)
 
 	return ui_interact(user) //routed to tgui, nano code partially commented out
@@ -821,7 +798,7 @@
 
 /obj/machinery/power/apc/AltClick(mob/user)
 	..()
-	if(!can_use(user) || issilicon(user))
+	if(!can_use(user))
 		return
 	else
 		toggle_lock(user)
@@ -912,8 +889,6 @@
 		"totalLoad" = round(lastused_total),
 		"coverLocked" = coverlocked,
 		//"remoteAccess" = (user == remote_control_user),
-		"siliconUser" = (issilicon(user) && (!locked || allowed(user))),
-		//"malfStatus" = get_malf_status(user),
 		//"emergencyLights" = !emergency_lights,
 		//"nightshiftLights" = nightshift_lights,
 		//"disable_nightshift_toggle" = low_power_nightshift_lights,
@@ -955,27 +930,12 @@
 
 /obj/machinery/power/apc/ui_act(action, params)
 	. = ..()
-	if(. || !can_use(usr, 1) || (locked && !issilicon(usr) && !failure_timer && action != "toggle_nightshift"))
+	if(. || !can_use(usr, 1) || (locked && !failure_timer && action != "toggle_nightshift"))
 		return
 	switch(action)
 		if("lock")
-			if (issilicon(usr))
-				var/permit = 0 // Malfunction variable. If AI hacks APC it can control it even without AI control wire.
-				var/mob/living/silicon/ai/AI = usr
-				var/mob/living/silicon/robot/robot = usr
-				if(hacker)
-					if(hacker == AI)
-						permit = 1
-					else if(istype(robot) && robot.connected_ai && robot.connected_ai == hacker) // Cyborgs can use APCs hacked by their AI
-						permit = 1
-
-				if(aidisabled && !permit)
-					if(usr == (AI || robot))
-						to_chat(usr, SPAN_DANGER("\The [src] have AI control disabled!"))
-					return FALSE
-			else
-				if (!in_range(src, usr) || !istype(loc, /turf))
-					return FALSE
+			if (!in_range(src, usr) || !istype(loc, /turf))
+				return FALSE
 		if("cover")
 			coverlocked = !coverlocked
 			. = TRUE
@@ -1005,19 +965,6 @@
 				update_icon()
 				update()
 			. = TRUE
-		if("overload")
-			if(issilicon(usr))
-				overload_lighting()
-				. = TRUE
-		//if("hack") 			malf is no longer a gamemode here
-		//	if(get_malf_status(usr))
-		//		malfhack(usr)
-		//if("occupy")
-		//	if(get_malf_status(usr))
-		//		malfoccupy(usr)
-		//if("deoccupy")
-		//	if(get_malf_status(usr))
-		//		malfvacate()
 		if("reboot")
 			failure_timer = 0
 			force_update = FALSE
@@ -1071,23 +1018,8 @@
 		to_chat(user, SPAN_WARNING("You must stand to use [src]!"))
 		return 0
 	autoflag = 5
-	if (issilicon(user))
-		var/permit = 0 // Malfunction variable. If AI hacks APC it can control it even without AI control wire.
-		var/mob/living/silicon/ai/AI = user
-		var/mob/living/silicon/robot/robot = user
-		if(hacker)
-			if(hacker == AI)
-				permit = 1
-			else if(istype(robot) && robot.connected_ai && robot.connected_ai == hacker) // Cyborgs can use APCs hacked by their AI
-				permit = 1
-
-		if(aidisabled && !permit)
-			if(!loud)
-				to_chat(user, SPAN_DANGER("\The [src] have AI control disabled!"))
-			return FALSE
-	else
-		if (!in_range(src, user) || !istype(loc, /turf))
-			return FALSE
+	if (!in_range(src, user) || !istype(loc, /turf))
+		return FALSE
 	var/mob/living/carbon/human/H = user
 	if (istype(H) && prob(H.getBrainLoss()))
 		to_chat(user, SPAN_DANGER("You momentarily forget how to use [src]."))
@@ -1107,7 +1039,7 @@
 		update()
 		return TRUE
 
-	if(!issilicon(usr) && (locked && !emagged))
+	if(locked && !emagged)
 		// Shouldn't happen, this is here to prevent href exploits
 		to_chat(usr, "You must unlock the panel to use this!")
 		return TRUE
@@ -1141,18 +1073,6 @@
 		environ = setsubsystem(val)
 		update_icon()
 		update()
-
-	else if (href_list["overload"])
-		if(issilicon(usr))
-			overload_lighting()
-
-	else if (href_list["toggleaccess"])
-		if(issilicon(usr))
-			if(emagged || (stat & (BROKEN|MAINT)))
-				to_chat(usr, "The APC does not respond to the command.")
-			else
-				locked = !locked
-				update_icon()
 	playsound(loc, 'sound/machines/machine_switch.ogg', 100, 1)
 	return FALSE
 
@@ -1454,15 +1374,5 @@ obj/machinery/power/apc/proc/autoset(var/val, var/on)
 		return 1
 	else
 		return 0
-
-// Malfunction: Transfers APC under AI's control
-/obj/machinery/power/apc/proc/ai_hack(var/mob/living/silicon/ai/A = null)
-	if(!A || !A.hacked_apcs || hacker || aidisabled || A.stat == DEAD)
-		return FALSE
-	hacker = A
-	A.hacked_apcs += src
-	locked = 1
-	update_icon()
-	return TRUE
 
 #undef APC_UPDATE_ICON_COOLDOWN

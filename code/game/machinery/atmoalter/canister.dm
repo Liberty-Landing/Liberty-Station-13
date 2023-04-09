@@ -241,20 +241,7 @@ update_flag
 
 /obj/machinery/portable_atmospherics/canister/attackby(var/obj/item/I, var/mob/user)
 
-	if(isrobot(user) && istype(I, /obj/item/tank/jetpack))
-		var/datum/gas_mixture/thejetpack = I:air_contents
-		var/env_pressure = thejetpack.return_pressure()
-		var/pressure_delta = min(10*ONE_ATMOSPHERE - env_pressure, (air_contents.return_pressure() - env_pressure)/2)
-		//Can not have a pressure delta that would cause environment pressure > tank pressure
-		var/transfer_moles = 0
-		if((air_contents.temperature > 0) && (pressure_delta > 0))
-			transfer_moles = pressure_delta*thejetpack.volume/(air_contents.temperature * R_IDEAL_GAS_EQUATION)//Actually transfer the gas
-			var/datum/gas_mixture/removed = air_contents.remove(transfer_moles)
-			thejetpack.merge(removed)
-			to_chat(user, "You pulse-pressurize your jetpack from the tank.")
-		return
-
-	else if(((QUALITY_BOLT_TURNING in I.tool_qualities) || ((istype(I, /obj/item/tank)) && !(src.destroyed))))
+	if(((QUALITY_BOLT_TURNING in I.tool_qualities) || ((istype(I, /obj/item/tank)) && !(src.destroyed))))
 		..()
 		return
 
@@ -280,9 +267,6 @@ update_flag
 		healthCheck()
 
 	SSnano.update_uis(src) // Update all NanoUIs attached to src
-
-/obj/machinery/portable_atmospherics/canister/attack_ai(var/mob/user as mob)
-	return src.attack_hand(user)
 
 /obj/machinery/portable_atmospherics/canister/attack_hand(var/mob/user as mob)
 	return src.nano_ui_interact(user)

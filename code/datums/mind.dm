@@ -212,46 +212,6 @@
 		if (isnull(new_memo)) return
 		memory = new_memo
 
-	else if(href_list["silicon"])
-		BITSET(current.hud_updateflag, SPECIALROLE_HUD)
-		switch(href_list["silicon"])
-
-			if("unemag")
-				var/mob/living/silicon/robot/R = current
-				if (istype(R))
-					R.RemoveTrait(CYBORG_TRAIT_EMAGGED)
-					if (R.activated(R.module.emag))
-						R.module_active = null
-					if(R.module_state_1 == R.module.emag)
-						R.module_state_1 = null
-						R.contents -= R.module.emag
-					else if(R.module_state_2 == R.module.emag)
-						R.module_state_2 = null
-						R.contents -= R.module.emag
-					else if(R.module_state_3 == R.module.emag)
-						R.module_state_3 = null
-						R.contents -= R.module.emag
-					log_admin("[key_name_admin(usr)] has unemag'ed [R].")
-
-			if("unemagcyborgs")
-				if (isAI(current))
-					var/mob/living/silicon/ai/ai = current
-					for (var/mob/living/silicon/robot/R in ai.connected_robots)
-						R.RemoveTrait(CYBORG_TRAIT_EMAGGED)
-						if (R.module)
-							if (R.activated(R.module.emag))
-								R.module_active = null
-							if(R.module_state_1 == R.module.emag)
-								R.module_state_1 = null
-								R.contents -= R.module.emag
-							else if(R.module_state_2 == R.module.emag)
-								R.module_state_2 = null
-								R.contents -= R.module.emag
-							else if(R.module_state_3 == R.module.emag)
-								R.module_state_3 = null
-								R.contents -= R.module.emag
-					log_admin("[key_name_admin(usr)] has unemag'ed [ai]'s Cyborgs.")
-
 	else if(href_list["common"])
 		switch(href_list["common"])
 			if("undress")

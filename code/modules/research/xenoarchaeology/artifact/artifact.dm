@@ -120,15 +120,3 @@
 			attackby(H.l_hand,H)
 		else if(H.hand && H.r_hand && (QUALITY_DIGGING in H.r_hand.tool_qualities))
 			attackby(H.r_hand,H)
-
-	else if(isrobot(AM))
-		var/mob/living/silicon/robot/R = AM
-		if(istype(R.module_active,/obj/item))
-			var/obj/item/I = R.module_active
-			if(QUALITY_DIGGING in I.tool_qualities)
-				attackby(I,R)
-
-	else if(istype(AM,/obj/mecha))
-		var/obj/mecha/M = AM
-		if(istype(M.selected,/obj/item/mecha_parts/mecha_equipment/tool/drill))
-			M.selected.action(src)

@@ -1,13 +1,6 @@
 /atom/movable/proc/get_mob()
 	return
 
-/obj/machinery/bot/mulebot/get_mob()
-	if(load && isliving(load))
-		return load
-
-/obj/mecha/get_mob()
-	return occupant
-
 /obj/vehicle/train/get_mob()
 	return buckled_mob
 
@@ -55,12 +48,7 @@
 	var/list/mobs = list()
 	for(var/mob/target_mob in view(range, source))
 		mobs += target_mob
-	for(var/obj/mecha/potential_mech in GLOB.mechas_list)
-		if(potential_mech.z == source.z && get_dist(potential_mech, source) < range && can_see(source, potential_mech, range))
-			var/mob/living/occupant = potential_mech.get_mob()
-			if (occupant)
-				mobs += occupant
-    return mobs
+	return mobs
 
 /proc/random_hair_style(gender, species = "Human")
 	var/h_style = "Bald"
@@ -174,13 +162,6 @@ Proc for attack log creation, because really why not
 		target.attack_log += text("\[[time_stamp()]\] <font color='orange'>Has been [what_done] by [user ? "[user.name][(ismob(user) && user.ckey) ? "([user.ckey])" : ""]" : "NON-EXISTANT SUBJECT"][object ? " with [object]" : " "][addition]</font>")
 	if(admin)
 		log_attack("<font color='red'>[user ? "[user.name][(ismob(user) && user.ckey) ? "([user.ckey])" : ""]" : "NON-EXISTANT SUBJECT"] [what_done] [target ? "[target.name][(ismob(target) && target.ckey)? "([target.ckey])" : ""]" : "NON-EXISTANT SUBJECT"][object ? " with [object]" : " "][addition]</font>")
-
-//checks whether this item is a module of the robot it is located in.
-/proc/is_robot_module(var/obj/item/thing)
-	if (!thing || !isrobot(thing.loc))
-		return 0
-	var/mob/living/silicon/robot/R = thing.loc
-	return (thing in R.module.modules)
 
 /proc/get_exposed_defense_zone(var/atom/movable/target)
 	var/obj/item/grab/G = locate() in target

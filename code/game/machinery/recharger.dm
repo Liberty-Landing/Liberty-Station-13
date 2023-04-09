@@ -42,15 +42,6 @@
 		playsound(loc, 'sound/items/Ratchet.ogg', 75, 1)
 		return
 
-	else if (istype(I, /obj/item/gripper))//Code for allowing cyborgs to use rechargers
-		var/obj/item/gripper/Gri = I
-		if (charging)//If there's something in the charger
-			if (Gri.grip_item(charging, user))//we attempt to grab it
-				charging = null
-				update_icon()
-			else
-				to_chat(user, "<span class='danger'>Your gripper cannot hold \the [charging].</span>")
-
 	if(!anchored)
 		to_chat(user, SPAN_WARNING("Attach [src] first!"))
 		return
@@ -98,10 +89,6 @@
 		user.unEquip(I, src)
 		charging = I
 		update_icon()
-
-/obj/machinery/recharger/attack_hand(mob/user)
-	if(issilicon(user))
-		return
 
 	add_fingerprint(user)
 

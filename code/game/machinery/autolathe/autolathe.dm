@@ -512,9 +512,6 @@
 	if(!Adjacent(user) && !Adjacent(eating))
 		return FALSE
 
-	if(is_robot_module(eating))
-		return FALSE
-
 	if(!have_recycling && !(istype(eating, /obj/item/stack) || can_recycle(eating)))
 		to_chat(user, SPAN_WARNING("[src] does not support material recycling."))
 		return FALSE

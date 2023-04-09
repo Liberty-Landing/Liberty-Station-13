@@ -55,9 +55,6 @@
 	if(default_part_replacement(I, user))
 		return
 	//Useability tweak for borgs
-	if (istype(I,/obj/item/gripper))
-		nano_ui_interact(user)
-		return
 	return insert(I, user)
 
 /obj/machinery/reagentgrinder/proc/insert(obj/item/I, mob/user)
@@ -103,9 +100,6 @@
 	I.forceMove(src)
 	holdingitems += I
 	SSnano.update_uis(src)
-	return 0
-
-/obj/machinery/reagentgrinder/attack_ai(mob/user as mob)
 	return 0
 
 /obj/machinery/reagentgrinder/attack_hand(mob/user)
@@ -315,7 +309,7 @@
 	grind()
 
 /obj/machinery/reagentgrinder/industrial/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/reagent_containers/borghypo) || istype(I, /obj/item/reagent_containers/spray)) //prevents borg items
+	if(istype(I, /obj/item/reagent_containers/spray)) //prevents borg items
 		return
 	..() //So we run the rest
 

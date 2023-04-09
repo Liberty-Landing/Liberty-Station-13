@@ -62,8 +62,6 @@
 
 	switch(name)
 		if("equip")
-			if (istype(usr.loc,/obj/mecha)) // stops inventory actions in a mech
-				return TRUE
 			if(ishuman(usr))
 				var/mob/living/carbon/human/H = usr
 				H.quick_equip()
@@ -271,8 +269,6 @@
 		return TRUE
 	if(usr.stat || usr.paralysis || usr.stunned || usr.weakened)
 		return TRUE
-	if (istype(usr.loc,/obj/mecha)) // stops inventory actions in a mech
-		return TRUE
 	if(master)
 		var/obj/item/I = usr.get_active_hand()
 		if(I)
@@ -300,8 +296,6 @@
 	if(!usr.can_click())
 		return TRUE
 	if(usr.stat || usr.paralysis || usr.stunned || usr.weakened)
-		return TRUE
-	if (istype(usr.loc,/obj/mecha)) // stops inventory actions in a mech
 		return TRUE
 	switch(name)
 		if("hand")
@@ -1045,8 +1039,6 @@ obj/screen/fire/DEADelize()
 	screen_loc = "8,2"
 
 /obj/screen/equip/Click()
-	if (istype(parentmob.loc,/obj/mecha)) // stops inventory actions in a mech
-		return TRUE
 	if(ishuman(parentmob))
 		var/mob/living/carbon/human/H = parentmob
 		H.quick_equip()

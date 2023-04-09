@@ -341,15 +341,6 @@ Turf and target are seperate in case you want to teleport some distance from a t
 		if(!newname)	//we'll stick with the oldname then
 			return
 
-		if(cmptext("ai", role))
-			if(isAI(src))
-				var/mob/living/silicon/ai/A = src
-				oldname = null//don't bother with the records update crap
-
-				// Set eyeobj name
-				A.SetName(newname)
-
-
 		fully_replace_character_name(oldname, newname)
 
 
@@ -357,48 +348,6 @@ Turf and target are seperate in case you want to teleport some distance from a t
 //Picks a string of symbols to display as the law number for hacked or ion laws
 /proc/ionnum()
 	return "[pick("1", "2", "3", "4", "5", "6", "7", "8", "9", "0")][pick("!", "@", "#", "$", "%", "^", "&", "*")][pick("!", "@", "#", "$", "%", "^", "&", "*")][pick("!", "@", "#", "$", "%", "^", "&", "*")]"
-
-//When an AI is activated, it can choose from a list of non-slaved borgs to have as a slave.
-/proc/freeborg()
-	var/select = null
-	var/list/borgs = list()
-	for (var/mob/living/silicon/robot/A in GLOB.player_list)
-		if (A.stat == 2 || A.connected_ai || A.scrambledcodes || isdrone(A))
-			continue
-		var/name = "[A.real_name] ([A.modtype] [A.braintype])"
-		borgs[name] = A
-
-	if (borgs.len)
-		select = input("Unshackled borg signals detected:", "Borg selection", null, null) as null|anything in borgs
-		return borgs[select]
-
-//When a borg is activated, it can choose which AI it wants to be slaved to
-/proc/active_ais()
-	. = list()
-	for(var/mob/living/silicon/ai/A in GLOB.living_mob_list)
-		if(A.stat == DEAD)
-			continue
-		if(A.control_disabled == 1)
-			continue
-		. += A
-	return .
-
-//Find an active ai with the least borgs. VERBOSE PROCNAME HUH!
-/proc/select_active_ai_with_fewest_borgs()
-	var/mob/living/silicon/ai/selected
-	var/list/active = active_ais()
-	for(var/mob/living/silicon/ai/A in active)
-		if(!selected || (selected.connected_robots.len > A.connected_robots.len))
-			selected = A
-
-	return selected
-
-/proc/select_active_ai(var/mob/user)
-	var/list/ais = active_ais()
-	if(ais.len)
-		if(user)	. = input(usr, "AI signals detected:", "AI selection") in ais
-		else		. = pick(ais)
-	return .
 
 /proc/get_sorted_mobs()
 	var/list/old_list = getmobs()
@@ -409,9 +358,7 @@ Turf and target are seperate in case you want to teleport some distance from a t
 	var/list/logged_list = list()
 	for(var/named in old_list)
 		var/mob/M = old_list[named]
-		if(issilicon(M))
-			AI_list |= M
-		else if(isghost(M) || M.stat == DEAD)
+		if(isghost(M) || M.stat == DEAD)
 			Dead_list |= M
 		else if(M.key && M.client)
 			keyclient_list |= M

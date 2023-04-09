@@ -368,10 +368,6 @@
 
 /obj/structure/closet/attackby(obj/item/I, mob/user)
 
-	if (istype(I, /obj/item/gripper))
-		//Empty gripper attacks will call attack_AI
-		return FALSE
-
 	var/list/usable_qualities = list(QUALITY_WELDING)
 	if(opened)
 		usable_qualities += QUALITY_SAWING
@@ -528,10 +524,6 @@
 		user.show_viewers(SPAN_DANGER("[user] stuffs [O] into [src]!"))
 	src.add_fingerprint(user)
 
-/obj/structure/closet/attack_ai(mob/user)
-	if(isrobot(user) && Adjacent(user)) // Robots can open/close it, but not the AI.
-		attack_hand(user)
-
 /obj/structure/closet/relaymove(mob/user as mob)
 	if(user.stat || !isturf(src.loc))
 		return
@@ -582,7 +574,7 @@
 	if(!usr.canmove || usr.stat || usr.restrained())
 		return
 
-	if(ishuman(usr) || isrobot(usr))
+	if(ishuman(usr))
 		src.add_fingerprint(usr)
 		src.toggle(usr)
 	else
@@ -596,7 +588,7 @@
 	if(!usr.canmove || usr.stat || usr.restrained()) // Don't use it if you're not able to! Checks for stuns, ghost and restrain
 		return
 
-	if(ishuman(usr) || isrobot(usr))
+	if(ishuman(usr))
 		src.add_fingerprint(usr)
 		src.togglelock(usr)
 	else

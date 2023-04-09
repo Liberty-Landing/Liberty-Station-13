@@ -118,28 +118,6 @@
 			bumpopen(M)
 		return
 
-	if(istype(AM, /obj/machinery/bot))
-		var/obj/machinery/bot/bot = AM
-		if(check_access(bot.botcard))
-			if(density)
-				open()
-		return
-
-	if(istype(AM, /mob/living/bot))
-		var/mob/living/bot/bot = AM
-		if(check_access(bot.botcard))
-			if(density)
-				open()
-		return
-
-	if(istype(AM, /obj/mecha))
-		var/obj/mecha/mecha = AM
-		if(density)
-			if(mecha.occupant && (allowed(mecha.occupant) || check_access_list(mecha.operation_req_access)))
-				open()
-			else
-				do_animate("deny")
-		return
 	if(istype(AM, /obj/structure/bed/chair/wheelchair))
 		var/obj/structure/bed/chair/wheelchair/wheel = AM
 		if(density)
@@ -306,8 +284,8 @@
 
 
 
-	if(operating > 0 || isrobot(user))
-		return //borgs can't attack doors open because it conflicts with their AI-like interaction with them.
+	if(operating > 0)
+		return
 
 	if(operating)
 		return

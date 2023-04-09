@@ -25,15 +25,15 @@
 		list("names" = list(), "header" = "Fontaine Heavy Industries", "flag" = PROSPECTORS),
 		list("names" = list(), "header" = "Civilian", "flag" = CIVILIAN),
 		list("names" = list(), "header" = "Miscellaneous", "flag" = MISC),
-		list("names" = list(), "header" = "Silicon")
+//		list("names" = list(), "header" = "Silicon")
 	)
 	var/list/misc //Special departments for easier access
-	var/list/bot
+//	var/list/bot
 	for(var/list/department in dept_data)
 		if(department["flag"] == MISC)
 			misc = department["names"]
-		if(isnull(department["flag"]))
-			bot = department["names"]
+//		if(isnull(department["flag"]))
+//			bot = department["names"]
 
 	var/list/isactive = new()
 	var/dat = {"
@@ -84,17 +84,6 @@
 		if(!found_place)
 			misc[name] = rank
 
-	// Synthetics don't have actual records, so we will pull them from here.
-	for(var/mob/living/silicon/ai/ai in SSmobs.mob_list)
-		bot[ai.name] = "Artificial Intelligence"
-
-	for(var/mob/living/silicon/robot/robot in SSmobs.mob_list)
-		// No combat/syndicate cyborgs, no drones.
-		if(robot.module && robot.module.hide_on_manifest)
-			continue
-
-		bot[robot.name] = "[robot.modtype] [robot.braintype]"
-
 	for(var/list/department in dept_data)
 		var/list/names = department["names"]
 		if(names.len > 0)
@@ -110,20 +99,6 @@
 /proc/silicon_nano_crew_manifest(var/list/filter)
 	var/list/filtered_entries = list()
 
-	for(var/mob/living/silicon/ai/ai in SSmobs.mob_list)
-		filtered_entries.Add(list(list(
-			"name" = ai.name,
-			"rank" = "Artificial Intelligence",
-			"status" = ""
-		)))
-	for(var/mob/living/silicon/robot/robot in SSmobs.mob_list)
-		if(robot.module && robot.module.hide_on_manifest)
-			continue
-		filtered_entries.Add(list(list(
-			"name" = robot.name,
-			"rank" = "[robot.modtype] [robot.braintype]",
-			"status" = ""
-		)))
 	return filtered_entries
 
 /proc/filtered_nano_crew_manifest(var/list/filter, var/blacklist = FALSE)
@@ -146,8 +121,8 @@
 		"ser" = filtered_nano_crew_manifest(service_positions),\
 		"chr" = filtered_nano_crew_manifest(church_positions),\
 		"pro" = filtered_nano_crew_manifest(prospector_positions),\
-		"bot" = silicon_nano_crew_manifest(nonhuman_positions),\
-		"civ" = filtered_nano_crew_manifest(civilian_positions)\
+//		"bot" = silicon_nano_crew_manifest(nonhuman_positions),
+		"civ" = filtered_nano_crew_manifest(civilian_positions)
 		)
 
 /proc/flat_nano_crew_manifest()

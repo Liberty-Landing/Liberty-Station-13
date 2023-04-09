@@ -35,9 +35,6 @@
 	return 0
 
 /obj/machinery/containment_field/HasProximity(atom/movable/AM as mob|obj)
-	if(issilicon(AM) && prob(40))
-		shock(AM)
-		return 1
 	if(iscarbon(AM) && prob(50))
 		shock(AM)
 		return 1

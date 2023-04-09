@@ -25,7 +25,6 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 		/obj/machinery/auto_cloner,
 		/obj/machinery/power/supermatter,
 		/obj/machinery/giga_drill,
-		/obj/mecha/working/hoverpod,
 		/obj/machinery/replicator,
 		/obj/machinery/artifact
 	)
@@ -591,12 +590,3 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 /datum/component/rnd_points/proc/attempt_transfer(obj/I, var/mob/living/user, params)
 	if(!holding_obj)
 		return
-	//Currently only used in mecha's can be exspanded to other things, not sure why you would do that tho
-	if(ismecha(holding_obj))
-		var/obj/mecha/mechtarget = holding_obj
-		if(mechtarget.state == 3 && istype(I, /obj/item/device/science_tool)) //HAVE to be at the wire stage, to you know, data jack into wires
-			var/obj/item/device/science_tool/ST = I
-			ST.raw_data_points += data_points
-			user.visible_message("[user] attaches [I]'s datajack to [mechtarget.name].", "You attach [I]'s datajack to [mechtarget.name] gathering [data_points] data points")
-			data_points = 0
-			return

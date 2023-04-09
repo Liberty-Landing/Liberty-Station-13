@@ -187,9 +187,7 @@
 	var/list/preserve_items = list(
 		/obj/item/hand_tele,
 		/obj/item/card/id/captains_spare,
-		/obj/item/device/aicard,
 		/obj/item/device/mmi,
-		/obj/item/device/paicard,
 		/obj/item/gun,
 		/obj/item/pinpointer,
 		/obj/item/clothing/suit,
@@ -198,21 +196,6 @@
 		/obj/item/clothing/head/helmet/space,
 		/obj/item/storage/internal
 	)
-
-/obj/machinery/cryopod/robot
-	name = "robotic storage unit"
-	desc = "A storage unit for robots."
-	icon = 'icons/obj/robot_storage.dmi'
-	icon_state = "pod_0"
-	base_icon_state = "pod_0"
-	occupied_icon_state = "pod_1"
-	on_store_message = "has entered robotic storage."
-	on_store_name = "Robotic Storage Oversight"
-	on_enter_occupant_message = "The storage unit broadcasts a sleep signal to you. Your systems start to shut down, and you enter low-power mode."
-	allow_occupant_types = list(/mob/living/silicon/robot)
-	disallow_occupant_types = list(/mob/living/carbon/human)
-	applies_stasis = 0
-	time_till_despawn = 600 //1 minute. We want to be much faster then normal cryo
 
 /obj/machinery/cryopod/elevator
 	name = "Elevator to the Lower Colony"
@@ -306,21 +289,6 @@
 					return
 
 			despawn_occupant()
-
-// This function can not be undone; do not call this unless you are sure
-// Also make sure there is a valid control computer
-/obj/machinery/cryopod/robot/despawn_occupant()
-	var/mob/living/silicon/robot/R = occupant
-	if(!istype(R)) return ..()
-
-	qdel(R.mmi)
-	for(var/obj/item/I in R.module) // the tools the borg has; metal, glass, guns etc
-		for(var/obj/item/O in I) // the things inside the tools, if anything; mainly for janiborg trash bags
-			O.forceMove(R)
-		qdel(I)
-	qdel(R.module)
-
-	return ..()
 
 // This function can not be undone; do not call this unless you are sure
 // Also make sure there is a valid control computer

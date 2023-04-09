@@ -180,11 +180,6 @@
 					if(!M.anchored && (M.flags & CONDUCT))
 						step_towards(M, center)
 
-				for(var/mob/living/silicon/S in orange(magnetic_field, center))
-					if(isAI(S))
-						continue
-					step_towards(S, center)
-
 			use_power(electricity_level * 5)
 			sleep(13 - electricity_level)
 
@@ -241,10 +236,6 @@
 			for(var/obj/machinery/magnetic_module/M in world)
 				if(M.freq == frequency && M.code == code)
 					magnets.Add(M)
-
-
-	attack_ai(mob/user as mob)
-		return src.attack_hand(user)
 
 	attack_hand(mob/user as mob)
 		if(stat & (BROKEN|NOPOWER))

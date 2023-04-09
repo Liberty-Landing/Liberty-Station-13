@@ -258,15 +258,6 @@
 			do_pickup_animation(target,old_loc)
 	add_hud_actions(target)
 
-/obj/item/attack_ai(mob/user as mob)
-	if(istype(loc, /obj/item/robot_module))
-		//If the item is part of a cyborg module, equip it
-		if(!isrobot(user))
-			return
-		var/mob/living/silicon/robot/R = user
-		R.activate_module(src)
-		//R.hud_used.update_robot_modules_display()
-
 /obj/item/proc/talk_into(mob/living/M, message, channel, verb = "says", datum/language/speaking = null, speech_volume)
 	return
 

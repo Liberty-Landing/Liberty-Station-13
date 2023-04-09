@@ -1,6 +1,5 @@
 /datum/nano_module/env_editor
 	name = "Environment Editor"
-	available_to_ai = 0
 	var/datum/sound_player/player
 
 

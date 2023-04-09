@@ -19,9 +19,6 @@
 	)
 	var/static/datum/announcement/priority/kcad_announcement = new(do_log = 1, new_sound = sound('sound/misc/notice1.ogg'), do_newscast = 1)
 
-/obj/machinery/keycard_auth/attack_ai(mob/user as mob)
-	return
-
 /obj/machinery/keycard_auth/inoperable(var/additional_flags = 0)
 	return (stat & (BROKEN|additional_flags))
 

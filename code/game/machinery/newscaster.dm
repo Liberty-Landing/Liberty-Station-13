@@ -301,10 +301,10 @@ var/datum/feed_network/news_network = new /datum/feed_network     //The global n
 	if(!user.IsAdvancedToolUser())
 		return 0
 
-	if(ishuman(user) || issilicon(user))
-		var/mob/living/human_or_robot_user = user
+	if(ishuman(user))
+		var/mob/living/human_user = user
 		var/dat
-		scan_user(human_or_robot_user) //Newscaster scans you
+		scan_user(human_user) //Newscaster scans you
 
 		switch(screen)
 			if(0)
@@ -317,7 +317,7 @@ var/datum/feed_network/news_network = new /datum/feed_network     //The global n
 				dat+= "<BR><A href='?src=[REF(src)];create_feed_story=1'>Submit new Feed story</A>"
 				dat+= "<BR><A href='?src=[REF(src)];menu_paper=1'>Print newspaper</A>"
 				dat+= "<BR><A href='?src=[REF(src)];refresh=1'>Re-scan User</A>"
-				dat+= "<BR><BR><A href='?src=\ref[human_or_robot_user];mach_close=newscaster_main'>Exit</A>"
+				dat+= "<BR><BR><A href='?src=\ref[human_user];mach_close=newscaster_main'>Exit</A>"
 				if(src.securityCaster)
 					var/wanted_already = FALSE
 					if(news_network.wanted_issue)
@@ -532,14 +532,14 @@ var/datum/feed_network/news_network = new /datum/feed_network     //The global n
 				dat+="<FONT COLOR='maroon'>Unable to print newspaper. Insufficient paper. Please notify maintenance personnel to refill machine storage.</FONT><BR><BR>"
 				dat+="<A href='?src=[REF(src)];setScreen=[0]'>Return</A>"
 
-		var/datum/browser/popup = new(human_or_robot_user, "newscaster_main", "Newscaster Unit #[unit_no]", 400, 600)
+		var/datum/browser/popup = new(human_user, "newscaster_main", "Newscaster Unit #[unit_no]", 400, 600)
 		popup.set_content(dat)
 		popup.open()
 
 /obj/machinery/newscaster/Topic(href, href_list)
 	if(..())
 		return
-	if ((usr.contents.Find(src) || ((get_dist(src, usr) <= 1) && istype(src.loc, /turf))) || (issilicon(usr)))
+	if ((usr.contents.Find(src) || ((get_dist(src, usr) <= 1) && istype(src.loc, /turf))))
 		usr.set_machine(src)
 		scan_user(usr)
 
@@ -826,8 +826,7 @@ var/datum/feed_network/news_network = new /datum/feed_network     //The global n
 	if(photo_data)
 		if(!photo_data.is_synth)
 			photo_data.photo.forceMove(get_turf(src))
-			if(!issilicon(user))
-				user.put_in_inactive_hand(photo_data.photo)
+			user.put_in_inactive_hand(photo_data.photo)
 		qdel(photo_data)
 
 	if(istype(user.get_active_hand(), /obj/item/photo))
@@ -835,13 +834,6 @@ var/datum/feed_network/news_network = new /datum/feed_network     //The global n
 		user.drop_item()
 		photo.loc = src
 		photo_data = new(photo, 0)
-	else if(issilicon(user))
-		var/mob/living/silicon/tempAI = user
-		var/obj/item/photo/selection = tempAI.GetPicture()
-		if (!selection)
-			return
-
-		photo_data = new(selection, 1)
 
 
 //########################################################################################################################

@@ -21,10 +21,6 @@ var/const/VENDING_WIRE_IDSCAN = 8
 
 /datum/wires/vending/CanUse(var/mob/living/L)
 	var/obj/machinery/vending/V = holder
-	if(!issilicon(L))
-		if(V.seconds_electrified)
-			if(V.shock(L, 100))
-				return 0
 	if(V.panel_open)
 		return 1
 	return 0

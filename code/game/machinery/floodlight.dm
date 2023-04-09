@@ -69,17 +69,6 @@
 	if(loud)
 		visible_message("\The [src] shuts down.")
 
-/obj/machinery/floodlight/attack_ai(mob/user as mob)
-	if(isrobot(user) && Adjacent(user))
-		return attack_hand(user)
-
-	if(on)
-		turn_off(1)
-	else
-		if(!turn_on(1))
-			to_chat(user, "You try to turn on \the [src] but it does not work.")
-
-
 /obj/machinery/floodlight/attack_hand(mob/user)
 	if(open && cell)
 		cell.forceMove(get_turf(src))

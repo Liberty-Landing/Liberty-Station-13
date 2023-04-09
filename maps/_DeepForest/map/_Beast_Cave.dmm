@@ -1328,15 +1328,11 @@
 /area/liberty/outside/forest/beast_cave_light)
 "fL" = (
 /obj/structure/flora/small/grassa1,
-/obj/random/mecha/low_chance,
 /obj/item/trash/cigbutt,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/beast_cave_light)
 "fM" = (
 /obj/structure/flora/small/grassa4,
-/obj/random/mecha_equipment/low_chance,
-/obj/random/mecha_equipment/low_chance,
-/obj/random/mecha_equipment/low_chance,
 /obj/item/trash/cigbutt,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/beast_cave_light)
@@ -5453,8 +5449,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/corner_techfloor_grid,
 /obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/outside/forest/swamp_hut)
@@ -5493,9 +5488,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/outside/forest/swamp_hut)
@@ -5549,8 +5542,7 @@
 /area/liberty/outside/forest/swamp_hut)
 "uZ" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /obj/item/tool/knife/ritual,
 /turf/simulated/floor/wood/wild5,
@@ -5570,12 +5562,6 @@
 /obj/effect/overlay/water,
 /mob/living/simple_animal/crab,
 /turf/simulated/floor/beach/water/swamp,
-/area/liberty/outside/forest/beast_cave_dark)
-"vd" = (
-/obj/effect/spider/stickyweb,
-/obj/effect/decal/cleanable/rubble,
-/obj/random/mecha,
-/turf/simulated/floor/beach/sand,
 /area/liberty/outside/forest/beast_cave_dark)
 "ve" = (
 /obj/effect/overlay/water/top,
@@ -6460,10 +6446,6 @@
 /obj/random/scrap/sparse_even/low_chance,
 /turf/simulated/floor/beach/water/jungle,
 /area/liberty/outside/forest/beast_cave_light)
-"Fe" = (
-/obj/random/mecha/damaged,
-/turf/simulated/floor/rock,
-/area/liberty/outside/forest/beast_cave_dark)
 "Fh" = (
 /obj/structure/flora/rock/variant2,
 /turf/simulated/floor/rock/dark,
@@ -6974,10 +6956,6 @@
 /obj/effect/overlay/water/top,
 /turf/simulated/floor/beach/water/swamp,
 /area/liberty/outside/forest/beast_cave_light)
-"KR" = (
-/obj/random/mecha,
-/turf/simulated/floor/rock/grey,
-/area/liberty/outside/forest/beast_cave_dark)
 "KS" = (
 /obj/structure/flora/small/bushb2,
 /obj/structure/flora/ausbushes/grassybush,
@@ -7558,10 +7536,6 @@
 /obj/item/remains/lizard,
 /turf/simulated/floor/asteroid/grass/jungle,
 /area/liberty/outside/forest/beast_cave_light)
-"QP" = (
-/obj/effect/decal/mecha_wreckage/ripley/deathripley,
-/turf/simulated/floor/rock,
-/area/liberty/outside/forest/beast_cave_dark)
 "QZ" = (
 /obj/effect/overlay/water,
 /obj/random/flora/jungle_tree,
@@ -11186,7 +11160,7 @@ rU
 Nt
 Ec
 Iv
-Fe
+rU
 rK
 rK
 rK
@@ -35557,7 +35531,7 @@ rU
 rU
 rK
 rK
-KR
+Nt
 Tc
 Nt
 xz
@@ -36325,7 +36299,7 @@ oF
 pk
 nd
 nf
-vd
+nf
 rK
 rK
 rH
@@ -37171,7 +37145,7 @@ Hr
 La
 Mz
 Lh
-QP
+rU
 Ac
 rU
 rK

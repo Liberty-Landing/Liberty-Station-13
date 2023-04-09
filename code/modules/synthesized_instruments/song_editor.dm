@@ -1,6 +1,5 @@
 /datum/nano_module/song_editor
 	name = "Song Editor"
-	available_to_ai = 0
 	var/datum/synthesized_song/song
 	var/show_help = 0
 	var/page = 1

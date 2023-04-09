@@ -26,7 +26,6 @@
 
 /datum/nano_module/program/comm
 	name = "Command and Communications Program"
-	available_to_ai = TRUE
 	var/current_status = STATE_DEFAULT
 	var/msg_line1 = ""
 	var/msg_line2 = ""
@@ -61,7 +60,6 @@
 	data["message_line1"] = msg_line1
 	data["message_line2"] = msg_line2
 	data["state"] = current_status
-	data["isAI"] = issilicon(usr)
 	data["authenticated"] = is_autenthicated(user)
 	//data["boss_short"] = GLOB.maps_data.boss_short
 
@@ -127,7 +125,7 @@
 			current_status = text2num(href_list["target"])
 		if("announce")
 			. = 1
-			if(is_autenthicated(user) && !issilicon(usr) && ntn_comm)
+			if(is_autenthicated(user) && ntn_comm)
 				if(user)
 					var/obj/item/card/id/id_card = user.GetIdCard()
 					crew_announcement.announcer = GetNameAndAssignmentFromId(id_card)
@@ -194,8 +192,6 @@
 				var/datum/evacuation_option/selected_evac_option = evacuation_controller.evacuation_options[href_list["target"]]
 				if (isnull(selected_evac_option) || !istype(selected_evac_option))
 					return
-				if (!selected_evac_option.silicon_allowed && issilicon(user))
-					return
 				if (selected_evac_option.needs_syscontrol && !ntn_cont)
 					return
 				var/confirm = alert("Are you sure you want to [selected_evac_option.option_desc]?", name, "No", "Yes")
@@ -221,7 +217,7 @@
 						post_status(href_list["target"])
 		if("setalert")
 			. = 1
-			if(is_autenthicated(user) && !issilicon(usr) && ntn_cont && ntn_comm)
+			if(is_autenthicated(user) && ntn_cont && ntn_comm)
 				var/decl/security_state/security_state = decls_repository.get_decl(GLOB.maps_data.security_state)
 				var/decl/security_level/target_level = locate(href_list["target"]) in security_state.comm_console_security_levels
 				if(target_level && security_state.can_switch_to(target_level))

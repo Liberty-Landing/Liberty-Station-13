@@ -3,7 +3,6 @@
 	wire_count = 5
 	descriptions = list(
 			new /datum/wire_description(RIG_SECURITY, "Security"),
-			new /datum/wire_description(RIG_AI_OVERRIDE, "AI override"),
 			new /datum/wire_description(RIG_SYSTEM_CONTROL, "System control"),
 			new /datum/wire_description(RIG_INTERFACE_LOCK, "Interface lock"),
 			new /datum/wire_description(RIG_INTERFACE_SHOCK, "Interface shock"))
@@ -40,9 +39,6 @@
 		if(RIG_SECURITY)
 			rig.security_check_enabled = !rig.security_check_enabled
 			rig.visible_message("\The [rig] twitches as several suit locks [rig.security_check_enabled?"close":"open"].")
-		if(RIG_AI_OVERRIDE)
-			rig.ai_override_enabled = !rig.ai_override_enabled
-			rig.visible_message("A small red light on [rig] [rig.ai_override_enabled?"goes dead":"flickers on"].")
 		if(RIG_SYSTEM_CONTROL)
 			rig.malfunctioning += 10
 			if(rig.malfunction_delay <= 0)
@@ -61,7 +57,6 @@
 	return rig.open
 
 #undef RIG_SECURITY
-#undef RIG_AI_OVERRIDE
 #undef RIG_SYSTEM_CONTROL
 #undef RIG_INTERFACE_LOCK
 #undef RIG_INTERFACE_SHOCK

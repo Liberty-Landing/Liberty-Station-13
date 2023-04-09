@@ -628,9 +628,5 @@ alignElements(var/horizontal, var/vertical, var/list/HUD_element/targets) -> /HU
 
 	updateIcon()
 
-// mob clicks overrides
-/HUD_element/move_camera_by_click()
-	return
-
 /HUD_element/attack_ghost(mob/observer/ghost/user as mob)
 	return

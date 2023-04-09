@@ -71,20 +71,6 @@ var/list/mydirs = list(NORTH, SOUTH, EAST, WEST, SOUTHWEST, NORTHWEST, NORTHEAST
 					T = L
 					break
 
-		else if(istype(A, /obj/mecha) && !friendly_to_colony) // Our line of sight stuff was already done in ListTargets().
-			var/obj/mecha/M = A
-			if (M.occupant)
-				stance = HOSTILE_STANCE_ATTACK
-				T = M
-				break
-
-		if(istype(A, /obj/machinery/bot) && !friendly_to_colony)
-			var/obj/machinery/bot/B = A
-			if (B.health > 0)
-				stance = HOSTILE_STANCE_ATTACK
-				T = B
-				break
-
 		if(istype(A, /obj/machinery/porta_turret) && !friendly_to_colony)
 			var/obj/machinery/porta_turret/P = A
 			if (P.health > 0)
@@ -182,11 +168,6 @@ var/list/mydirs = list(NORTH, SOUTH, EAST, WEST, SOUTHWEST, NORTHWEST, NORTHEAST
 		L.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 		playsound(src.loc, attack_sound, 50, 1)
 		return L
-	if(istype(targetted_mob,/obj/mecha))
-		var/obj/mecha/M = targetted_mob
-		M.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
-		playsound(src.loc, attack_sound, 50, 1)
-		return M
 	if(istype(targetted_mob,/obj/machinery/bot))
 		var/obj/machinery/bot/B = targetted_mob
 		B.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
@@ -216,10 +197,6 @@ var/list/mydirs = list(NORTH, SOUTH, EAST, WEST, SOUTHWEST, NORTHWEST, NORTHEAST
 
 /mob/living/simple_animal/hostile/proc/ListTargets(var/dist = 7)
 	var/list/L = hearers(src, dist)
-
-	for (var/obj/mecha/M in GLOB.mechas_list)
-		if (M.z == src.z && get_dist(src, M) <= dist)
-			L += M
 
 	return L
 
@@ -364,11 +341,6 @@ var/list/mydirs = list(NORTH, SOUTH, EAST, WEST, SOUTHWEST, NORTHWEST, NORTHEAST
 
 			for(var/obj/structure/railing/obstacle in get_step(src, dir))//Bulkwork defence... Easy to brake
 				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
-					return
-
-			for(var/obj/mecha/obstacle in get_step(src, dir))//Hmm, notable but not everlasting.
-				if(obstacle.density == TRUE) //will always likely be dence but in cases were its somehow not
 					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 					return
 

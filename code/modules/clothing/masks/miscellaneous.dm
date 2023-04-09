@@ -79,38 +79,6 @@
 	flags_inv = HIDEFACE
 	body_parts_covered = 0
 
-/obj/item/clothing/mask/ai
-	name = "camera MIU"
-	desc = "Allows for direct mental connection to accessible camera networks."
-	icon_state = "s-ninja"
-	item_state = "s-ninja"
-	flags_inv = HIDEFACE
-	body_parts_covered = 0
-	var/mob/observer/eye/aiEye/eye
-
-/obj/item/clothing/mask/ai/Initialize(mapload, ...)
-	. = ..()
-	eye = new(src)
-
-/obj/item/clothing/mask/ai/equipped(var/mob/user, var/slot)
-	..(user, slot)
-	if(slot == slot_wear_mask)
-		eye.owner = user
-		user.eyeobj = eye
-
-		for(var/datum/chunk/c in eye.visibleChunks)
-			c.remove(eye)
-		eye.setLoc(user)
-
-/obj/item/clothing/mask/ai/dropped(var/mob/user)
-	..()
-	if(eye.owner == user)
-		for(var/datum/chunk/c in eye.visibleChunks)
-			c.remove(eye)
-
-		eye.owner.eyeobj = null
-		eye.owner = null
-
 // Bandanas below
 /obj/item/clothing/mask/bandana
 	name = "black bandana"

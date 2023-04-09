@@ -16,18 +16,6 @@
 		return 1
 	if (!istype(M) || !istype(user))
 		return 0
-	if (isrobot(M))	//Repairing cyborgs
-		var/mob/living/silicon/robot/R = M
-		if (R.getBruteLoss() || R.getFireLoss() )
-			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
-			R.adjustBruteLoss(-15)
-			R.adjustFireLoss(-15)
-			R.updatehealth()
-			use(1)
-			user.visible_message(SPAN_NOTICE("\The [user] applied some [src] at [R]'s damaged areas."),\
-				SPAN_NOTICE("You apply some [src] at [R]'s damaged areas."))
-		else
-			to_chat(user, SPAN_NOTICE("All [R]'s systems are nominal."))
 
 	if (ishuman(M))		//Repairing robolimbs
 		var/mob/living/carbon/human/H = M

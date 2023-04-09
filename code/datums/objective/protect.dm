@@ -16,7 +16,7 @@
 	if(!target)
 		return TRUE
 	if(target.current)
-		if(target.current.stat == DEAD || issilicon(target.current) || isbrain(target.current))
+		if(target.current.stat == DEAD || isbrain(target.current))
 			return FALSE
 		return TRUE
 	return FALSE

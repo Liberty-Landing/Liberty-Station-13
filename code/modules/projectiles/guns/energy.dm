@@ -109,9 +109,6 @@
 	return new projectile_type(src)
 
 /obj/item/gun/energy/proc/get_external_cell()
-	if(isrobot(src.loc))
-		var/mob/living/silicon/robot/R = src.loc
-		return R.cell
 	if(istype(src.loc, /obj/item/rig_module))
 		var/obj/item/rig_module/module = src.loc
 		if(module.holder && module.holder.wearer)

@@ -97,11 +97,11 @@
 			desc = "[desc]" // Placeholder
 			psi_text = "You hear a very faint voice in the back of your mind : \
 						[SPAN_PSION(" How shocking.")]"
-		if(KINETIC_BARRIER)
-			name = "Kinetic Barrier"
-			desc = "[desc]" // Placeholder
-			psi_text = "You hear a very faint voice in the back of your mind : \
-						[SPAN_PSION(" Protection of body and mind.")]"
+//		if(KINETIC_BARRIER)
+//			name = "Kinetic Barrier"
+//			desc = "[desc]" // Placeholder
+//			psi_text = "You hear a very faint voice in the back of your mind :
+//						[SPAN_PSION(" Protection of body and mind.")]"
 		if(CHOSEN_CONTROL)
 			name = "Chosen Control"
 			desc = "[desc]" // Placeholder

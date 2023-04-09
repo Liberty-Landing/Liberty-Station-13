@@ -62,12 +62,6 @@
 			return
 		found = TRUE
 		processor_unit = H
-	else if(istype(H, /obj/item/computer_hardware/ai_slot))
-		if(ai_slot)
-			to_chat(user, SPAN_WARNING("This computer's intellicard slot is already occupied by \the [ai_slot]."))
-			return
-		found = TRUE
-		ai_slot = H
 	else if(istype(H, /obj/item/computer_hardware/tesla_link))
 		if(tesla_link)
 			to_chat(user, SPAN_WARNING("This computer's tesla link slot is already occupied by \the [tesla_link]."))
@@ -131,8 +125,6 @@
 		cell = null
 	else if(processor_unit == H)
 		processor_unit = null
-	else if(ai_slot == H)
-		ai_slot = null
 	else if(tesla_link == H)
 		tesla_link = null
 	else if(gps_sensor == H)
@@ -159,7 +151,7 @@
 		hard_drive, processor_unit,
 		network_card, portable_drive,
 		printer, card_slot, cell,
-		ai_slot, tesla_link, scanner,
+		tesla_link, scanner,
 		gps_sensor, led
 		)
 

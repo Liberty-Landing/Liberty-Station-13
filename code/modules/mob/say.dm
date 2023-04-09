@@ -109,8 +109,6 @@
 			return TRUE
 		if(other.universal_speak)
 			return TRUE
-		if(isAI(src) && ispAI(other))
-			return TRUE
 		if(istype(other, src.type) || istype(src, other.type))
 			return TRUE
 		return FALSE

@@ -134,14 +134,7 @@
 
 /obj/item/reagent_containers/glass/bucket/attackby(var/obj/D, mob/user as mob)
 
-	if(is_proximity_sensor(D))
-		to_chat(user, "You add [D] to [src].")
-		qdel(D)
-		user.put_in_hands(new /obj/item/bucket_sensor)
-		user.drop_from_inventory(src)
-		qdel(src)
-		return
-	else if(istype(D, /obj/item/mop))
+	if(istype(D, /obj/item/mop))
 		return
 	else
 		return ..()

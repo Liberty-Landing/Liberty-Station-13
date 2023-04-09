@@ -155,8 +155,6 @@
 	return ..()
 
 /obj/item/tool/baton/apply_hit_effect(mob/living/target, mob/living/user, var/hit_zone)
-	if(isrobot(target))
-		return ..()
 
 	var/agony = agonyforce
 	var/stun = stunforce
@@ -205,17 +203,6 @@
 	if(cell)
 		cell.emp_act(severity)	//let's not duplicate code everywhere if we don't have to please.
 	..()
-
-//secborg stun baton module
-/obj/item/tool/baton/robot/attack_self(mob/user)
-	//try to find our power cell
-	var/mob/living/silicon/robot/R = loc
-	if (istype(R))
-		cell = R.cell
-	return ..()
-
-/obj/item/tool/baton/robot/attackby(obj/item/W, mob/user)
-	return
 
 //Makeshift stun baton. Replacement for stun gloves.
 /obj/item/tool/baton/cattleprod

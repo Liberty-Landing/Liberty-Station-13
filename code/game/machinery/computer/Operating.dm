@@ -27,10 +27,9 @@
 
 /obj/machinery/computer/operating/interact(mob/user)
 	if ( (get_dist(src, user) > 1 ) || (stat & (BROKEN|NOPOWER)) )
-		if (!issilicon(user))
-			user.unset_machine()
-			user << browse(null, "window=op")
-			return
+		user.unset_machine()
+		user << browse(null, "window=op")
+		return
 
 	user.set_machine(src)
 	var/dat = "<HEAD><TITLE>Operating Computer</TITLE><META HTTP-EQUIV='Refresh' CONTENT='10'></HEAD><BODY>\n"
@@ -76,7 +75,7 @@
 /obj/machinery/computer/operating/Topic(href, href_list)
 	if(..())
 		return 1
-	if ((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))) || (issilicon(usr)))
+	if ((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))))
 		usr.set_machine(src)
 	return
 

@@ -128,8 +128,6 @@
 
 //should be used to "eject" whatever item was placed inside.
 /obj/machinery/slime_dye_vat/attack_hand(mob/user as mob)
-	if(issilicon(user))
-		return
 
 	add_fingerprint(user)
 	if(C)

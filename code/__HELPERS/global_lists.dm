@@ -115,7 +115,7 @@ GLOBAL_LIST_EMPTY(body_marking_list)
 
 GLOBAL_DATUM_INIT(underwear, /datum/category_collection/underwear, new())
 
-var/global/list/exclude_jobs = list(/datum/job/ai,/datum/job/cyborg)
+var/global/list/exclude_jobs = list()
 
 var/global/list/organ_structure = list(
 	BP_CHEST = list(name= "Chest", children=list(BP_GROIN, BP_HEAD, BP_L_ARM, BP_R_ARM, OP_HEART, OP_LUNGS, OP_STOMACH)),

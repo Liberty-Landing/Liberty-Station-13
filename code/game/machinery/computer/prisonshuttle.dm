@@ -23,9 +23,6 @@ var/prison_shuttle_timeleft = 0
 	var/allowedtocall = 0
 	var/prison_break = 0
 
-	attack_ai(var/mob/user as mob)
-		return src.attack_hand(user)
-
 	attackby(I as obj, user as mob)
 		if(istype(I, /obj/item/tool/screwdriver))
 			playsound(src.loc, 'sound/items/Screwdriver.ogg', 50, 1)
@@ -81,7 +78,7 @@ var/prison_shuttle_timeleft = 0
 		if(..())
 			return
 
-		if ((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))) || (issilicon(usr)))
+		if ((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))))
 			usr.set_machine(src)
 
 		if (href_list["sendtodock"])

@@ -1828,8 +1828,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/hunter_cabin)
@@ -2052,8 +2051,7 @@
 "wK" = (
 /mob/living/simple_animal/hostile/bear/brown,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/hunter_cabin)
@@ -3975,8 +3973,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "PK" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/wood/wild4,
 /area/liberty/outside/forest/river_forest_cabin)
@@ -4810,11 +4807,6 @@
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_underground)
-"Ym" = (
-/obj/structure/table/gamblingtable,
-/obj/item/device/paicard,
-/turf/simulated/floor/tiled/derelict/red_white_edges,
-/area/liberty/outside/one_star/fo_internal)
 "Yp" = (
 /obj/structure/flora/rock/variant1,
 /obj/random/scrap/dense_weighted,
@@ -29000,7 +28992,7 @@ pN
 Ak
 fz
 VF
-Ym
+GH
 RB
 GH
 OR

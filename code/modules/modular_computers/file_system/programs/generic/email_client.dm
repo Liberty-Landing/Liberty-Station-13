@@ -226,10 +226,7 @@
 	else if(istype(current_account))
 		data["current_account"] = current_account.login
 
-		if(issilicon(host))
-			var/mob/living/silicon/S = host
-			data["ringtone"] = S.email_ringtone
-		else if (istype(host,/obj/item/modular_computer))
+		if (istype(host,/obj/item/modular_computer))
 			var/obj/item/modular_computer/computer = nano_host()
 			var/datum/computer_file/program/email_client/PRG = computer.active_program
 			if (istype(PRG))
@@ -372,10 +369,7 @@
 		return 1
 
 	if(href_list["ringtone_toggle"])
-		if(issilicon(host))
-			var/mob/living/silicon/S = host
-			S.email_ringtone = !S.email_ringtone
-		else if (istype(host,/obj/item/modular_computer))
+		if (istype(host,/obj/item/modular_computer))
 			var/obj/item/modular_computer/computer = nano_host()
 			var/datum/computer_file/program/email_client/PRG = computer.active_program
 			if (istype(PRG))

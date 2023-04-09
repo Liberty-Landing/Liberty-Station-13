@@ -837,19 +837,6 @@
 	else
 		to_chat(usr, "Admin Rejuvinates have been disabled")
 
-
-/datum/admin_topic/makeai
-	keyword = "makeai"
-	require_perms = list(R_FUN)
-
-/datum/admin_topic/makeai/Run(list/input)
-	var/mob/living/L = locate(input["makeai"])
-	if(!istype(L))
-		to_chat(usr, "This can only be used on instances of type /mob/living")
-		return
-
-	L.AIize()
-
 /datum/admin_topic/makeslime
 	keyword = "makeslime"
 	require_perms = list(R_FUN)
@@ -861,32 +848,6 @@
 		return
 
 	usr.client.cmd_admin_slimeize(L)
-
-
-/datum/admin_topic/makerobot
-	keyword = "makerobot"
-	require_perms = list(R_FUN)
-
-/datum/admin_topic/makerobot/Run(list/input)
-	var/mob/living/H = locate(input["makerobot"])
-	if(!istype(H))
-		to_chat(usr, "This can only be used on instances of type /mob/living")
-		return
-
-	usr.client.cmd_admin_robotize(H)
-
-
-/datum/admin_topic/makeanimal
-	keyword = "makeanimal"
-	require_perms = list(R_FUN)
-
-/datum/admin_topic/makeanimal/Run(list/input)
-	var/mob/living/carbon/human/H = locate(input["makerobot"])
-	if(!istype(H))
-		to_chat(usr, "This can only be used on instances of type /mob/living/carbon/human")
-		return
-
-	usr.client.cmd_admin_robotize(H)
 
 
 /datum/admin_topic/togmutate
@@ -938,14 +899,6 @@
 	if(!isghost(usr))
 		C.admin_ghost()
 	C.jumptocoord(x,y,z)
-
-
-/datum/admin_topic/adminchecklaws
-	keyword = "adminchecklaws"
-
-/datum/admin_topic/adminchecklaws/Run(list/input)
-	source.output_ai_laws()
-
 
 /datum/admin_topic/adminmoreinfo
 	keyword = "adminmoreinfo"
@@ -1318,9 +1271,6 @@
 
 	switch(where)
 		if("inhand")
-			if (!iscarbon(usr) && !isrobot(usr))
-				to_chat(usr, "Can only spawn in hand when you're a carbon mob or cyborg.")
-				where = "onfloor"
 			target = usr
 
 		if("onfloor")
@@ -1360,13 +1310,6 @@
 							var/mob/living/L = usr
 							var/obj/item/I = O
 							L.put_in_hands(I)
-							if(isrobot(L))
-								var/mob/living/silicon/robot/R = L
-								if(R.module)
-									R.module.modules += I
-									I.loc = R.module
-									R.module.rebuild()
-									R.activate_module(I)
 
 	log_and_message_admins("created [number] [english_list(paths)]")
 

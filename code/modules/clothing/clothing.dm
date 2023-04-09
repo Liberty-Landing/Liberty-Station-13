@@ -409,33 +409,9 @@ BLIND     // can't see anything
 	update_icon(user)
 	user.update_action_buttons()
 
-/obj/item/clothing/head/attack_ai(var/mob/user)
-	if(!mob_wear_hat(user))
-		return ..()
-
 /obj/item/clothing/head/attack_generic(var/mob/user)
-	if(!istype(user) || !mob_wear_hat(user))
+	if(!istype(user))
 		return ..()
-
-/obj/item/clothing/head/proc/mob_wear_hat(var/mob/user)
-	if(!Adjacent(user))
-		return 0
-	var/success
-	if(isdrone(user))
-		var/mob/living/silicon/robot/drone/D = user
-		if(D.hat)
-			success = 2
-		else
-			D.wear_hat(src)
-			success = 1
-
-	if(!success)
-		return 0
-	else if(success == 2)
-		to_chat(user, SPAN_WARNING("You are already wearing a hat."))
-	else if(success == 1)
-		to_chat(user, SPAN_NOTICE("You crawl under \the [src]."))
-	return 1
 
 /obj/item/clothing/head/update_icon(var/mob/user)
 

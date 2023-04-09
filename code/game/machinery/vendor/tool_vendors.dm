@@ -295,51 +295,9 @@
 					//Drone Fabrication Kits
 					/obj/item/storage/box/roomba_kit = 3,
 					/obj/item/storage/box/sword_drone_kit = 1,
-					/obj/item/storage/box/mantis_drone_kit = 1,
-					//Ripley
-					/obj/item/device/kit/paint/ripley = 3,
-					/obj/item/device/kit/paint/ripley/death = 3,
-					/obj/item/device/kit/paint/ripley/flames_red = 3,
-					/obj/item/device/kit/paint/ripley/flames_blue = 3,
-					/obj/item/device/kit/paint/ripley/syndieripley = 3,
-					/obj/item/device/kit/paint/ripley/titan = 3,
-					/obj/item/device/kit/paint/ripley/glass = 3,
-					/obj/item/device/kit/paint/ripley/ripley_zairjah = 3,
-					/obj/item/device/kit/paint/ripley/combatripley = 3,
-					/obj/item/device/kit/paint/ripley/flathead = 3,
-					/obj/item/device/kit/paint/ripley/orange_box = 3,
-					/obj/item/device/kit/paint/ripley/clark = 3,
-					/obj/item/device/kit/paint/ripley/clark_orange = 3,
-					/obj/item/device/kit/paint/ripley/clark_veteran = 3,
-					//Ivan
-					/obj/item/device/kit/paint/rust_ivan = 3,
-					//Ody
-					/obj/item/device/kit/paint/odysseus = 3,
-					/obj/item/device/kit/paint/odysseus/blue_racer = 3,
-					/obj/item/device/kit/paint/odysseus/yellow_racer = 3,
-					/obj/item/device/kit/paint/odysseus/murderody = 3,
-					/obj/item/device/kit/paint/odysseus/hermes = 3,
-					//Durand
-					/obj/item/device/kit/paint/durand = 3,
-					/obj/item/device/kit/paint/durand/seraph = 3,
-					/obj/item/device/kit/paint/durand/gator = 3,
-					/obj/item/device/kit/paint/durand/dollhouse = 3,
-					//Gygax
-					/obj/item/device/kit/paint/gygax/darkgygax = 3,
-					/obj/item/device/kit/paint/gygax/darkgygax_old = 3,
-					/obj/item/device/kit/paint/gygax/recitence = 3,
-					/obj/item/device/kit/paint/gygax/classic = 3,
-					/obj/item/device/kit/paint/gygax/pobeda = 3,
-					//Phazon
-					/obj/item/device/kit/paint/phazon = 3,
-					/obj/item/device/kit/paint/phazon/plazmus = 3,
-					/obj/item/device/kit/paint/phazon/imperion = 3,
-					/obj/item/device/kit/paint/phazon/janus = 3)
-	contraband = list(/obj/item/device/kit/paint/durand/phazon = 1,
-					/obj/item/device/kit/paint/odysseus/mime = 1,
-					/obj/item/device/kit/paint/gygax = 1,
-					/obj/item/device/kit/paint/ripley/clark_spider = 1)
-	prices = list(	/obj/item/storage/box/roomba_kit = 250,
+					/obj/item/storage/box/mantis_drone_kit = 1)
+	contraband = list()
+	prices = list(/obj/item/storage/box/roomba_kit = 250,
 					/obj/item/storage/box/sword_drone_kit = 750,
 					/obj/item/storage/box/mantis_drone_kit = 750)
 

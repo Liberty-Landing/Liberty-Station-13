@@ -299,16 +299,6 @@
 			damage += proj_damage * config_bullet_energy
 	return FALSE
 
-/obj/machinery/power/supermatter/attack_robot(mob/user as mob)
-	if(Adjacent(user))
-		return attack_hand(user)
-	else
-		nano_ui_interact(user)
-	return
-
-/obj/machinery/power/supermatter/attack_ai(mob/user as mob)
-	nano_ui_interact(user)
-
 /obj/machinery/power/supermatter/attack_hand(mob/user as mob)
 	user.visible_message("<span class=\"warning\">\The [user] reaches out and touches \the [src], inducing a resonance... \his body starts to glow and bursts into flames before flashing into ash.</span>",\
 		"<span class=\"danger\">You reach out and touch \the [src]. Everything starts burning and all you can hear is ringing. Your last thought is \"That was not a wise decision.\"</span>",\

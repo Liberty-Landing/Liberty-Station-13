@@ -223,9 +223,6 @@
 				if(L in Friends) // No eating friends!
 					continue
 
-				if(issilicon(L) && (rabid || attacked)) // They can't eat silicons, but they can glomp them in defence
-					targets += L // Possible target found!
-
 				if(ishuman(L)) //Ignore slime(wo)men
 					var/mob/living/carbon/human/H = L
 					if(H.species?.reagent_tag == IS_SLIME)
@@ -304,16 +301,6 @@
 				return
 
 		if(Target.Adjacent(src))
-			if(issilicon(Target)) // Glomp the silicons
-				if(!Atkcool)
-					a_intent = I_HURT
-					UnarmedAttack(Target)
-					Atkcool = 1
-					spawn(45)
-						Atkcool = 0
-				AIproc = 0
-				return
-
 			if(Target.client && !Target.lying && prob(60 + powerlevel * 4)) // Try to take down the target first
 				if(!Atkcool)
 					Atkcool = 1

@@ -69,8 +69,7 @@
 	required_tech_levels = list()
 	cost = 750
 
-	unlocks_designs = list(	/datum/design/research/circuit/breakerbox,
-							/datum/design/research/item/robot_upgrade/power_saver)
+	unlocks_designs = list(	/datum/design/research/circuit/breakerbox)
 
 /datum/technology/super_power
 	name = "Super Power Storing"

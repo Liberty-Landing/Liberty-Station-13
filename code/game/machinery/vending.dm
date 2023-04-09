@@ -644,9 +644,6 @@
 	var/datum/transaction/T = new(currently_vending.price, target, "Purchase of [currently_vending.product_name]", src)
 	T.apply_to(earnings_account)
 
-/obj/machinery/vending/attack_ai(mob/user as mob)
-	return attack_hand(user)
-
 /obj/machinery/vending/attack_hand(mob/user as mob)
 	if(stat & (BROKEN|NOPOWER))
 		return
@@ -727,7 +724,7 @@
 	if(usr.stat || usr.restrained())
 		return
 
-	if(href_list["remove_coin"] && !issilicon(usr))
+	if(href_list["remove_coin"])
 		if(!coin)
 			to_chat(usr, "There is no coin in this machine.")
 			return
@@ -755,9 +752,6 @@
 
 			if(R.price <= 0 || !locked)
 				vend(R, usr)
-			else if(issilicon(usr)) //If the item is not free, provide feedback if a synth is trying to buy something.
-				to_chat(usr, SPAN_DANGER("Artificial unit recognized. Artificial units cannot complete this transaction. Purchase canceled."))
-				return
 			else
 				currently_vending = R
 				if(!earnings_account || earnings_account.suspended)

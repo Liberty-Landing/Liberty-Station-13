@@ -59,7 +59,7 @@
 	..()
 	if(exam_message)
 		to_chat(user, SPAN_NOTICE("[exam_message]"))
-	if(iscarbon(user) || issilicon(user))
+	if(iscarbon(user))
 		var/robotics_expert = user.stats.getPerk(PERK_ROBOTICS_EXPERT)
 		if(robotics_expert) // Are we an expert in robots?
 			to_chat(user, SPAN_NOTICE("[name] is currently at [(health/maxHealth)*100]% integrity!")) // Give a more accurate reading.

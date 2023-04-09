@@ -3,10 +3,6 @@
 	shuttle_tag = "Special Operations"
 	req_access = list(access_cent_specops)
 
-/obj/machinery/computer/shuttle_control/specops/attack_ai(user as mob)
-	to_chat(user, "<span class='warning'>Access Denied.</span>")
-	return 1
-
 /datum/shuttle/autodock/ferry/specops
 	var/specops_return_delay = 6000		//After moving, the amount of time that must pass before the shuttle may move again
 	var/specops_countdown_time = 600	//Length of the countdown when moving the shuttle

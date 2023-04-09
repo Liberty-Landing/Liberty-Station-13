@@ -90,9 +90,6 @@
 		if (prob(event_chance)) //Chance for it to run a special event TODO: Come up with one or two more that fit.
 			event()
 
-/obj/singularity/attack_ai() //To prevent ais from gibbing themselves when they click on one.
-	return
-
 /obj/singularity/proc/admin_investigate_setup()
 	last_warning = world.time
 	var/count = locate(/obj/machinery/containment_field) in orange(30, src)

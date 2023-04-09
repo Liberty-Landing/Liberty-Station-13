@@ -44,8 +44,6 @@ a creative player the means to solve many problems.  Circuits are held inside an
 	. = ..()
 
 /obj/item/integrated_circuit/attack_self(mob/user)
-	if(isrobot(user))
-		interact(user)
 	..()
 
 /obj/item/integrated_circuit/attack_hand(mob/user)
@@ -94,8 +92,6 @@ a creative player the means to solve many problems.  Circuits are held inside an
 	if(assembly)
 		return assembly.check_interactivity(user)
 	else
-		if(isrobot(user))
-			return TRUE
 		return CanUseTopic(user)
 
 /obj/item/integrated_circuit/Initialize()
@@ -111,12 +107,8 @@ a creative player the means to solve many problems.  Circuits are held inside an
 	var/efficient = 1
 	var/obj/item/cell/small/cell
 	// add below cell getting code from device to get correct cell
-	if(isrobot(AM))
-		var/mob/living/silicon/robot/R = AM
-		efficient = 0.9
-		cell = R.cell
 
-	else if(istype(AM, /obj/item/cell/small))
+	if(istype(AM, /obj/item/cell/small))
 		cell = AM
 
 	else if(istype(AM, /obj/machinery/power/apc))

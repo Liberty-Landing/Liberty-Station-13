@@ -611,7 +611,6 @@
 	if(M != usr) return
 	if(usr == src) return
 	if(!Adjacent(usr)) return
-	if(isAI(M)) return
 	show_inv(usr)
 
 
@@ -693,11 +692,6 @@
 
 /mob/proc/is_active()
 	return (0 >= usr.stat)
-
-/mob/proc/is_mechanical()
-	if(mind && (mind.assigned_role == "Robot" || mind.assigned_role == "AI"))
-		return 1
-	return issilicon(src)
 
 /mob/proc/is_ready()
 	return client && !!mind
@@ -1074,10 +1068,6 @@ mob/proc/yank_out_object()
 	else
 		embedded -= selection
 		selection.on_embed_removal(src)
-		if(issilicon(src))
-			var/mob/living/silicon/robot/R = src
-			R.adjustBruteLoss(5)
-			R.adjustFireLoss(10)
 
 	selection.forceMove(get_turf(src))
 
@@ -1181,7 +1171,7 @@ mob/proc/yank_out_object()
 	set category	= "IC"
 	set src			= usr
 
-	if(iscarbon(usr) || issilicon(usr))
+	if(iscarbon(usr))
 		browse_src_stats(src)
 	else
 		to_chat(usr, "You do not have the capability to have stats or perks!")
@@ -1413,9 +1403,8 @@ mob/proc/yank_out_object()
 			if ((M.client && M.machine == src))
 				is_in_use = 1
 				src.interact(M)
-		var/ai_in_use = AutoUpdateAI(src)
 
-		if(!ai_in_use && !is_in_use)
+		if(!is_in_use)
 			in_use = 0
 
 

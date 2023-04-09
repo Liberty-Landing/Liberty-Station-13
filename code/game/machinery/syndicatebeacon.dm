@@ -116,10 +116,6 @@
 		user << SPAN_NOTICE("You deactivate the beacon.")
 
 
-/obj/machinery/power/singularity_beacon/attack_ai(mob/user as mob)
-	return
-
-
 /obj/machinery/power/singularity_beacon/attack_hand(var/mob/user as mob)
 	if(anchored)
 		return active ? Deactivate(user) : Activate(user)

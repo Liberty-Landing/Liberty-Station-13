@@ -51,7 +51,7 @@
 	sci = 0
 
 	for(var/mob/M in GLOB.player_list)
-		if(M.client && (M.mind && !M.mind.antagonist.len) && M.stat != DEAD && (ishuman(M) || isrobot(M) || isAI(M)))
+		if(M.client && (M.mind && !M.mind.antagonist.len) && M.stat != DEAD && (ishuman(M)))
 			var/datum/job/job = SSjob.GetJob(M.mind.assigned_role)
 			if(job)
 				crew++
@@ -143,18 +143,6 @@ var/list/event_last_fired = list()
 			continue
 
 		active_with_role["Any"]++
-
-		if(isrobot(M))
-			var/mob/living/silicon/robot/R = M
-			if(R.module)
-				if(istype(R.module, /obj/item/robot_module/engineering))
-					active_with_role["Engineer"]++
-				else if(istype(R.module, /obj/item/robot_module/security))
-					active_with_role["Security"]++
-				else if(istype(R.module, /obj/item/robot_module/medical))
-					active_with_role["Medical"]++
-				else if(istype(R.module, /obj/item/robot_module/research))
-					active_with_role["Scientist"]++
 
 		if(M.mind.assigned_role in engineering_positions)
 			active_with_role["Engineer"]++

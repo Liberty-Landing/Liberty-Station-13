@@ -175,10 +175,6 @@
 	to_chat(user, SPAN_WARNING("This is ridiculous. You can not fit \the [target] in this [src]."))
 	return FALSE
 
-/obj/machinery/microwave/attack_ai(mob/user as mob)
-	if(isrobot(user) && Adjacent(user))
-		attack_hand(user)
-
 /obj/machinery/microwave/attack_hand(mob/user as mob)
 	user.set_machine(src)
 	interact(user)

@@ -93,13 +93,6 @@
 	materials = list(MATERIAL_STEEL = 45, MATERIAL_PLASTIC = 25)
 	category = "RIG"
 
-/datum/design/research/item/ai_container
-	name = "hardsuit integrated AI container"
-	desc = "A storage case for AI units that has been integrated into a hardsuit."
-	build_path = /obj/item/rig_module/ai_container
-	materials = list(MATERIAL_STEEL = 25, MATERIAL_GLASS = 15, MATERIAL_PLASTIC = 15, MATERIAL_GOLD = 5)
-	category = "RIG"
-
 /datum/design/research/item/rigrcd
 	name = "hardsuit integrated RCD"
 	desc = "Integrated RCD into a hardsuit."
@@ -181,10 +174,4 @@
 	desc = "Integrated cargo handling system into a hardsuit."
 	build_path = /obj/item/rig_module/cargo_clamp
 	materials = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 15)
-	category = "RIG"
-
-/datum/design/research/item/ion_jaunt
-	name = "Ion Jaunt"
-	desc = "A special device designed to reduce the impact of EMPs on electrical systems."
-	build_path = /obj/item/robot_parts/robot_component/ion_jaunt
 	category = "RIG"

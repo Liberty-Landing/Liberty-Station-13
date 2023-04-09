@@ -94,7 +94,6 @@
 		/obj/item/rig_module/vision/medhud,
 		/obj/item/rig_module/device/healthscanner,
 		/obj/item/rig_module/modular_injector/medical,
-		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/storage
 		)
 
@@ -117,10 +116,6 @@
 	boot_type = /obj/item/clothing/shoes/lightrig/hacker
 
 	initial_modules = list(
-		/obj/item/rig_module/ai_container,
-		/obj/item/rig_module/power_sink,
-		/obj/item/rig_module/datajack,
-		/obj/item/rig_module/electrowarfare_suite,
 		/obj/item/rig_module/voice,
 		/obj/item/rig_module/vision,
 		)
@@ -173,9 +168,6 @@
 		/obj/item/rig_module/fabricator/energy_net,
 		/obj/item/rig_module/modular_injector,
 		/obj/item/rig_module/grenade_launcher,
-		/obj/item/rig_module/ai_container,
-		/obj/item/rig_module/power_sink,
-		/obj/item/rig_module/datajack,
 		/obj/item/rig_module/self_destruct
 		)
 

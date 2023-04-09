@@ -31,9 +31,6 @@
 	if(ishuman(A))
 		to_chat(user, SPAN_NOTICE("The label refuses to stick to [A.name]."))
 		return
-	if(issilicon(A))
-		to_chat(user, SPAN_NOTICE("The label refuses to stick to [A.name]."))
-		return
 	if(isobserver(A))
 		to_chat(user, SPAN_NOTICE("[src] passes through [A.name]."))
 		return

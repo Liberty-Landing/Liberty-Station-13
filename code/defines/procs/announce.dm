@@ -122,17 +122,14 @@ datum/announcement/proc/Log(message as text, message_title as text)
 
 /proc/AnnounceArrival(var/mob/living/character, var/rank, var/join_message)
 	if (join_message && SSticker.current_state == GAME_STATE_PLAYING && SSjob.ShouldCreateRecords(rank))
-		if(issilicon(character))
-			global_announcer.autosay("A new [rank] [join_message].", ANNOUNCER_NAME)
+		if (character.client)
+			if (character.client.prefs)
+				if (character.mind)
+					if (character.mind.role_alt_title)
+						rank = character.mind.role_alt_title
+				if (rank == "Outsider")
+					message_admins("[character.real_name], has joined the round silently.")
+				else
+					global_announcer.autosay("[character.real_name], [rank], [join_message].", ANNOUNCER_NAME)
 		else
-			if (character.client)
-				if (character.client.prefs)
-					if (character.mind)
-						if (character.mind.role_alt_title)
-							rank = character.mind.role_alt_title
-					if (rank == "Outsider")
-						message_admins("[character.real_name], has joined the round silently.")
-					else
-						global_announcer.autosay("[character.real_name], [rank], [join_message].", ANNOUNCER_NAME)
-			else
-				global_announcer.autosay("[character.real_name], [rank], [join_message].", ANNOUNCER_NAME)	// This should not trigger -- but it's here as an emergency fallback
+			global_announcer.autosay("[character.real_name], [rank], [join_message].", ANNOUNCER_NAME)	// This should not trigger -- but it's here as an emergency fallback

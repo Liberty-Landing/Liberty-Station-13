@@ -211,9 +211,6 @@ var/obj/item/card/id/all_access/ghost_all_access
 		ghost_all_access = new()
 	return ghost_all_access
 
-/mob/living/bot/GetIdCard()
-	return botcard
-
 #define HUMAN_ID_CARDS list(get_active_hand(), wear_id, get_inactive_hand())
 /mob/living/carbon/human/GetIdCard()
 	for(var/obj/item/I in HUMAN_ID_CARDS)
@@ -231,11 +228,6 @@ var/obj/item/card/id/all_access/ghost_all_access
 		. |= C.GetAccess()
 
 #undef HUMAN_ID_CARDS
-
-/mob/living/silicon/GetIdCard()
-	if(stat || (ckey && !client))
-		return // Unconscious, dead or once possessed but now client-less silicons are not considered to have id access.
-	return idcard
 
 
 proc/FindNameFromID(var/mob/M, var/missing_id_name = "Unknown")

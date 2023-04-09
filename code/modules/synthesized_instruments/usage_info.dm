@@ -1,6 +1,5 @@
 /datum/nano_module/usage_info
 	name = "Usage Info"
-	available_to_ai = 0
 	var/datum/sound_player/player
 
 /datum/nano_module/usage_info/New(atom/source, datum/sound_player/player)

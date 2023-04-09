@@ -128,8 +128,6 @@
 							/datum/design/research/structure/bidon,
 							/datum/design/research/item/computer_part/medical,
 							/datum/design/research/item/computer_part/reagent,
-							/datum/design/research/item/robot_upgrade/medical_hypo_upgrade
-							//datum/design/research/item/robot_upgrade/rescue_hypo_upgrade
 							)
 /*
 /datum/technology/basic_food_processing

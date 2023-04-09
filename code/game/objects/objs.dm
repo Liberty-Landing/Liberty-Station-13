@@ -106,11 +106,6 @@
 			if ((M.client && M.machine == src))
 				is_in_use = 1
 				src.attack_hand(M)
-		if (isAI(usr) || isrobot(usr))
-			if (!(usr in nearby))
-				if (usr.client && usr.machine==src) // && M.machine == src is omitted because if we triggered this by using the dialog, it doesn't matter if our machine changed in between triggering it and this - the dialog is probably still supposed to refresh.
-					is_in_use = 1
-					src.attack_ai(usr)
 
 		// check for TK users
 
@@ -131,9 +126,8 @@
 			if ((M.client && M.machine == src))
 				is_in_use = 1
 				src.interact(M)
-		var/ai_in_use = AutoUpdateAI(src)
 
-		if(!ai_in_use && !is_in_use)
+		if(!is_in_use)
 			in_use = 0
 
 /obj/attack_ghost(mob/user)

@@ -110,8 +110,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/colony/exposedsun/crashed_shop/outsider)
@@ -128,15 +127,13 @@
 /area/asteroid/rogue)
 "ajc" = (
 /obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/dungeon/outside/zoo)
 "ajf" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -191,19 +188,11 @@
 /obj/random/junk,
 /obj/random/junk,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/random/scrap/dense_weighted,
 /obj/random/scrap/dense_weighted,
 /turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper)
-"and" = (
-/obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
-/turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper)
 "anr" = (
 /obj/item/material/shard,
@@ -220,8 +209,7 @@
 "anS" = (
 /obj/structure/railing/grey,
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /obj/structure/flora/small/trailrockb4,
 /turf/simulated/floor/asteroid/dirt,
@@ -279,8 +267,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /turf/simulated/shuttle/floor/mining,
 /area/colony/exposedsun/crashed_shop/outsider)
@@ -562,7 +549,6 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/asteroid/rogue)
 "aIZ" = (
-/obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "aJw" = (
@@ -605,10 +591,6 @@
 /obj/structure/ore_box,
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
-"aLi" = (
-/obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor4)
 "aLU" = (
 /obj/structure/flora/big/bush3,
 /obj/structure/flora/small/busha3,
@@ -642,8 +624,7 @@
 /area/liberty/dungeon/outside/safehouse)
 "aNF" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/random/closet_maintloot/low_chance,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -680,8 +661,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/terminal{
-	dir = 1;
-	icon_state = "term"
+	dir = 1
 	},
 /obj/structure/wire_splicing,
 /obj/effect/decal/cleanable/ash,
@@ -717,9 +697,7 @@
 "aSK" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -1215,8 +1193,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "bvP" = (
 /obj/machinery/power/terminal{
-	dir = 1;
-	icon_state = "term"
+	dir = 1
 	},
 /obj/structure/cable{
 	d2 = 8;
@@ -1225,8 +1202,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/dungeon/outside/zoo)
@@ -1264,8 +1240,7 @@
 	dir = 4
 	},
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
@@ -1298,8 +1273,7 @@
 "bCr" = (
 /obj/random/scrap/dense_weighted/low_chance,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -1551,8 +1525,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/grille,
 /turf/simulated/floor/plating/under,
@@ -1847,8 +1820,7 @@
 "cki" = (
 /obj/random/closet_tech,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper)
@@ -1961,13 +1933,6 @@
 /obj/machinery/vending/sovietsoda,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
-"cpP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/drone_fabricator/derelict{
-	fabricator_tag = "Vault Bunker"
-	},
-/turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "cpU" = (
 /obj/random/flora/jungle_tree,
 /obj/structure/flora/small/bushb2,
@@ -2354,8 +2319,6 @@
 /area/colony/exposedsun/crashed_shop/outsider)
 "cJm" = (
 /obj/structure/table/reinforced,
-/obj/item/aiModule/reset,
-/obj/item/aiModule/protectStation,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "cJp" = (
@@ -2464,7 +2427,6 @@
 "cPr" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -2586,8 +2548,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /turf/simulated/shuttle/floor/mining,
 /area/colony/exposedsun/crashed_shop/outsider)
@@ -2712,8 +2673,7 @@
 /area/colony/exposedsun/crashed_shop/outsider)
 "dbb" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper)
@@ -2893,8 +2853,7 @@
 "drx" = (
 /obj/landmark/join/late/dormitory_outsider,
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/wood_old,
 /area/colony/exposedsun/crashed_shop/outsider)
@@ -3135,8 +3094,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "dBF" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /obj/item/ammo_casing/pistol_35/scrap/prespawned,
 /turf/simulated/floor/tiled/dark,
@@ -3364,7 +3322,6 @@
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/filth,
 /obj/structure/extinguisher_cabinet{
-	pixel_x = 0;
 	pixel_y = -30
 	},
 /turf/simulated/floor/tiled/dark,
@@ -3384,8 +3341,7 @@
 /area/asteroid/rogue)
 "dQH" = (
 /obj/structure/railing/grey{
-	dir = 4;
-	icon_state = "grey_railing0"
+	dir = 4
 	},
 /obj/structure/multiz/stairs/active/bottom,
 /turf/simulated/wall/r_wall,
@@ -3616,8 +3572,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled,
@@ -3630,8 +3585,7 @@
 /area/liberty/dungeon/outside/smuggler_zone)
 "ehN" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/dungeon/outside/smuggler_zone_u)
@@ -3681,11 +3635,6 @@
 /obj/random/ammo_lowcost/low_chance,
 /turf/simulated/floor/wood/wild5,
 /area/liberty/outside/meadow)
-"ekP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/mecha/combat/durand,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "ekQ" = (
 /obj/structure/flora/small/busha2,
 /obj/structure/flora/big/bush3,
@@ -3720,12 +3669,10 @@
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "elK" = (
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
@@ -3783,8 +3730,7 @@
 "enK" = (
 /obj/random/scrap/sparse_weighted/low_chance,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper)
@@ -3954,16 +3900,14 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "evT" = (
 /obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 0
+	dir = 1
 	},
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/dungeon/outside/zoo)
 "evU" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper)
@@ -4517,8 +4461,7 @@
 	pixel_x = 32
 	},
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -4543,8 +4486,7 @@
 "fko" = (
 /obj/random/closet_tech/low_chance,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/liberty/dungeon/outside/zoo)
@@ -4619,8 +4561,7 @@
 	dir = 8
 	},
 /obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 0
+	dir = 1
 	},
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/white/gray_platform,
@@ -4824,8 +4765,7 @@
 /area/liberty/outside/meadow)
 "fDS" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/dungeon/outside/zoo)
@@ -4835,7 +4775,6 @@
 /area/liberty/outside/one_star)
 "fEl" = (
 /obj/machinery/door/airlock/multi_tile/metal{
-	dir = 4;
 	locked = 1;
 	name = "Ironhead Compound"
 	},
@@ -4932,8 +4871,7 @@
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "fJK" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /obj/random/mob/voidwolf,
 /turf/simulated/floor/wood/wild3,
@@ -4943,8 +4881,7 @@
 /area/liberty/dungeon/outside/monster_cave)
 "fKf" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -5034,7 +4971,6 @@
 "fQh" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -5134,8 +5070,7 @@
 /obj/random/lathe_disk,
 /obj/structure/table/steel_reinforced,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/random/lathe_disk/advanced,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -5210,8 +5145,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor2)
 "fYN" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "9,23"
@@ -5398,10 +5332,6 @@
 /obj/structure/reagent_dispensers/water_cooler,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/liberty/outside/one_star)
-"glC" = (
-/obj/machinery/drone_fabricator,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor3)
 "glK" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/random/cluster/spiders/low_chance,
@@ -5483,7 +5413,6 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/safehouse)
 "gpp" = (
-/obj/structure/AIcore/deactivated,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "gpC" = (
@@ -5546,8 +5475,7 @@
 /area/liberty/dungeon/outside/smuggler_zone)
 "gtY" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/structure/window/reinforced/tinted/frosted{
@@ -5648,8 +5576,7 @@
 /obj/item/device/scanner/health,
 /obj/item/device/scanner/health,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/dungeon/outside/zoo)
@@ -5898,8 +5825,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
@@ -6231,8 +6157,7 @@
 /area/liberty/dungeon/outside/prepper)
 "hhM" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -6318,8 +6243,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/liberty/dungeon/outside/zoo)
@@ -6447,8 +6371,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -6470,8 +6393,7 @@
 /area/liberty/dungeon/outside/zoo)
 "hqs" = (
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /obj/structure/multiz/stairs/active/bottom,
 /turf/simulated/wall/r_wall,
@@ -6489,7 +6411,6 @@
 "hsp" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -6723,8 +6644,7 @@
 /area/liberty/dungeon/outside/safehouse)
 "hJC" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /obj/machinery/porta_turret/prepper{
 	check_access = 0
@@ -6836,11 +6756,6 @@
 /obj/random/junk/nondense,
 /turf/simulated/floor/beach/sand/desert,
 /area/liberty/dungeon/outside/zoo)
-"hRq" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/random/mecha/low_chance,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor3)
 "hRt" = (
 /obj/structure/table/onestar,
 /obj/structure/window/reinforced{
@@ -6903,8 +6818,7 @@
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "hTZ" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/structure/cable{
 	d1 = 2;
@@ -6984,8 +6898,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
@@ -7031,7 +6944,6 @@
 "ict" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -7145,8 +7057,7 @@
 /area/liberty/dungeon/outside/smuggler_zone)
 "ihN" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -7368,8 +7279,7 @@
 /area/liberty/dungeon/outside/monster_cave)
 "iut" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/prepper,
@@ -7479,8 +7389,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/meadow)
@@ -7534,11 +7443,6 @@
 /obj/structure/flora/big/bush2,
 /turf/simulated/mineral/planet,
 /area/liberty/outside/meadow)
-"iCL" = (
-/obj/structure/table/reinforced,
-/obj/item/aiModule/robocop,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "iCS" = (
 /obj/crawler/teleport_marker,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
@@ -7574,8 +7478,7 @@
 /area/liberty/dungeon/outside/zoo)
 "iEw" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/structure/window/reinforced/tinted/frosted{
@@ -7599,16 +7502,8 @@
 "iFs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
-"iGf" = (
-/obj/machinery/computer/aiupload{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "iGg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7893,8 +7788,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/random/gun_shotgun,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/zoo)
@@ -8014,10 +7908,6 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "jdm" = (
-/obj/item/trash/broken_robot_part{
-	pixel_x = -10;
-	pixel_y = 9
-	},
 /obj/effect/decal/cleanable/molten_item,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -8200,8 +8090,7 @@
 /area/liberty/outside/one_star)
 "jjW" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/machinery/door/window{
 	dir = 8
@@ -8239,8 +8128,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/terminal{
-	dir = 1;
-	icon_state = "term"
+	dir = 1
 	},
 /obj/structure/wire_splicing,
 /turf/simulated/floor/tiled/dark,
@@ -8278,7 +8166,6 @@
 "jnD" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -8395,8 +8282,7 @@
 /area/liberty/dungeon/outside/zoo)
 "jxS" = (
 /obj/machinery/power/terminal{
-	dir = 1;
-	icon_state = "term"
+	dir = 1
 	},
 /obj/structure/cable{
 	d2 = 8;
@@ -8660,7 +8546,6 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "jNf" = (
 /obj/structure/sink/kitchen{
-	name = "kitchen sink";
 	pixel_y = 28
 	},
 /turf/simulated/floor/tiled/dark/brown_perforated,
@@ -8736,8 +8621,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/grille,
 /turf/simulated/floor/plating/under,
@@ -8893,8 +8777,7 @@
 /area/liberty/outside/meadow)
 "jZR" = (
 /obj/structure/railing/grey{
-	dir = 4;
-	icon_state = "grey_railing0"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -8929,12 +8812,6 @@
 /obj/structure/barricade,
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
-"kcu" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/mecha_wreckage/ripley,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor4)
 "kcv" = (
 /obj/machinery/seed_extractor,
 /turf/simulated/floor/tiled/white/brown_perforated,
@@ -9145,8 +9022,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "knq" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/structure/window/reinforced/tinted/frosted{
@@ -9174,7 +9050,6 @@
 /area/colony)
 "kpC" = (
 /obj/structure/table/reinforced,
-/obj/item/aiModule/asimov,
 /obj/random/uplink,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -9387,10 +9262,6 @@
 	},
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
-"kCa" = (
-/obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor3)
 "kCP" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -9413,11 +9284,6 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
-"kEp" = (
-/obj/item/material/shard/shrapnel/scrap,
-/obj/effect/decal/mecha_wreckage/ripley/firefighter,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor4)
 "kEw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/remote/airlock{
@@ -9449,12 +9315,9 @@
 /area/liberty/outside/one_star)
 "kHY" = (
 /obj/structure/table/reinforced,
-/obj/item/aiModule/corp,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
-/obj/item/aiModule/eris,
 /obj/random/junkfood/onlyburger,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -9736,8 +9599,7 @@
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "lad" = (
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /obj/effect/step_trigger/vault_bunker_1G,
 /turf/simulated/floor/tiled/dark,
@@ -9956,12 +9818,6 @@
 	},
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/colony/exposedsun/crashed_shop/outsider)
-"lmD" = (
-/obj/machinery/computer/aiupload{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark/monofloor,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "loD" = (
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/asteroid/dirt,
@@ -9995,8 +9851,7 @@
 /area/liberty/outside/meadow)
 "lrl" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /obj/structure/table/steel_reinforced,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -10598,8 +10453,7 @@
 "maC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/liberty/dungeon/outside/zoo)
@@ -10656,8 +10510,7 @@
 "mfY" = (
 /obj/item/trash/candy,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -10805,8 +10658,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/plating/under,
@@ -11070,8 +10922,7 @@
 "mCs" = (
 /obj/random/scrap/dense_weighted,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -11270,8 +11121,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/grille/broken,
 /turf/simulated/floor/plating/under,
@@ -11344,12 +11194,6 @@
 /obj/random/material/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
-"mMA" = (
-/obj/machinery/drone_fabricator/derelict{
-	fabricator_tag = "Vault Bunker"
-	},
-/turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "mMD" = (
 /obj/random/mob/roomba/mecha/low,
 /turf/simulated/floor/tiled/derelict/white_red_edges,
@@ -11703,8 +11547,7 @@
 /area/liberty/outside/meadow)
 "ndw" = (
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /obj/structure/multiz/stairs/active/bottom,
 /turf/simulated/wall/r_wall,
@@ -11881,8 +11724,7 @@
 /area/liberty/outside/one_star)
 "nnt" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper)
@@ -11956,8 +11798,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/invislight,
 /turf/simulated/floor/plating/under,
@@ -12011,8 +11852,7 @@
 /area/asteroid/rogue)
 "nvH" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper)
@@ -12161,8 +12001,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/colony/exposedsun/crashed_shop/outsider)
@@ -12191,8 +12030,6 @@
 /obj/effect/decal/cleanable/cobweb2{
 	icon_state = "cobweb1"
 	},
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -12394,9 +12231,7 @@
 "nXp" = (
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -12421,7 +12256,6 @@
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "nYt" = (
 /obj/structure/extinguisher_cabinet{
-	pixel_x = 0;
 	pixel_y = -30
 	},
 /turf/simulated/floor/tiled/dark,
@@ -12459,8 +12293,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/zoo)
@@ -12538,8 +12371,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /turf/simulated/shuttle/floor/mining,
 /area/colony/exposedsun/crashed_shop/outsider)
@@ -12631,7 +12463,6 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "ojl" = (
 /obj/machinery/door/airlock/multi_tile/metal{
-	dir = 4;
 	locked = 1;
 	name = "Ironhead Compound"
 	},
@@ -12759,12 +12590,6 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
-"oqr" = (
-/obj/machinery/drone_fabricator/derelict{
-	fabricator_tag = "Vault Bunker"
-	},
-/turf/simulated/floor/tiled/dark/monofloor,
-/area/outpost/abandoned_fortress/powered)
 "oqB" = (
 /obj/structure/table/rack/shelf,
 /obj/random/junkfood/onlypizza,
@@ -12864,8 +12689,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/machinery/power/smes/buildable,
 /turf/simulated/floor/tiled/steel/danger,
@@ -13289,8 +13113,7 @@
 /area/liberty/outside/meadow)
 "oQm" = (
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
@@ -13323,8 +13146,7 @@
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "oRE" = (
 /obj/structure/railing/grey{
-	dir = 4;
-	icon_state = "grey_railing0"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -13468,8 +13290,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor2)
 "oYe" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/dungeon/outside/zoo)
@@ -13492,9 +13313,7 @@
 "pac" = (
 /obj/random/junk/cigbutt,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	pixel_y = 0
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -13636,10 +13455,6 @@
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/unsimulated/mineral,
 /area/colony/exposedsun/pastgate)
-"pja" = (
-/obj/random/mecha/low_chance,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper)
 "pjk" = (
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper)
@@ -13731,8 +13546,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/grille/broken,
 /obj/effect/decal/cleanable/dirt,
@@ -13920,8 +13734,7 @@
 /area/liberty/dungeon/outside/prepper)
 "pyq" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/structure/table/marble,
 /obj/random/medical,
@@ -14088,11 +13901,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper)
-"pIe" = (
-/obj/effect/decal/mecha_wreckage/ripley,
-/obj/item/material/shard/shrapnel/scrap,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor4)
 "pIu" = (
 /obj/structure/closet/random_hostilemobs,
 /turf/simulated/floor/tiled/dark,
@@ -14269,9 +14077,7 @@
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "pPJ" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1";
-	pixel_y = 0
+	dir = 8
 	},
 /obj/machinery/button/remote/airlock{
 	dir = 4;
@@ -14306,11 +14112,6 @@
 	},
 /turf/simulated/floor/tiled,
 /area/liberty/dungeon/outside/zoo)
-"pQz" = (
-/obj/structure/table/standard,
-/obj/item/secbot_assembly/ed209_assembly,
-/turf/simulated/floor/tiled/white/bluecorner,
-/area/liberty/dungeon/outside/smuggler_zone_u)
 "pRb" = (
 /obj/random/junk,
 /obj/item/mine_old,
@@ -14323,8 +14124,7 @@
 /area/asteroid/rogue)
 "pRi" = (
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /turf/simulated/floor/asteroid/grass/dry,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -14365,8 +14165,7 @@
 /area/liberty/outside/one_star)
 "pSs" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/structure/window/reinforced/tinted/frosted,
 /obj/structure/window/reinforced/tinted/frosted{
@@ -14571,7 +14370,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "qdq" = (
-/obj/machinery/recharge_station,
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
@@ -14728,8 +14526,7 @@
 /area/liberty/dungeon/outside/prepper)
 "qki" = (
 /obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/dungeon/outside/zoo)
@@ -14775,16 +14572,10 @@
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
-"qmO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/drone_fabricator,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor3)
 "qnb" = (
 /obj/structure/railing/grey,
 /obj/structure/railing/grey{
-	dir = 4;
-	icon_state = "grey_railing0"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
@@ -15016,8 +14807,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
@@ -15067,10 +14857,6 @@
 	icon_state = "9,23"
 	},
 /area/colony/exposedsun/crashed_shop/outsider)
-"qCH" = (
-/obj/machinery/autolathe/mechfab,
-/turf/simulated/floor/tiled/dark/gray_platform,
-/area/liberty/dungeon/outside/prepper)
 "qCY" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/shuttle/floor/mining{
@@ -15083,8 +14869,7 @@
 "qDH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /obj/random/closet_tech/low_chance,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -15119,8 +14904,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "qFC" = (
 /obj/structure/railing/grey{
-	dir = 4;
-	icon_state = "grey_railing0"
+	dir = 4
 	},
 /obj/structure/table,
 /obj/item/tool_upgrade/augment/holding_tank,
@@ -15572,7 +15356,6 @@
 /area/liberty/outside/meadow)
 "rcK" = (
 /obj/effect/decal/cleanable/generic,
-/obj/random/mecha_equipment/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "rcL" = (
@@ -15694,8 +15477,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "rlt" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /obj/structure/salvageable/console_broken_os{
 	dir = 8
@@ -15740,18 +15522,10 @@
 	},
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/dungeon/outside/smuggler_zone_u)
-"rok" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/mech_recharger,
-/obj/random/mecha/damaged,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "rpa" = (
 /obj/structure/cable/yellow{
 	d1 = 1;
@@ -15835,8 +15609,7 @@
 /obj/item/beehive_assembly,
 /obj/structure/table/rack/shelf,
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/dungeon/outside/zoo)
@@ -15910,8 +15683,7 @@
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "rwd" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white/panels,
 /area/liberty/dungeon/outside/prepper)
@@ -16006,8 +15778,7 @@
 /area/liberty/outside/meadow)
 "rCq" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/smuggler_zone_u)
@@ -16032,11 +15803,6 @@
 /obj/random/mob/prepper_boss_lowchance,
 /turf/simulated/floor/tiled/white/panels,
 /area/liberty/dungeon/outside/prepper)
-"rCR" = (
-/obj/machinery/mech_recharger,
-/obj/random/mecha/low_chance,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor4)
 "rDf" = (
 /obj/structure/sign/warning/caution/small2,
 /turf/simulated/wall/r_wall,
@@ -16053,8 +15819,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "rDO" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /obj/structure/sign/levels/stairsup{
 	pixel_y = -28
@@ -16124,11 +15889,6 @@
 "rHY" = (
 /turf/unsimulated/mineral,
 /area/colony/exposedsun/pastgate)
-"rIA" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/random/mecha/low_chance,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "rIF" = (
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
@@ -16261,8 +16021,7 @@
 "rRN" = (
 /obj/effect/floor_decal/corner_techfloor_grid,
 /obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
+	dir = 4
 	},
 /obj/item/reagent_containers/glass/bucket{
 	pixel_x = 5;
@@ -16418,8 +16177,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "scW" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/machinery/door/window{
 	dir = 8
@@ -16439,14 +16197,9 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
-"sdT" = (
-/obj/machinery/autolathe/mechfab/loaded,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor5)
 "sek" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/structure/window/basic,
 /obj/machinery/door/window{
@@ -16493,8 +16246,7 @@
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "sfK" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/liberty/dungeon/outside/zoo)
@@ -16578,7 +16330,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper)
 "skA" = (
-/obj/random/mecha/damaged/low_chance,
 /obj/effect/decal/cleanable/blood/oil,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
@@ -16749,8 +16500,7 @@
 /area/liberty/dungeon/outside/prepper)
 "suN" = (
 /obj/machinery/light/small{
-	dir = 4;
-	pixel_y = 0
+	dir = 4
 	},
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone_u)
@@ -17187,12 +16937,10 @@
 /area/liberty/outside/meadow)
 "sVx" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
@@ -17538,8 +17286,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "trl" = (
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/asteroid/grass/dry,
@@ -17655,8 +17402,7 @@
 /area/liberty/dungeon/outside/prepper)
 "tyW" = (
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/dungeon/outside/smuggler_zone_u)
@@ -17740,8 +17486,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/meadow)
@@ -17762,8 +17507,7 @@
 /area/liberty/outside/meadow)
 "tEI" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -17863,13 +17607,6 @@
 /obj/structure/barricade,
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
-"tLI" = (
-/obj/machinery/recharge_station,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor3)
 "tLN" = (
 /obj/random/mob/voidwolf,
 /turf/simulated/floor/carpet/sblucarpet,
@@ -17905,8 +17642,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop/outsider)
@@ -18046,10 +17782,6 @@
 /obj/item/mine_old,
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/asteroid/rogue)
-"tVv" = (
-/obj/random/mecha_equipment,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor3)
 "tVJ" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall37";
@@ -18111,8 +17843,6 @@
 "tZw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/steel_reinforced,
-/obj/random/mecha_equipment,
-/obj/random/mecha_equipment,
 /obj/random/rig_module,
 /obj/random/rig_module,
 /turf/simulated/floor/tiled/dark/monofloor,
@@ -18169,8 +17899,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/meadow)
@@ -18242,7 +17971,6 @@
 "ufs" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -18349,7 +18077,6 @@
 "ulE" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -18462,8 +18189,7 @@
 /area/colony/exposedsun/crashed_shop/outsider)
 "usA" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark,
@@ -18621,8 +18347,7 @@
 /area/liberty/dungeon/outside/zoo)
 "uBW" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
@@ -18884,8 +18609,7 @@
 /area/liberty/dungeon/outside/smuggler_zone)
 "uOT" = (
 /obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
+	dir = 4
 	},
 /obj/random/mob/prepper,
 /turf/simulated/floor/tiled/cafe,
@@ -18929,10 +18653,6 @@
 "uQv" = (
 /obj/random/mob/undergroundmob/low_chance,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/asteroid/rogue)
-"uQx" = (
-/obj/structure/closet/crate/serbcrate,
-/turf/simulated/floor/wood/wild4,
 /area/asteroid/rogue)
 "uQz" = (
 /obj/random/junk,
@@ -18994,8 +18714,7 @@
 "uUn" = (
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+	dir = 4
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
@@ -19082,7 +18801,6 @@
 "vaL" = (
 /obj/structure/sink{
 	dir = 8;
-	icon_state = "sink";
 	pixel_x = -12;
 	pixel_y = 2
 	},
@@ -19389,12 +19107,10 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "vpr" = (
 /obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 0
+	dir = 1
 	},
 /obj/structure/window/reinforced{
-	dir = 4;
-	pixel_x = 0
+	dir = 4
 	},
 /obj/structure/table/standard,
 /obj/item/paper_bin,
@@ -19449,7 +19165,6 @@
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "vuc" = (
 /obj/machinery/door/airlock/multi_tile/metal{
-	dir = 4;
 	locked = 1;
 	name = "Ironhead Compound"
 	},
@@ -19526,7 +19241,6 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vAu" = (
-/obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/steel/danger,
 /area/liberty/dungeon/outside/zoo)
 "vAC" = (
@@ -19622,8 +19336,7 @@
 /area/asteroid/rogue)
 "vDq" = (
 /obj/structure/railing/grey{
-	dir = 4;
-	icon_state = "grey_railing0"
+	dir = 4
 	},
 /obj/effect/step_trigger/vault_bunker_1H,
 /turf/simulated/floor/tiled/dark,
@@ -19719,8 +19432,7 @@
 /area/liberty/outside/meadow)
 "vLX" = (
 /obj/machinery/shower{
-	dir = 8;
-	icon_state = "shower"
+	dir = 8
 	},
 /obj/machinery/door/window{
 	dir = 8
@@ -19745,8 +19457,7 @@
 	icon_state = "0-4"
 	},
 /obj/structure/railing{
-	dir = 4;
-	icon_state = "railing0"
+	dir = 4
 	},
 /obj/structure/railing,
 /turf/simulated/floor/plating/under,
@@ -19785,8 +19496,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/multiz/stairs/enter/bottom{
 	dir = 4
@@ -19807,8 +19517,7 @@
 /obj/structure/boulder,
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -19949,8 +19658,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vVt" = (
 /obj/machinery/shower{
-	dir = 4;
-	icon_state = "shower"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
@@ -20062,8 +19770,7 @@
 /obj/structure/cable{
 	d1 = 1;
 	d2 = 2;
-	icon_state = "1-2";
-	pixel_y = 0
+	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
@@ -20116,8 +19823,7 @@
 /area/liberty/dungeon/outside/monster_cave)
 "whi" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/dungeon/outside/prepper)
@@ -20226,15 +19932,13 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "wnI" = (
-/obj/machinery/recharge_station,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/dungeon/outside/prepper)
 "woh" = (
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/structure/grille,
 /obj/effect/decal/cleanable/dirt,
@@ -20439,9 +20143,7 @@
 	},
 /obj/structure/sink{
 	dir = 4;
-	icon_state = "sink";
-	pixel_x = 11;
-	pixel_y = 0
+	pixel_x = 11
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/dungeon/outside/smuggler_zone)
@@ -20599,8 +20301,7 @@
 /area/colony/exposedsun/pastgate)
 "wLx" = (
 /obj/structure/railing/grey{
-	dir = 1;
-	icon_state = "grey_railing0"
+	dir = 1
 	},
 /obj/structure/railing/grey{
 	dir = 4
@@ -20639,8 +20340,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "wMR" = (
 /obj/structure/railing/grey{
-	dir = 4;
-	icon_state = "grey_railing0"
+	dir = 4
 	},
 /obj/structure/multiz/stairs/active/bottom,
 /turf/simulated/wall/r_wall,
@@ -20711,10 +20411,6 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/beach/sand/desert,
 /area/liberty/dungeon/outside/zoo)
-"wQF" = (
-/obj/random/mecha_equipment/low_chance,
-/turf/simulated/floor/tiled/dark,
-/area/liberty/dungeon/outside/prepper/vault/floor4)
 "wQJ" = (
 /obj/structure/closet/crate/hydroponics,
 /obj/item/storage/bag/produce,
@@ -20963,8 +20659,7 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/terminal{
-	dir = 1;
-	icon_state = "term"
+	dir = 1
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -20977,8 +20672,7 @@
 /obj/structure/cable{
 	d1 = 4;
 	d2 = 8;
-	icon_state = "4-8";
-	pixel_x = 0
+	icon_state = "4-8"
 	},
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor/plating/under,
@@ -21038,8 +20732,7 @@
 "xiM" = (
 /obj/structure/computerframe{
 	anchored = 1;
-	dir = 1;
-	icon_state = "0"
+	dir = 1
 	},
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone_u)
@@ -21336,8 +21029,7 @@
 "xBk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/grey{
-	dir = 8;
-	icon_state = "grey_railing0"
+	dir = 8
 	},
 /obj/effect/decal/cleanable/filth,
 /turf/simulated/floor/tiled/dark,
@@ -21385,7 +21077,6 @@
 /area/liberty/outside/one_star)
 "xEO" = (
 /obj/structure/table/bench/wooden,
-/obj/item/trash/broken_robot_part,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
@@ -21482,8 +21173,7 @@
 /area/liberty/dungeon/outside/prepper)
 "xKl" = (
 /obj/machinery/light{
-	dir = 8;
-	icon_state = "tube1"
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/zoo)
@@ -21785,7 +21475,6 @@
 /obj/machinery/embedded_controller/radio/simple_docking_controller{
 	frequency = 1380;
 	id_tag = "supply_shuttle";
-	pixel_x = 0;
 	pixel_y = 25;
 	req_one_access = list(13,31);
 	tag_door = "supply_shuttle_hatch"
@@ -21899,8 +21588,7 @@
 /obj/random/tool_upgrade,
 /obj/random/tool_upgrade/rare/low_chance,
 /obj/machinery/light{
-	dir = 4;
-	icon_state = "tube1"
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/orangecorner,
 /area/liberty/dungeon/outside/prepper)
@@ -22417,12 +22105,12 @@ tNp
 wax
 wax
 wax
-rCR
-rCR
-rCR
+sSd
+sSd
+sSd
 hZK
-pIe
-kEp
+vIH
+vIH
 uMw
 aAc
 aAc
@@ -22631,7 +22319,7 @@ vIH
 rcK
 iaY
 xxk
-wQF
+sSd
 hBX
 dHD
 hBX
@@ -23045,8 +22733,8 @@ wax
 wax
 wax
 qdq
-aLi
-aLi
+sSd
+sSd
 hFS
 kjs
 sSd
@@ -23267,7 +22955,7 @@ sSd
 sSd
 sgZ
 hBX
-kcu
+bLO
 sSd
 eqJ
 wax
@@ -31764,7 +31452,7 @@ iSH
 iSH
 xyE
 qTf
-pQz
+oIj
 iSH
 oIj
 gOd
@@ -44494,7 +44182,7 @@ coU
 coU
 coU
 ali
-iGf
+wGX
 ali
 ali
 ali
@@ -45326,11 +45014,11 @@ fhH
 sav
 jGd
 ali
-lmD
+dxG
 jGc
-oqr
+poT
 ali
-iCL
+cJm
 kHY
 ali
 ali
@@ -45686,7 +45374,7 @@ qbU
 qbU
 qbU
 qbU
-uQx
+dIV
 cQp
 hxW
 euc
@@ -46587,9 +46275,9 @@ blu
 dCT
 bXU
 dxG
-mMA
+ktF
 dxG
-mMA
+ktF
 bBT
 ali
 coU
@@ -47214,9 +46902,9 @@ pEs
 dRI
 aJy
 dxG
-mMA
+ktF
 aJy
-mMA
+ktF
 dxG
 ali
 coU
@@ -47632,9 +47320,9 @@ doF
 dxG
 aJy
 dxG
-cpP
+gSi
 aJy
-mMA
+ktF
 dxG
 ali
 coU
@@ -49721,7 +49409,7 @@ rgr
 qvJ
 wML
 ali
-sdT
+wGX
 tEN
 xHw
 aJy
@@ -49930,7 +49618,7 @@ tEN
 qvJ
 wML
 ali
-rIA
+tEN
 tEN
 qvJ
 xeO
@@ -50139,7 +49827,7 @@ aAX
 tEN
 wML
 ali
-rok
+tEN
 uCt
 qvJ
 dxG
@@ -50348,7 +50036,7 @@ ali
 ali
 ali
 ali
-rok
+tEN
 qsv
 iSb
 xNv
@@ -50557,7 +50245,7 @@ coU
 coU
 coU
 ali
-ekP
+tEN
 tEN
 kqd
 aJy
@@ -59556,11 +59244,11 @@ jNa
 jNa
 jNa
 jNa
-tLI
-kCa
+cxz
+nrh
 mEu
-kCa
-tLI
+nrh
+cxz
 pZH
 qdL
 nrh
@@ -59755,7 +59443,7 @@ cpK
 jNa
 pFU
 pFU
-tVv
+nrh
 jNa
 imx
 dJV
@@ -60173,7 +59861,7 @@ loV
 jNa
 puF
 rli
-tVv
+nrh
 gwX
 dxt
 ovb
@@ -60396,7 +60084,7 @@ tFh
 jWd
 tFh
 caq
-hRq
+tFh
 caq
 tFh
 tFh
@@ -60599,7 +60287,7 @@ tFh
 fqU
 tFh
 tFh
-hRq
+tFh
 nrh
 nrh
 nrh
@@ -61020,13 +60708,13 @@ nrh
 tFh
 aBC
 nrh
-glC
-tFh
-qmO
-tFh
-qmO
 nrh
-glC
+tFh
+tFh
+tFh
+tFh
+nrh
+nrh
 tFh
 tFh
 dJV
@@ -67549,7 +67237,7 @@ qHH
 apc
 iwj
 crS
-pja
+cpY
 apc
 apc
 wBC
@@ -67974,7 +67662,7 @@ jGX
 qHH
 eFg
 apc
-qCH
+fUA
 apc
 oil
 qHH
@@ -69438,7 +69126,7 @@ qHH
 gBZ
 pCT
 pCT
-and
+pZk
 cpY
 qHH
 qHH

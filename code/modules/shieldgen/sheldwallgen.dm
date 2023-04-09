@@ -36,7 +36,7 @@
 	if(state != 1)
 		to_chat(user, "\red \The [src] needs to be firmly secured to the floor first.")
 		return 1
-	if(src.locked && !issilicon(user))
+	if(src.locked)
 		to_chat(user, "\red The controls are locked!")
 		return 1
 	if(power != 1)

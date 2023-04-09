@@ -94,8 +94,7 @@
 	required_tech_levels = list(RESEARCH_COMBAT = 13)
 	cost = 37500
 
-	unlocks_designs = list(/datum/design/research/item/similacrum/unmaker,
-			       /datum/design/research/item/similacrum/combat_shield)
+	unlocks_designs = list(/datum/design/research/item/similacrum/unmaker)
 
 /datum/technology/SR_cells
 	name = "Similacrum Robotics Cells"

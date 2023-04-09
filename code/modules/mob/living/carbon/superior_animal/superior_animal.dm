@@ -364,11 +364,6 @@
 		if (ismob(targetted_mob))
 			targetted_mob_real = targetted_mob
 
-		else if (ismecha(targetted_mob))
-			var/obj/mecha/targetted_mecha = targetted_mob
-			if (targetted_mecha.occupant && ismob(targetted_mecha.occupant))
-				targetted_mob_real = targetted_mecha.occupant
-
 		if (!ran_see_check) //have we already run this check?
 			can_see = can_see_check(targetted_mob, targetted_mob_real)
 			ran_see_check = TRUE

@@ -94,11 +94,6 @@
 	path = /obj/item/storage/box/matches
 	cost = 0
 
-/datum/gear/utility/paicard
-	display_name = "personal AI device"
-	path = /obj/item/device/paicard
-	cost = 1
-
 /datum/gear/utility/silvercoin
 	display_name = "silver coin"
 	path = /obj/item/coin/silver

@@ -221,7 +221,7 @@
 		var/image/I = IconUnderlays[p]
 		I.alpha = 200
 
-
+/*
 /datum/hud/cyborg
 	name = "BorgStyle"
 	icon = 'icons/mob/screen1_robot.dmi'
@@ -251,7 +251,7 @@
 		"inv2" = list("type" = /obj/screen/silicon/module,     "loc" = "7,1", "module_num" = 2, "icon_state" = "inv2"),
 		"inv3" = list("type" = /obj/screen/silicon/module,     "loc" = "8,1", "module_num" = 3, "icon_state" = "inv3")
 	)
-
+*/
 
 
 

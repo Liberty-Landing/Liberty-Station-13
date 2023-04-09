@@ -123,7 +123,6 @@ SUBSYSTEM_DEF(tickets)
 	L += "<span class='[ticket_help_span]'>[ticket_help_type]: </span><span class='boldnotice'>[key_name(C, TRUE, ticket_help_type)] "
 	L += "([ADMIN_QUE(C.mob)]) ([ADMIN_PP(C.mob)]) ([ADMIN_VV(C.mob)]) ([ADMIN_TP(C.mob)]) ([ADMIN_SM(C.mob)]) "
 	L += "([admin_jump_link(C.mob)]) (<a href='?_src_=holder;openticket=[ticketNum][anchor_link_extra]'>TICKET</a>) "
-	L += "[isAI(C.mob) ? "(<a href='?_src_=holder;adminchecklaws=\ref[C.mob]'>CL</a>)" : ""] (<a href='?_src_=holder;take_question=[ticketNum][anchor_link_extra]'>TAKE</a>) "
 	L += "(<a href='?_src_=holder;resolve=[ticketNum][anchor_link_extra]'>RESOLVE</a>) (<a href='?_src_=holder;autorespond=[ticketNum][anchor_link_extra]'>AUTO</a>) "
 	L += " :</span> <span class='[ticket_help_span]'>[msg]</span>"
 	return L.Join()

@@ -129,7 +129,7 @@
 /obj/machinery/computer/Topic(href, href_list)
 	if(..())
 		return 1
-	if (issilicon(usr) || !CheckFaceFlag || CheckFace(src,usr))
+	if (!CheckFaceFlag || CheckFace(src,usr))
 		keyboardsound(usr)
 		return 0
 	else
@@ -137,15 +137,12 @@
 		return 1
 
 /obj/proc/keyboardsound(mob/user as mob)
-	if(!issilicon(user))
-		playsound(src, "keyboard", 100, 1, 0)
+	playsound(src, "keyboard", 100, 1, 0)
 
 /obj/machinery/computer/attack_hand(mob/user as mob)//check mob direction
 	if(..())
 		return 1
-	if(!issilicon(user))
-		return 0
-	if (issilicon(usr) || !CheckFaceFlag || CheckFace(src,user))
+	if (!CheckFaceFlag || CheckFace(src,user))
 		keyboardsound(user)
 		return 0
 	else

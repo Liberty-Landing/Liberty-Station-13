@@ -29,7 +29,7 @@
 			if(isliving(M))
 				var/mob/living/victim = M
 				//synthetic things not allowed
-				if((issilicon(victim) || victim.mob_classification == CLASSIFICATION_SYNTHETIC) && victim.mob_size <= MOB_SMALL)
+				if((victim.mob_classification == CLASSIFICATION_SYNTHETIC) && victim.mob_size <= MOB_SMALL)
 					victim.forceMove(MS_bioreactor.misc_output)
 					continue
 				//if our target has hazard protection, apply damage based on the protection percentage.

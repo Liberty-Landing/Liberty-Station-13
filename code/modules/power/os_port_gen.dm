@@ -42,7 +42,7 @@
 
 /obj/machinery/power/port_gen/os_generator/examine(mob/living/carbon/user)
 	..(user)
-	if(iscarbon(user) || issilicon(user)) //sanity check so we dont check stats of a ghost
+	if(iscarbon(user)) //sanity check so we dont check stats of a ghost
 		var/mec_or_cog = max(user.stats.getStat(STAT_MEC), user.stats.getStat(STAT_COG))
 		if(mec_or_cog >= STAT_LEVEL_PROF)
 			if(can_generate_power)
@@ -122,13 +122,6 @@
 
 	var/data[0]
 	data["active"] = active
-
-	if(isAI(user))
-		data["is_ai"] = 1
-	else if(isrobot(user) && !Adjacent(user))
-		data["is_ai"] = 1
-	else
-		data["is_ai"] = 0
 
 	data["output_set"] = power_output
 	data["output_max"] = max_power_output

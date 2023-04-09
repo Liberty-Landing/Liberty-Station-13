@@ -96,7 +96,7 @@
 		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
 		list(QUALITY_SAWING, 30, "time" = 60)
 	)
-
+/*
 /datum/craft_recipe/guild/robotmelee //Lots of steps
 	name = "robot mark v armor plating"
 	result = /obj/item/robot_parts/robot_component/armour/mkv
@@ -110,7 +110,7 @@
 		list(QUALITY_BOLT_TURNING, 40, "time" = 120),
 		list(QUALITY_SAWING, 30, "time" = 60)
 	)
-
+*/
 //Tools --------------------------
 /datum/craft_recipe/guild/arcwelder
 	name = "arc welder"
@@ -334,7 +334,7 @@
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
 	)
-
+/*
 /datum/craft_recipe/guild/heavypulserifle
 	name = "\"PL-3\" Heavy Pulse Rifle"
 	result = /obj/item/gun/energy/laser/heavypulserifle
@@ -350,7 +350,7 @@
 		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 20),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 10)
 	)
-
+*/
 /datum/craft_recipe/guild/mace
 	name = "war mace"
 	result = /obj/item/tool/hammer/mace
@@ -738,7 +738,7 @@
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(CRAFT_MATERIAL, 2, MATERIAL_SILVER)
 	)
-
+/*
 /datum/craft_recipe/guild/safety_clamp
 	name = "Hydraulic clamp overclock: KILL CLAMP"
 	result = /obj/item/mecha_parts/mecha_equipment/tool/safety_clamp
@@ -769,7 +769,7 @@
 		list(QUALITY_SCREW_DRIVING, 10, 70),
 		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD)
 	)
-
+*/
 /datum/craft_recipe/guild/guild_bin
 	name = "Hand Cast Matter Bin"
 	result = /obj/item/stock_parts/matter_bin/handmade

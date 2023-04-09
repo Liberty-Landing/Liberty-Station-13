@@ -37,7 +37,6 @@
 					/obj/item/computer_hardware/scanner/paper = 10,
 					/obj/item/computer_hardware/printer = 10,
 					/obj/item/computer_hardware/card_slot = 3,
-					/obj/item/computer_hardware/ai_slot = 4,
 					/obj/item/computer_hardware/hard_drive/portable/advanced/coin = 10)
 	auto_price = FALSE
 	give_discounts = FALSE

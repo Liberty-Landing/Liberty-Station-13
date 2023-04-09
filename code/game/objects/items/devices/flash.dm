@@ -96,35 +96,13 @@
 					M.flash(flash_strength, FALSE, FALSE , FALSE)
 			else
 				flashfail = TRUE
-
-	else if(isrobot(M))
-		var/mob/living/silicon/robot/robo = M
-		if(robo.HasTrait(CYBORG_TRAIT_FLASH_RESISTANT))
-			flashfail = TRUE
-		else
-			robo.flash(rand(5,10), FALSE , FALSE , FALSE)
 	else
 		flashfail = TRUE
 
-	if(isrobot(user))
-		spawn(0)
-			var/atom/movable/overlay/animation = new(user.loc)
-			animation.layer = user.layer + 1
-			animation.icon_state = "blank"
-			animation.icon = 'icons/mob/mob.dmi'
-			animation.master = user
-			flick("blspell", animation)
-			sleep(5)
-			qdel(animation)
-
 	if(!flashfail)
 		flick("flash2", src)
-		if(!issilicon(M))
+		user.visible_message("<span class='disarm'>[user] blinds [M] with the flash!</span>")
 
-			user.visible_message("<span class='disarm'>[user] blinds [M] with the flash!</span>")
-		else
-
-			user.visible_message(SPAN_NOTICE("[user] overloads [M]'s sensors with the flash!"))
 	else
 
 		user.visible_message(SPAN_NOTICE("[user] fails to blind [M] with the flash!"))
@@ -160,7 +138,7 @@
 			return
 	playsound(src.loc, 'sound/weapons/flash.ogg', 100, 1)
 	flick("flash2", src)
-	if(user && isrobot(user))
+	if(user)
 		spawn(0)
 			var/atom/movable/overlay/animation = new(user.loc)
 			animation.layer = user.layer + 1

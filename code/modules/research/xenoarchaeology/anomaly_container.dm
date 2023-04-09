@@ -17,10 +17,6 @@
 /obj/structure/anomaly_container/attack_hand(var/mob/user)
 	release()
 
-/obj/structure/anomaly_container/attack_robot(var/mob/user)
-	if(Adjacent(user))
-		release()
-
 /obj/structure/anomaly_container/proc/contain(var/obj/machinery/artifact/artifact)
 	if(contained)
 		return

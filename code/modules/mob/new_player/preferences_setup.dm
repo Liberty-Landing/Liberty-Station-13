@@ -197,7 +197,6 @@
 
 /datum/preferences/proc/dress_preview_mob(var/mob/living/carbon/human/mannequin, naked = FALSE)
 	var/update_icon = TRUE
-	var/list/leftover_to_equip = list()
 	copy_to(mannequin, TRUE)
 
 	if(!naked)
@@ -218,40 +217,6 @@
 			mannequin.job = previewJob.title
 			previewJob.equip_preview(mannequin, player_alt_titles[previewJob.title])
 			update_icon = TRUE
-
-		if((equip_preview_mob & EQUIP_PREVIEW_LOADOUT) && !(previewJob && (equip_preview_mob & EQUIP_PREVIEW_JOB) && (previewJob.type == /datum/job/ai || previewJob.type == /datum/job/cyborg)))
-			// Equip custom gear loadout, replacing any job items
-			var/list/loadout_taken_slots = list()
-			for(var/thing in Gear())
-				var/datum/gear/G = gear_datums[thing]
-				if(G)
-					var/permitted = 0
-					if(G.allowed_roles && G.allowed_roles.len)
-						if(previewJob)
-							for(var/job_title in G.allowed_roles)
-								if(previewJob.title == job_title)
-									permitted = 1
-					else
-						permitted = 1
-
-					if(G.whitelisted && (G.whitelisted != mannequin.species.name))
-						permitted = 0
-
-					if(!permitted)
-						continue
-
-					if(G.slot == slot_accessory_buffer)
-						leftover_to_equip.Add(G) //Save accessories 'til last
-						update_icon = TRUE
-
-					if(G.slot && G.slot != slot_accessory_buffer && !(G.slot in loadout_taken_slots) && G.spawn_on_mob(mannequin, gear_list[gear_slot][G.display_name]))
-						loadout_taken_slots.Add(G.slot)
-						update_icon = TRUE
-
-			if(leftover_to_equip) //Equip accessories to the preview
-				var/obj/item/clothing/under/under = mannequin.w_uniform
-				for(var/datum/gear/thing in leftover_to_equip)
-					under.attach_accessory(null, thing.spawn_item(mannequin, gear_list[gear_slot][thing.display_name]))
 
 	if(update_icon)
 		mannequin.update_icons()

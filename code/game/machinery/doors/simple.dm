@@ -86,14 +86,6 @@
 	material.place_sheet(drop_location(), amount=5)
 	qdel(src)
 
-
-/obj/machinery/door/unpowered/simple/attack_ai(mob/user) //those aren't machinery, they're just big fucking slabs of a mineral
-	if(isAI(user)) //so the AI can't open it
-		return
-	else if(isrobot(user)) //but cyborgs can
-		if(Adjacent(user)) //not remotely though
-			return attack_hand(user)
-
 /obj/machinery/door/unpowered/simple/ex_act(severity)
 	switch(severity)
 		if(1.0)

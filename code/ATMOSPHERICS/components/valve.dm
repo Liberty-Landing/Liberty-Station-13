@@ -125,9 +125,6 @@
 	else if(dir==12)
 		set_dir(4)
 
-/obj/machinery/atmospherics/valve/attack_ai(mob/user as mob)
-	return
-
 /obj/machinery/atmospherics/valve/attack_hand(mob/user as mob)
 	src.add_fingerprint(usr)
 	update_icon(1)
@@ -231,9 +228,6 @@
 	var/frequency = 0
 	var/id
 	var/datum/radio_frequency/radio_connection
-
-/obj/machinery/atmospherics/valve/digital/attack_ai(mob/user as mob)
-	return src.attack_hand(user)
 
 /obj/machinery/atmospherics/valve/digital/attack_hand(mob/user as mob)
 	if(!powered())

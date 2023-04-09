@@ -120,10 +120,6 @@
 		if (was_on)
 			turn_on()
 
-
-/obj/machinery/bot/attack_ai(mob/user as mob)
-	src.attack_hand(user)
-
 /obj/machinery/bot/attack_hand(var/mob/living/carbon/human/user)
 
 	if(!istype(user))

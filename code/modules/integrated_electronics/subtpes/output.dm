@@ -291,8 +291,6 @@
 	if(dist == -1 || dist > 3)
 		activate_pin(3)
 		return
-	if(isrobot(L))
-		message_before_tts = "Your antenna reciving signal: "
 	if(ishuman(L))
 		var/mob/living/carbon/human/h = L
 		var/obj/item/implant/core_implant/cruciform/S = h.get_core_implant(/obj/item/implant/core_implant/cruciform)

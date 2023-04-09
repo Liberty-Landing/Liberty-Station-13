@@ -39,12 +39,8 @@
 
 
 /datum/computer_file/data/email_message/proc/notify_from_source(atom/notification_source)
-	if(issilicon(notification_source))
-		var/mob/living/silicon/S = notification_source
-		if(S.email_ringtone)
-			playsound(S, 'sound/machines/twobeep.ogg', 50, 1)
 
-	else if(istype(notification_source, /obj/item/modular_computer))
+	if(istype(notification_source, /obj/item/modular_computer))
 		var/obj/item/modular_computer/computer = notification_source
 		var/datum/computer_file/program/email_client/PRG = computer.active_program
 		if (istype(PRG) && PRG.ringtone)

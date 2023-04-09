@@ -177,28 +177,6 @@
 	else
 		icon_state = "Moebius_box0"
 
-
-//Variants
-//Robot variation draws power from internal cell instead of using magazines
-//Just imagine the robot is using that power to run an internal air compressor to refill the tube.
-//This also explains the cooldown between uses
-/obj/item/hatton/robot
-	var/power_cost = 200 KILOWATTS //This uses about 7.5% of the charge on a rescue robot
-	fire_cooldown = 150 //fifteen second cooldown between uses
-	desc = "More an instrument than a weapon, this breaching device was designed for emergency situations. It uses a massive surge of power to break down obstacles."
-
-/obj/item/hatton/robot/use_charge()
-	var/mob/living/silicon/robot/R = loc
-	if (!istype(R))
-		return FALSE
-
-	if (R.cell_use_power(power_cost))
-		return TRUE
-	return FALSE
-
-/obj/item/hatton/robot/attack_self(mob/living/user as mob)
-	return
-
 /obj/item/hatton/moebius
 	name = "Phokorus Institute BT \"Q-del\""
 	desc = {"This breaching tool was reverse engineered from the \"Hatton\" design.

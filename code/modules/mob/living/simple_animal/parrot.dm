@@ -79,8 +79,7 @@
 		/obj/machinery/computer,			/obj/machinery/clonepod,
 		/obj/machinery/dna_scannernew,		/obj/machinery/telecomms,
 		/obj/machinery/nuclearbomb,			/obj/machinery/particle_accelerator,
-		/obj/machinery/recharge_station,	/obj/machinery/smartfridge,
-		/obj/machinery/suit_storage_unit
+		/obj/machinery/smartfridge,			/obj/machinery/suit_storage_unit
 	)
 
 	//Parrots are kleptomaniacs. This variable ... stores the item a parrot is holding.
@@ -143,7 +142,7 @@
 		return
 
 	//Is the usr's mob type able to do this?
-	if(ishuman(usr) || issmall(usr) || isrobot(usr))
+	if(ishuman(usr) || issmall(usr))
 
 		//Removing from inventory
 		if(href_list["remove_inv"])

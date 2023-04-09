@@ -207,10 +207,5 @@ Has ability of every roach.
 
 		return 4
 
-	//Mecha's are big enough to help distract these things.
-	if (istype(O, /obj/mecha))
-		var/obj/mecha/M = O
-		return isValidAttackTarget(M.occupant) / 4
-
 /mob/living/carbon/superior_animal/psi_monster/wasonce/slip(var/slipped_on)
 	return FALSE

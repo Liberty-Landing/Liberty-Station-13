@@ -142,31 +142,6 @@ var/const/HOLOPAD_MODE = RANGE_BASED
 /obj/machinery/hologram/holopad/check_eye(mob/user)
 	return 0
 
-/obj/machinery/hologram/holopad/attack_ai(mob/living/silicon/ai/user)
-	if (!istype(user))
-		return
-	/*There are pretty much only three ways to interact here.
-	I don't need to check for client since they're clicking on an object.
-	This may change in the future but for now will suffice.*/
-	if(user.eyeobj && (user.eyeobj.loc != src.loc))//Set client eye on the object if it's not already.
-		user.eyeobj.setLoc(get_turf(src))
-	else if(!masters[user])//If there is no hologram, possibly make one.
-		activate_holo(user)
-	else//If there is a hologram, remove it.
-		clear_holo(user)
-	return
-
-/obj/machinery/hologram/holopad/proc/activate_holo(mob/living/silicon/ai/user)
-	if(!(stat & NOPOWER) && user.eyeobj.loc == src.loc)//If the projector has power and client eye is on it
-		if (user.holo)
-			to_chat(user, "<span class='danger'>ERROR:</span> Image feed in progress.")
-			return
-		src.visible_message("A holographic image of [user] flicks to life right before your eyes!")
-		create_holo(user)//Create one.
-	else
-		to_chat(user, "<span class='danger'>ERROR:</span> Unable to project hologram.")
-	return
-
 /obj/machinery/hologram/holopad/proc/activate_holocall(mob/living/carbon/caller_id)
 	if(caller_id)
 		src.visible_message("A holographic image of [caller_id] flicks to life right before your eyes!")
@@ -175,66 +150,7 @@ var/const/HOLOPAD_MODE = RANGE_BASED
 		to_chat(caller_id, "<span class='danger'>ERROR:</span> Unable to project hologram.")
 	return
 
-/*This is the proc for special two-way communication between AI and holopad/people talking near holopad.
-For the other part of the code, check silicon say.dm. Particularly robot talk.*/
-/obj/machinery/hologram/holopad/hear_talk(mob/living/M, text, verb, datum/language/speaking, speech_volume)
-	if(M)
-		for(var/mob/living/silicon/ai/master in masters)
-			if(M == master)
-				return
-			if(!master.say_understands(M, speaking))//The AI will be able to understand most mobs talking through the holopad.
-				if(speaking)
-					text = speaking.scramble(text)
-				else
-					text = stars(text)
-			var/name_used = M.GetVoice()
-			//This communication is imperfect because the holopad "filters" voices and is only designed to connect to the master only.
-			var/rendered
-			if(speaking)
-				rendered = "<i><span class='game say'>Holopad received, <span class='name'>[name_used]</span> [speaking.format_message(text, verb)]</span></i>"
-			else
-				rendered = "<i><span class='game say'>Holopad received, <span class='name'>[name_used]</span> [verb], <span class='message'>\"[text]\"</span></span></i>"
-			master.show_message(rendered, 2)
-	var/name_used = M.GetVoice()
-	if(targetpad) //If this is the pad you're making the call from
-		var/message = "<i><span class='game say'>Holopad received, <span class='name'>[name_used]</span> [speaking.format_message(text, verb)]</span></i>"
-		targetpad.audible_message(message)
-		targetpad.last_message = message
-	if(sourcepad) //If this is a pad receiving a call
-		if(name_used==caller_id||text==last_message||findtext(text, "Holopad received")) //prevent echoes
-			return
-		sourcepad.audible_message("<i><span class='game say'>Holopad received, <span class='name'>[name_used]</span> [speaking.format_message(text, verb)]</span></i>")
-
-/obj/machinery/hologram/holopad/see_emote(mob/living/M, text)
-	if(M)
-		for(var/mob/living/silicon/ai/master in masters)
-			//var/name_used = M.GetVoice()
-			var/rendered = "<i><span class='game say'>Holopad received, <span class='message'>[text]</span></span></i>"
-			//The lack of name_used is needed, because message already contains a name.  This is needed for simple mobs to emote properly.
-			master.show_message(rendered, 2)
-		for(var/mob/living/carbon/master in masters)
-			//var/name_used = M.GetVoice()
-			var/rendered = "<i><span class='game say'>Holopad received, <span class='message'>[text]</span></span></i>"
-			//The lack of name_used is needed, because message already contains a name.  This is needed for simple mobs to emote properly.
-			master.show_message(rendered, 2)
-		if(targetpad)
-			targetpad.visible_message("<i><span class='message'>[text]</span></i>")
-
-/obj/machinery/hologram/holopad/show_message(msg, type, alt, alt_type)
-	for(var/mob/living/silicon/ai/master in masters)
-		var/rendered = "<i><span class='game say'>The holographic image of <span class='message'>[msg]</span></span></i>"
-		master.show_message(rendered, type)
-	if(findtext(msg, "Holopad received,"))
-		return
-	for(var/mob/living/carbon/master in masters)
-		var/rendered = "<i><span class='game say'>The holographic image of <span class='message'>[msg]</span></span></i>"
-		master.show_message(rendered, type)
-	if(targetpad)
-		for(var/mob/living/carbon/master in view(targetpad))
-			var/rendered = "<i><span class='game say'>The holographic image of <span class='message'>[msg]</span></span></i>"
-			master.show_message(rendered, type)
-
-/obj/machinery/hologram/holopad/proc/create_holo(mob/living/silicon/ai/A, mob/living/carbon/caller_id, turf/T = loc)
+/obj/machinery/hologram/holopad/proc/create_holo(mob/living/carbon/caller_id, turf/T = loc)
 	var/obj/effect/overlay/hologram = new(T)//Spawn a blank effect at the location.
 	if(caller_id)
 		var/icon/tempicon = new
@@ -242,8 +158,6 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 			if(t.fields["name"]==caller_id.name)
 				tempicon = t.fields["image"]
 		hologram.add_overlay(getHologramIcon(icon(tempicon)) )// Add the callers image as an overlay to keep coloration!
-	else
-		hologram.add_overlay(A.holo_icon) // Add the AI's configured holo Icon
 	hologram.mouse_opacity = 0//So you can't click on it.
 	hologram.layer = FLY_LAYER//Above all the other objects/mobs. Or the vast majority of them.
 	hologram.anchored = 1//So space wind cannot drag it.
@@ -251,21 +165,13 @@ For the other part of the code, check silicon say.dm. Particularly robot talk.*/
 		hologram.name = "[caller_id.name] (Hologram)"
 		hologram.loc = get_step(src, loc)
 		masters[caller_id] = hologram
-	else
-		hologram.name = "[A.name] (Hologram)"//If someone decides to right click.
-		A.holo = src
-		masters[A] = hologram
 	hologram.set_light(2, 2, "#00CCFF")	//hologram lighting
 	hologram.color = color //painted holopad gives coloured holograms
 	set_light(2, 2, COLOR_LIGHTING_BLUE_BRIGHT)			//pad lighting
 	icon_state = "holopad1"
 	return 1
 
-/obj/machinery/hologram/holopad/proc/clear_holo(mob/living/silicon/ai/user, mob/living/carbon/caller_id)
-	if(user)
-		qdel(masters[user])//Get rid of user's hologram
-		user.holo = null
-		masters -= user //Discard AI from the list of those who use holopad
+/obj/machinery/hologram/holopad/proc/clear_holo(mob/living/carbon/caller_id)
 	if(caller_id)
 		qdel(masters[caller_id])//Get rid of user's hologram
 		masters -= caller_id //Discard the caller from the list of those who use holopad

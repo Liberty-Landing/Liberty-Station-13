@@ -15,7 +15,7 @@
 
 	var/list/choices = list()
 	for(var/mob/living/M in view(1,src))
-		if(!issilicon(M) && Adjacent(M))
+		if(Adjacent(M))
 			choices += M
 	choices -= src
 
@@ -63,8 +63,7 @@
 
 	var/list/choices = list()
 	for(var/mob/living/M in view(6,src))
-		if(!issilicon(M))
-			choices += M
+		choices += M
 	choices -= src
 
 	var/mob/living/T = input(src,"Who do you wish to leap at?") as null|anything in choices

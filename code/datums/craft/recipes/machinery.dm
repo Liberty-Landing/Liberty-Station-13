@@ -7,14 +7,6 @@
 /datum/craft_recipe/machinery/computer
 	related_stats = list(STAT_MEC, STAT_COG)
 
-/datum/craft_recipe/machinery/AI_core
-	name = "AI core"
-	result = /obj/structure/AIcore
-	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL)
-	)
-	related_stats = list(STAT_MEC, STAT_COG)
-
 /datum/craft_recipe/machinery/wall/air_alarm
 	name = "air alarm frame"
 	result = /obj/item/frame/air_alarm

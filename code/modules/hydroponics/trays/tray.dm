@@ -366,7 +366,7 @@
 
 	if(usr.incapacitated())
 		return
-	if(ishuman(usr) || isrobot(usr))
+	if(ishuman(usr))
 		if(labelled)
 			to_chat(usr, "You remove the label.")
 			labelled = null
@@ -382,7 +382,7 @@
 
 	if(usr.incapacitated())
 		return
-	if(ishuman(usr) || isrobot(usr))
+	if(ishuman(usr))
 		var/new_light = input("Specify a light level.") as null|anything in list(0,1,2,3,4,5,6,7,8,9,10)
 		if(new_light)
 			tray_light = new_light
@@ -640,8 +640,6 @@
 
 /obj/machinery/portable_atmospherics/hydroponics/attack_hand(mob/user as mob)
 
-	if(issilicon(usr))
-		return
 	if(frozen == 1)
 		to_chat(user, "<span class='warning'>Disable the cryogenic freezing first!</span>")
 	if(harvest)
@@ -708,7 +706,7 @@
 	if(usr.incapacitated())
 		return
 
-	if(ishuman(usr) || isrobot(usr))
+	if(ishuman(usr))
 		close_lid(usr)
 	return
 

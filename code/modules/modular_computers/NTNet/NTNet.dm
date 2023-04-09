@@ -236,13 +236,6 @@ var/global/datum/ntnet/ntnet_global = new()
 		user.mind.initial_email_login["login"] = new_login
 		user.mind.store_memory("Your email account address has been changed to [new_login].")
 
-	if(issilicon(user))
-		var/mob/living/silicon/S = user
-		var/datum/nano_module/email_client/my_client = S.get_subsystem_from_path(/datum/nano_module/email_client)
-		if(my_client)
-			my_client.stored_login = new_login
-			my_client.stored_password = account.password
-			my_client.log_in()
 	sort_email_list()
 
 //Used for initial email generation.
@@ -274,13 +267,6 @@ var/global/datum/ntnet/ntnet_global = new()
 					P.stored_login = EA.login
 					P.stored_password = EA.password
 					P.update_email()
-		else if(issilicon(user))
-			var/mob/living/silicon/S = user
-			var/datum/nano_module/email_client/my_client = S.get_subsystem_from_path(/datum/nano_module/email_client)
-			if(my_client)
-				my_client.stored_login = EA.login
-				my_client.stored_password = EA.password
-				my_client.log_in()
 	sort_email_list()
 
 /mob/proc/create_or_rename_email(newname, domain)

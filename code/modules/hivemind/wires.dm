@@ -342,9 +342,6 @@
 				L.drop_from_inventory(W)
 			var/M = pick(/mob/living/simple_animal/hostile/hivemind/himan, /mob/living/simple_animal/hostile/hivemind/phaser)
 			new M(loc)
-		//robot corpses
-		else if(issilicon(subject))
-			new /mob/living/simple_animal/hostile/hivemind/hiborg(loc)
 		//other dead bodies
 		else
 			var/mob/living/simple_animal/hostile/hivemind/resurrected/transformed_mob =  new(loc)

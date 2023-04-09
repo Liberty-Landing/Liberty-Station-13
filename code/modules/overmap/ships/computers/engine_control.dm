@@ -18,8 +18,7 @@
 		user.unset_machine()
 		return
 
-	if(!isAI(user))
-		user.set_machine(src)
+	user.set_machine(src)
 
 	nano_ui_interact(user)
 

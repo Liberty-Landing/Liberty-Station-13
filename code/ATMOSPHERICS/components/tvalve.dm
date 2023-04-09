@@ -167,9 +167,6 @@
 
 	return 1
 
-/obj/machinery/atmospherics/tvalve/attack_ai(mob/user as mob)
-	return
-
 /obj/machinery/atmospherics/tvalve/attack_hand(mob/user as mob)
 	src.add_fingerprint(usr)
 	update_icon(1)
@@ -298,9 +295,6 @@
 	..()
 	if(!powered())
 		icon_state = "tvalvenopower"
-
-/obj/machinery/atmospherics/tvalve/digital/attack_ai(mob/user as mob)
-	return src.attack_hand(user)
 
 /obj/machinery/atmospherics/tvalve/digital/attack_hand(mob/user as mob)
 	if(!powered())
@@ -438,8 +432,6 @@
 	if(!powered())
 		icon_state = "tvalvemnopower"
 
-/obj/machinery/atmospherics/tvalve/mirrored/digital/attack_ai(mob/user as mob)
-	return src.attack_hand(user)
 
 /obj/machinery/atmospherics/tvalve/mirrored/digital/attack_hand(mob/user as mob)
 	if(!powered())

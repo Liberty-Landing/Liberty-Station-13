@@ -116,16 +116,6 @@
 		return 1
 
 /datum/nano_module/camera_monitor/proc/switch_to_camera(var/mob/user, var/obj/machinery/camera/C)
-	//don't need to check if the camera works for AI because the AI jumps to the camera location and doesn't actually look through cameras.
-	if(isAI(user))
-		var/mob/living/silicon/ai/A = user
-		// Only allow non-carded AIs to view because the interaction with the eye gets all wonky otherwise.
-		if(!A.is_in_chassis())
-			return 0
-
-		A.eyeobj.setLoc(get_turf(C))
-		A.client.eye = A.eyeobj
-		return 1
 
 	set_current(C)
 	user.machine = nano_host()
@@ -140,16 +130,8 @@
 		reset_current()
 
 	current_camera = C
-	if(current_camera)
-		var/mob/living/L = current_camera.loc
-		if(istype(L))
-			L.tracking_initiated()
 
 /datum/nano_module/camera_monitor/proc/reset_current()
-	if(current_camera)
-		var/mob/living/L = current_camera.loc
-		if(istype(L))
-			L.tracking_cancelled()
 	current_camera = null
 
 /datum/nano_module/camera_monitor/check_eye(var/mob/user as mob)
@@ -172,7 +154,6 @@
 
 /datum/nano_module/camera_monitor/ert
 	name = "Advanced Camera Monitoring Program"
-	available_to_ai = FALSE
 
 // The ERT variant has access to ERT and crescent cams, but still checks for accesses. ERT members should be able to use it.
 /datum/nano_module/camera_monitor/ert/modify_networks_list(var/list/networks)

@@ -155,19 +155,3 @@
 		spawn(15)
 			wait = 0
 	return
-
-/obj/item/rpd/borg
-	spawn_tags = null
-
-
-/obj/item/rpd/borg/useCharge(mob/user)
-	if(isrobot(user))
-		var/mob/living/silicon/robot/R = user
-		return R.cell && R.cell.checked_use(use_power_cost*30) //Redundant power use multiplier.
-	return ..()
-
-/obj/item/rpd/borg/attackby()
-	return
-
-/obj/item/rpd/borg/can_use(var/mob/user,var/turf/T)
-	return (user.Adjacent(T) && !user.stat)

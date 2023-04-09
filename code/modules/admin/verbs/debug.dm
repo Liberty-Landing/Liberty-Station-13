@@ -38,18 +38,6 @@ ADMIN_VERB_ADD(/client/proc/Debug2, R_DEBUG, FALSE)
 
 	usr.show_message(t, 1)
 
-
-/client/proc/cmd_admin_robotize(var/mob/living/M)
-	set category = "Fun"
-	set name = "Make Robot"
-
-	if(ishuman(M))
-		log_admin("[key_name(src)] has robotized [M.key].")
-		M.Robotize()
-
-	else
-		alert("Invalid mob")
-
 /client/proc/cmd_admin_animalize(var/mob/M in SSmobs.mob_list)
 	set category = "Fun"
 	set name = "Make Simple Animal"
@@ -65,33 +53,6 @@ ADMIN_VERB_ADD(/client/proc/Debug2, R_DEBUG, FALSE)
 	log_admin("[key_name(src)] has animalized [M.key].")
 	spawn(10)
 		M.Animalize()
-
-
-/client/proc/makepAI(var/turf/T)
-	set category = "Fun"
-	set name = "Make pAI"
-	set desc = "Specify a location to spawn a pAI device, then specify a key to play that pAI"
-
-	var/list/available = list()
-	for(var/mob/C in SSmobs.mob_list)
-		if(C.key)
-			available.Add(C)
-	var/mob/choice = input("Choose a player to play the pAI", "Spawn pAI") in available
-	if(!choice)
-		return 0
-	if(!isghost(choice))
-		var/confirm = input("[choice.key] isn't ghosting right now. Are you sure you want to yank them out of them out of their body and place them in this pAI?", "Spawn pAI Confirmation", "No") in list("Yes", "No")
-		if(confirm != "Yes")
-			return 0
-	var/obj/item/device/paicard/card = new(T)
-	var/mob/living/silicon/pai/pai = new(card)
-	pai.name = sanitizeSafe(input(choice, "Enter your pAI name:", "pAI Name", "Personal AI") as text)
-	pai.real_name = pai.name
-	pai.key = choice.key
-	card.setPersonality(pai)
-	for(var/datum/paiCandidate/candidate in SSpai.pai_candidates)
-		if(candidate.key == choice.key)
-			SSpai.pai_candidates.Remove(candidate)
 
 
 /client/proc/cmd_admin_slimeize(var/mob/living/M)

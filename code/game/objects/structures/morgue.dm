@@ -66,13 +66,6 @@
 				return
 	return
 
-
-//No network connection. Robots can physically open it, but not remotely
-//AI can't open it at all, anything inside a morgue drawer is hidden from the AI
-/obj/structure/morgue/attack_ai(var/mob/living/user)
-	if(Adjacent(user))
-		toggle(user)
-
 /obj/structure/morgue/attack_hand(var/mob/living/user)
 	toggle(user)
 	add_fingerprint(user)

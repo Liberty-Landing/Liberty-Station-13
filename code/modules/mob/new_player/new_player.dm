@@ -304,23 +304,6 @@
 	var/datum/job/job = src.mind.assigned_job
 	var/mob/living/character = create_character()	//creates the human and transfers vars and mind
 
-	// AIs don't need a spawnpoint, they must spawn at an empty core
-	if(rank == "AI")
-
-		character = character.AIize(move=0) // AIize the character, but don't move them yet
-
-			// IsJobAvailable for AI checks that there is an empty core available in this list
-		var/obj/structure/AIcore/deactivated/C = empty_playable_ai_cores[1]
-		empty_playable_ai_cores -= C
-
-		character.forceMove(C.loc)
-
-		AnnounceArrival(character, rank, "has been downloaded to the empty core in \the [character.loc.loc]")
-
-		qdel(C)
-		qdel(src)
-		return
-
 
 	var/datum/spawnpoint/spawnpoint = SSjob.get_spawnpoint_for(character.client, rank, late = TRUE)
 	spawnpoint.put_mob(character) // This can fail, and it'll result in the players being left in space and not being teleported to the station. But atleast they'll be equipped. Needs to be fixed so a default case for extreme situations is added.

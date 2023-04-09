@@ -92,12 +92,6 @@
 	//Storage
 	/obj/item/rig_module/storage = 12, //Made much more common
 
-	//Computer
-	/obj/item/rig_module/ai_container = 5,
-	/obj/item/rig_module/datajack = 3,
-	/obj/item/rig_module/electrowarfare_suite = 1,
-	/obj/item/rig_module/power_sink = 3,
-
 
 	//Combat
 	/obj/item/rig_module/device/flash = 2,
@@ -156,9 +150,6 @@
 	return pickweight(list(
 	//Storage
 	/obj/item/rig_module/storage = 1,
-
-	/obj/item/rig_module/electrowarfare_suite = 1,
-
 
 	//Combat
 	/obj/item/rig_module/grenade_launcher = 1, //Comes preloaded with smoke, flashbang and EMP

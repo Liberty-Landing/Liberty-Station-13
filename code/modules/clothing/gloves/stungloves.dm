@@ -75,8 +75,6 @@
 		return FALSE
 	if(!istype(L) || !proximity)
 		return ..()
-	if(isrobot(L))
-		return ..()
 
 	var/mob/living/user = loc
 	var/agony = agonyforce

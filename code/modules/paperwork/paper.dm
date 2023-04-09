@@ -181,10 +181,7 @@
 	set_language(new_language)
 
 /obj/item/paper/proc/show_content(mob/user, forceshow, editable = FALSE)
-	var/can_read = (istype(user, /mob/living/carbon/human) || isghost(user) || istype(user, /mob/living/silicon)) || forceshow
-	if(!forceshow && istype(user,/mob/living/silicon/ai))
-		var/mob/living/silicon/ai/AI = user
-		can_read = get_dist(src, AI.camera) < 2
+	var/can_read = (istype(user, /mob/living/carbon/human) || isghost(user)|| forceshow)
 	user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY bgcolor='[color]'>[can_read ? info : stars(info)][stamps]</BODY></HTML>", "window=[name]")
 
 	var/html = "<html><head><title>[name]</title></head><body bgcolor='[color]'>"
@@ -265,9 +262,6 @@
 			playsound(loc, 'sound/items/bikehorn.ogg', 50, 1)
 			spawn(20)
 				spam_flag = 0
-
-/obj/item/paper/attack_ai(var/mob/living/silicon/ai/user)
-	show_content(user)
 
 /obj/item/paper/attack(mob/living/carbon/M as mob, mob/living/carbon/user as mob)
 	if(user.targeted_organ == BP_EYES)
@@ -537,11 +531,7 @@
 			to_chat(usr, SPAN_WARNING("\The [src] is too crumpled to write on."))
 			return
 
-		var/obj/item/pen/robopen/RP = P
-		if ( istype(RP) && RP.mode == 2 )
-			RP.RenamePaper(user,src)
-		else
-			user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY bgcolor='[color]'>[info_links][stamps]</BODY></HTML>", "window=[name]")
+		user << browse("<HTML><HEAD><TITLE>[name]</TITLE></HEAD><BODY bgcolor='[color]'>[info_links][stamps]</BODY></HTML>", "window=[name]")
 		return
 
 	else if(istype(P, /obj/item/stamp))

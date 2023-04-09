@@ -13,16 +13,6 @@
 		playsound(loc, 'sound/machines/twobeep.ogg', 50, 1)	//Plays a beep
 		nosignal = TRUE
 
-/obj/structure/strangebeacon/bots/attack_hand(mob/living/user as mob)
-	if(nosignal == FALSE)
-		var/counter = 0
-		var/counterfinish = rand(1,2)
-
-		while(counter < counterfinish)
-			counter++
-			new /mob/living/bot/miningonestar/resources/agressive ( get_step(src, pick(GLOB.cardinal)) )
-		nosignal = TRUE
-
 /obj/structure/strangebeacon/pods/proc/call_droppod()
 	if(nosignal == FALSE)
 		visible_message(SPAN_WARNING("Pod is called. Get a safe distance."))

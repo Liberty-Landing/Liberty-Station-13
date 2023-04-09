@@ -168,11 +168,6 @@
 				remove_shielding(AMS)
 			return
 
-	if(istype(I, /obj/item/gripper)) // Are we attacking with a borg gripper?
-		var/obj/item/gripper/G = I
-		if(istype(G.wrapped, /obj/item/am_containment))
-			attackby(G.wrapped, user, params)
-
 	else if(istype(I, /obj/item/am_containment))
 		if(fueljar)
 			to_chat(user, "\red There is already a [fueljar] inside!")
@@ -193,13 +188,6 @@
 	return
 
 /obj/machinery/power/am_control_unit/attack_hand(mob/user as mob)
-	if(anchored)
-		interact(user)
-	else
-		to_chat(user, SPAN_NOTICE("The console need to be anchored first."))
-	return
-
-/obj/machinery/power/am_control_unit/attack_ai(mob/user as mob)
 	if(anchored)
 		interact(user)
 	else
@@ -300,10 +288,9 @@
 // TODO : Allow users to turn off announce_stability. -R4d6
 /obj/machinery/power/am_control_unit/interact(mob/user)
 	if((get_dist(src, user) > 1) || (stat & (BROKEN|NOPOWER)))
-		if(!isAI(user))
-			user.unset_machine()
-			user << browse(null, "window=AMcontrol")
-			return
+		user.unset_machine()
+		user << browse(null, "window=AMcontrol")
+		return
 	user.set_machine(src)
 
 	var/dat = ""
@@ -340,7 +327,7 @@
 /obj/machinery/power/am_control_unit/Topic(href, href_list)
 	..()
 	//Ignore input if we are broken or guy is not touching us, AI can control from a ways away
-	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1 && !isAI(usr)))
+	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1))
 		usr.unset_machine()
 		usr << browse(null, "window=AMcontrol")
 		return

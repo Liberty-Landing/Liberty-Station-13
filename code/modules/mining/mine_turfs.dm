@@ -136,18 +136,6 @@
 			if((QUALITY_DIGGING in I.tool_qualities) && (H.hand))
 				attackby(I,H)
 
-	else if(isrobot(AM))
-		var/mob/living/silicon/robot/R = AM
-		if(istype(R.module_active,/obj/item))
-			var/obj/item/I = R.module_active
-			if(QUALITY_DIGGING in I.tool_qualities)
-				attackby(I,R)
-
-	else if(istype(AM,/obj/mecha))
-		var/obj/mecha/M = AM
-		if(istype(M.selected,/obj/item/mecha_parts/mecha_equipment/tool/drill))
-			M.selected.action(src)
-
 /turf/simulated/mineral/proc/MineralSpread()
 	if(mineral && mineral.spread)
 		for(var/trydir in cardinal)
@@ -552,17 +540,6 @@
 
 /turf/simulated/floor/asteroid/Entered(atom/movable/M as mob|obj)
 	..()
-	if(isrobot(M))
-		var/mob/living/silicon/robot/R = M
-		if(R.module)
-			if(istype(R.module_state_1,/obj/item/storage/bag/ore))
-				attackby(R.module_state_1,R)
-			else if(istype(R.module_state_2,/obj/item/storage/bag/ore))
-				attackby(R.module_state_2,R)
-			else if(istype(R.module_state_3,/obj/item/storage/bag/ore))
-				attackby(R.module_state_3,R)
-			else
-				return
 
 /turf/simulated/floor/asteroid/proc/check_radial_dig()
 	return FALSE

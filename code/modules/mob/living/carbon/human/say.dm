@@ -109,8 +109,6 @@
 
 	//These only pertain to common. Languages are handled by mob/say_understands()
 	if (!speaking)
-		if (issilicon(other))
-			return 1
 		if (isbrain(other))
 			return 1
 		if (isslime(other))

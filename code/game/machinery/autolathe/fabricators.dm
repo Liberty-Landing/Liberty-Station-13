@@ -229,9 +229,6 @@
 			list(name="Box (20mm Payload)", cost=3850, path=/obj/item/ammo_magazine/ammobox/shotgun/payload),
 			list(name="Box (7mm Caseless)", cost=1650, path=/obj/item/ammo_magazine/ammobox/cl7mm),
 			list(name="Box (14.5×114mm AP)", cost=1650, path=/obj/item/ammo_magazine/ammobox/antim),
-		"Mech Boxes",
-			list(name="Ultra AC 2 ammunition box", cost=750, path=/obj/item/mech_ammo_box/ultracannon), //Cheap for the sake of sales, 35 x 2 = 70 so its a 11x~ mark up
-			list(name="LBX AC 10 ammunition box", cost=750, path=/obj/item/mech_ammo_box/scattershot),
 	)
 
 

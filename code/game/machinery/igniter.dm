@@ -32,9 +32,6 @@
 	wifi_receiver = null
 	return ..()
 
-/obj/machinery/igniter/attack_ai(mob/user as mob)
-	return src.attack_hand(user)
-
 /obj/machinery/igniter/attack_hand(mob/user as mob)
 	if(..())
 		return 1
@@ -109,12 +106,6 @@
 		else if(!disable)
 			user.visible_message(SPAN_WARNING("[user] has reconnected the [src]!"), SPAN_WARNING("You fix the connection to the [src]."))
 		update_icon()
-
-/obj/machinery/sparker/attack_ai()
-	if (anchored)
-		return ignite()
-	else
-		return
 
 /obj/machinery/sparker/proc/ignite()
 	if (!powered())

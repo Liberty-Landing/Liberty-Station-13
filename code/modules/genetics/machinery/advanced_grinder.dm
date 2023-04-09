@@ -103,7 +103,7 @@ list(
 
 
 /obj/machinery/reagentgrinder/advanced/attackby(obj/item/I, mob/user)
-	if(istype(I, /obj/item/reagent_containers/borghypo) || istype(I, /obj/item/reagent_containers/spray)) //prevents borg items
+	if(istype(I, /obj/item/reagent_containers/spray)) //prevents borg items
 		return
 	..() //So we run the rest
 

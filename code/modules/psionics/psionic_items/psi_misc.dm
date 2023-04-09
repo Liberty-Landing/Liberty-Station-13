@@ -66,7 +66,7 @@
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_SILVER = 0.5)
 	psi_blocking = 10
 	price_tag = 150
-
+/*
 // The object that make the shield
 /obj/item/shield_projector/line/psionic
 	name = "psionic shield projector"
@@ -109,7 +109,7 @@
         else
             return TRUE
     return FALSE
-
+*/
 /obj/item/clothing/gloves/psionic_ring
 	name = "Ring of Dispelling"
 	desc = "A sacred ring of metal, said to have been used in the production of the original cruciform prototypes. The Cartographer has blessed it, giving it powerful anti-psionic properties, and bestowed it to the upper church for use in psionic crises. It is irreplacable."

@@ -86,20 +86,6 @@
 					T = L
 					break
 
-		else if(istype(A, /obj/mecha) && !friendly_to_colony) // Our line of sight stuff was already done in ListTargets().
-			var/obj/mecha/M = A
-			if (M.occupant)
-				stance = HOSTILE_STANCE_ATTACK
-				T = M
-				break
-
-		if(istype(A, /obj/machinery/bot) && !friendly_to_colony)
-			var/obj/machinery/bot/B = A
-			if (B.health > 0)
-				stance = HOSTILE_STANCE_ATTACK
-				T = B
-				break
-
 		if(istype(A, /obj/machinery/porta_turret) && !friendly_to_colony)
 			var/obj/machinery/porta_turret/P = A
 			if (P.health > 0)

@@ -48,9 +48,6 @@
 
 	return ..(damage)
 
-/obj/machinery/door/holy/attack_ai(mob/user)
-	return
-
 /obj/machinery/door/holy/allowed(mob/M)
 	if(locked)
 		return FALSE
@@ -225,10 +222,6 @@
 
 	if(istool(I))
 		return attack_hand(user)
-
-	else if(istype(I, /obj/item/pai_cable))
-		to_chat(user, SPAN_NOTICE("There is no port for the cable."))
-		return
 
 	else
 		..()

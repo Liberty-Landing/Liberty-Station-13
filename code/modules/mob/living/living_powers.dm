@@ -36,10 +36,6 @@
 	if(faction == "CEV Eris")
 		return TRUE
 
-	for (var/obj/mecha/M in GLOB.mechas_list)
-		if (M.z == src.z && get_dist(src, M) <= dist)
-			return TRUE
-
 	for(var/mob/living/M in SSmobs.mob_living_by_zlevel[(get_turf(src)).z])
 		if(!(M.stat < DEAD))
 			continue

@@ -73,16 +73,6 @@
 
 #define issynthetic(A) istype(A, /mob) && A.mob_classification == CLASSIFICATION_SYNTHETIC //For when we really, really don't want any robots
 
-#define issilicon(A) istype(A, /mob/living/silicon)
-
-#define isAI(A) istype(A, /mob/living/silicon/ai)
-
-#define ispAI(A) istype(A, /mob/living/silicon/pai)
-
-#define isrobot(A) istype(A, /mob/living/silicon/robot)
-
-#define isdrone(A) istype(A, /mob/living/silicon/robot/drone)
-
 //-----------------Objects
 #define ismovable(A) istype(A, /atom/movable)
 

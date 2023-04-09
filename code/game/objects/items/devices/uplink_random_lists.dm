@@ -68,7 +68,6 @@ var/datum/uplink_random_selection/default_uplink_selection = new/datum/uplink_ra
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/tools/thermal)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/tools/heavy_vest)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/tools/powersink, 10, 10)
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/tools/ai_module, 25, 0)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/tools/teleporter, 10, 0)
 
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/implants/imp_freedom)
@@ -84,7 +83,6 @@ var/datum/uplink_random_selection/default_uplink_selection = new/datum/uplink_ra
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/ewar_voice, reselect_propbability = 15)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/hardsuit_modules/maneuvering_jets, reselect_propbability = 15)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/hardsuit_modules/egun, reselect_propbability = 15)
-	items += new/datum/uplink_random_item(/datum/uplink_item/item/hardsuit_modules/power_sink, reselect_propbability = 15)
 	items += new/datum/uplink_random_item(/datum/uplink_item/item/hardsuit_modules/laser_canon, reselect_propbability = 5)
 
 #ifdef DEBUG

@@ -73,7 +73,7 @@
 		to_chat(user, SPAN_WARNING("\The [src] cannot be applied to [M]!"))
 		return TRUE
 
-	if(!(ishuman(user) || issilicon(user)))
+	if(!(ishuman(user)))
 		to_chat(user, SPAN_WARNING("You don't have the dexterity to do this!"))
 		return TRUE
 
@@ -155,7 +155,7 @@
 
 /obj/item/stack/medical/proc/grabbed_medical_skill(mob/living/carbon/user)
 //note were returning numbers not TRUE/FALSE for clarification
-	if(!(ishuman(user) || issilicon(user)))
+	if(!(ishuman(user)))
 		return 1
 
 	var/med_skill = user.stats.getStat(STAT_BIO)

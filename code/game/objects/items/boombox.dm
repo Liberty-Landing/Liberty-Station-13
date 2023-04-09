@@ -125,7 +125,7 @@
 	return my_tape.tracklist
 
 /obj/item/media/boombox/Topic(href, href_list)
-	if(..() || !(Adjacent(usr) || issilicon(usr)))
+	if(..() || !(Adjacent(usr)))
 		return
 
 	if(href_list["change_track"])
@@ -180,10 +180,6 @@
 		ui.set_initial_data(data)
 		ui.open()
 		ui.set_auto_update(playing)
-
-/obj/item/media/boombox/attack_ai(mob/user as mob)
-	return attack_hand(user)
-
 
 /obj/item/media/boombox/proc/StopPlaying()
 	playing = 0

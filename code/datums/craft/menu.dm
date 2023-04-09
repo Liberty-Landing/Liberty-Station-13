@@ -16,7 +16,6 @@
 
 /datum/nano_module/craft
 	name = "Craft menu"
-	available_to_ai = FALSE
 
 /datum/nano_module/craft/proc/get_category(mob/mob)
 	var/ckey = mob.ckey

@@ -26,7 +26,6 @@
 	var/rcon_time = 0
 	var/locked = 1
 	var/wiresexposed = 0 // If it's been screwdrivered open.
-	var/aidisabled = 0
 	var/shorted = 0
 
 	var/datum/wires/alarm/wires
@@ -462,8 +461,6 @@
 
 	frequency.post_signal(src, alert_signal)
 
-/obj/machinery/alarm/attack_ai(mob/user)
-	nano_ui_interact(user)
 
 /obj/machinery/alarm/attack_hand(mob/user)
 	. = ..()
@@ -484,7 +481,7 @@
 		remote_connection = href["remote_connection"]	// Remote connection means we're non-adjacent/connecting from another computer
 		remote_access = href["remote_access"]			// Remote access means we also have the privilege to alter the air alarm.
 
-	data["locked"] = locked && (issilicon(user) && !allowed(user))
+	data["locked"] = locked
 	data["remote_connection"] = remote_connection
 	data["remote_access"] = remote_access
 	data["rcon"] = rcon_setting
@@ -492,7 +489,7 @@
 
 	populate_status(data)
 
-	if(!(locked && !remote_connection) || remote_access || issilicon(user))
+	if(!(locked && !remote_connection) || remote_access)
 		populate_controls(data)
 
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
@@ -607,10 +604,6 @@
 	if(buildstage != 2)
 		return STATUS_CLOSE
 
-	if(aidisabled && isAI(user))
-		to_chat(user, SPAN_WARNING("AI control for \the [src] interface has been disabled."))
-		return STATUS_CLOSE
-
 	. = shorted ? STATUS_DISABLED : STATUS_INTERACTIVE
 
 	if(. == STATUS_INTERACTIVE)
@@ -664,7 +657,7 @@
 	var/extra_href
 	if(state)
 		extra_href = state.href_list(usr)
-	if(!(locked && (extra_href && !extra_href["remote_connection"])) || (extra_href && extra_href["remote_access"]) || issilicon(usr))
+	if(!(locked && (extra_href && !extra_href["remote_connection"])) || (extra_href && extra_href["remote_access"]))
 		if(href_list["command"])
 			var/device_id = href_list["id_tag"]
 			switch(href_list["command"])
@@ -895,7 +888,7 @@
 
 /obj/machinery/alarm/AltClick(mob/user)
 	..()
-	if(issilicon(user) || !Adjacent(user))
+	if(!Adjacent(user))
 		return
 	toggle_lock(user)
 

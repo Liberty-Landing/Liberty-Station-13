@@ -86,19 +86,6 @@
 
 	..()
 
-// Proc: attack_ai()
-// Parameters: None
-// Description: AI requires the RCON wire to be intact to operate the SMES.
-/obj/machinery/power/smes/buildable/attack_ai()
-	if(RCon)
-		..()
-	else // RCON wire cut
-		to_chat(usr, SPAN_WARNING("Connection error: Destination Unreachable."))
-
-	// Cyborgs standing next to the SMES can play with the wiring.
-	if(isrobot(usr) && Adjacent(usr) && open_hatch)
-		wires.Interact(usr)
-
 // Proc: New()
 // Parameters: None
 // Description: Set wires with requed type

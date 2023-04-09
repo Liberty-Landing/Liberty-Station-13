@@ -204,11 +204,8 @@ var/list/turret_icons
 		icon_state = "turretCover"
 
 /obj/machinery/porta_turret/proc/isLocked(mob/user)
-	if(ailock && issilicon(user))
-		to_chat(user, SPAN_NOTICE("There seems to be a firewall preventing you from accessing this device."))
-		return 1
 
-	if(locked && !issilicon(user))
+	if(locked)
 		to_chat(user, SPAN_NOTICE("Access denied."))
 		return 1
 
@@ -567,12 +564,6 @@ var/list/turret_icons
 	for(var/mob/living/M in view(firing_range, src)) //WE USED WORLD.VIEW BEFORE THATS FUCKING PSYCHOPATHIC
 		assess_and_assign(M, targets, secondarytargets) //might want to not use a proc due to proc overhead cost
 
-	for(var/obj/mecha/mech in GLOB.mechas_list)
-		if (mech.z == z && (get_dist(mech, src) < firing_range) && can_see(src, mech, firing_range))
-			var/mob/living/occupant = mech.get_mob()
-			if (occupant)
-				assess_and_assign(occupant, targets, secondarytargets)
-
 	if(!tryToShootAt(targets))
 		if(!tryToShootAt(secondarytargets)) // if no valid targets, go for secondary targets
 			spawn()
@@ -618,9 +609,6 @@ var/list/turret_icons
 
 	if(!emagged && colony_allied_turret && !L.colony_friend) //If were allied with the colony and we attack things that are not are pets
 		return TURRET_SECONDARY_TARGET
-
-	if(!emagged && issilicon(L))	// Don't target silica
-		return TURRET_NOT_TARGET
 
 	if(get_dist(src, L) > firing_range)	//if it's too far away, why bother?
 		return TURRET_NOT_TARGET
@@ -947,8 +935,6 @@ var/list/turret_icons
 		if(3)
 			if(istype(I, /obj/item/gun/energy)) //the gun installation part
 
-				if(isrobot(user))
-					return
 				if(!user.unEquip(I))
 					to_chat(user, SPAN_NOTICE("\the [I] is stuck to your hand, you cannot put it in \the [src]"))
 					return
@@ -1013,9 +999,6 @@ var/list/turret_icons
 /obj/machinery/porta_turret_construct/Destroy()
 	QDEL_NULL(installation)
 	.=..()
-
-/obj/machinery/porta_turret_construct/attack_ai()
-	return
 
 /atom/movable/porta_turret_cover
 	icon = 'icons/obj/turrets.dmi'

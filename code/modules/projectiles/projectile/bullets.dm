@@ -52,8 +52,6 @@ Bullet also tend to have more armor against them do to this and can be douged un
 	if(!A || !A.density)
 		return TRUE //if whatever it was got destroyed when we hit it, then I guess we can just keep going
 
-	if(istype(A, /obj/mecha))
-		return TRUE //mecha have their own penetration handling
 	var/damage = damage_types[BRUTE]
 	if(ismob(A))
 		if(mob_passthrough_check || (A in holder.force_penetration_on))

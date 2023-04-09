@@ -1,6 +1,5 @@
 /datum/nano_module/echo_editor
 	name = "Echo Editor"
-	available_to_ai = 0
 	var/datum/sound_player/player
 	var/atom/source
 

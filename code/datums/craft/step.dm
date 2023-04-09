@@ -153,7 +153,7 @@
 			return
 
 	else if(reqed_quality)
-		if(!istype(I,/obj/item/tool) && !istype(I,/obj/item/mecha_parts/mecha_equipment)) //Making it so mech equipment can also craft
+		if(!istype(I,/obj/item/tool)) //Making it so mech equipment can also craft
 			to_chat(user, SPAN_WARNING("You need to use a tool to complete this step."))
 			building = FALSE
 			return
@@ -226,17 +226,6 @@
 	var/obj/item/storage/belt = user.get_equipped_item(slot_belt)
 	if(istype(belt))
 		items += belt.contents
-
-	//Robots can use their module items as tools or materials
-	//We will do a check later to prevent them from dropping their tools as consumed components
-	if(isrobot(user))
-		var/mob/living/silicon/robot/R = user
-		if(R.module_state_1)
-			items += R.module_state_1
-		if(R.module_state_2)
-			items += R.module_state_2
-		if(R.module_state_3)
-			items += R.module_state_3
 
 	//We will allow all items in a 3x3 area, centred on the tile infront, to be used as components or mats
 	//Tools must be held though

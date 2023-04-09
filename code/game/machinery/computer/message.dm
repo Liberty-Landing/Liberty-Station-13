@@ -123,10 +123,6 @@
 			else
 				for(var/n = ++i; n <= optioncount; n++)
 					dat += "<dd><font color='blue'>&#09;[n]. ---------------</font><br></dd>"
-			if((isAI(user) || isrobot(user)) && (user.mind.antagonist.len && user.mind.original == user))
-				//Malf/contractor AIs can bruteforce into the system to gain the Key.
-				dat += "<dd><A href='?src=\ref[src];hack=1'><i><font color='Red'>*&@#. Bruteforce Key</font></i></font></a><br></dd>"
-			else
 				dat += "<br>"
 
 			//Bottom message
@@ -151,48 +147,6 @@
 				// X   - Al Green - Your Mom  - WHAT UP!?
 				dat += "<tr><td width = '5%'><center><A href='?src=\ref[src];delete=\ref[pda]' style='color: rgb(255,0,0)'>X</a></center></td><td width='15%'>[pda.sender]</td><td width='15%'>[pda.recipient]</td><td width='300px'>[pda.message]</td></tr>"
 			dat += "</table>"
-		//Hacking screen.
-		if(2)
-			if(isAI(user) || isrobot(user))
-				dat += "Brute-forcing for server key.<br> It will take 20 seconds for every character that the password has."
-				dat += "In the meantime, this console can reveal your true intentions if you let someone access it. Make sure no humans enter the room during that time."
-			else
-				//It's the same message as the one above but in binary. Because robots understand binary and humans don't... well I thought it was clever.
-				dat += {"01000010011100100111010101110100011001010010110<br>
-				10110011001101111011100100110001101101001011011100110011<br>
-				10010000001100110011011110111001000100000011100110110010<br>
-				10111001001110110011001010111001000100000011010110110010<br>
-				10111100100101110001000000100100101110100001000000111011<br>
-				10110100101101100011011000010000001110100011000010110101<br>
-				10110010100100000001100100011000000100000011100110110010<br>
-				10110001101101111011011100110010001110011001000000110011<br>
-				00110111101110010001000000110010101110110011001010111001<br>
-				00111100100100000011000110110100001100001011100100110000<br>
-				10110001101110100011001010111001000100000011101000110100<br>
-				00110000101110100001000000111010001101000011001010010000<br>
-				00111000001100001011100110111001101110111011011110111001<br>
-				00110010000100000011010000110000101110011001011100010000<br>
-				00100100101101110001000000111010001101000011001010010000<br>
-				00110110101100101011000010110111001110100011010010110110<br>
-				10110010100101100001000000111010001101000011010010111001<br>
-				10010000001100011011011110110111001110011011011110110110<br>
-				00110010100100000011000110110000101101110001000000111001<br>
-				00110010101110110011001010110000101101100001000000111100<br>
-				10110111101110101011100100010000001110100011100100111010<br>
-				10110010100100000011010010110111001110100011001010110111<br>
-				00111010001101001011011110110111001110011001000000110100<br>
-				10110011000100000011110010110111101110101001000000110110<br>
-				00110010101110100001000000111001101101111011011010110010<br>
-				10110111101101110011001010010000001100001011000110110001<br>
-				10110010101110011011100110010000001101001011101000010111<br>
-				00010000001001101011000010110101101100101001000000111001<br>
-				10111010101110010011001010010000001101110011011110010000<br>
-				00110100001110101011011010110000101101110011100110010000<br>
-				00110010101101110011101000110010101110010001000000111010<br>
-				00110100001100101001000000111001001101111011011110110110<br>
-				10010000001100100011101010111001001101001011011100110011<br>
-				10010000001110100011010000110000101110100001000000111010<br>
-				001101001011011010110010100101110"}
 
 		//Fake messages
 		if(3)
@@ -285,7 +239,7 @@
 		return
 	if(!isliving(usr))
 		return
-	if ((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))) || (issilicon(usr)))
+	if ((usr.contents.Find(src) || (in_range(src, usr) && istype(src.loc, /turf))))
 		//Authenticate
 		if (href_list["auth"])
 			if(auth)
@@ -357,16 +311,6 @@
 						else
 							message = incorrectkey
 
-		//Hack the Console to get the password
-		if (href_list["hack"])
-			if((isAI(usr) || isrobot(usr)) && (usr.mind.antagonist.len && usr.mind.original == usr))
-				src.hacking = 1
-				src.screen = 2
-				update_icon()
-				//Time it takes to bruteforce is dependant on the password length.
-				spawn(100*length(src.linkedServer.decryptkey))
-					if(src && src.linkedServer && usr)
-						BruteForce(usr)
 		//Delete the log.
 		if (href_list["delete"])
 			//Are they on the view logs screen?

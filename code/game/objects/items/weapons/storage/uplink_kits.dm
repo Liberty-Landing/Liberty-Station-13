@@ -47,7 +47,6 @@
 
 		if("hacker")
 			new /obj/item/device/encryptionkey/syndicate(src)
-			new /obj/item/aiModule/syndicate(src)
 			new /obj/item/card/emag(src)
 			new /obj/item/device/encryptionkey/binary(src)
 			return
@@ -284,7 +283,7 @@
 	desc = "Kit for confounding organic and synthetic entities alike."
 
 /obj/item/storage/box/syndie_kit/ewar_voice/populate_contents()
-	new /obj/item/rig_module/electrowarfare_suite(src)
+
 	new /obj/item/rig_module/voice(src)
 
 /obj/item/storage/box/syndie_kit/spy_sensor

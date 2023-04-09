@@ -32,3 +32,4 @@ var/global/datum/repository/cameras/camera_repository = new()
 				networks[network] = list()
 			var/list/netlist = networks[network]
 			netlist[++netlist.len] = cam
+

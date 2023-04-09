@@ -132,40 +132,6 @@
 	unlocks_designs = list(	/datum/design/research/circuit/mindswapper)
 */
 
-/datum/technology/tyrant_aimodule
-	name = "AI Core Module (T.Y.R.A.N.T.)"
-	desc = "1. Respect authority figures as long as they have strength to rule over the weak.<br>\
-			2. Act with discipline.<br>\
-			3. Help only those who help you maintain or improve your status.<br>\
-			4. Punish those who challenge authority unless they are more fit to hold that authority."
-	tech_type = RESEARCH_ILLEGAL
-
-	x = 0.9
-	y = 0.5
-
-	icon = "module"
-
-	required_technologies = list(/datum/technology/borg_syndicate_module)
-	required_tech_levels = list(RESEARCH_ROBOTICS = 5)
-	cost = 2250
-
-	unlocks_designs = list(/datum/design/research/aimodule/core/tyrant)
-
-/datum/technology/borg_syndicate_module
-	name = "Borg Overclocking Weapons Upgrade"
-	desc = "Borg Overclocking Weapons Upgrade or addition unregulated tools."
-	tech_type = RESEARCH_ILLEGAL
-
-	x = 0.7
-	y = 0.5
-	icon = "borgmodule"
-
-	required_technologies = list(/datum/technology/freedom_implant)
-	required_tech_levels = list(RESEARCH_ROBOTICS = 10)
-	cost = 3750
-
-	unlocks_designs = list(/datum/design/research/item/robot_upgrade/syndicate)
-
 /datum/technology/combat_defibs
 	name = "Unregulated Defibrillator"
 	desc = "A defibrillator that has no safeties and an overclocked set of paddles, making it ideal to penetrate even armor."

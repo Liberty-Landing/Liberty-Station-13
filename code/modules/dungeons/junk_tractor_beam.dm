@@ -826,7 +826,7 @@
 		candidates -= candidate_mind
 
 		var/mob/M = candidate_mind.current
-		if((ishuman(M) || issilicon(M)) && (M.stat != DEAD && M.z == jtb_gen.z))  // Check if there is an alive human/silicon in the junk field
+		if(ishuman(M)&& (M.stat != DEAD && M.z == jtb_gen.z))  // Check if there is an alive human/silicon in the junk field
 			return TRUE
 	return FALSE
 

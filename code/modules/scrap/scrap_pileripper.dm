@@ -122,10 +122,7 @@
 
 
 /obj/machinery/pile_ripper/proc/eat(mob/living/L)
-	if(issilicon(L))
-		playsound(src.loc, 'sound/items/Welder.ogg', 50, 1)
-	else
-		playsound(src.loc, 'sound/effects/splat.ogg', 50, 1)
+	playsound(src.loc, 'sound/effects/splat.ogg', 50, 1)
 
 	var/gib = TRUE
 	// By default, the emagged pile_ripper will gib all non-carbons. (human simple animal mobs don't count)
@@ -134,7 +131,7 @@
 		if(!L.stat)
 			L.emote("painscream", , , 1)
 		add_blood(L)
-	if(!blood && !issilicon(L))
+	if(!blood)
 		blood = TRUE
 		update_icon()
 	if(gib)

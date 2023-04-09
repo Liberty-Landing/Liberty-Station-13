@@ -66,7 +66,6 @@
 		/obj/item/toy/weapon/sword,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosiadeus,
 		/obj/item/reagent_containers/food/snacks/grown/ambrosiavulgaris,
-		/obj/item/device/paicard,
 		/obj/item/device/violin,
 		/obj/item/storage/belt/utility/full,
 		/obj/item/clothing/accessory/tie/yellow)

@@ -46,7 +46,7 @@
 /atom/proc/attack_ghost(mob/observer/ghost/user as mob)
 	if(user.client)
 		if(check_rights_for(user.client, R_ADMIN)) // Are they allowed?
-			attack_ai(user)
+			return
 		user.examinate(src)
 	return FALSE
 

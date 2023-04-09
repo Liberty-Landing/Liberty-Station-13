@@ -30,11 +30,6 @@
 	desc = "A device used to scan a corpses' wounds for identification of causes of death."
 	build_path = /obj/item/autopsy_scanner
 
-/datum/design/research/item/medical/robot_scanner
-	name = "Robot Analyzer"
-	desc = "A hand-held scanner able to diagnose robotic injuries."
-	build_path = /obj/item/device/robotanalyzer
-
 /datum/design/research/item/medical/mass_spectrometer
 	name = "Mass Spectrometer"
 	desc = "A device for analyzing chemicals present in blood samples."

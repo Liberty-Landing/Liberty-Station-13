@@ -148,10 +148,7 @@
 				possible_targets += new_trace.impact_atom
 				for (var/atom/entry in possible_targets)
 					var/mob/possible_target
-					if (ismecha(entry))
-						var/obj/mecha/mechtarget = entry
-						possible_target = mechtarget.occupant
-					else if (ismob(entry))
+					if (ismob(entry))
 						possible_target = entry
 					if (possible_target)
 						if (possible_target == target)

@@ -57,7 +57,7 @@
 		return 0 //Shouldnt be possible, but safety
 
 	var/mob/M = C.mob
-	if (!M || isghost(M) || isnewplayer(M) || ismouse(M) || isdrone(M))
+	if (!M || isghost(M) || isnewplayer(M) || ismouse(M))
 		return VOTE_WEIGHT_LOW
 
 	var/datum/mind/mind = M.mind
@@ -267,7 +267,7 @@
 		return 0 //Shouldnt be possible, but safety
 
 	var/mob/M = C.mob
-	if (!M || isghost(M) || isnewplayer(M) || ismouse(M) || isdrone(M))
+	if (!M || isghost(M) || isnewplayer(M) || ismouse(M))
 		return VOTE_WEIGHT_LOW
 
 	var/datum/mind/mind = M.mind

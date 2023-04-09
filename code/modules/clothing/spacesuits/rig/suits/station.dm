@@ -155,7 +155,6 @@ Advanced Voidsuit: Union Chief
 
 /obj/item/rig/ce/equipped
 	initial_modules = list(
-		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/rcd,
 		/obj/item/rig_module/vision/meson,
@@ -270,7 +269,6 @@ Union RIG
 	req_access = list(access_rd)
 
 	initial_modules = list(
-		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/device/anomaly_scanner,
 		/obj/item/rig_module/storage
@@ -475,6 +473,5 @@ Union RIG
 		/obj/item/rig_module/vision/medhud,
 		/obj/item/rig_module/device/healthscanner,
 		/obj/item/rig_module/modular_injector/medical,
-		/obj/item/rig_module/ai_container,
 		/obj/item/rig_module/storage
 		)

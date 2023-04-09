@@ -86,11 +86,7 @@
 /client/verb/swap_hand()
 	set hidden = 1
 
-	if(isrobot(mob))
-		var/mob/living/silicon/robot/R = mob
-		R.cycle_modules()
-	else
-		mob.swap_hand()
+	mob.swap_hand()
 	return
 
 
@@ -114,7 +110,7 @@
 
 /client/verb/drop_item()
 	set hidden = 1
-	if(!isrobot(mob) && mob.stat == CONSCIOUS && isturf(mob.loc))
+	if(mob.stat == CONSCIOUS && isturf(mob.loc))
 		return mob.drop_item()
 	return
 

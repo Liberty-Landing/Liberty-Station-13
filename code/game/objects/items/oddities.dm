@@ -668,7 +668,7 @@
 
 /obj/item/oddity/si_bluespace_scanner/examine(mob/living/user, distance)
 	. = ..()
-	if(!iscarbon(user) || !issilicon(user))
+	if(!iscarbon(user))
 		return//Prevents ghosts form making a runtime
 	if(!user.stats?.getPerk(PERK_SCIENCE) || !usr.stat_check(STAT_COG, 60)) //got to be smarts
 		to_chat(usr, SPAN_WARNING("This tool is far too complex for you to comprehend how to even use it. The data and formulas displayed look like complete alien gibberish."))

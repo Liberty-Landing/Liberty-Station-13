@@ -245,10 +245,6 @@
 	update()
 	return
 
-// ai as human but can't flush
-/obj/machinery/disposal/attack_ai(mob/user as mob)
-	interact(user, 1)
-
 // human interact with machine
 /obj/machinery/disposal/attack_hand(mob/user as mob)
 
@@ -334,13 +330,12 @@
 				mode = 0
 			update()
 
-		if(!isAI(usr))
-			if(href_list["handle"])
-				flush = text2num(href_list["handle"])
-				update()
+		if(href_list["handle"])
+			flush = text2num(href_list["handle"])
+			update()
 
-			if(href_list["eject"])
-				eject()
+		if(href_list["eject"])
+			eject()
 	else
 		usr << browse(null, "window=disposal")
 		usr.unset_machine()
@@ -434,9 +429,6 @@
 	var/wrapcheck = 0
 	var/obj/structure/disposalholder/H = new()	// virtual holder object which actually
 												// travels through the pipes.
-	//Hacky test to get drones to mail themselves through disposals.
-	for(var/mob/living/silicon/robot/drone/D in src)
-		wrapcheck = 1
 
 	for(var/obj/item/smallDelivery/O in src)
 		wrapcheck = 1
@@ -487,10 +479,9 @@
 
 			AM.forceMove(src.loc)
 			AM.pipe_eject(0)
-			if(!isdrone(AM)) //Poor drones kept smashing windows and taking system damage being fired out of disposals. ~Z
-				spawn(1)
-					if(AM)
-						AM.throw_at(target, 5, 1)
+			spawn(1)
+				if(AM)
+					AM.throw_at(target, 5, 1)
 
 		H.vent_gas(loc)
 		qdel(H)
@@ -542,7 +533,7 @@
 	//Check for any living mobs trigger hasmob.
 	//hasmob effects whether the package goes to cargo or its tagged destination.
 	for(var/mob/living/M in D)
-		if(M && M.stat != DEAD && !isdrone(M))
+		if(M && M.stat != DEAD)
 			has_mob = TRUE
 
 	//Checks 1 contents level deep. This means that players can be sent through disposals...
@@ -550,7 +541,7 @@
 	for(var/obj/O in D)
 		if(O.contents)
 			for(var/mob/living/M in O.contents)
-				if(M && M.stat != DEAD && !isdrone(M))
+				if(M && M.stat != DEAD)
 					has_mob = TRUE
 
 	// now everything inside the disposal gets put into the holder
@@ -563,10 +554,6 @@
 		if(istype(AM, /obj/item/smallDelivery) && !has_mob)
 			var/obj/item/smallDelivery/T = AM
 			src.destinationTag = T.sortTag
-		//Drones can mail themselves through maint.
-		if(isdrone(AM))
-			var/mob/living/silicon/robot/drone/drone = AM
-			src.destinationTag = drone.mail_destination
 
 
 	// start the movement process
@@ -594,8 +581,6 @@
 
 		if(has_mob && prob(10) && !from_cloner) //Mobs shunted from the cloning vat are free from damage.
 			for(var/mob/living/H in src)
-				if(isdrone(H)) //Drones use the mailing code to move through the disposal system,
-					continue
 				//if(H.stats.getPerk(PERK_MERCENARY_GRIT)) //Assholes gain disposal immunity
 				//	continue - SoJ edit, we dont want perfect immunity
 				// Hurt any living creature jumping down disposals
@@ -1493,10 +1478,9 @@
 	if(H)
 		for(var/atom/movable/AM in H)
 			AM.forceMove(src.loc)
-			AM.pipe_eject(dir)
-			if(!isdrone(AM)) //Drones keep smashing windows from being fired out of chutes. Bad for the station. ~Z
-				spawn(5)
-					AM.throw_at(target, 3, 1)
+			AM.pipe_eject(dir)//Drones keep smashing windows from being fired out of chutes. Bad for the station. ~Z
+			spawn(5)
+				AM.throw_at(target, 3, 1)
 		H.vent_gas(src.loc)
 		qdel(H)
 

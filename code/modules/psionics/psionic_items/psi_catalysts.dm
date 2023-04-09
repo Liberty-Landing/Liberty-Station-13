@@ -118,14 +118,14 @@
 	recycled for the somewhat rare materials that make them. Holding it feels quite strange. Even to an unattuned mind, one can hear the faintly glowing object whispering, the eager voices say: \
 	How shocking."
 	stored_power = /obj/item/organ/internal/psionic_tumor/proc/electro_kinetic_blaster
-
+/*
 /obj/item/device/psionic_catalyst/kinetic_barrier
 	name = "psionic catalyst: Kinetic Barrier"
 	desc = "Psionic catalysts, other worldly items not quite understood, but valuable for the powers they may grant a psion. To everyone else, they have research value in a deconstructor or may be \
 	recycled for the somewhat rare materials that make them. Holding it feels quite strange. Even to an unattuned mind, one can hear the faintly glowing object whispering, the eager voices say: \
 	Protection of body and mind."
 	stored_power = /obj/item/organ/internal/psionic_tumor/proc/kinetic_barrier
-
+*/
 /obj/item/device/psionic_catalyst/chosen_control
 	name = "psionic catalyst: Chosen Control"
 	desc = "Psionic catalysts, other worldly items not quite understood, but valuable for the powers they may grant a psion. To everyone else, they have research value in a deconstructor or may be \

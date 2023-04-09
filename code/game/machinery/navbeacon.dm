@@ -133,9 +133,6 @@ var/global/list/navbeacons			// no I don't like putting this in, but it will do 
 				to_chat(user, "You must open the cover first!")
 		return
 
-	attack_ai(var/mob/user)
-		interact(user, 1)
-
 	attack_hand(var/mob/user)
 
 		if(!user.IsAdvancedToolUser())
@@ -195,7 +192,7 @@ Transponder Codes:<UL>"}
 		..()
 		if (usr.stat)
 			return
-		if ((in_range(src, usr) && istype(src.loc, /turf)) || (issilicon(usr)))
+		if ((in_range(src, usr) && istype(src.loc, /turf)))
 			if(open && !locked)
 				usr.set_machine(src)
 

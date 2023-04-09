@@ -29,7 +29,7 @@ var/global/list/image/splatter_cache=list()
 
 /obj/effect/decal/cleanable/blood/examine(mob/user)
 	. = ..()
-	if(iscarbon(user) || issilicon(user))
+	if(iscarbon(user))
 		if(shoe_types.len && (user.stats?.getPerk(PERK_EAR_OF_QUICKSILVER) || user.stats.getStat(STAT_COG) >= STAT_LEVEL_EXPERT)) //Basiclly rangers are meant to do this so they have a bypass / Cognition because Visual Calculus
 			to_chat(user, "<span class='info'>There is traces of shoe prints that are likely from:</span>")
 			for(var/shoe in shoe_types)

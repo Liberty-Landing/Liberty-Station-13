@@ -34,11 +34,6 @@
 		connected.release_pod(src)
 	return ..()
 
-/obj/machinery/clonepod/attack_ai(mob/user as mob)
-
-	add_hiddenprint(user)
-	return attack_hand(user)
-
 /obj/machinery/clonepod/attack_hand(mob/user as mob)
 	if(isnull(occupant) || (stat & NOPOWER))
 		return

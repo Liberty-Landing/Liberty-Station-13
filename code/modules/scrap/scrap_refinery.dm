@@ -131,10 +131,7 @@
 /obj/machinery/recycler/proc/eat(mob/living/L)
 	L.forceMove(src.loc)
 
-	if(issilicon(L))
-		playsound(src.loc, 'sound/items/Welder.ogg', 50, 1)
-	else
-		L.emote("painscream", , , 1)
+	L.emote("painscream", , , 1)
 
 	var/gib = TRUE
 	// By default, the emagged recycler will gib all non-carbons. (human simple animal mobs don't count)
@@ -144,7 +141,7 @@
 			L.emote("painscream", , , 1)
 		add_blood(L)
 
-	if(!blood && !issilicon(L))
+	if(!blood)
 		blood = TRUE
 		update_icon()
 

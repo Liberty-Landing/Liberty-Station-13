@@ -27,8 +27,6 @@
 					lostTarget(target)
 
 /obj/machinery/camera/proc/newTarget(var/mob/target)
-	if (isAI(target))
-		return 0
 	if (QDELETED(target) || QDESTROYING(target)) //sanity
 		return FALSE
 	if (detectTime == 0)

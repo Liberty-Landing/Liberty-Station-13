@@ -164,12 +164,6 @@
 
 	else if(iscarbon(speaker)) // Nonhuman carbon mob
 		jobname = "No id"
-	else if(isAI(speaker))
-		jobname = "AI"
-	else if(isrobot(speaker))
-		jobname = "Robot"
-	else if(istype(speaker, /mob/living/silicon/pai))
-		jobname = "Personal AI"
 	else
 		jobname = "Unknown"
 
@@ -186,7 +180,7 @@
 	if(!speaker)
 		return .
 
-	if(. != speaker.real_name && !isAI(speaker))
+	if(. != speaker.real_name)
 	 //Announce computer and various stuff that broadcasts doesn't use it's real name but AI's can't pretend to be other mobs.
 		. = "[speaker.real_name] ([.])"
 	return "[.] ([ghost_follow_link(speaker, src)])"

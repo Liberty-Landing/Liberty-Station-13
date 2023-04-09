@@ -74,7 +74,7 @@
 
 /obj/item/rcd/afterattack(atom/A, mob/user, proximity)
 	if(!proximity) return
-	if(disabled && !isrobot(user))
+	if(disabled)
 		return 0
 	if(istype(get_area(A),/area/shuttle)||istype(get_area(A),/turf/space/transit))
 		return 0
@@ -223,7 +223,7 @@
 				build_delay = 50 / construction_speed
 			else if(istype(T,/obj/structure/computerframe))
 				build_cost =  10 - construction_efficiency
-				build_delay = 50 / construction_speed		
+				build_delay = 50 / construction_speed
 			else
 				build_type =  ""
 	if(!build_type)
@@ -272,26 +272,6 @@
 	ratio = max(round(ratio, 0.10) * 100, 10)
 
 	add_overlay("[icon_state]-[ratio]")
-
-/obj/item/rcd/borg
-	canRwall = 1
-
-/obj/item/rcd/borg/useResource(var/amount, var/mob/user, var/checkOnly)
-	if(isrobot(user))
-		var/mob/living/silicon/robot/R = user
-		if(R.cell)
-			var/cost = amount*30
-			if(R.cell.charge >= cost)
-				if (!checkOnly)
-					R.cell.use(cost)
-				return 1
-	return 0
-
-/obj/item/rcd/borg/attackby()
-	return
-
-/obj/item/rcd/borg/can_use(var/mob/user,var/turf/T)
-	return (user.Adjacent(T) && !user.stat)
 
 /obj/item/rcd/mounted/useResource(var/amount, var/mob/user, var/checkOnly)
 	var/cost = amount*130 //so that a rig with default powercell can build ~2.5x the stuff a fully-loaded RCD can.

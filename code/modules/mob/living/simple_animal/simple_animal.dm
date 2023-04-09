@@ -489,10 +489,8 @@
 	return
 
 /mob/living/simple_animal/attackby(obj/item/O, mob/user)
-	if(istype(O, /obj/item/gripper))
-		return ..(O, user)
 
-	else if(istype(O, /obj/item/reagent_containers) || istype(O, /obj/item/stack/medical))
+	if(istype(O, /obj/item/reagent_containers) || istype(O, /obj/item/stack/medical))
 		..()
 
 	else if(meat_type && (stat == DEAD))	//if the animal has a meat, and if it is dead.
@@ -558,10 +556,6 @@
 		var/mob/living/L = target_mob
 		if(!L.stat || L.health >= (ishuman(L) ? HEALTH_THRESHOLD_CRIT : 0))
 			return (FALSE)
-	if (istype(target_mob,/obj/mecha))
-		var/obj/mecha/M = target_mob
-		if (M.occupant)
-			return FALSE
 	if (istype(target_mob,/obj/machinery/bot))
 		var/obj/machinery/bot/B = target_mob
 		if(B.health > 0)

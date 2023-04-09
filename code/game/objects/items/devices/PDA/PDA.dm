@@ -340,7 +340,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	data["mode"] = mode					// The current view
 	data["scanmode"] = scanmode				// Scanners
 	data["fon"] = fon					// Flashlight on?
-	data["pai"] = (isnull(pai) ? 0 : 1)			// pAI inserted?
 	data["note"] = note					// current pda notes
 	data["message_silent"] = message_silent					// does the pda make noise when it receives a message?
 	data["news_silent"] = news_silent					// does the pda make noise when it receives news?
@@ -378,12 +377,8 @@ var/global/list/obj/item/device/pda/PDAs = list()
 			if(isnull(cartridge.radio))
 				cartdata["radio"] = 0
 			else
-				if(istype(cartridge.radio, /obj/item/radio/integrated/beepsky))
-					cartdata["radio"] = 1
 				if(istype(cartridge.radio, /obj/item/radio/integrated/signal))
-					cartdata["radio"] = 2
-				if(istype(cartridge.radio, /obj/item/radio/integrated/mule))
-					cartdata["radio"] = 3
+					cartdata["radio"] = 1
 
 		if(mode == 2)
 			cartdata["charges"] = cartridge.charges ? cartridge.charges : 0
@@ -800,26 +795,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 				ui.close()
 				return 0
 
-//pAI FUNCTIONS===================================
-		if("pai")
-			if(pai)
-				if(pai.loc != src)
-					pai = null
-				else
-					switch(href_list["option"])
-						if("1")		// Configure pAI device
-							pai.attack_self(U)
-						if("2")		// Eject pAI device
-							var/turf/T = get_turf_or_move(src.loc)
-							if(T)
-								pai.loc = T
-								pai = null
-
-		else
-			mode = text2num(href_list["choice"])
-			if(cartridge)
-				cartridge.mode = mode
-
 //EXTRA FUNCTIONS===================================
 
 	if (mode == 2||mode == 21)//To clear message over-lays.
@@ -1013,24 +988,10 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	new_message = 1
 	update_icon()
 
-/obj/item/device/pda/ai/new_message(var/atom/movable/sending_unit, var/sender, var/sender_job, var/message)
-	var/track = ""
-	if(ismob(sending_unit.loc) && isAI(loc))
-		track = "(<a href='byond://?src=\ref[loc];track=\ref[sending_unit.loc];trackname=[html_encode(sender)]'>Follow</a>)"
-
-	var/reception_message = "\icon[src] <b>Message from [sender] ([sender_job]), </b>\"[message]\" (<a href='byond://?src=\ref[src];choice=Message;skiprefresh=1;target=\ref[sending_unit]'>Reply</a>) [track]"
-	new_info(message_silent, newstone, reception_message)
-
-	log_pda("[usr] (PDA: [sending_unit]) sent \"[message]\" to [name]")
-	new_message = 1
-
 /obj/item/device/pda/verb/verb_reset_pda()
 	set category = "Object"
 	set name = "Reset PDA"
 	set src in usr
-
-	if(issilicon(usr))
-		return
 
 	if(can_use(usr))
 		mode = 0
@@ -1043,9 +1004,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	set category = "Object"
 	set name = "Remove id"
 	set src in usr
-
-	if(issilicon(usr))
-		return
 
 	if ( can_use(usr) )
 		if(id)
@@ -1060,9 +1018,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	set category = "Object"
 	set name = "Remove pen"
 	set src in usr
-
-	if(issilicon(usr))
-		return
 
 	if ( can_use(usr) )
 		var/obj/item/pen/O = locate() in src
@@ -1086,9 +1041,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 	set category = "Object"
 	set name = "Remove cartridge"
 	set src in usr
-
-	if(issilicon(usr))
-		return
 
 	if (can_use(usr) && !isnull(cartridge))
 		var/turf/T = get_turf(src)
@@ -1160,12 +1112,6 @@ var/global/list/obj/item/device/pda/PDAs = list()
 					updateSelfDialog()//Update self dialog on success.
 			return	//Return in case of failed check or when successful.
 		updateSelfDialog()//For the non-input related code.
-	else if(istype(C, /obj/item/device/paicard) && !src.pai)
-		user.drop_item()
-		C.loc = src
-		pai = C
-		to_chat(user, SPAN_NOTICE("You slot \the [C] into [src]."))
-		SSnano.update_uis(src) // update all UIs attached to src
 	else if(istype(C, /obj/item/pen))
 		var/obj/item/pen/O = locate() in src
 		if(O)

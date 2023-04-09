@@ -369,10 +369,6 @@ SUBSYSTEM_DEF(job)
 			alt_title = H.mind.role_alt_title
 
 			switch(rank)
-				if("Robot")
-					return H.Robotize()
-				if("AI")
-					return H
 				if("Premier")
 					var/sound/announce_sound = (SSticker.current_state <= GAME_STATE_SETTING_UP)? null : sound('sound/misc/boatswain.ogg', volume=20)
 					captain_announcement.Announce("Premier [H.real_name] has signed in.", new_sound=announce_sound)

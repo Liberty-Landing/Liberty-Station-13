@@ -5,7 +5,6 @@
 /datum/nano_module
 	var/name
 	var/datum/host
-	var/available_to_ai = TRUE
 	var/datum/topic_manager/topic_manager
 	var/list/using_access = list()
 

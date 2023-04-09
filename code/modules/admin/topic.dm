@@ -75,9 +75,6 @@ mob/living/proc/can_centcom_reply()
 mob/living/carbon/human/can_centcom_reply()
 	return istype(l_ear, /obj/item/device/radio/headset) || istype(r_ear, /obj/item/device/radio/headset)
 
-mob/living/silicon/ai/can_centcom_reply()
-	return common_radio != null && !check_unable(2)
-
 /atom/proc/extra_admin_link()
 	return
 

@@ -27,8 +27,6 @@
 			dat += "<a href='byond://?src=\ref[src];add=1'>+</a><BR><BR>"
 	else if(toner)
 		dat += "Please insert something to copy.<BR><BR>"
-	if(issilicon(user))
-		dat += "<a href='byond://?src=\ref[src];aipic=1'>Print photo from database</a><BR><BR>"
 	dat += "Current toner level: [toner]"
 	if(!toner)
 		dat +="<BR>Please insert a new toner cartridge!"
@@ -75,30 +73,6 @@
 		if(copies < maxcopies)
 			copies++
 			updateUsrDialog()
-	else if(href_list["aipic"])
-		if(!issilicon(usr))
-			return
-		if(stat & (BROKEN|NOPOWER))
-			return
-
-		if(toner >= 1)
-			var/mob/living/silicon/tempAI = usr
-			var/obj/item/device/camera/siliconcam/camera = tempAI.aiCamera
-
-			if(!camera)
-				return
-			var/obj/item/photo/selection = camera.selectpicture()
-			if (!selection)
-				return
-
-			var/obj/item/photo/p = photocopy(selection)
-			if (p.desc == "")
-				p.desc += "Copied by [tempAI.name]"
-			else
-				p.desc += " - Copied by [tempAI.name]"
-			toner -= 1
-			sleep(15)
-		updateUsrDialog()
 
 /obj/machinery/photocopier/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/paper) || istype(I, /obj/item/photo) || istype(I, /obj/item/paper_bundle))

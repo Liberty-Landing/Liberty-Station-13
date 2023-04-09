@@ -27,23 +27,6 @@
 /obj/structure/largecrate/mule
 	name = "MULE crate"
 
-/obj/structure/largecrate/hoverpod
-	name = "\improper Hoverpod assembly crate"
-	desc = "It comes in a box for the fabricator's sake. Where does the wood come from? ... And why is it lighter?"
-	icon_state = "mulecrate"
-
-/obj/structure/largecrate/hoverpod/attackby(obj/item/I, mob/user)
-	if(QUALITY_PRYING in I.tool_qualities)
-		if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_WELDING, FAILCHANCE_EASY, required_stat = STAT_MEC))
-			var/obj/item/mecha_parts/mecha_equipment/ME
-			var/obj/mecha/working/hoverpod/H = new (loc)
-
-			ME = new /obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp
-			ME.attach(H)
-			ME = new /obj/item/mecha_parts/mecha_equipment/tool/passenger
-			ME.attach(H)
-		..()
-
 /obj/structure/largecrate/animal
 	icon_state = "mulecrate"
 	var/held_count = 1

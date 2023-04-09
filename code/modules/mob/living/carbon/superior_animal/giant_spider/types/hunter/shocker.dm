@@ -25,7 +25,7 @@
 				if (targetted_mob.weakened || targetted_mob.stunned) //to prevent stunlocks from heavy electrocutions
 					if (electrocution_amount > 15)
 						electrocution_amount = 15
-				if(iscarbon(targetted_mob) || issilicon(targetted_mob)) // only carbons or silicons can be affected by electricity
+				if(iscarbon(targetted_mob)) // only carbons or silicons can be affected by electricity
 					targetted_mob.electrocute_act(electrocution_amount, src)
 				else
 					targetted_mob.damage_through_armor(electrocution_amount, BURN)

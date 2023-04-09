@@ -4,7 +4,6 @@
 
 
 #define RIG_SECURITY 1
-#define RIG_AI_OVERRIDE 2
 #define RIG_SYSTEM_CONTROL 4
 #define RIG_INTERFACE_LOCK 8
 #define RIG_INTERFACE_SHOCK 16
@@ -90,7 +89,6 @@
 	var/subverted = 0
 	var/interface_locked = 0
 	var/control_overridden = 0
-	var/ai_override_enabled = 0
 	var/security_check_enabled = 1
 	var/malfunctioning = 0
 	var/malfunction_delay = 0
@@ -493,8 +491,6 @@
 	data["emagged"] =       subverted
 	data["coverlock"] =     locked
 	data["interfacelock"] = interface_locked
-	data["aicontrol"] =     control_overridden
-	data["aioverride"] =    ai_override_enabled
 	data["securitycheck"] = security_check_enabled
 	data["malf"] =          malfunction_delay
 
@@ -578,10 +574,6 @@
 			to_chat(user, SPAN_DANGER("Unauthorized user. Access denied."))
 			return 0
 
-	else if(!ai_override_enabled)
-		to_chat(user, SPAN_DANGER("Synthetic access disabled. Please consult hardware provider."))
-		return 0
-
 	return 1
 
 //TODO: Fix Topic vulnerabilities for malfunction and AI override.
@@ -612,9 +604,6 @@
 					selected_module = module
 				if("select_charge_type")
 					module.charge_selected = href_list["charge_type"]
-	else if(href_list["toggle_ai_control"])
-		ai_override_enabled = !ai_override_enabled
-		notify_ai("Synthetic suit control has been [ai_override_enabled ? "enabled" : "disabled"].")
 	else if(href_list["toggle_suit_lock"])
 		if (locked != -1)
 			locked = !locked
@@ -625,12 +614,6 @@
 	usr.set_machine(src)
 	src.add_fingerprint(usr)
 	return 0
-
-/obj/item/rig/proc/notify_ai(var/message)
-	for(var/obj/item/rig_module/ai_container/module in installed_modules)
-		if(module.integrated_ai && module.integrated_ai.client && !module.integrated_ai.stat)
-			to_chat(module.integrated_ai, "[message]")
-			. = 1
 
 //Delayed equipping of rigs
 /obj/item/rig/pre_equip(var/mob/user, var/slot)
@@ -875,62 +858,6 @@
 		return 1
 	return 0
 
-/obj/item/rig/proc/ai_can_move_suit(var/mob/user, var/check_user_module = 0, var/check_for_ai = 0)
-
-	if(check_for_ai)
-		if(!(locate(/obj/item/rig_module/ai_container) in contents))
-			return 0
-		var/found_ai
-		for(var/obj/item/rig_module/ai_container/module in contents)
-			if(module.damage >= 2)
-				continue
-			if(module.integrated_ai && module.integrated_ai.client && !module.integrated_ai.stat)
-				found_ai = 1
-				break
-		if(!found_ai)
-			return 0
-
-	if(check_user_module)
-		if(!user || !user.loc || !user.loc.loc)
-			return 0
-		var/obj/item/rig_module/ai_container/module = user.loc.loc
-		if(!istype(module) || module.damage >= 2)
-			to_chat(user, SPAN_WARNING("Your host module is unable to interface with the suit."))
-			return 0
-
-	if(offline || !cell || !cell.charge || locked_down)
-		if(user) user << SPAN_WARNING("Your host rig is unpowered and unresponsive.")
-		return 0
-	if(!wearer || wearer.back != src)
-		if(user) user << SPAN_WARNING("Your host rig is not being worn.")
-		return 0
-	if(!wearer.stat && !control_overridden && !ai_override_enabled)
-		if(user) user << SPAN_WARNING("You are locked out of the suit servo controller.")
-		return 0
-	return 1
-
-/obj/item/rig/proc/force_rest(var/mob/user)
-	if(!ai_can_move_suit(user, check_user_module = 1))
-		return
-	wearer.lay_down()
-	to_chat(user, "<span class='notice'>\The [wearer] is now [wearer.resting ? "resting" : "getting up"].</span>")
-
-/obj/item/rig/proc/forced_move(var/direction, var/mob/user)
-	if(malfunctioning)
-		direction = pick(GLOB.cardinal)
-
-	if(world.time < wearer_move_delay)
-		return
-
-	if(!wearer || !wearer.loc || !ai_can_move_suit(user, check_user_module = 1))
-		return
-
-	// AIs are a bit slower than regular and ignore move intent.
-	wearer_move_delay = world.time + ai_controlled_move_delay
-
-	cell.use(aimove_power_usage * CELLRATE)
-	wearer.DoMove(direction, user)
-
 // This returns the rig if you are contained inside one, but not if you are wearing it
 /atom/proc/get_rig()
 	if(loc)
@@ -956,8 +883,6 @@
 /obj/item/rig/proc/misconfigure(var/probability)
 	if (prob(probability))
 		wires.UpdatePulsed(RIG_SECURITY)//Fiddle with access
-	if (prob(probability))
-		wires.UpdatePulsed(RIG_AI_OVERRIDE)//frustrate the AI
 	if (prob(probability))
 		wires.UpdateCut(RIG_SYSTEM_CONTROL)//break the suit
 	if (prob(probability))

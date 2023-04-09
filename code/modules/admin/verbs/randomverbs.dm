@@ -148,24 +148,6 @@ proc/cmd_admin_mute(mob/M as mob, mute_type, automute = 0)
 	to_chat(M, "<span class = 'alert'>You have been [muteunmute] from [mute_string].</span>")
 
 
-ADMIN_VERB_ADD(/client/proc/cmd_admin_add_random_ai_law, R_FUN, FALSE)
-/client/proc/cmd_admin_add_random_ai_law()
-	set category = "Fun"
-	set name = "Add Random AI Law"
-	if(!holder)
-		to_chat(src, "Only administrators may use this command.")
-		return
-	var/confirm = alert(src, "You sure?", "Confirm", "Yes", "No")
-	if(confirm != "Yes") return
-	log_admin("[key_name(src)] has added a random AI law.")
-	message_admins("[key_name_admin(src)] has added a random AI law.", 1)
-
-	var/show_log = alert(src, "Show ion message?", "Message", "Yes", "No")
-	if(show_log == "Yes")
-		command_announcement.Announce("Ion storm detected in Colony vicinity. Please check all AI-controlled equipment for errors.", "Anomaly Alert", new_sound = 'sound/AI/ionstorm.ogg')
-
-	IonStorm(0)
-
 
 /*
 Allow admins to set players to be able to respawn/bypass 30 min wait, without the admin having to edit variables directly
@@ -567,49 +549,19 @@ ADMIN_VERB_ADD(/client/proc/respawn_character, R_ADMIN, FALSE)
 	SSjob.EquipRank(new_character, new_character.mind.assigned_role)
 
 	//Announces the character on all the systems, based on the record.
-	if(!issilicon(new_character))//If they are not a cyborg/AI.
-		if(!record_found && !player_is_antag(new_character.mind, only_offstation_roles = 1)) //If there are no records for them. If they have a record, this info is already in there. MODE people are not announced anyway.
-			//Power to the user!
-			if(alert(new_character,"Warning: No data core entry detected. Would you like to announce the arrival of this character by adding them to various databases, such as medical records?",,"No","Yes")=="Yes")
-				data_core.manifest_inject(new_character)
+	if(!record_found && !player_is_antag(new_character.mind, only_offstation_roles = 1)) //If there are no records for them. If they have a record, this info is already in there. MODE people are not announced anyway.
+		//Power to the user!
+		if(alert(new_character,"Warning: No data core entry detected. Would you like to announce the arrival of this character by adding them to various databases, such as medical records?",,"No","Yes")=="Yes")
+			data_core.manifest_inject(new_character)
 
-			if(alert(new_character,"Would you like an active AI to announce this character?",,"No","Yes")=="Yes")
-				call(/proc/AnnounceArrival)(new_character, new_character.mind.assigned_role)
+		if(alert(new_character,"Would you like an active AI to announce this character?",,"No","Yes")=="Yes")
+			call(/proc/AnnounceArrival)(new_character, new_character.mind.assigned_role)
 
 	message_admins("\blue [admin] has respawned [player_key] as [new_character.real_name].", 1)
 
 	to_chat(new_character, "You have been fully respawned. Enjoy the game.")
 	AnnounceArrival(new_character, new_character.mind.assigned_role, spawnpoint.message)	//will not broadcast if there is no message
 	return new_character
-
-ADMIN_VERB_ADD(/client/proc/cmd_admin_add_freeform_ai_law, R_FUN, FALSE)
-/client/proc/cmd_admin_add_freeform_ai_law()
-	set category = "Fun"
-	set name = "Add Custom AI law"
-	if(!holder)
-		to_chat(src, "Only administrators may use this command.")
-		return
-	var/input = sanitize(input(usr, "Please enter anything you want the AI to do. Anything. Serious.", "What?", "") as text|null)
-	if(!input)
-		return
-	for(var/mob/living/silicon/ai/M in SSmobs.mob_list)
-		if (M.stat == 2)
-			to_chat(usr, "Upload failed. No signal is being detected from the AI.")
-		else if (M.see_in_dark == 0)
-			to_chat(usr, "Upload failed. Only a faint signal is being detected from the AI, and it is not responding to our requests. It may be low on power.")
-		else
-			M.add_ion_law(input)
-			for(var/mob/living/silicon/ai/O in SSmobs.mob_list)
-				to_chat(O, "\red " + input + "\red...LAWS UPDATED")
-				O.show_laws()
-
-	log_admin("Admin [key_name(usr)] has added a new AI law - [input]")
-	message_admins("Admin [key_name_admin(usr)] has added a new AI law - [input]", 1)
-
-	var/show_log = alert(src, "Show ion message?", "Message", "Yes", "No")
-	if(show_log == "Yes")
-		command_announcement.Announce("Ion storm detected in Colony vicinity. Please check all AI-controlled equipment for errors.", "Anomaly Alert", new_sound = 'sound/AI/ionstorm.ogg')
-
 
 ADMIN_VERB_ADD(/client/proc/cmd_admin_rejuvenate, R_ADMIN|R_MOD, FALSE)
 /client/proc/cmd_admin_rejuvenate(mob/living/M as mob in SSmobs.mob_list)

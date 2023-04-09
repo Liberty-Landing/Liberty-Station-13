@@ -119,7 +119,6 @@
 	var/list/listening = list()
 	listening |= src	// We can always hear ourselves.
 	var/list/listening_obj = list()
-	var/list/eye_heard = list()
 
 		// This is essentially a copy/paste from living/say() the purpose is to get mobs inside of objects without recursing through
 		// the contents of every mob and object in get_mobs_or_objects_in_view() looking for PAI's inside of the contents of a bag inside the
@@ -142,12 +141,6 @@
 		for(var/mob/M in GLOB.player_list)
 			if(M.get_preference_value(/datum/client_preference/show_ooc) == GLOB.PREF_HIDE)
 				continue
-			if(isAI(M))
-				var/mob/living/silicon/ai/A = M
-				if(A.eyeobj && (A.eyeobj.locs[1] in hearturfs))
-					eye_heard |= M.client
-					listening |= M.client
-					continue
 
 			if(M.loc && (M.locs[1] in hearturfs))
 				listening |= M.client
@@ -160,11 +153,6 @@
 			admin_stuff += "/([key])"
 			if(t != src)
 				admin_stuff += "([admin_jump_link(mob, t.holder)])"
-		if(isAI(t.mob))
-			if(t in eye_heard)
-				prefix = "(Eye) "
-			else
-				prefix = "(Core) "
 		if(t.get_preference_value(/datum/client_preference/show_looc) == GLOB.PREF_SHOW)
 			to_chat(t, "<span class='ooc'><span class='looc'>" + create_text_tag("looc", "LOOC:", t) + " <span class='prefix'>[prefix]</span><EM>[display_name][admin_stuff]:</EM> <span class='message'>[msg]</span></span></span>")
 
@@ -177,11 +165,6 @@
 			to_chat(adm, "<span class='ooc'><span class='rlooc'>" + create_text_tag("rlooc", "(R)LOOC:", adm) + " <span class='prefix'>[prefix]</span><EM>[display_name][admin_stuff]:</EM> <span class='message'>[msg]</span></span></span>")
 
 /mob/proc/get_looc_source()
-	return src
-
-/mob/living/silicon/ai/get_looc_source()
-	if(eyeobj)
-		return eyeobj
 	return src
 
 

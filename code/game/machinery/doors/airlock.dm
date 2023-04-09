@@ -459,23 +459,22 @@ There are 9 wires.
 
 
 /obj/machinery/door/airlock/bumpopen(mob/living/user) //Airlocks now zap you when you 'bump' them open when they're electrified. --NeoFite
-	if(!issilicon(usr))
-		if(isElectrified())
-			if(!justzap)
-				if(shock(user, 100))
-					justzap = 1
-					spawn (10)
-						justzap = 0
-					return FALSE
-			else /*if(justzap)*/
+	if(isElectrified())
+		if(!justzap)
+			if(shock(user, 100))
+				justzap = 1
+				spawn (10)
+					justzap = 0
 				return FALSE
-		else if(prob(10) && operating == 0)
-			var/mob/living/carbon/C = user
-			if(istype(C) && C.hallucination_power > 25)
-				to_chat(user, "<span class='danger'>You feel a powerful shock course through your body!</span>")
-				user.adjustHalLoss(10)
-				//user.Stun(10) salt pr, this is bullshit never really tricks anyone and does nothing but unrealisticlly block you cuz hur dur im shocked! when not
-				return FALSE
+		else /*if(justzap)*/
+			return FALSE
+	else if(prob(10) && operating == 0)
+		var/mob/living/carbon/C = user
+		if(istype(C) && C.hallucination_power > 25)
+			to_chat(user, "<span class='danger'>You feel a powerful shock course through your body!</span>")
+			user.adjustHalLoss(10)
+			//user.Stun(10) salt pr, this is bullshit never really tricks anyone and does nothing but unrealisticlly block you cuz hur dur im shocked! when not
+			return FALSE
 	..()
 
 /obj/machinery/door/airlock/proc/isElectrified()
@@ -754,9 +753,6 @@ There are 9 wires.
 				playsound(loc, 'sound/machines/Custom_deny.ogg', 50, 1, -2)
 	return
 
-/obj/machinery/door/airlock/attack_ai(mob/user as mob)
-	nano_ui_interact(user)
-
 /obj/machinery/door/airlock/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS, var/datum/nano_topic_state/state = GLOB.default_state)
 	var/data[0]
 
@@ -830,54 +826,6 @@ There are 9 wires.
 		ui.open()
 		ui.set_auto_update(1)
 
-/obj/machinery/door/airlock/proc/hack(mob/user as mob)
-	if(!aiHacking)
-		aiHacking = TRUE
-		spawn(20)
-			//TODO: Make this take a minute
-			to_chat(user, "Airlock AI control has been blocked. Beginning fault-detection.")
-			sleep(50)
-			if(canAIControl())
-				to_chat(user, "Alert cancelled. Airlock control has been restored without our assistance.")
-				aiHacking = FALSE
-				return
-			else if(!canAIHack(user))
-				to_chat(user, "We've lost our connection! Unable to hack airlock.")
-				aiHacking = FALSE
-				return
-			to_chat(user, "Fault confirmed: airlock control wire disabled or cut.")
-			sleep(20)
-			to_chat(user, "Attempting to hack into airlock. This may take some time.")
-			sleep(200)
-			if(canAIControl())
-				to_chat(user, "Alert cancelled. Airlock control has been restored without our assistance.")
-				aiHacking = FALSE
-				return
-			else if(!canAIHack(user))
-				to_chat(user, "We've lost our connection! Unable to hack airlock.")
-				aiHacking = FALSE
-				return
-			to_chat(user, "Upload access confirmed. Loading control program into airlock software.")
-			sleep(170)
-			if(canAIControl())
-				to_chat(user, "Alert cancelled. Airlock control has been restored without our assistance.")
-				aiHacking = FALSE
-				return
-			else if(!canAIHack(user))
-				to_chat(user, "We've lost our connection! Unable to hack airlock.")
-				aiHacking = FALSE
-				return
-			to_chat(user, "Transfer complete. Forcing airlock to execute program.")
-			sleep(50)
-			//disable blocked control
-			aiControlDisabled = 2
-			to_chat(user, "Receiving control information from airlock.")
-			sleep(10)
-			//bring up airlock dialog
-			aiHacking = FALSE
-			if (user)
-				attack_ai(user)
-
 /obj/machinery/door/airlock/CanPass(atom/movable/mover, turf/target, height=0, air_group=0)
 	if (isElectrified())
 		if (istype(mover, /obj/item))
@@ -889,10 +837,9 @@ There are 9 wires.
 	return ..()
 
 /obj/machinery/door/airlock/attack_hand(mob/user as mob)
-	if(!issilicon(usr))
-		if(isElectrified())
-			if(shock(user, 100))
-				return
+	if(isElectrified())
+		if(shock(user, 100))
+			return
 
 	// No. -- cib
 	/**
@@ -926,15 +873,6 @@ There are 9 wires.
 /obj/machinery/door/airlock/CanUseTopic(mob/user)
 	if(operating < 0) //emagged
 		to_chat(user, SPAN_WARNING("Unable to interface: Internal error."))
-		return STATUS_CLOSE
-	if(issilicon(user) && !(allowed(user) && canAIControl()))
-		if(canAIHack(user))
-			hack(user)
-		else
-			if (isAllPowerLoss()) //don't really like how this gets checked a second time, but not sure how else to do it.
-				to_chat(user, SPAN_WARNING("Unable to interface: Connection timed out."))
-			else
-				to_chat(user, SPAN_WARNING("Unable to interface: Connection refused."))
 		return STATUS_CLOSE
 
 	return ..()
@@ -998,10 +936,9 @@ There are 9 wires.
 	return TRUE
 
 /obj/machinery/door/airlock/attackby(obj/item/I, mob/user)
-	if(!issilicon(usr))
-		if(isElectrified())
-			if(shock(user, 75))
-				return
+	if(isElectrified())
+		if(shock(user, 75))
+			return
 	if(istype(I, /obj/item/taperoll))
 		return
 	add_fingerprint(user)
@@ -1135,9 +1072,6 @@ There are 9 wires.
 		return attack_hand(user)
 	else if(istype(I, /obj/item/device/assembly/signaler))
 		return attack_hand(user)
-	else if(istype(I, /obj/item/pai_cable))	// -- TLE
-		var/obj/item/pai_cable/cable = I
-		cable.plugin(src, user)
 
 	else
 		..()
@@ -1371,7 +1305,7 @@ There are 9 wires.
 	return TRUE
 
 /obj/machinery/door/airlock/allowed(mob/M)
-	if(locked && !issilicon(M))
+	if(locked)
 		return FALSE
 	return ..(M)
 

@@ -244,8 +244,6 @@
 		if (L.stat != DEAD)
 			return TRUE
 
-	for (var/obj/mecha/M in loc)
-		return TRUE
 
 	return FALSE
 
@@ -354,12 +352,6 @@
 	var/obj/machinery/bot/B = locate() in T
 	if(B)
 		B.ex_act(2)
-		return
-
-	var/obj/mecha/M = locate() in T
-	if(M)
-		M.visible_message(SPAN_DANGER("The blob attacks \the [M]!"))
-		M.take_damage(40)
 		return
 
 	T.Enter(src) //This should make them travel down stairs

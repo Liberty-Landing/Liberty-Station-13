@@ -287,9 +287,6 @@
 		..()
 
 /obj/machinery/camera/proc/deactivate(mob/user, var/choice = 1)
-	// The only way for AI to reactivate cameras are malf abilities, this gives them different messages.
-	if(isAI(user))
-		user = null
 
 	if(choice != 1)
 		return
@@ -417,7 +414,7 @@
 	return null
 
 /obj/machinery/camera/interact(mob/living/user as mob)
-	if(!panel_open || isAI(user))
+	if(!panel_open)
 		return
 
 	if(stat & BROKEN)

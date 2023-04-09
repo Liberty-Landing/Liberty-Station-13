@@ -126,9 +126,6 @@
 	//If your jetpack cuts out, you'll fall in a gravity area. Lets trigger that
 	var/atom/movable/A = get_toplevel_atom() //Get what this jetpack is attached to, usually a mob or object
 	if (A)
-		//This is a hack. Future todo: Make mechas not utilize anchored
-		if (istype(A, /obj/mecha))
-			A.anchored = FALSE
 
 		var/turf/T = get_turf(A)
 		if (T)
@@ -354,124 +351,6 @@
 	return TRUE
 
 
-/****************************
-	MECHA JETPACK
-*****************************/
-//Mecha jetpack uses the giant internal gas canister inside mechs
-/obj/item/tank/jetpack/mecha
-	name = "gas thruster system"
-	gastank = null //Starts off null, will be connected once installed
-	thrust_cost = JETPACK_MOVE_COST*10 //A mecha is much, much heavier than a human, and requires more gas to move
-
-/obj/item/tank/jetpack/mecha/operational_safety(var/mob/living/user)
-	if (gastank)
-		return TRUE
-	return FALSE
-
-
-
-/****************************
-	SYNTHETIC JETPACK
-*****************************/
-//Refills by compressing air in the environment
-/obj/item/tank/jetpack/synthetic
-	name = "synthetic jet pack"
-	desc = "A tank of compressed air for use as propulsion in zero-gravity areas. Has a built in compressor to refill it in any gaseous environment."
-	default_pressure = 50*ONE_ATMOSPHERE	// kPa. Also the pressure the compressor would fill itself to
-	default_gas = "carbon_dioxide"
-	var/processing = FALSE
-	var/compressing = FALSE
-	var/minimum_pressure = 95 //KPa. If environment pressure is less than this, we won't draw air
-	var/volume_rate = 0.25 //Used to adjust how quickly the jetpack refills
-	var/datum/robot_component/jetpack/component
-
-/obj/item/tank/jetpack/synthetic/toggle_rockets()
-	set category = "Silicon Commands"
-	.=..()
-
-/obj/item/tank/jetpack/synthetic/toggle()
-	set category = "Silicon Commands"
-	.=..()
-
-//Whenever we call a function that might use gas, we'll check if its time to start processing
-/obj/item/tank/jetpack/synthetic/allow_thrust(num, mob/living/user, stabilization_check = FALSE)
-	.=..(num, user, stabilization_check)
-	if (!processing)
-		//We'll allow a 5% leeway before we go into sucking mode, to prevent constant turning on and off
-		if (get_gas().total_moles < (default_pressure*volume/(R_IDEAL_GAS_EQUATION*T20C)) * 0.95)
-			processing = TRUE
-			START_PROCESSING(SSobj, src)
-
-/obj/item/tank/jetpack/synthetic/stabilize(mob/living/user, schedule_time, enable_stabilize = FALSE)
-	.=..(user, schedule_time, enable_stabilize)
-	if (!processing)
-		if (get_gas().total_moles < (default_pressure*volume/(R_IDEAL_GAS_EQUATION*T20C)) * 0.95)
-			processing = TRUE
-			START_PROCESSING(SSobj, src)
-
-
-/obj/item/tank/jetpack/synthetic/Process()
-	if (!draw_air())
-		stop_drawing()
-
-/obj/item/tank/jetpack/synthetic/operational_safety(mob/living/user)
-	if (!component || !component.powered)
-		return FALSE
-	return TRUE
-
-
-//This process will constantly attempt to find a pressurised environment, and when it does, start sucking up air
-//Until our tank is full enough
-/obj/item/tank/jetpack/synthetic/proc/draw_air()
-	var/turf/T = get_turf(src)
-	if (!T)
-		return
-	var/datum/gas_mixture/environment = T.return_air()
-	if (!environment)
-		return
-
-	var/pressure = environment.return_pressure()
-	if (pressure < minimum_pressure)
-		return
-
-
-	//Ok we've got a sufficiently pressurised environment, now lets make sure we have the power
-	var/mob/living/silicon/robot/R = get_holding_mob()
-	if (!R)
-		STOP_PROCESSING(SSobj, src)
-
-	if (!operational_safety())
-		return
-
-	//We now start compressing.
-	if (!compressing)
-		playsound(loc, 'sound/items/Deconstruct.ogg', 50, 1)
-		to_chat(R, SPAN_NOTICE("Your [src] clicks as it starts drawing and compressing air to refill the tank"))
-
-	compressing = TRUE
-	//Setting this compressing var to true will cause the component to draw power
-
-	var/transfer_moles = (volume_rate/environment.volume)*environment.total_moles
-	var/datum/gas_mixture/transfer = environment.remove(transfer_moles)
-	get_gas().add(transfer)
-	if(get_gas().total_moles >= (default_pressure*volume/(R_IDEAL_GAS_EQUATION*T20C)))
-		stop_drawing(TRUE)
-
-	return TRUE
-
-//Called whenever compression fails for some reason, or when it finishes and the tank is full
-/obj/item/tank/jetpack/synthetic/proc/stop_drawing(complete = FALSE)
-	if (compressing)
-		playsound(loc, 'sound/items/Deconstruct.ogg', 50, 1)
-		var/mob/living/silicon/robot/R = get_holding_mob()
-		to_chat(R, SPAN_NOTICE("Your [src] clicks as its internal compressor shuts off"))
-	compressing = FALSE
-
-	if (complete)
-		STOP_PROCESSING(SSobj, src)
-		processing = FALSE
-
-
 
 //Returns the jetpack associated with this atom.
 //Being an atom proc allows it to be overridden by non mob types, like mechas
@@ -497,7 +376,3 @@
 		var/obj/item/rig/rig = back
 		for (var/obj/item/rig_module/maneuvering_jets/module in rig.installed_modules)
 			return module.jets
-
-
-/mob/living/silicon/robot/get_jetpack(mob/user)
-	return jetpack

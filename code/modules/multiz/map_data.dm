@@ -116,7 +116,6 @@ ADMIN_VERB_ADD(/client/proc/test_MD, R_DEBUG, null)
 						/datum/job/chaplain, /datum/job/acolyte, /datum/job/artist,
 						/datum/job/scientist, /datum/job/roboticist,
 						/datum/job/assistant,
-						/datum/job/ai, /datum/job/cyborg,
 						/datum/job/outsider
 						)
 

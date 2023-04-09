@@ -196,7 +196,7 @@
 		add_overlay("panel_open")
 
 /obj/machinery/media/jukebox/Topic(href, href_list)
-	if(..() || !(Adjacent(usr) || issilicon(usr)))
+	if(..() || !(Adjacent(usr)))
 		return
 
 	if(!anchored)
@@ -291,8 +291,6 @@
 		ui.open()
 		ui.set_auto_update(playing)
 
-/obj/machinery/media/jukebox/attack_ai(mob/user as mob)
-	return src.attack_hand(user)
 
 /obj/machinery/media/jukebox/attack_hand(var/mob/user as mob)
 	interact(user)
