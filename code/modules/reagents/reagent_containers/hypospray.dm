@@ -97,6 +97,152 @@
 		to_chat(usr, SPAN_NOTICE("You empty \the [src] onto the floor."))
 		reagents.splash(usr.loc, reagents.total_volume)
 
+////////////////
+//Customizable//
+///////////////
+/obj/item/reagent_containers/hypospray/vial
+	name = "hypospray"
+	desc = "The CAPSA medical hypospray is a sterile, air-needle autoinjector for rapid administration of drugs to patients."
+	icon = 'icons/obj/syringe.dmi'
+	item_state = "hypospray"
+	icon_state = "hypospray"
+	var/obj/item/reagent_containers/glass/beaker/vial/loaded_vial
+	amount_per_transfer_from_this = 5
+	volume = 0
+	preloaded_reagents = list()
+	injtime = 7
+
+/obj/item/reagent_containers/hypospray/vial/New()
+	..()
+	loaded_vial = new /obj/item/reagent_containers/glass/beaker/vial(src)
+	volume = loaded_vial.volume
+	reagents.maximum_volume = loaded_vial.reagents.maximum_volume
+
+/obj/item/reagent_containers/hypospray/vial/proc/remove_vial(mob/user, swap_mode)
+	if(!loaded_vial)
+		return
+	reagents.trans_to_holder(loaded_vial.reagents,volume)
+	reagents.maximum_volume = 0
+	loaded_vial.update_icon()
+	user.put_in_hands(loaded_vial)
+	loaded_vial = null
+	if (swap_mode != "swap") // if swapping vials, we will print a different message in another proc
+		to_chat(user, "You remove the vial from the [src].")
+
+/obj/item/reagent_containers/hypospray/vial/attack_hand(mob/user)
+	if(user.get_inactive_hand() == src)
+		if(!loaded_vial)
+			to_chat(user, "<span class='notice'>There is no vial loaded in the [src].</span>")
+			return
+		remove_vial(user)
+		update_icon()
+		playsound(loc, 'sound/weapons/flipblade.ogg', 50, 1)
+		return
+	return ..()
+
+/obj/item/reagent_containers/hypospray/vial/attackby(obj/item/W, mob/user)
+	var/usermessage = ""
+	if(istype(W, /obj/item/reagent_containers/glass/beaker/vial))
+		if(!do_after(user, 10, src) || !(W in user))
+			return 0
+		if(!user.unEquip(W, src))
+			return
+		if(loaded_vial)
+			remove_vial(user, "swap")
+			usermessage = "You load \the [W] into \the [src] as you remove the old one."
+		else
+			usermessage = "You load \the [W] into \the [src]."
+		if(W.is_open_container())
+			//W.atom_flags ^= ATOM_FLAG_OPEN_CONTAINER
+			W.update_icon()
+		loaded_vial = W
+		reagents.maximum_volume = loaded_vial.reagents.maximum_volume
+		loaded_vial.reagents.trans_to_holder(reagents,volume)
+		user.visible_message("<span class='notice'>[user] has loaded [W] into \the [src].</span>","<span class='notice'>[usermessage]</span>")
+		update_icon()
+		playsound(src.loc, 'sound/weapons/empty.ogg', 50, 1)
+		return
+	..()
+
+/obj/item/reagent_containers/hypospray/vial/attack(mob/living/M as mob, mob/user as mob)
+	if(!reagents.total_volume)
+		to_chat(user, SPAN_WARNING("[src] is empty."))
+		return
+	if (!istype(M))
+		return
+	// Handling errors and injection duration
+	var/mob/living/carbon/human/H = M
+	if(istype(H))
+		var/obj/item/clothing/suit/space/SS = H.get_equipped_item(slot_wear_suit)
+		var/obj/item/rig/RIG = H.get_equipped_item(slot_back)
+		if(H.a_intent == I_HURT)
+			user.visible_message(SPAN_WARNING("[user] trys to inject [M] with [src]! But [M] is actively resisting"), SPAN_WARNING("You inject begin injecting [M] with [src] but they seem to be resisting."))
+			injtime += 10 //Not as good as having a real suit on
+		if((istype(RIG) && RIG.suit_is_deployed()) || istype(SS))
+			injtime += 30
+			var/obj/item/organ/external/affected = H.get_organ(BP_CHEST)
+			if(BP_IS_ROBOTIC(affected))
+				to_chat(user, SPAN_WARNING("Injection port on [M]'s suit is refusing your [src]."))
+				// I think rig is advanced enough for this, and people will learn what causes this error
+				if(RIG)
+					playsound(src.loc, 'sound/machines/buzz-two.ogg', 50, 1 -3)
+					RIG.visible_message("\icon[RIG]\The [RIG] states \"Attention: User of this suit appears to be synthetic origin\".")
+				return
+		// check without message
+		else if(!H.can_inject(user, FALSE))
+			// lets check if user is easily fooled
+			var/obj/item/organ/external/affected = H.get_organ(user.targeted_organ)
+			if(BP_IS_LIFELIKE(affected) && user && user.stats.getStat(STAT_BIO) < STAT_LEVEL_BASIC)
+				if(M.reagents)
+					var/trans = reagents.remove_any(amount_per_transfer_from_this)
+					user.visible_message(SPAN_WARNING("[user] injects [M] with [src]!"), SPAN_WARNING("You inject [M] with [src]."))
+					to_chat(user, SPAN_NOTICE("[trans] units injected. [reagents.total_volume] units remaining in \the [src]."))
+				return
+			else
+				// if he is not lets show him what actually happened
+				H.can_inject(user, TRUE)
+				return
+	else if(!M.can_inject(user, TRUE))
+		return
+	// handling injection duration on others
+	if(M != user)
+		user.setClickCooldown(DEFAULT_QUICK_COOLDOWN)
+		user.do_attack_animation(M)
+		if(injtime)
+			user.visible_message(SPAN_WARNING("[user] begins injecting [M]!"), SPAN_WARNING("You begins injecting [M]!"))
+			if(do_mob(user, M, injtime))
+				user.visible_message(SPAN_WARNING("[user] injects [M] with [src]!"), SPAN_WARNING("You inject [M] with [src]."))
+			else
+				return
+	// handling actual injection
+	// on this stage we are sure that everything is alright
+	var/contained = reagents.log_list()
+	var/trans = reagents.trans_to_mob(M, amount_per_transfer_from_this, CHEM_BLOOD)
+	admin_inject_log(user, M, src, contained, trans)
+	to_chat(user, SPAN_NOTICE("[trans] units injected. [reagents.total_volume] units remaining in \the [src]."))
+	return
+
+/obj/item/reagent_containers/hypospray/vial/afterattack(obj/target, mob/user, proximity) // hyposprays can be dumped into, why not out? uses standard_pour_into helper checks.
+	if(!proximity)
+		return
+	if (!reagents.total_volume && istype(target, /obj/item/reagent_containers/glass))
+		var/good_target = is_type_in_list(target, list(
+			/obj/item/reagent_containers/glass/beaker,
+			/obj/item/reagent_containers/glass/bottle
+		))
+		if (!good_target)
+			return
+		if (!target.is_open_container())
+			to_chat(user, SPAN_NOTICE("\The [target] is closed."))
+			return
+		if (!target.reagents?.total_volume)
+			to_chat(user, SPAN_NOTICE("\The [target] is empty."))
+			return
+		var/trans = target.reagents.trans_to_obj(src, amount_per_transfer_from_this)
+		to_chat(user, SPAN_NOTICE("You fill \the [src] with [trans] units of the solution."))
+		return
+	standard_pour_into(user, target)
+
 /obj/item/reagent_containers/hypospray/autoinjector
 	name = "autoinjector (inaprovaline)"
 	desc = "A rapid and safe way to administer small amounts of drugs by untrained or trained personnel. Anyone with a syringe and some chemicals can refill or even replace the loaded reagents, provided \
