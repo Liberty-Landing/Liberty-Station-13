@@ -2112,7 +2112,7 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gy" = (
 /obj/machinery/light,
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gz" = (

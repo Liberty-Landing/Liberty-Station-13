@@ -248,7 +248,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/awaymission/spacebattle/syndicate7)
 "bt" = (
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "bv" = (
@@ -1284,7 +1284,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/space)
 "gC" = (
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /obj/machinery/light{
 	dir = 1
 	},

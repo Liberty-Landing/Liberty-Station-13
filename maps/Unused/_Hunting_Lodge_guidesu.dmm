@@ -1533,7 +1533,7 @@
 /turf/simulated/wall/wood_old,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "iU" = (
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "iW" = (

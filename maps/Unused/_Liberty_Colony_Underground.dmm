@@ -543,7 +543,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/gmaster)
 "abw" = (
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/liberty/engineering/workshop)
 "abx" = (

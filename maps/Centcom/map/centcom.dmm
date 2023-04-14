@@ -3443,7 +3443,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
 "jP" = (
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/centcom/evac)
 "jQ" = (

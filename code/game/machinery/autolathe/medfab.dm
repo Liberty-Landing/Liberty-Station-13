@@ -14,11 +14,11 @@
 	storage_capacity = 120
 	speed = 3
 	mat_efficiency = 1
+	have_recycling = FALSE
 
 	//Should only contain things required to produce medical equipment
 	unsuitable_materials = list()
 	suitable_materials = list(MATERIAL_CLOTH, MATERIAL_WOOD, MATERIAL_STEEL, MATERIAL_GLASS, MATERIAL_PLASTIC, MATERIAL_SILVER, MATERIAL_BIOMATTER)
-
 
 /obj/machinery/autolathe/medfab/attackby(obj/item/I, mob/user)
 

@@ -96395,7 +96395,7 @@
 /turf/simulated/floor/carpet/purcarpet,
 /area/liberty/command/RP)
 "sIR" = (
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/engineering/workshop)
 "sIV" = (

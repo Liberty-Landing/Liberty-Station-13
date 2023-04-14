@@ -60,7 +60,7 @@
 	var/have_disk = TRUE
 	var/have_reagents = TRUE
 	var/have_materials = TRUE
-	var/have_recycling = FALSE //Also dictates auto-input
+	var/have_recycling = TRUE //Also dictates auto-input
 	var/have_design_selector = TRUE
 
 	var/max_efficiency = 0.5
@@ -1017,18 +1017,6 @@
 
 
 //Second level autolathe
-
-/obj/machinery/autolathe/industrial
-	name = "industrial autolathe"
-	desc = "It produces items using metal and glass."
-	idle_power_usage = 100
-	active_power_usage = 8000
-	circuit = /obj/item/circuitboard/autolathe_industrial
-	speed = 4
-	storage_capacity = 240
-	max_efficiency = 0.3
-	have_recycling = TRUE
-
 /obj/machinery/autolathe/similacrum
 	name = "similacrum autolathe"
 	desc = "It produces items using metal and glass."
@@ -1038,7 +1026,6 @@
 	circuit = /obj/item/circuitboard/autolathe_similacrum
 	speed = 4
 	storage_capacity = 240
-	have_recycling = TRUE
 
 /obj/machinery/autolathe/similacrum/RefreshParts()
 	..()

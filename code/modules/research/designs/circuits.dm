@@ -451,11 +451,6 @@
 	build_path = /obj/item/circuitboard/chemical_dispenser/industrial
 	category = CAT_MEDI
 
-/datum/design/research/circuit/industrial_autolathe
-	name = "Industrial Autolathe"
-	build_path = /obj/item/circuitboard/autolathe_industrial
-	category = CAT_MACHINE
-
 /datum/design/research/circuit/recharger_industrial
 	name = "Industrial Recharger"
 	build_path = /obj/item/circuitboard/recharger/industrial

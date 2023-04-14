@@ -24873,7 +24873,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "fQg" = (
-/obj/machinery/autolathe/industrial,
+/obj/machinery/autolathe,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
 "fQi" = (
