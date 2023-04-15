@@ -66,3 +66,17 @@
 	mag_slow = 2
 	icon_base = "mercboots"
 	action_button_name = "Toggle Magboots"
+
+/*
+	Used by opifex
+*/
+/obj/item/clothing/shoes/magboots/opifex
+	name = "opifex magclaws"
+	desc = "A pair of magnetic claws stuffed into opifex prosthetics."
+	icon_state = "boots-vox"
+	species_restricted = list(FORM_OPIFEX)
+	can_hold_knife = FALSE
+	canremove = FALSE
+	overshoes = 0
+	mag_slow = 0.5
+	action_button_name = "Toggle Magboots"

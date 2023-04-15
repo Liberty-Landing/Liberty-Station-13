@@ -139,11 +139,6 @@
 #define PERK_REPAIR_GOO /datum/perk/racial/chmant_repair_goo
 
 //Opifex
-#define PERK_OPIFEX_BACKUP /datum/perk/racial/opifex_backup
-#define PERK_OPIFEX_MEDICAL /datum/perk/racial/opifex_backup_medical
-#define PERK_OPIFEX_COMBAT /datum/perk/racial/opifex_backup_combat
-#define PERK_OPIFEX_TURRET /datum/perk/racial/opifex_turret
-#define PERK_OPIFEX_PATCHKIT /datum/perk/racial/opifex_patchkit
 
 //Slime
 #define PERK_LIMB_REGEN /datum/perk/racial/limb_regen

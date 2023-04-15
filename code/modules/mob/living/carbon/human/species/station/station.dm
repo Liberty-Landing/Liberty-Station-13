@@ -325,8 +325,8 @@
 	unarmed_types = list(/datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)
 	num_alternate_languages = 2
 	name_language = null
-	min_age = 18
-	max_age = 80
+	min_age = 25
+	max_age = 50
 	blurb = "no."
 	breath_type = "nitrogen"                        // Non-oxygen gas breathed, if any.
 	poison_type = "oxygen"                        // Poisonous air.
@@ -335,25 +335,49 @@
 	spawn_flags = CAN_JOIN
 	hunger_factor = 0.5
 
+
 	stat_modifiers = list(
 		STAT_MEC = 5,
 		STAT_COG = 5
 	)
 
+	blood_color = "#04419c"
 	dark_color = "#dddddd"
 	light_color = "#dddddd"
 	darksight = 2
 
 	permitted_ears  = list()
-	permitted_tail  = list("Avian Wagtail", "Avian Fantail")
-	permitted_wings = list("Harpy Wings",
-		"Fantail Wings",
-		"Feathered Wings, Small",
-		"Feathered Wings, Medium",
-		"Feathered Wings, Large"
+	permitted_tail  = list()
+	permitted_wings = list()
+
+	perks = list(PERK_SPLICER, PERK_CARNIVORE)
+
+	has_process = list(    // which required-organ checks are conducted.
+		OP_HEART        = /obj/item/organ/internal/heart,
+		OP_LUNGS        = /obj/item/organ/internal/lungs,
+		OP_STOMACH      = /obj/item/organ/internal/stomach,
+		OP_LIVER        = /obj/item/organ/internal/liver,
+		OP_KIDNEY_LEFT  = /obj/item/organ/internal/kidney,
+		OP_KIDNEY_RIGHT = /obj/item/organ/internal/kidney,
+		BP_BRAIN        = /obj/item/organ/internal/brain,
+		OP_APPENDIX     = /obj/item/organ/internal/appendix,
+		OP_EYES         = /obj/item/organ/internal/eyes
+	)
+
+	has_limbs = list(
+		BP_CHEST =  new /datum/organ_description/chest,
+		BP_GROIN =  new /datum/organ_description/groin,
+		BP_HEAD =   new /datum/organ_description/head,
+		BP_L_ARM =  new /datum/organ_description/arm/left/full,
+		BP_R_ARM =  new /datum/organ_description/arm/right/full,
+		BP_L_LEG =  new /datum/organ_description/leg/left/opifex/full,
+		BP_R_LEG =  new /datum/organ_description/leg/right/opifex/full
 		)
 
-	perks = list(PERK_OPIFEX_TURRET, PERK_OPIFEX_PATCHKIT)
+/datum/species/vox/equip_survival_gear(mob/living/carbon/human/H)
+	..()
+	H.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/opifex(H), slot_wear_mask)
+	H.equip_to_slot_or_del(new /obj/item/clothing/shoes/magboots/opifex(H), slot_shoes)
 
 /datum/species/vox/get_bodytype()
 	return "Opifex"

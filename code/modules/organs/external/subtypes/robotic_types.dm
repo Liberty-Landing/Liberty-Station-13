@@ -171,6 +171,13 @@ obj/item/organ/external/robotic/synthskin/groin
 	default_description = /datum/organ_description/head
 	max_damage = 200
 
+//Opifex
+/obj/item/organ/external/robotic/full_body_prosthetic
+	name = "\"Zeno-Pariah\""
+	desc = "A high tier custom made prosthetic."
+	force_icon = 'icons/mob/human_races/cyberlimbs/zeno_pariah.dmi'
+	model = "zeno-pariah"
+
 // Junktech
 /obj/item/organ/external/robotic/junktech
 	name = "\"Junktech\""

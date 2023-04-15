@@ -433,6 +433,18 @@
 /datum/organ_description/leg/right/unbranded/full
 	additional_limb_parts = BP_R_LEG_EXTRA
 
+//Opifex
+/datum/organ_description/leg/left/opifex
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/leg/right/opifex
+	default_type = /obj/item/organ/external/robotic
+
+/datum/organ_description/leg/left/opifex/full
+	additional_limb_parts = BP_L_LEG_EXTRA
+/datum/organ_description/leg/right/opifex/full
+	additional_limb_parts = BP_R_LEG_EXTRA
+
 ////SKELETON////
 /datum/organ_description/chest/skeletal
 	name = "ribcage"
