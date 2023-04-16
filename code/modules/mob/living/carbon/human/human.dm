@@ -1255,8 +1255,6 @@ var/list/rank_prefix = list(\
 					src.give_nanogate("Standard")
 				if("union nanogate")
 					src.give_nanogate("Union")
-				if("opifex nanogate")
-					src.give_nanogate("Opifex")
 
 	else
 		var/organ_type

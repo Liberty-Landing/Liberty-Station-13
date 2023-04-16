@@ -222,6 +222,12 @@ var/global/list/sparring_attack_cache = list()
 		if(3 to 4)	user.visible_message(SPAN_DANGER("[user] [pick(attack_verb)] [target] in \his [organ]!"))
 		if(5)		user.visible_message(SPAN_DANGER("[user] landed a strong [pick(attack_noun)] against [target]'s [organ]!"))
 
+/datum/unarmed_attack/kick/opifex
+	damage = 4
+	armor_penetration = 10
+	sharp = TRUE
+	edge = TRUE
+
 /datum/unarmed_attack/stomp
 	attack_verb = null
 	attack_noun = list("stomp")

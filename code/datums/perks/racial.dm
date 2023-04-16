@@ -388,7 +388,7 @@
 	holder.mob_bomb_defense += 5
 	holder.falls_mod -= 0.2
 
-/datum/perk/chitinarmor/remove()
+/datum/perk/racial/chmant_chitinarmor/remove()
 	holder.brute_mod_perk += 0.15
 	holder.mob_bomb_defense -= 5
 	holder.falls_mod += 0.2
@@ -426,6 +426,22 @@
 ///////////////////
 /* Opifex  Perks */
 ///////////////////
+
+/datum/perk/racial/opifex_raven
+	name = "Ravenous Instincts"
+	desc = "Even throught the endless trials and experiments at the end of it you are still an animal. While your brain is still underdeveloped compared to a humanoid your animal instincts make up for this. \
+	You gain insight into things slower but movement over rough surfaces and especially falling from high places is second nature to you."
+
+/datum/perk/racial/opifex_raven/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.insight_passive_gain_multiplier *= 0.8
+		holder.falls_mod -= 0.9
+
+/datum/perk/racial/opifex_raven/remove()
+	if(holder)
+		holder.sanity.insight_passive_gain_multiplier /= 1
+		holder.falls_mod += 0.9
+	..()
 
 //////////////////
 /* Slime  Perks */

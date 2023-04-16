@@ -14,8 +14,6 @@
 					B = new /obj/item/organ/internal/nanogate
 				if("Union")
 					B = new /obj/item/organ/internal/nanogate/Union
-				if("Opifex")
-					B = new /obj/item/organ/internal/nanogate/opifex
 			B.replaced(head)
 			return TRUE
 	return FALSE
@@ -39,7 +37,7 @@
 		if(!owner.stats.getPerk(PERK_NANOGATE))
 			owner.stats.addPerk(PERK_NANOGATE)
 		return PROCESS_KILL
-	
+
 
 
 // Check if there's enough nano points and remove them.

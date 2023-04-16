@@ -51,11 +51,6 @@ List of powers in this page :
 			owner_verbs += /obj/item/organ/internal/nanogate/proc/console_mode
 			owner_verbs += /obj/item/organ/internal/nanogate/proc/control_bot
 
-			//Add in the Opifex specific procs
-			if(istype(src, /obj/item/organ/internal/nanogate/opifex))
-				verbs += /obj/item/organ/internal/nanogate/proc/food_mode
-				owner_verbs += /obj/item/organ/internal/nanogate/proc/food_mode
-
 			verbs -= /obj/item/organ/internal/nanogate/proc/create_nanobot
 	else
 		to_chat(owner, "Your nanogate is already as its limit controlling one Nanobot. Making more would end badly.")

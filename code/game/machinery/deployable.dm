@@ -317,7 +317,7 @@ for reference:
 
 	if(ishuman(mover))
 		var/mob/living/carbon/human/H = mover
-		if(H.checkpass(PASSTABLE) && H.stats?.getPerk(PERK_ATHLETE))
+		if(H.checkpass(PASSTABLE) && H.stats?.getPerk(PERK_ATHLETE) || H.stats?.getPerk (PERK_RAVEN))
 			return TRUE
 
 /obj/machinery/deployable/barrier/proc/explode()

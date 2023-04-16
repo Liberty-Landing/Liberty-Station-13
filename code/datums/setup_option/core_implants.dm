@@ -86,19 +86,6 @@
 	restricted_to_species = list(FORM_HUMAN, FORM_SABLEKYNE, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CINDAR, FORM_TERRAYNTH)
 	restricted_depts = SECURITY | PROSPECTORS | MEDICAL | SCIENCE | CHURCH | INDEPENDENT | CIVILIAN | SERVICE
 
-/datum/category_item/setup_option/core_implant/opifex_nanogate
-	name = "Opifex Nanogate"
-	desc = "A custom built nanogate designed from the far superior opifex blueprints. It is implanted right where the spine meets the skull and provides a wide variety of nanite based uses. This \
-	particular design is an opifex original and one of the best that can be found in the galaxy."
-	implant_organ_type = "opifex nanogate"
-	restricted_jobs = list(
-		/datum/job/outsider, // Nanogates are only available to colonist or allies.
-		/datum/job/cyborg, //To stop people auto dropping these
-		/datum/job/ai
-		)
-	allow_modifications = TRUE
-	restricted_to_species = list(FORM_OPIFEX) // Opifex get their own fancy nanogate
-
 /datum/category_item/setup_option/core_implant/cruciform/tessellate
 	name = "Tessellate Cruciform"
 	desc = "The implant given to every disciple of the Absolute. This one is made for those who walk the path of the Tessellate, disciples who promote unity and healing, it charges slightly faster \

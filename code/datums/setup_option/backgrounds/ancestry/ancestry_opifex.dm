@@ -5,6 +5,7 @@
 	webbing smuggled on your person. As a rank and file you represent the best of the opifex ability and wear your tools with pride."
 
 	restricted_to_species = list(FORM_OPIFEX)
+	allow_modifications = FALSE
 
 	//perks = list()
 	racial_implants = (/obj/item/organ_module/active/simple/opifex_pouch)

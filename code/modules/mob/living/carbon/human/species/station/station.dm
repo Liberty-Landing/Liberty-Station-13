@@ -322,24 +322,25 @@
 	default_form = FORM_OPIFEX
 	obligate_form = TRUE
 	reagent_tag = IS_OPIFEX
-	unarmed_types = list(/datum/unarmed_attack/claws, /datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)
+	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/kick/opifex, /datum/unarmed_attack/stomp, /datum/unarmed_attack/bite)
 	num_alternate_languages = 2
 	name_language = null
 	min_age = 25
 	max_age = 50
 	blurb = "no."
-	breath_type = "nitrogen"                        // Non-oxygen gas breathed, if any.
-	poison_type = "oxygen"                        // Poisonous air.
+	breath_type = "nitrogen"                     // Non-oxygen gas breathed, if any.
+	poison_type = "oxygen"                       // Poisonous air.
 	exhale_type = "carbon_dioxide"
 	siemens_coefficient = 0.5
 	spawn_flags = CAN_JOIN
-	hunger_factor = 0.5
+	taste_sensitivity = TASTE_DULL
+	oxy_mod = 0.8
+	radiation_mod = 1.5
+	hunger_factor = 0.75
+	breath_pressure = 8 						//Half of humanoids, I'm a bird bird is the word bird bird
+	total_health = 90							//Genetic abominations
 
-
-	stat_modifiers = list(
-		STAT_MEC = 5,
-		STAT_COG = 5
-	)
+	stat_modifiers = list(STAT_MEC = 5)
 
 	blood_color = "#04419c"
 	dark_color = "#dddddd"
@@ -350,7 +351,8 @@
 	permitted_tail  = list()
 	permitted_wings = list()
 
-	perks = list(PERK_SPLICER, PERK_CARNIVORE)
+	perks = list(PERK_SPLICER, PERK_CARNIVORE, PERK_RAVEN)
+	inherent_verbs = list(/mob/living/carbon/human/proc/leap)
 
 	has_process = list(    // which required-organ checks are conducted.
 		OP_HEART        = /obj/item/organ/internal/heart,

@@ -139,6 +139,7 @@
 #define PERK_REPAIR_GOO /datum/perk/racial/chmant_repair_goo
 
 //Opifex
+#define PERK_RAVEN /datum/perk/racial/opifex_raven
 
 //Slime
 #define PERK_LIMB_REGEN /datum/perk/racial/limb_regen

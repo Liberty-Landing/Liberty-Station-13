@@ -142,7 +142,7 @@
 		take_overall_damage(damage)
 		playsound(src, pick(punch_sound), 100, 1, 10)
 		if(ishuman(src))
-			if(!src.stats.getPerk(PERK_ATHLETE))
+			if(!src.stats.getPerk(PERK_ATHLETE) || src.stats.getPerk(PERK_RAVEN))
 				src.Weaken(4)
 		else
 			src.Weaken(4)
