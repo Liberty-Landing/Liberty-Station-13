@@ -40,6 +40,7 @@
 	var/default_language = LANGUAGE_COMMON   // Default language is used when 'say' is used without modifiers.
 	var/language = LANGUAGE_COMMON           // Default racial language, if any.
 	var/list/secondary_langs = list()        // The names of secondary languages that are available to this species.
+	var/list/assisted_langs = list()		 // The languages the species can't speak without an assisted organ.
 	var/list/speech_sounds                   // A list of sounds to potentially play when speaking.
 	var/list/speech_chance                   // The likelihood of a speech sound playing.
 	var/num_alternate_languages = 0          // How many secondary languages are available to select at character creation
@@ -138,6 +139,7 @@
 		OP_APPENDIX = /obj/item/organ/internal/appendix,
 		OP_EYES =     /obj/item/organ/internal/eyes
 		)
+
 	var/vision_organ              // If set, this organ is required for vision. Defaults to "eyes" if the species has them.
 
 	// The order is important!

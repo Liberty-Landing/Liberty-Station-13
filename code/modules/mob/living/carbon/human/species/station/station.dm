@@ -325,6 +325,7 @@
 	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/kick/opifex, /datum/unarmed_attack/stomp, /datum/unarmed_attack/bite)
 	num_alternate_languages = 2
 	name_language = null
+	assisted_langs = list(LANGUAGE_COMMON, LANGUAGE_CYRILLIC, LANGUAGE_ILLYRIAN, LANGUAGE_JIVE, LANGUAGE_EURO, LANGUAGE_JANA, LANGUAGE_LATIN, LANGUAGE_ROMANA, LANGUAGE_YASSARI, LANGUAGE_SYNTHETIC)
 	min_age = 25
 	max_age = 50
 	blurb = "no."
@@ -352,7 +353,7 @@
 	permitted_wings = list()
 
 	perks = list(PERK_SPLICER, PERK_CARNIVORE, PERK_RAVEN)
-	inherent_verbs = list(/mob/living/carbon/human/proc/leap)
+	inherent_verbs = list(/mob/living/carbon/human/proc/leap_opifex, /mob/living/carbon/human/proc/opifex_gut)
 
 	has_process = list(    // which required-organ checks are conducted.
 		OP_HEART        = /obj/item/organ/internal/heart,
@@ -363,7 +364,8 @@
 		OP_KIDNEY_RIGHT = /obj/item/organ/internal/kidney,
 		BP_BRAIN        = /obj/item/organ/internal/brain,
 		OP_APPENDIX     = /obj/item/organ/internal/appendix,
-		OP_EYES         = /obj/item/organ/internal/eyes
+		OP_EYES         = /obj/item/organ/internal/eyes,
+		BP_VOICE		= /obj/item/organ/internal/voicebox/opifex
 	)
 
 	has_limbs = list(
