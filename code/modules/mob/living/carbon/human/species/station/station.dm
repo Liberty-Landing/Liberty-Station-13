@@ -318,7 +318,8 @@
 
 /datum/species/vox
 	name = "Opifex"
-	name_plural = "Opifexi"
+	name_plural = "Opifices"
+	aan = "n"
 	default_form = FORM_OPIFEX
 	obligate_form = TRUE
 	reagent_tag = IS_OPIFEX
