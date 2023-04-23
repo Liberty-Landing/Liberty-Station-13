@@ -1,11 +1,11 @@
 /datum/computer_file/program/coin_miner
-	filename = "KAZipped K-oin"
+	filename = "Zipped K-oin"
 	filedesc = "Key-Authenticated Zipped K-oin"
 	nanomodule_path = /datum/nano_module/program/coin_miner
-	program_icon_state = "supply"
+	program_icon_state = "crypto"
 	program_key_state = "rd_key"
-	program_menu_icon = "cart"
-	extended_desc = "A endlessly compressed file that when processed turns into valueable credit on the non-solfed market. The bigger the file, the more its worth."
+	program_menu_icon = "home"
+	extended_desc = "An endlessly compressed file that when processed turns into valueable credit on the terran market. The bigger the file, the more its worth."
 	size = 1
 	available_on_ntnet = TRUE
 	requires_ntnet = FALSE //We are all that we need to run by areselfs, so you can set up in the jungel or well scaving

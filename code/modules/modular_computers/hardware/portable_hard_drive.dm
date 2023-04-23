@@ -61,9 +61,10 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/advanced/coin
-	name = "data disk"
-	icon_state = "ruined"
-	disk_name = "Key-Authenticated Zipped K-oin"
+	name = "drive data disk"
+	desc = "A solid state drive welded into a diskette for some reason."
+	icon_state = "crypto"
+	disk_name = "Authenticated BonziMoney Koin disk"
 	max_capacity = 60 //50 x 60 = 3000
 	default_files = list(
 		/datum/computer_file/program/coin_miner/disk //Fancy anticheat verson
