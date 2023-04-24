@@ -1,6 +1,6 @@
 /datum/computer_file/program/coin_miner
-	filedesc = "Zipped K-oin decoder"
-	filedesc = "Key-Authenticated Zipped K-oin"
+	filename = "Zipped K-oin"
+	filedesc = "Key-Authenticated Zip Decoder"
 	nanomodule_path = /datum/nano_module/program/coin_miner
 	program_icon_state = "crypto"
 	program_key_state = "rd_key"
