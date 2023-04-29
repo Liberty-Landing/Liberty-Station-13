@@ -457,7 +457,7 @@
 			if (!(status_flags & CANPUSH))
 				return
 
-			var/obj/item/grab/G = new /obj/item/grab(M, src)
+			var/obj/item/grab/G = new /obj/item/grab(M, M, src)
 
 			M.put_in_active_hand(G)
 

@@ -532,3 +532,8 @@
 #define RANDOM_BLOOD_TYPE pick(4;"O-", 36;"O+", 3;"A-", 28;"A+", 1;"B-", 20;"B+", 1;"AB-", 5;"AB+")
 
 #define is_dead(M) M.stat == DEAD
+
+//Fireman Carry Crap
+#define MOB_GRAB_NONE 0
+#define MOB_GRAB_NORMAL 1
+#define MOB_GRAB_FIREMAN 2

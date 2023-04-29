@@ -720,3 +720,19 @@ proc/is_blind(A)
 	if (initial != Ref.walk_to_initial_time) //so multiple movements dont interrupt eachother
 		return FALSE
 	walk_to(Ref, Trg)
+
+//Fireman Carry Crap
+/mob/proc/has_grab()
+	. = MOB_GRAB_NONE
+	if(istype(l_hand, /obj/item/grab))
+		var/obj/item/grab/l_grab = l_hand
+		if(l_grab.wielded)
+			. = max(MOB_GRAB_FIREMAN, .)
+		else
+			. = max(MOB_GRAB_NORMAL, .)
+	if(istype(r_hand, /obj/item/grab))
+		var/obj/item/grab/r_grab = r_hand
+		if(r_grab.wielded)
+			. = max(MOB_GRAB_FIREMAN, .)
+		else
+			. = max(MOB_GRAB_NORMAL, .)

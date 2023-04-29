@@ -107,7 +107,7 @@
 						to_chat(M, SPAN_NOTICE("You already grabbed [src]."))
 						return
 
-				var/obj/item/grab/G = new /obj/item/grab(M, src)
+				var/obj/item/grab/G = new /obj/item/grab(M, M, src)
 				if(buckled)
 					to_chat(M, SPAN_NOTICE("You cannot grab [src], \he is buckled in!"))
 				if(!G) //the grab will delete itself in New if affecting is anchored
@@ -274,7 +274,7 @@
 						to_chat(M, SPAN_NOTICE("You already grabbed [src]."))
 						return
 
-				var/obj/item/grab/G = new /obj/item/grab(M, src)
+				var/obj/item/grab/G = new /obj/item/grab(M, M, src)
 				if(buckled)
 					to_chat(M, SPAN_NOTICE("You cannot grab [src], \he is buckled in!"))
 				if(!G) //the grab will delete itself in New if affecting is anchored

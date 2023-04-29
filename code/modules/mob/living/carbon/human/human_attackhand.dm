@@ -115,7 +115,7 @@
 
 				if(g.counter_timer>0 && g.affecting == M) //were we grabbed by src in a span of 3 seconds?
 					if(prob(max(30 + H.stats.getStat(STAT_ROB) - stats.getStat(STAT_ROB) ** 0.7, 1))) // Harder between low rob, easier between high rob wrestlers
-						var/obj/item/grab/G = new /obj/item/grab(M, src)
+						var/obj/item/grab/G = new /obj/item/grab(M, M, src)
 						if(!G)	//the grab will delete itself in New if affecting is anchored
 							return
 						G.state = GRAB_AGGRESSIVE
@@ -142,7 +142,7 @@
 				return
 			//usual grabs
 
-			var/obj/item/grab/G = new /obj/item/grab(M, src)
+			var/obj/item/grab/G = new /obj/item/grab(M, M, src)
 			if(buckled)
 				to_chat(M, SPAN_NOTICE("You cannot grab [src], \he is buckled in!"))
 			if(!G)	//the grab will delete itself in New if affecting is anchored

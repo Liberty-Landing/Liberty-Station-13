@@ -93,21 +93,30 @@ var/list/portal_cache = list()
 	else
 		qdel(src)
 
-/obj/effect/portal/proc/teleport(atom/movable/M as mob|obj)
+/obj/effect/portal/proc/teleport(atom/movable/movable as mob|obj)
 	if (world.time < next_teleport)
 		return
-	if (M == src)
+	if (movable == src)
 		return
-	if (istype(M, /obj/effect/sparks)) //sparks don't teleport
+	if (istype(movable, /obj/effect/sparks)) //sparks don't teleport
 		return
-	if (istype(M, /obj/effect/effect/light)) //lights from flashlights too.
+	if (istype(movable, /obj/effect/effect/light)) //lights from flashlights too.
 		return
-	if (M.anchored && !istype(M, /obj/mecha))
+	if (movable.anchored && !istype(movable, /obj/mecha))
 		return
 	if (!( target ))
 		qdel(src)
 		return
-	if (istype(M, /atom/movable))
+	var/list/things_to_teleport = list(movable)
+	if(ismob(movable))
+		var/mob/M = movable
+		if(M.pulling)
+			things_to_teleport += M.pulling
+		if(ishuman(movable))
+			var/mob/living/carbon/human/H = movable
+			for(var/obj/item/grab/G in list(H.l_hand, H.r_hand))
+				things_to_teleport += G.affecting
+	for(var/atom/movable/M in things_to_teleport)
 		if(prob(failchance)) //oh dear a problem, put em in deep space
 			on_fail(M)
 		else

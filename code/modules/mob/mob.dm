@@ -820,6 +820,9 @@ All Canmove setting in this proc is temporary. This var should not be set from h
 	for(var/obj/item/grab/G in grabbed_by)
 		if(G.force_stand())
 			lying = TRUE
+		if(G.wielded)
+			canmove = FALSE
+			lying = TRUE
 
 	//Temporarily moved here from the various life() procs
 	//I'm fixing stuff incrementally so this will likely find a better home.
