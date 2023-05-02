@@ -39212,6 +39212,10 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/plating/under,
 /area/liberty/security/sechall)
+"kKd" = (
+/obj/effect/step_trigger/riverforest_to_crash_1_B,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest)
 "kKg" = (
 /obj/machinery/constructable_frame/machine_frame{
 	state = 2
@@ -53281,6 +53285,10 @@
 	},
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/maintenance/undergroundfloor1east)
+"oHV" = (
+/obj/effect/step_trigger/riverforest_to_crash_1_A,
+/turf/simulated/floor/snow,
+/area/liberty/outside/forest)
 "oHX" = (
 /obj/structure/table/gamblingtable,
 /obj/random/card_carp/pelt_and_normal_cards,
@@ -209209,8 +209217,8 @@ crj
 kfM
 nUD
 wgB
-gpO
-wgB
+oHV
+kKd
 kfM
 hWE
 kfM
@@ -209411,7 +209419,7 @@ kfM
 kfM
 kfM
 kfM
-nUD
+kfM
 dkF
 qwy
 kfM
