@@ -74,7 +74,7 @@
 	flags = GEAR_HAS_TYPE_SELECTION
 
 /datum/gear/suit/soyfedjacket
-	display_name = "old SolFed military jacket"
+	display_name = "old Terran military jacket"
 	path = /obj/item/clothing/suit/storage/toggle/miljacket_soyfed
 
 /datum/gear/suit/punk_vest
@@ -200,3 +200,7 @@
 /datum/gear/suit/boxer_jacket
 	display_name = "boxer jacket"
 	path = /obj/item/clothing/suit/storage/boxer_jacket
+
+/datum/gear/suit/sling
+	display_name = "universal sling"
+	path = 	/obj/item/clothing/suit/sling

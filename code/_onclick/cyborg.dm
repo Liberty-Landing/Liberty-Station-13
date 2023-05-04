@@ -178,42 +178,35 @@
 	CtrlShiftClick(user)
 
 /obj/machinery/door/airlock/BorgCtrlShiftClick(var/mob/living/silicon/robot/user)
-	if(allowed(user))
-		AICtrlShiftClick(user)
+	AICtrlShiftClick(user)
 
 /atom/proc/BorgShiftClick(var/mob/living/silicon/robot/user) //forward to human click if not overriden
 	ShiftClick(user)
 
 /obj/machinery/door/airlock/BorgShiftClick(var/mob/living/silicon/robot/user)  // Opens and closes doors! Forwards to AI code.
-	if(allowed(user))
-		AIShiftClick(user)
+	AIShiftClick(user)
 
 /atom/proc/BorgCtrlClick(var/mob/living/silicon/robot/user) //forward to human click if not overriden
 	CtrlClick(user)
 
 /obj/machinery/door/airlock/BorgCtrlClick(var/mob/living/silicon/robot/user) // Bolts doors. Forwards to AI code.
-	if(allowed(user))
-		AICtrlClick(user)
+	AICtrlClick(user)
 
 /obj/machinery/power/apc/BorgCtrlClick(var/mob/living/silicon/robot/user) // turns off/on APCs. Forwards to AI code.
-	if(allowed(user))
-		AICtrlClick(user)
+	AICtrlClick(user)
 
 /obj/machinery/turretid/BorgCtrlClick(var/mob/living/silicon/robot/user) //turret control on/off. Forwards to AI code.
-	if(allowed(user))
-		AICtrlClick(user)
+	AICtrlClick(user)
 
 /atom/proc/BorgAltClick(var/mob/living/silicon/robot/user)
 	AltClick(user)
 	return
 
 /obj/machinery/door/airlock/BorgAltClick(var/mob/living/silicon/robot/user) // Eletrifies doors. Forwards to AI code.
-	if(allowed(user))
-		AIAltClick(user)
+	AIAltClick(user)
 
 /obj/machinery/turretid/BorgAltClick(var/mob/living/silicon/robot/user) //turret lethal on/off. Forwards to AI code.
-	if(allowed(user))
-		AIAltClick(user)
+	AIAltClick(user)
 
 /*
 	As with AI, these are not used in click code,
@@ -236,43 +229,37 @@
 //	On Ctrl-Click will turn on if off otherwise will switch between Filtering and Panic Siphon
 //
 /obj/machinery/alarm/BorgCtrlClick(var/mob/living/silicon/robot/user)
-	if(allowed(user))
-		AICtrlClick(user)
+	AICtrlClick(user)
 
 //
 //	On Alt-Click will cycle through modes
 //
 /obj/machinery/alarm/BorgAltClick(var/mob/living/silicon/robot/user)
-	if(allowed(user))
-		AIAltClick(user)
+	AIAltClick(user)
 
 //
 //	On Ctrl-Click will turn on if off otherwise will switch between Filtering and Panic Siphon
 //
 /obj/machinery/firealarm/BorgCtrlClick(var/mob/living/silicon/robot/user)
-	if(allowed(user))
-		AICtrlClick(user)
+	AICtrlClick(user)
 
 //
 //	On Ctrl-Click will turn on or off SMES input
 //
 /obj/machinery/power/smes/BorgCtrlClick(var/mob/living/silicon/robot/user)
-	if(allowed(user))
-		AICtrlClick(user)
+	AICtrlClick(user)
 
 //
 //	On Alt-Click will turn on or off SMES output
 //
 /obj/machinery/power/smes/BorgAltClick(var/mob/living/silicon/robot/user)
-	if(allowed(user))
-		AIAltClick(user)
+	AIAltClick(user)
 
 //
 //	On Ctrl-Click will turn on or off gas cooling system
 //
 /obj/machinery/atmospherics/unary/freezer/BorgCtrlClick(var/mob/living/silicon/robot/user)
-	if(allowed(user))
-		AICtrlClick(user)
+	AICtrlClick(user)
 
 //
 //	On Ctrl-Click will turn on or off telecomms machinery

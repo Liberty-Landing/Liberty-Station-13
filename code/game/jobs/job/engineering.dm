@@ -46,15 +46,12 @@
 							 /datum/computer_file/program/shield_control,
 							 /datum/computer_file/program/reports)
 
-	description = "The Union Chief is the head of the Artificers Guild, a group of skilled engineers. This colony is your pride.<br>\
-	You are to keep the colony running and constantly improve it as much as you are able. Let none question the efficacy of your labors.<br>\
-	As a leader, it is far more efficient for you to delegate work than attempting to solve everything yourself - spread the labor.<br>\
-	Machinery across the colony is your responsibility. Let no outsiders interfere or intrude into your domain - even Command staff are no exception.<br>\
-	Treat every Guild member like your family. Keep them paid, fed, and safe. You may be a part of the wider colony, but your own come first."
+	description = "The Union Chief is the head of the local Terra-Therma Worker's Union Chapterhouse, and is responsible for the operation and oversight of all engineering and mining projects on the colony. They direct the Technicians, organising projects and work orders for the workers. It is your job to keep the colony running efficiently. You are the sole authority on Engineering matters, and thus are expected to competently handle repairs and power production across the colony as needed. You also command the Mining Technicians; make sure they are working well and are bringing back materials for the Union. As a leader, it is far more efficient for you to delegate work than attempting to solve everything yourself - spread the labour. Machinery across the colony is your Union's responsibility. Let no outsiders interfere or intrude upon your domain - even Command staff are no exception. Treat every Union member like your family. Keep them paid, fed and safe. The Workers' Union looks after its members, and you are all a fraternity. Your own comes first."
 
-	duties = "Manage the Guild Adepts - set tasks and areas of focus.<br>\
-	Strive to protect the rights of your Adepts, as well as their safety and health.<br>\
-	Conduct your own repairs and projects as required - especially when low staffed. "
+	duties = "Manage the Technicians, be they Mining Technicians or Mechanical Technicians.<br>\
+	Set tasks and areas of focus.<br>\
+	Strive to protect the rights of your Technicians, as well as their safety and health.<br>\
+	Conduct your own repairs and projects as required, especially when low staffed."
 
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
 
@@ -102,16 +99,13 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/shield_control)
 
-	description = "The Mechanical Technician is a member of one of the greatest engineering guilds in the galaxy, contracted to maintain this colony.<br>\
-Your main priority is ensuring the setup and maintenance of the colonies power grid. Seek guidance on this complex task if untrained.<br>\
-Outside of this, you should devote time to learning and configuring various systems. Everything can be improved, and new constructs can be made.<br>\
-This upgrade culture extends to your own arsenal - mod and upgrade your tools with parts from maintenance, or purchased from Skylight or the Prospectors.<br>\
-Do not let outsiders, even Command Staff, interfere with the duties of the Guild. And remember - be ready to respond to emergency calls at any time."
+	description = "The Mechanical Technician is a member of the Terra-Therma Workers' Union, contracted to maintain, repair and power the colony. Your main priority is ensuring the setup and maintenance of the colony's power grid. Seek guidance on this complex task if untrained. You are also expected to ensure that the colony is structurally sound and safe, as well as making sure that it is heated. It's cold outside; make sure the cold doesn't creep in. Outside of this, you should devote time into learning and configuring various systems. Everything can be improved, and new constructs can be made. In your downtime, your arsenal can be improved with mods and different tools, either hand-crafted or made through the Matter NanoForge. Your NanoForge is the pride and joy of the Union; the objects created from it can be used to supplement your equipment or sold for profit. Do not let outsiders, even Command Staff, interfere with the duties of the Union. Be ready to respond to emergency calls at all time. You are the first, and maybe last, line of defense against structural damage."
 
-	duties = "Start up the solars and generators.<br>\
-	Repair anything and anyone that needs some maintenance.<br>\
+	duties = "Start up the engines of the colony. Upgrade them when time permits.<br>\
+	Repair anything (and anyone who asks) that needs maintenance.<br>\
 	Respond to distress calls and patch breaches in the walls.<br>\
-	Keep every part of the colony powered, oxygenated, and ready to use."
+	Keep every part of the colony powered, oxygenated, warm and ready to use.<br>\
+	Assist the Union whenever needed. The Miners often have use for your crafts, and you depend on them for materials."
 
 	perks = list(PERK_INSPIRATION, PERK_HANDYMAN)
 
@@ -138,14 +132,11 @@ Do not let outsiders, even Command Staff, interfere with the duties of the Guild
 	disallow_species = list(FORM_LIBYNTH, FORM_CHURCHSYNTH)
 	outfit_type = /decl/hierarchy/outfit/job/engineering/mining
 
-	description = "The Miner is a professional resource procurer, acquiring valuable minerals for Skylight Shipping Solutions.<br>\
-Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can.<br>\
-Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use.<br>\
-Whatever you dig up will go to the cargo department, and from then on it is the responsibility of others within Skylight to sell it.<br>\
-The deep tunnels are far less dangerous than the wilderness, but pack well - disappearances are not unheard of."
+	description = "The Mining Technician is a professional resource procurer, acquiring valuable minerals and materials for the Terra-Therma Workers' Union. Your primary responsibility is to descend into the deep tunnels and dig up as much ore as you can. Accessed by elevator, the area contains an outpost with all the facilities to process said ore and deliver refined materials ready for use. Whatever you dig up will go to the Union, and from then on it is the responsibility of others within the Union to use or sell as needed. The deep tunnels are far less dangerous than the blisteringly cold wilderness, but pack well - disappearances are not unheard of."
 
 	duties = "Dig up ores and minerals to be processed into usable material.<br>\
-	Locate other valuables within the tunnels that may be turned to profit."
+	Locate other valuables within the tunnels that may be sold off for profit.<br>\
+	Assist the Union whenever needed. The Maintenance Technicians require what you dig up for crafting and repairing the colony, and what they can produce will be invaluable for your work."
 
 	access = list(
 		access_eva, access_maint_tunnels, access_external_airlocks, access_mining, access_mining_office, access_mining_station
@@ -170,47 +161,4 @@ The deep tunnels are far less dangerous than the wilderness, but pack well - dis
 	icon_state = "player-beige"
 	join_tag = /datum/job/mining
 
-/* maybe they'll want it back in, idk
-/datum/job/janitor
-	title = "Sanitation Technician"
-	flag = JANITOR
-	department = DEPARTMENT_SERVICE
-	department_flag = SERVICE
-	faction = MAP_FACTION
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "Union Chief"
-	difficulty = "Easy."
-	selection_color = "#d5c88f"
-	alt_titles = list ("Janitor")
-	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
-	wage = WAGE_PROFESSIONAL
-	health_modifier = 5
-	outfit_type = /decl/hierarchy/outfit/job/engineering/janitor
-
-	perks = list(PERK_JINGLE_JANGLE, PERK_NEAT)
-
-	stat_modifiers = list(
-		STAT_ROB = 15,
-		STAT_TGH = 10,
-		STAT_VIG = 15,
-		STAT_COG = 10,
-	)
-
-
-	software_on_spawn = list(/datum/computer_file/program/camera_monitor)
-	description = "The lowly Janitor, well paid but rarely respected, nevertheless provides a valuable service.<br>\
-	You will trundle around the colony, armed with your trusty janicart full of cleaning supplies, disposing of trash and pests.<br>\
-	Some minor maintenance also falls within your duties. Fix lights, correct broken vendors, replace floor tiles - ease the guild burden.<br>\
-	Although your status is miserable, your knowledge of maintenance may lead you to some valuable salvage for some extra cash."
-
-	duties = "Clean blood, dirt, rubble and messes. Don't clean up crime scenes!<br>\
-		Conduct minor repairs and maintenance when guild adepts aren't available.<br>\
-		Restock Newscasters to at lest 15 prints.<br>\
-		Deploy traps on burrows and do your best to handle the ongoing roach and spider problem."
-
-/obj/landmark/join/start/janitor
-	name = "Sanitation Technician"
-	icon_state = "player-black"
-	join_tag = /datum/job/janitor
-*/
+//No we won't

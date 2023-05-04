@@ -1,10 +1,10 @@
 //Jobs depatment lists for use in constant expressions
-#define JOBS_COMMAND "Board Secretary","Deputy Chief","Union Chief","Chief Surgeon Overseer","Research Provost","Casino Manager","Oathpledge","Field Shepherd"
+#define JOBS_COMMAND "Board Secretary","Deputy Chief","Union Chief","Chief Surgeon Overseer","Research Provost","Club Manager","Oathpledge","Field Shepherd"
 #define JOBS_SECURITY "Deputy Chief", "Armorer", "Criminal Investigator", "Watchmen"
-#define JOBS_ENGINEERING "Union Chief","Mechanical Technician","Mining Technician","Sanitation Technician"
+#define JOBS_ENGINEERING "Union Chief","Mechanical Technician","Mining Technician",
 #define JOBS_MEDICAL "Chief Surgeon Overseer","Medical Doctor","Paramedic","Liaison Psychiatrist"
 #define JOBS_SCIENCE "Research Provost","PIRS Scientist","PIRS Roboticist"
-#define JOBS_SERVICE "Casino Manager","Fixer","Casino Worker"
+#define JOBS_SERVICE "Club Manager","Fixer","Club Worker","Janitor"
 #define JOBS_PROSPECTOR "Field Shepherd","Trapper","Shipbreaker"
 #define JOBS_CHURCH "Oathpledge", "Forgemaster", "Enkindled", "Oathbound"
 #define JOBS_CIVILIAN "Colonist"

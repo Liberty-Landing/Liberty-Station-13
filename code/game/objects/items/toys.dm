@@ -733,8 +733,8 @@
 	toysay = "\"Vodka!\""
 
 /obj/item/toy/figure/character/bobblehead/acolyte
-	name = "acolyte figurine"
-	desc = "Church of Bonfire \"New Faith Life\" brand figurine of a vector, hooded both physically and spiritually from that which would lead them astray."
+	name = "custodian figurine"
+	desc = "Custodians of Bonfire \"New Life\" brand figurine of an oathbound, protected both physically and mentally from that which would lead them astray."
 	icon_state = "acolyte"
 	toysay = "\"Brotherhood.\""
 

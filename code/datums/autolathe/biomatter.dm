@@ -38,7 +38,7 @@
 	build_path = /obj/item/stack/material/cardboard/random // I guess it depends on the protein content.
 */
 /datum/design/bioprinter/leather/holster/saber/greatsword/churchprint
-	name = "Absolutist Sword Scabbard"
+	name = "Custodian Scabbard"
 	build_path = /obj/item/clothing/accessory/holster/saber/greatsword/churchprint
 	materials = list(MATERIAL_BIO_SILK = 0.1, MATERIAL_CARBON_FIBER = 0.2)
 
@@ -111,7 +111,7 @@
 /datum/design/bioprinter/nt_clothes/armor_kit
 	name = "Armor Bundle"
 	build_path = /obj/item/gunbox/church
-	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_BIOMATTER = 20)
+	materials = list(MATERIAL_BIO_SILK = 15, MATERIAL_CARBON_FIBER = 15)
 
 /datum/design/bioprinter/nt_clothes/acolyte_armor
 	name = "Vector Armor"
@@ -182,42 +182,42 @@
 
 //[MELEE]
 /datum/design/autolathe/sword/nt_sword
-	name = "NT Short Sword"
+	name = "Ulfberth"
 	build_path = /obj/item/tool/sword/nt/shortsword
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 8)
 
 /datum/design/autolathe/sword/nt_longsword
-	name = "NT Longsword"
+	name = "Horseman Axe"
 	build_path = /obj/item/tool/sword/nt/longsword
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 12)
 
 /datum/design/autolathe/sword/nt_dagger
-	name = "NT Dagger"
+	name = "Custodian Seax"
 	build_path = /obj/item/tool/knife/dagger/nt
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 3)
 
 /datum/design/autolathe/sword/nt_halberd
-	name = "NT Halberd"
+	name = "Custodian Atgeir"
 	build_path = /obj/item/tool/spear/halberd
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 18)
 
 /datum/design/autolathe/sword/nt_spear
-	name = "NT Spear"
+	name = "Custodian Francisca"
 	build_path = /obj/item/tool/sword/nt/spear
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 4)
 
 /datum/design/autolathe/sword/nt_scourge
-	name = "NT Scourge"
+	name = "Custodian Nagaika"
 	build_path = /obj/item/tool/sword/nt/scourge
 	materials = list(MATERIAL_BIO_SILK = 10, MATERIAL_CARBON_FIBER = 18)
 
 /datum/design/autolathe/shield/nt_shield
-	name = "NT Shield"
+	name = "Custodian Scutum Shield"
 	build_path = /obj/item/shield/riot/nt
 	materials = list(MATERIAL_BIO_SILK = 3, MATERIAL_CARBON_FIBER = 21)
 
 /datum/design/autolathe/nt/shield/nt_buckler
-	name = "NT Buckler"
+	name = "Custodian Targe Shield"
 	build_path = /obj/item/shield/buckler/nt
 	materials = list(MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 12)
 
@@ -237,7 +237,7 @@
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 12)
 
 /datum/design/autolathe/sword/nt_flanged
-	name = "NT Flanged Mace"
+	name = "Emberblaze Warhammer"
 	build_path = /obj/item/tool/sword/nt/flanged
 	materials = list(MATERIAL_BIO_SILK = 1, MATERIAL_CARBON_FIBER = 16)
 

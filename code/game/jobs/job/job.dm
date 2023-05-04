@@ -15,7 +15,7 @@
 	var/current_positions = 0				// How many players have this job
 	var/supervisors					// Supervisors, who this person answers to directly
 	var/selection_color = "#ffffff"			// Selection screen color
-	var/noob_name
+	var/noob_name	//Use this for trainee names
 	var/list/alt_titles
 	var/list/alt_perks
 	var/difficulty = "Null"

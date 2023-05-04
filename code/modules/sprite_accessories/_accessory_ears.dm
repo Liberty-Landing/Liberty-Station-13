@@ -692,6 +692,13 @@
     icon_state = "goblin-droopy"
     colored_layers = 1
     blend = ICON_MULTIPLY
+	
+/datum/sprite_accessory/ears/goblinsharp
+    name = "Sharp Goblin Ears"
+    desc = ""
+    icon_state = "goblin-sharp"
+    colored_layers = 1
+    blend = ICON_MULTIPLY
 
 /datum/sprite_accessory/ears/goblinperky
     name = "Perky Goblin Ears"

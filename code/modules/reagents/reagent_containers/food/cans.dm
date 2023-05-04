@@ -143,7 +143,7 @@
 /obj/item/reagent_containers/food/drinks/cans/monster_sol
 	name = "\"Fed\" Claw Energy"
 	desc = "Claw energy, for when you need the focus of a hawk and the energy of a cheetah. A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
-	With Sol Fed marketing and pineapple juice to give it a sweet tropical flavour and salty acid. Why does drinking this make you want to shoot kriosans?"
+	With Terran marketing and pineapple juice to give it a sweet tropical flavour and salty acid. Why does drinking this make you want to shoot kriosans?"
 	icon_state = "claw_soyfed"
 	center_of_mass = list("x"=16, "y"=6)
 	preloaded_reagents = list("energy_drink_monster" = 25, "pineapplejuice" = 25, "soysauce" = 10)

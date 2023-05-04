@@ -9,7 +9,6 @@
 	display_name = "kriosan sterile mask"
 	path = /obj/item/clothing/mask/surgical/kriosan
 	slot = slot_wear_mask
-	cost = 1
 
 /datum/gear/clothing/bandana
 	display_name = "bandana mask selection"
@@ -22,7 +21,6 @@
 	display_name = "balaclava"
 	path = /obj/item/clothing/mask/balaclava
 	slot = slot_wear_mask
-	cost = 1
 
 /datum/gear/clothing/gasmask
 	display_name = "gas mask"
@@ -111,4 +109,3 @@ datum/gear/clothing/mask/tiki/New()
 	display_name = "mime mask"
 	slot = slot_wear_mask
 	path = /obj/item/clothing/mask/costume/job/mime
-	cost = 1

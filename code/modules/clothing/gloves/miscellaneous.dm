@@ -45,7 +45,7 @@
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
 
 
-/obj/item/clothing/gloves/insulated/cheap                          //Cheap Chinese Crap
+/obj/item/clothing/gloves/insulated/cheap
 	desc = "A pair of cheaply-made insulated gloves. Not known for reliability."
 	name = "budget insulated gloves"
 	siemens_coefficient = 1			//Set to a default of 1, gets overridden in New()

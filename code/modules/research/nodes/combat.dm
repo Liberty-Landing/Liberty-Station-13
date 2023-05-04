@@ -269,7 +269,7 @@
 
 	required_technologies = list(/datum/technology/advanced_armor,
 								 /datum/technology/laser_weaponry)
-	required_tech_levels = list(RESEARCH_POWERSTORAGE = 12, RESEARCH_ENGINEERING = 20)
+	required_tech_levels = list(RESEARCH_POWERSTORAGE = 10, RESEARCH_ENGINEERING = 20)
 	cost = 5625 //You get back a lot
 
 	unlocks_designs = list(/datum/design/research/item/weapon/hydrogen_rifle,

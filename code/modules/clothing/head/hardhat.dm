@@ -19,6 +19,8 @@
 	price_tag = 30
 	item_flags = STOPPRESSUREDAMAGE
 	heat_protection = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = T0C - 20
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/hardhat/union_chief_helmet

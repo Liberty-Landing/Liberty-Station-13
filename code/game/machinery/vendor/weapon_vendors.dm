@@ -184,8 +184,8 @@
 	auto_price = FALSE
 
 /obj/machinery/vending/theomat
-	name = "Church of Bonfire Theo-Mat"
-	desc = "A church dispensary for disciples and new converts."
+	name = "Custodian Vendo-Mat"
+	desc = "A Custodian dispensary for both new and established members."
 	product_slogans = "Find peace through faith.;Help humanity ascend, join your brethren today!;Come and seek a new life!;Safety in brotherhood!"
 	product_ads = "Praise!;Pray!;Only for the faithful!;Ascend!;Seek a new life!;Better living through technology!"
 	icon_state = "teomat"
@@ -221,7 +221,7 @@
 					/obj/item/grenade/chem_grenade/antiweed/nt_antiweed = 5,
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 5,
 					/obj/item/tool/knife/dagger/nt = 3,
-					/obj/item/tool/sword/nt = 3,
+					/obj/item/tool/sword/nt/shortsword = 3,
 					/obj/item/gun/energy/ntpistol = 3,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 2,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 2,
@@ -261,7 +261,7 @@
 					/obj/item/grenade/chem_grenade/antiweed/nt_antiweed = 25,
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 50,
 					/obj/item/tool/knife/dagger/nt = 50,
-					/obj/item/tool/sword/nt = 100,
+					/obj/item/tool/sword/nt/shortsword = 100,
 					/obj/item/gun/energy/ntpistol = 120,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 800,
 					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 100,

@@ -4,6 +4,7 @@
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "balkan_mercenary_boltgun"
 	icon_dead = "balkan_mercenary_dead"
+	drop_items = list(/obj/item/stack/dinar/random)
 	stop_automated_movement_when_pulled = 1
 	wander = 1
 	maxHealth = 100

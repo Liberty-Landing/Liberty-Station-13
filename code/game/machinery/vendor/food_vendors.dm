@@ -423,6 +423,7 @@
 	desc = "A machine filled with odd pre-space era drinks, smells of benzin. Provided for by HexaOptimum."
 	icon_state = "citadel"
 	icon_vend = "citadel-vend"
+	icon_deny = "citadel-deny"
 	product_slogans = "For a little bit of home.;Cure your depression with these!;HexaOptimum is not responsible for any mutations resulting from drinking our products."
 	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Unions got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 5,

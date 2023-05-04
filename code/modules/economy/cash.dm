@@ -1,16 +1,16 @@
 //#define CASH_PER_STAT 1000 // The cost of a single level of a statistic
 
 /obj/item/spacecash
-	name = "0 credit"
-	desc = "It's worth 0 credits."
+	name = "0 scrip"
+	desc = "It's worth 0 scrips."
 	gender = PLURAL
 	icon = 'icons/obj/items.dmi'
 	icon_state = "1"
 	opacity = 0
 	density = 0
 	anchored = 0.0
-	force = 1.0
-	throwforce = 1.0
+	force = 1
+	throwforce = 1
 	throw_speed = 1
 	throw_range = 2
 	w_class = ITEM_SIZE_SMALL
@@ -39,7 +39,7 @@
 			h_user.drop_from_inventory(src)
 			h_user.drop_from_inventory(bundle)
 			h_user.put_in_hands(bundle)
-		to_chat(user, SPAN_NOTICE("You add [src.worth] credits worth of money to the bundles.<br>It holds [bundle.worth] credits now."))
+		to_chat(user, SPAN_NOTICE("You add [src.worth] scrips worth of money to the bundles.<br>It holds [bundle.worth] scrips now."))
 		qdel(src)
 
 /obj/item/spacecash/Destroy()
@@ -47,9 +47,9 @@
 	worth = 0		// Prevents money from be duplicated anytime.
 
 /obj/item/spacecash/bundle
-	name = "pile of credits"
+	name = "pile of scrips"
 	icon_state = ""
-	desc = "They are worth 0 credits."
+	desc = "They are worth 0 scrips."
 	worth = 0
 
 /obj/item/spacecash/bundle/update_icon()
@@ -88,14 +88,14 @@
 		M.Turn(pick(-45, -27.5, 0, 0, 0, 0, 0, 0, 0, 27.5, 45))
 		banknote.transform = M
 		src.add_overlay(banknote)
-	src.desc = "They are worth [worth] credits."
+	src.desc = "They are worth [worth] scrips."
 	if(worth in denominations)
-		src.name = "[worth] credit"
+		src.name = "[worth] scrip"
 	else
-		src.name = "pile of credits"
+		src.name = "pile of scrips"
 
 /obj/item/spacecash/bundle/attack_self()
-	var/amount = input(usr, "How many credits do you want to take? (0 to [src.worth])", "Take Money", 20) as num
+	var/amount = input(usr, "How many scrips do you want to take? (0 to [src.worth])", "Take Money", 20) as num
 	amount = round(CLAMP(amount, 0, src.worth))
 	if(amount==0) return 0
 	else if (!Adjacent(usr))
@@ -141,9 +141,9 @@
 
 //Sprites by Près de l'oiseau#2625 (alts, coins) && Ceurelian#3684 (defaults, crushed)
 /obj/item/spacecash/bundle/c1
-	name = "1 credit"
+	name = "1 scrip"
 	icon_state = "1"
-	desc = "It's worth 1 credit."
+	desc = "It's worth 1 scrip."
 	worth = 1
 
 	New()
@@ -155,9 +155,9 @@
 			icon_state = "1_crushed"
 
 /obj/item/spacecash/bundle/c10
-	name = "10 credits"
+	name = "10 scrips"
 	icon_state = "10"
-	desc = "It's worth 10 credits."
+	desc = "It's worth 10 scrips."
 	worth = 10
 
 	New()
@@ -169,9 +169,9 @@
 			icon_state = "10_crushed"
 
 /obj/item/spacecash/bundle/c20
-	name = "20 credits"
+	name = "20 scrips"
 	icon_state = "20"
-	desc = "It's worth 20 credits."
+	desc = "It's worth 20 scrips."
 	worth = 20
 
 	New()
@@ -183,9 +183,9 @@
 			icon_state = "20_crushed"
 
 /obj/item/spacecash/bundle/c50
-	name = "50 credits"
+	name = "50 scrips"
 	icon_state = "50"
-	desc = "It's worth 50 credits."
+	desc = "It's worth 50 scrips."
 	worth = 50
 
 	New()
@@ -197,9 +197,9 @@
 			icon_state = "50_crushed"
 
 /obj/item/spacecash/bundle/c100
-	name = "100 credits"
+	name = "100 scrips"
 	icon_state = "100"
-	desc = "It's worth 100 credits."
+	desc = "It's worth 100 scrips."
 	worth = 100
 
 	New()
@@ -211,9 +211,9 @@
 			icon_state = "100_crushed"
 
 /obj/item/spacecash/bundle/c200
-	name = "200 credits"
+	name = "200 scrips"
 	icon_state = "200"
-	desc = "It's worth 200 credits."
+	desc = "It's worth 200 scrips."
 	worth = 200
 
 	New()
@@ -225,9 +225,9 @@
 			icon_state = "200_crushed"
 
 /obj/item/spacecash/bundle/c500
-	name = "500 credits"
+	name = "500 scrips"
 	icon_state = "500"
-	desc = "It's worth 500 credits."
+	desc = "It's worth 500 scrips."
 	worth = 500
 
 	New()
@@ -239,9 +239,9 @@
 			icon_state = "500_crushed"
 
 /obj/item/spacecash/bundle/c1000
-	name = "1000 credits"
+	name = "1000 scrips"
 	icon_state = "1000"
-	desc = "It's worth 1000 credits."
+	desc = "It's worth 1000 scrips."
 	worth = 1000
 
 	New()
@@ -275,6 +275,6 @@ proc/spawn_money(var/sum, spawnloc, mob/living/carbon/human/human_user as mob)
 /obj/item/spacecash/ewallet/examine(mob/user)
 	..(user)
 	if (!(user in view(2)) && user!=src.loc) return
-	to_chat(user, "\blue Charge card's owner: [src.owner_name]. Credits remaining: [src.worth].")
+	to_chat(user, "\blue Charge card's owner: [src.owner_name]. Scrips remaining: [src.worth].")
 
 //#undef CASH_PER_STAT

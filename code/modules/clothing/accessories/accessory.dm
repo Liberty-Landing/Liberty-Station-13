@@ -445,7 +445,7 @@
 
 /obj/item/clothing/accessory/kricape/soldier
 	name = "soldier-lord trench cape"
-	desc = "A faded grey cape for the nobles-of-the-sword from the land of the Midnight Sun - Reichsritters who forsook high officership billets instead to lead infantry. They are a fading footnote of Kriosian aristocracy, brought to extinction numbers during the Battle of Krios by their leadership methods and the irrelevance of height and physique against the application of 6.5mm Creedmoor to the head by Solfed Scout-Snipers. Without anyone young or willing enough to sire enough to replace the dead, the cape has become the signature of exiled Castellans and the formal apparel of a few notable mercenary-men and duelists, and shall mean nothing in the next few generations."
+	desc = "A faded grey cape for the nobles-of-the-sword from the land of the Midnight Sun - Reichsritters who forsook high officership billets instead to lead infantry. They are a fading footnote of Kriosian aristocracy, brought to extinction numbers during the Battle of Krios by their leadership methods and the irrelevance of height and physique against the application of 6.5mm Creedmoor to the head by Terran Scout-Snipers. Without anyone young or willing enough to sire enough to replace the dead, the cape has become the signature of exiled Castellans and the formal apparel of a few notable mercenary-men and duelists, and shall mean nothing in the next few generations."
 	icon_state = "krieg_cape"
 
 /obj/item/clothing/accessory/kricape/rural
@@ -1056,28 +1056,28 @@
 
 /obj/item/clothing/accessory/tacticool
 	name = "black UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in black."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in black."
 	icon_state = "ubacblack"
 	item_state = "ubacblack"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/tacticool/navy
 	name = "navy blue UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in navy blue."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in navy blue."
 	icon_state = "ubacblue"
 	item_state = "ubacblue"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/tacticool/tan
 	name = "tan UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in tan."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in tan."
 	icon_state = "ubactan"
 	item_state = "ubactan"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/tacticool/green
 	name = "green UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in green."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in green."
 	icon_state = "ubacgreen"
 	item_state = "ubacgreen"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER

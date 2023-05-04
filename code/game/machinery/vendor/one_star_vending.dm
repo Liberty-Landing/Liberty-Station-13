@@ -7,7 +7,7 @@
 	//product_slogans = "Usually no carcinogens!;Best sports!;Become the strongest!"
 	//product_ads = "Strength!;Cheap!;There are contraindications, it is recommended to consult a medical specialist."
 	vendor_department = DEPARTMENT_SIMILACRUM
-	alt_currency_path = /obj/item/stack/os_cash
+	alt_currency_path = /obj/item/stack/gal_cred
 
 /obj/machinery/vending/one_star/Initialize()
 	. = ..()

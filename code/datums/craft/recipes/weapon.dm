@@ -275,8 +275,8 @@
 	name = "makeshift katana"
 	result = /obj/item/tool/sword/katana_makeshift
 	steps = list(
-		list(/obj/item/tool/knife, 1, "time" = 15),
-		list(/obj/item/tool/knife, 1, "time" = 15),
+		list(/obj/item/stack/rods, 3, "time" = 15),
+		list(CRAFT_MATERIAL, 7, MATERIAL_STEEL),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10)
 	)

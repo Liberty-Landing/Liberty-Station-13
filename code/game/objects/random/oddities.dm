@@ -112,7 +112,6 @@
 				/obj/item/oddity/ls/manual = 1,
 				/obj/item/oddity/ls/bouquet = 2,
 				/obj/item/oddity/ls/magazine = 2,
-				/obj/item/oddity/ls/dogtags = 2,
 				/obj/item/oddity/ls/silk_cloak = 2,
 				/obj/item/oddity/ls/kriosan_sword = 1,
 				/obj/item/oddity/ls/newton_odd = 2,

@@ -165,7 +165,6 @@
 			/obj/item/oddity/ls/bouquet = custom_good_amount_range(list(3, 6)),
 			/obj/item/oddity/ls/magazine = custom_good_amount_range(list(3, 6)),
 			/obj/item/oddity/ls/puzzlebox = custom_good_amount_range(list(-1, 2)),
-			/obj/item/oddity/ls/dogtags = custom_good_amount_range(list(3, 6)),
 			/obj/item/oddity/ls/silk_cloak = custom_good_amount_range(list(3, 6)),
 			/obj/item/oddity/ls/kriosan_sword = custom_good_amount_range(list(3, 6)),
 			/obj/item/oddity/ls/newton_odd = custom_good_amount_range(list(3, 6)),

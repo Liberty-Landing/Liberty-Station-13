@@ -38,65 +38,71 @@
 	Command
 **************/
 /datum/department/command
-	name = "Liberty Council"
+	name = "Liberty Council Funds"
 	id = DEPARTMENT_COMMAND
-	account_initial_balance = 2000000
+	account_initial_balance = 50000 //Emergency and to pay mister secretary out of of, literally no other reason
 	jobs_in_department = list(JOBS_COMMAND)
 
 /*************
 	Retainers
 **************/
-//These departments are paid out of ship funding
-/datum/department/ironhammer
-	name = "Liberty Watch Funds"
+//These departments got just enough to get going through the round but have some way to acquire dosh
+/datum/department/liberty_watch
+	name = "Liberty Watch Surface Account"
 	id = DEPARTMENT_SECURITY
+	account_initial_balance = 16000 //Rounded up to last 4 hours for entire department without nepotism with all slots filled.
 	jobs_in_department = list(JOBS_SECURITY)
 
 /datum/department/terra_therma
-	name = "Terra-Therma Union Funds"
+	name = "Terra-Therma Union Operation Funding"
 	id = DEPARTMENT_ENGINEERING
+	account_initial_balance = 15500 //Rounded up to last 4 hours for entire department without nepotism with all slots filled
 	jobs_in_department = list(JOBS_ENGINEERING)
 
-/datum/department/service
-	name = "Liberty Contractors"
-	id = DEPARTMENT_CIVILIAN
-	account_initial_balance = 0
-	jobs_in_department = list()
-
-/******************
-	Benefactors
-*******************/
-//Departments subsidised by an external organisation. These pay their own employees
 /datum/department/medical
-	name = "Chirurgeons And Pharmaceutical Sciences Association Funds"
+	name = "Chirurgeons And Pharmaceutical Sciences Association Operation Funding"
 	id = DEPARTMENT_MEDICAL
+	account_initial_balance = 19000 //Rounded up to last 4 hours for entire department without nepotism with all slots filled
 	jobs_in_department = list(JOBS_MEDICAL)
 
 /datum/department/research
-	name = "Phokorus Science Institute Funds"
+	name = "Phokorus Science Institute Operation Funding"
 	id = DEPARTMENT_SCIENCE
+	account_initial_balance = 15000 //Rounded up to last 4 hours for entire department without nepotism with all slots filled
 	jobs_in_department = list(JOBS_SCIENCE)
 
+/******************
+	Moneymakers
+******************/
+//These departments can make their own money very easily
 /datum/department/church
-	name = "Custodians of Bonfires Funds"
+	name = "Custodians of Bonfire Operation Funding"
 	id = DEPARTMENT_CHURCH
-	account_initial_balance = 17000 //17000 to cover some expenses but not that much
-	//Full team with nepotism in 5 hours is 15600
+	account_initial_balance = 10000 //Almost enough to last 4 hours without nepotism with all slots filled
 	jobs_in_department = list (JOBS_CHURCH)
+
+/datum/department/service
+	name = "Skylight Syndicate Central Account"
+	id = DEPARTMENT_SERVICE
+	account_initial_balance = 8000 //Almost enough to last 4 hours without nepotism with all slots filled
+	jobs_in_department = list(JOBS_SERVICE)
+
+/datum/department/prospector
+	name = "Fontaine Heavy Industries Account"
+	id = DEPARTMENT_PROSPECTOR
+	account_initial_balance = 5000 //Entire job is just making money so you get this
+	jobs_in_department = list(JOBS_PROSPECTOR)
 
 /******************
 	Independant
 *******************/
-//Self funds and pays wages out of its earnings
-/datum/department/service
-	name = "Skylight Syndicate Funds"
-	id = DEPARTMENT_SERVICE
-	jobs_in_department = list(JOBS_SERVICE)
+//Either earn no wages or don't belong to the colony
 
-/datum/department/prospector
-	name = "Fontaine Heavy Industries Funds"
-	id = DEPARTMENT_PROSPECTOR
-	jobs_in_department = list(JOBS_PROSPECTOR)
+/datum/department/civilian
+	name = "Liberty Contractors"
+	id = DEPARTMENT_CIVILIAN
+	account_initial_balance = 0
+	jobs_in_department = list()
 
 /datum/department/independent
 	name = "Independent Allied Factions"

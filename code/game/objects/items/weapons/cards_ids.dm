@@ -244,7 +244,7 @@ var/const/NO_EMAG_ACT = -50
 	assignment = "Synthetic"
 
 /obj/item/card/id/synthetic/New()
-	access = list(access_synth, access_robotics)
+	access = get_all_station_access() + access_synth
 	..()
 
 /obj/item/card/id/all_access

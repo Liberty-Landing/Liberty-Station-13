@@ -133,3 +133,7 @@
 	display_name = "Naval Surgeon Tricorne"
 	path = /obj/item/clothing/head/costume/livesey
 
+/datum/gear/head/tinfoil
+	display_name = "anti-psion hat"
+	path = /obj/item/clothing/head/psionic/tinfoil
+	cost = 1 //Has materas so its still a little bit of costs

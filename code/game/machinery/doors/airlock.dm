@@ -927,7 +927,7 @@ There are 9 wires.
 	if(operating < 0) //emagged
 		to_chat(user, SPAN_WARNING("Unable to interface: Internal error."))
 		return STATUS_CLOSE
-	if(issilicon(user) && !(allowed(user) && canAIControl()))
+	if(issilicon(user) && !canAIControl())
 		if(canAIHack(user))
 			hack(user)
 		else
@@ -1371,7 +1371,7 @@ There are 9 wires.
 	return TRUE
 
 /obj/machinery/door/airlock/allowed(mob/M)
-	if(locked && !issilicon(M))
+	if(locked)
 		return FALSE
 	return ..(M)
 

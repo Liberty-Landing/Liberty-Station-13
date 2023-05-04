@@ -20,7 +20,7 @@
 		STAT_VIG = 15,
 	)
 
-	perks = list(PERK_MARKET_PROF)
+	perks = list(PERK_MARKET_PROF, PERK_CLUB)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/clubmanager //Re-using this.
 	description = "The Bartender runs the colony bar, providing colonists with drinks and entertainment.<br>\
@@ -56,7 +56,7 @@
 		STAT_TGH = 10,
 	)
 
-	perks = list(PERK_MARKET_PROF)
+	perks = list(PERK_MARKET_PROF, PERK_CLUB)
 
 	outfit_type = /decl/hierarchy/outfit/job/service/fixer
 	description = "The Fixer looks over the club, ensuring nobody skips on their bill or gets too handsy.<br>\
@@ -86,9 +86,12 @@
 	alt_titles = list("Bartender", "Chef", "Gardener")
 	selection_color = "#dddddd"
 	health_modifier = -10
-	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen)
+	access = list(access_janitor, access_hydroponics, access_bar, access_kitchen, access_cargo)
 	initial_balance = 750
 	wage = WAGE_LABOUR_DUMB //They should get paid by making food.
+
+	perks = list(PERK_CLUB, PERK_CHEF)
+
 	stat_modifiers = list(
 		STAT_ROB = 10,
 		STAT_BIO = 10, // They need it to butcher animals without hurting themselves.
@@ -119,10 +122,10 @@
 	spawn_positions = 2
 	supervisors = "Club Manager"
 	difficulty = "Easy."
-	selection_color = "#d5c88f"
-	alt_titles = list ("Janitor")
+	selection_color = "#dddddd"
+	alt_titles = list ("Sanitation Worker")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR_HAZARD //No longer part of church you don't need this boy
 	health_modifier = 5
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 

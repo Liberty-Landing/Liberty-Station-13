@@ -184,6 +184,6 @@
 
 /obj/item/reagent_containers/glass/urn/veteran
 	name = "Martyr's Urn"
-	desc = "An urn filled with mixed ashes from the faithful defenders of New Byzantine. Only a very small number of bodies could be retrieved from the planet after its occupation by SolFed forces, each one coming at terrible risk. Augustine has declared the ashes a relic of all those who died in defense of the faith. Do not spill."
+	desc = "An urn filled with mixed ashes from the faithful defenders of New Byzantine. Only a very small number of bodies could be retrieved from the planet after its occupation by Terran forces, each one coming at terrible risk. Augustine has declared the ashes a relic of all those who died in defense of the faith. Do not spill."
 	icon_state = "saint_urn"
 	preloaded_reagents = list("carbon" = 30)

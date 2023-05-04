@@ -15,7 +15,7 @@
 
 	var/injecting = 0
 
-	var/volume_rate = 50	//flow rate limit
+	var/volume_rate = 200	//initial flow rate, tank computers can change this value
 
 	var/frequency = 0
 	var/id

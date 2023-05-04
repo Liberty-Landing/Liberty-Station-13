@@ -1,8 +1,7 @@
 //Warning! If you change icon_state or item_state, make sure you change path for sneath as well. icons/obj/sneath.dmi
 /obj/item/tool/sword/nt // not supposed to be in the game, had to make the shortsword its own type to prevent fucking up the scourge. sorry.
-	name = "short sword"
-	desc = "A saintly looking sword, made to do God's work. \
-	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
+	name = "base item"
+	desc = "If you can see this in-game, report it."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_shortsword"
 	item_state = "nt_shortsword"
@@ -10,7 +9,7 @@
 	throwforce = WEAPON_FORCE_WEAK
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 300
-	matter = list(MATERIAL_BIOMATTER = 25, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 25, MATERIAL_STEEL = 5)
 
 /obj/item/tool/sword/nt/equipped(mob/living/M)
 	. = ..()
@@ -20,9 +19,9 @@
 		embed_mult = initial(embed_mult)
 
 /obj/item/tool/sword/nt/shortsword
-	name = "short sword"
-	desc = "A saintly looking sword, made to do God's work. \
-	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
+	name = "ulfberth"
+	desc = "As much as the swords may be underused by the Custodians in exchange for polearms and axes, many short swords are produced with a cheap price. \
+	The ulfberth are regarded as a work of art rather than a weapon - yet more effective than a machete nonetheless."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_shortsword"
 	item_state = "nt_shortsword"
@@ -30,37 +29,35 @@
 	throwforce = WEAPON_FORCE_WEAK
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 300
-	matter = list(MATERIAL_BIOMATTER = 25, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 25, MATERIAL_STEEL = 5)
 
 /obj/item/tool/sword/nt/longsword
-	name = "longsword"
-	desc = "A saintly looking longsword, recommended by experienced crusaders. \
-	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
+	name = "horseman axe"
+	desc = "An efficient tin-opener of a weapon, excellent for penetrating armor - the sight of such a large axe is not far-fetched from horror stories, as such blade and weight can easily chop an arm. \
+	This piece of equipment is the most well used piece of melee weaponry of the Custodians."
 	icon_state = "nt_longsword"
 	item_state = "nt_longsword"
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_EXTREME
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 500
-	matter = list(MATERIAL_BIOMATTER = 75, MATERIAL_STEEL = 10, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 75, MATERIAL_STEEL = 10, MATERIAL_CARBON_FIBER = 5)
 
 /obj/item/tool/knife/dagger/nt
-	name = "dagger"
-	desc = "A saintly looking dagger, may the absolute have mercy. \
-	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
+	name = "custodian seax"
+	desc = "A really small sword used to puncture enemies in between armor, or to be used as a tool for cutting like a knife, even if clearly more efficient for stabbing."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_dagger"
 	item_state = "nt_dagger"
 	force = WEAPON_FORCE_PAINFUL
 	armor_penetration = ARMOR_PEN_MASSIVE
 	price_tag = 120
-	matter = list(MATERIAL_BIOMATTER = 10, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 1)
 
 /obj/item/tool/spear/halberd
-	name = "halberd"
-	desc = "This weapon of ancient design appears to be a spear-axe hybrid. \
-	It saw a lot of use back in the Dark Ages back on Earth - in more recent times, sablekyne hunters use a similar weapon \
-	on their homeworlds, the weapons practical use taking down huge and heavily armored wildlife lead to the church adopting its own design."
+	name = "custodian atgeir"
+	desc = "The polearm that anticipates bloodshed, serving in the battlefield as a multipurpose staff with a spearhead mixed with the blade of an axe. \
+	The weapon is large and heavy, very difficult to store - yet way more brutal than any average melee weapon."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_halberd"
 	item_state = "nt_halberd"
@@ -68,12 +65,12 @@
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_MASSIVE
 	price_tag = 600
-	matter = list(MATERIAL_BIOMATTER = 80, MATERIAL_STEEL = 8, MATERIAL_WOOD = 10, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_BIO_SILK = 80, MATERIAL_STEEL = 8, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 2)
 
 /obj/item/tool/sword/nt/scourge
-	name = "scourge"
-	desc = "A saintly looking scourge, extreme punishment in handheld form. Can be extended to hurt more. \
-	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
+	name = "custodian nagaika"
+	desc = "A whip made from compacted and oil-hardened silk with dense dark silver on its tip, with protubing blades that open and close on impact to inflict superfluous injury, the very same reason why Hollow-points are considered a war crime to use. \
+	Good thing whoever wrote that only included “bullets”."
 	icon_state = "nt_scourge"
 	item_state = "nt_scourge"
 	force = WEAPON_FORCE_ROBUST
@@ -86,7 +83,7 @@
 	var/stun = 0
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
-	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 2)
 	has_alt_mode = FALSE
 
 /obj/item/tool/sword/nt/scourge/attack_self(mob/user)
@@ -129,9 +126,9 @@
 		O.say(pick("LORD", "MERCY", "SPARE", "ME", "HAVE", "PLEASE"))
 
 /obj/item/tool/sword/nt/spear
-	name = "spear"
-	desc = "A saint looking short spear, designed for use with a shield or as a throwing weapon. \
-	The spear-tip usually breaks after being thrown at a target, but it can be hammered into shape again."
+	name = "custodian francisca"
+	desc = "The Francisca is an efficient throwing axe with an arch-shaped head. Small and concealable, the angle of the blade allows better breaking of shields, disrupting enemy lines and wounding an enemy hand-to-hand combat would happen. \
+	Even if the blade were not to strike the target, its weight has the potential of breaking necks."
 	icon_state = "nt_spear"
 	item_state = "nt_spear"
 	wielded_icon = "nt_spear_wielded"
@@ -143,7 +140,7 @@
 	armor_penetration = ARMOR_PEN_HALF
 	throw_speed = 3
 	price_tag = 150
-	matter = list(MATERIAL_BIOMATTER = 20, MATERIAL_PLASTEEL = 10) // More expensive, high-end spear
+	matter = list(MATERIAL_BIO_SILK = 20, MATERIAL_CARBON_FIBER = 10) // More expensive, high-end spear
 
 /obj/item/tool/sword/nt/spear/equipped(mob/living/W)
 	. = ..()
@@ -173,16 +170,16 @@
 			tipbroken = FALSE
 
 /obj/item/tool/sword/nt/flanged
-	name = "flanged mace"
-	desc = "A saintly looking mace, designed to be a beacon of hope in the darkest of times. Devotees can activate it to light their path. \
-	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division."
+	name = "emberblaze warhammer"
+	desc = "An one handed Raven's beak that rapidly blazes when in connection with the Hearthcore and transfers its massive heat towards an chosen victim way worse than an laser sword would, enough to cause third-degree burns, and it is used to counter enemies using armor with high melee protection. \
+	It is TOO efficient to cleanse the maintenance - to the point that it is more likely to dust giant insects rather than allowing the Custodian to gather its meat for materials."
 	icon_state = "nt_flanged"
 	item_state = "nt_flanged"
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_MASSIVE
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
-	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 5, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 5, MATERIAL_SILVER = 3)
 	tool_qualities = list(QUALITY_HAMMERING = 10) //Not designed for that fine nailing
 	var/glowing = FALSE
 	sharp = FALSE
@@ -193,17 +190,17 @@
 	var/mob/living/carbon/human/theuser = user
 	var/obj/item/implant/core_implant/cruciform/CI = theuser.get_core_implant()
 	if(!CI || !CI.active || !CI.wearer || !istype(CI,/obj/item/implant/core_implant/cruciform))
-		to_chat(user, SPAN_WARNING("You do not have a cruciform with which to light this beacon!"))
+		to_chat(user, SPAN_WARNING("You do not have a Hearthcore with which to light this beacon!"))
 		return
 	if(CI.power < 20)
 		to_chat(user, SPAN_WARNING("You do not have enough power to light up the beacon!"))
 		return
 	if(glowing)
-		to_chat(user, SPAN_WARNING("The flanged mace is still lit up."))
+		to_chat(user, SPAN_WARNING("The warhammer is still lit up."))
 		return
 	else
 		set_light(l_range = 4, l_power = 2, l_color = COLOR_YELLOW)
-		to_chat(user, SPAN_WARNING("The beacon has been lit!"))
+		to_chat(user, SPAN_WARNING("The warhammer has been lit!"))
 		glowing = TRUE
 		update_icon()
 		damtype = BURN
@@ -283,16 +280,16 @@
 	..()
 
 /obj/item/shield/riot/nt
-	name = "shield"
-	desc = "A saintly looking shield, let the God protect you. \
-	It bears a tau cross marking it as produced by the Church of Bonfire's New Testament weapons division. \
-	Has several leather straps on the back to hold melee weapons."
+	name = "custodian scutum shield"
+	desc = "A wall of a shield, oblong, convex and absurdly difficult to store, yet efficient to keep bullets and melee attacks at bay. \
+	The reinforcements of the shield allows major protection for an experienced user, yet its efficiency is limited for the inexperienced. \
+	It has leather straps behind it to store large equipment such as staves, throwing spears and others. This shield in specific constantly releases flames to light the way of it’s user."
 	icon = 'icons/obj/nt_melee.dmi'
 	icon_state = "nt_shield"
 	item_state = "nt_shield"
 	force = WEAPON_FORCE_DANGEROUS
 	armor_list = list(melee = 20, bullet = 20, energy = 10, bomb = 15, bio = 0, rad = 0)
-	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_STEEL = 10, MATERIAL_PLASTEEL = 10, MATERIAL_GOLD = 5)
+	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_STEEL = 10, MATERIAL_CARBON_FIBER = 10, MATERIAL_GOLD = 5)
 	price_tag = 1000
 	base_block_chance = 60
 	item_flags = DRAG_AND_DROP_UNEQUIP
@@ -357,12 +354,13 @@
 	return base_block_chance
 
 /obj/item/shield/buckler/nt
-	name = "NT Parma"
-	desc = "A round shield with a golden trim. Has several biomatter-leather straps on the back to hold melee weapons."
+	name = "custodian targe shield"
+	desc = "A small shield efficient for bashing enemies in the head as much as it allows the user to protect themselves from damage. \
+	Rather useless for the inexperienced, yet the ones who mastered the use of shields may have incredible capacity to protect themselves from harm."
 	icon = 'icons/obj/nt_melee.dmi'
-	icon_state = "nt_buckler" //by CeUvi we thx thy
+	icon_state = "nt_buckler"
 	item_state = "nt_buckler"
-	matter = list(MATERIAL_BIOMATTER = 15, MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 2, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_STEEL = 5, MATERIAL_CARBON_FIBER = 2, MATERIAL_GOLD = 1)
 	//aspects = list(SANCTIFIED) todo:port this
 	price_tag = 300
 	base_block_chance = 45

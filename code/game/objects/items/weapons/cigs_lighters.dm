@@ -1068,8 +1068,8 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	icon_state = "absolutelighter"
 
 /obj/item/flame/lighter/zippo/soyfed
-	name = "\improper SolFed Zippo lighter"
-	desc = "A Zippo with the old crest of the Sol Federation, either a keepsake from old times or a sign of not knowing to let go." // How to detect soyfed SIMPathizers!
+	name = "\improper Terran Zippo lighter"
+	desc = "A Zippo with the old crest of the Terran Federation, either a keepsake from old times or a sign of not knowing to let go." // How to detect soyfed SIMPathizers!
 	icon_state = "solfed"
 
 /obj/item/flame/lighter/zippo/excelsior

@@ -215,6 +215,67 @@
 		holder.sanity.view_damage_threshold -= 20
 	..()
 
+/datum/perk/foodappraise
+	name = "Spice up Food"
+	desc = "Your own special, secret touch in seasoning has anomalous properties that can enhance most food products."
+	icon_state = "spice"
+	active = FALSE
+	passivePerk = FALSE
+
+/datum/perk/foodappraise/activate()
+	var/mob/living/carbon/human/user = usr
+	var/obj/item/reagent_containers/food/snacks/F = user.get_active_hand()
+	if(!istype(user))
+		return ..()
+	if(!istype(F, /obj/item/reagent_containers/food/snacks))
+		to_chat(usr, SPAN_NOTICE("You can only season food items!"))
+		return FALSE
+	if(F.appraised == 1)
+		to_chat(usr, SPAN_NOTICE("This food item has already been seasoned!"))
+		return FALSE
+	to_chat(usr, SPAN_NOTICE("You quickly sprinkle some of your anomalous seasoning onto the food item, revealing its hidden properties."))
+	//log_and_message_admins("used their [src] perk.")
+	F.chef_buff_type = rand(1,9) // We assign a random bufferino.
+	F.appraised = 1
+	switch(F.chef_buff_type)
+		if(1)
+			F.name = "mentally engaging [F.name]"
+		if(2)
+			F.name = "mechanic's [F.name]"
+		if(3)
+			F.name = "caretaker's [F.name]"
+		if(4)
+			F.name = "vigorous [F.name]"
+		if(5)
+			F.name = "hardy [F.name]"
+		if(6)
+			F.name = "focusing [F.name]"
+		if(7)
+			var/newprice = rand(100,500)
+			F.name = "exquisite [F.name]"
+			if(F.price_tag < newprice)
+				F.price_tag = newprice
+		if(8)
+			F.name = "nourishing [F.name]"
+			F.reagents.add_reagent("nutriment", 15)
+		if(9)
+			F.name = "hearty [F.name]"
+
+/datum/perk/job/club
+	name = "Raising the bar"
+	desc = "You know how to mix drinks and change lives. People near you recover sanity."
+	icon_state = "inspiration"
+
+/datum/perk/job/club/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity_damage -= 2
+
+/datum/perk/job/club/remove()
+	if(holder)
+		holder.sanity_damage += 2
+	..()
+
+
 /datum/perk/job/channeling
 	name = "Channeling"
 	desc = "You know how to channel spiritual energy during rituals. You gain additional skill points \

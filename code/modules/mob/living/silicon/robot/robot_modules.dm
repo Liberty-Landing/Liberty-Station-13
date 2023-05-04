@@ -65,8 +65,6 @@ var/global/list/robot_modules = list(
 		STAT_ROB = 15,
 		STAT_TGH = 15,
 	)
-	var/list/associated_department = list() //Hacky as shit. Gives the borg ID-access on module selection.
-
 
 	desc = "This is a robot module parent class. You shouldn't see this description"
 
@@ -276,7 +274,6 @@ var/global/list/robot_modules = list(
 		STAT_TGH = 30,
 		STAT_MEC = 30
 	)
-	associated_department = list(access_janitor, access_maint_tunnels)
 
 /obj/item/robot_module/standard/New(var/mob/living/silicon/robot/R)
 	src.modules += new /obj/item/device/flash(src)
@@ -369,8 +366,6 @@ var/global/list/robot_modules = list(
 		STAT_COG = 120,
 		STAT_MEC = 35, //weldering cracks
 	)
-	associated_department = list(access_moebius, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology,
-		access_genetics, access_external_airlocks, access_research_equipment, access_medical_suits, access_xenobiology)
 
 /obj/item/robot_module/medical/general/New(var/mob/living/silicon/robot/R)
 	src.modules += new /obj/item/tool/crowbar/robotic(src)
@@ -488,8 +483,6 @@ var/global/list/robot_modules = list(
 		STAT_MEC = 40,
 		STAT_BIO = 25
 	)
-	associated_department = list(access_synth, access_eva, access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
-		access_external_airlocks, access_construction, access_atmospherics)
 
 /obj/item/robot_module/engineering/general/New(var/mob/living/silicon/robot/R)
 	src.modules += new /obj/item/device/flash(src)
@@ -635,8 +628,6 @@ var/global/list/robot_modules = list(
 		STAT_COG = 120,
 		STAT_MEC = 35 //weldering cracks
 	)
-	associated_department = list(access_security, access_moebius, access_engine, access_mailsorting, access_eva, access_forensics_lockers, access_medspec,
-		access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks, access_prospector, access_kitchen, access_medical_suits)
 
 /obj/item/robot_module/security/general
 	sprites = list(
@@ -733,7 +724,6 @@ var/global/list/robot_modules = list(
 		STAT_COG = 120,
 		STAT_MEC = 35 //weldering cracks
 	)
-	associated_department = list(access_janitor, access_maint_tunnels, access_morgue, access_hydroponics, access_bar, access_kitchen)
 
 	desc = "A vast machine designed for cleaning up trash and scrubbing floors. A fairly specialised task, \
 	but requiring a large capacity. The huge chassis consequentially grants it a degree of toughness, \
@@ -816,9 +806,7 @@ var/global/list/robot_modules = list(
 		STAT_TGH = 30,
 		STAT_MEC = 30
 	)
-	associated_department = list(access_hydroponics, access_bar, access_kitchen)
 	supported_upgrades = list(/obj/item/borg/upgrade/jetpack,/obj/item/borg/upgrade/satchel_of_holding_for_borgs)
-
 
 /obj/item/robot_module/service/New(var/mob/living/silicon/robot/R)
 	src.modules += new /obj/item/tool/robotic_omni_standard(src)
@@ -906,8 +894,6 @@ var/global/list/robot_modules = list(
 		STAT_COG = 120,
 		STAT_MEC = 50 //Drills
 	)
-	associated_department = list(access_maint_tunnels, access_mailsorting, access_mining,
-		access_mining_station)
 	supported_upgrades = list(/obj/item/borg/upgrade/jetpack,
 							  /obj/item/borg/upgrade/satchel_of_holding_for_borgs)
 
@@ -971,8 +957,6 @@ var/global/list/robot_modules = list(
 		STAT_COG = 120,
 		STAT_MEC = 30
 	)
-	associated_department = list(access_robotics, access_tox, access_tox_storage, access_moebius, access_xenobiology, access_xenoarch, access_research_equipment,
-		access_genetics, access_medical_suits)
 
 /obj/item/robot_module/research/New(var/mob/living/silicon/robot/R)
 	src.modules += new /obj/item/device/flash(src)
@@ -1033,7 +1017,6 @@ var/global/list/robot_modules = list(
 		STAT_COG = 120,
 		STAT_MEC = 40
 	) //so we can use rnd consoles for parts ect
-
 
 /obj/item/robot_module/drone/New(var/mob/living/silicon/robot/R)
 	src.modules += new /obj/item/tool/weldingtool/robotic(src)

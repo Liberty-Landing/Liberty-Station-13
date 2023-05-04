@@ -1,6 +1,6 @@
 /datum/trade_station/caduceus
 	name_pool = list(
-		"MAV 'Caduceus'" = "Moebius Aid Vessel 'Caduceus':\n\"Hello there, we are from the Kriosan Confederacy. We will be leaving the system shortly but we can offer you medical supplies in the mean time.\"."
+		"KAV 'Caduceus'" = "Kriosan Aid Vessel 'Caduceus':\n\"Hello there, we are from the Kriosan Confederacy. We will be leaving the system shortly but we can offer you medical supplies in the mean time.\"."
 	)
 	icon_states = list("moe_frigate", "ship")
 	tree_x = 0.26

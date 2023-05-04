@@ -49,7 +49,7 @@
 
 /obj/item/device/von_krabin
 	name = "Von-Krabin Stimulator"
-	desc = "A strange anomalous item given to the research directors of Phokorus Institute as its latent effects enhance the mind. Some say this is an unfinished prototype of the technology the church of absolute uses to enhance the abilities of others."
+	desc = "A strange anomalous item given to the research directors of Phokorus Institute as its latent effects enhance the mind."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "von-krabin"
 	item_state = "von-krabin"

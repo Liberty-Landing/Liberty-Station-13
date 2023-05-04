@@ -1,13 +1,13 @@
 /obj/item/storage/sheath
 	name = "bonfire sheath"
-	desc = "Made to store only the swords of the church."
+	desc = "Made to store only the swords of the Custodians."
 	icon = 'icons/obj/sheath.dmi'
 
 	icon_state = "sheath"
 	item_state = "sheath"
 	slot_flags = SLOT_BELT
 	price_tag = 50
-	matter = list(MATERIAL_BIOMATTER = 5)
+	matter = list(MATERIAL_BIO_SILK = 5)
 	storage_slots = 1
 	w_class = ITEM_SIZE_NORMAL
 	max_w_class = ITEM_SIZE_HUGE

@@ -5,7 +5,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform
 	name = "vinculum Hearthcore"
 	icon_state = "hearthcore_green"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	allowed_organs = list(BP_CHEST)
 	implant_type = /obj/item/implant/core_implant/cruciform
 	layer = ABOVE_MOB_LAYER
@@ -228,7 +228,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/tessellate
 	name = "tessellate cruciform"
 	icon_state = "hearthcore_blue"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/tessellate
 	power = 0
 	max_power = 60
@@ -238,7 +238,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/lemniscate
 	name = "lemniscate cruciform"
 	icon_state = "hearthcore_red"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/lemniscate
 	//access = list(access_nt_disciple) //So they can try and recuit people - Correction people just cant stop abusing everything ever.
 	power = 0
@@ -249,7 +249,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/monomial
 	name = "monomial cruciform"
 	icon_state = "hearthcore_yellow"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/monomial
 	power = 0
 	max_power = 90
@@ -259,7 +259,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/divisor
 	name = "divisor cruciform"
 	icon_state = "hearthcore_orange"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/divisor
 	power = 0
 	max_power = 50
@@ -269,7 +269,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/factorial
 	name = "factorial cruciform"
 	icon_state = "hearthcore_cyan"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/factorial
 	power = 0
 	max_power = 50
@@ -279,7 +279,7 @@ var/list/disciples = list()
 /obj/item/implant/core_implant/cruciform/omni
 	name = "Omni-Cruciform"
 	icon_state = "hearthcore_omni"
-	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Church of Bonfire."
+	desc = "A symbol and power core of every disciple. With the proper rituals, this can be implanted to induct a new believer into the Custodians."
 	implant_type = /obj/item/implant/core_implant/cruciform/omni
 	power = 0
 	max_power = 200

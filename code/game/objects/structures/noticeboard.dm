@@ -232,8 +232,8 @@ P.S - <u><h1>Don't leave the drills running unattended!</u></h1>"
 
 
 /obj/structure/noticeboard/church
-	name = "Church of the Bonfire bulletin board"
-	desc = "A board containing vital notices and official memos for the faithful"
+	name = "Custodians of Bonfire bulletin board"
+	desc = "A board containing vital notices and official memos for the Custodians."
 	icon_state = "nboard00"
 	notices = 0
 /*

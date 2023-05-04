@@ -804,15 +804,6 @@
 		STAT_BIO = 2
 	)
 
-/obj/item/oddity/ls/dogtags
-	name = "SolFed Dogtags"
-	desc = "Mementos from the war. Krios has recently begun exporting their surplus."
-	icon_state = "tags"
-	oddity_stats = list(
-		STAT_TGH = 2,
-		STAT_ROB = 2
-	)
-
 //Skylight Clothing Oddities
 //for oddities that double as clothes
 

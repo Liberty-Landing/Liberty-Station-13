@@ -23,16 +23,17 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 	perks = list(PERK_SOMELLIER)
 
-	description = "The Premier is the prime mediator of the colony itself, acting as a trusted advisor amongst their peers.<br>\
-You are trusted with control of the colony primary accounts, and are also able to control access within the colony.<br>\
-Your primary objective is to oversee council decisions, change access levels, and act as both lawyer and consultant in various decisions.<br>\
-You are not the supreme leader of the colony and your word is only an advisement. The only person you can give legal orders to is the Steward.<br>\
-The heads of the factions which make up the council each have their own agendas. Their interests must be served to avoid issues.<br>\
-Treat your command officers with respect, and listen to their council. Try not to micromanage their departments or interfere in their affairs."
+	description = "The Board Secretary is man of many talents and responsibilities as such should only be played by experienced players.<br>\
+The first thing that should be noted you aren't a captain, just because you have fancy revolver, all access and ability to control accounts of departments doesn't mean you should play as one.<br>\
+Your primary objective is to oversee council decisions, change access levels, and act as both lawyer and consultant in various decisions and when it comes to it be a diplomat.<br>\
+The heads of staff have final say on matters of their respective departments, unless they are overstepping boundaries or the law leave them to their own devices.<br>\
+As a Board Secretary you should have supreme knowledge of both Standard Operating Procedures and Laws as well as paperwork formatting, laziness is no excuse.<br>\
+Fax is your best friend, use it, but only when you are sure it won't backfire against you and remember that abusing your gear and access is one way ticket to getting fired."
 
-	duties = "Work between the varying interests of council members to achieve colony stability.<br>\
-	Offer advise and counsel when approached, particularly during important decisions.<br>\
-	Manage the colony primary accounts and access levels accordingly."
+	duties = "Guide council when required and oversee everything is done by the book.<br>\
+	Offer advice and counsel when approached, particularly during important decisions.<br>\
+	Manage the colony primary accounts and access levels accordingly.<br>\
+	Don't die.<br>"
 
 	stat_modifiers = list(
 		STAT_ROB = 15,
@@ -41,8 +42,6 @@ Treat your command officers with respect, and listen to their council. Try not t
 		STAT_MEC = 15,
 		STAT_VIG = 25,
 		STAT_COG = 15,
-		STAT_VIV = 1,
-		STAT_ANA = 1
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,

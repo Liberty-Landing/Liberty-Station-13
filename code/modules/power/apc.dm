@@ -912,7 +912,7 @@
 		"totalLoad" = round(lastused_total),
 		"coverLocked" = coverlocked,
 		//"remoteAccess" = (user == remote_control_user),
-		"siliconUser" = (issilicon(user) && (!locked || allowed(user))),
+		"siliconUser" = issilicon(user),
 		//"malfStatus" = get_malf_status(user),
 		//"emergencyLights" = !emergency_lights,
 		//"nightshiftLights" = nightshift_lights,

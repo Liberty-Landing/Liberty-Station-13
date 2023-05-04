@@ -282,10 +282,10 @@ obj/item/organ/external/robotic/synthskin/groin
 // Church of the Bonfire
 /obj/item/organ/external/robotic/church
 	name = "\"Bonfire\""
-	desc = "Gold and black prosthetics designed by the Church of the Bonfire."
+	desc = "Gold and black prosthetics designed by the Custodians."
 	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
 	model = "church"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 30)
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIO_SILK = 30)
 	price_tag = 400
 
 /obj/item/organ/external/robotic/church/l_arm

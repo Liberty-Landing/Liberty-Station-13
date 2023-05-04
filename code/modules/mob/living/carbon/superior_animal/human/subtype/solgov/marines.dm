@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/human/marine
-	name = "Sol-Fed Rifleman"
-	desc = "An average height man sporting Solar Federation Marine armor, a ground-pounding grunt and proud of it. Hoorah."
+	name = "Terran Rifleman"
+	desc = "An average height man sporting Terran Federation Marine armor, a ground-pounding grunt and proud of it. Hoorah."
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "solfed_trooper"
 	icon_dead = "solfed_trooper_dead"
@@ -70,8 +70,8 @@
 	. = ..()
 
 /mob/living/carbon/superior_animal/human/marine/shield
-	name = "Sol-Fed Commando"
-	desc = "A Solar Federation ship breacher and close quarters specialist. Sporting a riot shield and a burst-fire firearm appearing to be built into the arm of their armor!"
+	name = "Terran Commando"
+	desc = "A Terran Federation ship breacher and close quarters specialist. Sporting a riot shield and a burst-fire firearm appearing to be built into the arm of their armor!"
 	icon_state = "solfed_trooper_shield"
 	icon_dead = "solfed_trooper_shield_dead"
 
@@ -101,8 +101,8 @@
 	playsound(src, 'sound/weapons/TargetOn.ogg', 50, 1, -3)
 
 /mob/living/carbon/superior_animal/human/marine/shotgun
-	name = "Sol-Fed Heavy Commando"
-	desc = "A Solar Federation ship breacher and close quarters specialist. This trooper appears to sport heavier armor and a breaching shotgun, a ground-pounders dream."
+	name = "Terran Heavy Commando"
+	desc = "A Terran Federation ship breacher and close quarters specialist. This trooper appears to sport heavier armor and a breaching shotgun, a ground-pounders dream."
 	icon_state = "solfed_trooper_shotgun"
 	icon_dead = "solfed_trooper_shotgun_dead"
 
@@ -126,8 +126,8 @@
 	playsound(src, 'sound/weapons/TargetOn.ogg', 50, 1, -3)
 
 /mob/living/carbon/superior_animal/human/marine/specialist
-	name = "Sol-Fed Combat Specialist"
-	desc = "A Solar Federation Marine equiped with a grenade launcher, perfect for both crowd control for military police or clearing defenses with explosives. Based on the grenades on his bandolier.. you don't think he's using tear gas."
+	name = "Terran Combat Specialist"
+	desc = "A Terran Federation Marine equiped with a grenade launcher, perfect for both crowd control for military police or clearing defenses with explosives. Based on the grenades on his bandolier.. you don't think he's using tear gas."
 	icon_state = "solfed_trooper_specialist"
 	icon_dead = "solfed_trooper_specialist_dead"
 
@@ -156,8 +156,8 @@
 		qdel(src)
 
 /mob/living/carbon/superior_animal/human/marine/heavy
-	name = "Sol-Fed Heavy Trooper"
-	desc = "A tall human male kitted with reinforced Solar Federastion Marine armor. In his hands is some sort of machine gun, being directly fed through a belt coming from his backpack."
+	name = "Terran Heavy Trooper"
+	desc = "A tall human male kitted with reinforced Terran Federation Marine armor. In his hands is some sort of machine gun, being directly fed through a belt coming from his backpack."
 	icon_state = "solfed_trooper_heavy"
 	icon_dead = "solfed_trooper_heavy_dead"
 
@@ -179,8 +179,8 @@
 	playsound(src, 'sound/weapons/TargetOn.ogg', 50, 1, -3)
 
 /mob/living/carbon/superior_animal/human/marine/sniper
-	name = "Sol-Fed Sniper"
-	desc = "A shorter than average human male kitted with light scout armor and Solar Federation patches. His rifle appears to sport multiple customizations, including notches on its stock."
+	name = "Terran Sniper"
+	desc = "A shorter than average human male kitted with light scout armor and Terran Federation patches. His rifle appears to sport multiple customizations, including notches on its stock."
 	icon_state = "solfed_trooper_sniper"
 	icon_dead = "solfed_trooper_sniper_dead"
 

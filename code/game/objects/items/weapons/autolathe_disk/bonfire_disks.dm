@@ -62,8 +62,8 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter
-	disk_name = "Church of Bonfire Utilities Plus"
-	desc = "This disk is sole property of the church, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Bonfire."
+	disk_name = "Custodians of Bonfire Utilities Plus"
+	desc = "This disk is sole property of the custodians, the files within are encrypted and should not be used, taken, or tested by anyone not affiliated with the Custodians."
 	icon_state = "neotheology_testament_u"
 	license = -1
 	designs = list(
@@ -82,7 +82,7 @@
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public
-	disk_name = "Church of Bonfire Bioprinter Products and Utilities Basic"
+	disk_name = "Custodians of Bonfire Products and Utilities Basic"
 	desc = "A limited design disk for cleaning, gardening and some production of meats and milk."
 	license = 20
 
