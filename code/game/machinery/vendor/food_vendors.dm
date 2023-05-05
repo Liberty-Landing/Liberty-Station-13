@@ -428,7 +428,7 @@
 	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Unions got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 5,
 					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 4,
-					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 5)
+					/obj/item/reagent_containers/food/drinks/cans/grapesoda = 8)
 	contraband = list(
 					/obj/item/reagent_containers/food/drinks/cans/monster_red = 10,
 					/obj/item/reagent_containers/food/drinks/cans/monster_blue = 10,
@@ -436,7 +436,7 @@
 					)
 	prices = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 30,
 					/obj/item/reagent_containers/food/drinks/cans/melonsoda = 20,
-					/obj/item/reagent_containers/food/drinks/drinkingglass/soda = 10,
+					/obj/item/reagent_containers/food/drinks/cans/grapesoda = 30,
 					/obj/item/reagent_containers/food/drinks/cans/monster_red = 40,
 					/obj/item/reagent_containers/food/drinks/cans/monster_blue = 40,
 					/obj/item/reagent_containers/food/drinks/cans/energy = 75)

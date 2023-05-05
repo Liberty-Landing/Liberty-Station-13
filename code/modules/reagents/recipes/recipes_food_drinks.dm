@@ -876,7 +876,7 @@
 
 /datum/chemical_reaction/drinks/saint_pio
 	result = "saint_pio"
-	required_reagents = list("water" = 3, "blood" = 1, "ntcahors" = 1)
+	required_reagents = list("water" = 3, "blood" = 1, "wine" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/drinks/rusty_special

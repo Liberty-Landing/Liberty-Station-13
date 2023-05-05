@@ -418,4 +418,4 @@
 /obj/item/reagent_containers/glass/replenishing/chalice/New()
 	..()
 	START_PROCESSING(SSobj, src)
-	spawning_id = pick("ntcahors")
+	spawning_id = pick("wine")

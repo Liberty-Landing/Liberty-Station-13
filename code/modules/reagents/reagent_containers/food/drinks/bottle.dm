@@ -262,13 +262,6 @@
 	center_of_mass = list("x"=16, "y"=4)
 	preloaded_reagents = list("wine" = 100)
 
-/obj/item/reagent_containers/food/drinks/bottle/ntcahors
-	name = "Bonfire Cahors Wine"
-	desc = "Ritual drink that cleanses the soul and body."
-	icon_state = "ntcahors"
-	center_of_mass = list("x"=16, "y"=4)
-	preloaded_reagents = list("ntcahors" = 100)
-
 /obj/item/reagent_containers/food/drinks/bottle/absinthe
 	name = "Jailbreaker Absinthe"
 	desc = "One sip of this and you just know you're gonna have a good time."

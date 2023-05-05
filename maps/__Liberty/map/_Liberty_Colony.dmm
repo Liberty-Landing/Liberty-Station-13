@@ -15599,9 +15599,6 @@
 /area/liberty/dungeon/outside/campground)
 "efZ" = (
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/cahorsbarrel,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
 /turf/simulated/floor/carpet,
 /area/liberty/bonfire/chapel)
 "ege" = (
@@ -74500,7 +74497,6 @@
 /area/liberty/engineering/engine_room)
 "unb" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/reagent_dispensers/cahorsbarrel,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/storage)
 "unl" = (

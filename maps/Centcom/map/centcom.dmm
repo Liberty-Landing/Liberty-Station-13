@@ -5980,7 +5980,6 @@
 /turf/simulated/floor/fixed/fgrass,
 /area/centcom/evac)
 "zI" = (
-/obj/structure/reagent_dispensers/cahorsbarrel,
 /turf/simulated/floor/tiled/cafe,
 /area/centcom/evac)
 "zP" = (

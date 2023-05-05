@@ -104,10 +104,6 @@
 			/obj/item/gun/energy/plasma = custom_good_amount_range(list(-3, 2)),
 			/obj/item/gun/energy/plasma/destroyer = custom_good_amount_range(list(-3, 2))
 		),
-		"Wine" = list(
-			/obj/item/reagent_containers/food/drinks/cans/cahors/cargo,
-			/obj/item/reagent_containers/food/drinks/bottle/ntcahors/cargo
-		),
 		"Seeds and Exodic Seeds" = list(
 			/obj/item/seeds/chiliseed,
 			/obj/item/seeds/berryseed,

@@ -307,15 +307,6 @@
 	price_tag = 25
 	contents_cost = 1200
 
-/obj/structure/reagent_dispensers/cahorsbarrel
-	name = "Bonfire Cahors barrel"
-	desc = "Barrel a day - keeps liver away."
-	icon_state = "barrel_alt"
-	volume = 1000
-	starting_reagent = "ntcahors"
-	price_tag = 25
-	contents_cost = 950
-
 /obj/structure/reagent_dispensers/virusfood
 	name = "virus food dispenser"
 	desc = "A dispenser of virus food."
