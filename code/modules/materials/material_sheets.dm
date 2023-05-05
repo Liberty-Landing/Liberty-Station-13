@@ -465,3 +465,18 @@
 
 /obj/item/stack/material/ameridian/full
 	amount = 360
+
+//Snowflake material with no way of making for NOW that is used for sandbag creation and repair.
+/obj/item/stack/material/sandbag
+	name = "sandbags"
+	desc = "A small pile of sandbags ready to be used for temporary fortifications."
+	singular_name = "sandbag"
+	icon = 'icons/obj/sandbags.dmi'
+	icon_state = "sandbags"
+	default_type = MATERIAL_SANDBAG
+	novariants = TRUE
+	price_tag = 10		//Shouldn't be worth anything; it's a literal cloth bag full of sand.
+	max_amount = 15		//Keep small to prevent mass-building.
+
+/obj/item/stack/material/sandbag/full
+	amount = 15
