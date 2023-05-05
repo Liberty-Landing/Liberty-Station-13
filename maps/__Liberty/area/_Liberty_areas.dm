@@ -181,6 +181,9 @@
 	requires_power = FALSE
 	turf_initializer = null
 
+/area/liberty/dungeon/outside/frozen_forest/crashsite
+	name = "Frozen Forest - Crashsite"
+
 /area/liberty/dungeon/outside/trashcave
 	name = "Trash Cave"
 	icon_state = "libertygreen"
