@@ -1553,6 +1553,10 @@
 /obj/effect/window_lwall_spawn,
 /turf/simulated/floor/snow,
 /area/space)
+"Jt" = (
+/obj/landmark/join/late/dormitory_outsider,
+/turf/simulated/floor/wood/wild4,
+/area/space)
 "Jv" = (
 /obj/structure/flora/pottedplant/smelly,
 /turf/simulated/floor/tiled/dark/danger,
@@ -62048,7 +62052,7 @@ jz
 sU
 jz
 jz
-jz
+Jt
 ef
 jz
 jz
@@ -63958,7 +63962,7 @@ jg
 jg
 jg
 ef
-jz
+Jt
 jz
 Md
 ef
@@ -64766,7 +64770,7 @@ jg
 jg
 jg
 ef
-jz
+Jt
 jz
 jz
 ef
@@ -64868,7 +64872,7 @@ YR
 YR
 YR
 ef
-jz
+Jt
 jz
 ef
 YR
@@ -82543,11 +82547,11 @@ na
 na
 na
 na
-jg
-jg
-jg
-jg
-jg
+na
+na
+na
+na
+na
 na
 na
 na
