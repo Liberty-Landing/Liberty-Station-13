@@ -510,8 +510,6 @@
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_sablekyne.dm"
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_slime.dm"
 #include "code\datums\setup_option\backgrounds\ancestry\ancestry_synthetic.dm"
-#include "code\datums\setup_option\backgrounds\habit\habit.dm"
-#include "code\datums\setup_option\backgrounds\habit\habit_synthetic.dm"
 #include "code\datums\setup_option\backgrounds\path\path.dm"
 #include "code\datums\setup_option\backgrounds\thoughts\thoughts.dm"
 #include "code\datums\setup_option\backgrounds\thoughts\thoughts_synthetic.dm"

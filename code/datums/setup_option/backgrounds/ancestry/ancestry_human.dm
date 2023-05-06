@@ -8,7 +8,7 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_ROB = -3, STAT_TGH = -3, STAT_COG = 3, STAT_BIO = 3, STAT_MEC = 3) //Pretty bad perk baked into this so
+	stat_modifiers = list(STAT_COG = 3, STAT_BIO = 3, STAT_MEC = 3) //Pretty bad perk baked into this so
 
 	perks = list(PERK_SOLBORN)
 

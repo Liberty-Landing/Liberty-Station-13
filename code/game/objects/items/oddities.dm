@@ -683,8 +683,8 @@
 // Considering the vast amount of references in code, a Zefram being a unit of measurement for Bluespace Entropy fits, while not being directly a Cochrane. - Seb
 
 /obj/item/oddity/code_book
-	name = "Marshal Code Handbook"
-	desc = "A heavy book with details and translations of the Marshal codes."
+	name = "Watchman Code Handbook"
+	desc = "A heavy book with details and translations of the Watchmen codes."
 	icon_state = "instructional_rob" // Fits better with a supposed Marshal's logo up front. - Seb
 	oddity_stats = list(
 		STAT_VIG = 6

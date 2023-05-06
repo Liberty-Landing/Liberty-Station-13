@@ -31,7 +31,7 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 		/datum/design/autolathe/part/barrel/rifle = 2,
 	)
 
-// Marshal-specific disk, used by Marshals for high-end gun crafting. MOST gun parts should be here, but thankfully licenses keep it at limited-use.
+// Watchmen-specific disk, used by Watchmen for high-end gun crafting. MOST gun parts should be here, but thankfully licenses keep it at limited-use.
 // For mass-production, Guild should be used. Only thing this disk has that Guild does not is heavy rifle barrles, AMR barrels, rubber grips, and machinegun mechanisms.
 /obj/item/computer_hardware/hard_drive/portable/design/gun_parts/marshal
 	disk_name = "LG - \"Gunsmiths United\" firearm parts"

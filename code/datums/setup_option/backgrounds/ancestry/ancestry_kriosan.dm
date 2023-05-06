@@ -9,15 +9,6 @@
 
 	perks = list(PERK_BOLT_REFLECT)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
-
 /datum/category_item/setup_option/background/ancestry/vorhut
 	name = "Former Vorhut Soldier"
 	desc = "All Vorhut technically are soldiers, but a very real distinction is drawn between the civilians and the dedicated soldiers who serve as their empire's career storm troopers. \
@@ -30,15 +21,6 @@
 
 	perks = list(PERK_PERFECT_SHOT)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
-
 /datum/category_item/setup_option/background/ancestry/castallen
 	name = "Castellen"
 	desc = "The castellen are the noble elite and highborn of the kriosan, genetically superior to the common folk they rule over but rarely found outside their own empire. \
@@ -48,12 +30,3 @@
 	restricted_to_species = list(FORM_KRIOSAN)
 
 	perks = list(PERK_AUTHORITY)
-
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)

@@ -696,26 +696,26 @@
 /*Security*/
 
 /obj/item/toy/figure/character/ironhammer/hos
-	name = "warrant officer action figure"
-	desc = "The most formidable force on the station. Marshal 1/4."
+	name = "chief deputy action figure"
+	desc = "The most formidable force on the station. Watchmen 1/4."
 	icon_state = "hos"
 	toysay = "I'll be hugging my fax machine on my office if anyone needs me..."
 
 /obj/item/toy/figure/character/ironhammer/secofficer
-	name = "marshal officer action figure"
-	desc = "They don't make the law, but they enforce it. Marshal 2/4."
+	name = "watchman action figure"
+	desc = "They don't make the law, but they enforce it. Watchmen 2/4."
 	icon_state = "secofficer"
 	toysay = "Where's your gun case?"
 
 /obj/item/toy/figure/character/ironhammer/warden
-	name = "supply specialist figure"
-	desc = "Always keep plenty of ammo. Marshal 3/4."
+	name = "armorer figure"
+	desc = "Always keep plenty of ammo. Watchmen 3/4."
 	icon_state = "warden"
 	toysay = "A-armory s-shop is o-op-pen."
 
 /obj/item/toy/figure/character/ironhammer/detective
-	name = "ranger action figure"
-	desc = "Some crimes can't be solved by force alone. Marshal 4/4."
+	name = "criminal investigator action figure"
+	desc = "Some crimes can't be solved by force alone. Watchmen 4/4."
 	icon_state = "detective"
 	toysay = "Hmm, insulated glove fibers..."
 

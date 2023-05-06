@@ -231,7 +231,7 @@ obj/item/clothing/head/ribbon/red
 	desc = "A brown straw cowboy hat with a weathered shape."
 
 /obj/item/clothing/head/cowboy/marshal
-	name = "marshal cowboy hat"
+	name = "watchmen cowboy hat"
 	icon_state = "cowboymarshal"
 	desc = "A brown felt cowboy hat with a long flat brim."
 

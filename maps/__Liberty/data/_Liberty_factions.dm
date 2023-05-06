@@ -13,29 +13,16 @@
 	faxable = TRUE
 
 /datum/faction/liberty/marshal
-	name = "Marshals - Boris Kilmeade"
+	name = "Liberty Watch - Review Board"
 
-	fax_alert = "MARSHAL COMMUNIQUE"
-	fax_response = "Marshal Order"
+	fax_alert = "WATCHMEN COMMUNIQUE"
+	fax_response = "Watchmen Order"
 
 	color = "#00b1e8"
 	darkcolor = "#026685"
 	lightcolor = "#7cdffe"
 
-	stamptext = "This paper has been authorized with the Provost Marshal Boris's Insignia"
-	stampshape = "paper_stamp-x"
-
-/datum/faction/liberty/militia
-	name = "Blackshield - Brigadier Ayanda Mwangi"
-
-	fax_alert = "BLACKSHIELD COMMUNIQUE"
-	fax_response = "Blackshield Order"
-
-	color = "#009912"
-	darkcolor = "#00580a"
-	lightcolor = "#47c156"
-
-	stamptext = "This paper has been authorized with the Brigadier Ayanda Mwangi's Insignia."
+	stamptext = "This paper has been authorized with the insignia of Liberty Watch's review board."
 	stampshape = "paper_stamp-x"
 
 /datum/faction/liberty/capsa
@@ -65,7 +52,7 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/Skylight
-	name = "Skylight Shipping Solutions, LLC - Robert Ryan"
+	name = "Skylight Syndiate - Robert Ryan"
 
 	fax_alert = "Skylight REQUISITION FAX"
 	fax_response = "Skylights Reply"
@@ -78,20 +65,20 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/prospectors
-	name = "Prospectors - Jeremiah Hogg"
+	name = "Prospectors - CEO H. Fontaine"
 
-	fax_alert = "PROSPECTOR FAX"
-	fax_response = "Prospector Advisory"
+	fax_alert = "FONTAINE FAX"
+	fax_response = "Fontaine Advisory"
 
 	color = "#ff0000"
 	darkcolor = "#ac0101"
 	lightcolor = "#fb5b4d"
 
-	stamptext = "This paper has been stamped with the notary of Jeremiah Hogg."
+	stamptext = "This paper has been stamped with the notary of H. Fontaine."
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/Union
-	name = "Terra-Therma Union - Tacitus O'Connor"
+	name = "Terra-Therma Union - Labor Union Council"
 
 	fax_alert = "Terra-Therma Worker's Union REQUISITION FAX"
 	fax_response = "Terra-Therma Worker's Union Advisory"

@@ -137,7 +137,7 @@
 	emote_see = list("growls quietly.", "hisses, \"The King is dead, long live the King.\"", "yells, \"Ashes! Ashes and dust, all of you!\"")
 
 /mob/living/carbon/superior_animal/psi_monster/cerebral_crusher/marshal
-	name = "Marshal Benedictus"
+	name = "Watchman Benedictus"
 	desc = "He shall pry your secrets from your flesh and slice your mind to colorful bloodied ribbons."
 	emote_see = list("knocks a closed fist on his bone plates.", "mutters, \"They call themselves marshals, yet with no court? Hmph!\"", "grinds his knuckles along the ground, \"Not a loss, not a loss at all.\"")
 

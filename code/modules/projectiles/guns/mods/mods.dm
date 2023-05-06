@@ -496,8 +496,11 @@
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.weapon_upgrades = list(
-	GUN_UPGRADE_DAMAGE_MULT = 0.90,
-	GUN_UPGRADE_FIRE_DELAY_MULT = 0.25)
+	GUN_UPGRADE_RECOIL = 2,
+	GUN_UPGRADE_DAMAGE_MULT = 0.66,
+	GUN_UPGRADE_FIRE_DELAY_MULT = 0.33,
+	GUN_UPGRADE_CHARGECOST = 0.5,
+	GUN_UPGRADE_FULLAUTO = TRUE)
 	I.req_fuel_cell = REQ_CELL
 	I.gun_loc_tag = GUN_MECHANISM
 	I.prefix = "overclocked"
@@ -554,7 +557,7 @@
 	I.gun_loc_tag = GUN_BARREL
 	I.prefix = "toxic"
 
-/* //Rad weapons runtime when they hit an object, so this is commented out.
+/*
 // Add radiation damage to your weapon
 /obj/item/gun_upgrade/barrel/isotope_diffuser
 	name = "Phokorus Institute \"Atomik\" isotope diffuser"
@@ -566,14 +569,13 @@
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.weapon_upgrades = list(
-	GUN_UPGRADE_DAMAGE_RADIATION = 5)
+	GUN_UPGRADE_DAMAGE_RADIATION = 10)
 	I.req_gun_tags = list(GUN_PROJECTILE)
 	I.gun_loc_tag = GUN_BARREL
-
-//We don't use sanity damage and sanity damaging effects, but I'm keeping this commented out in case we some day do.
+*/
 // Add psy damage to your weapon
 /obj/item/gun_upgrade/mechanism/psionic_catalyst
-	name = "Moebius \"Mastermind\" psionic catalyst"
+	name = "Phokorus Institute \"Mastermind\" psionic catalyst"
 	desc = "This controversial device greatly amplifies the natural psionic ability of the user and allows them to project their will into the world. Before the development of the Psi Amp, psionic disciplines were mostly detectable only in a lab environment."
 	icon_state = "psionic_catalyst"
 	matter = list(MATERIAL_SILVER = 3, MATERIAL_PLASTEEL = 3, MATERIAL_URANIUM = 3)
@@ -582,11 +584,11 @@
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.weapon_upgrades = list(
-	GUN_UPGRADE_DAMAGE_PSY = 0.4)
+	GUN_UPGRADE_DAMAGE_PSY = 4)
 	I.prefix = "psionic"
 	I.req_gun_tags = list(GUN_PROJECTILE)
 	I.gun_loc_tag = GUN_MECHANISM
-*/
+
 /* //The handholder rail and its consequences have been a disaster for Libertykind.
 /obj/item/gun_upgrade/mechanism/gun_rail
 	name = "H&S \"HandHolder\" Barrel Rail"

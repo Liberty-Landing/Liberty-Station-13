@@ -77,18 +77,18 @@ obj/item/device/propaganda_chip/Destroy()
 		crew_name = crew_target_mind.current.real_name
 
 	var/list/messages = list( // Idealy should be extremely long with lots of lines
-		"Marshal searches just to take shit",
+		"Watchmen searches just to take shit",
 		"Blackshield just kills one a other with friendly fire",
 		"With a paycheck no one can even afford 3 bread tubes...",
 		"You know what to do... unionize",
-		"Marshal always use excessive force and brake bones",
+		"Watchmen always use excessive force and brake bones",
 		"An acter could beat blackshield in a shooting competition",
 		"Command cares more about roaches and spiders than you",
 		"Ian has more liberty than any of us",
 		"Command gets more money than anyone and all they do is sit around or yell at people",
 		"People can barely live paycheck to paycheck",
-		"If marshals and blackshield are here to keep us safe, why do they kill themself and steal from us",
-		"Why can marshals steal, well being in maints finding stuff is illegal",
+		"If Watchmens and blackshield are here to keep us safe, why do they kill themself and steal from us",
+		"Why can Watchmens steal, well being in maints finding stuff is illegal",
 		"Buget cuts always seem to make the workers life harder well the command never get affected by it",
 		"If we buy a disk for printing ammo, why do we need to buy more disk to print more ammo",
 		"We are tring to survive, the excelsior gear is better why not use it",

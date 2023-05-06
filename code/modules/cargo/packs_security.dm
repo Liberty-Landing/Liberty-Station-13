@@ -348,7 +348,7 @@
 					/obj/machinery/deployable/barrier)
 	cost = 1600
 	containertype = /obj/structure/closet/crate/secure/gear
-	crate_name = "Marshal Enforcement barrier crate"
+	crate_name = "Watchmen Enforcement barrier crate"
 	group = "Enforcement"
 
 /datum/supply_pack/Enforcementwallshield

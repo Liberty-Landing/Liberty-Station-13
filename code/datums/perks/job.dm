@@ -118,6 +118,12 @@
 	perk_shared_ability = PERK_SHARED_SEE_ILLEGAL_REAGENTS
 	icon_state = "paper"
 
+/datum/perk/job/common_sense
+	name = "Common Sense"
+	desc = "You know what basic chemicals look like, from cleaning to cooking as well as the basics common chemicals."
+	perk_shared_ability = PERK_SHARED_SEE_COMMON_REAGENTS
+	icon_state = "paper"
+
 /datum/perk/job/junkborn
 	name = "Expert Scavenger"
 	desc = "One man's trash is another man's salary. Removing a trash pile has a chance of revealing a valuable item nobody else would find."
@@ -144,6 +150,11 @@
 	name = "Anomaly Hunter"
 	desc = "Special training from senior Shipbreakers and your own experience has allowed you to instinctively know the effects of greater oddities. By examining an oddity that has become an anomaly, you can tell what its greater boon or curse may be."
 	icon_state = "treasure"
+
+/datum/perk/background/market_prof
+	name = "Market Professional"
+	desc = "You've become an excellent appraiser of goods over the years. Just by looking at the item, you can know how much it would sell for in today's market rates."
+	icon_state = "market_prof"
 
 //Medical perks - relates to surgery and all.
 
@@ -285,7 +296,7 @@
 
 /datum/perk/job/codespeak
 	name = "Codespeak"
-	desc = "You know Marshal codes."
+	desc = "You know Watchman codes."
 	icon_state = "codespeak" // https://game-icons.net/1x1/delapouite/police-officer-head.html
 	var/list/codespeak_procs = list(
 		/mob/living/carbon/human/proc/codespeak_help,

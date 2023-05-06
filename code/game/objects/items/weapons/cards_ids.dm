@@ -330,10 +330,10 @@ var/const/NO_EMAG_ACT = -50
 	icon_state = "id_hos"
 
 /obj/item/card/id/secert
-	name = "Marshal ID card"
-	desc = "An ID straight from the Liberty Marshals"
-	registered_name = "Marshal Agent"
-	assignment = "Marshal Agent"
+	name = "Watchmen ID card"
+	desc = "An ID straight from the Liberty Watchmen"
+	registered_name = "Watchmen Agent"
+	assignment = "Watchmen Agent"
 	icon_state = "id_hos_all-access"
 	group = "golden"
 

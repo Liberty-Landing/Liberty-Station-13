@@ -280,16 +280,14 @@
 /datum/design/research/item/weapon/weapon_upgrade/auto_eject_no_removal
 	name = "Phokorus Institute \"Faller\" Magwell Clearer"
 	build_path = /obj/item/gun_upgrade/magwell/auto_eject/no_removal
-
 /*
 /datum/design/research/item/weapon/weapon_upgrade/isotope_diffuser
-	name = "CAPSA \"Atomik\" isotope diffuser"
+	name = "Phokorus Institute \"Atomik\" isotope diffuser"
 	build_path = /obj/item/gun_upgrade/barrel/isotope_diffuser
-
-/datum/design/research/item/weapon/weapon_upgrade/psionic_catalyst
-	name = "Moebius \"Mastermind\" psionic catalyst"
-	build_path = /obj/item/gun_upgrade/mechanism/psionic_catalyst
 */
+/datum/design/research/item/weapon/weapon_upgrade/psionic_catalyst
+	name = "Phokorus Institute \"Mastermind\" psionic catalyst"
+	build_path = /obj/item/gun_upgrade/mechanism/psionic_catalyst
 
 // HIGH-TECH TOOLMODS
 /datum/design/research/item/weapon/toolmod

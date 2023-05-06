@@ -44,16 +44,16 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	description = "The Blackshield Commander serves as the commander of the local regiment of the Blackshield.<br>\
-	Contracted to protect and serve the colony, your faction serves as a voluntary first (and hopefully last) line of defense.<br>\
+	description = "The Deputy Chief serves as the operations commander of the local group of Liberty Watch.<br>\
+	Contracted to protect and serve the colony, your group of Watchmen serve as the colony's internal and external security experts.<br>\
 	Your goal is to keep everyone living on the colony as safe as possible and to eliminate any threats to safety.<br>\
-	The Warrant Officer is your ally and you should work closely with them, they handle the upholding of the law."
+	Deligate tasks to your team of Watchmen under you and stay atop of operations. Advise your employees and aid them in their duties."
 
-	duties = "Coordinate operatives in the field, assigning them to threats and distress calls as needed.<br>\
-		Work with the Warrant Officer to allocate funds to supply your teams with whatever munitions or equipment they need.<br>\
-		Plan assaults on entrenched threats, ensure each operative knows their roles and carries them out precisely.<br>\
-		Oversee performance of the operatives under your command and punish any that are insubordinate or incompetent.<br>\
-		Advise the council on threats to colony security and advise them towards choices that will minimise exposure to threats."
+	duties = "Coordinate with the Watchmen in the field, assigning them to threats and distress calls as needed.<br>\
+		Work with the Board of Directors to handle inter-departmental affairs from a legal standpoint.<br>\
+		Organize and prepare the colony's security forces for any threats; internal or external.<br>\
+		Oversee performance of the Watchmen under your command and handle any that are incompitant or otherwise insubordinate.<br>\
+		Advise the Board of Directors on threats to colony security and advise them towards choices that will minimise exposure to threats."
 
 /obj/landmark/join/start/dc
 	name = "Deputy Chief"
@@ -102,16 +102,16 @@
 				 PERK_CHEM_CONTRABAND,
 				 PERK_GUNSMITH)
 
-	description = "The Supply Specialist is the right hand of the warrant officer and the defacto controller of the armory and armory shop. <br>\
+	description = "The Armorer is the right hand of the Chief Deputy and the defacto controller of the armory and armory shop. <br>\
 	Your role is mainly a desk job - with duties rarely taking you outside of the colony or even the armory.<br>\
 	You will often be called to sell weaponry and armory to colonists, maintaining the stock of the equipment and tracking who has what.<br>\
 	You will also be often asked to watch or process prisoners. Perform regular checkups on anyone locked in the brig - breakouts are intolerable.<br>\
 	In quieter times, you serve as the on-site weapons instructor. Take the initiative to offer a variety of training drills, especially to junior operatives.<br>\
-	Remember that any Warrant Officer duties may be delegated to you if they wish and internal tasks will fall to you at times."
+	Remember that any Chief Deputy duties may be delegated to you if they wish and internal tasks will fall to you at times."
 
 	duties = "Manage a good balance of armory stock, and dispense responsibly with a paper trail and fair price.<br>\
 	Monitor prisoners in the brig to ensure their health and safety.<br>\
-	Perform training drills and other exercises to bring the Marshals up to standard."
+	Perform training drills and other exercises to bring the Watchman up to standard."
 
 /obj/landmark/join/start/armorer
 	name = "Armorer"
@@ -160,10 +160,10 @@
 							 /datum/computer_file/program/audio,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Ranger is the colony detective and field agent, taking on cases and suspects that aren't always what they seem.<br>\
+	description = "The Criminal Investigator is the colony detective and field agent, taking on cases and suspects that aren't always what they seem.<br>\
 	Your job is to interrogate suspects, gather witness statements,  harvest evidence and reach a conclusion about the nature and culprit of a crime.<br>\
 	You are a higher ranking position than officers and operatives and can determine if charges are valid and may release individuals for lack of evidence. <br>\
-	However, you cannot give orders outside those pertaining to charges and arrests. The warrant officer still outranks you - bring all conflicts to them.<br>\
+	However, you cannot give orders outside those pertaining to charges and arrests. The Chief Deputy still outranks you - bring all conflicts to them.<br>\
 	When there are no outstanding cases, look for them. Mingle with civilians, interact and converse, sniff out leads about potential criminal activity."
 
 	duties = "Interview suspects and witnesses after a crime. Record important details of their statements, and look for inconsistencies.<br>\
@@ -211,7 +211,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Marshal Officer forms the brunt of the Marshals, internally enforcing law and keeping the peace.<br>\
+	description = "The Watchmen forms the brunt of the Watchmen, internally enforcing law and keeping the peace.<br>\
 	You are expected to be a problem solver who can descalate situations, reach peaceful agreements, and maintain public trust.<br>\
 	Keep your weapons holstered unless the situation demands otherwise - exercise good judgment and follow Blackshield orders.<br>\
 	When there are no standing orders, your ongoing task is to patrol the colony and be on the lookout for threats or problems. <br>\

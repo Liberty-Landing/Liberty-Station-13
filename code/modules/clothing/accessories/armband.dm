@@ -30,7 +30,7 @@
 
 /obj/item/clothing/accessory/armband
 	name = "security armband"
-	desc = "A navy blue armband signifying a position amongst the ranks of the Marshals."
+	desc = "A navy blue armband signifying a position amongst the ranks of the Watchmen."
 	icon_state = "security"
 	slot = "armband"
 

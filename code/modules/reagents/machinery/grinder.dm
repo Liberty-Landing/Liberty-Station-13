@@ -106,6 +106,7 @@
 	return 0
 
 /obj/machinery/reagentgrinder/attack_ai(mob/user as mob)
+	nano_ui_interact(user)
 	return 0
 
 /obj/machinery/reagentgrinder/attack_hand(mob/user)

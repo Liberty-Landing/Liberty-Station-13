@@ -269,7 +269,7 @@
 
 	//Security
 /obj/item/clothing/head/helmet/space/void/security
-	name = "marshal voidsuit helmet"
+	name = "watchmen voidsuit helmet"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "ihsvoidhelm"
 	item_state = "ihsvoidhelm"
@@ -292,7 +292,7 @@
 	camera_networks = list(NETWORK_SECURITY)
 
 /obj/item/clothing/suit/space/void/security
-	name = "marshal voidsuit"
+	name = "watchmen voidsuit"
 	icon_state = "ihvoidsuit"
 	desc = "A bulky suit that protects against hazardous, low pressure environments. Sacrifices mobility for protection"
 	item_state = "ihvoidsuit"

@@ -5,14 +5,7 @@
 			The focus on physical martial success leaves far less time for study and as a result while you are a bit tougher you are not as learned. \
 			Then again, when all else fails and diplomacy falls through you can always rely on your claws."
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_ROB = 6)
 
 	restricted_to_species = list(FORM_SABLEKYNE)
 
@@ -23,14 +16,7 @@
 			Southlanders are not shy about combat but their focus on more mental pursuits leave them less capable than their northern cousins. \
 			After all, only a brute needs to resort to violence when so many other options exists."
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_ROB = 3, STAT_VIG = 3)
 
 	restricted_to_species = list(FORM_SABLEKYNE)
 
@@ -46,11 +32,4 @@
 
 	perks = list(PERK_ADDICT)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_BIO = 6)

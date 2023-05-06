@@ -9,14 +9,7 @@
 	allow_modifications = FALSE
 	perks = list(PERK_SCUTTLEBUG, PERK_REPAIR_GOO)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_ROB = 4, STAT_MEC = 8)
 
 /datum/category_item/setup_option/background/ancestry/chtmant_ru
 	name = "Ru Caste"
@@ -34,14 +27,7 @@
 	racial_implants = (/obj/item/organ_module/active/simple/surgical/cht_mant)
 	restricted_jobs = list(/datum/job/shipbreaker)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_BIO = 8, STAT_COG = 4)
 
 /datum/category_item/setup_option/background/ancestry/chtmant_ra
 	name = "Ra Caste"
@@ -58,18 +44,11 @@
 	perks = list(PERK_CHITINARMOR)
 	racial_implants = (/obj/item/organ_module/active/simple/cht_mant_claws)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_ROB = 4, STAT_TGH = 4, STAT_VIG = 4)
 
 //Background perk, but placed here since its cht'mant only. -Kaz
 //And then people wonder why I always have an aunerism when I open VSC - Lamasmaster
-/datum/category_item/setup_option/background/bckgrnd/chtmantspider
+/datum/category_item/setup_option/background/thoughts/chtmantspider
 	name = "Eight-Legged Ally"
 	desc = "As a cht-mant you have an innate understanding towards insects and crawling things. While most of your kin are naturally adapted to roaches you've developed a sense of  \
 	control and understanding to spiders. Over time a subtle shift in your pheromones allowed you to interact with spiders much in the same way your kin do with roaches. \
@@ -78,12 +57,3 @@
 
 	restricted_to_species = list(FORM_CHTMANT)
 	perks = list(PERK_SPIDER_FRIEND, PERK_WEBMAKER)
-
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)

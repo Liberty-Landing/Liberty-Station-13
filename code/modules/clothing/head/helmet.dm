@@ -263,15 +263,15 @@
 
 //Marshals
 /obj/item/clothing/head/helmet/marshal
-	name = "marshal helmet"
-	desc = "Standard operator gear. Protects the head from impacts. Painted in marshal colors and features an eye shield"
+	name = "watchmen helmet"
+	desc = "Standard operator gear. Protects the head from impacts. Painted in Watchmen colors and features an eye shield"
 	icon_state = "helmet_ironhammer"
 	icon_state = "helmet_ironhammer"
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
 	body_parts_covered = HEAD|EYES|EARS
 
 /obj/item/clothing/head/helmet/marshal_full
-	name = "marshal full helmet"
+	name = "watchmen full helmet"
 	desc = "A full helmet with a built in glow visor. While a weak light its better than nothing and the full cover design makes it ideal for general protection."
 	icon_state = "ironhammer_full"
 	item_state = "ironhammer_full"
@@ -911,8 +911,8 @@
 
 //Security
 /obj/item/clothing/head/helmet/riot_hud
-	name = "marshal riot helmet"
-	desc = "Standard-issue marshal helmet with a basic HUD and targeting system included, produced by Seinemetall Defense GmbH after more classic riot helmets were not able to handle the day to day riots."
+	name = "watchmen riot helmet"
+	desc = "Standard-issue liberty watch helmet with a basic HUD and targeting system included, produced by Seinemetall Defense GmbH after more classic riot helmets were not able to handle the day to day riots."
 	icon_state = "light_riot"
 	flags_inv = HIDEEARS|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS

@@ -671,6 +671,7 @@ ADMIN_VERB_ADD(/client/proc/skill_issue, R_ADMIN, FALSE)
 
 	to_chat(T, SPAN_NOTICE("<b><font size=3>Diagnosis: skill issue.</font></b>"))
 	to_chat(T, SPAN_NOTICE("Git gud."))
+	T << 'sound/misc/skill_issue.ogg'
 
 	log_admin("[key_name(usr)] told [key_name(T)] that it is a skill issue and to git gud.")
 	message_admins("\blue [key_name_admin(usr)] told [key_name(T)] that it is a skill issue and to git gud.", 1)

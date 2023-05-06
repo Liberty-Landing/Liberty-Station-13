@@ -153,10 +153,10 @@
 	charge_sections = 10
 	stacktype_alt = /obj/item/stack/medical/bruise_pack/advanced
 
-/obj/item/stack/medical/bruise_pack/advanced/tatonka_tongue
-	name = "tatonka blood tongue"
-	singular_name = "tatonka blood tongue"
-	desc = "A treated tatonka tongue that has anti-septic saliva, capable of promoting healing and properly treating brute damage."
+/obj/item/stack/medical/bruise_pack/advanced/tahca_tongue
+	name = "tahca blood tongue"
+	singular_name = "tahca blood tongue"
+	desc = "A treated tahca tongue that has anti-septic saliva, capable of promoting healing and properly treating brute damage."
 	icon_state = "brahmin_tongue"
 	automatic_charge_overlays = FALSE
 	consumable = TRUE
