@@ -68,7 +68,7 @@
 		/obj/item/animal_part/helldiver_tooth = offer_data("hell diver tooth", 1450, 10),
 		/obj/item/animal_part/chimera_fang = offer_data("chimera fang", 3550, 10),
 		/obj/item/animal_part/render_claw = offer_data("render claw", 1750, 10),
-		/obj/item/animal_part/tahca_antler = offer_data("tahca antler", 1250, 10),
+		/obj/item/animal_part/tahca_tongue = offer_data("tahca tongue", 120, 10),
 		/obj/item/animal_part/wolf_tooth = offer_data("pristine animal fang", 400, 10),
 		/obj/item/tool/spear/hunter_halberd = offer_data("hunter halberd", 1300, 2),
 		/obj/item/tool/gauntlet = offer_data("render gauntlet", 2800, 2),

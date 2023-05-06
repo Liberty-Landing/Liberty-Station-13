@@ -1,12 +1,12 @@
-/datum/craft_recipe/guild
-	category = "Guild"
+/datum/craft_recipe/terra
+	category = "Terra-Therma"
 	time = 100
 	related_stats = list(STAT_MEC)
 	requiredPerk = PERK_HANDYMAN
 
 //Materal Craft ------------------
 
-/datum/craft_recipe/guild/plasma_glass
+/datum/craft_recipe/terra/plasma_glass
 	name = "borosilicate glass"
 	result = /obj/item/stack/material/glass/plasmaglass
 	icon_state = "clothing"
@@ -20,7 +20,7 @@
 
 //bullets -----------------------------
 
-/datum/craft_recipe/guild/payload_arrow
+/datum/craft_recipe/terra/payload_arrow
 	name = "bulk empty payload arrow"
 	result = /obj/item/ammo_casing/arrow/empty_payload/bulk
 	icon_state = "woodworking"
@@ -32,7 +32,7 @@
 	)
 
 //Armor mods ----------------------
-/datum/craft_recipe/guild/melee
+/datum/craft_recipe/terra/melee
 	name = "melee plating"
 	result = /obj/item/tool_upgrade/armor/melee
 	icon_state = "clothing"
@@ -47,7 +47,7 @@
 		list(QUALITY_SAWING, 30, "time" = 60)
 	)
 
-/datum/craft_recipe/guild/bullet
+/datum/craft_recipe/terra/bullet
 	name = "ballistic plating"
 	result = /obj/item/tool_upgrade/armor/bullet
 	icon_state = "clothing"
@@ -64,7 +64,7 @@
 		list(QUALITY_SAWING, 30, "time" = 60)
 	)
 
-/datum/craft_recipe/guild/energy
+/datum/craft_recipe/terra/energy
 	name = "energy plating"
 	result = /obj/item/tool_upgrade/armor/energy
 	icon_state = "clothing"
@@ -80,7 +80,7 @@
 		list(QUALITY_SAWING, 30, "time" = 60)
 	)
 
-/datum/craft_recipe/guild/bomb
+/datum/craft_recipe/terra/bomb
 	name = "bomb proofing"
 	result = /obj/item/tool_upgrade/armor/bomb
 	icon_state = "clothing"
@@ -98,7 +98,7 @@
 
 //Robot Armor ----------------------
 
-/datum/craft_recipe/guild/robotmelee //Lots of steps
+/datum/craft_recipe/terra/robotmelee //Lots of steps
 	name = "robot mark v armor plating"
 	result = /obj/item/robot_parts/robot_component/armour/mkv
 	steps = list(
@@ -113,7 +113,7 @@
 	)
 
 //Tools --------------------------
-/datum/craft_recipe/guild/arcwelder
+/datum/craft_recipe/terra/arcwelder
 	name = "arc welder"
 	result = /obj/item/tool/baton/arcwelder
 	steps = list(
@@ -126,7 +126,7 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/polytool
+/datum/craft_recipe/terra/polytool
 	name = "\"jolly co-operation\" polytool"
 	result = /obj/item/tool/polytool
 	steps = list(
@@ -141,7 +141,7 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/combat_shovel
+/datum/craft_recipe/terra/combat_shovel
 	name = "combat crovel"
 	result = /obj/item/tool/shovel/combat
 	steps = list(
@@ -154,7 +154,7 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10)
 	)
 
-/datum/craft_recipe/guild/rocket_engine
+/datum/craft_recipe/terra/rocket_engine
 	name = "rocket engine"
 	result = /obj/item/tool_upgrade/productivity/rocket_engine
 	icon_state = "electronic"
@@ -169,7 +169,7 @@
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/supermop
+/datum/craft_recipe/terra/supermop
 	name = "pneumatic condensing mop"
 	result = /obj/item/mop/guild
 	steps = list(
@@ -184,7 +184,7 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/engimultitool
+/datum/craft_recipe/terra/engimultitool
 	name = "\"Little Helper\" Omnitool"
 	result = /obj/item/tool/engimultitool
 	steps = list(
@@ -206,7 +206,7 @@
 
 //Weapons ------------------------
 
-/datum/craft_recipe/guild/nanopistol
+/datum/craft_recipe/terra/nanopistol
 	name = "MKI Forger compressed-matter pistol"
 	result = /obj/item/gun/projectile/matter_gun
 	steps = list(
@@ -224,7 +224,7 @@
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
 	)
 
-/datum/craft_recipe/guild/nanoshotgun
+/datum/craft_recipe/terra/nanoshotgun
 	name = "MKII Forger compressed-matter shotgun"
 	result = /obj/item/gun/projectile/matter_gun/shotgun
 	steps = list(
@@ -245,7 +245,7 @@
 
 /* Kept for reference for now. Replacement soon (tm)
 //An exspensive but powerful CQC weapon that also can be used as a flar gun
-/datum/craft_recipe/guild/abdicatorshotgun
+/datum/craft_recipe/terra/abdicatorshotgun
 	name ="abdicator energy shotgun"
 	result = /obj/item/gun/energy/laser/railgun/abdicator
 	steps = list(
@@ -278,7 +278,7 @@
 	)
 */
 
-/datum/craft_recipe/guild/mace
+/datum/craft_recipe/terra/mace
 	name = "termite truncheon"
 	result = /obj/item/tool/hammer/mace
 	steps = list(
@@ -289,7 +289,7 @@
 		list(QUALITY_WELDING, 40, "time" = 60)
 	)
 
-/datum/craft_recipe/guild/claymore
+/datum/craft_recipe/terra/claymore
 	name = "spider chopper"
 	result = /obj/item/tool/sword/union
 	steps = list(
@@ -299,7 +299,7 @@
 		list(QUALITY_WELDING, 40, "time" = 60)
 	)
 
-/datum/craft_recipe/guild/machete
+/datum/craft_recipe/terra/machete
 	name = "machete"
 	result = /obj/item/tool/sword/machete
 	steps = list(
@@ -309,7 +309,7 @@
 		list(QUALITY_WELDING, 40, "time" = 60)
 	)
 
-/datum/craft_recipe/guild/katana
+/datum/craft_recipe/terra/katana
 	name = "roach slicer"
 	result = /obj/item/tool/sword/katana/union
 	steps = list(
@@ -322,7 +322,7 @@
 		list(/obj/item/tool_upgrade/productivity/whetstone, 1, "time" = 30)
 	)
 
-/datum/craft_recipe/guild/firebrand
+/datum/craft_recipe/terra/firebrand
 	name = "firebrand"
 	result = /obj/item/tool/sword/katana/firebrand
 	steps = list(
@@ -335,7 +335,7 @@
 	list(/obj/item/tool_upgrade/augment/fuel_tank, 1, "time" = 30)
 	)
 
-/datum/craft_recipe/guild/bastion
+/datum/craft_recipe/terra/bastion
 	name = "Bastion Shield"
 	result = /obj/item/shield/riot/bastion
 	steps = list(
@@ -350,7 +350,7 @@
 
 
 //Wearables =========================
-/datum/craft_recipe/guild/nv_guild
+/datum/craft_recipe/terra/nv_guild
 	name = "Optimized NV Goggles"
 	result = /obj/item/clothing/glasses/powered/night/guild/crafted
 	icon_state = "clothing"
@@ -366,7 +366,7 @@
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 60),
 	)
 
-/datum/craft_recipe/guild/technosuit
+/datum/craft_recipe/terra/technosuit
 	name = "'Mark V' environmental protection suit"
 	result = /obj/item/clothing/suit/armor/vest/technomancersuit
 	icon_state = "clothing"
@@ -382,7 +382,7 @@
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/technohelmet
+/datum/craft_recipe/terra/technohelmet
 	name = "'Mark V' environmental protection helmet"
 	result = /obj/item/clothing/head/helmet/technomancersuit
 	icon_state = "clothing"
@@ -398,7 +398,7 @@
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/swat_yellow
+/datum/craft_recipe/terra/swat_yellow
 	name = "Union insulated gloves"
 	result = /obj/item/clothing/gloves/insulated/union
 	steps = list(
@@ -413,7 +413,7 @@
 		list(QUALITY_HAMMERING, 15, 10)
 	)
 
-/datum/craft_recipe/guild/webbing
+/datum/craft_recipe/terra/webbing
 	name = "Terra-Therma Worker's Union web harness"
 	icon_state = "clothing"
 	result = /obj/item/storage/belt/webbing/union
@@ -424,7 +424,7 @@
 		list(/obj/item/storage/pouch/medium_generic, 1, "time" = 40)
 	)
 
-/datum/craft_recipe/guild/sheet_stacker
+/datum/craft_recipe/terra/sheet_stacker
 	name = "advanced sheet snatcher"
 	icon_state = "woodworking"
 	result = /obj/item/storage/bag/sheetsnatcher/guild
@@ -440,7 +440,7 @@
 //Tool/Gun Mods ---------------------
 //Reinforcement
 
-/datum/craft_recipe/guild/rubbermesh
+/datum/craft_recipe/terra/rubbermesh
 	name = "Rubber Mesh"
 	result = /obj/item/tool_upgrade/reinforcement/rubbermesh
 	steps = list(
@@ -449,7 +449,7 @@
 	)
 
 //Productivity
-/datum/craft_recipe/guild/booster
+/datum/craft_recipe/terra/booster
 	name = "Booster"
 	result = /obj/item/tool_upgrade/productivity/booster
 	steps = list(
@@ -462,7 +462,7 @@
 	)
 
 //Gun Mods
-/datum/craft_recipe/guild/weintraub
+/datum/craft_recipe/terra/weintraub
 	name = "\"Hurricane\" full auto kit"
 	result = /obj/item/gun_upgrade/mechanism/weintraub
 	icon_state = "gun"
@@ -476,7 +476,7 @@
 	)
 
 //Gun Mods
-/datum/craft_recipe/guild/tensioner
+/datum/craft_recipe/terra/tensioner
 	name =  "weighted pulley kit"
 	result = /obj/item/gun_upgrade/mechanism/tensioner
 	steps = list(
@@ -489,7 +489,7 @@
 	)
 
 //Gun Mods
-/datum/craft_recipe/guild/detensioner
+/datum/craft_recipe/terra/detensioner
 	name =  "compound pulley kit"
 	result = /obj/item/gun_upgrade/mechanism/detensioner
 	steps = list(
@@ -501,7 +501,7 @@
 		list(QUALITY_WIRE_CUTTING, 25, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/overshooter
+/datum/craft_recipe/terra/overshooter
 	name = "\"Overshooter\" internal magazine kit"
 	result = /obj/item/gun_upgrade/mechanism/overshooter
 	icon_state = "gun"
@@ -514,7 +514,7 @@
 		list(QUALITY_SCREW_DRIVING, 25, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/dangerzone
+/datum/craft_recipe/terra/dangerzone
 	name = "\"Danger Zone\" Trigger"
 	result = /obj/item/gun_upgrade/trigger/dangerzone
 	icon_state = "gun"
@@ -527,7 +527,7 @@
 		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/forged
+/datum/craft_recipe/terra/forged
 	name = "Forged Barrel"
 	result = /obj/item/gun_upgrade/barrel/forged
 	icon_state = "gun"
@@ -540,7 +540,7 @@
 		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/heavy_barrel
+/datum/craft_recipe/terra/heavy_barrel
 	name = "Heavy barrel"
 	result = /obj/item/gun_upgrade/barrel/bore
 	icon_state = "gun"
@@ -560,7 +560,7 @@
 		list(QUALITY_BOLT_TURNING, 25, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/silencer
+/datum/craft_recipe/terra/silencer
 	name = "Silencer"
 	result = /obj/item/gun_upgrade/muzzle/silencer
 	icon_state = "gun"
@@ -573,7 +573,7 @@
 		list(QUALITY_CUTTING, 25, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/watchman
+/datum/craft_recipe/terra/watchman
 	name = "Terra-Therma Union \"Watchman\" scope"
 	result = /obj/item/gun_upgrade/scope/watchman
 	icon_state = "gun"
@@ -587,7 +587,7 @@
 	)
 /*
 //Traps
-/datum/craft_recipe/guild/guild_mine_trap
+/datum/craft_recipe/terra/guild_mine_trap
 	name = "land mine trap"
 	result = /obj/item/mine
 	icon_state = "gun"
@@ -600,7 +600,7 @@
 	)*/
 
 //Machines
-/datum/craft_recipe/guild/turretcircuit
+/datum/craft_recipe/terra/turretcircuit
 	name = "Circuit: Union Turret"
 	result = /obj/item/circuitboard/artificer_turret
 	icon_state = "electronic"
@@ -611,7 +611,7 @@
 		list(QUALITY_WELDING, 40, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/matter_nanoforge
+/datum/craft_recipe/terra/matter_nanoforge
 	name = "Circuit: Matter Nano-Forge"
 	result = /obj/item/circuitboard/matter_nanoforge
 	icon_state = "electronic"
@@ -624,7 +624,7 @@
 		list(QUALITY_WELDING, 30, "time" = 90)
 	)
 
-/datum/craft_recipe/guild/matter_nanoforge_blackbox
+/datum/craft_recipe/terra/matter_nanoforge_blackbox
 	name = "Black Box: Matter Nano-Forge"
 	result = /obj/item/oddity/blackbox_nanoforge
 	steps = list(
@@ -645,7 +645,7 @@
 		list(CRAFT_MATERIAL, 2, MATERIAL_SILVER)
 	)
 
-/datum/craft_recipe/guild/safety_clamp
+/datum/craft_recipe/terra/safety_clamp
 	name = "Hydraulic clamp overclock: KILL CLAMP"
 	result = /obj/item/mecha_parts/mecha_equipment/tool/safety_clamp
 	steps = list(
@@ -660,7 +660,7 @@
 		list(/obj/item/tool_upgrade/augment/spikes, 1, "time" = 60)
 	)
 
-/datum/craft_recipe/guild/tesla_energy_relay
+/datum/craft_recipe/terra/tesla_energy_relay
 	name = "Mech energy relay"
 	result = /obj/item/mecha_parts/mecha_equipment/tesla_energy_relay
 	steps = list(
@@ -671,12 +671,12 @@
 		list(QUALITY_SCREW_DRIVING, 40, 70),
 		list(/obj/item/stack/cable_coil, 15, "time" = 90),
 		list(QUALITY_WIRE_CUTTING, 25, "time" = 90),
-		list(/obj/item/stock_parts/capacitor/guild, 1, "time" = 60),
+		list(/obj/item/stock_parts/capacitor/super, 1, "time" = 60),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
 		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD)
 	)
 
-/datum/craft_recipe/guild/guild_bin
+/datum/craft_recipe/terra/guild_bin
 	name = "Hand Cast Matter Bin"
 	result = /obj/item/stock_parts/matter_bin/handmade
 	steps = list(
@@ -690,7 +690,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_manip
+/datum/craft_recipe/terra/guild_manip
 	name = "Perfected Forged Manipulator"
 	result = /obj/item/stock_parts/manipulator/handmade
 	steps = list(
@@ -705,7 +705,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_laser
+/datum/craft_recipe/terra/guild_laser
 	name = "Handmade Perfected Micro-Laser"
 	result = /obj/item/stock_parts/micro_laser/handmade
 	steps = list(
@@ -718,7 +718,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_scanner
+/datum/craft_recipe/terra/guild_scanner
 	name = "Manually Perfected Scanning Module"
 	result = /obj/item/stock_parts/scanning_module/handmade
 	steps = list(
@@ -731,7 +731,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_capacitor
+/datum/craft_recipe/terra/guild_capacitor
 	name = "Crafted Ultra Capacitor"
 	result = /obj/item/stock_parts/capacitor/handmade
 	steps = list(
@@ -744,7 +744,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_bin_alt
+/datum/craft_recipe/terra/guild_bin_alt
 	name = "Hand Cast Matter Bin Alt"
 	result = /obj/item/stock_parts/matter_bin/handmade
 	steps = list(
@@ -758,7 +758,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 /*
-/datum/craft_recipe/guild/guild_manip_alt
+/datum/craft_recipe/terra/guild_manip_alt
 	name = "Forged Manipulator Alt"
 	result = /obj/item/stock_parts/manipulator/handmade
 	steps = list(
@@ -773,7 +773,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_laser_alt
+/datum/craft_recipe/terra/guild_laser_alt
 	name = "Perfected Micro-Laser Alt"
 	result = /obj/item/stock_parts/micro_laser/handmade
 	steps = list(
@@ -786,7 +786,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_scanner_alt
+/datum/craft_recipe/terra/guild_scanner_alt
 	name = "Perfected Scanning Module Alt"
 	result = /obj/item/stock_parts/scanning_module/handmade
 	steps = list(
@@ -799,7 +799,7 @@
 		list(QUALITY_SAWING, 60)
 	)
 
-/datum/craft_recipe/guild/guild_capacitor_alt
+/datum/craft_recipe/terra/guild_capacitor_alt
 	name = "Crafted Ultra Capacitor Alt"
 	result = /obj/item/stock_parts/capacitor/handmade
 	steps = list(
@@ -813,7 +813,7 @@
 	)
 */
 // Just speeder to make in bulk then one by one, and costs a upfrunt of 1 cardbord they can recoop
-/datum/craft_recipe/guild/guild_bin_box
+/datum/craft_recipe/terra/guild_bin_box
 	name = "Box of Cast Matter Bins"
 	result = /obj/item/storage/box/guild_bin
 	steps = list(
@@ -828,7 +828,7 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/guild/guild_manip_box
+/datum/craft_recipe/terra/guild_manip_box
 	name = "Box of Forged Manipulators"
 	result = /obj/item/storage/box/guild_manip
 	steps = list(
@@ -844,7 +844,7 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/guild/guild_laser_box
+/datum/craft_recipe/terra/guild_laser_box
 	name = "Box of Perfected Micro-Lasers"
 	result = /obj/item/storage/box/guild_laser
 	steps = list(
@@ -858,7 +858,7 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/guild/guild_scanner_box
+/datum/craft_recipe/terra/guild_scanner_box
 	name = "Box of Perfected Scanning Modules"
 	result = /obj/item/storage/box/guild_scanner
 	steps = list(
@@ -872,7 +872,7 @@
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD)
 	)
 
-/datum/craft_recipe/guild/guild_capacitor_box
+/datum/craft_recipe/terra/guild_capacitor_box
 	name = "Box of Crafted Ultra Capacitors"
 	result = /obj/item/storage/box/guild_capacitor
 	steps = list(

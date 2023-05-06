@@ -355,16 +355,15 @@
 	mob_size = 20
 	resistance = 15
 
-// Credit to scar#1579 for the sprite.
 /mob/living/simple_animal/hostile/retaliate/tahca
 	name = "tahca"
-	desc = "A cervine creature, surprisingly native to this planet, that resembles a two-headed deer. Despite what one would expect, while docile in nature, it is more than willing to fight if attacked. Hunters value \
-	these beasts for their antlers, both as trophies of value and for medicine."
-	faction = "radstag"
+	desc = "A bovine creature, not surprisingly native in it's shaggy white coat of hair.  Despite what one would expect, while docile in nature, it is more than willing to fight if attacked. Hunters value \
+	these beasts for their tongues, both as medicine of value and for food."
+	faction = "tahca"
 	icon = 'icons/mob/mobs-domestic.dmi'
-	icon_state = "radstag"
-	icon_living = "radstag"
-	icon_dead = "radstag_dead"
+	icon_state = "tahca"
+	icon_living = "tahca"
+	icon_dead = "tahca_dead"
 	response_help = "pets the"
 	response_disarm = "gently pushes aside the"
 	response_harm = "hits the"
@@ -374,15 +373,15 @@
 	speed = 1
 	melee_damage_lower = 15
 	melee_damage_upper = 20
-	attacktext = "gored"
+	attacktext = "bites"
 	attack_sound = 'sound/weapons/bite.ogg'
 	speak_chance = 5
-	speak = list("Hruuugh!","Hrunnph")
-	emote_see = list("bleats.","clacks its horns.","stomps.")
+	speak = list("Mruuugh!","Mrunnph")
+	emote_see = list("bellows.","clacks its teeth.","stomps.")
 	emote_hear = list("gronks.")
 	meat_amount = 3
 	leather_amount = 6
 	bones_amount = 6
 	mob_size = 20
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/tahca_antler)
+	special_parts = list(/obj/item/animal_part/tahca_tongue)

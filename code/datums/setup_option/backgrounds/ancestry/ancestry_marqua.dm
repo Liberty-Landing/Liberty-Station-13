@@ -9,15 +9,7 @@
 	restricted_depts = SECURITY
 	restricted_jobs = list(/datum/job/shipbreaker, /datum/job/shepherd)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
-
+	stat_modifiers = list(STAT_COG = 6)
 
 /datum/category_item/setup_option/background/ancestry/marqua_menial
 	name = "Menial"
@@ -27,15 +19,7 @@
 
 	restricted_to_species = list(FORM_MARQUA)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
-
+	stat_modifiers = list(STAT_MEC = 6)
 
 /datum/category_item/setup_option/background/ancestry/marqua_martial
 	name = "Martial"
@@ -46,11 +30,4 @@
 
 	restricted_to_species = list(FORM_MARQUA)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_ROB = 2, STAT_TGH = 2, STAT_VIG = 2)

@@ -102,7 +102,6 @@
 	new /obj/item/ammo_magazine/pistol_35(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
-	new /obj/item/voucher/marshal/armor(src)
 
 /obj/structure/closet/secure_closet/personal/security
 	name = "watchman's locker"
@@ -120,7 +119,6 @@
 	new /obj/item/ammo_magazine/pistol_35(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
-	new /obj/item/voucher/marshal/armor(src)
 	new /obj/item/storage/backpack/satchel/ironhammer(src)
 	new /obj/item/device/radio/headset/headset_sec(src)
 	new /obj/item/storage/belt/security(src)

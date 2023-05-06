@@ -195,15 +195,16 @@
 	)
 */
 // Medicine -----------------
-/datum/craft_recipe/trapper/blood_tongue
-	name = "Tatonka blood tongue"
-	result = /obj/item/stack/medical/bruise_pack/advanced/tatonka_tongue
+/datum/craft_recipe/trapper/tahca_tongue
+	name = "tahca blood tongue"
+	result = /obj/item/stack/medical/bruise_pack/advanced/tahca_tongue
 	icon_state = "clothing"
 	steps = list(
-		list(/obj/item/animal_part/tatonka_tongue, 1, "time" = 20),
+		list(/obj/item/animal_part/tahca_tongue, 1, "time" = 20),
 		list(QUALITY_HAMMERING, 15, "time" = 40)
 	)
 
+/*
 /datum/craft_recipe/trapper/powder_pouch
 	name = "Tatonka powder pouch"
 	result = /obj/item/stack/medical/ointment/advanced/powder_pouch
@@ -213,6 +214,7 @@
 		list(/obj/item/animal_part/tatonka_horn, 1, "time" = 20),
 		list(QUALITY_HAMMERING, 15, "time" = 40)
 	)
+*/
 
 /datum/craft_recipe/trapper/tangu_juice
 	name = "Tangu Extract"

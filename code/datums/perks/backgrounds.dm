@@ -152,11 +152,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	holder.health -= 10
 	..()
 
-/datum/perk/background/market_prof
-	name = "Market Professional"
-	desc = "You've become an excellent appraiser of goods over the years. Just by looking at the item, you can know how much it would sell for in today's market rates."
-	icon_state = "market_prof"
-
 //////////////////////
 /* Synthetics Perks */
 //////////////////////

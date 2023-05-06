@@ -134,8 +134,8 @@
 //End of sprites by Michiyamenotehifunana and Occulist
 //Security
 /obj/item/clothing/head/rank/ironhammer
-	name = "marshal beret"
-	desc = "A navy blue marshal beret."
+	name = "watchmen beret"
+	desc = "A navy blue watchmen beret."
 	icon_state = "policeberet"
 
 /obj/item/clothing/head/rank/commander
@@ -170,7 +170,7 @@
 
 /obj/item/clothing/head/rank/warden/beret
 	name = "supply specialist beret"
-	desc = "A red marshal beret signifying a supply specialist position."
+	desc = "A red watchmen beret signifying a supply specialist position."
 	icon_state = "beret_navy_warden"
 
 /obj/item/clothing/head/rank/engineering

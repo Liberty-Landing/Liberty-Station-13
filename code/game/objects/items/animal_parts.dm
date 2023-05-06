@@ -8,6 +8,12 @@
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 100
 
+/obj/item/animal_part/tahca_tongue
+	name = "tahca tongue"
+	desc = "A tahca tongue, harvested from a bovine like creature. Useful in medicine and savored for it's taste."
+	icon_state = "brahmin_tongue"
+	item_state = "brahmin_tongue"
+
 /obj/item/animal_part/tatonka_tongue
 	name = "tatonka tongue"
 	desc = "A tatanka tongue, harvested from a creature of the same name. Useful in medicine and prized for its various purposes."

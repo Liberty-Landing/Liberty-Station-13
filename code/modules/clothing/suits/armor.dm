@@ -179,13 +179,13 @@
 */
 
 /obj/item/clothing/suit/armor/vest/ironhammer
-	name = "marshal armor vest"
-	desc = "An armored vest that protects against some damage. This one has been done in marshal security colors. Not designed for serious operations."
+	name = "watchmen armor vest"
+	desc = "An armored vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations."
 	icon_state = "armor_ironhammer"
 
 /obj/item/clothing/suit/armor/vest/ironhammer/full
-	name = "marshal tactical unit armor"
-	desc = "An armored vest painted in Marshals colors. This one has shoulderpads and kneepads included to protect all parts of the body."
+	name = "watchmen tactical unit armor"
+	desc = "An armored vest painted in Watchmen colors. This one has shoulderpads and kneepads included to protect all parts of the body."
 	icon_state = "armor_ih_fullbody"
 	item_state = "armor_ih_fullbody"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -193,7 +193,7 @@
 
 /obj/item/clothing/suit/armor/vest/ironhammer_wintercoat //pieced together thanks to Rebel's Supply spec coat - Dongels
 	name = "security armored coat"
-	desc = "An armored winter coat with vest that protects against some damage. This one has been done in marshal security colors. Not designed for serious operations. You're pretty sure the coat is just thick enough to keep warm, and that's all. Why you would want that on a planet like Phokorus is beyond thought."
+	desc = "An armored winter coat with vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations. You're pretty sure the coat is just thick enough to keep warm, and that's all. Why you would want that on a planet like Phokorus is beyond thought."
 	icon_state = "coatsecurity_long"
 
 ////////////
@@ -676,7 +676,7 @@
 		return 1
 
 /obj/item/clothing/suit/armor/bulletproof/ironhammer
-	name = "marshal bulletproof suit"
+	name = "watchmen bulletproof suit"
 	desc = "A bulky vest that excels in protecting the wearer against high-velocity solid projectiles with added shoulderpads and kneepads for extra coverage produced by Seinemetall Defense GmbH."
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	stiffness = LIGHT_STIFFNESS
@@ -906,7 +906,7 @@
 	price_tag = 250
 
 /obj/item/clothing/suit/armor/heavy/riot/ironhammer
-	name = "marshal riot suit"
+	name = "watchmen riot suit"
 	desc = "A suit of armor with heavy padding to protect against melee attacks. Looks like it might impair movement. This one is produced by Seinemetall Defense GmbH."
 	icon_state = "riot_ironhammer"
 	item_state = "riot_ironhammer"
@@ -940,7 +940,7 @@
 
 /obj/item/clothing/suit/storage/vest/ironhammer
 	name = "webbed operator armor"
-	desc = "An armored vest that protects against some damage. This one has been done in Liberty Marshal colors and has various pouches and straps attached."
+	desc = "An armored vest that protects against some damage. This one has been done in Liberty Watch colors and has various pouches and straps attached."
 	icon_state = "webvest_ironhammer"
 
 //Provides the protection of a merc voidsuit, but only covers the chest/groin, and also takes up a suit slot. In exchange it has no slowdown and provides storage.
@@ -1157,8 +1157,8 @@
 	stiffness = MEDIUM_STIFFNESS
 
 /obj/item/clothing/suit/storage/armor/marshal_coat
-	name = "marshal officers greatcoat"
-	desc = "Marshal Officer greatcoat with armor weave. Part of the formal uniform of the security marshals."
+	name = "watchmen officers greatcoat"
+	desc = "A Liberty Watch greatcoat with armor weave. Part of the formal uniform of the Watchmen."
 	armor_list = list(melee = 35, bullet = 30, energy = 20, bomb = 10, bio = 0, rad = 0)
 	icon_state = "marshal_coat"
 	item_state = "marshal_coat"

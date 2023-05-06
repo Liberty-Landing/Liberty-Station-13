@@ -63,7 +63,7 @@ var/list/dreams = list(
 	"the CAPSA Surgeon Overseer","the Chief Executive Officer","an Assistant","a Bartender","a Janitor","a Gardener",
 	"a Oathpledge","an Entertainer","a Chef","a CAPSA Doctor","a Psychologist","a CAPSA Paramedic",
 	"a Phokorus Institute Scientist","a Phokorus Institute Roboticist","a Cyborg","a Cargo Technician","a Skylight Miner",
-	"a Mechanical Technician", "a Marshal Officer","a Supply Specialist","a Ranger", "the Premier",
+	"a Mechanical Technician", "a Watchman","a Armorer","a Criminal Investigator", "the Premier",
 	"a Corpsman", "a Trooper",
 
 //Races (Check Creatures Before Adding Stuff Here, There's Some Overlap!)

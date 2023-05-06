@@ -41,13 +41,13 @@
 		return 1
 
 /obj/item/clothing/head/rank/warden
-	name = "supply specialist's helmet"
-	desc = "A distinctive red military helmet signifying a supply specialist rank."
+	name = "armorers's helmet"
+	desc = "A distinctive red military helmet signifying a armorers rank."
 	icon_state = "policehelm"
 	body_parts_covered = 0
 
 /obj/item/clothing/under/rank/security
-	name = "marshal officer's jumpsuit"
+	name = "watchmen's jumpsuit"
 	desc = "A durable officer's jumpsuit, designed to provide moderate combat protection."
 	icon_state = "security"
 	item_state = "ba_suit"
@@ -89,7 +89,7 @@
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/bdu/marshal
-	name = "marshal officer's BDU"
+	name = "watchman officer's BDU"
 	desc = "A durable officer's Battle Dress Uniform, designed to provide moderate combat protection."
 	icon_state = "bdumarshal"
 	item_state = "bdumarshal"

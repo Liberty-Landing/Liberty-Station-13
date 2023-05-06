@@ -238,7 +238,7 @@
 	)
 
 /datum/craft_recipe/clothing/mtua
-	name = "marshal tactical unit armor"
+	name = "watchman tactical unit armor"
 	result = /obj/item/clothing/suit/armor/vest/ironhammer/full
 	steps = list(
 		list(/obj/item/clothing/suit/armor/vest/ironhammer, 1, "time" = 30),

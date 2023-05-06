@@ -225,8 +225,8 @@
 
 //Detective
 /obj/item/clothing/suit/storage/rank/insp_trench
-	name = "ranger's armored trenchcoat"
-	desc = "Brown and armored trenchcoat, designed and created by the Marshals. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
+	name = "criminal investigator's armored trenchcoat"
+	desc = "Brown and armored trenchcoat, designed and created by the Watchmen. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
 	icon_state = "rangercoat"
 	item_state = "rangercoat"
 	blood_overlay_type = "coat"

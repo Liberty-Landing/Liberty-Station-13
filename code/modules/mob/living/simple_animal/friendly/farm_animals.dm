@@ -352,8 +352,8 @@ var/global/chicken_count = 0
 		..()
 
 /mob/living/simple_animal/pig/hog
-	name = "Amerethi hog"
-	desc = "The result of crossing genetics between the colony's aging sow and cerberi from the Lodge, this is a docile species with asexual reproduction when fed mushrooms, raised chiefly for its meat without the otherwise ugly connotations of raising for slaughter what should have been a valued hunting companion."
+	name = "mycologist hog"
+	desc = "The result of crossing genetics, two into one! this breed of docile sus genus can perform asexual reproduction when fed mushrooms, raised chiefly for its meat."
 	icon_state = "pighog"
 
 /mob/living/simple_animal/pig/hog/attackby(var/obj/item/O as obj, var/mob/user as mob)

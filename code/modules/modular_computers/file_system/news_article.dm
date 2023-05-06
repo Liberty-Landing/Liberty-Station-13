@@ -86,7 +86,7 @@
 	archived = 1
 
 /datum/computer_file/data/news_article/Official_Marshal_communique
-	filename = "Official Marshal communique"
+	filename = "Official Watchmen communique"
 	server_file_path = 'news_articles/Official_Marshal_communique.html'
 	archived = 1
 

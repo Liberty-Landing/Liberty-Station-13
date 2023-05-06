@@ -9,14 +9,7 @@
 	perks = list(PERK_OPIFEX_BACKUP)
 	racial_implants = (/obj/item/organ_module/active/simple/opifex_pouch)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_MEC = 6)
 
 /datum/category_item/setup_option/background/ancestry/opifexbiomech
 	name = "Biomechanist"
@@ -31,14 +24,7 @@
 	perks = list(PERK_OPIFEX_MEDICAL)
 	racial_implants = (/obj/item/organ_module/active/simple/opifex_pouch)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_BIO = 3, STAT_MEC = 3)
 
 /datum/category_item/setup_option/background/ancestry/opifexcombattech
 	name = "Combat Technician"
@@ -53,11 +39,4 @@
 	perks = list(PERK_OPIFEX_COMBAT)
 	racial_implants = (/obj/item/organ_module/active/simple/opifex_pouch)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_VIG = 3, STAT_MEC = 3)

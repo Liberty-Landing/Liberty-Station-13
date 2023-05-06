@@ -5,13 +5,17 @@
 	desc = "You used to work in the labour sector as a miner, janitor or anything else you could think of. \
 	This made you stronger and skilled at practical things but not very smart."
 
-	stat_modifiers = list(
-		STAT_ROB = 10,
-		STAT_TGH = 5,
-		STAT_BIO = -10,
-		STAT_MEC = 10,
-		STAT_COG = -10
-	)
+	stat_modifiers = list(STAT_ROB = 10, STAT_TGH = 5, STAT_BIO = -20, STAT_MEC = 10)
+
+/datum/category_item/setup_option/background/path/paper_worm
+	name = "Paper Worm"
+	desc = "You were a clerk and bureaucrat for all your life. Cramped offices with angry people is where your personality was forged. \
+			Coffee is your blood, your mind is corporate slogans, and personal life is nonexistent. \
+			But here you are, on a spaceship flying to hell. There is something more to you, something that may come to light later."
+
+	perks = list(PERK_PAPER_WORM)
+
+	stat_modifiers = list(STAT_ROB = -10, STAT_TGH = -10, STAT_BIO = -10, STAT_MEC = -10, STAT_VIG = -10, STAT_COG = -10)
 
 /datum/category_item/setup_option/background/path/medtech //This should be both civilian and military to cut down on the amount paths available
 	name = "Former Medical Technician"
@@ -20,13 +24,7 @@
 
 	perks = list(PERK_MEDICAL_EXPERT)
 
-	stat_modifiers = list(
-		STAT_ROB = -5,
-		STAT_TGH = -5,
-		STAT_BIO = 10,
-		STAT_MEC = -10,
-		STAT_COG = 5
-	)
+	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_BIO = 10, STAT_MEC = -10,STAT_COG = 5)
 
 /datum/category_item/setup_option/background/path/criminal //Former pirate is to be considered merged under this.
 	name = "Former Criminal"
@@ -35,13 +33,7 @@
 
 	perks = list(PERK_ATHLETE)
 
-	stat_modifiers = list(
-		STAT_ROB = 5,
-		STAT_TGH = 5,
-		STAT_VIG = 5,
-		STAT_MEC = -5,
-		STAT_COG = -15
-	)
+	stat_modifiers = list(STAT_ROB = 5, STAT_TGH = 5, STAT_VIG = 5, STAT_MEC = -20)
 
 /datum/category_item/setup_option/background/path/armed_forces //All ex militaries merged under here, also applies to cops like this.
 	name = "Former Armed Forces Member"
@@ -50,14 +42,7 @@
 
 	perks = list(PERK_VETERAN)
 
-	stat_modifiers = list(
-		STAT_ROB = 5,
-		STAT_TGH = 10,
-		STAT_VIG = 10,
-		STAT_BIO = -10,
-		STAT_MEC = -10,
-		STAT_COG = -10
-	)
+	stat_modifiers = list(STAT_ROB = 5, STAT_TGH = 10, STAT_VIG = 10, STAT_BIO = -15, STAT_MEC = -15)
 
 /datum/category_item/setup_option/background/path/mercenary //different from armoed forces member, get perk but less points is the idea here
 	name = "Retired Mercenary"
@@ -66,25 +51,16 @@
 
 	perks = list(PERK_MERCENARY_GRIT)
 
-	stat_modifiers = list(
-		STAT_TGH = 10,
-		STAT_VIG = 5,
-		STAT_BIO = -10,
-		STAT_COG = -10
-	)
+	stat_modifiers = list(STAT_TGH = 10, STAT_VIG = 5, STAT_BIO = -15, STAT_MEC = -5)
 
 /datum/category_item/setup_option/background/path/entrepreneur
 	name = "Free Market Shark"
 	desc = "You were or perhaps still are an investor and entrepreneur. \
-	This leaves you proficient at tellin what is valuable or not."
+	This leaves you with extra income from other sources."
 
-	perks = list(PERK_MARKET_PROF) //You have defended the free market one too many times Harry, you are getting political again.
+	perks = list(PERK_NEPOTISM) //You have defended the free market one too many times Harry, you are getting political again.
 
-	stat_modifiers = list(
-		STAT_ROB = -5,
-		STAT_VIG = -5,
-		STAT_COG = 10
-	)
+	stat_modifiers = list(STAT_ROB = -5, STAT_VIG = -5, STAT_COG = 10)
 
 /datum/category_item/setup_option/background/path/noble
 	name = "Impoverished Noble"
@@ -93,14 +69,7 @@
 
 	perks = list(PERK_NOBLE)
 
-	stat_modifiers = list(
-		STAT_ROB = -5,
-		STAT_TGH = -5,
-		STAT_VIG = -10,
-		STAT_BIO = 5,
-		STAT_MEC = 5,
-		STAT_COG = 10
-	)
+	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -10, STAT_BIO = 5, STAT_MEC = 5, STAT_COG = 10)
 
 /datum/category_item/setup_option/background/path/drug_addict
 	name = "Magnesium-Modus Vivendi"
@@ -108,14 +77,8 @@
 	You can sustain more drugs within your system but get easily addicted." //conducit proclivitas
 
 	perks = list(PERK_ADDICT)
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR)
 
-	stat_modifiers = list(
-		STAT_TGH = 5,
-		STAT_MEC = -5,
-		STAT_COG = -15,
-		STAT_VIV = 10
-	)
+	stat_modifiers = list(STAT_TGH = 5, STAT_MEC = -5, STAT_COG = -15, STAT_VIV = 10)
 
 /datum/category_item/setup_option/background/path/razor_maniac
 	name = "Rookie Transhumanist"
@@ -124,9 +87,34 @@
 
 	racial_implants = (/obj/item/organ_module/active/simple/wolverine)
 
-	stat_modifiers = list(
-		STAT_ROB = 15,
-		STAT_TGH = -10,
-		STAT_VIG = 5,
-		STAT_MEC = -10
-	)
+	stat_modifiers = list(STAT_ROB = 15, STAT_TGH = -10, STAT_VIG = 5, STAT_MEC = -10)
+
+/datum/category_item/setup_option/background/path/linguist
+	name = "Aspiring Linguist"
+	desc = "Be it from your education or from a multi-lingual family, you've found yourself studying languages non-stop throughout your childhood and early adulthood. \
+	Unlike most you're silver-tongued in both your knowledge of English, your secondary or native language - and your tertiary! \
+	Being tri-lingual has its upsides, making you an adept trader of sorts. Though its downside is that you may have not studied as hard as some others have in other subjects."
+
+	perks = list(PERK_LINGUIST)
+
+/datum/category_item/setup_option/background/path/chainsmoker
+	name = "Terminal Smoker"
+	desc = "Nicotine is way of life, nicotine is love, nicotine is your lifeline, without it you wouldn't be whole.\
+	Due to genetic predisposition acquired through generations or a gene therapy you are now partially related to tobacco!\
+	This means you can inexplicably mend small wounds via consumption of cigarettes or cigars."
+
+	perks = list(PERK_CUBAN_DELIGHT)
+
+	stat_modifiers = list(STAT_TGH = -10, STAT_VIV = 10)
+
+/*
+/datum/category_item/setup_option/background/habit/psi_sufficiency
+	name = "Enlightened Scholar"
+	desc = "Due to rigorious studies and self-critique you have learned to master your psionic potential beyond what most can muster. \
+	Your mind is in perfect balance with little being able to tilt it's scales downwards.\
+	As such certain disciplines are way easier to use for you with smaller chance of violently backfiring."
+
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
+	perks = list(PERK_PSI_ATTUNEMENT)
+	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5)
+*/
