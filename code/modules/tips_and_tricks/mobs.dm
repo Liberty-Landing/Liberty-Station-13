@@ -1,7 +1,7 @@
 // This file contains all mobs tips and tricks and shown when you spawn or your mind is transfered
 /tipsAndTricks/mobs
     var/list/mobs_list       //list of mobs to which tip can be shown
-    var/list/species_that_we_are    //list of second languages, hack to make chtmant based tipsAndTricks
+    var/list/species_that_we_are    //list of second languages, hack to make chtmant based tipsAndTricks - Doesn't actually work me when.
     textColor = "#957820"
 
 /tipsAndTricks/mobs/breathing
@@ -32,6 +32,3 @@
     mobs_list = list(/mob/living/carbon/human)
     species_that_we_are = list(/datum/species/chtmant)
     tipText = "As a cht'mant, you can check yourself and feel if something is wrong, often times alerting you to toxin damage you would otherwise not feel due to your pain immunity."
-
-
-

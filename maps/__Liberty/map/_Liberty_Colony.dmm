@@ -6432,6 +6432,7 @@
 	name = "Mech Bay"
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/liberty/rnd/robotics)
 "bMw" = (
@@ -15684,7 +15685,7 @@
 /area/liberty/dungeon/outside/campground)
 "efZ" = (
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/winebarrel,
+/obj/structure/reagent_dispensers/cahorsbarrel,
 /obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
 /obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
 /turf/simulated/floor/carpet,
@@ -25291,10 +25292,6 @@
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest)
 "gND" = (
-/obj/machinery/door/blast/regular{
-	id = "shop_armory_blast_door";
-	name = "Armory Shop"
-	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
@@ -25303,6 +25300,15 @@
 	},
 /obj/machinery/door/firedoor/multi_tile{
 	dir = 2
+	},
+/obj/machinery/door/airlock/multi_tile/glass{
+	dir = 2;
+	name = "Marshals Brig";
+	req_one_access = list(63)
+	},
+/obj/machinery/door/blast/regular{
+	id = "shop_armory_blast_door";
+	name = "Armory Shop"
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/security/armoryshop)
@@ -58693,6 +58699,12 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/button/remote/blast_door{
+	id = "shop_armory_blast_door";
+	name = "Armory Shop Blast Doors";
+	pixel_y = 32;
+	req_access = list(3)
+	},
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "pWz" = (
@@ -63956,17 +63968,12 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/maintenance/undergroundfloor1east)
 "rtS" = (
+/obj/machinery/door/firedoor/multi_tile{
+	dir = 2
+	},
 /obj/machinery/door/blast/regular{
 	id = "shop_armory_blast_door";
 	name = "Armory Shop"
-	},
-/obj/machinery/door/airlock/multi_tile/glass{
-	dir = 2;
-	name = "Marshals Brig";
-	req_one_access = list(63)
-	},
-/obj/machinery/door/firedoor/multi_tile{
-	dir = 2
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/liberty/security/armoryshop)
@@ -74920,7 +74927,7 @@
 /area/liberty/engineering/engine_room)
 "unb" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/reagent_dispensers/winebarrel,
+/obj/structure/reagent_dispensers/cahorsbarrel,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/bonfire/storage)
 "unl" = (
