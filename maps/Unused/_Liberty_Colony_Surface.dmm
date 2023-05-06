@@ -9810,7 +9810,7 @@
 /area/liberty/absolutism/vectorrooms)
 "eTq" = (
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /turf/simulated/floor/carpet,
 /area/liberty/absolutism/vectorrooms)
 "eTr" = (
@@ -11409,7 +11409,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "gzA" = (
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/absolutism/storage)
@@ -16016,7 +16016,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "kUJ" = (
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /obj/machinery/light,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -19308,7 +19308,7 @@
 	dir = 1
 	},
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "ovK" = (
@@ -28358,7 +28358,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
 "xef" = (
@@ -29220,7 +29220,7 @@
 	pixel_x = 28
 	},
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/command/prime)
 "ygT" = (

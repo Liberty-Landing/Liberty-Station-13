@@ -36579,7 +36579,7 @@
 /area/liberty/medical/genetics)
 "iyo" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/absolutism/bioreactor)
 "iyt" = (
@@ -65600,7 +65600,7 @@
 /area/liberty/outside/bcave)
 "peU" = (
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /obj/machinery/camera/network/church,
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/chapel)
@@ -66345,7 +66345,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /obj/machinery/holoposter{
 	pixel_y = 32
 	},
@@ -67732,7 +67732,7 @@
 /area/liberty/maintenance/undergroundfloor1north)
 "pDl" = (
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /obj/machinery/light,
 /obj/machinery/alarm{
 	dir = 1;
@@ -103831,7 +103831,7 @@
 /area/liberty/outside/forest)
 "xLx" = (
 /obj/structure/table/woodentable,
-/obj/structure/reagent_dispensers/cahorsbarrel,
+/obj/structure/reagent_dispensers/winebarrel,
 /obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
 /obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
 /obj/machinery/camera/network/church{
