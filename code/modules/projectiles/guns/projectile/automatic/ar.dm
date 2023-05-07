@@ -36,6 +36,24 @@
 		)
 	serial_type = "ML"
 
+/obj/item/gun/projectile/automatic/federalist/update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if(ammo_magazine)
+		add_overlay("_mag[ammo_magazine.max_ammo]")
+	else
+		cut_overlays()
+		return
+
+	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
+		iconstring += "_slide"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
+
 /obj/item/gun/projectile/automatic/federalist/sawn
 	name = "sawn-off \"Federalist\" carbine"
 	desc = "This gun was fine. Was.. You know for a fact Terran Federal Police would have a field day with this gun."
