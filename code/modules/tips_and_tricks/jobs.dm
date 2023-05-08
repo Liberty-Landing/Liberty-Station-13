@@ -186,10 +186,6 @@
 	jobs_list = list(JOBS_MEDICAL)
 	tipText = "You can grind roach meat on your industrial grinder for useful chemicals. Blattedin and Diplopterum can be obtained from almost every roach, while you can get Seligitillin from Seuche roaches, Gewaltine from Jagers, Starkellin from Panzers, and Fuhrerole from Fuhrers."
 
-/tipsAndTricks/jobs/birb
-	jobs_list = list(JOBS_MEDICAL)
-	tipText = "Opifex breathe Nitrogen and are poisoned by Oxygen. By no means you should ever try and remove their special masks, not even for anesthesics. If you must perform surgery on one, administer either strong enough painkillers via injection or pills, or soporifics to avoid them suffering through the procedure."
-
 /tipsAndTricks/jobs/overdose
 	jobs_list = list(JOBS_MEDICAL)
 	tipText = "Overdosing will cause adverse (and even lethal) effects to the patient until every single unit of the overdosing chemical is purged from their body. To treat overdose, first purge the overdosing chemical via Dyalisis or Stomach Pump on a Sleeper, or utilize 1u of Haloperidol for blood and Carbon pills for stomach. Only when it's all gone, treat the damage caused by it."

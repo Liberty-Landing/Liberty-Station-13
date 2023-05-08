@@ -299,82 +299,20 @@
 	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/Union
-	name = "Union's gas mask"
+	name = "union's gas mask"
 	desc = "An industrial gas mask bearing the colors of the Terra-Therma Union."
 	icon_state = "gas_guild" // Sprites by Ezoken/Dromkii
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 60, rad = 80)
 	is_alts = FALSE
 
 /obj/item/clothing/mask/gas/guild_rebreather
-	name = "Union's rebreather"
+	name = "union's rebreather"
 	desc = "An industrial gas mask bearing the colors of the Terra-Therma Union."
 	icon_state = "bane_guild" // Sprites by Ezoken/Dromkii
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 30, rad = 40) // Half coverage, half bonuses.
 	flags_inv = BLOCKFACEHAIR
 	body_parts_covered = FACE
 	is_alts = FALSE
-
-/obj/item/clothing/mask/gas/opifex
-	name = "opifex gas mask"
-	desc = "An archaic gas mask used commonly by opifex to filter out oxygen and other biohazards. They'll slowly die without wearing this, as will any other race that dons this mask."
-	icon_state = "gas_mask_opi"
-	item_state = "gas_mask_opi"
-	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 80, rad = 0)
-	filtered_gases = list("plasma", "sleeping_agent", "oxygen")
-	var/mask_open = FALSE	// Controls if the Opifex can eat through this mask
-	action_button_name = "Toggle Feeding Port"
-	is_alts = FALSE
-
-/obj/item/clothing/mask/gas/opifex/proc/feeding_port(mob/user)
-	if(user.canmove && !user.stat)
-		mask_open = !mask_open
-		if(mask_open)
-			body_parts_covered = EYES
-			to_chat(user, "Your mask moves to allow you to eat.")
-		else
-			body_parts_covered = FACE|EYES
-			to_chat(user, "Your mask moves to cover your mouth.")
-	return
-
-/obj/item/clothing/mask/gas/opifex/attack_self(mob/user)
-	feeding_port(user)
-	..()
-
-/obj/item/clothing/mask/gas/opifex/alt_mask
-	name = "opifex gas mask"
-	desc = "An archaic gas mask is used commonly by opifex to filter out oxygen and other biohazards. This one is outfitted to more long beaks."
-	icon_state = "gas_mask_opi_san"
-	item_state = "gas_mask_opi_san"
-
-/obj/item/clothing/mask/opifex_no_mask
-	name = "opifex gas synthetizer"
-	desc = "A newly advanced gas synthesizer is used commonly by opifex to filter oxygen from their lungs, being able to feed and eat any moment they wish with their beak exposed. They'll slowly die without wearing this, as will any other race that uses this device."
-	icon_state = "gas_mask_free_beak"
-	item_state = "gas_mask_free_beak"
-	armor_list = list(melee = 2, bullet = 2, energy = 7, bomb = 5, bio = 0, rad = 15)
-	var/list/filtered_gases = list("plasma", "sleeping_agent", "oxygen")
-	var/gas_filter_strength = 1			//For gas mask filters
-	item_flags = AIRTIGHT
-	w_class = ITEM_SIZE_SMALL
-	body_parts_covered = EYES //We only care about the eyes.
-	cold_protection = 0.5 //Instead of giving gas protection, it gives you other types of protection
-	heat_protection = 0.5
-	gas_transfer_coefficient = 0.001
-	permeability_coefficient = 0.001
-	siemens_coefficient = 0.001
-
-/obj/item/clothing/mask/opifex_no_mask/filter_air(datum/gas_mixture/air)
-	var/datum/gas_mixture/filtered = new
-
-	for(var/g in filtered_gases)
-		if(air.gas[g])
-			filtered.gas[g] = air.gas[g] * gas_filter_strength
-			air.gas[g] -= filtered.gas[g]
-
-	air.update_values()
-	filtered.update_values()
-
-	return filtered
 
 /obj/item/clothing/mask/gas/bigguy/sleekguy
 	name = "sleek grey rebreather"

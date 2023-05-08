@@ -592,9 +592,6 @@
 /obj/item/paper/yassari
 	language = LANGUAGE_YASSARI
 
-/obj/item/paper/opifex
-	language = LANGUAGE_OPIFEXEE
-
 /obj/item/paper/romana
 	language = LANGUAGE_ROMANA
 

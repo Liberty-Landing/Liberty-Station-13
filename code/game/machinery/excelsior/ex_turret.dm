@@ -151,7 +151,7 @@
 
 
 //Guild brand auto turrets.
-/obj/machinery/porta_turret/Union
+/obj/machinery/porta_turret/union
 	icon = 'icons/obj/machines/excelsior/turret.dmi'
 	name = "Union turret"
 	desc = "A fully automated battery powered self-repairing anti-wildlife turret platform built by the Terra-Therma Union. It features a three round burst fire automatic and an integrated \
@@ -174,43 +174,43 @@
 	idle_power_usage = 1
 	active_power_usage = 1
 
-/obj/machinery/porta_turret/Union/auto_use_power()
+/obj/machinery/porta_turret/union/auto_use_power()
 	if(disabled)
 		return
 
-/obj/machinery/porta_turret/Union/powered(chan=1)
+/obj/machinery/porta_turret/union/powered(chan=1)
 	if (cell?.check_charge(1))
 		cell.charge = cell.charge - 1
 		return TRUE
 	return FALSE
 
-/obj/machinery/porta_turret/Union/use_power(amount, chan=1, autocalled)
+/obj/machinery/porta_turret/union/use_power(amount, chan=1, autocalled)
 	return cell?.checked_use(amount)
 
-/obj/machinery/porta_turret/Union/examine(mob/user)
+/obj/machinery/porta_turret/union/examine(mob/user)
 	if(!..(user, 2))
 		return
 	to_chat(user, "There [(ammo == 1) ? "is" : "are"] [ammo] round\s left!")
 	if(!powered())
 		to_chat(user, "Seems to be powered down. The battery must be dead.")
 
-/obj/machinery/porta_turret/Union/Initialize()
+/obj/machinery/porta_turret/union/Initialize()
 	. = ..()
 	update_icon()
 
-/obj/machinery/porta_turret/Union/setup()
+/obj/machinery/porta_turret/union/setup()
 	var/obj/item/ammo_casing/AM = initial(ammo_box.ammo_type)
 	projectile = initial(AM.projectile_type)
 	eprojectile = projectile
 	shot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 	eshot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 
-/obj/machinery/porta_turret/Union/isLocked(mob/user)
+/obj/machinery/porta_turret/union/isLocked(mob/user)
 	if(ishuman(user))
 		return 0
 	return 1
 
-/obj/machinery/porta_turret/Union/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
+/obj/machinery/porta_turret/union/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
 	var/data[0]
 	data["access"] = !isLocked(user)
 	data["locked"] = locked
@@ -226,17 +226,17 @@
 		ui.open()
 		ui.set_auto_update(1)
 
-/obj/machinery/porta_turret/Union/Topic(href, href_list)
+/obj/machinery/porta_turret/union/Topic(href, href_list)
 	if(href_list["command"] == "eject_cell")
 		cell.forceMove(src.loc)
 		cell = null
 		return 1
 	.=..()
 
-/obj/machinery/porta_turret/Union/HasController()
+/obj/machinery/porta_turret/union/HasController()
 	return FALSE
 
-/obj/machinery/porta_turret/Union/attackby(obj/item/I, mob/user)
+/obj/machinery/porta_turret/union/attackby(obj/item/I, mob/user)
 	if (user.a_intent == I_HELP)
 		if(stat & BROKEN)
 			if(QUALITY_PRYING in I.tool_qualities)
@@ -322,7 +322,7 @@
 	else
 		..()
 
-/obj/machinery/porta_turret/Union/Process()
+/obj/machinery/porta_turret/union/Process()
 	if(!powered())
 		disabled = TRUE
 		popDown()
@@ -331,7 +331,7 @@
 		disabled = FALSE
 	..()
 
-/obj/machinery/porta_turret/Union/assess_living(mob/living/L)
+/obj/machinery/porta_turret/union/assess_living(mob/living/L)
 	if(!istype(L))
 		return TURRET_NOT_TARGET
 
@@ -364,12 +364,12 @@
 
 	return TURRET_PRIORITY_TARGET	//if the perp has passed all previous tests, congrats, it is now a "shoot-me!" nominee
 
-/obj/machinery/porta_turret/Union/tryToShootAt()
+/obj/machinery/porta_turret/union/tryToShootAt()
 	if(!ammo)
 		return FALSE
 	..()
 
-/obj/machinery/porta_turret/Union/shootAt(var/mob/living/target)
+/obj/machinery/porta_turret/union/shootAt(var/mob/living/target)
 	var/turf/T = get_turf(src)
 	var/turf/U = get_turf(target)
 	if(!istype(T) || !istype(U))
@@ -385,117 +385,22 @@
 	launch_projectile(target)
 
 // this turret has no cover, it is always raised
-/obj/machinery/porta_turret/Union/popUp()
+/obj/machinery/porta_turret/union/popUp()
 	raised = TRUE
 
-/obj/machinery/porta_turret/Union/popDown()
+/obj/machinery/porta_turret/union/popDown()
 	last_target = null
 	raised = TRUE
 
-/obj/machinery/porta_turret/Union/update_icon()
+/obj/machinery/porta_turret/union/update_icon()
 	cut_overlays()
 
 	if(!(stat & BROKEN))
 		add_overlay(image("turret_gun_art"))
 
-/obj/machinery/porta_turret/Union/launch_projectile()
+/obj/machinery/porta_turret/union/launch_projectile()
 	ammo--
 	..()
-
-/obj/machinery/porta_turret/Union/opifex
-	name = "opifex scrap turret"
-	desc = "A fully automated battery powered anti-wildlife turret designed by the opifex. It features a three round burst barrel and isn't as sturdy nor as functional as other turrets. Fires 7.62mm rounds and holds only a measly 30 rounds."
-	circuit = /obj/item/circuitboard/artificer_turret/opifex
-	ammo_max = 30
-	health = 75
-
-/obj/machinery/porta_turret/Union/opifex/attackby(obj/item/I, mob/user)
-	if (user.a_intent != I_HURT)
-		if(stat & BROKEN)
-			if(QUALITY_PRYING in I.tool_qualities)
-				//If the turret is destroyed, you can remove it with a crowbar to
-				//try and salvage its components
-				to_chat(user, SPAN_NOTICE("You begin prying the metal coverings off."))
-				if(do_after(user, 20, src))
-					if(prob(70))
-						to_chat(user, SPAN_NOTICE("You remove the turret and salvage some components."))
-						if(prob(50))
-							new /obj/item/circuitboard/artificer_turret/opifex(loc)
-						if(prob(50))
-							new /obj/item/stack/material/steel(loc, rand(1,4))
-						if(prob(50))
-							new /obj/item/device/assembly/prox_sensor(loc)
-					else
-						to_chat(user, SPAN_NOTICE("You remove the turret but did not manage to salvage anything."))
-					qdel(src) // qdel
-
-		else if(QUALITY_BOLT_TURNING in I.tool_qualities)
-			if(enabled)
-				to_chat(user, SPAN_WARNING("You cannot unsecure an active turret!"))
-				return
-			if(!anchored && isinspace())
-				to_chat(user, SPAN_WARNING("Cannot secure turrets in space!"))
-				return
-
-			user.visible_message( \
-					"<span class='warning'>[user] begins [anchored ? "un" : ""]securing the turret.</span>", \
-					"<span class='notice'>You begin [anchored ? "un" : ""]securing the turret.</span>" \
-				)
-
-			if(do_after(user, 50, src))
-				//This code handles moving the turret around. After all, it's a portable turret!
-				if(!anchored)
-					playsound(loc, 'sound/items/Ratchet.ogg', 100, 1)
-					anchored = TRUE
-					update_icon()
-					to_chat(user, SPAN_NOTICE("You secure the exterior bolts on the turret."))
-					if(disabled)
-						spawn(200)
-							disabled = FALSE
-				else if(anchored)
-					if(disabled)
-						to_chat(user, SPAN_NOTICE("The turret is still recalibrating. Wait some time before trying to move it."))
-						return
-					playsound(loc, 'sound/items/Ratchet.ogg', 100, 1)
-					anchored = 0
-					disabled = TRUE
-					to_chat(user, SPAN_NOTICE("You unsecure the exterior bolts on the turret."))
-					update_icon()
-			wrenching = 0
-
-		else if(istype(I, /obj/item/cell/large))
-			if(cell)
-				to_chat(user, "<span class='notice'>\the [src] already has a cell.</span>")
-			else
-				user.unEquip(I)
-				I.forceMove(src)
-				cell = I
-				to_chat(user, "<span class='notice'>You install a cell in \the [src].</span>")
-
-		else if(istype(I, ammo_box) && I?:stored_ammo?:len)
-			var/obj/item/ammo_magazine/A = I
-			if(ammo >= ammo_max)
-				to_chat(user, SPAN_NOTICE("You cannot load more than [ammo_max] ammo."))
-				return
-
-			var/transfered_ammo = 0
-			for(var/obj/item/ammo_casing/AC in A.stored_ammo)
-				A.stored_ammo -= AC
-				qdel(AC)
-				ammo++
-				transfered_ammo++
-				if(ammo == ammo_max)
-					break
-			to_chat(user, SPAN_NOTICE("You loaded [transfered_ammo] bullets into [src]. It now contains [ammo] ammo."))
-
-	else
-		..()
-
-/obj/machinery/porta_turret/Union/opifex/update_icon()
-	cut_overlays()
-
-	if(!(stat & BROKEN))
-		add_overlay(image("turret_gun_opi"))
 
 #undef TURRET_PRIORITY_TARGET
 #undef TURRET_SECONDARY_TARGET

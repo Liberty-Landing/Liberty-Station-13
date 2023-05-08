@@ -34,7 +34,6 @@
 
 //Alein / Species specific langauges.
 #define LANGUAGE_ROBOT 		"Robot Talk"
-#define LANGUAGE_OPIFEXEE 	"Opifexee"
 #define LANGUAGE_CHTMANT 	"Chthive"
 #define LANGUAGE_KRIOSAN 	"Kriosan"
 #define LANGUAGE_AKULA		"Akula"

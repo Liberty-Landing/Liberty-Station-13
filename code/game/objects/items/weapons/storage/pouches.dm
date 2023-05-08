@@ -57,12 +57,6 @@
 	item_state = "medium leather"
 	price_tag = 500
 
-/obj/item/storage/pouch/medium_generic/opifex
-	name = "opifex smuggle pouch"
-	desc = "Can hold nearly anything in it, but only a moderate amount. Made by the opifex, for the opifex."
-	icon_state = "medium_opifex"
-	item_state = "medium_opifex"
-
 /obj/item/storage/pouch/large_generic
 	name = "large generic pouch"
 	desc = "A mini satchel. Can hold a fair bit, but it won't fit in your pocket"
@@ -204,7 +198,6 @@
 		/obj/item/cell/medium,
 		/obj/item/cell/small,
 		/obj/item/tank/emergency_oxygen,
-		/obj/item/tank/emergency_nitgen,
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare,
 		/obj/item/ammo_casing/shotgun,
@@ -435,7 +428,6 @@
 		/obj/item/weldpack/canister,
 		/obj/item/cell/medium,
 		/obj/item/tank/emergency_oxygen,
-		/obj/item/tank/emergency_nitgen,
 		/obj/item/device/lighting/toggleable/flashlight,
 		/obj/item/reagent_containers/food/snacks/openable/tastybread,
 		/obj/item/reagent_containers/food/snacks/baguette,

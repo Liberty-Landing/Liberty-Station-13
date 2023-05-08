@@ -84,30 +84,6 @@
 	shorthand = "N/A"
 	has_written_form = FALSE	//Hiveminds don't get a written language.
 
-//Opifex racial language. Lore: Literally vox clone. Some intelligibility with Yassari because it's a nomadic based trade-tongue language.
-/datum/language/vox
-	name = LANGUAGE_OPIFEXEE
-	desc = "The chants of the opifex, the incomprehensible garbling of birds."
-	speech_verb = list("squawks")
-	ask_verb = list("chirps")
-	exclaim_verb = list("screeches")
-	colour = "cult"
-	key = "f"
-	flags = RESTRICTED
-	partial_understanding = list(
-		LANGUAGE_YASSARI = 20
-	)
-	space_chance = 100
-	has_written_form = TRUE
-	syllables = list("ire","ego","nahlizet","certum","veri","jatkaa","mgar","balaq", "karazet", "geeri", \
-		"orkan", "allaq", "sas'so", "c'arta", "forbici", "tarem", "n'ath", "reth", "sh'yro", "eth", "d'raggathnor", \
-		"mah'weyh", "pleggh", "at", "e'ntrath", "tok-lyr", "rqa'nap", "g'lt-ulotf", "ta'gh", "fara'qha", "fel", "d'amar det", \
-		"yu'gular", "faras", "desdae", "havas", "mithum", "javara", "umathar", "uf'kal", "thenar", "rash'tla", \
-		"sektath", "mal'zua", "zasan", "therium", "viortia", "kla'atu", "barada", "nikt'o", "fwe'sh", "mah", "erl", "nyag", "r'ya", \
-		"gal'h'rfikk", "harfrandid", "mud'gib", "fuu", "ma'jin", "dedo", "ol'btoh", "n'ath", "reth", "sh'yro", "eth", \
-		"d'rekkathnor", "khari'd", "gual'te", "nikka", "nikt'o", "barada", "kla'atu", "barhah", "hra" ,"zar'garis")
-	shorthand = "N/A"
-
 //Kriosan racial language. Lore: German creolization due to Sol-Gov occupation; therefor intelligibility with German.
 /datum/language/kriosan
 	name = LANGUAGE_KRIOSAN

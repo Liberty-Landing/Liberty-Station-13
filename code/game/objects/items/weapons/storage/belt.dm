@@ -164,48 +164,6 @@
 	new /obj/item/stack/cable_coil/random(src)
 	new /obj/item/tool/saw/improvised(src)
 
-/obj/item/storage/belt/utility/opifex
-	name = "opifex black tool webbing"
-	desc = "A black webbing made specifically for opifex to prevent any pulling or ruffling of feathers, slightly uncomfortable for anyone else but none can deny its quality. This harness is built specifically for tools, limiting its versatility."
-	icon_state = "webbing_black"
-	item_state = "webbing_black"
-	storage_slots = 12
-
-/obj/item/storage/belt/utility/opifex/full/populate_contents()
-	new /obj/item/tool/crowbar/pneumatic(src)
-	new /obj/item/tool/hammer/deadblow(src)
-	new /obj/item/tool/multitool/advanced(src)
-	new /obj/item/tool/saw/circular/advanced(src)
-	new /obj/item/tool/screwdriver/electric(src)
-	new /obj/item/stack/cable_coil/random(src)
-	new /obj/item/tool/shovel/power(src)
-	new /obj/item/tool/tape_roll/fiber(src)
-	new /obj/item/tool/weldingtool/advanced(src)
-	new /obj/item/tool/wirecutters/armature(src)
-	new /obj/item/tool/wrench/big_wrench(src)
-	new /obj/item/tool/knife/dagger(src)
-
-/obj/item/storage/belt/medical/opifex
-	name = "opifex black medical webbing"
-	desc = "A black webbing made specifically for opifex to prevent any pulling or ruffling of feathers, slightly uncomfortable for anyone else but none can deny its quality. This harness is built specifically for medical supplies, limiting its versatility."
-	icon_state = "webbing_black"
-	item_state = "webbing_black"
-	storage_slots = 12
-
-/obj/item/storage/belt/medical/opifex/full/populate_contents()
-	new /obj/item/device/scanner/health(src)
-	new /obj/item/reagent_containers/syringe/large/chronos(src)
-	new /obj/item/reagent_containers/syringe/large/tricordrazine(src)
-	new /obj/item/reagent_containers/syringe/large/inaprovaline(src)
-	new /obj/item/storage/pill_bottle/tramadol(src)
-	new /obj/item/storage/pill_bottle/prosurgeon(src)
-	new /obj/item/storage/pill_bottle/bicaridine(src)
-	new /obj/item/storage/pill_bottle/dermaline(src)
-	new /obj/item/storage/pill_bottle/dexalin_plus(src)
-	new /obj/item/storage/pill_bottle/antitox(src)
-	new /obj/item/bodybag/cryobag(src)
-	new /obj/item/extinguisher/mini(src)
-
 /obj/item/storage/belt/medical
 	name = "medical belt"
 	desc = "Can hold various medical equipment."
@@ -370,24 +328,6 @@
 	new /obj/item/grenade/flashbang(src)
 	new /obj/item/grenade/chem_grenade/teargas(src)
 	new /obj/item/grenade/frag/stinger(src)
-
-/obj/item/storage/belt/security/tactical/opifex
-	name = "opifex tactical belt"
-	desc = "A black tactical belt made specifically for opifex to prevent any pulling or ruffling of feathers, slightly uncomfortable for anyone else but none can deny its quality. This harness is built specifically for combat, limiting its versatility."
-
-/obj/item/storage/belt/security/tactical/opifex/full/populate_contents()
-	new /obj/item/reagent_containers/spray/pepper(src)
-	new /obj/item/tool/crowbar(src)
-	new /obj/item/device/flash(src)
-	new /obj/item/device/lighting/toggleable/flashlight/heavy(src)
-	new /obj/item/gun/energy/gun(src)
-	new /obj/item/cell/medium/high(src)
-	new /obj/item/cell/medium/high(src)
-	new /obj/item/tool/knife/dagger/assassin(src)
-	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
-	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
-	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/chem_grenade/teargas(src)
 
 /obj/item/storage/belt/security/neotheology
 	name = "Bonfire tactical belt"

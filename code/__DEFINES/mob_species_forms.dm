@@ -79,7 +79,6 @@
 #define FORM_AKULA				"Akula"
 #define FORM_CHTMANT			"Cht'mant"
 #define FORM_CINDAR				"Cindarite"
-#define FORM_OPIFEX				"Opifex"
 #define FORM_AXOLOTL			"Axolotl"
 
 #define FORM_BIRD				"Avian"

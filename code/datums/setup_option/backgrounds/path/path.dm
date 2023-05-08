@@ -114,7 +114,7 @@
 	Your mind is in perfect balance with little being able to tilt it's scales downwards.\
 	As such certain disciplines are way easier to use for you with smaller chance of violently backfiring."
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 	perks = list(PERK_PSI_ATTUNEMENT)
 	stat_modifiers = list(STAT_ROB = -5, STAT_TGH = -5, STAT_VIG = -5)
 */

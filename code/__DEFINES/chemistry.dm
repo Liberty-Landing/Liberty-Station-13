@@ -45,7 +45,6 @@
 #define IS_KRIOSAN 6
 #define IS_AKULA 7
 #define IS_CINDERITE 8
-#define IS_OPIFEX 9
 
 #define CE_STABLE			"stable" // Stabilizes the body in many things, preventing death in many scenarios
 #define CE_ANTIBIOTIC		"antibiotic" // Halts the stages of infection and decreases germ count, eventually eliminating infections

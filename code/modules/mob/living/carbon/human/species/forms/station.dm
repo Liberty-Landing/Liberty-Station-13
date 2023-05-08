@@ -189,13 +189,6 @@
 	deform = 'icons/mob/human_races/r_def_lizard_white.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
 
-/datum/species_form/sojvox
-	playable = FALSE
-	name = FORM_OPIFEX
-	base = 'icons/mob/human_races/r_nevrean.dmi'
-	deform = 'icons/mob/human_races/r_def_nevrean.dmi'
-	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR | DEFAULT_APPEARANCE_FLAGS
-
 /datum/species_form/axolotl
 	playable = TRUE
 	name = FORM_AXOLOTL

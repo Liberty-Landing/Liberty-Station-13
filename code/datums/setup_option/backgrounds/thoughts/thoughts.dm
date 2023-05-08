@@ -7,8 +7,6 @@
 
 	perks = list(PERK_ALCOHOLIC)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
 	stat_modifiers = list(STAT_COG = -10, STAT_TGH = 5)
 
 /datum/category_item/setup_option/background/thoughts/composure
@@ -19,8 +17,6 @@
 	It's understandable a person like you would find problems in socilizing as life has shown that relying on others shortens your lifespan."
 
 	perks = list(PERK_SURVIVOR)
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_COG = -5)
 
@@ -33,8 +29,6 @@
 
 	perks = list(PERK_REJECTED_GENIUS)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
 	stat_modifiers = list(STAT_COG = 10, STAT_ROB = -5, STAT_VIG = -5, STAT_TGH = -5)
 
 /datum/category_item/setup_option/background/thoughts/authority
@@ -45,8 +39,6 @@
 	Keep in mind however that even the most resillient people can snap and that it's not possible to help everyone."
 
 	perks = list(PERK_IDEALIST)
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_COG = -10)
 
@@ -59,8 +51,6 @@
 
 	perks = list(PERK_NIHILIST)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
-
 	stat_modifiers = list(STAT_COG = -5)
 
 /datum/category_item/setup_option/background/thoughts/hand_eye_coordination
@@ -71,8 +61,6 @@
 	But every time you fail you become stronger, determined to prove to everyone that despite all of this you are still better than them."
 
 	perks = list(PERK_KLUTZ)
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_VIG = -10, STAT_TGH = 10)
 
@@ -85,8 +73,6 @@
 	Your feet dance over most surfaces barely letting out a noise and on the off chance restraints try to wring around them, they will find it hard to stick to you."
 
 	perks = list(PERK_RAT)
-
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_VIG = 10, STAT_TGH = -15)
 
@@ -101,7 +87,7 @@
 
 	perks = list(PERK_PSI_HARMONY)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_COG = 10)
 
@@ -116,7 +102,7 @@
 
 	perks = list(PERK_PSI_MANIA)
 
-	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_OPIFEX, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
+	restricted_to_species = list(FORM_HUMAN, FORM_KRIOSAN, FORM_SABLEKYNE, FORM_AKULA, FORM_MARQUA, FORM_NARAMAD, FORM_CHTMANT, FORM_CINDAR, FORM_SLIME)
 
 	stat_modifiers = list(STAT_ROB = 10)
 */

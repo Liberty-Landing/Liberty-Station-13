@@ -17,7 +17,6 @@
 		FORM_CHTMANT,
 		FORM_CINDAR,
 		FORM_NARAMAD,
-		FORM_OPIFEX
 		)
 
 /datum/sprite_accessory/hair/bald

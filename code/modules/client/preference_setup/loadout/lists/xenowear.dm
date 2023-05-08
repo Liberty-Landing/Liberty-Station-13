@@ -1,57 +1,13 @@
-/*
-/datum/gear/xenowear/undercoat
-	display_name = "black undercoat selection"
-	path = /obj/item/clothing/under/undercoat
-	flags = GEAR_HAS_TYPE_SELECTION
-	slot = slot_w_uniform
-	sort_category = "Xenowear"
-
-/datum/gear/xenowear/overcloak
-	display_name = "black overcloak selection"
-	path = /obj/item/clothing/suit/overcloak
-	slot = slot_wear_suit
-	flags = GEAR_HAS_TYPE_SELECTION
-	sort_category = "Xenowear"
-
-/datum/gear/xenowear/undercoat_colors
-	display_name = "colored undercoat selection"
-	path = /obj/item/clothing/under/undercoat_colors
-	slot = slot_w_uniform
-	flags = GEAR_HAS_TYPE_SELECTION
-	sort_category = "Xenowear"
-
-/datum/gear/xenowear/overcloak_colors
-	display_name = "colored overcloak selection"
-	path = /obj/item/clothing/suit/overcloak_colors
-	slot = slot_wear_suit
-	flags = GEAR_HAS_TYPE_SELECTION
-	sort_category = "Xenowear"
-*/
 /datum/gear/xenowear
-	display_name = "opifex nitrogen tanks"
-	path = /obj/item/tank/emergency_nitgen
+	display_name = "toeless workboots"
+	path = /obj/item/clothing/shoes/workboots/toeless
+	slot = slot_shoes
 	sort_category = "Xenowear"
 	cost = 0
 
 /datum/gear/xenowear/marquamask
 	display_name = "marqua gill mask"
 	path = /obj/item/clothing/mask/breathxeno/marqua
-	slot = slot_wear_mask
-
-
-/datum/gear/xenowear/opifexgasmask
-	display_name = "opifex gas mask"
-	path = /obj/item/clothing/mask/gas/opifex
-	slot = slot_wear_mask
-
-/datum/gear/xenowear/opifexgasmask_long
-	display_name = "opifex long gas mask"
-	path = /obj/item/clothing/mask/gas/opifex/alt_mask
-	slot = slot_wear_mask
-
-/datum/gear/xenowear/opifexnotmask
-	display_name = "opifex gas synthetizer"
-	path = /obj/item/clothing/mask/opifex_no_mask
 	slot = slot_wear_mask
 
 /datum/gear/xenowear/penancehelm
@@ -134,12 +90,3 @@
 	display_name = "toeless jackboots"
 	path = /obj/item/clothing/shoes/jackboots/toeless
 	slot = slot_shoes
-	sort_category = "Xenowear"
-	cost = 1
-
-/datum/gear/xenowear
-	display_name = "toeless workboots"
-	path = /obj/item/clothing/shoes/workboots/toeless
-	slot = slot_shoes
-	sort_category = "Xenowear"
-	cost = 1

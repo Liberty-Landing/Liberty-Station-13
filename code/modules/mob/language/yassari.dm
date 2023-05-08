@@ -6,9 +6,6 @@
 	exclaim_verb = list("rambles")
 	colour = "yassari"
 	key = "y"
-	partial_understanding = list(
-		LANGUAGE_OPIFEXEE = 15
-	)
 	space_chance = 100
 	has_written_form = TRUE
 	shorthand = "YI"

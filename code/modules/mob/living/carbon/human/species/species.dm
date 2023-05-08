@@ -408,8 +408,6 @@
 	if(H.species.reagent_tag == IS_CHTMANT)
 		H.faction = "roach"
 		H.add_language(LANGUAGE_CHTMANT)
-	if(H.species.reagent_tag == IS_OPIFEX)
-		H.add_language(LANGUAGE_OPIFEXEE)
 	if(H.species.reagent_tag == IS_KRIOSAN)
 		H.add_language(LANGUAGE_KRIOSAN)
 	if(H.species.reagent_tag == IS_AKULA)

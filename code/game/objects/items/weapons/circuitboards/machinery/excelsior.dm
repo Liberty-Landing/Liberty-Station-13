@@ -127,8 +127,8 @@
 	)
 
 /obj/item/circuitboard/artificer_turret
-	build_name = "Union turret"
-	build_path = /obj/machinery/porta_turret/Union
+	build_name = "union turret"
+	build_path = /obj/machinery/porta_turret/union
 	board_type = "machine"
 	origin_tech = list(TECH_COMBAT = 5)
 	req_components = list(
@@ -136,15 +136,6 @@
 		/obj/item/device/assembly/prox_sensor = 1,
 	)
 
-/obj/item/circuitboard/artificer_turret/opifex
-	build_name = "opifex turret"
-	build_path = /obj/machinery/porta_turret/Union/opifex
-	board_type = "machine"
-	origin_tech = list(TECH_COMBAT = 3)
-	req_components = list(
-		/obj/item/stock_parts/manipulator = 1,
-		/obj/item/device/assembly/prox_sensor = 1,
-	)
 /*
 /obj/item/circuitboard/mindswapper
 	build_name = "mind swapper"
