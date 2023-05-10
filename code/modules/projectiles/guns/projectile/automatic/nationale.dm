@@ -94,7 +94,7 @@
 	extra_damage_mult_scoped = 0.2
 	zoom_factors = list(0.8)
 
-	gun_parts = list(/obj/item/part/gun/frame/nationale = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/nationale = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 	init_firemodes = list(
 		BURST_3_ROUND,
