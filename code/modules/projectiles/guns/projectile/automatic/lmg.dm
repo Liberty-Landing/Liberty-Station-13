@@ -154,7 +154,7 @@
 	resultvars = list(/obj/item/gun/projectile/automatic/lmg/buzzsaw, /obj/item/gun/projectile/automatic/lmg/hog)
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/machinegun
-	barrelvars = list(/obj/item/part/gun/barrel/srifle, /obj/item/part/gun/barrel/lrifle)
+	barrelvars = list(/obj/item/part/gun/barrel/srifle)
 
 /obj/item/gun/projectile/automatic/lmg/tk/update_icon()
 //	..() We are rather different than other guns and lmgs.
@@ -198,7 +198,7 @@
 	item_state = "hog"
 	fire_sound = 'sound/weapons/guns/fire/heroic_fire.ogg'
 	fire_sound_silenced = 'sound/weapons/guns/fire/silenced_mg.ogg' // Yay snowflake silenced sound!
-	caliber = CAL_RIFLE
+	caliber = CAL_SRIFLE
 	damage_multiplier = 1.2 // With full auto penalties in mind (20%) this becomes a normal x1 damage modifier.
 	penetration_multiplier = 1.0
 	init_recoil = HMG_RECOIL(0.6) // Better slap a bipod on this one! Impossible to fire steady if not braced.
@@ -210,7 +210,7 @@
 		BURST_8_ROUND,
 		FULL_AUTO_600 // Meant to be a supressive fire GPMG
 		)
-	gun_parts = list(/obj/item/part/gun/frame/buzzsaw = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	gun_parts = list(/obj/item/part/gun/frame/buzzsaw = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/machinegun = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 // Even more special than the Takeshi so we have to do this all over again instead of being a Takeshi child
 /obj/item/gun/projectile/automatic/lmg/hog/update_icon()
