@@ -42,7 +42,7 @@
 	icon_state = "frame_ak"
 	matter = list(MATERIAL_PLASTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/duty
-	gripvars = list(/obj/item/part/gun/grip/black)
+	gripvars = list(/obj/item/part/gun/grip/wood)
 	resultvars = list(/obj/item/gun/projectile/automatic/duty)
 	mechanismvar = /obj/item/part/gun/mechanism/autorifle
 	barrelvars = list(/obj/item/part/gun/barrel/srifle)
