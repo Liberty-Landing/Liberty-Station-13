@@ -309,6 +309,8 @@
 		/obj/item/device/camera,
 		/obj/item/folder,
 		/obj/item/gun/energy/taser,
+		/obj/item/clothing/head/helmet,
+		/obj/item/clothing/mask/gas,
 		/obj/item/device/binoculars // By popular demand. - Seb
 	)
 
