@@ -245,7 +245,7 @@ var/list/flooring_types
 				return
 		if(M.stats.getPerk(PERK_SURE_STEP))//You trip even with this perk if klutz or vig below 0
 			return
-		if(prob(50 - our_trippah.stats.getStat(STAT_VIG))) //50 VIG makes you unable to trip
+		if(prob(50 - our_trippah.stats.getStat(STAT_VIG)) && M.slip(null, 6)) //50 VIG makes you unable to trip
 			to_chat(our_trippah, SPAN_WARNING("You gently slam into the plating!"))
 			our_trippah.adjustBruteLoss(5)
 			our_trippah.trip(src, 6)
