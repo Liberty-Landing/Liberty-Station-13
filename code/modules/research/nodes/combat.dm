@@ -109,7 +109,7 @@
 							/datum/design/research/item/ammo/pistol_laser,
 							/datum/design/research/item/ammo/magum_laser,
 							/datum/design/research/item/ammo/rifle_75,
-							/datum/design/research/item/ammo/light_rifle_257
+							/datum/design/research/item/ammo/light_rifle_257,
 							/datum/design/research/item/robot_upgrade/bigknife,
 							/datum/design/research/item/weapon/slimebaton
 							)
