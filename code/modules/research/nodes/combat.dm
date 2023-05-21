@@ -1,6 +1,6 @@
 /datum/technology/basic_combat
 	name = "Basic Combat Systems"
-	desc = "Basic combat systems and integration of security database HUD in glasses. As well as a low power pistol"
+	desc = "Combat systems, integration of the security database as a HUD in glasses, and a low power pistol."
 	tech_type = RESEARCH_COMBAT
 
 	x = 0.1
@@ -17,7 +17,7 @@
 // TO ADD: synth flashes?
 /datum/technology/basic_nonlethal
 	name = "Basic Non-Lethal"
-	desc = "Basic Non-Lethal"
+	desc = "Flashes for non-lethal stunning of enemy combatants bug or not, alongside an auto-ejection port for magazines."
 	tech_type = RESEARCH_COMBAT
 
 	x = 0.3
@@ -41,7 +41,7 @@
 	icon = "recharger"
 
 	required_technologies = list(
-								/datum/technology/basic_combat
+								/datum/technology/basic_nonlethal //So the route can't be skipped!
 								)
 	required_tech_levels = list()
 	cost = 750
@@ -90,21 +90,9 @@
 							/datum/design/research/item/ammo/shotgun_stun
 						)
 
-/datum/technology/sst
-	name = "CAPSA Surface Tenstion Project"
-	desc = "The development of non-lethal weapons for CAPSA Medical using SR technology."
-	x = 0.6
-	y = 0.3
-	tech_type = RESEARCH_COMBAT
-	icon = "abnegate"
-	required_technologies = list(/datum/technology/advanced_nonlethal)
-	required_tech_levels = list(RESEARCH_SIMILACRUM = 3) //Likely people will get parts/cog/bots for this
-	cost = 5625
-	unlocks_designs = list()
-
 /datum/technology/basic_lethal
 	name = "Basic Lethal Weapons"
-	desc = "Chemical grenades with anti-acid coating inside and new laser based ammo."
+	desc = "Chemical grenade casings with anti-acid coating, hybrid laser and ballistic ammunition, and a xenobiology tool."
 	tech_type = RESEARCH_COMBAT
 
 	x = 0.6
@@ -116,16 +104,19 @@
 	cost = 1500
 
 	unlocks_designs = list(/datum/design/research/item/weapon/large_grenade,
+							/datum/design/research/item/ammo/shotgun_laser,
 							/datum/design/research/item/ammo/smg_mag,
 							/datum/design/research/item/ammo/pistol_laser,
 							/datum/design/research/item/ammo/magum_laser,
+							/datum/design/research/item/ammo/rifle_75,
+							/datum/design/research/item/ammo/light_rifle_257
 							/datum/design/research/item/robot_upgrade/bigknife,
 							/datum/design/research/item/weapon/slimebaton
 							)
 
 /datum/technology/exotic_weaponry
 	name = "Experimental Weaponry"
-	desc = "Remote temperature controling weapon."
+	desc = "Temperature controlling weaponry and the BASTION project."
 	tech_type = RESEARCH_COMBAT
 
 	x = 0.7
@@ -137,15 +128,14 @@
 	cost = 3750
 
 	unlocks_designs = list(/datum/design/research/item/weapon/temp_gun,
-							/datum/design/research/item/weapon/slimegun,
 							/datum/design/research/item/ammo/shotgun_fire,
-							/datum/design/research/item/ammo/shotgun_laser,
+							/datum/design/research/item/weapon/slimegun,
 							/datum/design/research/item/weapon/bastion
 							)
 
 /datum/technology/adv_exotic_weaponry
 	name = "Advanced Experimental Weaponry"
-	desc = "Specisl weapon system using plasma as catalyst. Special weapon core prototipe that deal DNA damage to target."
+	desc = "Special weapon systems that use plasma as catalyst."
 	tech_type = RESEARCH_COMBAT
 
 	x = 0.8
@@ -175,9 +165,7 @@
 	cost = 1500
 
 	unlocks_designs = list(
-							/datum/design/research/item/weapon/katana,
-							/datum/design/research/item/ammo/rifle_75,
-							/datum/design/research/item/ammo/light_rifle_257,
+							/datum/design/research/item/weapon/katana
 						)
 
 /datum/technology/exotic_gunmods
@@ -205,7 +193,7 @@
 
 /datum/technology/laser_weaponry
 	name = "Laser Weaponry"
-	desc = "Laser Weaponry"
+	desc = "A laser cannon and a nuclear particle pistol."
 	tech_type = RESEARCH_COMBAT
 
 	x = 0.9
@@ -240,7 +228,7 @@
 
 /datum/technology/advanced_armor
 	name = "Advanced Armor Designs"
-	desc = "Advanced armor designs for space or laser combat."
+	desc = "Advanced armor designs for increased efficiency in space or laser combat."
 	tech_type = RESEARCH_COMBAT
 
 	x = 0.3

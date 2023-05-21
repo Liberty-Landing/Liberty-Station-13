@@ -120,7 +120,7 @@
 
 /datum/technology/basic_medical_tools
 	name = "Basic Medical Tools"
-	desc = "Mass Spectrometry method. Experimental surgical, laser tools. Medical sensors intergrated HUD in hud-glass and large revival electrical shocks. Artificial quick dry bone gel composite."
+	desc = "Mass Spectrometry method. Experimental surgical laser tools. Medical sensors intergrated HUD in hud-glass and large revival electrical shocks. Artificial quick dry bone gel composite."
 	tech_type = RESEARCH_BIOTECH
 
 	x = 0.55
