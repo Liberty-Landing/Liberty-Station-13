@@ -734,3 +734,9 @@
     icon_state = "sheep_horn"
     colored_layers = 2
     blend = ICON_MULTIPLY
+/datum/sprite_accessory/ears/bladed_unihorn
+	name = "Bladed Uni-Horn"
+	desc = ""
+	icon_state = "bladed_uni-horn"
+	colored_layers = 1
+	blend = ICON_MULTIPLY
