@@ -8,13 +8,14 @@
 	desc = "An archaic type of alchemical still, bonding and condensing different liquids together. Knowledge on how it synthesizes materials has been lost to time, yet it somehow can still be used by the chemistry savvy."
 	description_info = "Insert an alembic phial, then Ctrl+Shift click on it to start a chemical reaction. Alt+click removes the phial from the alembic, if any."
 	icon = 'icons/obj/chemical.dmi'
-	icon_state = "magic_flask_thing"
+	icon_state = "magic_flask_thing_nobeaker"
 	density = FALSE //Its a small thing thats meant to go on tables
 	anchored = FALSE
 //	var/catalists = null //This is the materal inside are flask to use for bounding
 	var/obj/item/reagent_containers/beaker = null
 
 /obj/structure/alchemy/New()
+	..()
 	update_icon()
 
 /obj/structure/alchemy/examine(mob/user)
@@ -59,9 +60,11 @@
 
 
 /obj/structure/alchemy/update_icon()
-	icon_state = "magic_flask_thing_nobeaker"
+	..()
 	if(beaker)
 		icon_state = "magic_flask_thing"
+	else
+		icon_state = "magic_flask_thing_nobeaker"
 
 /obj/structure/alchemy/attackby(obj/item/I, mob/living/user)
 

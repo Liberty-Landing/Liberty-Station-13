@@ -237,9 +237,9 @@
 	else
 		src.value = value
 
-/datum/stat/productivity
-	name = STAT_MEC
-	desc = "The world hadn't ever had so many moving parts or so few labels. Character's ability in building and using various tools."
+/datum/stat/vivification
+	name = STAT_WIL
+	desc = "The body can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle drugs and horrors of the world."
 
 /datum/stat/cognition
 	name = STAT_COG
@@ -249,6 +249,10 @@
 	name = STAT_BIO
 	desc = "What's the difference between being dead, and just not knowing you're alive? Competence in physiology and chemistry."
 
+/datum/stat/productivity
+	name = STAT_MEC
+	desc = "The world hadn't ever had so many moving parts or so few labels. Character's ability in building and using various tools."
+
 /datum/stat/robustness
 	name = STAT_ROB
 	desc = "Violence is what people do when they run out of good ideas. Increases your damage in unarmed combat, and your proficiency at it."
@@ -257,17 +261,13 @@
 	name = STAT_TGH
 	desc = "You're a tough guy, but I'm a nightmare wrapped in the apocalypse. Enhances your resistance to gases and poisons, and helps you stand your ground when they try to knock you down."
 
+/datum/stat/endurance
+	name = STAT_END
+	desc = "The world is harsh but so are you. Increases your maximum health and health gain per level"
+
 /datum/stat/aiming
 	name = STAT_VIG
-	desc = "Be pure! Be vigilant! But never behave. Having sharp eyes and nerves of steel improves your proficiency with guns and overcoming fear from creatures' roars, among other feats."
-
-/datum/stat/vivification
-	name = STAT_VIV
-	desc = "The body can take only so much stimulation under normal circumstances. It takes a lot to train the body to handle drugs, be they helpful or harmful."
-
-/datum/stat/anatomy
-	name = STAT_ANA
-	desc = "The body itself; the more you know about how far you can push it, the easier it becomes to edge closer towards death's door."
+	desc = "Be pure! Be vigilant! But never behave. Having sharp eyes and nerves of steel improves your proficiency with guns, among other feats."
 
 
 // Use to perform stat checks

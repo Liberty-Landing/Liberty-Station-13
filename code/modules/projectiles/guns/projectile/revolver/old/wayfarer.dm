@@ -3,7 +3,7 @@
 	name = "\"Wayfarer\" caseless revolver"
 	desc = "A sleek and well-made revolver that has been hand-produced with care, menacing with reinforcements of plasteel which reinforces the barrel assembly, which has been forged from a mix of high-carbon steel, banded with low-carbon iron around the cylinder; and possesses a polished mahogany handle for a grip. \
 	The Barrel is refined to use high-power 7mm caseless munitions while being easy to clean. \
-	While seemingly produced by Excelsior; hinted by the stamp placed upon its grip, it lacks most of the normal markings - and is instead tagged with a simple quote - \
+	While seemingly produced by Libritor Arms; hinted by the stamp placed upon its grip, it lacks most of the normal markings - and is instead tagged with a simple quote - \
 	\"The hopeless don't revolt, because revolution is an act of hope.\""
 	icon = 'icons/obj/guns/projectile/wayfarer.dmi'
 	icon_state = "wayfarer"
@@ -22,7 +22,7 @@
 	init_recoil = RIFLE_RECOIL(0.1)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_REVOLVER)
 	max_upgrades = 7 //Holds more slots do to being exl gun and not that good cal wise/easy to get
-	serial_type = "INDEX"
+	serial_type = "LIB"
 	serial_shown = FALSE
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.3 // 30 vig

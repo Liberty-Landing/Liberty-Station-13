@@ -1,5 +1,5 @@
 /obj/item/grenade/frag
-	name = "SA DF grenade \"Pomme\""
+	name = "ML DFG \"Pitbull\""
 	desc = "A military-grade defensive fragmentation grenade, designed to be thrown from cover."
 	icon_state = "frag"
 	item_state = "frggrenade"
@@ -46,7 +46,7 @@
 	damage_step = 3
 
 /obj/item/grenade/frag/stinger
-	name = "Seinemetall Defense GmbH \"Stinger\""
+	name = "MT RFG \"Stinger\""
 	desc = "A repurposed fragmentation grenade loaded in rubbers fragments, ready to serve the public trust. Lethal if used ontop of someone."
 	icon_state = "stinger"
 	item_state = "stinger"
@@ -65,7 +65,7 @@
 	damage_step = 5
 
 /obj/item/grenade/frag/white_phosphorous
-	name = "SA WPG \"Sabac \""
+	name = "AT WPG \"Sabac\""
 	desc = "A modernized incendiary hailing popular use within assault troops of all kinds. Use with care, highly flammable."
 	icon_state = "white_phos"
 	item_state = "fraggrenade"

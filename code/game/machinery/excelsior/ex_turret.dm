@@ -47,11 +47,6 @@
 	shot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 	eshot_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 
-/obj/machinery/porta_turret/excelsior/isLocked(mob/user)
-	if(is_excelsior(user))
-		return 0
-	return 1
-
 /obj/machinery/porta_turret/excelsior/nano_ui_interact(mob/user, ui_key = "main", var/datum/nanoui/ui = null, var/force_open = NANOUI_FOCUS)
 	var/data[0]
 	data["access"] = !isLocked(user)
@@ -69,7 +64,6 @@
 	return FALSE
 
 /obj/machinery/porta_turret/excelsior/attackby(obj/item/ammo_magazine/I, mob/user)
-	log_and_message_admins(" - Exc Turret being used at \the [jumplink(src)] X:[src.x] Y:[src.y] Z:[src.z] User:[user]") //So we can go to it
 	if(istype(I, ammo_box) && I.stored_ammo.len)
 		if(ammo >= ammo_max)
 			to_chat(user, SPAN_NOTICE("You cannot load more than [ammo_max] ammo."))
@@ -113,9 +107,6 @@
 		return L.stat ? TURRET_SECONDARY_TARGET : TURRET_PRIORITY_TARGET
 
 	if(L.stat == DEAD)
-		return TURRET_NOT_TARGET
-
-	if(is_excelsior(L))
 		return TURRET_NOT_TARGET
 
 	if(L.faction == "excelsior") //Dont target colony pets if were allied with them

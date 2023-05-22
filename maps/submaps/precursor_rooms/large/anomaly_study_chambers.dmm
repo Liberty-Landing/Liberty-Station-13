@@ -1,0 +1,1223 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ae" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor)
+"bi" = (
+/obj/item/material/shard/shrapnel/scrap,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"bv" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/anodevice{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/anodevice{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/anodevice{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bO" = (
+/obj/structure/closet/secure_closet/freezer/blood,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"cf" = (
+/obj/structure/flora/tree/jungle/variant3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"cj" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"cq" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/machinery/smartfridge,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"ct" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cQ" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/random/psi_megafauna,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"df" = (
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"ei" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"ey" = (
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"eF" = (
+/obj/structure/table/standard,
+/obj/machinery/electrolyzer,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"fi" = (
+/obj/effect/floor_decal/rust,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"fk" = (
+/obj/random/scrap/dense_weighted,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"gB" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"it" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/table/rack,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"jd" = (
+/obj/structure/table/standard,
+/obj/item/device/lighting/toggleable/lamp,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"ji" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"kd" = (
+/obj/structure/flora/tree/jungle/variant5,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"kn" = (
+/obj/random/pack/junk_machine,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"ks" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/powercell,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"lo" = (
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"lU" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/machinery/microscope,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"mv" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/pen,
+/obj/item/paper_bin,
+/obj/item/oddity/common/healthscanner,
+/obj/item/oddity/ls/puzzlebox,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"mC" = (
+/obj/machinery/light/small,
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/tree/jungle/variant1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"mR" = (
+/obj/machinery/gibber/autogibber,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"mU" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"oH" = (
+/obj/machinery/optable,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"oW" = (
+/turf/simulated/wall,
+/area/precursor)
+"pt" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"pK" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"pL" = (
+/obj/machinery/artifact,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"qu" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/oddity/common/old_knife,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"qD" = (
+/obj/machinery/shower{
+	dir = 4
+	},
+/obj/structure/catwalk,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"qG" = (
+/obj/item/material/shard/shrapnel/scrap,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"qP" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor)
+"rr" = (
+/obj/random/lowkeyrandom/low_chance,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"rF" = (
+/obj/structure/table/glass,
+/obj/item/storage/firstaid/surgery,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"rM" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"rO" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"rT" = (
+/obj/machinery/chem_master,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"rX" = (
+/obj/effect/floor_decal/rust,
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"sk" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"sn" = (
+/obj/structure/table/standard,
+/obj/machinery/chem_heater,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"te" = (
+/obj/structure/table/glass,
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"tO" = (
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"tP" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/structure/table/rack,
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"tU" = (
+/obj/machinery/light_construct,
+/obj/structure/kitchenspike,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"vd" = (
+/obj/random/scrap/dense_weighted,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"vn" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"vp" = (
+/obj/structure/flora/tree/jungle/variant1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"vK" = (
+/obj/effect/damagedfloor/fire,
+/obj/item/anobattery,
+/obj/item/anobattery,
+/obj/item/anobattery,
+/obj/item/anobattery,
+/obj/item/anobattery,
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"vT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"wb" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"ww" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/random/material,
+/obj/random/material,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"yp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"yy" = (
+/obj/effect/decal/cleanable/mucus,
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"yU" = (
+/obj/machinery/chemical_dispenser,
+/obj/effect/floor_decal/steeldecal/steel_decals10{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"zl" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/random/pack/junk_machine/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Am" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"AU" = (
+/obj/random/cluster/psi_monster/low_chance,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Bx" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"BA" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/damagedfloor/fire,
+/obj/random/pack/junk_machine/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"BB" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"CX" = (
+/obj/effect/window_lwall_spawn/smartspawn,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"Dg" = (
+/obj/structure/table/standard,
+/obj/item/reagent_containers/dropper{
+	pixel_y = -4
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/box/beakers,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"Dk" = (
+/obj/effect/damagedfloor/fire,
+/obj/random/pack/junk_machine,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Do" = (
+/obj/machinery/optable,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"ED" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"GC" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Hz" = (
+/obj/random/cluster/psi_monster/low_chance,
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"HD" = (
+/obj/structure/medical_stand,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"HJ" = (
+/obj/effect/damagedfloor/fire,
+/obj/structure/anomaly_container,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"IC" = (
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"IK" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"IZ" = (
+/obj/structure/closet/l3closet/virology,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Jh" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/storage/firstaid/surgery,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Jk" = (
+/obj/structure/anomaly_container,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Jn" = (
+/obj/structure/low_wall,
+/obj/item/material/shard/plasma,
+/obj/item/material/shard/plasma,
+/obj/item/material/shard/plasma,
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"Jz" = (
+/obj/random/cluster/psi_monster,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Kz" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Lo" = (
+/obj/random/cluster/psi_monster/low_chance,
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Lv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair/office/light,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"LN" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/machinery/constructable_frame/machine_frame,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"MA" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/random/medical,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Ol" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Pd" = (
+/obj/structure/table/standard,
+/obj/item/reagent_containers/dropper{
+	pixel_y = -4
+	},
+/obj/item/storage/box/syringes{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/storage/box/beakers,
+/obj/item/reagent_containers/glass/beaker/large,
+/obj/item/tool/screwdriver,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"Pp" = (
+/obj/effect/decal/cleanable/mucus,
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"PA" = (
+/obj/machinery/artifact_scanpad,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"Qk" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Qy" = (
+/obj/structure/bed/chair/office/dark,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"QV" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/tree/jungle_small/variant2,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Rb" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Rl" = (
+/obj/machinery/door/blast/regular/open,
+/obj/structure/catwalk,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"SU" = (
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Tr" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/structure/anomaly_container,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"TE" = (
+/obj/random/lowkeyrandom/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"TU" = (
+/obj/machinery/door/blast/regular,
+/obj/structure/catwalk,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Uf" = (
+/obj/machinery/artifact_scanpad,
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"Ut" = (
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Uy" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"UQ" = (
+/obj/structure/table/standard,
+/obj/machinery/centrifuge,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+"UV" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"UY" = (
+/obj/machinery/door/airlock/highsecurity,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Vb" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Vi" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet/freezer,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Vp" = (
+/obj/effect/window_lwall_spawn/plasma/reinforced,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"VD" = (
+/obj/machinery/artifact_analyser,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"VG" = (
+/obj/machinery/light/small,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"VY" = (
+/obj/item/material/shard/shrapnel/scrap,
+/obj/item/material/shard/shrapnel/scrap,
+/obj/item/material/shard/shrapnel/scrap,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Wj" = (
+/obj/machinery/artifact_harvester,
+/obj/effect/floor_decal/industrial/warning,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"Wy" = (
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"WG" = (
+/obj/random/lowkeyrandom/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Xf" = (
+/obj/effect/decal/cleanable/blood/splatter,
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/effect/decal/cleanable/blood/gibs,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"XQ" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Yl" = (
+/obj/random/cluster/psi_monster,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Yq" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"YQ" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Zz" = (
+/obj/effect/decal/cleanable/blood/gibs,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"ZM" = (
+/obj/structure/table/glass,
+/obj/item/storage/freezer/medical,
+/obj/item/cell/medium/high,
+/turf/simulated/floor/tiled/steel/techfloor,
+/area/precursor)
+
+(1,1,1) = {"
+IC
+SU
+SU
+WG
+Am
+Am
+IC
+IC
+IC
+IC
+IC
+IC
+bi
+WG
+WG
+SU
+Am
+SU
+TE
+TE
+TE
+"}
+(2,1,1) = {"
+IC
+WG
+TE
+TE
+IC
+IC
+Yq
+Am
+SU
+WG
+WG
+Am
+Am
+SU
+IC
+Hz
+IC
+cf
+SU
+SU
+IC
+"}
+(3,1,1) = {"
+IC
+SU
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+VY
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+SU
+IC
+"}
+(4,1,1) = {"
+SU
+vp
+Wy
+Ut
+gB
+Ut
+oW
+Ut
+gB
+Ut
+oW
+Bx
+gB
+Ut
+Wy
+sn
+rT
+yU
+Wy
+SU
+IC
+"}
+(5,1,1) = {"
+SU
+Rb
+Wy
+Ut
+pL
+Ut
+oW
+Ut
+pL
+Ut
+oW
+SU
+qG
+SU
+Wy
+vT
+tO
+Lv
+Wy
+SU
+IC
+"}
+(6,1,1) = {"
+SU
+VG
+Wy
+Ut
+Ut
+Ut
+oW
+Ut
+Ut
+Ut
+oW
+Ut
+rO
+SU
+Wy
+ED
+Dg
+Pd
+Wy
+wb
+IC
+"}
+(7,1,1) = {"
+TE
+Am
+Wy
+CX
+TU
+CX
+oW
+CX
+TU
+CX
+oW
+CX
+Rl
+CX
+Wy
+yp
+Ut
+UQ
+Wy
+IC
+IC
+"}
+(8,1,1) = {"
+IC
+SU
+Wy
+Vi
+YQ
+YQ
+tP
+YQ
+YQ
+pt
+IK
+YQ
+YQ
+Ol
+Vp
+yy
+Ut
+eF
+Wy
+SU
+TE
+"}
+(9,1,1) = {"
+Am
+Wy
+Wy
+Wy
+zl
+ey
+IC
+rM
+UV
+UV
+ey
+UV
+IC
+ct
+Jn
+Pp
+Ut
+Jk
+Wy
+SU
+kd
+"}
+(10,1,1) = {"
+Am
+Wy
+qD
+Wy
+zl
+IC
+lU
+ks
+kn
+jd
+IC
+Jh
+rM
+lo
+oW
+df
+GC
+mR
+Wy
+SU
+Am
+"}
+(11,1,1) = {"
+Am
+UY
+IC
+UY
+XQ
+UV
+Qy
+ey
+Jz
+PA
+ey
+Do
+IC
+cQ
+TU
+Ut
+fi
+tU
+Wy
+IC
+Am
+"}
+(12,1,1) = {"
+SU
+Wy
+IZ
+Wy
+zl
+ey
+mv
+ww
+Dk
+VD
+IC
+MA
+ey
+sk
+oW
+Ut
+Ut
+qu
+Wy
+IC
+WG
+"}
+(13,1,1) = {"
+WG
+Wy
+Wy
+Wy
+BA
+IC
+UV
+IC
+IC
+UV
+rM
+IC
+IC
+lo
+Vp
+jd
+Ut
+vK
+Wy
+Am
+TE
+"}
+(14,1,1) = {"
+WG
+IC
+Wy
+LN
+Qk
+Qk
+cq
+ei
+Qk
+Qk
+it
+Qk
+Qk
+Kz
+Vp
+Uf
+rX
+bv
+Wy
+Am
+TE
+"}
+(15,1,1) = {"
+TE
+SU
+Wy
+CX
+TU
+CX
+oW
+CX
+Rl
+CX
+oW
+CX
+TU
+CX
+oW
+Wj
+Yl
+HJ
+Wy
+QV
+IC
+"}
+(16,1,1) = {"
+WG
+mC
+Wy
+Ut
+Ut
+Ut
+oW
+pK
+Xf
+Ut
+oW
+fk
+Ut
+fk
+oW
+bO
+qP
+Tr
+Wy
+Lo
+Am
+"}
+(17,1,1) = {"
+Am
+Am
+Wy
+Ut
+pL
+Ut
+oW
+mU
+vn
+BB
+oW
+fk
+fk
+fk
+oW
+te
+ae
+oH
+Wy
+SU
+Am
+"}
+(18,1,1) = {"
+Am
+IC
+Wy
+Ut
+Vb
+Ut
+oW
+Uy
+Zz
+Uy
+oW
+fk
+vd
+fk
+oW
+ZM
+rF
+HD
+Wy
+SU
+rr
+"}
+(19,1,1) = {"
+Am
+Am
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Wy
+Am
+rr
+"}
+(20,1,1) = {"
+IC
+TE
+Am
+Am
+Am
+IC
+cj
+SU
+SU
+Am
+IC
+Am
+SU
+SU
+SU
+ji
+WG
+IC
+IC
+SU
+WG
+"}
+(21,1,1) = {"
+IC
+IC
+SU
+WG
+WG
+Am
+AU
+IC
+TE
+TE
+Am
+Am
+IC
+TE
+TE
+TE
+Am
+Am
+IC
+IC
+SU
+"}

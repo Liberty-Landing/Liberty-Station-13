@@ -2,6 +2,8 @@
 Quirky Terra Therma weapon as requested by the department. Insert compressed matter from the Forge into this to fire it.
 No more 1 shot guns but hey, at least you no longer need cells and can carry a fat-stack of compressed matter instead.
 */
+#define PISTOL_SHOT_COST	4
+#define SHOTGUN_SHOT_COST	8
 
 /obj/item/gun/projectile/matter_gun
 	name = "Mk I \"Forger\" compressed-matter pistol"
@@ -21,8 +23,8 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 	var/projectile_type	= /obj/item/projectile/bullet/pistol_35/nano
 
-	var/max_stored_matter = 60
-	var/projectile_cost = 1.25
+	var/max_stored_matter = PISTOL_SHOT_COST * 15 //not the best, but that means it can carry a lot of compressed matter
+	var/projectile_cost = PISTOL_SHOT_COST
 	var/stored_matter = 0
 	var/matter_type = MATERIAL_COMPRESSED_MATTER
 
@@ -30,9 +32,9 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	wield_delay_factor = 0.2 // 20 vig
 
 	init_firemodes = list(
-		list(mode_name="nano bullet", mode_desc="fabricates a bullet directly in the barrel then fires", projectile_type=/obj/item/projectile/bullet/pistol_35/nano, icon="kill"),
-		list(mode_name="superheated slug", mode_desc="overcharge the fabrication mechanism to launch a molten slug that illuminates the area", projectile_type=/obj/item/projectile/bullet/flare/choas, projectile_cost = 5, icon="grenade"),
-	)
+		list(mode_name="nano bullet", mode_desc="fabricates a bullet directly in the barrel then fires", projectile_type=/obj/item/projectile/bullet/pistol_35/nano, projectile_cost = PISTOL_SHOT_COST, icon="kill"), //this projectile_cost resets the cost in case you keep switching modes
+		list(mode_name="superheated slug", mode_desc="overcharge the fabrication mechanism to launch a molten slug that illuminates the area", projectile_type=/obj/item/projectile/bullet/flare/choas, projectile_cost = PISTOL_SHOT_COST * 4, icon="grenade"),
+	)// heated costs 4 times as much as a normal shot
 
 /obj/item/gun/projectile/matter_gun/attackby(obj/item/W as obj, mob/user as mob)
 	var/obj/item/stack/material/M = W
@@ -92,8 +94,8 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 
 	projectile_type	= /obj/item/projectile/bullet/shotgun/ceramic
 
-	max_stored_matter = 120
-	projectile_cost = 2.5
+	max_stored_matter = SHOTGUN_SHOT_COST * 12 //12 shot semi auto shotgun, no way to increase the mag too
+	projectile_cost = SHOTGUN_SHOT_COST
 	stored_matter = 0
 	matter_type = MATERIAL_COMPRESSED_MATTER
 
@@ -104,3 +106,5 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 		list(mode_name="ceramic slug", mode_desc="fires a sinlge high-powered slug", projectile_type=/obj/item/projectile/bullet/shotgun/ceramic, icon="kill"),
 		list(mode_name="super-heated pellets", mode_desc="overclock the fabricator to fire a spray of super-heated pellets", projectile_type=/obj/item/projectile/bullet/pellet/shotgun/energy, icon="grenade"),
 	)
+#undef PISTOL_SHOT_COST
+#undef SHOTGUN_SHOT_COST

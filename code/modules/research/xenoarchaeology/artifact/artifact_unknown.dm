@@ -29,7 +29,7 @@
 	var/datum/artifact_effect/my_effect
 	var/datum/artifact_effect/secondary_effect
 	var/being_used = 0
-	var/psi_power_chance = 100 // Chance in % for a given artifact to hold a psionic power.
+	var/psi_power_chance = 0 // Chance in % for a given artifact to hold a psionic power.
 	var/psi_power // The holder of the power we give
 	var/psi_text // Description that only psions can see.
 

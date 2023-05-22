@@ -184,8 +184,8 @@
 	auto_price = FALSE
 
 /obj/machinery/vending/theomat
-	name = "Church of Bonfire Theo-Mat"
-	desc = "A church dispensary for disciples and new converts."
+	name = "Custodian Vendo-Mat"
+	desc = "A Custodian dispensary for both new and established members."
 	product_slogans = "Find peace through faith.;Help humanity ascend, join your brethren today!;Come and seek a new life!;Safety in brotherhood!"
 	product_ads = "Praise!;Pray!;Only for the faithful!;Ascend!;Seek a new life!;Better living through technology!"
 	icon_state = "teomat"
@@ -193,24 +193,14 @@
 	products = list(/obj/item/book/ritual/cruciform = 10,
 					/obj/item/storage/fancy/candle_box = 10,
 					/obj/item/storage/fancy/cigarettes/faith = 10,
-					/obj/item/reagent_containers/food/drinks/bottle/ntcahors = 20,
 					/obj/item/tool_upgrade/augment/sanctifier = 5,
 					/obj/item/soap/church = 5,
 					/obj/item/storage/wallet = 5,
-					/obj/item/storage/belt/utility/neotheology = 5,
+					/obj/item/storage/belt/utility/custodian = 5,
 					/obj/item/storage/backpack/duffelbag = 5,
-					/obj/item/storage/backpack/satchel/neotheology = 5,
-					/obj/item/storage/backpack/neotheology = 5,
-					/obj/item/storage/backpack/sport/neotheology = 5,
-					/obj/item/clothing/accessory/necklace/fractalrosary = 15,
-					/obj/item/clothing/suit/storage/neotheosports = 5,
-					/obj/item/clothing/suit/storage/toggle/absolutehoodie = 5,
-					/obj/item/clothing/suit/greatcoat/absolutecoat= 5,
-					/obj/item/clothing/suit/hooded/absolutecloak = 5,
-					/obj/item/clothing/under/rank/church = 5,
-					/obj/item/clothing/under/rank/acolyte = 5,
-					/obj/item/clothing/suit/storage/numericalgarb = 3,
-					/obj/item/clothing/head/numerical_hat = 3,
+					/obj/item/storage/backpack/satchel/custodian = 5,
+					/obj/item/storage/backpack/custodian = 5,
+					/obj/item/storage/backpack/sport/custodian = 5,
 					/obj/item/stack/medical/bruise_pack = 8,
 					/obj/item/stack/medical/ointment = 8,
 					/obj/item/stack/medical/splint = 5,
@@ -220,36 +210,21 @@
 					/obj/item/storage/pouch/medical_supply = 2,
 					/obj/item/grenade/chem_grenade/antiweed/nt_antiweed = 5,
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 5,
-					/obj/item/tool/knife/dagger/nt = 3,
-					/obj/item/tool/sword/nt = 3,
-					/obj/item/gun/energy/ntpistol = 3,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 2,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 2,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 3,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 2)
-	contraband = list(/obj/item/tool/knife/neotritual = 3,
-					/obj/item/gun/matter/launcher/nt_sprayer = 3)
+					/obj/item/tool/knife/dagger/custodian = 3,
+					/obj/item/tool/sword/custodian/shortsword = 3,)
+	contraband = list(/obj/item/gun/matter/launcher/nt_sprayer = 3)
 
 	prices = list(/obj/item/book/ritual/cruciform = 5,
 					/obj/item/storage/fancy/candle_box = 30,
 					/obj/item/storage/fancy/cigarettes/faith = 65, //Some healing chems
-					/obj/item/reagent_containers/food/drinks/bottle/ntcahors = 100,
 					/obj/item/tool_upgrade/augment/sanctifier = 80,
 					/obj/item/soap/church = 50,
 					/obj/item/storage/wallet = 15,
-					/obj/item/storage/belt/utility/neotheology = 20,
+					/obj/item/storage/belt/utility/custodian = 20,
 					/obj/item/storage/backpack/duffelbag = 75,
-					/obj/item/storage/backpack/satchel/neotheology = 20,
-					/obj/item/storage/backpack/neotheology = 20,
-					/obj/item/storage/backpack/sport/neotheology = 20,
-					/obj/item/clothing/accessory/necklace/fractalrosary = 5,
-					/obj/item/clothing/suit/storage/neotheosports = 40,
-					/obj/item/clothing/suit/storage/toggle/absolutehoodie = 50,
-					/obj/item/clothing/suit/greatcoat/absolutecoat= 45,
-					/obj/item/clothing/suit/hooded/absolutecloak = 35,
-					/obj/item/clothing/under/rank/acolyte = 25,
-					/obj/item/clothing/under/rank/church = 15,
-					/obj/item/clothing/suit/storage/numericalgarb = 65,
+					/obj/item/storage/backpack/satchel/custodian = 20,
+					/obj/item/storage/backpack/custodian = 20,
+					/obj/item/storage/backpack/sport/custodian = 20,
 					/obj/item/clothing/head/numerical_hat = 40,
 					/obj/item/stack/medical/bruise_pack = 50,
 					/obj/item/stack/medical/ointment = 35,
@@ -260,14 +235,8 @@
 					/obj/item/storage/pouch/medical_supply = 200,
 					/obj/item/grenade/chem_grenade/antiweed/nt_antiweed = 25,
 					/obj/item/grenade/chem_grenade/cleaner/nt_cleaner = 50,
-					/obj/item/tool/knife/dagger/nt = 50,
-					/obj/item/tool/sword/nt = 100,
-					/obj/item/gun/energy/ntpistol = 120,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_new_guns = 800,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt_basic_arms/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public = 100,
-					/obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter = 400,
-					/obj/item/tool/knife/neotritual = 250,
+					/obj/item/tool/knife/dagger/custodian = 50,
+					/obj/item/tool/sword/custodian/shortsword = 100,
 					/obj/item/gun/matter/launcher/nt_sprayer = 500)
 	custom_vendor = TRUE // So they can sell pouches and other printed goods, if they bother to stock them
 
@@ -278,18 +247,8 @@
 		if(is_neotheology_disciple(H))
 			bingo = TRUE
 
-		else if(istype(H.get_active_hand(), /obj/item/clothing/accessory/cross))
+		else if(istype(H.get_active_hand(), /obj/item/forgesigil))
 			bingo = TRUE
-
-		else if(istype(H.wear_mask, /obj/item/clothing/accessory/cross))
-			bingo = TRUE
-
-		else if(H.w_uniform && istype(H.w_uniform, /obj/item/clothing))
-			var/obj/item/clothing/C = H.w_uniform
-			for(var/obj/item/I in C.accessories)
-				if(istype(I, /obj/item/clothing/accessory/cross))
-					bingo = TRUE
-					break
 
 	if(bingo)
 		return TRUE

@@ -1,6 +1,6 @@
 /datum/gear/accessory
-	display_name = "wallet"
-	path = /obj/item/storage/wallet
+	display_name = "neck brace"
+	path = /obj/item/clothing/accessory/neckbrace
 	slot = slot_accessory_buffer
 	sort_category = "Accessories"
 	cost = 0
@@ -10,6 +10,9 @@
 	path = /obj/item/clothing/accessory/armband
 	flags = GEAR_HAS_TYPE_SELECTION
 
+/datum/gear/accessory/civexo
+	display_name = "medical support exoframe"
+	path = /obj/item/clothing/accessory/civexo
 /datum/gear/accessory/sash
 	display_name = "colorable sash"
 	path = /obj/item/clothing/accessory/sash/color
@@ -46,10 +49,6 @@
 	display_name = "UBAC selection"
 	path = /obj/item/clothing/accessory/tacticool
 	flags = GEAR_HAS_TYPE_SELECTION
-
-/datum/gear/accessory/neckbrace
-	display_name = "neck brace"
-	path = /obj/item/clothing/accessory/neckbrace
 
 /datum/gear/accessory/scarf
 	display_name = "scarf selection"

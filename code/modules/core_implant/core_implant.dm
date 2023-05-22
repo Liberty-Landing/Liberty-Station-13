@@ -161,7 +161,7 @@
 		STOP_PROCESSING(SSobj, src)
 	restore_power(power_regen)
 
-/obj/item/implant/core_implant/proc/get_module(var/m_type)
+/obj/item/implant/core_implant/proc/get_module(var/m_type) //get specific module, if not present, FALSE, if present, return the module
 	if(!ispath(m_type))
 		return
 	for(var/datum/core_module/CM in modules)
@@ -169,7 +169,7 @@
 			return CM
 	process_modules()
 
-/obj/item/implant/core_implant/proc/add_module(var/datum/core_module/CM)
+/obj/item/implant/core_implant/proc/add_module(var/datum/core_module/CM) //formatted like add_module(new DEFINEGOESHERE)
 	if(!istype(src,CM.implant_type))
 		return FALSE
 
@@ -177,7 +177,7 @@
 		return FALSE
 
 	if(CM.unique)
-		for(var/datum/core_module/EM in modules)
+		for(var/datum/core_module/EM in modules) //cannot stack modules
 			if(EM.type == CM.type)
 				return FALSE
 
@@ -189,37 +189,23 @@
 	CM.install()
 	return TRUE
 
-/obj/item/implant/core_implant/proc/remove_module(var/datum/core_module/CM)
+/obj/item/implant/core_implant/proc/remove_module(var/datum/core_module/CM) //use remove_modules instead using the module defines
 	if(istype(CM) && CM.implant == src)
 		CM.uninstall()
 		modules.Remove(CM)
 		CM.implant = null
 		qdel(CM)
 
-/obj/item/implant/core_implant/proc/remove_modules(var/m_type)
+/obj/item/implant/core_implant/proc/remove_modules(var/m_type) //use module defines here
 	if(!ispath(m_type))
 		return
 	for(var/datum/core_module/CM in modules)
 		if(istype(CM,m_type))
 			remove_module(CM)
 
-/obj/item/implant/core_implant/proc/install_default_modules_by_job(datum/job/J)
+/obj/item/implant/core_implant/proc/install_default_modules_by_job(datum/job/J) //checks the job datum's core_upgrades list and adds those
 	for(var/module_type in J.core_upgrades)
 		add_module(new module_type)
-
-/obj/item/implant/core_implant/proc/install_default_modules_by_path(/obj/item/implant/core_implant/cruciform)
-	if(path == "tess")
-		add_module(new CRUCIFORM_TESS)
-	else if(path == "lemn")
-		add_module(new CRUCIFORM_LEMN)
-	else if(path == "mono")
-		add_module(new CRUCIFORM_MONO)
-	else if(path == "divi")
-		add_module(new CRUCIFORM_DIVI)
-	else if(path == "fact")
-		add_module(new CRUCIFORM_FACT)
-	else if(path == "omni")
-		add_module(new CRUCIFORM_OMNI)
 
 /obj/item/implant/core_implant/proc/process_modules()
 	for(var/datum/core_module/CM in modules)

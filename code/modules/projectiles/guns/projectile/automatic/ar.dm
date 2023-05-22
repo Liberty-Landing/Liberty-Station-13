@@ -36,6 +36,24 @@
 		)
 	serial_type = "ML"
 
+/obj/item/gun/projectile/automatic/federalist/update_icon()
+	..()
+
+	var/iconstring = initial(icon_state)
+	var/itemstring = ""
+
+	if(ammo_magazine)
+		add_overlay("_mag[ammo_magazine.max_ammo]")
+	else
+		cut_overlays()
+		return
+
+	if (!ammo_magazine || !length(ammo_magazine.stored_ammo))
+		iconstring += "_slide"
+
+	icon_state = iconstring
+	set_item_state(itemstring)
+
 /obj/item/gun/projectile/automatic/federalist/sawn
 	name = "sawn-off \"Federalist\" carbine"
 	desc = "This gun was fine. Was.. You know for a fact Terran Federal Police would have a field day with this gun."
@@ -65,6 +83,8 @@
 	zoom_factors = list(0.8)
 	init_recoil = RIFLE_RECOIL(0.9)
 	saw_off = FALSE
+	
+	gun_parts = list(/obj/item/part/gun/frame/federalist = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/srifle = 1)
 
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY,

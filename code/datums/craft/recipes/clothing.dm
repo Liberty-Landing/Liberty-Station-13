@@ -13,17 +13,6 @@
 		list(/obj/item/stack/cable_coil, 4)
 	)
 
-/datum/craft_recipe/clothing/armorvest/full
-	name = "handmade full armor vest"
-	result = /obj/item/clothing/suit/armor/vest/handmade/full
-	steps = list(
-		list(/obj/item/clothing/suit/armor/vest/handmade, 1, "time" = 30),
-		list(/obj/item/clothing/under, 1),
-		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
-		list(QUALITY_ADHESIVE, 15, 30)
-	)
-
 /datum/craft_recipe/clothing/balaclava
 	name = "balaclava"
 	result = /obj/item/clothing/mask/balaclava
@@ -143,7 +132,7 @@
 	)
 
 /datum/craft_recipe/clothing/scavengerarmor
-	name = "fontaine plate carrier"
+	name = "Scavenged Armor"
 	result = /obj/item/clothing/suit/storage/scavengerarmor
 	steps = list(
 		list(/obj/item/clothing/under, 1),
@@ -155,29 +144,15 @@
 	)
 
 /datum/craft_recipe/clothing/scavengerhelmet
-	name = "fontaine Helmet"
+	name = "Scavenged Helmet"
 	result = /obj/item/clothing/head/helmet/handmade/scavengerhelmet
 	steps = list(
 		list(/obj/item/clothing/head/helmet/handmade, 1), // Take your average combat helm
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL), // More internal padding
-		list(QUALITY_HAMMERING, 10, 15), // Hammer it into place...
+		list(CRAFT_MATERIAL, 2, MATERIAL_CLOTH), // Additional warmth protection
 		list(QUALITY_ADHESIVE, 15, 15), // Make sure it sticks!
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL), // Prepare the additional external plates...
-		list(QUALITY_WELDING, 10, 20), // ...and weld them into place, tadah!
-	)
-
-/datum/craft_recipe/clothing/heavy_scav
-	name = "fontaine full body plate carrier"
-	result = /obj/item/clothing/suit/storage/scavengerarmor/fullbody
-	steps = list(
-		list(/obj/item/clothing/suit/storage/scavengerarmor, 1),
-		list(QUALITY_CUTTING, 15, 15), //Cut apart the armour to be remade
-		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTEEL), //Insert plasteel plates
-		list(QUALITY_HAMMERING, 20, 15), //Hammer sheets into place
-		list(QUALITY_WELDING, 30, 15), //Weld the sheets in
-		list(CRAFT_MATERIAL, 6, MATERIAL_CLOTH), //Extra padding
-		list(/obj/item/stack/cable_coil, 4), //Secure the padding
-		list(QUALITY_ADHESIVE, 20, 15) //And seal it!
+		list(QUALITY_HAMMERING, 10, 15), // ...Hammer them into place...
+		list(QUALITY_WELDING, 10, 20), // ...and weld them, tadah!
 	)
 
 /datum/craft_recipe/clothing/muzzle
@@ -213,6 +188,17 @@
 * 	Full body armor vests
 ****************************/
 
+/datum/craft_recipe/clothing/armorvest/full
+	name = "handmade full armor vest"
+	result = /obj/item/clothing/suit/armor/vest/handmade/full
+	steps = list(
+		list(/obj/item/clothing/suit/armor/vest/handmade, 1, "time" = 30),
+		list(/obj/item/clothing/under, 1),
+		list(QUALITY_CUTTING, 15, 30),
+		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
+		list(QUALITY_ADHESIVE, 15, 30)
+	)
+
 /datum/craft_recipe/clothing/fullbodyarmor
 	name = "full body armor"
 	result = /obj/item/clothing/suit/armor/vest/full
@@ -238,13 +224,26 @@
 	)
 
 /datum/craft_recipe/clothing/mtua
-	name = "marshal tactical unit armor"
+	name = "Watchman tactical unit armor"
 	result = /obj/item/clothing/suit/armor/vest/ironhammer/full
 	steps = list(
 		list(/obj/item/clothing/suit/armor/vest/ironhammer, 1, "time" = 30),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
 		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
+		list(QUALITY_ADHESIVE, 15, 30)
+	)
+
+/datum/craft_recipe/clothing/fontaine_fullbody
+	name = "Fontaine full body plate carrier"
+	result = /obj/item/clothing/suit/storage/scavengerarmor/fontaine/fullbody
+	steps = list(
+		list(/obj/item/clothing/suit/storage/scavengerarmor/fontaine, 1),
+		list(/obj/item/clothing/under, 1),
+		list(QUALITY_CUTTING, 15, 30),
+		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
+		list(QUALITY_WELDING, 15, 30),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
 

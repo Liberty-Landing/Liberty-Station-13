@@ -86,7 +86,7 @@
 
 /datum/task_master/task/return_to_sender/activate_affect()
 	forwards_refence.max_nutrition += (level * 15) //415 level 1 -> 445 level 2 -> 490 level 3 ect ect
-	forwards_refence.stats.changeStat(STAT_VIV, (level + 2)) //Exstreamly miner: 3 level 1 -> 7 level 2 -> 13 level 3 ect ect
+	forwards_refence.stats.changeStat(STAT_WIL, (level + 2)) //Exstreamly miner: 3 level 1 -> 7 level 2 -> 13 level 3 ect ect
 
 //Huskification
 /datum/task_master/task/rebound_case
@@ -112,7 +112,7 @@
 	level_threshholds = 3 //Gym has long cooldowns and costs a bit
 
 /datum/task_master/task/gym_goer/activate_affect()
-	forwards_refence.stats.changeStat(STAT_VIV, (level + 2))
+	forwards_refence.stats.changeStat(STAT_WIL, (level + 2))
 	forwards_refence.max_nutrition += (level * 5) //405 level 1 -> 415 level 2 -> 430 level 3 ect ect
 	forwards_refence.vessel.maximum_volume  += 5 //Blood flow is being aided
 
@@ -125,7 +125,7 @@
 	level_threshholds = 5 //Tons of wallet/floor pills
 
 /datum/task_master/task/dr_floor/activate_affect()
-	forwards_refence.stats.changeStat(STAT_VIV, (level + 2))
+	forwards_refence.stats.changeStat(STAT_WIL, (level + 2))
 
 //For Shoveling AND THEN welding/hammering a crack
 /datum/task_master/task/proper_sealer
@@ -159,3 +159,16 @@
 
 /datum/task_master/task/proper_area_smoker/activate_affect()
 	forwards_refence.sanity.change_max_level(level)
+
+//Taking bad perks should not be all bad!
+/datum/task_master/task/poors
+	name = "When it rains"
+	key = "POORS"
+	desc = "Just bad luck with getting the right items..."
+	gain_text = "Unlucky day huh..."
+	level_threshholds = 1
+	alt_scaling_number = 2 // 1 2 4 8 ect,
+	unlocked = TRUE
+
+/datum/task_master/task/poors/activate_affect()
+	forwards_refence.stats.addPerk(PERK_FORCEFUL_REJECTION)

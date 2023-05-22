@@ -1,6 +1,6 @@
-// GOD'S EYE
 //
-// A mob that used in inquisitor's god's eye ritual
+// A mob used in the Oathpledge's Scrying power
+//
 
 /mob/observer/eye/god
 	name = "God's eye"

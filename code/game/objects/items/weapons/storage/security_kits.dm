@@ -138,7 +138,6 @@
 
 	populate_contents()
 		new /obj/item/clothing/suit/storage/armor/marshal_coat(src)
-		new /obj/item/clothing/head/helmet/marshal_full(src)
 
 
 /obj/item/storage/box/m_kit/bullet_proof

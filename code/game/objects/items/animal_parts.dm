@@ -8,6 +8,12 @@
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 100
 
+/obj/item/animal_part/tahca_tongue
+	name = "tahca tongue"
+	desc = "A tahca tongue, harvested from a bovine like creature. Useful in medicine and savored for it's taste."
+	icon_state = "brahmin_tongue"
+	item_state = "brahmin_tongue"
+
 /obj/item/animal_part/tatonka_tongue
 	name = "tatonka tongue"
 	desc = "A tatanka tongue, harvested from a creature of the same name. Useful in medicine and prized for its various purposes."
@@ -73,11 +79,14 @@
 	item_state = "radstag_antler"
 	price_tag = 1000
 
-/obj/item/animal_part/wolf_tooth
-	name = "pristine animal fang"
+/obj/item/stack/wolf_tooth
+	name = "pristine animal fangs"
+	singular_name = "fang"
 	desc = "A rather generic animal fang from something predatory. While not that useful its small size and value in the kriosan market make it worthwhile to collect and export."
+	icon = 'icons/obj/animal_parts.dmi'
 	icon_state = "wolf_tooth"
 	item_state = "wolf_tooth"
+	max_amount = 10
 	price_tag = 300
 	w_class = ITEM_SIZE_TINY
 

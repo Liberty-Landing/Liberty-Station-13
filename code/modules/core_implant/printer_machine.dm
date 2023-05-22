@@ -22,8 +22,8 @@ PLANNED FEATURES
 /obj/machinery/neotheology/implantprinter
 	name = "Implant Fabricator"
 	desc = "This unique piece of technology can be fed biomatter, plasteel, silver, and gold in order to print various implants. \
-			All implants produced by this machine are licenced or produced by CAPSA or Liberty Group. \
-			Due to this machines complexity, only technitians in CAPSA and PIRS are trained in its usage."
+			All implants produced by this machine are licenced or produced by CAPSA, subsidiary of Liberty Group. \
+			Due to this machine's complexity, only CAPSA personnel are trained in its usage."
 	icon = 'icons/obj/neotheology_machinery.dmi'
 	icon_state = "implantforge"
 
@@ -56,28 +56,28 @@ PLANNED FEATURES
 
 /obj/machinery/neotheology/implantprinter/attack_hand(mob/living/carbon/human/user as mob)
 	if(!usr.stats?.getPerk(PERK_ADVANCED_MEDICAL) && !usr.stat_check(STAT_BIO, STAT_LEVEL_PROF) && !usr.stat_check(STAT_COG, 120))
-		to_chat(user, SPAN_NOTICE("Your not sure how to use this without trainning or being able to read the advanced mumbo jumbo."))
+		to_chat(user, SPAN_NOTICE("You're not sure how to use this without proper medical training or being able to read the advanced mumbo jumbo."))
 		return
-	var/choice = input(user, "Choose a what to do", "Selection") as null|anything in options
+	var/choice = input(user, "Choose what to do", "Selection") as null|anything in options
 	switch(choice)
 		if("Print Item")
 			if(perform(user))
 				produce()
 			return
 		if("Pick A Print")
-			var/new_print = input(user, "What do you want to print", "Printing") as null|anything in what_to_print
+			var/new_print = input(user, "What do you want to print?", "Printing") as null|anything in what_to_print
 			switch(new_print)
 				if("Death Alarm")
 					spawn_type = /obj/item/implant/death_alarm
-					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 1, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
 					to_chat(user, SPAN_NOTICE("Now printing Death Alarms"))
-					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Metal(Steel), 1 Glass, 1 Silver"))
+					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Steel, 1 Glass"))
 					return
 				if("Conciousness Backup Implant")
 					spawn_type = /obj/item/implant/conback
 					needed_material = list(MATERIAL_BIOMATTER = 1, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_STEEL = 3)
 					to_chat(user, SPAN_NOTICE("Now printing Conciousness Backup Implant"))
-					to_chat(user, SPAN_NOTICE("Conciousness Backup Implant Require: 1 Biomatter, 1 Metal(Plasteel), 1 Metal(Steel), 3 Glass, 3 Gold, 3 Silver"))
+					to_chat(user, SPAN_NOTICE("Conciousness Backup Implants Require: 1 Biomatter, 1 Plasteel, 1 Steel, 3 Glass, 3 Gold, 3 Silver"))
 					return
 				if("Psionic Tumour")
 					spawn_type = /obj/item/organ/internal/psionic_tumor
@@ -85,11 +85,11 @@ PLANNED FEATURES
 					to_chat(user, SPAN_NOTICE("Now printing Psionic Tomours"))
 					to_chat(user, SPAN_NOTICE("Psionic Tomours Require: 120 Biomatter, 1 Gold, 1 Silver"))
 					return
-				else
+				else // Why.
 					spawn_type = /obj/item/implant/death_alarm
-					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 1, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
 					to_chat(user, SPAN_NOTICE("Now printing Death Alarms"))
-					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Metal(Steel), 1 Glass, 1 Silver"))
+					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Steel, 1 Glass"))
 					return
 		else
 			return
@@ -137,11 +137,11 @@ PLANNED FEATURES
 
 	for(var/_material in needed_material)
 		if(!(_material in stored_material))
-			to_chat(user, SPAN_NOTICE("[src] does not have a [_material] to produce cruciform."))
+			to_chat(user, SPAN_NOTICE("[src] does not have the required [_material] to continue printing."))
 			return FALSE
 
 		if(needed_material[_material] > stored_material[_material])
-			to_chat(user, SPAN_NOTICE("[src] does not have enough [_material] to produce cruciform."))
+			to_chat(user, SPAN_NOTICE("[src] does not have enough [_material] left to continue printing!"))
 			return FALSE
 
 	return TRUE
@@ -208,7 +208,7 @@ PLANNED FEATURES
 
 	flick_anim(LOAD) // Play insertion animation.
 
-	to_chat(user, SPAN_NOTICE("You add [total_used] of [stack]\s to \the [src]."))
+	to_chat(user, SPAN_NOTICE("You add [total_used] stack\s of [stack] to \the [src]."))
 
 
 /obj/machinery/neotheology/implantprinter/proc/flick_anim(var/animation)

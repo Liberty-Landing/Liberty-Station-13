@@ -4,7 +4,6 @@
 	recipe_guide = "Put dough in an oven, bake for 30 seconds on medium."
 	step_builder = list(
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
 
@@ -19,7 +18,6 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
 
@@ -34,7 +32,6 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/syntiflesh),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
 
@@ -49,7 +46,6 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/xenomeat),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
 
@@ -64,7 +60,6 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/cheesewedge),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)
 	)
 
@@ -74,7 +69,6 @@
 	product_count = 3
 	step_builder = list(
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/sliceable/flatdough),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 1),
 		list(CWJ_USE_OVEN, J_HI, 5 SECONDS)
 	)
 
@@ -84,7 +78,6 @@
 	step_builder = list(
 		list(CWJ_ADD_REAGENT, "blackpepper", 1),
 		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 5),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/dough),
 		list(CWJ_USE_OVEN, J_MED, 30 SECONDS)

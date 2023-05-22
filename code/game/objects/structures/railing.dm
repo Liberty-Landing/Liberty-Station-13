@@ -24,6 +24,12 @@
 	icon_modifier = "grey_"
 	icon_state = "grey_railing0"
 
+/obj/structure/railing/custodian
+	name = "custodian fence"
+	desc = "A Custodian-made fence, designs are engraved into the posts here and there."
+	icon_modifier = "custodian_"
+	icon_state = "custodian_railing0"
+
 /obj/structure/railing/attack_generic(var/mob/user, var/damage, var/attack_verb)
 	if(istype(user))
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)

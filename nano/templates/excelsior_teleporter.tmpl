@@ -1,7 +1,7 @@
-<!-- 
+<!--
 Used In File(s): code/game/machinery/excelsior/ex_teleporter.dm
  -->
-{{:helper.excelsiorMode()}} 
+{{:helper.excelsiorMode()}}
 <h2>Welcome Comrade</h2>
 {{if data.menu == 0}}
 	<div class="item">
@@ -19,7 +19,7 @@ Used In File(s): code/game/machinery/excelsior/ex_teleporter.dm
 		<div class="itemContent">
 			- {{:data.time_until_scan}}
 		</div>
-	</div>		
+	</div>
 	<div class="item">
 		<div class="itemLabel">
 			Mandates:
@@ -27,17 +27,6 @@ Used In File(s): code/game/machinery/excelsior/ex_teleporter.dm
 		<div class="itemContent">
 			{{:helper.link('Mandates', 'radiation', {'open_menu' : 1}, null, 'fixedLeft')}}
 		</div>
-		<div class="item">
-		<table class='itemContent' style="width: 100%;">
-			<tr>
-				<td>
-					Request reinforcements<br>({{:data.conscripts}} conscripts remaining)
-				</td>
-				<td>
-					{{:helper.link('2000', 'circle-arrow-s', {'request_reinforcements' : 1}, 'data.reinforcements_ready' ?  null : 'disabled', 'fixedLeft')}}
-				</td>
-			</tr>
-		</table>
 	</div>
 	</div>
 	<div class="item">
@@ -77,7 +66,7 @@ Used In File(s): code/game/machinery/excelsior/ex_teleporter.dm
 			</tr>
 		{{/for}}
 	</table>
-	
+
 {{else data.menu == 1}}
 	<h2>Available Mandates:</h2>
 	<div class="item">

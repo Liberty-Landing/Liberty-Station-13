@@ -5,7 +5,7 @@ var/global/list/precursor_normal_room_templates = list()
 var/global/list/precursor_end_room_templates = list()
 var/global/list/precursor_large_room_templates = list()
 var/global/list/starter_precursor_room_templates = list()
-var/turf/portal_turf = null
+var/precursor_test = FALSE
 
 /proc/populatePrecursorMapLists()
 	if(starter_precursor_room_templates.len || precursor_normal_room_templates.len || precursor_end_room_templates.len || precursor_large_room_templates.len)
@@ -58,137 +58,215 @@ var/turf/portal_turf = null
 	..()
 	my_map = pick(starter_precursor_room_templates)
 
-/obj/procedural/jp_DungeonGenerator/precursor/proc/beam_me_up_trilby() //makes the connecting piece from the starter room to the prep area.
-	var/list/turf/viable_turfs = list()
-	var/bad_turf = FALSE // for wall checks due to being a portal.
-	var/obj/procedural/jp_DungeonRoom/picked_room = pick(out_rooms)
-	for(var/turf/simulated/floor/F in range(roomMinSize, picked_room.centre))
-		//not under walls
-		if (F.is_wall)
-			continue
-		//nothing in the space we are placing
-		if (F.contents.len > 1)
-			continue
-		//no turfs in space
-		if (turf_is_external(F))
-			continue
-		//we are using a portal. The space around has to be clear or we step onto walls.
-		for (var/d in cardinal)
-			var/turf/T = get_step(F, d)
-			if (T.is_wall)
-				bad_turf = TRUE
-				break
-		//do check for bad_turf then add or reset for next loop.
-		if(bad_turf == FALSE)
-			viable_turfs += F
-		else bad_turf = FALSE
-		//double check we actually got a turf
-	if(viable_turfs.len == 0)
-		message_admins("Failed to find viable turf for entry portal placement in precursor dungeon.", 1)
-		return
-	portal_turf = pick(viable_turfs)
 
-/obj/procedural/jp_DungeonGenerator/precursor/proc/open_up_inside() //creates and links portals
-	var/obj/effect/portal/jtb/prep_portal = new /obj/effect/portal/jtb(get_turf(src))  // spawn portal in prep room
-	var/obj/effect/portal/jtb/starter_portal = new /obj/effect/portal/jtb(portal_turf) //spawn portal in starter room
-	prep_portal.set_target(get_turf(starter_portal))  // Link the two portals
-	starter_portal.set_target(get_turf(prep_portal))
-	prep_portal.name = "ancient portal"
-	starter_portal.name = "ancient portal"
-	prep_portal.desc = "A ancient portal created from a equally ancient device."
-	starter_portal.desc = "A ancient portal that hopefully returns home."
+/obj/procedural/jp_DungeonGenerator/precursor/proc/beam_me_up_trilby() //finds and assigns the starter room jump pad.
+	var/obj/procedural/jp_DungeonRoom/picked_room = pick(out_rooms)
+	for(var/obj/machinery/artifact_scanpad/precursor/padmay in range (roomMinSize, picked_room.centre))
+		if (get_turf(padmay)) //anti wacky check
+			starter_portal_turf = get_turf(padmay)
+			padmay.starter_room = TRUE
+			if(precursor_test)
+				message_admins("/blue Starter room portal pad found.")
+	if (starter_portal_turf == null)
+		if(precursor_test)
+			message_admins("\blue Failed to find a suitable jump pad for precursor starting room.")
+		return
+
+
+/obj/procedural/jp_DungeonGenerator/precursor/proc/open_up_inside()
+	//link to the scanpads by the precursor dungeon generator, create portals if they arn't made.
+	if(!prep_portal)
+		for(var/obj/machinery/artifact_scanpad/precursor/anikan in world)
+			if (starter_portal_turf && !anikan.starter_room)
+				prep_portal = new /obj/effect/portal/jtb/precursor(get_turf(anikan))
+				if(precursor_test)
+					message_admins("\blue Created new prep room portal.")
+		if(precursor_test && !prep_portal)
+			message_admins("\blue Failed to find suitable precursor warp pad for prep portal.")
+
+	if (!starter_portal && starter_portal_turf)
+		starter_portal = new /obj/effect/portal/jtb/precursor(starter_portal_turf)
+
+	//link the portals and set their names.
+	if(prep_portal && starter_portal)
+		prep_portal.set_target(get_turf(starter_portal))
+		starter_portal.set_target(get_turf(prep_portal))
+
+/obj/procedural/jp_DungeonGenerator/precursor/proc/unlink()
+	//qdel and disconnect various things to prep for reset
+	qdel(prep_portal)
+	qdel(starter_portal)
+	qdel(starter_portal_turf)
 
 /obj/procedural/jp_DungeonGenerator/precursor
 	name = "Precursor Procedural Generator"
 	regen_specific = TRUE
 	regen_light = /obj/machinery/light/small/autoattach
+	var/obj/effect/portal/jtb/precursor/prep_portal
+	var/obj/effect/portal/jtb/precursor/starter_portal
+	var/turf/starter_portal_turf = null
 
+/obj/machinery/artifact_scanpad/precursor
+	name = "precursor jump pad"
+	desc = "A pad warped in thru bluespace to ensure a more stable portal."
+	var/starter_room = FALSE
+
+/obj/machinery/precursor_dungeon_device
+	name = "precursor systems device"
+	desc = "A advanced machine capable of finding ruins by vibrations in the ice sheets."
+	icon = 'icons/obj/virology.dmi'
+	icon_state = "isolator"
+
+	var/uses = 1
+	var/obj/procedural/dungenerator/precursor/precursor_controller = null
+	var/last_use = 0
+	var/generated = FALSE
+
+/obj/machinery/precursor_dungeon_device/New()
+	 last_use = world.time
+
+	//attackhand (person using it) checks for uses and if we are currently generating or resetting before generating a new dungeon. consumes uses.
+/obj/machinery/precursor_dungeon_device/attack_hand(mob/user)
+	//need a check sense last time the device was used so people can't lag us thru checks by spam clicking it.
+	if(!precursor_controller)
+		if(precursor_test)
+			message_admins("\blue new precursor generator created.")
+		precursor_controller = new /obj/procedural/dungenerator/precursor(src.loc)
+	if(world.time < last_use + 5)
+		to_chat(user, SPAN_NOTICE("The [src] is resetting its interface."))
+		return
+	last_use = world.time
+	if(precursor_controller.resetting || precursor_controller.generating)
+		to_chat(user, SPAN_NOTICE("The [src] is still locating ruins!"))
+		return
+	if(!generated && uses > 0)
+		to_chat(user, SPAN_NOTICE("The machine starts to search for a new set of ruins in the ice."))
+		uses -= 1
+		precursor_controller.make_me_dungeon()
+		generated = TRUE
+		return
+	if(generated)
+		for(var/mob/M in GLOB.player_list)
+			if(M.lastarea == /area/precursor)
+				to_chat(user, SPAN_NOTICE("You can't end the expidition right now, Someone is still out there!"))
+				return
+		to_chat(user, SPAN_NOTICE("The machine disconnects its links."))
+		precursor_controller.Pgenerate.unlink()
+		precursor_controller.reset()
+
+/obj/machinery/precursor_dungeon_device/attackby(obj/item/I, mob/user)
+	if(istype(I,/obj/item/device/psionic_catalyst/dull))
+		if(uses > 0)
+			to_chat(user, SPAN_NOTICE("The machine is already loaded and ready to go."))
+			return
+		else
+			to_chat(user, SPAN_NOTICE("You load the device into the [src]."))
+			uses += 1
+			return
+
+/obj/effect/portal/jtb/precursor
+	name = "ancient portal"
+	desc = "A portal to somewhere ancient."
 
 /obj/procedural/dungenerator/precursor
 	name = "Precursor Gen"
 	var/resetting = FALSE
 	var/generating = FALSE
+	var/generated = FALSE
+	var/obj/procedural/jp_DungeonGenerator/precursor/Pgenerate = null
 
 /obj/procedural/dungenerator/precursor/proc/make_me_dungeon()
 	set background = 1
 	spawn()
 		//testing_variable(start, REALTIMEOFDAY)
-		var/obj/procedural/jp_DungeonGenerator/precursor/generate = new /obj/procedural/jp_DungeonGenerator/precursor(src)
-		testing("Beginning procedural generation of [name] -  Z-level [z].")
-		generate.name = name
-		generate.setArea(locate(145, 27, z), locate(171, 45, z)) //bottom right corner
-		generate.setWallType(/turf/simulated/wall/ice)
-		generate.setFloorType(/turf/simulated/floor/rock/manmade/ruin2)
-		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/starter))
-		generate.setNumRooms(1) //creates the single starter room they enter other rooms from.
-		generate.setRoomMinSize(5)
-		generate.setRoomMaxSize(5)
-		generate.setExtraPaths(1)
-		generate.setMinPathLength(1)
-		generate.setMaxPathLength(1)
-		generate.setMinLongPathLength(1)
-		generate.setLongPathChance(1)
-		generate.setPathEndChance(80)
-		generate.setPathWidth(1)
-		generate.setDoAccurateRoomPlacementCheck(TRUE)
-		generate.generate()
-		generate.beam_me_up_trilby()
-		//proc for building and connecting the entrance/exit to the dungeon here.
+		if(!Pgenerate)
+			Pgenerate = new /obj/procedural/jp_DungeonGenerator/precursor(src)
+		if(precursor_test)
+			message_admins("\blue precursor starter room generating now.")
+		Pgenerate.name = name
+		Pgenerate.setArea(locate(145, 27, z), locate(171, 45, z)) //bottom right corner
+		Pgenerate.setWallType(/turf/simulated/wall/ice)
+		Pgenerate.setFloorType(/turf/simulated/floor/rock/manmade/ruin2)
+		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/starter))
+		Pgenerate.setNumRooms(1) //creates the single starter room they enter other rooms from.
+		Pgenerate.setRoomMinSize(5)
+		Pgenerate.setRoomMaxSize(5)
+		Pgenerate.setExtraPaths(1)
+		Pgenerate.setMinPathLength(1)
+		Pgenerate.setMaxPathLength(1)
+		Pgenerate.setMinLongPathLength(1)
+		Pgenerate.setLongPathChance(1)
+		Pgenerate.setPathEndChance(80)
+		Pgenerate.setPathWidth(1)
+		Pgenerate.setDoAccurateRoomPlacementCheck(TRUE)
+		Pgenerate.generate()
+		Pgenerate.beam_me_up_trilby()
 
 		sleep(90)
 
-		generate.setArea(locate(05, 140, z), locate(30, 170, z)) //upper left for the final room. 21 by 21 space for it. just short of the impassible.
-		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/end))
-		generate.setNumRooms(1) // just the one
-		generate.setRoomMinSize(10)
-		generate.setRoomMaxSize(10)
-		generate.setExtraPaths(0)
-		generate.setMinPathLength(0)
-		generate.setMaxPathLength(0)
-		generate.setMinLongPathLength(0)
-		generate.setLongPathChance(0)
-		generate.setPathEndChance(0)
-		generate.setPathWidth(0)
-		generate.setUsePreexistingRegions(TRUE)
-		generate.setDoAccurateRoomPlacementCheck(TRUE)
-		generate.generate()
+		if(precursor_test)
+			message_admins("\blue precursor end room generating now.")
+		Pgenerate.setArea(locate(05, 140, z), locate(30, 170, z)) //upper left for the final room. 21 by 21 space for it. just short of the impassible.
+		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/end))
+		Pgenerate.setNumRooms(1) // just the one
+		Pgenerate.setRoomMinSize(10)
+		Pgenerate.setRoomMaxSize(10)
+		Pgenerate.setExtraPaths(0)
+		Pgenerate.setMinPathLength(0)
+		Pgenerate.setMaxPathLength(0)
+		Pgenerate.setMinLongPathLength(0)
+		Pgenerate.setLongPathChance(0)
+		Pgenerate.setPathEndChance(0)
+		Pgenerate.setPathWidth(0)
+		Pgenerate.setUsePreexistingRegions(TRUE)
+		Pgenerate.setDoAccurateRoomPlacementCheck(TRUE)
+		Pgenerate.generate()
 
 		sleep(90)
 
-		generate.setArea(locate(05, 27, z), locate(140, 171, z)) //actual dungeon area but not near the east wall (stops connection to the starter room)
-		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/large))
-		generate.setNumRooms(6) // 6 main rooms that we don't duplicate. Need miniumum of 6 before I can finish the pull code.
-		generate.setRoomMinSize(10)
-		generate.setRoomMaxSize(10)
-		generate.setExtraPaths(0)
-		generate.setMinPathLength(0)
-		generate.setMaxPathLength(0)
-		generate.setMinLongPathLength(0)
-		generate.setLongPathChance(0)
-		generate.setPathEndChance(0)
-		generate.setPathWidth(0)
-		generate.setUsePreexistingRegions(TRUE)
-		generate.setDoAccurateRoomPlacementCheck(TRUE)
-		generate.generate()
+		if(precursor_test)
+			message_admins("\blue precursor large rooms generating now.")
+		Pgenerate.setArea(locate(05, 27, z), locate(140, 171, z)) //actual dungeon area but not near the east wall (stops connection to the starter room)
+		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/large))
+		Pgenerate.setNumRooms(6) // 6 main rooms that we don't duplicate.
+		Pgenerate.setRoomMinSize(10)
+		Pgenerate.setRoomMaxSize(10)
+		Pgenerate.setExtraPaths(0)
+		Pgenerate.setMinPathLength(0)
+		Pgenerate.setMaxPathLength(0)
+		Pgenerate.setMinLongPathLength(0)
+		Pgenerate.setLongPathChance(0)
+		Pgenerate.setPathEndChance(0)
+		Pgenerate.setPathWidth(0)
+		Pgenerate.setUsePreexistingRegions(TRUE)
+		Pgenerate.setDoAccurateRoomPlacementCheck(TRUE)
+		Pgenerate.generate()
 
 		sleep(90)
 
-		generate.setArea(locate(05, 27, z), locate(171, 171, z)) //actual dungeon area.
-		generate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/normal))
-		generate.setNumRooms(30) // whole buncha rooms!
-		generate.setRoomMinSize(5)
-		generate.setRoomMaxSize(5)
-		generate.setExtraPaths(3)
-		generate.setMinPathLength(1)
-		generate.setMaxPathLength(65)
-		generate.setMinLongPathLength(1)
-		generate.setLongPathChance(10)
-		generate.setPathEndChance(80)
-		generate.setPathWidth(2)
-		generate.setUsePreexistingRegions(TRUE)
-		generate.setDoAccurateRoomPlacementCheck(TRUE)
-		generate.generate()
-		generate.open_up_inside() //done last so we don't open a portal in a still generating dungeon.
+		if(precursor_test)
+			message_admins("\blue precursor small rooms generating now.")
+		Pgenerate.setArea(locate(05, 27, z), locate(171, 171, z)) //actual dungeon area.
+		Pgenerate.setAllowedRooms(list(/obj/procedural/jp_DungeonRoom/preexist/square/submap/precursor/normal))
+		Pgenerate.setNumRooms(30) // whole buncha rooms!
+		Pgenerate.setRoomMinSize(5)
+		Pgenerate.setRoomMaxSize(5)
+		Pgenerate.setExtraPaths(3)
+		Pgenerate.setMinPathLength(1)
+		Pgenerate.setMaxPathLength(65)
+		Pgenerate.setMinLongPathLength(1)
+		Pgenerate.setLongPathChance(10)
+		Pgenerate.setPathEndChance(80)
+		Pgenerate.setPathWidth(2)
+		Pgenerate.setUsePreexistingRegions(TRUE)
+		Pgenerate.setDoAccurateRoomPlacementCheck(TRUE)
+		Pgenerate.generate()
+		if(precursor_test)
+			message_admins("\blue precursor portal creation and linking starting now.")
+		Pgenerate.open_up_inside() //done last so we don't open a portal in a still generating dungeon.
+		if(precursor_test)
+			message_admins("\blue Precursor generation finished.")
+
 
 /obj/procedural/dungenerator/precursor/proc/reset() //replaces the dungeon with ice walls.
 	set background = 1
@@ -197,6 +275,8 @@ var/turf/portal_turf = null
 	var/verticalstepcounter = 0 //so we can do the 7 iterations it takes each time before stepping right and doing it again.
 	var/horizontalstepcounter = 0 //so we can do the 7 other step cycles
 
+	if(precursor_test)
+		message_admins("\blue precursor dungeon is resetting into ice walls now.")
 	resetting = TRUE
 	while(horizontalstepcounter < 7 || targetspot.x < 172)
 		while(verticalstepcounter < 7 || targetspot.y < 172)
@@ -208,9 +288,10 @@ var/turf/portal_turf = null
 			sleep(10) //if it shoots thru too fast it dosn't generate them all. Pain.
 		targetspot = locate(targetspot.x + 8, 26, targetspot.z)
 		horizontalstepcounter += 1
-
-	//message_admins("\blue Precursor reset proc has finished regenerating the ice walls.", 1)
+	if(precursor_test)
+		message_admins("\blue Precursor reset proc has finished regenerating the ice walls.")
 	resetting = FALSE
+
 
 /obj/procedural/dungenerator/precursor/New() //just a object placed on the map to generate it the first time.
 	while(1) //the most horrifying loop type MAKE SURE THERE IS A FUCKING BREAK SOMEWHERE BELOW OR ELSE IT WONT STOP.
@@ -219,4 +300,3 @@ var/turf/portal_turf = null
 			break
 		else
 			sleep(150)
-	src.make_me_dungeon()

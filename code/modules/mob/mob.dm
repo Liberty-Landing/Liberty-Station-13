@@ -1418,10 +1418,9 @@ mob/proc/yank_out_object()
 		if(!ai_in_use && !is_in_use)
 			in_use = 0
 
-
-//SoJ
+//Liberty
 
 /mob/proc/give_health_via_stats()
-	if(stats)
-		health += src.stats.getStat(STAT_ANA)
-		maxHealth += src.stats.getStat(STAT_ANA)
+	if(stats && maxHealth > 33) //Sanity so you cant get below 30 max hp
+		health += src.stats.getStat(STAT_END)
+		maxHealth += src.stats.getStat(STAT_END)

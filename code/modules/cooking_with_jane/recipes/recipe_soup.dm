@@ -56,7 +56,7 @@
 	cooking_container = POT
 	product_type = /obj/item/reagent_containers/food/snacks/wishsoup
 	step_builder = list(
-		list(CWJ_ADD_REAGENT, "water", 20),
+		list(CWJ_ADD_REAGENT, "water", 40),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
 		list(CWJ_USE_STOVE, J_LO, 5 SECONDS)
 	)

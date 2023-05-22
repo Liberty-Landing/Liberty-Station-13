@@ -422,19 +422,6 @@
 		/datum/design/autolathe/ammo/smg_lethal = 2,
 	)
 
-/obj/item/computer_hardware/hard_drive/portable/design/guns/tactical
-	disk_name = "LG - 10mm Tactical SMG"
-	icon_state = "liberty"
-
-	license = 12
-	designs = list(
-		/datum/design/autolathe/gun/tactical = 3,
-		/datum/design/autolathe/ammo/smg_practice = 0,
-		/datum/design/autolathe/ammo/smg_rubber,
-		/datum/design/autolathe/ammo/smg,
-		/datum/design/autolathe/ammo/smg_lethal = 2,
-	)
-
 // 6.5mm carbines
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/federalist

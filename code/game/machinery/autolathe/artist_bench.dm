@@ -7,10 +7,10 @@
 #define ERR_NOINSIGHT "no insight"
 
 /obj/machinery/autolathe/artist_bench
-	name = "artist's bench"
+	name = "artisan's table"
 	desc = "Insert wood, steel, glass, plasteel, plastic and a bit of your soul to create a beautiful work of art."
 	icon = 'icons/obj/machines/autolathe.dmi'
-	icon_state = "bench"
+	icon_state = "artisantable"
 	circuit = /obj/item/circuitboard/artist_bench
 	have_disk = FALSE
 	have_reagents = FALSE
@@ -256,7 +256,7 @@
 		if(ins_used >= 55)
 			stats_amt += 2//max = 2*4*2+6 = 24 points, min 2*4+6 = 14
 		for(var/i in 1 to stats_amt)
-			var/stat = pick(ALL_STATS_FOR_LEVEL_UP)
+			var/stat = pick(ALL_STATS_LEVEL)
 			oddity_stats[stat] = min(oddity_stats[stat]+rand(1,2))
 
 		O.oddity_stats = oddity_stats

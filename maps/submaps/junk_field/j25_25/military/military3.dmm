@@ -43,10 +43,6 @@
 	},
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
-"an" = (
-/obj/random/mob/space_balkan,
-/turf/simulated/floor/tiled/steel/bluecorner,
-/area/template_noop)
 "ao" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8
@@ -308,7 +304,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "bs" = (
-/obj/item/gun/projectile/glock,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "bt" = (
@@ -330,7 +326,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "dn" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "ej" = (
@@ -610,7 +606,7 @@ ad
 aj
 ae
 aN
-an
+aj
 aY
 ae
 aR
@@ -618,7 +614,7 @@ aj
 aQ
 aQ
 aj
-an
+bs
 aj
 ae
 aX
@@ -634,7 +630,7 @@ lJ
 ac
 Uz
 yy
-an
+bs
 ae
 ae
 am
@@ -649,7 +645,7 @@ aT
 aj
 ae
 bl
-an
+bs
 bm
 ae
 YP
@@ -720,7 +716,7 @@ ae
 as
 aj
 aj
-an
+bs
 bb
 bd
 To
@@ -755,7 +751,7 @@ wA
 bh
 To
 aj
-an
+bs
 aj
 aQ
 ae
@@ -883,7 +879,7 @@ aj
 aT
 aj
 aT
-an
+bs
 aj
 aj
 aj
@@ -916,7 +912,7 @@ ar
 ay
 al
 aj
-an
+bs
 at
 aj
 aE
@@ -1016,7 +1012,7 @@ ap
 ao
 ad
 aE
-an
+bs
 ad
 ad
 yy

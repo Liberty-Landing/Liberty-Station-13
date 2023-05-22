@@ -565,7 +565,7 @@
 	I.tool_upgrades = list(
 	UPGRADE_BULK = 1,
 	UPGRADE_DEGRADATION_MULT = 1.15,
-	UPGRADE_CELLPLUS = 1
+	UPGRADE_CELLPLUS = TRUE
 	)
 	I.prefix = "large-socketed"
 	I.req_fuel_cell = REQ_CELL
@@ -585,10 +585,10 @@
 	I.tool_upgrades = list(
 	UPGRADE_DEGRADATION_MULT = 1.15,
 	UPGRADE_BULK = -1,
-	UPGRADE_CELLMINUS = 1
+	UPGRADE_CELLMINUS = TRUE
 	)
 	I.weapon_upgrades = list(
-	GUN_UPGRADE_CELLMINUS = 1,
+	GUN_UPGRADE_CELLMINUS = TRUE,
 	UPGRADE_BULK = -2)
 	I.prefix = "small-socketed"
 	I.req_fuel_cell = REQ_CELL
@@ -694,7 +694,7 @@
 	name = "sanctifier"
 	icon_state = "sanctifier"
 	desc = "Recommended for crusades against mutants, wild life, and heretics. Does this device actually make a better weapon or is it something else? Regardless, it makes one more thoughtful during labor."
-	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_CARBON_FIBER = 3, MATERIAL_SILVER = 5)
 	price_tag = 20
 
 /obj/item/tool_upgrade/augment/sanctifier/New()
@@ -849,10 +849,10 @@
 	UPGRADE_POWERCOST_MULT = 1.20,
 	UPGRADE_PRECISION = 12,
 	UPGRADE_WORKSPEED = 3,
-	UPGRADE_ALLOW_GREYON_MODS = TRUE,
+	UPGRADE_ALLOW_SIMULACRUM_MODS = TRUE,
 	)
 	I.weapon_upgrades = list(
-	GUN_UPGRADE_ALLOW_GREYON_MODS = TRUE,
+	GUN_UPGRADE_ALLOW_SIMULACRUM_MODS = TRUE,
 	GUN_UPGRADE_RECOIL = 0.8,
 	GUN_UPGRADE_DAMAGE_MULT = 1.1,
 	GUN_UPGRADE_PEN_MULT = 1.2,
@@ -868,8 +868,8 @@
 	I.similacrum_moding = TRUE
 
 /obj/item/tool_upgrade/augment/ai_tool_excelsior
-	name = "excelsior nanointegrated AI"
-	desc = "An attempt by the excelsior to copy the superior Similacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from excelsior teleporation technology.\
+	name = "astrakhan nanointegrated AI"
+	desc = "An attempt by the Astrakhan R&D institute to copy the superior Similacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from old soviet teleporation technology.\
 	 Once added its embeding into the object making it a permanent integration."
 	icon_state = "ai_tool_excelsior"
 	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 3)

@@ -1,3 +1,4 @@
+
 /datum/ritual/group/cruciform
 	implant_type = /obj/item/implant/core_implant/cruciform
 	success_message = "On the verge of audibility you hear pleasant music, your mind clears up and the spirit grows stronger. Your prayer was heard."
@@ -7,7 +8,7 @@
 /datum/ritual/group/cruciform/pre_check(mob/living/carbon/human/user, obj/item/implant/core_implant/C, targets)
 	if(!..())
 		return FALSE
-	if(high_ritual && !C.get_module(CRUCIFORM_PRIEST) && !is_inquisidor(user))
+	if(high_ritual && !C.get_module(CRUCIFORM_OATHPLEDGE))
 		return FALSE
 	return TRUE
 
@@ -40,6 +41,8 @@
 	if(cnt < 3 || !stat_buff)
 		return
 	M.stats.changeStat(stat_buff, buff_value + cnt * aditional_value)
+
+/* Later
 
 /datum/ritual/group/cruciform/stat/mechanical
 	name = "Origin of Time"
@@ -191,3 +194,4 @@
 /area/proc/sanctify()
 	LEGACY_SEND_SIGNAL(src, COMSIG_AREA_SANCTIFY)
 	return
+*/

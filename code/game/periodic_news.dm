@@ -10,63 +10,78 @@
 		can_be_redacted = 0
 		message_type = "Story"
 
-	revolution_inciting_event
+	ceti_station_overtake
 
-		paycuts_suspicion
+		program
 			round_time = 60*10
-			message = {"Reports have leaked that NanoTrasen is planning to put paycuts into
-						effect on many of its Research Stations in Tau Ceti. Apparently these research
-						stations haven't been able to yield the expected revenue, and thus adjustments
-						have to be made."}
-			author = "Unauthorized"
+			message = {"Reports have leaked that HexaOptimum has launched revolutionary program aboard
+						it's Tau Ceti research station Gamma focused on reproducing long eliminated
+						plagues and pathogens. What the reason behind this is was kept from us by
+						HexaOptimum security forces."}
+			author = "Intern Editor TC-WD-344"
+			channel_name = "The Tau Ceti Monthly"
 
-		paycuts_confirmation
+		contact_loss
 			round_time = 60*40
-			message = {"Earlier rumours about paycuts on Research Stations in the Tau Ceti system have
-						been confirmed. Shockingly, however, the cuts will only affect lower tier
-						personnel. Heads of Staff will, according to our sources, not be affected."}
-			author = "Unauthorized"
+			message = {"Earlier reports have proven to be true as station Gamma has seemingly lost any
+						contact with it's sister stations, dispatched PentaOptium vessel failed to
+						report to back it's command post and most assume the worst. We will keep you all
+						updated on developments."}
+			author = "Intern Editor TC-WD-344"
+			channel_name = "The Tau Ceti Monthly"
 
-		human_experiments
+		agent
 			round_time = 60*90
-			message = {"Unbelievable reports about human experimentation have reached our ears. According
-			 			to a refugee from one of the Tau Ceti Research Stations, their station, in order
-			 			to increase revenue, has refactored several of their facilities to perform experiments
-			 			on live humans, including virology research, genetic manipulation, and \"feeding them
-			 			to the slimes to see what happens\". Allegedly, these test subjects were neither
-			 			humanified monkeys nor volunteers, but rather unqualified staff that were forced into
-			 			the experiments, and reported to have died in a \"work accident\" by NanoTrasen."}
-			author = "Unauthorized"
+			message = {"The worse has come to worst, the patrol vessel was shot down by the station
+						defenses and any further attempts have been put on hold. However we recieved
+						promising reports of an inside agent working on resolving the situation, what
+						said situation is still unknown but possibly related to recent wave of BEL
+						terror attacks."}
+			author = "Intern Editor TC-WD-344"
+			channel_name = "The Tau Ceti Monthly"
 
-	bluespace_research
+		ceti_station_ending
+			round_time = 60*120
+			message = {"We finally recieved fresh report on the station Gamma station situation.
+						In unprecedented act of heroism a trio of cryoslept cybernetically enhanced
+						HexaOptimum employees managed to dispatch around fourty Black Eagle legionaries
+						with only procured equipment. The current CEO Salazar Diego refused to comment on
+						this entire debacle but has promised to award these brave souls and hold a ceremony
+						for those that have fallen in defense of progress."}
+			author = "Intern Editor TC-WD-344"
+			channel_name = "The Tau Ceti Monthly"
 
-		announcement
+	astrakhan_strike
+
+		a_new_plant
+			author = "Editor Carl Ritz"
+			channel_name = "The Worker's Truth"
 			round_time = 60*20
-			message = {"The new field of research trying to explain several interesting spacetime oddities,
-						also known as \"Bluespace Research\", has reached new heights. Of the several
-						hundred space stations now orbiting in Tau Ceti, fifteen are now specially equipped
-						to experiment with and research Bluespace effects. Rumours have it some of these
-						stations even sport functional \"travel gates\" that can instantly move a whole research
-						team to an alternate reality."}
+			message = {"A new motor pool has been opened on the 27th January and already there has been
+						disagreements over it's intended purpose, while mayor Henderson has cited his predecesor's
+						speech about the need for Tabila to industrilize this only served more to anger the farmers.
+						Over 1000 citizens have rallied on town's square in protest and demanded closure of the pool,
+						this was after 3 hours dispersed under pretenses of public health safety due to rapidly spreading
+						C2-11 plague within the county."}
 
 	random_junk
 
 		cheesy_honkers
 			author = "Assistant Editor Carl Ritz"
-			channel_name = "The Gibson Gazette"
+			channel_name = "The Pallas Mammoth"
 			message = {"Do cheesy honkers increase risk of having a miscarriage? Several health administrations
 						say so!"}
 			round_time = 60 * 15
 
 		net_block
 			author = "Assistant Editor Carl Ritz"
-			channel_name = "The Gibson Gazette"
+			channel_name = "The Pallas Mammoth"
 			message = {"Several corporations banding together to block access to 'wetskrell.nt', site administrators
 			claiming violation of net laws."}
 			round_time = 60 * 50
 
 		found_ssd
-			channel_name = "Nyx Daily"
+			channel_name = "The Solarian Courier"
 			author = "Doctor Eric Hanfield"
 
 			message = {"Several people have been found unconscious at their terminals. It is thought that it was due
@@ -78,7 +93,7 @@
 	lotus_tree
 
 		explosions
-			channel_name = "Nyx Daily"
+			channel_name = "The Solarian Courier"
 			author = "Reporter Leland H. Howards"
 
 			message = {"The newly-christened civillian transport Lotus Tree suffered two very large explosions near the
@@ -92,30 +107,30 @@
 	food_riots
 
 		breaking_news
-			channel_name = "Nyx Daily"
+			channel_name = "The Solarian Courier"
 			author = "Reporter Ro'kii Ar-Raqis"
 
 			message = {"Breaking news: Food riots have broken out throughout the Refuge asteroid colony in the Tenebrae
-						Lupus system. This comes only hours after NanoTrasen officials announced they will no longer trade with the
+						Lupus system. This comes only hours after Terran officials announced they will no longer trade with the
 						colony, citing the increased presence of \"hostile factions\" on the colony has made trade too dangerous to
-						continue. NanoTrasen officials have not given any details about said factions. More on that at the top of
+						continue. Terran officials have not given any details about said factions. More on that at the top of
 						the hour."}
 			round_time = 60 * 10
 
 		more
-			channel_name = "Nyx Daily"
+			channel_name = "The Solarian Courier"
 			author = "Reporter Ro'kii Ar-Raqis"
 
-			message = {"More on the Refuge food riots: The Refuge Council has condemned NanoTrasen's withdrawal from
-			the colony, claiming \"there has been no increase in anti-NanoTrasen activity\", and \"\[the only] reason
-			NanoTrasen withdrew was because the \[Tenebrae Lupus] system's Plasma deposits have been completely mined out.
-			We have little to trade with them now\". NanoTrasen officials have denied these allegations, calling them
-			\"further proof\" of the colony's anti-NanoTrasen stance. Meanwhile, Refuge Security has been unable to quell
+			message = {"More on the Refuge food riots: The Refuge Council has condemned Terran withdrawal from
+			the colony, claiming \"there has been no increase in anti-Terran activity\", and \"\[the only] reason
+			Federation withdrew was because the \[Tenebrae Lupus] system's Plasma deposits have been completely mined out.
+			We have little to trade with them now\". Federation officials have denied these allegations, calling them
+			\"further proof\" of the colony's anti-Terran stance. Meanwhile, Refuge Security has been unable to quell
 			the riots. More on this at 6."}
 			round_time = 60 * 60
 
 
-var/global/list/newscaster_standard_feeds = list(/datum/news_announcement/bluespace_research, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots)
+var/global/list/newscaster_standard_feeds = list(/datum/news_announcement/ceti_station_overtake, /datum/news_announcement/astrakhan_strike, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots)
 
 proc/process_newscaster()
 	check_for_newscaster_updates(SSticker.newscaster_announcements)

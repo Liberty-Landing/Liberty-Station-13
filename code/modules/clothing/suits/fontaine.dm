@@ -1,9 +1,11 @@
 
+// Parent "makeshift" armor for anyone to do as a mid-tier, craftable, non-faction tied armor
 /obj/item/clothing/suit/storage/scavengerarmor
-	name = "Fontaine plate carrier"
-	desc = "A rigged yet sturdy Fontaine branded armor. Strong and protective as most vests, it is made entirely from reclaimed materials. It even has pockets as well as room for additional plates of armor to be added."
-	icon_state = "fontaine_platecarrier"
-	item_state = "fontaine_platecarrier"
+	name = "Scavenger armor"
+	desc = "A set of comfy plates of multiple alloys haphazardly welded together that allow for moderate protection against cold and damage. \
+			It has two chest pockets for easy access."
+	icon_state = "scav_armor"
+	item_state = "scav_armor"
 	tool_qualities = list(QUALITY_ARMOR = 100)
 	max_upgrades = 2
 	stiffness = MEDIUM_STIFFNESS
@@ -16,41 +18,32 @@
 		bio = 0,
 		rad = 0
 	)
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_STEEL = 10, MATERIAL_PLATINUM = 2)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_STEEL = 10)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 25
 	siemens_coefficient = 0.7
 
-/* Not used for now; no alt-style armors rn.
-/obj/item/clothing/suit/storage/scavengerarmor/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
+// TODO: Maybe flakification of scavenger armor (see Fontaine fullbody plate carrier)
 
-	if(!isliving(loc))
-		return
+// Fontaine versions below.
+/obj/item/clothing/suit/storage/scavengerarmor/fontaine
+	name = "Fontaine plate carrier"
+	desc = "A rigged yet sturdy Fontaine branded armor. Strong and protective as most vests, it is made entirely from reclaimed materials. It even has pockets as well as room for additional plates of armor to be added."
+	icon_state = "fontaine_platecarrier"
+	item_state = "fontaine_platecarrier"
+	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_STEEL = 10, MATERIAL_PLATINUM = 2)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LOWER_TORSO
+	min_cold_protection_temperature = T0C - 20
 
-	var/mob/M = usr
-	var/list/options = list()
-	options["scavenger armor"] = "scav_armor"
-	options["alt scavenger armor"] = "alt_scavenger"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		to_chat(M, "You adjusted your attire's style into [choice] mode.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return 1
-*/
-
-/obj/item/clothing/suit/storage/scavengerarmor/fullbody
+/obj/item/clothing/suit/storage/scavengerarmor/fontaine/fullbody
 	name = "Fontaine full-body plate carrier"
 	desc = "A set of Fontaine brand armor with additional armour plating installed. Though the haphazardly-made plates are heavy and don't exactly excel against projectiles, they shrug off melee attacks nicely."
 	icon_state = "fontaine_fullbody_platecarrier"
 	item_state = "fontaine_fullbody_platecarrier"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	max_upgrades = 1
 	armor_list = list(
 		melee = 50, //A bit worse than riot armour
@@ -72,7 +65,7 @@
 	max_upgrades = 2
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
-	min_cold_protection_temperature = T0C - 20
+	min_cold_protection_temperature = T0C - 25
 	siemens_coefficient = 0.7
 	armor_list = list( //thicker material so +5 boost (from base 10) to armor values, but lower rad/same bomb since not metal lined. Maybe add in minor slowdown if needed -Dongels
 		melee = 15,
@@ -90,6 +83,8 @@
 	item_state = "shepherd_coat"
 	max_upgrades = 1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 25
 	armor_list = list(
 		melee = 45,
 		bullet = 35,

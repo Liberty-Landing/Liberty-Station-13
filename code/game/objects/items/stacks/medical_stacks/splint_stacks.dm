@@ -12,6 +12,7 @@
 	singular_name = "improvised bone splint"
 	desc = "A pair of wooden planks held together by wire that can work as a splint on a pinch."
 	icon_state = "improsplint"
+	matter = list(MATERIAL_WOOD = 2)
 	amount = 1
 	max_amount = 1
 

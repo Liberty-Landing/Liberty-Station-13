@@ -341,6 +341,8 @@ BLIND     // can't see anything
 	var/wired = 0
 	var/clipped = 0
 	body_parts_covered = ARMS
+	cold_protection = ARMS
+	min_cold_protection_temperature = T0C - 5
 	armor_list = list(melee = 10, bullet = 0, energy = 15, bomb = 0, bio = 0, rad = 0)
 	slot_flags = SLOT_GLOVES
 	attack_verb = list("challenged")
@@ -374,6 +376,7 @@ BLIND     // can't see anything
 		slot_r_hand_str = 'icons/mob/items/righthand_hats.dmi',
 		)
 	body_parts_covered = HEAD
+	cold_protection = HEAD|EARS
 	slot_flags = SLOT_HEAD
 	w_class = ITEM_SIZE_SMALL
 
@@ -467,7 +470,8 @@ BLIND     // can't see anything
 	body_parts_covered = HEAD
 	slot_flags = SLOT_MASK
 	body_parts_covered = FACE|EYES
-
+	cold_protection = FACE|EYES
+	min_cold_protection_temperature = T0C - 5
 	var/muffle_voice = FALSE
 	var/voicechange = FALSE
 	var/list/say_messages
@@ -485,6 +489,8 @@ BLIND     // can't see anything
 	gender = PLURAL //Carn: for grammarically correct text-parsing
 	siemens_coefficient = 0.9
 	body_parts_covered = LEGS
+	cold_protection = LEGS
+	min_cold_protection_temperature = T0C - 10
 	slot_flags = SLOT_FEET
 
 	var/can_hold_knife = 0
@@ -607,6 +613,8 @@ BLIND     // can't see anything
 	name = "suit"
 	var/fire_resist = T0C+100
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS // Adjust as necessary
+	min_cold_protection_temperature = T0C - 15
 	allowed = list(
 		/obj/item/clipboard,
 		/obj/item/pen,
@@ -635,6 +643,7 @@ BLIND     // can't see anything
 		/obj/item/device/radio,
 		/obj/item/clothing/mask,
 		/obj/item/storage/backpack/guncase,
+		/obj/item/book/ritual/cruciform,
 		/obj/item/implant/carrion_spider/holographic)
 	slot_flags = SLOT_OCLOTHING
 	var/blood_overlay_type = "suit"
@@ -646,7 +655,7 @@ BLIND     // can't see anything
 		/obj/item/tool/hammer/telekinetic_fist,
 		/obj/item/flame/pyrokinetic_spark,
 		/obj/item/tool/psionic_omnitool,
-		/obj/item/shield/riot/crusader/psionic,
+		/obj/item/shield/riot/psionic,
 		/obj/item/gun/kinetic_blaster
 		)
 	equip_delay = 1 SECONDS
@@ -674,6 +683,8 @@ BLIND     // can't see anything
 		)
 	name = "under"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS // Adjust as necessary for pants
+	min_cold_protection_temperature = T0C - 10
 	permeability_coefficient = 0.90
 	slot_flags = SLOT_ICLOTHING
 	w_class = ITEM_SIZE_NORMAL

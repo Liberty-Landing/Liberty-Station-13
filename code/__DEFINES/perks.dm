@@ -18,13 +18,7 @@
 #define PERK_LINGUIST /datum/perk/background/linguist
 #define PERK_ATHLETE /datum/perk/background/athlete
 #define PERK_CUBAN_DELIGHT /datum/perk/background/cuban_delight
-#define PERK_MEDICAL_EXPERT /datum/perk/background/medicalexpertise
 #define PERK_KLUTZ /datum/perk/background/klutz
-#define PERK_MARKET_PROF /datum/perk/background/market_prof
-
-//Synthetics
-#define PERK_REAPER /datum/perk/background/reaper
-#define PERK_EQUALIZER /datum/perk/background/equalizer
 
 //Sanity
 #define PERK_VETERAN /datum/perk/background/veteran
@@ -36,6 +30,7 @@
 #define PERK_RAT /datum/perk/background/rat
 #define PERK_SOLBORN /datum/perk/background/solborn
 #define PERK_PAPER_WORM /datum/perk/fate/paper_worm
+#define PERK_UNFEELING /datum/perk/unfeeling
 
 //Wage Perks
 #define PERK_NEPOTISM /datum/perk/background/nepotism
@@ -55,11 +50,15 @@
 #define PERK_HANDYMAN /datum/perk/job/handyman
 #define PERK_INSPIRATION /datum/perk/job/inspiration
 #define PERK_ACTIVE_INSPIRATION /datum/perk/job/active_inspiration
-#define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
-#define PERK_NEAT /datum/perk/job/neat
 
 // Service / Cargo Perks //PERK_TIMEISMONEY for later
 #define PERK_ARTIST /datum/perk/job/artist
+#define PERK_JINGLE_JANGLE /datum/perk/job/jingle_jangle
+#define PERK_NEAT /datum/perk/job/neat
+#define PERK_CHEF /datum/perk/job/foodappraise
+#define PERK_CLUB /datum/perk/job/club
+#define PERK_COMMON_SENSE /datum/perk/job/common_sense
+#define PERK_MARKET_PROF /datum/perk/job/market_prof
 
 // Military
 #define PERK_CODESPEAK /datum/perk/job/codespeak
@@ -75,6 +74,7 @@
 // Medical
 #define PERK_CHEMIST /datum/perk/job/chemist
 #define PERK_SURGICAL_MASTER /datum/perk/job/surgical_master
+#define PERK_MEDICAL_EXPERT /datum/perk/job/medicalexpertise
 #define PERK_ADVANCED_MEDICAL /datum/perk/job/advanced_medical
 
 // Science
@@ -168,11 +168,6 @@
 #define PERK_NANITE_AMMO /datum/perk/nanite_ammo
 #define PERK_NANITE_METAL_EATER /datum/perk/nanite_metal_drinker
 
-// Imprinter Perks
-#define PERK_SMARTLINK /datum/perk/smartlink
-#define PERK_COGENHANCE /datum/perk/cognitive_enhancer
-#define PERK_CHEMNEUTRAL /datum/perk/chemical_neutralizer
-
 // Nanite Chem Perks.
 #define PERK_NANITE_CHEM /datum/perk/nanite_chem
 #define PERK_NANITE_CHEM_IMPLANT /datum/perk/nanite_chem/implantoids
@@ -228,6 +223,12 @@
 //Temporary drug perks
 #define PERK_ULTRASURGEON /datum/perk/drug/ultrasurgeon
 #define PERK_NJOY /datum/perk/njoy
+
+//Temporary lecture perks
+#define PERK_SCORCHING_SHELL /datum/perk/lecture/scorching_shell
+
+//Task Perks
+#define PERK_FORCEFUL_REJECTION /datum/perk/forceful_rejection
 
 //////////////////
 //Cooldown perks//

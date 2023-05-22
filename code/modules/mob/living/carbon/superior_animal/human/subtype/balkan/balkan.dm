@@ -4,12 +4,13 @@
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "balkan_mercenary_boltgun"
 	icon_dead = "balkan_mercenary_dead"
+	drop_items = list(/obj/item/stack/dinar/random)
 	stop_automated_movement_when_pulled = 1
 	wander = 1
 	maxHealth = 100
 	health = 100
 
-	armor = list(melee = 50, bullet = 50, energy = 45, bomb = 50, bio = 100, rad = 100)
+	armor = list(melee = 40, bullet = 40, energy = 35, bomb = 40, bio = 100, rad = 100)
 
 	casingtype = null
 
@@ -68,7 +69,7 @@
 
 /mob/living/carbon/superior_animal/human/balkan/sts
 	icon_state = "balkan_mercenary_sts"
-
+	drop_items = list(/obj/item/stack/dinar/random)
 
 	//range/ammo stuff
 	rapid = TRUE
@@ -84,7 +85,7 @@
 
 /mob/living/carbon/superior_animal/human/balkan/bren
 	icon_state = "balkan_mercenary_bren"
-
+	drop_items = list(/obj/item/stack/dinar/random)
 	maxHealth = 125 //More than a normal person.
 	health = 125
 
@@ -100,7 +101,7 @@
 /mob/living/carbon/superior_animal/human/balkan/space
 	icon_state = "balkan_space"
 	icon_dead = "balkan_dead"
-
+	drop_items = list(/obj/item/stack/dinar/random)
 
 	maxHealth = 125 //More than a normal person.
 	health = 125
@@ -115,3 +116,7 @@
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 	limited_ammo = FALSE
 	mag_drop = FALSE
+	
+/mob/living/carbon/superior_animal/human/balkan/death()
+	..()
+	drop_death_loot()

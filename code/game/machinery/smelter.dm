@@ -214,13 +214,13 @@
 
 	var/ejected_amount = min(initial(stack_type.max_amount), round(stored_material[material]), storage_capacity)
 	var/remainder = ejected_amount - round(ejected_amount)
-	var/obj/item/stack/material/S = new stack_type(src, round(ejected_amount))
-	var/shard
+	var/obj/item/stack/material/S = new stack_type(src, ejected_amount)
 	if(remainder)
+		var/shard
 		shard = new /obj/item/material/shard(src, material, _amount = remainder)
+		if(shard)
+			eject(shard, output_side)
 	eject(S, output_side)
-	if(shard)
-		eject(shard, output_side)
 	stored_material[material] -= ejected_amount
 
 /obj/machinery/smelter/proc/eject_all_material(material = null)

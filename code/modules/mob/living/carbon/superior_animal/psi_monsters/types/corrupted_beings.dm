@@ -7,7 +7,7 @@
 	icon = 'icons/mob/mobs-monster.dmi'
 	maxHealth = 200
 	health = 200
-	attack_sound = 'sound/xenomorph/alien_footstep_charge1.ogg'
+	attack_sound = 'sound/weapons/bigcut.ogg'
 	melee_damage_lower = 20
 	melee_damage_upper = 30
 	emote_see = list("howls in a broken voice.", "wracks its claws against the ground.", "gnarls.")

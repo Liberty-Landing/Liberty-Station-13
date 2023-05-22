@@ -36,7 +36,7 @@
 
 		//The number of windows near each tile is recorded
 		var/numwin
-		for (var/turf/simulated/floor/asteroid/grass/W in view(4, T))
+		for (var/turf/simulated/floor/snow/W in view(4, T))
 			numwin++
 
 		//And the square of it is entered into the list as a weight

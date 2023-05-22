@@ -76,11 +76,6 @@
 /area/mine/power)
 "ao" = (
 /obj/item/reagent_containers/glass/bucket,
-/obj/structure/cable/yellow{
-	d1 = 2;
-	d2 = 4;
-	icon_state = "2-4"
-	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/mine/power)
 "ap" = (
@@ -769,10 +764,13 @@
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/random/material_ore,
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
+/obj/structure/table/rack,
+/obj/item/device/scanner/mining,
+/obj/item/device/scanner/mining,
+/obj/item/device/scanner/mining,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "ct" = (
@@ -795,9 +793,9 @@
 /area/mine/lockers)
 "cv" = (
 /obj/structure/cable/yellow{
-	d1 = 4;
-	d2 = 8;
-	icon_state = "4-8"
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/mine/power)
@@ -1042,17 +1040,14 @@
 	},
 /turf/simulated/floor/tiled/white/techfloor,
 /area/mine/lockers)
-"dk" = (
+"dl" = (
+/obj/machinery/door/airlock/maintenance_cargo{
+	req_access = list(48)
+	},
 /obj/structure/cable/yellow{
 	d1 = 1;
 	d2 = 2;
 	icon_state = "1-2"
-	},
-/turf/simulated/wall/r_wall,
-/area/mine/power)
-"dl" = (
-/obj/machinery/door/airlock/maintenance_cargo{
-	req_access = list(48)
 	},
 /turf/simulated/floor/plating,
 /area/mine/power)
@@ -1232,10 +1227,18 @@
 /area/liberty/rnd/outpostgeneral)
 "dM" = (
 /obj/machinery/power/terminal,
-/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/tiled/white/techfloor,
 /area/mine/power)
 "dN" = (
+/obj/structure/cable/yellow{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
+	},
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/mine/power)
 "dO" = (
@@ -1363,10 +1366,6 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/mine/lockers)
 "ek" = (
-/obj/structure/table/rack,
-/obj/item/device/scanner/mining,
-/obj/item/device/scanner/mining,
-/obj/item/device/scanner/mining,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/mine/lockers)
 "el" = (
@@ -1399,7 +1398,7 @@
 	output_level_max = 250000;
 	outputting = 2
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable{
 	d2 = 2;
 	icon_state = "0-2"
 	},
@@ -2752,16 +2751,17 @@
 	name = "Powernet Sensor - Mining Outpost";
 	name_tag = "Mining Outpost Subgrid"
 	},
-/obj/structure/cable/yellow{
+/obj/structure/cable{
+	d1 = 1;
 	d2 = 4;
-	icon_state = "0-4"
+	icon_state = "1-4"
 	},
 /obj/machinery/power/apc{
 	dir = 8;
 	name = "West APC";
 	pixel_x = -28
 	},
-/obj/structure/cable/yellow,
+/obj/structure/cable,
 /turf/simulated/floor/tiled/white/techfloor,
 /area/mine/power)
 "hR" = (
@@ -2797,7 +2797,7 @@
 /area/liberty/rnd/outpostmachineroom)
 "hW" = (
 /obj/effect/decal/cleanable/liquid_fuel,
-/obj/structure/cable/yellow{
+/obj/structure/cable{
 	d1 = 2;
 	d2 = 8;
 	icon_state = "2-8"
@@ -2938,12 +2938,11 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/cable/yellow{
-	d2 = 8;
-	dir = 1;
-	icon_state = "0-8"
-	},
 /obj/structure/catwalk,
+/obj/structure/cable/yellow{
+	d2 = 4;
+	icon_state = "0-4"
+	},
 /turf/simulated/floor/plating/under,
 /area/liberty/rnd/outpostmachineroom)
 "iq" = (
@@ -9180,6 +9179,17 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/liberty/rnd/mixing)
+"XT" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/obj/random/material_ore,
+/obj/effect/floor_decal/spline/plain{
+	dir = 8
+	},
+/obj/random/material_ore,
+/turf/simulated/floor/asteroid,
+/area/liberty/quartermaster/mining_outside_doc)
 "XW" = (
 /obj/structure/noticeboard/research{
 	pixel_y = 32
@@ -34593,7 +34603,7 @@ ff
 ff
 gr
 gr
-Ma
+RU
 Hk
 Zb
 Zb
@@ -34795,7 +34805,7 @@ hn
 sj
 gN
 gr
-Ma
+RU
 RU
 Zb
 Zb
@@ -34997,7 +35007,7 @@ ho
 gN
 sA
 gr
-Ma
+RU
 RU
 Zb
 Zb
@@ -35199,7 +35209,7 @@ hp
 sk
 jl
 gr
-Ma
+RU
 RU
 RU
 Zb
@@ -35387,7 +35397,7 @@ bg
 bO
 ap
 ao
-dk
+bg
 dM
 eo
 hQ
@@ -35401,7 +35411,7 @@ Fm
 sl
 sC
 gr
-Ma
+RU
 RU
 RU
 Zb
@@ -35603,7 +35613,7 @@ hq
 sm
 sD
 gr
-Ma
+RU
 RU
 RU
 RU
@@ -35805,7 +35815,7 @@ ai
 ai
 ai
 ai
-Ma
+RU
 RU
 RU
 Zb
@@ -44275,7 +44285,7 @@ bv
 bN
 cY
 cs
-cs
+XT
 Zb
 Fs
 Fs

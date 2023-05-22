@@ -14,15 +14,14 @@
  */
 /obj/structure/closet/emcloset
 	name = "emergency closet"
-	desc = "It's a storage unit for emergency breathmasks and o2 tanks."
+	desc = "It's a storage unit for emergency breathmasks, o2 tanks, and can contain hypothermia control supplies."
 	icon_state = "emergency"
 
 /obj/structure/closet/emcloset/populate_contents()
-	switch(pickweight(list("small" = 55, "aid" = 25, "tank" = 10, "both" = 10)))
+	switch(pickweight(list("small" = 55, "tank" = 25, "aid" = 10, "both" = 5)))
 		if ("small")
 			new /obj/item/tank/emergency_oxygen(src)
-			new /obj/item/tank/emergency_oxygen(src)
-			new /obj/item/clothing/mask/breath(src)
+			new /obj/item/reagent_containers/food/snacks/openable/selfheat_coffee(src)
 			new /obj/item/clothing/mask/breath(src)
 			new /obj/item/clothing/suit/space/emergency(src)
 			new /obj/item/clothing/head/helmet/space/emergency(src)
@@ -31,6 +30,9 @@
 			new /obj/item/storage/toolbox/emergency(src)
 			new /obj/item/clothing/mask/breath(src)
 			new /obj/item/storage/firstaid/o2(src)
+			new /obj/item/reagent_containers/food/drinks/dry_ramen(src)
+			new /obj/item/reagent_containers/food/drinks/cans/waterbottle(src)
+			new /obj/item/reagent_containers/food/condiment/pack/hotsauce(src)
 			new /obj/item/clothing/suit/space/emergency(src)
 			new /obj/item/clothing/head/helmet/space/emergency(src)
 		if ("tank")
@@ -40,6 +42,9 @@
 			new /obj/item/clothing/mask/breath(src)
 		if ("both")
 			new /obj/item/storage/toolbox/emergency(src)
+			new /obj/item/reagent_containers/food/drinks/dry_ramen(src)
+			new /obj/item/reagent_containers/food/drinks/cans/waterbottle(src)
+			new /obj/item/reagent_containers/food/condiment/pack/hotsauce(src)
 			new /obj/item/tank/emergency_oxygen/engi(src)
 			new /obj/item/clothing/mask/breath(src)
 			new /obj/item/storage/firstaid/o2(src)

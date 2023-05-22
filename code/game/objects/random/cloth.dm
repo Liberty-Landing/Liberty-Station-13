@@ -72,7 +72,7 @@
 
 /obj/random/cloth/suit/item_to_spawn()
 	return pickweight(list(/obj/item/clothing/suit/poncho = 10,
-				/obj/item/clothing/suit/storage/rank/ass_jacket = 10,
+				/obj/item/clothing/suit/storage/toggle/liberass_jacket = 10,
 				/obj/item/clothing/suit/storage/rank/cargo_jacket = 10,
 				/obj/item/clothing/suit/storage/rank/insp_trench = 5,
 				/obj/item/clothing/suit/storage/hazardvest = 10,
@@ -225,8 +225,7 @@
 				/obj/item/clothing/head/helmet/space/void/odst/blue = 1,
 				/obj/item/clothing/head/helmet/space/void/odst/orange = 1,
 				/obj/item/clothing/head/helmet/space/void/SCAF = 1,
-				/obj/item/clothing/head/helmet/bulletproof/ironhammer_nvg = 1,
-				/obj/item/clothing/head/helmet/bulletproof/ironhammer_thermal = 0.3,))
+				/obj/item/clothing/head/helmet/bulletproof/ironhammer_nvg = 1))
 
 /obj/random/cloth/helmet/low_chance
 	name = "low chance random helmet"
@@ -408,7 +407,7 @@
 				/obj/item/storage/backpack/industrial = 6,
 				/obj/item/storage/backpack/medical = 6,
 				/obj/item/storage/backpack/security = 6,
-				/obj/item/storage/backpack/neotheology = 2,
+				/obj/item/storage/backpack/custodian = 2,
 				/obj/item/storage/backpack/ironhammer = 2,
 				/obj/item/storage/backpack/military = 6,
 				/obj/item/storage/backpack/sport = 1,
@@ -418,7 +417,7 @@
 				/obj/item/storage/backpack/sport/green = 5,
 				/obj/item/storage/backpack/sport/orange = 5,
 				/obj/item/storage/backpack/sport/botanist = 4,
-				/obj/item/storage/backpack/sport/neotheology = 2,
+				/obj/item/storage/backpack/sport/custodian = 2,
 				/obj/item/storage/backpack/sport/ironhammer = 2,
 				/obj/item/storage/backpack/satchel = 1,
 				/obj/item/storage/backpack/satchel/white = 5,
@@ -433,7 +432,7 @@
 				/obj/item/storage/backpack/satchel/security = 6,
 				/obj/item/storage/backpack/satchel/leather/withwallet = 12,
 				/obj/item/storage/backpack/satchel/ironhammer = 4,
-				/obj/item/storage/backpack/satchel/neotheology = 4))
+				/obj/item/storage/backpack/satchel/custodian = 4))
 
 /obj/random/cloth/backpack/low_chance
 	name = "low chance random backpack"
@@ -451,9 +450,8 @@
 				/obj/item/storage/belt/security = 4,
 				/obj/item/storage/belt/webbing = 6,
 				/obj/item/storage/belt/webbing/ih = 2,
-				/obj/item/storage/belt/security/neotheology = 2,
 				/obj/item/storage/belt/utility = 8,
-				/obj/item/storage/belt/utility/neotheology = 4))
+				/obj/item/storage/belt/utility/custodian = 4))
 
 /obj/random/cloth/belt/low_chance
 	name = "low chance random belt"

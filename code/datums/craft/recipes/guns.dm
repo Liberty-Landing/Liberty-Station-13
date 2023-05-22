@@ -87,6 +87,15 @@
 		list(QUALITY_CUTTING, 40, "time" = 5)
 	)
 
+/datum/craft_recipe/gun/tacticool_flashlight
+	name = "Gun mod: Attachable Flashlight"
+	result = /obj/item/gun_upgrade/tacticool_flashlight
+	steps = list(
+		list(/obj/item/device/lighting/toggleable/flashlight/seclite, 1, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC), // The flashlight holder
+		list(QUALITY_ADHESIVE, 15, 30) // Tape it together
+	)
+
 /datum/craft_recipe/gun/handmaderevolver
 	name = "handmade revolver"
 	result = /obj/item/gun/projectile/revolver/handmade

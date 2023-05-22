@@ -1,7 +1,7 @@
 
 /obj/item/reagent_containers/food/snacks/candy
-	name = "candy bar"
-	desc = "An unbranded nougat candy bar. Sugary."
+	name = "\"Mooncrash\" candy bar"
+	desc = "A nougat candy bar. Sugary."
 	icon_state = "candy"
 	trash = /obj/item/trash/candy
 	filling_color = "#7D5F46"
@@ -25,8 +25,20 @@
 	preloaded_reagents = list("sugar" = 2, "coco" = 2, "preservatives" = 2)
 	junk_food = TRUE
 
+/obj/item/reagent_containers/food/snacks/chocolatebarvenus
+	name = "\"Venus\" chocolate bar"
+	desc = "Such sweet, fattening food."
+	icon_state = "chocolatebar"
+	filling_color = "#7D5F46"
+	bitesize = 2
+	center_of_mass = list("x"=15, "y"=15)
+	nutriment_amt = 1
+	nutriment_desc = list("chocolate" = 5)
+	preloaded_reagents = list("sugar" = 2, "coco" = 2, "preservatives" = 2)
+	junk_food = TRUE
+
 /obj/item/reagent_containers/food/snacks/candy/donor
-	name = "donor candy"
+	name = "\"O-minus\" donor candy"
 	desc = "A little treat for blood donors."
 	bitesize = 5
 	trash = /obj/item/trash/candy
@@ -35,7 +47,7 @@
 	matter = list(MATERIAL_BIOMATTER = 2)
 
 /obj/item/reagent_containers/food/snacks/candy/proteinbar
-	name = "protein bar"
+	name = "\"GitGud\" protein bar"
 	desc = "SwoleMAX brand protein bars, guaranteed to get you feeling perfectly overconfident."
 	icon_state = "proteinbar"
 	trash = /obj/item/trash/candy/proteinbar
@@ -45,7 +57,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/candy/pistachios_pack
-	name = "pistachios pack"
+	name = "\"Asteroid Belt\" pistachios pack"
 	desc = "A packet of pistachios with added salt. A somewhat healthy light snack."
 	icon_state = "pistachios_pack"
 	trash = /obj/item/trash/pistachios
@@ -56,8 +68,8 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/candy/sunflowerseeds
-	name = "sunflower fried seed pack"
-	desc = "Bag of sunflower seeds that have been fried and salted for people that like to chew their food for way to long."
+	name = "\"Orion Belt\" sunflower fried seed pack"
+	desc = "A bag of sunflower seeds that have been fried and salted for people that like to chew their food for way to long."
 	icon_state = "semki_pack"
 	trash = /obj/item/trash/semki
 	nutriment_amt = 1
@@ -66,7 +78,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/candy/energybar
-	name = "energy bar"
+	name = "\"Sunrush\" energy bar"
 	desc = "A chewy candy bar that has many warnings about its surgar contents for quick energy."
 	icon_state = "energybar"
 	trash = /obj/item/trash/energybar
@@ -77,7 +89,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/candy_corn
-	name = "candy corn"
+	name = "\"Calypso\" candy corn"
 	desc = "It's a handful of candy corn. Cannot be stored in a detective's hat, alas."
 	icon_state = "candy_corn"
 	filling_color = "#FFFCB0"
@@ -89,7 +101,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/candy_drop_blue
-	name = "\improper red gum stick"
+	name = "\"Phobos\" red gum stick"
 	desc = "A small slab of gum for chewing."
 	icon_state = "gumdrop_blue"
 	filling_color = "#FC44A0"
@@ -101,7 +113,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/candy_drop_red
-	name = "\improper blue gum stick"
+	name = "\"Deimos\" blue gum stick"
 	desc = "A small slab of gum for chewing. Wait, they come in blue now?"
 	icon_state = "gumdrop_red"
 	filling_color = "#2B00FF"
@@ -113,7 +125,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/sosjerky
-	name = "Scaredy's Beef Jerky"
+	name = "\"Sol Finest\" beef jerky"
 	icon_state = "sosjerky"
 	desc = "Packaged protein sourced from a massive private reserve."
 	trash = /obj/item/trash/sosjerky
@@ -125,7 +137,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/cheesiehonkers
-	name = "Cheesie Honkers"
+	name = "\"Honkerton\" cheesie honkers"
 	icon_state = "cheesie_honkers"
 	desc = "Bite-sized cheesie snacks that will honk all over your mouth."
 	trash = /obj/item/trash/cheesie
@@ -139,7 +151,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/dogtreats
-	name = "\improper Kriosan treats"
+	name = "\"Laika\" kriosan treats"
 	desc = "A biscuit imported directly from Krios, well loved for their long shelf life and nutrition density, all in a fun and convenient shape!"
 	icon_state = "dogtreat_single"
 	filling_color = "#E8DCA5"
@@ -155,8 +167,8 @@
 ////////////////////////////////////////////////Openable
 
 /obj/item/reagent_containers/food/snacks/openable/chips
-	name = "chips packet"
-	desc = "An unbranded packet of crisps. Salty."
+	name = "\"Hydra\" chips packet"
+	desc = "A packet of crisps. Salty."
 	icon_state = "lays_green"
 	trash = /obj/item/trash/chips
 	filling_color = "#E8C31E"
@@ -168,8 +180,8 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/openable/gamerchips
-	name = "boritos crips packet"
-	desc = "An branded packet of crisps. Its marketing for people that like to play competitive arcade games."
+	name = "\"Virgo\" boritos crips packet"
+	desc = "A branded packet of crisps. Its marketing for people that like to play competitive arcade games."
 	icon_state = "boritos"
 	trash = /obj/item/trash/gamerchips
 	filling_color = "#E8C31E"
@@ -182,7 +194,7 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/openable/syndicake
-	name = "syndi-cakes"
+	name = "\"Tsar Bomba\" syndi-cakes"
 	icon_state = "syndi_cakes" //Sprite by Michiyamenotehifunana
 	desc = "An extremely moist snack cake that tastes just as good after being nuked."
 	alt_desc = "An open packet of extremely moist snack cake that tastes just as good after being nuked."
@@ -197,10 +209,10 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/openable/no_raisin
-	name = "4No Raisins"
+	name = "\"Vortex\" raisins"
 	icon_state = "4no_raisins" //Sprite by Michiyamenotehifunana
 	desc = "A brand of boxed raisins. Dry but tasty."
-	alt_desc = "A opend brand of boxed raisins. Dry but tasty."
+	alt_desc = "An opened brand of boxed raisins. Dry but tasty."
 	trash = /obj/item/trash/raisins
 	filling_color = "#343834"
 	center_of_mass = list("x"=15, "y"=4)
@@ -210,10 +222,10 @@
 	junk_food = TRUE
 
 /obj/item/reagent_containers/food/snacks/openable/spacetwinkie
-	name = "Space Twinkie"
+	name = "\"Venus\" twinkie"
 	icon_state = "space_twinkie" //Sprite by Michiyamenotehifunana
 	desc = "A golden sponge cake with a creamy filling."
-	alt_desc = "A opend golden sponge cake with a creamy filling."
+	alt_desc = "An opened golden sponge cake with a creamy filling."
 	filling_color = "#FFE591"
 	bitesize = 2
 	center_of_mass = list("x"=15, "y"=11)
@@ -223,23 +235,8 @@
 	matter = list(MATERIAL_BIOMATTER = 2)
 	junk_food = TRUE
 
-/obj/item/reagent_containers/food/snacks/openable/liquidfood
-	name = "\improper liquidfood ration"
-	desc = "A prepackaged grey slurry of all the essential nutrients for a spacefarer on the go. Should this be crunchy?"
-	alt_desc = "A prepackaged grey slurry of all the essential nutrients for a spacefarer on the go. Looking inside tends to loose your apatite."
-	icon_state = "liquidfood" //Sprite by Michiyamenotehifunana
-	trash = /obj/item/trash/liquidfood
-	filling_color = "#A8A8A8"
-	bitesize = 4
-	center_of_mass = list("x"=16, "y"=15)
-	nutriment_desc = list("chalk" = 6)
-	nutriment_amt = 20
-	preloaded_reagents = list("iron" = 3, "preservatives" = 5)
-	matter = list(MATERIAL_BIOMATTER = 8)
-	junk_food = TRUE
-
 /obj/item/reagent_containers/food/snacks/openable/tastybread
-	name = "bread tube"
+	name = "\"Pyramid\" bread tube"
 	desc = "Bread in a tube. Chewy...and surprisingly tasty."
 	alt_desc = "Bread halfway in a tube. Chewy...and surprisingly tasty."
 	icon_state = "tastybread" //Sprite by Michiyamenotehifunana
@@ -256,7 +253,7 @@
 ////////////////////////////////////////////////Donks
 
 /obj/item/reagent_containers/food/snacks/donkpocket
-	name = "donk-pocket"
+	name = "\"Donk\" meat pocket"
 	desc = "Researches suggest that you might want to put a banging donk on it."
 	icon_state = "donkpocket"
 	filling_color = "#DEDEAB"
@@ -288,7 +285,7 @@
 							src.reagents.del_reagent(reagent)
 
 /obj/item/reagent_containers/food/snacks/donkpocket/sinpocket
-	name = "\improper sin-pocket"
+	name = "\"Sin\" meat pocket"
 	desc = "The food of choice for the veteran. Do <B>NOT</B> overconsume."
 	filling_color = "#6D6D00"
 	heated_reagents = list("doctorsdelight" = 5, "chronos" = 1, "preservatives" = 5)
@@ -307,4 +304,3 @@
 	spawn(200)
 		to_chat(user, "You think \the [src] is ready to eat about now.")
 		heat()
-

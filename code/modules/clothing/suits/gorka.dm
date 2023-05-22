@@ -333,8 +333,8 @@
 	blood_overlay_type = "coat"
 	permeability_coefficient = 0.50
 	armor_list = list(melee = 5, bullet = 0, energy = 5, bomb = 0, bio = 5, rad = 0)
-	body_parts_covered = UPPER_TORSO|ARMS
-	cold_protection = UPPER_TORSO|ARMS
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	min_cold_protection_temperature = T0C - 20
 	siemens_coefficient = 0.7
 	hoodtype = /obj/item/clothing/head/hood/gorkahood_crew_med

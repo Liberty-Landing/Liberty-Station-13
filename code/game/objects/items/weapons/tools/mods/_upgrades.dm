@@ -361,8 +361,8 @@
 /datum/component/item_upgrade/proc/apply_values_tool(var/obj/item/tool/T)
 	if(tool_upgrades[UPGRADE_SANCTIFY])
 		T.aspects += list(SANCTIFIED)
-	if(tool_upgrades[UPGRADE_ALLOW_GREYON_MODS])
-		T.allow_similacrum_mods = tool_upgrades[UPGRADE_ALLOW_GREYON_MODS]
+	if(tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS])
+		T.allow_similacrum_mods = tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS]
 	if(tool_upgrades[UPGRADE_PRECISION])
 		T.precision += tool_upgrades[UPGRADE_PRECISION]
 	if(tool_upgrades[UPGRADE_WORKSPEED])
@@ -413,8 +413,8 @@
 	T.prefixes |= prefix
 
 /datum/component/item_upgrade/proc/apply_values_gun(var/obj/item/gun/G)
-	if(weapon_upgrades[GUN_UPGRADE_ALLOW_GREYON_MODS])
-		G.allow_similacrum_mods = weapon_upgrades[GUN_UPGRADE_ALLOW_GREYON_MODS]
+	if(weapon_upgrades[GUN_UPGRADE_ALLOW_SIMULACRUM_MODS])
+		G.allow_similacrum_mods = weapon_upgrades[GUN_UPGRADE_ALLOW_SIMULACRUM_MODS]
 	if(weapon_upgrades[GUN_UPGRADE_DAMAGE_MULT])
 		G.damage_multiplier *= weapon_upgrades[GUN_UPGRADE_DAMAGE_MULT]
 	if(weapon_upgrades[GUN_UPGRADE_PAIN_MULT])
@@ -504,6 +504,10 @@
 			G.auto_eject = FALSE
 		else
 			G.auto_eject = TRUE
+
+	if(weapon_upgrades[GUN_UPGRADE_FLASHLIGHT])
+		G.flashlight_attachment = TRUE
+		G.initialize_flashlight()
 
 	if(!isnull(weapon_upgrades[GUN_UPGRADE_FORCESAFETY]))
 		G.restrict_safety = TRUE
@@ -604,7 +608,7 @@
 	if(tool_upgrades[UPGRADE_STIFFNESS_ARMOR])
 		to_chat(user, SPAN_NOTICE("Changes stiffness by [tool_upgrades[UPGRADE_STIFFNESS_ARMOR]]"))
 
-	if(tool_upgrades[UPGRADE_ALLOW_GREYON_MODS])
+	if(tool_upgrades[UPGRADE_ALLOW_SIMULACRUM_MODS])
 		to_chat(user, SPAN_NOTICE("This mod allows you to install Similacrum Robotics mods"))
 //tool/gun related examines
 	if(required_qualities.len)
@@ -771,7 +775,7 @@
 		if(weapon_upgrades[GUN_UPGRADE_RAIL])
 			to_chat(user, SPAN_WARNING("Adds a scope slot."))
 
-		if(weapon_upgrades[GUN_UPGRADE_ALLOW_GREYON_MODS])
+		if(weapon_upgrades[GUN_UPGRADE_ALLOW_SIMULACRUM_MODS])
 			to_chat(user, SPAN_NOTICE("This mod allows you to install Similacrum Robotics mods"))
 
 		if(weapon_upgrades[GUN_UPGRADE_ZOOM])

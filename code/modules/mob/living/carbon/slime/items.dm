@@ -253,7 +253,7 @@
 
 /obj/item/slime_thermals
 	name = "thermal coating"
-	desc = "A potent chemical mix that will when added to a guns scope allow themeral slight."
+	desc = "A potent chemical mix that will when added to a guns scope allow thermal sight."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "bottle19"
 

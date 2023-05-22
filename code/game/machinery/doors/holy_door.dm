@@ -1,38 +1,35 @@
 /obj/machinery/door/holy
-	name = "church hatchway"
-	desc = "A door crafted by the church that requires no power and doesn't seem to have panel you could open."
+	name = "custodian hatchway"
+	desc = "A door crafted by the Custodians that requires no power and doesn't seem to have a panel you could open."
 	icon = 'icons/obj/doors/Door_holy.dmi'
 	icon_state = "door_closed"
 	autoclose = 1
 	var/next_beep_at = 0
 	var/locked = 0
-	var/minimal_holiness = CLEARANCE_COMMON // Compared with security_clearance on cruciform
+	var/minimal_holiness = CLEARANCE_COMMON // Compared with security_clearance on hearthcore
 	var/open_sound_powered = 'sound/machines/airlock_open.ogg'
+	var/close_sound = 'sound/machines/airlock_close.ogg'
 	var/open_sound_unpowered = 'sound/machines/airlock_creaking.ogg'
 	var/obj/item/wedged_item
 
 /obj/machinery/door/holy/preacher
-	name = "church portcullis"
-	desc = "A door crafted by the church that requires no power and doesn't seem to have panel you could open. This one requires higher ranking in the church to open."
+	name = "custodian secure gate"
+	desc = "A door crafted by the Custodians that requires no power and doesn't seem to have panel you could open. This one requires higher ranking in the Custodians to open."
 	icon = 'icons/obj/doors/Door_holy_preacher.dmi'
 	minimal_holiness = CLEARANCE_CLERGY
 
-/obj/item/clothing/accessory/cross // It belongs here
-	name = "tau cross necklace"
-	desc = "A heavy necklace resembling a Tau Cross - symbol of the Bonfire. Used as a key to church hatchways."
-	icon = 'icons/inventory/accessory/icon.dmi'
-	icon_state = "cross"
-	item_state = ""	// No inhands
-	slot_flags = SLOT_ACCESSORY_BUFFER | SLOT_MASK
-	w_class = ITEM_SIZE_NORMAL // Chonky cross
-
-/obj/item/clothing/accessory/magatama
-	name = "magatama necklace"
-	desc = "A large jade stone with a hole in it, showing some signs of wear. Church legends say it was the personal possession of the first matyred Monomial, and alledge that its touch can calm even the most disquieted soul."
-	icon = 'icons/inventory/accessory/icon.dmi'
-	icon_state = "magatama"
-	item_state = "magatama"
-	slot_flags = SLOT_ACCESSORY_BUFFER
+/obj/item/forgesigil //This is an item that only serves as an all-access key for doors and a vendor or two for anyone
+	name = "custodian forge sigil"
+	desc = "A radiance-infused emblem forged by the Custodians. It allows access to Hearthcore-locked machinery."
+	icon = 'icons/obj/items.dmi'
+	icon_state = "forgesigil"
+	item_state = "forgesigil"
+	slot_flags = SLOT_BELT | SLOT_EARS
+	throwforce = 0
+	w_class = ITEM_SIZE_TINY
+	throw_speed = 7
+	throw_range = 15
+	matter = list(MATERIAL_CARBON_FIBER = 1)
 
 /obj/machinery/door/holy/New()
 	GLOB.nt_doors += src
@@ -61,21 +58,9 @@
 		if(CI && CI.security_clearance >= minimal_holiness)
 			return TRUE
 
-		if(istype(H.get_active_hand(), /obj/item/clothing/accessory/cross))
+		if(istype(H.get_active_hand(), /obj/item/forgesigil))
 			return TRUE
 
-		if(istype(H.wear_mask, /obj/item/clothing/accessory/cross))
-			return TRUE
-
-		var/obj/item/clothing/C = H.w_uniform
-		var/bingo
-		if(istype(C))
-			for(var/obj/item/I in C.accessories)
-				if(istype(I, /obj/item/clothing/accessory/cross))
-					bingo = TRUE
-					break
-			if(bingo)
-				return TRUE
 
 	return FALSE
 
@@ -181,7 +166,7 @@
 	if(istype(I, /obj/item/taperoll))
 		return
 
-	if(istype(I, /obj/item/clothing/accessory/cross))
+	if(istype(I, /obj/item/forgesigil))
 		open()
 		return
 
@@ -310,7 +295,7 @@
 		else
 			playsound(loc, open_sound_unpowered, 70, 1, -1)
 	else
-		playsound(loc, open_sound_powered, 70, 1, -2)
+		playsound(loc, close_sound, 70, 1, -2)
 
 	tryingToLock = FALSE
 

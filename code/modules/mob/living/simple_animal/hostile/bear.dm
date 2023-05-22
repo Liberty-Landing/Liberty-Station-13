@@ -23,7 +23,7 @@
 	attack_sound = 'sound/effects/creatures/maul.ogg'
 	leather_amount = 6
 	bones_amount = 4
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 	faction = "russian"
 	inherent_mutations = list(MUTATION_EPILEPSY, MUTATION_THICK_FUR, MUTATION_IMBECILE, MUTATION_NERVOUSNESS)
 	var/horror_modifer = TRUE // For-admins to turn this off
@@ -40,7 +40,7 @@
 		playsound(src, 'sound/effects/creatures/bear.ogg', 100, 1, -3)
 		for(var/mob/living/carbon/human/H in range(5,src))
 			if(istype(H))
-				if(prob(100 - H.stats.getStat(STAT_COG))) //Kinda a hard check-ish but cant stack
+				if(prob(100 - H.stats.getStat(STAT_WIL))) //Kinda a hard check-ish but cant stack
 					H.stats.addTempStat(STAT_VIG, -STAT_LEVEL_ADEPT, 30 SECONDS, "fear_of_bear")
 					H.stats.addTempStat(STAT_COG, -STAT_LEVEL_ADEPT, 30 SECONDS, "fear_of_bear")
 					H.stats.addTempStat(STAT_BIO, -STAT_LEVEL_ADEPT, 30 SECONDS, "fear_of_bear")
@@ -130,8 +130,8 @@
 	icon_dead = "polarbear_dead"
 
 /mob/living/simple_animal/hostile/bear/excelsior
-	name = "excelsior armored bear"
-	desc = "A huge bear outfitted with armor and trained by the excelsior judging from the markings on his armor. Who comes up with this shit?"
+	name = "armored bear"
+	desc = "A huge bear outfitted with armor. Who comes up with this shit?"
 	response_help  = "pets"
 	response_disarm = "gently pushes aside"
 	response_harm   = "pokes"
@@ -144,7 +144,7 @@
 	health = 400
 	melee_damage_lower = 30
 	melee_damage_upper = 40
-	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth,/obj/item/stack/wolf_tooth)
 
 // Credit to scar#1579 for the sprite.
 /mob/living/simple_animal/hostile/bear/mukwah
@@ -161,4 +161,4 @@
 	leather_amount = 10
 	bones_amount = 10
 	pixel_x = -16
-	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth,/obj/item/stack/wolf_tooth)

@@ -301,8 +301,8 @@
 	/obj/item/clothing/under/iron_lock_security = 1)
 
 /obj/item/storage/deferred/crate/exc_gear
-	name = "excelsior crate"
-	desc = "A crate containing everything you need for the revolution."
+	name = "legionary equipment crate"
+	desc = "A crate containing everything you need for the massacre."
 	icon_state = "exc_deferred"
 	initial_contents = list(/obj/item/gun/projectile/makarov = 2,
 	/obj/item/ammo_magazine/highcap_pistol_35  = 4,
@@ -321,7 +321,6 @@
 	/obj/item/clothing/gloves/thick/combat = 1,
 	/obj/item/clothing/suit/space/void/excelsior = 1,
 	/obj/item/storage/firstaid/ifak = 1,
-	/obj/item/implanter/excelsior = 2,
 	/obj/item/storage/backpack = 1,
 	/obj/item/storage/backpack/satchel = 1)
 

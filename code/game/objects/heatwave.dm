@@ -21,6 +21,9 @@ proc/heatwave(turf/epicenter, heavy_range, light_range, damage, fire_stacks, pen
 			T.fire_act()
 		if(istype(T, /mob/living))
 			var/mob/living/L = T
+			var/heatwave_protection = L.get_heat_protection()
+			if(heatwave_protection >= 1)
+				return
 			playsound(L, 'sound/effects/gore/sear.ogg', 40, 1)
 
 			var/burn_damage = 0
@@ -32,6 +35,8 @@ proc/heatwave(turf/epicenter, heavy_range, light_range, damage, fire_stacks, pen
 				burn_damage = damage
 			else if(distance <= light_range)
 				burn_damage = damage * 0.5
+
+			burn_damage *= (1 - heatwave_protection)
 
 			if(burn_damage && L.stat == CONSCIOUS)
 				to_chat(L, SPAN_WARNING("You feel your skin boiling!"))

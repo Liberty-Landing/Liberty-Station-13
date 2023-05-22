@@ -192,8 +192,10 @@
 	init_template.initTemplateBounds(bounds)
 
 /obj/procedural/jp_DungeonGenerator/proc/initializePrecursorSubmaps()
-	testing("beginning dungeon map initialization!")
 	var/datum/map_template/init_template_starter = new /datum/map_template/precursor_template/starter
+	var/datum/map_template/init_template_normal = new /datum/map_template/precursor_template/normal
+	var/datum/map_template/init_template_large = new /datum/map_template/precursor_template/large
+	var/datum/map_template/init_template_end = new /datum/map_template/precursor_template/end
 	var/list/bounds = list(1.#INF, 1.#INF, 1.#INF, -1.#INF, -1.#INF, -1.#INF)
 	bounds[MAP_MINX] = 1
 	bounds[MAP_MINY] = world.maxy
@@ -202,34 +204,9 @@
 	bounds[MAP_MAXY] = 1
 	bounds[MAP_MAXZ] = (get_turf(loc)).z
 	init_template_starter.initTemplateBounds(bounds)
-
-	var/datum/map_template/init_template_normal = new /datum/map_template/precursor_template/normal
-	bounds[MAP_MINX] = 1
-	bounds[MAP_MINY] = world.maxy
-	bounds[MAP_MINZ] = (get_turf(loc)).z
-	bounds[MAP_MAXX] = world.maxx
-	bounds[MAP_MAXY] = 1
-	bounds[MAP_MAXZ] = (get_turf(loc)).z
 	init_template_normal.initTemplateBounds(bounds)
-
-	var/datum/map_template/init_template_large = new /datum/map_template/precursor_template/large
-	bounds[MAP_MINX] = 1
-	bounds[MAP_MINY] = world.maxy
-	bounds[MAP_MINZ] = (get_turf(loc)).z
-	bounds[MAP_MAXX] = world.maxx
-	bounds[MAP_MAXY] = 1
-	bounds[MAP_MAXZ] = (get_turf(loc)).z
 	init_template_large.initTemplateBounds(bounds)
-
-	var/datum/map_template/init_template_end = new /datum/map_template/precursor_template/end
-	bounds[MAP_MINX] = 1
-	bounds[MAP_MINY] = world.maxy
-	bounds[MAP_MINZ] = (get_turf(loc)).z
-	bounds[MAP_MAXX] = world.maxx
-	bounds[MAP_MAXY] = 1
-	bounds[MAP_MAXZ] = (get_turf(loc)).z
 	init_template_end.initTemplateBounds(bounds)
-	testing("finished dungeon initialization!")
 
 
 /*
@@ -731,7 +708,7 @@
 		r.finalise()
 
 	//initializeDeepmaintSubmaps()
-	//initializePrecursorSubmaps()
+	initializePrecursorSubmaps()
 	updateWallConnections()
 
 	out_time = (world.timeofday-timer)

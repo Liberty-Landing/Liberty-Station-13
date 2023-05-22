@@ -11,12 +11,12 @@
 				))
 
 /obj/random/mob/golem/low_chance
-	name = "low chance random golem"
+	name = "low chance random golem 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/mob/golem/high_chance
-	name = "high chance random golem"
+	name = "high chance random golem 70%"
 	icon_state = "hostilemob-brown"
 	spawn_nothing_percentage = 30
 
@@ -44,11 +44,11 @@
 	return /obj/random/mob/golem
 
 /obj/random/cluster/golem/low_chance
-	name = "low chance cluster of golem"
+	name = "low chance cluster of golem (4-5) 40%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/golem/lower_chance
-	name = "lower chance cluster of golem"
+	name = "lower chance cluster of golem (4-5) 20%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 80

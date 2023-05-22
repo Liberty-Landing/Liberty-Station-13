@@ -201,8 +201,8 @@
 	new /obj/item/clothing/head/helmet/pirssuit/cso(src)
 	new /obj/item/clothing/mask/gas/capsa(src)
 	new /obj/item/clothing/gloves/latex/nitrile(src)
-	new /obj/item/computer_hardware/hard_drive/portable/design/medical/advanced/cmo(src)
-	new /obj/item/computer_hardware/hard_drive/portable/design/xenobio/rd(src)
+	new /obj/item/computer_hardware/hard_drive/portable/design/medical/cso(src)
+	new /obj/item/computer_hardware/hard_drive/portable/design/medical/advanced/cso(src)
 	new /obj/item/device/defib_kit/compact/combat/adv/loaded/cbo(src)
 	new /obj/item/gun/matter/staff_of_asclepius(src) // TODO: Map this instead of having it inside the locker, maybe?
 	new /obj/item/circuitboard/sleeper/hyper(src)

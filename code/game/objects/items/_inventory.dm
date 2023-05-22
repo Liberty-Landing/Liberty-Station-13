@@ -138,22 +138,29 @@
 /obj/item/proc/try_uneqip(target, mob/living/user)
 	if(loc == user && ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if (!istype(target, /obj/screen/inventory/hand))
-			return
+		if(istype(target, /obj/screen/inventory))
+			var/obj/screen/inventory/screen_thing = target
+			target = screen_thing.slot_id
 
 		//makes sure that the storage is equipped, so that we can't drag it into our hand from miles away.
 		//there's got to be a better way of doing this.
 		if(src.loc != H || H.incapacitated())
-			return
-
-		if (!H.unEquip(src))
-			return
-
-		var/obj/screen/inventory/hand/Hand = target
-		switch(Hand.slot_id)
-			if(slot_r_hand)
-				H.put_in_r_hand(src)
-			if(slot_l_hand)
-				H.put_in_l_hand(src)
-		src.add_fingerprint(usr)
+			return FALSE
+		if(!H.canUnEquip(src))
+			return FALSE
+		if(!H.can_equip(src, target, FALSE, FALSE, FALSE))
+			return FALSE
+		H.remove_from_mob(src, FALSE)
+		/*
+			Copied from human equip_to_slot
+			Separate since its needed to prevent double-signals being sent
+			on atom containerization
+		*/
+		H.equip_to_slot(src, target, TRUE, FALSE)
+		if(H.client)
+			H.client.screen |= src
+		if(action_button_name)
+			H.update_action_buttons()
+		if(H.get_holding_hand(src))
+			add_hud_actions(H)
 		return TRUE

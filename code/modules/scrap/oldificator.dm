@@ -166,6 +166,10 @@
 /obj/item/reagent_containers/food/snacks/openable/liquidfood/make_old()
 	return
 
+// As above.
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/make_old()
+	return
+
 /obj/item/ammo_magazine/make_old()
 	var/del_count = rand(0, stored_ammo.len)
 	for(var/i = 1 to del_count)

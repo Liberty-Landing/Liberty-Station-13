@@ -13,3 +13,8 @@
 	name = "pirate 3"
 	id = "pirate3"
 	suffix = "pirate/pirate3.dmm"
+
+/datum/map_template/junk/j25_25/pirate/pirate4
+	name = "pirate 4"
+	id = "pirate4"
+	suffix = "pirate/pirate4.dmm"

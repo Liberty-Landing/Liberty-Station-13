@@ -76,9 +76,9 @@
 		if(owner.stats.getPerk(PERK_PSI_PSYCHOLOGIST))
 			psi_max_bonus += 5
 
-		max_psi_points = round(clamp((owner.stats.getStat(STAT_COG) * 0.1), 1, 30)) + psi_max_bonus
+		max_psi_points = round(clamp((owner.stats.getStat(STAT_WIL) * 0.1), 1, 30)) + psi_max_bonus
 
-		cognitive_potential = round(clamp((owner.stats.getStat(STAT_COG) * 0.2), 0, 5))
+		cognitive_potential = round(clamp((owner.stats.getStat(STAT_WIL) * 0.2), 0, 5))
 
 
 		if(owner.stats.getPerk(PERK_PSI_GRACE))

@@ -1,18 +1,19 @@
 #define STAT_VALUE_DEFAULT	0
 #define STAT_VALUE_MAXIMUM 150
 
-#define STAT_MEC			"Mechanical"
+#define STAT_WIL			"Willpower"
 #define STAT_COG			"Cognition"
 #define STAT_BIO			"Biology"
+#define STAT_MEC			"Mechanical"
 #define STAT_ROB			"Robustness"
 #define STAT_TGH			"Toughness"
+#define STAT_END			"Endurance"
 #define STAT_VIG			"Vigilance"
-#define STAT_VIV			"Vivification"
-#define STAT_ANA			"Anatomy"
 
-#define ALL_STATS	list(STAT_MEC,STAT_COG,STAT_BIO,STAT_ROB,STAT_TGH,STAT_VIG,STAT_VIV,STAT_ANA)
-#define ALL_STATS_FOR_LEVEL_UP	list(STAT_MEC,STAT_COG,STAT_BIO,STAT_ROB,STAT_TGH,STAT_VIG,STAT_VIV) //Cant naturally gain more ana
-#define ALL_STATS_TO_IMPRINT list(STAT_MEC,STAT_COG,STAT_BIO,STAT_ROB,STAT_VIG) //So that people stop memeing the imprinter
+
+#define ALL_STATS	list(STAT_WIL,STAT_COG,STAT_BIO,STAT_MEC,STAT_ROB,STAT_TGH,STAT_END,STAT_VIG)
+#define ALL_STATS_LEVEL list(STAT_WIL,STAT_COG,STAT_BIO,STAT_MEC,STAT_ROB,STAT_TGH,STAT_VIG)
+#define ALL_STATS_TO_IMPRINT list(STAT_COG,STAT_BIO,STAT_MEC,STAT_ROB,STAT_VIG) //So that people stop memeing the imprinter
 
 #define STAT_LEVEL_NONE     0
 #define STAT_LEVEL_BASIC    15

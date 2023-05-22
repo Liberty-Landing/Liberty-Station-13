@@ -131,16 +131,17 @@
 		/obj/item/device/lighting/glowstick/flare/torch
 	)
 
-/obj/item/storage/belt/utility/neotheology
-	name = "Bonfire utility belt"
-	desc = "Waist-held holy items."
+/obj/item/storage/belt/utility/custodian
+	name = "Bonfire knightly belt"
+	desc = "Waist-held righteous items."
 	icon_state = "utility_neotheology"
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 5)
 	can_hold_extra = list(
 		/obj/item/book/ritual/cruciform,
 		/obj/item/implant/core_implant/cruciform,
 		/obj/item/soap,
 		/obj/item/reagent_containers/spray/cleaner,
-		/obj/item/tool/knife/dagger/nt,
+		/obj/item/tool/knife/dagger/custodian,
 		/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
 		/obj/item/gun/projectile/boltgun/flare_gun,
 		/obj/item/ammo_casing/flare,
@@ -172,18 +173,17 @@
 	storage_slots = 12
 
 /obj/item/storage/belt/utility/opifex/full/populate_contents()
-	new /obj/item/tool/crowbar/pneumatic(src)
-	new /obj/item/tool/hammer/deadblow(src)
-	new /obj/item/tool/multitool/advanced(src)
-	new /obj/item/tool/saw/circular/advanced(src)
-	new /obj/item/tool/screwdriver/electric(src)
+	new /obj/item/tool/crowbar(src)
+	new /obj/item/tool/hammer(src)
+	new /obj/item/tool/multitool(src)
+	new /obj/item/tool/saw/circular(src)
+	new /obj/item/tool/screwdriver(src)
 	new /obj/item/stack/cable_coil/random(src)
-	new /obj/item/tool/shovel/power(src)
-	new /obj/item/tool/tape_roll/fiber(src)
-	new /obj/item/tool/weldingtool/advanced(src)
-	new /obj/item/tool/wirecutters/armature(src)
-	new /obj/item/tool/wrench/big_wrench(src)
-	new /obj/item/tool/knife/dagger(src)
+	new /obj/item/tool/shovel(src)
+	new /obj/item/tool/tape_roll(src)
+	new /obj/item/tool/weldingtool(src)
+	new /obj/item/tool/wirecutters(src)
+	new /obj/item/tool/wrench(src)
 
 /obj/item/storage/belt/medical/opifex
 	name = "opifex black medical webbing"
@@ -194,11 +194,9 @@
 
 /obj/item/storage/belt/medical/opifex/full/populate_contents()
 	new /obj/item/device/scanner/health(src)
-	new /obj/item/reagent_containers/syringe/large/chronos(src)
-	new /obj/item/reagent_containers/syringe/large/tricordrazine(src)
-	new /obj/item/reagent_containers/syringe/large/inaprovaline(src)
+	new /obj/item/reagent_containers/syringe/tricordrazine(src)
+	new /obj/item/reagent_containers/syringe/inaprovaline(src)
 	new /obj/item/storage/pill_bottle/tramadol(src)
-	new /obj/item/storage/pill_bottle/prosurgeon(src)
 	new /obj/item/storage/pill_bottle/bicaridine(src)
 	new /obj/item/storage/pill_bottle/dermaline(src)
 	new /obj/item/storage/pill_bottle/dexalin_plus(src)
@@ -309,6 +307,8 @@
 		/obj/item/device/camera,
 		/obj/item/folder,
 		/obj/item/gun/energy/taser,
+		/obj/item/clothing/head/helmet,
+		/obj/item/clothing/mask/gas,
 		/obj/item/device/binoculars // By popular demand. - Seb
 	)
 
@@ -365,8 +365,8 @@
 	new /obj/item/device/taperecorder(src)
 	new /obj/item/device/camera(src)
 	new /obj/item/folder(src)
-	new /obj/item/clothing/head/helmet/marshal_full(src)
-	new /obj/item/clothing/mask/gas/ihs(src)
+	new /obj/item/clothing/head/helmet/marshal(src)
+	new /obj/item/clothing/mask/gas/ihs/security(src)
 	new /obj/item/grenade/flashbang(src)
 	new /obj/item/grenade/chem_grenade/teargas(src)
 	new /obj/item/grenade/frag/stinger(src)
@@ -383,29 +383,9 @@
 	new /obj/item/gun/energy/gun(src)
 	new /obj/item/cell/medium/high(src)
 	new /obj/item/cell/medium/high(src)
-	new /obj/item/tool/knife/dagger/assassin(src)
 	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
 	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
-	new /obj/item/grenade/smokebomb(src)
-	new /obj/item/grenade/chem_grenade/teargas(src)
-
-/obj/item/storage/belt/security/neotheology
-	name = "Bonfire tactical belt"
-	desc = "Can hold various military and security equipment for the awakened crusader or skilled divisor. Deus Vult."
-	icon_state = "tactical_neotheology"
-	can_hold_extra = list(
-		/obj/item/book/ritual/cruciform,
-		/obj/item/implant/core_implant/cruciform,
-		/obj/item/tool/knife/neotritual,
-		/obj/item/gun/energy/crossbow,
-		/obj/item/gun/energy/taser, //specially fitted to hold the counselor
-		/obj/item/tool/knife/dagger/nt,
-		/obj/item/reagent_containers/food/drinks/bottle/ntcahors,
-		/obj/item/gun/projectile/boltgun/flare_gun,
-		/obj/item/ammo_casing/flare,
-		/obj/item/gun/energy/ntpistol,
-		/obj/item/device/binoculars
-	)
+	new /obj/item/grenade/spawnergrenade/manhacks/opifex(src)
 
 /obj/item/storage/belt/champion
 	name = "championship belt"
@@ -417,11 +397,6 @@
 		/obj/item/clothing/mask/costume/job/luchador
 		)
 	price_tag = 50
-
-/obj/item/storage/belt/church
-	name = "bonfire belt"
-	desc = "Waist-held holy items."
-	icon_state = "ntbelt"
 
 /obj/item/storage/belt/webbing
 	name = "web harness"
@@ -481,7 +456,13 @@
 		/obj/item/modular_computer/pda,
 		/obj/item/melee,
 		/obj/item/tool/knife,
-		/obj/item/device/binoculars
+		/obj/item/device/binoculars,
+		/obj/item/modular_computer/tablet,
+		/obj/item/tool/medmultitool // This is not a justification for Parameds to do surgery btw.
+	)
+
+	cant_hold = list(
+		/obj/item/tool/medmultitool/medimplant	// Prevents sticking your implanted omnitool into the belt
 	)
 
 /obj/item/storage/belt/webbing/union

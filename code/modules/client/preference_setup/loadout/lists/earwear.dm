@@ -5,3 +5,8 @@
 	path = /obj/item/clothing/ears/earmuffs
 	sort_category = "Earwear"
 	cost = 0
+
+/datum/gear/ears/pin
+	display_name = "ear accesories"
+	path = /obj/item/clothing/head/pin/ear_pin
+	flags = GEAR_HAS_TYPE_SELECTION | GEAR_HAS_COLOR_SELECTION

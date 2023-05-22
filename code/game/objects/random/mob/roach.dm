@@ -19,12 +19,12 @@
 				/mob/living/carbon/superior_animal/roach/fuhrer = 0.5))
 
 /obj/random/mob/roaches/low_chance
-	name = "low chance random roach"
+	name = "low chance random roach 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/roaches
-	name = "cluster of roaches"
+	name = "cluster of roaches 3->9"
 	icon_state = "hostilemob-brown-cluster"
 	alpha = 128
 	min_amount = 3
@@ -35,7 +35,7 @@
 	return /obj/random/mob/roaches
 
 /obj/random/cluster/roaches_hoard
-	name = "hoard of roaches"
+	name = "hoard of roaches 20->30"
 	icon_state = "hostilemob-brown-cluster"
 	alpha = 128
 	min_amount = 20
@@ -46,12 +46,12 @@
 	return /obj/random/mob/roaches
 
 /obj/random/cluster/roaches/low_chance
-	name = "low chance cluster of roaches"
+	name = "low chance cluster of roaches 3->9 40%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/roaches/lower_chance
-	name = "lower chance cluster of roaches"
+	name = "lower chance cluster of roaches 3->9 20%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 80
 

@@ -31,7 +31,7 @@
 			list(name="EZ-Nutrient, 30u", cost=30, reagent="eznutrient"),
 			list(name="Left4Zed, 30u", cost=60, reagent="left4zed"),
 			list(name="Robust Harvest, 30u", cost=75, reagent="robustharvest"),
-			list(name="Mineral Water", cost=80, path=/obj/item/plantspray/water),
+			list(name="Spring Water", cost=80, path=/obj/item/plantspray/water),
 			list(name="Diethylamine, 30u", cost=150, reagent="diethylamine"), //Obtainable with a silver coin, but this is more for Hunters than Gardeners anyway.
 		"Weedkillers",
 			list(name="Weed Killer", cost=30, path=/obj/item/plantspray/weeds),

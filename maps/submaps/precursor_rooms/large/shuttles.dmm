@@ -1,0 +1,1172 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"ab" = (
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"ac" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"ad" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"ae" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"af" = (
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/precursor)
+"ag" = (
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"ah" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/precursor)
+"ai" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"aj" = (
+/turf/simulated/wall,
+/area/precursor)
+"ak" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall19";
+	icon_state = "escpodwall19"
+	},
+/area/precursor)
+"al" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall20";
+	icon_state = "escpodwall20"
+	},
+/area/precursor)
+"am" = (
+/turf/simulated/wall/rust_reinforced,
+/area/precursor)
+"an" = (
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"ao" = (
+/turf/simulated/shuttle/wall/escpod{
+	icon_state = "escpodwall23";
+	opacity = 0;
+	tag = "icon-escpodwall23"
+	},
+/area/precursor)
+"ap" = (
+/turf/simulated/shuttle/wall/escpod{
+	icon_state = "escpodwall24";
+	opacity = 0;
+	tag = "icon-escpodwall24"
+	},
+/area/precursor)
+"aq" = (
+/turf/simulated/shuttle/wall/escpod{
+	desc = "What the hell is Eris?";
+	icon_state = "escpodwall25";
+	tag = "icon-escpodwall25"
+	},
+/area/precursor)
+"ar" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall26";
+	icon_state = "escpodwall26"
+	},
+/area/precursor)
+"as" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall27";
+	icon_state = "escpodwall27"
+	},
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"at" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall28";
+	icon_state = "escpodwall28"
+	},
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"au" = (
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"av" = (
+/obj/machinery/door/blast/regular,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/precursor)
+"aw" = (
+/turf/simulated/mineral,
+/area/precursor)
+"ax" = (
+/turf/simulated/floor/tiled/dark/cargo,
+/area/precursor)
+"ay" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall16";
+	icon_state = "escpodwall16"
+	},
+/area/precursor)
+"az" = (
+/obj/structure/bed/chair/shuttle,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aA" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall15";
+	icon_state = "escpodwall15"
+	},
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"aB" = (
+/turf/unsimulated/wall/jungle,
+/area/precursor)
+"aC" = (
+/obj/structure/bed/chair/shuttle,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aD" = (
+/obj/structure/table/rack,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aE" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall29";
+	icon_state = "escpodwall29"
+	},
+/area/precursor)
+"aF" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall17";
+	icon_state = "escpodwall17"
+	},
+/area/precursor)
+"aG" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall18";
+	icon_state = "escpodwall18"
+	},
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"aH" = (
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"aI" = (
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aJ" = (
+/obj/structure/girder,
+/obj/structure/barricade,
+/turf/simulated/floor/tiled/dark/monofloor,
+/area/precursor)
+"aK" = (
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"aL" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"aN" = (
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/gun_normal,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"aO" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall14";
+	icon_state = "escpodwall14"
+	},
+/area/precursor)
+"aP" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall15";
+	icon_state = "escpodwall15"
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aQ" = (
+/obj/random/scrap/sparse_even,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aR" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall11";
+	icon_state = "escpodwall11"
+	},
+/area/precursor)
+"aS" = (
+/obj/item/device/radio/intercom{
+	dir = 4;
+	pixel_x = -22
+	},
+/turf/unsimulated/wall/jungle,
+/area/precursor)
+"aT" = (
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair (NORTH)";
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aU" = (
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair (NORTH)";
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/obj/machinery/light,
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aV" = (
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair (NORTH)";
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aW" = (
+/obj/structure/table/rack,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aX" = (
+/obj/structure/table/rack,
+/obj/random/firstaid,
+/obj/random/firstaid,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aY" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall12";
+	icon_state = "escpodwall12"
+	},
+/area/precursor)
+"aZ" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall13";
+	icon_state = "escpodwall13"
+	},
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"ba" = (
+/turf/simulated/shuttle/wall/escpod,
+/area/precursor)
+"bb" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall2";
+	icon_state = "escpodwall2"
+	},
+/area/precursor)
+"bc" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall3";
+	icon_state = "escpodwall3"
+	},
+/area/precursor)
+"bd" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall4";
+	icon_state = "escpodwall4"
+	},
+/area/precursor)
+"be" = (
+/turf/simulated/shuttle/wall/escpod{
+	icon_state = "escpodwall5";
+	opacity = 0;
+	tag = "icon-escpodwall5"
+	},
+/area/precursor)
+"bf" = (
+/turf/simulated/shuttle/wall/escpod{
+	icon_state = "escpodwall6";
+	opacity = 0;
+	tag = "icon-escpodwall6"
+	},
+/area/precursor)
+"bg" = (
+/turf/simulated/shuttle/wall/escpod{
+	desc = "What the hell is Eris?";
+	icon_state = "escpodwall7";
+	tag = "icon-escpodwall7"
+	},
+/area/precursor)
+"bh" = (
+/turf/simulated/shuttle/wall/escpod{
+	tag = "icon-escpodwall8";
+	icon_state = "escpodwall8"
+	},
+/area/precursor)
+"bi" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall9";
+	icon_state = "escpodwall9"
+	},
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"bj" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall10";
+	icon_state = "escpodwall10"
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bk" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bl" = (
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bm" = (
+/obj/item/stool,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bn" = (
+/obj/structure/table/standard,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bo" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bp" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/precursor)
+"bq" = (
+/obj/structure/computerframe{
+	tag = "icon-0 (WEST)";
+	icon_state = "0";
+	dir = 8;
+	anchored = 1
+	},
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"br" = (
+/obj/machinery/door/firedoor,
+/obj/effect/window_lwall_spawn/smartspawn,
+/turf/simulated/floor/plating,
+/area/precursor)
+"bs" = (
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bt" = (
+/turf/simulated/floor/asteroid/grass/grass_desert,
+/area/precursor)
+"bu" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bv" = (
+/obj/structure/table/standard,
+/obj/random/material_rare,
+/obj/random/material_rare,
+/obj/random/material_rare,
+/obj/random/material_rare,
+/obj/random/material_rare,
+/obj/random/psi_megafauna,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bw" = (
+/obj/structure/table/standard,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bx" = (
+/obj/structure/table/standard,
+/obj/item/storage/toolbox/mechanical{
+	pixel_x = -2;
+	pixel_y = -1
+	},
+/obj/item/clothing/head/welding,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"by" = (
+/obj/machinery/door/airlock/maintenance_common{
+	name = "Service Maintenance";
+	req_access = list(12)
+	},
+/turf/simulated/floor/tiled/dark/cargo,
+/area/precursor)
+"bz" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bA" = (
+/obj/effect/window_lwall_spawn/smartspawn,
+/turf/simulated/floor/plating,
+/area/precursor)
+"bB" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bC" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bD" = (
+/obj/structure/bed/chair/shuttle,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bE" = (
+/obj/random/flora/jungle_tree,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bF" = (
+/obj/structure/bed/chair/shuttle,
+/obj/effect/decal/cleanable/blood,
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bG" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"bI" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bJ" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bK" = (
+/obj/structure/table/standard,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bL" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bM" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bN" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bO" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bP" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"bQ" = (
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bR" = (
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair (NORTH)";
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bS" = (
+/obj/random/flora/jungle_tree/low,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bT" = (
+/obj/structure/bed/chair/shuttle{
+	tag = "icon-shuttle_chair (NORTH)";
+	icon_state = "shuttle_chair";
+	dir = 1
+	},
+/obj/machinery/light,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"bU" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"bV" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"bW" = (
+/obj/random/junk,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bX" = (
+/obj/item/stool,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bY" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bZ" = (
+/obj/machinery/door/blast/regular,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"ic" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall13";
+	icon_state = "escpodwall13"
+	},
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"kl" = (
+/obj/random/pack/rare,
+/turf/unsimulated/wall/jungle,
+/area/precursor)
+"mb" = (
+/obj/random/pack/machine/low_chance,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/precursor)
+"np" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall28";
+	icon_state = "escpodwall28"
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"nP" = (
+/obj/random/pack/machine/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"pr" = (
+/obj/random/pack/tech_loot,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"ty" = (
+/obj/random/pack/machine/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"tM" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"Al" = (
+/obj/random/pack/tech_loot,
+/turf/unsimulated/wall/jungle,
+/area/precursor)
+"Dp" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"En" = (
+/obj/item/stool,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"EX" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall18";
+	icon_state = "escpodwall18"
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"HH" = (
+/obj/random/pack/rare,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"HS" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Km" = (
+/obj/item/stool,
+/turf/simulated/floor/asteroid/grass/grass_desert,
+/area/precursor)
+"Nj" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/asteroid/grass/grass_desert,
+/area/precursor)
+"UG" = (
+/obj/structure/shuttle_part/escpod{
+	tag = "icon-escpodwall10";
+	icon_state = "escpodwall10"
+	},
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"UZ" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"XT" = (
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/tiled/dark/gray_platform,
+/area/precursor)
+
+(1,1,1) = {"
+aa
+aa
+aa
+ai
+aa
+bs
+bs
+bs
+bs
+Nj
+Dp
+Dp
+an
+aa
+aa
+aa
+aa
+ai
+an
+an
+aa
+"}
+(2,1,1) = {"
+bs
+bs
+bs
+aj
+ax
+bs
+bE
+aj
+bt
+an
+an
+an
+an
+aj
+ax
+an
+an
+aj
+ab
+ab
+an
+"}
+(3,1,1) = {"
+bs
+bE
+bs
+bs
+bs
+bs
+bs
+bs
+bs
+bt
+bk
+af
+an
+bB
+bB
+bI
+bQ
+af
+af
+ab
+aa
+"}
+(4,1,1) = {"
+bs
+bs
+aB
+ak
+ay
+aJ
+aR
+ba
+aB
+an
+an
+bl
+af
+an
+an
+bJ
+an
+an
+ag
+bW
+an
+"}
+(5,1,1) = {"
+bs
+bs
+aB
+al
+az
+aK
+aS
+aB
+ac
+nP
+bt
+ty
+af
+an
+bC
+bI
+bR
+bb
+an
+bX
+an
+"}
+(6,1,1) = {"
+bs
+bs
+kl
+aB
+aB
+aK
+aT
+bc
+bs
+bs
+bt
+an
+af
+an
+bD
+bL
+bI
+bc
+HH
+an
+an
+"}
+(7,1,1) = {"
+bs
+bs
+Al
+aB
+aB
+aL
+aU
+bd
+bs
+bs
+bt
+an
+an
+an
+bD
+bM
+bT
+bd
+pr
+an
+an
+"}
+(8,1,1) = {"
+aa
+bs
+bS
+ao
+aC
+aK
+aV
+be
+af
+Km
+bv
+bX
+an
+ao
+bF
+bN
+bU
+be
+af
+ab
+aa
+"}
+(9,1,1) = {"
+aa
+bs
+nP
+aB
+aD
+aL
+aW
+bf
+bE
+En
+bw
+bm
+af
+ap
+bG
+bO
+bV
+bf
+mb
+an
+an
+"}
+(10,1,1) = {"
+bs
+bs
+mb
+aB
+aD
+aH
+aX
+bg
+bs
+bK
+bw
+bn
+af
+aq
+bP
+UZ
+bP
+bg
+mb
+ab
+an
+"}
+(11,1,1) = {"
+bs
+bs
+aB
+aB
+aE
+aN
+aB
+aB
+bs
+HS
+bx
+bo
+an
+ar
+aE
+tM
+aE
+bh
+an
+an
+aa
+"}
+(12,1,1) = {"
+bs
+bs
+ah
+as
+aF
+aO
+aY
+bi
+ah
+bs
+bs
+bt
+an
+as
+aF
+aO
+aY
+bi
+an
+an
+aa
+"}
+(13,1,1) = {"
+bs
+ac
+ah
+np
+EX
+aP
+aZ
+bj
+ac
+ac
+bt
+an
+ah
+at
+aG
+aA
+ic
+UG
+bB
+an
+an
+"}
+(14,1,1) = {"
+bs
+bs
+ab
+au
+bs
+bs
+bs
+bs
+bs
+bt
+an
+ab
+an
+an
+aH
+aH
+aH
+au
+ab
+ab
+an
+"}
+(15,1,1) = {"
+bs
+bu
+am
+bZ
+av
+av
+av
+bZ
+ag
+aj
+by
+aj
+ag
+bZ
+av
+av
+av
+bZ
+am
+ad
+an
+"}
+(16,1,1) = {"
+bs
+bs
+am
+aw
+aI
+aQ
+aQ
+aI
+am
+bp
+af
+XT
+ag
+aI
+aQ
+aQ
+aQ
+aI
+am
+ab
+an
+"}
+(17,1,1) = {"
+bs
+bs
+ag
+aw
+aw
+aQ
+aQ
+aw
+am
+bl
+bz
+bl
+am
+aw
+aw
+aQ
+aQ
+aw
+ag
+an
+an
+"}
+(18,1,1) = {"
+bs
+bs
+ag
+aw
+aw
+aw
+aQ
+aQ
+ag
+bq
+bq
+bq
+am
+aw
+aw
+aQ
+aw
+aw
+ag
+an
+an
+"}
+(19,1,1) = {"
+bs
+ae
+ag
+ag
+am
+am
+am
+ag
+ag
+br
+bA
+br
+am
+ag
+ag
+ag
+ag
+am
+am
+bY
+an
+"}
+(20,1,1) = {"
+bs
+bs
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+an
+an
+aa
+"}
+(21,1,1) = {"
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+an
+aa
+aa
+"}

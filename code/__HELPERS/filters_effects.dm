@@ -7,7 +7,7 @@
 	The defines are pre-made filters effect for ease of copy-paste.
 */
 
-#define FILTER_HOLY_GLOW filter(type="drop_shadow", x=0, y=0, size=5, offset=2, color=rgb(255,255,170))
+#define FILTER_HOLY_GLOW filter(type="drop_shadow", x=0, y=0, size=5, offset=2, color=rgb(146,214,215))
 
 /proc/add_effect(mob/user, effect, duration)
 	if(user && effect)

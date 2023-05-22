@@ -62,6 +62,11 @@
 /obj/item/material/kitchen/utensil/fork/plastic
 	default_material = MATERIAL_PLASTIC
 
+/obj/item/material/kitchen/utensil/skewer
+	name = "skewer"
+	desc = "It's a skewer.  Used for grilling, but works as a utensil in a pinch."
+	icon_state = "skewer"
+
 /obj/item/material/kitchen/utensil/spoon
 	name = "spoon"
 	desc = "It's a spoon. You can see your own upside-down face in it."

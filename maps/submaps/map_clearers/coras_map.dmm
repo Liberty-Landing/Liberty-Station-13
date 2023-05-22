@@ -304,7 +304,7 @@
 /area/asteroid/rogue)
 "lY" = (
 /obj/structure/table/marble,
-/obj/item/tool/knife/dagger/nt,
+/obj/item/tool/knife/dagger/custodian,
 /turf/simulated/floor/rock/manmade/ruin3,
 /area/asteroid/rogue)
 "md" = (

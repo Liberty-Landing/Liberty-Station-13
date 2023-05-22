@@ -2,12 +2,12 @@ GLOBAL_VAR_INIT(miracle_points, 0)
 var/global/obj/machinery/power/eotp/eotp
 
 /obj/machinery/power/eotp
-	name = "Will of the Protector"
-	desc = "A specialized obelisk designed to supply the surface church with absolutist design disks and blessings from the lower temples. By making offerings of supplies or materials readily produced \
-	by the church, disciples can obtain disks and other goods. The obelisk also provides various blessings and monitors areas protected by obelisks for potential threats to the colony, marked by its \
-	observation level, letting it warn primes and vectors ahead of time. Additionally, it passively gains power before unleashing various blessings to followers."
+	name = "Embers of Theoretical Philosophy"
+	desc = "A specialized machine designed to supply the surface stronghold with Custodian design disks and blessings from the lower stronghold. By making offerings of supplies or materials readily produced \
+	by the Custodians, members can obtain disks and other goods. The EOTP also provides various blessings and monitors areas protected by torchbearers for potential threats to the colony, marked by its \
+	observation level, letting it warn Custodians ahead of time. Additionally, it passively gains power before unleashing various blessings to Hearthcore users."
 	icon = 'icons/obj/eotp.dmi'
-	icon_state = "wotp"
+	icon_state = "eotp"
 
 	density = TRUE
 	anchored = TRUE
@@ -154,7 +154,7 @@ var/global/obj/machinery/power/eotp/eotp
 					H.adjustOxyLoss(-50)
 					H.adjustBruteLoss(-15)
 					H.adjustFireLoss(-15)
-					to_chat(H, SPAN_NOTICE("You feel a wave of calm pass over you. Your cruciform does a quick routine maintenance, patching any potential minor wounds across your body."))
+					to_chat(H, SPAN_NOTICE("You feel a wave of calm pass over you. Your Hearthcore does a quick routine maintenance, patching any potential minor wounds across your body."))
 
 		else
 			for(var/mob/living/carbon/human/H in disciples)
@@ -183,10 +183,10 @@ var/global/obj/machinery/power/eotp/eotp
 		rewards -= ODDITY
 */
 	else if(type_release == STAT_BUFF)
-		var/random_stat = pick(ALL_STATS_FOR_LEVEL_UP)
+		var/random_stat = pick(ALL_STATS_LEVEL)
 		for(var/mob/living/carbon/human/H in disciples)
 			if(H.stats)
-				to_chat(H, SPAN_NOTICE("You feel the blessing of the church upon you. You are enlightened, and gain deeper knowledge in [random_stat]; however, you can already feel this new-found knowledge is temporary."))
+				to_chat(H, SPAN_NOTICE("You feel enlightened, and gain deeper knowledge in [random_stat]; however, you can already feel this new-found knowledge is temporary."))
 				H.stats.addTempStat(random_stat, stat_buff_power, 20 MINUTES, "Eye_of_the_Protector")
 /*
 	else if(type_release == MATERIAL_REWARD)
@@ -201,7 +201,7 @@ var/global/obj/machinery/power/eotp/eotp
 		for(var/mob/living/carbon/human/H in disciples)
 			var/obj/item/implant/core_implant/cruciform/C = H.get_core_implant(/obj/item/implant/core_implant/cruciform)
 			C.power_regen += initial(C.power_regen)
-			to_chat(H, SPAN_NOTICE("Your cruciform vibrates, its power regeneration enhancing temporarily."))
+			to_chat(H, SPAN_NOTICE("Your Hearthcore vibrates, its power regeneration enhancing temporarily."))
 
 	//for(var/disciple in disciples)
 	//	to_chat(disciple, SPAN_NOTICE("A miracle has occured at the [src]! May the Angels live forever!"))

@@ -159,7 +159,7 @@
 	how_many_times_we_can_pull_a_pro_clown_gamer_move = 15
 
 /obj/item/soap/commie
-	name = "excelsior soap"
+	name = "soviet soap"
 	desc = "A bar of soap with the words \"For one to be truly free from shackles one must be clean\" engraved on it. Smells of struggles of the working class."
 	icon_state = "soapcommie"
 	how_many_times_we_can_pull_a_pro_clown_gamer_move = 20

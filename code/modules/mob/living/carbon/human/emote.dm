@@ -1022,6 +1022,16 @@
 				message = "facepalms in shame."
 				playsound(loc, 'sound/effects/facepalm.ogg', 80, 1)
 
+		if("yeowch")
+			m_type = 2
+			if(!muzzled)
+				message = "SCREAMS!"
+				playsound(loc, 'sound/misc/pizza.ogg', 50, 1)
+			else
+				m_type = 1
+				message = "mumbles out a scream!."
+				playsound(loc, 'sound/misc/muffled_scream.ogg', 50, 1)
+
 		if ("awoo")
 			m_type = 2
 			if(!muzzled)

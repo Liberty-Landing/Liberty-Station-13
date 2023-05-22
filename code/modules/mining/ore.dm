@@ -45,6 +45,9 @@
 /obj/item/stack/ore/attackby(obj/item/I, mob/user)
 	var/tool_type = I.get_tool_type(user, list(QUALITY_HAMMERING), src)
 	if(tool_type==QUALITY_HAMMERING)
+		if(!crushable)
+			to_chat(user, SPAN_NOTICE("You cannot crush this."))
+			return
 		to_chat(user, SPAN_NOTICE("Crushing the rocks, turning them to sand..."))
 		if(I.use_tool(user, src, WORKTIME_QUICK, tool_type, FAILCHANCE_ZERO, required_stat = STAT_MEC))
 			new /obj/item/stack/ore/glass(get_turf(src))

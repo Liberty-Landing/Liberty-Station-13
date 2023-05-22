@@ -43,7 +43,7 @@ var/const/company_name		= "Liberty Colony"
 var/const/company_short		= "Liberty"
 var/game_version			= "Liberty"
 var/changelog_hash			= ""
-var/game_year				= (text2num(time2text(world.realtime, "YYYY")) + 629)
+var/game_year				= (text2num(time2text(world.realtime, "YYYY")) + 700)
 
 var/round_progressing = 1
 var/master_storyteller       = "shitgenerator"

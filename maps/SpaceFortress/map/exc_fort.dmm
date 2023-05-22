@@ -652,7 +652,6 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "nk" = (
-/obj/machinery/excelsior_boombox,
 /turf/simulated/floor/tiled/derelict/white_big_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "nH" = (
@@ -1013,7 +1012,6 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "vT" = (
-/obj/machinery/excelsior_boombox,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "wl" = (
@@ -1818,7 +1816,6 @@
 /turf/simulated/floor/tiled/derelict,
 /area/outpost/abandoned_fortress/powered_lit)
 "PC" = (
-/obj/machinery/excelsior_boombox,
 /turf/simulated/floor/tiled/derelict,
 /area/outpost/abandoned_fortress/powered_lit)
 "PL" = (

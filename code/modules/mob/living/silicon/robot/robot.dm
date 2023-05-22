@@ -342,58 +342,16 @@
 			//This time spawn the real module
 			if(module)
 				return
-			QDEL_NULL(idcard)
-			idcard = new /obj/item/card/id/synthetic
-			Set_access(RM)
 			QDEL_NULL(RM)
 			new module_type(src)
 
 	//Fallback incase of runtimes
 	if (RM)
 		QDEL_NULL(RM)
+
 	updatename()
 	recalculate_synth_capacities()
 	notify_ai(ROBOT_NOTIFICATION_NEW_MODULE, module.name)
-
-/mob/living/silicon/robot/proc/Set_access(var/RM)
-	var/obj/item/robot_module/module = RM
-	if(module)
-		idcard.access |= module?.associated_department
-
-/*			Shit code is shit
-/mob/living/silicon/robot/proc/Set_access()
-	var/list/accesses = list()
-	for(var/RM in module.associated_department)
-		var/region = Get_access(RM)
-		for(var/ID in get_region_accesses(region))
-			if(ID == (access_ce))
-				continue
-			accesses.Insert([0], ID)
-	idcard.access = accesses
-
-/mob/living/silicon/robot/proc/Get_access(var/list/region)
-	switch(region)
-		if("All")
-			return ACCESS_REGION_ALL
-		if("Security") //security
-			return ACCESS_REGION_SECURITY
-		if("Medbay") //medbay
-			return ACCESS_REGION_MEDBAY
-		if("Research") //research
-			return ACCESS_REGION_RESEARCH
-		if("Engineering") //engineering and maintenance
-			return ACCESS_REGION_ENGINEERING
-		if("Command") //command
-			return ACCESS_REGION_COMMAND
-		if("Station General") //station general
-			return ACCESS_REGION_GENERAL
-		if("Supply") //supply
-			return ACCESS_REGION_SUPPLY
-		if("Church") //Neotheo
-			return ACCESS_REGION_CHURCH
-		if("Prospector") //Prospectors
-			return ACCESS_REGION_PROSPECTOR
-*/
 
 /mob/living/silicon/robot/proc/updatename(var/prefix as text)
 	if(prefix)
@@ -1223,7 +1181,7 @@
 		verbs += /mob/living/silicon/robot/verb/resting_icon_mode
 
 	to_chat(src, "Your icon has been set. You now require a module reset to change it.")
-	set_id_info(idcard)
+
 	updateicon()
 
 /mob/living/silicon/robot/proc/sensor_mode() //Medical/Security HUD controller for borgs

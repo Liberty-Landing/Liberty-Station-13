@@ -1,0 +1,1111 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"ab" = (
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"ac" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/bodybags,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"ad" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"ae" = (
+/obj/structure/table/reinforced,
+/obj/machinery/microscope,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"af" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/autoinjectors,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"ag" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"ah" = (
+/obj/random/junk/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"ai" = (
+/obj/random/scrap/dense_even,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"aj" = (
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"ak" = (
+/obj/machinery/light/small,
+/obj/random/junk/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"al" = (
+/obj/random/cluster/psi_monster/lower_chance,
+/obj/machinery/light/small,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"am" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"an" = (
+/obj/effect/damagedfloor/rust,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"ao" = (
+/turf/simulated/floor/rusted2/techfloor_grid,
+/area/precursor)
+"ap" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"aq" = (
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/obj/random/scrap/sparse_even,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"ar" = (
+/obj/effect/damagedfloor/fire,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"as" = (
+/obj/effect/floor_decal/rust,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"at" = (
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"au" = (
+/obj/effect/damagedfloor/rust,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/obj/machinery/light/built{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"av" = (
+/obj/effect/decal/cleanable/blood/gibs/robot/limb,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aw" = (
+/obj/structure/table/reinforced,
+/obj/machinery/centrifuge,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"ax" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"ay" = (
+/obj/structure/table/reinforced,
+/obj/item/reagent_containers/glass/beaker/large,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"az" = (
+/obj/effect/decal/cleanable/ash,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aA" = (
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aB" = (
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aC" = (
+/obj/machinery/door/airlock/vault{
+	name = "Laboratory 1"
+	},
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"aD" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/obj/machinery/light/built{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"aE" = (
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aF" = (
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"aG" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/structure/anomaly_container,
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"aH" = (
+/obj/random/scrap/sparse_even,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aI" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"aJ" = (
+/obj/structure/low_wall/rusted,
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"aK" = (
+/obj/effect/damagedfloor/fire,
+/obj/random/scrap/sparse_even,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aL" = (
+/obj/item/stool,
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"aM" = (
+/obj/structure/salvageable/machine_os,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aN" = (
+/obj/random/scrap/sparse_even,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aO" = (
+/obj/effect/damagedfloor/fire,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/obj/structure/low_wall/rusted,
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aQ" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/masks,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aR" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/stool,
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"aS" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/structure/low_wall/rusted,
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aT" = (
+/obj/structure/flora/small/snow/boulder2,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"aU" = (
+/obj/machinery/artifact_scanpad,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aV" = (
+/obj/machinery/door/airlock/vault{
+	name = "Laboratory 1"
+	},
+/obj/machinery/door/blast/regular/open,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"aW" = (
+/obj/structure/table/reinforced,
+/obj/item/storage/box/beakers,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aX" = (
+/obj/effect/damagedfloor/fire,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"aY" = (
+/obj/machinery/radiocarbon_spectrometer,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aZ" = (
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"ba" = (
+/obj/effect/floor_decal/rust,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bb" = (
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"bc" = (
+/obj/effect/floor_decal/rust,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"bd" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"be" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bf" = (
+/obj/effect/damagedfloor/fire,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bg" = (
+/obj/effect/floor_decal/rust,
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"bh" = (
+/obj/effect/floor_decal/rust,
+/obj/random/cluster/psi_monster,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"bi" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/obj/structure/low_wall/rusted,
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bj" = (
+/turf/simulated/wall/rust_reinforced,
+/area/precursor)
+"bk" = (
+/obj/structure/flora/small/snow/rock6,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bl" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bm" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"bn" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"bo" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bp" = (
+/obj/effect/floor_decal/rust,
+/obj/effect/decal/cleanable/blood/gibs/core,
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bq" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"br" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood/gibs/core,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bs" = (
+/obj/effect/damagedfloor/fire,
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"bt" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/random/junk/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bu" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bv" = (
+/obj/machinery/power/emitter/anchored,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bw" = (
+/obj/random/scrap/dense_even,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bx" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"by" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/obj/machinery/door/airlock/vault{
+	name = "Laboratory 1"
+	},
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bz" = (
+/obj/effect/damagedfloor/fire,
+/obj/random/psi_megafauna,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bA" = (
+/obj/structure/table/reinforced,
+/obj/random/pouch,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bB" = (
+/obj/structure/table/reinforced,
+/obj/item/psi_injector,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bC" = (
+/obj/effect/decal/cleanable/blood,
+/obj/machinery/artifact,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bD" = (
+/obj/random/cluster/psi_monster/lower_chance,
+/turf/simulated/floor/rusted2/techfloor_grid,
+/area/precursor)
+"bE" = (
+/obj/structure/table/reinforced,
+/obj/random/rations,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bF" = (
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/obj/structure/table/reinforced,
+/obj/random/surgery_tool,
+/obj/random/surgery_tool,
+/obj/random/surgery_tool,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bG" = (
+/obj/structure/table/reinforced,
+/obj/random/tank,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bH" = (
+/obj/machinery/chem_heater,
+/obj/structure/table/reinforced,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bI" = (
+/obj/structure/table/reinforced,
+/obj/random/medical,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bJ" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/built,
+/obj/random/powercell,
+/obj/random/powercell,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bK" = (
+/obj/random/pack/tech_loot,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bL" = (
+/obj/random/traps/low_chance,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"bM" = (
+/obj/random/pack/junk_machine,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bN" = (
+/obj/structure/table/reinforced,
+/obj/machinery/light/built,
+/obj/random/toolbox,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bO" = (
+/obj/random/cluster/psi_monster/lower_chance,
+/obj/random/junk/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bP" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bQ" = (
+/obj/effect/decal/cleanable/blood,
+/obj/structure/table/reinforced,
+/obj/random/techpart,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bR" = (
+/obj/effect/damagedfloor/rust,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bS" = (
+/obj/effect/decal/cleanable/blood/gibs/robot/down,
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"bT" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bU" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4
+	},
+/turf/simulated/floor/rusted/cyancorner,
+/area/precursor)
+"bV" = (
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"bW" = (
+/obj/effect/damagedfloor/fire,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8;
+	icon_state = "warning"
+	},
+/obj/structure/low_wall/rusted,
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"bX" = (
+/obj/structure/sign/warning/caution,
+/turf/simulated/wall/ironplasma,
+/area/precursor)
+"bY" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"bZ" = (
+/obj/machinery/light/built{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/orangecorner,
+/area/precursor)
+"ca" = (
+/obj/effect/decal/cleanable/blood,
+/obj/machinery/light_construct,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"cb" = (
+/obj/machinery/light_construct,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"iI" = (
+/obj/structure/flora/small/snow/rock8,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"oH" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"qg" = (
+/obj/structure/low_wall/rusted,
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"up" = (
+/obj/structure/flora/small/snow/rock3,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"BZ" = (
+/obj/machinery/artifact_analyser,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"FQ" = (
+/obj/structure/flora/small/snow/rock4,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"Hb" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"Iz" = (
+/obj/item/stool,
+/turf/simulated/floor/rusted2/techfloor_grid,
+/area/precursor)
+"JW" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/rusted2/techfloor_grid,
+/area/precursor)
+"Kb" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"Lu" = (
+/turf/simulated/floor/rusted/cyancorner,
+/area/precursor)
+"WK" = (
+/obj/structure/low_wall/rusted,
+/obj/structure/low_wall/rusted,
+/obj/effect/window_lwall_spawn/smartspawnplasma,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"WY" = (
+/obj/structure/flora/small/snow/boulder1,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"Zp" = (
+/obj/structure/table/standard,
+/obj/item/device/lighting/toggleable/lamp,
+/turf/simulated/floor/tiled/steel/monofloor,
+/area/precursor)
+"Zt" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"ZG" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/steel/panels,
+/area/precursor)
+
+(1,1,1) = {"
+ah
+ai
+ai
+aa
+aa
+aa
+Hb
+aa
+ah
+ah
+aa
+WY
+aa
+aa
+aa
+aa
+ah
+ah
+aa
+aa
+aa
+"}
+(2,1,1) = {"
+ah
+ai
+ah
+am
+aa
+aa
+aa
+aa
+aa
+aa
+am
+aa
+aa
+bx
+aa
+aa
+aa
+am
+FQ
+ah
+aa
+"}
+(3,1,1) = {"
+ai
+ai
+aj
+aj
+bj
+aj
+aj
+aj
+aj
+aj
+bj
+bj
+bj
+bj
+bj
+bj
+aj
+aj
+bj
+Hb
+aa
+"}
+(4,1,1) = {"
+ah
+Hb
+aj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+bu
+bu
+bu
+ae
+aw
+bH
+bj
+aa
+ah
+"}
+(5,1,1) = {"
+ah
+ah
+bj
+bj
+aq
+aH
+aH
+Zp
+an
+aE
+WK
+aG
+aY
+ao
+ao
+aL
+aF
+bI
+bj
+aa
+ah
+"}
+(6,1,1) = {"
+ah
+ak
+bj
+bj
+aH
+aK
+aE
+aU
+aE
+aE
+ab
+bY
+aM
+aL
+aI
+ao
+ao
+ay
+bj
+aa
+ai
+"}
+(7,1,1) = {"
+ah
+Hb
+bj
+bj
+aE
+aN
+bd
+BZ
+az
+Kb
+ab
+bY
+aM
+aL
+aZ
+bD
+Iz
+bJ
+aj
+ai
+ai
+"}
+(8,1,1) = {"
+aa
+aa
+bj
+aj
+aX
+Lu
+ag
+ba
+bl
+bR
+aJ
+bY
+aM
+aL
+aZ
+ao
+JW
+aW
+aj
+ai
+ai
+"}
+(9,1,1) = {"
+aa
+aa
+bj
+aj
+aE
+aE
+ar
+bc
+bm
+bS
+aJ
+bY
+bv
+aF
+ao
+ao
+aZ
+bK
+aj
+aa
+ai
+"}
+(10,1,1) = {"
+up
+aa
+aj
+aj
+av
+aj
+au
+be
+bp
+bT
+bX
+bZ
+aA
+aA
+aA
+ca
+bj
+bj
+bj
+bP
+bk
+"}
+(11,1,1) = {"
+aT
+aa
+aj
+bj
+bz
+bb
+bh
+bn
+br
+Lu
+aV
+bV
+ax
+ZG
+at
+at
+aC
+bL
+aC
+aa
+aa
+"}
+(12,1,1) = {"
+aa
+aa
+aj
+bj
+as
+aj
+aD
+bf
+bq
+bU
+bX
+bZ
+aA
+aA
+ad
+cb
+bj
+bj
+bj
+oH
+aa
+"}
+(13,1,1) = {"
+ah
+aa
+bj
+bj
+aE
+aE
+bc
+bg
+bs
+bV
+aJ
+bY
+bv
+Lu
+Lu
+Lu
+Lu
+bM
+bj
+aa
+aa
+"}
+(14,1,1) = {"
+ah
+aa
+bj
+bj
+aE
+aE
+aO
+bi
+by
+bW
+aJ
+bY
+aM
+aZ
+bA
+bF
+aI
+af
+bj
+bk
+aa
+"}
+(15,1,1) = {"
+aa
+al
+aj
+aj
+az
+aE
+aS
+bo
+aE
+aE
+aJ
+bY
+aM
+aR
+bB
+bG
+aL
+bN
+aj
+aa
+ah
+"}
+(16,1,1) = {"
+ah
+aa
+aj
+aj
+aH
+aE
+aS
+aX
+bC
+aE
+aJ
+bY
+bw
+aL
+bE
+bQ
+aZ
+ac
+aj
+iI
+ah
+"}
+(17,1,1) = {"
+ah
+ah
+bj
+bj
+aq
+aH
+qg
+aE
+bd
+aB
+aJ
+bY
+aM
+aF
+aZ
+aL
+Zt
+bM
+aj
+aa
+aa
+"}
+(18,1,1) = {"
+aa
+aa
+aj
+aj
+bj
+aj
+aj
+aj
+aj
+bj
+aj
+bj
+bu
+bu
+bu
+ae
+aQ
+bM
+aj
+ah
+aa
+"}
+(19,1,1) = {"
+aa
+aa
+aj
+bj
+bj
+bj
+bj
+bj
+bj
+bj
+aj
+aj
+aj
+aj
+bj
+bj
+bj
+bj
+bj
+ah
+ah
+"}
+(20,1,1) = {"
+aa
+ah
+ah
+ap
+aa
+ah
+ah
+aa
+aT
+ah
+bt
+ah
+aa
+Hb
+aa
+aa
+ah
+bt
+bO
+aa
+ah
+"}
+(21,1,1) = {"
+aa
+aa
+ah
+ah
+ah
+ah
+aa
+aa
+Hb
+aa
+aa
+aa
+aa
+aa
+ah
+ah
+aa
+Hb
+aa
+aa
+aa
+"}

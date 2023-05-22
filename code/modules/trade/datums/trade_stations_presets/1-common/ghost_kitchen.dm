@@ -242,13 +242,13 @@
 			/obj/item/reagent_containers/food/snacks/xemeatpie = good_data("Xeno Pie", list(-100, -50), 150)
 		),
 		"Exotic Burger" = list(
-			/obj/item/reagent_containers/food/snacks/kampferburger = good_data("Kampfer Burger", list(-100, -50), 100),
-			/obj/item/reagent_containers/food/snacks/panzerburger = good_data("Panzer Burger", list(-100, -50), 100),
-			/obj/item/reagent_containers/food/snacks/jagerburger = good_data("Jager Burger", list(-100, -50), 100),
-			/obj/item/reagent_containers/food/snacks/seucheburger = good_data("Seuche Burger", list(-100, -50), 100),
+			/obj/item/reagent_containers/food/snacks/kampferburger = good_data("Roach Burger", list(-100, -50), 100),
+			/obj/item/reagent_containers/food/snacks/panzerburger = good_data("Exoskeleton Roach Burger", list(-100, -50), 100),
+			/obj/item/reagent_containers/food/snacks/jagerburger = good_data("Hunter-Killer ROach Burger", list(-100, -50), 100),
+			/obj/item/reagent_containers/food/snacks/seucheburger = good_data("Vapour Roach Burger", list(-100, -50), 100),
 			/obj/item/reagent_containers/food/snacks/bigroachburger = good_data("Big Roach Burger", list(-100, -50), 300),
-			/obj/item/reagent_containers/food/snacks/fuhrerburger = good_data("Fuhrer Burger", list(-100, -50), 250),
-			/obj/item/reagent_containers/food/snacks/kaiserburger = good_data("Kaiser Burger", list(-100, -50), 300),
+			/obj/item/reagent_containers/food/snacks/fuhrerburger = good_data("Overlord Roach Burger", list(-100, -50), 250),
+			/obj/item/reagent_containers/food/snacks/kaiserburger = good_data("Hivelord Roach Burger", list(-100, -50), 300),
 			/obj/item/reagent_containers/food/snacks/xenoburger = good_data("Xenoburger", list(-100, -50), 150),
 			/obj/item/reagent_containers/food/snacks/spellburger = good_data("Spell Burger", list(-100, -50), 500)
 		),

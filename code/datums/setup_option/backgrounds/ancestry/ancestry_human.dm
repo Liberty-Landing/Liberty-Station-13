@@ -8,7 +8,7 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-	stat_modifiers = list(STAT_ROB = -3, STAT_TGH = -3, STAT_COG = 3, STAT_BIO = 3, STAT_MEC = 3) //Pretty bad perk baked into this so
+	stat_modifiers = list(STAT_COG = 3, STAT_BIO = 3, STAT_MEC = 3) //Pretty bad perk baked into this so
 
 	perks = list(PERK_SOLBORN)
 
@@ -20,7 +20,9 @@
 
 	restricted_to_species = list(FORM_HUMAN)
 
-/datum/category_item/setup_option/background/ancestry/human_coalition
+	stat_modifiers = list(STAT_TGH = 3)
+
+/datum/category_item/setup_option/background/ancestry/human_pallatian
 	name = "Pallatian"
 	desc = "You hail from the Pallas Coalition, commonly called 'Pallatians' or 'Coalitioners'. The Coalition's culture is a melting pot of old Earth cultures isolated in the far stars. \
 			The Coalition is commonly at odds with the Terran Federation, being one of the three main gallactic powers. This has left many of its residents expecting an inevitable fight. \

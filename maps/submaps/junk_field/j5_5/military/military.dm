@@ -23,3 +23,8 @@
 	name = "military 5"
 	id = "military5"
 	suffix = "military/military5.dmm"
+
+/datum/map_template/junk/j5_5/military/military6
+	name = "military 6"
+	id = "military6"
+	suffix = "military/military6.dmm"

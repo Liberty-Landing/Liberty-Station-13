@@ -3,7 +3,7 @@
 /turf/template_noop,
 /area/template_noop)
 "h" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "z" = (

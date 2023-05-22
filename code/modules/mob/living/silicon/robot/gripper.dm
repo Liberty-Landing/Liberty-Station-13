@@ -225,9 +225,15 @@
 		/obj/item/paper,
 		/obj/item/paper_bundle,
 		/obj/item/paper_bin,
+		/obj/item/paper_bin,
 		/obj/item/card/id,
 		/obj/item/book,
 		/obj/item/newspaper,
+		/obj/item/pen,
+		/obj/item/stamp,
+		/obj/item/packageWrap,
+		/obj/item/device/destTagger,
+		/obj/item/smallDelivery,
 		/obj/item/pen,
 		/obj/item/stamp,
 		/obj/item/packageWrap,
@@ -318,9 +324,9 @@
 		/obj/item/am_containment,
 		/obj/item/am_shielding_container,
 		/obj/item/clothing/mask/smokable/cigarette,
-		/obj/item/spacecash,
 		/obj/item/device/eftpos,
-		///obj/item/reagent_containers/cooking_container //PArt of cooking overhaul, not yet ported
+		/obj/item/spacecash,
+		/obj/item/reagent_containers/cooking_with_jane/cooking_container // THEY'RE COMING FOR OUR JOBS!
 		)
 
 /obj/item/gripper/ammo //Used to boxes, ammo and shells

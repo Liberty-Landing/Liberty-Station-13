@@ -129,7 +129,6 @@
 #define COMSIG_OBJ_HIDE	"obj_hide"
 #define COMSIG_OBJ_TECHNO_TRIBALISM "techno_tribalism"
 #define COMSIG_OBJ_FACTION_ITEM_DESTROY "faction_item_destroy"
-#define SWORD_OF_TRUTH_OF_DESTRUCTION "sword_of_truth"
 
 //machinery
 #define COMSIG_AREA_APC_OPERATING "area_operating"  //from apc process()

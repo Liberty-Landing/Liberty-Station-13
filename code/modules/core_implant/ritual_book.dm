@@ -11,11 +11,7 @@
 
 
 /obj/item/book/ritual/attack_self(mob/living/carbon/human/H)
-	playsound(src.loc, pick('sound/items/BOOK_Turn_Page_1.ogg',\
-		'sound/items/BOOK_Turn_Page_2.ogg',\
-		'sound/items/BOOK_Turn_Page_3.ogg',\
-		'sound/items/BOOK_Turn_Page_4.ogg',\
-		), rand(40,80), 1)
+	playsound(src.loc, 'sound/items/hearthcorelantern.ogg', rand(40,80), 1)
 	interact(H)
 
 /obj/item/book/ritual/nano_ui_data(mob/user)
@@ -49,7 +45,8 @@
 			var/list/L = list(
 				"name" = capitalize(R.name),
 				"desc" = R.desc,
-				"type" = "[RT]"
+				"type" = "[RT]",
+				"power" = R.power,
 			)
 
 			if(istype(R, /datum/ritual/group))
@@ -88,7 +85,7 @@
 	if (!ui)
 		// the ui does not exist, so we'll create a new() one
 		// for a list of parameters and their descriptions see the code docs in \code\modules\nano\nanoui.dm
-		ui = new(user, src, ui_key, "ritual_book.tmpl", "Bible", 550, 655)
+		ui = new(user, src, ui_key, "ritual_book.tmpl", "Lantern", 550, 655)
 		// when the ui is first opened this is the data it will use
 		ui.set_initial_data(data)
 		// open the new ui window

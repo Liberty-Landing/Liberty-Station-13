@@ -1,6 +1,6 @@
 //This file is for printable uniforms, hats, armor, etc
 /datum/design/autolathe/clothing/excelsior_armor
-	name = "excelsior armor"
+	name = "legionary armor"
 	build_path = /obj/item/clothing/suit/space/void/excelsior
 
 /datum/design/autolathe/clothing/iron_lock_security_armor
@@ -20,11 +20,11 @@
 	build_path = /obj/item/clothing/shoes/ablasive/iron_lock_security
 
 /datum/design/autolathe/clothing/si_xenobio_hood
-	name = "PI Bio Hood"
+	name = "CAPSA Bio Hood"
 	build_path = /obj/item/clothing/head/bio_hood/cmo/si_made
 
 /datum/design/autolathe/clothing/si_xenobio_suit
-	name = "PI Bio Suit"
+	name = "CAPSA Bio Suit"
 	build_path = /obj/item/clothing/suit/bio_suit/cmo/si_made
 
 /datum/design/autolathe/clothing/formanhat
@@ -36,17 +36,17 @@
 	build_path = /obj/item/clothing/suit/storage/vest/scav
 
 /datum/design/autolathe/clothing/scav_armor
-	name = "Scavenger Armor"
-	build_path = /obj/item/clothing/suit/storage/scavengerarmor
+	name = "Fontaine Plate Carrier"
+	build_path = /obj/item/clothing/suit/storage/scavengerarmor/fontaine
 	materials = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 10, MATERIAL_PLATINUM = 1) //so hand crafting is better
 
 /datum/design/autolathe/clothing/scav_armor_void
-	name = "Void Scavenger Armor"
+	name = "Scavenger Voidsuit"
 	build_path = /obj/item/clothing/suit/space/void/riggedvoidsuit
 	materials = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 10) //so hand crafting is better
 
 /datum/design/autolathe/clothing/scav_helm_void
-	name = "Void Scavenger Helmet"
+	name = "Scavenger Voidsuit Helmet"
 	build_path = /obj/item/clothing/head/space/void/riggedvoidsuit
 	materials = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 8, MATERIAL_PLASTEEL = 3) //so hand crafting is better
 

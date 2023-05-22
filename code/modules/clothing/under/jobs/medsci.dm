@@ -6,7 +6,8 @@
 	name = "Research Provost's suit"
 	icon_state = "director"
 	item_state = "lb_suit"
-
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 15
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
 
 /obj/item/clothing/under/rank/scientist
@@ -14,7 +15,8 @@
 	name = "Phokorus Institute Scientist's uniform"
 	icon_state = "science"
 	item_state = "w_suit"
-
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 10
 	permeability_coefficient = 0.50
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 10, bio = 0, rad = 0)
 
@@ -28,6 +30,9 @@
 	item_state = "cso"
 	permeability_coefficient = 0.50
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 15
 
 /obj/item/clothing/under/rank/cso/verb/toggle_style()
 	set name = "Adjust style"
@@ -63,6 +68,8 @@
 	item_state = "medical"
 	permeability_coefficient = 0.50
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 10, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 
 /obj/item/clothing/under/rank/medical/verb/toggle_style()
 	set name = "Adjust style"
@@ -97,6 +104,9 @@
 	icon_state = "capsaturtle"
 	item_state = "b_suit"
 	permeability_coefficient = 0.50
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 15
 
 /obj/item/clothing/under/rank/psych/verb/toggle_style()
 	set name = "Adjust style"
@@ -131,6 +141,9 @@
 	icon_state = "paramedic"
 	item_state = "paramedic"
 	permeability_coefficient = 0.50
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
 	armor_list = list(
 		melee = 10,
 		bullet = 5,
@@ -146,6 +159,9 @@
 	icon_state = "bdutt"
 	item_state = "bdutt"
 	permeability_coefficient = 0.50
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
 
 /obj/item/clothing/under/rank/paramedic/bdu/verb/toggle_style()
 	set name = "Adjust style"
@@ -201,6 +217,9 @@
 	item_state = "g_suit"
 	armor_list = list(melee = 5, bullet = 0, energy = 10, bomb = 0, bio = 5, rad = 5)
 	permeability_coefficient = 0.50
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
 
 /obj/item/clothing/under/rank/capsa_pants
 	name = "CAPSA combat trousers"
@@ -208,4 +227,7 @@
 	icon_state = "capsa_camo"
 	item_state = "g_suit"
 	permeability_coefficient = 0.25 // Half clothing!
+	body_parts_covered = LOWER_TORSO|LEGS
+	cold_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5 // Half coverage!
 

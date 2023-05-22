@@ -17,7 +17,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/biotank_platform
-	name = "biomatter tank platform"
+	name = "scorchslag tank platform"
 	icon_state = "tank_platform"
 	layer = LOW_OBJ_LAYER
 	idle_power_usage = 120
@@ -81,7 +81,7 @@
 				spill_biomass(get_turf(user), cardinal)
 			else if(dirtiness_lvl >= DIRT_LVL_HIGH)
 				spill_biomass(get_turf(user), alldirs)
-			biomatter_attack(user, rand(5, 5*dirtiness_lvl))
+			scorch_attack(user, rand(5, 5*dirtiness_lvl))
 		else
 			to_chat(user, SPAN_WARNING("You need to stand still to clean it properly."))
 		update_icon()
@@ -89,7 +89,7 @@
 
 
 /obj/machinery/multistructure/bioreactor_part/biotank_platform/proc/take_amount(var/amount)
-	biotank.reagents.add_reagent("biomatter", amount)
+	biotank.reagents.add_reagent("liquidscorch", amount)
 	GLOB.biomatter_neothecnology_amt += amount
 
 
@@ -115,16 +115,16 @@
 
 
 /obj/structure/biomatter_tank
-	name = "biomatter tank"
-	icon = 'icons/obj/machines/bioreactor.dmi'
-	icon_state = "biotank"
+	name = "scorch slag tank"
+	icon = 'icons/obj/machines/bonfire.dmi'
+	icon_state = "scorchslagtank"
 	anchored = TRUE
 	density = TRUE
 	layer = ABOVE_MOB_LAYER + 0.05
 	pixel_y = 16
 	var/max_capacity = 10000
 	var/obj/machinery/multistructure/bioreactor_part/biotank_platform/platform
-	var/obj/structure/reagent_dispensers/biomatter/canister
+	var/obj/structure/reagent_dispensers/scorch/canister
 	var/default_position = 16
 	var/to_port_position = -20
 
@@ -146,7 +146,7 @@
 /obj/structure/biomatter_tank/update_icon()
 	cut_overlays()
 	if(canister && platform.pipes_opened)
-		var/image/pipe_overlay = image(icon = 'icons/obj/machines/bioreactor.dmi', icon_state = "port-pipe", pixel_y = -9)
+		var/image/pipe_overlay = image(icon = 'icons/obj/machines/bonfire.dmi', icon_state = "port-pipe", pixel_y = -9)
 		add_overlay(pipe_overlay)
 
 
@@ -178,7 +178,7 @@
 		if(QUALITY_BOLT_TURNING)
 			if(!platform.pipes_opened)
 				return
-			var/obj/structure/reagent_dispensers/biomatter/possible_canister = locate() in platform.MS_bioreactor.output_port.loc
+			var/obj/structure/reagent_dispensers/scorch/possible_canister = locate() in platform.MS_bioreactor.output_port.loc
 			if(!possible_canister)
 				to_chat(user, SPAN_WARNING("Nothing to connect to!"))
 				return
@@ -189,12 +189,12 @@
 				else
 					set_canister(possible_canister)
 				to_chat(user, SPAN_NOTICE("You [canister ? "connect [canister] to" : "disconnect [canister] from"] [src]."))
-				biomatter_attack(user, rand(5, 15))
+				scorch_attack(user, rand(5, 15))
 			else
 				to_chat(user, SPAN_WARNING("Ugh. You done something wrong!"))
 				shake_animation()
 				if(reagents.total_volume)
-					biomatter_attack(user, rand(15, 25))
+					scorch_attack(user, rand(15, 25))
 					spill_biomass(user_interaction_loc)
 			update_icon()
 

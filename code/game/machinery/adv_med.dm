@@ -150,8 +150,7 @@
 		/obj/item/implant/chem,
 		/obj/item/implant/death_alarm,
 		/obj/item/implant/tracking,
-		/obj/item/implant/core_implant/cruciform,
-		/obj/item/implant/excelsior
+		/obj/item/implant/core_implant/cruciform
 	)
 	var/delete
 	var/temphtml

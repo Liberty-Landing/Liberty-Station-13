@@ -296,6 +296,10 @@
 		to_chat(user, "This book is completely blank!")
 
 /obj/item/book/attackby(obj/item/I, mob/user)
+	if(istype(src, /obj/item/book/ritual/cruciform))
+		..()
+		return
+
 	if(carved)
 		if(!store)
 			if(I.w_class < ITEM_SIZE_NORMAL)

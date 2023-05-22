@@ -11,8 +11,9 @@
 	difficulty = "Medium."
 	selection_color = "#b39aaf"
 	req_admin_notify = 1
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
 	outfit_type = /decl/hierarchy/outfit/job/science/rp
@@ -43,14 +44,13 @@
 							/datum/computer_file/program/chem_catalog,
 							/datum/computer_file/program/reports)
 
-	description = "The Research Provost is the head of the research branch of the Phokorus Institute, directing science activities.<br>\
+	description = "The Research Provost is the head of the surface section of the Phokorus Institute, directing science activities.<br>\
 	The scientists under your command are working on a range of projects. Direct them towards the best interests of the organization.<br>\
 	With oversight over the funds, you may also purchase scientific artifacts and anything else of research value - even funding away missions.<br>\
 	Even use your position to request support from other factions if required. Most colonists do not understand your work, but know its value.<br>\
-	Of course, remember that you are a scientist yourself - feel free to get into the lab and work on R&D or xeno-related research.<br>\
-	The Medical wing also falls under the ownership of Phokorus Institute. You may use their resources - and they may use yours - as needed."
+	Of course, remember that you are a scientist yourself - feel free to get into the lab and work on R&D or xeno-related research."
 
-	duties = "Direct the scientists under your command towards the bettering of all mankind.<br>\
+	duties = "Direct the scientists under your command towards the expansion of scientific knowledge and the enrichment of other's understanding of the natural world.<br>\
 	Ensure a healthy stock of research equipment through management of department funds.<br>\
 	Consider organizing away missions and expeditions to acquire artifacts and other valuable items."
 
@@ -71,11 +71,13 @@
 	supervisors = "the Research Provost"
 	difficulty = "Medium."
 	selection_color = "#bdb1bb"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
-	noob_name = "PIRS Intern"
-	alt_titles = list("PIRS Xenobiologist", "PIRS Xenoarcheologist", "PIRS Xenobotanist", "PIRS Research Fabricator", "PIRS Geneticist")
+
+/*	noob_name = "PIRS Intern" */
+	alt_titles = list("PIRS Intern", "PIRS Xenobiologist", "PIRS Xenoarcheologist", "PIRS Xenobotanist", "PIRS Research Fabricator", "PIRS Geneticist")
 	outfit_type = /decl/hierarchy/outfit/job/science/scientist
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	software_on_spawn = list(/datum/computer_file/program/signaller, /datum/computer_file/program/chem_catalog)
 
@@ -118,12 +120,14 @@
 	spawn_positions = 2
 	supervisors = "the Research Provost"
 	difficulty = "Medium."
-	noob_name = "PIRS Roboticist Trainee"
-	alt_titles = list("PIRS Cyberneticist", "PIRS Mechanist", "PIRS Biomechanical Engineer")
+/*	noob_name = "PIRS Roboticist Trainee" */
+	alt_titles = list("PIRS Roboticist Trainee", "PIRS Cyberneticist", "PIRS Mechanist", "PIRS Biomechanical Engineer")
 	selection_color = "#bdb1bb"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	department_account_access = TRUE
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 
 	outfit_type = /decl/hierarchy/outfit/job/science/roboticist

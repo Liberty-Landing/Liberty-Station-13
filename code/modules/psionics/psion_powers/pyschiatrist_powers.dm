@@ -61,7 +61,7 @@
 					"You place your hand upon [L], calming [L]'s thoughts!"
 					)
 			playsound(src.loc,'sound/effects/telesci_ping.ogg', 25, 3)
-			L.sanity.changeLevel(10 + (owner.stats.getStat(STAT_COG)/2))
+			L.sanity.changeLevel(10 + (owner.stats.getStat(STAT_WIL)/2))
 			if(owner.stats.getPerk(PERK_PSI_ATTUNEMENT))
 				L.sanity.changeLevel(20)
 			if(owner.stats.getPerk(PERK_PSI_MANIA))

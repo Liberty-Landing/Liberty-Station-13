@@ -37,7 +37,7 @@
 	icon_state = "stamp-ce"
 
 /obj/item/stamp/pr
-	name = "prime's rubber stamp"
+	name = "oathpledge's rubber stamp"
 	icon_state = "stamp-pr"
 
 /obj/item/stamp/rd

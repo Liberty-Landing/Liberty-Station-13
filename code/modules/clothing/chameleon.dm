@@ -113,7 +113,7 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	var/list/loadout_1 = list(
 	uniform = /obj/item/clothing/under/rank/assistant,
 	hat = /obj/item/clothing/head/hardhat,
-	suit = /obj/item/clothing/suit/storage/rank/ass_jacket,
+	suit = /obj/item/clothing/suit/storage/toggle/liberass_jacket,
 	shoes = /obj/item/clothing/shoes/reinforced,
 	back = /obj/item/storage/backpack/satchel,
 	gloves = /obj/item/clothing/gloves/thick,
@@ -124,7 +124,7 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 
 	var/list/loadout_2 = list(
 	uniform = /obj/item/clothing/under/rank/security,
-	hat = /obj/item/clothing/head/helmet/marshal_full,
+	hat = /obj/item/clothing/head/helmet/marshal,
 	suit = /obj/item/clothing/suit/armor/vest/ironhammer/full,
 	shoes = /obj/item/clothing/shoes/jackboots,
 	back = /obj/item/storage/backpack/satchel/security,
@@ -147,16 +147,16 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	headset =/obj/item/device/radio/headset/headset_sci)
 
 	var/list/loadout_4 = list(
-	uniform = /obj/item/clothing/under/rank/acolyte,
-	hat = /obj/item/clothing/head/helmet/acolyte,
-	suit = /obj/item/clothing/suit/armor/vest/acolyte,
-	shoes = /obj/item/clothing/shoes/reinforced,
-	back = /obj/item/storage/backpack/satchel/neotheology,
-	gloves = /obj/item/clothing/gloves/thick,
-	mask = /obj/item/clothing/mask/gas/germanmask,
-	glasses = /obj/item/clothing/glasses/sunglasses,
-	gun = /obj/item/gun/energy/laser,
-	headset = /obj/item/device/radio/headset/church)
+	uniform = /obj/item/clothing/under/turtleneck/fontaine,
+	hat = /obj/item/clothing/head/helmet/handmade/scavengerhelmet,
+	suit = /obj/item/clothing/suit/storage/scavengerarmor,
+	shoes = /obj/item/clothing/shoes/jackboots/fontaine,
+	back = /obj/item/storage/backpack/satchel,
+	gloves = /obj/item/clothing/gloves/thick/fontaine,
+	mask = /obj/item/clothing/mask/gas/fontaine,
+	glasses = /obj/item/clothing/glasses/sunglasses/fontaine,
+	gun = /obj/item/gun/projectile/automatic/ak47/makeshift,
+	headset = /obj/item/device/radio/headset/headset_pro)
 
 /obj/item/clothing/under/chameleon/emp_act(severity)
 	name = "psychedelic"
@@ -317,6 +317,17 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	icon_state = "bluetie"
 	item_state = "bluetie"
 	chameleon_type = "accessory"
+	
+/obj/item/gun/energy/chameleon
+	name = "\"Liberty\" pistol"
+	desc = "A hologram projector in the shape of a gun. There is a dial on the side to change the gun's disguise."
+	icon = 'icons/obj/guns/projectile/liberty.dmi'
+	icon_state = "liberty"
+	chameleon_type = "gun"
+	fire_sound = 'sound/weapons/Gunshot.ogg'
+	projectile_type = /obj/item/projectile/chameleon
+	charge_meter = FALSE
+	charge_cost = 20
 
 
 /obj/item/gun/energy/chameleon/disguise(newtype, mob/user)

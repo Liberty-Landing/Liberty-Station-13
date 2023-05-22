@@ -6,8 +6,8 @@
 	icon_dead = "sentinal_dead"
 	icon_rest = "sentinal_stunned"
 
-	maxHealth = 40
-	health = 40
+	maxHealth = 60
+	health = 60
 
 /mob/living/carbon/superior_animal/xenomorph/hunter
 	name = "hunter"
@@ -30,8 +30,8 @@
 	icon_rest = "runner_stunned"
 	icon_gib = "runner_gibbed"
 
-	maxHealth = 15
-	health = 15
+	maxHealth = 35
+	health = 35
 	move_to_delay = 2
 	turns_per_move = 12
 

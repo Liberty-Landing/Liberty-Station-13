@@ -122,6 +122,54 @@
 	G.icon_state = "grabbed1"
 	G.synch()
 
+/mob/living/carbon/human/proc/leap_opifex()
+	set category = "Abilities"
+	set name = "Leap"
+	set desc = "Leap at a target."
+
+	if(last_special > world.time)
+		return
+
+	if(stat || paralysis || stunned || weakened || lying || restrained() || buckled)
+		to_chat(src, "You cannot leap in your current state.")
+		return
+
+	var/list/choices = list()
+	for(var/mob/living/M in view(6,src))
+		if(!issilicon(M))
+			choices += M
+	choices -= src
+
+	var/mob/living/T = input(src,"Who do you wish to leap at?") as null|anything in choices
+
+	if(!T || !src || src.stat) return
+
+	if(get_dist(get_turf(T), get_turf(src)) > 4) return
+
+	if(last_special > world.time)
+		return
+
+	if(stat || paralysis || stunned || weakened || lying || restrained() || buckled)
+		to_chat(src, "You cannot leap in your current state.")
+		return
+
+	last_special = world.time + 200
+	status_flags |= LEAPING
+
+	src.visible_message(SPAN_DANGER("\The [src] leaps at [T]!"))
+	src.throw_at(get_step(get_turf(T),get_turf(src)), 4, 1, src)
+	mob_playsound(src.loc, 'sound/voice/shriek1.ogg', 50, 1)
+
+	sleep(5)
+
+	if(status_flags & LEAPING) status_flags &= ~LEAPING
+
+	if(!src.Adjacent(T))
+		to_chat(src, SPAN_WARNING("You miss!"))
+		return
+
+	T.Weaken(3)
+
 /mob/living/carbon/human/proc/gut()
 	set category = "Abilities"
 	set name = "Gut"
@@ -158,6 +206,40 @@
 		M.apply_damage(50,BRUTE)
 		if(M.stat == 2)
 			M.gib()
+
+/mob/living/carbon/human/proc/opifex_gut()
+	set category = "Abilities"
+	set name = "Gut"
+	set desc = "While grabbing someone aggressively, rip their guts out or tear them apart."
+
+	if(last_special > world.time)
+		return
+
+	if(stat || paralysis || stunned || weakened || lying)
+		to_chat(src, "\red You cannot do that in your current state.")
+		return
+
+	var/obj/item/grab/G = locate() in src
+	if(!G || !istype(G))
+		to_chat(src, "\red You are not grabbing anyone.")
+		return
+
+	if(G.state < GRAB_AGGRESSIVE)
+		to_chat(src, "\red You must have an aggressive grab to gut your prey!")
+		return
+
+	last_special = world.time + 200
+
+	visible_message(SPAN_WARNING("<b>\The [src]</b> rips viciously at \the [G.affecting]'s body with its claws!"))
+	mob_playsound(usr.loc, 'sound/xenomorph/alien_claw_flesh3.ogg', 75, 1)
+
+	if(ishuman(G.affecting))
+		var/mob/living/carbon/human/H = G.affecting
+		H.apply_damage(25,BRUTE)
+	else
+		var/mob/living/M = G.affecting
+		if(!istype(M)) return //wut
+		M.apply_damage(25,BRUTE)
 
 /mob/living/carbon/human/proc/commune()
 	set category = "Abilities"

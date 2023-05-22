@@ -33,9 +33,9 @@
 					victim.forceMove(MS_bioreactor.misc_output)
 					continue
 				//if our target has hazard protection, apply damage based on the protection percentage.
-				var/hazard_protection = victim.getarmor(null, "bio")
-				var/damage = BIOREACTOR_DAMAGE_PER_TICK - (BIOREACTOR_DAMAGE_PER_TICK * (hazard_protection/100))
-				victim.apply_damage(damage, BRUTE, used_weapon = "Biological")
+				var/hazard_protection = victim.get_heat_protection()
+				var/damage = BIOREACTOR_DAMAGE_PER_TICK - (BIOREACTOR_DAMAGE_PER_TICK * hazard_protection)
+				victim.apply_damage(damage, BURN, used_weapon = "Scorch Exposure")
 				victim.adjustOxyLoss(BIOREACTOR_DAMAGE_PER_TICK / 2)	// Snowflake shit, but we need the mob to die within a reasonable time frame
 
 				if(prob(10))
@@ -176,8 +176,8 @@
 
 //GLASS WALLS
 /obj/structure/window/reinforced/bioreactor
-	name = "bioreactor glass"
-	icon = 'icons/obj/machines/bioreactor.dmi'
+	name = "bonfire glass"
+	icon = 'icons/obj/machines/bonfire.dmi'
 	layer = ABOVE_MOB_LAYER
 	var/contamination_level = 0
 	var/max_contamination_lvl = 5
@@ -206,7 +206,7 @@
 	if(contamination_level)
 		var/biomass_alpha = min((50*contamination_level), 255)
 		var/icon/default = new /icon(icon, icon_state)
-		var/icon/biomass = new /icon('icons/obj/machines/bioreactor.dmi', "glass_biomass")
+		var/icon/biomass = new /icon('icons/obj/machines/bonfire.dmi', "scorch_biomass")
 		biomass.Turn(-40, 40)
 		biomass.Blend(rgb(0, 0, 0, biomass_alpha))
 		default.Blend(biomass, ICON_MULTIPLY)
@@ -236,7 +236,7 @@
 		to_chat(user, SPAN_NOTICE("You begin cleaning [src] with your [I]..."))
 		if(do_after(user, CLEANING_TIME * contamination_level, src))
 			to_chat(user, SPAN_NOTICE("You clean \the [src]."))
-			biomatter_attack(user, 5*contamination_level)
+			scorch_attack(user, 5*contamination_level)
 			apply_dirt(-contamination_level)
 			if(contamination_level >= 4)
 				spill_biomass(user.loc, cardinal)

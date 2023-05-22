@@ -13,11 +13,9 @@
 	hud_indicator = "excelsior"
 
 	possible_antags = list(ROLE_EXCELSIOR_REV)
-	verbs = list(/datum/antag_faction/excelsior/proc/communicate_verb,
-				/datum/antag_faction/excelsior/proc/summon_stash)
+	verbs = list(/datum/antag_faction/excelsior/proc/communicate_verb)
 
 	var/stash_holder = null
-
 
 /datum/antag_faction/excelsior/print_success_extra()
 	var/extra_text = ""
@@ -63,65 +61,3 @@
 		return
 
 	F.communicate(usr)
-
-/datum/antag_faction/excelsior/proc/summon_stash()
-
-	set name = "Summon stash"
-	set category = "Cybernetics"
-
-	if(!ishuman(usr))
-		return
-
-	var/datum/antag_faction/excelsior/F = get_faction_by_id(FACTION_EXCELSIOR)
-
-	if(!F)
-		return
-
-	if(F.stash_holder)
-		to_chat(usr, SPAN_NOTICE("The stash has already been summoned by \"[F.stash_holder]\""))
-		return
-	var/mob/living/carbon/human/H = usr
-	if(alert(H, "Are you sure you want to summon Excelsior stash?","Means of Production", "Yes, the time has come", "No, not yet") == "Yes, the time has come")
-		F.stash_holder = H.real_name
-		var/area/comrade_area = get_area(H)
-		var/comrade_location = initial(comrade_area.name)
-		var/text = "<span class='revolution'>\"Comrade [H] has seized the means of production in [comrade_location]!\"</span>"
-		for(var/i in SSmobs.mob_list)
-			if(is_excelsior(i))
-				to_chat(i, text)
-/*
-		for(var/mob/observer/ghost/M as anything in GLOB.dead_mob_list)
-			if(!M.client)
-				continue
-			if(M.antagHUD || is_admin(M))
-				to_chat(M, "[text] ([ghost_follow_link(usr, M)])")
-*/
-
-		var/obj/item/storage/deferred/stash/sack/stash = new
-
-		new /obj/item/computer_hardware/hard_drive/portable/design/excelsior_weapons(stash)
-		new /obj/item/computer_hardware/hard_drive/portable/design/excelsior(stash)
-		new /obj/item/computer_hardware/hard_drive/portable/design/ex_cells(stash)
-		new /obj/item/computer_hardware/hard_drive/portable/design/ex_parts(stash)
-		new /obj/item/circuitboard/excelsiorautolathe(stash)
-		new /obj/item/circuitboard/excelsior_teleporter(stash)
-		new /obj/item/soap/commie(stash)
-		new /obj/item/clothing/suit/space/void/excelsior(stash)
-		new /obj/item/gun/projectile/makarov(stash)
-		new /obj/item/ammo_magazine/highcap_pistol_35(stash)
-		new /obj/item/ammo_magazine/highcap_pistol_35(stash)
-		new /obj/item/storage/toolbox/syndicate(stash)
-		new /obj/item/storage/toolbox/electrical(stash)
-		new /obj/item/clothing/shoes/combat(stash)
-		new /obj/item/clothing/gloves/thick/combat(stash)
-		new /obj/item/storage/firstaid/ifak(stash)
-		new /obj/item/stock_parts/manipulator/excelsior(stash)
-		new /obj/item/stock_parts/manipulator/excelsior(stash)
-		new /obj/item/stock_parts/manipulator/excelsior(stash)
-		new /obj/item/stock_parts/matter_bin/excelsior(stash)
-		new /obj/item/stock_parts/matter_bin/excelsior(stash)
-		new /obj/item/stock_parts/matter_bin/excelsior(stash)
-		new /obj/item/cell/large/excelsior(stash)
-		new /obj/item/stock_parts/subspace/crystal(stash)
-
-		H.put_in_hands(stash)

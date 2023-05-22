@@ -4,7 +4,8 @@
 			Unlike many energy weapons, this weapon only features a non-lethal mode. Its compact size allows it to fit within a user's belt however, "
 	icon = 'icons/obj/guns/energy/taser.dmi'
 	icon_state = "taser"
-	item_state = null	//so the human update icon uses the icon_state instead.
+	item_state = "taser"
+	item_charge_meter = TRUE
 	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 3)
 	price_tag = 450
 	charge_cost = 50

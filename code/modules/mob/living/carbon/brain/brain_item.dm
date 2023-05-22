@@ -161,7 +161,6 @@
 	blood_req = 0
 	max_blood_storage = 2.5
 	oxygen_req = 0
-	nutriment_req = 0
 	nature = MODIFICATION_SILICON
 	matter = list(MATERIAL_STEEL = 1, MATERIAL_GOLD = 1)
 

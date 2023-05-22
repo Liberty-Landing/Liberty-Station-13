@@ -93,8 +93,8 @@ var/cop_code_last
 
 /mob/living/carbon/human/proc/codespeak_commie()
 	set category = "Codespeak"
-	set name = "Excels"
-	src.codesay("Excelsior infiltrators", TRUE, FALSE)
+	set name = "Infiltrators"
+	src.codesay("Infiltrators", TRUE, FALSE)
 
 /mob/living/carbon/human/proc/codespeak_carrion()
 	set category = "Codespeak"

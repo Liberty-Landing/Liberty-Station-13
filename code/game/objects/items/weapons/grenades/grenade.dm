@@ -13,6 +13,7 @@
 	var/det_time = 40
 	var/loadable = TRUE
 	var/variance = 0 //How much the fuse time varies up or down. Punishes cooking with makeshift nades, proper ones should have 0
+	var/grenade_activation_sound = 'sound/weapons/armbomb.ogg'
 	price_tag = 300
 
 /obj/item/grenade/proc/clown_check(var/mob/living/user)
@@ -59,7 +60,7 @@
 
 	icon_state = initial(icon_state) + "_active"
 	active = 1
-	playsound(loc, 'sound/weapons/armbomb.ogg', 75, 1, -3)
+	playsound(loc, grenade_activation_sound, 75, 1, -3)
 	update_icon()
 
 	if(variance)

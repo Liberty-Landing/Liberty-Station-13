@@ -1,0 +1,1315 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"ab" = (
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"ac" = (
+/turf/simulated/wall,
+/area/precursor)
+"ad" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"ae" = (
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"af" = (
+/obj/random/junk,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"ag" = (
+/obj/effect/window_lwall_spawn/smartspawn,
+/turf/simulated/floor/plating,
+/area/precursor)
+"ah" = (
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"ai" = (
+/obj/machinery/light,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"aj" = (
+/obj/machinery/door/airlock/maintenance_common{
+	name = "Service Maintenance";
+	req_access = list(12)
+	},
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"ak" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/wall,
+/area/precursor)
+"al" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/tiled/dark/cargo,
+/area/precursor)
+"am" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"an" = (
+/obj/machinery/door/airlock/vault{
+	icon_state = "door_locked";
+	locked = 1
+	},
+/turf/simulated/floor/tiled/dark/cargo,
+/area/precursor)
+"ao" = (
+/obj/random/traps/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"ap" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"aq" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"ar" = (
+/obj/machinery/door/firedoor,
+/obj/effect/window_lwall_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/precursor)
+"as" = (
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"at" = (
+/obj/machinery/door/airlock/glass,
+/obj/structure/girder,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"au" = (
+/obj/machinery/door/airlock/maintenance_common{
+	name = "Service Maintenance";
+	req_access = list(12)
+	},
+/turf/simulated/floor/tiled/dark/cargo,
+/area/precursor)
+"av" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"aw" = (
+/turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor)
+"ax" = (
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"ay" = (
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"az" = (
+/obj/item/modular_computer/console/preset/security/records,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aA" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor)
+"aB" = (
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aC" = (
+/obj/structure/table/reinforced,
+/obj/machinery/door/window/brigdoor/northright{
+	dir = 8;
+	req_access = null
+	},
+/obj/machinery/door/window{
+	dir = 4;
+	name = "Security Checkpoint";
+	req_access = list(1)
+	},
+/turf/simulated/floor/tiled/steel/techfloor_grid,
+/area/precursor)
+"aD" = (
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"aE" = (
+/obj/item/modular_computer/console/preset/command{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"aF" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"aG" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aH" = (
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"aI" = (
+/obj/structure/catwalk,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"aJ" = (
+/obj/random/junk,
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aK" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aL" = (
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/wall,
+/area/precursor)
+"aM" = (
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 1
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aN" = (
+/obj/machinery/washing_machine,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"aO" = (
+/obj/structure/table/standard,
+/obj/structure/bedsheetbin,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"aP" = (
+/obj/random/junk,
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 1
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aQ" = (
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 1
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aR" = (
+/obj/structure/railing,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 1
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aS" = (
+/obj/structure/catwalk,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 1
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aT" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aU" = (
+/obj/machinery/vending/tool,
+/turf/simulated/floor/plating,
+/area/precursor)
+"aV" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aW" = (
+/obj/structure/table/standard,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"aX" = (
+/obj/structure/table/standard,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth/low_chance,
+/obj/random/pack/cloth/low_chance,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"aY" = (
+/obj/machinery/door/firedoor,
+/obj/effect/window_lwall_spawn/reinforced,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/plating,
+/area/precursor)
+"aZ" = (
+/obj/structure/catwalk,
+/obj/random/traps/low_chance,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"ba" = (
+/obj/machinery/vending/assist,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/plating,
+/area/precursor)
+"bb" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bc" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bd" = (
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"be" = (
+/obj/machinery/artifact,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bf" = (
+/obj/structure/table/rack,
+/obj/random/psi_megafauna,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bg" = (
+/turf/simulated/wall/rust_standard,
+/area/precursor)
+"bh" = (
+/obj/structure/table/rack,
+/obj/random/pack/rare,
+/obj/random/pack/rare,
+/obj/random/pack/rare,
+/obj/random/pack/rare/low_chance,
+/obj/random/pack/rare/low_chance,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bi" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bj" = (
+/obj/machinery/vending/engineering,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bk" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bl" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bm" = (
+/obj/machinery/vending/powermat,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bn" = (
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bo" = (
+/obj/random/cluster/psi_monster,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bp" = (
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"bq" = (
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"br" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bs" = (
+/obj/structure/table/standard,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bt" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"bu" = (
+/obj/structure/catwalk,
+/obj/random/traps/low_chance,
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bv" = (
+/obj/structure/catwalk,
+/obj/structure/table/rack/shelf,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bw" = (
+/obj/structure/girder,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"bx" = (
+/obj/structure/girder,
+/obj/structure/girder,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"by" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bz" = (
+/obj/structure/catwalk,
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	icon_state = "pipe-s";
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bA" = (
+/obj/structure/catwalk,
+/obj/random/traps/low_chance,
+/obj/structure/disposalpipe/junction{
+	dir = 8;
+	icon_state = "pipe-j2"
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bB" = (
+/obj/machinery/door/airlock/glass,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"bC" = (
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"bD" = (
+/obj/machinery/door/airlock/maintenance_common{
+	name = "Service Maintenance";
+	req_access = list(12)
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"bE" = (
+/obj/structure/catwalk,
+/obj/random/junk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bF" = (
+/obj/machinery/chem_master/condimaster,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bG" = (
+/obj/structure/table/standard,
+/obj/machinery/microwave{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bH" = (
+/obj/structure/table/reinforced,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bI" = (
+/obj/item/device/radio/intercom{
+	dir = 2;
+	pixel_y = 24
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"bJ" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"bK" = (
+/obj/structure/table/standard,
+/obj/random/dungeon_gun_energy,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bL" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bM" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 4
+	},
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bN" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/tiled/steel/brown_perforated,
+/area/precursor)
+"bO" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"bP" = (
+/obj/structure/catwalk,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bQ" = (
+/obj/structure/table/standard,
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 5
+	},
+/obj/item/material/kitchen/rollingpin,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bR" = (
+/obj/structure/table/reinforced,
+/obj/random/pack/rare/low_chance,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bS" = (
+/obj/structure/catwalk,
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bT" = (
+/obj/structure/table/rack,
+/obj/random/rations,
+/obj/random/rations,
+/obj/random/rations,
+/obj/random/rations/low_chance,
+/obj/random/rations/low_chance,
+/obj/random/rations/low_chance,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bU" = (
+/obj/structure/table/standard,
+/obj/item/packageWrap,
+/obj/item/reagent_containers/food/condiment/enzyme{
+	layer = 5
+	},
+/obj/item/reagent_containers/food/condiment/enzyme{
+	layer = 5
+	},
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bV" = (
+/obj/random/traps/low_chance,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bW" = (
+/obj/random/junk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bX" = (
+/turf/simulated/wall/rust_reinforced,
+/area/precursor)
+"bY" = (
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-y"
+	},
+/turf/simulated/floor/tiled/dark/monofloor,
+/area/precursor)
+"bZ" = (
+/obj/machinery/door/airlock/vault{
+	icon_state = "door_locked";
+	locked = 1
+	},
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/tiled/dark/cargo,
+/area/precursor)
+"ca" = (
+/obj/structure/catwalk,
+/obj/random/traps/low_chance,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cb" = (
+/obj/structure/catwalk,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden,
+/obj/structure/disposalpipe/junction{
+	tag = "icon-pipe-y (EAST)";
+	icon_state = "pipe-y";
+	dir = 4
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cc" = (
+/obj/structure/closet/secure_closet/personal,
+/obj/random/pack/rare,
+/obj/random/pack/rare,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"cd" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/obj/random/junk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"ce" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/random/junk,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"cf" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cg" = (
+/obj/structure/bed/padded,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"ch" = (
+/obj/structure/table/woodentable,
+/obj/item/device/lighting/toggleable/lamp/green,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"ci" = (
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cj" = (
+/mob/living/simple_animal/hostile/tree,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"ck" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"cl" = (
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"cm" = (
+/obj/structure/flora/tree/pine,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"cn" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"co" = (
+/obj/structure/catwalk,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cp" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"cq" = (
+/obj/structure/railing{
+	dir = 1;
+	icon_state = "railing0";
+	tag = "icon-railing0 (NORTH)"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cr" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/obj/random/junk,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"cs" = (
+/obj/structure/catwalk,
+/obj/random/traps/low_chance,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"gA" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"rQ" = (
+/obj/structure/table/rack,
+/obj/random/dungeon_gun_energy,
+/obj/random/dungeon_gun_energy,
+/obj/random/dungeon_gun_energy,
+/obj/random/dungeon_gun_energy,
+/obj/random/dungeon_gun_energy,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"BJ" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-s"
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"HV" = (
+/obj/structure/table/rack,
+/obj/random/dungeon_armor_mods,
+/obj/random/dungeon_armor_mods,
+/obj/random/dungeon_armor_mods,
+/obj/random/dungeon_gun_mods,
+/obj/random/dungeon_gun_mods,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"Lr" = (
+/obj/structure/table/rack,
+/obj/random/dungeon_gun_ballistic,
+/obj/random/dungeon_gun_ballistic,
+/obj/random/dungeon_gun_ballistic,
+/obj/random/dungeon_gun_ballistic,
+/turf/simulated/floor/tiled/dark/techfloor,
+/area/precursor)
+"Ns" = (
+/obj/structure/table/standard,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth/low_chance,
+/obj/random/pack/cloth/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"OJ" = (
+/obj/machinery/door/airlock/glass,
+/obj/structure/disposalpipe/segment,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"Xf" = (
+/obj/structure/girder,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+
+(1,1,1) = {"
+cl
+as
+cl
+af
+ao
+bb
+cl
+cl
+cl
+cl
+cl
+af
+af
+cl
+cl
+ao
+cl
+cl
+af
+cl
+cl
+"}
+(2,1,1) = {"
+cl
+aI
+bg
+bg
+ac
+ac
+ac
+ac
+br
+Xf
+ab
+ab
+ab
+bX
+bX
+bX
+ab
+ab
+ab
+bX
+cl
+"}
+(3,1,1) = {"
+af
+cm
+bg
+aN
+aa
+bc
+cl
+ad
+ao
+bx
+at
+cl
+cm
+cl
+cl
+aF
+bc
+aH
+cg
+bX
+cl
+"}
+(4,1,1) = {"
+cl
+aI
+bg
+aN
+cl
+cl
+aa
+ac
+bt
+bw
+ab
+bF
+cl
+cl
+bT
+ab
+aw
+cc
+ch
+ab
+cl
+"}
+(5,1,1) = {"
+cl
+aI
+ac
+aO
+Ns
+aX
+aX
+ab
+ab
+ab
+ab
+bG
+bK
+bQ
+bU
+bX
+aj
+cp
+bX
+ab
+cl
+"}
+(6,1,1) = {"
+ai
+aL
+bX
+ab
+bX
+bX
+ab
+ab
+al
+al
+ab
+ab
+ab
+ab
+bX
+bX
+am
+cq
+bX
+cj
+af
+"}
+(7,1,1) = {"
+cl
+aI
+bX
+bn
+aK
+aP
+aM
+aR
+aS
+bu
+au
+ax
+bL
+ax
+bV
+aj
+am
+cq
+ab
+cl
+cl
+"}
+(8,1,1) = {"
+ao
+aI
+bX
+ay
+ab
+bX
+bX
+bX
+bX
+aT
+ab
+bH
+ax
+bR
+bX
+ab
+aq
+aV
+ab
+ab
+ao
+"}
+(9,1,1) = {"
+cl
+aI
+bX
+aB
+ab
+be
+bk
+HV
+ab
+aV
+ab
+az
+bM
+aE
+bX
+ae
+ae
+bd
+af
+ab
+cl
+"}
+(10,1,1) = {"
+cl
+aI
+bX
+aB
+ab
+bf
+ah
+bo
+ab
+aY
+ab
+ag
+aC
+ag
+ab
+aG
+cd
+cr
+gA
+ab
+cl
+"}
+(11,1,1) = {"
+br
+aZ
+bX
+aJ
+ab
+be
+ah
+bp
+an
+bY
+bZ
+bC
+bC
+bC
+bB
+bP
+cb
+cs
+bi
+bJ
+cl
+"}
+(12,1,1) = {"
+cl
+aI
+ab
+aJ
+ab
+bh
+ah
+Lr
+ab
+aY
+ab
+bI
+ap
+aa
+ab
+ck
+BJ
+ce
+ck
+ab
+cn
+"}
+(13,1,1) = {"
+cl
+aI
+ab
+aB
+ab
+be
+bl
+rQ
+bX
+aV
+ab
+aA
+bN
+aA
+ab
+bW
+bd
+cf
+ci
+bX
+cl
+"}
+(14,1,1) = {"
+cl
+bz
+ab
+ay
+ab
+bX
+bX
+ab
+ab
+bd
+ab
+bX
+bX
+bX
+bX
+ab
+bd
+af
+bX
+bX
+cl
+"}
+(15,1,1) = {"
+af
+aI
+ab
+bq
+aM
+aM
+aQ
+aM
+aQ
+by
+ab
+al
+bO
+aD
+al
+ab
+bd
+cm
+bX
+cl
+cl
+"}
+(16,1,1) = {"
+ai
+aL
+ab
+ab
+bX
+bX
+bX
+ab
+al
+al
+ab
+al
+aD
+aD
+al
+ab
+aV
+bW
+bX
+cm
+cl
+"}
+(17,1,1) = {"
+cl
+aI
+ac
+aU
+ba
+bj
+bm
+ab
+ab
+ab
+ab
+ab
+au
+ab
+ab
+ab
+aY
+ar
+ab
+ab
+cl
+"}
+(18,1,1) = {"
+cl
+bA
+OJ
+av
+av
+av
+bC
+bD
+bP
+bP
+bP
+bP
+ca
+bP
+bP
+bP
+co
+am
+am
+aj
+cl
+"}
+(19,1,1) = {"
+cl
+aI
+ac
+bs
+bs
+aW
+aW
+ak
+bv
+bv
+bE
+am
+am
+bS
+bE
+am
+bE
+bv
+bv
+ak
+cl
+"}
+(20,1,1) = {"
+cl
+aI
+ac
+ac
+ag
+ag
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+cl
+"}
+(21,1,1) = {"
+af
+as
+cl
+cl
+af
+cl
+cl
+af
+cl
+cl
+af
+cl
+cl
+ao
+cl
+cl
+cl
+cl
+cl
+ao
+cl
+"}

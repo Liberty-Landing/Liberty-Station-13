@@ -128,7 +128,7 @@
 		var/mob/living/L = O
 		if(L.stat != CONSCIOUS)
 			return FALSE
-		if(L.health <= (ishuman(L) ? HEALTH_THRESHOLD_CRIT : 0))
+		if(L.health <= (ishuman(L) ? HEALTH_THRESHOLD_CRIT : 0) && L.incapacitated())
 			return FALSE
 		if((!attack_same && (L.faction == faction)) || (L in friends)) //just cuz your a friend dosnt mean it magically will no longer attack same
 			return FALSE

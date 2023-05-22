@@ -202,21 +202,18 @@
 //Core implants
 #define CORE_ACTIVATED /datum/core_module/activatable
 
-//Cruciform
+//Hearthcore modules, think of them like flags that can hold ritual types
 #define CRUCIFORM_COMMON /datum/core_module/rituals/cruciform/base
-//#define CRUCIFORM_AGROLYTE /datum/core_module/rituals/cruciform/agrolyte
-//#define CRUCIFORM_CUSTODIAN /datum/core_module/rituals/cruciform/custodian
-#define CRUCIFORM_PRIEST /datum/core_module/rituals/cruciform/priest
-//#define CRUCIFORM_ACOLYTE /datum/core_module/rituals/cruciform/priest/acolyte
-#define CRUCIFORM_INQUISITOR /datum/core_module/rituals/cruciform/inquisitor
-#define CRUCIFORM_CRUSADER /datum/core_module/rituals/cruciform/crusader
-#define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink
-#define CRUCIFORM_REDLIGHT /datum/core_module/cruciform/red_light
-#define CRUCIFORM_CLONING /datum/core_module/cruciform/cloning
+#define CRUCIFORM_CUSTODIAN /datum/core_module/rituals/cruciform/custodian
+#define CRUCIFORM_OATHBOUND /datum/core_module/rituals/cruciform/oathbound
+#define CRUCIFORM_ENKINDLED /datum/core_module/rituals/cruciform/enkindled
+#define CRUCIFORM_FORGEMASTER /datum/core_module/rituals/cruciform/forgemaster
+#define CRUCIFORM_OATHPLEDGE /datum/core_module/rituals/cruciform/oathpledge
+#define CRUCIFORM_ANTI_SCRYING /datum/core_module/rituals/cruciform/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
+#define CRUCIFORM_DAMAGED /datum/core_module/rituals/cruciform/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again
 
-#define CRUCIFORM_OBEY /datum/core_module/cruciform/obey
-#define CRUCIFORM_PRIEST_CONVERT /datum/core_module/activatable/cruciform/priest_convert
-#define CRUCIFORM_OBEY_ACTIVATOR /datum/core_module/activatable/cruciform/obey_activator
+#define CRUCIFORM_UPLINK /datum/core_module/cruciform/uplink
+#define CRUCIFORM_CLONING /datum/core_module/cruciform/cloning
 
 #define CUPGRADE_NATURES_BLESSING /obj/item/cruciform_upgrade/natures_blessing
 #define CUPGRADE_FAITHS_SHIELD /obj/item/cruciform_upgrade/faiths_shield
@@ -348,13 +345,6 @@
 
 //SoJ additions below
 #define MAP_FACTION "CEV Eris"
-//cruciform paths
-#define CRUCIFORM_TESS /datum/core_module/rituals/cruciform/tessellate
-#define CRUCIFORM_LEMN /datum/core_module/rituals/cruciform/lemniscate
-#define CRUCIFORM_MONO /datum/core_module/rituals/cruciform/monomial
-#define CRUCIFORM_DIVI /datum/core_module/rituals/cruciform/divisor
-#define CRUCIFORM_FACT /datum/core_module/rituals/cruciform/factorial
-#define CRUCIFORM_OMNI /datum/core_module/rituals/cruciform/omni
 
 // Bureaucracy Bitfields
 #define STAMP_GENERIC	0x1		//Most stamps should apply this.

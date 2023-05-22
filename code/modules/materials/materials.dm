@@ -837,3 +837,10 @@ var/list/name_to_material
 	icon_colour = "B7410E"
 	sheet_singular_name = "piece"
 	sheet_plural_name = "pieces"
+
+/material/sandbag
+	name = MATERIAL_SANDBAG
+	stack_type = /obj/item/stack/material/sandbag
+	icon_colour = "#7a7800"
+	sheet_singular_name = "sandbag"
+	sheet_plural_name = "sandbags"

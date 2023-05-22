@@ -1,5 +1,5 @@
 /obj/random/cluster/slimes
-	name = "cluster of slimes"
+	name = "cluster of slimes 1-3"
 	icon_state = "hostilemob-cyan-cluster"
 	alpha = 128
 	min_amount = 1
@@ -7,7 +7,7 @@
 	spread_range = 2
 
 /obj/random/cluster/slimes/rainbow
-	name = "cluster of colored slimes"
+	name = "cluster of colored slimes 1-3"
 	has_postspawn = TRUE
 
 /obj/random/cluster/slimes/rainbow/post_spawn(var/list/spawns)
@@ -31,21 +31,21 @@
 	return /mob/living/carbon/slime
 
 /obj/random/cluster/slimes/low_chance
-	name = "low chance cluster of slimes"
+	name = "low chance cluster of slimes 1-3 40%"
 	icon_state = "hostilemob-cyan-cluster-low"
 	spawn_nothing_percentage = 60
 
 //Single Spawners
 /obj/random/slime
-	name = "a slime"
-	icon_state = "hostilemob-cyan-cluster"
+	name = "gray slime"
+	icon_state = "hostilemob-cyan"
 	alpha = 128
 	min_amount = 1
 	max_amount = 1
 	spread_range = 0
 
 /obj/random/slime/rainbow
-	name = "cluster of colored slimes"
+	name = "colored slime"
 	has_postspawn = TRUE
 
 /obj/random/slime/item_to_spawn()

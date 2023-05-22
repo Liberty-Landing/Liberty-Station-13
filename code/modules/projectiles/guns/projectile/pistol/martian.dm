@@ -24,7 +24,7 @@
 
 	wield_delay = 0.6 SECOND
 	wield_delay_factor = 0.6 // 60 vig
-	gun_parts = list(/obj/item/part/gun/frame/martian = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/pistol = 1, /obj/item/part/gun/barrel/kurtz = 1)
+	gun_parts = list(/obj/item/part/gun/frame/martian = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/pistol = 1, /obj/item/part/gun/barrel/magnum = 1)
 
 /obj/item/part/gun/frame/martian
 	name = "Martian frame"
@@ -34,7 +34,7 @@
 	resultvars = list(/obj/item/gun/projectile/martian)
 	gripvars = list(/obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/pistol
-	barrelvars = list(/obj/item/part/gun/barrel/kurtz)
+	barrelvars = list(/obj/item/part/gun/barrel/magnum)
 
 /obj/item/gun/projectile/martian/update_icon()
 	..()

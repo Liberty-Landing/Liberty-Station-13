@@ -56,7 +56,7 @@
 
 	health = 75
 	maxHealth = 75
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 	harm_intent_damage = 5
 	melee_damage_lower = 20
 	melee_damage_upper = 25
@@ -75,7 +75,7 @@
 
 	health = 200
 	maxHealth = 200
-	special_parts = list(/obj/item/animal_part/wolf_tooth,/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth,/obj/item/stack/wolf_tooth)
 	melee_damage_lower = 25
 	melee_damage_upper = 30
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_EPILEPSY, MUTATION_DEAF, MUTATION_BAROTRAUMA)
@@ -101,9 +101,9 @@
 	bones_amount = 10 //The amount of bone sheets dropped.
 	mob_size = MOB_LARGE
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_EPILEPSY, MUTATION_DEAF, MUTATION_BAROTRAUMA)
-	special_parts = list(/obj/item/animal_part/wolf_tooth,
-						 /obj/item/animal_part/wolf_tooth,
-						 /obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth,
+						 /obj/item/stack/wolf_tooth,
+						 /obj/item/stack/wolf_tooth)
 
 	armor = list(melee = 25, bullet = 10, energy = 65, bomb = 25, bio = 100, rad = 25) //Lasers dont work on scales
 

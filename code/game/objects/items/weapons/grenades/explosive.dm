@@ -1,5 +1,5 @@
 /obj/item/grenade/explosive
-    name = "NT OBG \"Cracker\""
+    name = "ML OBG \"Bulldog\""
     desc = "A military-grade offensive blast grenade, designed to be thrown by assaulting troops."
     icon_state = "explosive"
     loadable = TRUE
@@ -34,10 +34,10 @@
 
 
 /obj/item/grenade/explosive/artileria
-	name = "Excelsior \"Artileria Flare\""
-	desc = "ARTILERIA! This is a standard artillery signaling flare used by Excelsior forces. Better stay well away from it!"
-	icon = 'icons/obj/lighting.dmi'
-	icon_state = "aflare-on"
-	item_state = "aflare-on"
-	heavy_range = 1.5
-	weak_range = 6
+	name = "legionary mortar flare"
+	desc = "A signal flare linked to an automated legion mortar system. Better start running once you throw it!"
+	icon_state = "mortar"
+	item_state = "flare"
+	heavy_range = 3
+	weak_range = 7
+	grenade_activation_sound = 'sound/effects/fireplace.ogg'

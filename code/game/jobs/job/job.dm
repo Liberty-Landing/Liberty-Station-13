@@ -4,7 +4,7 @@
 	var/title = "NOPE"
 	var/list/access = list()				// Useful for servers which either have fewer players, so each person needs to fill more than one role, or servers which like to give more access, so players can't hide forever in their super secure departments (I'm looking at you, chemistry!)
 	var/list/cruciform_access = list()		// Assign this access into cruciform if target has it
-	var/security_clearance = CLEARANCE_NONE	// Cruciform-specific access type, used by absolute doors
+	var/security_clearance = null			// Hearthcore access, if null, takes Hearthcore's default access, else, sets it to the jobs' value
 	var/list/software_on_spawn = list()		// Defines the software files that spawn on tablets and labtops
 	var/list/core_upgrades = list()			// Defines the upgrades that would be installed into core implant on spawn, if any.
 	var/flag = NONE							// Bitflags for the job
@@ -15,7 +15,7 @@
 	var/current_positions = 0				// How many players have this job
 	var/supervisors					// Supervisors, who this person answers to directly
 	var/selection_color = "#ffffff"			// Selection screen color
-	var/noob_name
+	var/noob_name	//Use this for trainee names / Actually don't as it doesn't work for now
 	var/list/alt_titles
 	var/list/alt_perks
 	var/difficulty = "Null"

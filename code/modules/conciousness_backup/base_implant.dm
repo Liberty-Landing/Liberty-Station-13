@@ -90,12 +90,23 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 		return 1
 
 /obj/item/implant/conback/on_install()
-	if(clean_of_death_alarms())
-		activate()
-		wearer.conciousness_pres = src
-	else
-		to_chat(wearer, SPAN_NOTICE("[src]'s buzzes stating ''ERROR, DEATH ALARM OR OTHER OS DETECTED.''"))
+	if(is_dead(wearer))
+		for(var/mob/O in hearers(3, wearer))
+			O.show_message("\icon[src] <span class = 'notice'>ERROR, NO LIVE CONSCIOUSNESS DETECTED.</span>", 2)
+		return
 
+	if(!clean_of_death_alarms())
+		for(var/mob/O in hearers(3, wearer))
+			O.show_message("\icon[src] <span class = 'notice'>ERROR, DEATH ALARM OR OTHER OS DETECTED.</span>", 2)
+		return
+
+	if(!clean_of_hearthcore())
+		for(var/mob/O in hearers(3, wearer))
+			O.show_message("\icon[src] <span class = 'notice'>ERROR, INTERFERING HARDWARE DETECTED.</span>", 2)
+		return
+
+	activate()
+	wearer.conciousness_pres = src
 
 /obj/item/implant/conback/on_uninstall()
 	. = ..()

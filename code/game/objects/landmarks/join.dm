@@ -47,7 +47,8 @@ GLOBAL_LIST_EMPTY(spawntypes)
 	join_tag = "starboard_late_cryo"
 	message = null
 	spawn_datum_type = /datum/spawnpoint/cryo/outsider
-	disallow_job = list(JOBS_OVERALL)
+	disallow_job = null
+	restrict_job = list("Outsider")
 
 /obj/landmark/join/late/cryo/starboard
 	name = "Starboard Cryogenic Storage"

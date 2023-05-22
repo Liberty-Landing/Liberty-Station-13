@@ -160,9 +160,9 @@
 	O.layer = initial(O.layer)
 	O.set_plane(initial(O.plane))
 	O.screen_loc = null
-	if(istype(O, /obj/item))
+	if(isitem(O))
 		var/obj/item/I = O
-		I.forceMove(src.loc, MOVED_DROP)
+		I.forceMove(get_turf(src), MOVED_DROP)
 		I.dropped(src)
 	return TRUE
 

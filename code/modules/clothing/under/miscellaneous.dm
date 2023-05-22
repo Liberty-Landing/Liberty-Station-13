@@ -325,36 +325,34 @@
 
 //Excelsior
 /obj/item/clothing/under/excelsior
-	name = "white excelsior jumpsuit"
-	desc = "An Excelsior jumpsuit designed to boost morale and spread the revolution"
+	name = "white legionary jumpsuit"
+	desc = "A legionary jumpsuit that is clearly salvaged from some old Earth reserve."
 	icon_state = "excelsior_white"
 	item_state = "bl_suit"
 	has_sensor = 0
 
 /obj/item/clothing/under/excelsior/mixed
-	name = "mixed excelsior jumpsuit"
-	desc = "An Excelsior jumpsuit designed to boost morale and spread the revolution"
+	name = "mixed legionary jumpsuit"
 	icon_state = "excelsior_mixed"
 	item_state = "bl_suit"
 	has_sensor = 0
 
 /obj/item/clothing/under/excelsior/orange
-	name = "orange excelsior jumpsuit"
-	desc = "An Excelsior jumpsuit designed to boost morale and spread the revolution"
+	name = "orange legionary jumpsuit"
 	icon_state = "excelsior_orange"
 	item_state = "bl_suit"
 	has_sensor = 0
 
 /obj/item/clothing/under/excelsior/officer
-	name = "officer excelsior jumpsuit"
-	desc = "An Excelsior jumpsuit designed to boost morale and spread the revolution; made specifically for commissars."
+	name = "officer legionary jumpsuit"
+	desc = "A legionary jumpsuit that is clearly salvaged from some old Earth reserve. This one probably belonged to officers."
 	icon_state = "excelsior_officer"
 	item_state = "bl_suit"
 	has_sensor = 0
 
 /obj/item/clothing/under/excelsior/bdu
-	name = "excelsior BDU"
-	desc = "A somewhat dated Excelsior styled Battle Dress Uniform, spread the revolution in style!"
+	name = "legionary BDU"
+	desc = "An extremely dated legionary BDU that barely holds together without chaffing."
 	icon_state = "bduexcel"
 	item_state = "bduexcel"
 	has_sensor = 0

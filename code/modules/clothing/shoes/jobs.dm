@@ -16,6 +16,17 @@
 	item_flags = NOSLIP
 	species_restricted = null
 
+/obj/item/clothing/shoes/custodian
+	name = "custodian boots"
+	desc = "A pair of tough slip-resistant boots used by the Custodians in their journeys."
+	icon_state = "custodian_jackboot_galoshes"
+	icon_state = "custodian_jackboot_galoshes"
+	permeability_coefficient = 0.05
+	armor_list = list(melee = 15, bullet = 0, energy = 10, bomb = 0, bio = 25, rad = 0)
+	matter = list(MATERIAL_BIO_SILK = 25)
+	siemens_coefficient = 0
+	item_flags = NOSLIP
+	can_hold_knife = TRUE
 
 /obj/item/clothing/shoes/jackboots
 	name = "jackboots"

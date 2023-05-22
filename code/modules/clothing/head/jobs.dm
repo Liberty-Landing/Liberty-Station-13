@@ -134,13 +134,13 @@
 //End of sprites by Michiyamenotehifunana and Occulist
 //Security
 /obj/item/clothing/head/rank/ironhammer
-	name = "marshal beret"
-	desc = "A navy blue marshal beret."
+	name = "watchmen beret"
+	desc = "A navy blue watchmen beret."
 	icon_state = "policeberet"
 
 /obj/item/clothing/head/rank/commander
-	name = "warrant officer beret"
-	desc = "A grey warrant officer beret signifying a command position."
+	name = "deputy chief beret"
+	desc = "A grey deputy chief beret signifying a command position."
 	icon_state = "beret_navy_hos"
 
 /obj/item/clothing/head/rank/commander/verb/toggle_style()
@@ -153,9 +153,9 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["WO Beret"] = "beret_navy_hos"
-	options["WO Cap"] = "ihc_cap"
-	options["WO Default"] = "hoshat"
+	options["CD Beret"] = "beret_navy_hos"
+	options["CD Cap"] = "watch_deputy"
+	options["CD Default"] = "hoshat"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -169,8 +169,8 @@
 		return 1
 
 /obj/item/clothing/head/rank/warden/beret
-	name = "supply specialist beret"
-	desc = "A red marshal beret signifying a supply specialist position."
+	name = "armorer beret"
+	desc = "A red watchmen beret signifying a armoer position."
 	icon_state = "beret_navy_warden"
 
 /obj/item/clothing/head/rank/engineering
@@ -298,19 +298,28 @@
 	obscuration = LIGHT_OBSCURATION
 
 /obj/item/clothing/head/helmet/handmade/scavengerhelmet
-	name = "Shipbreaker helmet"
-	desc = "A sturdy, handcrafted helmet. It's well balanced and sits low on your head, with padding on the inside."
-	icon_state = "fontaine_visor"
-	item_state = "fontaine_visor"
-	armor_list = list(melee = 35, bullet = 20, energy = 25, bomb = 25, bio = 0, rad = 0)
+	name = "Scavenged Helmet"
+	desc = "A combat helmet with improved inner lining and protection against hazards, including a visor and additional alloy plates. \
+			The drapes surrounding the neck area offer moderate protection against the cold as well."
+	icon_state = "scav_helm"
+	item_state = "scav_helm"
+	armor_list = list(melee = 35, bullet = 20, energy = 25, bomb = 25, bio = 10, rad = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
+	cold_protection = HEAD|FACE|EARS
+	min_cold_protection_temperature = T0C - 20
 	price_tag = 200
-	max_upgrades = 1 // Good baseline already
+	max_upgrades = 1
 	action_button_name = "Toggle Headlamp"
 	light_overlay = "technohelmet_light"
-	brightness_on = 5 //Slightly better do to the sear costs
+	brightness_on = 5
 	obscuration = LIGHT_OBSCURATION
+
+/obj/item/clothing/head/helmet/handmade/scavengerhelmet/fontaine
+	name = "Shipbreaker helmet"
+	desc = "A sleek and sturdy helmet in Fontaine colors. It's well balanced and sits low on your head, with padding on the inside."
+	icon_state = "fontaine_visor"
+	item_state = "fontaine_visor"
 
 /obj/item/clothing/head/trapper
 	name = "Trapper brimmed hat"
@@ -321,3 +330,37 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.9
 	armor_list = list(melee = 20, bullet = 20, energy = 20, bomb = 35, bio = 75, rad = 35)
+
+//Custodians
+
+/obj/item/clothing/head/custodian
+	name = "custodian hat base item"
+	desc = "Not supposed to be seen in-game"
+	icon_state = "oathbound_scarredhat"
+	item_state = "oathbound_scarredhat"
+	armor_list = list(melee = 20, bullet = 15, energy = 15, bomb = 15, bio = 100, rad = 0)
+	matter = list(MATERIAL_BIO_SILK = 3)
+
+/obj/item/clothing/head/custodian/oathbound
+	name = "oathbound scarred hat"
+	desc = "A scarred hat given to the Oathbound."
+	icon_state = "oathbound_scarredhat"
+	item_state = "oathbound_scarredhat"
+
+/obj/item/clothing/head/custodian/enkindled
+	name = "enkindled tophat"
+	desc = "A soft but durable top hat given to Enkindled."
+	icon_state = "enkindled_tophat"
+	item_state = "enkindled_tophat"
+
+/obj/item/clothing/head/custodian/forgemaster
+	name = "forgemaster tricorn"
+	desc = "A comfortable tricorn hat given to Forgemasters."
+	icon_state = "forgemaster_tricorn"
+	item_state = "forgemaster_tricorn"
+
+/obj/item/clothing/head/custodian/oathpledge
+	name = "oathpledge hat"
+	desc = "A wide-brim hat given to the Oathpledge."
+	icon_state = "oathpledge_hat"
+	item_state = "oathpledge_hat"

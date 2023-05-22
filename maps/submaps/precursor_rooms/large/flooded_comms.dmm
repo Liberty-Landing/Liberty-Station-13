@@ -1,0 +1,1373 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 10
+	},
+/area/precursor)
+"ab" = (
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"ac" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"ag" = (
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"ah" = (
+/obj/random/pack/tech_loot,
+/obj/item/trash/material/device,
+/obj/item/trash/broken_robot_part,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"ai" = (
+/obj/machinery/constructable_frame/machine_frame,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"al" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/hivebot/range,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"an" = (
+/obj/machinery/light/floor/built,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/hivebot,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"ap" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 1
+	},
+/area/precursor)
+"ar" = (
+/obj/item/circuitboard/broken,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"as" = (
+/obj/item/circuitboard/broken,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"at" = (
+/obj/structure/foamedmetal,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/item/mine_old,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"au" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"aw" = (
+/obj/structure/salvageable/server,
+/obj/item/trash/broken_robot_part,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"ay" = (
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/retaliate/malf_drone,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aC" = (
+/obj/random/pack/tech_loot,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"aD" = (
+/obj/machinery/door/airlock/vault/bolted,
+/obj/item/mine_old,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"aE" = (
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/bliss,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"aH" = (
+/obj/machinery/telecomms/relay,
+/obj/random/traps/wire_splicing,
+/obj/item/contraband/poster/placed/advertisement/pda{
+	desc = "A poster advertising the older PDA stock from Nanotrasen suppliers.";
+	name = "Out Dated PDA Ad";
+	pixel_y = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"aI" = (
+/obj/machinery/constructable_frame/machine_frame,
+/obj/item/trash/material/circuit,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aJ" = (
+/obj/item/tool/wirecutters/improvised,
+/obj/random/voidsuit/damaged,
+/obj/item/tool/multitool,
+/obj/item/remains/human,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"aK" = (
+/obj/machinery/constructable_frame/machine_frame,
+/obj/item/circuitboard/broken,
+/obj/item/trash/material/circuit,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aL" = (
+/obj/item/circuitboard/telecomms/hub,
+/obj/machinery/light/floor/built,
+/obj/item/trash/material/circuit,
+/obj/item/stack/cable_coil/blue,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/computer_hardware/network_card/wired,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aM" = (
+/obj/item/trash/material/circuit,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aN" = (
+/obj/random/pack/tech_loot,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aO" = (
+/obj/item/stack/cable_coil,
+/obj/item/stack/material/plastic/random,
+/obj/random/pack/tech_loot,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aR" = (
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"aS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"aU" = (
+/obj/item/circuitboard/telecomms/hub,
+/obj/item/stack/cable_coil,
+/obj/random/pack/tech_loot,
+/obj/random/techpart,
+/obj/machinery/light/floor/built,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aV" = (
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aX" = (
+/obj/machinery/constructable_frame/machine_frame,
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aY" = (
+/obj/item/circuitboard/telecomms/server,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/data_disk/basic,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"aZ" = (
+/obj/item/circuitboard/telecomms/server,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"ba" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/computer_hardware/network_card/wired,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bb" = (
+/obj/item/circuitboard/telecomms/bus,
+/obj/item/stack/cable_coil/green,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"bd" = (
+/obj/structure/inflatable/door,
+/obj/item/mine/improvised,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"bf" = (
+/obj/item/circuitboard/telecomms/processor,
+/obj/item/trash/material/circuit,
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bg" = (
+/obj/item/circuitboard/broken,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bh" = (
+/obj/item/trash/material/device,
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/hivebot,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bi" = (
+/obj/machinery/constructable_frame/machine_frame,
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bk" = (
+/obj/structure/salvageable/server,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bl" = (
+/obj/structure/salvageable/server,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bm" = (
+/obj/structure/salvageable/personal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bn" = (
+/obj/random/techpart,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bp" = (
+/obj/item/stack/material/plastic/random,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bq" = (
+/obj/item/circuitboard/broken,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"br" = (
+/obj/item/oddity/common/old_pda,
+/obj/item/circuitboard/broken,
+/obj/item/trash/material/metal,
+/obj/item/stack/cable_coil/orange,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"bs" = (
+/obj/structure/foamedmetal,
+/obj/item/mine_old,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bt" = (
+/obj/random/pack/tech_loot,
+/obj/item/trash/material/circuit,
+/obj/item/trash/broken_robot_part,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bu" = (
+/obj/random/pack/tech_loot,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bv" = (
+/obj/structure/foamedmetal,
+/obj/machinery/door/blast/regular/open,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bw" = (
+/obj/item/stack/material/plastic/random,
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/data_disk/basic,
+/mob/living/simple_animal/hostile/hivebot,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bx" = (
+/obj/structure/foamedmetal,
+/obj/machinery/door/blast/regular/open,
+/obj/effect/decal/cleanable/blood/oil,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"by" = (
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/retaliate/malf_drone,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bz" = (
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bA" = (
+/obj/machinery/constructable_frame/machine_frame,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bB" = (
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bC" = (
+/obj/item/stack/cable_coil/yellow,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bD" = (
+/obj/structure/foamedmetal,
+/obj/machinery/light,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/item/mine_old,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bF" = (
+/obj/item/circuitboard/broken,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/computer_hardware/network_card/advanced,
+/obj/item/storage/box/data_disk/basic,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"bG" = (
+/obj/random/closet_tech,
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bI" = (
+/obj/item/circuitboard/broken,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"bJ" = (
+/obj/item/circuitboard/telecomms/server,
+/obj/machinery/light/floor/built,
+/obj/item/stack/cable_coil/white,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"bK" = (
+/obj/item/stack/material/plastic/random,
+/obj/random/techpart,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"bL" = (
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bN" = (
+/obj/structure/salvageable/implant_container,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bO" = (
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bP" = (
+/obj/structure/foamedmetal,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bQ" = (
+/obj/random/closet_tech,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bR" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"bS" = (
+/obj/structure/salvageable/personal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/computer_hardware/printer,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bT" = (
+/obj/item/stack/cable_coil,
+/obj/random/techpart,
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/server,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bV" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bW" = (
+/obj/random/techpart,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bX" = (
+/obj/structure/foamedmetal,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"bY" = (
+/obj/item/circuitboard/telecomms/bus,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"bZ" = (
+/obj/random/pack/tech_loot,
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"ca" = (
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"cb" = (
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"cc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/data_disk,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"cd" = (
+/obj/item/remains/xeno,
+/obj/machinery/light,
+/obj/random/lathe_disk,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"ce" = (
+/obj/random/pack/tech_loot,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/computer_hardware/network_card/advanced,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"cf" = (
+/obj/structure/foamedmetal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"cg" = (
+/obj/random/techpart,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"ch" = (
+/obj/random/junk,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"ci" = (
+/obj/structure/firedoor_assembly,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"cj" = (
+/obj/machinery/light/floor/built,
+/turf/simulated/floor/holofloor/beach/sand,
+/area/precursor)
+"ck" = (
+/obj/random/techpart,
+/obj/item/circuitboard/broken,
+/obj/item/trash/material/device,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"cl" = (
+/obj/item/trash/material/circuit,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"cm" = (
+/obj/item/stack/cable_coil,
+/obj/item/circuitboard/broken,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/bluegrid,
+/area/precursor)
+"cn" = (
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/hivebot/range,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"co" = (
+/obj/structure/foamedmetal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"cp" = (
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"cq" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cr" = (
+/obj/structure/foamedmetal,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"cs" = (
+/obj/machinery/door/blast/regular/open,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"eg" = (
+/turf/simulated/wall/rust_reinforced,
+/area/precursor)
+"gq" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 3
+	},
+/area/precursor)
+"gC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/cluster/psi_monster,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"jU" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 6
+	},
+/area/precursor)
+"ko" = (
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"kS" = (
+/obj/random/techpart,
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"lq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/computer_hardware/card_slot,
+/mob/living/simple_animal/hostile/hivebot/range,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"nb" = (
+/turf/simulated/floor/beach/water/coastwater,
+/area/precursor)
+"nc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/hivebot/range,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"ns" = (
+/obj/random/pack/tech_loot,
+/obj/random/techpart,
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"nu" = (
+/obj/random/pack/tech_loot,
+/obj/structure/table/reinforced,
+/obj/machinery/light,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"nx" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 9
+	},
+/area/precursor)
+"ow" = (
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"px" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/lathe_disk,
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"pZ" = (
+/obj/random/pack/tech_loot,
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"qb" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 7
+	},
+/area/precursor)
+"rQ" = (
+/obj/structure/table/bench/wooden,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"tC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"ww" = (
+/obj/structure/foamedmetal,
+/obj/random/closet_tech,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"ya" = (
+/obj/machinery/light,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"yk" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 8
+	},
+/area/precursor)
+"yK" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/wall/rust_reinforced,
+/area/precursor)
+"yZ" = (
+/obj/random/pack/tech_loot,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"BF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/AIcore,
+/obj/item/device/aicard,
+/obj/item/computer_hardware/hard_drive/portable/advanced/shady,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"CF" = (
+/obj/random/junkfood,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"Ds" = (
+/obj/machinery/door/airlock/vault/bolted,
+/obj/item/mine_old,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"EQ" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 5
+	},
+/area/precursor)
+"GM" = (
+/obj/random/pack/tech_loot,
+/obj/structure/table/reinforced,
+/obj/machinery/light,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Hd" = (
+/obj/random/cluster/psi_monster,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"HK" = (
+/obj/item/circuitboard/broken,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/computer_hardware/ai_slot,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"HN" = (
+/obj/structure/foamedmetal,
+/obj/structure/salvageable/computer,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"HW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/lathe_disk,
+/obj/structure/salvageable/autolathe,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"HZ" = (
+/obj/item/remains/xeno,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"KH" = (
+/obj/random/pack/tech_loot,
+/obj/structure/table/reinforced,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Ma" = (
+/obj/random/techpart,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/tiled/steel/bar_dance,
+/area/precursor)
+"Pp" = (
+/obj/random/pack/tech_loot,
+/obj/random/techpart,
+/obj/structure/table/bench/wooden,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"PN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/mob/living/simple_animal/hostile/retaliate/malf_drone,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"RN" = (
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/blood/oil,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Ta" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/box/data_disk/basic,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Td" = (
+/obj/structure/foamedmetal,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"Vc" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 4
+	},
+/area/precursor)
+"VS" = (
+/obj/item/trash/material/metal,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Xv" = (
+/obj/item/remains/xeno,
+/turf/simulated/floor/beach/water/shallow,
+/area/precursor)
+"Xz" = (
+/obj/item/storage/box/data_disk/basic,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+"Yy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/reinforced,
+/area/precursor)
+
+(1,1,1) = {"
+cp
+cp
+cp
+ap
+cj
+nb
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+nx
+yk
+aa
+cp
+nx
+yk
+aa
+cp
+"}
+(2,1,1) = {"
+cp
+ab
+eg
+eg
+eg
+eg
+eg
+ab
+ab
+ab
+cr
+bP
+cp
+ap
+cj
+qb
+cp
+ap
+cj
+gq
+cp
+"}
+(3,1,1) = {"
+cp
+ab
+ac
+aN
+ac
+cq
+au
+bu
+bs
+bx
+at
+bP
+gC
+EQ
+Vc
+jU
+cp
+EQ
+Vc
+jU
+cp
+"}
+(4,1,1) = {"
+ya
+ab
+ai
+aL
+ar
+cq
+bO
+ca
+ab
+eg
+eg
+ab
+eg
+eg
+eg
+eg
+eg
+ab
+ch
+cp
+cp
+"}
+(5,1,1) = {"
+cp
+eg
+aX
+aO
+aX
+cq
+bm
+aR
+cg
+au
+au
+bG
+ab
+bQ
+bU
+KH
+nu
+ab
+Td
+cp
+cp
+"}
+(6,1,1) = {"
+cp
+eg
+ar
+aZ
+bz
+cq
+bS
+cc
+al
+cl
+PN
+aS
+Ds
+RN
+px
+Pp
+KH
+cq
+Td
+cp
+cp
+"}
+(7,1,1) = {"
+cp
+eg
+as
+bn
+aK
+cq
+bm
+aR
+aS
+bu
+au
+bG
+ab
+ww
+bV
+Xv
+KH
+cq
+Td
+cp
+cp
+"}
+(8,1,1) = {"
+cp
+eg
+bl
+ay
+bA
+cq
+cq
+cq
+cq
+bd
+cq
+cq
+eg
+yK
+bR
+Xz
+cp
+eg
+ch
+cp
+cp
+"}
+(9,1,1) = {"
+cp
+eg
+aw
+aB
+aN
+bl
+bk
+bk
+bl
+aV
+bl
+bl
+bN
+aE
+ab
+cb
+bP
+ab
+tC
+cp
+cp
+"}
+(10,1,1) = {"
+cp
+ab
+aF
+bb
+bF
+bf
+ah
+bo
+ci
+aY
+bq
+ag
+aC
+nc
+cq
+cp
+cd
+ab
+ko
+cp
+cp
+"}
+(11,1,1) = {"
+ya
+ab
+aH
+aJ
+bJ
+bg
+bT
+bp
+an
+bY
+bZ
+Ma
+HK
+BF
+cq
+Td
+cp
+cs
+Hd
+cp
+cp
+"}
+(12,1,1) = {"
+cp
+ab
+aF
+br
+bK
+bh
+bo
+ce
+ck
+cm
+ci
+bI
+ow
+lq
+cq
+bP
+ya
+ab
+cp
+cp
+cp
+"}
+(13,1,1) = {"
+cp
+ab
+bl
+bt
+aV
+bi
+bl
+bl
+aI
+aV
+bA
+bk
+bN
+aE
+eg
+bW
+yZ
+eg
+cp
+cp
+cp
+"}
+(14,1,1) = {"
+cp
+ab
+bl
+aZ
+aX
+cq
+cq
+cq
+cq
+bd
+cq
+cq
+ab
+eg
+eg
+bV
+cp
+eg
+ch
+cp
+CF
+"}
+(15,1,1) = {"
+cp
+ab
+aI
+bq
+aM
+cq
+bm
+aS
+cg
+by
+au
+bG
+ab
+bQ
+Yy
+HZ
+ns
+cq
+Td
+cp
+cp
+"}
+(16,1,1) = {"
+cp
+eg
+aX
+bw
+aX
+cq
+bS
+bu
+aS
+cn
+cc
+VS
+aD
+kS
+Ta
+rQ
+pZ
+cq
+cp
+cp
+cp
+"}
+(17,1,1) = {"
+cp
+eg
+aI
+aU
+ba
+cq
+bm
+cf
+cf
+co
+au
+bG
+ab
+bQ
+HW
+pZ
+GM
+ab
+ch
+cp
+cp
+"}
+(18,1,1) = {"
+cp
+eg
+bB
+bC
+aI
+cq
+bX
+bD
+ab
+ab
+eg
+eg
+eg
+eg
+ab
+ab
+ab
+ab
+cp
+cp
+cp
+"}
+(19,1,1) = {"
+ya
+ab
+bi
+bo
+bL
+cq
+bX
+bP
+bv
+at
+Td
+cp
+cp
+cp
+ch
+cp
+cp
+ch
+cp
+cp
+cp
+"}
+(20,1,1) = {"
+cp
+ab
+ab
+ab
+ab
+ab
+eg
+eg
+eg
+ab
+HN
+cp
+cp
+Hd
+cp
+cp
+cp
+cp
+CF
+cp
+cp
+"}
+(21,1,1) = {"
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+CF
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+cp
+"}

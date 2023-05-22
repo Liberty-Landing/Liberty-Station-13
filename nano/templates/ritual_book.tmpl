@@ -1,12 +1,12 @@
-<!-- 
+<!--
 Title: Ritual Book
 Used In File(s): \code\modules\core_implant\ritual_book.dm
  -->
- 
+
 {{if data.noimplant}}
 	<div class="itemContentWidest">
 		<div style="text-align: center;">
-			It's completely blank. Shouldn't there be text here?
+			It's a lantern.
 		</div>
 	</div>
 {{else}}
@@ -21,13 +21,14 @@ Used In File(s): \code\modules\core_implant\ritual_book.dm
 			</div>
 		</div>
 	</div>
-	
+
 	{{for data.rituals}}
 		<div class="block">
 			<div class="item">
-				<div class="itemLabelWidest"><b>{{:value.name}}</b></div>
+				<div class="itemLabelWidest"><font color="#e12706"><b>{{:value.name}}</font></b></div>
 				<div class="itemContentWidest"><i>{{:value.desc}}</i></div>
-				
+				<div class="itemLabelWidest"><font color="#9fc5e8"><b>Cost: {{:value.power}}</font></b></div>
+
 				<div class="item">
 					<div class="block">
 						<div class="item">

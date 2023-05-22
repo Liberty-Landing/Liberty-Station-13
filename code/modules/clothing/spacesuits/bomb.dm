@@ -43,9 +43,26 @@
 	equip_delay = 10 SECONDS
 	price_tag = 300
 
+/obj/item/clothing/suit/space/bomb/security
+	name = "watchman bomb suit"
+	desc = "A protective suit designed for safety when handling explosives, biological problems, and radiation. This one appears to be mildly reinforced and sports Watchmen security colors."
+	icon_state = "eod_suit"
+	item_state = "eod_suit"
+	slowdown = 1.2		//Slightly higher slowdown for slightly higher protection.
+	armor_list = list(
+		melee = 30,
+		bullet = 40,
+		energy = 30,
+		bomb = 100,
+		bio = 100,
+		rad = 90
+	)
+
 /obj/item/clothing/head/helmet/space/bomb/security
-	name = "juggernaut bomb helmet"
-	desc = "For use when bombs, bullets, toxic enviroments, lasers, and melee are all a concern but speed is not."
+	name = "watchman E.O.D helmet"
+	desc = "For use when bombs, bullets, toxic enviroments, lasers, and melee are all a concern but speed is not. Outfitted with Watchman colors."
+	icon_state = "eod_helmet"
+	item_state = "eod_helmet"
 	equip_delay = 16 SECONDS
 	slowdown = 1.25 //so with full suit is 3.5 or 4.5
 	armor_list = list(
@@ -56,11 +73,12 @@
 		bio = 100,
 		rad = 90
 	)
-	icon_state = "bombsuitsec"
 
 /obj/item/clothing/suit/space/bomb/security
-	name = "juggernaut bomb suit"
-	desc = "For use when bombs, bullets, toxic enviroments, lasers, and melee are all a concern but speed is not."
+	name = "watchman E.O.D suit"
+	desc = "For use when bombs, bullets, toxic enviroments, lasers, and melee are all a concern but speed is not. Outfitted with Watchman colors."
+	icon_state = "eod_suit"
+	item_state = "eod_suit"
 	slowdown = 2.25
 	equip_delay = 16 SECONDS
 	armor_list = list(
@@ -71,4 +89,3 @@
 		bio = 100,
 		rad = 90
 	)
-	icon_state = "bombsuitsec"

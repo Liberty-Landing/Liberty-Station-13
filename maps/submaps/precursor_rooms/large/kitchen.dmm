@@ -1,0 +1,1307 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"ab" = (
+/obj/machinery/door/airlock/freezer,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"ac" = (
+/turf/simulated/wall,
+/area/precursor)
+"ad" = (
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/effect/decal/cleanable/blood,
+/obj/item/tool/knife/hook,
+/mob/living/carbon/superior_animal/roach/roachling,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"ae" = (
+/obj/machinery/light/small,
+/obj/item/reagent_containers/food/snacks/meat,
+/obj/effect/decal/cleanable/blood,
+/mob/living/carbon/superior_animal/roach/roachling,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"af" = (
+/obj/random/junk,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"ai" = (
+/obj/machinery/light,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"aj" = (
+/obj/structure/bed/chair/custom/onestar{
+	dir = 8
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"ak" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"al" = (
+/obj/random/cloth/suit,
+/turf/simulated/floor/wood,
+/area/precursor)
+"am" = (
+/obj/structure/table/standard,
+/obj/random/medical,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"ao" = (
+/obj/structure/bed/chair/custom/onestar{
+	dir = 8
+	},
+/obj/random/credits,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"ar" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/obj/structure/railing,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"as" = (
+/obj/structure/sink/kitchen{
+	pixel_y = 32
+	},
+/obj/item/trash/tray,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"aw" = (
+/obj/structure/bed/chair/custom/onestar{
+	dir = 4
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"ax" = (
+/obj/structure/bed/chair/custom/onestar,
+/obj/random/cloth/armor/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"az" = (
+/obj/random/junkfood/rotten,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aA" = (
+/obj/structure/bed/chair/custom/onestar,
+/obj/random/cloth/shoes/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aB" = (
+/obj/random/cluster/psi_monster/lower_chance,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"aD" = (
+/obj/structure/table/standard,
+/obj/item/trash/plate,
+/obj/random/junkfood/rotten,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aE" = (
+/obj/item/trash/cigbutt/fortressblue,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 7;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"aF" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"aG" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"aH" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4;
+	color = "#d7c897"
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"aI" = (
+/obj/structure/table/marble,
+/obj/item/reagent_containers/food/condiment/enzyme,
+/obj/random/dungeon_gun_energy,
+/obj/random/dungeon_gun_mods,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"aK" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"aL" = (
+/obj/machinery/microwave,
+/obj/structure/table/marble,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"aN" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/turf/simulated/floor/tiled/white,
+/area/precursor)
+"aR" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/soda,
+/obj/random/credits,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"aS" = (
+/obj/structure/table/bench/marble,
+/obj/random/cloth/holster,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"aT" = (
+/obj/item/gun_upgrade/trigger/cop_block,
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 4
+	},
+/area/precursor)
+"aU" = (
+/obj/structure/table/marble,
+/obj/item/tool/knife,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"aW" = (
+/obj/item/trash/candy,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"aZ" = (
+/obj/structure/sink/kitchen{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"ba" = (
+/obj/random/firstaid,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bb" = (
+/obj/structure/closet/crate/trashcart,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bd" = (
+/turf/simulated/floor/wood,
+/area/precursor)
+"be" = (
+/obj/structure/low_wall,
+/obj/item/trash/tray,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bf" = (
+/obj/structure/low_wall,
+/obj/item/trash/semki,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bg" = (
+/obj/machinery/vending/coffee,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bi" = (
+/obj/structure/table/glass,
+/obj/item/trash/waffles,
+/obj/random/credits,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bk" = (
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bl" = (
+/obj/structure/table/glass,
+/obj/item/trash/plate,
+/obj/random/common_oddities/low_chance,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bo" = (
+/obj/structure/table/glass,
+/obj/item/trash/plate,
+/obj/random/junkfood/rotten,
+/obj/random/common_oddities/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bp" = (
+/obj/structure/table/glass,
+/obj/item/trash/snack_bowl,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"bq" = (
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"br" = (
+/obj/item/trash/cheesie,
+/obj/item/trash/chips,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bx" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bz" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bA" = (
+/obj/machinery/vending/cola,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bC" = (
+/obj/machinery/vending/snack,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bD" = (
+/obj/machinery/light,
+/obj/random/junkfood/rotten,
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"bE" = (
+/mob/living/simple_animal/crab,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bF" = (
+/obj/structure/bed/chair/custom/onestar{
+	desc = "A old chair. Doesn't look very comfortable.";
+	name = "old chair"
+	},
+/obj/random/cloth/shoes/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bG" = (
+/obj/structure/bed/chair/custom/onestar,
+/obj/random/cloth/masks/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bJ" = (
+/obj/structure/table/standard,
+/obj/random/junkfood/rotten,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bK" = (
+/obj/structure/table/standard,
+/obj/item/trash/plate,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bL" = (
+/obj/structure/table/standard,
+/obj/machinery/light/floor,
+/obj/item/trash/plate,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/random/cloth/gloves,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"bN" = (
+/obj/structure/table/standard,
+/obj/machinery/light/floor,
+/obj/random/junkfood/rotten,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"bO" = (
+/obj/structure/table/standard,
+/obj/item/trash/waffles,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bP" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 4
+	},
+/area/precursor)
+"bQ" = (
+/obj/structure/bed/chair/custom/onestar{
+	desc = "A old chair. Doesn't look very comfortable.";
+	name = "old chair";
+	dir = 1
+	},
+/obj/random/cloth/armor/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bS" = (
+/obj/item/trash/cheesie,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"bV" = (
+/obj/effect/window_lwall_spawn,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"bW" = (
+/obj/structure/bed/chair/custom/onestar{
+	dir = 4
+	},
+/obj/random/cloth/gloves,
+/obj/random/credits,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"bX" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"bZ" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"ca" = (
+/obj/machinery/vending/fitness,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"cg" = (
+/obj/random/cloth/helmet,
+/turf/simulated/floor/wood,
+/area/precursor)
+"ch" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/random/junkfood/rotten,
+/obj/random/credits,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"ci" = (
+/obj/machinery/vending/boozeomat,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"cj" = (
+/obj/item/trash/candy/proteinbar,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"ck" = (
+/obj/structure/table/bench/marble,
+/obj/random/cloth/under/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"cl" = (
+/obj/structure/table/glass,
+/obj/item/trash/snack_bowl,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"cn" = (
+/obj/item/trash/cigbutt/cigarbutt,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"cq" = (
+/obj/structure/railing,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"cs" = (
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"cy" = (
+/obj/structure/table/bench/marble,
+/obj/random/cloth/helmet,
+/obj/random/cloth/holster,
+/obj/random/gun_cheap,
+/obj/effect/decal/cleanable/blood,
+/obj/item/oddity/common/old_knife,
+/obj/random/cloth/under/low_chance,
+/obj/random/credits,
+/turf/simulated/floor/wood,
+/area/precursor)
+"cB" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"ex" = (
+/obj/structure/table/bench/marble,
+/obj/random/cloth/under/low_chance,
+/turf/simulated/floor/beach/water/coastwatercorner{
+	dir = 1
+	},
+/area/precursor)
+"fo" = (
+/obj/structure/bed/chair/custom/onestar,
+/obj/random/cloth/shoes/low_chance,
+/obj/random/credits,
+/turf/simulated/floor/wood,
+/area/precursor)
+"fs" = (
+/obj/random/cloth/holster,
+/turf/simulated/floor/wood,
+/area/precursor)
+"fK" = (
+/obj/effect/decal/cleanable/blood/drip,
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 8
+	},
+/area/precursor)
+"gg" = (
+/obj/structure/table/standard,
+/obj/item/trash/plate,
+/obj/random/cloth/gloves,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"gJ" = (
+/obj/structure/table/glass,
+/obj/machinery/light/floor,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"hE" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"hQ" = (
+/obj/structure/bed/chair/custom/onestar{
+	desc = "A old chair. Doesn't look very comfortable.";
+	name = "old chair";
+	dir = 1
+	},
+/obj/random/cloth/masks/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"ie" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"iy" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"jq" = (
+/turf/simulated/floor/beach/water/coastwater,
+/area/precursor)
+"jr" = (
+/obj/structure/table/standard,
+/obj/random/junkfood/rotten,
+/obj/random/common_oddities,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"kB" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 7;
+	color = "#d7c897";
+	name = "sand edge"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"lB" = (
+/obj/random/cluster/psi_monster,
+/turf/simulated/floor/wood,
+/area/precursor)
+"lD" = (
+/obj/structure/table/standard,
+/obj/item/trash/snack_bowl,
+/turf/simulated/floor/wood,
+/area/precursor)
+"oa" = (
+/obj/structure/table/glass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"oz" = (
+/mob/living/simple_animal/crab,
+/turf/simulated/floor/beach/water/coastwatercorner,
+/area/precursor)
+"qY" = (
+/obj/structure/bed/chair/custom/onestar{
+	desc = "A old chair. Doesn't look very comfortable.";
+	name = "old chair";
+	dir = 1
+	},
+/obj/random/cloth/backpack,
+/obj/random/credits,
+/turf/simulated/floor/wood,
+/area/precursor)
+"rE" = (
+/obj/structure/table/glass,
+/obj/item/trash/popcorn,
+/obj/random/common_oddities/low_chance,
+/obj/random/credits,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"sb" = (
+/mob/living/simple_animal/hostile/mimic{
+	icon = 'icons/obj/crate.dmi';
+	icon_state = "trashcart";
+	icon_dead = "trashcart";
+	icon_living = "trashcart";
+	name = "hungry trashcart"
+	},
+/turf/simulated/floor/tiled/cafe,
+/area/precursor)
+"tZ" = (
+/obj/structure/bed/chair/custom/onestar{
+	desc = "A old chair. Doesn't look very comfortable.";
+	name = "old chair";
+	dir = 1
+	},
+/obj/random/boxes/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"um" = (
+/obj/machinery/light/floor,
+/obj/random/junk,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"vq" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 1
+	},
+/area/precursor)
+"vM" = (
+/obj/random/junk,
+/mob/living/simple_animal/crab,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"xf" = (
+/obj/structure/bed/chair/custom/onestar{
+	desc = "A old chair. Doesn't look very comfortable.";
+	name = "old chair";
+	dir = 1
+	},
+/obj/random/cloth/shoes/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"xt" = (
+/turf/simulated/floor/beach/water/coastwatercorner{
+	dir = 8
+	},
+/area/precursor)
+"xG" = (
+/obj/machinery/vending/cigarette,
+/obj/machinery/light,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 7;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"yt" = (
+/obj/item/trash/cigbutt/frozen,
+/turf/simulated/floor/holofloor/beach/water,
+/area/precursor)
+"yC" = (
+/obj/effect/decal/cleanable/blood/drip,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"yQ" = (
+/obj/structure/table/standard,
+/obj/item/trash/plate,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"AH" = (
+/turf/simulated/floor/holofloor/beach/water,
+/area/precursor)
+"AY" = (
+/obj/machinery/light/floor,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"Bc" = (
+/obj/structure/table/bench/marble,
+/obj/random/cloth/suit,
+/turf/simulated/floor/wood,
+/area/precursor)
+"Br" = (
+/obj/random/cluster/psi_monster/lower_chance,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"Dg" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 7;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"DP" = (
+/obj/random/cloth/helmet,
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 8
+	},
+/area/precursor)
+"Ev" = (
+/obj/structure/table/standard,
+/obj/random/junkfood/rotten,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"Fv" = (
+/obj/item/trash/liquidfood,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"MS" = (
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 8
+	},
+/area/precursor)
+"Nd" = (
+/mob/living/simple_animal/crab,
+/turf/simulated/floor/beach/water/coastwater{
+	dir = 1
+	},
+/area/precursor)
+"Oc" = (
+/obj/structure/table/standard,
+/obj/item/trash/plate,
+/obj/random/common_oddities,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"Ps" = (
+/obj/structure/table/glass,
+/obj/machinery/light/floor,
+/obj/item/trash/waffles,
+/obj/random/junkfood/rotten,
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"QC" = (
+/obj/structure/bed/chair/custom/onestar,
+/obj/random/cloth/suit/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"QE" = (
+/obj/structure/bed/chair/custom/onestar{
+	desc = "A old chair. Doesn't look very comfortable.";
+	name = "old chair";
+	dir = 1
+	},
+/obj/random/cloth/suit/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"Si" = (
+/obj/structure/bed/chair/custom/onestar,
+/obj/random/cloth/shoes/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"VD" = (
+/turf/simulated/floor/beach/water/coastwatercorner{
+	dir = 4
+	},
+/area/precursor)
+"Wb" = (
+/obj/machinery/artifact,
+/turf/simulated/floor/holofloor/beach/water,
+/area/precursor)
+"WS" = (
+/obj/structure/bed/chair/custom/onestar,
+/obj/random/boxes/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"Yn" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"YP" = (
+/obj/structure/table/glass,
+/obj/item/trash/popcorn,
+/obj/random/common_oddities/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild3,
+/area/precursor)
+"Za" = (
+/obj/structure/table/standard,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+"ZO" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8;
+	color = "#d7c897"
+	},
+/turf/simulated/floor/wood/wild4,
+/area/precursor)
+
+(1,1,1) = {"
+aa
+aa
+af
+aa
+aa
+aa
+vM
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+af
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(2,1,1) = {"
+aa
+aa
+aa
+aa
+af
+aa
+aa
+aa
+aa
+aa
+af
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+af
+Br
+aa
+"}
+(3,1,1) = {"
+af
+ac
+ac
+ac
+ac
+bV
+bV
+bV
+bZ
+yC
+bV
+bV
+bV
+bV
+ac
+aF
+bX
+aH
+aa
+AY
+aa
+"}
+(4,1,1) = {"
+aa
+ac
+ak
+aN
+ac
+cg
+bd
+bd
+bd
+lB
+bd
+bF
+bJ
+qY
+bV
+aw
+aw
+cq
+aa
+aa
+aa
+"}
+(5,1,1) = {"
+ai
+ac
+ad
+ae
+ac
+bd
+ck
+bd
+bd
+bd
+bd
+bG
+bK
+bQ
+bV
+Za
+yQ
+cq
+aa
+aa
+aa
+"}
+(6,1,1) = {"
+aa
+ac
+ab
+ac
+ac
+ch
+cl
+Ps
+al
+bd
+bd
+fo
+bO
+xf
+bV
+Oc
+am
+cq
+aa
+aa
+aa
+"}
+(7,1,1) = {"
+aa
+ac
+as
+bq
+aK
+bk
+bk
+aR
+aS
+hE
+cB
+ax
+bL
+hQ
+bV
+aj
+aj
+cq
+aa
+af
+aa
+"}
+(8,1,1) = {"
+aa
+ac
+aI
+bq
+bq
+ci
+cn
+YP
+oz
+aT
+bP
+bP
+xt
+Dg
+bV
+cs
+cs
+cq
+aa
+aa
+aa
+"}
+(9,1,1) = {"
+aa
+ac
+aL
+aB
+bq
+be
+bk
+oa
+jq
+AH
+AH
+AH
+vq
+aE
+bd
+cs
+cs
+iy
+aa
+aa
+aa
+"}
+(10,1,1) = {"
+ai
+ac
+aL
+bq
+bq
+bf
+bk
+bo
+jq
+AH
+Wb
+AH
+vq
+xG
+ac
+aG
+cs
+iy
+aa
+AY
+aa
+"}
+(11,1,1) = {"
+aa
+ac
+aU
+bq
+bq
+bg
+bk
+bp
+jq
+AH
+AH
+yt
+Nd
+Dg
+bd
+cs
+cs
+ie
+af
+aa
+aa
+"}
+(12,1,1) = {"
+aa
+ac
+aZ
+bq
+bq
+bk
+bk
+rE
+ex
+DP
+fK
+MS
+VD
+kB
+bV
+cs
+cs
+cq
+aa
+aa
+bE
+"}
+(13,1,1) = {"
+aa
+ac
+ba
+bz
+ac
+bi
+bl
+gJ
+bZ
+bZ
+bZ
+Si
+bN
+QE
+bV
+bW
+aw
+cq
+aa
+aa
+aa
+"}
+(14,1,1) = {"
+aa
+ac
+bq
+bD
+ac
+bd
+Bc
+fs
+bd
+bd
+bd
+WS
+lD
+xf
+bV
+yQ
+Ev
+cq
+aa
+aa
+aa
+"}
+(15,1,1) = {"
+ai
+ac
+bq
+bq
+bq
+bx
+bd
+bd
+bd
+bd
+bx
+QC
+bO
+tZ
+bV
+jr
+gg
+cq
+af
+af
+aa
+"}
+(16,1,1) = {"
+bE
+ac
+sb
+bb
+ac
+cy
+bd
+az
+bd
+lB
+bd
+aA
+aD
+xf
+bV
+aj
+ao
+cq
+aa
+aa
+aa
+"}
+(17,1,1) = {"
+aa
+ac
+ac
+ac
+ac
+bV
+bV
+bV
+cB
+cB
+bV
+bV
+bV
+bV
+ac
+ZO
+Yn
+ar
+aa
+um
+aa
+"}
+(18,1,1) = {"
+aa
+bA
+bC
+bC
+ca
+cj
+aa
+aa
+aa
+af
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(19,1,1) = {"
+aa
+aa
+br
+aW
+bS
+aa
+Fv
+aa
+aa
+aa
+aa
+af
+aa
+af
+aa
+af
+aa
+aa
+af
+Br
+aa
+"}
+(20,1,1) = {"
+aa
+aa
+aW
+aa
+aa
+aa
+bE
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+"}
+(21,1,1) = {"
+aa
+af
+aa
+bS
+af
+aa
+aa
+af
+aa
+aa
+aa
+af
+aa
+af
+aa
+af
+aa
+aa
+aa
+aa
+aa
+"}

@@ -27,7 +27,7 @@
 
 	var/list/access_rights
 	var/obj/item/card/id/idcard
-	var/idcard_type = /obj/item/card/id/synthetic // ID card for borgers. Don't touch
+	var/idcard_type = /obj/item/card/id/synthetic
 
 	var/email_ringtone = TRUE
 
@@ -73,8 +73,6 @@
 	updateicon()
 
 /mob/living/silicon/proc/init_id()
-	if(isAI(src)||isdrone(src))
-		idcard = new /obj/item/card/id/all_access
 	if(idcard)
 		return
 	idcard = new idcard_type(src)

@@ -25,6 +25,8 @@
 		tally -= 0.3
 	if(stats.getPerk(PERK_REZ_SICKNESS))
 		tally += 1
+	if(stats.getPerk(PERK_SCORCHING_SHELL))
+		tally += 2.5
 
 	var/obj/item/implant/core_implant/cruciform/C = get_core_implant(/obj/item/implant/core_implant/cruciform)
 	if(C && C.active)

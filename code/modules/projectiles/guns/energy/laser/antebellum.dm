@@ -4,7 +4,7 @@
 	icon_state = "antebellum"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting Excelsior and psionic creatures. \
+	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting psionic creatures. \
 	The Antebellum is a plasma shotgun that uses only Church-branded cells, consuming them and releasing their contents in a formidable burst of plasma and ionized shrapnel.\
 	This one bears a cruciform rosary, for good luck."
 	fire_sound = 'sound/weapons/energy/laser_rifle.ogg'
@@ -47,7 +47,7 @@
 	icon_state = "carpediem"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting Excelsior and psionic creatures. \
+	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting psionic creatures. \
 	The Carpediem Musket is a laser musket rifle designed for ceremonial usage, though it also packs an impressive punch- even if its rate of fire leaves a lot to be desired."
 	fire_sound = 'sound/weapons/energy/lasmusket_fire.ogg'
 	slot_flags = SLOT_BACK

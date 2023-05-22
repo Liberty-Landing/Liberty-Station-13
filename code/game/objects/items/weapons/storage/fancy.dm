@@ -76,9 +76,9 @@
 
 //Kriosan treats
 
-obj/item/storage/fancy/dogtreats
+/obj/item/storage/fancy/dogtreats
 	icon_state = "dogtreat"
-	name = "\improper packet of Kriosan treats"
+	name = "\improper packet of \"Laika\" kriosan treats"
 	desc = "A small purple packet with a handful of Kriosan treats, a hardy snack well beloved by Kriosans the galaxy over."
 	storage_slots = 4
 	icon_type = "dogtreat"
@@ -86,7 +86,7 @@ obj/item/storage/fancy/dogtreats
 		/obj/item/reagent_containers/food/snacks/dogtreats
 		)
 
-obj/item/storage/fancy/dogtreats/populate_contents()
+/obj/item/storage/fancy/dogtreats/populate_contents()
 	for(var/i in 1 to storage_slots)
 		new /obj/item/reagent_containers/food/snacks/dogtreats(src)
 	update_icon()
@@ -356,13 +356,13 @@ obj/item/storage/fancy/dogtreats/populate_contents()
 		new /obj/item/clothing/mask/smokable/cigarette/comred(src)
 	create_reagents(15 * storage_slots)//so people can inject cigarettes without opening a packet, now with being able to inject the whole one
 
-/obj/item/storage/fancy/cigarettes/Skylight
+/obj/item/storage/fancy/cigarettes/skylight
 	name = "\improper Skylight packet"
 	desc = "A packet of six Skylight cigarettes. Locally grown, rolled, and smoked only by the cheapest of colonists."
 	icon_state = "SkylightCigPack"
 	item_state = "SkylightCigPack"
 
-/obj/item/storage/fancy/cigarettes/Skylight/populate_contents()
+/obj/item/storage/fancy/cigarettes/skylight/populate_contents()
 	for(var/i in 1 to storage_slots)
 		new /obj/item/clothing/mask/smokable/cigarette/Skylight(src)
 	create_reagents(10 * storage_slots)//so people can inject cigarettes without opening a packet, now with being able to inject the whole one

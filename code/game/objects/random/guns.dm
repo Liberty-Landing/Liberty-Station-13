@@ -257,8 +257,8 @@
 	return pickweight(list(
 				/obj/item/gun/energy/xray = 2,
 				/obj/item/gun/energy/sniperrifle = 2,
-				/obj/item/gun/energy/laser/railgun/railrifle = 1,
-				/obj/item/gun/energy/laser/railgun/pistol = 1,
+				// /obj/item/gun/energy/laser/railgun/railrifle = 1, //Needs balancing
+				// /obj/item/gun/energy/laser/railgun/pistol = 1, //Needs balancing
 				/obj/item/gun/energy/plasma/auretian = 1,
 				/obj/item/gun/energy/centurio = 2,
 				/obj/item/gun/energy/gun/nuclear = 2,
@@ -346,10 +346,8 @@
 	/obj/item/part/gun/barrel/srifle/steel = 1,
 	/obj/item/part/gun/barrel/lrifle/steel = 1,
 	/obj/item/part/gun/barrel/clrifle/steel = 0.5,
-	/obj/item/part/gun/barrel/kurtz/steel = 0.5,
 	/obj/item/part/gun/barrel/pistol = 5,
 	/obj/item/part/gun/barrel/magnum = 5,
-	/obj/item/part/gun/barrel/kurtz = 1.5,
 	/obj/item/part/gun/barrel/srifle = 4,
 	/obj/item/part/gun/barrel/clrifle = 3,
 	/obj/item/part/gun/barrel/lrifle = 4,

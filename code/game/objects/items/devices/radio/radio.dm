@@ -863,8 +863,6 @@ var/global/list/default_medbay_channels = list(
 		return NO_EMAG_ACT
 
 /obj/item/device/radio/random_radio/attackby(obj/item/W, mob/user, params)
-	if(nt_sword_attack(W, user))
-		return FALSE
 	user.set_machine(src)
 
 	if(istype(W, /obj/item/oddity))

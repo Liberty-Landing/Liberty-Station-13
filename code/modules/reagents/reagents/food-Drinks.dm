@@ -1813,18 +1813,12 @@
 	glass_center_of_mass = list("x"=15, "y"=7)
 
 /datum/reagent/ethanol/ntcahors
-	name = "Bonfire Cahors Wine"
+	name = "Custodian Brew"
 	id = "ntcahors"
-	description = "Fortified dessert wine made from cabernet sauvignon, saperavi, and other grapes."
-	taste_description = "sweet charcoal"
-	color = "#7E4043d0" // rgb: 126, 64, 67
+	description = "A hearty cinnamon drink that purges the body of toxins, but causes severe impairment."
+	taste_description = "purifying cinnamon relishness"
+	color = "#2725afd0"
 	strength = 30
-
-	glass_unique_appearance = TRUE
-	glass_icon_state = "wineglass"
-	glass_name = "cahors"
-	glass_desc = "It looks like wine, but more dark."
-	glass_center_of_mass = list("x"=15, "y"=7)
 
 /datum/reagent/ethanol/ntcahors/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
 	..()

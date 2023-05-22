@@ -879,6 +879,10 @@ area/space/atmosalert()
 	has_gravity = 1
 	requires_power = 0
 
+/area/precursor/mini_base
+	icon_state = "away1"
+	name = "Precursor mini base"
+
 // This area is mostly there to prevent the initial crystals from processing when there is no one nearby.
 // In an ideal situation, it would be wider than the potential full size of the field to prevent any escapes. -R4d6
 /area/crystal_field

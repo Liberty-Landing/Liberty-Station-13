@@ -6,7 +6,7 @@
 //DRINKS
 
 /obj/item/reagent_containers/food/drinks/cans/cola
-	name = "Colonist Cola"
+	name = "Solarian Cola"
 	desc = "The leading brand of cola in a radiant red."
 	icon_state = "cola"
 	center_of_mass = list("x"=16, "y"=10)
@@ -55,21 +55,21 @@
 	preloaded_reagents = list("lemon_lime" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/iced_tea
-	name = "Vrisk Serket Iced Tea"
+	name = "\"Vrisk Serket\" iced tea"
 	desc = "That sweet, refreshing southern earthy flavor. That's where it's from, right? South Earth?"
 	icon_state = "ice_tea_can"
 	center_of_mass = list("x"=16, "y"=10)
 	preloaded_reagents = list("icetea" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/grape_juice
-	name = "Grapel Juice"
+	name = "\"Grapfel\" grape juice"
 	desc = "500 pages of rules of how to appropriately enter into a combat with this juice!"
 	icon_state = "purple_can"
 	center_of_mass = list("x"=16, "y"=10)
 	preloaded_reagents = list("grapejuice" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/tonic
-	name = "T-Borg's Tonic Water"
+	name = "\"T-Borg\" tonic water"
 	desc = "Quinine tastes funny, but at least it'll keep that Space Malaria away."
 	icon_state = "tonic"
 	center_of_mass = list("x"=16, "y"=10)
@@ -83,35 +83,18 @@
 	preloaded_reagents = list("water" = 30)
 
 /obj/item/reagent_containers/food/drinks/cans/sodawater
-	name = "Silver Soda"
+	name = "\"Silver\" soda"
 	desc = "The more refreshing cousin of still water."
 	icon_state = "sodawater"
 	center_of_mass = list("x"=16, "y"=10)
 	preloaded_reagents = list("sodawater" = 50)
 
 /obj/item/reagent_containers/food/drinks/cans/melonsoda
-	name = "Hoko Melon soda"
-	desc = "Delicious Melon soda. Made in house by the reminants of the hoko company."
+	name = "\"Hoko\" melon soda"
+	desc = "Delicious Melon soda. Made in house by the remnants of the hoko company."
 	icon_state = "melon_soda_can"
 	center_of_mass = list("x"=16, "y"=10)
 	preloaded_reagents = list("melonsoda" = 30)
-
-/obj/item/reagent_containers/food/drinks/cans/cahors
-	name = "cahors can"
-	desc = "Cahors in a can. Not nearly as good as from a bottle or keg but pleasent none the less. For the faithful on the go."
-	icon_state = "cahors_can"
-	center_of_mass = list("x"=16, "y"=10)
-	preloaded_reagents = list("ntcahors" = 30)
-
-/obj/item/reagent_containers/food/drinks/cans/cahors/lemniscate
-	name = "cahors classic can"
-	desc = "Cahors in a can. Not nearly as good as from a bottle or keg but pleasent none the less. For the faithful on the go. This one is a classic can, larger, aged, and fermented to provide additional \
-	benefits like helping the drinker fight off diseases as well as toxins."
-	icon_state = "cahors_can"
-	center_of_mass = list("x"=16, "y"=10)
-	preloaded_reagents = list("ntcahors" = 45, "holycilin" = 15)
-	volume = 60
-
 
 //CLAW ENERGY DRINKS
 /obj/item/reagent_containers/food/drinks/cans/monster
@@ -143,7 +126,7 @@
 /obj/item/reagent_containers/food/drinks/cans/monster_sol
 	name = "\"Fed\" Claw Energy"
 	desc = "Claw energy, for when you need the focus of a hawk and the energy of a cheetah. A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
-	With Sol Fed marketing and pineapple juice to give it a sweet tropical flavour and salty acid. Why does drinking this make you want to shoot kriosans?"
+	With Terran marketing and pineapple juice to give it a sweet tropical flavour and salty acid. Why does drinking this make you want to shoot kriosans?"
 	icon_state = "claw_soyfed"
 	center_of_mass = list("x"=16, "y"=6)
 	preloaded_reagents = list("energy_drink_monster" = 25, "pineapplejuice" = 25, "soysauce" = 10)
@@ -173,7 +156,7 @@
 	Does not give you golden wings."
 	icon_state = "claw_church"
 	center_of_mass = list("x"=16, "y"=6)
-	preloaded_reagents = list("energy_drink_monster" = 25, "melonsoda" = 25, "ntcahors" = 10)
+	preloaded_reagents = list("energy_drink_monster" = 25, "melonsoda" = 25, "wine" = 10)
 	volume = 60
 
 /obj/item/reagent_containers/food/drinks/cans/monster_red
@@ -198,7 +181,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/baton
 	name = "\"Taser Bolt\" Baton Energy Soda"
-	desc = "Baton Energy a subsidiarity of Seinemetall Defense GmbH typically sold on the market for police to have liquid and energy for catching perps on the run. \
+	desc = "Baton Energy, made by a subsidiarity of MarsTek typically sold on the market for police to have liquid and energy for catching perps on the run. \
 	A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
 	A cocktail of sour juices to mix with the soda for to shock your taste buds."
 	icon_state = "bang_lemondrop"
@@ -208,7 +191,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/baton_apple
 	name = "\"Red Ticket\" Baton Energy Soda"
-	desc = "Baton Energy a subsidiarity of Seinemetall Defense GmbH typically sold on the market for police to have liquid and energy for catching perps on the run. \
+	desc = "Baton Energy, made by a subsidiarity of MarsTek typically sold on the market for police to have liquid and energy for catching perps on the run. \
 	A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
 	Lighter and less tasteful verson of Baton Energy Soda that was designed to be tolerable by anyone. Making it rarely liked by anyone..."
 	icon_state = "bang_apple_crisp"
@@ -218,7 +201,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/baton_cola
 	name = "\"Paddy Wagon\" Baton Energy Soda"
-	desc = "Baton Energy a subsidiarity of Seinemetall Defense GmbH typically sold on the market for police to have liquid and energy for catching perps on the run. \
+	desc = "Baton Energy, made by a subsidiarity of MarsTek typically sold on the market for police to have liquid and energy for catching perps on the run. \
 	A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
 	This one has a bit of cola mixed into it for flavor."
 	icon_state = "bang_peach"
@@ -228,7 +211,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/baton_commando
 	name = "\"Commando\" Baton Energy Soda"
-	desc = "Baton Energy a subsidiarity of Seinemetall Defense GmbH typically sold on the market for police to have liquid and energy for catching perps on the run. \
+	desc = "Baton Energy, made by a subsidiarity of MarsTek typically sold on the market for police to have liquid and energy for catching perps on the run. \
 	A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
 	Commando is mix of thirteenloko and standard baton energy designed to keep you wired."
 	icon_state = "bang_radical"
@@ -238,7 +221,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/baton_detective
 	name = "\"Case Closer\" Baton Energy Soda"
-	desc = "Baton Energy a subsidiarity of Seinemetall Defense GmbH typically sold on the market for police to have liquid and energy for catching perps on the run. \
+	desc = "Baton Energy, made by a subsidiarity of MarsTek typically sold on the market for police to have liquid and energy for catching perps on the run. \
 	A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
 	Beloved by rangers, detectives, and night owls because it will keep you awake on the middle of the night stake outs."
 	icon_state = "bang_pina_colada"
@@ -248,7 +231,7 @@
 
 /obj/item/reagent_containers/food/drinks/cans/baton_rent_a_cop
 	name = "\"On The Beat\" Baton Energy Soda"
-	desc = "Baton Energy a subsidiarity of Seinemetall Defense GmbH typically sold on the market for police to have liquid and energy for catching perps on the run. \
+	desc = "Baton Energy, made by a subsidiarity of MarsTek typically sold on the market for police to have liquid and energy for catching perps on the run. \
 	A warning label says drinking too much may cause heart damage, liver damage, and not living anymore. \
 	Shockingly this drink was designed to taste just as good warm as cold due to its target market being bike cops or those on foot patrol."
 	icon_state = "bang_rainbow"
@@ -258,8 +241,8 @@
 
 //Discount cans
 /obj/item/reagent_containers/food/drinks/cans/energy // Refactoring into cans for the sake of its state being whack.
-	name = "energy drink"
-	desc = "A heart attack that fits in your pocket."
+	name = "\"Render\" energy drink"
+	desc = "An energy drink of dubious origins and quality, tastes like a canned heart attack."
 	icon_state = "eris_energy_drink"
 	center_of_mass = list("x"=15, "y"=13)
 	preloaded_reagents = list("energy_drink_monster" = 30, "sugar" = 10) // Now it's a proper energy drink instead of overpriced cola

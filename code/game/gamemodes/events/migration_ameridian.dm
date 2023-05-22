@@ -17,31 +17,22 @@
 	endWhen 		= 60
 	var/list/viable_turfs = list()
 	var/list/spawned_ameridian = list()
-	var/deep_forests = FALSE
+
 
 /datum/event/ameridian_migration/setup()
-	//We'll pick space tiles which have windows nearby
-	//This means that carp will only be spawned in places where someone could see them
-	var/area/forest = locate(/area/liberty/outside/forest) in world
-	if(prob(30))
-		//Deep Jungel
-		forest = locate(/area/liberty/outside/meadow) in world
-		deep_forests = TRUE
+	var/area/forest = locate(/area/liberty/outside/forest) in world //pick tiles outside colony walls in that same z-level
 	for (var/turf/T in forest)
-		if (!(T.z in GLOB.maps_data.station_levels) && !deep_forests)
-			continue
-
 		if (locate(/obj/effect/shield) in T)
 			continue
 
-		//The number of windows near each tile is recorded
-		var/numgrass
-		for (var/turf/simulated/floor/asteroid/grass/W in view(4, T))
-			numgrass++
+		//Snow around each located tile is logged onto a list of viable turfs
+		var/numsnow
+		for (var/turf/simulated/floor/snow/W in view(4, T))
+			numsnow++
 
 		//And the square of it is entered into the list as a weight
-		if (numgrass)
-			viable_turfs[T] = numgrass*numgrass
+		if (numsnow)
+			viable_turfs[T] = numsnow*numsnow
 
 	//We will then use pickweight and this will be more likely to choose tiles with many windows, for maximum exposure
 
@@ -50,16 +41,10 @@
 
 /datum/event/ameridian_migration/announce()
 	var/announcement = ""
-	if(!deep_forests)
-		if(severity == EVENT_LEVEL_MAJOR)
-			announcement = "Massive growth of Ameridian has been detected outside station walls, please stand-by."
-		else
-			announcement = "Ameridian [spawned_ameridian.len == 1 ? "growth has" : "growths have"] been detected the deep forest."
+	if(severity == EVENT_LEVEL_MAJOR)
+		announcement = "Massive growth of Ameridian has been detected outside colony walls, please stand-by."
 	else
-		if(severity == EVENT_LEVEL_MAJOR)
-			announcement = "Massive growth of Ameridian has been detected in the deep forest."
-		else
-			announcement = "Ameridian [spawned_ameridian.len == 1 ? "growth has" : "growths have"] been detected the deep forest."
+		announcement = "Ameridian [spawned_ameridian.len == 1 ? "growth has" : "growths have"] been detected outside the colony."
 
 	command_announcement.Announce(announcement, "Lifesign Alert")
 
@@ -78,11 +63,12 @@
 
 /datum/event/ameridian_migration/end()
 	for(var/obj/structure/ameridian_crystal/a in spawned_ameridian)
-		if(!a.stat)
-			var/turf/T = get_turf(a)
-			if(istype(T, /turf/space)) //If they end up outside the map then we remove them on end
-				spawned_ameridian.Remove(a)
-				qdel(a)
-			if(istype(T, /turf/unsimulated/wall/jungle))
-				spawned_ameridian.Remove(a)
-				qdel(a)
+		if(prob(85)) //20% chance to stay
+			if(!a.stat)
+				var/turf/T = get_turf(a)
+				if(istype(T, /turf/space)) //If they end up outside the map then we remove them on end
+					spawned_ameridian.Remove(a)
+					qdel(a)
+				if(istype(T, /turf/unsimulated/wall/jungle))
+					spawned_ameridian.Remove(a)
+					qdel(a)

@@ -423,8 +423,8 @@
 /area/outpost/abandoned_fortress)
 "lC" = (
 /obj/structure/table/marble,
-/obj/item/tool/knife/dagger/nt,
-/obj/item/tool/knife/dagger/nt,
+/obj/item/tool/knife/dagger/custodian,
+/obj/item/tool/knife/dagger/custodian,
 /turf/simulated/floor/rock/manmade/ruin3,
 /area/outpost/abandoned_fortress)
 "lQ" = (
@@ -749,7 +749,7 @@
 /obj/machinery/optable/altar{
 	name = "Altar"
 	},
-/obj/item/tool/knife/dagger/nt,
+/obj/item/tool/knife/dagger/custodian,
 /obj/item/reagent_containers/food/snacks/meat/chicken/vox,
 /turf/simulated/floor/rock/manmade/concrete,
 /area/outpost/abandoned_fortress)

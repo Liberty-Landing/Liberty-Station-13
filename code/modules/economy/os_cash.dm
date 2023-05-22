@@ -10,7 +10,7 @@
 	max_amount = 1000
 	stacktype = /obj/item/stack/os_cash
 	novariants = TRUE					// Skips base /obj/item/stack update_icon() checks
-	price_tag = 10						// 10-to-1 exchange rate with Eris credits
+	price_tag = 5						// 5-to-1 exchange rate with scrip
 
 /obj/item/stack/os_cash/update_icon()
 	switch(amount)

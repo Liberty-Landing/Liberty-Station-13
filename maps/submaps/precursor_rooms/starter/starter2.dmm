@@ -163,12 +163,11 @@
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 "Y" = (
-/obj/structure/flora/small/grassb3,
-/mob/living/simple_animal/hostile/snake{
-	aggro_vision_range = 0;
-	name = "missy-hissy"
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 8
 	},
-/turf/simulated/floor/asteroid/grass,
+/obj/machinery/artifact_scanpad/precursor,
+/turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 
 (1,1,1) = {"
@@ -238,7 +237,7 @@ a
 n
 K
 L
-Y
+k
 H
 O
 a
@@ -253,7 +252,7 @@ a
 C
 U
 U
-U
+Y
 I
 a
 a

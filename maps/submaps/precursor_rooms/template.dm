@@ -20,6 +20,7 @@
 	desc = "Strange but larger."
 	width = 21
 	height = 21
+	template_group = TRUE
 
 /datum/map_template/precursor_template/end
 	name = "Precursor Template"

@@ -282,8 +282,8 @@
 	item_state = "militaryjacket_white"
 
 /obj/item/clothing/suit/storage/toggle/miljacket_soyfed
-	name = "solfed military jacket"
-	desc = "A military canvas jacket with old SolFed patches on it."
+	name = "terran military jacket"
+	desc = "A military canvas jacket with old Terran patches on it."
 	icon_state = "militaryjacket_soyfed_open"
 	item_state = "militaryjacket_soyfed_open"
 	icon_open = "militaryjacket_soyfed_open"

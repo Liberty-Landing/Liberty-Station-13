@@ -223,7 +223,7 @@
 				build_delay = 50 / construction_speed
 			else if(istype(T,/obj/structure/computerframe))
 				build_cost =  10 - construction_efficiency
-				build_delay = 50 / construction_speed		
+				build_delay = 50 / construction_speed
 			else
 				build_type =  ""
 	if(!build_type)
@@ -326,8 +326,8 @@
 		to_chat(usr, "It currently holds [stored_matter]/[max_stored_matter] matter-units.")
 
 /obj/item/rcd/excelsior
-	name = "excelsior rapid construction device"
-	desc = "A device used by engineers for compact and fast construction. This one seems to be excelsior design far superior than anything else available on the market giving 'Sieze the means of production' new meaning."
+	name = "astrakhan rapid construction device"
+	desc = "A device used by engineers for compact and fast construction. This one seems to be Astrakhan design far superior than anything else available on the market giving 'Sieze the means of production' new meaning."
 	icon_state = "rcd_excelsior"
 	max_stored_matter = 240
 	canRwall = 1

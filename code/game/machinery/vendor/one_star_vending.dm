@@ -1,13 +1,13 @@
 /obj/machinery/vending/one_star
-	name = "HexaOptimum General Vendor"
-	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo."
+	name = "Simalacrum Robotics General Vendor"
+	desc = "A vendor full of Similacrum Robotics products."
 	icon = 'icons/obj/machines/one_star/vending.dmi'
 	icon_state = "vendor_guns"
 	icon_vend = "vendor_printing"
-	//product_slogans = "Usually no carcinogens!;Best sports!;Become the strongest!"
-	//product_ads = "Strength!;Cheap!;There are contraindications, it is recommended to consult a medical specialist."
+	product_slogans = "Usually no carcinogens!;Best sports!;Become the strongest!"
+	product_ads = "Strength!;Cheap!;There are contraindications, it is recommended to consult a medical specialist."
 	vendor_department = DEPARTMENT_SIMILACRUM
-	alt_currency_path = /obj/item/stack/os_cash
+	alt_currency_path = /obj/item/stack/gal_cred
 
 /obj/machinery/vending/one_star/Initialize()
 	. = ..()
@@ -15,8 +15,8 @@
 	earnings_account = department_accounts[DEPARTMENT_SIMILACRUM]
 
 /obj/machinery/vending/one_star/guns
-	name = "HexaOptimum Weapon Vendor"
-	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo. This one sells firearms."
+	name = "Simalacrum Robotics Weapon Vendor"
+	desc = "A vendor full of Similacrum Robotics products. This one sells firearms."
 	icon_state = "vendor_guns"
 
 	products = list(
@@ -28,8 +28,8 @@
 		)
 
 /obj/machinery/vending/one_star/food
-	name = "HexaOptimum Food Vendor"
-	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo. This one sells food."
+	name = "Simalacrum Robotics Food Vendor"
+	desc = "A vendor full of Similacrum Robotics products. This one sells food."
 	product_slogans = "It's a Vending Machine!;We all eat lunch from a Vending Machine!"
 	product_ads = "You must be the new guy!;Hows is your child doing?;Real Meals!;Some people say its not real food but many quite like and many think you will to!"
 
@@ -62,8 +62,8 @@
 		)
 
 /obj/machinery/vending/one_star/health
-	name = "HexaOptimum Medical Vendor"
-	desc = "A vendor full of Similacrum Robotics products stamped over with HexaOptimum logo. This one sells medical equipment and supplies."
+	name = "Simalacrum Robotics Medical Vendor"
+	desc = "A vendor full of Similacrum Robotics products. This one sells medical equipment and supplies."
 	icon_state = "vendor_health"
 
 	products = list(

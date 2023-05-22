@@ -40,7 +40,7 @@
 /turf/simulated/floor/plating,
 /area/template_noop)
 "az" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/steel,
 /area/template_noop)
 "aH" = (
@@ -77,7 +77,7 @@
 /turf/template_noop,
 /area/template_noop)
 "bl" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/template_noop)
 "bB" = (
@@ -106,7 +106,7 @@
 /obj/structure/sign/faction/ironhammer{
 	pixel_x = -32
 	},
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/steel,
 /area/template_noop)
 "fb" = (
@@ -118,7 +118,7 @@
 	dir = 1
 	},
 /obj/structure/curtain/open/shower,
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/template_noop)
 "fH" = (
@@ -464,8 +464,8 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/template_noop)
 "IK" = (
-/mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/wood,
+/obj/random/mob/space_legion,
+/turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "Jl" = (
 /obj/structure/table/woodentable,
@@ -737,7 +737,7 @@ zh
 zE
 Zt
 bB
-rp
+IK
 Mb
 La
 YZ
@@ -811,7 +811,7 @@ Mb
 Mb
 Mb
 Mb
-rp
+IK
 Mb
 YZ
 FL
@@ -1082,7 +1082,7 @@ Lj
 BI
 Lj
 Lj
-IK
+Lj
 sC
 fS
 zE
@@ -1169,7 +1169,7 @@ OP
 OP
 YZ
 ji
-rp
+IK
 Mb
 YZ
 Mb

@@ -1,5 +1,5 @@
 /obj/item/clothing/head/helmet/space/void/excelsior
-	name = "Excelsior helmet"
+	name = "legionary helmet"
 	desc = "A deceptively well armored space helmet. Ancient design, but advanced manufacturing."
 	icon_state = "cosmo"
 	item_state = "cosmo"
@@ -26,7 +26,7 @@
 	light_overlay = "helmet_light_green"
 
 /obj/item/clothing/suit/space/void/excelsior
-	name = "Excelsior armor"
+	name = "legionary armor"
 	desc = "An ancient space suit design, remade with advanced materials. Provides good protection, especially against energy discharges."
 	icon_state = "soviet_skaf"
 	item_state = "soviet_skaf"

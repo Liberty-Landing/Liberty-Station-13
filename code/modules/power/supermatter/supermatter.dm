@@ -40,6 +40,7 @@
 	density = 1
 	anchored = 0
 	light_range = 4
+	price_tag = 1000000 //Rare
 
 	var/gasefficency = 0.25
 

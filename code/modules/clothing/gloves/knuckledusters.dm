@@ -36,7 +36,7 @@
 
 /obj/item/clothing/gloves/dusters/scav_gloves
 	name = "scavenger gloves"
-	desc = "A pair of reinforced combat gloves with plasteel knuckle dusters. \
+	desc = "A pair of fluffy, reinforced combat gloves with plasteel knuckle dusters. \
 			A jury-rigged work of art for those that value protection from whatever \
 			they can scrap on the field, and throwing deadlier punches."
 	icon_state = "scav_gloves"
@@ -51,30 +51,6 @@
 		rad = 0
 	)
 	price_tag = 200 // Combat gloves + plasteel knuckles price
-
-/obj/item/clothing/gloves/dusters/scav_gloves/verb/toggle_style()
-	set name = "Adjust Style"
-	set category = "Object"
-	set src in usr
-
-	if(!isliving(loc))
-		return
-
-	var/mob/M = usr
-	var/list/options = list()
-	options["Grey Standard"] = "scav_gloves"
-	options["Tan Alternate"] = "scav_gloves_alt"
-
-	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
-
-	if(src && choice && !M.incapacitated() && Adjacent(M))
-		icon_state = options[choice]
-		item_state = options[choice]
-		to_chat(M, "You crack your knuckles and adjust your gloves' style to the [choice] look.")
-		update_icon()
-		update_wear_icon()
-		usr.update_action_buttons()
-		return TRUE
 
 /obj/item/clothing/gloves/dusters/gold
 	name = "golden knuckle dusters"

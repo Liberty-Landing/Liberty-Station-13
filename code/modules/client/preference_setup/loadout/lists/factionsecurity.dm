@@ -14,7 +14,7 @@
 /datum/gear/factionsecurity/beretcommander
 	display_name = "beret, security head"
 	path = /obj/item/clothing/head/rank/commander
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Deputy Chief")
 	slot = slot_head
 	sort_category = "Faction: Security"
 
@@ -24,15 +24,15 @@
 	slot = slot_head
 
 /datum/gear/factionsecurity/beretwarden
-	display_name = "beret, supply specialist"
+	display_name = "beret, armorer"
 	path = /obj/item/clothing/head/rank/warden/beret
-	allowed_roles = list("Supply Specialist")
+	allowed_roles = list("Armorer")
 	slot = slot_head
 
 /datum/gear/factionsecurity/cloak
-	display_name = "cloak, warrant officer"
+	display_name = "cloak, deputy chief"
 	path = /obj/item/clothing/accessory/job/cape/ihc
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Deputy Chief")
 	slot = slot_wear_suit
 
 /datum/gear/factionsecurity/cloakironhammer
@@ -58,9 +58,9 @@
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/capsarge
-	display_name = "cap, supply specialist"
+	display_name = "cap, armorer"
 	path = /obj/item/clothing/head/soft/sarge2soft
-	allowed_roles = list("Supply Specialist")
+	allowed_roles = list("Armorer")
 
 /datum/gear/factionsecurity/bdu
 	display_name = "security BDU selection"

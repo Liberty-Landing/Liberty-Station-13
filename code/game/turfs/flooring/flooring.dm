@@ -245,7 +245,7 @@ var/list/flooring_types
 				return
 		if(M.stats.getPerk(PERK_SURE_STEP))//You trip even with this perk if klutz or vig below 0
 			return
-		if(prob(50 - our_trippah.stats.getStat(STAT_VIG))) //50 VIG makes you unable to trip
+		if(prob(50 - our_trippah.stats.getStat(STAT_VIG)) && M.slip(null, 6)) //50 VIG makes you unable to trip
 			to_chat(our_trippah, SPAN_WARNING("You gently slam into the plating!"))
 			our_trippah.adjustBruteLoss(5)
 			our_trippah.trip(src, 6)
@@ -1162,6 +1162,142 @@ var/list/flooring_types
 	icon_base = "cafe_large"
 	has_base_range = 3
 	build_type = /obj/item/stack/tile/cafe_large
+
+//Non-damage unrandomized verson
+
+/decl/flooring/industrial_pristine
+	icon = 'icons/turf/flooring/tiles_industeral.dmi'
+	flags = TURF_REMOVE_CROWBAR | TURF_CAN_BREAK | TURF_CAN_BURN | TURF_HIDES_THINGS
+	build_type = /obj/item/stack/tile/floor
+	can_paint = 0
+	resistance = RESISTANCE_FRAGILE
+
+	floor_smooth = SMOOTH_NONE
+	wall_smooth = SMOOTH_NONE
+	space_smooth = SMOOTH_NONE
+
+	damage_temperature = T0C+200
+	footstep_sound = "floor"
+
+/decl/flooring/industrial_pristine/concrete_small
+	name = "concrete slab"
+	desc = "Placed down slab of stone mixed with sand and heated into an aged design."
+	icon_base = "concrete_small"
+	descriptor = "concrete"
+	build_type = /obj/item/stack/tile/concrete_small_pristine
+
+/decl/flooring/industrial_pristine/concrete_bricks
+	name = "concrete bricks"
+	desc = "A bunch of concrete bricks placed down as flooring."
+	icon_base = "concrete_bricks"
+	descriptor = "concrete"
+	build_type = /obj/item/stack/tile/concrete_bricks_pristine
+
+/decl/flooring/industrial_pristine/bricks
+	name = "bricks"
+	desc = "A bunch of stone bricks placed down as flooring."
+	icon_base = "concrete_bricks"
+	descriptor = "brick"
+	build_type = /obj/item/stack/tile/bricks_pristine
+
+/decl/flooring/industrial_pristine/ornate
+	name = "ornate flooring"
+	desc = "Dark tiles with some painting on it."
+	icon_base = "ornate"
+	descriptor = "ornate"
+	build_type = /obj/item/stack/tile/ornate_pristine
+
+/decl/flooring/industrial_pristine/sierra
+	name = "ornate flooring"
+	desc = "Dark tiles with some painting on it."
+	icon_base = "sierra"
+	descriptor = "ornate"
+	build_type = /obj/item/stack/tile/sierra_pristine
+
+/decl/flooring/industrial_pristine/ceramic
+	name = "ceramic"
+	desc = "Hardened clay slates locked together as flooring."
+	icon_base = "ceramic"
+	descriptor = "ceramic"
+	build_type = /obj/item/stack/tile/ceramic_pristine
+
+/decl/flooring/industrial_pristine/grey_slates_long
+	name = "grey slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "grey_long"
+	build_type = /obj/item/stack/tile/grey_slates_long_pristine
+
+/decl/flooring/industrial_pristine/blue_slates_long
+	name = "blue slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "blue_long"
+	build_type = /obj/item/stack/tile/blue_slates_long_pristine
+
+/decl/flooring/industrial_pristine/brown_slates_big
+	name = "brown slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "brown_big"
+	build_type = /obj/item/stack/tile/brown_large_slates_pristine
+
+/decl/flooring/industrial_pristine/grey_slates
+	name = "grey slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "grey"
+	build_type = /obj/item/stack/tile/grey_slates_pristine
+
+/decl/flooring/industrial_pristine/blue_slates
+	name = "blue slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "blue"
+	build_type = /obj/item/stack/tile/blue_slates_pristine
+
+/decl/flooring/industrial_pristine/navy_slates
+	name = "navy slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "navy"
+	build_type = /obj/item/stack/tile/navy_slates_pristine
+
+/decl/flooring/industrial_pristine/fancy_slates
+	name = "disk slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "fancy"
+	build_type = /obj/item/stack/tile/fancy_slates_pristine
+
+/decl/flooring/industrial_pristine/navy_large_slates
+	name = "large navy slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "navy_large"
+	build_type = /obj/item/stack/tile/navy_large_slates_pristine
+
+/decl/flooring/industrial_pristine/black_large_slates
+	name = "large black slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "black_large"
+	build_type = /obj/item/stack/tile/black_large_slates_pristine
+
+/decl/flooring/industrial_pristine/green_large_slates
+	name = "green large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "green_large"
+	build_type = /obj/item/stack/tile/green_large_slates_pristine
+
+/decl/flooring/industrial_pristine/white_large_slates
+	name = "white large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "white_large"
+	build_type = /obj/item/stack/tile/white_large_slates_pristine
+
+/decl/flooring/industrial_pristine/checker_large
+	name = "white and black large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "checker_large"
+	build_type = /obj/item/stack/tile/checker_large_pristine
+
+/decl/flooring/industrial_pristine/cafe_large
+	name = "white and red large slates"
+	desc = "Cut down and thinned rock slates used for flooring."
+	icon_base = "cafe_large"
+	build_type = /obj/item/stack/tile/cafe_large_pristine
 
 /decl/flooring/rusted
 	icon = 'icons/turf/flooring/rusted.dmi'

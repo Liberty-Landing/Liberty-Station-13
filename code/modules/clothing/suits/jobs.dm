@@ -2,7 +2,7 @@
  * Job related
  */
 
-//Assistant
+/*Assistant - Archive
 /obj/item/clothing/suit/storage/rank/ass_jacket
 	name = "colonist jacket"
 	desc = "Practical and comfortable jacket. It seems have a little protection from physical harm."
@@ -10,6 +10,29 @@
 	item_state = "ass_jacket"
 	blood_overlay_type = "coat"
 	body_parts_covered = UPPER_TORSO|ARMS
+	armor_list = list(
+		melee = 5,
+		bullet = 5,
+		energy = 5,
+		bomb = 0,
+		bio = 0,
+		rad = 0
+	)
+*/
+
+//Liberty Assistant
+/obj/item/clothing/suit/storage/toggle/liberass_jacket
+	name = "liberty jacket"
+	desc = "Practical and comfortable jacket. It seems have a little protection from physical harm.  Sturdy and tough, like the colony itself."
+	icon_state = "liberass_jacket"
+	item_state = "liberass_jacket"
+	icon_open = "liberass_jacket_open"
+	icon_closed = "liberass_jacket"
+	blood_overlay_type = "coat"
+	body_parts_covered = UPPER_TORSO|ARMS
+	cold_protection = UPPER_TORSO|ARMS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
 	armor_list = list(
 		melee = 5,
 		bullet = 5,
@@ -225,8 +248,8 @@
 
 //Detective
 /obj/item/clothing/suit/storage/rank/insp_trench
-	name = "ranger's armored trenchcoat"
-	desc = "Brown and armored trenchcoat, designed and created by the Marshals. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
+	name = "criminal investigator's armored trenchcoat"
+	desc = "Brown and armored trenchcoat, designed and created by the Watchmen. The coat is externally impact resistant - perfect for your next act of autodefenestration!"
 	icon_state = "rangercoat"
 	item_state = "rangercoat"
 	blood_overlay_type = "coat"

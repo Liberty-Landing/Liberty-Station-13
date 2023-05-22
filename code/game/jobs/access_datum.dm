@@ -440,12 +440,7 @@
 	desc = "Bonfire Oathpledge"
 	region = ACCESS_REGION_CHURCH
 
-/var/const/access_nt_inquisitor = 75
-/datum/access/nt_inquisitor
-	id = access_nt_inquisitor
-	desc = "Bonfire Crusader"
-	region = ACCESS_REGION_CHURCH
-
+// /var/const/free_access_id = 75
 // /var/const/free_access_id = 76
 // /var/const/free_access_id = 77
 

@@ -47,10 +47,10 @@
 	icon_state = "greyson"
 
 //Churchlowwall
-/obj/structure/low_wall/church
-	name = "Church low wall"
+/obj/structure/low_wall/custodian
+	name = "stronghold low wall"
 	wall_color = "#FFFFFF"
-	icon_state = "church"
+	icon_state = "church_reinforced"
 
 //rusted low wall
 /obj/structure/low_wall/rusted

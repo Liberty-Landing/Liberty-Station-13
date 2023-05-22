@@ -1,11 +1,10 @@
 /obj/item/gun/projectile/automatic/vintorez
-	name = "Excelsior \"Vintorez\" silenced rifle"
+	name = "\"Vintorez\" silenced rifle"
 	desc = "\"We have no compassion and we ask no compassion from you. When our turn comes, we shall not make excuses for the terror.\"\
 	A powerful armor-piercing marksman rifle with an integrated silencer. Utilises a defunct design, but remains a popular armament. Uses 7.62mm Rifle rounds."
 	icon = 'icons/obj/guns/projectile/vintorez.dmi'
 	icon_state = "vintorez"
 	item_state = "vintorez"
-	excelsior = TRUE
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_RIFLE //needs a new caliber type?
@@ -28,24 +27,12 @@
 		SEMI_AUTO_NODELAY,
 		FULL_AUTO_300
 		)
-	serial_type = "EXC"
+	serial_type = "LIB"
 
 	wield_delay = 1.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig to insta wield , heavy class assault rifle. Why is this 7.62 instead of 9mm? I'll never know.
 	gun_parts = list(/obj/item/part/gun/frame/vintorez = 1, /obj/item/part/gun/grip/excel = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
-
-/obj/item/gun/projectile/automatic/vintorez/NM_colony
-	name = "\"Val\" silenced rifle"
-	desc = "A powerful armor-piercing marksman rifle with an integrated silencer. Utilises a defunct design, but remains a popular armament. Uses 7.62mm Rifle rounds.\nThis model of the \"Vintorez\" rifle has been reclaimed and repurposed by Liberty Marshals, making it free of Excelsior taint."
-	icon = 'icons/obj/guns/projectile/vintorez_bs.dmi'
-	icon_state = "vintorez_bs"
-	item_state = "vintorez_bs"
-	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 2)
-	damage_multiplier = 1.0 //The gun is made to be Excelsior, thus its higher stats. Nerfed since this variant is not supposed to be an antag-weapon. Plus - extra damage when scoped.
-	price_tag = 800
-	serial_type = "NM"
-	excelsior = FALSE
-	gun_parts = list(/obj/item/part/gun/frame/vintorez = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
+	//gun_parts = list(/obj/item/part/gun/frame/vintorez = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/autorifle = 1, /obj/item/part/gun/barrel/lrifle = 1)
 
 /obj/item/gun/projectile/automatic/vintorez/update_icon()
 	..()

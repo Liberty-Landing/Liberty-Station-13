@@ -62,11 +62,8 @@
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 "G" = (
-/mob/living/simple_animal/hostile/bear/polar{
-	aggro_vision_range = 0;
-	name = "Ice-lee"
-	},
-/turf/simulated/floor/snow,
+/obj/machinery/artifact_scanpad/precursor,
+/turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 "I" = (
 /turf/simulated/floor/rock/manmade/ruin1,
@@ -120,7 +117,7 @@ M
 I
 I
 s
-G
+P
 P
 k
 k
@@ -169,7 +166,7 @@ I
 I
 W
 I
-I
+G
 I
 I
 m

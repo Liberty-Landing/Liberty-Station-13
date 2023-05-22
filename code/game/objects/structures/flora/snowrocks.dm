@@ -48,12 +48,14 @@ obj/structure/flora/small/snow/rock1
 
 /obj/structure/flora/small/snow/boulder1
 	name = "boulder"
-	desc = "A large rock with a flat top were ice and snow has mounted top."
+	desc = "A large rock with a flat top where ice and snow has built up."
+	density = TRUE
 	icon = 'icons/obj/flora/snowrocks.dmi'
 	icon_state = "snowboulder1"
 
 /obj/structure/flora/small/snow/boulder2
 	name = "boulder"
-	desc = "A large rock with snow and ice top."
+	desc = "A large rock with snow and ice on the top."
+	density = TRUE
 	icon = 'icons/obj/flora/snowrocks.dmi'
 	icon_state = "snowboulder2"

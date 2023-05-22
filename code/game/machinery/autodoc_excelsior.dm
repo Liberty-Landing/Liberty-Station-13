@@ -6,7 +6,7 @@
 #define AUTODOC_DEFAULT_PROCESSING_TIME 35
 
 /obj/machinery/excelsior_autodoc
-	name = "excelsior autodoc"
+	name = "soviet autodoc"
 	desc = "Medical care for everybody, free, and may no one be left behind!"
 	icon = 'icons/obj/machines/excelsior/autodoc.dmi'
 	icon_state = "base"
@@ -109,9 +109,6 @@
 
 /obj/machinery/excelsior_autodoc/proc/set_occupant(mob/living/user)
 	add_fingerprint(user)
-	if(is_neotheology_disciple(user))
-		//playsound(loc, 'sound/mechs/internaldmgalarm.ogg', 50, 1)
-		return
 	user.forceMove(src)
 	occupant = user
 	autodoc_processor.set_patient(user)
@@ -119,26 +116,6 @@
 	user.set_machine(src)
 	cover_state = image(icon, "opened")
 	cover_state.layer = 4.5
-
-	if(!is_excelsior(user) && !emagged) // Let non-NT use emagged autodoc without brainwashing
-		cover_locked = TRUE
-		close_cover()
-		sleep(30)
-		to_chat(user, SPAN_DANGER("Autodoc is implanting you!"))
-		sleep(50)
-		var/obj/item/implant/excelsior/implant = new(user)
-		if (!implant.install(user, BP_HEAD))
-			qdel(implant)
-/*		var/datum/faction/F = get_faction_by_id(FACTION_EXCELSIOR)
-		var/datum/objective/timed/excelsior/excel_timer = (locate(/datum/objective/timed/excelsior) in F.objectives)
-		if(excel_timer)
-			if(!excel_timer.active)
-				excel_timer.start_excel_timer()
-			else
-				excel_timer.on_convert()*/
-		cover_locked = FALSE
-	else
-		update_icon()
 
 /obj/machinery/excelsior_autodoc/attack_hand(mob/user)
 	if(occupant)

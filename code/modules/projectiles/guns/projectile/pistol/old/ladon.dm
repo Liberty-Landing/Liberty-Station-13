@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/ladon
 	name = "\"Ladon\" magnum pistol"
-	desc = "A Mk-68 \"Ladon\", the trimmed down decendant of the M6 service pistol family as a second-line pistol for law enforcement produced by Seinemetall Defense GmbH, non-combat personnel, and people with reasonably sized hands.  Uses 10mm Auto-Mag. This one appears to have been in SolFed service at some point."
+	desc = "A Mk-68 \"Ladon\", the trimmed down decendant of the M6 service pistol family as a second-line pistol for law enforcement produced by Seinemetall Defense GmbH, non-combat personnel, and people with reasonably sized hands.  Uses 10mm Auto-Mag. This one appears to have been in Terran service at some point."
 	icon = 'icons/obj/guns/projectile/ladon.dmi'
 	icon_state = "dark_ladon"
 	item_state = "dark_ladon"

@@ -308,9 +308,9 @@
 	contents_cost = 1200
 
 /obj/structure/reagent_dispensers/cahorsbarrel
-	name = "Bonfire Cahors barrel"
-	desc = "Barrel a day - keeps liver away."
-	icon_state = "barrel_alt"
+	name = "Custodian Brew barrel"
+	desc = "Barrel a day - keeps the liver away."
+	icon_state = "barrel_blue"
 	volume = 1000
 	starting_reagent = "ntcahors"
 	price_tag = 25

@@ -540,96 +540,191 @@
 
 //Industeral stuff
 /obj/item/stack/tile/concrete_small
-	name = "concrete slabs"
+	name = "damaged concrete slabs"
 	singular_name = "concrete slab"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/concrete_bricks
-	name = "concrete bricks"
+	name = "damaged concrete bricks"
 	singular_name = "concrete brick"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/bricks
-	name = "bricks"
+	name = "damaged bricks"
 	singular_name = "brick"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/ornate
-	name = "painted slates"
+	name = "damaged painted slates"
 	singular_name = "painted slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/sierra
-	name = "painted slates"
+	name = "damaged painted slates"
 	singular_name = "painted slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/ceramic
-	name = "ceramic slates"
+	name = "damaged ceramic slates"
 	singular_name = "ceramic slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/grey_slates_long
-	name = "grey long slates"
+	name = "damaged grey long slates"
 	singular_name = "grey long slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/blue_slates_long
-	name = "blue long slates"
+	name = "damaged blue long slates"
 	singular_name = "blue long slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/grey_slates
-	name = "grey slates"
+	name = "damaged grey slates"
 	singular_name = "grey slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/blue_slates
-	name = "blue slates"
+	name = "damaged blue slates"
 	singular_name = "blue slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/navy_slates
-	name = "navy slates"
+	name = "damaged navy slates"
 	singular_name = "navy slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/fancy_slates
-	name = "disk slates"
+	name = "damaged disk slates"
 	singular_name = "disk slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/navy_large_slates
-	name = "large navy slates"
+	name = "damaged large navy slates"
 	singular_name = "large navy slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/black_large_slates
-	name = "large black slates"
+	name = "damaged large black slates"
 	singular_name = "large black slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/green_large_slates
-	name = "large green slates"
+	name = "damaged large green slates"
 	singular_name = "large green slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/brown_large_slates
-	name = "large brown slates"
+	name = "damaged large brown slates"
 	singular_name = "large brown slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/white_large_slates
-	name = "large white slates"
+	name = "damaged large white slates"
 	singular_name = "large white slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/checker_large
-	name = "large white and black slates"
+	name = "damaged large white and black slates"
 	singular_name = "large and black slate"
 	icon_state = "tile_slate"
 
 /obj/item/stack/tile/cafe_large
+	name = "damaged large white and red slates"
+	singular_name = "large and red slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/concrete_small_pristine
+	name = "concrete slabs"
+	singular_name = "concrete slab"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/concrete_bricks_pristine
+	name = "concrete bricks"
+	singular_name = "concrete brick"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/bricks_pristine
+	name = "bricks"
+	singular_name = "brick"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/ornate_pristine
+	name = "painted slates"
+	singular_name = "painted slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/sierra_pristine
+	name = "painted slates"
+	singular_name = "painted slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/ceramic_pristine
+	name = "ceramic slates"
+	singular_name = "ceramic slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/grey_slates_long_pristine
+	name = "grey long slates"
+	singular_name = "grey long slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/blue_slates_long_pristine
+	name = "blue long slates"
+	singular_name = "blue long slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/grey_slates_pristine
+	name = "grey slates"
+	singular_name = "grey slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/blue_slates_pristine
+	name = "blue slates"
+	singular_name = "blue slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/navy_slates_pristine
+	name = "navy slates"
+	singular_name = "navy slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/fancy_slates_pristine
+	name = "disk slates"
+	singular_name = "disk slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/navy_large_slates_pristine
+	name = "large navy slates"
+	singular_name = "large navy slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/black_large_slates_pristine
+	name = "large black slates"
+	singular_name = "large black slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/green_large_slates_pristine
+	name = "large green slates"
+	singular_name = "large green slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/brown_large_slates_pristine
+	name = "large brown slates"
+	singular_name = "large brown slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/white_large_slates_pristine
+	name = "large white slates"
+	singular_name = "large white slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/checker_large_pristine
+	name = "large white and black slates"
+	singular_name = "large and black slate"
+	icon_state = "tile_slate"
+
+/obj/item/stack/tile/cafe_large_pristine
 	name = "large white and red slates"
 	singular_name = "large and red slate"
 	icon_state = "tile_slate"

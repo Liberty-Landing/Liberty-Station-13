@@ -13,62 +13,62 @@
 	return
 
 /obj/item/trash/raisins
-	name = "\improper 4No raisins"
+	name = "empty raisins packet"
 	desc = "An empty packet of raisins. Trash."
 	icon_state= "4no_raisins"
 
 /obj/item/trash/candy
-	name = "candy bar"
+	name = "candy bar wrapper"
 	desc = "An empty candy bar wrapper. Trash."
 	icon_state= "candy"
 
 /obj/item/trash/spacetwinkie
-	name = "space twinkie wrapper"
+	name = "twinkie wrapper"
 	desc = "An empty candy bar wrapper not even a bit of filling stuck inside. Trash."
 	icon_state= "space_twinkie" //Sprite by Michiyamenotehifunana
 
 /obj/item/trash/candy/proteinbar
-	name = "protein bar"
+	name = "protein bar wrapper"
 	desc = "An empty protein bar wrapper. Trash."
 	icon_state = "proteinbar"
 
 /obj/item/trash/cheesie
-	name = "Cheesie Honkers"
+	name = "empty cheesie honkers packet"
 	desc = "An empty packet of chips. Trash."
 	icon_state = "cheesie_honkers"
 
 /obj/item/trash/chips
-	name = "chips packet"
+	name = "empty chips packet"
 	desc = "An empty packet of chips. Trash."
 	icon_state = "chips"
 
 /obj/item/trash/chips_green
-	name = "chips packet"
+	name = "empty chips packet"
 	desc = "An empty packet of chips. Trash."
 	icon_state = "lays_green"
 
 /obj/item/trash/chips
-	name = "chips packet"
+	name = "empty chips packet"
 	desc = "An empty packet of chips. Trash."
 	icon_state = "lays"
 
 /obj/item/trash/gamerchips
-	name = "boritos crips packet"
+	name = "empty crips packet"
 	desc = "An empty packet of boritos crips. Trash."
 	icon_state = "boritos"
 
 /obj/item/trash/popcorn
-	name = "popcorn"
+	name = "empty popcorn packet"
 	desc = "An empty packet of popcorn. Trash."
 	icon_state = "popcorn"
 
 /obj/item/trash/sosjerky
-	name = "Scaredy's Beef Jerky"
+	name = "empty jerky packet"
 	desc = "An empty packet of jerky. Trash."
 	icon_state = "sosjerky"
 
 /obj/item/trash/syndi_cakes
-	name = "syndi cakes"
+	name = "empty cakes packet"
 	desc = "An empty box of syndi cakes.Trash."
 	icon_state = "syndi_cakes" //Sprite by Michiyamenotehifunana
 
@@ -83,12 +83,12 @@
 	icon_state = "grease"
 
 /obj/item/trash/pistachios
-	name = "pistachios pack"
+	name = "empty pistachios pack"
 	desc = "An empty packet of pistachios. Trash."
 	icon_state = "pistachios_pack"
 
 /obj/item/trash/semki
-	name = "semki pack"
+	name = "empty semki pack"
 	desc = "An empty packet of semki. Trash."
 	icon_state = "semki_pack"
 
@@ -117,59 +117,64 @@
 	icon_state = "candle4"
 
 /obj/item/trash/liquidfood
-	name = "\improper \"LiquidFood\" ration"
+	name = "empty liquid food ration"
 	desc = "An empty ration packet. Trash."
 	icon_state = "liquidfood" //Sprite by Michiyamenotehifunana
 
 /obj/item/trash/tastybread
-	name = "bread tube"
+	name = "empty bread tube"
 	desc = "An empty bread tube. Trash."
 	icon_state = "tastybread" //Sprite by Michiyamenotehifunana
 
 /obj/item/trash/mre
-	name = "mre"
+	name = "empty mre"
 	icon_state = "mre_trash"
 
 /obj/item/trash/mre/alt
-	name = "mre"
+	name = "empty mre"
 	icon_state = "wok"
 	matter = list(MATERIAL_CARDBOARD = 1)
 
 /obj/item/trash/mre_paste
-	name = "nutrient paste"
+	name = "empty nutrient paste"
 	icon_state = "paste_trash"
 
 /obj/item/trash/mre_candy
-	name = "candy"
+	name = "empty candy"
 	icon_state = "mre_candy_trash"
 
 /obj/item/trash/mre_shokoladka
-	name = "shokoladka candy"
+	name = "empty shokoladka candy"
 	icon_state = "shokoladka"
 
 /obj/item/trash/mre_dalococh
-	name = "dalococh candy"
+	name = "empty dalococh candy"
 	icon_state = "dalococh"
 
 /obj/item/trash/mre_can
-	name = "ration can"
+	name = "empty ration can"
 	icon_state = "ration_can_trash"
 
 /obj/item/trash/energybar
-	name = "energy candy"
+	name = "empty energy candy packet"
 	desc = "An empty packet of energy candy. Trash."
 	icon_state= "energybar"
 
 /obj/item/trash/peachcan
-	name = "peach can"
+	name = "empty peach can"
 	desc = "An empty can of peaches. Trash."
 	icon_state= "peachcan"
 
 /obj/item/trash/icecreambowl
-	name = "icecream bowl"
+	name = "empty icecream bowl"
 	desc = "This used to hold icecream on it, it has even been licked clean!"
 	icon_state = "icecreambowl"
 	matter = list(MATERIAL_GLASS = 1) // It is, after all, made of glass
+
+/obj/item/trash/selfheat_coffee
+	name = "empty self-heating coffee"
+	desc = "A crushed up can whose self-heating mechanism is spent. The faint smell of coffee still lingers inside."
+	icon_state = "selfheat_coffee"
 
 /obj/item/trash/mre/os
 	name = "gray cardboard takeout container"
@@ -193,6 +198,6 @@
 	icon_state= "os_coco_wrapper"
 
 /obj/item/trash/os_paste_empty
-	name = "plastic tube"
+	name = "empty plastic tube"
 	desc = "A plastic tube devoid of contents. Trash."
 	icon_state= "os_paste_empty"

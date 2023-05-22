@@ -1,0 +1,1242 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"ab" = (
+/turf/simulated/wall/r_wall,
+/area/precursor)
+"ac" = (
+/obj/structure/table/woodentable,
+/obj/random/psi_megafauna,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"ad" = (
+/obj/item/modular_computer/console/preset/security/camera,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"ae" = (
+/obj/structure/table/woodentable,
+/obj/item/device/lighting/toggleable/lamp/green,
+/obj/random/gun_energy_cheap,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"af" = (
+/turf/simulated/wall,
+/area/precursor)
+"ag" = (
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/random/rations,
+/obj/random/rations,
+/obj/random/rations,
+/obj/random/rations/low_chance,
+/obj/random/rations/low_chance,
+/obj/random/rations/low_chance,
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"ah" = (
+/obj/structure/table/standard,
+/obj/machinery/microwave{
+	pixel_x = -3;
+	pixel_y = 6
+	},
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"ai" = (
+/obj/random/junk,
+/obj/machinery/light,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 3
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aj" = (
+/obj/structure/table/standard,
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 5
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 5
+	},
+/obj/item/material/kitchen/rollingpin,
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"ak" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/tiled/techmaint_cargo,
+/area/precursor)
+"al" = (
+/obj/structure/table/rack,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/tiled/techmaint_cargo,
+/area/precursor)
+"am" = (
+/obj/random/junk,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"an" = (
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"ao" = (
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"ap" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aq" = (
+/obj/structure/table/woodentable,
+/obj/random/pack/rare,
+/obj/random/pack/rare,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"ar" = (
+/turf/simulated/floor/wood,
+/area/precursor)
+"as" = (
+/obj/structure/flora/pottedplant{
+	tag = "icon-plant-21";
+	icon_state = "plant-21"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"at" = (
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"au" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"av" = (
+/obj/structure/table/rack,
+/obj/random/booze,
+/obj/random/booze,
+/obj/random/booze,
+/obj/random/booze/low_chance,
+/obj/random/booze/low_chance,
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"aw" = (
+/obj/structure/bookcase,
+/turf/simulated/floor/wood,
+/area/precursor)
+"ax" = (
+/obj/structure/table/woodentable,
+/obj/machinery/librarypubliccomp,
+/turf/simulated/floor/wood,
+/area/precursor)
+"ay" = (
+/obj/machinery/door/airlock/glass,
+/obj/structure/girder,
+/obj/structure/barricade,
+/obj/machinery/door/airlock,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"az" = (
+/obj/machinery/deployable/barrier,
+/obj/structure/barricade,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aA" = (
+/obj/structure/girder,
+/obj/machinery/deployable/barrier,
+/obj/structure/barricade,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aB" = (
+/obj/structure/girder,
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"aC" = (
+/obj/structure/table/standard,
+/obj/random/junkfood,
+/obj/random/junkfood,
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"aD" = (
+/obj/structure/bed/chair/office/dark,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aE" = (
+/obj/structure/girder,
+/obj/structure/barricade,
+/obj/machinery/door/airlock,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"aF" = (
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aG" = (
+/obj/structure/flora/small/grassb3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aH" = (
+/obj/structure/table/woodentable,
+/obj/item/paper_bin,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aI" = (
+/obj/structure/girder,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aJ" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"aK" = (
+/obj/structure/barricade,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aL" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"aM" = (
+/obj/machinery/vending/snack,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"aN" = (
+/obj/structure/flora/pottedplant{
+	tag = "icon-plant-10";
+	icon_state = "plant-10"
+	},
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"aO" = (
+/obj/structure/table/woodentable,
+/obj/random/pack/rare/low_chance,
+/obj/random/pack/rare/low_chance,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"aP" = (
+/obj/machinery/door/airlock/glass,
+/obj/structure/barricade,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"aQ" = (
+/obj/structure/table/woodentable,
+/obj/random/powercell,
+/obj/random/powercell,
+/obj/random/gun_energy_cheap,
+/obj/random/gun_energy_cheap,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"aR" = (
+/obj/item/remains/human,
+/obj/structure/catwalk,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aS" = (
+/obj/machinery/vending/cola,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"aT" = (
+/obj/effect/decal/cleanable/blood,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aU" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"aV" = (
+/obj/structure/table/woodentable,
+/obj/item/pen/blue{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/pen/red{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/random/dungeon_ammo,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aW" = (
+/obj/machinery/libraryscanner,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"aX" = (
+/obj/item/modular_computer/console/preset/civilian,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aY" = (
+/obj/structure/table/woodentable,
+/obj/item/device/lighting/toggleable/lamp/green,
+/turf/simulated/floor/wood,
+/area/precursor)
+"aZ" = (
+/obj/structure/bed/chair/office/dark{
+	dir = 1
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"ba" = (
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/turf/simulated/floor/wood,
+/area/precursor)
+"bb" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bc" = (
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bd" = (
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/wood,
+/area/precursor)
+"be" = (
+/obj/random/junk,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bf" = (
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/junk,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bg" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/turf/simulated/floor/plating,
+/area/precursor)
+"bh" = (
+/obj/structure/reagent_dispensers/water_cooler,
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"bi" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"bj" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/item/storage/firstaid/regular,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bk" = (
+/obj/item/stool,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bl" = (
+/obj/structure/table/standard{
+	name = "plastic table frame"
+	},
+/obj/random/medical,
+/obj/random/medical,
+/obj/random/medical,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bm" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bn" = (
+/obj/structure/bed/chair,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"bo" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/steel/gray_perforated,
+/area/precursor)
+"bp" = (
+/turf/simulated/wall/rust_reinforced,
+/area/precursor)
+"bq" = (
+/obj/structure/table/woodentable,
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/random/pouch/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"br" = (
+/obj/item/remains/human,
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bt" = (
+/obj/random/junk,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"bu" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/random/junk,
+/obj/effect/floor_decal/spline/grass_edge,
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"bv" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/steel/gray_platform,
+/area/precursor)
+"bw" = (
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bx" = (
+/obj/structure/catwalk,
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"by" = (
+/obj/item/remains/human,
+/obj/effect/decal/cleanable/blood,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/gun_loot,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bz" = (
+/obj/item/remains/human,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/gun_loot,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"bA" = (
+/obj/effect/decal/cleanable/blood,
+/obj/random/junk,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bB" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"bC" = (
+/obj/random/junk,
+/obj/machinery/light{
+	dir = 4;
+	icon_state = "tube1"
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"bD" = (
+/obj/structure/table/woodentable,
+/obj/random/pack/rare,
+/obj/random/pack/rare/low_chance,
+/obj/random/credits,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bE" = (
+/obj/machinery/vending/coffee,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"bF" = (
+/obj/machinery/vending/cigarette,
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"bG" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bH" = (
+/obj/random/traps/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bI" = (
+/obj/random/junk,
+/obj/random/junk,
+/obj/random/traps/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"bJ" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bK" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/blood,
+/obj/random/junk,
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"bL" = (
+/obj/random/cluster/psi_monster,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"dD" = (
+/obj/structure/table/woodentable,
+/obj/item/pen/blue{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/pen/red{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/random/common_oddities,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/wood,
+/area/precursor)
+"hY" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 3
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"jp" = (
+/obj/structure/table/woodentable,
+/obj/item/device/lighting/toggleable/lamp/green,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/wood,
+/area/precursor)
+"mg" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/obj/structure/flora/small/grassb1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"mx" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"pi" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 4
+	},
+/obj/structure/flora/small/grassa1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"ry" = (
+/obj/random/cluster/psi_monster/low_chance,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"sb" = (
+/obj/machinery/door/airlock/glass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"sr" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/obj/structure/flora/small/grassb1,
+/obj/structure/flora/small/grassb1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"te" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 4
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"uu" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"uz" = (
+/obj/structure/table/woodentable,
+/obj/item/paper_bin,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"vz" = (
+/obj/structure/flora/small/grassb5,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"vM" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/structure/flora/small/grassb3,
+/turf/simulated/floor/wood,
+/area/precursor)
+"wG" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/wood,
+/area/precursor)
+"wM" = (
+/obj/structure/flora/small/grassb3,
+/turf/simulated/floor/wood,
+/area/precursor)
+"wW" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/wood,
+/area/precursor)
+"xs" = (
+/obj/structure/table/rack,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/melee,
+/turf/simulated/floor/tiled/techmaint_cargo,
+/area/precursor)
+"Cs" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/wood,
+/area/precursor)
+"Dm" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"FW" = (
+/turf/simulated/wall/rust_standard,
+/area/precursor)
+"Gi" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Gy" = (
+/obj/structure/bookcase,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"GR" = (
+/obj/random/traps/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"KG" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/carpet/turcarpet,
+/area/precursor)
+"Mo" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 4
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"NC" = (
+/obj/structure/barricade,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Qv" = (
+/obj/structure/table/woodentable,
+/obj/item/pen/blue{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/pen/red{
+	pixel_x = 2;
+	pixel_y = 6
+	},
+/obj/random/common_oddities,
+/turf/simulated/floor/wood,
+/area/precursor)
+"RT" = (
+/obj/random/junk,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Sy" = (
+/obj/random/cluster/psi_monster/low_chance,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 3
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"SJ" = (
+/obj/effect/floor_decal/spline/grass_edge,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"TW" = (
+/obj/random/junk,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 4
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Ux" = (
+/obj/random/junk,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Wk" = (
+/obj/effect/window_lwall_spawn/reinforced,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Wm" = (
+/obj/structure/flora/tree/jungle/variant5,
+/turf/simulated/floor/wood,
+/area/precursor)
+"Xu" = (
+/obj/structure/flora/tree/jungle/variant3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Xw" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 8
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"XZ" = (
+/obj/structure/table/woodentable,
+/obj/random/gun_combat,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Ya" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1
+	},
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Yy" = (
+/obj/random/junk,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 3
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Zo" = (
+/obj/structure/table/woodentable,
+/obj/item/paper_bin,
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/wood,
+/area/precursor)
+
+(1,1,1) = {"
+aF
+te
+te
+te
+Mo
+Mo
+te
+te
+aF
+Dm
+aF
+aF
+aF
+pi
+pi
+pi
+te
+TW
+te
+te
+aF
+"}
+(2,1,1) = {"
+hY
+ab
+ab
+bp
+bp
+bp
+ab
+ab
+bn
+bo
+aF
+Dm
+bu
+bp
+ab
+ab
+bp
+bp
+ab
+ab
+RT
+"}
+(3,1,1) = {"
+ai
+ab
+aq
+aO
+aU
+bc
+av
+ab
+mx
+am
+bI
+bo
+bv
+bp
+aw
+an
+bB
+ar
+bw
+ab
+bG
+"}
+(4,1,1) = {"
+hY
+ab
+ad
+aF
+aF
+au
+af
+ab
+mx
+Dm
+aF
+SJ
+ab
+bp
+aw
+an
+an
+aH
+au
+ab
+mx
+"}
+(5,1,1) = {"
+hY
+ab
+ac
+Dm
+Dm
+Ya
+af
+ax
+ar
+bq
+GR
+aL
+aL
+bp
+aw
+bt
+an
+aV
+aY
+bp
+mg
+"}
+(6,1,1) = {"
+hY
+ab
+ae
+aQ
+ar
+Gi
+Gi
+Gi
+aD
+uz
+am
+an
+bt
+af
+aw
+an
+bL
+ar
+ar
+bp
+sr
+"}
+(7,1,1) = {"
+hY
+ab
+af
+af
+as
+Cs
+af
+am
+ar
+XZ
+ar
+bt
+aN
+FW
+aw
+KG
+bt
+Zo
+wG
+bp
+mx
+"}
+(8,1,1) = {"
+Sy
+bp
+ag
+ao
+ar
+Cs
+af
+ay
+af
+af
+sb
+FW
+FW
+af
+aw
+uu
+an
+Qv
+jp
+bp
+mx
+"}
+(9,1,1) = {"
+Yy
+bp
+ah
+ao
+bJ
+Cs
+af
+az
+af
+be
+GR
+bJ
+be
+af
+aw
+bz
+Dm
+Cs
+wW
+ab
+mx
+"}
+(10,1,1) = {"
+hY
+bp
+aC
+ao
+ar
+bH
+at
+aA
+aE
+aI
+be
+be
+ar
+aP
+bH
+uu
+uu
+Zo
+wG
+ab
+RT
+"}
+(11,1,1) = {"
+hY
+bp
+aj
+ao
+ba
+bd
+af
+aA
+FW
+be
+ar
+be
+bc
+af
+aw
+uu
+bC
+dD
+jp
+ab
+mx
+"}
+(12,1,1) = {"
+hY
+bp
+ab
+ab
+ab
+af
+af
+aB
+FW
+FW
+aJ
+af
+af
+FW
+FW
+af
+bp
+bp
+bp
+ab
+mx
+"}
+(13,1,1) = {"
+Yy
+bp
+ak
+ap
+at
+ar
+aU
+vz
+ar
+be
+ar
+be
+ar
+vM
+wM
+bH
+aJ
+aU
+be
+ab
+ry
+"}
+(14,1,1) = {"
+hY
+bp
+ak
+ap
+ab
+be
+aw
+vz
+Wm
+ar
+aK
+NC
+Gy
+am
+Gy
+aF
+bg
+bD
+ar
+ab
+mx
+"}
+(15,1,1) = {"
+hY
+bp
+ak
+bx
+ab
+be
+ar
+am
+aw
+be
+Gy
+aF
+Gy
+aG
+aw
+aF
+Wk
+aW
+aF
+Xw
+aF
+"}
+(16,1,1) = {"
+hY
+bp
+xs
+aR
+bp
+bf
+aw
+am
+aw
+bH
+Gy
+am
+Xu
+aG
+aw
+aI
+af
+ax
+aZ
+aF
+aF
+"}
+(17,1,1) = {"
+hY
+bp
+al
+ap
+bp
+bg
+bg
+Wk
+af
+be
+Gy
+aF
+Gy
+am
+be
+bA
+af
+aX
+be
+Mo
+aF
+"}
+(18,1,1) = {"
+hY
+ab
+al
+ap
+bp
+bh
+bj
+bl
+aF
+aT
+Gy
+am
+aw
+be
+bK
+by
+af
+aX
+bw
+ab
+mx
+"}
+(19,1,1) = {"
+hY
+ab
+ab
+ab
+ab
+bi
+bk
+bm
+aF
+br
+aw
+be
+aI
+bw
+by
+bA
+ab
+ab
+ab
+ab
+mx
+"}
+(20,1,1) = {"
+hY
+ab
+aM
+aS
+ab
+bp
+bp
+ab
+ab
+ab
+bp
+bp
+bp
+bp
+ab
+ab
+ab
+bE
+bF
+ab
+mx
+"}
+(21,1,1) = {"
+aF
+aa
+aF
+am
+bb
+aa
+aa
+aa
+Ux
+Xw
+Xw
+Xw
+Xw
+Xw
+aa
+aa
+bb
+aa
+aa
+aa
+aF
+"}

@@ -56,7 +56,7 @@
 	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLATINUM = 2)
 	flags = CONDUCT
 	origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 4)
-	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_LASER_CUTTING = 30, QUALITY_WIRE_CUTTING = 25, QUALITY_BONE_FIXING = 50)
+	tool_qualities = list(QUALITY_CLAMPING = 40, QUALITY_RETRACTING = 40, QUALITY_BONE_SETTING = 40, QUALITY_CAUTERIZING = 40, QUALITY_DRILLING = 35, QUALITY_CUTTING = 40, QUALITY_LASER_CUTTING = 40, QUALITY_WIRE_CUTTING = 20, QUALITY_BONE_FIXING = 50)
 	suitable_cell = /obj/item/cell/medium
 	use_power_cost = 0.2 //Effective!
 	max_upgrades = 2
@@ -67,7 +67,7 @@
 
 /obj/item/tool/medmultitool/medimplant
 	name = "CAPSA medical omnitool implant"
-	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a medium power cell."
+	desc = "An all-in-one medical tool implant based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a medium power cell."
 	icon_state = "medmulti_sci"
 	matter = null
 	force = WEAPON_FORCE_PAINFUL
@@ -75,9 +75,9 @@
 	edge = TRUE
 	worksound = WORKSOUND_DRIVER_TOOL
 	flags = CONDUCT
-	tool_qualities = list(QUALITY_CLAMPING = 30, QUALITY_RETRACTING = 30, QUALITY_BONE_SETTING = 30, QUALITY_CAUTERIZING = 30, QUALITY_SAWING = 15, QUALITY_CUTTING = 30, QUALITY_WIRE_CUTTING = 15, QUALITY_BONE_FIXING = 40)
-	degradation = 0.5
-	workspeed = 0.8
+	tool_qualities = list(QUALITY_CLAMPING = 35, QUALITY_RETRACTING = 35, QUALITY_BONE_SETTING = 35, QUALITY_CAUTERIZING = 35, QUALITY_DRILLING = 35, QUALITY_CUTTING = 35, QUALITY_WIRE_CUTTING = 15, QUALITY_BONE_FIXING = 40)
+	degradation = 1
+	workspeed = 1
 	price_tag = 600 // Not nearly as fancy.
 	allow_similacrum_mods = FALSE
 
@@ -86,16 +86,23 @@
 
 	max_upgrades = 1
 
-/obj/item/tool/medmultitool/medimplant/sci
+/obj/item/tool/medmultitool/portable
 	name = "CAPSA medical omnitool"
-	desc = "An all-in-one medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a small power cell. This one is a cheap copy of better versions."
+	desc = "An all-in-one portable medical tool based on the legendary Similacrum Robotics model. While convenient, it is less efficient than more advanced surgical tools, such as laser scalpels, and requires a small power cell. This one is a cheap copy of better versions."
 	icon_state = "medimplant"
 	matter = null //Nope
-	degradation = 1
-	workspeed = 0.2 //SLOW
-
+	force = WEAPON_FORCE_PAINFUL
+	sharp = TRUE
+	edge = TRUE
+	worksound = WORKSOUND_DRIVER_TOOL
+	flags = CONDUCT
+	tool_qualities = list(QUALITY_CLAMPING = 35, QUALITY_RETRACTING = 35, QUALITY_BONE_SETTING = 35, QUALITY_CAUTERIZING = 35, QUALITY_DRILLING = 35, QUALITY_CUTTING = 35, QUALITY_WIRE_CUTTING = 15, QUALITY_BONE_FIXING = 40)
+	degradation = 1.5
+	workspeed = 0.8 // Small and more delicate
+	allow_similacrum_mods = FALSE
+	use_power_cost = 1.2
 	suitable_cell = /obj/item/cell/small
-
+	price_tag = 600
 	max_upgrades = 0 //NO
 
 /obj/item/tool/medmultitool/medimplant/cht_mant
@@ -244,9 +251,9 @@
 	heat = 2250
 
 /obj/item/tool/factorial_omni
-	name = "blessed touch"
-	desc = "Through the right litanies, a Factorial can coax bolts to turn and metal to join of their own accord, albeit not quite as effectively as actual tools."
-	icon_state = "fact_omni"
+	name = "forging touch"
+	desc = "Through their lectures, Custodian Forgemasters are able to shape the world around them to their will."
+	icon_state = "forging_touch"
 	force = WEAPON_FORCE_DANGEROUS
 	worksound = WORKSOUND_PULSING
 	w_class = ITEM_SIZE_HUGE
@@ -267,7 +274,7 @@
 /obj/item/tool/factorial_omni/Process()
 	..()
 	if(loc != holder) // We're no longer in the owner's hand.
-		visible_message("The [src.name] fades into nothingness.")
+		visible_message("[src.name] fades into nothingness.")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return

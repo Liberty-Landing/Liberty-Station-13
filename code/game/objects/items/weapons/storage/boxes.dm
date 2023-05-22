@@ -360,8 +360,8 @@
 		new /obj/item/grenade/chem_grenade/teargas(src)
 
 /obj/item/storage/box/emps
-	name = "box of EMP grenades"
-	desc = "A box containing five military grade EMP grenades.<br> WARNING: Do not use near unshielded electronics or biomechanical augmentations, death or permanent paralysis may occur."
+	name = "box of Ion grenades"
+	desc = "A box containing five military grade Ion grenades.<br> WARNING: Do not use near unshielded electronics or biomechanical augmentations, death or permanent paralysis may occur."
 	icon_state = "box_security"
 	illustration = "flashbang"
 
@@ -411,7 +411,7 @@
 
 /obj/item/storage/box/phosphorous
 	name = "box of white phosphorous grenades"
-	desc = "A box containing 7 antipersonnel incendiary  grenades.<br> WARNING: These devices are extremely dangerous and can cause severe burns and fires."
+	desc = "A box containing 7 antipersonnel incendiary grenades.<br> WARNING: These devices are extremely dangerous and can cause severe burns and fires."
 	icon_state = "box_security"
 	illustration = "flashbang"
 
@@ -873,3 +873,52 @@
 	new /obj/item/clothing/accessory/medal/silver(src)
 	new /obj/item/clothing/accessory/medal/silver/security(src)
 	new /obj/item/clothing/accessory/medal/silver/valor(src)
+
+/obj/item/storage/box/oathpledge_set
+	name = "oathpledge armor box"
+	desc = "A box packaging a newly-made Custodian Oathpledge armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/oathpledge_set/New()
+	. = ..()
+
+/obj/item/storage/box/oathpledge_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/oathpledge(src)
+	new /obj/item/clothing/head/helmet/custodian/oathpledge(src)
+
+/obj/item/storage/box/oathbound_set
+	name = "oathbound armor box"
+	desc = "A box packaging a newly-made Custodian Oathbound armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/oathbound_set/New()
+	. = ..()
+
+/obj/item/storage/box/oathbound_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/oathbound(src)
+	new /obj/item/clothing/head/helmet/custodian/oathbound(src)
+
+/obj/item/storage/box/enkindled_set
+	name = "enkindled armor box"
+	desc = "A box packaging a newly-made Custodian Enkindled armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/enkindled_set/New()
+	. = ..()
+
+/obj/item/storage/box/enkindled_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/enkindled(src)
+	new /obj/item/clothing/head/helmet/custodian/enkindled(src)
+
+/obj/item/storage/box/forgemaster_set
+	name = "forgemaster armor box"
+	desc = "A box packaging a newly-made Custodian Forgemaster armor and helmet."
+	illustration = null
+
+/obj/item/storage/box/forgemaster_set/New()
+	. = ..()
+
+/obj/item/storage/box/forgemaster_set/populate_contents()
+	new /obj/item/clothing/suit/armor/custodian/forgemaster(src)
+	new /obj/item/clothing/head/helmet/custodian/forgemaster(src)
+

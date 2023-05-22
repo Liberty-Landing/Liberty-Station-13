@@ -1,0 +1,264 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"b" = (
+/turf/simulated/floor/wood,
+/area/precursor)
+"c" = (
+/obj/random/junk,
+/turf/simulated/floor/wood,
+/area/precursor)
+"d" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"e" = (
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"f" = (
+/obj/structure/bookcase,
+/turf/simulated/floor/wood,
+/area/precursor)
+"g" = (
+/obj/structure/barricade,
+/turf/simulated/floor/wood,
+/area/precursor)
+"h" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/wood,
+/area/precursor)
+"i" = (
+/obj/structure/table/woodentable,
+/obj/structure/barricade,
+/turf/simulated/floor/wood,
+/area/precursor)
+"j" = (
+/obj/machinery/deployable/barrier,
+/turf/simulated/floor/wood,
+/area/precursor)
+"k" = (
+/obj/structure/table/woodentable,
+/obj/random/pack/rare,
+/obj/random/pack/rare,
+/obj/random/pack/rare/low_chance,
+/obj/random/pack/rare/low_chance,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"l" = (
+/obj/structure/table/woodentable,
+/obj/random/junkfood,
+/obj/random/junkfood,
+/obj/random/junkfood,
+/obj/random/psi_megafauna,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"m" = (
+/obj/structure/table/woodentable,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"n" = (
+/obj/item/remains,
+/mob/living/simple_animal/hostile/tree{
+	faction = "psi_monster"
+	},
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"o" = (
+/obj/structure/table/woodentable,
+/turf/simulated/floor/wood,
+/area/precursor)
+"q" = (
+/obj/random/junk,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"s" = (
+/obj/structure/table/woodentable,
+/obj/structure/barricade,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"t" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"w" = (
+/mob/living/carbon/superior_animal/psi_monster/licker,
+/turf/simulated/floor/wood,
+/area/precursor)
+"B" = (
+/obj/structure/table/woodentable,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"L" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/wood,
+/area/precursor)
+"O" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/steel/brown_platform,
+/area/precursor)
+"U" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"V" = (
+/obj/machinery/deployable/barrier,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"W" = (
+/obj/structure/barricade,
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+"X" = (
+/turf/simulated/floor/holofloor/snow,
+/area/precursor)
+
+(1,1,1) = {"
+X
+b
+c
+X
+X
+e
+d
+b
+X
+t
+X
+"}
+(2,1,1) = {"
+X
+a
+f
+g
+W
+h
+j
+j
+f
+h
+b
+"}
+(3,1,1) = {"
+c
+f
+f
+i
+f
+f
+f
+o
+f
+f
+c
+"}
+(4,1,1) = {"
+b
+g
+i
+W
+X
+c
+b
+g
+B
+V
+X
+"}
+(5,1,1) = {"
+d
+g
+f
+X
+k
+e
+e
+c
+f
+U
+X
+"}
+(6,1,1) = {"
+O
+h
+f
+b
+l
+n
+X
+c
+f
+g
+q
+"}
+(7,1,1) = {"
+d
+g
+f
+b
+m
+X
+X
+c
+f
+g
+e
+"}
+(8,1,1) = {"
+X
+W
+s
+W
+b
+w
+X
+g
+o
+j
+L
+"}
+(9,1,1) = {"
+b
+f
+f
+g
+f
+f
+f
+g
+f
+f
+c
+"}
+(10,1,1) = {"
+c
+b
+f
+j
+h
+h
+W
+j
+f
+a
+b
+"}
+(11,1,1) = {"
+X
+X
+q
+L
+e
+d
+X
+X
+X
+c
+b
+"}

@@ -9,14 +9,7 @@
 
 	restricted_to_species = list(FORM_NARAMAD)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_BIO = 4, STAT_MEC = 4)
 
 /datum/category_item/setup_option/background/ancestry/naramad_south
 	name = "Southern Naramad"
@@ -28,14 +21,7 @@
 
 	restricted_to_species = list(FORM_NARAMAD)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_COG = 8)
 
 /datum/category_item/setup_option/background/ancestry/naramad_east
 	name = "Eastern Naramad"
@@ -49,14 +35,7 @@
 	restricted_depts = SCIENCE | MEDICAL | ENGINEERING | COMMAND
 	restricted_jobs = list(/datum/job/salvager, /datum/job/supsec, /datum/job/serg, /datum/job/inspector, /datum/job/medspec, /datum/job/officer)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_ROB = 4, STAT_VIG = 4)
 
 /datum/category_item/setup_option/background/ancestry/naramad_spacer
 	name = "Naramad Spacer"
@@ -66,12 +45,3 @@
 			act as desk workers for akula commanders or in logistical roles for naramadi squads and ships."
 
 	restricted_to_species = list(FORM_NARAMAD)
-
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)

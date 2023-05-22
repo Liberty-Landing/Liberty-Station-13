@@ -41,7 +41,7 @@
 	playsound(src,'sound/weapons/guns/interact/lmg_magin.ogg',20,4)
 
 /obj/item/gun/matter/launcher/reclaimer
-	name = "Excelsior \"Reclaimer\""
+	name = "\"Reclaimer\""
 	desc = "The weapon of choice for swiftly appropriating matter for communal use. Uses a cellulose based solution to dissolve matter into its original components, not 100% effective."
 	icon_state = "reclaimer"
 	icon = 'icons/obj/guns/matter/reclaimer.dmi'
@@ -55,7 +55,7 @@
 	stored_matter = 5
 	projectile_cost = 0.5
 	projectile_type = /obj/item/arrow/reclaiming
-	serial_type = "EXC"
+	serial_type = "LIB"
 
 
 /obj/item/arrow/reclaiming

@@ -201,7 +201,7 @@
 		qdel(src)
 		return
 
-/obj/item/shield/riot/crusader/psionic
+/obj/item/shield/riot/psionic
 	name = "psychic combat shield"
 	desc = "A shield projected by the mind of a psion, it's speed and skill depend on the toughness of the psionic that created it. Useful for blocking energy beams, bullets, and melee attacks. \
 	A simple thought can deploy or shrink the shield at will."
@@ -220,13 +220,13 @@
 	base_block_chance = 40
 	var/mob/living/carbon/holder // The one that prevent the blade from fading
 
-/obj/item/shield/riot/crusader/psionic/New(var/loc, var/mob/living/carbon/Maker)
+/obj/item/shield/riot/psionic/New(var/loc, var/mob/living/carbon/Maker)
 	..()
 	holder = Maker
 	set_light(1.5, 1.5, COLOR_LIGHTING_PURPLE_BRIGHT)
 	START_PROCESSING(SSobj, src)
 
-/obj/item/shield/riot/crusader/psionic/Process()
+/obj/item/shield/riot/psionic/Process()
 	if(loc != holder) // We're no longer in the psionic's hand.
 		visible_message("The [src.name] fades into nothingness.")
 		STOP_PROCESSING(SSobj, src)

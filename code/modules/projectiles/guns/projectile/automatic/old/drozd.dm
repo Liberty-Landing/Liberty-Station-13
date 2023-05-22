@@ -1,12 +1,11 @@
 /obj/item/gun/projectile/automatic/drozd
-	name = "Excelsior \"Drozd\" SMG"
+	name = "\"Drozd\" SMG"
 	desc = "\"The supremacy of the proletariat will cause them to vanish still faster.\"\nAn excellent, fully automatic compact submachinegun. \
-			Famous for its perfomance in close quarters, and used by communist cells such as Excelsior. \
+			Famous for its perfomance in close quarters, and used terrorist cells and militias over the galaxy. \
 			Chambered in 10mm, it takes both pistol and SMG magazines."
 	icon = 'icons/obj/guns/projectile/drozd.dmi'
 	icon_state = "drozd"
 	item_state = "drozd"
-	excelsior = TRUE
 	w_class = ITEM_SIZE_NORMAL
 	can_dual = TRUE
 	force = WEAPON_FORCE_PAINFUL
@@ -24,22 +23,12 @@
 		FULL_AUTO_300_NOLOSS,
 		SEMI_AUTO_NODELAY
 		)
-	serial_type = "EXC"
+	serial_type = "LIB"
 
 	wield_delay = 0.5 SECOND
 	wield_delay_factor = 0.1 // 10 vig
 	gun_parts = list(/obj/item/part/gun/frame/drozd = 1, /obj/item/part/gun/grip/excel = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/magnum = 1)
-
-/obj/item/gun/projectile/automatic/drozd/NM_colony
-	name = "\"Kompleks\" SMG"
-	desc = "An excellent, fully automatic compact submachinegun. Famous for its perfomance in close quarters. Uses 10mm rounds and can take a variety of pistol and SMG magazines.\nThis model of the \"Drozd\" SMG has been reclaimed and repurposed by Liberty Marshals, making it free of Excelsior taint."
-	icon = 'icons/obj/guns/projectile/drozd_bs.dmi'
-	icon_state = "drozd-bs"
-	item_state = "drozd-bs"
-	excelsior = FALSE
-	origin_tech = list(TECH_COMBAT = 4)
-	serial_type = "NM"
-	gun_parts = list(/obj/item/part/gun/frame/drozd = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/magnum = 1)
+	//gun_parts = list(/obj/item/part/gun/frame/drozd = 1, /obj/item/part/gun/grip/rubber = 1, /obj/item/part/gun/mechanism/smg = 1, /obj/item/part/gun/barrel/magnum = 1)
 
 /obj/item/gun/projectile/automatic/drozd/update_icon()
 	..()

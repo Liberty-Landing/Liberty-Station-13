@@ -494,22 +494,22 @@
 
 /obj/item/organ/internal/carrion/maw/proc/toxic_puddle()
 	set category = "Carrion"
-	set name = "Toxic puddle (10)"
+	set name = "Thermic puddle (10)"
 
 	var/turf/T = get_turf(owner)
 	if(locate(/obj/effect/decal/cleanable/carrion_puddle) in T)
-		to_chat(owner, SPAN_WARNING("There is already a toxic puddle here."))
+		to_chat(owner, SPAN_WARNING("There is already a thermic puddle here."))
 		return
 
 	if(owner.check_ability(10, TRUE))
 		playsound(src, 'sound/effects/blobattack.ogg', 50, 1)
 		new /obj/effect/decal/cleanable/carrion_puddle(T)
-		to_chat(owner, SPAN_NOTICE("You vomit a toxic puddle"))
+		to_chat(owner, SPAN_NOTICE("You vomit a thermic puddle"))
 
 /obj/effect/decal/cleanable/carrion_puddle
-	name = "toxic puddle"
+	name = "thermic puddle"
 	icon = 'icons/effects/effects.dmi'
-	desc = "It emits an abhorrent smell, you shouldn't step anywhere near it."
+	desc = "A fiercely bubbling puddle that radiates vibrant heat on contact."
 	icon_state = "toxic_puddle"
 	anchored = TRUE
 
@@ -525,9 +525,9 @@
 	for(var/mob/living/creature in living_mobs_in_view(1, src))
 		if(creature.faction == "spiders")
 			continue
-		biomatter_attack(creature, rand(1, 3))
+		scorch_attack(creature, rand(1, 3))
 
-/obj/effect/decal/cleanable/solid_biomass/attackby(var/obj/item/I, var/mob/user)
+/obj/effect/decal/cleanable/scorch_puddle/attackby(var/obj/item/I, var/mob/user)
 	if(istype(I, /obj/item/mop) || istype(I, /obj/item/soap))
 		to_chat(user, SPAN_NOTICE("You started cleaning this [src]."))
 		if(do_after(user, 3 SECONDS, src))

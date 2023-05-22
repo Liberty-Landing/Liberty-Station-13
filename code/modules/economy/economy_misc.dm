@@ -79,8 +79,13 @@ var/global/datum/computer_file/data/email_account/service/payroll/payroll_mailer
 
 	payroll_mailer = new
 
-	news_network.CreateFeedChannel("Nyx Daily", "SolGov Minister of Information", 1, 1)
+	news_network.CreateFeedChannel("The Solarian Courier", "Editor Anton-3445", 1, 1)
+	news_network.CreateFeedChannel("Nyx Daily", "Terran Ministry of Information", 1, 1)
 	news_network.CreateFeedChannel("The Gibson Gazette", "Editor Mike Hammers", 1, 1)
+	news_network.CreateFeedChannel("The Tau Ceti Monthly", "HexaOptimum Department of Public Relations", 1, 1)
+	news_network.CreateFeedChannel("The Pallas Mammoth", "Editor Joanne Zasteva", 1, 1)
+	news_network.CreateFeedChannel("The Worker's Truth", "Astrakhan Central Committee", 1, 1)
+
 
 	for(var/loc_type in typesof(/datum/trade_destination) - /datum/trade_destination)
 		var/datum/trade_destination/D = new loc_type

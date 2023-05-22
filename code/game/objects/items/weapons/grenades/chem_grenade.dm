@@ -262,7 +262,7 @@
 	beakers += B2
 
 /obj/item/grenade/chem_grenade/incendiary
-	name = "HS IG \"River\""
+	name = "MT IG \"Martian Cocktail\""
 	desc = "Used for clearing rooms of living things."
 	icon_state = "incendiary"
 	can_be_modified = FALSE
@@ -345,7 +345,7 @@
 	beakers += B2
 
 /obj/item/grenade/chem_grenade/teargas
-	name = "HS TGG \"Simon\""
+	name = "MT TGG \"Strike-buster\""
 	desc = "Concentrated Capsaicin. Contents under pressure. Use with caution."
 	can_be_modified = FALSE
 	icon_state = "grenade"

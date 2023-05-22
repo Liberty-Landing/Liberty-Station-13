@@ -42,8 +42,8 @@
 	deployed = TRUE
 
 /obj/item/mine/excelsior
-	name = "Excelsior mine"
-	desc = "An anti-personnel mine. IFF technology grants safe passage to Excelsior agents, and a merciful brief end to others, unless they have a Pulse tool nearby."
+	name = "military mine"
+	desc = "An anti-personnel mine. IFF technology grants safe passage to legion soldier, and a merciful brief end to others, unless they have a Pulse tool nearby."
 	icon_state = "mine_excel"
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 10)
 	excelsior = TRUE

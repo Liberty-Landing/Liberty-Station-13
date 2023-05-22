@@ -18,7 +18,7 @@
 	selectively_recycled_types = list(/obj/item/reagent_containers/food, /obj/item/clothing, /obj/item/organ,/obj/item/modification/organ)
 	//Should only contain things required to produce medical equipment
 	unsuitable_materials = list()
-	suitable_materials = list(MATERIAL_CLOTH, MATERIAL_WOOD, MATERIAL_STEEL, MATERIAL_GLASS, MATERIAL_PLASTIC, MATERIAL_SILVER, MATERIAL_BIOMATTER)
+	suitable_materials = list(MATERIAL_CLOTH, MATERIAL_WOOD, MATERIAL_STEEL, MATERIAL_GLASS, MATERIAL_PLASTIC, MATERIAL_PLASTEEL, MATERIAL_SILVER, MATERIAL_BIOMATTER)
 
 
 /obj/machinery/autolathe/medfab/attackby(obj/item/I, mob/user)

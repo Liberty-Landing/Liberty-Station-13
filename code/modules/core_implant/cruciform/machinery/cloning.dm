@@ -9,7 +9,7 @@
 #define ANIM_CLOSE -1
 
 /obj/machinery/neotheology/cloner
-	name = "CASPA pod"
+	name = "CASPA cloning pod"
 	desc = "A highly revulationy design in both robotics and medical fields at the same time, allowing a crewmember to be cloned."
 	icon = 'icons/obj/neotheology_pod.dmi'
 	icon_state = "preview"

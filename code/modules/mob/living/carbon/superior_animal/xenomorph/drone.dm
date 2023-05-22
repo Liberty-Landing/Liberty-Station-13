@@ -19,8 +19,8 @@ var/datum/xenomorph/xenomorph_ai
 	armor = list(melee = 30, bullet = 30, energy = 5, bomb = 30, bio = 100, rad = 100)
 	armor_penetration = 15
 
-	maxHealth = 30
-	health = 30
+	maxHealth = 50
+	health = 50
 	randpixel = 0
 	gibspawner_type = /obj/effect/gibspawner/xenomorph
 	gibspawner = /obj/effect/gibspawner/xenomorph

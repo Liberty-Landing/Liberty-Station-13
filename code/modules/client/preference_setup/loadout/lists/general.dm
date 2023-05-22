@@ -52,9 +52,26 @@
 	path = /obj/item/reagent_containers/food/drinks/mug
 	flags = GEAR_HAS_TYPE_SELECTION
 
-/datum/gear/psi_juice
-	display_name = "cerebrix inhaler"
-	path = /obj/item/psi_injector
+/datum/gear/multipen
+	display_name = "multipen"
+	path = /obj/item/pen/multi
+
+/datum/gear/guitar
+	display_name = "guitar"
+	path = /obj/item/device/synthesized_instrument/guitar
+	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/synthesized
+	display_name = "synthesizer"
+	path = /obj/item/device/synthesized_instrument/synthesizer
+
+/datum/gear/trumpet
+	display_name = "synthesized trumpet"
+	path = /obj/item/device/synthesized_instrument/trumpet
+
+/datum/gear/violin
+	display_name = "synthesized violin"
+	path = /obj/item/device/synthesized_instrument/violin
 
 /datum/gear/pipe
 	display_name = "pipe selection"
@@ -69,10 +86,6 @@
 /datum/gear/spaceball_pack
 	display_name = "spaceball booster pack"
 	path = /obj/item/pack/spaceball
-
-/datum/gear/trackingimplanter
-	display_name = "implanter (tracking)"
-	path = /obj/item/implanter/tracking
 
 /datum/gear/photo_frame
     display_name = "photograph frame"

@@ -62,7 +62,7 @@ obj/item/clothing/suit/fluff/miko
 
 /obj/item/clothing/suit/fluff/customs
 	name = "customs jacket"
-	desc = "A standard SolFed Customs formal jacket."
+	desc = "A standard Terran Customs formal jacket."
 	icon_state = "customs_jacket"
 	item_state_slots = list(slot_r_hand_str = "suit_blue", slot_l_hand_str = "suit_blue")
 

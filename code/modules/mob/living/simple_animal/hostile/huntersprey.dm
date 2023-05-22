@@ -339,7 +339,7 @@
 	M.update_icons()
 
 /mob/living/simple_animal/hostile/poporavtomat
-	name = "Excelsior Popor Avtomat"
+	name = "Popor Avtomat"
 	desc = "The People's Machine! An advanced automaton created to enforce the will of the people over their capitalist overlords."
 	icon = 'icons/mob/40x40.dmi'
 	icon_state = "excelatomiton_unpowered"

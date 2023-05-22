@@ -182,10 +182,10 @@ obj/structure/salvageable/computer/Initialize()
 		/obj/item/organ/external/robotic/moebius/l_leg = 5,
 		/obj/item/organ/external/robotic/moebius/r_leg = 5,
 		/obj/item/organ/external/robotic/moebius/groin = 3,
-		/obj/item/organ/external/robotic/excelsior/l_arm = 1,
+	/*	/obj/item/organ/external/robotic/excelsior/l_arm = 1,
 		/obj/item/organ/external/robotic/excelsior/r_arm = 1,
 		/obj/item/organ/external/robotic/excelsior/l_leg = 1,
-		/obj/item/organ/external/robotic/excelsior/r_leg = 1,
+		/obj/item/organ/external/robotic/excelsior/r_leg = 1, */
 		/obj/item/implantcase = 30,
 		/obj/item/implanter = 30,
 		/obj/item/stack/material/steel{amount = 10} = 30,

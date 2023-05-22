@@ -130,7 +130,7 @@
 // Excelsior We also replace "name" for spawning reasons
 /obj/item/computer_hardware/hard_drive/portable/design/excelsior
 	name = "design disk Means of Production"
-	disk_name = "Excelsior"
+	disk_name = "Astrakhan"
 	desc = "The back has a machine etching: \"This struggle must be organized, according to \"all the rules of the art\", by people who are professionally engaged in revolutionary activity.\""
 	icon_state = "excelsior"
 
@@ -163,7 +163,6 @@
 		/datum/design/autolathe/ammo/maxim,							//maxim ammo
 		/datum/design/autolathe/circuit/autolathe_excelsior,		//circuits
 		/datum/design/autolathe/circuit/shieldgen_excelsior,
-		/datum/design/autolathe/circuit/reconstructor_excelsior,
 		/datum/design/autolathe/circuit/diesel_excelsior,
 		/datum/design/autolathe/circuit/turret_excelsior,
 		/datum/design/autolathe/circuit/recharger,
@@ -189,7 +188,6 @@
 		/datum/design/autolathe/prosthesis/excelsior/chest,
 		/datum/design/autolathe/prosthesis/excelsior/head,
 		/datum/design/autolathe/device/implanter,					//misc
-		/datum/design/autolathe/device/propaganda_chip,
 		/datum/design/autolathe/clothing/excelsior_armor,
 		/datum/design/autolathe/device/excelbaton,
 		/datum/design/autolathe/container/ammocan_excel,
@@ -202,7 +200,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/excelsior_weapons
 	name = "design disk Means of Revolution"
-	disk_name = "Excelsior"
+	disk_name = "Astrakhan"
 	desc = "The back has a machine etching: \"We stand for organized terror - this should be frankly admitted. Terror is an absolute necessity during times of revolution.\""
 	icon_state = "excelsior"
 
@@ -240,7 +238,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/ex_parts
 	name = "design disk Stocking Revolution"
-	disk_name = "Excelsior"
+	disk_name = "Astrakhan"
 	desc = "The back has a machine etching: \"Everything can be a part of the revolution!\""
 	icon_state = "excelsior"
 
@@ -250,7 +248,6 @@
 		/datum/design/autolathe/circuit/diesel_excelsior,
 		/datum/design/autolathe/circuit/autolathe_disk_cloner,
 		/datum/design/autolathe/circuit/recharger,
-		/datum/design/autolathe/device/propaganda_chip,
 		/datum/design/autolathe/part/cable_coil,
 		/datum/design/autolathe/part/igniter,//regular parts
 		/datum/design/autolathe/part/signaler,
@@ -266,7 +263,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/ex_cells
 	name = "design disk Means of Power"
-	disk_name = "Excelsior"
+	disk_name = "Astrakhan"
 	desc = "The back has a machine etching: \"The power of the people!\""
 	icon_state = "excelsior"
 
@@ -278,7 +275,7 @@
 	)
 /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_makarov
 	name = "design disk Makarov"
-	disk_name = "Excelsior"
+	disk_name = "Astrakhan"
 	desc = "The back has a machine etching: \"The Equalizer that fits in your pocket.\""
 	icon_state = "excelsior"
 
@@ -292,7 +289,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_boltgun
 	name = "design disk Kardashev-Mosin"
-	disk_name = "Excelsior"
+	disk_name = "Astrakhan"
 	desc = "The back has a machine etching: \"The gun of endless revolution.\""
 	icon_state = "excelsior"
 
@@ -306,7 +303,7 @@
 
 /obj/item/computer_hardware/hard_drive/portable/design/guns/ex_ak
 	name = "design disk Kalashnikov"
-	disk_name = "Excelsior"
+	disk_name = "Astrakhan"
 	desc = "The back has a machine etching: \"The gun of modern revolution.\""
 	icon_state = "excelsior"
 

@@ -30,7 +30,7 @@
 	new /obj/item/storage/box/ids(src)
 	new /obj/item/tool/knife/dagger/ceremonial(src)
 	new /obj/item/clothing/accessory/holster/saber/occupied(src)
-	new /obj/item/clothing/accessory/cross(src)
+	new /obj/item/forgesigil(src)
 	new /obj/item/clothing/accessory/halfcape/premier(src)
 	new /obj/item/modular_computer/tablet/lease/preset/command(src)
 
@@ -42,7 +42,7 @@
 /obj/structure/closet/secure_closet/reinforced/hos/populate_contents()
 	new /obj/item/device/t_scanner/advanced(src)
 	new /obj/item/clothing/head/rank/commander(src)
-	new /obj/item/clothing/mask/gas/ihs(src)
+	new /obj/item/clothing/mask/gas/ihs/security(src)
 	new /obj/item/clothing/suit/armor/hos(src)
 	new /obj/item/clothing/suit/armor/platecarrier/hos(src)
 	new /obj/item/clothing/under/rank/ih_commander(src)
@@ -74,6 +74,7 @@
 	icon_state = "warden"
 
 /obj/structure/closet/secure_closet/warden/populate_contents()
+	new /obj/item/clothing/suit/armor/vest/ironhammer(src)
 	new /obj/item/device/bullet_scanner(src)
 	new /obj/item/gun_upgrade/trigger/dnalock(src)
 	new /obj/item/device/holowarrant(src)
@@ -83,7 +84,7 @@
 	new /obj/item/device/radio/headset/headset_sec/bowman(src)
 	new /obj/item/clothing/glasses/sechud/tactical(src)
 	new /obj/item/clothing/glasses/sechud(src)
-	new /obj/item/clothing/mask/gas/ihs(src)
+	new /obj/item/clothing/mask/gas/ihs/security(src)
 	new /obj/item/storage/belt/security(src)
 	new /obj/item/storage/box/teargas(src)
 	new /obj/item/storage/box/flashbangs(src)
@@ -97,12 +98,11 @@
 	new /obj/item/storage/box/trackimp(src)
 	new /obj/item/oddity/code_book(src)
 	new /obj/item/device/t_scanner/advanced(src)
-	new /obj/item/clothing/head/helmet/marshal_full(src)
+	new /obj/item/clothing/head/helmet/marshal(src)
 	new /obj/item/gunbox/armorer(src)
 	new /obj/item/ammo_magazine/pistol_35(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
-	new /obj/item/voucher/marshal/armor(src)
 
 /obj/structure/closet/secure_closet/personal/security
 	name = "watchman's locker"
@@ -116,17 +116,18 @@
 		new /obj/item/storage/backpack/ironhammer(src)
 	else
 		new /obj/item/storage/backpack/sport/ironhammer(src)
+	new /obj/item/clothing/suit/armor/vest/ironhammer(src)
+	new /obj/item/clothing/head/helmet/marshal(src)
 	new /obj/item/gunbox/watchman(src)
 	new /obj/item/ammo_magazine/pistol_35(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
-	new /obj/item/voucher/marshal/armor(src)
 	new /obj/item/storage/backpack/satchel/ironhammer(src)
 	new /obj/item/device/radio/headset/headset_sec(src)
 	new /obj/item/storage/belt/security(src)
 	new /obj/item/gun_upgrade/trigger/dnalock(src)
 	new /obj/item/device/holowarrant(src)
-	new /obj/item/clothing/mask/gas/ihs(src)
+	new /obj/item/clothing/mask/gas/ihs/security(src)
 	new /obj/item/clothing/glasses/sechud(src)
 	new /obj/item/storage/pouch/pistol_holster(src)
 	new /obj/item/clothing/accessory/holster/waist(src)
@@ -144,8 +145,10 @@
 	icon_state = "cabinetdetective"
 
 /obj/structure/closet/secure_closet/personal/detective/populate_contents()
+	new /obj/item/clothing/suit/armor/vest/ironhammer/detective(src)
+	new /obj/item/clothing/head/helmet/marshal(src)
 	new /obj/item/clothing/under/rank/inspector(src)
-	new /obj/item/clothing/mask/gas/ihs(src)
+	new /obj/item/clothing/mask/gas/ihs/security(src)
 	new /obj/item/clothing/gloves/thick(src)
 	new /obj/item/clothing/head/rank/inspector(src)
 	new /obj/item/gun_upgrade/trigger/dnalock(src)
@@ -168,7 +171,6 @@
 	new /obj/item/ammo_magazine/pistol_35(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
 	new /obj/item/ammo_magazine/pistol_35/rubber(src)
-	new /obj/item/storage/box/m_kit/armored_overcoat(src)
 
 /obj/structure/closet/secure_closet/injection
 	name = "lethal injections locker"

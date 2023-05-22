@@ -57,9 +57,8 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 		"hardsuit powersink module" = /obj/item/rig_module/power_sink,
 		"hardsuit electrowarfare module" = /obj/item/rig_module/electrowarfare_suite,
 
-		"broken Excelsior implant" = /obj/item/implantcase/excelsior/broken,
-		"Excelsior branded soap" = /obj/item/soap/commie,
-		"Excelsior voidsuit" =  /obj/item/clothing/suit/space/void/excelsior,
+		"Soviet branded soap" = /obj/item/soap/commie,
+		"legionary voidsuit" =  /obj/item/clothing/suit/space/void/excelsior,
 		"design disk Means of Production" = /obj/item/computer_hardware/hard_drive/portable/design/excelsior,
 		"design disk Means of Revolution" = /obj/item/computer_hardware/hard_drive/portable/design/excelsior_weapons,
 		"design disk Stocking Revolution" = /obj/item/computer_hardware/hard_drive/portable/design/ex_parts,

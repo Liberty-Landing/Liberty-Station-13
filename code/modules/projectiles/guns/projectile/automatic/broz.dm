@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	load_method = MAGAZINE
-	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG
+	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG|MAG_WELL_DRUM
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
 	init_firemodes = list(
 		FULL_AUTO_300
@@ -30,8 +30,8 @@
 	wield_delay_factor = 0.1 // 10 vig for instant
 
 /obj/item/part/gun/frame/broz
-	name = "Borz frame"
-	desc = "A Borz SMG. It's not handmade, but.. it's definetely not quality made either."
+	name = "Broz frame"
+	desc = "A Broz SMG. It's not handmade, but.. it's definetely not quality made either."
 	icon_state = "frame_luty"
 	matter = list(MATERIAL_STEEL = 5)
 	resultvars = list(/obj/item/gun/projectile/automatic/broz)

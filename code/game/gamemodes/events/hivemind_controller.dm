@@ -107,9 +107,6 @@ GLOBAL_VAR_INIT(hivemind_panel, new /datum/hivemind_panel)
 	data += "<br>Tyrant death kills hive: [GLOB.hive_data_bool["tyrant_death_kills_hive"] ? "Enabled" : "Disabled"] \
 	<a href='?src=\ref[src];toggle_tyrant_gameover=1'>\[TOGGLE\]</a>"
 
-	data += "<br>All Church To Inquisitors: [GLOB.hive_data_bool["all_church_to_battle"] ? "Enabled" : "Disabled"] \
-	<a href='?src=\ref[src];toggle_inquisitors=1'>\[TOGGLE\]</a>"
-
 	data += "<br>Prevent Hivemind Gibbing Dead Victims: [GLOB.hive_data_bool["gibbing_dead"] ? "Enabled" : "Disabled"] \
 	<a href='?src=\ref[src];toggle_gibbing_dead=1'>\[TOGGLE\]</a>"
 
@@ -213,11 +210,5 @@ GLOBAL_VAR_INIT(hivemind_panel, new /datum/hivemind_panel)
 	if(href_list["toggle_slime_pop_lock"])
 		GLOB.hive_data_bool["slime_pop_lock"] = !GLOB.hive_data_bool["slime_pop_lock"]
 
-	if(href_list["toggle_inquisitors"])
-		GLOB.hive_data_bool["all_church_to_battle"] = !GLOB.hive_data_bool["all_church_to_battle"]
-		if(GLOB.hive_data_bool["all_church_to_battle"])
-			for(var/mob/M in disciples)
-				if(M.client &&  M.stat != DEAD && ishuman(M))
-					make_antagonist(M.mind, ROLE_INQUISITOR)
 
 	main_interact()

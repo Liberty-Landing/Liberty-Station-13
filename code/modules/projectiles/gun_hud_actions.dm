@@ -37,6 +37,19 @@
 	if(G)
 		icon_state = "scope[G.zoom]"
 
+/obj/screen/item_action/top_bar/gun/flashlight
+	name = "flashlight"
+	icon_state = "flashlight0"
+	screen_loc = "9,1:13"
+	minloc = "8,2:13"
+
+/obj/screen/item_action/top_bar/gun/flashlight/update_icon()
+	..()
+	var/obj/item/gun/G = owner
+	if(G)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in G.contents)
+			icon_state = "flashlight[FL.on]"
+
 /obj/screen/item_action/top_bar/weapon_info
 	icon = 'icons/mob/screen/gun_actions.dmi'
 	screen_loc = "9:16,1:13"
@@ -50,6 +63,8 @@
 			toggle_firemode(user)
 		if("scope")
 			toggle_scope(user)
+		if("flashlight")
+			toggle_light(user)
 		if("safety")
 			toggle_safety(user)
 		if("Weapon Info")

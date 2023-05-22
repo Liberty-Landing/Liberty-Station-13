@@ -97,7 +97,7 @@
 	var/can_leach = FALSE
 	var/is_leaching = FALSE
 	var/steal_odds = 0
-	var/stat_to_steal = STAT_VIV
+	var/stat_to_steal = STAT_WIL
 	var/steal_amount = 1
 	var/mob/living/Victim = null
 

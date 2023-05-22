@@ -33,8 +33,8 @@
 	gun_parts = list(/obj/item/part/gun/frame/ranger = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/revolver = 1, /obj/item/part/gun/barrel/magnum = 1)
 
 /obj/item/part/gun/frame/ranger
-	name = "Minotaur frame"
-	desc = "A Minotaur revolver frame. For a true frontier ranger."
+	name = "Ranger frame"
+	desc = "A Ranger revolver frame. For a true frontier ranger."
 	icon_state = "frame_revolver"
 	result = /obj/item/gun/projectile/revolver/ranger
 	resultvars = list(/obj/item/gun/projectile/revolver/ranger)

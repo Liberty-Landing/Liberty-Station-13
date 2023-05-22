@@ -1,0 +1,429 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"b" = (
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"c" = (
+/turf/simulated/wall,
+/area/precursor)
+"d" = (
+/obj/structure/salvageable/implant_container,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 11
+	},
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"e" = (
+/obj/structure/flora/small/snow/rock6,
+/turf/simulated/floor/snow,
+/area/precursor)
+"f" = (
+/turf/simulated/floor/tiled/white/panels,
+/area/precursor)
+"g" = (
+/obj/structure/salvageable/computer,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 11
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/panels,
+/area/precursor)
+"h" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 6
+	},
+/turf/simulated/wall,
+/area/precursor)
+"i" = (
+/obj/structure/flora/small/snow/rock3,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"j" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"k" = (
+/obj/structure/salvageable/personal,
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"l" = (
+/obj/structure/salvageable/implant_container,
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"n" = (
+/turf/simulated/floor/snow,
+/area/precursor)
+"o" = (
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"p" = (
+/obj/structure/flora/small/snow/rock7,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"q" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"r" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"s" = (
+/obj/structure/table/standard,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/rare,
+/obj/random/firstaid/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"t" = (
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"u" = (
+/obj/structure/table/standard,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/rare,
+/obj/random/firstaid/low_chance,
+/obj/random/medical_lowcost/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"v" = (
+/obj/machinery/sleeper/sarcophagus/random{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"w" = (
+/obj/machinery/sleeper/sarcophagus/random{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"x" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/structure/salvageable/implant_container,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"y" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/obj/structure/salvageable/implant_container,
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"z" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/panels,
+/area/precursor)
+"A" = (
+/obj/structure/table/standard,
+/obj/random/pouch/low_chance,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"B" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"C" = (
+/obj/structure/flora/small/snow/rock1,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"E" = (
+/obj/structure/flora/small/snow/boulder1,
+/turf/simulated/floor/snow,
+/area/precursor)
+"F" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/brown_platform,
+/area/precursor)
+"G" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 11
+	},
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"H" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"I" = (
+/obj/structure/table/standard,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/rare,
+/obj/random/firstaid/low_chance,
+/obj/random/dungeon_gun_energy/low_chance,
+/obj/random/medical/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 3
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"J" = (
+/obj/machinery/sleeper/sarcophagus/random{
+	dir = 4
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"K" = (
+/obj/random/mob/psi_monster/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 11
+	},
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"L" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"M" = (
+/obj/structure/salvageable/personal,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"N" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+"O" = (
+/obj/structure/salvageable/deepmaints_cryopod,
+/turf/simulated/floor/tiled/white/cargo,
+/area/precursor)
+"P" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/white/panels,
+/area/precursor)
+"Q" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white/panels,
+/area/precursor)
+"R" = (
+/obj/structure/flora/small/snow/rock8,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"S" = (
+/obj/structure/table/standard,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/rare,
+/obj/random/firstaid/low_chance,
+/obj/random/dungeon_gun_energy/low_chance,
+/obj/random/medical/low_chance,
+/turf/simulated/floor/tiled/white/gray_platform,
+/area/precursor)
+"T" = (
+/obj/structure/table/standard,
+/obj/random/psi_megafauna,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 11
+	},
+/turf/simulated/floor/tiled/white/techfloor_grid,
+/area/precursor)
+"V" = (
+/obj/structure/salvageable/implant_container,
+/turf/unsimulated/floor/snow,
+/area/precursor)
+"W" = (
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 3
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white/panels,
+/area/precursor)
+"X" = (
+/obj/random/mob/psi_monster/low_chance,
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/snow_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white/brown_perforated,
+/area/precursor)
+
+(1,1,1) = {"
+n
+n
+o
+o
+L
+o
+G
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+n
+o
+o
+p
+o
+c
+z
+s
+v
+v
+a
+"}
+(3,1,1) = {"
+e
+V
+x
+M
+c
+O
+P
+t
+t
+t
+a
+"}
+(4,1,1) = {"
+n
+L
+R
+I
+c
+O
+f
+t
+t
+N
+a
+"}
+(5,1,1) = {"
+n
+A
+W
+l
+c
+O
+f
+S
+w
+w
+b
+"}
+(6,1,1) = {"
+n
+g
+P
+f
+f
+P
+f
+f
+f
+P
+b
+"}
+(7,1,1) = {"
+n
+T
+f
+l
+c
+O
+f
+S
+v
+J
+j
+"}
+(8,1,1) = {"
+n
+K
+f
+S
+c
+O
+f
+t
+r
+X
+i
+"}
+(9,1,1) = {"
+E
+d
+y
+k
+c
+O
+P
+r
+H
+o
+o
+"}
+(10,1,1) = {"
+F
+h
+c
+c
+c
+c
+Q
+u
+o
+o
+o
+"}
+(11,1,1) = {"
+a
+a
+a
+a
+B
+b
+q
+o
+o
+C
+o
+"}

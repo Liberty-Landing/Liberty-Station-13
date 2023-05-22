@@ -14,7 +14,7 @@
 				/obj/item/storage/fancy/cigarettes/fortressblue = 0.1,
 				/obj/item/storage/fancy/cigarettes/khi = 0.1,
 				/obj/item/storage/fancy/cigarettes/comred = 0.1,
-				/obj/item/storage/fancy/cigarettes/Skylight = 0.1,
+				/obj/item/storage/fancy/cigarettes/skylight = 0.1,
 				/obj/item/storage/fancy/cigarettes/faith = 0.1,
 				/obj/item/clothing/mask/smokable/cigarette/ishimura = 1,
 				/obj/item/clothing/mask/smokable/cigarette/tannhauser = 1,

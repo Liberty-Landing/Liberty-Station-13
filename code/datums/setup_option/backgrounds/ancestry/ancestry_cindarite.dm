@@ -7,14 +7,7 @@
 
 	restricted_to_species = list(FORM_CINDAR)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_BIO = 10)
 
 /datum/category_item/setup_option/background/ancestry/cindar_spacer
 	name = "Spacer"
@@ -24,11 +17,4 @@
 
 	restricted_to_species = list(FORM_CINDAR)
 
-	stat_modifiers = list(
-		STAT_ROB = 0,
-		STAT_TGH = 0,
-		STAT_VIG = 0,
-		STAT_BIO = 0,
-		STAT_MEC = 0,
-		STAT_COG = 0
-	)
+	stat_modifiers = list(STAT_MEC = 10)

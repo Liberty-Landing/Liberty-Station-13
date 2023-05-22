@@ -218,6 +218,9 @@
 	name = "yoga pants"
 	desc = "A pair of tight-fitting white yoga pants."
 	icon_state = "yogapants"
+	cold_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5 // Half coverage for all pants
+
 
 /*Gorka Pants*/
 
@@ -266,6 +269,8 @@
 	name = "tan gorka pants"
 	desc = "A pair of baggy, two-tone military style cargo pants featuring an elastic waistband and leg cuffs."
 	icon_state = "gorka_pants_tan"
+	cold_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5
 
 /*Gorka Pants Factions*/
 
@@ -273,13 +278,19 @@
 	name = "security gorka pants"
 	desc = "A pair of baggy, two-tone military cargo pants featuring an elastic waistband and leg cuffs."
 	icon_state = "gorka_pants_ih"
+	cold_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/rank/medspec/gorkapantsihmed
 	name = "medical specialist gorka pants"
 	desc = "A pair of baggy, two-tone military cargo pants featuring an elastic waistband, leg cuffs, and Corpsman markings."
 	icon_state = "gorka_pants_ih_med"
+	cold_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5
 
 /obj/item/clothing/under/rank/medical/gorkapantscrewmed
 	name = "medical crew gorka pants"
 	desc = "A pair of baggy, two-tone utility pants featuring an elastic waistband and leg cuffs, and medical liverly."
 	icon_state = "gorka_pants_crew_med"
+	cold_protection = LOWER_TORSO|LEGS
+	min_cold_protection_temperature = T0C - 5

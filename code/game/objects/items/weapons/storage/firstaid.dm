@@ -280,16 +280,16 @@
 
 /obj/item/storage/firstaid/ifak
 	name = "IFAK"
-	desc = "Individual First Aid Kit"
+	desc = "The Individual First Aid Kit is an attachable pouch that can hold supplies used to address immediate life-threatening conditions."
 	icon = 'icons/inventory/pockets/icon.dmi'
 	icon_state = "medical_supply"
 	item_state = "medical_supply"
 
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_BELT
-	storage_slots = 4
+	storage_slots = 6
+	w_class = ITEM_SIZE_SMALL
 	max_w_class = ITEM_SIZE_NORMAL
-	max_storage_space = DEFAULT_SMALL_STORAGE
 	matter = list(MATERIAL_BIOMATTER = 12)
 	attack_verb = list("pouched")
 
@@ -347,13 +347,20 @@
 		/obj/item/reagent_containers/hypospray,
 		/obj/item/clothing/glasses/hud/health,
 		)
+
+// Printable version of the item
+/obj/item/storage/firstaid/ifak/empty
+	empty = TRUE
+
 /obj/item/storage/firstaid/ifak/New()
 	..()
 	if (empty) return
 	new /obj/item/reagent_containers/hypospray/autoinjector(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_containers/pill/bicaridine(src)
 	new /obj/item/stack/medical/bruise_pack(src)
 	new /obj/item/stack/medical/ointment(src)
-	new /obj/item/reagent_containers/pill/bicaridine(src)
+	new /obj/item/storage/pill_bottle/bloodregen(src) // Not a sang syrette but at least these will see use now.
 
 	return
 
@@ -362,7 +369,7 @@
 	desc = "A medkit filled with a set of high-end trauma kits and anti-toxins."
 	icon_state = "nt_kit"
 	item_state = "nt_kit"
-	matter = list(MATERIAL_BIOMATTER = 5)
+	matter = list(MATERIAL_BIO_SILK = 5)
 
 /obj/item/storage/firstaid/nt/populate_contents()
 	if (empty) return
@@ -370,8 +377,13 @@
 	new /obj/item/stack/medical/bruise_pack/advanced/nt(src)
 	new /obj/item/stack/medical/ointment/advanced/nt(src)
 	new /obj/item/stack/medical/ointment/advanced/nt(src)
-	new /obj/item/reagent_containers/syringe/large/antitoxin(src)
-	new /obj/item/reagent_containers/syringe/large/inaprovaline(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector(src) // Requires less bio to use.
+	new /obj/item/reagent_containers/hypospray/autoinjector(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/antitoxin(src) // Can't give them big syrettes because they're CAPSA design
+	new /obj/item/reagent_containers/hypospray/autoinjector/antitoxin(src)
+	new /obj/item/reagent_containers/hypospray/autoinjector/tricordrazine(src)
+
 
 /obj/item/storage/firstaid/nt/update_icon()
 	if(!contents.len)

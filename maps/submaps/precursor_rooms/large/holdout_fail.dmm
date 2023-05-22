@@ -1,0 +1,1229 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/turf/simulated/wall,
+/area/precursor)
+"ae" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ah" = (
+/obj/item/ammo_magazine/light_rifle_257/empty,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aj" = (
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ak" = (
+/obj/item/material/shard,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"am" = (
+/obj/item/material/shard,
+/obj/structure/girder,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"an" = (
+/obj/item/stack/material/wood,
+/obj/structure/low_wall,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ar" = (
+/obj/random/closet_maintloot,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"au" = (
+/obj/random/scrap,
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aw" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ax" = (
+/obj/item/ammo_magazine/light_rifle_257/empty,
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"az" = (
+/obj/random/material,
+/obj/item/trash/mre,
+/mob/living/carbon/superior_animal/psi_monster/mind_gazer,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aA" = (
+/obj/item/stack/material/wood,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aC" = (
+/obj/machinery/deployable/barrier,
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aD" = (
+/obj/item/material/shard,
+/obj/structure/table,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"aE" = (
+/obj/random/structures,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aG" = (
+/obj/random/closet_maintloot,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aH" = (
+/obj/machinery/deployable/barrier,
+/obj/item/circuitboard/broken,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aK" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aL" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"aM" = (
+/obj/structure/table/rack/shelf,
+/obj/item/stack/material/gold/random,
+/obj/item/stack/material/gold/random,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aN" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aO" = (
+/obj/structure/girder,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"aQ" = (
+/obj/structure/grille/broken,
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aT" = (
+/obj/structure/low_wall,
+/obj/random/psi_megafauna,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aV" = (
+/obj/random/voidsuit/damaged,
+/obj/random/gun_normal,
+/obj/random/material,
+/obj/random/material_rare,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"aY" = (
+/obj/item/ammo_magazine/light_rifle_257/highvelocity,
+/obj/random/booze,
+/obj/item/trash/mre,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ba" = (
+/obj/item/stack/material/wood,
+/obj/random/traps,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bf" = (
+/obj/item/stack/rods,
+/obj/random/closet_maintloot,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bg" = (
+/obj/random/gun_cheap,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bi" = (
+/obj/item/stack/rods,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bj" = (
+/obj/item/material/shard,
+/obj/structure/barricade,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bk" = (
+/obj/item/stack/material/plasteel/random,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bm" = (
+/obj/random/structures,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"bn" = (
+/obj/random/junk,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"bq" = (
+/obj/machinery/light,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"br" = (
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"by" = (
+/obj/item/stack/material/wood,
+/obj/item/stack/rods,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bD" = (
+/obj/item/material/shard,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"bG" = (
+/obj/structure/barricade,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bH" = (
+/obj/structure/grille/broken,
+/obj/item/trash/mre_candy,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bI" = (
+/obj/structure/low_wall,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bK" = (
+/obj/item/material/shard,
+/obj/item/inflatable/torn,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bM" = (
+/obj/machinery/deployable/barrier,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bN" = (
+/obj/random/scrap,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bO" = (
+/obj/structure/grille/broken,
+/obj/item/stack/rods,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bQ" = (
+/obj/item/stack/material/wood,
+/obj/item/stack/material/plastic/random,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bR" = (
+/obj/item/inflatable/torn,
+/obj/machinery/floodlight,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bU" = (
+/obj/structure/low_wall,
+/obj/item/stack/material/plastic/random,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"bV" = (
+/obj/item/trash/broken_robot_part,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bW" = (
+/obj/structure/computerframe,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bY" = (
+/obj/random/voidsuit,
+/obj/random/gun_shotgun,
+/obj/random/material_rare,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"bZ" = (
+/obj/random/ammo/shotgun,
+/obj/item/trash/mre,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ca" = (
+/obj/structure/low_wall,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cc" = (
+/obj/random/traps,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cd" = (
+/obj/structure/grille/broken,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ce" = (
+/obj/random/traps,
+/obj/item/stack/material/plastic/random,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"cf" = (
+/obj/item/material/shard,
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"cg" = (
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ch" = (
+/obj/random/traps,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"ck" = (
+/obj/item/material/shard,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cl" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cm" = (
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cn" = (
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"co" = (
+/obj/structure/low_wall,
+/obj/structure/barricade,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"cp" = (
+/obj/structure/barricade,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cq" = (
+/obj/item/material/shard,
+/obj/random/structures,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"cr" = (
+/obj/item/material/shard,
+/obj/item/stack/material/wood,
+/obj/machinery/constructable_frame/machine_frame,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"cs" = (
+/obj/item/material/shard,
+/obj/item/stack/material/plastic/random,
+/obj/machinery/constructable_frame/machine_frame,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"dF" = (
+/obj/item/stack/material/wood,
+/obj/structure/table/rack/shelf,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"dZ" = (
+/obj/random/traps,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ee" = (
+/obj/structure/grille/broken,
+/obj/random/scrap,
+/obj/item/stack/material/plastic/random,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"eB" = (
+/obj/item/stack/material/wood,
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ge" = (
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"hS" = (
+/mob/living/carbon/superior_animal/psi_monster/flesh_tower,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"iD" = (
+/obj/item/material/shard,
+/obj/structure/table,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"js" = (
+/obj/structure/table,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"jv" = (
+/obj/random/structures,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"jX" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"kc" = (
+/obj/item/circuitboard/broken,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"mm" = (
+/obj/item/material/shard,
+/obj/item/stack/material/wood,
+/obj/structure/grille/broken,
+/obj/item/stack/rods,
+/obj/machinery/constructable_frame/machine_frame,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"mp" = (
+/obj/item/material/shard,
+/obj/item/stack/material/wood,
+/obj/random/structures,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"mN" = (
+/obj/random/booze,
+/obj/item/trash/mre_can,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"oo" = (
+/obj/item/material/shard,
+/obj/structure/grille/broken,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"oL" = (
+/obj/random/structures,
+/obj/machinery/light,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"pc" = (
+/obj/random/structures,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"qj" = (
+/obj/item/stack/material/wood,
+/obj/structure/table/rack/shelf,
+/obj/item/stack/material/uranium/random,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"qq" = (
+/obj/random/closet_maintloot,
+/obj/machinery/light/floor,
+/obj/item/trash/material/metal,
+/obj/item/trash/broken_robot_part,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"qR" = (
+/obj/item/ammo_magazine/light_rifle_257/empty,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"ru" = (
+/obj/structure/bed/chair,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"rO" = (
+/obj/item/material/shard,
+/obj/random/scrap,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"rP" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/structure/girder,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"sm" = (
+/obj/random/gun_cheap,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"sD" = (
+/obj/random/closet_maintloot,
+/obj/machinery/light/floor,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"th" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"tJ" = (
+/obj/structure/grille/broken,
+/obj/item/trash/material/metal,
+/obj/structure/computerframe,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"tW" = (
+/obj/structure/table/rack/shelf,
+/obj/item/stack/material/gold/random,
+/obj/item/stack/material/gold/random,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"tY" = (
+/obj/item/material/shard,
+/obj/random/gun_cheap,
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ud" = (
+/obj/item/stack/material/plasteel/random,
+/mob/living/carbon/superior_animal/psi_monster/cerebral_crusher,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"uf" = (
+/obj/item/material/shard,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"ug" = (
+/mob/living/carbon/superior_animal/psi_monster/cerebral_crusher,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"uN" = (
+/obj/item/material/shard,
+/obj/random/closet_maintloot,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"vj" = (
+/obj/structure/barricade,
+/obj/machinery/light/floor,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"xo" = (
+/obj/random/ammo/shotgun,
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"xL" = (
+/obj/item/inflatable/torn,
+/obj/item/circuitboard/broken,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"yb" = (
+/obj/item/inflatable/door/torn,
+/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/plastic/random,
+/obj/item/trash/material/metal,
+/mob/living/carbon/superior_animal/psi_monster/flesh_tower,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"yK" = (
+/obj/random/voidsuit/damaged,
+/obj/random/gun_normal,
+/obj/random/material_rare,
+/mob/living/carbon/superior_animal/psi_monster/mind_gazer,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"zi" = (
+/obj/machinery/floodlight,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"zk" = (
+/obj/item/material/shard,
+/obj/item/stack/material/plasteel/random,
+/obj/structure/table,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"Ap" = (
+/obj/item/material/shard,
+/obj/structure/grille/broken,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"BQ" = (
+/obj/item/stack/material/wood,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"DO" = (
+/obj/item/inflatable/torn,
+/obj/item/stack/material/wood,
+/obj/structure/table,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"DV" = (
+/obj/structure/table,
+/obj/item/storage/briefcase/inflatable,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"Ed" = (
+/obj/structure/girder,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"Ei" = (
+/obj/item/stack/material/wood,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"FK" = (
+/obj/structure/table/rack/shelf,
+/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/plasteel/random,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"FO" = (
+/obj/structure/grille/broken,
+/obj/item/ammo_magazine/light_rifle_257/empty,
+/obj/item/ammo_magazine/rifle_75/highvelocity,
+/obj/item/trash/mre_can,
+/obj/structure/bed/chair,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"Gp" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/random/junk,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"GL" = (
+/obj/item/material/shard,
+/obj/random/junk,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Hi" = (
+/obj/item/ammo_magazine/light_rifle_257/empty,
+/mob/living/carbon/superior_animal/psi_monster/flesh_tower,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"Ip" = (
+/obj/item/stack/material/plastic/random,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"IJ" = (
+/obj/item/material/shard,
+/obj/machinery/light{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"IW" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Jw" = (
+/obj/item/material/shard,
+/obj/random/traps,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"JY" = (
+/obj/machinery/light,
+/obj/structure/girder,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"Lw" = (
+/obj/item/stack/rods,
+/obj/item/trash/material/metal,
+/obj/item/trash/broken_robot_part,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"LG" = (
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"LN" = (
+/obj/structure/girder,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"MF" = (
+/obj/structure/girder,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"Op" = (
+/obj/random/gun_fancy,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"OI" = (
+/obj/item/material/shard,
+/obj/structure/grille/broken,
+/obj/random/traps,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"OL" = (
+/obj/item/stack/rods,
+/obj/random/material,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"OU" = (
+/obj/machinery/light/floor,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"PG" = (
+/obj/random/structures,
+/obj/random/material,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Qy" = (
+/obj/machinery/light/floor,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"QA" = (
+/obj/structure/barricade,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"Sx" = (
+/obj/item/material/shard,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"ST" = (
+/obj/item/stack/rods,
+/mob/living/carbon/superior_animal/psi_monster/flesh_tower,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"Tf" = (
+/obj/item/material/shard,
+/obj/item/stack/material/plastic/random,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Ve" = (
+/obj/item/stack/rods,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"VU" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"Wo" = (
+/obj/structure/low_wall,
+/obj/item/stack/material/plastic/random,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"XB" = (
+/obj/item/inflatable/door/torn,
+/obj/structure/table,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"XK" = (
+/obj/machinery/light/floor,
+/obj/random/material,
+/obj/random/material_rare,
+/obj/item/trash/mre_candy,
+/obj/random/cluster/psi_monster,
+/mob/living/carbon/superior_animal/psi_monster/mind_gazer,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"Yf" = (
+/obj/item/stack/rods,
+/obj/item/stack/material/plasteel/random,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+"Ym" = (
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/steel,
+/area/precursor)
+"YL" = (
+/obj/item/material/shard,
+/obj/structure/barricade,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"Zl" = (
+/obj/random/scrap,
+/obj/item/trash/material/metal,
+/turf/simulated/floor/tiled/dark/brown_perforated,
+/area/precursor)
+
+(1,1,1) = {"
+cn
+cn
+bn
+cn
+cn
+cn
+cn
+cn
+cn
+cn
+bn
+bn
+cn
+cn
+cn
+bn
+cn
+cn
+cn
+cn
+cn
+"}
+(2,1,1) = {"
+cn
+cm
+cm
+bq
+ac
+rP
+cg
+MF
+br
+bN
+Ip
+MF
+cg
+cg
+MF
+cg
+JY
+ac
+Gp
+aL
+cn
+"}
+(3,1,1) = {"
+cn
+aN
+aN
+aN
+aH
+cd
+Lw
+cg
+cg
+th
+OU
+cg
+bi
+Zl
+uf
+br
+cg
+aH
+th
+cg
+bn
+"}
+(4,1,1) = {"
+cn
+cm
+cm
+bq
+ac
+IJ
+dZ
+uf
+bN
+ee
+cg
+bN
+cd
+bi
+cg
+OI
+aw
+ac
+ch
+cm
+cn
+"}
+(5,1,1) = {"
+cn
+cm
+cm
+aO
+ac
+bU
+bU
+bU
+aA
+XB
+Ei
+bG
+bK
+bQ
+bU
+bU
+bU
+ac
+ac
+aL
+cn
+"}
+(6,1,1) = {"
+cn
+aL
+aL
+ac
+qj
+jv
+rO
+PG
+bG
+xL
+yb
+kc
+DO
+bG
+bD
+Jw
+pc
+cq
+ac
+cm
+cn
+"}
+(7,1,1) = {"
+cn
+cm
+bq
+ac
+aK
+cg
+eB
+ud
+cg
+bN
+au
+ax
+cg
+bi
+bV
+aj
+bk
+aw
+ac
+ck
+cn
+"}
+(8,1,1) = {"
+cn
+cm
+bD
+ca
+oo
+cg
+vj
+bG
+aE
+aT
+aT
+bH
+Op
+bR
+bN
+OU
+bi
+bG
+ca
+bD
+cn
+"}
+(9,1,1) = {"
+cn
+IW
+cm
+co
+OI
+cg
+bk
+cg
+bM
+aV
+xo
+az
+bM
+aE
+cg
+ae
+tY
+cg
+bU
+cp
+cn
+"}
+(10,1,1) = {"
+cn
+cm
+cc
+bU
+aQ
+bf
+Hi
+bN
+bM
+aY
+XK
+mN
+aC
+bG
+ST
+aG
+cd
+cr
+ca
+bD
+cn
+"}
+(11,1,1) = {"
+cn
+cm
+bD
+bU
+mm
+bg
+ru
+cg
+an
+bY
+bZ
+yK
+FO
+bG
+cg
+br
+cd
+cs
+ca
+cp
+Sx
+"}
+(12,1,1) = {"
+cn
+aL
+cp
+bU
+Ap
+cg
+bG
+au
+aE
+bM
+aC
+bI
+bI
+bN
+OL
+cg
+bi
+ce
+ca
+bD
+cn
+"}
+(13,1,1) = {"
+cn
+aL
+bD
+bU
+OI
+bi
+cg
+ug
+zi
+Op
+bN
+aA
+bN
+ug
+cg
+bW
+ah
+cf
+co
+cc
+cn
+"}
+(14,1,1) = {"
+cn
+cm
+cm
+ca
+tJ
+jX
+Qy
+bO
+cg
+hS
+sD
+Yf
+cg
+br
+bi
+qq
+js
+Ip
+ca
+GL
+bn
+"}
+(15,1,1) = {"
+cn
+cm
+bq
+ac
+aM
+cg
+aQ
+ru
+bV
+by
+br
+aQ
+bO
+cd
+LG
+th
+Ap
+oL
+ac
+cl
+cn
+"}
+(16,1,1) = {"
+cn
+cm
+cm
+aO
+DV
+BQ
+zk
+ge
+iD
+ge
+sm
+qR
+aD
+Ed
+aD
+Ve
+QA
+BQ
+ac
+cm
+cn
+"}
+(17,1,1) = {"
+cn
+cm
+aL
+ac
+ba
+bj
+bm
+bm
+uN
+dF
+FK
+YL
+tW
+ba
+bm
+mp
+uN
+ar
+ac
+cm
+bn
+"}
+(18,1,1) = {"
+cn
+cm
+cm
+ac
+ca
+ca
+ac
+ac
+bU
+bU
+bU
+bU
+ca
+co
+ac
+ac
+co
+Wo
+ac
+cm
+cn
+"}
+(19,1,1) = {"
+cn
+aL
+cm
+cm
+cp
+Ym
+cc
+ak
+cm
+cp
+cm
+am
+aL
+cm
+VU
+Tf
+LN
+cm
+cc
+aL
+cn
+"}
+(20,1,1) = {"
+cn
+aL
+cm
+aL
+cm
+cm
+cm
+Ym
+bD
+bD
+cm
+Jw
+cm
+bD
+cm
+aL
+cm
+bD
+LN
+LN
+bn
+"}
+(21,1,1) = {"
+cn
+cn
+cn
+cn
+cn
+cn
+bn
+bn
+bn
+cn
+cn
+bn
+cn
+cn
+bn
+cn
+cn
+cn
+bn
+cn
+cn
+"}

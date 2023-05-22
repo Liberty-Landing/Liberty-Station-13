@@ -19,7 +19,7 @@
 		FORM_CINDAR,
 		FORM_NARAMAD,
 		FORM_OPIFEX,
-		FORM_FBP
+		FORM_SYNTH
 		)
 
 /datum/sprite_accessory/facial_hair/shaved

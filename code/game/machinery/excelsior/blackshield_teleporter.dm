@@ -3,9 +3,9 @@ var/global/blackshield_energy
 var/global/blackshield_max_energy //Maximaum combined energy of all teleporters
 
 /obj/machinery/blackshield_teleporter
-	name = "blackshield short-range teleporter"
-	desc = "A teleporter form made by the SR AI under the watchful eye of PI as they recrate a safe short range teleporter for \
-	blackshield to quickly send down and up items at the cost of a lot of power, time and requested items."
+	name = "terran short-range teleporter"
+	desc = "A teleporter made after the designs of old soviet scientists, unlike the originals however it's significantly less efficient. \
+	Allowing only assortment of items to be transported across distances going as far as 10 kilometers."
 	density = TRUE
 	anchored = TRUE
 	icon = 'icons/obj/machines/excelsior/blackshield_teleporter.dmi'

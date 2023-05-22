@@ -147,8 +147,6 @@
 	. = ..()
 
 /obj/item/tool/sword/katana/spatial_cutter/sword_of_lie/attackby(obj/item/I, mob/user, params)
-//	if(nt_sword_attack(I, user))
-//		return
 	. = ..()
 
 //I NEED MORE POWER

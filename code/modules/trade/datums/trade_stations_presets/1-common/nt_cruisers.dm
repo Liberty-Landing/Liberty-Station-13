@@ -85,11 +85,11 @@
 
 	hidden_inventory = list(
 		"Melee weapons" = list(
-			/obj/item/tool/sword/nt/shortsword,
-			/obj/item/tool/sword/nt/longsword = custom_good_amount_range(list(-1, 2)),
-			/obj/item/tool/knife/dagger/nt,
-			/obj/item/tool/sword/nt/spear,
-			/obj/item/shield/buckler/nt
+			/obj/item/tool/sword/custodian/shortsword,
+			/obj/item/tool/sword/custodian/horseaxe = custom_good_amount_range(list(-1, 2)),
+			/obj/item/tool/knife/dagger/custodian,
+			/obj/item/tool/sword/custodian/throwaxe,
+			/obj/item/shield/buckler/custodian
 		),
 		"Holy Grenades" = list(
 			/obj/item/grenade/smokebomb/nt = custom_good_amount_range(list(1, 4)),
@@ -133,7 +133,7 @@
 		)
 	)
 	offer_types = list(
-		/obj/item/clothing/suit/space/void/NTvoid = offer_data("angel voidsuit", 1250, 15),
+		/obj/item/clothing/suit/space/void/huscarl = offer_data("huscarl voidsuit", 1250, 15),
 		/obj/item/clothing/shoes/hermes_shoes = offer_data("hermes shoes", 420, 10),
 		/obj/item/reagent_containers/food/snacks/grown = offer_data("spare grown food", 10, 120),
 		/obj/item/reagent_containers/food/snacks/meat = offer_data("meat", 80, 20) //Buys it for less than Dionis/McRonalds, but is willing to buy more of it.

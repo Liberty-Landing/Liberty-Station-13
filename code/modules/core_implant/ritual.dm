@@ -34,7 +34,8 @@
 //ritual will be proceed only if this returns true
 /datum/ritual/proc/pre_check(mob/living/carbon/human/H, obj/item/implant/core_implant/C, targets)
 	if(cooldown && is_on_cooldown(H))
-		fail("Litanies of this type can't be spoken too often.", H, C)
+		var/time_left = (H.personal_ritual_cooldowns[src.cooldown_category] - world.time)
+		fail("Lectures of this type can't be spoken too often, [time2text(time_left,"mm:ss")] remaining.", H, C)
 		return FALSE
 	return TRUE
 
@@ -110,24 +111,24 @@
 
 
 //Getting mobs
-/proc/get_grabbed_mob(var/mob/living/carbon/human/user)
+/proc/get_grabbed_mob(var/mob/living/carbon/human/user) //Get a grabbed mob only, no get_front_mob() in case of failure
 	var/obj/item/grab/G = locate(/obj/item/grab) in user
 
 	if (G && G.affecting && istype(G.affecting, /mob/living))
 		return G.affecting
 	return null
 
-/proc/get_front_mob(var/mob/living/carbon/human/user)
+/proc/get_front_mob(var/mob/living/carbon/human/user) //Get a mob in front
 	var/turf/T = get_step(user,user.dir)
 	return (locate(/mob/living) in T)
 
-/proc/get_victim(var/mob/living/carbon/human/user)
+/proc/get_victim(var/mob/living/carbon/human/user) //Get a grabbed mob, if no grab, run get_front_mob()
 	var/mob/living/L = get_grabbed_mob(user)
 	if (!L)
 		L = get_front_mob(user)
 	return L
 
-/proc/get_front_human_in_range(var/mob/living/carbon/human/user, nrange = 1)
+/proc/get_front_human_in_range(var/mob/living/carbon/human/user, nrange = 1) //Get the first human in a straight line forward, nrange = search range
 	var/turf/T = get_step(user,user.dir)
 	for(var/i=1, i<=nrange, i++)
 		var/mob/living/carbon/human/H = locate(/mob/living) in T
@@ -137,7 +138,7 @@
 	return
 
 //Getting implants
-/mob/living/proc/get_core_implant(ctype = null, req_activated = TRUE)
+/mob/living/proc/get_core_implant(ctype = null, req_activated = TRUE) //Get a mob's implant like a Hearthcore
 	RETURN_TYPE(/obj/item/implant/core_implant)
 	for(var/obj/item/implant/core_implant/I in src)
 		if(ctype && !istype(I, ctype))
@@ -153,7 +154,7 @@
 
 	return null
 
-/proc/get_implant_from_victim(mob/living/carbon/human/user, ctype = null, req_activated = TRUE)
+/proc/get_implant_from_victim(mob/living/carbon/human/user, ctype = null, req_activated = TRUE) //Get the implant from a grabbed person, or if no grab, a person in front
 	var/mob/living/L = get_victim(user)
 	if(L)
 		return L.get_core_implant(ctype, req_activated)
@@ -165,7 +166,7 @@
 	return T.contents
 
 
-/proc/pick_disciple_global(var/mob/user, var/allow_dead = TRUE)
+/proc/pick_disciple_global(var/mob/user, var/allow_dead = TRUE) //Shows a list of all Hearthcore users and asks to pick one
 	var/list/candidates = list()
 	for (var/mob/living/L in disciples)
 		if (QDELETED(L))
@@ -175,4 +176,4 @@
 
 		candidates += L
 
-	return input(user, "Who do you wish to target?", "Select a disciple") as null|mob in candidates
+	return input(user, "Who do you wish to target?", "Select a Hearthcore user") as null|mob in candidates

@@ -20,6 +20,7 @@
 /datum/perk/oddity/toxic_revenger/assign(mob/living/carbon/human/H)
 	..()
 	initial_time = world.time
+	H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/poors, "POORS", skill_gained = 1, learner = H)
 
 /datum/perk/oddity/toxic_revenger/on_process()
 	if(!..())
@@ -91,6 +92,8 @@
 	holder.brute_mod_perk += 0.1
 	holder.mob_bomb_defense -= 5
 	holder.falls_mod += 0.2
+	H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/poors, "POORS", skill_gained = 1, learner = H)
+
 
 /datum/perk/oddity/thin_skin/remove()
 	holder.brute_mod_perk -= 0.1 // One third of subdermal armor
@@ -120,14 +123,16 @@
 
 /datum/perk/oddity/shell_shock/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_ROB, -5)
-	holder.stats.changeStat(STAT_TGH, -5)
-	holder.stats.changeStat(STAT_VIG, -5)
+	holder.stats.changeStat(STAT_ROB, -15)
+	holder.stats.changeStat(STAT_TGH, -15)
+	holder.stats.changeStat(STAT_VIG, -15)
+	H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/poors, "POORS", skill_gained = 1, learner = H)
+
 
 /datum/perk/oddity/shell_shock/remove()
-	holder.stats.changeStat(STAT_ROB, 5)
-	holder.stats.changeStat(STAT_TGH, 5)
-	holder.stats.changeStat(STAT_VIG, 5)
+	holder.stats.changeStat(STAT_ROB, 15)
+	holder.stats.changeStat(STAT_TGH, 15)
+	holder.stats.changeStat(STAT_VIG, 15)
 	..()
 
 /datum/perk/oddity/failing_mind
@@ -138,14 +143,16 @@
 
 /datum/perk/oddity/failing_mind/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_COG, -5)
-	holder.stats.changeStat(STAT_MEC, -5)
-	holder.stats.changeStat(STAT_BIO, -5)
+	holder.stats.changeStat(STAT_COG, -15)
+	holder.stats.changeStat(STAT_MEC, -15)
+	holder.stats.changeStat(STAT_BIO, -15)
+	H.learnt_tasks.attempt_add_task_mastery(/datum/task_master/task/poors, "POORS", skill_gained = 1, learner = H)
+
 
 /datum/perk/oddity/failing_mind/remove()
-	holder.stats.changeStat(STAT_COG, 5)
-	holder.stats.changeStat(STAT_MEC, 5)
-	holder.stats.changeStat(STAT_BIO, 5)
+	holder.stats.changeStat(STAT_COG, 15)
+	holder.stats.changeStat(STAT_MEC, 15)
+	holder.stats.changeStat(STAT_BIO, 15)
 	..()
 
 /datum/perk/oddity/snackivore
@@ -163,14 +170,14 @@
 
 /datum/perk/oddity/sharp_mind/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_COG, 5)
-	holder.stats.changeStat(STAT_MEC, 5)
-	holder.stats.changeStat(STAT_BIO, 5)
+	holder.stats.changeStat(STAT_COG, 15)
+	holder.stats.changeStat(STAT_MEC, 15)
+	holder.stats.changeStat(STAT_BIO, 15)
 
 /datum/perk/oddity/sharp_mind/remove()
-	holder.stats.changeStat(STAT_COG, -5)
-	holder.stats.changeStat(STAT_MEC, -5)
-	holder.stats.changeStat(STAT_BIO, -5)
+	holder.stats.changeStat(STAT_COG, -15)
+	holder.stats.changeStat(STAT_MEC, -15)
+	holder.stats.changeStat(STAT_BIO, -15)
 	..()
 
 /datum/perk/oddity/strangth
@@ -181,14 +188,14 @@
 
 /datum/perk/oddity/strangth/assign(mob/living/carbon/human/H)
 	..()
-	holder.stats.changeStat(STAT_ROB, 5)
-	holder.stats.changeStat(STAT_TGH, 5)
-	holder.stats.changeStat(STAT_VIG, 5)
+	holder.stats.changeStat(STAT_ROB, 15)
+	holder.stats.changeStat(STAT_TGH, 15)
+	holder.stats.changeStat(STAT_VIG, 15)
 
 /datum/perk/oddity/strangth/remove()
-	holder.stats.changeStat(STAT_ROB, -5)
-	holder.stats.changeStat(STAT_TGH, -5)
-	holder.stats.changeStat(STAT_VIG, -5)
+	holder.stats.changeStat(STAT_ROB, -15)
+	holder.stats.changeStat(STAT_TGH, -15)
+	holder.stats.changeStat(STAT_VIG, -15)
 	..()
 
 /datum/perk/oddity/iron_will
@@ -283,11 +290,11 @@
 ///////////////////////////////////////
 
 /datum/perk/nt_oddity
-	gain_text = "The Bonfire chose you to expand its will."
+	gain_text = "You are filled with philosophical inspiration."
 
 /datum/perk/nt_oddity/holy_light
-	name = "Holy Light"
-	desc = "You have been blessed by the grace of the Bonfire. You now provide a weak healing aura, healing both brute and burn damage to any cruciform bearers nearby as well as yourself."
+	name = "Radiant Light"
+	desc = "You now provide a weak healing aura, healing both brute and burn damage to any Hearthcore users nearby as well as yourself."
 	icon_state = "third_eye"  //https://game-icons.net/1x1/lorc/third-eye.html
 	var/healing_power = 0.1
 	var/cooldown = 1 SECONDS // Just to make sure that perk don't go berserk.

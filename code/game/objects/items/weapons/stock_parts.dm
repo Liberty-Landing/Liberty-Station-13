@@ -300,7 +300,7 @@
 
 //excelsior stock parts (rating 5)
 /obj/item/stock_parts/capacitor/excelsior
-	name = "excelsior capacitor"
+	name = "astrakhan capacitor"
 	desc = "A super-high capacity capacitor used in the construction of a variety of devices."
 	icon_state = "excel_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
@@ -309,7 +309,7 @@
 	price_tag = 100
 
 /obj/item/stock_parts/scanning_module/excelsior
-	name = "excelsior scanning module"
+	name = "astrakhan scanning module"
 	desc = "A compact, high resolution phasic scanning module used in the construction of certain devices."
 	icon_state = "excel_scan_module"
 	origin_tech = list(TECH_MAGNET = 5)
@@ -318,7 +318,7 @@
 	price_tag = 100
 
 /obj/item/stock_parts/manipulator/excelsior
-	name = "excelsior manipulator"
+	name = "astrakhan manipulator"
 	desc = "A tiny little manipulator used in the construction of certain devices."
 	icon_state = "excel_mani"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
@@ -327,7 +327,7 @@
 	price_tag = 100
 
 /obj/item/stock_parts/micro_laser/excelsior
-	name = "excelsior micro-laser"
+	name = "astrakhan micro-laser"
 	icon_state = "excel_laser"
 	desc = "A tiny laser used in certain devices."
 	origin_tech = list(TECH_MAGNET = 5)
@@ -336,7 +336,7 @@
 	price_tag = 100
 
 /obj/item/stock_parts/matter_bin/excelsior
-	name = "excelsior matter bin"
+	name = "astrakhan matter bin"
 	desc = "A container for holding compressed matter awaiting re-construction."
 	icon_state = "excel_matter"
 	origin_tech = list(TECH_MATERIAL = 5)

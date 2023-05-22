@@ -1,7 +1,7 @@
 /datum/computer_file/program/cook_catalog
 	filename = "cook_catalog"
 	filedesc = "VIKA"
-	extended_desc = "Skylight (and CAPSA) Presents: Victoria's Incredible Kitchen Assistant - an AI-generated electronic catalog for cooking."
+	extended_desc = "Victoria's Incredible Kitchen Assistant"
 	program_icon_state = "generic"
 	program_key_state = "generic_key"
 	size = 2
@@ -10,7 +10,7 @@
 	usage_flags = PROGRAM_ALL
 
 /datum/nano_module/cook_catalog
-	name = "Skylight (and CAPSA) Presents: Victoria's Incredible Kitchen Assistant"
+	name = "Victoria's Incredible Kitchen Assistant"
 
 /datum/nano_module/cook_catalog/nano_ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = NANOUI_FOCUS, state = GLOB.default_state)
 	var/list/data = nano_ui_data(user)
@@ -184,7 +184,7 @@
 		if(GRILL)
 			data["create_in"] = "Made on a grill."
 		else
-			data["create_in"] = "Made with a ~//SEGMENTATION FAULT//~ 00110001"
+			data["create_in"] = "Made with a //SEGMENTATION FAULT// 00110001"
 
 	return data
 

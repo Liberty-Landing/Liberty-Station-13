@@ -118,6 +118,12 @@
 	perk_shared_ability = PERK_SHARED_SEE_ILLEGAL_REAGENTS
 	icon_state = "paper"
 
+/datum/perk/job/common_sense
+	name = "Common Sense"
+	desc = "You know what basic chemicals look like, from cleaning to cooking as well as the basics common chemicals."
+	perk_shared_ability = PERK_SHARED_SEE_COMMON_REAGENTS
+	icon_state = "paper"
+
 /datum/perk/job/junkborn
 	name = "Expert Scavenger"
 	desc = "One man's trash is another man's salary. Removing a trash pile has a chance of revealing a valuable item nobody else would find."
@@ -145,7 +151,16 @@
 	desc = "Special training from senior Shipbreakers and your own experience has allowed you to instinctively know the effects of greater oddities. By examining an oddity that has become an anomaly, you can tell what its greater boon or curse may be."
 	icon_state = "treasure"
 
+/datum/perk/job/market_prof
+	name = "Market Professional"
+	desc = "You've become an excellent appraiser of goods over the years. Just by looking at the item, you can know how much it would sell for in today's market rates."
+	icon_state = "market_prof"
+
 //Medical perks - relates to surgery and all.
+/datum/perk/job/medicalexpertise
+	name = "Medical Expertise"
+	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right amount of them."
+	icon_state = "knowledge"
 
 /datum/perk/job/surgical_master
 	name = "Surgery Training"
@@ -215,6 +230,67 @@
 		holder.sanity.view_damage_threshold -= 20
 	..()
 
+/datum/perk/job/foodappraise
+	name = "Spice up Food"
+	desc = "Your own special, secret touch in seasoning has anomalous properties that can enhance most food products."
+	icon_state = "spice"
+	active = FALSE
+	passivePerk = FALSE
+
+/datum/perk/job/foodappraise/activate()
+	var/mob/living/carbon/human/user = usr
+	var/obj/item/reagent_containers/food/snacks/F = user.get_active_hand()
+	if(!istype(user))
+		return ..()
+	if(!istype(F, /obj/item/reagent_containers/food/snacks))
+		to_chat(usr, SPAN_NOTICE("You can only season food items!"))
+		return FALSE
+	if(F.appraised == 1)
+		to_chat(usr, SPAN_NOTICE("This food item has already been seasoned!"))
+		return FALSE
+	to_chat(usr, SPAN_NOTICE("You quickly sprinkle some of your anomalous seasoning onto the food item, revealing its hidden properties."))
+	//log_and_message_admins("used their [src] perk.")
+	F.chef_buff_type = rand(1,9) // We assign a random bufferino.
+	F.appraised = 1
+	switch(F.chef_buff_type)
+		if(1)
+			F.name = "mentally engaging [F.name]"
+		if(2)
+			F.name = "mechanic's [F.name]"
+		if(3)
+			F.name = "caretaker's [F.name]"
+		if(4)
+			F.name = "vigorous [F.name]"
+		if(5)
+			F.name = "hardy [F.name]"
+		if(6)
+			F.name = "focusing [F.name]"
+		if(7)
+			var/newprice = rand(100,500)
+			F.name = "exquisite [F.name]"
+			if(F.price_tag < newprice)
+				F.price_tag = newprice
+		if(8)
+			F.name = "nourishing [F.name]"
+			F.reagents.add_reagent("nutriment", 15)
+		if(9)
+			F.name = "hearty [F.name]"
+
+/datum/perk/job/club
+	name = "Raising the bar"
+	desc = "You know how to mix drinks and change lives. People near you recover sanity."
+	icon_state = "inspiration"
+
+/datum/perk/job/club/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity_damage -= 2
+
+/datum/perk/job/club/remove()
+	if(holder)
+		holder.sanity_damage += 2
+	..()
+
+
 /datum/perk/job/channeling
 	name = "Channeling"
 	desc = "You know how to channel spiritual energy during rituals. You gain additional skill points \
@@ -224,7 +300,7 @@
 
 /datum/perk/job/codespeak
 	name = "Codespeak"
-	desc = "You know Marshal codes."
+	desc = "You know Watchman codes."
 	icon_state = "codespeak" // https://game-icons.net/1x1/delapouite/police-officer-head.html
 	var/list/codespeak_procs = list(
 		/mob/living/carbon/human/proc/codespeak_help,

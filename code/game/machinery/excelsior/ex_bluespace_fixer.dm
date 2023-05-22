@@ -1,7 +1,7 @@
 
 //Sprite base by Près de l'oiseau#2625
 /obj/machinery/power/ex_bluespace_repairer
-	name = "excelsior bluespace aligner"
+	name = "soviet bluespace aligner"
 	desc = "A large tower-radio-like machinery that is used to align and repair bluespace, \
 	used mostly when the long-range teleporters start to destabilize local space. \
 	It can also warn people about a room's bluespace entropy levels."
@@ -45,7 +45,6 @@
 	return
 
 /obj/machinery/power/ex_bluespace_repairer/attackby(obj/item/I, mob/user)
-	log_and_message_admins(" - Exl Bluespace Aliner being used at \the [jumplink(src)] X:[src.x] Y:[src.y] Z:[src.z] User:[user]") //So we can go to it
 	if(default_deconstruction(I, user))
 		return
 	..()

@@ -288,8 +288,8 @@
 
 	//Simple delays for mobs, only for super mobs at this time, simple can stay much more deadly.
 	//This makes it so they wait in seconds seconds before doing their attack
-	delay_for_range = 1.5 SECONDS
-	delay_for_rapid_range = 0.75 SECONDS
+	delay_for_range = 2 SECONDS
+	delay_for_rapid_range = 1.5 SECONDS
 	delay_for_melee = 0 SECONDS
 	delay_for_all = 0.5 SECONDS
 

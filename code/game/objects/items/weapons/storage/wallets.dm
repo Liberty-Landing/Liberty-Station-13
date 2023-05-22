@@ -11,6 +11,9 @@
 		/obj/item/tool/screwdriver/combi_driver/onestar) //We can not hold these do to being bigger then the wallet itself
 	can_hold = list(
 		/obj/item/spacecash,
+		/obj/item/stack/gal_cred,
+		/obj/item/stack/os_cash,
+		/obj/item/stack/dinar,
 		/obj/item/card,
 		/obj/item/clothing/mask/smokable/cigarette/,
 		/obj/item/device/lighting/toggleable/flashlight/pen,

@@ -1,5 +1,5 @@
 /obj/structure/mine
-	name = "Excelsior Mine"
+	name = "military mine"
 	desc = "It looks like an ancient and rather dangerous mine."
 	icon = 'icons/obj/machines/excelsior/objects.dmi'
 	icon_state = "mine"

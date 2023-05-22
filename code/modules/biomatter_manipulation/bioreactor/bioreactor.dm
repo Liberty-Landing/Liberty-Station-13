@@ -110,12 +110,12 @@
 		return
 	if(chamber_solution)
 		solution.icon_state = ""
-		flick("solution_pump_out", solution)
+		flick("solution_pump_out_temporary", solution)
 		for(var/obj/machinery/multistructure/bioreactor_part/platform/platform in platforms)
 			platform.set_light(0)
 	else
 		solution.icon_state = initial(solution.icon_state)
-		flick("solution_pump_in", solution)
+		flick("solution_pump_in_temporary", solution)
 		for(var/obj/machinery/multistructure/bioreactor_part/platform/platform in platforms)
 			platform.set_light(1, 3, COLOR_LIGHTING_ORANGE_DARK)
 	chamber_solution = !chamber_solution
@@ -124,7 +124,7 @@
 
 /obj/machinery/multistructure/bioreactor_part
 	name = "bioreactor part"
-	icon = 'icons/obj/machines/bioreactor.dmi'
+	icon = 'icons/obj/machines/bonfire.dmi'
 	icon_state = "biomassconsole1"
 	anchored = TRUE
 	density = TRUE
@@ -135,24 +135,27 @@
 
 
 //#####################################
-/obj/structure/reagent_dispensers/biomatter
-	name = "medium biomatter canister"
-	desc = "A biomatter canister. It is used to store high amounts of biomatter."
+/obj/structure/reagent_dispensers/scorch
+	name = "medium scorch canister"
+	desc = "A canister used by the Custodians to transport volumes of Liquid Scorch."
 	icon = 'icons/obj/bioreactor_misc.dmi'
-	icon_state = "biomatter_tank_medium"
+	icon_state = "scorch_tank_medium"
 	amount_per_transfer_from_this = 50
 	volume = 400
+	climbable = TRUE
 
 
-/obj/structure/reagent_dispensers/biomatter/large
-	name = "large biomatter canister"
-	icon_state = "biomatter_tank_large"
+/obj/structure/reagent_dispensers/scorch/large
+	name = "large scorch canister"
+	desc = "A large canister used by the Custodians to transport immense volumes of Liquid Scorch."
+	icon_state = "scorch_tank_large"
 	volume = 800
+	climbable = null
 
 
 /obj/effect/overlay/bioreactor_solution
 	name = "solution"
-	icon = 'icons/obj/machines/bioreactor.dmi'
-	icon_state = "solution"
+	icon = 'icons/obj/machines/bonfire.dmi'
+	icon_state = "solution_temporary"
 	layer = ABOVE_MOB_LAYER
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT

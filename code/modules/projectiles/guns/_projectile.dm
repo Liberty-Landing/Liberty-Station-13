@@ -217,6 +217,7 @@
 						ammo_magazine = A
 						update_icon()
 						to_chat(user, SPAN_NOTICE("You tactically reload your [src] with [AM]!"))
+						A.update_icon() //When we drop are mag we want to update its icon
 				else if(ammo_magazine)
 					to_chat(user, SPAN_WARNING("\The [src] already has a magazine loaded.")) //already a magazine here, and this type of gun doesn't allow tactical reloads.
 					return
@@ -226,6 +227,7 @@
 				user.remove_from_mob(AM)
 				AM.loc = src
 				ammo_magazine = AM
+				AM.update_icon()
 				//This is so that when re reload we also add a bullet to the loaded lens, like racking it
 				if(ammo_magazine.stored_ammo.len)
 					if(!loaded.len && max_shells)

@@ -9,9 +9,9 @@
  * Security
  */
 /obj/item/clothing/under/rank/warden
-	desc = "A durable supply specialist's jumpsuit, designed to provide moderate combat protection."
-	name = "supply specialist's jumpsuit"
-	icon_state = "warden"
+	desc = "A durable armorer's jumpsuit, designed to provide moderate combat protection."
+	name = "armorer's jumpsuit"
+	icon_state = "watch_armorer_uniform"
 	item_state = "r_suit"
 	siemens_coefficient = 0.8
 
@@ -25,8 +25,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["specialist jumpsuit"] = "warden"
-	options["specialist jumpskirt"] = "warden_skirt"
+	options["armorer jumpsuit"] = "watch_armorer_uniform"
+	options["armorer jumpskirt"] = "watch_armorer_skirt"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -41,16 +41,16 @@
 		return 1
 
 /obj/item/clothing/head/rank/warden
-	name = "supply specialist's helmet"
-	desc = "A distinctive red military helmet signifying a supply specialist rank."
+	name = "armorers's helmet"
+	desc = "A distinctive red military helmet signifying a armorers rank."
 	icon_state = "policehelm"
 	body_parts_covered = 0
 
 /obj/item/clothing/under/rank/security
-	name = "marshal officer's jumpsuit"
+	name = "watchmen's jumpsuit"
 	desc = "A durable officer's jumpsuit, designed to provide moderate combat protection."
-	icon_state = "security"
-	item_state = "ba_suit"
+	icon_state = "watch_uniform"
+	item_state = "r_suit"
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/security/verb/toggle_style()
@@ -63,12 +63,12 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["officer default"] = "security"
-	options["officer jumpskirt"] = "security_skirt"
-	options["officer turtleneck"] = "securityrturtle"
+	options["officer default"] = "watch_uniform"
+	options["officer jumpskirt"] = "watch_skirt"
+	/*options["officer turtleneck"] = "securityrturtle"
 	options["cadet default"] = "seccadet"
 	options["cadet jumpskirt"] = "cadet"
-	options["cadet alt"] = "seccadetalt"
+	options["cadet alt"] = "seccadetalt" - These are not updated.*/
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 
@@ -89,7 +89,7 @@
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/bdu/marshal
-	name = "marshal officer's BDU"
+	name = "watchman officer's BDU"
 	desc = "A durable officer's Battle Dress Uniform, designed to provide moderate combat protection."
 	icon_state = "bdumarshal"
 	item_state = "bdumarshal"
@@ -208,9 +208,9 @@
  * Ironhammer Commander
  */
 /obj/item/clothing/under/rank/ih_commander
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Warrant Officer\". It has additional armor to protect the wearer."
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Deputy Chief\". It has additional armor to protect the wearer."
 	name = "warrant officer's jumpsuit"
-	icon_state = "hos"
+	icon_state = "watch_deputy_uniform"
 	item_state = "r_suit"
 	siemens_coefficient = 0.8
 
@@ -224,8 +224,8 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["wo jumpsuit"] = "hos"
-	options["wo jumpskirt"] = "hos_skirt"
+	options["cd jumpsuit"] = "watch_deputy_uniform"
+	options["cd jumpskirt"] = "watch_deputy_skirt"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 

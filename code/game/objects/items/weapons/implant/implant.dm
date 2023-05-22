@@ -161,3 +161,10 @@
 		else
 			return TRUE
 	return TRUE
+
+/obj/item/implant/proc/clean_of_hearthcore()
+	if(locate(/obj/item/implant/core_implant/cruciform) in wearer.contents)
+		return FALSE
+	else
+		return TRUE
+

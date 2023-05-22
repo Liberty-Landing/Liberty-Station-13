@@ -13,11 +13,10 @@
 	var/weed_kill_str = 0
 
 /obj/item/plantspray/water
-	name = "LSS Plant Mineral Water"
-	desc = "A mix of both water and needed robustharvest for plant survival in enclosed spaces. Do not drink!"
-	icon_state = "bottle16"
+	name = "Spring Water"
+	desc = "A healthy mix of rainwater and needed E-Z-Nutrient for plant survival in enclosed spaces. Do not drink!"
+	icon_state = "spring_water"
 	toxicity = -5 //Heals plants that are toxic basiclly
-	icon = 'icons/obj/chemical.dmi'
 	price_tag = 15
 
 

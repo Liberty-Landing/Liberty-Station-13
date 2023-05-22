@@ -93,7 +93,7 @@
 					/obj/item/reagent_containers/food/snacks/openable/no_raisin = 2,
 					/obj/item/reagent_containers/food/snacks/openable/spacetwinkie = 2,
 					/obj/item/reagent_containers/food/snacks/cheesiehonkers = 2,
-					/obj/item/reagent_containers/food/snacks/chocolatebar = 1,
+					/obj/item/reagent_containers/food/snacks/chocolatebarvenus = 1,
 					/obj/item/reagent_containers/food/snacks/candy_drop_blue = 2,
 					/obj/item/storage/fancy/dogtreats = 2,)
 	contraband = list(/obj/item/reagent_containers/food/snacks/openable/syndicake = 6)
@@ -108,7 +108,7 @@
 					/obj/item/reagent_containers/food/snacks/cheesiehonkers = 50,
 					/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds = 60,
 					/obj/item/reagent_containers/food/snacks/candy/pistachios_pack = 60,
-					/obj/item/reagent_containers/food/snacks/chocolatebar = 70,
+					/obj/item/reagent_containers/food/snacks/chocolatebarvenus = 70,
 					/obj/item/reagent_containers/food/snacks/candy_drop_blue = 90,
 					/obj/item/storage/fancy/dogtreats = 125,
 					/obj/item/reagent_containers/food/snacks/openable/syndicake = 100)
@@ -269,6 +269,7 @@
 					/obj/item/material/kitchen/utensil/fork = 6,
 					/obj/item/tool/knife = 6,
 					/obj/item/material/kitchen/utensil/spoon = 6,
+					/obj/item/material/kitchen/utensil/skewer = 8,
 					/obj/item/material/kitchen/rollingpin = 3,
 					/obj/item/spatula = 6,
 					/obj/item/reagent_containers/dropper = 3,
@@ -423,6 +424,7 @@
 	desc = "A machine filled with odd pre-space era drinks, smells of benzin. Provided for by HexaOptimum."
 	icon_state = "citadel"
 	icon_vend = "citadel-vend"
+	icon_deny = "citadel-deny"
 	product_slogans = "For a little bit of home.;Cure your depression with these!;HexaOptimum is not responsible for any mutations resulting from drinking our products."
 	product_ads = "Wish to relive your childhood ?;One small step for us but one leap for you!;Unions got nothing on this!;Taste the Centauri!;Feel the power of capitalism."
 	products = list(/obj/item/reagent_containers/food/drinks/bottle/small/kvass = 5,

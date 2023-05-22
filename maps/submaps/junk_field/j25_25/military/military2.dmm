@@ -7,11 +7,11 @@
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "am" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "ap" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/carpet,
 /area/template_noop)
 "ay" = (
@@ -80,7 +80,7 @@
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "fy" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/wood,
 /area/template_noop)
 "gf" = (
@@ -122,7 +122,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "kO" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "kS" = (
@@ -153,7 +153,7 @@
 /turf/simulated/floor/carpet,
 /area/template_noop)
 "oP" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "oS" = (
@@ -308,6 +308,13 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/turf/simulated/floor/tiled/steel/bluecorner,
+/area/template_noop)
+"CN" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/steel/bluecorner,
 /area/template_noop)
 "DI" = (
@@ -649,7 +656,7 @@ ah
 ah
 Ze
 PT
-ah
+oP
 ah
 Zy
 Zy
@@ -842,7 +849,7 @@ QE
 QE
 Ze
 xN
-am
+rN
 rN
 xN
 Ze
@@ -1003,7 +1010,7 @@ iz
 Ze
 Js
 XL
-JA
+CN
 ku
 xp
 zj
@@ -1030,7 +1037,7 @@ iz
 Ze
 zj
 kO
-kO
+XL
 Uy
 XL
 XL

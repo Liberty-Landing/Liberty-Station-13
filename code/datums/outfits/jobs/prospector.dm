@@ -25,8 +25,8 @@
 /decl/hierarchy/outfit/job/shipbreaker
 	name = OUTFIT_JOB_NAME("Fontaine Heavy Industries - Shipbreaker")
 	uniform = /obj/item/clothing/under/turtleneck/fontaine
-	head = /obj/item/clothing/head/helmet/handmade/scavengerhelmet
-	suit = /obj/item/clothing/suit/storage/scavengerarmor
+	head = /obj/item/clothing/head/helmet/handmade/scavengerhelmet/fontaine
+	suit = /obj/item/clothing/suit/storage/scavengerarmor/fontaine
 	glasses = /obj/item/clothing/glasses/sunglasses/fontaine
 	gloves = /obj/item/clothing/gloves/thick/fontaine
 	l_ear = /obj/item/device/radio/headset/headset_pro

@@ -2,7 +2,7 @@
 	spawn_probability = 0 //were bugged
 	name_pool = list("FTS 'PentaOptium'" = "Free Trade Station 'PentaOptium'. \"Oh, you, I think I can sell you some cybernetics.\"")
 	inventory = list(
-		"CAPSA" = list(
+		"PIRS" = list(
 			/obj/item/organ/external/robotic/moebius/l_arm,
 			/obj/item/organ/external/robotic/moebius/r_arm,
 			/obj/item/organ/external/robotic/moebius/l_leg,
@@ -21,23 +21,11 @@
 			/obj/item/organ/external/robotic/technomancer/l_leg,
 			/obj/item/organ/external/robotic/technomancer/r_leg
 		),
-		"H&S" = list(
+		"HexaOptimum" = list(
 			/obj/item/organ/external/robotic/frozen_star/l_arm,
 			/obj/item/organ/external/robotic/frozen_star/r_arm,
 			/obj/item/organ/external/robotic/frozen_star/l_leg,
 			/obj/item/organ/external/robotic/frozen_star/r_leg
-		),
-		"Voidwolf" = list(
-			/obj/item/organ/external/robotic/serbian/l_arm,
-			/obj/item/organ/external/robotic/serbian/r_arm,
-			/obj/item/organ/external/robotic/serbian/l_leg,
-			/obj/item/organ/external/robotic/serbian/r_leg
-		),
-		"Blackmarket Watch" = list(
-			/obj/item/organ/external/robotic/blackshield/l_arm,
-			/obj/item/organ/external/robotic/blackshield/r_arm,
-			/obj/item/organ/external/robotic/blackshield/l_leg,
-			/obj/item/organ/external/robotic/blackshield/r_leg
 		)
 	)//No real better place to put this honestly
 

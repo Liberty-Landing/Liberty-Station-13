@@ -11,9 +11,11 @@
 	difficulty = "Stressful."
 	selection_color = "#94a87f"
 	req_admin_notify = 1
+
+	initial_balance = INIT_BALANCE_COMMAND
 	wage = WAGE_COMMAND
+
 	outfit_type = /decl/hierarchy/outfit/job/medical/cso
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_genetics, access_heads,
@@ -70,13 +72,15 @@
 	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Boring to Overwhelming."
 	selection_color = "#a8b69a"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	minimum_character_age = 25
-	alt_titles = list("Physician", "CAPSA Surgeon", "Nightingale")
-	noob_name = "Medical Intern"
+	alt_titles = list("Medical Intern", "Physician", "CAPSA Surgeon", "Nightingale")
+/*	noob_name = "Medical Intern" */
 	outfit_type = /decl/hierarchy/outfit/job/medical/doctor
 	department_account_access = TRUE
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology,
@@ -120,19 +124,21 @@
 	spawn_positions = 3
 	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Ungratifying."
-	noob_name = "First Aid Responder"
-	alt_titles = list("Emergency Medical Technician", "Protection & Recovery Team")
+/*	noob_name = "First Aid Responder" */
+	alt_titles = list("First Aid Responder", "Emergency Medical Technician", "Protection & Recovery Team")
 	selection_color = "#a8b69a"
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	outfit_type = /decl/hierarchy/outfit/job/medical/paramedic
-	disallow_species = list(FORM_TERRAYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	health_modifier = 5
 	perks = list(PERK_MEDICAL_EXPERT, PERK_CHEMIST)
 
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_surgery, access_chemistry, access_virology, access_orderly, access_medical_suits,
-		access_psychiatrist, access_genetics, access_robotics, access_xenobiology, access_tox, access_xenoarch
+		access_psychiatrist, access_genetics, access_robotics, access_xenobiology, access_tox, access_xenoarch, access_maint_tunnels
 	)
 
 	stat_modifiers = list(
@@ -171,7 +177,10 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
+
+	initial_balance = INIT_BALANCE_PROF
 	wage = WAGE_PROFESSIONAL
+
 	supervisors = "the Chief Surgeon Overseer"
 	difficulty = "Soul Crushing."
 	selection_color = "#a8b69a"
@@ -180,7 +189,6 @@
 	access = list(
 		access_moebius, access_medical_equip, access_morgue, access_psychiatrist, access_chemistry, access_medical_suits
 	)
-	disallow_species = list(FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
 
 	perks = list(PERK_MEDICAL_EXPERT, PERK_PSI_PSYCHOLOGIST, PERK_CHEMIST)
 

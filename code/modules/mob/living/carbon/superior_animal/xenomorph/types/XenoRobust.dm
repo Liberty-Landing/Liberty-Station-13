@@ -7,8 +7,8 @@
 	icon_dead = "warrior_dead"
 	icon_rest = "warrior_stunned"
 
-	maxHealth = 60
-	health = 60
+	maxHealth = 100
+	health = 100
 	flash_resistances = 8 //Weak xeno dies to like 3 hits of most things, lets not make it to easy
 	melee_damage_lower = 20
 	melee_damage_upper = 25
@@ -33,8 +33,8 @@
 	icon_dead = "shrike_dead"
 	icon_rest = "shrike_stunned"
 
-	maxHealth = 40
-	health = 40
+	maxHealth = 80
+	health = 80
 	flash_resistances = 1 //Not really an issue to be flashing now is it?
 	melee_damage_lower = 10
 	melee_damage_upper = 15
@@ -119,8 +119,8 @@ var/datum/xenomorph/xeno_morph_ai
 	icon_rest = "boiler_stunned"
 	deathmessage = "explodes violently as it dies!"
 
-	maxHealth = 50
-	health = 50
+	maxHealth = 100
+	health = 100
 	melee_damage_lower = 15
 	melee_damage_upper = 20
 	flash_resistances = 0

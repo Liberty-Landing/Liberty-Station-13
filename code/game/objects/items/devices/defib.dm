@@ -435,6 +435,7 @@
 	if(!H.client && !H.teleop)
 		for(var/mob/observer/ghost/ghost in GLOB.player_list)
 			if(ghost.mind == H.mind)
+				sound_to(ghost, 'sound/machines/defib_SafetyOn.ogg')
 				to_chat(ghost, "<b><font color = #330033><font size = 3>Someone is attempting to resuscitate you. Re-enter your body if you want to be revived!</b> (Verbs -> Ghost -> Re-enter corpse)</font></font>")
 				break
 
@@ -475,7 +476,7 @@
 	if(H.isSynthetic())
 		H.setToxLoss(0)
 
-	H.apply_damage(burn_damage_amt, BURN, BP_TORSO)
+	H.apply_damage(burn_damage_amt, BURN, BP_CHEST)
 
 	error = can_revive(H)
 	if(error)

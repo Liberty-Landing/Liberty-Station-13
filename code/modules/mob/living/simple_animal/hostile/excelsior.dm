@@ -1,6 +1,6 @@
 /mob/living/simple_animal/hostile/megafauna/excelsior_cosmonaught
 	name = "OKB-1"
-	desc = "For the people! The excelsior's heaviest option for dealing with enemies of their glorious communist revolution."
+	desc = "For the people! The heaviest option for dealing with enemies of their glorious communist revolution."
 
 	faction = "excelsior"
 

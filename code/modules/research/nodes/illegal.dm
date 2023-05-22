@@ -161,7 +161,7 @@
 	icon = "borgmodule"
 
 	required_technologies = list(/datum/technology/freedom_implant)
-	required_tech_levels = list(RESEARCH_ROBOTICS = 10)
+	required_tech_levels = list(RESEARCH_ROBOTICS = 8)
 	cost = 3750
 
 	unlocks_designs = list(/datum/design/research/item/robot_upgrade/syndicate)

@@ -6,7 +6,6 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice),
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/doughslice),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "woodpulp", 1),
 		list(CWJ_USE_OVEN, J_HI, 5 SECONDS)
 	)
 

@@ -1162,7 +1162,6 @@
 	icon_state = "tube1";
 	pixel_y = 0
 	},
-/obj/machinery/excelsior_boombox,
 /turf/simulated/floor/tiled/techmaint,
 /area/awaymission/spacebattle/syndicate7)
 "fV" = (

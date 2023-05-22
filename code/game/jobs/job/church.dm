@@ -14,42 +14,40 @@
 	minimum_character_age = 25
 	playtimerequired = 1200
 	security_clearance = CLEARANCE_CLERGY
-	health_modifier = 10
+	health_modifier = 20
 	access = list(access_nt_preacher, access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_RC_announce, access_keycard_auth, access_heads, access_sec_doors)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
-	wage = WAGE_COMMAND //The church has deep pockets
+	initial_balance = INIT_BALANCE_COMMAND
+	wage = WAGE_COMMAND
 	department_account_access = TRUE
 	outfit_type = /decl/hierarchy/outfit/job/church/oathpledge
 
 	stat_modifiers = list(
-		STAT_MEC = 30,
-		STAT_BIO = 15,
-		STAT_COG = 10,
-		STAT_VIG = 15,
-		STAT_TGH = 10,
+		STAT_COG = 15,
+		STAT_TGH = 45,
+		STAT_ROB = 45,
 	)
 
-	perks = list(PERK_NEAT, PERK_CHANNELING)
+	perks = list(PERK_CHANNELING)
 
 	software_on_spawn = list(/datum/computer_file/program/records,
 							 /datum/computer_file/program/reports)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST,
-		CRUCIFORM_REDLIGHT
+		CRUCIFORM_OATHBOUND,
+		CRUCIFORM_OATHPLEDGE,
+		CRUCIFORM_CUSTODIAN,
 	)
 
-	description = "The Oathpledge serves as the head of the local branch of the Church of the Bonfire. <br>\
-	You represent the interest of the church and its disciples within the colony - identified by the cruciform implant upon their breast.<br>\
-	Your most pressing duty is as a spiritual leader. Preach to the flock, inspire faith and strength, and convert those seeking salvation.<br>\
-	While you are no trained psychologist, you can provide support and guidance to all - in both bright and dark times.<br>\
-	Additional duty may require holding funerals for the truly lost, or host parties and group praying.<br>\
-	The Crusader protocol may also be enacted under your command when facing a Hivemind threat. Use this boost, and your ritual book, to defeat evil."
+	description = "The Oathpledge is the leader and beacon of guidance of the main surface stronghold. One of many in both cases.<br>\
+	You represent the interests of the Custodians, their knights and their philosophical views - working together with purifying intentions against the many plagues that curse the colony.<br>\
+	Your major duty is to ensure that the Oaths are respected and followed by all Hearthcore users. You are the symbol of discipline being superior to mindwashing - different from your enemies - and are obligated to act as such.<br>\
+	You are capable of altering the neural data of Hearthcores and provide support to your knights in battle, allowing their mental boundaries to vanish and bring their purifying force into light, making demigods out of trained warriors. You have ways to know where an enemy is hiding.<br>\
+	Your role does not mean you are the highest in rank or the oldest member, but rather that you specialize in leadership, social capability, and financial spending."
 
-	duties = "Represent the interests of church disciples on the colony. Protect them from persecution and speak for them.<br>\
-		Hold mass, give sermons, preach to the faithful, and lead group ritual sessions.<br>\
-		Hold funerals for those who cannot be saved."
+	duties = "Provide guidance and discipline to Oathbounds and To-be Oathbounds.<br>\
+	Hold philosophical discussions and plan cleansing efforts against plague-infested places, the mutants, the brainwashers and the slavers.<br>\
+	Provide combative support to other Oathbounds and stay in watch against whatever may hurt the precious dogmas of the Custodians."
 
 	setup_restricted = TRUE
 
@@ -70,32 +68,37 @@
 	difficulty = "Easy."
 	security_clearance = CLEARANCE_COMMON
 	selection_color = "#ecd37d"
+	health_modifier = 20
 	access = list(access_nt_disciple, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	outfit_type = /decl/hierarchy/outfit/job/church/forgemaster
-	wage = WAGE_LABOUR_DUMB	//Barely a retaining fee. Actor can busk for credits to keep themselves fed
+
+	initial_balance = INIT_BALANCE_MENIAL
+	wage = WAGE_LABOUR
 	stat_modifiers = list(
-		STAT_TGH = 20, //basically a punching bag, he can't robust anyone or shoot guns anyway
-		STAT_MEC = 10  //They often deal with tool mods guns and other things that need these
+		STAT_MEC = 30,
+		STAT_TGH = 20,
+		STAT_ROB = 20,
 	)
 
-	//You need insperation to do your job.
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_CHURCHSYNTH, FORM_NASHEF)
+	core_upgrades = list(
+		CRUCIFORM_FORGEMASTER,
+		CRUCIFORM_CUSTODIAN,
+	)
 
-
-	perks = list(PERK_MARKET_PROF, PERK_ARTIST, PERK_STALKER)
+	perks = list(PERK_STALKER, PERK_ARTIST, PERK_CHANNELING)
 	software_on_spawn = list(
 							 /datum/computer_file/program/scanner,
 							 /datum/computer_file/program/wordprocessor,
 							 /datum/computer_file/program/reports)
 
-	description = "The Artist serves as a versatile performance artist here to entertain the colony.<br>\
-	You may find your colleagues distracted by boring duties or senseless bickering, so work hard to bring them some real culture.<br>\
-	The CEO pays you a terrible retaining fee, so use your wits to sustain yourself - perhaps ask your audience for donations.<br>\
-	In addition you do not gain desires like other members of the colony, instead you spend your insight at your workbench to create expensive works of art worth selling."
+	description = "Where the Oathpledge discipline the Oathbounds, the Forgemaster discipline the fire - specialized in engineering and tinkering, the Forgemasters are the backbone of the Custodian’s supportive operations.<br>\
+    Artisans of marvels beyond normal comprehension, one uses the fist as a hammer and fire as fuel to discipline red hot steel into shape, creating statues, walls, machines, Hearthcore upgrades, artistic oddities and weapon mods.<br>\
+    Forgemasters may not have the fighting capability of the unspecialized Oathbounds, yet their creative mind provides financial support, combat prowess, equipment and upgrades to the Custodians.<br>\
+    In addition, you do not gain desires like other members of the colony, you spend your insight at your workbench to create expensive works of art fit to trade or to be used to recover the insight of the common people."
 
-	duties = "Provide (family-friendly) entertainment to the crew with your varied talents.<br>\
-		Create and sell valuable works of art in your artist bench.<br>\
-		Try to be a successful rather than starving artist. The costume vendor and equipment in your cramped studio may prove useful."
+	duties = "Create, use and sell valuable arts of your own making.<br>\
+	Ensure that the Stronghold is well protected against the insectoid plague, the mutants and mindcontrolled fiends."
+
 	setup_restricted = TRUE
 
 /obj/landmark/join/start/forgemaster
@@ -115,31 +118,34 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+
+	initial_balance = INIT_BALANCE_MENIAL
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/enkindled
 	security_clearance = CLEARANCE_COMMON
-	health_modifier = 5
+	health_modifier = 10
 	stat_modifiers = list(
-	STAT_MEC = 25,
-	STAT_BIO = 10,
-	STAT_VIG = 10,
-	STAT_TGH = 5,
+		STAT_BIO = 30,
+		STAT_TGH = 20,
+		STAT_ROB = 20,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST
+		CRUCIFORM_ENKINDLED,
+		CRUCIFORM_CUSTODIAN,
 	)
 
-	perks = list(PERK_NEAT, PERK_CHANNELING)
+	perks = list(PERK_CHANNELING)
 
-	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
-	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
-	You should also work to present the Faith in a positive light to all colonists. The Vector may issue you with further duties."
+	description = "The Enkindled are the blood transmuters specialized in the proto-science of traditions of biology - with the revolutionary custodian spin.<br>\
+    The Enkindled are not proficient in surgery and lack the tools for it, but they are able to produce many different elixirs from the corpses of fallen creatures with varying effects - from healing tinctures, throwable flasks, poison needles, combat enhancers and status potions.<br>\
+    Be aware, potions can be too strong to Oathbounds about to head into battle, in fact, many potions also possess negative qualities that the Oathbounds must be aware of before combat.<br>\
+	Hearthcore users cannot be cloned, so it falls to the Enkindled to bring them back to life with their Hearthcore, reborn with the neural nature of the radiance, bringing their brain back to life and allowing further organ revival to take place.<br>\
+    Enkindled are known for being somewhat mentally derailed  - in a good and bad way. They are more than capable of recovering the sanity of others as much as they heal, with the last possibly causing sanity damage."
 
-	duties = "Operate the bioreactor and manage biomass for the church machines.<br>\
-		Maintain areas owned by the church, keeping the facilities functional and in good order.<br>\
-		Offer assistance to the faithful and non-faithful alike."
+	duties = "Provide medical support to other Oathbounds in battle and in rest - but do not get in the way of CAPSA. <br>\
+	Provide sanity recovery and enhancing services to those you deem fit.<br>\
+	Produce strong potions and don't sell it to ingenuous Oathbounds, throw a flask at a roach and watch it become an acidic glop for fun"
 
 	setup_restricted = TRUE
 
@@ -154,37 +160,39 @@
 	department = DEPARTMENT_CHURCH
 	department_flag = CHURCH
 	faction = MAP_FACTION
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 4
+	spawn_positions = 4
 	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+
+	initial_balance = INIT_BALANCE_MENIAL
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/oathbound
 	security_clearance = CLEARANCE_COMMON
-	health_modifier = 5
+	health_modifier = 10
 	stat_modifiers = list(
-	STAT_MEC = 25,
-	STAT_BIO = 10,
-	STAT_VIG = 10,
-	STAT_TGH = 5,
+		STAT_COG = 10,
+		STAT_TGH = 30,
+		STAT_ROB = 30,
 	)
-	disallow_species = list(FORM_FBP, FORM_UNBRANDED, FORM_PIRSYNTH, FORM_TERRAYNTH, FORM_LIBYNTH, FORM_NASHEF)
 
 	core_upgrades = list(
-		CRUCIFORM_PRIEST
+		CRUCIFORM_OATHBOUND,
+		CRUCIFORM_CUSTODIAN,
 	)
 
-	perks = list(PERK_NEAT, PERK_CHANNELING)
+	perks = list(PERK_CHANNELING)
 
-	description = "The Vector serves the Oathpledge, and more generally the church, as a disciple of the Faith.<br>\
-	The sacred duties of operating the bioreactor and managing biomass for the church machines are your main priority.<br>\
-	You should also work to present the Faith in a positive light to all colonists. The Vector may issue you with further duties."
+	description = "The Oathbounds are the combat units, footsoldiers of purity that burn down the plague inside and outside the colony, along with mutants and antagonistic entities that defy their dogmas.<br>\
+    Oathbounds can supply their forces in expeditions and help change the tide of battle with their high defensive capabilities and overall toughness in the frontlines, keeping the flimsy gun-users behind and protected, or ignite them on accident - to the disdain of their Oathpledge.<br>\
+    Oathbounds are meant to be well trained and reflect the strength of people in the times of old, when society did not weaken it's people, so one must act like such (See: Oaths and Custodian culture). They are not allowed to use firearms like all other custodians, but their blades, staves and throwing weapons of enhanced rudimentary technology proves highly competitive against the most common technology.<br>\
+    Oathbounds should work the machinery and provide the colony with Custodian products of textile and protective nature, but only non-igniting weapons can be sold."
 
-	duties = "Operate the bioreactor and manage biomass for the church machines.<br>\
-		Maintain areas owned by the church, keeping the facilities functional and in good order.<br>\
-		Offer assistance to the faithful and non-faithful alike."
+	duties = "Cleanse the insectoid plague from the halls and maintenance tunnels, but take care not to harm the Cht'mant next door.<br>\
+	Ensure that there's no religious entity putting Oathbounds's free will at risk, spread philosophical ideas around the colony.<br>\
+	Help other custodian roles to the best of your abilities as much as they help you, ask the Enkindled for their strongest potions, work the Bonfire and produce many textile and armor products to help the economy."
 
 	setup_restricted = TRUE
 

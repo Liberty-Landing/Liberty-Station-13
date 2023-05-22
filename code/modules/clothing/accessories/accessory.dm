@@ -251,6 +251,17 @@
 	name = "medal of exceptional heroism"
 	desc = "An extremely rare golden medal awarded only by faction owners. To recieve such a medal is the highest honor and as such, very few exist. This medal is almost never awarded to anybody but commanders."
 
+/*Cross*/
+
+/obj/item/clothing/accessory/cross
+	name = "tau cross necklace"
+	desc = "A heavy necklace resembling a Tau Cross."
+	icon = 'icons/inventory/accessory/icon.dmi'
+	icon_state = "cross"
+	item_state = ""	// No inhands
+	slot_flags = SLOT_ACCESSORY_BUFFER | SLOT_MASK
+	w_class = ITEM_SIZE_NORMAL // Chonky cross
+
 /*Capes*/
 
 /obj/item/clothing/accessory/cape
@@ -445,7 +456,7 @@
 
 /obj/item/clothing/accessory/kricape/soldier
 	name = "soldier-lord trench cape"
-	desc = "A faded grey cape for the nobles-of-the-sword from the land of the Midnight Sun - Reichsritters who forsook high officership billets instead to lead infantry. They are a fading footnote of Kriosian aristocracy, brought to extinction numbers during the Battle of Krios by their leadership methods and the irrelevance of height and physique against the application of 6.5mm Creedmoor to the head by Solfed Scout-Snipers. Without anyone young or willing enough to sire enough to replace the dead, the cape has become the signature of exiled Castellans and the formal apparel of a few notable mercenary-men and duelists, and shall mean nothing in the next few generations."
+	desc = "A faded grey cape for the nobles-of-the-sword from the land of the Midnight Sun - Reichsritters who forsook high officership billets instead to lead infantry. They are a fading footnote of Kriosian aristocracy, brought to extinction numbers during the Battle of Krios by their leadership methods and the irrelevance of height and physique against the application of 6.5mm Creedmoor to the head by Terran Scout-Snipers. Without anyone young or willing enough to sire enough to replace the dead, the cape has become the signature of exiled Castellans and the formal apparel of a few notable mercenary-men and duelists, and shall mean nothing in the next few generations."
 	icon_state = "krieg_cape"
 
 /obj/item/clothing/accessory/kricape/rural
@@ -1032,6 +1043,11 @@
 	icon_state = "militarypilot"
 	item_state = "militarypilot"
 
+/obj/item/clothing/accessory/civexo
+	name = "medical support exoframe" //sprites by Albert7076
+	desc = "A lightweight support exoframe given to colonists unable to move in normal gravity, or to those who cannot move limbs without outside assistance. Cheaply designed, this frame and its design is provided for free to those who need it."
+	icon_state = "civ_exos_mob"
+	item_state = "civ_exos_mob"
 /* Kneepads */
 
 /obj/item/clothing/accessory/kneepads
@@ -1056,28 +1072,28 @@
 
 /obj/item/clothing/accessory/tacticool
 	name = "black UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in black."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in black."
 	icon_state = "ubacblack"
 	item_state = "ubacblack"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/tacticool/navy
 	name = "navy blue UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in navy blue."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in navy blue."
 	icon_state = "ubacblue"
 	item_state = "ubacblue"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/tacticool/tan
 	name = "tan UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in tan."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in tan."
 	icon_state = "ubactan"
 	item_state = "ubactan"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
 
 /obj/item/clothing/accessory/tacticool/green
 	name = "green UBAC shirt"
-	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original solfed design in green."
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in green."
 	icon_state = "ubacgreen"
 	item_state = "ubacgreen"
 	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
@@ -1491,3 +1507,48 @@
 		if(t)
 			name = "nametag ([t])"
 
+//Custodians
+
+/obj/item/clothing/accessory/medallion/leather
+	name = "leather medallion"
+	desc = "A leather medallion."
+	icon_state = "leather_medallion"
+	item_state = "leather_medallion"
+
+/obj/item/clothing/accessory/medallion/copper
+	name = "copper medallion"
+	desc = "A copper medallion."
+	icon_state = "copper_medallion"
+	icon_state = "copper_medallion"
+
+/obj/item/clothing/accessory/medallion/silver
+	name = "silver medallion"
+	desc = "A silver medallion."
+	icon_state = "silver_medallion"
+	icon_state = "silver_medallion"
+
+/obj/item/clothing/accessory/medallion/gold
+	name = "gold medallion"
+	desc = "A gold medallion."
+	icon_state = "gold_medallion"
+	icon_state = "gold_medallion"
+
+/obj/item/clothing/accessory/raincoat
+	name = "light custodian raincoat"
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in black."
+	icon_state = "custodian_raincoat_light"
+	item_state = "custodian_raincoat_light"
+	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER
+
+/obj/item/clothing/accessory/raincoat/dark
+	name = "dark custodian raincoat"
+	desc = "A tactical shirt meant to be worn under armor to protect from unpleasant chaffing. Original design in black."
+	icon_state = "custodian_raincoat_dark"
+	item_state = "custodian_raincoat_dark"
+
+/obj/item/clothing/accessory/surcoat
+	name = "custodian surcoat"
+	desc = "A patterned light coat designed to be draped over other clothing."
+	icon_state = "oathbound_surcoat"
+	item_state = "oathbound_surcoat"
+	slot_flags = SLOT_OCLOTHING | SLOT_ACCESSORY_BUFFER

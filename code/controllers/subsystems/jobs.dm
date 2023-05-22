@@ -407,23 +407,20 @@ SUBSYSTEM_DEF(job)
 		if(C)
 			C.install_default_modules_by_job(job)
 			C.access.Add(job.cruciform_access)
-			C.install_default_modules_by_path(job)
-			C.security_clearance = job.security_clearance
+			if(job.security_clearance)
+				C.security_clearance = job.security_clearance
 			//IDK were else to place this so it works when you late join and its active
-			if(GLOB.hive_data_bool["all_church_to_battle"])
-				if(H.client &&  H.stat != DEAD && ishuman(H)) //Basic sanity checks to prevent anything abd
-					make_antagonist(H.mind, ROLE_INQUISITOR)
 
 		//Occulus Edit, Right here! Custom skills.
-		H.stats.changeStat(STAT_BIO, H.client.prefs.BIOMOD)
+		H.stats.changeStat(STAT_WIL, H.client.prefs.WILMOD)
 		H.stats.changeStat(STAT_COG, H.client.prefs.COGMOD)
+		H.stats.changeStat(STAT_BIO, H.client.prefs.BIOMOD)
 		H.stats.changeStat(STAT_MEC, H.client.prefs.MECMOD)
 		H.stats.changeStat(STAT_ROB, H.client.prefs.ROBMOD)
 		H.stats.changeStat(STAT_TGH, H.client.prefs.TGHMOD)
-		H.stats.changeStat(STAT_VIG, H.client.prefs.VIGMOD)
-		H.stats.changeStat(STAT_VIV, H.client.prefs.VIVMOD)
-		H.stats.changeStat(STAT_ANA, H.client.prefs.ANAMOD)
+		H.stats.changeStat(STAT_END, H.client.prefs.ENDMOD)
 		H.give_health_via_stats()
+		H.stats.changeStat(STAT_VIG, H.client.prefs.VIGMOD)
 		// This could be cleaner and better, however it should apply your stats once on spawn properly if here. If anyone wants to do this in a cleaner manner be my guest.
 
 		BITSET(H.hud_updateflag, ID_HUD)

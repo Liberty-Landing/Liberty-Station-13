@@ -1,3 +1,4 @@
+/*
 /obj/machinery/textials
 	name = "flarelathe"
 	desc = "A gas heated fire lathe used for enfusing silk and biomatter into silk, \
@@ -476,3 +477,4 @@
 	update_icon()
 
 	return FALSE
+*/

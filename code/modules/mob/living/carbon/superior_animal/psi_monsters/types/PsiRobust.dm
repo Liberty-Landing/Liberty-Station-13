@@ -70,7 +70,7 @@
 	leach_on_odds = 70
 	can_leach = TRUE
 	steal_odds = 5
-	stat_to_steal = STAT_VIV
+	stat_to_steal = STAT_WIL
 	steal_amount = -1
 
 /mob/living/carbon/superior_animal/psi_monster/flesh_tower

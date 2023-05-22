@@ -175,6 +175,69 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 
+/obj/item/clothing/glasses/powered/meson/unionscouter
+	name = "union scouter"
+	desc = "A slim fit lightweight device that displays simple material data in an optical matrix over one eye."
+	icon_state = "unionscouter"
+	item_state = "unionscouter"
+	off_state = "deunionscouter"
+	var/righteye = TRUE // For flipping the scouter
+
+/obj/item/clothing/glasses/powered/meson/unionscouter/toggle(mob/user, new_state = 0)
+	if(new_state)
+		if(!cell || !cell.check_charge(tick_cost) && user)
+			to_chat(user, SPAN_WARNING("[src] battery is dead or missing."))
+			return
+		if(righteye)
+			icon_state = initial(icon_state)
+		else
+			icon_state = "[initial(icon_state)]_left"
+		active = TRUE
+		flash_protection = initial(flash_protection)
+		tint = initial(tint)
+		if(user)
+			if(activation_sound)
+				user << activation_sound
+			to_chat(user, SPAN_NOTICE("[src]'s optical matrix activates."))
+	else
+		active = FALSE
+		if(righteye)
+			icon_state = off_state
+		else
+			icon_state = "[off_state]_left"
+		flash_protection = FLASH_PROTECTION_NONE
+		tint = TINT_NONE
+		if(user)
+			to_chat(user, SPAN_NOTICE("[src]'s optical matrix shuts down."))
+	if(user)
+		user.update_inv_glasses()
+		user.update_action_buttons()
+
+/obj/item/clothing/glasses/powered/meson/unionscouter/verb/switcheye()
+	set name = "Change scouter side"
+	set category = "Flip Scouter"
+	set src in usr
+
+	if(usr.canmove && !usr.stat && !usr.restrained())
+		if(!righteye)
+			righteye = !righteye
+			if(active)
+				icon_state = "unionscouter"
+			else
+				icon_state = "deunionscouter"
+			item_state = icon_state
+			to_chat(usr, "You flip the scouter to cover your right eye.")
+		else
+			righteye = !righteye
+			if(active)
+				icon_state = "unionscouter_left"
+			else
+				icon_state = "deunionscouter_left"
+			item_state = icon_state
+			to_chat(usr, "You flip the scouter to cover your left eye.")
+		update_wear_icon()
+		usr.update_action_buttons()
+
 /obj/item/clothing/glasses/powered/nightvision_helmet
 	name = "night vision goggles"
 	desc = "A pair of night vision goggles stuck to your helmet, has a slot for a medium battery inside."

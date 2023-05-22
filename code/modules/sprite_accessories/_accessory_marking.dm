@@ -14,24 +14,24 @@
 	species_allowed = list()
 
 	var/body_parts = list() //A list of bodyparts this covers, in organ_tag defines
-	//Reminder: BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_TORSO,BP_GROIN,BP_HEAD
+	//Reminder: BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_CHEST,BP_GROIN,BP_HEAD
 
 	alraune
 		name = "Alraune Body"
 		icon_state = "alraune"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
 	mooscles
 		name = "Toned Muscles (Male)"
 		icon_state = "poomp_male"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO, BP_GROIN, BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM) // I don't know if the arms and legs are THAT affected but let's not skip biceps and leg day. - Seb
+		body_parts = list(BP_CHEST, BP_GROIN, BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM) // I don't know if the arms and legs are THAT affected but let's not skip biceps and leg day. - Seb
 
 	mooscles_f
 		name = "Toned Muscles (Female)"
 		icon_state = "poomp_female"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO, BP_GROIN, BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM)
+		body_parts = list(BP_CHEST, BP_GROIN, BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM)
 
 /*Anime Eyes*/
 
@@ -70,13 +70,13 @@
 	backstripe
 		name = "Back Stripe"
 		icon_state = "backstripe"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 
 	backstripes
 		name = "Back Stripes"
 		icon_state = "otiestripes"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_HEAD)
+		body_parts = list(BP_CHEST,BP_HEAD)
 
 /*Belly Hands Feet*/
 
@@ -84,24 +84,24 @@
 		name = "Belly And Butt"
 		icon_state = "bellyandbutt"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_GROIN,BP_TORSO)
+		body_parts = list(BP_GROIN,BP_CHEST)
 
 	belly_hands_feet
 		name = "Belly, Hands, Feet Color (Minor)"
 		icon_state = "bellyhandsfeetsmall"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
 		species_allowed = list(SPECIES_TAJ, SPECIES_UNATHI)
 
 	hands_feet_belly_full
 		name = "Belly, Hands, Feet Color (Major)"
 		icon_state = "bellyhandsfeet"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
 		species_allowed = list(SPECIES_TAJ, SPECIES_UNATHI)
 
 	hands_feet_belly_full_female
 		name = "Belly, Hands, Feet Color (Major, Female)"
 		icon_state = "bellyhandsfeet_female"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
 		species_allowed = list(SPECIES_TAJ)
 
 	blank_face
@@ -113,7 +113,7 @@
 	body_tone
 		name = "Body Toning (For Emergency Contrast Loss)"
 		icon_state = "btone"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
 
 /*Catwoman*/
 
@@ -121,7 +121,7 @@
 		name = "Catwoman Chest Stripes"
 		icon_state = "catwomanchest"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 
 	catwomangroin
 		name = "Catwoman Groin Stripes"
@@ -174,7 +174,7 @@
 	bands
 		name = "Color Bands"
 		icon_state = "bands"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_TORSO,BP_GROIN)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_CHEST,BP_GROIN)
 
 	bandsface
 		name = "Color Bands (Face)"
@@ -184,7 +184,7 @@
 	patches
 		name = "Color Patches"
 		icon_state = "patches"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_TORSO,BP_GROIN)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_CHEST,BP_GROIN)
 		species_allowed = list(SPECIES_TAJ)
 
 	patchesface
@@ -203,13 +203,13 @@
 		name = "Corvid Belly"
 		icon_state = "corvidbelly"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_GROIN,BP_TORSO,BP_HEAD)
+		body_parts = list(BP_GROIN,BP_CHEST,BP_HEAD)
 
 	cow_body
 		name = "Cow Markings"
 		icon_state = "cowbody"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
 	cow_nose
 		name = "Cow Nose"
@@ -273,7 +273,7 @@
 		name = "FBP panels"
 		icon_state = "eboop"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
 	fingers_toes
 		name = "Fingers And Toes"
@@ -291,7 +291,7 @@
 		name = "Full Body Gloss"
 		icon_state = "gloss"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
 	heterochromia
 		name = "Heterochromia"
@@ -328,99 +328,53 @@
 		icon_state = "handlebars"
 		body_parts = list(BP_HEAD)
 
-/*FBP 'chasis' markings*/
-	athena_body
-		name = "FBP-Athena chassis"
-		icon_state ="athena"
-		body_parts = list(BP_GROIN,BP_TORSO)
+/*FBP markings*/
+	synthskin_canine
+		name = "FBP-Canine synthskin"
+		icon_state = "synthskincanine"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
-	athena_head
-		name = "FBP-Athena head"
-		icon_state ="athena"
-		body_parts = list(BP_HEAD)
+	synthskin_feline
+		name = "FBP-Feline synthskin"
+		icon_state = "synthskinfeline"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
-	ward_body
-		name = "FBP-Ward Takehashi chassis"
-		icon_state ="ward"
-		body_parts = list(BP_GROIN,BP_TORSO)
+	synthskin_shark
+		name = "FBP-Shark synthskin"
+		icon_state = "synthskinshark"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
-	ward_head
-		name = "FBP-Ward Takehashi head"
-		icon_state ="ward"
-		body_parts = list(BP_HEAD)
-
-	hesphaistos_body
-		name = "FBP-Hesphaistos chassis"
-		icon_state ="hesphaistos"
-		body_parts = list(BP_GROIN,BP_TORSO)
-
-	hesphaistos_head
-		name = "FBP-Hesphaistos head"
-		icon_state ="hesphaistos"
-		body_parts = list(BP_HEAD)
-
-	bishop_body
-		name = "FBP-Bishop chassis"
-		icon_state ="bishop"
-		body_parts = list(BP_GROIN,BP_TORSO)
-
-	bishop_head
-		name = "FBP-Bishop head"
-		icon_state ="bishop"
-		body_parts = list(BP_HEAD)
-
-	xion_body
-		name = "FBP-Xion chassis"
-		icon_state ="xion"
-		body_parts = list(BP_GROIN,BP_TORSO)
-
-	xion_head
-		name = "FBP-Xion head"
-		icon_state ="xion"
-		body_parts = list(BP_HEAD)
-
-	spirit_body
-		name = "FBP-Ward Spirit chassis"
-		icon_state ="spirit"
-		body_parts = list(BP_GROIN,BP_TORSO)
-
-	spirit_head
-		name = "FBP-Ward Spirit head"
-		icon_state ="spirit"
-		body_parts = list(BP_HEAD)
-
-	warmonger_body
-		name = "FBP-Warmonger chassis"
-		icon_state ="warmonger"
-		body_parts = list(BP_GROIN,BP_TORSO)
-
-	warmonger_head
-		name = "FBP-Warmonger head"
-		icon_state ="warmonger"
-		body_parts = list(BP_HEAD)
+	synthskin_lizard
+		name = "FBP-Lizard synthskin"
+		icon_state = "synthskinlizard"
+		blend = ICON_MULTIPLY
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 
 	bishop_alt_optics
-		name = "FBP-Bishop Alt. Optics (IPC)"
+		name = "FBP-Bishop Alt. Optics"
 		icon_state = "bishop_alt_optics"
 		body_parts = list(BP_HEAD)
 
 	ward_alt_optics
-		name = "FBP-Ward Takahashi Alt. Optics (IPC)"
+		name = "FBP-Ward Takahashi Alt. Optics"
 		icon_state = "wardtakahashi_alt_optics"
 		body_parts = list(BP_HEAD)
 
 	xion_alt_optics
-		name = "FBP-Xion Alt. Optics (IPC)"
+		name = "FBP-Xion Alt. Optics"
 		icon_state = "xion_alt_optics"
 		body_parts = list(BP_HEAD)
 
 	hesphaistos_alt_optics
-		name = "FBP-Hesphaistos Alt. Optics (IPC)"
+		name = "FBP-Hesphaistos Alt. Optics"
 		icon_state = "hephaestus_alt_optics"
 		body_parts = list(BP_HEAD)
 
 	morpheus_alt_optics
-		name = "FBP-Morpheus Optics (IPC)"
+		name = "FBP-Morpheus Optics"
 		icon_state = "morpheus_optics"
 		body_parts = list(BP_HEAD)
 
@@ -433,43 +387,6 @@
 		name = "FBP-Synthflesh eye (right)"
 		icon_state = "synth_eye_r"
 		body_parts = list(BP_HEAD)
-
-	synthskin_human
-		name = "FBP-Human synthskin"
-		icon_state = "synthskinhuman"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-
-	synthskin_humanf
-		name = "FBP-Human Female synthskin"
-		icon_state = "synthskinhumanf"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-
-	synthskin_canine
-		name = "FBP-Canine synthskin"
-		icon_state = "synthskincanine"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-
-	synthskin_feline
-		name = "FBP-Feline synthskin"
-		icon_state = "synthskinfeline"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-
-	synthskin_shark
-		name = "FBP-Shark synthskin"
-		icon_state = "synthskinshark"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-
-	synthskin_lizard
-		name = "FBP-Lizard synthskin"
-		icon_state = "synthskinlizard"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-
 
 /*Modular Longsock*/
 
@@ -578,7 +495,7 @@
 		name = "Shepherd Back"
 		icon_state = "shepback"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_CHEST,BP_GROIN)
 
 	sheppy_face
 		name = "Shepherd Snout"
@@ -597,21 +514,21 @@
 		name = "Naramad Markings"
 		icon_state = "sergal_full"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 		species_allowed = list("Naramad")
 
 	sergal_full_female
 		name = "Naramad Markings (Female)"
 		icon_state = "sergal_full_female"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST,BP_HEAD)
 		species_allowed = list("Naramad")
 
 	shaggy_mane
 		name = "Shaggy Mane/Feathers"
 		icon_state = "shaggy"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 
 	spidereyes
 		name = "Spider Eyes"
@@ -621,7 +538,7 @@
 	spots
 		name = "Spots"
 		icon_state = "spots"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
 
 /*Socks*/
 
@@ -646,7 +563,7 @@
 	paw_socks_belly
 		name = "Socks,Belly Coloration (Generic)"
 		icon_state = "pawsocksbelly"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_CHEST)
 		species_allowed = list(SPECIES_TAJ, SPECIES_UNATHI)
 
 /*Taj*/
@@ -654,13 +571,13 @@
 	taj_belly
 		name = "Feline Belly Fur"
 		icon_state = "taj_belly"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 		species_allowed = list(SPECIES_TAJ)
 
 	taj_bellyfull
 		name = "Feline Belly Fur Wide"
 		icon_state = "taj_bellyfull"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 		species_allowed = list(SPECIES_TAJ)
 
 	taj_earsout
@@ -684,7 +601,7 @@
 	taj_crest
 		name = "Feline Chest Fur Crest"
 		icon_state = "taj_crest"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 		species_allowed = list(SPECIES_TAJ)
 
 	taj_muzzle
@@ -710,17 +627,17 @@
 	tat_heart
 		name = "Tattoo (Heart, Torso)"
 		icon_state = "tat_heart"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 
 	tat_hive
 		name = "Tattoo (Hive, Back)"
 		icon_state = "tat_hive"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 
 	tat_nightling
 		name = "Tattoo (Nightling, Back)"
 		icon_state = "tat_nightling"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 
 	tat_campbell
 		name = "Tattoo (Campbell, R.Arm)"
@@ -752,40 +669,14 @@
 	tat_tiger
 		name = "Tattoo (Tiger Stripes, Body)"
 		icon_state = "tat_tiger"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_TORSO,BP_GROIN)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_CHEST,BP_GROIN)
 
-/*Tesh*/
-/*
-	tesh_feathers
-		name = "Teshari Feathers"
-		icon_state = "tesh-feathers"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND)
-
-	teshi_fluff
-		name = "Teshari Underfluff"
-		icon_state = "teshi_fluff"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_GROIN,BP_TORSO,BP_HEAD)
-
-	teshi_small_feathers
-		name = "Teshari Small Wingfeathers"
-		icon_state = "teshi_sf"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_HAND,BP_R_HAND,BP_TORSO)
-
-	zbody
-		name = "Thick Jagged Stripes"
-		icon_state = "zbody"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_LEG,BP_R_LEG,BP_GROIN,BP_TORSO)
-*/
 /*Tiger*/
 
 	tiger_stripes
 		name = "Tiger Stripes"
 		icon_state = "tiger"
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_TORSO,BP_GROIN)
+		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_CHEST,BP_GROIN)
 		species_allowed = list(SPECIES_TAJ) //There's a tattoo for non-cats
 
 	tigerhead
@@ -821,7 +712,7 @@
 	una_scutes
 		name = "Una Scutes"
 		icon_state = "una_scutes"
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 		species_allowed = list(SPECIES_UNATHI)
 
 /*Vulp*/
@@ -830,19 +721,19 @@
 		name = "Vulp Belly Fur"
 		icon_state = "vulp_belly"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_CHEST,BP_GROIN)
 
 	vulp_fullbelly
 		name = "Vulp Full Belly Fur"
 		icon_state = "vulp_fullbelly"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_CHEST,BP_GROIN)
 
 	vulp_crest
 		name = "Vulp Berry Crest"
 		icon_state = "vulp_crest"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_CHEST,BP_GROIN)
 
 	vulp_nose
 		name = "Vulp Nose"
@@ -880,63 +771,25 @@
 		blend = ICON_MULTIPLY
 		body_parts = list(BP_HEAD)
 
-/*Wards*/
-
-	spirit_lights
-		name = "Ward - Spirit FBP Lights"
-		icon_state = "lights"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_TORSO,BP_HEAD)
-
-	spirit_lights_body
-		name = "Ward - Spirit FBP Lights (Body)"
-		icon_state = "lights"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_TORSO)
-
-	spirit_lights_head
-		name = "Ward - Spirit FBP Lights (Head)"
-		icon_state = "lights"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
-
-	spirit_panels
-		name = "Ward - Spirit FBP Panels"
-		icon_state = "panels"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO,BP_HEAD)
-
-	spirit_panels_body
-		name = "Ward - Spirit FBP Panels (Body)"
-		icon_state = "panels"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_L_FOOT,BP_R_FOOT,BP_L_LEG,BP_R_LEG,BP_L_ARM,BP_R_ARM,BP_L_HAND,BP_R_HAND,BP_GROIN,BP_TORSO)
-
-	spirit_panels_head
-		name = "Ward - Spirit FBP Panels (Head)"
-		icon_state = "panels"
-		blend = ICON_MULTIPLY
-		body_parts = list(BP_HEAD)
-
 /*Zorren*/
 
 	zorren_belly_male
 		name = "Zorren Male Torso"
 		icon_state = "zorren_belly"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_CHEST,BP_GROIN)
 
 	zorren_belly_female
 		name = "Zorren Female Torso"
 		icon_state = "zorren_belly_female"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO,BP_GROIN)
+		body_parts = list(BP_CHEST,BP_GROIN)
 
 	zorren_back_patch
 		name = "Zorren Back Patch"
 		icon_state = "zorren_backpatch"
 		blend = ICON_MULTIPLY
-		body_parts = list(BP_TORSO)
+		body_parts = list(BP_CHEST)
 
 	zorren_face_male
 		name = "Zorren Male Face"

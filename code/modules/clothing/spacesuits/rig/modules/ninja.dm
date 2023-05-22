@@ -17,8 +17,8 @@
 	disruptive = 0
 	price_tag = 5000
 
-	use_power_cost = 50
-	active_power_cost = 10
+	use_power_cost = 500
+	active_power_cost = 100
 	passive_power_cost = 0
 	module_cooldown = 30
 
@@ -79,7 +79,7 @@
 	name = "teleportation module"
 	desc = "A complex, sleek-looking, hardsuit-integrated teleportation module."
 	icon_state = "teleporter"
-	use_power_cost = 40
+	use_power_cost = 4000
 	redundant = 1
 	usable = 1
 	selectable = 1
@@ -180,7 +180,7 @@
 	engage_string = "Fabricate Net"
 
 	fabrication_type = /obj/item/energy_net
-	use_power_cost = 70
+	use_power_cost = 700
 
 /obj/item/rig_module/fabricator/energy_net/engage(atom/target)
 

@@ -4,7 +4,7 @@
 /obj/item/organ/internal/psionic_tumor/proc/detect_thoughts()
 	set category = "Psionic powers"
 	set name = "Locate Mind-Essence (5)"
-	set desc = "Expend five points of essence to psionically detect the thoughts and location of another higher life form. Does not work on animals, cruciform bearers, synthetics, or those \
+	set desc = "Expend five points of essence to psionically detect the thoughts and location of another higher life form. Does not work on animals, Hearthcore users, synthetics, or those \
 	wearing psionic protection. Can locate lingering echoes of thoughts in the deceased, allowing you to find bodies."
 	psi_point_cost = 5
 

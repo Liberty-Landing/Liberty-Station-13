@@ -1,6 +1,6 @@
 /obj/item/gun/energy/gun/nuclear
 	name = "\"EBR-IV\" Nuclear Particle Pistol"
-	desc = "A prototype of a 'self-sustaining' experimental breeder rifle feeding itself off a built-in nuclear reactor. Projecting either high powered tazer shots or deadly particle beams at will of it's user. \
+	desc = "A prototype of a 'self-sustaining' experimental breeder pistol feeding itself off a built-in nuclear reactor. Projecting either high powered tazer shots or deadly particle beams at will of it's user. \
 	Neither Phokorus Institute nor Sol Military take any responsiblity for deaths of it's users."
 	icon = 'icons/obj/guns/energy/nucgun.dmi'
 	icon_state = "nucgun"
@@ -15,7 +15,6 @@
 	price_tag = 1700
 	charge_cost = 50
 	can_dual = FALSE
-	twohanded = TRUE
 	gun_tags = list(GUN_LASER, GUN_ENERGY, GUN_SCOPE) //Were all three and can have a scope if someone wants
 	init_firemodes = list(
 		list(mode_name="stunshot", projectile_type=/obj/item/projectile/energy/electrode/stunshot, fire_sound = 'sound/weapons/energy/Taser.ogg', fire_delay=35, icon="stun"),
@@ -65,9 +64,6 @@
 
 	var/iconstring = initial(icon_state)
 	var/itemstring = ""
-
-	if(wielded)
-		itemstring += "_doble"
 
 	icon_state = iconstring
 	set_item_state(itemstring)

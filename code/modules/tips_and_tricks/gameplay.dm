@@ -18,7 +18,7 @@
     tipText = "Balaclavas, surgical masks, and other masks provide a buff to your sanity protection. Perfect for operators, thieves, and people afraid of disease!."
 
 /tipsAndTricks/gameplay/fuhrerRoachReinforcement
-    tipText = "The Fuhrer roach can call for an entire battalion of reinforcement roaches. If you hear it scream, RUN!"
+    tipText = "The overlord roach can call for an entire battalion of reinforcement roaches. If you hear it scream, RUN!"
 
 /tipsAndTricks/gameplay/spiderPoison
     tipText = "Spiders are a powerful foe that can poison their targets. Fighting them in melee is a bad idea."
@@ -59,9 +59,6 @@
 /tipsAndTricks/gameplay/body_gards
     tipText = "Are you going into danger or risking yourself in combat? Maybe hire a colonist as a body guard or medic. It might just make their day to be useful for once."
 
-/tipsAndTricks/gameplay/guncases
-    tipText = "Gun cases are large and unwieldy but great for transporting rifles and certain weapons in a legal way. Security can supply you with one from their vendor or armory shop!"
-
 /tipsAndTricks/gameplay/newscasters_can_be_maintaind
     tipText = "Newscasters have limited stock that can be refilled by refitting back in printed news papers."
 
@@ -76,5 +73,4 @@
 
 /tipsAndTricks/gameplay/fighting_slimes_two
     tipText = "Slimes are weaker to cold than heat. You can use frost oil or bullets to greater affect, while lasers and pepper spray only make a slime stronger!"
-
 

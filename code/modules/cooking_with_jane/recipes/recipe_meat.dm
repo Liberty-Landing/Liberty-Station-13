@@ -7,7 +7,17 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawcutlet),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "blackpepper", 1, base=1),
 		list(CWJ_USE_GRILL, J_LO, 15 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/raw_meatball
+	cooking_container = BOWL
+	product_type = /obj/item/reagent_containers/food/snacks/rawmeatball
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawcutlet),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/breadslice),
 	)
 
 /datum/cooking_with_jane/recipe/cooked_meatball
@@ -16,10 +26,9 @@
 	step_builder = list(
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawmeatball),
 		list(CWJ_ADD_REAGENT, "cornoil", 1),
-		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "blackpepper", 1, base=1),
 		list(CWJ_USE_STOVE, J_LO, 20 SECONDS)
 	)
-
 
 /datum/cooking_with_jane/recipe/cooked_patty
 	cooking_container = GRILL
@@ -28,6 +37,7 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/patty_raw),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "blackpepper", 1, base=1),
 		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
 	)
 
@@ -39,6 +49,7 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/rawbacon),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "cornoil", 1, base=1),
 		list(CWJ_ADD_REAGENT_OPTIONAL, "sodiumchloride", 1, base=1),
+		list(CWJ_ADD_REAGENT_OPTIONAL, "blackpepper", 1, base=1),
 		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
 	)
 
@@ -198,11 +209,22 @@
 		list(CWJ_USE_STOVE, J_LO, 15 SECONDS)
 	)
 
+/datum/cooking_with_jane/recipe/tortilla
+	cooking_container = OVEN
+	product_type = /obj/item/reagent_containers/food/snacks/tortilla
+	product_count = 3
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/flatdoughslice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/flatdoughslice),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/flatdoughslice),
+		list(CWJ_USE_OVEN, J_HI, 5 SECONDS)
+	)
+
 /datum/cooking_with_jane/recipe/taco
 	cooking_container = PAN
 	product_type = /obj/item/reagent_containers/food/snacks/taco
 	step_builder = list(
-		list(CWJ_ADD_REAGENT, "flour", 5),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tortilla),
 		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
 		list(CWJ_ADD_REAGENT, "cornoil", 1),
 		list(CWJ_ADD_PRODUCE, "corn"),
@@ -214,6 +236,27 @@
 
 //Kebob - This is just kebab but americans be americans
 /datum/cooking_with_jane/recipe/kebob
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/monkeykabob
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/material/kitchen/utensil/skewer),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat, exclude_reagents=list("carpotoxin", "blattedin")),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat, exclude_reagents=list("carpotoxin", "blattedin")),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
+/datum/cooking_with_jane/recipe/kebob_tofu
+	cooking_container = GRILL
+	product_type = /obj/item/reagent_containers/food/snacks/tofukabob
+	step_builder = list(
+		list(CWJ_ADD_ITEM, /obj/item/material/kitchen/utensil/skewer),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu),
+		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu),
+		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
+	)
+
+/* UNTESTED SPECIALITY MEAT KABOBS
+/datum/cooking_with_jane/recipe/kebob_monkey
 	cooking_container = GRILL
 	product_type = /obj/item/reagent_containers/food/snacks/monkeykabob
 	step_builder = list(
@@ -242,13 +285,4 @@
 		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/meat/human),
 		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
 	)
-
-/datum/cooking_with_jane/recipe/kebob_tofu
-	cooking_container = GRILL
-	product_type = /obj/item/reagent_containers/food/snacks/tofukabob
-	step_builder = list(
-		list(CWJ_ADD_ITEM, /obj/item/stack/rods),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu),
-		list(CWJ_ADD_ITEM, /obj/item/reagent_containers/food/snacks/tofu),
-		list(CWJ_USE_GRILL, J_LO, 10 SECONDS)
-	)
+*/

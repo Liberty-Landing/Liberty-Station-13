@@ -1,0 +1,393 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"b" = (
+/obj/structure/flora/small/grassa3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"c" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"d" = (
+/obj/random/traps/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"e" = (
+/obj/structure/catwalk,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"f" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/structure/railing{
+	tag = "icon-railing0 (NORTH)";
+	icon_state = "railing0";
+	dir = 1
+	},
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"g" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (NORTH)";
+	icon_state = "railing0";
+	dir = 1
+	},
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"h" = (
+/turf/unsimulated/wall/jungle,
+/area/precursor)
+"i" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (NORTH)";
+	icon_state = "railing0";
+	dir = 1
+	},
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"j" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"k" = (
+/obj/random/pack/machine,
+/turf/simulated/floor/tiled/techmaint_cargo,
+/area/precursor)
+"l" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4
+	},
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"m" = (
+/obj/structure/catwalk,
+/obj/random/traps/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"n" = (
+/obj/structure/railing,
+/obj/structure/railing{
+	tag = "icon-railing0 (WEST)";
+	icon_state = "railing0";
+	dir = 8
+	},
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"o" = (
+/obj/structure/railing,
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"p" = (
+/obj/random/scrap/moderate_weighted,
+/obj/structure/railing,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"q" = (
+/obj/structure/railing{
+	tag = "icon-railing0 (EAST)";
+	icon_state = "railing0";
+	dir = 4;
+	anchored = 1
+	},
+/obj/structure/railing,
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"r" = (
+/obj/random/junk/low_chance,
+/obj/structure/catwalk,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"s" = (
+/obj/structure/flora/small/grassb3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"t" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"u" = (
+/obj/structure/flora/tree/jungle/variant5,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"v" = (
+/obj/structure/flora/small/grassb2,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"w" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/plating/under,
+/area/precursor)
+"x" = (
+/obj/structure/flora/small/grassa1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"y" = (
+/obj/structure/catwalk,
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"z" = (
+/obj/structure/flora/tree/jungle_small/variant4,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 0
+	},
+/turf/simulated/floor/tiled/techmaint_perforated,
+/area/precursor)
+"A" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"C" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"F" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techmaint_perforated,
+/area/precursor)
+"H" = (
+/turf/simulated/wall/rust_standard,
+/area/precursor)
+"J" = (
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"K" = (
+/obj/random/scrap/moderate_weighted,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"L" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"N" = (
+/obj/structure/flora/small/grassb2,
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 8
+	},
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/precursor)
+"O" = (
+/obj/machinery/artifact,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Q" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"R" = (
+/obj/structure/catwalk,
+/obj/structure/flora/tree/jungle_small/variant1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"U" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/precursor)
+"X" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/techmaint,
+/area/precursor)
+"Y" = (
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 1
+	},
+/obj/effect/floor_decal/spline/grass_edge{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/techmaint_perforated,
+/area/precursor)
+"Z" = (
+/obj/structure/flora/tree/jungle/variant3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+
+(1,1,1) = {"
+J
+J
+J
+J
+J
+J
+J
+J
+Q
+J
+J
+"}
+(2,1,1) = {"
+J
+J
+d
+Z
+J
+d
+h
+h
+J
+h
+a
+"}
+(3,1,1) = {"
+J
+t
+s
+s
+a
+J
+w
+h
+v
+v
+J
+"}
+(4,1,1) = {"
+J
+J
+J
+f
+j
+j
+j
+n
+L
+h
+N
+"}
+(5,1,1) = {"
+J
+d
+x
+g
+k
+K
+k
+o
+c
+h
+U
+"}
+(6,1,1) = {"
+C
+J
+J
+g
+h
+O
+h
+p
+c
+F
+X
+"}
+(7,1,1) = {"
+J
+J
+R
+g
+k
+h
+k
+o
+e
+z
+J
+"}
+(8,1,1) = {"
+J
+Q
+c
+i
+l
+l
+l
+q
+r
+Y
+J
+"}
+(9,1,1) = {"
+J
+u
+c
+c
+m
+c
+y
+m
+c
+A
+L
+"}
+(10,1,1) = {"
+J
+H
+J
+J
+J
+J
+J
+b
+b
+H
+L
+"}
+(11,1,1) = {"
+J
+d
+J
+C
+C
+Q
+J
+b
+J
+J
+L
+"}

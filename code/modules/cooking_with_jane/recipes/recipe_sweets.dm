@@ -14,6 +14,18 @@
 		list(CWJ_USE_OVEN, J_MED, 40 SECONDS)
 	)
 
+/datum/cooking_with_jane/recipe/chocolatebar
+	cooking_container = POT
+	product_type = /obj/item/reagent_containers/food/snacks/chocolatebar
+	step_builder = list(
+		list(CWJ_ADD_REAGENT, "water", 5),
+		list(CWJ_ADD_REAGENT, "milk", 5),
+		list(CWJ_ADD_REAGENT, "sugar", 15),
+		list(CWJ_ADD_REAGENT, "coco", 10),
+		list(CWJ_ADD_REAGENT, "sodiumchloride", 1),
+		list(CWJ_USE_STOVE, J_LO, 30 SECONDS)
+	)
+
 /datum/cooking_with_jane/recipe/cookie
 	cooking_container = OVEN
 	product_type = /obj/item/reagent_containers/food/snacks/cookie

@@ -203,10 +203,11 @@
 	desc = "Done in a complementing shade for security forces, a staple for military contractors everywhere."
 	icon_state = "backpack_ironhammer"
 
-/obj/item/storage/backpack/neotheology
-	name = "cruciform backpack"
-	desc = "For carrying all your holy needs."
-	icon_state = "backpack_neotheology"
+/obj/item/storage/backpack/custodian
+	name = "custodian backpack"
+	desc = "A blue backpack with decorative flames."
+	icon_state = "backpack_custodian"
+	matter = list(MATERIAL_BIO_SILK = 20)
 
 /obj/item/storage/backpack/leather/security
 	name = "leather backpack"
@@ -280,10 +281,11 @@
 	desc = "Done in a complementing shade for Ironhammer Security forces. It looks as if it belongs on a kindergartener rather than a operative, which is why in actuality this style makes perfect sense."
 	icon_state = "backsport_ironhammer"
 
-/obj/item/storage/backpack/sport/neotheology
-	name = "cruciform sport backpack"
-	desc = "For carrying all your holy needs."
-	icon_state = "backsport_neotheology"
+/obj/item/storage/backpack/sport/custodian
+	name = "custodian sport backpack"
+	desc = "A sport backpack with a blue flame design."
+	icon_state = "backsport_custodian"
+	matter = list(MATERIAL_BIO_SILK = 20)
 
 /*
  * Satchel Types
@@ -371,10 +373,11 @@
 	desc = "Done in a complementing shade for Liberty security forces, for the itinerant military contractor."
 	icon_state = "satchel_ironhammer"
 
-/obj/item/storage/backpack/satchel/neotheology
-	name = "cruciform satchel"
-	desc = "Slightly more accessible means for your holy goods."
-	icon_state = "satchel_neotheology"
+/obj/item/storage/backpack/satchel/custodian
+	name = "custodian satchel"
+	desc = "A more accesible storage medium with blue flames decorating it."
+	icon_state = "satchel_custodian"
+	matter = list(MATERIAL_BIO_SILK = 15)
 
 /*
  * Duffelbag Types

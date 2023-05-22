@@ -8,15 +8,15 @@
 //All badge sprites done by - CeUvi
 
 /obj/item/clothing/accessory/badge
-	name = "Ranger's badge"
-	desc = "A marshal ranger badge, made from gold and set on leather."
+	name = "Criminal Investigator's badge"
+	desc = "A Watch Criminal Investigator badge, made from gold and set on leather."
 	icon_state = "badge"
 	item_state = "marshalbadge"
 	slot_flags = SLOT_BELT | SLOT_ACCESSORY_BUFFER
 	price_tag = 200
 
 	var/stored_name
-	var/badge_string = "Marshal"
+	var/badge_string = "Watchmen"
 
 /obj/item/clothing/accessory/badge/old
 	name = "faded badge"
@@ -132,7 +132,7 @@
 
 /obj/item/clothing/accessory/badge/marshal
 	name = "commando's badge"
-	desc = "A leather-backed gold badge displaying the crest of the Brigadier and Provost Marshal, signifying the wearer as an agent of both, carrying the full authority over both organizations."
+	desc = "A leather-backed gold badge displaying the crest of the Libery Watch, signifying the wearer as an agent of both, carrying the full authority over both organizations."
 	icon_state = "marshalbadge"
 	badge_string = "Special Agent"
 

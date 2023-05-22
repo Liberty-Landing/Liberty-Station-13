@@ -10,7 +10,7 @@
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "D" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/steel,
 /area/template_noop)
 "M" = (

@@ -696,33 +696,33 @@
 /*Security*/
 
 /obj/item/toy/figure/character/ironhammer/hos
-	name = "warrant officer action figure"
-	desc = "The most formidable force on the station. Marshal 1/4."
+	name = "deputy chief action figure"
+	desc = "The most formidable force on the station. Watchmen 1/4."
 	icon_state = "hos"
 	toysay = "I'll be hugging my fax machine on my office if anyone needs me..."
 
 /obj/item/toy/figure/character/ironhammer/secofficer
-	name = "marshal officer action figure"
-	desc = "They don't make the law, but they enforce it. Marshal 2/4."
+	name = "watchman action figure"
+	desc = "They don't make the law, but they enforce it. Watchmen 2/4."
 	icon_state = "secofficer"
 	toysay = "Where's your gun case?"
 
 /obj/item/toy/figure/character/ironhammer/warden
-	name = "supply specialist figure"
-	desc = "Always keep plenty of ammo. Marshal 3/4."
+	name = "armorer figure"
+	desc = "Always keep plenty of ammo. Watchmen 3/4."
 	icon_state = "warden"
 	toysay = "A-armory s-shop is o-op-pen."
 
 /obj/item/toy/figure/character/ironhammer/detective
-	name = "ranger action figure"
-	desc = "Some crimes can't be solved by force alone. Marshal 4/4."
+	name = "criminal investigator action figure"
+	desc = "Some crimes can't be solved by force alone. Watchmen 4/4."
 	icon_state = "detective"
 	toysay = "Hmm, insulated glove fibers..."
 
 // Eris bobbleheads
 /obj/item/toy/figure/character/bobblehead/excelsior
-	name = "\"Excelsior\" figurine"
-	desc = "A curiously unbranded figurine of a Space Soviet, adorned in their iconic armor. There is still a price tag on the back of the base, six-hundred credits, people collect these things?"
+	name = "legionary figurine"
+	desc = "A curiously unbranded figurine of a Black Eagle legionary, adorned in their iconic armor. There is still a price tag on the back of the base, six-hundred credits, people collect these things?"
 	toysay = "\"Ever Upward!\""
 	icon_state = "excelsior"
 
@@ -733,8 +733,8 @@
 	toysay = "\"Vodka!\""
 
 /obj/item/toy/figure/character/bobblehead/acolyte
-	name = "acolyte figurine"
-	desc = "Church of Bonfire \"New Faith Life\" brand figurine of a vector, hooded both physically and spiritually from that which would lead them astray."
+	name = "custodian figurine"
+	desc = "Custodians of Bonfire \"New Life\" brand figurine of an oathbound, protected both physically and mentally from that which would lead them astray."
 	icon_state = "acolyte"
 	toysay = "\"Brotherhood.\""
 

@@ -195,17 +195,10 @@
 	if(!CI || !CI.active || !CI.wearer)
 		return FALSE
 
-	if(CI.path == "tess" || CI.path == "omni")
+	if (CI.get_module(CRUCIFORM_ENKINDLED))
 		return TRUE
 
-	//Redlight is prists only
-	if (CI.get_module(CRUCIFORM_REDLIGHT))
-		return TRUE
-
-	if (CI.get_module(CRUCIFORM_INQUISITOR))
-		return TRUE
-
-	return TRUE
+	return FALSE
 
 
 /obj/item/stack/medical/update_icon()

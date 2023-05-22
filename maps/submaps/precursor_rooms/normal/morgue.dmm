@@ -1,0 +1,390 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"b" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"c" = (
+/turf/simulated/wall,
+/area/precursor)
+"d" = (
+/obj/structure/table/rack,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/common_oddities/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"e" = (
+/obj/structure/table/rack,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/common_oddities/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"f" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth/low_chance,
+/obj/random/pack/cloth/low_chance,
+/obj/random/lathe_disk/advanced/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"g" = (
+/turf/simulated/floor/tiled/dark/techfloor_grid,
+/area/precursor)
+"h" = (
+/obj/machinery/door/firedoor,
+/obj/effect/window_lwall_spawn/smartspawn,
+/turf/simulated/floor/plating,
+/area/precursor)
+"i" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"j" = (
+/obj/structure/morgue{
+	dir = 8;
+	icon_state = "morgue1"
+	},
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"k" = (
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"l" = (
+/obj/machinery/light/small{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"m" = (
+/obj/structure/table/standard,
+/obj/item/autopsy_scanner{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/tool/scalpel,
+/obj/item/tool/cautery{
+	pixel_y = 4
+	},
+/obj/item/storage/firstaid/surgery/traitor,
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"n" = (
+/obj/machinery/optable,
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"o" = (
+/obj/machinery/light/small{
+	dir = 4;
+	pixel_y = 0
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"p" = (
+/obj/machinery/door/airlock/maintenance_common{
+	name = "Service Maintenance";
+	req_access = list(12)
+	},
+/turf/simulated/floor/tiled/dark/cargo,
+/area/precursor)
+"q" = (
+/obj/machinery/bodyscanner,
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"r" = (
+/obj/machinery/body_scanconsole,
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"s" = (
+/obj/structure/table/rack,
+/obj/random/medical,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"t" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"u" = (
+/obj/structure/flora/small/grassb5,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"v" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"w" = (
+/obj/structure/flora/ausbushes/sparsegrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"x" = (
+/obj/structure/flora/small/busha1,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"y" = (
+/obj/structure/flora/small/grassb3,
+/obj/structure/flora/tree/jungle/variant2,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"z" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/dark/panels,
+/area/precursor)
+"C" = (
+/turf/simulated/wall/rust_standard,
+/area/precursor)
+"E" = (
+/obj/structure/table/standard,
+/obj/random/card_carp,
+/obj/random/card_carp,
+/obj/random/card_carp,
+/obj/random/card_carp/pelt,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"F" = (
+/obj/structure/flora/small/grassa2,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"G" = (
+/obj/structure/flora/small/grassa4,
+/obj/structure/flora/tree/jungle_small/variant5,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"J" = (
+/obj/structure/table/rack,
+/obj/random/medical,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/firstaid/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"K" = (
+/obj/structure/flora/small/grassa4,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"L" = (
+/obj/machinery/light/small,
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/tiled/dark,
+/area/precursor)
+"M" = (
+/obj/structure/flora/small/grassb3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"N" = (
+/obj/structure/flora/small/grassb4,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"P" = (
+/obj/structure/flora/ausbushes/fullgrass,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Q" = (
+/obj/machinery/door/firedoor,
+/obj/effect/window_lwall_spawn/smartspawn,
+/obj/structure/low_wall/rusted,
+/turf/simulated/floor/plating,
+/area/precursor)
+"S" = (
+/obj/structure/table/rack,
+/obj/random/medical,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/firstaid/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+"T" = (
+/obj/structure/flora/ausbushes/grassybush,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"U" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"V" = (
+/obj/structure/flora/small/busha3,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"W" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"X" = (
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Y" = (
+/obj/structure/table/rack,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/common_oddities/low_chance,
+/turf/simulated/floor/asteroid/grass,
+/area/precursor)
+"Z" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth/low_chance,
+/obj/random/pack/cloth/low_chance,
+/obj/random/lathe_disk/advanced/low_chance,
+/obj/random/lathe_disk/advanced/low_chance,
+/turf/simulated/floor/tiled/dark/gray_perforated,
+/area/precursor)
+
+(1,1,1) = {"
+N
+N
+X
+U
+x
+X
+P
+a
+a
+U
+X
+"}
+(2,1,1) = {"
+L
+C
+c
+y
+T
+C
+C
+c
+c
+c
+W
+"}
+(3,1,1) = {"
+a
+C
+f
+M
+U
+h
+m
+k
+q
+C
+w
+"}
+(4,1,1) = {"
+X
+C
+Z
+F
+g
+h
+n
+z
+r
+C
+X
+"}
+(5,1,1) = {"
+b
+c
+C
+E
+a
+c
+c
+p
+C
+C
+t
+"}
+(6,1,1) = {"
+T
+v
+a
+V
+a
+G
+o
+a
+a
+X
+v
+"}
+(7,1,1) = {"
+X
+d
+c
+Q
+Q
+h
+c
+p
+c
+J
+X
+"}
+(8,1,1) = {"
+u
+d
+C
+i
+k
+k
+k
+k
+c
+S
+X
+"}
+(9,1,1) = {"
+u
+e
+C
+j
+j
+j
+j
+j
+C
+s
+P
+"}
+(10,1,1) = {"
+U
+Y
+c
+c
+c
+c
+C
+C
+C
+s
+X
+"}
+(11,1,1) = {"
+V
+X
+U
+K
+K
+l
+a
+v
+a
+X
+X
+"}

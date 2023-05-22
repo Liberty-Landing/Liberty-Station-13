@@ -139,6 +139,31 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	var/overcharge_rate = 1 //Base overcharge additive rate for the gun
 	var/overcharge_level = 0 //What our current overcharge level is. Peaks at overcharge_max
 	var/overcharge_max = 10
+	var/flashlight_attachment = FALSE // Do we have a flashlight attached to us?
+
+
+/obj/item/gun/proc/toggle_light_verb()
+	set name = "Toggle gun's flashlight"
+	set category = "Object"
+
+	toggle_light(usr)
+
+// HUD button for quick flashlight toggle
+/obj/item/gun/proc/toggle_light(mob/living/user)
+
+	if(!flashlight_attachment)
+		to_chat(user, SPAN_NOTICE("This weapon dosnt have a flashlight."))
+		return
+
+	if(src != user.get_active_hand())
+		to_chat(user, SPAN_NOTICE("You must be holding the weapon to toggle its light."))
+		return
+
+	for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+		FL.attack_self(user)
+		to_chat(user, SPAN_NOTICE("You toggle the attached flashlight [FL.on ? "on":"off"]."))
+
+	update_hud_actions()
 
 /obj/item/gun/wield(mob/user)
 	if(!wield_delay)
@@ -166,6 +191,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	. = ..()
 	initialize_firemodes()
 	initialize_scope()
+	initialize_flashlight()
 	//Properly initialize the default firing mode
 	if (firemodes.len)
 		set_firemode(sel_mode)
@@ -319,23 +345,6 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 			if(rigged > TRUE)
 				explosion(get_turf(src), 1, 2, 3, 3)
 				qdel(src)
-			return FALSE
-
-	if(excelsior)
-		if(!is_excelsior(M) && prob(60 - min(user.stat_check(STAT_COG), 59)))
-			var/obj/P = consume_next_projectile()
-			if(P)
-				if(process_projectile(P, user, user, BP_HEAD))
-					handle_post_fire(user, user)
-					currently_firing = FALSE
-					user.visible_message(
-						SPAN_DANGER("As \the [user] pulls the trigger on \the [src], a bullet fires backwards out of it!"),
-						SPAN_DANGER("Your \the [src] fires backwards, shooting you in the face!")
-						)
-
-				if(prob(60 - user.stat_check(STAT_COG)))
-					explosion(get_turf(src), 1, 2, 3, 3)
-					qdel(src)
 			return FALSE
 
 	return TRUE
@@ -854,6 +863,26 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 		hud_actions -= action
 		qdel(action)
 
+/obj/item/gun/proc/initialize_flashlight()
+	var/obj/screen/item_action/action = locate(/obj/screen/item_action/top_bar/gun/flashlight) in hud_actions
+	if(flashlight_attachment)
+		if(!action)
+			action = new /obj/screen/item_action/top_bar/gun/flashlight
+			action.owner = src
+			hud_actions += action
+			if(ismob(loc))
+				var/mob/user = loc
+				user.client?.screen += action
+			verbs += /obj/item/gun/proc/toggle_light_verb
+	else
+		if(ismob(loc))
+			var/mob/user = loc
+			user.client?.screen -= action
+		hud_actions -= action
+		verbs -= /obj/item/gun/proc/toggle_light_verb
+		qdel(action)
+	update_hud_actions()
+
 /obj/item/gun/proc/add_firemode(var/list/firemode)
 	//If this var is set, it means spawn a specific subclass of firemode
 	if (firemode["mode_type"])
@@ -992,6 +1021,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 /obj/item/gun/pickup(mob/user)
 	.=..()
 	update_firemode()
+	update_hud_actions()
 
 /obj/item/gun/dropped(mob/user)
 	// I really fucking hate this but this is how this is going to work.
@@ -1012,7 +1042,6 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 /obj/item/gun/proc/toggle_safety_verb()
 	set name = "Toggle gun's safety"
 	set category = "Object"
-	set src in view(1)
 
 	toggle_safety(usr)
 
@@ -1119,6 +1148,8 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	move_delay = initial(move_delay)
 	muzzle_flash = initial(muzzle_flash)
 	silenced = initial(silenced)
+	if(flashlight_attachment)
+		flashlight_attachment = initial(flashlight_attachment)
 	restrict_safety = initial(restrict_safety)
 	init_offset = initial(init_offset)
 	proj_damage_adjust = list()
@@ -1175,6 +1206,7 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 		name = "[prefix] [name]"
 
 	update_icon()
+	initialize_flashlight()
 	//then update any UIs with the new stats
 	SSnano.update_uis(src)
 
@@ -1197,3 +1229,45 @@ For the sake of consistency, I suggest always rounding up on even values when ap
 	if(!sharp)
 		gun_tags |= SLOT_BAYONET
 */
+
+// Handles the directional lightning of the attached flashlight to wherever the mob is aiming at
+/obj/item/gun/container_dir_changed(new_dir)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.container_dir_changed(new_dir)
+
+// Handles updating light location from attached flashlight when the mob moves
+/obj/item/gun/moved(mob/user, old_loc)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.moved(user, old_loc)
+
+// Move the loc of the attached flashlight inside the container we stash the gun in as well
+/obj/item/gun/entered_with_container()
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.entered_with_container()
+
+// Handles switching the flashlight's light source from its position to the mob that picked it up
+/obj/item/gun/pre_pickup(mob/user)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.pre_pickup(user)
+
+// The inverse of the previous proc: Move the light source to the location of the dropped gun with the flashlight
+/obj/item/gun/dropped(mob/user as mob)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.dropped(user)
+
+/obj/item/gun/afterattack(atom/A, mob/user)
+	. = ..()
+	if(flashlight_attachment)
+		for(var/obj/item/gun_upgrade/tacticool_flashlight/FL in contents)
+			FL.afterattack(A, user)
+

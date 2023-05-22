@@ -148,7 +148,7 @@
 /datum/design/research/item/medical/medimplant_sci
 	name = "CAPSA Medical Omnitool"
 	desc = "An all-in-one smart medical tool implant based on the legendary Similacrum Robotics model."
-	build_path = /obj/item/tool/medmultitool/medimplant/sci
+	build_path = /obj/item/tool/medmultitool/portable
 	materials = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_SILVER = 1)
 	category = CAT_TOOLS
 
@@ -203,22 +203,25 @@
 	name = "Medical gauze"
 	desc = "Some sterile gauze to wrap around bloody stumps."
 	build_path = /obj/item/stack/medical/bruise_pack
-	materials = list(MATERIAL_CLOTH = 5)
+	materials = list(MATERIAL_CLOTH = 2)
 	chemicals = list("silicon" = 4, "ethanol" = 8)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/adv_gauze
 	name = "CAPSA medical gauze"
 	desc = "An advanced sterile gauze to wrap around bloody stumps. Unlike the regular gauze, these have more charges, and sterilize wounds as ointment would."
 	build_path = /obj/item/stack/medical/bruise_pack/capsa
-	materials = list(MATERIAL_CLOTH = 8, MATERIAL_BIOMATTER = 6)
+	materials = list(MATERIAL_CLOTH = 3, MATERIAL_BIOMATTER = 2)
 	chemicals = list("bicaridine" = 5, "quickclot" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/atk
 	name = "Advanced trauma kit"
 	desc = "An advanced trauma kit for severe injuries."
 	build_path = /obj/item/stack/medical/bruise_pack/advanced
-	materials = list(MATERIAL_CLOTH = 5, MATERIAL_BIOMATTER = 3)
+	materials = list(MATERIAL_CLOTH = 2, MATERIAL_BIOMATTER = 1)
 	chemicals = list("quickclot" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/ointment
 	name = "Ointment"
@@ -226,39 +229,51 @@
 	build_path = /obj/item/stack/medical/ointment
 	materials = list(MATERIAL_PLASTIC = 5)
 	chemicals = list("silicon" = 4, "carbon" = 8)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/adv_ointment
 	name = "CAPSA branded ointment"
 	desc = "Used to treat those nasty burns. Unlike regular ointments this one has a CAPSA logo on it, its formula massively improved by including toxin-purging sterilizing crystals."
 	build_path = /obj/item/stack/medical/ointment/capsa
-	materials = list(MATERIAL_PLASTIC = 8, MATERIAL_BIOMATTER = 6)
+	materials = list(MATERIAL_PLASTIC = 8, MATERIAL_BIOMATTER = 2)
 	chemicals = list("kelotane" = 5, "dermaline" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/abk
 	name = "Advanced burn kit"
 	desc = "An advanced treatment kit for severe burns."
 	build_path = /obj/item/stack/medical/ointment/advanced
-	materials = list(MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 3)
+	materials = list(MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 1)
 	chemicals = list("dermaline" = 5, "sterilizine" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/nanopaste
 	name = "Nanopaste"
 	desc = "A tube of paste containing swarms of repair nanites. Very effective in repairing mechanical body parts, organs, and smart purging of toxic buildup."
 	build_path = /obj/item/stack/nanopaste
 	chemicals = list("nanites" = 5)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/splints
 	name = "Splints"
 	desc = "Used to secure moving bones in place."
 	build_path = /obj/item/stack/medical/splint
 	materials = list(MATERIAL_WOOD = 5, MATERIAL_CLOTH = 2)
+	category = CAT_MEDI
 
 /datum/design/research/item/medical/bonegel
 	name = "CAPSA bone gel"
 	desc = "An improved gel-like calcium composite formula used as a surgical substitute for broken or missing bone pieces."
 	build_path = /obj/item/tool/tape_roll/bonegel/si
-	materials = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 10)
+	materials = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 3)
 	category = CAT_TOOLS
+
+/datum/design/research/item/medical/ifak
+	name = "Individual First-Aid Kit"
+	desc = "An attachable pouch that can hold supplies used to address immediate life-threatening conditions."
+	build_path = /obj/item/storage/firstaid/ifak/empty
+	materials = list(MATERIAL_BIOMATTER = 12)
+	category = CAT_MEDI
 
 //Brain stuff
 /datum/design/research/item/posibrain

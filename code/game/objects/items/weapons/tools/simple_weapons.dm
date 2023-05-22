@@ -288,7 +288,7 @@
 	desc = "Modern Japanese-style blade that has no curve to it. This one is two knives welded together, proving where there's a will and a weeb there's a way."
 	icon_state = "katana_improv"
 	item_state = "katana_improv"
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 2) //twice the value of a kitche knife
+	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 2) //twice the value of a kitche knife
 	slot_flags = SLOT_BELT|SLOT_BACK
 	force = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_SHALLOW
@@ -684,14 +684,14 @@
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
 	worksound = WORKSOUND_HARD_SLASH
-	force = WEAPON_FORCE_ROBUST
-	armor_penetration = ARMOR_PEN_DEEP
+	force = WEAPON_FORCE_PAINFUL
+	armor_penetration = ARMOR_PEN_GRAZING //Horrid weapons but in loadout
 
 	throwforce = WEAPON_FORCE_NORMAL
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
-	tool_qualities = list(QUALITY_CUTTING = 10, QUALITY_SAWING = 10)
-	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
+	tool_qualities = list(QUALITY_CUTTING = 5, QUALITY_SAWING = 5)
+	structure_damage_factor = STRUCTURE_DAMAGE_WEAK
 	w_class = ITEM_SIZE_NORMAL
 	price_tag = 100
 
@@ -707,7 +707,6 @@
 	desc = "A tomahawk of acceptable quality, mass-produced by Skylight. Just expensive enough to be called tactical."
 	icon_state = "cheap_axe"
 	item_state = "cheap_axe"
-	structure_damage_factor = STRUCTURE_DAMAGE_WEAK
 	attack_verb = list("attacked", "slashed", "chopped", "sliced", "torn", "ripped", "diced", "cut")
 
 /obj/item/tool/cheap/katana
@@ -715,8 +714,6 @@
 	desc = "A katana of acceptable quality, mass-produced by Skylight. Easily their best-selling product from this lineup."
 	icon_state = "katana_old"
 	item_state = "katana"
-	force = WEAPON_FORCE_DANGEROUS
-	armor_penetration = ARMOR_PEN_EXTREME
 
 /obj/item/tool/cheap/spear
 	name = "cheap spear"
@@ -729,7 +726,7 @@
 	throw_speed = 3
 	embed_mult = 1.5
 	structure_damage_factor = STRUCTURE_DAMAGE_WEAK
-	tool_qualities = list(QUALITY_CUTTING = 15,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 10)
+	tool_qualities = list(QUALITY_CUTTING = 5,  QUALITY_WIRE_CUTTING = 5, QUALITY_SCREW_DRIVING = 5)
 	hitsound = 'sound/weapons/slice.ogg'
 	attack_verb = list("attacked", "poked", "jabbed", "torn", "gored")
 	item_icons = list(

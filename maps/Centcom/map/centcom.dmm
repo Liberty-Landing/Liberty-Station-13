@@ -2699,10 +2699,6 @@
 	},
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/shuttle/mercshuttle_area)
-"hM" = (
-/obj/structure/sign/faction/neotheology_cross,
-/turf/simulated/wall/r_wall,
-/area/centcom/evac)
 "hN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
 /obj/machinery/door/airlock,
@@ -5828,10 +5824,6 @@
 /area/space)
 "vR" = (
 /obj/structure/table/woodentable,
-/obj/item/tool/knife/neotritual{
-	pixel_x = 1;
-	pixel_y = 5
-	},
 /turf/simulated/floor/carpet/oracarpet,
 /area/centcom/evac)
 "vU" = (
@@ -5985,11 +5977,9 @@
 /area/centcom/evac)
 "zP" = (
 /obj/structure/table/rack/shelf,
-/obj/item/circuitboard/excelsior_boombox,
 /obj/item/circuitboard/excelsior_teleporter,
 /obj/item/circuitboard/excelsior_turret,
 /obj/item/circuitboard/excelsiorautolathe,
-/obj/item/circuitboard/excelsiorreconstructor,
 /obj/item/circuitboard/excelsiorshieldwallgen,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/centcom/evac)
@@ -6044,7 +6034,6 @@
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/centcom/raider_base)
 "Bj" = (
-/obj/machinery/excelsior_boombox,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/centcom/evac)
 "Bm" = (
@@ -6452,10 +6441,6 @@
 /obj/item/tool/knife,
 /turf/simulated/floor/tiled/cafe,
 /area/centcom/evac)
-"II" = (
-/obj/structure/sign/faction/neotheology_cross,
-/turf/simulated/wall/wood,
-/area/centcom/evac)
 "IK" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/light,
@@ -6518,11 +6503,6 @@
 /obj/effect/floor_decal/industrial/outline,
 /turf/simulated/floor/tiled/white/cargo,
 /area/centcom/raider_base)
-"Kp" = (
-/obj/structure/nt_pedestal,
-/obj/item/tool/sword/crusader/nt_sword_truth,
-/turf/simulated/floor/wood/wild1,
-/area/centcom/evac)
 "Ks" = (
 /obj/structure/railing{
 	dir = 1
@@ -6545,10 +6525,7 @@
 /area/centcom/raider_base)
 "KC" = (
 /obj/structure/table/woodentable,
-/obj/item/shield/riot/crusader,
-/obj/item/clothing/suit/space/void/crusader,
-/obj/item/clothing/head/helmet/space/void/crusader,
-/obj/item/tool/sword/crusader,
+/obj/item/shield/riot,
 /turf/simulated/floor/wood/wild1,
 /area/centcom/evac)
 "KL" = (
@@ -6878,13 +6855,6 @@
 "QI" = (
 /obj/structure/table/woodentable,
 /obj/item/implant/core_implant/cruciform,
-/obj/item/implant/core_implant/cruciform/divisor,
-/obj/item/implant/core_implant/cruciform/lemniscate,
-/obj/item/implant/core_implant/cruciform/monomial,
-/obj/item/implant/core_implant/cruciform/tessellate,
-/obj/item/coreimplant_upgrade/cruciform,
-/obj/item/coreimplant_upgrade/cruciform/obey,
-/obj/item/coreimplant_upgrade/cruciform/priest,
 /turf/simulated/floor/carpet/oracarpet,
 /area/centcom/evac)
 "QK" = (
@@ -13908,12 +13878,12 @@ qH
 qH
 KR
 JL
-II
+JL
 at
 vR
 VH
 zj
-Kp
+MH
 JL
 cN
 aD
@@ -14312,7 +14282,7 @@ qH
 qH
 KR
 JL
-II
+JL
 at
 QI
 VH
@@ -15955,7 +15925,7 @@ dn
 dn
 dn
 sU
-hM
+ho
 cN
 dn
 vB
@@ -15965,7 +15935,7 @@ Gf
 VG
 dn
 cN
-hM
+ho
 KR
 qH
 qH
@@ -17167,7 +17137,7 @@ dn
 dn
 dn
 VL
-hM
+ho
 cN
 dn
 vB
@@ -17177,7 +17147,7 @@ tX
 VG
 dn
 cN
-hM
+ho
 KR
 qH
 qH
@@ -18581,7 +18551,7 @@ yq
 yq
 yq
 ho
-hM
+ho
 cN
 dn
 dn
@@ -18591,7 +18561,7 @@ dn
 dn
 dn
 cN
-hM
+ho
 KR
 qH
 qH
@@ -18989,9 +18959,9 @@ ho
 ho
 dZ
 ho
-hM
 ho
-hM
+ho
+ho
 ho
 dZ
 ho

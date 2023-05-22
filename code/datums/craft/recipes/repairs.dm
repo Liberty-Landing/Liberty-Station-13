@@ -101,7 +101,7 @@
 	)
 
 /datum/craft_recipe/repairs/juggernaut_suit
-	name = "Juggernaut bomb suit"
+	name = "Watchman E.O.D suit"
 	result = /obj/item/clothing/suit/space/bomb/security
 	steps = list(
 		list(/obj/item/clothing/suit/space/bomb, 1, "time" = 60),

@@ -16,6 +16,6 @@
 	melee_damage_lower = 30 //Tons of damage but a weak bot, just like a pawn
 	melee_damage_upper = 40
 	meat_type = /obj/item/stack/material/silver/random
-	drop1 = /obj/item/tool/sword/nt/longsword
-	drop2 = /obj/item/tool/sword/nt/shortsword
+	drop1 = /obj/item/tool/sword/custodian/horseaxe
+	drop2 = /obj/item/tool/sword/custodian/shortsword
 	armor = list(melee = 15, bullet = 15, energy = 10, bomb = 5, bio = 100, rad = 100, agony = 100)

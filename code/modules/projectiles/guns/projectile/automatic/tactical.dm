@@ -35,7 +35,7 @@
 	resultvars = list(/obj/item/gun/projectile/automatic/tactical)
 	gripvars = list(/obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/smg
-	barrelvars = list(/obj/item/part/gun/barrel/pistol)
+	barrelvars = list(/obj/item/part/gun/barrel/magnum)
 
 /obj/item/gun/projectile/automatic/tactical/update_icon()
 	..()

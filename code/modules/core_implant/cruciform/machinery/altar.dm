@@ -1,16 +1,12 @@
 /obj/machinery/optable/altar
-	name = "Bonfire altar"
-	desc = "The altar."
+	name = "Board of Opposites"
+	desc = "A flat, clean surface used for certain Custodian Lectures."
 	icon = 'icons/obj/neotheology_machinery.dmi'
 	icon_state = "optable-idle"
 	y_offset = 10
 
 	var/list/acceptable_items = list(
 	/obj/item/implant/core_implant/cruciform,
-	/obj/item/implant/core_implant/cruciform/tessellate,
-	/obj/item/implant/core_implant/cruciform/lemniscate,
-	/obj/item/implant/core_implant/cruciform/monomial,
-	/obj/item/implant/core_implant/cruciform/divisor,
 	/obj/item/cruciform_upgrade,
 	/obj/item/cruciform_upgrade/natures_blessing,
 	/obj/item/cruciform_upgrade/faiths_shield,

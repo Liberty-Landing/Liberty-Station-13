@@ -3,7 +3,7 @@
 /turf/simulated/floor/rock/dark,
 /area/precursor)
 "c" = (
-/mob/living/simple_animal/light_geist,
+/obj/machinery/artifact_scanpad/precursor,
 /turf/simulated/floor/rock/dark,
 /area/precursor)
 

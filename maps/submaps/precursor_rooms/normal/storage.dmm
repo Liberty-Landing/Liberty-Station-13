@@ -1,0 +1,264 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"b" = (
+/turf/simulated/wall/tomb_king,
+/area/precursor)
+"c" = (
+/turf/simulated/wall/rust_standard,
+/area/precursor)
+"d" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth,
+/obj/random/pack/cloth/low_chance,
+/obj/random/pack/cloth/low_chance,
+/obj/random/pack/cloth/low_chance,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"e" = (
+/obj/structure/table/rack/shelf,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/obj/random/medical/low_chance,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"f" = (
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"g" = (
+/obj/machinery/door/airlock/maintenance_common{
+	name = "Service Maintenance";
+	req_access = list(12)
+	},
+/turf/simulated/floor/tiled/steel/cargo,
+/area/precursor)
+"h" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/obj/random/pack/tech_loot/low_chance,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"i" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/dungeon_gun_ballistic/low_chance,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"j" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/rare/low_chance,
+/obj/random/common_oddities/low_chance,
+/obj/random/powercell/low_chance,
+/obj/random/lathe_disk/advanced/low_chance,
+/obj/random/tool_upgrade/low_chance,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"k" = (
+/obj/random/cluster/psi_monster/low_chance,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"m" = (
+/obj/machinery/light/small,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"n" = (
+/obj/machinery/light/small,
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"o" = (
+/obj/machinery/light/small{
+	dir = 1
+	},
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"p" = (
+/obj/random/mob/psi_monster/low_chance,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"A" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/rare/low_chance,
+/obj/random/common_oddities/low_chance,
+/obj/random/powercell/low_chance,
+/obj/random/lathe_disk/advanced/low_chance,
+/obj/random/pouch/low_chance,
+/obj/random/tool_upgrade/rare/low_chance,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+"L" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/pack/gun_loot/low_chance,
+/obj/random/dungeon_gun_energy/low_chance,
+/turf/simulated/floor/rusted2/techfloor,
+/area/precursor)
+"O" = (
+/obj/structure/table/rack/shelf,
+/obj/random/pack/rare/low_chance,
+/obj/random/common_oddities/low_chance,
+/obj/random/powercell/low_chance,
+/obj/random/lathe_disk/advanced/low_chance,
+/obj/random/techpart/low_chance,
+/turf/simulated/floor/beach/sand/desert,
+/area/precursor)
+
+(1,1,1) = {"
+a
+p
+a
+a
+a
+p
+a
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+b
+c
+c
+c
+c
+b
+b
+b
+k
+a
+"}
+(3,1,1) = {"
+a
+b
+d
+f
+c
+h
+f
+c
+j
+a
+a
+"}
+(4,1,1) = {"
+a
+c
+d
+n
+b
+h
+n
+c
+A
+a
+a
+"}
+(5,1,1) = {"
+m
+c
+c
+g
+b
+b
+g
+c
+c
+o
+a
+"}
+(6,1,1) = {"
+a
+p
+a
+p
+a
+a
+p
+a
+a
+p
+a
+"}
+(7,1,1) = {"
+a
+c
+c
+g
+c
+c
+g
+c
+c
+a
+a
+"}
+(8,1,1) = {"
+a
+c
+e
+n
+c
+i
+n
+c
+O
+a
+a
+"}
+(9,1,1) = {"
+a
+c
+e
+f
+c
+L
+f
+b
+O
+a
+a
+"}
+(10,1,1) = {"
+a
+b
+b
+b
+b
+c
+c
+b
+b
+k
+a
+"}
+(11,1,1) = {"
+a
+p
+a
+a
+a
+p
+a
+a
+a
+a
+a
+"}

@@ -71,7 +71,7 @@
 /obj/item/reagent_containers/food/snacks/openable/attack_self(mob/user)
 	if(!open)
 		open()
-		to_chat(user, SPAN_NOTICE("You tear \the [src] open."))
+		to_chat(user, SPAN_NOTICE("You open up \the [src]."))
 		return
 	if(warm)
 		to_chat(user, SPAN_NOTICE("You already crushed \the [src] and it's still heating up, be patient."))
@@ -92,9 +92,24 @@
 	icon_state = "lays_green"
 	trash = /obj/item/trash/chips_green
 
+/obj/item/reagent_containers/food/snacks/openable/liquidfood //No longer vendable
+	name = "\improper liquidfood ration"
+	desc = "A prepackaged grey slurry of all the essential nutrients for a spacefarer on the go. Should this be crunchy?"
+	alt_desc = "A prepackaged grey slurry of all the essential nutrients for a spacefarer on the go. Looking inside tends to loose your apatite."
+	icon_state = "liquidfood" //Sprite by Michiyamenotehifunana
+	trash = /obj/item/trash/liquidfood
+	filling_color = "#A8A8A8"
+	bitesize = 4
+	center_of_mass = list("x"=16, "y"=15)
+	nutriment_desc = list("chalk" = 6)
+	nutriment_amt = 20
+	preloaded_reagents = list("iron" = 3, "preservatives" = 5)
+	matter = list(MATERIAL_BIOMATTER = 8)
+	junk_food = TRUE
+
 /obj/item/reagent_containers/food/snacks/openable/mre
 	name = "mre"
-	desc = "A closed mre, ready to be opened."
+	desc = "A closed Meal-Ready-to-Eat, ready to be opened."
 	alt_desc = "A plethora of steaming beans mixed with meat, ready for consumption."
 	icon_state = "mre"
 	trash = /obj/item/trash/mre
@@ -111,7 +126,7 @@
 	can_warm = TRUE
 
 /obj/item/reagent_containers/food/snacks/openable/mre/alt
-	desc = "A closed mre, ready to be opened. This one is a wok mre mix."
+	desc = "A closed Meal-Ready-to-Eat, ready to be opened. This one is a wok MRE mix."
 	alt_desc = "A nice mix of noodles and herbs all waiting to be eaten."
 	icon_state = "wok"
 	trash = /obj/item/trash/mre/alt
@@ -165,6 +180,45 @@
 	icon_state = "dalococh"
 	trash = /obj/item/trash/mre_dalococh
 	bitten_icon_alt = TRUE
+
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee
+	name = "Self-Heating Coffee Can"
+	desc = "A can of pure black coffee with a self-heating mechanism. A survivalist's best friend, it requires no fire - just open up, shake and wait before drinking!"
+	alt_desc = "A can of pure black coffee, piping hot and ready to warm you up."
+	icon_state = "selfheat_coffee"
+	trash = /obj/item/trash/selfheat_coffee
+	filling_color = "#482000d3"
+	preloaded_reagents = list() // Nothing
+	nutriment_amt = 10
+	nutriment_desc = list("tart black coffee" = 5, "bushcrafting" = 3, "warmth" = 2)
+	cooked = TRUE
+	reagent_flags = NONE // No refilling no reusing
+	warm = FALSE
+	open = FALSE
+	heated_reagents = list("coffee" = 20) // 20 coffee + 10 nutriment regardless of warmed up or not
+	matter = list(MATERIAL_BIOMATTER = 6)
+	can_warm = TRUE
+
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/attack_self(mob/user)
+	if(!open)
+		open()
+		to_chat(user, SPAN_NOTICE("You crack \the [src] open."))
+		return
+	if(warm)
+		to_chat(user, SPAN_NOTICE("You already started the heat up process of \the [src], be patient until it's warm."))
+		return
+	if(can_warm)
+		user.visible_message(
+			SPAN_NOTICE("[user] gently shakes \the [src]."),
+			"You gently shake \the [src] and feel a comfortable heat build up.",
+		)
+		warm = TRUE
+		spawn(300)
+			to_chat(user, "You think \the [src] is warm enough to drink now.")
+			heat()
+
+/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee/feed_sound(var/mob/user)
+	playsound(user.loc, 'sound/items/drink.ogg', rand(10, 50), 1) // Despite its code path, it's a drink, not a snacc!
 
 /obj/item/reagent_containers/food/snacks/openable/candy/os
 	desc = "SR branded non-melting chocolate."

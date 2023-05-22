@@ -3,11 +3,10 @@
 #define SPECIES_HUMAN_VATBORN	"Vatborn"
 #define SPECIES_UNATHI			"Lizard"
 #define SPECIES_SKRELL			"Mar'qua"
-#define SPECIES_TESHARI			"Raptid"
 #define SPECIES_TAJ				"Sablekyne"
 #define SPECIES_PROMETHEAN		"Promethean"
-#define SPECIES_DIONA			"Diona"
 #define SPECIES_VOX				"Vox"
+#define SPECIES_SYNTH			"Synthetic"
 
 #define SPECIES_AKULA			"Akula"
 #define SPECIES_ALRAUNE			"Seelie"
@@ -17,8 +16,6 @@
 #define SPECIES_NARAMAD			"Naramad"
 #define SPECIES_VASILISSAN		"Cht'Mant"
 #define SPECIES_VULPKANIN		"Fox"
-#define SPECIES_XENOCHIMERA		"Xenochimera"
-#define SPECIES_XENOHYBRID		"Xenomorph Hybrid"
 #define SPECIES_ZORREN_FLAT		"Dog"
 #define SPECIES_ZORREN_HIGH		"Wolf"
 #define SPECIES_STATIONXENO     "Xenomorph Hybrid"
@@ -36,15 +33,7 @@
 #define SPECIES_VR_UNATHI		"Virtual Reality Lizard"
 #define SPECIES_VR_TAJ			"Virtual Reality Sablekyne" // NO CHANGING.
 #define SPECIES_VR_SKRELL		"Virtual Reality Mar'qua"
-#define SPECIES_VR_TESHARI		"Virtual Reality Raptid"
 //#define SPECIES_VR_DIONA		"Virtual Reality Diona"
-
-// Ayyy IDs.
-#define SPECIES_XENO			"Xenomorph"
-#define SPECIES_XENO_DRONE		"Xenomorph Drone"
-#define SPECIES_XENO_HUNTER		"Xenomorph Hunter"
-#define SPECIES_XENO_SENTINEL	"Xenomorph Sentinel"
-#define SPECIES_XENO_QUEEN		"Xenomorph Queen"
 
 // Misc species. Mostly unused but might as well be complete.
 #define SPECIES_SHADOW			"Shadow"
@@ -69,10 +58,6 @@
 #define FORM_SLIME				"Slime"
 #define FORM_AVIAN				"Avian"
 #define FORM_SPIDER				"Arachnoid"
-#define FORM_STATIONXENO	    "Xenohybrid Drone"
-#define FORM_STATIONXENO_HUNTER	"Xenohybrid Hunter"
-#define FORM_STATIONXENO_QUEEN	"Xenohybrid Queen"
-#define FORM_STATIONXENO_SENTI  "Xenohybrid Sentinel"
 #define FORM_SABLEKYNE			"Sablekyne"
 #define FORM_MARQUA				"Mar'Qua"
 #define FORM_KRIOSAN  			"Kriosan"
@@ -80,15 +65,8 @@
 #define FORM_CHTMANT			"Cht'mant"
 #define FORM_CINDAR				"Cindarite"
 #define FORM_OPIFEX				"Opifex"
-#define FORM_CAPSA				"CAPSA Synthetic"
-#define FORM_PIRSYNTH			"PIRS Synthetic"
-#define FORM_TERRAYNTH			"Terra-Therma Synthetic"
-#define FORM_LIBYNTH			"Liberty Synthetic"
-#define FORM_CHURCHSYNTH		"Knight Synthetic"
-#define FORM_NASHEF				"Nashef-Agunabi"
-#define FORM_FBP				"Full Body Prosthetic"
-#define FORM_UNBRANDED			"Unbranded Full Body Prosthetic"
 #define FORM_AXOLOTL			"Axolotl"
+#define FORM_SYNTH				"Synthetic"
 
 #define FORM_BIRD				"Avian"
 
@@ -106,7 +84,3 @@
 #define FORM_MONKEY				"Monkey"
 #define FORM_GOLEM				"Golem"
 //#define FORM_HIVEMIND			"Hivelord" - we defeated you >:T
-#define FORM_ALIEN_DRONE		"Xenomorph Drone"
-#define FORM_ALIEN_SENTINEL		"Xenomorph Sentinel"
-#define FORM_ALIEN_HUNTER		"Xenomorph Hunter"
-#define FORM_ALIEN_QUEEN		"Xenomorph Queen"

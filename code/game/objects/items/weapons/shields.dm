@@ -532,27 +532,6 @@
 /obj/item/shield/riot/tray/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
 	return base_block_chance
 
-/obj/item/shield/riot/crusader
-	name = "crusader tower shield"
-	desc = "A traditional tower shield meeting the materials and design of the future. It's made from durasteel and the craftsmanship is the highest quality, setting it apart from regular shields. It bears the insignia of the Church. Deus Vult."
-	icon = 'icons/obj/nt_melee.dmi'
-	icon_state = "nt_shield"
-	item_state = "nt_shield"
-	price_tag = 2000
-	max_durability = 500 //Well clearly made to last it should require some repair post crusade
-	durability = 500
-	armor_list = list(melee = 30, bullet = 35, energy = 25, bomb = 15, bio = 0, rad = 0)
-	matter = list(MATERIAL_GLASS = 3, MATERIAL_STEEL = 10, MATERIAL_CARBON_FIBER = 80)
-	item_icons = list(
-		slot_back_str = 'icons/inventory/back/mob.dmi')
-	item_state_slots = list(
-		slot_back_str = "nt_shield"
-		)
-
-/obj/item/shield/riot/crusader/handle_shield(mob/user)
-	. = ..()
-	if(.) playsound(user.loc, 'sound/weapons/Genhit.ogg', 50, 1)
-
 /*
  * Energy Shield
  */

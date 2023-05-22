@@ -134,23 +134,23 @@
 
 //Excelsior shit
 /datum/design/autolathe/excelsior/laser
-	name = "excelsior micro-laser"
+	name = "astrakhan micro-laser"
 	build_path = /obj/item/stock_parts/micro_laser/excelsior
 
 /datum/design/autolathe/excelsior/matter
-	name = "excelsior matter bin"
+	name = "astrakhan matter bin"
 	build_path = /obj/item/stock_parts/matter_bin/excelsior
 
 /datum/design/autolathe/excelsior/module
-	name = "excelsior scanning module"
+	name = "astrakhan scanning module"
 	build_path = /obj/item/stock_parts/scanning_module/excelsior
 
 /datum/design/autolathe/excelsior/capacitor
-	name = "excelsior capacitor"
+	name = "astrakhan capacitor"
 	build_path = /obj/item/stock_parts/capacitor/excelsior
 
 /datum/design/autolathe/excelsior/manipulator
-	name = "excelsior manipulator"
+	name = "astrakhan manipulator"
 	build_path = /obj/item/stock_parts/manipulator/excelsior
 
 /datum/design/autolathe/prosthesis/excelsior/l_arm

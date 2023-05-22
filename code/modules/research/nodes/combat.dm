@@ -199,9 +199,8 @@
 							/datum/design/research/item/weapon/weapon_upgrade/toxin_coater,
 							/datum/design/research/item/weapon/weapon_upgrade/overheat,
 							/datum/design/research/item/weapon/weapon_upgrade/penetrator,
-							/datum/design/research/item/weapon/weapon_upgrade/dnalock_mod
 							//datum/design/research/item/weapon/weapon_upgrade/isotope_diffuser,
-							//datum/design/research/item/weapon/weapon_upgrade/psionic_catalyst
+							/datum/design/research/item/weapon/weapon_upgrade/psionic_catalyst
 						)
 
 /datum/technology/laser_weaponry
@@ -269,7 +268,7 @@
 
 	required_technologies = list(/datum/technology/advanced_armor,
 								 /datum/technology/laser_weaponry)
-	required_tech_levels = list(RESEARCH_POWERSTORAGE = 12, RESEARCH_ENGINEERING = 20)
+	required_tech_levels = list(RESEARCH_POWERSTORAGE = 10, RESEARCH_ENGINEERING = 20)
 	cost = 5625 //You get back a lot
 
 	unlocks_designs = list(/datum/design/research/item/weapon/hydrogen_rifle,

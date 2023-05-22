@@ -1,6 +1,6 @@
 /obj/item/grenade/empgrenade
-	name = "HS EMP grenade \"Frye\""
-	desc = "EMP grenade, designed to disable electronics, augmentations and energy weapons."
+	name = "MT Ion Grenade \"Ionstorm\""
+	desc = "Ion grenade, designed to disable electronics, augmentations and energy weapons."
 	icon_state = "emp"
 	item_state = "empgrenade"
 	origin_tech = list(TECH_MATERIAL = 2, TECH_MAGNET = 3)
@@ -13,8 +13,8 @@
 	return
 
 /obj/item/grenade/empgrenade/low_yield
-	name = "HS EMP grenade \"Power Zapper\" - C"
-	desc = "A weaker variant of the \"Power Zapper\" emp grenade, with lesser radius."
+	name = "MT EMP Grenade \"Power Zapper\""
+	desc = "A weaker variant of the \"Ionstorm\" ion grenade, with lesser radius."
 	icon_state = "lyemp"
 	item_state = "empgrenade"
 	origin_tech = list(TECH_MATERIAL = 2, TECH_MAGNET = 3)

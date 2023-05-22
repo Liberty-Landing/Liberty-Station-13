@@ -7,7 +7,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 /obj/item/gun/projectile/clarissa/stealth
 	name = "\"Red Devil\" compact pistol"
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 9mm. \
-			A version of the \"Glass Widow\" this pistol appears to sport a built-in supressor, a better grip, sensative trigger, and an improved barrel. The thing even appears to take SMG mags as well!"
+			A version of the \"Glass Widow\" this pistol appears to sport a built-in supressor, a better grip, sensitive trigger, and an improved barrel. The thing even appears to take SMG mags as well!"
 	icon = 'icons/obj/guns/projectile/old/clarissa.dmi'
 	icon_state = "clarissa"
 	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL | MAG_WELL_SMG | MAG_WELL_DRUM		//Gives a reason to use it.
@@ -24,7 +24,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 /obj/item/gun/projectile/revolver/ranger/gatvolver
 	name = "\"Overlord\" magnum revolver"
 	desc = "A strange weapon produced by some sort of unknown or long-gone company, one of its limited single-batch manufactured line of firearms. It appears be chambered in 10mm. \
-			Unlike a normal revolver this one appears to have four cylanders somehow! Maybe the bluespace crystal in its center has something to do with it.."
+			Unlike a normal revolver this one appears to somehow have four cylinders! Maybe the bluespace crystal in its center has something to do with it..."
 	max_shells = 30
 	init_recoil = RIFLE_RECOIL(1.1)
 	price_tag = 3000

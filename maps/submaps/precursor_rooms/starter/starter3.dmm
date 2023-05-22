@@ -54,10 +54,8 @@
 /turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 "L" = (
-/mob/living/simple_animal/lizard{
-	name = "lumbo"
-	},
-/turf/simulated/floor/beach/sand/desert,
+/obj/machinery/artifact_scanpad/precursor,
+/turf/simulated/floor/rock/manmade/ruin1,
 /area/precursor)
 "M" = (
 /turf/simulated/floor/rock/manmade/ruin1,
@@ -164,7 +162,7 @@ M
 M
 M
 M
-M
+L
 M
 s
 s
@@ -183,7 +181,7 @@ M
 M
 s
 o
-L
+a
 a
 a
 "}

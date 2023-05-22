@@ -1,15 +1,15 @@
 //Random mob spawners unique to liberty, these should primarily be ones for the colony and surrounding areas.
 //renders
-/obj/random/mob/render
-	name = "random render"
+/obj/random/mob/agape
+	name = "random agape"
 	icon_state = "hostilemob-brown"
 	alpha = 128
 
-/obj/random/mob/render/item_to_spawn()
-	return pickweight(list(/mob/living/simple_animal/hostile/render))
+/obj/random/mob/agape/item_to_spawn()
+	return pickweight(list(/mob/living/simple_animal/hostile/agape))
 
-/obj/random/mob/render/low_chance
-	name = "low chance render"
+/obj/random/mob/agape/low_chance
+	name = "low chance agape 10%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 90
 
@@ -44,7 +44,7 @@
 		))
 
 /obj/random/mob/carp/low_chance
-	name = "low chance random carp"
+	name = "low chance random carp 40%"
 	icon_state = "hostilemob-purple-low"
 	spawn_nothing_percentage = 60
 
@@ -58,7 +58,7 @@
 	return pickweight(list(/mob/living/simple_animal/hostile/retaliate/croakerlord))
 
 /obj/random/mob/croaker/low_chance
-	name = "low chance croaker"
+	name = "low chance croaker 10%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 90
 
@@ -78,7 +78,7 @@
 		))
 
 /obj/random/mob/voidwolf/low_chance
-	name = "low chance random void wolf"
+	name = "low chance random void wolf 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
@@ -120,12 +120,12 @@
 				))
 
 /obj/random/mob/psi_monster/low_chance
-	name = "low chance random psi_monster"
+	name = "low chance random psi_monster 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/psi_monster
-	name = "cluster of psi_monsters"
+	name = "cluster of psi_monsters 3->6"
 	icon_state = "hostilemob-brown-cluster"
 	alpha = 128
 	min_amount = 3
@@ -136,12 +136,12 @@
 	return /obj/random/mob/psi_monster
 
 /obj/random/cluster/psi_monster/low_chance
-	name = "low chance cluster of psi_monsters"
+	name = "low chance cluster of psi_monsters 3->6 40%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/psi_monster/lower_chance
-	name = "lower chance cluster of psi_monsters"
+	name = "lower chance cluster of psi_monsters 3->6 20%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 80
 
@@ -184,12 +184,12 @@
 				/mob/living/carbon/superior_animal/xenomorph/warrior/shrike/praetorian/queen = 0.1))
 
 /obj/random/mob/xenomorphs/low_chance
-	name = "low chance random xenomorph"
+	name = "low chance random xenomorph 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/xenomorphs
-	name = "cluster of xenomorphs"
+	name = "cluster of xenomorphs 3->9"
 	icon_state = "hostilemob-brown-cluster"
 	alpha = 128
 	min_amount = 3
@@ -225,12 +225,12 @@
 	return /obj/random/mob/xenomorphs
 
 /obj/random/cluster/xenomorphs/low_chance
-	name = "low chance cluster of xenomorphs"
+	name = "low chance cluster of xenomorphs 40%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/xenomorphs/lower_chance
-	name = "lower chance cluster of xenomorphs"
+	name = "lower chance cluster of xenomorphs 20%"
 	icon_state = "hostilemob-brown-cluster-low"
 	spawn_nothing_percentage = 80
 
@@ -249,7 +249,7 @@
 		))
 
 /obj/random/mob/prepper_boss_lowchance
-	name = "low chance sentinel seeker"
+	name = "low chance sentinel seeker 10%"
 	icon_state = "hostilemob-red"
 	alpha = 128
 	spawn_nothing_percentage = 90 // Same HP and stats as a Render while being as fast as an Emperor.
@@ -279,6 +279,19 @@
 		/mob/living/carbon/superior_animal/human/balkan/bren = 5
 		))
 
+/obj/random/mob/space_legion
+	name = "random legionary mob"
+	icon_state = "hostilemob-blue"
+	alpha = 128
+
+/obj/random/mob/space_legion/item_to_spawn()
+	return pickweight(list(/mob/living/carbon/superior_animal/human/excelsior = 10,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_ppsh = 5,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_ak = 5,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_vintorez = 5,
+		/mob/living/carbon/superior_animal/human/excelsior/excel_drozd = 1
+		))
+
 //local fauna - surface
 /obj/random/mob/tengolo
 	name = "random tengolo"
@@ -295,12 +308,12 @@
 		))
 
 /obj/random/mob/tengolo/low_chance
-	name = "low chance random tengolo"
+	name = "low chance random tengolo 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/tengolo
-	name = "cluster of tengolos"
+	name = "cluster of tengolos 2->4"
 	icon_state = "hostilemob-brown-cluster"
 	alpha = 128
 	min_amount = 2
@@ -319,7 +332,7 @@
 	return /mob/living/simple_animal/hostile/retaliate/tahca
 
 /obj/random/mob/tahca/low_chance
-	name = "low chance tahca"
+	name = "low chance tahca 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
@@ -332,7 +345,7 @@
 	return /mob/living/simple_animal/hostile/bear/mukwah
 
 /obj/random/mob/mukwah/low_chance
-	name = "low chance mukwah"
+	name = "low chance mukwah 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
@@ -346,7 +359,7 @@
 	return /mob/living/simple_animal/hostile/retaliate/hakhma
 
 /obj/random/mob/hakhma/low_chance
-	name = "low chance hakhma"
+	name = "low chance hakhma 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
@@ -367,7 +380,7 @@
 		))
 
 /obj/random/mob/undergroundmob/low_chance
-	name = "low chance random underground mob"
+	name = "low chance random underground mob 40%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 60
 
@@ -382,7 +395,7 @@
 			/mob/living/simple_animal/hostile/nightmare/dream_daemon = 1)) //If you get this spawn your unlucky
 
 /obj/random/mob/nightmare/low_chance
-	name = "low chance nightmare"
+	name = "low chance nightmare 10%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 90
 
@@ -405,7 +418,7 @@
 		))
 
 /obj/random/mob/vox/low_chance
-	name = "low chance nightmare"
+	name = "low chance nightmare 50%"
 	icon_state = "hostilemob-brown-low"
 	spawn_nothing_percentage = 50 //Coin flip
 

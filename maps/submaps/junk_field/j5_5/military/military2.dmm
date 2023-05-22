@@ -17,7 +17,7 @@
 /turf/simulated/wall/r_wall,
 /area/template_noop)
 "V" = (
-/obj/random/mob/space_balkan,
+/obj/random/mob/space_legion,
 /turf/simulated/floor/tiled/dark,
 /area/template_noop)
 "Y" = (

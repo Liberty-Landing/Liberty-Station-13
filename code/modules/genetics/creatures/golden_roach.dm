@@ -16,10 +16,9 @@
 	sanity_damage = 0 //they are peaceful thus not damaging sanity
 
 /mob/living/carbon/superior_animal/roach/golden/blattin
-	name = "Adept Blattin"
-	desc = "Adept Blattin is a golden roach, an special and harmless breed that was made tame by CAPSA to be pets and in general help with the trash problem without being a nuisance to the colony. \
-	But this one was adopted by the guild and being called 'Adept Blattin'. \
-	A valuable member of the Terra-Therma Union."
+    name = "Technician Blattin"
+    desc = "A weighty insect almost identical to some of the roaches that inhabit the colony. Though it seems related to the local roaches, it lacks many of features that make them an annoyance to colonists. This one has a name tag wrapped around it's neck that reads 'Technician Blattin' and seems to be very friendly to sapients. \
+He is loyal to his Union Chief."
 
 /obj/item/roach_egg/gold
 	name = "roach egg"

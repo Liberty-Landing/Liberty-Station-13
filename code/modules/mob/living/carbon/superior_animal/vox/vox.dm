@@ -22,7 +22,7 @@
 	attack_sound = 'sound/weapons/slash.ogg'
 
 	has_special_parts = TRUE
-	special_parts = list(/obj/item/animal_part/wolf_tooth)
+	special_parts = list(/obj/item/stack/wolf_tooth)
 
 	armor = list(melee = 10, bullet = 15, energy = 5, bomb = 20, bio = 20, rad = 0)
 

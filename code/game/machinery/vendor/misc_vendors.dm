@@ -7,7 +7,7 @@
 	vend_delay = 34
 	icon_state = "cigs"
 	products = list(/obj/item/storage/fancy/cigarettes = 7,
-				/obj/item/storage/fancy/cigarettes/Skylight = 7,
+				/obj/item/storage/fancy/cigarettes/skylight = 7,
 				/obj/item/storage/fancy/cigarettes/ishimura = 7,
 				/obj/item/storage/fancy/cigarettes/tannhauser = 7,
 				/obj/item/storage/fancy/cigarettes/brouzouf = 7,
@@ -51,7 +51,7 @@
 				/obj/item/storage/fancy/cigarettes/khi = 2,
 				/obj/item/storage/fancy/cigarettes/comred = 1)
 	prices = list(/obj/item/storage/fancy/cigarettes = 40,
-				/obj/item/storage/fancy/cigarettes/Skylight = 35,
+				/obj/item/storage/fancy/cigarettes/skylight = 35,
 				/obj/item/storage/fancy/cigarettes/ishimura = 70,
 				/obj/item/storage/fancy/cigarettes/tannhauser = 45,
 				/obj/item/storage/fancy/cigarettes/brouzouf = 55,

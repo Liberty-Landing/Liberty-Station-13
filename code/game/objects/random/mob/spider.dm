@@ -26,12 +26,12 @@
 				))
 
 /obj/random/mob/spiders/low_chance
-	name = "low chance random spider"
+	name = "low chance random spider 40%"
 	icon_state = "hostilemob-black-low"
 	spawn_nothing_percentage = 60
 
 /obj/random/cluster/spiders
-	name = "cluster of spiders"
+	name = "cluster of spiders 1->5"
 	icon_state = "hostilemob-black-cluster"
 	alpha = 128
 	min_amount = 1
@@ -42,7 +42,7 @@
 	return /obj/random/mob/spiders
 
 /obj/random/cluster/spiders/low_chance
-	name = "low chance cluster of spiders"
+	name = "low chance cluster of spiders 1->5 40%"
 	icon_state = "hostilemob-black-cluster-low"
 	spawn_nothing_percentage = 60
 

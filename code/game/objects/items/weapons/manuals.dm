@@ -1232,11 +1232,11 @@
 
 //security
 /obj/item/book/manual/wiki/security_ironparagraphs
-	name = "Marshal Paragraphs"
+	name = "Watchmen Paragraphs"
 	desc = "A set of corporate guidelines for keeping order on privately-owned space assets."
 	icon_state = "book_ironparagraphs"
-	author = "Marshal Security"
-	title = "Marshal Paragraphs"
+	author = "Watchmen Security"
+	title = "Watchmen Paragraphs"
 	page_link = "Guide_to_Security"
 
 //medical

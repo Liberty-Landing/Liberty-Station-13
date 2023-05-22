@@ -893,6 +893,102 @@
 	icon_state = "cafe_large"
 	initial_flooring = /decl/flooring/industrial/cafe_large
 
+//industeral pristine
+
+/turf/simulated/floor/industrial_pristine
+	name = "pristine concrate slab"
+	icon = 'icons/turf/flooring/tiles_industeral.dmi'
+	icon_state = "concrete_small"
+	initial_flooring = /decl/flooring/industrial_pristine/concrete_small
+
+/turf/simulated/floor/industrial_pristine/concrete_bricks
+	name = "pristine concrate bricks"
+	icon_state = "concrete_bricks"
+	initial_flooring = /decl/flooring/industrial_pristine/concrete_bricks
+
+/turf/simulated/floor/industrial_pristine/bricks
+	name = "pristine bricks"
+	icon_state = "brick"
+	initial_flooring = /decl/flooring/industrial_pristine/bricks
+
+/turf/simulated/floor/industrial_pristine/ornate
+	name = "pristine ornate"
+	icon_state = "ornate"
+	initial_flooring = /decl/flooring/industrial_pristine/ornate
+
+/turf/simulated/floor/industrial_pristine/sierra
+	name = "pristine ornate"
+	icon_state = "sierra"
+	initial_flooring = /decl/flooring/industrial_pristine/sierra
+
+/turf/simulated/floor/industrial_pristine/ceramic
+	name = "pristine ceramic"
+	icon_state = "ceramic"
+	initial_flooring = /decl/flooring/industrial_pristine/ceramic
+
+/turf/simulated/floor/industrial_pristine/grey_slates_long
+	name = "pristine grey slates"
+	icon_state = "grey_long"
+	initial_flooring = /decl/flooring/industrial_pristine/grey_slates_long
+
+/turf/simulated/floor/industrial_pristine/blue_slates_long
+	name = "pristine blue slates"
+	icon_state = "blue_long"
+	initial_flooring = /decl/flooring/industrial_pristine/blue_slates_long
+
+/turf/simulated/floor/industrial_pristine/grey_slates
+	name = "pristine grey slates"
+	icon_state = "grey"
+	initial_flooring = /decl/flooring/industrial_pristine/grey_slates
+
+/turf/simulated/floor/industrial_pristine/blue_slates
+	name = "pristine blue slates"
+	icon_state = "blue"
+	initial_flooring = /decl/flooring/industrial_pristine/blue_slates
+
+/turf/simulated/floor/industrial_pristine/navy_slates
+	name = "pristine navy slates"
+	icon_state = "navy"
+	initial_flooring = /decl/flooring/industrial_pristine/navy_slates
+
+/turf/simulated/floor/industrial_pristine/fancy_slates
+	name = "pristine disk slates"
+	icon_state = "fancy"
+	initial_flooring = /decl/flooring/industrial_pristine/fancy_slates
+
+/turf/simulated/floor/industrial_pristine/navy_large_slates
+	name = "pristine large navy slates"
+	icon_state = "navy_large"
+	initial_flooring = /decl/flooring/industrial_pristine/navy_large_slates
+
+/turf/simulated/floor/industrial_pristine/black_large_slates
+	name = "pristine large black slates"
+	icon_state = "black_large"
+	initial_flooring = /decl/flooring/industrial_pristine/black_large_slates
+
+/turf/simulated/floor/industrial_pristine/green_large_slates
+	name = "pristine large green slates"
+	icon_state = "green_large"
+	initial_flooring = /decl/flooring/industrial_pristine/green_large_slates
+
+/turf/simulated/floor/industrial_pristine/white_large_slates
+	name = "pristine large white slates"
+	icon_state = "white_large"
+	initial_flooring = /decl/flooring/industrial_pristine/white_large_slates
+
+/turf/simulated/floor/industrial_pristine/checker_large
+	name = "pristine large white and black slates"
+	icon_state = "checker_large"
+	initial_flooring = /decl/flooring/industrial_pristine/checker_large
+
+/turf/simulated/floor/industrial_pristine/cafe_large
+	name = "pristine large white and red slates"
+	icon_state = "cafe_large"
+	initial_flooring = /decl/flooring/industrial_pristine/cafe_large
+
+
+
+
 //rusted
 /turf/simulated/floor/rusted
 	name = "rusted tiles"

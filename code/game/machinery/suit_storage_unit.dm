@@ -491,8 +491,12 @@
 /obj/machinery/suit_storage_unit/nt/agrolyte
 	SUIT_TYPE = /obj/item/clothing/suit/space/void/agrolyte
 
-/obj/machinery/suit_storage_unit/nt/custodian
-	SUIT_TYPE = /obj/item/clothing/suit/space/void/custodian
+/obj/machinery/suit_storage_unit/nt/janitor
+	SUIT_TYPE = /obj/item/clothing/suit/space/void/janitor
+
+/obj/machinery/suit_storage_unit/nt/flameshield
+	SUIT_TYPE = /obj/item/clothing/suit/armor/custodian/firesuit
+	HELMET_TYPE = /obj/item/clothing/head/helmet/custodian/firesuit
 
 /obj/machinery/suit_storage_unit/mining
 	SUIT_TYPE = /obj/item/clothing/suit/space/void/mining

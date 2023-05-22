@@ -130,11 +130,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	desc = "Due to extensive smoker history in your family line or gene-therapy you are now afflicted with a sequence known as 'Cuban Delight' meaning you can slowly recover from effects of venom as long as nicotine is flowing through you."
 	icon_state = "cigarette" // https://game-icons.net
 
-/datum/perk/background/medicalexpertise
-	name = "Medical Expertise"
-	desc = "Your medical training and experience in the area of patient triage is unparalleled. 'Waste not, want not' is your motto, and you apply bandages and salves with utmost efficiency, sometimes using just the right amount of them."
-	icon_state = "knowledge"
-
 /datum/perk/background/klutz
 	name = "Klutz"
 	desc = "You find a lot of tasks a little beyond your ability to perform such is using any type of weaponry, but being accident prone has at least made you used to getting hurt."
@@ -151,53 +146,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	holder.maxHealth -= 10
 	holder.health -= 10
 	..()
-
-/datum/perk/background/market_prof
-	name = "Market Professional"
-	desc = "You've become an excellent appraiser of goods over the years. Just by looking at the item, you can know how much it would sell for in today's market rates."
-	icon_state = "market_prof"
-
-//////////////////////
-/* Synthetics Perks */
-//////////////////////
-/datum/perk/background/reaper
-	name = "R34pR Chipset"
-	icon_state = "overheat"
-	desc = "You have been infected with REEP malware but fret not, it's not all so bad! \
-	Running extremely hot, you move faster at cost of increased fragility of your systems."
-
-/datum/perk/background/reaper/assign(mob/living/carbon/human/H)
-	if(..())
-		holder.burn_mod_perk += 0.30
-		holder.slowdown -= 0.3
-
-/datum/perk/background/reaper/remove()
-	if(holder)
-		holder.burn_mod_perk -= 0.30
-		holder.slowdown += 0.3
-	..()
-
-/datum/perk/background/equalizer
-	name = "Equalizer Chipset"
-	icon_state = "skills"
-	desc = "Whatever was your chassis original purpose is overwritten. \
-			This perk checks your highest stat, lowers it by 10 and improves all others by 4."
-
-/datum/perk/background/equalizer/assign(mob/living/carbon/human/H)
-	if(!..())
-		return
-	var/maxstat = -INFINITY
-	var/maxstatname
-	spawn(1)
-		for(var/name in ALL_STATS_TO_IMPRINT)
-			if(holder.stats.getStat(name, TRUE) > maxstat)
-				maxstat = holder.stats.getStat(name, TRUE)
-				maxstatname = name
-		for(var/name in ALL_STATS_TO_IMPRINT)
-			if(name != maxstatname)
-				holder.stats.changeStat(name, 4)
-			else
-				holder.stats.changeStat(name, -10)
 
 ////////////////////////
 /* Sanity-Based Perks */
@@ -263,7 +211,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	name = "Noble"
 	icon_state = "family" //https://game-icons.net
 	desc = "You came from a wealthy family of high stature, able to achieve a high education and spent most of your life capable of relaxing. \
-			Start with an heirloom weapon, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
+			Start with an heirloom, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
 
 /datum/perk/background/noble/assign(mob/living/carbon/human/H)
 	if(!..())
@@ -274,40 +222,8 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		return
 	var/turf/T = get_turf(holder)
 	var/obj/item/W
-	if(is_neotheology_disciple(holder) && prob(50))
-		W = pickweight(list(
-				/obj/item/tool/sword/nt/longsword = 0.5,
-				/obj/item/tool/sword/nt/shortsword = 0.5,
-				/obj/item/tool/sword/nt/scourge = 0.1,
-				/obj/item/tool/knife/dagger/nt = 0.5))
-	else
-		W = pickweight(list(
-				/obj/item/tool/hammer/mace = 0.2,
-				/obj/item/tool/knife/ritual = 0.5,
-				/obj/item/material/butterfly/switchblade = 0.5,
-				/obj/item/tool/sword/saber = 0.2,
-				/obj/item/tool/sword/katana = 0.2,
-				/obj/item/tool/knife/dagger = 0.5,
-				/obj/item/gun/projectile/colt = 0.2,
-				/obj/item/gun/projectile/revolver/detective = 0.1,
-				/obj/item/tool/knife/dagger/ceremonial = 0.4,
-				/obj/item/gun/projectile/revolver/frontier = 0.4))
-	holder.sanity.valid_inspirations += W
+	W = /obj/item/gunbox/heirloom
 	W = new W(T)
-	W.desc += " It has been inscribed with the \"[holder.name]\" family name."
-	W.name = "[W] of [holder.name]"
-	var/oddities = rand(2,4)
-	var/list/stats = ALL_STATS
-	var/list/final_oddity = list()
-	for(var/i = 0 to oddities)
-		var/stat = pick(stats)
-		stats.Remove(stat)
-		final_oddity += stat
-		final_oddity[stat] = rand(1,7)
-	W.AddComponent(/datum/component/inspiration, final_oddity, get_oddity_perk())
-	W.AddComponent(/datum/component/atom_sanity, 1, "") //sanity gain by area
-	W.sanity_damage -= 1 //damage by view
-	W.price_tag += rand(1000, 2500)
 	spawn(1)
 		holder.equip_to_storage_or_drop(W)
 
@@ -315,7 +231,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	if(holder)
 		holder.sanity.environment_cap_coeff += 1
 	..()
-
 
 /datum/perk/background/rejected_genius
 	name = "Rejected Genius"
@@ -373,6 +288,24 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.sanity.negative_prob -= 10
 		holder.metabolism_effects.nsa_bonus += 10
 		holder.metabolism_effects.calculate_nsa()
+	..()
+
+/datum/perk/unfeeling
+	name = "Unfeeling"
+	desc = "Be it emotional supressors; a lack of programming, or simply not caring for organic damage - your mechanical nature has made you immune to the trials and tribulations of what the organics call 'the mind and soul'."
+	icon_state = "interfacing" // Disco Elysium Skills - Simplified	Art.
+
+/datum/perk/unfeeling/assign(mob/living/carbon/human/H)
+	if(..())
+		holder.sanity.view_damage_threshold += 600 //Synth trait.
+		holder.sanity.sanity_invulnerability += 1 //yep.
+		holder.sanity.insight_gain_multiplier *= 0.25 //yeowch
+
+/datum/perk/unfeeling/remove()
+	if(holder)
+		holder.sanity.view_damage_threshold -= 600 //Synth trait.
+		holder.sanity.sanity_invulnerability -= 1 //yep.
+		holder.sanity.insight_gain_multiplier *= 2 //so you arent softlocked
 	..()
 
 /datum/perk/fate/paper_worm

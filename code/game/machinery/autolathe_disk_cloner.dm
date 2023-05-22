@@ -1,5 +1,5 @@
 /obj/machinery/autolathe_disk_cloner
-	name = "Excelsior autolathe disk cloner"
+	name = "soviet autolathe disk cloner"
 	desc = "Machine used for freeing recipes from protected autolathe disks."
 	icon = 'icons/obj/machines/disk_cloner.dmi'
 	icon_state = "disk_cloner"

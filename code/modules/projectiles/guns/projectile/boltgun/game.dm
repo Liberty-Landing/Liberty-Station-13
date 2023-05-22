@@ -25,7 +25,7 @@
 	sharp = FALSE
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SCOPE, GUN_SILENCABLE)
 	saw_off = FALSE
-	sawn = /obj/item/gun/projectile/boltgun/sawn/true
+	sawn = /obj/item/gun/projectile/boltgun/gamer/sawn
 	serial_type = "Car-Van"
 
 	extra_damage_mult_scoped = 0.4
@@ -34,3 +34,25 @@
 	wield_delay = 0.3 SECOND
 	wield_delay_factor = 0.2 // 20 vig
 	gun_parts = list(/obj/item/part/gun/frame/boltgun = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)
+
+/obj/item/gun/projectile/boltgun/gamer/sawn
+	name = "\"Big Game\" obrez boltgun"
+	desc = "Sawn down verson of a high powered bolt gun sporting ten more rounds in its internals then a normal bolt gun."
+	icon = 'icons/obj/guns/projectile/sawnoff/mosin.dmi'
+	icon_state = "obrez"
+	item_state = "obrez"
+	force = WEAPON_FORCE_NORMAL
+	w_class = ITEM_SIZE_NORMAL
+	slot_flags = SLOT_BELT|SLOT_HOLSTER
+	price_tag = 75
+	sharp = 0
+	init_recoil = HMG_RECOIL(0.8)
+	penetration_multiplier = 0.5
+	damage_multiplier = 1
+	fire_delay = 4
+	max_shells = 15
+	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SILENCABLE)
+	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 4)
+	saw_off = FALSE
+	bolt_training = FALSE //Training didnt cover obrez
+	gun_parts = list(/obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)

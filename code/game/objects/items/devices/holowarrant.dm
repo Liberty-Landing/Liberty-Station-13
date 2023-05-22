@@ -1,6 +1,6 @@
 /obj/item/device/holowarrant
 	name = "warrant projector"
-	desc = "The practical paperwork replacement for the marshal on the go."
+	desc = "The practical paperwork replacement for the Watchman on the go."
 	icon_state = "holowarrant"
 	item_state = "holowarrant"
 	throwforce = 5
@@ -9,7 +9,7 @@
 	throw_range = 10
 	slot_flags = SLOT_BELT|SLOT_POCKET // QOL improvement tbh
 	req_access = list(list(access_heads, access_security))
-	var/boss_name = "Marshals"
+	var/boss_name = "Watchmen"
 	var/station_name = "The Liberty Colony"
 	var/datum/computer_file/data/warrant/active
 
@@ -87,7 +87,7 @@
 	if(active.fields["arrestsearch"] == "arrest")
 		var/output = {"
 		<HTML><HEAD><TITLE>[active.fields["namewarrant"]]</TITLE></HEAD>
-		<BODY bgcolor='#ffffff'><center><large><b>MARSHALS SECURITY Warrant Tracker System</b></large></br>
+		<BODY bgcolor='#ffffff'><center><large><b>WATCHMEN SECURITY Warrant Tracker System</b></large></br>
 		</br>
 		Issued under the jurisdiction of the</br>
 		[boss_name]</br>
@@ -106,7 +106,7 @@
 	if(active.fields["arrestsearch"] ==  "search")
 		var/output= {"
 		<HTML><HEAD><TITLE>Search Warrant: [active.fields["namewarrant"]]</TITLE></HEAD>
-		<BODY bgcolor='#ffffff'><center><large><b>MARSHALS SECURITY Warrant Tracker System</b></large></br>
+		<BODY bgcolor='#ffffff'><center><large><b>WATCHMENS SECURITY Warrant Tracker System</b></large></br>
 		</br>
 		Issued under the jurisdiction of the</br>
 		[boss_name]</br>
@@ -121,9 +121,9 @@
 		</br>
 		Jurisdiction: _<u>[station_name]</u>____</br>
 		</br>
-		<center><small><i>The Marshals Officer(s) bearing this Warrant are hereby authorized by the Issuer to conduct a one-time lawful search of the Suspect's person/belongings/premises and/or Department for any items and materials that could be connected to the suspected criminal charges described below, pending an investigation in progress.</br>
+		<center><small><i>The Watchmen(s) bearing this Warrant are hereby authorized by the Issuer to conduct a one-time lawful search of the Suspect's person/belongings/premises and/or Department for any items and materials that could be connected to the suspected criminal charges described below, pending an investigation in progress.</br>
 		</br>
-		The Marshals Officer(s) are obligated to remove any and all such items from the Suspect's posession and/or Department and file it as evidence.</br>
+		The Watchmen(s) are obligated to remove any and all such items from the Suspect's posession and/or Department and file it as evidence.</br>
 		</br>
 		The Suspect/Departamental staff is expected to offer full co-operation.</br>
 		</br>

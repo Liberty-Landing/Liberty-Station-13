@@ -3,7 +3,7 @@
 	var/desc = "God made it quite clear this should not exist, Perhaps inform those above."
 	var/cost = 20
 	var/min_cost = 10 //absolute minimum it should cost
-	var/path = /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter //path to spawn
+	var/path = /obj/item/computer_hardware/hard_drive/portable/design/nt/textiles //path to spawn
 	var/purchase_count = 0 //how many times its bought
 	var/discount_increase = 5 //discount increase per purchase
 	var/discount = 0 //total discount to apply to the cost
@@ -152,18 +152,6 @@
 	min_cost = 10
 	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/lightfall
 
-/datum/armament/item/disk/nukes
-	name = "Disk - Holy Grenades"
-	cost = 25
-	min_cost = 20
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/grenades
-
-/datum/armament/item/disk/plasma_shell
-	name = "Disk - Plasma Ammo"
-	cost = 30
-	min_cost = 20
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/plasma_shells
-
 /datum/armament/item/disk/purger
 	name = "Disk - Hunan"
 	cost = 40
@@ -175,9 +163,3 @@
 	cost = 80
 	min_cost = 80
 	path = /obj/item/computer_hardware/hard_drive/portable/design/guns/dominion
-
-/datum/armament/item/disk/new_test_disk
-	name = "Disk - New Testament"
-	cost = 50
-	min_cost = 25
-	path = /obj/item/computer_hardware/hard_drive/portable/design/nt/new_guns

@@ -41,8 +41,8 @@
 /obj/item/gun/projectile/automatic/maxim/update_icon()
 	..()
 	if(ammo_magazine)
-		icon_state = "[initial(icon_state)]-full"
-		set_item_state("-full")
+		icon_state = "[initial(icon_state)]_full"
+		set_item_state("_full")
 	else
 		icon_state = initial(icon_state)
 		set_item_state()

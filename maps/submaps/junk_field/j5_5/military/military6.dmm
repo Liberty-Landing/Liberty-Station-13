@@ -1,0 +1,45 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"t" = (
+/obj/structure/bed/chair,
+/obj/random/mob/space_legion,
+/turf/simulated/floor/tiled/dark,
+/area/template_noop)
+
+(1,1,1) = {"
+t
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+a
+a
+a
+a
+"}
+(3,1,1) = {"
+a
+a
+a
+a
+a
+"}
+(4,1,1) = {"
+a
+a
+a
+a
+t
+"}
+(5,1,1) = {"
+a
+a
+a
+a
+a
+"}

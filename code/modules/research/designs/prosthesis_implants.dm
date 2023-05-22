@@ -47,7 +47,7 @@
 	build_path = /obj/item/organ/external/robotic/moebius/head
 
 /datum/design/research/item/mechfab/prosthesis_moebius/chest
-	build_path = /obj/item/organ/external/robotic/moebius/torso
+	build_path = /obj/item/organ/external/robotic/moebius/chest
 
 //Robotic Internals ====================================
 

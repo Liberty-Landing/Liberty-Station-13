@@ -1,6 +1,6 @@
 /obj/item/grenade/flashbang
-	name = "Seinemetall Defense GmbH FBG \"Serra\""
-	desc = "A \"Serra\" flashbang grenade. If in any doubt - use it."
+	name = "MT FBG \"Lightbulb\""
+	desc = "A \"Lightbulb\" flashbang grenade. If in any doubt - use it."
 	description_info = "Will stun anyone using thermals from double the distance for a normal person, through walls"
 	icon_state = "flashbang"
 	item_state = "flashbang"

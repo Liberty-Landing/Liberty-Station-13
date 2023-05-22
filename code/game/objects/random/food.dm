@@ -7,7 +7,8 @@
 				/obj/item/reagent_containers/food/snacks/candy = 2,\
 				/obj/item/reagent_containers/food/snacks/openable/tastybread = 2,\
 				/obj/item/reagent_containers/food/snacks/openable/no_raisin = 2,\
-				/obj/item/reagent_containers/food/snacks/openable/liquidfood = 4,
+				/obj/item/reagent_containers/food/snacks/openable/selfheat_coffee = 2,\
+				/obj/item/reagent_containers/food/snacks/openable/liquidfood = 4,\
 				/obj/item/reagent_containers/food/snacks/donkpocket/sinpocket = 1,\
 				/obj/item/storage/fancy/crayons = 0.1))
 

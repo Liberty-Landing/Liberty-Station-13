@@ -19,25 +19,9 @@
 	price_tag = 30
 	item_flags = STOPPRESSUREDAMAGE
 	heat_protection = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = T0C - 20
 	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
-
-/obj/item/clothing/head/hardhat/union_chief_helmet
-	name = "union chief helmet"
-	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
-	icon_state = "union_chief_helmet"
-	item_state = "union_chief_helmet"
-
-/obj/item/clothing/head/hardhat/union_engi_helmet
-	name = "union engineer helmet"
-	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
-	icon_state = "union_engi_helmet"
-	item_state = "union_engi_helmet"
-
-/obj/item/clothing/head/hardhat/union_miner_helmet
-	name = "union miner helmet"
-	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
-	icon_state = "union_miner_helmet"
-	item_state = "union_miner_helmet"
 
 /obj/item/clothing/head/hardhat/yellow
 	name = "yellow hardhat"
@@ -62,6 +46,51 @@
 	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in blue."
 	icon_state = "hardhat-b"
 	item_state = "hardhat-b"
+
+/obj/item/clothing/head/hardhatunion
+	name = "hard hat"
+	desc = "Headgear for dangerous working conditions. This one is an Union's standard yellow design with a built-in light."
+	icon_state = "hardhat-y"
+	item_state = "hardhat-y"
+	action_button_name = "Toggle Headlamp"
+	brightness_on = 4 //luminosity when on
+	light_overlay = "hardhatunion_light"
+	armor_list = list(
+		melee = 10,
+		bullet = 10,
+		energy = 10,
+		bomb = 10,
+		bio = 10,
+		rad = 25
+	)
+	siemens_coefficient = 0.8
+	w_class = ITEM_SIZE_NORMAL
+	price_tag = 30
+	item_flags = STOPPRESSUREDAMAGE
+	heat_protection = HEAD
+	cold_protection = HEAD
+	min_cold_protection_temperature = T0C - 20
+	max_heat_protection_temperature = FIRE_HELMET_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/head/hardhatunion/union_chief_helmet
+	name = "union chief helmet"
+	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
+	icon_state = "union_chief_helmet"
+	item_state = "union_chief_helmet"
+
+/obj/item/clothing/head/hardhatunion/union_engi_helmet
+	name = "union engineer helmet"
+	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
+	icon_state = "union_engi_helmet"
+	item_state = "union_engi_helmet"
+	light_overlay = "hardhatunion_light"
+
+/obj/item/clothing/head/hardhatunion/union_miner_helmet
+	name = "union miner helmet"
+	desc = "Headgear for dangerous working conditions with a built-in light. This one comes in standard Union's yellow."
+	icon_state = "union_miner_helmet"
+	item_state = "union_miner_helmet"
+	light_overlay = "hardhatunion_light"
 
 /obj/item/clothing/head/firefighter/chief
 	name = "Union Chief helmet"

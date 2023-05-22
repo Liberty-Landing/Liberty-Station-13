@@ -157,7 +157,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 
 /obj/item/storage/hcases/ammo/ih
 	icon_state = "ammo_case_ih"
-	desc = "An ammo can for Marshals. Can hold ammo magazines, boxes, bullets, a assortment of grenades and some gear. Alt+click to open and close."
+	desc = "An ammo can for Watchmen. Can hold ammo magazines, boxes, bullets, a assortment of grenades and some gear. Alt+click to open and close."
 
 /obj/item/storage/hcases/ammo/ih/wo
 	exspand_when_spawned = FALSE //No exspanding cheats
@@ -185,6 +185,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	new /obj/item/device/lighting/toggleable/flashlight/seclite(src)
 	new /obj/item/clothing/accessory/badge/holo/inspector(src)
 	new /obj/item/cell/small/high(src)
+	new /obj/item/cell/medium/high(src)
 
 /obj/item/storage/hcases/ammo/ih/marshal_officer
 	exspand_when_spawned = FALSE //No exspanding cheats

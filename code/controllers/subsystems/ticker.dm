@@ -272,7 +272,6 @@ SUBSYSTEM_DEF(ticker)
 	generate_contracts(min(6 + round(minds.len / 5), 12))
 	generate_excel_contracts(min(6 + round(minds.len / 5), 12))
 	generate_blackshield_contracts(min(6 + round(minds.len / 5), 12))
-	excel_check()
 	//blackshield_check() - does nothing FOR NOWWWW!!!! - likely ever
 	addtimer(CALLBACK(src, .proc/contract_tick), 15 MINUTES)
 
@@ -451,31 +450,6 @@ SUBSYSTEM_DEF(ticker)
 			if(C.unique)
 				candidates -= contract_type
 			break
-
-/datum/controller/subsystem/ticker/proc/excel_check()
-
-	for(var/datum/antag_contract/excel/targeted/overthrow/M in GLOB.excel_antag_contracts)
-		var/mob/living/carbon/human/H = M.target_mind.current
-		if (H.stat == DEAD || is_excelsior(H))
-			M.complete()
-
-	for(var/datum/antag_contract/excel/targeted/liberate/M in GLOB.excel_antag_contracts)
-		var/mob/living/carbon/human/H = M.target_mind.current
-		if (is_excelsior(H))
-			M.complete()
-
-	for(var/datum/antag_contract/excel/propaganda/M in GLOB.excel_antag_contracts)
-		var/list/area/targets = M.targets
-		var/marked_areas = 0
-		if(M.completed)
-			return
-		for (var/obj/item/device/propaganda_chip/C in ship_areas)
-			if (C.active)
-				if (get_area(C) in targets)
-					marked_areas += 1
-		if (marked_areas >= 3)
-			M.complete()
-	addtimer(CALLBACK(src, .proc/excel_check), 3 MINUTES)
 
 /datum/controller/subsystem/ticker/proc/contract_tick()
 	generate_contracts(1)

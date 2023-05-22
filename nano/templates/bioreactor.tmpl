@@ -31,12 +31,12 @@
 		</div>
 	{{/if}}
 
-Biomatter tank:
+Scorch tank:
 
 <hr> </hr>
 
 <div class="itemLabel">
-	Biomatter:
+	Scorch:
 </div>
 	<div class="itemContent">
 		{{:helper.displayBar(data.biotank_occupancy, 0, data.biotank_max_capacity, 'highlight', showText = data.biotank_occupancy + '/' + data.biotank_max_capacity)}}
@@ -48,13 +48,13 @@ Biomatter tank:
 </div>
 	<div class="itemContent">
 		{{if data.biotank_status}}
-			disconnected from bioreactor
+			disconnected from Bonfire
 		{{else}}
-			connected to bioreactor
+			connected to Bonfire
 		{{/if}}
 	</div>
 
-	
+
 <div class="itemLabel">
 	Canister:
 </div>

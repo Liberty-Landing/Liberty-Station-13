@@ -144,7 +144,7 @@
 /area/liberty/dungeon/outside/frozen_forest)
 "dM" = (
 /obj/structure/flora/tree/snow/snow,
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "dP" = (
@@ -1299,7 +1299,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "CD" = (
-/obj/random/mob/render/low_chance,
+/obj/random/mob/agape/low_chance,
 /turf/simulated/floor/snow,
 /area/liberty/dungeon/outside/frozen_forest)
 "CK" = (
@@ -2230,6 +2230,9 @@
 	},
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
+"VF" = (
+/turf/unsimulated/mineral/transition,
+/area/liberty/dungeon/outside/frozen_forest)
 "VU" = (
 /obj/item/bedsheet,
 /obj/machinery/portable_atmospherics/hydroponics/soil,
@@ -4288,12 +4291,12 @@ PG
 PG
 PG
 PG
-vy
-vy
-vy
-vy
-vy
-vy
+PG
+PG
+PG
+PG
+PG
+PG
 vy
 vy
 vy
@@ -4539,17 +4542,17 @@ PG
 PG
 PG
 PG
+PG
+PG
+PG
+PG
+PG
 vy
 vy
 vy
 vy
 vy
 vy
-vy
-vy
-vy
-rf
-rf
 KA
 rf
 rf
@@ -4791,16 +4794,16 @@ PG
 PG
 PG
 PG
+PG
+PG
 vy
 vy
-rf
-rf
-rf
-rf
-rf
-rf
-rf
-rf
+vy
+vy
+vy
+vy
+vy
+vy
 rf
 rf
 rf
@@ -5043,16 +5046,16 @@ PG
 PG
 PG
 vy
+PG
 vy
 vy
-rf
-LL
-rf
-rf
-rf
-rf
-Bk
-rf
+vy
+vy
+vy
+vy
+vy
+vy
+vy
 rf
 rf
 rf
@@ -5297,10 +5300,10 @@ vy
 vy
 vy
 vy
-rf
-rf
-rf
-rf
+vy
+vy
+vy
+vy
 rf
 rf
 rf
@@ -53375,7 +53378,7 @@ PG
 PG
 PG
 XT
-XT
+VF
 xL
 Nx
 rf
@@ -53627,7 +53630,7 @@ PG
 PG
 PG
 XT
-XT
+VF
 cs
 Nx
 Nx

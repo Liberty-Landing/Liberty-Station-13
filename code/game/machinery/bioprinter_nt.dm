@@ -1,16 +1,16 @@
-/obj/machinery/autolathe/bioprinter
-	name = "church bioprinter"
-	desc = "A strange looking machine for printing things using biomass."
-	icon_state = "bioprinter"
+/obj/machinery/autolathe/flarelathe
+	name = "custodian flarelathe"
+	desc = "A forge design created by the Custodians that makes use of Radiance to smith their equipment."
+	icon_state = "flarelathe"
 	unsuitable_materials = list()
 	build_type = AUTOLATHE | BIOPRINTER
 	storage_capacity = 480
 	speed = 11
 	have_recycling = TRUE
 	queue_max = 16 //Might be 8 in game do to wires
-	mat_efficiency = 0.5
+	mat_efficiency = 1
 
-/obj/machinery/autolathe/bioprinter/attackby(obj/item/I, mob/user)
+/obj/machinery/autolathe/flarelathe/attackby(obj/item/I, mob/user)
 	//hacky way to forbid deconstruction but use ..()
 	var/tool_type = I.get_tool_type(user, list(QUALITY_SCREW_DRIVING), src)
 	if(tool_type == QUALITY_SCREW_DRIVING)
@@ -22,14 +22,12 @@
 
 	..(I, user)
 
-/obj/machinery/autolathe/bioprinter/RefreshParts()
+/obj/machinery/autolathe/flarelathe/RefreshParts()
 	..()
 	speed = initial(speed)
 	mat_efficiency = initial(mat_efficiency)
 
-
-/obj/machinery/autolathe/bioprinter/disk
-	default_disk = /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter
-
-/obj/machinery/autolathe/bioprinter/public
-	default_disk = /obj/item/computer_hardware/hard_drive/portable/design/nt/bioprinter/public
+/obj/machinery/autolathe/flarelathe/upgraded
+	name = "enhanced flarelathe"
+	desc = "A forge design created by the Custodians that makes use of Radiance to smith their equipment. This one has been enhanced by a Forgemaster, reducing material costs."
+	mat_efficiency = 0.5

@@ -7,7 +7,7 @@
 	desc = "Made by space amish using traditional space techniques, this heater is guaranteed not to set the colony on fire."
 	var/obj/item/cell/large/cell
 	var/on = 0
-	var/set_temperature = T0C + 50	//K
+	var/set_temperature = T0C + 40	//K
 	var/heating_power = 40000
 
 
