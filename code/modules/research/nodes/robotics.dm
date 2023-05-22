@@ -118,7 +118,7 @@
 //FBPS
 /datum/technology/prosthetic_limbs
 	name = "Prosthetic Augmentations"
-	desc = "Body augmentations in the way of CAPSA-brand prosthesis."
+	desc = "Body augmentations in the way of PIRS-brand prosthesis."
 	tech_type = RESEARCH_ROBOTICS
 
 	x = 0.3
@@ -145,7 +145,7 @@
 
 /datum/technology/prosthetic_organs
 	name = "Prosthetic Organs"
-	desc = "Organ augmentations in the way of CAPSA-brand prosthesis."
+	desc = "Organ augmentations in the way of PIRS-brand prosthesis."
 	tech_type = RESEARCH_ROBOTICS
 
 	x = 0.5

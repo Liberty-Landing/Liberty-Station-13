@@ -264,9 +264,7 @@
 	unlocks_designs = list(	/datum/design/research/item/weapon/toolmod/stick,
 							/datum/design/research/item/weapon/toolmod/heatsink,
 							/datum/design/research/item/weapon/toolmod/plating,
-							/datum/design/research/item/weapon/toolmod/guard,
-							//datum/design/research/item/weapon/toolmod/plasmablock,
-							//datum/design/research/item/weapon/toolmod/rubbermesh
+							/datum/design/research/item/weapon/toolmod/guard
 							)
 
 /datum/technology/productivity_toolmods
@@ -289,9 +287,7 @@
 							/datum/design/research/item/weapon/toolmod/dblade,
 							/datum/design/research/item/weapon/toolmod/oxyjet,
 							/datum/design/research/item/weapon/toolmod/motor,
-							/datum/design/research/item/weapon/toolmod/antistaining,
-							//datum/design/research/item/weapon/toolmod/booster,
-							//datum/design/research/item/weapon/toolmod/injector
+							/datum/design/research/item/weapon/toolmod/antistaining
 							)
 
 /datum/technology/refinement_toolmods
@@ -403,7 +399,7 @@
 
 /datum/technology/super_adv_engineering
 	name = "Progressive Engineering"
-	desc = "Rapid Part Exchange technology and secure airlocks electronics."
+	desc = "Rapid Part Exchange technology and secure airlock electronics."
 	tech_type = RESEARCH_ENGINEERING
 
 	x = 0.5
@@ -499,21 +495,3 @@
 							/datum/design/research/item/rig_ore_scanner,
 							/datum/design/research/item/rig_meson_goggles
 							)
-
-
-/*
-/datum/technology/bluespace_parts
-	name = "Bluespace Parts"
-	desc = "Bluespace Parts"
-	tech_type = RESEARCH_ENGINEERING
-
-	x = 0.9
-	y = 0.3
-	icon = "bluespacematterbin"
-
-	required_technologies = list(/datum/technology/ultra_parts)
-	required_tech_levels = list()
-	cost = 2500
-
-	unlocks_designs = list("quadultra_micro_laser", "bluespace_matter_bin")
-*/
