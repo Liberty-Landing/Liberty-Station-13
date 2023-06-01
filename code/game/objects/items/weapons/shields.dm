@@ -208,6 +208,11 @@
 	var/cooldown = 0 //shield bash cooldown. based on world.time
 	var/picked_by_human = FALSE
 	var/mob/living/carbon/human/picking_human
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "tactical"
+		)
 
 /obj/item/shield/buckler/handle_shield(mob/user)
 	. = ..()
@@ -355,6 +360,7 @@
 	name = "lid shield"
 	desc = "A detached lid from a trash cart, that works well as shield."
 	icon_state = "lid_shield"
+	item_state = "lid_shield"
 	flags = CONDUCT
 	throw_speed = 2
 	throw_range = 2
@@ -362,6 +368,11 @@
 	matter = list(MATERIAL_STEEL = 8)
 	base_block_chance = 40
 	max_durability = 70 //So we can brake and need healing time to time
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "lid_shield"
+		)
 
 /obj/item/shield/riot/dozershield
 	name = "bulldozer shield"
@@ -381,6 +392,11 @@
 	max_durability = 200
 	durability = 180
 	slowdown_hold = 1 // Unwieldy and makeshift in nature
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "dozershield"
+		)
 
 /obj/item/shield/hardsuit
 	name = "hardsuit shield"
@@ -481,10 +497,14 @@
 	armor_list = list(melee = 15, bullet = 2, energy = 10, bomb = 0, bio = 0, rad = 0)
 	max_durability = 100 //So we can brake and need healing time to time
 	durability = 100
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "buckler"
+		)
 
 /obj/item/shield/buckler/handmade/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
 	return base_block_chance
-
 
 /obj/item/shield/buckler/handmade/attackby(obj/item/W as obj, mob/user as mob)
 	if(istype(W, /obj/item/extinguisher) || istype(W, /obj/item/storage/toolbox) || istype(W, /obj/item/melee))
@@ -505,6 +525,12 @@
 	base_block_chance = 50
 	max_durability = 130 //So we can brake and need healing time to time
 	durability = 130
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "buckler_bone"
+		)
+
 
 /obj/item/shield/riot/tray
 	name = "tray shield"
@@ -519,6 +545,11 @@
 	max_durability = 90 //So we can brake and need healing time to time
 	durability = 90
 	armor_list = list(melee = 20, bullet = 10, energy = 5, bomb = 0, bio = 0, rad = 0)
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "tray_shield"
+		)
 
 /obj/item/shield/riot/tray/get_protected_area(mob/user)
 	var/list/p_area = list(BP_CHEST, BP_HEAD, BP_L_ARM, BP_R_ARM, BP_GROIN)
