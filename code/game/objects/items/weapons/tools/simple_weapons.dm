@@ -235,16 +235,21 @@
 		)
 
 /obj/item/tool/sword/union
-	name = "spider chopper"
-	desc = "A hefty two-handed bent blade meant for smashing medium creatures.  Someone stuck a big plastic gem on the pommel."
+	name = "Combat Sword"
+	desc = "A Sturdy Combat Sword, seen in many conflicts around the galaxy and ideal to fight alien lifeforms, raiders or as a nice gardering tool, this one has a special design and a knuckleduster on it."
 	icon = 'icons/obj/weapons.dmi'
-	icon_state = "shamshir"
-	item_state = "shamshir"
+	icon_state = "Combat_sword"//new sprites by dromki.
+	item_state = "Combat_sword"
 	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 5)
 	sharp = TRUE
 	edge = TRUE
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BELT
+	item_icons = list(
+		slot_back_str = 'icons/inventory/back/mob.dmi')
+	item_state_slots = list(
+		slot_back_str = "Combat_back"
+		)
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_DEEP
@@ -266,21 +271,21 @@
 	alt_mode_lossrate = 0.3
 
 /obj/item/tool/sword/katana/union
-	name = "roach slicer"
-	desc = "A one handed curved sword perfect for mincing up small critters."
-	icon_state = "scimitar" // New sprite courtesy of nayu
-	item_state = "scimitar"
+	name = "Diamond Edge Sword"
+	desc = "A Sturdy Advanced Combat Sword, seen in hands of expert mercenaries,duelists or well paid Bodyguards this sword is special in design, balance and made for a true fighter, if said fighter can afford a weapon like this."
+	icon_state = "Diamond_edge" // New sprite courtesy of nayu//replaced by dromki with new design and mob sprites.
+	item_state = "Diamond_edge"
 	hitsound = 'sound/weapons/heavyslash.ogg'
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever
+	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_SHALLOW
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
-		slot_back_str = "katana_back"
+		slot_back_str = "Diamond_back"
 		)
-	effective_faction = list("roach") // Spiders are weak to crushing.
+	effective_faction = list("roach", "spiders") // Spiders are weak to crushing.//made the sword a bit better being able to bonk easier the fauna because is expensive as fuck make this shit
 	damage_mult = 1.5
 
 /obj/item/tool/sword/katana_makeshift

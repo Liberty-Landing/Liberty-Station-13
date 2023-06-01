@@ -226,7 +226,16 @@
 	return 1
 
 /obj/machinery/power/am_control_unit/proc/check_stability()//TODO: make it break when low also might want to add a way to fix it like a part or such that can be replaced
-	check_core_stability()
+	var/ignoranceisbliss = 0
+	var/stoobility = 0
+	if(stoobility != stored_core_stability)
+		ignoranceisbliss = 0
+	if(ignoranceisbliss >= 10)
+		return
+	else
+		ignoranceisbliss++
+		stoobility = stored_core_stability
+		check_core_stability()
 	if(stability <= 0)
 		qdel(src)
 	return

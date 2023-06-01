@@ -156,11 +156,11 @@
 	usr.setClickCooldown(DEFAULT_LONG_COOLDOWN)
 
 /obj/item/tool/hammer/mace
-	name = "termite truncheon"
-	desc = "A heavy, gaudy stick used for crushing bugs."
+	name = "Combat Mace"
+	desc = "A heavy Combat Mace reinforced with plasteel, a design seen commonly in the galaxy in hands of almost anyone with competent welding skills."
 	icon = 'icons/obj/weapons.dmi'
-	icon_state = "mace"
-	item_state = "mace"
+	icon_state = "Combat_mace"
+	item_state = "Combat_mace"
 	matter = list(MATERIAL_STEEL = 10)
 	price_tag = 30
 

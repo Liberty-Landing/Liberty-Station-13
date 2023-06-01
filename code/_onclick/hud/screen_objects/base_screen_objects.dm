@@ -1177,20 +1177,19 @@ obj/screen/fire/DEADelize()
 
 /obj/screen/fastintent/help
 	target_intent = I_HELP
-	icon_state = "intent_help"
+	icon_state = "help"
 
 /obj/screen/fastintent/harm
 	target_intent = I_HURT
-	icon_state = "intent_harm"
+	icon_state = "harm"
 
 /obj/screen/fastintent/grab
 	target_intent = I_GRAB
-	icon_state = "intent_grab"
+	icon_state = "grab"
 
 /obj/screen/fastintent/disarm
 	target_intent = I_DISARM
-	icon_state = "intent_disarm"
-
+	icon_state = "disarm"
 
 
 /obj/screen/drugoverlay

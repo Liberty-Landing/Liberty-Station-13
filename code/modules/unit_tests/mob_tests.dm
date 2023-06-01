@@ -114,7 +114,7 @@
 
 
 /datum/unit_test/robot_module_icons/Run()
-	var/icon_file = 'icons/mob/screen1_robot.dmi'
+	var/icon_file = 'icons/mob/hud_robot.dmi'
 	var/list/valid_states = icon_states(icon_file)
 
 	for(var/i in robot_modules)

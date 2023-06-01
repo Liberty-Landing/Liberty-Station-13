@@ -227,6 +227,132 @@
 	brightness_range = 12
 	brightness_power = 4
 
+// Static lamp post to be placed on the "streets" outside for night time illumination. - Seb
+/obj/machinery/light/streetlight
+	name = "street light"
+	desc = "An ornate lamp post that provides illumination over a wide area, usually seen on residential districts or casting its light on top of a shady detective like on those pulp holoflicks..."
+	icon = 'icons/obj/streetlight.dmi'
+	icon_state = "streetlight1"
+	base_state = "streetlight"
+	density = 1
+	anchored = 1
+	brightness_range = 5
+	brightness_power = 3
+	active_power_usage = 30
+	fitting = "large tube"
+	light_type = /obj/item/light/tube/large // Can be mega upgraded by Union to be literal floodlights
+
+/obj/machinery/light/streetlight/Initialize(mapload)
+	if(SSlighting.isnight)
+		on = TRUE // These will only get turned on at night by default
+		update_icon()
+	else // Let's suppose night mode ends mid round, gotta turn them on automatically
+		on = FALSE
+		update_icon()
+
+/obj/machinery/light/streetlight/update_icon()
+	cut_overlays() // For the global alert level overlays
+	switch(status)
+		if(LIGHT_OK)
+			icon_state = "[base_state][on]"
+			// Instead of atmos, we change our lights depending on the alert level of the colony.
+			var/decl/security_state/security_state = decls_repository.get_decl(GLOB.maps_data.security_state)
+			var/decl/security_level/sl = security_state.current_security_level
+			if(src.on)
+				src.add_overlay(image('icons/obj/streetlight.dmi', sl.overlay_firealarm)) // We use the same icon names as fire alarms, check the DMI.
+
+		if(LIGHT_EMPTY)
+			icon_state = "[base_state]-empty"
+			on = FALSE
+		if(LIGHT_BURNED)
+			icon_state = "[base_state]-burned"
+			on = FALSE
+		if(LIGHT_BROKEN)
+			icon_state = "[base_state]-broken"
+			on = FALSE
+	return
+
+/obj/machinery/light/streetlight/attackby(obj/item/I, mob/user)
+	// Not tearing this apart like a normal light fixture.
+	if(QUALITY_SCREW_DRIVING in I.tool_qualities)
+		to_chat(user, "You cannot disassemble this light fixture.")
+		return
+
+	// Light replacers work
+	if(istype(I, /obj/item/device/lightreplacer))
+		var/obj/item/device/lightreplacer/LR = I
+		if(isliving(user))
+			var/mob/living/U = user
+			LR.ReplaceLight(src, U)
+			return
+
+	// Manually replacing the bulb
+	if(istype(I, /obj/item/light))
+		if(status == LIGHT_OK)
+			to_chat(user, SPAN_WARNING("There is a [fitting] already inserted."))
+			return
+		else
+			src.add_fingerprint(user)
+			var/obj/item/light/L = I
+			if(istype(L, light_type))
+				user.drop_item()
+
+				if(status != LIGHT_EMPTY)
+					drop_light_tube(user)
+					to_chat(user, SPAN_NOTICE("You replace [L]."))
+				else
+					to_chat(user, SPAN_NOTICE("You insert [L]."))
+
+				status = L.status
+				switchcount = L.switchcount
+				rigged = L.rigged
+				brightness_range = L.brightness_range
+				brightness_power = L.brightness_power
+				brightness_color = L.brightness_color
+				on = has_power()
+				update()
+
+				qdel(L)
+
+				if(on && rigged)
+					log_admin("LOG: Rigged light explosion, last touched by [fingerprintslast]")
+					message_admins("LOG: Rigged light explosion, last touched by [fingerprintslast]")
+
+					explode()
+			else
+				to_chat(user, SPAN_WARNING("This type of light requires a [fitting]."))
+				return
+
+	// Break the lightbulb with anything else
+	else if(status != LIGHT_BROKEN && status != LIGHT_EMPTY)
+
+
+		if(prob(1+I.force * 5))
+
+			to_chat(user, "You hit the light, and it smashes!")
+			for(var/mob/M in viewers(src))
+				if(M == user)
+					continue
+				M.show_message("[user.name] smashed the light!", 3, "You hear a tinkle of breaking glass", 2)
+			if(on && (I.flags & CONDUCT))
+				//if(!user.mutations & COLD_RESISTANCE)
+				if (prob(12))
+					electrocute_mob(user, get_area(src), src, 0.3)
+			broken()
+
+		else
+			to_chat(user, "You hit the light!")
+
+// These change color on ALERT level, not on atmos alerts.
+/obj/machinery/light/streetlight/set_blue()
+	return
+/obj/machinery/light/streetlight/set_red()
+	return
+/obj/machinery/light/streetlight/reset_color()
+	return
+
+// END OF STREET LIGHT
+
 /obj/machinery/light/built/New()
 	status = LIGHT_EMPTY
 	update(0)

@@ -83,47 +83,47 @@
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/undergroundfloor1north
-	name = "Underground Floor 1 North Maintenance"
+	name = "Surface North Maintenance"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/undergroundfloor1west
-	name = "Underground Floor 1 West Maintenance"
+	name = "Surface West Maintenance"
 	icon_state = "erisyellow"
 
 /area/liberty/maintenance/undergroundfloor1east
-	name = "Underground Floor 1 East Maintenance"
+	name = "Surface East Maintenance"
 	icon_state = "erisgreen"
 
 /area/liberty/maintenance/undergroundfloor1central
-	name = "Underground Floor 1 Central Maintenance"
+	name = "Surface Central Maintenance"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/undergroundfloor1oldgarden
 	name = "Underground Floor 1 Old Garden"
 	icon_state = "erisyellow"
 
-/area/liberty/maintenance/undergroundfloor1oldconstruction
-	name = "Underground Floor 1 Old Construction Site"
+/area/liberty/maintenance/oldlibrary
+	name = "Abandoned Library"
 	icon_state = "erisgreen"
 
 /area/liberty/maintenance/undergroundfloor1south
-	name = "Underground Floor 1 South Maintenance"
+	name = "Surface South Maintenance"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/undergroundfloor2north
-	name = "Underground Floor 2 North Maintenance"
+	name = "Underground Floor 1 North Maintenance"
 	icon_state = "erisyellow"
 
 /area/liberty/maintenance/undergroundfloor2west
-	name = "Underground Floor 2 West Maintenance"
+	name = "Underground Floor 1 West Maintenance"
 	icon_state = "erisblue"
 
 /area/liberty/maintenance/undergroundfloor2east
-	name = "Underground Floor 2 East Maintenance"
+	name = "Underground Floor 1 East Maintenance"
 	icon_state = "erisyellow"
 
 /area/liberty/maintenance/undergroundfloor2south
-	name = "Underground Floor 2 South Maintenance"
+	name = "Underground Floor 1 South Maintenance"
 	icon_state = "erisgreen"
 
 /area/liberty/maintenance/surface_maints_1
@@ -135,7 +135,7 @@
 	icon_state = "section2deck2starboard"
 
 /area/liberty/maintenance/sunkenclub
-	name = "Sunken Club"
+	name = "Abandoned Club"
 	icon_state = "section2deck3port"
 
 /area/liberty/maintenance/constructionarea
@@ -145,6 +145,46 @@
 /area/liberty/maintenance/hideout
 	name = "Abandoned Maintenance Shed"
 	icon_state = "section2deck3starboard"
+
+/area/liberty/maintenance/oldmining
+	name = "Abandoned Mine Shaft East"
+	icon_state = "section2deck2starboard"
+
+/area/liberty/maintenance/oldmining
+	name = "Abandoned Mine Shaft West"
+	icon_state = "section2deck2starboard"
+
+/area/liberty/maintenance/oldpool
+	name = "Abandoned Pool"
+	icon_state = "erisblue"
+
+/area/liberty/maintenance/caveameridian
+	name = "Maintenance North Caves"
+	icon_state = "erisblue"
+
+/area/liberty/maintenance/cavenightmare
+	name = "Maintenance East Caves"
+	icon_state = "erisyellow"
+
+/area/liberty/maintenance/caveagape
+	name = "Maintenance South Caves"
+	icon_state = "erisyellow"
+
+/area/liberty/maintenance/undergroundfloor3south
+	name = "Underground Floor 2 South Maintenance"
+	icon_state = "erisblue"
+
+/area/liberty/maintenance/undergroundfloor3north
+	name = "Underground Floor 2 North Maintenance"
+	icon_state = "erisyellow"
+
+/area/liberty/maintenance/undergroundfloor3east
+	name = "Underground Floor 2 East Maintenance"
+	icon_state = "erisyellow"
+
+/area/liberty/maintenance/undergroundfloor3west
+	name = "Underground Floor 2 West Maintenance"
+	icon_state = "erisblue"
 
 //Outside abandoned structures
 
@@ -524,7 +564,7 @@
 	icon_state = "erisyellow"
 
 /area/liberty/hallway/surface/section1
-	name = "Surface Hallway One"
+	name = "Colony Surface Interior"
 	icon_state = "hallway3side"
 
 /area/liberty/hallway/surface/section2

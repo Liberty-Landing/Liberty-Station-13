@@ -198,18 +198,18 @@
 */
 
 /datum/craft_recipe/terra/mace
-	name = "termite truncheon"
+	name = "Combat Mace"
 	result = /obj/item/tool/hammer/mace
 	steps = list(
 		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(QUALITY_WELDING, 40, "time" = 60)
 	)
 
 /datum/craft_recipe/terra/claymore
-	name = "spider chopper"
+	name = "Combat Sword"
 	result = /obj/item/tool/sword/union
 	steps = list(
 		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
@@ -229,7 +229,7 @@
 	)
 
 /datum/craft_recipe/terra/katana
-	name = "roach slicer"
+	name = "Diamond Edge Sword"
 	result = /obj/item/tool/sword/katana/union
 	steps = list(
 	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),

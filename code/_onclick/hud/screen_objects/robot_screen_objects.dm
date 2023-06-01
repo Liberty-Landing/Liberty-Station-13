@@ -1,7 +1,7 @@
 //-----------------------ROBOT stuff---------------------
 /obj/screen/silicon
 	name = "silicon button"
-	icon = 'icons/mob/screen1_robot.dmi'
+	icon = 'icons/mob/hud_robot.dmi'
 
 
 /obj/screen/silicon/radio
@@ -41,7 +41,7 @@
 	name = "moduleNo"
 	icon_state = "inv1"
 	var/module_num
-	var/icon/underlay_icon = new ('icons/mob/screen1_robot.dmi', "inv_active")
+	var/icon/overlay_icon = new ('icons/mob/hud_robot.dmi', "inv_active")
 
 /obj/screen/silicon/module/New(_name = "unnamed", _screen_loc = "7,7", _icon , _icon_state, mob/living/_parentmob, _module_num)
 //	..(_name, _screen_loc, _parentmob)
@@ -56,21 +56,21 @@
 	src.update_icon()
 
 /obj/screen/silicon/module/update_icon()
-	underlays.Cut()
+	overlays.Cut()
 	var/mob/living/silicon/robot/R = parentmob
 	if(!R.module_active(module_num)) return
 	switch(module_num)
 		if(1)
 			if(R.module_active == R.module_state_1)
-				underlays += underlay_icon
+				overlays += overlay_icon
 				return
 		if(2)
 			if(R.module_active == R.module_state_2)
-				underlays += underlay_icon
+				overlays += overlay_icon
 				return
 		if(3)
 			if(R.module_active == R.module_state_3)
-				underlays += underlay_icon
+				overlays += overlay_icon
 				return
 
 
@@ -167,21 +167,6 @@
 /obj/screen/silicon/module_select/update_icon()
 	var/mob/living/silicon/robot/R = parentmob
 	icon_state = lowertext(R.modtype)
-
-/obj/screen/silicon/inventory
-	name = "inventory"
-	icon_state = "inventory"
-
-/obj/screen/silicon/inventory/Click()
-	if(isrobot(parentmob))
-		var/mob/living/silicon/robot/R = parentmob
-		if(R.module)
-			R.toggle_show_robot_modules()
-		else
-			to_chat(R, "You haven't selected a module yet.")
-
-	return TRUE
-
 
 
 

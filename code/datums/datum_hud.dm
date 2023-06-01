@@ -224,7 +224,7 @@
 
 /datum/hud/cyborg
 	name = "BorgStyle"
-	icon = 'icons/mob/screen1_robot.dmi'
+	icon = 'icons/mob/hud_robot.dmi'
 
 
 	HUDoverlays = list(
@@ -234,22 +234,21 @@
 	)
 
 	HUDneed = list(
-		"cell"      = list("type" = /obj/screen/silicon/cell,     "loc" = "15,14"),
-		"health"      = list("type" = /obj/screen/health/cyborg,     "loc" = "15,6"),
-		"damage zone" = list("type" = /obj/screen/zone_sel,   "loc" = "15,1"),
-		"pull"   = list("type" = /obj/screen/silicon/pull, "loc" = "12,1"),
-		"radio" = list("type" = /obj/screen/silicon/radio,   "loc" = "13,1"),
-		"store" = list("type" = /obj/screen/silicon/store,   "loc" = "9,1"),
-		"panel" = list("type" = /obj/screen/silicon/panel,   "loc" = "15,2"),
-		"intent"      = list("type" = /obj/screen/intent,     "loc" = "14,1"),
-		"inventory"      = list("type" = /obj/screen/silicon/inventory,     "loc" = "5,1"),
-		"module"      = list("type" = /obj/screen/silicon/module_select,     "loc" = "14,2")
+		"cell"      = list("type" = /obj/screen/silicon/cell,     "loc" = "CENTER-1, SOUTH"),
+		"health"      = list("type" = /obj/screen/health/cyborg,     "loc" = "EAST, NORTH"),
+		"damage zone" = list("type" = /obj/screen/zone_sel,   "loc" = "CENTER+3, SOUTH"),
+		"pull"   = list("type" = /obj/screen/silicon/pull, "loc" = "CENTER+4, SOUTH"),
+		"radio" = list("type" = /obj/screen/silicon/radio,   "loc" = "CENTER+1, SOUTH"),
+		"store" = list("type" = /obj/screen/silicon/store,   "loc" = "CENTER-2, SOUTH"),
+		"panel" = list("type" = /obj/screen/silicon/panel,   "loc" = "CENTER+5, SOUTH"),
+		"intent"      = list("type" = /obj/screen/intent,     "loc" = "CENTER+2, SOUTH"),
+		"module"      = list("type" = /obj/screen/silicon/module_select,     "loc" = "CENTER, SOUTH")
 	)
 
 	slot_data = list(
-		"inv1" = list("type" = /obj/screen/silicon/module,     "loc" = "6,1", "module_num" = 1, "icon_state" = "inv1"),
-		"inv2" = list("type" = /obj/screen/silicon/module,     "loc" = "7,1", "module_num" = 2, "icon_state" = "inv2"),
-		"inv3" = list("type" = /obj/screen/silicon/module,     "loc" = "8,1", "module_num" = 3, "icon_state" = "inv3")
+		"inv1" = list("type" = /obj/screen/silicon/module,     "loc" = "CENTER-5, SOUTH", "module_num" = 1, "icon_state" = "inv1"),
+		"inv2" = list("type" = /obj/screen/silicon/module,     "loc" = "CENTER-4, SOUTH", "module_num" = 2, "icon_state" = "inv2"),
+		"inv3" = list("type" = /obj/screen/silicon/module,     "loc" = "CENTER-3, SOUTH", "module_num" = 3, "icon_state" = "inv3")
 	)
 
 
