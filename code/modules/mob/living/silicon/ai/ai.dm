@@ -16,12 +16,12 @@ var/list/ai_verbs_default = list(
 	/mob/living/silicon/ai/proc/ai_roster,
 	/mob/living/silicon/ai/proc/ai_statuschange,
 	/mob/living/silicon/ai/proc/ai_store_location,
-	/mob/living/silicon/ai/proc/ai_checklaws,
+//	/mob/living/silicon/ai/proc/ai_checklaws,
 	/mob/living/silicon/ai/proc/control_integrated_radio,
 	/mob/living/silicon/ai/proc/core,
 	/mob/living/silicon/ai/proc/pick_icon,
 	/mob/living/silicon/ai/proc/sensor_mode,
-	/mob/living/silicon/ai/proc/show_laws_verb,
+//	/mob/living/silicon/ai/proc/show_laws_verb,
 	/mob/living/silicon/ai/proc/toggle_acceleration,
 	/mob/living/silicon/ai/proc/toggle_camera_light,
 	/mob/living/silicon/ai/proc/multitool_mode,
@@ -155,7 +155,7 @@ var/list/ai_verbs_default = list(
         return
     ..()
 
-/mob/living/silicon/ai/New(loc, var/datum/ai_laws/L, var/obj/item/device/mmi/B, var/safety = 0)
+/mob/living/silicon/ai/New(loc, var/obj/item/device/mmi/B, var/safety = 0)
 	announcement = new()
 	announcement.title = "A.I. Announcement"
 	announcement.announcement_type = "A.I. Announcement"
@@ -178,18 +178,18 @@ var/list/ai_verbs_default = list(
 	loc = loc
 
 	holo_icon = getHologramIcon(icon('icons/mob/hologram.dmi',"Face"))
-
+/*
 	if(L)
 		if (istype(L, /datum/ai_laws))
 			laws = L
 	else
 		laws = new base_law_type
-
+*/
 	aiMulti = new(src)
 	aiRadio = new(src)
 	common_radio = aiRadio
 	aiRadio.myAi = src
-	additional_law_channels["Holopad"] = "h"
+//	additional_law_channels["Holopad"] = "h"
 
 	aiCamera = new/obj/item/device/camera/siliconcam/ai_camera(src)
 
@@ -257,11 +257,11 @@ var/list/ai_verbs_default = list(
 			radio_text += ", "
 
 	to_chat(src, radio_text)
-
+/*
 	if (!check_special_role(ROLE_MALFUNCTION))
 		show_laws()
 		to_chat(src, "<b>These laws may be changed by other players, or by you being the contractor.</b>")
-
+*/
 	job = "AI"
 	setup_icon()
 

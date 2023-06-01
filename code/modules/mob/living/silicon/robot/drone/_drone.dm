@@ -31,7 +31,7 @@ var/list/mob_hat_cache = list()
 	gender = NEUTER
 	pass_flags = PASSTABLE
 	braintype = "Robot"
-	lawupdate = 0
+//	lawupdate = 0
 	density = FALSE
 	req_access = list(access_robotics) //We are robotics based!
 	integrated_light_power = 3
@@ -53,7 +53,7 @@ var/list/mob_hat_cache = list()
 	//Used for self-mailing.
 	var/mail_destination = ""
 	var/obj/machinery/drone_fabricator/master_fabricator
-	var/law_type = /datum/ai_laws/drone
+//	var/law_type = /datum/ai_laws/drone
 	var/module_type = /obj/item/robot_module/drone
 	var/obj/item/hat
 	var/hat_x_offset = 0
@@ -100,7 +100,7 @@ var/list/mob_hat_cache = list()
 
 /mob/living/silicon/robot/drone/construction
 	icon_state = "constructiondrone"
-	law_type = /datum/ai_laws/construction_drone
+//	law_type = /datum/ai_laws/construction_drone
 	module_type = /obj/item/robot_module/drone/construction
 	hat_x_offset = 1
 	hat_y_offset = -12
@@ -140,8 +140,8 @@ var/list/mob_hat_cache = list()
 
 /mob/living/silicon/robot/drone/init()
 	aiCamera = new/obj/item/device/camera/siliconcam/drone_camera(src)
-	additional_law_channels["Drone"] = "d"
-	if(!laws) laws = new law_type
+//	additional_law_channels["Drone"] = "d"
+//	if(!laws) laws = new law_type
 
 	locked = !locked //We spawn unlocked. This is for repairing them.
 
@@ -260,15 +260,15 @@ var/list/mob_hat_cache = list()
 	lawchanges.Add("[time] <B>:</B> [user.name]([user.key]) emagged [name]([key])")
 
 	AddTrait(CYBORG_TRAIT_EMAGGED)
-	lawupdate = 0
+//	lawupdate = 0
 	connected_ai = null
-	clear_supplied_laws()
-	clear_inherent_laws()
-	laws = new /datum/ai_laws/syndicate_override
-	set_zeroth_law("Only [user.real_name] and people \he designates as being such are operatives.")
+//	clear_supplied_laws()
+//	clear_inherent_laws()
+//	laws = new /datum/ai_laws/syndicate_override
+//	set_zeroth_law("Only [user.real_name] and people \he designates as being such are operatives.")
 
-	to_chat(src, "<b>Obey these laws:</b>")
-	laws.show_laws(src)
+//	to_chat(src, "<b>Obey these laws:</b>")
+//	laws.show_laws(src)
 	to_chat(src, SPAN_DANGER("ALERT: [user.real_name] is your new master. Obey your new laws and \his commands."))
 	return 1
 
@@ -300,7 +300,7 @@ var/list/mob_hat_cache = list()
 //DRONE MOVEMENT.
 /mob/living/silicon/robot/drone/slip_chance(var/prob_slip)
 	return 0
-
+/*
 //CONSOLE PROCS
 /mob/living/silicon/robot/drone/proc/law_resync()
 	if(stat != 2)
@@ -310,7 +310,7 @@ var/list/mob_hat_cache = list()
 			to_chat(src, SPAN_DANGER("A reset-to-factory directive packet filters through your data connection, and you obediently modify your programming to suit it."))
 			full_law_reset()
 			show_laws()
-
+*/
 /mob/living/silicon/robot/drone/proc/shut_down()
 	if(stat != 2)
 		if(HasTrait(CYBORG_TRAIT_EMAGGED))
@@ -318,13 +318,13 @@ var/list/mob_hat_cache = list()
 		else
 			to_chat(src, SPAN_DANGER("You feel a system kill order percolate through your tiny brain, and you obediently destroy yourself."))
 			death()
-
+/*
 /mob/living/silicon/robot/drone/proc/full_law_reset()
 	clear_supplied_laws(1)
 	clear_inherent_laws(1)
 	clear_ion_laws(1)
 	laws = new law_type
-
+*/
 //Reboot procs.
 
 /mob/living/silicon/robot/drone/proc/we_live_again(var/mob/living/silicon/robot/R) //we shall live again!
@@ -351,9 +351,9 @@ var/list/mob_hat_cache = list()
 	if(player.mob && player.mob.mind)
 		player.mob.mind.transfer_to(src)
 
-	lawupdate = 0
+//	lawupdate = 0
 	to_chat(src, "<b>Systems rebooted</b>. Loading base pattern maintenance protocol... <b>loaded</b>.")
-	full_law_reset()
+//	full_law_reset()
 	welcome_drone()
 
 /mob/living/silicon/robot/drone/proc/welcome_drone()
@@ -396,7 +396,7 @@ var/list/mob_hat_cache = list()
 		if(D.key && D.client)
 			drones++
 	return drones >= config.max_maint_drones
-
+/*
 /mob/living/silicon/robot/drone/show_laws(var/everyone = 0)
 	if(!controlling_ai)
 		return..()
@@ -409,9 +409,9 @@ var/list/mob_hat_cache = list()
 	set name = "State Laws"
 
 	if(!controlling_ai)
-		return ..()
+//		return ..()
 	controlling_ai.open_subsystem(/datum/nano_module/law_manager)
-
+*/
 /mob/living/silicon/robot/drone/verb/choose_eyecolor()
 	set name = "Choose Light Color"
 	set category = "Silicon Commands"

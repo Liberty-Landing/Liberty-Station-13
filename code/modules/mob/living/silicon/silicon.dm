@@ -3,8 +3,8 @@
 	voice_name = "synthesized voice"
 	var/syndicate = 0
 	var/const/MAIN_CHANNEL = "Main Frequency"
-	var/lawchannel = MAIN_CHANNEL // Default channel on which to state laws
-	var/list/stating_laws = list()// Channels laws are currently being stated on
+//	var/lawchannel = MAIN_CHANNEL // Default channel on which to state laws
+//	var/list/stating_laws = list()// Channels laws are currently being stated on
 	var/obj/item/device/radio/common_radio
 	//plug before baymed arrives
 	var/obj/item/device/radio/silicon_radio
@@ -83,10 +83,10 @@
 	name = real_name
 	create_or_rename_email(pickedName, "root.rt")
 	recalibrate_hotkeys()
-
+/*
 /mob/living/silicon/proc/show_laws()
 	return
-
+*/
 /mob/living/silicon/drop_item()
 	if(isrobot(src))
 		var/mob/living/silicon/robot/R = src

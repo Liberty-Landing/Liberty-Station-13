@@ -939,13 +939,13 @@
 		C.admin_ghost()
 	C.jumptocoord(x,y,z)
 
-
+/*
 /datum/admin_topic/adminchecklaws
 	keyword = "adminchecklaws"
 
 /datum/admin_topic/adminchecklaws/Run(list/input)
 	source.output_ai_laws()
-
+*/
 
 /datum/admin_topic/adminmoreinfo
 	keyword = "adminmoreinfo"

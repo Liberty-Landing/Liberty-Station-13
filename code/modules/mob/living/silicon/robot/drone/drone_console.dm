@@ -32,7 +32,7 @@ GLOBAL_LIST_INIT(drones, list())
 		dat += "<BR>[D.real_name] ([D.stat == 2 ? "<font color='red'>INACTIVE</FONT>" : "<font color='green'>ACTIVE</FONT>"])"
 		dat += "<font dize = 9><BR>Cell charge: [D.cell.charge]/[D.cell.maxcharge]."
 		dat += "<BR>Currently located in: [get_area(D)]."
-		dat += "<BR><A href='?src=\ref[src];resync=\ref[D]'>Resync</A> | <A href='?src=\ref[src];shutdown=\ref[D]'>Shutdown</A></font>"
+		dat += "<BR><A href='?src=\ref[src];shutdown=\ref[D]'>Shutdown</A></font>"
 
 	dat += "<BR><BR><B>Request drone presence in area:</B> <A href='?src=\ref[src];setarea=1'>[drone_call_area]</A> (<A href='?src=\ref[src];ping=1'>Send ping</A>)"
 
@@ -71,7 +71,7 @@ GLOBAL_LIST_INIT(drones, list())
 		for(var/mob/living/silicon/robot/drone/D in GLOB.drones)
 			if(D.client && D.stat == 0)
 				to_chat(D, "-- Maintenance drone presence requested in: [drone_call_area].")
-
+/*
 	else if (href_list["resync"])
 
 		var/mob/living/silicon/robot/drone/D = locate(href_list["resync"])
@@ -79,7 +79,7 @@ GLOBAL_LIST_INIT(drones, list())
 		if(D.stat != 2)
 			to_chat(usr, SPAN_DANGER("You issue a law synchronization directive for the drone."))
 			D.law_resync()
-
+*/
 	else if (href_list["shutdown"])
 
 		var/mob/living/silicon/robot/drone/D = locate(href_list["shutdown"])

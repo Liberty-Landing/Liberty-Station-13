@@ -76,7 +76,7 @@
 
 /datum/antagonist/contractor/synth/can_become_antag(var/datum/mind/player)
 	return issilicon(player.current) && ..(player)
-
+/*
 /datum/antagonist/contractor/synth/equip()
 	add_law_zero()
 
@@ -89,3 +89,4 @@
 	to_chat(killer, "<b>Your laws have been changed!</b>")
 	killer.set_zeroth_law(law, law_borg)
 	to_chat(killer, "New law: 0. [law]")
+*/

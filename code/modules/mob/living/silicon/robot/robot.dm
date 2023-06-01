@@ -94,7 +94,7 @@
 	var/killswitch_time = 60
 	var/weapon_lock = 0
 	var/weaponlock_time = 120
-	var/lawupdate = TRUE //Cyborgs will sync their laws with their AI by default
+//	var/lawupdate = TRUE //Cyborgs will sync their laws with their AI by default
 	var/lockcharge //Used when locking down a borg to preserve cell charge
 	var/speed = 0.25
 	var/scrambledcodes = 0 // Used to determine if a borg shows up on the robotics console.  Setting to one hides them.
@@ -104,7 +104,7 @@
 
 	var/list/robot_verbs_default = list(
 		/mob/living/silicon/robot/proc/sensor_mode,
-		/mob/living/silicon/robot/proc/robot_checklaws
+//		/mob/living/silicon/robot/proc/robot_checklaws
 	)
 
 /mob/living/silicon/robot/proc/AddTrait(trait_type)
@@ -221,13 +221,13 @@
 
 /mob/living/silicon/robot/proc/init()
 	aiCamera = new/obj/item/device/camera/siliconcam/robot_camera(src)
-	laws = new /datum/ai_laws/eris()
+//	laws = new /datum/ai_laws/eris()
 	var/new_ai = select_active_ai_with_fewest_borgs()
 	if(new_ai)
-		lawupdate = TRUE
+//		lawupdate = TRUE
 		connect_to_ai(new_ai)
-	else
-		lawupdate = FALSE
+//	else
+//		lawupdate = FALSE
 
 	playsound(loc, 'sound/voice/liveagain.ogg', 75, 1)
 	AddMovementHandler(/datum/movement_handler/robot/use_power, /datum/movement_handler/mob/space)
@@ -237,8 +237,8 @@
 	updatename()
 
 /mob/living/silicon/robot/proc/sync()
-	if(lawupdate && connected_ai)
-		lawsync()
+	if(connected_ai)
+//		lawsync()
 		photosync()
 
 /mob/living/silicon/robot/drain_power(var/drain_check, var/surge, var/amount = 0)
@@ -1067,7 +1067,7 @@
 
 /mob/living/silicon/robot/proc/UnlinkSelf()
 	disconnect_from_ai()
-	lawupdate = FALSE
+//	lawupdate = FALSE
 	lockcharge = 0
 	canmove = TRUE
 	scrambledcodes = 1
@@ -1273,17 +1273,17 @@
 			sleep(6)
 			if(prob(50))
 				AddTrait(CYBORG_TRAIT_EMAGGED)
-				lawupdate = FALSE
+//				lawupdate = FALSE
 				disconnect_from_ai()
 				to_chat(user, "You emag [src]'s interface.")
 				message_admins("[key_name_admin(user)] emagged cyborg [key_name_admin(src)].  Laws overridden.")
 				log_game("[key_name(user)] emagged cyborg [key_name(src)].  Laws overridden.")
-				clear_supplied_laws()
-				clear_inherent_laws()
-				laws = new /datum/ai_laws/syndicate_override
-				var/time = time2text(world.realtime,"hh:mm:ss")
-				lawchanges.Add("[time] <B>:</B> [user.name]([user.key]) emagged [name]([key])")
-				set_zeroth_law("Only [user.real_name] and people \he designates as being such are operatives.")
+//				clear_supplied_laws()
+//				clear_inherent_laws()
+//				laws = new /datum/ai_laws/syndicate_override
+//				var/time = time2text(world.realtime,"hh:mm:ss")
+//				lawchanges.Add("[time] <B>:</B> [user.name]([user.key]) emagged [name]([key])")
+//				set_zeroth_law("Only [user.real_name] and people \he designates as being such are operatives.")
 				. = 1
 				spawn()
 					to_chat(src, SPAN_DANGER("ALERT: Foreign software detected."))
@@ -1299,8 +1299,8 @@
 					to_chat(src, SPAN_DANGER("> N"))
 					sleep(20)
 					to_chat(src, SPAN_DANGER("ERRORERRORERROR"))
-					to_chat(src, "<b>Obey these laws:</b>")
-					laws.show_laws(src)
+//					to_chat(src, "<b>Obey these laws:</b>")
+//					laws.show_laws(src)
 					to_chat(src, SPAN_DANGER("ALERT: [user.real_name] is your new master. Obey your new laws and his commands."))
 					if(module)
 						var/rebuild = 0

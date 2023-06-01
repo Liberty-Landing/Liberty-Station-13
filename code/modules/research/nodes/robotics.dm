@@ -80,12 +80,12 @@
 
 	unlocks_designs = list(
 							/datum/design/research/circuit/aicore,
-							/datum/design/research/circuit/aiupload
+//							/datum/design/research/circuit/aiupload
 							)
 
 /datum/technology/artificial_intelligence_laws
-	name = "Artificial intelligence: LAWS"
-	desc = "Artificial intelligence laws sets."
+	name = "Artificial intelligence: Maintenance"
+	desc = "Artificial intelligence Maintenance."
 	tech_type = RESEARCH_ROBOTICS
 
 	x = 0.7
@@ -98,21 +98,21 @@
 
 	unlocks_designs = list(
 							/datum/design/research/circuit/aifixer,
-							/datum/design/research/aimodule/safeguard,
-							/datum/design/research/aimodule/onehuman,
-							/datum/design/research/aimodule/protectstation,
-							/datum/design/research/aimodule/notele,
-							/datum/design/research/aimodule/quarantine,
-							/datum/design/research/aimodule/oxygen,
-							/datum/design/research/aimodule/freeform,
-							/datum/design/research/aimodule/reset,
-							/datum/design/research/aimodule/purge,
-							/datum/design/research/aimodule/core/freeformcore,
-							/datum/design/research/aimodule/core/asimov,
-							/datum/design/research/aimodule/core/paladin,
+//							/datum/design/research/aimodule/safeguard,
+//							/datum/design/research/aimodule/onehuman,
+//							/datum/design/research/aimodule/protectstation,
+//							/datum/design/research/aimodule/notele,
+//							/datum/design/research/aimodule/quarantine,
+//							/datum/design/research/aimodule/oxygen,
+//							/datum/design/research/aimodule/freeform,
+//							/datum/design/research/aimodule/reset,
+//							/datum/design/research/aimodule/purge,
+//							/datum/design/research/aimodule/core/freeformcore,
+//							/datum/design/research/aimodule/core/asimov,
+//							/datum/design/research/aimodule/core/paladin,
 							/datum/design/research/circuit/aicore,
-							/datum/design/research/circuit/aiupload,
-							/datum/design/research/circuit/borgupload
+//							/datum/design/research/circuit/aiupload,
+//							/datum/design/research/circuit/borgupload
 							)
 
 //FBPS

@@ -19,7 +19,7 @@
 	mob_push_flags = SIMPLE_ANIMAL
 
 	braintype = "Robot"
-	lawupdate = 0
+//	lawupdate = 0
 	req_access = list(access_robotics) //We are robotics based!
 	integrated_light_power = 7
 	local_transmit = 2

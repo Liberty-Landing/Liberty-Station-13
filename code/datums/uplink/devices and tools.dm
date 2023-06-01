@@ -102,13 +102,13 @@
 /datum/uplink_item/item/tools/teleporter/New()
 	..()
 	antag_roles = list(ROLE_MERCENARY)
-
+/*
 /datum/uplink_item/item/tools/ai_module
 	name = "Hacked AI Upload Module"
 	item_cost = 14
 	path = /obj/item/aiModule/syndicate
 	antag_roles = ROLES_UPLINK_BASE
-
+*/
 /datum/uplink_item/item/tools/supply_beacon
 	name = "Hacked Supply Beacon (DANGER!)"
 	item_cost = 14

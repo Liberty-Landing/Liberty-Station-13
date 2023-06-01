@@ -78,7 +78,7 @@
 	ADD_TRANSFORMATION_MOVEMENT_HANDLER(src)
 	if(client)
 		sound_to(src, sound(null, repeat = 0, wait = 0, volume = 85, channel = GLOB.lobby_sound_channel))
-	var/mob/living/silicon/ai/O = new (loc, base_law_type,,1)//No MMI but safety is in effect.
+	var/mob/living/silicon/ai/O = new (loc,,1)//No MMI but safety is in effect.
 	O.aiRestorePowerRoutine = 0
 
 	if(mind)

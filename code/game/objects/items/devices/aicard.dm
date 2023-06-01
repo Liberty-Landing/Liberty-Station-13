@@ -32,13 +32,13 @@
 		data["wireless"] = !carded_ai.control_disabled
 		data["operational"] = carded_ai.stat != DEAD
 		data["flushing"] = flush
-
+/*
 		var/laws[0]
 		for(var/datum/ai_law/AL in carded_ai.laws.all_laws())
 			laws[++laws.len] = list("index" = AL.get_index(), "law" = sanitize(AL.law))
 		data["laws"] = laws
 		data["has_laws"] = laws.len
-
+*/
 	ui = SSnano.try_update_ui(user, src, ui_key, ui, data, force_open)
 	if (!ui)
 		ui = new(user, src, ui_key, "aicard.tmpl", "[name]", 600, 400, state = state)

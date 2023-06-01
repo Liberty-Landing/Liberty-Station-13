@@ -1,6 +1,6 @@
 /mob/living/silicon/robot/drone/blitzshell
 	icon_state = "blitzshell"
-	law_type = /datum/ai_laws/blitzshell
+//	law_type = /datum/ai_laws/blitzshell
 	module_type = /obj/item/robot_module/blitzshell
 	hat_x_offset = 1
 	hat_y_offset = -12

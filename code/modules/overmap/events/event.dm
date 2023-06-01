@@ -219,7 +219,7 @@
 	count = 16
 	radius = 4
 	event_icon_states = list("dust1", "dust2", "dust3", "dust4")
-*/
+
 /datum/overmap_event/ion
 	name = "ion cloud"
 	event = /datum/event/ionstorm
@@ -227,7 +227,7 @@
 	radius = 3
 	opacity = 0
 	event_icon_states = list("ion1", "ion2", "ion3", "ion4")
-/*
+
 /datum/overmap_event/carp
 	name = "carp shoal"
 	event = /datum/event/carp_migration

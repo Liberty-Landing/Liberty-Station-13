@@ -127,7 +127,7 @@
 	name = "messaging monitor console"
 	build_path = /obj/item/circuitboard/message_monitor
 	category = CAT_TCOM
-
+/*
 /datum/design/research/circuit/aiupload
 	name = "AI upload console"
 	build_path = /obj/item/circuitboard/aiupload
@@ -137,7 +137,7 @@
 	name = "cyborg upload console"
 	build_path = /obj/item/circuitboard/borgupload
 	category = CAT_COMP
-
+*/
 /datum/design/research/circuit/destructive_analyzer
 	name = "destructive analyzer"
 	build_path = /obj/item/circuitboard/destructive_analyzer

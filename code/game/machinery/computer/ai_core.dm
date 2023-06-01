@@ -5,7 +5,7 @@
 	icon = 'icons/mob/AI.dmi'
 	icon_state = "0"
 	var/state = 0
-	var/datum/ai_laws/laws = new /datum/ai_laws/eris
+//	var/datum/ai_laws/laws = new /datum/ai_laws/eris
 	var/obj/item/circuitboard/circuit = null
 	var/obj/item/device/mmi/brain = null
 
@@ -101,7 +101,7 @@
 						if(open_for_latejoin)
 							empty_playable_ai_cores += D
 					else
-						var/mob/living/silicon/ai/A = new /mob/living/silicon/ai ( loc, laws, brain )
+						var/mob/living/silicon/ai/A = new /mob/living/silicon/ai ( loc, brain )
 						if(A) //if there's no brain, the mob is deleted and a structure/AIcore is created
 							A.rename_self("ai", 1)
 					qdel(src)
@@ -160,13 +160,13 @@
 						to_chat(user, SPAN_NOTICE("You put in the glass panel."))
 						state = 4
 						icon_state = "4"
-
+/*
 			if(istype(I, /obj/item/aiModule))
 				var/obj/item/aiModule/AIM = I
 				AIM.transmitInstructions(src, usr)
 				to_chat(usr, "Law module applied.")
 				return
-
+*/
 			if(istype(I, /obj/item/device/mmi))
 				var/obj/item/device/mmi/M = I
 				if(!M.brainmob)

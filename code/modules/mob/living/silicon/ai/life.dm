@@ -118,8 +118,8 @@
 									theAPC.equipment = 3
 									theAPC.update()
 									aiRestorePowerRoutine = 3
-									to_chat(src, "Here are your current laws:")
-									show_laws()
+//									to_chat(src, "Here are your current laws:")
+//									show_laws()
 									updateicon()
 							sleep(50)
 							theAPC = null

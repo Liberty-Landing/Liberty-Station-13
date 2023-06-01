@@ -24052,18 +24052,11 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/item/aiModule/paladin,
 /obj/machinery/door/window{
 	dir = 8;
 	name = "High-Risk Modules";
 	req_access = list(16)
 	},
-/obj/item/aiModule/freeform,
-/obj/item/aiModule/oxygen,
-/obj/item/aiModule/oneHuman,
-/obj/item/aiModule/purge,
-/obj/item/aiModule/antimov,
-/obj/item/aiModule/teleporterOffline,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
@@ -27643,9 +27636,6 @@
 /area/liberty/hallway/surface/section1)
 "hcS" = (
 /obj/structure/table/reinforced,
-/obj/item/aiModule/eris,
-/obj/item/aiModule/protectStation,
-/obj/item/aiModule/reset,
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_upload)
 "hda" = (
@@ -30055,7 +30045,6 @@
 "hHk" = (
 /obj/structure/table/standard,
 /obj/item/device/aicard,
-/obj/item/aiModule/reset,
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/liberty/engineering/workshop)
 "hHr" = (
@@ -45012,12 +45001,9 @@
 /area/liberty/engineering/atmos/storage)
 "lHA" = (
 /obj/structure/table/reinforced,
-/obj/item/aiModule/corp,
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/item/aiModule/asimov,
-/obj/item/aiModule/robocop,
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_upload)
 "lHB" = (
@@ -47518,9 +47504,6 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/pros/shuttle)
 "mrb" = (
-/obj/machinery/computer/aiupload{
-	dir = 4
-	},
 /obj/machinery/camera/xray/research{
 	dir = 5
 	},
@@ -52455,9 +52438,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
 "nHf" = (
-/obj/machinery/computer/borgupload{
-	dir = 4
-	},
 /turf/simulated/floor/bluegrid,
 /area/turret_protected/ai_upload)
 "nHp" = (
@@ -73949,14 +73929,6 @@
 /area/liberty/engineering/atmos)
 "teQ" = (
 /obj/structure/table/rack,
-/obj/item/circuitboard/borgupload{
-	pixel_x = -1;
-	pixel_y = 1
-	},
-/obj/item/circuitboard/aiupload{
-	pixel_x = 2;
-	pixel_y = -2
-	},
 /obj/item/circuitboard/communications,
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/machinery/light{

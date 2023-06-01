@@ -2,7 +2,7 @@
 	var/list/silicon_subsystems_by_name = list()
 	var/list/silicon_subsystems = list(
 		/datum/nano_module/alarm_monitor/all,
-		/datum/nano_module/law_manager,
+//		/datum/nano_module/law_manager,
 		/datum/nano_module/email_client,
 		/datum/nano_module/crew_monitor,
 		/datum/nano_module/chem_catalog,
@@ -19,7 +19,7 @@
 
 /mob/living/silicon/robot/syndicate
 	silicon_subsystems = list(
-		/datum/nano_module/law_manager,
+//		/datum/nano_module/law_manager,
 		/datum/nano_module/email_client
 	)
 
@@ -43,7 +43,7 @@
 	if(existing_entry && !ispath(existing_entry))
 		return FALSE
 
-	var/ui_state = subsystem_type == /datum/nano_module/law_manager ? GLOB.conscious_state : GLOB.self_state
+	var/ui_state = GLOB.self_state
 	var/stat_silicon_subsystem/SSS = new(src, subsystem_type, ui_state)
 	silicon_subsystems[subsystem_type] = SSS
 	silicon_subsystems_by_name[SSS.name] = SSS

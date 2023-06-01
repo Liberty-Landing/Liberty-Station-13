@@ -130,7 +130,7 @@
 	cost = 3000
 
 	unlocks_designs = list(	/datum/design/research/circuit/mindswapper)
-*/
+
 
 /datum/technology/tyrant_aimodule
 	name = "AI Core Module (T.Y.R.A.N.T.)"
@@ -150,7 +150,7 @@
 	cost = 2250
 
 	unlocks_designs = list(/datum/design/research/aimodule/core/tyrant)
-
+*/
 /datum/technology/borg_syndicate_module
 	name = "Borg Overclocking Weapons Upgrade"
 	desc = "Borg Overclocking Weapons Upgrade or addition unregulated tools."

@@ -125,7 +125,7 @@
 				/obj/item/stock_parts/subspace/filter = 1,
 				/obj/item/stock_parts/subspace/transmitter = 1,
 				/obj/item/stock_parts/subspace/treatment = 1,
-				/obj/item/aiModule/reset = 1,
+//				/obj/item/aiModule/reset = 1,
 				/obj/item/circuitboard/autolathe = 1,
 				/obj/item/ammo_magazine/pistol_35/rubber = 1,
 				/obj/item/ammo_magazine/pistol_35 = 1,

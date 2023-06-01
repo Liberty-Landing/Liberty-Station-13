@@ -106,6 +106,6 @@
 	drone_silicon_radio = null
 
 	verbs -= /mob/living/silicon/robot/drone/proc/release_ai_control_verb
-	full_law_reset()
+//	full_law_reset()
 	updatename()
 	death()

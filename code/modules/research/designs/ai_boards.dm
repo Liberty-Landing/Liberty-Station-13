@@ -16,7 +16,7 @@
 	build_path = /obj/item/device/aicard
 	category = "Misc"
 
-
+/*
 /datum/design/research/aimodule
 	build_type = IMPRINTER
 	name_category = "AI module"
@@ -90,3 +90,4 @@
 	name = "T.Y.R.A.N.T."
 	build_path = /obj/item/aiModule/tyrant
 	sort_string = "XACAD"
+*/

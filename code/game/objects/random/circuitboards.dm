@@ -46,7 +46,7 @@
 				/obj/item/circuitboard/solar_control = 1,
 				/obj/item/circuitboard/splicer = 1,
 				/obj/item/circuitboard/stationalert = 2,
-				/obj/item/aiModule/reset = 1,
+//				/obj/item/aiModule/reset = 1,
 				/obj/item/circuitboard/teleporter = 1,
 				/obj/item/circuitboard/telecomms/broadcaster = 1,
 				/obj/item/circuitboard/telecomms/bus = 1,

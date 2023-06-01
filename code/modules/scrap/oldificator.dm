@@ -306,14 +306,14 @@
 /obj/machinery/broken/Destroy()
 	contents.Cut()
 	return ..()
-
+/*
 /obj/item/aiModule/broken/transmitInstructions(mob/living/silicon/ai/target, mob/sender)
 	..()
 	IonStorm(0)
 	explosion(sender.loc, 1, 1, 1, 3)
 	sender.drop_from_inventory(src)
 	QDEL_NULL(src)
-
+*/
 /obj/item/dnainjector/make_old()
 	.=..()
 	if (.)

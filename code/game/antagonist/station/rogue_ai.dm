@@ -15,7 +15,7 @@
 		if(R.connected_ai)
 			continue
 		R.connect_to_ai(master)
-		R.lawupdate = TRUE
+//		R.lawupdate = TRUE
 		R.sync()
 
 	var/mob/living/silicon/ai/malf = owner.current
@@ -25,7 +25,7 @@
 		return
 
 	malf.setup_for_malf()
-	malf.laws = new /datum/ai_laws/eris/malfunction
+//	malf.laws = new /datum/ai_laws/eris/malfunction
 
 	return TRUE
 

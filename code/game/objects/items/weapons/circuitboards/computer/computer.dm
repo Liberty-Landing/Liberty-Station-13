@@ -2,7 +2,7 @@
 	build_name = "message monitor console"
 	build_path = /obj/machinery/computer/message_monitor
 	origin_tech = list(TECH_DATA = 3)
-
+/*
 /obj/item/circuitboard/aiupload
 	build_name = "AI upload console"
 	build_path = /obj/machinery/computer/aiupload
@@ -12,7 +12,7 @@
 	build_name = "cyborg upload console"
 	build_path = /obj/machinery/computer/borgupload
 	origin_tech = list(TECH_DATA = 4)
-
+*/
 /obj/item/circuitboard/med_data
 	build_name = "medical records console"
 	build_path = /obj/machinery/computer/med_data

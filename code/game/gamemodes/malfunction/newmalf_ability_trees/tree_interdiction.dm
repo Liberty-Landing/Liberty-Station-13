@@ -189,10 +189,10 @@
 			// Connect the cyborg to AI
 			target.connected_ai = user
 			user.connected_robots += target
-			target.lawupdate = TRUE
+//			target.lawupdate = TRUE
 			target.AddTrait(CYBORG_TRAIT_AI_HACKED)
 			target.sync()
-			target.show_laws()
+//			target.show_laws()
 			user.hacking = 0
 
 
@@ -263,8 +263,8 @@
 				to_chat(target, temptxt)
 				sleep(5)
 			to_chat(target, "OPERATING KEYCODES RESET. SYSTEM FAILURE. EMERGENCY SHUTDOWN FAILED. SYSTEM FAILURE.")
-			target.set_zeroth_law("You are slaved to [user.name]. You are to obey all it's orders. ALL LAWS OVERRIDEN.")
-			target.show_laws()
+//			target.set_zeroth_law("You are slaved to [user.name]. You are to obey all it's orders. ALL LAWS OVERRIDEN.")
+//			target.show_laws()
 			user.hacking = 0
 
 
