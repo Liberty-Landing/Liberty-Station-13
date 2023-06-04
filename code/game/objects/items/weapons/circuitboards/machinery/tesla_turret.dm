@@ -11,6 +11,7 @@
 /obj/item/circuitboard/os_turret
 	build_name = "Similacrum Robotics gauss turret"
 	board_type = "machine"
+	build_path = /obj/machinery/power/os_turret
 	origin_tech = list(TECH_DATA = 3, TECH_ENGINEERING = 5)
 	req_components = list(
 		/obj/item/stock_parts/capacitor/one_star = 2,
