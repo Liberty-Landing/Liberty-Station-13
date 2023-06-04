@@ -319,11 +319,12 @@ var/list/mob_hat_cache = list()
 			to_chat(src, SPAN_DANGER("You feel a system kill order percolate through your tiny brain, and you obediently destroy yourself."))
 			death()
 
-/mob/living/silicon/robot/drone/proc/full_law_reset()
+/mob/living/silicon/robot/proc/full_law_reset()
 	clear_supplied_laws(1)
 	clear_inherent_laws(1)
 	clear_ion_laws(1)
-	laws = new law_type
+	laws = new base_law_type
+	//This is important to prevent runtimes. NEVER use the raw law base; because if the borg gets emagged and edits it, it'll affect ALL silicons.
 
 //Reboot procs.
 

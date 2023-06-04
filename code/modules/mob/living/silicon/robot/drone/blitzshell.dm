@@ -1,17 +1,22 @@
 /mob/living/silicon/robot/drone/blitzshell
 	icon_state = "blitzshell"
-	law_type = /datum/ai_laws/blitzshell
-	module_type = /obj/item/robot_module/blitzshell
+	module_type = /obj/item/robot_module/blitzshells
 	hat_x_offset = 1
 	hat_y_offset = -12
 	can_pull_size = ITEM_SIZE_HUGE
 	can_pull_mobs = MOB_PULL_SAME
-	communication_channel = LANGUAGE_BLITZ
-	station_drone = FALSE
+	station_drone = TRUE
 	eyecolor = null
-	ai_access = FALSE
+	ai_access = TRUE
 
-/mob/living/silicon/robot/drone/blitzshell/updatename()
+/mob/living/silicon/robot/drone/blitzshell/syndicate
+	law_type = /datum/ai_laws/blitzshell
+	module_type = /obj/item/robot_module/blitzshell
+	ai_access = FALSE
+	station_drone = TRUE
+	communication_channel = LANGUAGE_BLITZ
+
+/mob/living/silicon/robot/drone/blitzshell/syndicate/updatename()
 	real_name = "\"Blitzshell\" assault drone ([rand(100,999)])"
 	name = real_name
 
@@ -28,24 +33,50 @@
 	verbs -= /mob/living/silicon/robot/drone/verb/choose_armguard
 	verbs -= /mob/living/silicon/robot/drone/verb/choose_eyecolor
 
+/mob/living/silicon/robot/drone/blitzshell/syndicate/New()
 	remove_language(LANGUAGE_ROBOT)
 	remove_language(LANGUAGE_DRONE)
-	add_language(LANGUAGE_BLITZ, 1)
 	UnlinkSelf()
+	add_language(LANGUAGE_BLITZ, 1)
 
-/mob/living/silicon/robot/drone/blitzshell/GetIdCard()
+/mob/living/silicon/robot/drone/blitzshell/syndicate/GetIdCard()
 	var/obj/ID = locate(/obj/item/card/id/syndicate) in module.modules
 	return ID
 
-/mob/living/silicon/robot/drone/blitzshell/request_player()
+/mob/living/silicon/robot/drone/blitzshell/syndicate/request_player()
 	var/datum/ghosttrap/G = get_ghost_trap("blitzshell drone")
 	G.request_player(src, "A new Blitzshell drone has become active, and is requesting a pilot.", MINISYNTH, 30 SECONDS)
 
-/mob/living/silicon/robot/drone/blitzshell/get_scooped()
+/mob/living/silicon/robot/drone/blitzshell/syndicate/get_scooped()
 	return
 
-/mob/living/silicon/robot/drone/blitzshell/allowed()
+/mob/living/silicon/robot/drone/blitzshell/syndicate/allowed()
 	return FALSE
+
+/obj/item/robot_module/blitzshells
+	health = 120 //Very tanky!
+	speed_factor = 1.2
+	hide_on_manifest = TRUE
+	power_efficiency = 1.5 //Antag
+
+	stat_modifiers = list(
+		STAT_ROB = 120,
+		STAT_TGH = 120,
+		STAT_BIO = 75,
+		STAT_COG = 120,
+		STAT_MEC = 60
+	)
+
+/obj/item/robot_module/blitzshells/New(mob/living/silicon/robot/R)
+	modules += new /obj/item/gun/energy/plasma/mounted/blitz(src)
+	modules += new /obj/item/tool/tape_roll/flextape(src) //For blinding/cuff/muting people
+	modules += new /obj/item/tool/baton/robot(src) //LTL for hostages
+	modules += new /obj/item/borg/sight/thermal(src) //allows us to be better at combat and stealth
+	modules += new /obj/item/device/nanite_container(src) //For self repair.
+	//We are stronk so we get less no knockdowns
+	R.stats.addPerk(PERK_ASS_OF_CONCRETE)
+	//So we cant be escaped as quickly
+	R.stats.addPerk(PERK_ATHLETE)
 
 /obj/item/robot_module/blitzshell
 	networks = list()
@@ -61,6 +92,7 @@
 		STAT_COG = 120,
 		STAT_MEC = 60
 	)
+
 
 /obj/item/robot_module/blitzshell/New(mob/living/silicon/robot/R)
 	//modules += new /obj/item/gun/energy/laser/mounted/blitz(src) //Deemed too strong for initial loadout
