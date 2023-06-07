@@ -15,9 +15,9 @@
 #define HEAT_GAS_DAMAGE_LEVEL_2 4 //Amount of damage applied when the current breath's temperature passes the 400K point
 #define HEAT_GAS_DAMAGE_LEVEL_3 8 //Amount of damage applied when the current breath's temperature passes the 1000K point
 
-#define COLD_GAS_DAMAGE_LEVEL_1 0.1 //Amount of damage applied when the current breath's temperature just passes the 260.15k safety point
-#define COLD_GAS_DAMAGE_LEVEL_2 0.5 //Amount of damage applied when the current breath's temperature passes the 200K point
-#define COLD_GAS_DAMAGE_LEVEL_3 1   //Amount of damage applied when the current breath's temperature passes the 120K point
+#define COLD_GAS_DAMAGE_LEVEL_1 2 //Amount of damage applied when the current breath's temperature just passes the 260.15k safety point
+#define COLD_GAS_DAMAGE_LEVEL_2 4 //Amount of damage applied when the current breath's temperature passes the 200K point
+#define COLD_GAS_DAMAGE_LEVEL_3 8   //Amount of damage applied when the current breath's temperature passes the 120K point
 
 #define FIRE_ALERT_NONE 0 //No fire alert
 #define FIRE_ALERT_COLD 1 //Frostbite
@@ -467,52 +467,41 @@
 /mob/living/carbon/human/proc/handle_temperature_effects(datum/gas_mixture/breath)
 	if(!species)
 		return
-	// Hot air hurts :( :(
-	if((breath.temperature < species.lower_breath_t || breath.temperature > species.upper_breath_t) && !(COLD_RESISTANCE in mutations))
-		var/oof = 0
-		if(breath.temperature <= species.lower_breath_t)
-			if(prob(20))
+	var/oof = 0  // Initialize "oof" to a default value
+
+	var/too_cold = breath.temperature <= species.lower_breath_t
+	var/too_hot = breath.temperature >= species.upper_breath_t
+
+	if ((too_cold || too_hot) && !(COLD_RESISTANCE in mutations))
+		if (too_cold)
+			if (prob(20))
 				to_chat(src, SPAN_DANGER("You feel icicles forming in your lungs!"))
 
-			if(breath.temperature <= (species.lower_breath_t - 40))
+			if (breath.temperature <= species.lower_breath_t - 40)
 				oof += COLD_GAS_DAMAGE_LEVEL_3
-				frost += COLD_GAS_DAMAGE_LEVEL_3
-			else if(breath.temperature <= (species.lower_breath_t - 20))
+			else if (breath.temperature <= species.lower_breath_t - 20)
 				oof += COLD_GAS_DAMAGE_LEVEL_2
-				frost += COLD_GAS_DAMAGE_LEVEL_2
 			else
 				oof += COLD_GAS_DAMAGE_LEVEL_1
-				frost += COLD_GAS_DAMAGE_LEVEL_1
-
-            //apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Artic Inhalation") this is here case someone figures out how to give lung damage and show up on authopsy
 			fire_alert = FIRE_ALERT_COLD
-			if(oof >= 8)
-				var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
-				if(L && istype(L))
-					L.take_damage(oof,BURN)
-					oof = 0
 
-		else if(breath.temperature >= species.upper_breath_t)
-			if(prob(20))
+		else  // too_hot
+			if (prob(20))
 				to_chat(src, SPAN_DANGER("You feel a searing heat in your lungs!"))
 
-			if(breath.temperature >= (species.upper_breath_t - 40))
+			if (breath.temperature >= species.upper_breath_t - 40)
 				oof += HEAT_GAS_DAMAGE_LEVEL_3
-				frost -= HEAT_GAS_DAMAGE_LEVEL_3
-			else if(breath.temperature >= (species.upper_breath_t - 20))
+			else if (breath.temperature >= species.upper_breath_t - 20)
 				oof += HEAT_GAS_DAMAGE_LEVEL_2
-				frost -= HEAT_GAS_DAMAGE_LEVEL_2
 			else
 				oof += HEAT_GAS_DAMAGE_LEVEL_1
-				frost -= HEAT_GAS_DAMAGE_LEVEL_1
-
-			//apply_damage(damage, BURN, OP_LUNGS, used_weapon = "Excessive Heat") this is here case someone figures out how to give lung damage and show up on authopsy
 			fire_alert = FIRE_ALERT_HOT
-			if(oof >= 8)
-				var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
-				if(L && istype(L))
-					L.take_damage(oof,BURN)
-					oof = 0
+
+		if (oof >= 8)
+			var/obj/item/organ/internal/L = random_organ_by_process(OP_LUNGS)
+			if (L && istype(L))
+				L.take_damage(oof, BURN)
+				oof = 0
 
 		//breathing in hot/cold air also heats/cools you a bit
 		var/temp_adj = breath.temperature - bodytemperature
@@ -533,6 +522,7 @@
 		species.get_environment_discomfort(src,"heat")
 	else if(breath.temperature <= species.cold_discomfort_level)
 		species.get_environment_discomfort(src,"cold")
+	else fire_alert = FIRE_ALERT_NONE
 
 //Heavilly edited for lib
 /mob/living/carbon/human/handle_environment(datum/gas_mixture/environment)
