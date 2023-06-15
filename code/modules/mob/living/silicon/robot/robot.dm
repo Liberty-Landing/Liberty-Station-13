@@ -29,6 +29,9 @@
 	var/ai_access = TRUE
 	var/power_efficiency = 1
 
+	var/modulelock = FALSE
+	var/modulelock_time = 120
+
 
 	mob_size = MOB_LARGE
 
@@ -351,6 +354,7 @@
 		QDEL_NULL(RM)
 
 	updatename()
+//	idcard.access |= module.access
 	recalculate_synth_capacities()
 	notify_ai(ROBOT_NOTIFICATION_NEW_MODULE, module.name)
 

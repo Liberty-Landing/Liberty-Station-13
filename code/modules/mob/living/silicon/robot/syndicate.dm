@@ -4,7 +4,7 @@
 	icon_state = "securityrobot"
 	modtype = "Security"
 	lawchannel = "State"
-	idcard_type = /obj/item/card/id/syndicate
+
 
 /mob/living/silicon/robot/syndicate/New()
 	if(!cell)
@@ -18,7 +18,7 @@
 
 	laws = new /datum/ai_laws/syndicate_override
 	cut_overlays()
-	init_id()
+
 	new /obj/item/robot_module/syndicate(src)
 
 	radio.keyslot = new /obj/item/device/encryptionkey/syndicate(radio)

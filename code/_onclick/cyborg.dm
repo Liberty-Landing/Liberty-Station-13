@@ -112,15 +112,16 @@
 /mob/living/silicon/robot/proc/GripperClickOn(var/atom/A, var/params, var/obj/item/gripper/G)
 
 	var/obj/item/W = G.wrapped
-	if (!grippersafety(G))return
+	if (!grippersafety(G))
+		return
 
 
 	G.force_holder = W.force
 	W.force = 0
 	// cyborgs are prohibited from using storage items so we can I think safely remove (A.loc in contents)
 	if(A == loc || (A in loc) || (A in contents))
-		// No adjacency checks
-
+		if(!gripper_sanity_check(G))//Check it.
+			return
 		var/resolved = A.attackby(W,src,params)
 		if (!grippersafety(G))return
 		if(!resolved && A && W)
@@ -134,6 +135,8 @@
 
 	// cyborgs are prohibited from using storage items so we can I think safely remove (A.loc && isturf(A.loc.loc))
 	if(isturf(A) || isturf(A.loc))
+		if(!gripper_sanity_check(G))//Check it, again.
+			return
 		if(A.Adjacent(src)) // see adjacent.dm
 			var/resolved = A.attackby(W, src, params)
 			if (!grippersafety(G))return
