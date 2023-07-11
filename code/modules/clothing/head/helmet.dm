@@ -298,7 +298,6 @@
 	body_parts_covered = HEAD|EYES|EARS
 
 /obj/item/clothing/head/helmet/marshal/ushanka/verb/toggle_style()
-	var/mob/M = usr
 	var/list/options = list()
 	options["Ushanka"] = "LWushanka"
 	options["Ushanka Alt"] = "LWushanka_alt"

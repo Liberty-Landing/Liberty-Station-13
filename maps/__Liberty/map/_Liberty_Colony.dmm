@@ -11730,7 +11730,7 @@
 	dir = 1;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous Oxide","waste_sensor"="Gas Mix Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon  Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous  Oxide","waste_sensor"="Gas  Mix  Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -14031,7 +14031,7 @@
 "dnT" = (
 /obj/machinery/atmospherics/unary/vent_pump,
 /obj/effect/decal/cleanable/dirt,
-/obj/landmark/join/start/assistant,
+/obj/machinery/gym/mec,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "dnX" = (
@@ -19597,7 +19597,7 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "eLh" = (
-/obj/machinery/gym/robustness,
+/obj/machinery/gym/cognition,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "eLj" = (
@@ -31518,7 +31518,7 @@
 	dir = 8;
 	frequency = 1441;
 	name = "Tank Monitor";
-	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous Oxide","waste_sensor"="Gas Mix Tank")
+	sensors = list("n2_sensor"="Nitrogen","o2_sensor"="Oxygen","co2_sensor"="Carbon  Dioxide","tox_sensor"="Toxins","n2o_sensor"="Nitrous  Oxide","waste_sensor"="Gas  Mix  Tank")
 	},
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/liberty/engineering/atmos/surface)
@@ -56683,7 +56683,7 @@
 	},
 /area/shuttle/vasiliy_shuttle_area)
 "nXp" = (
-/obj/machinery/gym/toughness,
+/obj/machinery/gym/bio,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "nXw" = (
@@ -61600,6 +61600,7 @@
 /area/liberty/rnd/xenoflora)
 "pif" = (
 /obj/machinery/atmospherics/unary/vent_scrubber,
+/obj/machinery/gym/toughness,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "pik" = (
@@ -62439,6 +62440,7 @@
 	name = "South APC";
 	pixel_y = -28
 	},
+/obj/landmark/join/start/assistant,
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/liberty/crew_quarters/fitness)
 "ptW" = (
@@ -80899,6 +80901,7 @@
 	pixel_x = -10
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/gym/robustness,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "tNr" = (
@@ -159754,7 +159757,7 @@ eIB
 wzY
 tgT
 ljp
-eLh
+ljp
 eJG
 vgU
 caW
@@ -160158,7 +160161,7 @@ qZv
 wzY
 sWo
 ljp
-eLh
+ljp
 lha
 mHY
 rEt
@@ -160358,7 +160361,7 @@ eIB
 jjZ
 cHu
 wzY
-nXp
+eLh
 ljp
 pif
 rLb
