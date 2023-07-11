@@ -8,6 +8,7 @@
 	move_to_delay = 2
 	health = 100
 	maxHealth = 100
+	natural_weapon = /obj/item/natural_weapon/claws
 	cleaning = FALSE
 
 /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/epistol

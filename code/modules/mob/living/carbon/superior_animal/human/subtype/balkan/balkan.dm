@@ -32,6 +32,7 @@
 
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/gunner
 	breath_required_type = 0 // Doesn't need to breath for event atmosphere purposes.
 	breath_poison_type = 0 // Can't be poisoned
 	min_air_pressure = 0 // Doesn't need pressure for event atmosphere purposes.
@@ -117,7 +118,7 @@
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
 	limited_ammo = FALSE
 	mag_drop = FALSE
-	
+
 /mob/living/carbon/superior_animal/human/balkan/death()
 	..()
 	drop_death_loot()

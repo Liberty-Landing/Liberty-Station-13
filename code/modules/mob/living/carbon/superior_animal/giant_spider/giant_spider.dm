@@ -18,7 +18,6 @@
 	speak_chance = 5
 
 	get_stat_modifier = TRUE //We get randomized addition armor
-	armor_penetration = 5
 
 	armor = list(melee = 5, bullet = 5, energy = 5, bomb = 5, bio = 10, rad = 25)
 
@@ -43,6 +42,9 @@
 
 	melee_damage_lower = 12
 	melee_damage_upper = 17
+	armor_penetration = 5
+	natural_weapon = /obj/item/natural_weapon/fang
+
 
 	min_breath_required_type = 3
 	min_air_pressure = 15 //below this, brute damage is dealt
@@ -50,8 +52,8 @@
 	fleshcolor = "#1E536E"
 	bloodcolor = "#1E536E"
 
-	var/poison_per_bite = 2
-	var/poison_type = "pararein"
+	poison_per_bite = 2
+	poison_type = "pararein"
 	faction = "spiders"
 
 	price_tag = 250 //in case you sell these???

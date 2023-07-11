@@ -21,13 +21,17 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 	deathmessage = "splatters into gore."
 	attacktext = "chomped"
 	attack_sound = 'sound/weapons/bite.ogg'
+	melee_damage_lower = TERMITE_DMG_LOW
+	melee_damage_upper = TERMITE_DMG_LOW
+	armor_penetration = 5
+	natural_weapon = /obj/item/natural_weapon/termite
+
 	faction = "wurm"
 	fire_verb = "spits"
 	see_in_dark = 10
 
 	fleshcolor = "#7C90B8"
 	bloodcolor = "#7C90B8"
-	armor_penetration = 5
 
 	destroy_surroundings = TRUE
 	friendly_to_colony = FALSE
@@ -103,8 +107,8 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 
 	// Poof
 	qdel(src)
-
-/mob/living/carbon/superior_animal/termite/destroySurroundings()
+/*
+/mob/living/carbon/superior_animal/termite/DestroySurroundings()
 	// Get next turf the golem wants to walk on
 	var/atom/targetted_mob = (target_mob?.resolve())
 	var/turf/T = get_step_towards(src, targetted_mob)
@@ -121,7 +125,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 		var/obj/structure/obstacle = locate(/obj/structure) in T
 		if(obstacle && !istype(obstacle, /obj/structure/termite_burrow))
 			obstacle.attack_generic(src, rand(surrounds_mult * melee_damage_lower, surrounds_mult * melee_damage_upper),pick(attacktext), TRUE)
-
+*/
 
 
 /mob/living/carbon/superior_animal/termite/handle_ai()
@@ -255,7 +259,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 	icon = 'icons/mob/mobs-termite.dmi' // Sprites made by Polyushko#0323
 	icon_state = "koroleva_termite"
 	icon_dead = "koroleva_gore"
-	armor_penetration = 35
+
 
 //Health related variables
 	maxHealth = TERMITE_HEALTH_HIGH
@@ -268,6 +272,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_HIGH
 	melee_damage_upper = TERMITE_DMG_HIGH
+	armor_penetration = 35
 
 //Armor related variables
 	armor = list(melee = 25, bullet = 40, energy = 50, bomb = 50, bio = 100, rad = 0)
@@ -285,7 +290,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 	comfy_range = 6 //How far we like to be form are targets when we fire!
 	projectiletype = /obj/item/projectile/bullet/spear
 	contaminant_immunity = TRUE
-	armor_penetration = 35
+
 
 //Health related variables
 	maxHealth = TERMITE_HEALTH_HIGH
@@ -298,6 +303,7 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_LOW
 	melee_damage_upper = TERMITE_DMG_LOW
+	armor_penetration = 35
 
 	ranged = TRUE
 

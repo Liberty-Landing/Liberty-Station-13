@@ -1,35 +1,6 @@
 /mob/living/carbon/superior_animal/attack_ui(slot_id)
 	return
 
-/mob/living/carbon/superior_animal/UnarmedAttack(var/atom/A, var/proximity)
-	if(!..())
-		return
-	if(weakened)
-		return
-
-	var/damage = rand(melee_damage_lower, melee_damage_upper)
-
-	if(moved) damage *= move_attack_mult
-//Here we handle blocking chance against superior mobs, yeah.
-	if(isliving(A))
-		var/mob/living/L = A
-		if(istype(L, /mob/living/carbon/human))
-			var/mob/living/carbon/human/target_human = L
-			if(target_human.check_shields(damage, null, src, null, attacktext))
-				return 0
-	. = A.attack_generic(src, damage, attacktext, environment_smash)
-
-	if(.)
-		if (attack_sound && loc && prob(attack_sound_chance))
-			playsound(loc, attack_sound, attack_sound_volume, 1)
-
-/mob/living/carbon/superior_animal/verb/break_around()
-	set name = "Attack Surroundings "
-	set desc = "Lash out on the your surroundings | Forcefully attack your surroundings."
-	set category = "Mob verbs"
-
-	src.destroySurroundings()
-
 /mob/living/carbon/superior_animal/RangedAttack()
 	if(!check_if_alive())
 		return
@@ -219,3 +190,31 @@
 		return
 	if(shooter.ranged ==1)
 		shooter.OpenFire(targetDD)
+
+//NEW CODE//
+/mob/living/carbon/superior_animal/UnarmedAttack(var/atom/A, var/proximity)
+
+	if(!..())
+		return
+	setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
+	if(istype(A,/mob/living))
+		if(a_intent == I_HELP || !get_natural_weapon())
+			custom_emote(1,"[friendly] [A]!")
+			return
+		if(ckey)
+			admin_attack_log(src, A, "Has attacked its victim.", "Has been attacked by its attacker.")
+	if(a_intent == I_HELP)
+		A.attack_animal(src)
+	else
+		A.attackby(get_natural_weapon(), src)
+
+// Attack hand but for simple animals
+/atom/proc/attack_animal(mob/user)
+	return attack_hand(user)
+
+/mob/living/carbon/superior_animal/verb/break_around()
+	set name = "Attack Surroundings "
+	set desc = "Lash out on the your surroundings | Forcefully attack your surroundings."
+	set category = "Mob verbs"
+
+	src.DestroySurroundings()

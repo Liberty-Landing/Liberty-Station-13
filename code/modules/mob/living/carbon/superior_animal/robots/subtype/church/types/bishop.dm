@@ -17,6 +17,8 @@
 	ranged_cooldown = 20
 	melee_damage_lower = 5 //not a melee bot
 	melee_damage_upper = 8
+	natural_weapon = /obj/item/natural_weapon/church/bishop
+
 	meat_type = /obj/item/stack/material/gold/random
 	projectiletype = /obj/item/projectile/plasma/aoe/heat/strong
 	drop1 = /obj/item/book/ritual/hearthlantern/priest

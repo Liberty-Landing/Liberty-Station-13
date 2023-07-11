@@ -11,6 +11,7 @@ I was too lazy to put the friendly roombas with the handmade drones, so now they
 	icon_state = "roomba_SI"
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/drone/allied
 	colony_friend = TRUE
 	friendly_to_colony = TRUE
 	mob_size = MOB_SMALL

@@ -36,6 +36,7 @@
 	//The common roach, gets to live 4 times, same as a roachling. They have so much to live for.
 	melee_damage_lower = 5
 	melee_damage_upper = 10 //Dogsized roach like come on
+	natural_weapon = /obj/item/natural_weapon/bite
 	var/knockdown_odds = 1 //1% KO odds
 
 	min_breath_required_type = 3

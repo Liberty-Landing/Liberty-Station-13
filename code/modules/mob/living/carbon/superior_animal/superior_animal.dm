@@ -48,6 +48,11 @@
 
 	target_mob = null
 
+	//if gibbed, no get
+	if(istype(natural_weapon))
+		QDEL_NULL(natural_weapon)
+	//Unless... Carving weapons off mobs?
+
 	LAZYCLEARLIST(objectsInView)
 	LAZYCLEARLIST(friends)
 
@@ -257,10 +262,9 @@
 	var/atom/targetted_mob
 	if (target_mob)
 		targetted_mob = (target_mob?.resolve())
-	if (!targetted_mob) //will be false if there is no target_mob or if the resolved value is null
+	else if (!targetted_mob || targetted_mob?.check_if_alive(FALSE)) //will be false if there is no target_mob or if the resolved value is null
 		loseTarget()
-	else if (!targetted_mob.check_if_alive(TRUE)) //else if because we dont want a runtime
-		loseTarget()
+
 
 	switch(stance)
 		if(HOSTILE_STANCE_IDLE)
@@ -304,7 +308,7 @@
 	var/can_see = TRUE
 	var/ran_see_check = FALSE
 	if(destroy_surroundings)
-		destroySurroundings()
+		DestroySurroundings()
 		already_destroying_surroundings = TRUE //setting this var prevents double destruction when handle_attacking_stance is called
 
 	var/mob/living/targetted_mob_real
@@ -356,7 +360,7 @@
 
 	retarget_rush_timer += ((world.time) + retarget_rush_timer_increment) //we put it here because we want mobs currently angry to be vigilant
 	if(destroy_surroundings && !already_destroying_surroundings) // the second check prevents handle_hostile_stance from causing double destruction
-		destroySurroundings()
+		DestroySurroundings()
 
 	if (!(isburrow(targetted_mob))) //we dont want mobs failing to use the burrows
 		// This block controls random retargetting

@@ -143,96 +143,75 @@
 
 	return FALSE
 
-
-/mob/living/carbon/superior_animal/proc/destroySurroundings() //todo: make this better - Trilby
+/mob/living/carbon/superior_animal/proc/can_act()
+	if(QDELETED(src) || stat || busy || incapacitated())
+		return FALSE
+	return TRUE
 /*
-			if (obstacle.dir == reverse_dir[dir]) // this here is so we can target what were are attacking
+/mob/living/carbon/superior_animal/proc/reflect_unarmed_damage(var/mob/living/carbon/human/attacker, var/damage_type, var/description)
+	if(attacker.a_intent == I_HURT)
+		attacker.apply_damage(rand(return_damage_min, return_damage_max), damage_type, attacker.get_active_held_item_slot(), used_weapon = description)
+		if(rand(25))
+			to_chat(attacker, SPAN_WARNING("Your attack has no obvious effect on \the [src]'s [description]!"))
 */
+/mob/living/carbon/superior_animal/proc/get_natural_weapon()
+	if(ispath(natural_weapon))
+		natural_weapon = new natural_weapon(src)
+	return natural_weapon
 
-	if (prob(break_stuff_probability))
-
-		for (var/obj/structure/window/obstacle in loc) // To destroy directional windows that are on the creature's tile
-			obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
+/mob/living/carbon/superior_animal/proc/DestroySurroundings() //courtesy of Lohikar
+	if(!can_act())
+		return
+	if(prob(break_stuff_probability) && !Adjacent(target_mob))
+		if(target_mob?.resolve())
+			face_atom(target_mob?.resolve())
+		var/turf/targ = get_step_towards(src, target_mob)
+		if(!targ)
 			return
 
-		for (var/obj/machinery/door/window/obstacle in loc) // To destroy windoors that are on the creature's tile
-			obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
+		var/obj/effect/shield/S = locate(/obj/effect/shield) in targ
+		if(S && S.gen && S.gen.check_flag(MODEFLAG_NONHUMANS))
+			S.attackby(get_natural_weapon(), src)
 			return
 
-		for (var/dir in cardinal) // North, South, East, West
-			for (var/obj/structure/window/obstacle in get_step(src, dir))
-				if ((obstacle.is_full_window()) || (obstacle.dir == reverse_dir[dir])) // So that directional windows get smashed in the right order
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for (var/obj/machinery/door/window/obstacle in get_step(src, dir))
-				if (obstacle.dir == reverse_dir[dir]) // So that windoors get smashed in the right order
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/structure/closet/obstacle in get_step(src, dir))//A locker as a block? We will brake it.
-				if(obstacle.opened == FALSE || obstacle.density == TRUE) //Are we closed or dence? then attack!
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/structure/table/obstacle in get_step(src, dir))//Tables do not save you.
-				if(obstacle.density == TRUE) //In cases were its flipped and its walking past it
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/structure/low_wall/obstacle in get_step(src, dir))//This is only a miner issue... We will brake it
-				if(obstacle.density == TRUE) //Almost never will do anything, but in cases were theirs a non-dence lower wall
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper) * 3,pick(attacktext)) //Lots of health
-					return
-
-			for(var/obj/structure/girder/obstacle in get_step(src, dir))//We know your tricks, they will now fail.
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper) * 2,pick(attacktext)) //A bit of health
-					return
-
-			for(var/obj/structure/railing/obstacle in get_step(src, dir))//Bulkwork defence... Easy to brake
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/mecha/obstacle in get_step(src, dir))//Hmm, notable but not everlasting.
-				if(obstacle.density == TRUE) //will always likely be dence but in cases were its somehow not
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/structure/barricade/obstacle in get_step(src, dir))//Steel will not stop us, then why would planks?
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/machinery/deployable/obstacle in get_step(src, dir))//Steel will not stop us, then why would planks?
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/structure/grille/obstacle in get_step(src, dir))//An insult to defences... We will make you pay
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/machinery/door/obstacle in get_step(src,dir)) //Doors, will stop us when closed, but we will brake it
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/structure/plasticflaps/obstacle in get_step(src,dir)) //Weak plastic will not bar us
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
-					return
-
-			for(var/obj/structure/shield_deployed/obstacle in get_step(src,dir))
-				obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
+		for(var/type in valid_obstacles_by_priority)
+			var/obj/obstacle = locate(type) in targ
+			if(obstacle)
+				face_atom(obstacle)
+				obstacle.attackby(get_natural_weapon(), src)
 				return
 
-			for(var/obj/machinery/tesla_turret/obstacle in get_step(src,dir)) //Weak plastic will not bar us
-				if(obstacle.density == TRUE)
-					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),pick(attacktext))
+		if(can_pry)
+			for(var/obj/machinery/door/obstacle in orange(1,src))
+				if(obstacle.density)
+					if(!obstacle.can_open(1))
+						return
+					face_atom(obstacle)
+					//How damaged the door is scales how easily it's opened... Default door health is 250. stronger door=longer time//
+					var/pry_time_holder = ((obstacle.health/250) * pry_time)
+					pry_door(src, pry_time_holder, obstacle)
 					return
+/*
+		if(eat_wall)
+			if(iswall(T))  // Wall breaker attack
+				T.attack_generic(src, rand(surrounds_mult * melee_damage_lower, surrounds_mult * melee_damage_upper),pick(attacktext), TRUE)
+			else
+				var/obj/structure/obstacle = locate(/obj/structure) in T
+				if(obstacle && !istype(obstacle, /obj/structure/termite_burrow))
+				obstacle.attack_generic(src, rand(surrounds_mult * melee_damage_lower, surrounds_mult * melee_damage_upper),pick(attacktext), TRUE)
+*/
+
+/mob/living/carbon/superior_animal/proc/pry_door(var/mob/user, var/delay, var/obj/machinery/door/pesky_door)
+	visible_message("<span class='warning'>\The [user] begins [pry_desc] at \the [pesky_door]!</span>")
+	busy = TRUE
+	if(do_after(user, delay, pesky_door))
+		//Damage the door, we don't care about finesse. Longer delay/stronger door/less damage//
+		pesky_door.take_damage(round(pesky_door.health/delay))
+		pesky_door.open(1)
+		busy = FALSE
+	else
+		visible_message("<span class='notice'>\The [user] is interrupted.</span>")
+		busy = FALSE
 
 /mob/living/carbon/superior_animal/hear_say(var/message, var/verb = "says", var/datum/language/language = null, var/alt_name = "", var/italics = 0, var/mob/living/speaker = null, var/sound/speech_sound, var/sound_vol, speech_volume)
 	..()

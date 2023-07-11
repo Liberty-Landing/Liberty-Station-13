@@ -301,3 +301,26 @@
 	 * final offset of the projectile. Make sure to sync with initial_firing_offset.
 	**/
 	var/current_firing_offset = 2
+
+	//Testing implimentations of natural weaponry, instead of janky stats
+
+		//hostile mobs will bash through these in order with their natural weapon
+	var/list/valid_obstacles_by_priority = list(/obj/structure/window,
+												/obj/structure/closet,
+												/obj/machinery/door/window,
+												/obj/structure/table,
+												/obj/structure/grille,
+												/obj/structure/barricade,
+												/obj/structure/girder,
+												/obj/structure/railing)
+
+	var/can_pry = TRUE
+//time it takes for mob to pry open a door. Scales off health/maxHealth for /obj/machinery/door. Defaults to 7 seconds
+	var/pry_time = 7 SECONDS
+	var/pry_desc = "prying" //"X begins pry_desc the door!"
+
+	//What kind of weapon do they use? SET THIS OR DIE HORRIBLY//
+	var/obj/item/natural_weapon/natural_weapon = /obj/item/natural_weapon
+	var/poison_per_bite = 0
+	var/poison_type = ""
+	var/friendly = "nuzzles"

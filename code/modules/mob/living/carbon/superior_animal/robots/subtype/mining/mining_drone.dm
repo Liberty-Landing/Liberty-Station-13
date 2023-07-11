@@ -12,7 +12,9 @@
 	health = 75 // Bit tanky, the mines are dangerous
 	maxHealth = 75
 	melee_damage_lower = 20 // Diamond-tipped drill.
-	melee_damage_upper = 30
+	melee_damage_upper = 30	// ^^^
+	armor_penetration = ARMOR_PEN_EXTREME
+	natural_weapon = /obj/item/natural_weapon/mining_drill
 	viewRange = 6
 	move_to_delay = 3
 	randpixel = 0

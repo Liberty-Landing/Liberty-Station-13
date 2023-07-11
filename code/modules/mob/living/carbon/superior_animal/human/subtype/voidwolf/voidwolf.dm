@@ -12,6 +12,7 @@
 	health = 125
 	melee_damage_lower = 30
 	melee_damage_upper = 30
+	natural_weapon = /obj/item/natural_weapon/knife
 	breath_required_type = 0 // Doesn't need to breath, in a space suit
 	breath_poison_type = 0 // Can't be poisoned
 	min_air_pressure = 0 // Doesn't need pressure
@@ -94,6 +95,7 @@
 	desc = "A Void Wolf mercenary wielding an industrial welder."
 	melee_damage_lower = 20
 	melee_damage_upper = 22
+	natural_weapon = /obj/item/natural_weapon/welder
 	icon_state = "voidengie"
 	icon_dead = "voidengie_dead"
 	attacktext = "burnt"
@@ -109,6 +111,7 @@
 	projectilesound = 'sound/weapons/energy/laser.ogg'
 	melee_damage_lower = 10 //We dont like melee
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/gunner
 	maxHealth = 75
 	health = 75
 	ranged = TRUE
@@ -134,6 +137,7 @@
 	icon_dead = "voidengie_ranged_dead"
 	melee_damage_lower = 20
 	melee_damage_upper = 22
+	natural_weapon = /obj/item/natural_weapon/welder
 	ranged = TRUE
 	rapid = FALSE
 	projectiletype = /obj/item/projectile/beam
@@ -161,6 +165,7 @@
 	rapid_fire_shooting_amount = 3
 	projectiletype = /obj/item/projectile/beam
 	drop_items = list(/obj/item/gun/energy/cog)
+	natural_weapon = /obj/item/natural_weapon/gunner
 
 /mob/living/carbon/superior_animal/human/voidwolf/ranged/aerotrooper/New()
 	..()
@@ -173,6 +178,7 @@
 	icon_dead = "voidwolfcap_dead"
 	melee_damage_lower = 30
 	melee_damage_upper = 35
+	natural_weapon = /obj/item/natural_weapon/knife
 	maxHealth = 150
 	health = 150
 	ranged_cooldown = 3
@@ -201,6 +207,7 @@
 	projectilesound = 'sound/weapons/energy/Laser.ogg'
 	melee_damage_lower = 20 //We dont like melee
 	melee_damage_upper = 25
+	natural_weapon = /obj/item/natural_weapon/gunner
 	ranged = TRUE
 	rapid = TRUE
 	rapid_fire_shooting_amount = 3
@@ -295,6 +302,7 @@
 	icon_state = "reaver_melee"
 	melee_damage_lower = 35
 	melee_damage_upper = 40
+	natural_weapon = /obj/item/natural_weapon/knife
 	ranged = FALSE
 	rapid = FALSE
 	limited_ammo = FALSE

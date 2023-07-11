@@ -11,6 +11,7 @@
 	maxHealth = 150
 	melee_damage_lower = 10
 	melee_damage_upper = 20
+	natural_weapon = /obj/item/natural_weapon/drone //Possibly make this modular so you can choose other types
 	turns_per_move = 2
 	see_in_dark = 10
 	wander = FALSE

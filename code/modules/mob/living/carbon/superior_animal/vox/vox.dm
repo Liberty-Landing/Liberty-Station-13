@@ -45,6 +45,7 @@
 
 	melee_damage_lower = 12
 	melee_damage_upper = 16
+	natural_weapon = /obj/item/natural_weapon/claws
 
 	colony_friend = FALSE
 	friendly_to_colony = FALSE

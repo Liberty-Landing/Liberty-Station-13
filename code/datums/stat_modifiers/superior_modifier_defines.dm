@@ -97,13 +97,10 @@
 		if (superior_holder.rapid_fire_shooting_amount <= 0)
 			superior_holder.rapid = FALSE
 
-		if (issuperiorspider(superior_holder))
-			var/mob/living/carbon/superior_animal/giant_spider/spider_target = holder
-
 			if (poison_per_bite_increment)
-				spider_target.poison_per_bite = ZERO_OR_MORE(spider_target.poison_per_bite - poison_per_bite_increment)
+				superior_holder.poison_per_bite = ZERO_OR_MORE(superior_holder.poison_per_bite - poison_per_bite_increment)
 			if (poison_per_bite_mult)
-				spider_target.poison_per_bite = ZERO_OR_MORE(spider_target.poison_per_bite / poison_per_bite_mult)
+				superior_holder.poison_per_bite = ZERO_OR_MORE(superior_holder.poison_per_bite / poison_per_bite_mult)
 
 		if (delay_for_range_adjustment)
 			superior_holder.delay_for_range = ZERO_OR_MORE(superior_holder.delay_for_range - delay_for_range_adjustment)
@@ -189,12 +186,9 @@
 		if (delay_for_rapid_range_adjustment)
 			superior_target.delay_for_rapid_range = ZERO_OR_MORE(superior_target.delay_for_rapid_range + delay_for_rapid_range_adjustment)
 
-		if (issuperiorspider(superior_target))
-			var/mob/living/carbon/superior_animal/giant_spider/spider_target = target
-
-			if (poison_per_bite_mult)
-				spider_target.poison_per_bite = ZERO_OR_MORE(SAFEMULT(spider_target.poison_per_bite, poison_per_bite_mult, poison_per_bite_zeroth))
-			if (poison_per_bite_increment)
-				spider_target.poison_per_bite = ZERO_OR_MORE(spider_target.poison_per_bite + poison_per_bite_increment)
+		if (poison_per_bite_mult)
+			superior_target.poison_per_bite = ZERO_OR_MORE(SAFEMULT(superior_target.poison_per_bite, poison_per_bite_mult, poison_per_bite_zeroth))
+		if (poison_per_bite_increment)
+			superior_target.poison_per_bite = ZERO_OR_MORE(superior_target.poison_per_bite + poison_per_bite_increment)
 
 	return ..(target, arguments, arguments_to_pass)

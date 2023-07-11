@@ -11,6 +11,7 @@
 	knockdown_odds = 5
 	melee_damage_lower = 25
 	melee_damage_upper = 30
+	armor_penetration = 25
 	move_to_delay = 8
 	mob_size = MOB_MEDIUM
 	var/distress_level = 0
@@ -22,7 +23,6 @@
 	flash_resistances = 5 //half stuns by flash, so we can still get up and be in the fight!
 
 	armor = list(melee = 15, bullet = 15, energy = 5, bomb = 5, bio = 20, rad = 0, agony = 0)
-	armor_penetration = 25
 
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/roachmeat/fuhrer
 	meat_amount = 6

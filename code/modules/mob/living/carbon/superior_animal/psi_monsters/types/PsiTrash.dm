@@ -8,6 +8,8 @@
 	health = 100
 	melee_damage_lower = 14
 	melee_damage_upper = 19
+	armor_penetration = 20
+
 	aggro_noise = FALSE
 	viewRange = 5
 	turns_per_move = 8
@@ -17,7 +19,6 @@
 	chameleon_skill = 1
 	speak_chance = 2
 	attacktext = "clawed"
-	armor_penetration = 20
 
 /mob/living/carbon/superior_animal/psi_monster/thought_melter
 	name = "thought melter"
@@ -29,6 +30,7 @@
 	health = 75
 	melee_damage_lower = 12
 	melee_damage_upper = 14
+
 	emote_see = list("garbles inane speech.", "howls with laughter!", "growls foul unintelligible words.")
 	speak_chance = 10
 	poison_per_bite = 1
@@ -46,6 +48,7 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 15
 	armor_penetration = 20
+
 	emote_see = list("drools acid onto the floor.", "wriggles in glee!", "rolls over!")
 	var/burn_attack_text = "The pus maggot vomits up some acidic pus all over!"
 	var/burn_attack_sound = 'sound/effects/splat.ogg'

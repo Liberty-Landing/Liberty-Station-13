@@ -13,9 +13,9 @@
 
 	melee_damage_lower = 8
 	melee_damage_upper = 12
-
-	armor = list(melee = 15, bullet = 10, energy = 5, bomb = 5, bio = 20, rad = 0, agony = 0)
 	armor_penetration = 35
+	armor = list(melee = 15, bullet = 10, energy = 5, bomb = 5, bio = 20, rad = 0, agony = 0)
+
 
 // frogs dont slip over on water or soap.
 /mob/living/carbon/superior_animal/roach/tazntz/slip(slipped_on,stun_duration=8)

@@ -19,6 +19,7 @@ var/global/clucker_count = 0
 	var/eggsleft = 0
 	pass_flags = PASSTABLE
 	mob_size = MOB_SMALL
+	natural_weapon = /obj/item/natural_weapon/beak //let it attack. Doesn't do damage, just annoying
 	leather_amount = 0 //The amount of leather sheets dropped.
 	bones_amount = 4 //The amount of bone sheets dropped.
 	has_special_parts = TRUE //var for checking during the butcher process.
@@ -94,6 +95,7 @@ var/global/clucker_count = 0
 	var/amount_grown = 0
 	pass_flags = PASSTABLE
 	mob_size = MOB_MINISCULE
+	natural_weapon = /obj/item/natural_weapon/beak //let it attack. Doesn't do damage, just annoying
 
 /mob/living/carbon/superior_animal/lodge/chick_clucker/New()
 	..()

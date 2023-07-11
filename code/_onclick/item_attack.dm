@@ -50,7 +50,11 @@ avoid code duplication. This includes items that may sometimes act as a standard
 		user.do_attack_animation(src)
 		if (I.hitsound)
 			playsound(loc, I.hitsound, 50, 1, -1)
-		visible_message(SPAN_DANGER("[src] has been hit by [user] with [I]."))
+
+		var/weapon_mention
+		if(I.attack_message_name())
+			weapon_mention = " with [I.attack_message_name()]"
+		visible_message("<span class='warning'>[src] has been [I.attack_verb.len? pick(I.attack_verb) : "attacked"][weapon_mention] by [user]!</span>")
 		user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN)
 
 /obj/item/attackby(obj/item/I, mob/living/user, var/params)
@@ -61,7 +65,7 @@ avoid code duplication. This includes items that may sometimes act as a standard
 		return FALSE
 	if(can_operate(src, user) && do_surgery(src, user, I)) //Surgery
 		return TRUE
-	return I.attack(src, user, user.targeted_organ)
+	return I.attack(src, user, (user.client && user.hud_used) ? user.targeted_organ : ran_zone())
 
 // Proximity_flag is 1 if this afterattack was called on something adjacent, in your square, or on your person.
 // Click parameters is the params string from byond Click() code, see that documentation.

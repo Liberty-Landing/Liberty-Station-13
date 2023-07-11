@@ -8,6 +8,7 @@
 	maxHealth = 800
 	melee_damage_lower = 70
 	melee_damage_upper = 80
+	natural_weapon = /obj/item/natural_weapon/shielder
 	armor = list(melee = 70, bullet = 70, energy = 70, bomb = 50, bio = 100, rad = 100)
 	exam_message = "This one appears to wield a stellar-grade engine shaped into a hammer."
 

@@ -30,6 +30,7 @@
 
 	melee_damage_lower = 12
 	melee_damage_upper = 17
+	natural_weapon = /obj/item/natural_weapon/claws
 	destroy_surroundings = FALSE
 	armor = list(melee = 35, bullet = 25, energy = 40, bomb = 60, bio = 100, rad = 100) //We want to be gunned down, not lasered
 

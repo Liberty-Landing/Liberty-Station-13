@@ -26,6 +26,7 @@
 	maxHealth = 60
 	melee_damage_lower = 10
 	melee_damage_upper = 25
+	natural_weapon = /obj/item/natural_weapon/punch/mushroom
 	leather_amount = 0
 	bones_amount = 0
 	randpixel = 0

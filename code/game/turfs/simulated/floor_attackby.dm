@@ -22,7 +22,7 @@
 	//Attempting to damage floors with things
 	//This has a lot of potential to break things, so it's limited to harm intent.
 	//This supercedes all construction, deconstruction and similar actions. So change your intent out of harm if you don't want to smack the floor
-	if (usr.a_intent == I_HURT && user.Adjacent(src))
+	if (user.a_intent == I_HURT && user.Adjacent(src))
 		if(!(I.flags & NOBLUDGEON))
 			user.do_attack_animation(src)
 			var/calc_damage = (I.force*I.structure_damage_factor) - flooring.resistance
@@ -34,7 +34,10 @@
 				playsound(src, I.hitsound, volume, 1, -1)
 
 			if (calc_damage > 0)
-				visible_message(SPAN_DANGER("[src] has been hit by [user] with [I]."))
+				var/weapon_mention
+				if(I.attack_message_name())
+					weapon_mention = " with [I.attack_message_name()]"
+				visible_message("<span class='warning'>[src] has been [I.attack_verb.len? pick(I.attack_verb) : "attacked"] [weapon_mention] by [user]!</span>")
 				take_damage(I.force*I.structure_damage_factor, I.damtype)
 			else
 				visible_message(SPAN_DANGER("[user] ineffectually hits [src] with [I]"))

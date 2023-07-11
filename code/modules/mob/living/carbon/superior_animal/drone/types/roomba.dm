@@ -5,6 +5,7 @@
 	icon_state = "roomba"
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/drone
 	health = 100
 	maxHealth = 100
 	colony_friend = TRUE
@@ -149,6 +150,9 @@
 			// Give the roomba the damage bonus of the knife.
 			melee_damage_lower += K.damage_boost
 			melee_damage_upper += K.damage_boost
+			if(natural_weapon)
+				qdel(natural_weapon)
+				natural_weapon = new()
 
 			// Remove the knife from the user and give it to the roomba.
 			user.remove_from_mob(W)
@@ -246,8 +250,12 @@
 						// Cancel the melee damage bonus the knife gave to the roomba.
 						melee_damage_lower -= K.damage_boost
 						melee_damage_upper -= K.damage_boost
+						if(natural_weapon)
+							qdel(natural_weapon)
+							natural_weapon = new()
 						to_chat(user, "You remove the [weaponry.name] from [src].")
 						weaponry = null // It got no weapons now.
+
 						return
 
 					// If we're here then it isn't a knife, so it must be a gun.

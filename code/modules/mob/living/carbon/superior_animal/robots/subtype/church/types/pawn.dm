@@ -15,6 +15,8 @@
 	maxHealth = 250
 	melee_damage_lower = 30 //Tons of damage but a weak bot, just like a pawn
 	melee_damage_upper = 40
+	natural_weapon = /obj/item/natural_weapon/church/pawn
+	
 	meat_type = /obj/item/stack/material/silver/random
 	drop1 = /obj/item/tool/sword/custodian/horseaxe
 	drop2 = /obj/item/tool/sword/custodian/shortsword
