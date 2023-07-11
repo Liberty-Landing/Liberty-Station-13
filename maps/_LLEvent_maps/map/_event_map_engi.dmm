@@ -2645,12 +2645,6 @@
 /obj/machinery/vending/dinnerware/cost,
 /turf/simulated/floor/tiled/cafe,
 /area/event_engi/building_upper)
-"YN" = (
-/obj/item/holyvacuum,
-/obj/item/holyvacuum,
-/obj/item/holyvacuum,
-/turf/simulated/floor/reinforced,
-/area/event_engi/trash)
 "Zb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/extinguisher_cabinet{
@@ -7806,7 +7800,7 @@ Ax
 Ax
 iZ
 iZ
-YN
+Gy
 li
 Gy
 Gy

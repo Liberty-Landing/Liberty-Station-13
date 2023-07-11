@@ -186,7 +186,7 @@
 	shuttle_area = /area/shuttle/rocinante_shuttle_area
 	current_location = "nav_rocinante_homebase"
 	landmark_transition = "nav_rocinante_transit"
-	destination_tags = list("nav_rocinante_homebase", "nav_rocinante_river", "nav_rocinante_swamp", "nav_rocinante_graysonfield")//, "nav_rocinante_spacefort"
+	destination_tags = list("nav_rocinante_homebase", "nav_rocinante_river", "nav_rocinante_swamp", "nav_rocinante_graysonfield", "nav_gas_caves")//, "nav_rocinante_spacefort"
 
 /obj/effect/shuttle_landmark/rocinante_home
 	name = "The Rocinante Home Pad "
