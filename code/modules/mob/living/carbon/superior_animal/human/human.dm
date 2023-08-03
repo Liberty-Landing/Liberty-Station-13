@@ -11,6 +11,7 @@
 	cant_be_pulled = TRUE
 
 	attack_sound = 'sound/weapons/slice.ogg'
+	natural_weapon = /obj/item/natural_weapon/punch
 
 /*
 	breath_required_type = NONE

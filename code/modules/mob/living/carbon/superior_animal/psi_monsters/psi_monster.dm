@@ -42,6 +42,11 @@
 
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/psi_monster
+
+	poison_per_bite = 0
+	poison_type = "mindmelter"
+
 	can_burrow = FALSE
 	acceptableTargetDistance = 5
 	flash_resistances = 100 //No eyes.
@@ -56,8 +61,6 @@
 	reagent_immune = TRUE
 	toxin_immune = TRUE
 
-	var/poison_per_bite = 0
-	var/poison_type = "mindmelter"
 	var/last_noise = -30000
 	var/chameleon_skill = 10
 	var/phaser = TRUE

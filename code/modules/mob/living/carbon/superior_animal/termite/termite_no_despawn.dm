@@ -14,10 +14,14 @@
 	deathmessage = "splatters into a bloody mess."
 	attacktext = "chomped"
 	attack_sound = 'sound/weapons/bite.ogg'
+	melee_damage_lower = TERMITE_DMG_LOW
+	melee_damage_upper = TERMITE_DMG_LOW
+	armor_penetration = 15
+	natural_weapon = /obj/item/natural_weapon/termite
+
 	faction = "wurm"
 	fire_verb = "spits"
 	see_in_dark = 10
-	armor_penetration = 15
 	density = 0 // Prevents friendly fire between themselves, projectiles will go over them, making them also harder to target.
 
 	fleshcolor = "#7C90B8"
@@ -149,6 +153,7 @@
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_LOW
 	melee_damage_upper = TERMITE_DMG_LOW
+//	natural_weapon = default termite damage is low
 
 //Armor related variables
 	armor = list(melee = 50, bullet = 35, energy = 20, bomb = 50, bio = 100, rad = 0)
@@ -235,6 +240,7 @@
 //Damage related variables
 	melee_damage_lower = TERMITE_DMG_LOW
 	melee_damage_upper = TERMITE_DMG_LOW
+//	natural_weapon = default termite damage is low
 
 	ranged = TRUE
 

@@ -9,6 +9,7 @@
 	maxHealth = 40
 	melee_damage_lower = 5
 	melee_damage_upper = 13
+	natural_weapon = /obj/item/natural_weapon/similacrum/custodian
 	ranged_cooldown = 5
 
 	cleaning = TRUE //we do clean prase us!

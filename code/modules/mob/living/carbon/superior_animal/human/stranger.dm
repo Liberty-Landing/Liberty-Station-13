@@ -13,6 +13,7 @@
 	health = 200
 	melee_damage_lower = 15
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/punch
 	ranged_cooldown = 2
 	rapid_fire_shooting_amount = 3
 	attacktext = "punched"

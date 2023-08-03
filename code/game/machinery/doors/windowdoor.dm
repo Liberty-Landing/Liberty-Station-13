@@ -212,7 +212,7 @@
 			visible_message(SPAN_WARNING("The glass door was sliced open by [user]!"))
 		return 1
 
-	if (usr.a_intent != I_HURT)
+	if (user.a_intent != I_HURT)
 		var/tool_type = I.get_tool_type(user, usable_qualities, src)
 		switch(tool_type)
 			if(QUALITY_SEALING)

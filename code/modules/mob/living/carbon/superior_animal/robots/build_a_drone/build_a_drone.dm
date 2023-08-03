@@ -8,6 +8,7 @@
 	maxHealth = 100
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+
 	faction = "neutral"
 	cleaning = FALSE
 	drop1 = null

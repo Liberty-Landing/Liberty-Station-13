@@ -27,6 +27,7 @@
 	maxHealth = 30
 	melee_damage_lower = 12
 	melee_damage_upper = 17
+	natural_weapon = /obj/item/natural_weapon/roomba/knife
 	drop2 = /obj/item/tool/knife
 
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip
@@ -38,6 +39,7 @@
 	move_to_delay = 2 //speedy boy!
 	melee_damage_lower = 7
 	melee_damage_upper = 12
+	natural_weapon = /obj/item/natural_weapon/roomba/baton
 	var/trip_odds = 15 //So admins can edit this
 	drop2 = /obj/item/melee/telebaton
 
@@ -62,6 +64,7 @@
 	move_to_delay = 2 //speedy boy!
 	melee_damage_lower = 7
 	melee_damage_upper = 12
+	natural_weapon = /obj/item/natural_weapon/roomba/baton
 
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/boomba
 	name = "Simulacrum Robotics RMB-A unit"

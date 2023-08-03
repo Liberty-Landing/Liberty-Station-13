@@ -13,7 +13,7 @@
 	light_range = 3
 	light_color = COLOR_LIGHTING_BLUE_BRIGHT
 	mob_classification = CLASSIFICATION_SYNTHETIC
-	projectiletype = /obj/item/projectile/beam/drone
+
 
 	armor = list(melee = 30, bullet = 20, energy = 35, bomb = 30, bio = 100, rad = 100) //We want to be gunned down, not lasered
 
@@ -26,6 +26,9 @@
 	maxHealth = 25
 	melee_damage_lower = 5
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/drone
+	projectiletype = /obj/item/projectile/beam/drone
+
 	leather_amount = 0
 	bones_amount = 0
 	randpixel = 0

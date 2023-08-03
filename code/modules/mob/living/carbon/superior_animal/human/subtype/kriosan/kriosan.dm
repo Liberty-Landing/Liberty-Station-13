@@ -28,6 +28,7 @@
 
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/knife
 	breath_required_type = 0 // Doesn't need to breath for event atmosphere purposes.
 	breath_poison_type = 0 // Can't be poisoned
 	min_air_pressure = 0 // Doesn't need pressure for event atmosphere purposes.
@@ -70,6 +71,7 @@
 
 	melee_damage_lower = 15
 	melee_damage_upper = 20
+	natural_weapon = /obj/item/natural_weapon/shielder
 
 /mob/living/carbon/superior_animal/human/rebel/heavy
 	name = "Rebel Heavy Trooper"
@@ -91,3 +93,4 @@
 
 	melee_damage_lower = 20
 	melee_damage_upper = 25
+	natural_weapon = /obj/item/natural_weapon/gunner

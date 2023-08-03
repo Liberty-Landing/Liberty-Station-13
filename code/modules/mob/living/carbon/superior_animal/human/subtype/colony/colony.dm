@@ -11,6 +11,7 @@
 	health = 200
 	melee_damage_lower = 35
 	melee_damage_upper = 35
+	natural_weapon = /obj/item/natural_weapon/knife
 	attacktext = "slashed"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	fire_verb = "fires"
@@ -74,6 +75,7 @@
 	projectilesound = 'sound/weapons/energy/Laser.ogg'
 	melee_damage_lower = 10
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/gunner
 	egun = TRUE
 	suited_for_space = TRUE
 	projectiletype = /obj/item/projectile/beam
@@ -100,6 +102,7 @@
 	projectilesound = 'sound/weapons/energy/Laser.ogg'
 	melee_damage_lower = 30
 	melee_damage_upper = 40
+	natural_weapon = /obj/item/natural_weapon/knife
 	mags_left = 0 //0+1
 	projectiletype = /obj/item/projectile/beam
 	light_range = 5

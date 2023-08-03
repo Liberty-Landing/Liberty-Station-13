@@ -59,7 +59,7 @@
 	if (!(P.testing))
 		if(stance == HOSTILE_STANCE_ATTACK)
 			if(destroy_surroundings)
-				destroySurroundings()
+				DestroySurroundings()
 
 		updatehealth()
 		SEND_SIGNAL(src, COMSIG_ATTACKED, P, P.original_firer)
@@ -73,7 +73,7 @@
 
 		if(stance == HOSTILE_STANCE_ATTACK && stat == CONSCIOUS )
 			if(destroy_surroundings)
-				destroySurroundings()
+				DestroySurroundings()
 		. = ..()
 
 		updatehealth()

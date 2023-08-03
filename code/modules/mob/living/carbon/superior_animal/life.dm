@@ -35,7 +35,7 @@
 
 	if(stance == HOSTILE_STANCE_ATTACK)
 		if(destroy_surroundings)
-			destroySurroundings()
+			DestroySurroundings()
 		if(!ranged)
 			stop_automated_movement = 1
 			stance = HOSTILE_STANCE_ATTACKING
@@ -54,7 +54,7 @@
 
 	if(stance == HOSTILE_STANCE_ATTACKING)
 		if(destroy_surroundings)
-			destroySurroundings()
+			DestroySurroundings()
 		if(!ranged)
 			prepareAttackOnTarget()
 		if(ranged)

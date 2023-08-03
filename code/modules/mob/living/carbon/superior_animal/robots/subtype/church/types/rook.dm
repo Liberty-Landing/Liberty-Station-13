@@ -14,6 +14,7 @@
 	maxHealth = 550
 	melee_damage_lower = 60 //Big slow things dont deal a lot do to bullet sponges
 	melee_damage_upper = 75
+	natural_weapon = /obj/item/natural_weapon/church/rook
 	meat_type = /obj/item/stack/material/gold/random
 	drop1 = /obj/item/stack/material/gold/random
 	drop2 = /obj/item/book/ritual/hearthlantern

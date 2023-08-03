@@ -14,9 +14,10 @@
 	turns_per_move = 2
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/punch/mushroom
 	viewRange = 3
-	attacktext = "slammed"
-	attack_sound = 'sound/weapons/bite.ogg'
+//	attacktext = "slammed"
+//	attack_sound = 'sound/weapons/bite.ogg'
 	speak_chance = 5
 	emote_see = list("emits a low pleasent warble.","bounces.","hops back and forth.")
 	meat_amount = 2

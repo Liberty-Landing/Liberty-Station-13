@@ -8,6 +8,7 @@
 	maxHealth = 500
 	melee_damage_lower = 40
 	melee_damage_upper = 50
+	natural_weapon = /obj/item/natural_weapon/knife
 	move_to_delay = 4
 	cell = new /obj/item/cell/large/moebius // Hold the drone's power cell, default to a cheap one.
 	exam_message = "This one bears a large sword to cut problems in half."

@@ -9,6 +9,8 @@
 	var/melee_damage_upper_zeroth = 0
 	var/melee_damage_lower_mult
 	var/melee_damage_lower_zeroth = 0
+	//Only use for superior_mobs. You have been warned.
+	var/natural_weapon
 
 	/// Any damage types here will be applied to any projectiles holder fires by adding the value to the damage of that type. Added after all other modifiers.
 	var/list/projectile_damage_increment = list()
@@ -92,6 +94,12 @@
 			livingtarget.melee_damage_upper = ZERO_OR_MORE((livingtarget.melee_damage_upper + melee_damage_upper_increment))
 		if (melee_damage_lower_increment)
 			livingtarget.melee_damage_lower = ZERO_OR_MORE((livingtarget.melee_damage_lower + melee_damage_lower_increment))
+
+		if(natural_weapon && istype(livingtarget, /mob/living/carbon/superior_animal))
+			var/mob/living/carbon/superior_animal/livingpotato = livingtarget
+			livingpotato.natural_weapon = natural_weapon
+		else if(natural_weapon)
+			log_admin("stat_modifier attempted to apply [natural_weapon] onto [livingtarget].")
 
 		if (move_to_delay_mult)
 			livingtarget.move_to_delay = ZERO_OR_MORE(SAFEMULT(livingtarget.move_to_delay, move_to_delay_mult, move_to_delay_zeroth))

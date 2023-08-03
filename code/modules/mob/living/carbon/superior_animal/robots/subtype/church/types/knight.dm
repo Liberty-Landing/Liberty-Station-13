@@ -15,6 +15,8 @@
 	maxHealth = 400
 	melee_damage_lower = 45
 	melee_damage_upper = 55
+	natural_weapon = /obj/item/natural_weapon/church/knight
+	
 	meat_type = /obj/item/stack/material/plasteel/random
 	drop1 = /obj/item/tool/sword/custodian/shortsword
 	drop2 = /obj/item/stack/material/silver

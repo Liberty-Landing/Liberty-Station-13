@@ -12,6 +12,7 @@
 	knockdown_odds = 3
 	melee_damage_lower = 1
 	melee_damage_upper = 3 //He's a ranged roach
+	armor_penetration = 50
 
 	blattedin_revives_left = 1
 
@@ -22,7 +23,6 @@
 
 	min_air_pressure = 0
 	min_bodytemperature = 0
-	armor_penetration = 50
 	never_stimulate_air = TRUE
 
 	var/list/nanite_swarms = list()

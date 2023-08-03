@@ -45,6 +45,7 @@ Has ability of every roach.
 	can_burrow = FALSE
 	melee_damage_lower = 30
 	melee_damage_upper = 35
+	natural_weapon = /obj/item/natural_weapon/psi_monster/wasonce
 	attack_sound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	move_to_delay = 6
 	mob_size =  3  // The same as Hivemind Tyrant

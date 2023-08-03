@@ -13,6 +13,7 @@
 	health = 30
 	melee_damage_lower = 5
 	melee_damage_upper = 10
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 2
 	var/atom/cocoon_target
 	poison_type = "stoxin"
@@ -27,6 +28,8 @@
 	life_cycles_before_sleep = 3000 //We need more time to eat and web
 	inherent_mutations = list(MUTATION_PROT_MILK, MUTATION_SPIDER_FRIEND, MUTATION_NERVOUSNESS, MUTATION_DEAF)
 
+
+
 /mob/living/carbon/superior_animal/giant_spider/nurse/midwife
 	name = "midwife spider"
 	desc = "Furry and black, it makes you shudder to look at it. This one has brilliant green eyes and purple stripes on the back."
@@ -36,6 +39,7 @@
 	health = 50
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 4
 	egg_inject_chance = 5 //Yes
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/midwife
@@ -49,6 +53,7 @@
 	health = 100
 	melee_damage_lower = 10
 	melee_damage_upper = 15
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 4
 	poison_type = "frostoil"
 	move_to_delay = 5 // Very slow
@@ -100,13 +105,15 @@
 	poison_per_bite = 1 //1u is all it takes to sleep you, your asleep also dosnt prevet it form attacking you more then once meaning this quit quickly stacks without someones help
 	melee_damage_lower = 3
 	melee_damage_upper = 5
+	armor_penetration = 70
+	natural_weapon = /obj/item/natural_weapon/fang
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/recluse
 	meat_amount = 2
 	egg_inject_chance = 15 //Defiently
 	move_to_delay = 5 // Very slow do to being 1 hit unfun
 	//Giving the recluse its own special meat that has zombie powder. Reducing the amount of meat made since this is some hard stuff and the recluse is easy to kill.
 	poison_type = "zombiepowder"
-	armor_penetration = 70
+
 
 /mob/living/carbon/superior_animal/giant_spider/nurse/queen
 	name = "empress spider"
@@ -118,6 +125,8 @@
 	health = 200
 	melee_damage_lower = 20
 	melee_damage_upper = 30
+	armor_penetration = 35
+	natural_weapon = /obj/item/natural_weapon/fang
 	poison_per_bite = 4
 	poison_type = "menace"
 	meat_type = /obj/item/reagent_containers/food/snacks/meat/spider/queen
@@ -128,7 +137,7 @@
 	mob_size = MOB_LARGE
 	armor = list(melee = 15, bullet = 10, energy = 5, bomb = 5, bio = 10, rad = 25, agony = 0)
 	inherent_mutations = list(MUTATION_GIGANTISM, MUTATION_SPIDER_FRIEND, MUTATION_RAND_UNSTABLE, MUTATION_RAND_UNSTABLE, MUTATION_RAND_UNSTABLE)
-	armor_penetration = 35
+
 
 /mob/living/carbon/superior_animal/giant_spider/nurse/queen/New()
 	..()

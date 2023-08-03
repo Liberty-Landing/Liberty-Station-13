@@ -1011,6 +1011,20 @@ There are 9 wires.
 		hit(user, I)
 		return
 
+	if((stat & (BROKEN|NOPOWER)) && istype(user, /mob/living/carbon/superior_animal))
+		var/mob/living/carbon/superior_animal/A = user
+		var/obj/item/AI = A.get_natural_weapon()
+		if(AI.force >= 10)
+			if(density)
+				visible_message(SPAN_DANGER("\The [A] forces \the [src] open!"))
+				open(1)
+			else
+				visible_message(SPAN_DANGER("\The [A] forces \the [src] closed!"))
+				close(1)
+		else
+			visible_message(SPAN_NOTICE("\The [A] strains fruitlessly to force \the [src] [density ? "open" : "closed"]."))
+		return TRUE
+
 	if(istype(I, /obj/item/keys))
 		if(used_now)
 			to_chat(user, SPAN_WARNING("You are already looking for the key!")) //don't want people stacking odds

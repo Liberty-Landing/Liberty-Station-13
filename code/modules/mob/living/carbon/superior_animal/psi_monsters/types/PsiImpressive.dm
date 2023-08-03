@@ -10,6 +10,8 @@
 	attack_sound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	melee_damage_lower = 30
 	melee_damage_upper = 40
+	armor_penetration = 15
+	natural_weapon = /obj/item/natural_weapon/psi_monster/flesh_behemoth
 	emote_see = list("drags a blackened tongue along its arm blade.", "chuckles, \"I'll bring slaughter to the lambs!\"", "mumbles, \"This edge is nice and sharp.\"")
 	turns_per_move = 3
 	healing_factor = 50
@@ -18,7 +20,7 @@
 	death_spawn_gift = /obj/random/cluster/psi_monster/maggot_death_gasp
 	death_gasp = "<b><font size='3px'>The flesh behemoth heaves as its body crumbles, wriggling pus maggots bursting from its failing rotted bulk!</font></b>!"
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/always_spawn)
-	armor_penetration = 15
+
 
 /mob/living/carbon/superior_animal/psi_monster/mind_gazer
 	name = "mind gazer"
@@ -30,12 +32,13 @@
 	health = 400
 	melee_damage_lower = 25
 	melee_damage_upper = 30
+	armor_penetration = 20
+	natural_weapon = /obj/item/natural_weapon/psi_monster/mind_gazer
 	emote_see = list("whirls about, its massive singular eye spasming,", "suddenly halts, its singular pupil dilating!", "whistles a small tune...")
 	turns_per_move = 8
 	healing_factor = 10
 	attacktext = "rammed"
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/always_spawn)
-	armor_penetration = 20
 	leach_on_odds = 30
 	can_leach = TRUE
 	steal_odds = 15
@@ -52,6 +55,8 @@
 	health = 600
 	melee_damage_lower = 25
 	melee_damage_upper = 30
+	armor_penetration = 50
+
 	emote_see = list("crackles and pops as its head burns!", "looses a haunting scream!", "claws at its head, trying to put out the flames!")
 	burn_attack_text = "The ash wendigo wreathes its claws in fire before striking!"
 	burn_attack_sound = 'sound/xenomorph/alien_footstep_charge1.ogg'
@@ -61,7 +66,7 @@
 	light_color = COLOR_LIGHTING_RED_BRIGHT
 	attacktext = "clawed"
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/always_spawn)
-	armor_penetration = 50
+
 
 /mob/living/carbon/superior_animal/psi_monster/cerebral_crusher
 	name = "cerebral crusher"
@@ -74,13 +79,15 @@
 	attack_sound = 'sound/xenomorph/alien_footstep_charge1.ogg'
 	melee_damage_lower = 30
 	melee_damage_upper = 40
+	armor_penetration = 30
+	natural_weapon = /obj/item/natural_weapon/psi_monster/cerebral_crusher
 	emote_see = list("scratches at its bone plates.", "moans, \"We hear your thoughts, we feel your fear.\"", "groans, \"Kill us! End this nightmare!\"")
 	turns_per_move = 4
 	poison_per_bite = 2
 	healing_factor = 10
 	attacktext = "slammed"
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/always_spawn)
-	armor_penetration = 30
+
 
 /mob/living/carbon/superior_animal/psi_monster/wasonce/crimson_jelly
 	name = "crimson jelly"
@@ -105,6 +112,7 @@
 	armor = list(melee = 20, bullet = 10, energy = 5, bomb = 30, bio = 100, rad = 100)
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/weapons/always_spawn)
 	armor_penetration = 50
+	natural_weapon = /obj/item/natural_weapon/psi_monster/wasonce
 
 /mob/living/carbon/superior_animal/psi_monster/wasonce/crimson_jelly/pitch_horror
 	name = "pitch horror"
@@ -118,6 +126,7 @@
 	knockdown_odds = 30
 	drop_items = list(/obj/random/psi/always_spawn, /obj/random/psi/weapons/always_spawn, /obj/random/psi/always_spawn, /obj/random/psi/weapons/always_spawn)
 	armor_penetration = 70
+	natural_weapon = /obj/item/natural_weapon/psi_monster/wasonce
 
 // King's Court. Special named psi mobs with better stats and custom voice lines, they are spawned whenever the king of the hound journey.
 /mob/living/carbon/superior_animal/psi_monster/flesh_behemoth/baron

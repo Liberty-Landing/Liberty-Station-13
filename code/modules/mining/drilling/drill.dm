@@ -192,7 +192,10 @@
 			var/volume =  min(damage * 3.5, 15)
 			if (I.hitsound)
 				playsound(src, I.hitsound, volume, 1, -1)
-			visible_message(SPAN_DANGER("[src] has been hit by [user] with [I]."))
+			var/weapon_mention
+			if(I.attack_message_name())
+				weapon_mention = " with [I.attack_message_name()]"
+			visible_message("<span class='warning'>[src] has been [I.attack_verb.len? pick(I.attack_verb) : "attacked"] [weapon_mention] by [user]!</span>")
 			take_damage(damage)
 			user.setClickCooldown(DEFAULT_ATTACK_COOLDOWN * 1.5)
 
