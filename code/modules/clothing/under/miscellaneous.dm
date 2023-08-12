@@ -99,11 +99,6 @@
 	desc = "A series of belts and straps to hold your equipment. Originally designed for simple drones and synths, this is hardly a modest option for organics."
 	icon_state = "gear_harness"
 
-/obj/item/clothing/under/monomial_belt
-	name = "monomial belt"
-	desc = "A simple black loin cloth with a dark gold trim favored by monomials for its monk-like aesthetic. For when you need to show off your muscles in the name of god."
-	icon_state = "mono_belt"
-	item_state = "mono_belt"
 
 /*Antagonist Spawn Gear*/
 
@@ -483,8 +478,8 @@
 	item_state = "pullover"
 
 /obj/item/clothing/under/jersey
-	name = "church overalls"
-	desc = "For showing your devotion to god through labor or the opposite for that matter if you forgot an undershirt."
+	name = "overalls"
+	desc = "A Pair of normal work overalls."
 	icon_state = "jersey"
 	item_state = "jersey"
 
