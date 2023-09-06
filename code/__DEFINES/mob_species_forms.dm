@@ -68,14 +68,14 @@
 #define FORM_AXOLOTL			"Axolotl"
 #define FORM_SYNTH				"Synthetic"
 
-#define FORM_BIRD				"Avian"
+//#define FORM_BIRD				"Avian"
 
-#define FORM_VOX				"Vox"
-#define FORM_VOX_AZURE			"Azure Vox"
-#define FORM_VOX_BROWN			"Brown Vox"
-#define FORM_VOX_EMERALD		"Emerald Vox"
-#define FORM_VOX_GRAY			"Gray Vox"
-#define FORM_VOX_LIME			"Lime Vox"
+//#define FORM_VOX				"Vox"
+//#define FORM_VOX_AZURE			"Azure Vox"
+//#define FORM_VOX_BROWN			"Brown Vox"
+//#define FORM_VOX_EMERALD		"Emerald Vox"
+//#define FORM_VOX_GRAY			"Gray Vox"
+//#define FORM_VOX_LIME			"Lime Vox"-what are even those
 
 #define FORM_VOX_BONEY			"Bony Vox"
 #define FORM_VOX_TECHY			"Techy Vox"

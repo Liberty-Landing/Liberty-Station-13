@@ -497,26 +497,4 @@
 		return 1
 
 /* Church */
-/obj/item/clothing/under/rank/monashka
-	name = "monashka garments"
-	desc = "A dark and golden uniform warn by the faiths."
-	icon_state = "monashka_uniform"
-	item_state = "monashka_uniform"
-
-/obj/item/clothing/under/rank/lemniscate
-	name = "lemniscate skirt"
-	desc = "A dark and golden skirt warn by the faiths."
-	icon_state = "lemniscate_skirt"
-	item_state = "lemniscate_skirt"
-
-/obj/item/clothing/under/rank/ntdress
-	name = "Absolutist summer dress"
-	desc = "A white and gold summerdress, produced and oft worn by Abolutists"
-	icon_state = "summerdress_nt"
-	item_state = "summerdress_nt"
-
-/obj/item/clothing/under/sports
-	name = "White tank top"
-	desc = "Sweat stains not included."
-	icon_state = "sports"
-	item_state = "sports"
+//deleted code since it was a remain from sojourn
