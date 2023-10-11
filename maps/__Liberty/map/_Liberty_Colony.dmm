@@ -101868,6 +101868,9 @@
 "ulB" = (
 /obj/structure/table/rack,
 /obj/item/tool/tape_roll/glue,
+/obj/item/rig/techno/equipped,
+/obj/item/rig/techno/equipped,
+/obj/item/rig/techno/equipped,
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
 "ulD" = (
