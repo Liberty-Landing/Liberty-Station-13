@@ -221,6 +221,7 @@
 				/obj/item/clothing/head/helmet/faceshield/altyn/maska = 2,
 				/obj/item/clothing/head/helmet/mercenary = 2,
 				/obj/item/clothing/head/helmet/bulletproof = 2,
+				/obj/item/clothing/head/helmet/marshal/old = 2,
 				/obj/item/clothing/head/helmet/space/void/odst/red = 1,
 				/obj/item/clothing/head/helmet/space/void/odst/blue = 1,
 				/obj/item/clothing/head/helmet/space/void/odst/orange = 1,

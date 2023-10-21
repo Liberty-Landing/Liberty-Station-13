@@ -270,6 +270,14 @@
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
 	body_parts_covered = HEAD|EYES|EARS
 
+/obj/item/clothing/head/helmet/marshal/old
+	name = "surplus helmet"
+	desc = "Obsolete, budget handmade helmet designed and used by a vigilante group named The Watchmen, which would come to be the current Liberty Watch. The helmet is made of tough polyamide and recycled steel."
+	icon_state = "watch_surplus"
+	icon_state = "watch_surplus"
+	armor_list = list(melee = 30, bullet = 20,energy = 20, bomb = 20, bio = 70, rad = 0)
+	body_parts_covered = HEAD|EYES|EARS
+
 /obj/item/clothing/head/helmet/warrant_officer
 	name = "warrant officer full helmet"
 	desc = "A full helmet with a built in glow visor. This one appears to be fitted with new visor servos internally to protect from flashes as well as a bullet-proof reinforced mouth guard!"
