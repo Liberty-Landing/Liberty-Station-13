@@ -89,6 +89,22 @@
 	/datum/lecture/targeted/hearthcore/special)
 
 
+/datum/core_module/lectures/hearthcore/druzhina
+	ritual_types = list(
+	/datum/lecture/hearthcore/druzhina,
+	/datum/lecture/hearthcore/iblazelance,
+	/datum/lecture/hearthcore/tblazelance)
+
+/datum/core_module/lectures/hearthcore/cataphract
+
+/datum/core_module/lectures/hearthcore/hussar
+
+/datum/core_module/lectures/hearthcore/dragoon
+
+/datum/core_module/lectures/hearthcore/grenadier
+
+
+
 /datum/core_module/lectures/hearthcore/anti_scrying
 
 /datum/core_module/lectures/hearthcore/damaged

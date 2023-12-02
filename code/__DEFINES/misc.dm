@@ -203,20 +203,21 @@
 #define CORE_ACTIVATED /datum/core_module/activatable
 
 //Hearthcore modules, think of them like flags that can hold ritual types
-#define HEARTHCORE_COMMON /datum/core_module/lectures/hearthcore/base
-#define HEARTHCORE_SPECIAL /datum/core_module/lectures/hearthcore/special
-#define HEARTHCORE_CUSTODIAN /datum/core_module/lectures/hearthcore/custodian
-#define HEARTHCORE_OATHBOUND /datum/core_module/lectures/hearthcore/oathbound
-#define HEARTHCORE_ENKINDLED /datum/core_module/lectures/hearthcore/enkindled
-#define HEARTHCORE_FORGEMASTER /datum/core_module/lectures/hearthcore/forgemaster
-#define HEARTHCORE_OATHPLEDGE /datum/core_module/lectures/hearthcore/oathpledge
+#define HEARTHCORE_COMMON       /datum/core_module/lectures/hearthcore/base
+#define HEARTHCORE_SPECIAL      /datum/core_module/lectures/hearthcore/special
+#define HEARTHCORE_CUSTODIAN    /datum/core_module/lectures/hearthcore/custodian
+#define HEARTHCORE_OATHBOUND    /datum/core_module/lectures/hearthcore/oathbound
+#define HEARTHCORE_ENKINDLED    /datum/core_module/lectures/hearthcore/enkindled
+#define HEARTHCORE_FORGEMASTER  /datum/core_module/lectures/hearthcore/forgemaster
+#define HEARTHCORE_OATHPLEDGE   /datum/core_module/lectures/hearthcore/oathpledge
 #define HEARTHCORE_ANTI_SCRYING /datum/core_module/lectures/hearthcore/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
-#define HEARTHCORE_DAMAGED /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again //Someone needs to make this upgrade to never appear in case you die, only when you are revived with the lecture.
+#define HEARTHCORE_DAMAGED      /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again //Someone needs to make this upgrade to never appear in case you die, only when you are revived with the lecture.
 
-#define HEARTHCORE_DHUZHINA /datum/core_module/lectures/hearthcore/druzhina
+#define HEARTHCORE_DRUZHINA   /datum/core_module/lectures/hearthcore/druzhina
 #define HEARTHCORE_CATAPHRACT /datum/core_module/lectures/hearthcore/cataphract
-#define HEARTHCORE_HUSSAR /datum/core_module/lectures/hearthcore/hussar
-#define HEARTHCORE_DRAGOON /datum/core_module/lectures/hearthcore/dragoon
+#define HEARTHCORE_HUSSAR     /datum/core_module/lectures/hearthcore/hussar
+#define HEARTHCORE_DRAGOON    /datum/core_module/lectures/hearthcore/dragoon
+#define HEARTHCORE_GRENADIER  /datum/core_module/lectures/hearthcore/grenadier
 
 #define HEARTHCORE_UPLINK /datum/core_module/hearthcore/uplink
 #define HEARTHCORE_CLONING /datum/core_module/hearthcore/cloning
