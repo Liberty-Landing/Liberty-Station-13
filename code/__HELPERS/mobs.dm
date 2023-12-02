@@ -309,7 +309,7 @@ Proc for attack log creation, because really why not
 	if(!isliving(L))
 		return FALSE
 	var/obj/item/implant/core_implant/hearthcore/C = L.get_core_implant(/obj/item/implant/core_implant/hearthcore)
-	if(C && C.get_module(HEARTHCORE_COMMON))
+	if(C && C.get_module(HEARTHCORE_COMMON, HEARTHCORE_SPECIAL))
 		return TRUE
 	return FALSE
 

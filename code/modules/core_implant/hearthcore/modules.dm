@@ -84,6 +84,11 @@
 	ritual_types = list(/datum/lecture/hearthcore/oathpledge,
 	/datum/lecture/targeted/hearthcore/oathpledge)
 
+/datum/core_module/lectures/hearthcore/special
+	ritual_types = list(/datum/lecture/hearthcore/special,
+	/datum/lecture/targeted/hearthcore/special)
+
+
 /datum/core_module/lectures/hearthcore/anti_scrying
 
 /datum/core_module/lectures/hearthcore/damaged
