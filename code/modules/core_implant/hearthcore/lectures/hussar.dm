@@ -9,24 +9,24 @@
 	power = 35
 
 datum/lecture/hearthcore/hussar/skirmish/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C,list/targets)
-	var/rob = holder.stats.getStat(STAT_ROB)
-		if(ROB > 24)
-			to_chat(C, "<span class='info'>The feeling of rejuvenation washes over you. You feel comfortable warmth on your muscles.</span>")
-			C.add_chemical_effect(CE_SPEEDBOOST, 0.3, 5, "skirmish")
-			C.add_chemical_effect(CE_OXYGENATED, 5)
-			updatehealth()
-	return TRUE
-		to_chat(C, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
-		return //You need 25 robustness at minimum to use this lecture
-
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob >= 25)//You need 25 robustness at minimum to use this lecture
+		to_chat(lecturer, "<span class='info'>The feeling of rejuvenation washes over you. You feel comfortable warmth on your muscles.</span>")
+		lecturer.add_chemical_effect(CE_SPEEDBOOST, 0.3, 5, "skirmish")
+		lecturer.add_chemical_effect(CE_OXYGENATED, 5)
+		lecturer.updatehealth()
+		return TRUE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+	return FALSE
 //lecture that deals pain damage
 //a lecture that spawns a silver bow that uses radiance to shoot
 //(talk with Trilby to see what suits more. Making the Hussar invisible by human standards like the cloaker spiders, or have something that allows them to put a "teleporter" in a place(only one) which they can teleport into after a delay.
 
 /*
 			var/rob = holder.stats.getStat(STAT_ROB)
-		if(rob > 30)
+		if(rob >= 30)
 
 			return
-		to_chat(C, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+		to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
 		return //Not enough robustness to use this lecture.
+*/

@@ -8,17 +8,17 @@
 
 /datum/lecture/hearthcore/hussar/dummy
 	name = "Assemble: Taunting Dummy"
-	phrase = "Radiance, hear me. Assemble the Tauting Dummy." 
+	phrase = "Radiance, hear me. Assemble the Tauting Dummy."
 	desc = "Assemble with your own radiance a thin, taunting dummy. It looks like a moving body to animalistic enemies, may not work for people. Can still be used as a living shield."
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
 	power = 35
 
 /datum/lecture/hearthcore/druzhina/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	var/rob = holder.stats.getStat(STAT_ROB)
-		if(rob > 30)
-			to_chat(C, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
-			new /mob/living/carbon/superior_animal/robot/custodians/faux_dummy
-			return
-		to_chat(C, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
-		return //Not enough robustness to use this lecture.
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob > 30)
+		to_chat(lecturer, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
+		new /mob/living/carbon/superior_animal/robot/custodians/faux_dummy(lecturer.loc)
+		return TRUE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+	return FALSE//Not enough robustness to use this lecture.

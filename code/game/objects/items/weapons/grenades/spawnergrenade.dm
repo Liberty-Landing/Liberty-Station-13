@@ -107,4 +107,4 @@
 	desc = "Deploys a poor, confused and desperate radiance-made viscerator in search for its heartless grenadier owner as it practically suffocates to death. Despite its plight, the radiance attacks indiscriminately. The Custodians didn't made that lecture, YOU did. You monster."
 	deliveryamt = 1
 	icon_state = "unstable_radiance"
-	spawner_type = /mob/living/simple_animal/hostile/viscerator/grenadier
+	spawner_type = /mob/living/simple_animal/hostile/viscerator/colony
