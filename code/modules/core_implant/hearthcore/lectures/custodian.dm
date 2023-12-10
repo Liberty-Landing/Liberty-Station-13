@@ -2,7 +2,7 @@
 	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/hearthcore
-	fail_message = "The Hearthcore feels cold against your back."
+	fail_message = "The Hearthcore feels cold on your spine."
 	category = "EOTP"
 	ignore_stuttering = TRUE //required for ignoring things like : and other symbols in phrases
 

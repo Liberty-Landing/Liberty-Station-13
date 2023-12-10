@@ -19,6 +19,7 @@
 #define PERK_ATHLETE /datum/perk/background/athlete
 #define PERK_CUBAN_DELIGHT /datum/perk/background/cuban_delight
 #define PERK_KLUTZ /datum/perk/background/klutz
+#define PERK_PEERAGE /datum/perk/background/peerage
 
 //Sanity
 #define PERK_VETERAN /datum/perk/background/veteran

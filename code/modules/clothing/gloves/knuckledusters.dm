@@ -90,6 +90,22 @@
 	punch_increase = 15 // Made of platinum and are crafted with spikes, extra damage.
 	price_tag = 30
 
+/obj/item/clothing/gloves/dusters/flamecestus //I need Trilby help. This cestus can only be made once by a Druzhina, and actually ignite people when punching. It just slightly increases punching damage.
+	name = "Druzhina flame cestus"
+	desc = "Silvery wrapping with hollow tubes for radiance to freight by fisting something. Coats the enemy in radiance to ignite."
+	icon_state = "dusters_silver"
+	item_state = "dusters_silver"
+	punch_increase = 5
+	price_tag = 0
+
+//obj/item/clothing/gloves/dusters/flamegloves/equipped(var/mob/M)
+//	..()
+//	if(ishuman(M))
+
+/obj/item/clothing/gloves/dusters/flamegloves/attackby(obj/item/C, mob/living/target, mob/living/user, hit_zone)
+	if (iscarbon(target))
+		scorch_attack(target, 15) //I failed here. The intention is to ignite the enemy with these flamegloves, making normal punches ignite enemies. However, I'm too dumb
+
 /obj/item/clothing/gloves/dusters/gloves
 	name = "knuckle gloves"
 	desc = "Gloves with additional reinforcment on the knuckles. \

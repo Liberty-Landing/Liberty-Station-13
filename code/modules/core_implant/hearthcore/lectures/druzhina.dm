@@ -2,11 +2,11 @@
 
 //
 /obj/item/projectile/druzhina
-	damage_types = list(BURN = 20)
+	damage_types = list(BURN = WEAPON_FORCE_HARMLESS)
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
 	hitsound_wall = 'sound/weapons/guns/misc/laser_searwall.ogg'
 	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE
-	armor_penetration = 40 // Specialized solely in High AP
+	armor_penetration = list(ARMOR_PEN_GRAZING)
 	check_armour = ARMOR_ENERGY
 	hitscan = 1
 	invisibility = 101	//beam projectiles are invisible as they are rendered by the effect engine
@@ -24,6 +24,43 @@
 	impact_type = /obj/effect/projectile/laser/cimpact
 */
 
+//end of normal blazelances
+/obj/item/projectile/cblazelance/normal
+	damage_types = list(BRUTE = WEAPON_FORCE_NORMAL) //10 of damage
+	armor_penetration = ARMOR_PEN_SHALLOW
+
+/obj/item/projectile/cblazelance/dangerous
+	damage_types = list(BRUTE = WEAPON_FORCE_DANGEROUS) //20 of damage
+	armor_penetration = ARMOR_PEN_SHALLOW
+
+/obj/item/projectile/cblazelance/robust
+	damage_types = list(BRUTE = WEAPON_FORCE_ROBUST) //26 of damage
+	armor_penetration = ARMOR_PEN_SHALLOW
+
+/obj/item/projectile/cblazelance/brutal
+	damage_types = list(BRUTE = WEAPON_FORCE_BRUTAL) //33 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+//end of normal blazelances
+
+//armor penetration blazelances
+/obj/item/projectile/tblazelance/normal
+	damage_types = list(BRUTE = WEAPON_FORCE_NORMAL) //10 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+
+/obj/item/projectile/tblazelance/dangerous
+	damage_types = list(BRUTE = WEAPON_FORCE_DANGEROUS) //20 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+
+/obj/item/projectile/tblazelance/robust
+	damage_types = list(BRUTE = WEAPON_FORCE_ROBUST) //26 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+
+/obj/item/projectile/tblazelance/brutal
+	damage_types = list(BRUTE = WEAPON_FORCE_BRUTAL) //33 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+//end of armor penetration blazelances
+
+/*
 /obj/item/projectile/druzhina/cblazelance
 	name = "Short blaze lance"
 	icon_state = "fireball_lecture"
@@ -35,7 +72,7 @@
 /obj/item/projectile/druzhina/tblazelance
 	name = "Trenchant Blazelance"
 	icon_state = "fireball_lecture"
-
+*/
 
 /datum/lecture/hearthcore/druzhina
 	name = "Compact Blazelance"
@@ -75,6 +112,20 @@
 /obj/item/gun/cblazelance/New(var/loc, var/mob/living/carbon/lecturer)
 	..()
 	holder = lecturer
+	var/force
+	var/rob = holder.stats.getStat(STAT_ROB)
+	if(changes_projectile)
+		switch(rob)
+			if(1 to 20)
+				force = /obj/item/projectile/cblazelance/normal 
+			if(21 to 40)
+				force = /obj/item/projectile/cblazelance/dangerous 
+			if(41 to 60)
+				force = /obj/item/projectile/cblazelance/robust 
+			if(61 to INFINITY)
+				force = /obj/item/projectile/cblazelance/brutal
+			else
+				force = /obj/item/projectile/cblazelance
 	START_PROCESSING(SSobj, src)
 
 /obj/item/gun/cblazelance/consume_next_projectile()
@@ -140,6 +191,20 @@
 /obj/item/gun/iblazelance/New(var/loc, var/mob/living/carbon/lecturer)
 	..()
 	holder = lecturer
+	var/force
+	var/rob = holder.stats.getStat(STAT_ROB)
+	if(changes_projectile)
+		switch(rob)
+			if(5 to 30)
+				force = /obj/item/projectile/cblazelance/normal 
+			if(30 to 55)
+				force = /obj/item/projectile/cblazelance/dangerous 
+			if(56 to 79)
+				force = /obj/item/projectile/cblazelance/robust 
+			if(80 to INFINITY)
+				force = /obj/item/projectile/cblazelance/brutal
+			else
+				force = /obj/item/projectile/cblazelance
 	START_PROCESSING(SSobj, src)
 
 /obj/item/gun/iblazelance/consume_next_projectile()
@@ -202,6 +267,20 @@
 /obj/item/gun/tblazelance/New(var/loc, var/mob/living/carbon/lecturer)
 	..()
 	holder = lecturer
+	var/force
+	var/rob = holder.stats.getStat(STAT_ROB)
+	if(changes_projectile)
+		switch(rob)
+			if(1 to 20)
+				force = /obj/item/projectile/tblazelance/normal 
+			if(21 to 40)
+				force = /obj/item/projectile/tblazelance/dangerous 
+			if(41 to 60)
+				force = /obj/item/projectile/tblazelance/robust 
+			if(61 to INFINITY)
+				force = /obj/item/projectile/tblazelance/brutal
+			else
+				force = /obj/item/projectile/tblazelance
 	START_PROCESSING(SSobj, src)
 
 /obj/item/gun/tblazelance/consume_next_projectile()
@@ -225,3 +304,20 @@
 	STOP_PROCESSING(SSobj, src)
 	qdel(src)
 	return
+
+/datum/lecture/hearthcore/fisting
+	var/rob = holder.stats.getStat(STAT_ROB)
+		if(rob > 30)
+			name = "Produce Flame Gauntlets"
+			phrase = "Oxidate Lecture: Produce Flame Cestus."
+			desc = "By performing deionisation of the silver in the hands with a hollow pathway for the radiance, it is possible to make Flame Cestus. Each punch covers the enemy in fiery radiance, igniting them."
+			power = 100
+			cooldown = TRUE
+			cooldown_time = 4 HOURS
+			cooldown_category = "flamecestus"
+			return
+		to_chat(C, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+		return //Not enough robustness to use this lecture.
+
+/datum/lecture/hearthcore/druzhina/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	new /obj/item/clothing/gloves/dusters/flamegloves(usr.loc)

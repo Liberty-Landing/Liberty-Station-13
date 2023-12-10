@@ -100,3 +100,11 @@
 	icon_state = "similacrum_nade_large"
 	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/advanced
 	matter = list(MATERIAL_STEEL = 25, MATERIAL_SILVER = 8, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 9)
+
+//Grenadier Knights
+/obj/item/grenade/spawnergrenade/manhacks/radiance
+	name = "\improper Unstable Radiance grenade"
+	desc = "Deploys a poor, confused and desperate radiance-made viscerator in search for its heartless grenadier owner as it practically suffocates to death. Despite its plight, the radiance attacks indiscriminately. The Custodians didn't made that lecture, YOU did. You monster."
+	deliveryamt = 1
+	icon_state = "unstable_radiance"
+	spawner_type = /mob/living/simple_animal/hostile/viscerator/grenadier

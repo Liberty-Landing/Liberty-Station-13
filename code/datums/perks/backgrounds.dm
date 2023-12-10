@@ -209,7 +209,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/background/noble
 	name = "Noble"
-	icon_state = "noble" // https://game-icons.net/1x1/delapouite/throne-king.html
+	icon_state = "noble" // https://game-icons.net/1x1/delapouite/throne-king.html 
 	desc = "You came from a wealthy family of high stature, able to achieve a high education and spent most of your life capable of relaxing. \
 			Start with an heirloom, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
 
@@ -292,6 +292,11 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.metabolism_effects.calculate_nsa()
 	..()
 
+/datum/perk/background/peerage //ask Trilby to help me put the special module here
+	name = "Peerage"
+	icon_state = "peerage" // https://game-icons.net/1x1/lorc/kindle.html
+	desc = "Beyond being a colonist, you are within a legal system of Elohopean hereditary titles. Your surname dictates your importance only outside of the atmosphere. \
+			In another hand, your body allows you to directly communicate with your radiance and respectively train them with the specializations your family or order trained you for."
 // FBP PERKS
 
 /datum/perk/unfeeling

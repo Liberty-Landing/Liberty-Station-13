@@ -357,7 +357,7 @@
 /datum/lecture/hearthcore/base/search
 	name = "Search"
 	phrase = "Oxidate Lecture: Search."
-	desc = "Find the location of disciple."
+	desc = "Find the location of a Knight."
 	success_message = "On the verge of audibility you hear pleasant music with an encoded location in its notes."
 	fail_message = "Your calls have not been answered."
 	power = 25

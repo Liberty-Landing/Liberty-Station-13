@@ -150,14 +150,14 @@
 
 /obj/item/grenade/flashbang/nt
 	name = "NT FBG \"Holy Light\""
-	desc = "An \"Bonfire\" branded flashbang grenade, to spread the light of god."
+	desc = "An \"Cult\" branded flashbang grenade, to spread the light of Crustor and Petaline"
 	icon_state = "flashbang_nt"
 	item_state = "flashbang_nt"
 	matter = list(MATERIAL_BIOMATTER = 15)
 
 /obj/item/grenade/flashbang/nt/flashbang_without_the_bang(turf/T, mob/living/carbon/M)
 	if(M.get_core_implant(/obj/item/implant/core_implant/hearthcore))
-		to_chat(M, span_singing("You are blinded by the Bonfire\' light!"))
+		to_chat(M, span_singing("You are blinded by the Circhosian\' light!"))
 		M.flash(0, FALSE, FALSE , FALSE, 0) // angel light , non-harmfull other than the overlay
 		return
 	..()

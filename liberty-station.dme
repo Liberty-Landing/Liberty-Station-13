@@ -1908,7 +1908,6 @@
 #include "code\modules\core_implant\hearthcore\lectures\cataphract.dm"
 #include "code\modules\core_implant\hearthcore\lectures\construction.dm"
 #include "code\modules\core_implant\hearthcore\lectures\custodian.dm"
-#include "code\modules\core_implant\hearthcore\lectures\dragoon.dm"
 #include "code\modules\core_implant\hearthcore\lectures\druzhina.dm"
 #include "code\modules\core_implant\hearthcore\lectures\grenadier.dm"
 #include "code\modules\core_implant\hearthcore\lectures\group.dm"
