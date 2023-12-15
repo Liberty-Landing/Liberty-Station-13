@@ -134,6 +134,7 @@
 #define GUN_INTERNAL_MAG "internal mag"
 #define GUN_BAYONET "bayonet"
 #define ARROW_FIRING "fires arrows"
+#define RADIANCE_FIRING "uses Hearthcore Power to fire"
 #define GUN_AMR "caliber 14.5mm" // Currently unused
 
 // Weight-based list that gets weight-picked between it, and a stash spawner through Shipbreaker perk

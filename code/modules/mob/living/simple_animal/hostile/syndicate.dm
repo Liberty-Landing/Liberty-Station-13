@@ -232,7 +232,7 @@
 	name = "Confused Radiance"
 	desc = "Radiance that was deployed heartlessly by a Grenadier Knight. The thing was attempting to deliver chemicals to a grenade lecture, yet was betrayed and used as the grenade instead.\
 	Without alveoli or direct oxygenation from the bloodstream, it is suffocating, causing it to attack anything to draw blood to oxygenate itself in genuine panic. Death is the only way out for this one."
-	faction = "neutral"
+	faction = "unstable"
 
 
 /mob/living/simple_animal/hostile/elitemercenary

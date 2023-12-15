@@ -22,3 +22,60 @@
 			return
 		to_chat(C, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
 		return //Not enough robustness to use this lecture.
+
+/obj/item/shield_projector/rectangle/cataphract_personal
+	name = "Cataphract personal shield"
+	description_info = "A fast deploying, personal energy shield. Powered by the Hearthcore internal plasma and delivered and manifested by radiance, it ensures the protection of the user when attacked by surprise. Not the best option, but what you can have any time. \
+	this allows projectiles to leave from inside but blocks projectiles from outside. Everything else can pass through the shield freely, including other people and thrown objects. \
+	The shield also cannot block certain effects which \
+	take place over an area, such as flashbangs or explosions."
+	icon_state = "last_shelter"
+	high_color = "#FFFFFF"
+	shield_health = var/power
+	max_shield_health = var/power
+	size_x = 1
+	size_y = 1
+
+//fill the gaps
+var/obj/item/implant/core_implant/hearthcore/core_implant = holder.var/power
+	if(!core_implant)
+		qdel()
+		return
+	if(core_implant.power <= 0)
+		qdel()
+		return
+	core_implant.power = //The "number drain" is the drain that the shield receives when it gets damaged?
+
+/obj/item/shield_projector/line/create_shields()
+	if(!..())
+		return FALSE
+
+	var/turf/T = get_turf(src) // This is another 'anchor', or will be once we move away from the projector.
+	for(var/i = 1 to offset_from_center)
+		T = get_step(T, dir)
+	if(!T) // We went off the map or something.
+		return
+	// We're at the right spot now.  Build the center piece.
+	create_shield(T, dir)
+
+	var/length_to_build = round( (line_length - 1) / 2)
+	var/turf/temp_T = T
+
+	// First loop, we build the left (from a north perspective) side of the line.
+	for(var/i = 1 to length_to_build)
+		temp_T = get_step(temp_T, turn(dir, 90) )
+		if(!temp_T)
+			break
+		create_shield(temp_T, i == length_to_build ? turn(dir, 45) : dir)
+
+	temp_T = T
+
+	// Second loop, we build the right side.
+	for(var/i = 1 to length_to_build)
+		temp_T = get_step(temp_T, turn(dir, -90) )
+		if(!temp_T)
+			break
+		create_shield(temp_T, i == length_to_build ? turn(dir, -45) : dir)
+	// Finished.
+	update_shield_colors()
+	return TRUE

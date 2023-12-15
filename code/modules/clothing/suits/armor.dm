@@ -236,14 +236,14 @@
 	item_state = "oathbound"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
-	max_upgrades = 2
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)  //It was 30 before. Got higher due to high cost + Cannot Upgrade + Difficulty to produce + the Custodians are the Main "armor" faction.
+	max_upgrades = 0 //I hope this still means it can get nice capes.
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10, MATERIAL_SILVER = 2)
 	var/modifiable = TRUE //used to determine if you can use wire-cutters on this item to change the appearance
 
 /obj/item/clothing/suit/armor/custodian/attackby(var/obj/item/I, var/mob/user)
@@ -305,7 +305,7 @@
 	desc = "The formidable armor of the leaders and guides of the Custodians. A sturdy and fire-resistant design."
 	icon_state = "oathpledge"
 	item_state = "oathpledge"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor_list = list(melee = 50, bullet = 50, energy = 50, bomb = 50, bio = 0, rad = 0)
 	modifiable = FALSE
 	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 

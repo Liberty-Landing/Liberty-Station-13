@@ -125,3 +125,16 @@
 	max_upgrades = 4
 	zoom_factors = list(1.4)
 	extra_damage_mult_scoped = 0.1
+
+
+/obj/item/gun/projectile/bow/hunting
+	name = "Radiance Bow"
+	icon_state = "radiantbow"
+	desc = "A bundle of interconnected radiances that resembles a bow. Used by Hussars in reconnaissance expeditions, it is essentially a hearthcore-powered implant bow. The arrow and the string is made from radiance."
+	matter = list(MATERIAL_BONE = 10, MATERIAL_WOOD = 10, MATERIAL_PLASTIC = 5)
+	penetration_multiplier = 1.5
+	gun_tags = list(ARROW_FIRING)
+	zoom_factors = list(1.6) // Sniper.
+	extra_damage_mult_scoped = 0.2
+	overcharge_timer_step = 4
+	price_tag = 1200
