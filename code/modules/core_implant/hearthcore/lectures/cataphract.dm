@@ -15,13 +15,13 @@
 	power = 35
 
 /datum/lecture/hearthcore/druzhina/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	var/rob = holder.stats.getStat(STAT_ROB)
-		if(rob > 30)
-			to_chat(C, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
-			new /mob/living/carbon/superior_animal/robot/custodians/faux_dummy
-			return
-		to_chat(C, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
-		return //Not enough robustness to use this lecture.
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob > 30)
+		to_chat(lecturer, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
+		new /mob/living/carbon/superior_animal/robot/custodians/faux_dummy(lecturer.loc)
+		return TRUE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+	return FALSE//Not enough robustness to use this lecture.
 
 /obj/item/shield_projector/rectangle/cataphract_personal
 	name = "Cataphract personal shield"
@@ -31,60 +31,37 @@
 	take place over an area, such as flashbangs or explosions."
 	icon_state = "last_shelter"
 	high_color = "#FFFFFF"
-	shield_health = var/power
-	max_shield_health = var/power
+	shield_health = 2
+	max_shield_health = 2
 	size_x = 1
 	size_y = 1
+	var/obj/item/implant/core_implant/hearthcore/linked_hearthcore
+
+// All the shields tied to their projector are one 'unit', and don't have individualized health values like most other shields.
+/obj/effect/directional_shield/cataphract_personal/adjust_health(amount)
+	if(projector)
+		projector.adjust_health(amount)
+
+/obj/item/shield_projector/rectangle/cataphract_personal/create_shield(newloc, new_dir)
+	var/obj/effect/directional_shield/cataphract_personal/S = new(newloc, src)
+	S.dir = new_dir
+	active_shields += S
 
 //fill the gaps
-var/obj/item/implant/core_implant/hearthcore/core_implant = holder.var/power
-	if(!core_implant)
-		qdel()
+/obj/item/shield_projector/rectangle/cataphract_personal/attack_hand(mob/living/carbon/human/user as mob)
+	if(!user.get_core_implant(/obj/item/implant/core_implant/hearthcore))
+		qdel(src)
 		return
-	if(core_implant.power <= 0)
-		qdel()
-		return
-	core_implant.power = //The "number drain" is the drain that the shield receives when it gets damaged?
+		var/obj/item/implant/core_implant/hearthcore/C = user.get_core_implant(/obj/item/implant/core_implant/hearthcore)
+		if(C.power <= 0)
+			qdel(src)
+			return
+		shield_health = C.power
+		max_shield_health = C.max_power
+		linked_hearthcore = C
 
-/obj/item/shield_projector/line/create_shields()
-	if(!..())
-		return FALSE
+/obj/item/shield_projector/rectangle/cataphract_personal/adjust_health(amount)
+	..()
+	if(linked_hearthcore.power <= 0)
+		destroy_shields()
 
-	var/turf/T = get_turf(src) // This is another 'anchor', or will be once we move away from the projector.
-	for(var/i = 1 to offset_from_center)
-		T = get_step(T, dir)
-	if(!T) // We went off the map or something.
-		return
-	// We're at the right spot now.  Build the center piece.
-	create_shield(T, dir)
-
-	var/length_to_build = round( (line_length - 1) / 2)
-	var/turf/temp_T = T
-
-	// First loop, we build the left (from a north perspective) side of the line.
-	for(var/i = 1 to length_to_build)
-		temp_T = get_step(temp_T, turn(dir, 90) )
-		if(!temp_T)
-			break
-		create_shield(temp_T, i == length_to_build ? turn(dir, 45) : dir)
-
-	temp_T = T
-
-	// Second loop, we build the right side.
-	for(var/i = 1 to length_to_build)
-		temp_T = get_step(temp_T, turn(dir, -90) )
-		if(!temp_T)
-			break
-		create_shield(temp_T, i == length_to_build ? turn(dir, -45) : dir)
-	// Finished.
-	update_shield_colors()
-	return TRUE
-=======
-	var/rob = lecturer.stats.getStat(STAT_ROB)
-	if(rob > 30)
-		to_chat(lecturer, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
-		new /mob/living/carbon/superior_animal/robot/custodians/faux_dummy(lecturer.loc)
-		return TRUE
-	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
-	return FALSE//Not enough robustness to use this lecture.
->>>>>>> 3bf8964ee9623cb13753a5e041e6eb8535eba59d

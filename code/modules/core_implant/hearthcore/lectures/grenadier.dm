@@ -66,7 +66,6 @@
 		var/turf/T = get_turf(src)
 
 		playsound(flame.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
-		addtimer(CALLBACK(nukier_holder, /obj/item/projectile/grenadier/siege_blazelance/on_impact, lecturer, 0 SECONDS))
 		nukier_holder.unEquip(flame)
 		explosion(T, 0, 1, 2, 4)
 		new /obj/effect/explosion(T)
