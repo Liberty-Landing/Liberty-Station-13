@@ -105,23 +105,23 @@
 	damtype = BURN
 	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
 	var/use_amount = 1 // How many times can it be used
-	var/mob/living/carbon/holder // Used to delete when dropped
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // Used to delete when dropped
 	serial_shown = FALSE
 	safety = FALSE
 
 /obj/item/gun/cblazelance/New(var/loc, var/mob/living/carbon/lecturer)
 	..()
 	holder = lecturer
-	var/force
 	var/rob = holder.stats.getStat(STAT_ROB)
 	if(changes_projectile)
 		switch(rob)
 			if(1 to 20)
-				force = /obj/item/projectile/cblazelance/normal 
+				force = /obj/item/projectile/cblazelance/normal
 			if(21 to 40)
-				force = /obj/item/projectile/cblazelance/dangerous 
+				force = /obj/item/projectile/cblazelance/dangerous
 			if(41 to 60)
-				force = /obj/item/projectile/cblazelance/robust 
+				force = /obj/item/projectile/cblazelance/robust
 			if(61 to INFINITY)
 				force = /obj/item/projectile/cblazelance/brutal
 			else
@@ -181,26 +181,26 @@
 	damtype = BURN
 	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
 	var/use_amount = 3 // How many times can it be used
-	var/mob/living/carbon/holder // Used to delete when dropped
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // If we change are bullet type on spawn
 	serial_shown = FALSE
 	safety = FALSE
 	init_firemodes = list(
 		list(mode_name="3-round bursts", mode_desc="Your radiance craves it. Punish thy enemy thrice.", burst=3, fire_delay=0.2, move_delay=null, icon="burst"),
 		)
 
-/obj/item/gun/iblazelance/New(var/loc, var/mob/living/carbon/lecturer)
+/obj/item/gun/iblazelance/New(loc, mob/living/carbon/lecturer)
 	..()
 	holder = lecturer
-	var/force
 	var/rob = holder.stats.getStat(STAT_ROB)
 	if(changes_projectile)
 		switch(rob)
 			if(5 to 30)
-				force = /obj/item/projectile/cblazelance/normal 
+				force = /obj/item/projectile/cblazelance/normal
 			if(30 to 55)
-				force = /obj/item/projectile/cblazelance/dangerous 
+				force = /obj/item/projectile/cblazelance/dangerous
 			if(56 to 79)
-				force = /obj/item/projectile/cblazelance/robust 
+				force = /obj/item/projectile/cblazelance/robust
 			if(80 to INFINITY)
 				force = /obj/item/projectile/cblazelance/brutal
 			else
@@ -224,6 +224,7 @@
 
 // Alternative to drop it: Use in hand to extinguish
 /obj/item/gun/iblazelance/attack_self(mob/user)
+	user.unEquip(src)
 	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the reddish metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, disappointed for not being used."), "You hear the sounds of purification in progress.")
 	STOP_PROCESSING(SSobj, src)
 	qdel(src)
@@ -260,23 +261,23 @@
 	damtype = BURN
 	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
 	var/use_amount = 1 // How many times can it be used
-	var/mob/living/carbon/holder // Used to delete when dropped
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // Used to delete when dropped
 	serial_shown = FALSE
 	safety = FALSE
 
 /obj/item/gun/tblazelance/New(var/loc, var/mob/living/carbon/lecturer)
 	..()
 	holder = lecturer
-	var/force
 	var/rob = holder.stats.getStat(STAT_ROB)
 	if(changes_projectile)
 		switch(rob)
 			if(1 to 20)
-				force = /obj/item/projectile/tblazelance/normal 
+				force = /obj/item/projectile/tblazelance/normal
 			if(21 to 40)
-				force = /obj/item/projectile/tblazelance/dangerous 
+				force = /obj/item/projectile/tblazelance/dangerous
 			if(41 to 60)
-				force = /obj/item/projectile/tblazelance/robust 
+				force = /obj/item/projectile/tblazelance/robust
 			if(61 to INFINITY)
 				force = /obj/item/projectile/tblazelance/brutal
 			else
@@ -300,24 +301,25 @@
 
 // Alternative to drop it: Use in hand to extinguish
 /obj/item/gun/tblazelance/attack_self(mob/user)
+	user.unEquip(src)
 	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, disappointed for not being used."), "You hear the sounds of purification in progress.")
 	STOP_PROCESSING(SSobj, src)
 	qdel(src)
 	return
 
 /datum/lecture/hearthcore/fisting
-	var/rob = holder.stats.getStat(STAT_ROB)
-		if(rob > 30)
-			name = "Produce Flame Gauntlets"
-			phrase = "Oxidate Lecture: Produce Flame Cestus."
-			desc = "By performing deionisation of the silver in the hands with a hollow pathway for the radiance, it is possible to make Flame Cestus. Each punch covers the enemy in fiery radiance, igniting them."
-			power = 100
-			cooldown = TRUE
-			cooldown_time = 4 HOURS
-			cooldown_category = "flamecestus"
-			return
-		to_chat(C, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
-		return //Not enough robustness to use this lecture.
+	name = "Produce Flame Gauntlets"
+	phrase = "Oxidate Lecture: Produce Flame Cestus."
+	desc = "By performing deionisation of the silver in the hands with a hollow pathway for the radiance, it is possible to make Flame Cestus. Each punch covers the enemy in fiery radiance, igniting them."
+	power = 100
+	cooldown = TRUE
+	cooldown_time = 4 HOURS
+	cooldown_category = "flamecestus"
 
-/datum/lecture/hearthcore/druzhina/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	new /obj/item/clothing/gloves/dusters/flamegloves(usr.loc)
+/datum/lecture/hearthcore/fisting/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob >= 30) //You need 30 robustness at minimum to use this lecture
+		new /obj/item/clothing/gloves/dusters/flamegloves(lecturer.loc)
+		return TRUE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+	return FALSE

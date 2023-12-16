@@ -2384,6 +2384,7 @@
 #include "code\modules\mob\living\carbon\superior_animal\robots\build_a_drone\build_a_drone.dm"
 #include "code\modules\mob\living\carbon\superior_animal\robots\build_a_drone\presets.dm"
 #include "code\modules\mob\living\carbon\superior_animal\robots\subtype\custodians\custodians.dm"
+#include "code\modules\mob\living\carbon\superior_animal\robots\subtype\custodians\types\fauxdummy.dm"
 #include "code\modules\mob\living\carbon\superior_animal\robots\subtype\custodians\types\suzerain.dm"
 #include "code\modules\mob\living\carbon\superior_animal\robots\subtype\custodians\types\vassal.dm"
 #include "code\modules\mob\living\carbon\superior_animal\robots\subtype\mining\mining_drone.dm"
