@@ -28,15 +28,15 @@
 /datum/lecture/hearthcore/grenadier/sblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob >= 40) //You need 40 robustness at minimum to use this lecture
-		var/flame = new /obj/item/gun/energy/siege_blazelance
-		if(lecturer.equip_to_slot_if_possible(flame, lecturer.get_active_hand()))
-
+		var/flame = new /obj/item/gun/energy/siege_blazelance(src)
+		if(lecturer.put_in_active_hand(flame))
 			addtimer(CALLBACK(lecturer, /datum/lecture/hearthcore/grenadier/sblazelance/proc/warn_nuker, lecturer, flame), 3 SECONDS)
 
 			lecturer.visible_message("As [lecturer] speaks, their hand now covered with a strange, blood-red ionized metal that sparks with pure unstability.")
 			lecturer.adjustFireLoss(10)
 			lecturer.adjustHalLoss(10)
 			return TRUE
+		qdel(flame)
 		to_chat(lecturer, "<span class='info'>You need your active hand to be free!.</span>")
 		return FALSE
 	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons, but this time you think this is for the best.</span>")
@@ -111,6 +111,14 @@
 	power = 70
 
 	//still making. Make it a RnG grenade that pops anything at random.
+
+/datum/lecture/hearthcore/grenadier/grenadiercurse/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/grenadier_rng_nade = new /obj/item/grenade/grenadier
+	if(lecturer.equip_to_slot_if_possible(grenadier_rng_nade, lecturer.get_active_hand()))
+		return TRUE
+	to_chat(lecturer, "<span class='info'>You need your active hand to be free!.</span>")
+	qdel(grenadier_rng_nade)
+	return FALSE
 
 //explosive object hehe
 /obj/item/grenade/grenadier

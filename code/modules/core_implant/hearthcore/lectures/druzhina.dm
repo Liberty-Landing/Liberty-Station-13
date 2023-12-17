@@ -322,6 +322,10 @@
 	cooldown_time = 4 HOURS
 	cooldown_category = "flamecestus"
 
+/obj/item/clothing/gloves/dusters/flamegloves
+	name = "placeholder flame gloves"
+	desc = "the flame part is the burning passion for violent actions, not like real flames."
+
 /datum/lecture/hearthcore/druzhina/flame_gautlets/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob >= 30) //You need 30 robustness at minimum to use this lecture
