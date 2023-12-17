@@ -8,7 +8,7 @@
 
 /datum/lecture/hearthcore/hussar/dummy
 	name = "Assemble: Taunting Dummy"
-	phrase = "Radiance, hear me. Assemble the Tauting Dummy."
+	phrase = "Radiance, hear me. Assemble the Taunting Dummy."
 	desc = "Assemble with your own radiance a thin, taunting dummy. It looks like a moving body to animalistic enemies, may not work for people. Can still be used as a living shield."
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
@@ -64,4 +64,3 @@
 	..()
 	if(linked_hearthcore.power <= 0)
 		destroy_shields()
-
