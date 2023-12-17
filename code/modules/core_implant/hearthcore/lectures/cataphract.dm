@@ -14,7 +14,7 @@
 	cooldown_time = 15 MINUTES
 	power = 35
 
-/datum/lecture/hearthcore/druzhina/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+/datum/lecture/hearthcore/hussar/dummy/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob > 30)
 		to_chat(lecturer, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
@@ -52,13 +52,13 @@
 	if(!user.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 		qdel(src)
 		return
-		var/obj/item/implant/core_implant/hearthcore/C = user.get_core_implant(/obj/item/implant/core_implant/hearthcore)
-		if(C.power <= 0)
-			qdel(src)
-			return
-		shield_health = C.power
-		max_shield_health = C.max_power
-		linked_hearthcore = C
+	var/obj/item/implant/core_implant/hearthcore/C = user.get_core_implant(/obj/item/implant/core_implant/hearthcore)
+	if(C.power <= 0)
+		qdel(src)
+		return
+	shield_health = C.power
+	max_shield_health = C.max_power
+	linked_hearthcore = C
 
 /obj/item/shield_projector/rectangle/cataphract_personal/adjust_health(amount)
 	..()

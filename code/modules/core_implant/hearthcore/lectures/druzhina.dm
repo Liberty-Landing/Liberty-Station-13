@@ -75,12 +75,18 @@
 */
 
 /datum/lecture/hearthcore/druzhina
+	name = "Druzhina"
+	category = "Druzhina"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/hearthcore
+
+/datum/lecture/hearthcore/druzhina/blazelance
 	name = "Compact Blazelance"
 	phrase = "Oxidate Lecture: Compact Blazelance."
 	desc = "By allowing your radiance to spread to the surface of your skin, it is possible to quickly release protective layer of silver from the skin pores heated up by the Hearthcore's internal plasma, which can be disparated against any enemy with great accuracy."
 	power = 35
 
-/datum/lecture/hearthcore/druzhina/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+/datum/lecture/hearthcore/druzhina/blazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/obj/item/gun/cblazelance/flame = new /obj/item/gun/cblazelance(src, lecturer)
 	lecturer.visible_message(
 		"As [lecturer] speaks, their hand now covered with a strange, silvery ionized metal.",
@@ -150,13 +156,13 @@
 	qdel(src)
 	return
 
-/datum/lecture/hearthcore/iblazelance
+/datum/lecture/hearthcore/druzhina/iblazelance
 	name = "Infernal Blazelance"
 	phrase = "Oxidate Lecture: Infernal Blazelance."
 	desc = "By allowing your radiance to spread to the surface of your skin with a slim converging silver lense, it is possible to make your fiery radiance to spread out. Very low with accuracy."
 	power = 50
 
-/datum/lecture/hearthcore/iblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+/datum/lecture/hearthcore/druzhina/iblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/obj/item/gun/iblazelance/flame = new /obj/item/gun/iblazelance(src, lecturer)
 	lecturer.visible_message(
 		"As [lecturer] speaks, their hand now covered with a strange, reddish ionized metal.",
@@ -230,13 +236,13 @@
 	qdel(src)
 	return
 
-/datum/lecture/hearthcore/tblazelance
+/datum/lecture/hearthcore/druzhina/tblazelance
 	name = "Trenchant Blazelance"
 	phrase = "Oxidate Lecture: Trenchant Blazelance."
 	desc = "By allowing your radiance to spread to the surface of your skin with a slim diverging silver lense, it is possible to make your fiery radiance to concentrate in one point, capable of destroying armor, but causing less damage in the flesh. Very high with accuracy."
 	power = 50
 
-/datum/lecture/hearthcore/tblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+/datum/lecture/hearthcore/druzhina/tblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/obj/item/gun/tblazelance/flame = new /obj/item/gun/tblazelance(src, lecturer)
 	lecturer.visible_message(
 		"As [lecturer] speaks, their hand now covered with a strange, bluish ionized metal.",
@@ -307,7 +313,7 @@
 	qdel(src)
 	return
 
-/datum/lecture/hearthcore/fisting
+/datum/lecture/hearthcore/druzhina/flame_gautlets
 	name = "Produce Flame Gauntlets"
 	phrase = "Oxidate Lecture: Produce Flame Cestus."
 	desc = "By performing deionisation of the silver in the hands with a hollow pathway for the radiance, it is possible to make Flame Cestus. Each punch covers the enemy in fiery radiance, igniting them."
@@ -316,7 +322,7 @@
 	cooldown_time = 4 HOURS
 	cooldown_category = "flamecestus"
 
-/datum/lecture/hearthcore/fisting/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+/datum/lecture/hearthcore/druzhina/flame_gautlets/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob >= 30) //You need 30 robustness at minimum to use this lecture
 		new /obj/item/clothing/gloves/dusters/flamegloves(lecturer.loc)

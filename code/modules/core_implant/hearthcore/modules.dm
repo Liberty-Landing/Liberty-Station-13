@@ -90,18 +90,19 @@
 
 
 /datum/core_module/lectures/hearthcore/druzhina
-	ritual_types = list(
-	/datum/lecture/hearthcore/druzhina,
-	/datum/lecture/hearthcore/iblazelance,
-	/datum/lecture/hearthcore/tblazelance)
+	ritual_types = list(/datum/lecture/hearthcore/druzhina)
 
 /datum/core_module/lectures/hearthcore/cataphract
+//	ritual_types = list(/datum/lecture/hearthcore/cataphract)
 
 /datum/core_module/lectures/hearthcore/hussar
+	ritual_types = list(/datum/lecture/hearthcore/hussar)
 
 /datum/core_module/lectures/hearthcore/dragoon
+//	ritual_types = list(/datum/lecture/hearthcore/dragoon)
 
 /datum/core_module/lectures/hearthcore/grenadier
+	ritual_types = list(/datum/lecture/hearthcore/grenadier)
 
 
 
