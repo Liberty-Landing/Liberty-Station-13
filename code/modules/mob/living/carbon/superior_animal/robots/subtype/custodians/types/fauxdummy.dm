@@ -3,8 +3,8 @@
 	desc = "The Radiant Faux Dummy, a rather makeshifted pseudo-automaton of the Custodians, settled and built by any specialized Hussar Knight.\
 	Inert, neutral and almost undestructible. The Radiance stresses itself as springs, as it releases heat and air to simulate breathing, so enemies will attack it instead of the knight."
 	faction = "neutral"
-	icon_state = "suzerain_automaton"
-	icon_dead = "suzerain_automaton_dead"
+	icon_state = "fauxdummy"
+	icon_dead = "fauxdummy_dead"
 	fleshcolor = "#964B00"
 	bloodcolor = "#964B00"
 	attacktext = "taunts"
@@ -23,3 +23,9 @@
 
 /mob/living/carbon/superior_animal/robot/custodians/faux_dummy/advance_towards(var/atom/target)
 	return // Don't move from your spot even if you target, you are a turret
+
+/mob/living/carbon/superior_animal/robot/custodians/faux_dummy/doTargetMessage()
+	. = ..()
+
+	visible_emote("yells, \"[pick("Verily, thy wit is as sharp as a butter knife!","Thou swingest thy sword like a daffodil in the breeze, gentle and without purpose!","By my troth, thou art a master of gunnery! But I dare say, the barn door doth beg to differ!", "Hast thou considered a career in jesting? Thy attempts at combat are most amusing!", "Verily, thou art a master of strategy — a strategy of confusion, that is!", "Marry, thy armor doth shine like the moon — full of craters!")]")
+	playsound(src, 'sound/machine/snarkybot.ogg', 50, 1, -3) //
