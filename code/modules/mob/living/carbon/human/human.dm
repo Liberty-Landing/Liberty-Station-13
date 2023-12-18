@@ -308,7 +308,12 @@ var/list/rank_prefix = list(\
 	"Club Manager" = "Manager",\
 	"Field Shepherd" = "Shepherd",\
 	"Oathpledge" = "Oathpledge",\
+	"Forgemaster" = "Lord"
+	"Enkindled" = "Lord"
+	"Oathbound" = "Lord"
 	)
+
+//Asking trilby for help to make the Forgemaster, Enkindled and Oathbound to be named "Lord" for males, "Lady" for females.
 
 /mob/living/carbon/human/proc/rank_prefix_name(name)
 	if(get_id_rank())

@@ -81,9 +81,9 @@
 	return FALSE
 
 /datum/lecture/hearthcore/custodian/offering/buy_item
-	name = "Order Armaments"
-	phrase = "Oxidate Lecture: Order Armaments"
-	desc = "Allows you to spend armament reserves to order specialized weaponry from the lower Stronghold."
+	name = "Manifest Neural Links"
+	phrase = "Oxidate Lecture: Manifest neural links"
+	desc = "Powered by raw ectoderms, it is possible to manifest advanced equipments and infusing neurons either for complex custodian artisanwork."
 
 /datum/lecture/hearthcore/custodian/offering/buy_item/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C, targets)
 	var/list/OBJS = get_front(H)

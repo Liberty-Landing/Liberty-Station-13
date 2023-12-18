@@ -1,7 +1,7 @@
 //Look Sir, free crabs!
 /mob/living/simple_animal/crab
 	name = "crab"
-	desc = "A hard-shelled crustacean. Seems quite content to lounge around all the time."
+	desc = "A hard-shelled crustacean. Seems quite content to lounge around all the time. Actually, this one looks quite suspicious..."
 	icon_state = "crab"
 	mob_size = MOB_SMALL
 	speak_emote = list("clicks")

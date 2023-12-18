@@ -304,6 +304,16 @@
 
 //Custodians
 
+/obj/item/clothing/head/helmet/ballistic
+	name = "Equite Headgear"
+	desc = "The cheaper, mass produced version of the Oathbound's helmet. With less material costs, this helmet only rivals the other basic helmets, but it is easy to be made by any autolathe."
+	icon_state = "equite_helmet"
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES
+	body_parts_covered = HEAD|FACE|EARS
+	obscuration = LIGHT_OBSCURATION
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 6, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10)
+
 
 /obj/item/clothing/head/helmet/custodian
 	name = "custodian helmet base item"

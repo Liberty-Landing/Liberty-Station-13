@@ -3,8 +3,8 @@ var/global/obj/machinery/power/eotp/eotp
 
 /obj/machinery/power/eotp
 	name = "Embers of Theoretical Philosophy"
-	desc = "A specialized machine designed to supply the surface stronghold with Custodian design disks and blessings from the lower stronghold. By making offerings of supplies or materials readily produced \
-	by the Custodians, members can obtain disks and other goods. The EOTP also provides various blessings and monitors areas protected by torchbearers for potential threats to the colony, marked by its \
+	desc = "A specialized machine designed to supply the surface stronghold with Custodian design disks, blessings from the lower stronghold and neural content. By making offerings of supplies or materials readily produced \
+	by the Custodians, members can obtain disks and neural infusers for advanced equipment. The EOTP also provides various blessings and monitors areas protected by torchbearers for potential threats to the colony, marked by its \
 	observation level, letting it warn Custodians ahead of time. Additionally, it passively gains power before unleashing various blessings to Hearthcore users."
 	icon = 'icons/obj/eotp.dmi'
 	icon_state = "eotp"
