@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/mk58
 	name = "\"Thorn\" pistol"
-	desc = "The first firearm produced by the Church of the Bonfire, predating even the Testament, the OT Thorn is a cheap, ubiquitous sidearm and one of the few Church-branded ballistic weapons. Fires 9mm rounds and bears a suspicious resemblance to the Mk-58 Mod 0."
+	desc = "The first firearm produced by the Cultists, predating even their banishment, the Thorn Pistol is a cheap, ubiquitous sidearm and one of the few Cult-branded ballistic weapons. Fires 9mm rounds and bears a suspicious resemblance to the Mk-58 Mod 0 - letting it know how far they steal technology."
 	icon = 'icons/obj/guns/projectile/mk58.dmi'
 	icon_state = "mk58"
 	item_state = "mk58"
@@ -16,15 +16,15 @@
 	penetration_multiplier = 0.9
 	init_recoil = HANDGUN_RECOIL(0.9)
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
-	serial_type = "Bonfire"
+	serial_type = "Circhosian"
 
 	wield_delay = 0.2 SECOND
 	wield_delay_factor = 0.2 // 20 vig
 	gun_parts = list(/obj/item/part/gun/frame/mk58 = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/pistol = 1, /obj/item/part/gun/barrel/pistol = 1)
 
 /obj/item/part/gun/frame/mk58
-	name = "Bonfire Pistol frame"
-	desc = "A standardized pistol frame from the Bonfire. The frame needed to make either the Thorn or the Rose."
+	name = "Circhosian Pistol frame"
+	desc = "A standardized pistol frame from the Circhosian Cult. The frame needed to make either the Thorn or the Rose."
 	icon_state = "frame_mk58"
 	result = /obj/item/gun/projectile/mk58
 	resultvars = list(/obj/item/gun/projectile/mk58, /obj/item/gun/projectile/mk58/wood)
@@ -52,7 +52,7 @@
 
 /obj/item/gun/projectile/mk58/wood
 	name = "\"Rose\" magnum pistol"
-	desc = "The OT Rose was the first firearm produced by the Testament and one of the final Church ballistic inventions. Essentially a \"Thorn\" rechambered in 10mm with a fine wood finish to commemorate the Testament's founding."
+	desc = "The OT Rose was the first firearm produced after the Banishment of the cult, as it is one of the final Circhosian ballistic inventions. Essentially a \"Thorn\" rechambered in 10mm with a fine wood finish to commemorate the founding of the Cult."
 	icon = 'icons/obj/guns/projectile/mk58_wood.dmi'
 	icon_state = "mk58"
 	item_state = "mk58"
