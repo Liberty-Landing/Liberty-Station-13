@@ -5,6 +5,11 @@
 	requiredPerk = PERK_RADIANCE
 	icon_state = "dischargemisc_mold"
 
+//Temp here for complieing reasons
+/obj/item/mold/granule_neuron
+/obj/item/mold/renshaw_neuron
+/obj/item/stack/mold_kit/masonry
+
 /datum/craft_recipe/custodians/oathbound_set
 	name = "Oathbound Armor Set"
 	result = /obj/item/storage/box/oathbound_set
@@ -24,6 +29,7 @@
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
 		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
 		list(QUALITY_SAWING, 30, "time" = 10),
+		list(/obj/item/mold/granule_neuron, 1)
 	)
 
 /datum/craft_recipe/custodians/enkindled_set
@@ -45,6 +51,7 @@
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
 		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
 		list(QUALITY_SAWING, 30, "time" = 10),
+		list(/obj/item/mold/granule_neuron, 1)
 	)
 
 /datum/craft_recipe/custodians/forgemaster_set
@@ -66,6 +73,7 @@
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
 		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
 		list(QUALITY_SAWING, 30, "time" = 10),
+		list(/obj/item/mold/granule_neuron, 1)
 	)
 
 /datum/craft_recipe/custodians/oathpledge_set
@@ -86,7 +94,8 @@
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
 		list(/obj/item/clothing/head/helmet/custodian/firesuit, 1),
 		list(/obj/item/mold/oathpledge_neuron, 1),
-		list(QUALITY_SAWING, 30, "time" = 10),
+		list(/obj/item/mold/granule_neuron, 1),
+		list(QUALITY_SAWING, 30, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/voidsuit
@@ -108,6 +117,7 @@
 		list(QUALITY_HAMMERING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/radiance_sigil, 1),
 		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
+		list(/obj/item/mold/granule_neuron, 1)
 	)
 
 /datum/craft_recipe/custodians/knife_custodian
@@ -130,7 +140,7 @@
 		list(/obj/item/stack/mold_kit/tailoring, 1),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
+		list(QUALITY_SCREW_DRIVING, 30, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/horseman_axe
@@ -147,7 +157,7 @@
 		list(QUALITY_WELDING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(CRAFT_MATERIAL, 8, MATERIAL_CARBON_FIBER, "time" = 5),
-		list(QUALITY_PULSING, 30, "time" = 10),
+		list(QUALITY_PULSING, 30, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/atgeir
@@ -164,7 +174,7 @@
 		list(QUALITY_WELDING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/blacksmithing, 1),
-		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
+		list(QUALITY_BOLT_TURNING, 30, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/emberblaze
@@ -181,7 +191,7 @@
 		list(QUALITY_WELDING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(CRAFT_MATERIAL, 2, MATERIAL_SILVER, "time" = 5),
-		list(QUALITY_PULSING, 30, "time" = 10),
+		list(QUALITY_PULSING, 30, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/conflagration
@@ -204,6 +214,7 @@
 		list(CRAFT_MATERIAL, 10, MATERIAL_CARBON_FIBER, "time" = 5),
 		list(/obj/item/stack/mold_kit/masonry, 1),
 		list(QUALITY_PULSING, 30, "time" = 10),
+		list(/obj/item/mold/renshaw_neuron, 1)
 	)
 
 /datum/craft_recipe/custodians/francisca
@@ -220,7 +231,7 @@
 		list(QUALITY_CUTTING, 20, "time" = 10),
 		list(CRAFT_MATERIAL, 15, MATERIAL_BIO_SILK, "time" = 5),
 		list(QUALITY_WELDING, 30, "time" = 20),
-		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
+		list(QUALITY_WIRE_CUTTING, 30, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/nagaika
@@ -236,7 +247,7 @@
 		list(QUALITY_CUTTING, 20, "time" = 10),
 		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
 		list(CRAFT_MATERIAL, 10, MATERIAL_CARBON_FIBER, "time" = 5),
-		list(QUALITY_HAMMERING, 25, "time" = 10),
+		list(QUALITY_HAMMERING, 25, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/scutum
@@ -253,7 +264,7 @@
 		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
 		list(QUALITY_HAMMERING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/radiance_sigil, 1),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
+		list(QUALITY_SCREW_DRIVING, 30, "time" = 10)
 	)
 
 /datum/craft_recipe/custodians/heater_shield
@@ -270,6 +281,7 @@
 		list(/obj/item/stack/mold_kit/blacksmithing, 1),
 		list(/obj/item/book/lectures/hearthlantern, 1),
 		list(QUALITY_HAMMERING, 30, "time" = 10),
+		list(/obj/item/mold/renshaw_neuron, 1)
 	)
 
 /datum/craft_recipe/custodians/sludge_staff
@@ -281,10 +293,12 @@
 		list(/obj/item/stack/mold_kit/masonry, 2),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 20),
 		list(/obj/item/stack/mold_kit/tailoring, 1),
-		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
+		list(QUALITY_SCREW_DRIVING, 30, "time" = 10)
 	)
 
+//No longer a Custodian production. This is better settled to Terra-Therma who have control over modifications. Custodians artisanwork is like artists who don't want other people to edit their art
 
+/*
 /datum/craft_recipe/custodians/melee_plating
 	name = "melee plating"
 	result = /obj/item/tool_upgrade/armor/melee
@@ -349,3 +363,4 @@
 		list(QUALITY_BOLT_TURNING, 30, "time" = 90),
 		list(QUALITY_SAWING, 30, "time" = 90)
 	)
+*/

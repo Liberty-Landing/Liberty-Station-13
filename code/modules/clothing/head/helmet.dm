@@ -310,8 +310,8 @@
 	desc = "Not supposed to be seen in-game"
 	icon_state = "oathbound_helmet"
 	item_state = "oathbound_helmet"
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
-	max_upgrades = 2
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0) //It was 30 before. Got higher due to high cost + Cannot Upgrade + Difficulty to produce + the Custodians are the Main "armor" faction.
+	max_upgrades = 0 //I hope this still means it can get nice details on the head.
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	obscuration = LIGHT_OBSCURATION
@@ -319,7 +319,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = HEAD|FACE|EARS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10, MATERIAL_SILVER = 2)
 
 /obj/item/clothing/head/helmet/custodian/firesuit
 	name = "flameshield helmet"
@@ -354,7 +354,7 @@
 	desc = "A helmet for the leaders and guides of the Custodians, this design is extremely resistant to damage."
 	icon_state = "oathpledge_helmet"
 	item_state = "oathpledge_helmet"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 100, rad = 0)
+	armor_list = list(melee = 50, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 0)
 	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 
 //Hunter's Lodge
