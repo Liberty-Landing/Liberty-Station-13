@@ -230,7 +230,7 @@
 
 //Custodians
 
-/obj/item/clothing/head/helmet/ballistic
+/obj/item/clothing/suit/armor/equite
 	name = "Equite Breastplate"
 	desc = "The cheaper, mass produced version of the Oathbound's armor. With less material costs, this armor only rivals the other basic armors, but it is easy to be made by any autolathe."
 	icon_state = "equite_armor"
