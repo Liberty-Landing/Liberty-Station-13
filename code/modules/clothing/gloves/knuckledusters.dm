@@ -90,21 +90,30 @@
 	punch_increase = 15 // Made of platinum and are crafted with spikes, extra damage.
 	price_tag = 30
 
-/obj/item/clothing/gloves/dusters/flamecestus //I need Trilby help. This cestus can only be made once by a Druzhina, and actually ignite people when punching. It just slightly increases punching damage.
-	name = "Druzhina flame cestus"
-	desc = "Silvery wrapping with hollow tubes for radiance to freight by fisting something. Coats the enemy in radiance to ignite."
-	icon_state = "dusters_silver"
-	item_state = "dusters_silver"
-	punch_increase = 5
-	price_tag = 0
+// Custodian Druzhina-exclusive cestus. Ignites all living carbon forms in flames when punches connect.
+/obj/item/clothing/gloves/dusters/flamecestus
+    name = "Druzhina flame cestus"
+    desc = "Silvery wrapping with hollow tubes for radiance to freight by fisting something. Coats the enemy in radiance to ignite."
+    icon_state = "dusters_silver"
+    item_state = "dusters_silver"
+    punch_increase = 5 // Just a little extra damage, already strong by being able to light non-robots on fire.
+    price_tag = 0
 
-//obj/item/clothing/gloves/dusters/flamegloves/equipped(var/mob/M)
-//	..()
-//	if(ishuman(M))
 
-/obj/item/clothing/gloves/dusters/flamegloves/attackby(obj/item/C, mob/living/target, mob/living/user, hit_zone)
-	if (iscarbon(target))
-		scorch_attack(target, 15) //I failed here. The intention is to ignite the enemy with these flamegloves, making normal punches ignite enemies. However, I'm too dumb
+/obj/item/clothing/gloves/dusters/flamecestus/update_dusters(mob/living/carbon/human/user)
+	if(istype(user))
+		// Give us the flag that causes us to light people on fire with unarmed attacks.
+		if(user.gloves == src && !dusters_givith)
+			user.punch_damage_increase += punch_increase
+			dusters_givith = TRUE
+			to_remove_givith = TRUE
+			user.shining_finger = TRUE
+		// Remove the flag from us when we take off our gloves.
+		if(to_remove_givith && !(user.gloves == src))
+			user.punch_damage_increase -= punch_increase
+			dusters_givith = FALSE
+			to_remove_givith = FALSE
+			user.shining_finger = FALSE
 
 /obj/item/clothing/gloves/dusters/gloves
 	name = "knuckle gloves"
@@ -165,3 +174,4 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return TRUE
+//

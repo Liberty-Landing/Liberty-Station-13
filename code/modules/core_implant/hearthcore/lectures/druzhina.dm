@@ -313,8 +313,8 @@
 	qdel(src)
 	return
 
-/datum/lecture/hearthcore/druzhina/flame_gautlets
-	name = "Produce Flame Gauntlets"
+/datum/lecture/hearthcore/druzhina/flamecestus
+	name = "Produce Flame Cestus"
 	phrase = "Oxidate Lecture: Produce Flame Cestus."
 	desc = "By performing deionisation of the silver in the hands with a hollow pathway for the radiance, it is possible to make Flame Cestus. Each punch covers the enemy in fiery radiance, igniting them."
 	power = 100
@@ -322,14 +322,10 @@
 	cooldown_time = 4 HOURS
 	cooldown_category = "flamecestus"
 
-/obj/item/clothing/gloves/dusters/flamegloves
-	name = "placeholder flame gloves"
-	desc = "the flame part is the burning passion for violent actions, not like real flames."
-
-/datum/lecture/hearthcore/druzhina/flame_gautlets/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+/datum/lecture/hearthcore/druzhina/flamecestus/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob >= 30) //You need 30 robustness at minimum to use this lecture
-		new /obj/item/clothing/gloves/dusters/flamegloves(lecturer.loc)
+		new /obj/item/clothing/gloves/dusters/flamecestus(lecturer.loc)
 		return TRUE
 	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
 	return FALSE

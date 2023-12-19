@@ -107,16 +107,15 @@
 
 /datum/category_item/setup_option/background/path/peerage //Ask for help to Trilby to make the 'Special Hearthcore Module' to only spawn to those who have this tag
 	name = "Non-colonial Custodian"
-	desc = "Your family has bloodlines connected to Elohopea and were, respectively, custodians from generations. You being born there or not, does not matter.\
-	The chivalric values, cultural festivals, dances, knight errant films and martial arts has long became part of your culture by your family.\
-	You make part of the Peerage, above the Gentry, and genetic predisposition adapted to better coexist with radiance and resist the effects of Argyria.\
-	This not only means you are able to have a knightly specialization, but that your immune system does not attack your radiance by any means. \
-	However, you likely never, or barely touched a gun your entire life due to your family's oaths."
-
+	desc = "Your family ties to Elohopea's bloodlines grant you the status of Peerage on Elohopea, either of birth or adoption. Your surname holds prestige, but power only in another colony. \
+	Chivalric values, festivities, dances, knight errant films and martial arts defines your cultural upbringing. From your youth, mornings echo with the rhythmic clash of steel, shaping you through relentless sparring into an elite knight. \
+	This comproves not only your elohopean nobility, but specializes you as an elite warrior with cultural characteristics rooted in ancient traditions just as well. The Druzhinas, Hussars, Grenadiers and Cataphracts. \
+	Before you even had a Hearthcore - if you have - you've been training your own radiance directly in the bloodstream, even before the minimal age to have an hearthcore by Custodian Directions of Free Will. \
+	However, your family's oaths kept you far from all firearms, as the toil of cleaning and agricultural pursuits hold no appeal for you, as it may even harm your noble prodige. To act like a servant is offensive."
 	perks = list(PERK_PEERAGE)
-
 	stat_modifiers = list(STAT_VIG = -10)
-//put the funny "special" hearthcore module here
+
+//put the funny special hearthcore module here
 /*
 /datum/category_item/setup_option/background/habit/psi_sufficiency
 	name = "Enlightened Scholar"

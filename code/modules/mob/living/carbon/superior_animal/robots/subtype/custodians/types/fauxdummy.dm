@@ -28,4 +28,4 @@
 	. = ..()
 
 	visible_emote("yells, \"[pick("Verily, thy wit is as sharp as a butter knife!","Thou swingest thy sword like a daffodil in the breeze, gentle and without purpose!","By my troth, thou art a master of gunnery! But I dare say, the barn door doth beg to differ!", "Hast thou considered a career in jesting? Thy attempts at combat are most amusing!", "Verily, thou art a master of strategy — a strategy of confusion, that is!", "Marry, thy armor doth shine like the moon — full of craters!")]")
-	playsound(src, 'sound/machine/snarkybot.ogg', 50, 1, -3) //
+	//playsound(src, 'sound/machine/snarkybot.ogg', 50, 1, -3) //

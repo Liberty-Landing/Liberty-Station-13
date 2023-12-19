@@ -306,14 +306,15 @@
 
 /obj/item/clothing/head/helmet/equite
 	name = "Custodian Equite Helmet"
-	desc = "A custodian artistry made in cheaper design, with a conical dome crafted from hardened steel in a bowl-shaped design with nose guards that protects the face, \
+	desc = "A custodian non-artistry made in cheaper design to be mass produced by a Firelathe, with a conical dome crafted from hardened steel in a bowl-shaped design with nose guards that protects the face, \
 	together with ear covers and impact-relief material on the neck, so impact of bullets have less chance to break the neck of the user."
 	icon_state = "equite_helmet"
 	icon_state = "equite_helmet"
 	armor_list = list(melee = 30, bullet = 30,energy = 30, bomb = 20, bio = 40, rad = 0)
-	body_parts_covered = HEAD|EYES|EARS
+	body_parts_covered = HEAD|FACE|EARS
+	obscuration = LIGHT_OBSCURATION
 	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 6, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10)
-
+	
 /obj/item/clothing/head/helmet/custodian
 	name = "custodian helmet base item"
 	desc = "Not supposed to be seen in-game"

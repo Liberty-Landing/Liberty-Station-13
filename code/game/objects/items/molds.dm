@@ -33,17 +33,24 @@
 
 /obj/item/mold/granule_neuron
 	name = "Infusive Granule Neuron"
-	desc = "Put description here."//lacking internet at work and I will need to use chatGPT, I will fill here when I get home.
+	desc = "These neurons contains SMAs (Shape-Memory Alloy) that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
+	It only works for Darksilver subtype of steel. The radiance itself heatens the metal so the equipment will go back to it's original shape after deformation, \
+	Which adds resilience against repeated impacts, deformation, and keeping a blade sharp for longer. It barely does something against metal that was removed after impact."
 	icon_state = "oathpledge_battleneuron"
 
 /obj/item/mold/renshaw_neuron
 	name = "Infusive Renshaw Neuron"
-	desc = "Put description here."//lacking internet at work and I will need to use chatGPT, I will fill here when I get home.
+	desc = "These neurons contains Graphene-Infused Steel Alloys with nanocomposites that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
+	It only works for Darksilver subtype of steel due to it's compatible metal matrix. The radiance reinforces the steel alloy with nanocomposites together with graphene rods within the steel matrix.\
+	The nanocomposites absorbs and dissipates energy, together with graphene rods to better distribute electrical charges and impact across the body to lessen the chance of the user getting severely damage in only one place."
 	icon_state = "oathpledge_battleneuron"
 
 /obj/item/mold/cartwheel_neuron
 	name = "Infusive Cartwheel Neuron"
-	desc = "Put description here."//lacking internet at work and I will need to use chatGPT, I will fill here when I get home.
+	desc = "These neurons contains Nanostructured Steel Alloys with vibrating technology that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
+	It only works for Darksilver subtype of steel. The radiance reinforces the steel alloy with nano-sized grains that enhances hardness and toughness, \
+	making the metal resistant to penetration, making it less brittle and more deformable, relying on SMAs to keep it in place. \
+	The nanosized grains, when powered by radiance, implement vibrational technology within a blade, causing it to vibrate at high frequencies before impact, greatly enhancing cutting effectiveness."
 	icon_state = "oathpledge_battleneuron"
 
 /obj/item/stack/mold_kit
