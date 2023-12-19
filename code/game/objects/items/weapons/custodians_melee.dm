@@ -105,7 +105,7 @@
 /obj/item/tool/sword/custodian/whip
 	name = "custodian nagaika"
 	desc = "A whip made from compacted and oil-hardened silk with dense dark silver on its tip, with protuding blades that open and close on impact to inflict superfluous injury, the very same reason why Hollow-points are considered a war crime to use. \
-	Good thing whoever wrote that only included “bullets”."
+	Good thing whoever wrote that only included “bullets”, otherwise the Custodians would be practicing warcrimes every day by default."
 	icon_state = "custodian_nagaika"
 	item_state = "custodian_nagaika"
 	force = WEAPON_FORCE_PAINFUL

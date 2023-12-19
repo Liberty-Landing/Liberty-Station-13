@@ -31,6 +31,21 @@
 	desc = "A unique component given to Oathpledges in order to forge their armor."
 	icon_state = "oathpledge_battleneuron"
 
+/obj/item/mold/granule_neuron
+	name = "Infusive Granule Neuron"
+	desc = "Put description here."//lacking internet at work and I will need to use chatGPT, I will fill here when I get home.
+	icon_state = "oathpledge_battleneuron"
+
+/obj/item/mold/renshaw_neuron
+	name = "Infusive Renshaw Neuron"
+	desc = "Put description here."//lacking internet at work and I will need to use chatGPT, I will fill here when I get home.
+	icon_state = "oathpledge_battleneuron"
+
+/obj/item/mold/cartwheel_neuron
+	name = "Infusive Cartwheel Neuron"
+	desc = "Put description here."//lacking internet at work and I will need to use chatGPT, I will fill here when I get home.
+	icon_state = "oathpledge_battleneuron"
+
 /obj/item/stack/mold_kit
 	name = "moldkit stack base item"
 	desc = "Not to be seen in-game."

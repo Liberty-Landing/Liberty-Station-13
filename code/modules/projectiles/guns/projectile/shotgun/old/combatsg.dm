@@ -1,7 +1,7 @@
 /obj/item/gun/projectile/shotgun/pump/combat
 	name = "\"Regulator\" combat shotgun"
 	desc = "Designed for close quarters combat, the Regulator is widely regarded as a weapon of choice for protecting borders. \
-			One of the only decent ballistic weapons made by the Old Testament. Can hold up to 6+1 20mm shells in its tube magazine."
+			One of the only decent ballistic weapons made by the Circhosian Cult. Can hold up to 6+1 20mm shells in its tube magazine."
 	icon = 'icons/obj/guns/projectile/cshotgun.dmi'
 	icon_state = "cshotgun"
 	item_state = "cshotgun"
@@ -17,7 +17,7 @@
 	init_recoil = RIFLE_RECOIL(1.2)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/shotgun/pump/combat/sawn
-	serial_type = "Bonfire"
+	serial_type = "Circhosian"
 
 	wield_delay = 1 SECOND
 	wield_delay_factor = 0.4 // 40 vig

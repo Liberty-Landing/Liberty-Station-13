@@ -5,11 +5,6 @@
 	requiredPerk = PERK_RADIANCE
 	icon_state = "dischargemisc_mold"
 
-//Temp here for complieing reasons
-/obj/item/mold/granule_neuron
-/obj/item/mold/renshaw_neuron
-/obj/item/stack/mold_kit/masonry
-
 /datum/craft_recipe/custodians/oathbound_set
 	name = "Oathbound Armor Set"
 	result = /obj/item/storage/box/oathbound_set
@@ -296,8 +291,7 @@
 		list(QUALITY_SCREW_DRIVING, 30, "time" = 10)
 	)
 
-//No longer a Custodian production. This is better settled to Terra-Therma who have control over modifications. Custodians artisanwork is like artists who don't want other people to edit their art
-
+//No longer a Custodian production due to balance. This is better settled to Terra-Therma who have control over modifications as long as they get the Custodian materials. Multifaction interaction is these mod's debuff.
 /*
 /datum/craft_recipe/custodians/melee_plating
 	name = "melee plating"

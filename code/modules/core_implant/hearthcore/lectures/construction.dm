@@ -401,7 +401,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 /datum/custodian_blueprint/medium
 	manifestation_tier = "Medium"
-
+/*Due to changes in balance, TerraTherma are the ones who make armor platings.
 /datum/custodian_blueprint/medium/melee_armor
 	name = "Carbon Fiber Melee Plating"
 	build_path = /obj/item/tool_upgrade/custodian/armor/melee
@@ -438,6 +438,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/biomatter = 30
 	)
 	build_time = 20 SECONDS
+*/
 
 /datum/custodian_blueprint/medium/door_common
 	name = "Common Hatchway"

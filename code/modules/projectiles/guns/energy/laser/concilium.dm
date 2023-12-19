@@ -1,3 +1,5 @@
+
+/*
 /obj/item/gun/energy/concillium
 	name = "\"Concillium\" las-machinegun"
 	desc = "Produced by the New Testament, made to pin down enemies with rapid shots.\
@@ -25,4 +27,4 @@
 		list(mode_name="suppressing fire", mode_desc="DAKKA 16 shots back to back to keep targets inside cover",  burst=16, burst_delay=4, move_delay=11,  icon="burst")
 		)
 	twohanded = TRUE
-	serial_type = "Bonfire"
+	serial_type = "INDEX"

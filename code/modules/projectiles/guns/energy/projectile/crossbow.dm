@@ -16,7 +16,7 @@
 	charge_meter = 0
 	charge_cost = 200
 	price_tag = 1250
-	serial_type = "Bonfire"
+	serial_type = "INDEX"
 
 	wield_delay = 0.8 SECOND
 	wield_delay_factor = 0.2 // 20 vig

@@ -312,6 +312,7 @@
 	icon_state = "equite_helmet"
 	armor_list = list(melee = 30, bullet = 30,energy = 30, bomb = 20, bio = 40, rad = 0)
 	body_parts_covered = HEAD|EYES|EARS
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 6, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10)
 
 /obj/item/clothing/head/helmet/custodian
 	name = "custodian helmet base item"
