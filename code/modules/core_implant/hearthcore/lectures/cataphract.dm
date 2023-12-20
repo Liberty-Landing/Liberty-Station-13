@@ -41,3 +41,40 @@
 	..()
 	if(linked_hearthcore.power <= 0)
 		destroy_shields()
+
+/datum/lecture/hearthcore/cataphract/purification
+	name = "Genuine Purification"
+	phrase = "Oxidate Lecture: Genuine Purification."
+	desc = "By allowing the radiance to spread towards the surface of the hand and sacrifice itself as it ignites, it allows the Knight to use the leftover radiance like oil and spread it in the battlefield in a flamethrower.."
+	power = 90
+
+/datum/lecture/hearthcore/cataphract/purification/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/gun/purification/flame = new /obj/item/gun/purification(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand now covered with a strange, silvery ionized metal.",
+		"The radiance completely covers one of your hands, willing to sacrifice itself to punish others as you see fit."
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
+
+/obj/item/gun/purification
+	name = "Genuine Purification"
+	desc = "The beloved, benevolent purification of the body, to allow these maintenance pests and mutants to finally rest in piece."
+	icon = 'icons/obj/guns/launcher/backburner.dmi'
+	icon = 'icons/obj/guns/projectile/fireball.dmi'
+	icon_state = "fireball_lecture"
+	item_state = "fireball_lecture"
+	origin_tech = list()
+	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
+	fire_sound_text = "fireball"
+	max_upgrades = 0
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
+	var/projectile_type = /obj/item/projectile/flamer_lob/flamethrower // What does it shoot
+	var/use_amount = 1 // How many times can it be used
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // Used to delete when dropped
+	serial_shown = FALSE
+	safety = FALSE

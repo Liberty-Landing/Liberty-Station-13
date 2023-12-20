@@ -93,7 +93,7 @@
 	ritual_types = list(/datum/lecture/hearthcore/druzhina)
 
 /datum/core_module/lectures/hearthcore/cataphract
-//	ritual_types = list(/datum/lecture/hearthcore/cataphract)
+	ritual_types = list(/datum/lecture/hearthcore/cataphract)
 
 /datum/core_module/lectures/hearthcore/hussar
 	ritual_types = list(/datum/lecture/hearthcore/hussar)
