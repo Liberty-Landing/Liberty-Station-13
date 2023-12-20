@@ -1,4 +1,26 @@
+/datum/lecture/hearthcore/Cataphract
+	name = "Cataphract"
+	category = "Cataphract"
+	phrase = null
+	implant_type = /obj/item/implant/core_implant/hearthcore
+
 //Holds all the proj, guns and spells for the Cataphract. The Cataphract focus on defense and defending others, while making use of radiance to manifest ways to counter enemy's move in the battlefield.
+
+/datum/lecture/hearthcore/cataphract/cataphract_personal
+	name = "Energy Personal Shield"
+	phrase = "Oxidate Lecture: Energy Personal Shield."
+	desc = "Makes your own energy shield"
+	power = 40
+
+/datum/lecture/hearthcore/cataphract/cataphract_personal/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/shield_projector/rectangle/cataphract_personal/flame = new /obj/item/shield_projector/rectangle/cataphract_personal(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand now covered with a strange, bluish ionized metal.",
+		"The radiance completely covers one of your hands, seeking to show how unprotected the enemy is"
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
 
 /obj/item/shield_projector/rectangle/cataphract_personal
 	name = "Cataphract personal shield"
@@ -12,7 +34,18 @@
 	max_shield_health = 2
 	size_x = 1
 	size_y = 1
+	var/mob/living/carbon/holder  // Used to delete when dropped
 	var/obj/item/implant/core_implant/hearthcore/linked_hearthcore
+
+//Still need to make the shield delete itself when it disactivates (after the power reaches 0), and when the holder dropsit
+/* 
+/obj/item/shield_projector/rectangle/cataphract_personal/Process()
+	if(loc != holder || ([put Power here]<= 0))
+		visible_message("[src] has been broken! The struggling radiance sinks into your skin to breath after so much punishment.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
+*/
 
 // All the shields tied to their projector are one 'unit', and don't have individualized health values like most other shields.
 /obj/effect/directional_shield/cataphract_personal/adjust_health(amount)
@@ -61,7 +94,6 @@
 /obj/item/gun/purification
 	name = "Genuine Purification"
 	desc = "The beloved, benevolent purification of the body, to allow these maintenance pests and mutants to finally rest in piece."
-	icon = 'icons/obj/guns/launcher/backburner.dmi'
 	icon = 'icons/obj/guns/projectile/fireball.dmi'
 	icon_state = "fireball_lecture"
 	item_state = "fireball_lecture"
@@ -75,6 +107,5 @@
 	var/projectile_type = /obj/item/projectile/flamer_lob/flamethrower // What does it shoot
 	var/use_amount = 1 // How many times can it be used
 	var/mob/living/carbon/holder  // Used to delete when dropped
-	var/changes_projectile = TRUE // Used to delete when dropped
 	serial_shown = FALSE
 	safety = FALSE
