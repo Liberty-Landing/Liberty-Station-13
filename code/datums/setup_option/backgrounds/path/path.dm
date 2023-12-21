@@ -106,14 +106,16 @@
 	stat_modifiers = list(STAT_TGH = -5, STAT_WIL = 5)
 
 /datum/category_item/setup_option/background/path/peerage //Ask for help to Trilby to make the 'Special Hearthcore Module' to only spawn to those who have this tag
-	name = "Non-colonial Custodian"
-	desc = "Your family ties to Elohopea's bloodlines grant you the status of Peerage on Elohopea, either of birth or adoption. Your surname holds prestige, but power only in another colony. \
-	Chivalric values, festivities, dances, knight errant films and martial arts defines your cultural upbringing. From your youth, mornings echo with the rhythmic clash of steel, shaping you through relentless sparring into an elite knight. \
-	This comproves not only your elohopean nobility, but specializes you as an elite warrior with cultural characteristics rooted in ancient traditions just as well. The Druzhinas, Hussars, Grenadiers and Cataphracts. \
-	Before you even had a Hearthcore - if you have - you've been training your own radiance directly in the bloodstream, even before the minimal age to have an hearthcore by Custodian Directions of Free Will. \
-	However, your family's oaths kept you far from all firearms, as the toil of cleaning and agricultural pursuits hold no appeal for you, as it may even harm your noble prodige. To act like a servant is offensive."
+	name = "Colonial Noble"
+	desc = "Despite lacking powers in Freeport, your familial connections to Elohopea's bloodlines afford you noble status, whether by birth or adoption. \
+	Chivalric films, festivities, warfare and martial knowledge shaped your cultural upbringing. \
+	Your mornings resonated with clashes of steel, molding you into an elite knight from youth by Custodian mentors. \
+	Family oaths have kept you away from firearms, as menial tasks unrelated to combat has no appeal for you. \
+	However, the powers of your specialization will only come if you have a hearthcore during your adult years."
+
 	perks = list(PERK_PEERAGE)
-	stat_modifiers = list(STAT_VIG = -10)
+
+	stat_modifiers = list(STAT_ROB = 8, STAT_TGH = 8, STAT_BIO = -5, STAT_MEC = -5, STAT_VIG = -10, STAT_WIL = -10)
 
 //put the funny special hearthcore module here
 /*

@@ -60,7 +60,6 @@ var/list/disciples = list()
 		return
 	..()
 	add_module(new HEARTHCORE_COMMON)
-	add_module(new HEARTHCORE_SPECIAL)
 	update_data()
 	disciples |= wearer
 	return TRUE

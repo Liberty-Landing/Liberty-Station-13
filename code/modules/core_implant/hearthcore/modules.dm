@@ -43,7 +43,7 @@
 			implant.wearer.client.images += I
 		implant.use_power(1)
 		if(implant.power < 1)
-			to_chat(implant.wearer, SPAN_WARNING("Your hearthcore pings. Radiance is low."))
+			to_chat(implant.wearer, SPAN_WARNING("Your radiance shrinks, far too weak to continue doing that."))
 			implant.remove_module(src)
 
 ///////////
@@ -97,9 +97,6 @@
 
 /datum/core_module/lectures/hearthcore/hussar
 	ritual_types = list(/datum/lecture/hearthcore/hussar)
-
-/datum/core_module/lectures/hearthcore/dragoon
-//	ritual_types = list(/datum/lecture/hearthcore/dragoon)
 
 /datum/core_module/lectures/hearthcore/grenadier
 	ritual_types = list(/datum/lecture/hearthcore/grenadier)

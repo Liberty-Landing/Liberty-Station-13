@@ -209,7 +209,7 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 
 /datum/perk/background/noble
 	name = "Noble"
-	icon_state = "noble" // https://game-icons.net/1x1/delapouite/throne-king.html 
+	icon_state = "noble" // https://game-icons.net/1x1/delapouite/throne-king.html
 	desc = "You came from a wealthy family of high stature, able to achieve a high education and spent most of your life capable of relaxing. \
 			Start with an heirloom, higher chance to be on contractor contracts and removed sanity cap. Stay clear of filth and danger."
 
