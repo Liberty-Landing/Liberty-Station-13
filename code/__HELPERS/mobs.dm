@@ -309,7 +309,7 @@ Proc for attack log creation, because really why not
 	if(!isliving(L))
 		return FALSE
 	var/obj/item/implant/core_implant/hearthcore/C = L.get_core_implant(/obj/item/implant/core_implant/hearthcore)
-	if(C && C.get_module(HEARTHCORE_COMMON))
+	if(C && C.get_module(HEARTHCORE_COMMON, HEARTHCORE_SPECIAL)) //Putting SPECIAL here for testing. Must be removed when the Peerage perk works.
 		return TRUE
 	return FALSE
 
@@ -321,7 +321,7 @@ Proc for attack log creation, because really why not
 		return TRUE
 	return FALSE
 
-/datum/perk/peerage/assign(mob/living/carbon/human/L)
+/datum/perk/peerage/assign(mob/living/carbon/human/L) //did not work. Need support here.
 	if(!isliving(L))
 		return FALSE
 	var/obj/item/implant/core_implant/hearthcore/C = L.get_core_implant(/obj/item/implant/core_implant/hearthcore)

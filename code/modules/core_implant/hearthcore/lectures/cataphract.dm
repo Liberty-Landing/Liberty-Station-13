@@ -38,7 +38,7 @@
 	var/obj/item/implant/core_implant/hearthcore/linked_hearthcore
 
 //Still need to make the shield delete itself when it disactivates (after the power reaches 0), and when the holder dropsit
-/* 
+/*
 /obj/item/shield_projector/rectangle/cataphract_personal/Process()
 	if(loc != holder || ([put Power here]<= 0))
 		visible_message("[src] has been broken! The struggling radiance sinks into your skin to breath after so much punishment.")
@@ -78,7 +78,7 @@
 /datum/lecture/hearthcore/cataphract/purification
 	name = "Genuine Purification"
 	phrase = "Oxidate Lecture: Genuine Purification."
-	desc = "By allowing the radiance to spread towards the surface of the hand and sacrifice itself as it ignites, it allows the Knight to use the leftover radiance like oil and spread it in the battlefield in a flamethrower.."
+	desc = "By allowing the radiance to spread towards the surface of the hand and sacrifice itself as it ignites, it allows the Knight to use the leftover radiance like oil and spread it in the battlefield in a flamethrower."
 	power = 90
 
 /datum/lecture/hearthcore/cataphract/purification/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
@@ -105,7 +105,40 @@
 	w_class = ITEM_SIZE_HUGE
 	damtype = BURN
 	var/projectile_type = /obj/item/projectile/flamer_lob/flamethrower // What does it shoot
-	var/use_amount = 1 // How many times can it be used
+	var/use_amount = 200 // How much fuel is used per shot
+	var/fuel_type = "fuel" // What kind of chem do we use?
+	var/obj/item/weldpack/canister/fuel_can = null // The canister the gun use for ammo
 	var/mob/living/carbon/holder  // Used to delete when dropped
 	serial_shown = FALSE
 	safety = FALSE
+	fire_sound = 'sound/weapons/flamethrower_fire.ogg'
+
+/obj/item/gun/purification/consume_next_projectile()
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(use_amount <= 0) //Are we out of charges?
+		return null
+	use_amount -= 1
+	return new projectile_type(src)
+
+// Alternative to drop it: Use in hand to extinguish
+/obj/item/gun/purification/attack_self(mob/user)
+	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the silvery metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, deionized."), "You hear the sounds of purification in progress.")
+	STOP_PROCESSING(SSobj, src)
+	qdel(src)
+	return
+
+/obj/item/gun/purification/Process()
+	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
+		visible_message("[src] is far too weak to stay outside a body.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
+
+/obj/item/gun/purification/Initialize()
+	..()
+	fuel_can = new /obj/item/weldpack/canister/flamethrower(src) // Give the gun a new flask when mapped in.
+
+/obj/item/gun/purification/New()
+	..()
+
