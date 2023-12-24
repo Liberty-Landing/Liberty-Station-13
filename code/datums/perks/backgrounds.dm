@@ -147,6 +147,26 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 	holder.health -= 10
 	..()
 
+/datum/perk/background/peerage //ask Trilby to help me put the special module here
+	name = "Peerage"
+	icon_state = "peerage" // https://game-icons.net/1x1/lorc/kindle.html
+	desc = "Beyond being a colonist, you are within a legal system of Elohopean hereditary titles. Your surname dictates your importance only outside of the atmosphere. \
+			In another hand, your body allows you to directly communicate with your radiance and respectively train them with the specializations your family or order trained you for."
+
+/datum/perk/background/peerage/assign(mob/living/carbon/human/H)
+	..()
+	if(holder)
+		var/obj/item/implant/core_implant/hearthcore/hearthcore = H.get_core_implant(/obj/item/implant/core_implant/hearthcore)
+		if(hearthcore)
+			hearthcore.add_module(new HEARTHCORE_SPECIAL)
+			hearthcore.update_data()
+		else
+			var/obj/item/W
+			W = /obj/item/mold/purifier_essence
+			W = new W(H)
+			spawn(1)
+				holder.equip_to_storage_or_drop(W)
+
 ////////////////////////
 /* Sanity-Based Perks */
 ////////////////////////
@@ -292,11 +312,6 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 		holder.metabolism_effects.calculate_nsa()
 	..()
 
-/datum/perk/background/peerage //ask Trilby to help me put the special module here
-	name = "Peerage"
-	icon_state = "peerage" // https://game-icons.net/1x1/lorc/kindle.html
-	desc = "Beyond being a colonist, you are within a legal system of Elohopean hereditary titles. Your surname dictates your importance only outside of the atmosphere. \
-			In another hand, your body allows you to directly communicate with your radiance and respectively train them with the specializations your family or order trained you for."
 // FBP PERKS
 
 /datum/perk/unfeeling

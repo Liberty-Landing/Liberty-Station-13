@@ -4,7 +4,7 @@
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/hearthcore
 
-//Holds all the proj, guns and spells for the Cataphract. The Cataphract focus on defense and defending others, while making use of radiance to manifest ways to counter enemy's move in the battlefield.
+//Holds all the proj, guns and spells for the Cataphract. The Cataphract focus on defense and defending others, while making use of radiance to manifest ways to counter enemy's move in the battlefield. They make ~stands~ (automatons) to supply their defensive capacity and area-negating capacity.
 
 /datum/lecture/hearthcore/cataphract/cataphract_personal
 	name = "Energy Personal Shield"
@@ -30,8 +30,8 @@
 	take place over an area, such as flashbangs or explosions."
 	icon_state = "last_shelter"
 	high_color = "#FFFFFF"
-	shield_health = 2
-	max_shield_health = 2
+	shield_health = C.power
+	max_shield_health = C.max_power
 	size_x = 1
 	size_y = 1
 	var/mob/living/carbon/holder  // Used to delete when dropped
@@ -91,12 +91,12 @@
 	usr.put_in_hands(flame)
 	return TRUE
 
-/obj/item/gun/purification
+/obj/item/gun/purification //It works now. Whoever, it does not disappear when dropped. Attackself destroys it (intended), and has infinite ammo. I will try to fix these two things when possible.
 	name = "Genuine Purification"
 	desc = "The beloved, benevolent purification of the body, to allow these maintenance pests and mutants to finally rest in piece."
-	icon = 'icons/obj/guns/projectile/fireball.dmi'
-	icon_state = "fireball_lecture"
-	item_state = "fireball_lecture"
+	icon = 'icons/obj/guns/projectile/firelance.dmi'
+	icon_state = "firelance_discharger"
+	item_state = "firelance_discharger"
 	origin_tech = list()
 	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
 	fire_sound_text = "fireball"
@@ -141,4 +141,21 @@
 
 /obj/item/gun/purification/New()
 	..()
+
+/datum/lecture/hearthcore/cataphract/dummy
+	name = "Assemble: Taunting Dummy"
+	phrase = "Radiance, hear me. Assemble the Taunting Dummy."
+	desc = "Assemble with your own radiance a thin, taunting dummy. It looks like a moving body to animalistic enemies, may not work for people. Can still be used as a living shield."
+	cooldown = TRUE
+	cooldown_time = 15 MINUTES
+	power = 35
+
+/datum/lecture/hearthcore/cataphract/dummy/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob > 30)
+		to_chat(lecturer, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
+		new /mob/living/carbon/superior_animal/robot/custodians/faux_dummy(lecturer.loc)
+		return TRUE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+	return FALSE//Not enough robustness to use this lecture.
 

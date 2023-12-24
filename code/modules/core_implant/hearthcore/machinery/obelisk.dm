@@ -163,3 +163,117 @@ GLOBAL_LIST_EMPTY(all_obelisk)
 
 /obj/machinery/power/torchbearer/update_icon()
 	icon_state = "torchbearer[active?"_activate":""]"
+
+//Experimental area to make the 'stand' boys. Still need a whole lot of help, but as far I see it, it's pretty much turning the player into a different, limited torchbearer that deals more damage, but only around the player, and the damage ATTACKS EVERYTHING around the user. That's all 
+
+/*
+/obj/machinery/power/stand
+	name = "Bonfire stand"
+	desc = "this is a experimental stand"
+	icon = 'icons/obj/custodian_structures.dmi'
+	icon_state = "torchbearer"
+
+	density = FALSE
+	anchored = FALSE
+	layer = 2.8
+
+	var/overrideFaithfulCheck = FALSE
+	var/active = TRUE
+	var/area_radius = 1
+	var/damage = 30
+	var/max_targets = INFINITY
+
+	var/ticks_to_next_process = 3
+
+/obj/machinery/power/stand/New()
+	..()
+	GLOB.all_obelisk |= src
+
+/obj/machinery/power/stand/Destroy()
+	for(var/i in currently_affected)
+		var/mob/living/carbon/human/H = i
+		H.stats.removePerk(PERK_SANITYBOOST)
+	currently_affected = null
+	return ..()
+
+/obj/machinery/power/standattack_hand(mob/user)
+	return
+
+/obj/machinery/power/stand/Process()
+	..()
+	if(stat)
+		return
+	var/list/affected = list()
+	for(var/mob/living/carbon/human/H in GLOB.human_mob_list)
+		if (H.z == src.z && get_dist(src, H) <= area_radius)
+			affected.Add(H)
+	active = check_for_faithful(affected) || overrideFaithfulCheck
+	update_icon()
+
+	if(force_active > 0)
+		active = TRUE
+	force_active--
+	update_icon()
+
+	if(!active)
+		use_power = IDLE_POWER_USE
+	else
+		use_power = ACTIVE_POWER_USE
+
+	if(ticks_to_next_process > 0)
+		ticks_to_next_process--
+		return
+	else
+		ticks_to_next_process = 3
+
+	if(active)
+		var/list/affected_mobs = oview(area_radius, src)
+		var/to_fire = max_targets
+		for(var/mob/living/A in affected_mobs)
+			if(!(get_dist(src, A) <= area_radius))
+				continue
+			if(istype(A, /mob/living/carbon))
+				var/mob/living/carbon = A
+				if(animal.stat != DEAD &!) //PUT PLAYER HERE PERHAPS
+					animal.take_overall_damage(damage)
+					if(animal.stat == DEAD)
+						eotp.addObservation(0) //this is better removed
+					if(!--to_fire)
+						return
+			else if(istype(A, /mob/living/simple_animal/hostile))
+				var/mob/living/simple_animal/hostile/animal = A
+				if(animal.stat != DEAD) //got EVERYTHING.
+					animal.take_overall_damage(damage)
+					if(animal.stat == DEAD)
+						eotp.addObservation(0)
+					if(!--to_fire)
+						return
+
+/obj/machinery/power/stand/proc/check_for_faithful(list/affected)
+	var/got_neoteo = FALSE
+	var/list/no_longer_affected = currently_affected - affected
+	for(var/i in no_longer_affected)
+		var/mob/living/carbon/human/H = i
+		H.stats.removePerk(PERK_SANITYBOOST)
+	currently_affected -= no_longer_affected
+	for(var/mob/living/carbon/human/mob in affected)
+		var/obj/item/implant/core_implant/I = mob.get_core_implant(/obj/item/implant/core_implant/hearthcore)
+		if(!(mob in eotp.scanned))
+			eotp.scanned |= mob
+			if(I && I.active && I.wearer)
+				eotp.addObservation(20)
+			else if(is_carrion(mob))
+				eotp.removeObservation(20)
+			else
+				eotp.addObservation(10)
+		if(I && I.active && I.wearer)
+			if(!(mob in currently_affected)) // the mob just entered the range of the obelisk
+				mob.stats.addPerk(PERK_SANITYBOOST)
+				currently_affected += mob
+			I.restore_power(I.power_regen*2)
+			for(var/r_tag in mob.personal_ritual_cooldowns)
+				mob.personal_ritual_cooldowns[r_tag] -= nt_buff_cd
+
+/obj/machinery/power/stand/update_icon()
+	icon_state = "torchbearer[active?"_activate":""]"
+*/ 

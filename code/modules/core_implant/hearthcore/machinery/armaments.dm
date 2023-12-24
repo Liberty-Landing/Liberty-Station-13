@@ -155,14 +155,14 @@
 
 /datum/armament/item/renshaw_neuron
 	name = "Infusive Renshaw Neuron"
-	cost = 60
+	cost = 65
 	min_cost = 40
 	discount_increase = 5
 	path = /obj/item/mold/renshaw_neuron
 
 /datum/armament/item/cartwheel_neuron
 	name = "Infusive Cartwheel Neuron"
-	cost = 80
+	cost = 100
 	min_cost = 60
 	discount_increase = 5
 	path = /obj/item/mold/cartwheel_neuron

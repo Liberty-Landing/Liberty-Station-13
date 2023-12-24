@@ -115,7 +115,7 @@
 /datum/lecture/hearthcore/custodian/offering/holy_guidance
 	name = "Sparking Guidance"
 	phrase = "Oxidate Lecture: Sparking Guidance."
-	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering an oddity and forty bio-silk to guide its power towards enhancing Hearthcore Radiance regeneration among users. \
+	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering an oddity and forty bio-silk to guide its power towards enhancing Hearthcore Radiance Mitosis among users. \
 	Your offering also increases the EOTP's armaments reserves."
 	req_offerings = list(/obj/item/oddity = 1, /obj/item/stack/material/biopolymer_silk = 40)
 	miracles = list(ENERGY_REWARD)

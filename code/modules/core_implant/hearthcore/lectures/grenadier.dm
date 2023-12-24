@@ -1,7 +1,7 @@
 //Holds all the proj, guns and spells for the Grenadier. The Grenadier is essentially the risk taker. High damage and AOE attack, but constantly deals damage to themselves. Very risky to play.
 
 /obj/item/gun/energy/siege_blazelance
-	projectile_type = /obj/item/projectile/custodian_fireball
+	projectile_type = /obj/item/projectile/grenadier/siege_blazelance
 
 /obj/item/projectile/grenadier/siege_blazelance
 	name = "Siege Blaze lance"

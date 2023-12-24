@@ -232,7 +232,7 @@
 
 /obj/item/clothing/suit/armor/equite
 	name = "Equite Breastplate"
-	desc = "The cheaper, mass produced version of the Oathbound's armor. With less material costs, this armor only rivals the other basic armors, but it is easy to be made by any autolathe."
+	desc = "The cheaper, mass produced version of the standard Custodian's armor. With less material costs, this armor only rivals the other basic armors, but it is easy to be made by any autolathe."
 	icon_state = "equite_armor"
 	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO

@@ -99,9 +99,9 @@
 /obj/item/gun/cblazelance //compact blazelance used by knights with Druzhina specialization.
 	name = "Compact Blaze Lance"
 	desc = "Radiance in aggressive form, absurdly ionized and ready to deliver all its heat against an enemy. It does not ignite people. It disappears if dropped, or by closing the hand."
-	icon = 'icons/obj/guns/projectile/fireball.dmi'
-	icon_state = "fireball_lecture"
-	item_state = "fireball_lecture"
+	icon = 'icons/obj/guns/projectile/firelance.dmi'
+	icon_state = "firelance_discharger"
+	item_state = "firelance_discharger"
 	origin_tech = list()
 	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
 	fire_sound_text = "fireball"
@@ -109,7 +109,7 @@
 	slot_flags = null
 	w_class = ITEM_SIZE_HUGE
 	damtype = BURN
-	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
+	var/projectile_type = /obj/item/projectile/blazelance // What does it shoot
 	var/use_amount = 1 // How many times can it be used
 	var/mob/living/carbon/holder  // Used to delete when dropped
 	var/changes_projectile = TRUE // Used to delete when dropped
@@ -175,9 +175,9 @@
 /obj/item/gun/iblazelance //A burst of blazelances used by knights with Druzhina specialization.
 	name = "Infernal Blazelance"
 	desc = "Radiance in a very aggressive form, absurdly ionised and with gaseous splits with hydrogen so it can spread on the battlefield, just to deliver all its heat against many enemy or pin them down. It does not ignite people. It disappears if dropped, or by closing the hand."
-	icon = 'icons/obj/guns/projectile/fireball.dmi'
-	icon_state = "fireball_lecture"
-	item_state = "fireball_lecture"
+	icon = 'icons/obj/guns/projectile/firelance.dmi'
+	icon_state = "firelance_discharger"
+	item_state = "firelance_discharger"
 	origin_tech = list()
 	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
 	fire_sound_text = "fireball"
@@ -185,7 +185,7 @@
 	slot_flags = null
 	w_class = ITEM_SIZE_HUGE
 	damtype = BURN
-	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
+	var/projectile_type = /obj/item/projectile/blazelance // What does it shoot
 	var/use_amount = 3 // How many times can it be used
 	var/mob/living/carbon/holder  // Used to delete when dropped
 	var/changes_projectile = TRUE // If we change are bullet type on spawn
@@ -255,9 +255,9 @@
 /obj/item/gun/tblazelance //A burst of blazelances used by knights with Druzhina specialization.
 	name = "Trenchant Blazelance"
 	desc = "Radiance in a compressed form, absurdly ionised and under the effect of lenses so it can most efficiently ignore enemy armor, just to deliver all its heat against one armored enemy. It does not ignite people. It disappears if dropped, or by closing the hand."
-	icon = 'icons/obj/guns/projectile/fireball.dmi'
-	icon_state = "fireball_lecture"
-	item_state = "fireball_lecture"
+	icon = 'icons/obj/guns/projectile/firelance.dmi'
+	icon_state = "firelance_discharger"
+	item_state = "firelance_discharger"
 	origin_tech = list()
 	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
 	fire_sound_text = "fireball"
@@ -265,7 +265,7 @@
 	slot_flags = null
 	w_class = ITEM_SIZE_HUGE
 	damtype = BURN
-	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
+	var/projectile_type = /obj/item/projectile/blazelance // What does it shoot
 	var/use_amount = 1 // How many times can it be used
 	var/mob/living/carbon/holder  // Used to delete when dropped
 	var/changes_projectile = TRUE // Used to delete when dropped
