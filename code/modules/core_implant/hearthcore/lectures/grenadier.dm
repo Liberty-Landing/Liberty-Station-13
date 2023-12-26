@@ -105,9 +105,10 @@
 	return TRUE
 
 /datum/lecture/hearthcore/grenadier/grenadiercurse
-	name = "Cannoneer bombardement" //"RANDOM SH!T GOOOOO!"
+	name = "Cannoneer bombardement Prototype" //"RANDOM SH!T GOOOOO!"
 	phrase = "Oxidate Lecture: Cannoneer bombardement"
-	desc = "The true essence of the Grenadier Knight in form of lecture, unstability beyond redemption. This power manifests pressured radiance with random portions of chemicals acquired from the body and air, which will react like no different of a grenade - beyond being literally any grenade at random, without having the right to choose."
+	desc = "The true essence of the Grenadier Knight in form of lecture, unstability beyond redemption. This power manifests pressured radiance with random portions of chemicals acquired from the body and air, which will react like no different of a grenade - beyond being literally any grenade at random, without having the right to choose. \
+	However, this lecture still is an useless prototype that does nothing. Avoid using it."
 	power = 70
 
 	//still making. Make it a RnG grenade that pops anything at random.

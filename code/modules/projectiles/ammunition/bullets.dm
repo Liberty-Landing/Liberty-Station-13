@@ -928,6 +928,6 @@
 
 /obj/item/ammo_casing/arrow/radiant
 	name = "Silvery Inferno"
-	icon_state = "Infernal_arrow"
+	icon_state = "arrow-heatwave"
 	desc = "Radiance forming a menancing arrow with three points and tapered shaft. The blade is not made to puncture the enemy, but to rapidly deliver absurd amount of heat even if the arrow itself bounced off the enemy's armor."
-	projectile_type = /obj/item/projectile/bullet/reusable/arrow/infernal
+	projectile_type = /obj/item/projectile/bullet/reusable/arrow/radiant

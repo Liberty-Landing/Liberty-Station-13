@@ -6,12 +6,6 @@
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/hearthcore
 
-
-	//Lecture: Summon a Stand that attacks anything around the user
-	//Summon a thing that just stays there, calling attention of mobs. (done)
-	//make the Cataphract summon a shield
-	//Talk with trilby if we can port the Eris's lecture that allows NeoTheology guys to remove their shrapnels, or something that can help Cataphracts to "hold the line" even after being VERY punished not with damage, but with surgery-related problems
-
 /datum/lecture/hearthcore/hussar/skirmish
 	name = "Skirmishing"
 	phrase = "Oxidate Lecture: Skirmishing."
@@ -30,20 +24,10 @@ datum/lecture/hearthcore/hussar/skirmish/perform(mob/living/carbon/human/lecture
 		return TRUE
 	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
 	return FALSE
-//lecture that deals pain damage
-//a lecture that spawns a silver bow that uses radiance to shoot
+
 //(talk with Trilby to see what suits more. Making the Hussar invisible by human standards like the cloaker spiders, or have something that allows them to put a "teleporter" in a place(only one) which they can teleport into after a delay.
 
-/*
-			var/rob = holder.stats.getStat(STAT_ROB)
-		if(rob >= 30)
 
-			return
-		to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
-		return //Not enough robustness to use this lecture.
-*/
-
-//
 /obj/item/projectile/hussar
 	damage_types = list(HALLOSS = WEAPON_FORCE_HARMLESS)
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
@@ -148,3 +132,18 @@ datum/lecture/hearthcore/hussar/skirmish/perform(mob/living/carbon/human/lecture
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
+
+/datum/lecture/hearthcore/hussar/radiantbow
+	name = "Radiance Bow Prototype"
+	phrase = "Radiance, assemble the Radiance Bow"
+	desc = "A sniper-bow prototype. Meant to be an bow that produces arrows from the knight's own radiance, however, the forgemasters are still working on this."
+	cooldown = TRUE
+	cooldown_time = 160 MINUTES
+	power = 60
+
+
+/datum/lecture/hearthcore/hussar/thinking
+	name = "The Forgemasters are still thinking on a design."
+	phrase = "null"
+	desc = "null"
+	power = 0

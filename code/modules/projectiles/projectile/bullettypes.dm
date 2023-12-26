@@ -1392,7 +1392,7 @@
 	if (smoke)
 		QDEL_NULL(smoke)
 
-/obj/item/projectile/bullet/reusable/arrow/infernal
+/obj/item/projectile/bullet/reusable/arrow/radiant
 	name = "Silvery Inferno"
 	icon_state = "infernal_arrow"
 	damage_types = list(BURN = 3) /*Multiplied by 10 when fired. Perhaps we will buff this depending of testing and\

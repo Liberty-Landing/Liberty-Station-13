@@ -43,7 +43,7 @@
 	desc = "These neurons contains Graphene-Infused Steel Alloys with nanocomposites that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
 	It only works for Darksilver subtype of steel due to it's compatible metal matrix. The radiance reinforces the steel alloy with nanocomposites together with graphene rods within the steel matrix.\
 	The nanocomposites absorbs and dissipates energy, together with graphene rods to better distribute electrical charges and impact across the body to lessen the chance of the user getting severely damage in only one place."
-	icon_state = "oathpledge_battleneuron"
+	icon_state = "renshaw_infusive"
 
 /obj/item/mold/cartwheel_neuron
 	name = "Infusive Cartwheel Neuron"
@@ -51,14 +51,15 @@
 	It only works for Darksilver subtype of steel. The radiance reinforces the steel alloy with nano-sized grains that enhances hardness and toughness, \
 	making the metal resistant to penetration, making it less brittle and more deformable, relying on SMAs to keep it in place. \
 	The nanosized grains, when powered by radiance, implement vibrational technology within a blade, causing it to vibrate at high frequencies before impact, greatly enhancing cutting effectiveness."
-	icon_state = "oathpledge_battleneuron"
+	icon_state = "cartwheel_infusive"
 
 /obj/item/mold/purifier_essence //only spawned by hearthcoreless Peerage
 	name = "Essence of the Purifier"
 	desc = "Radiance in cristalized form, with important alveoli functions to keep it alive. \
 	It exists to replace those who cannot abide by the oaths, or are too susceptible to the symptons of argyria. \
-	This bundle of radiance is used to improve some civilizan-grade custodian weapons into an squire-themed one."
-	icon_state = "oathpledge_battleneuron"
+	This bundle of radiance is used to improve some civilizan-grade custodian weapons into an squire-themed one. \
+	Since this is still a prototype, you will not be able to make much at all."
+	icon_state = "purifier_infusive"
 
 /obj/item/stack/mold_kit
 	name = "moldkit stack base item"

@@ -7,9 +7,9 @@
 //Holds all the proj, guns and spells for the Cataphract. The Cataphract focus on defense and defending others, while making use of radiance to manifest ways to counter enemy's move in the battlefield. They make ~stands~ (automatons) to supply their defensive capacity and area-negating capacity.
 
 /datum/lecture/hearthcore/cataphract/cataphract_personal
-	name = "Energy Personal Shield"
+	name = "Energy Personal Shield Prototype"
 	phrase = "Oxidate Lecture: Energy Personal Shield."
-	desc = "Makes your own energy shield"
+	desc = "This shield is merely a prototype, so it does not work as it should, and will still be changed in the following days by the Custodians."
 	power = 40
 
 /datum/lecture/hearthcore/cataphract/cataphract_personal/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
@@ -23,15 +23,14 @@
 	return TRUE
 
 /obj/item/shield_projector/rectangle/cataphract_personal
-	name = "Cataphract personal shield"
+	name = "Cataphract personal shield Prototype"
 	description_info = "A fast deploying, personal energy shield. Powered by the Hearthcore internal plasma and delivered and manifested by radiance, it ensures the protection of the user when attacked by surprise. Not the best option, but what you can have any time. \
-	this allows projectiles to leave from inside but blocks projectiles from outside. Everything else can pass through the shield freely, including other people and thrown objects. \
-	The shield also cannot block certain effects which \
-	take place over an area, such as flashbangs or explosions."
+	This is only a mere prototype, and is being worked on by Custodian Forgemasters and Enkindleds to properly work as intended. \
+	The shield also cannot block certain effects which take place over an area, such as flashbangs or explosions."
 	icon_state = "last_shelter"
 	high_color = "#FFFFFF"
-	shield_health = C.power
-	max_shield_health = C.max_power
+	shield_health = 2
+	max_shield_health = 2
 	size_x = 1
 	size_y = 1
 	var/mob/living/carbon/holder  // Used to delete when dropped
@@ -91,9 +90,10 @@
 	usr.put_in_hands(flame)
 	return TRUE
 
-/obj/item/gun/purification //It works now. Whoever, it does not disappear when dropped. Attackself destroys it (intended), and has infinite ammo. I will try to fix these two things when possible.
-	name = "Genuine Purification"
-	desc = "The beloved, benevolent purification of the body, to allow these maintenance pests and mutants to finally rest in piece."
+/obj/item/gun/purification //It works now. Whoever, it does not disappear when dropped or when the amount is zero. Attackself destroys it (intended). Need help to fix this.
+	name = "Genuine Purification Prototype"
+	desc = "The beloved, benevolent purification of the body, to allow these maintenance pests and mutants to finally rest in piece. \
+	However, it is still a prototype. After spending the radiance, it does not get back to your bloodstream. Somehow, the radiance becomes alveolar cells and just remains there."
 	icon = 'icons/obj/guns/projectile/firelance.dmi'
 	icon_state = "firelance_discharger"
 	item_state = "firelance_discharger"
@@ -105,7 +105,7 @@
 	w_class = ITEM_SIZE_HUGE
 	damtype = BURN
 	var/projectile_type = /obj/item/projectile/flamer_lob/flamethrower // What does it shoot
-	var/use_amount = 200 // How much fuel is used per shot
+	var/use_amount = 50 // How much fuel is used per shot
 	var/fuel_type = "fuel" // What kind of chem do we use?
 	var/obj/item/weldpack/canister/fuel_can = null // The canister the gun use for ammo
 	var/mob/living/carbon/holder  // Used to delete when dropped
@@ -139,8 +139,36 @@
 	..()
 	fuel_can = new /obj/item/weldpack/canister/flamethrower(src) // Give the gun a new flask when mapped in.
 
+/obj/item/gun/purification/examine(mob/user)
+	..(user)
+	if(!fuel_can)
+		to_chat(user, SPAN_NOTICE("The radiance seems fairly calm."))
+		return
+	if(use_amount) // In case we don't use any ammo
+		to_chat(user, "The radiance seems angry enough for another shot.")
+	return
+
+/obj/item/gun/purification/examine(mob/user)
+	..(user)
+	if(!fuel_can)
+		to_chat(user, SPAN_NOTICE("The radiances are calm. They are likely to get back to your bloodstream soon enough."))
+		return
+	if(use_amount) // In case we don't use any ammo
+		var/shots_remaining = round(fuel_can.reagents.total_volume / use_amount)
+		to_chat(user, "The [src.name] has agitated radiances, allowing [shots_remaining] manifestation\s of purying neural goods.")
+	return
+
 /obj/item/gun/purification/New()
 	..()
+
+/obj/item/gun/purification/consume_next_projectile()
+	if(!fuel_can) // Do we have a fuel can?
+		return null
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(!fuel_can.reagents.remove_reagent(fuel_type, use_amount)) // Do we have enough fuel? (Also consume the fuel if we have enough)
+		return null
+	return new projectile_type(src)
 
 /datum/lecture/hearthcore/cataphract/dummy
 	name = "Assemble: Taunting Dummy"
@@ -159,3 +187,55 @@
 	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
 	return FALSE//Not enough robustness to use this lecture.
 
+
+
+/datum/lecture/hearthcore/cataphract/dummy/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob > 30)
+		to_chat(lecturer, "<span class='info'>You quickly deploy an radiance dummy from your bloodstream. What a sight!.</span>")
+		new /mob/living/carbon/superior_animal/robot/custodians/faux_dummy(lecturer.loc)
+		return TRUE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+	return FALSE//Not enough robustness to use this lecture.
+
+
+/datum/lecture/hearthcore/cataphract/stonemason
+	name = "Assemble: The Stone Mason Prototype"
+	phrase = "Radiance, hear me. Assemble the Stone Mason."
+	desc = "Assemble with your own radiance a strong, floating automaton on top of the user's presence. Sadly, this area-denier is an non-functional prototype, so avoid using it."
+	cooldown = TRUE
+	cooldown_time = 30 MINUTES
+	power = 75
+
+/*
+/obj/machinery/power/stonemason
+	name = "Bonfire Stonemason"
+	desc = "The Stonemason."
+	icon = 'icons/obj/custodian_structures.dmi'
+	icon_state = "torchbearer"
+
+	density = FALSE
+	anchored = FALSE
+	layer = 2.8
+
+	use_power = IDLE_POWER_USE
+	idle_power_usage = 0
+	active_power_usage = 0
+	var/overrideFaithfulCheck = FALSE
+	var/active = FALSE
+	var/area_radius = 7
+	var/damage = 20
+	var/max_targets = 5
+	var/nt_buff_power = 5
+	var/nt_buff_cd = 3
+
+	var/static/stat_buff
+	var/list/currently_affected = list()
+	var/force_active = 0
+
+	var/ticks_to_next_process = 3
+	var/delta_y = target.y - moving.y
+	var/delta_x = target.x - moving.x
+
+	/datum/lecture/hearthcore/cataphract/dummy/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	*/

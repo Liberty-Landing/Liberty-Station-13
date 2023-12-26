@@ -266,7 +266,7 @@
 /obj/item/reagent_containers/food/snacks/meat/human
 	name = "Longpork"
 	desc = "The food of the desesperate and tribal societies that believes in power by Anthropophagism. This slab of meat looks like beef, albeit less reddish and with pale yellow fat. Due to midia depiction over rampage cannibalism on neglected criminal communities, the average colonist is wary of human meat, and can quickly notice the difference."
-	icon_state = "sus" // I'm respriting this, do not worry.
+	icon_state = "humanmeat" // I'm respriting this, do not worry.
 	filling_color = "#FF1C1C"
 	preloaded_reagents = list("longpork" = 8)
 	slice_path = /obj/item/reagent_containers/food/snacks/rawcutlet

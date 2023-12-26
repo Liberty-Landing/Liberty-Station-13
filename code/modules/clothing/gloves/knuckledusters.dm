@@ -94,8 +94,8 @@
 /obj/item/clothing/gloves/dusters/flamecestus
     name = "Druzhina flame cestus"
     desc = "Silvery wrapping with hollow tubes for radiance to freight by fisting something. Coats the enemy in radiance to ignite."
-    icon_state = "dusters_silver"
-    item_state = "dusters_silver"
+    icon_state = "dusters_radiance"
+    item_state = "dusters_radiance"
     punch_increase = 5 // Just a little extra damage, already strong by being able to light non-robots on fire.
     price_tag = 0
 
