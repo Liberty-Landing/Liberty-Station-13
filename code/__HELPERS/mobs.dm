@@ -309,7 +309,7 @@ Proc for attack log creation, because really why not
 	if(!isliving(L))
 		return FALSE
 	var/obj/item/implant/core_implant/hearthcore/C = L.get_core_implant(/obj/item/implant/core_implant/hearthcore)
-	if(C && C.get_module(HEARTHCORE_COMMON, HEARTHCORE_SPECIAL)) //Putting SPECIAL here for testing. Must be removed when the Peerage perk works.
+	if(C && C.get_module(HEARTHCORE_COMMON))
 		return TRUE
 	return FALSE
 

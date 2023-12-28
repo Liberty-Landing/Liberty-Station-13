@@ -35,11 +35,12 @@
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 
-/obj/item/tool/sword/custodian/shortsword/attackby(obj/item/I, mob/user) //this code does not work now.
+/obj/item/tool/sword/custodian/shortsword/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/mold/purifier_essence))
-		new /obj/item/tool/spear/atgeir
-	qdel(src) 
-	qdel(I)	
+		user.unEquip(I, src)
+		new /obj/item/tool/spear/atgeir(user.loc)
+		qdel(src)
+		qdel(I)
 
 /obj/item/tool/sword/custodian/horseaxe
 	name = "horseman axe"

@@ -325,7 +325,9 @@
 /datum/lecture/hearthcore/druzhina/flamecestus/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob >= 30) //You need 30 robustness at minimum to use this lecture
-		new /obj/item/clothing/gloves/dusters/flamecestus(lecturer.loc)
-		return TRUE
+		var/flame = new /obj/item/clothing/gloves/dusters/flamecestus(src)
+		if(lecturer.put_in_active_hand(flame))
+			return TRUE
+		qdel(flame)
 	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
 	return FALSE

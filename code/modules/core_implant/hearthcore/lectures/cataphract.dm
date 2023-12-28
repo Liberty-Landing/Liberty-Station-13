@@ -1,4 +1,4 @@
-/datum/lecture/hearthcore/Cataphract
+/datum/lecture/hearthcore/cataphract
 	name = "Cataphract"
 	category = "Cataphract"
 	phrase = null
@@ -33,6 +33,7 @@
 	max_shield_health = 2
 	size_x = 1
 	size_y = 1
+	shield_regen_amount = 0
 	var/mob/living/carbon/holder  // Used to delete when dropped
 	var/obj/item/implant/core_implant/hearthcore/linked_hearthcore
 
@@ -51,13 +52,14 @@
 	if(projector)
 		projector.adjust_health(amount)
 
+
 /obj/item/shield_projector/rectangle/cataphract_personal/create_shield(newloc, new_dir)
 	var/obj/effect/directional_shield/cataphract_personal/S = new(newloc, src)
 	S.dir = new_dir
 	active_shields += S
 
 //fill the gaps
-/obj/item/shield_projector/rectangle/cataphract_personal/attack_hand(mob/living/carbon/human/user as mob)
+/obj/item/shield_projector/rectangle/cataphract_personal/attack_self(mob/living/carbon/human/user as mob)
 	if(!user.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 		qdel(src)
 		return
@@ -68,11 +70,14 @@
 	shield_health = C.power
 	max_shield_health = C.max_power
 	linked_hearthcore = C
+	..()
 
 /obj/item/shield_projector/rectangle/cataphract_personal/adjust_health(amount)
-	..()
+	linked_hearthcore.power += (amount * 0.1) //This is negitive, so were adding a negitive number
+	shield_health = linked_hearthcore.power
 	if(linked_hearthcore.power <= 0)
 		destroy_shields()
+	..()
 
 /datum/lecture/hearthcore/cataphract/purification
 	name = "Genuine Purification"

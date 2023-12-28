@@ -275,6 +275,17 @@
 			real_damage *= damage_multiplier
 			real_damage += H.punch_damage_increase
 			stat_damage *= damage_multiplier
+			if(frost_punch > 0)
+				frost += frost_punch
+			if(fire_punch > 0)
+				fire_stacks += fire_punch
+				fire_act()
+			if(water_punch > 0)
+				fire_stacks -= water_punch
+				fire_act()
+			if(eletric_punch > 0)
+				damage_through_armor(real_damage, (attack.deal_halloss ? HALLOSS : BURN), affecting, ARMOR_ENERGY, sharp = attack.sharp, edge = attack.edge)
+
 			if(HULK in H.mutations)
 				real_damage *= 2 // Hulks do twice the damage
 				stat_damage *= 2

@@ -161,11 +161,9 @@ This is NOT for racial-specific perks, but rather specifically for general backg
 			hearthcore.add_module(new HEARTHCORE_SPECIAL)
 			hearthcore.update_data()
 		else
-			var/obj/item/W
-			W = /obj/item/mold/purifier_essence
+			var/obj/item/mold/purifier_essence/W
 			W = new W(H)
-			spawn(1)
-				holder.equip_to_storage_or_drop(W)
+			holder.equip_to_storage_or_drop(W)
 
 ////////////////////////
 /* Sanity-Based Perks */

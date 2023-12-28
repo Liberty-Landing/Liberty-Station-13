@@ -136,3 +136,8 @@
 	var/frost_warnings
 	var/frost_warnings_cooldown = 49
 	var/max_frost = 1200 //were out of 1.2k so are values are a bit inflated
+	//Elemental-Fighting
+	var/frost_punch = 0
+	var/fire_punch = 0
+	var/water_punch = 0
+	var/eletric_punch = 0

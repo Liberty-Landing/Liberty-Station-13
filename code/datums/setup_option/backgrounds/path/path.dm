@@ -105,7 +105,7 @@
 
 	stat_modifiers = list(STAT_TGH = -5, STAT_WIL = 5)
 
-/datum/category_item/setup_option/background/path/peerage //Ask for help to Trilby to make the 'Special Hearthcore Module' to only spawn to those who have this tag
+/datum/category_item/setup_option/background/path/peerage
 	name = "Colonial Noble"
 	desc = "Despite lacking powers in Freeport, your familial connections to Elohopea's bloodlines afford you noble status, whether by birth or adoption. \
 	Chivalric films, festivities, warfare and martial knowledge shaped your cultural upbringing. \
@@ -114,7 +114,6 @@
 	However, the powers of your specialization will only come if you have a hearthcore during your adult years."
 
 	perks = list(PERK_PEERAGE)
-
 	stat_modifiers = list(STAT_ROB = 8, STAT_TGH = 8, STAT_BIO = -5, STAT_MEC = -5, STAT_VIG = -10, STAT_WIL = -10)
 
 //put the funny special hearthcore module here

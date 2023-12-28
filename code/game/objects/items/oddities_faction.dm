@@ -549,7 +549,7 @@ No more of that.
 		to_chat(src, SPAN_DANGER("You were interrupted!"))
 		return
 
-	var/bang_text = pick("Tis but a scratch!", "Get on with it!", "Help! Help! I'm being repressed!", "NI!")
+	var/bang_text = pick("Tis but a scratch!", "Get on with it!", "Help! Help! I'm being repressed!")
 
 	for(var/obj/structure/closet/L in hear(7, get_turf(src)))
 		if(locate(/mob/living/carbon/, L))
