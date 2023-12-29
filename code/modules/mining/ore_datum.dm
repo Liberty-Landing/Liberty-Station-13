@@ -27,8 +27,8 @@ var/global/list/ore_data = list()
 	name = ORE_URANIUM
 	display_name = "pitchblende"
 	smelts_to = MATERIAL_URANIUM
-	result_amount = 10
-	spread_chance = 10
+	result_amount = 8
+	spread_chance = 8
 	ore = /obj/item/stack/ore/uranium
 	scan_icon = "mineral_uncommon"
 	xarch_ages = list(
@@ -43,18 +43,19 @@ var/global/list/ore_data = list()
 	smelts_to = MATERIAL_IRON
 	alloy = TRUE
 	result_amount = 10
-	spread_chance = 25
+	spread_chance = 15
 	ore = /obj/item/stack/ore/iron
 	scan_icon = "mineral_common"
 
-/ore/coal
-	name = ORE_CARBON
-	display_name = "raw carbon"
+/ore/lignite
+	name = ORE_LIGNITE
+	display_name = "raw lignite"
 	smelts_to = MATERIAL_PLASTIC
+	compress_to = MATERIAL_BRIQUETTE
 	alloy = TRUE
 	result_amount = 10
-	spread_chance = 25
-	ore = /obj/item/stack/ore/coal
+	spread_chance = 15
+	ore = /obj/item/stack/ore/lignite
 	scan_icon = "mineral_common"
 
 /ore/glass
@@ -64,15 +65,15 @@ var/global/list/ore_data = list()
 	compresses_to = MATERIAL_SANDSTONE
 	alloy = TRUE
 
-/ore/plasma
-	name = ORE_PLASMA
-	display_name = "plasma crystals"
-	compresses_to = MATERIAL_PLASMA
+/ore/hydrogen
+	name = ORE_CLATHRATES
+	display_name = "Gaseous Clathrates"
+	compresses_to = MATERIAL_MHYDROGEN
+	smelts_to = MATERIAL_TRITIUM
 	alloy = TRUE
-	//smelts_to = something that explodes violently on the conveyor, huhuhuhu
-	result_amount = 8
-	spread_chance = 25
-	ore = /obj/item/stack/ore/plasma
+	result_amount = 6
+	spread_chance = 8
+	ore = /obj/item/stack/ore/hydrogen
 	scan_icon = "mineral_uncommon"
 	xarch_ages = list(
 		"thousand" = 999,
@@ -80,7 +81,7 @@ var/global/list/ore_data = list()
 		"billion" = 13,
 		"billion_lower" = 10
 		)
-	xarch_source_mineral = "plasma"
+	xarch_source_mineral = "hydrogen"
 
 /ore/silver
 	name = ORE_SILVER
@@ -110,13 +111,84 @@ var/global/list/ore_data = list()
 	name = ORE_DIAMOND
 	display_name = "diamond"
 	compresses_to = MATERIAL_DIAMOND
-	result_amount = 5
+	result_amount = 4
 	spread_chance = 10
 	ore = /obj/item/stack/ore/diamond
 	scan_icon = "mineral_rare"
 	xarch_source_mineral = "nitrogen"
 
-/ore/platinum
+/ore/niobium
+	name = ORE_NIOBIUM
+	display_name = "pyrochlore"
+	smelts_to = MATERIAL_NIOBIUM //why would you do this?
+	alloy = TRUE
+	result_amount = 8
+	spread_chance = 10
+	ore = /obj/item/stack/ore/niobium
+	scan_icon = "mineral_uncommon"
+	xarch_ages = list(
+		"thousand" = 999,
+		"million" = 704
+		)
+	xarch_source_mineral = "potassium"
+
+/ore/copper
+	name = ORE_COPPER
+	display_name = "Malachite"
+	smelts_to = MATERIAL_COPPER
+	result_amount = 10
+	spread_chance = 25
+	ore = /obj/item/stack/ore/copper
+	scan_icon = "mineral_uncommon"
+	xarch_ages = list(
+		"thousand" = 999,
+		"million" = 704
+		)
+	xarch_source_mineral = "potassium"
+
+/ore/aluminium
+	name = ORE_ALUMINIUM
+	display_name = "bauxite"
+	smelts_to = MATERIAL_ALUMINIUM
+	result_amount = 10
+	spread_chance = 25
+	ore = /obj/item/stack/ore/aluminium
+	scan_icon = "mineral_uncommon"
+	xarch_ages = list(
+		"thousand" = 999,
+		"million" = 704
+		)
+	xarch_source_mineral = "oxides"
+
+/ore/titanium
+	name = ORE_TITANIUM
+	display_name = "ilminite"
+	smelts_to = MATERIAL_TITANIUM
+	result_amount = 10
+	spread_chance = 10
+	ore = /obj/item/stack/ore/uranium
+	scan_icon = "mineral_uncommon"
+	xarch_ages = list(
+		"thousand" = 999,
+		"million" = 704
+		)
+	xarch_source_mineral = "potassium"
+
+/ore/fragnacre
+	name = ORE_FRAGNACRE
+	display_name = "Fragmented Nacre"
+	smelts_to = MATERIAL_FRAGNACRE
+	result_amount = 0
+	spread_chance = 0
+	ore = /obj/item/stack/ore/fragnacre
+	scan_icon = "mineral_uncommon"
+	xarch_ages = list(
+		"thousand" = 999,
+		"million" = 704
+		)
+	xarch_source_mineral = "potassium"
+
+/* /ore/platinum
 	name = ORE_PLATINUM
 	display_name = "raw platinum"
 	smelts_to = MATERIAL_PLATINUM
@@ -126,13 +198,5 @@ var/global/list/ore_data = list()
 	spread_chance = 10
 	ore = /obj/item/stack/ore/osmium
 	scan_icon = "mineral_rare"
+*/
 
-/ore/hydrogen
-	name = ORE_HYDROGEN
-	display_name = "metallic hydrogen"
-	smelts_to = MATERIAL_TRITIUM
-	compresses_to = MATERIAL_MHYDROGEN
-	scan_icon = "mineral_rare"
-	spread_chance = 5
-	result_amount = 5
-	ore = /obj/item/stack/ore/hydrogen
