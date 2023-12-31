@@ -6,7 +6,7 @@
   - bugfix: fixed shellshock having no scope and bayonet slot
   ErisMeleeEnjoyer:
   - tweak: throwing knives now spawn in full stack
-  - balance: deconstructing throwing knives now gives 1 plasteel instead of 2
+  - balance: deconstructing throwing knives now gives 1 indsteel instead of 2
   - rscadd: increase force and throwforce of intact bottles
   - tweak: bottles guaranteed to break on impact when not in help mode
   - rscdel: twirling instead of irish whipping on help intent
@@ -53,7 +53,7 @@
   - rscadd: Added a style bar to the clothing UI
   maikilangiolo:
   - bugfix: hopefully fixed the last of the shitcoded frame parts (clueless)
-  - rscadd: added cheap steel gun parts to the crafting station
+  - rscadd: added cheap aluminium gun parts to the crafting station
   - tweak: makeshift guns and bolt guns now use cheap parts to be crafted
   - bugfix: fixed oversight in makeshift pistol disassembly
 2022-10-02:
@@ -124,7 +124,7 @@
   - rscadd: Added damage against 15 armour to the gun UI.
   maikilangiolo:
   - bugfix: fixed manual-action mechanism crafting
-  - bugfix: makeshift rev needing plasteel parts
+  - bugfix: makeshift rev needing indsteel parts
   - rscadd: added paramedic items to the EMT belt allowed list
   master832:
   - tweak: Add sink to Garden and Xenoflora Lab
@@ -154,7 +154,7 @@
   - bugfix: Takeshi disk now comes with .25 LMG box (its new caliber) instead of .30
       LMG box
   - balance: Railings cost 4 -> 2 sheets of metal
-  - balance: Catwalk cost 3 -> 2 steel rods, speed adjusted from six seconds to 2
+  - balance: Catwalk cost 3 -> 2 aluminium rods, speed adjusted from six seconds to 2
       at 0 MEC and instant at 40 MEC
   - balance: Underplating -> Plating cost 2 -> 1 sheet of metal, speed adjusted from
       0.5 seconds to 3 at 0 MEC and instant at 40 MEC
@@ -178,7 +178,7 @@
   - rscadd: holster verb(hotkey) is universal for both holster types
   - bugfix: Most holsterable guns should be holsterable now
   - bugfix: Accessory holsters cannot hold stuff that pouch holsters can't
-  - bugfix: golden dusters are made out of plasteel now, not platinum
+  - bugfix: golden dusters are made out of indsteel now, not platinum
   - bugfix: all dusters are spawn blacklisted
   - bugfix: weighted gloves now actually need knuckle gloves and not dusters
   Kurgis:

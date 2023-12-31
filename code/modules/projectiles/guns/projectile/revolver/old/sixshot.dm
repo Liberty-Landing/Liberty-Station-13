@@ -10,7 +10,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	max_shells = 6
 	fire_sound = 'sound/weapons/guns/fire/shotgun.ogg'
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 15, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 15, MATERIAL_ALUMINIUM = 5)
 	price_tag = 500
 	damage_multiplier = 0.8
 	init_recoil = RIFLE_RECOIL(2)
@@ -40,7 +40,7 @@
 	icon = 'icons/obj/guns/projectile/sixshotconversion.dmi'
 	icon_state = "sixshot_belt"
 	max_shells = 10
-	matter = list(MATERIAL_PLASTEEL = 24, MATERIAL_WOOD = 15, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 24, MATERIAL_WOOD = 15, MATERIAL_ALUMINIUM = 5)
 	price_tag = 600
 	init_recoil = RIFLE_RECOIL(3)
 	saw_off = FALSE
@@ -63,7 +63,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_PAINFUL
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_STEEL= 5)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_ALUMINIUM= 5)
 	price_tag = 250
 	damage_multiplier = 0.7
 	penetration_multiplier = 0.8

@@ -372,12 +372,12 @@ var/list/mydirs = list(NORTH, SOUTH, EAST, WEST, SOUTHWEST, NORTHWEST, NORTHEAST
 					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 					return
 
-			for(var/obj/structure/barricade/obstacle in get_step(src, dir))//Steel will not stop us, then why would planks?
+			for(var/obj/structure/barricade/obstacle in get_step(src, dir))//aluminium will not stop us, then why would planks?
 				if(obstacle.density == TRUE)
 					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 					return
 
-			for(var/obj/machinery/deployable/obstacle in get_step(src, dir))//Steel will not stop us, then why would planks?
+			for(var/obj/machinery/deployable/obstacle in get_step(src, dir))//aluminium will not stop us, then why would planks?
 				if(obstacle.density == TRUE)
 					obstacle.attack_generic(src,rand(melee_damage_lower,melee_damage_upper),attacktext)
 					return

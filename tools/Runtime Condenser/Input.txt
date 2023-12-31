@@ -284,7 +284,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel kitchen knife (/obj/item/weapon/material/knife), 0)
+qdel(the aluminium kitchen knife (/obj/item/weapon/material/knife), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()
@@ -297,7 +297,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel tactical knife (/obj/item/weapon/material/hatchet/tacknife), 0)
+qdel(the aluminium tactical knife (/obj/item/weapon/material/hatchet/tacknife), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()
@@ -310,7 +310,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel hatchet (/obj/item/weapon/material/hatchet), 0)
+qdel(the aluminium hatchet (/obj/item/weapon/material/hatchet), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()
@@ -323,7 +323,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel mini hoe (/obj/item/weapon/material/minihoe), 0)
+qdel(the aluminium mini hoe (/obj/item/weapon/material/minihoe), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()
@@ -677,7 +677,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel kitchen knife (/obj/item/weapon/material/knife), 0)
+qdel(the aluminium kitchen knife (/obj/item/weapon/material/knife), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()
@@ -690,7 +690,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel tactical knife (/obj/item/weapon/material/hatchet/tacknife), 0)
+qdel(the aluminium tactical knife (/obj/item/weapon/material/hatchet/tacknife), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()
@@ -703,7 +703,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel hatchet (/obj/item/weapon/material/hatchet), 0)
+qdel(the aluminium hatchet (/obj/item/weapon/material/hatchet), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()
@@ -716,7 +716,7 @@ proc name: crash with (/proc/crash_with)
   src: null
   call stack:
 crash with("WARNING: /obj/item/weapon/mate...")
-qdel(the steel mini hoe (/obj/item/weapon/material/minihoe), 0)
+qdel(the aluminium mini hoe (/obj/item/weapon/material/minihoe), 0)
 populate lathe recipes()
 /datum/controller/game_control... (/datum/controller/game_controller): setup objects()
 /datum/controller/game_control... (/datum/controller/game_controller): setup()

@@ -117,7 +117,7 @@
 #define COIN_SILVER "Silver coin"
 #define COIN_DIAMOND "Diamond coin"
 #define COIN_IRON "Iron coin"
-#define COIN_PLASMA "Solid plasma coin"
+#define COIN_PLASMA "Solid hydrogen coin"
 #define COIN_URANIUM "Uranium coin"
 #define COIN_PLATINUM "Platunum coin"
 

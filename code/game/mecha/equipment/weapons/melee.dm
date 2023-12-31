@@ -2,7 +2,7 @@
 	name = "mecha melee weapon"
 	range = MECHA_MELEE
 	origin_tech = list(TECH_MATERIAL = 3, TECH_COMBAT = 3)
-	matter = list(MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15)
 	equip_cooldown = 15
 	energy_drain = 10
 	structure_damage_factor = 2
@@ -41,7 +41,7 @@
 	edge = TRUE
 	tool_qualities = list(QUALITY_CUTTING = 30,  QUALITY_WIRE_CUTTING = 20) //Same as E-cutlasses
 	origin_tech = list(TECH_MAGNET = 5, TECH_POWER = 6, TECH_COMBAT = 3) //Same as E-cutlasses
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_SILVER = 1, MATERIAL_GOLD = 1) //WAY LESS then normal E-cutlasses do to the only being 5 more damage
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_SILVER = 1, MATERIAL_GOLD = 1) //WAY LESS then normal E-cutlasses do to the only being 5 more damage
 	armor_penetration = ARMOR_PEN_DEEP
 	structure_damage_factor = STRUCTURE_DAMAGE_HEAVY
 	hitsound = 'sound/weapons/bladeslice.ogg'
@@ -63,10 +63,10 @@
 
 /obj/item/mecha_parts/mecha_equipment/melee_weapon/shockmaul
 	name = "mech shock maul"
-	desc = "A massive, plasteel maul designed to be wielded by an exosuit"
+	desc = "A massive, indsteel maul designed to be wielded by an exosuit"
 	icon_state = "mech_maul"
 	hitsound = 'sound/weapons/Egloves.ogg'
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_SILVER = 2)
 	var/icon/melee_overlay
 	var/agonyforce = 80
 	var/stunforce = 0

@@ -93,7 +93,7 @@
 /obj/item/ammo_magazine/ammobox/pistol_35/large
 	name = "ammunition box (9mm)"
 	desc = "A large box of police grade 9mm."
-	matter = list(MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15)
 	w_class = ITEM_SIZE_BULKY
 	max_ammo = 200
 	icon_state = "pistol_large"
@@ -173,7 +173,7 @@
 /obj/item/ammo_magazine/ammobox/magnum_40/large
 	name = "ammunition box (10mm Magnum)"
 	icon_state = "magbox"
-	matter = list(MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15)
 	w_class = ITEM_SIZE_BULKY
 	caliber = CAL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum_40
@@ -200,7 +200,7 @@
 /obj/item/ammo_magazine/ammobox/light_rifle_257
 	name = "ammunition box (6.5mm Carbine FMJ)"
 	icon_state = "box_lrifle"
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 	w_class = ITEM_SIZE_BULKY
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_BOX
@@ -294,7 +294,7 @@
 	name = "ammunition box (7.62mm Rifle ball)"
 	icon_state = "boxhrifle"
 	desc = "A box of 7.62mm rifle ammunition. 180ct, Full Metal Jacket rounds."
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 	w_class = ITEM_SIZE_BULKY
 	caliber = CAL_RIFLE
 	mag_type = MAGAZINE
@@ -440,7 +440,7 @@
 /obj/item/ammo_magazine/ammobox/shotgun
 	name = "ammunition packet (20mm Slug)"
 	icon_state = "slug"
-	matter = list(MATERIAL_CARDBOARD = 1) // should be 35 steel, but for balance its not
+	matter = list(MATERIAL_CARDBOARD = 1) // should be 35 aluminium, but for balance its not
 	caliber = CAL_SHOTGUN
 	w_class = ITEM_SIZE_NORMAL //so we dont magiclly shrink
 	ammo_type = /obj/item/ammo_casing/shotgun

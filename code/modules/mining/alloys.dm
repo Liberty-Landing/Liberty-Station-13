@@ -1,6 +1,4 @@
 //Alloys that contain subsets of each other's ingredients must be ordered in the desired sequence
-//eg. steel comes after plasteel because plasteel's ingredients contain the ingredients for steel and
-//it would be impossible to produce. ALSO FOUND IT
 
 /datum/alloy
 	var/name = "nameless"
@@ -14,6 +12,8 @@
 #define MATERIAL_BGLASS "borosilicate glass"
 #define MATERIAL_DILATANT "dilatant plate"
 #define MATERIAL_INDSTEEL "industrial steel"
+#define MATERIAL_COMPOSITE "industrial steel"
+
 
 // Post Industrial Materials
 /datum/alloy/duralumin
@@ -47,6 +47,16 @@
 		)
 	product = /obj/item/stack/material/glass/nacreglass
 
+/datum/alloy/composite
+	name = "Titanium Composite"
+	metaltag = "composite"
+	ore_input = 3
+	requires = list(
+		ORE_NIOBIUM = 1,
+		ORE_TITANIUM = 2,
+		)
+	product = /obj/item/stack/material/composite
+
 // Pre-Industrial Materials
 /*
 /datum/alloy/plasteel
@@ -59,21 +69,21 @@
 		ORE_IRON = 2
 		)
 	product_mod = 0.3
-	product = /obj/item/stack/material/plasteel
+	product = /obj/item/stack/material/indsteel
 
-/datum/alloy/steel
-	name = "Steel"
-	metaltag = MATERIAL_STEEL
+/datum/alloy/aluminium
+	name = "aluminium"
+	metaltag = MATERIAL_ALUMINIUM
 	ore_input = 2
 	requires = list(
 		ORE_CARBON = 1,
 		ORE_IRON = 1
 		)
-	product = /obj/item/stack/material/steel
+	product = /obj/item/stack/material/aluminium
 
 /datum/alloy/borosilicate
 	name = "Borosilicate glass"
-	metaltag = MATERIAL_PLASMAGLASS
+	metaltag = MATERIAL_LBGLASS
 	ore_input = 3
 	requires = list(
 		ORE_PLASMA = 1,

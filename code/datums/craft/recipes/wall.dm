@@ -22,20 +22,20 @@
 	name = "railing, copper"
 	result = /obj/structure/railing
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/wall/railing_grey
 	name = "railing, grey"
 	result = /obj/structure/railing/grey
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM)
 	)
 
 //wall or small you know them req only 2 list
 /datum/craft_recipe/wall/wall
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM)
 	)
 	flags = null
 	time = 120
@@ -47,7 +47,7 @@
 	time = WORKTIME_NORMAL
 	flags = null
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM)
 	)
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	related_stats = list(STAT_MEC)
@@ -58,7 +58,7 @@
 	time = WORKTIME_FAST
 	flags = null
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 3, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_MEC)
 
@@ -68,7 +68,7 @@
 	time = WORKTIME_FAST
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_MEC)
 

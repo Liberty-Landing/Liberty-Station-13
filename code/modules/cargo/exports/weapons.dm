@@ -64,7 +64,7 @@
 
 /datum/export/weapon/katana
 	cost = 500
-	unit_name = "steel katana"
+	unit_name = "aluminium katana"
 	export_types = list(/obj/item/material/sword/katana)
 
 /datum/export/weapon/katana/silver
@@ -92,10 +92,10 @@
 	unit_name = "platinum katana"
 	export_types = list(/obj/item/material/sword/katana/platinum)
 
-/datum/export/weapon/katana/plasteel
+/datum/export/weapon/katana/indsteel
 	cost = 750
-	unit_name = "plasteel katana"
-	export_types = list(/obj/item/material/sword/katana/plasteel)
+	unit_name = "indsteel katana"
+	export_types = list(/obj/item/material/sword/katana/indsteel)
 
 /datum/export/weapon/katana/uranium
 	cost = 2000

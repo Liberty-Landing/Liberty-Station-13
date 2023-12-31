@@ -8,7 +8,7 @@
 
 /obj/machinery/autolathe/artist_bench
 	name = "artisan's table"
-	desc = "Insert wood, steel, glass, plasteel, plastic and a bit of your soul to create a beautiful work of art."
+	desc = "Insert wood, aluminium, glass, indsteel, plastic and a bit of your soul to create a beautiful work of art."
 	icon = 'icons/obj/machines/autolathe.dmi'
 	icon_state = "artisantable"
 	circuit = /obj/item/circuitboard/artist_bench
@@ -17,7 +17,7 @@
 	have_recycling = FALSE
 	have_design_selector = FALSE
 
-	suitable_materials = list(MATERIAL_WOOD, MATERIAL_STEEL, MATERIAL_GLASS, MATERIAL_PLASTEEL, MATERIAL_PLASTIC)
+	suitable_materials = list(MATERIAL_WOOD, MATERIAL_ALUMINIUM, MATERIAL_GLASS, MATERIAL_INDSTEEL, MATERIAL_PLASTIC)
 	var/min_mat = 20
 	var/min_insight = 40
 	var/datum/component/inspiration/inspiration

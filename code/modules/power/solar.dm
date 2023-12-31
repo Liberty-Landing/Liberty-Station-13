@@ -264,7 +264,7 @@
 
 	if(anchored && isturf(loc))
 		log_debug("1")
-		if(istype(I, /obj/item/stack/material) && (I.get_material_name() == MATERIAL_GLASS || I.get_material_name() == MATERIAL_RGLASS || I.get_material_name() == MATERIAL_PLASMAGLASS || I.get_material_name() == MATERIAL_RPLASMAGLASS))
+		if(istype(I, /obj/item/stack/material) && (I.get_material_name() == MATERIAL_GLASS || I.get_material_name() == MATERIAL_LGLASS || I.get_material_name() == MATERIAL_LBGLASS || I.get_material_name() == MATERIAL_RPLASMAGLASS))
 			log_debug("2")
 			var/obj/item/stack/material/S = I
 			if(S.use(2))

@@ -13,7 +13,7 @@
 	damage_multiplier = 0.8
 	penetration_multiplier = 0.9
 	zoom_factors = list()
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 6, MATERIAL_PLASTEEL = 7)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 6, MATERIAL_INDSTEEL = 7)
 	serial_type = "ML"
 	extra_bulk = -2
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SCOPE)
@@ -40,4 +40,4 @@
 	item_state = "western"
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 450
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 4, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 4, MATERIAL_INDSTEEL = 5)

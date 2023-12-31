@@ -77,7 +77,7 @@
 /datum/design/research/item/medical/cryobag
 	name = "Stasis Bag"
 	desc = "A body bag for a dead or dying body, used to slow down their metabolism through cryostasis technology while transporting them."
-	materials = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 3, MATERIAL_PLASTIC = 5, MATERIAL_SILVER = 1)
+	materials = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 3, MATERIAL_PLASTIC = 5, MATERIAL_SILVER = 1)
 	build_path = /obj/item/bodybag/cryobag
 
 /datum/design/research/item/medical/blue
@@ -149,7 +149,7 @@
 	name = "CAPSA Medical Omnitool"
 	desc = "An all-in-one smart medical tool implant based on the legendary Simulacrum Robotics model."
 	build_path = /obj/item/tool/medmultitool/portable
-	materials = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_SILVER = 1)
+	materials = list(MATERIAL_ALUMINIUM = 5, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_SILVER = 1)
 	category = CAT_TOOLS
 
 /datum/design/research/item/scalpel_laser

@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ab" = (
 /obj/machinery/door/airlock/freezer,
@@ -25,11 +25,11 @@
 /area/deepmaint)
 "af" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ai" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aj" = (
 /obj/structure/bed/chair/custom/onestar{
@@ -177,7 +177,7 @@
 /area/deepmaint)
 "aW" = (
 /obj/item/trash/candy,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aZ" = (
 /obj/structure/sink/kitchen{
@@ -244,7 +244,7 @@
 "br" = (
 /obj/item/trash/cheesie,
 /obj/item/trash/chips,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bx" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -256,11 +256,11 @@
 /area/deepmaint)
 "bA" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bC" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bD" = (
 /obj/machinery/light,
@@ -268,7 +268,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/deepmaint)
 "bE" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bF" = (
 /obj/structure/bed/chair/custom/onestar{
@@ -323,11 +323,11 @@
 /area/deepmaint)
 "bS" = (
 /obj/item/trash/cheesie,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bV" = (
 /obj/effect/window_lwall_spawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bW" = (
 /obj/structure/bed/chair/custom/onestar{
@@ -350,7 +350,7 @@
 /area/deepmaint)
 "ca" = (
 /obj/machinery/vending/fitness,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cg" = (
 /obj/random/cloth/helmet,
@@ -369,7 +369,7 @@
 /area/deepmaint)
 "cj" = (
 /obj/item/trash/candy/proteinbar,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ck" = (
 /obj/structure/table/bench/marble,
@@ -482,7 +482,7 @@
 "um" = (
 /obj/machinery/light/floor,
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "xf" = (
 /obj/structure/bed/chair/custom/onestar{
@@ -509,7 +509,7 @@
 /area/deepmaint)
 "AY" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Bc" = (
 /obj/structure/table/bench/marble,
@@ -518,7 +518,7 @@
 /area/deepmaint)
 "Br" = (
 /obj/random/cluster/psi_monster/lower_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Ev" = (
 /obj/structure/table/standard,
@@ -527,7 +527,7 @@
 /area/deepmaint)
 "Fv" = (
 /obj/item/trash/liquidfood,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Oc" = (
 /obj/structure/table/standard,

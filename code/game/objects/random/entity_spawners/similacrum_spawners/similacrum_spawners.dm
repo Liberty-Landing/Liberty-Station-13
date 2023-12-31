@@ -7,9 +7,9 @@
 	color = PIPE_COLOR_ORANGE
 
 	dropped = list(
-				/obj/item/stack/material/steel/{amount = 15} = 100,
+				/obj/item/stack/material/aluminium/{amount = 15} = 100,
 				/obj/item/stack/material/glass/random = 95,
-				/obj/item/stack/material/plasteel/random = 15,
+				/obj/item/stack/material/indsteel/random = 15,
 				/obj/item/stack/cable_coil{amount = 5} = 90,
 				/obj/item/trash/material/circuit = 100,
 				/obj/item/stock_parts/matter_bin/one_star = 32,

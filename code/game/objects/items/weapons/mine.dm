@@ -4,7 +4,7 @@
 	icon = 'icons/obj/machines/excelsior/objects.dmi'
 	icon_state = "mine"
 	w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_STEEL = 35)
+	matter = list(MATERIAL_ALUMINIUM = 35)
 	matter_reagents = list("fuel" = 40)
 	layer = HIDE_LAYER
 	//layer = BELOW_MOB_LAYER //fixed the wrong layer - Plasmatik //This one is to easy to spot, so we hide them a bit more - Kaz/Trilby
@@ -45,7 +45,7 @@
 	name = "military mine"
 	desc = "An anti-personnel mine. IFF technology grants safe passage to legion soldier, and a merciful brief end to others, unless they have a Pulse tool nearby."
 	icon_state = "mine_excel"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 10)
 	excelsior = TRUE
 	prob_explode = 100
 	pulse_difficulty = FAILCHANCE_HARD
@@ -65,7 +65,7 @@
 	name = "makeshift mine"
 	desc = "An improvised explosive mounted in a bear trap. Dangerous to step on, but easy to defuse."
 	icon_state = "mine_improv"
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASMA = 5)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_HYDROGENC = 5)
 	prob_explode = 75
 	pulse_difficulty = FAILCHANCE_ZERO
 	explosion_h_size = 0

@@ -5,7 +5,7 @@
 	icon = 'icons/obj/guns/energy/slimegun.dmi'
 	icon_state = "slimepistol"
 	item_state = "slimepistol"
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 3)
 	price_tag = 500
 	charge_cost = 100
 	fire_sound = 'sound/weapons/energy/Taser.ogg'

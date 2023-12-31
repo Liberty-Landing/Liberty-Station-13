@@ -12,10 +12,10 @@
 /area/precursor)
 "d" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "e" = (
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "f" = (
 /obj/structure/bookcase,
@@ -44,7 +44,7 @@
 /obj/random/pack/rare,
 /obj/random/pack/rare/low_chance,
 /obj/random/pack/rare/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "l" = (
 /obj/structure/table/woodentable,
@@ -52,7 +52,7 @@
 /obj/random/junkfood,
 /obj/random/junkfood,
 /obj/random/psi_megafauna,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "m" = (
 /obj/structure/table/woodentable,
@@ -61,7 +61,7 @@
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "n" = (
 /obj/item/remains,
@@ -101,7 +101,7 @@
 /area/precursor)
 "O" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "U" = (
 /obj/random/pack/machine,

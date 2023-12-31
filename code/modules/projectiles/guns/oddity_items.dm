@@ -72,7 +72,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
 	caliber = CAL_SHOTGUN
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_ALUMINIUM = 10)
 	max_shells = 1
 	damage_multiplier = 2
 	penetration_multiplier = 2
@@ -123,7 +123,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	item_state = "brass"
 	caliber = CAL_MAGNUM
 	origin_tech = list(TECH_MAGNET = 10) //3500 points for rnd, eh its meant to stay in player hands not be deconned
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_GLASS = 10, MATERIAL_PLATINUM = 8)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_GLASS = 10, MATERIAL_PLATINUM = 8)
 	price_tag = 2450
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	can_dual = TRUE
@@ -186,7 +186,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	extra_damage_mult_scoped = 0.2
 	fire_delay = 25
 	price_tag = 3750
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_GOLD = 9, MATERIAL_URANIUM = 6) //The normal valk needs silver this is gold plated!
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_GOLD = 9, MATERIAL_URANIUM = 6) //The normal valk needs silver this is gold plated!
 	icon = 'icons/obj/guns/energy/sniper_saint.dmi'
 	fire_sound = 'sound/weapons/energy/aer9fire.ogg'
 	serial_type = "Mastercraft"
@@ -235,7 +235,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	icon_state = "evil"
 	item_state = "evil"
 	origin_tech = list(TECH_ILLEGAL = 5)
-	matter = list(MATERIAL_PLASTEEL = 6, MATERIAL_STEEL = 25)
+	matter = list(MATERIAL_INDSTEEL = 6, MATERIAL_ALUMINIUM = 25)
 	price_tag = 2500
 	projectile_type = /obj/item/projectile/beam/weak/pistol_35
 	charge_cost = 1000000000000000000000000000000000000
@@ -291,7 +291,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	icon_state = "freedom_wrench"
 	w_class = ITEM_SIZE_NORMAL
 	tool_qualities = list(QUALITY_BOLT_TURNING = 80, QUALITY_HAMMERING = 80)
-	matter = list(MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 5)
 	force = WEAPON_FORCE_BRUTAL
 	structure_damage_factor = STRUCTURE_DAMAGE_DESTRUCTIVE
 	throwforce = WEAPON_FORCE_PAINFUL
@@ -315,7 +315,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	w_class = ITEM_SIZE_NORMAL
 	armor_penetration = ARMOR_PEN_DEEP
 	switched_on_penmult = 2.5 //50
-	matter = list(MATERIAL_SILVER = 2, MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_SILVER = 2, MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 3)
 	tool_qualities = list(QUALITY_SAWING = 70, QUALITY_CUTTING = 60, QUALITY_WIRE_CUTTING = 30)
 	max_upgrades = 1//Already over powered.
 	degradation = 0.1

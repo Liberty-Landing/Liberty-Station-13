@@ -14,16 +14,16 @@
 	var/obj/structure/reagent_dispensers/bidon/Container
 	/*
 	Current as of wrighting is balance is around t5 parts aka 50% reduction
-	Meaning: 1 ameridain shard is worth 10, and 50% of 10 = 5 this 1 shards makes 2 steel
+	Meaning: 1 ameridain shard is worth 10, and 50% of 10 = 5 this 1 shards makes 2 aluminium
 	Its balance this way to both encurage its use to fill in gaps when a drill is failing or to round out numbers when needed
 	Ontop of it being able to be farmed semi-easily with an invest of 1 to 3 cores + time on return.
 	- Trilby 8/24/2022
 	*/
 	var/outputs = list(
-						list(name = "Steel", cost = 10, path = /obj/item/stack/material/steel),
+						list(name = "aluminium", cost = 10, path = /obj/item/stack/material/aluminium),
 						list(name = "Plastic", cost = 10, path = /obj/item/stack/material/plastic),
 						list(name = "Glass", cost = 10, path = /obj/item/stack/material/glass),
-						list(name = "Plasteel", cost = 50, path = /obj/item/stack/material/plasteel),
+						list(name = "indsteel", cost = 50, path = /obj/item/stack/material/indsteel),
 						list(name = "Silver", cost = 20, path = /obj/item/stack/material/silver),
 						list(name = "Gold", cost = 20, path = /obj/item/stack/material/gold),
 						list(name = "Platinum", cost = 60, path = /obj/item/stack/material/platinum),

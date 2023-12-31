@@ -23,12 +23,12 @@ var/global/excelsior_max_energy //Maximaum combined energy of all teleporters
 
 	var/list/nanoui_data = list()			// Additional data for NanoUI use
 	var/list/materials_list = list(
-		MATERIAL_STEEL = list("amount" = 30, "price" = 50), //base prices doubled untill new item are in
+		MATERIAL_ALUMINIUM = list("amount" = 30, "price" = 50), //base prices doubled untill new item are in
 		MATERIAL_WOOD = list("amount" = 30, "price" = 50),
 		MATERIAL_PLASTIC = list("amount" = 30, "price" = 50),
 		MATERIAL_GLASS = list("amount" = 30, "price" = 50),
 		MATERIAL_SILVER = list("amount" = 10, "price" = 100),
-		MATERIAL_PLASTEEL = list("amount" = 10, "price" = 200),
+		MATERIAL_INDSTEEL = list("amount" = 10, "price" = 200),
 		MATERIAL_GOLD = list("amount" = 10, "price" = 200),
 		MATERIAL_URANIUM = list("amount" = 10, "price" = 300),
 		MATERIAL_DIAMOND = list("amount" = 10, "price" = 400)

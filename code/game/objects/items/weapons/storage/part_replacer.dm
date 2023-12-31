@@ -13,7 +13,7 @@
 	display_contents_with_number = TRUE
 	max_w_class = ITEM_SIZE_NORMAL
 	max_storage_space = 200
-	matter = list(MATERIAL_PLASTIC = 5, MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_PLASTIC = 5, MATERIAL_ALUMINIUM = 2)
 
 /obj/item/storage/part_replacer/mini
 	name = "compact rapid part exchange device"
@@ -23,4 +23,4 @@
 	w_class = ITEM_SIZE_NORMAL
 	storage_slots = 20
 	max_storage_space = 80
-	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_ALUMINIUM = 2)

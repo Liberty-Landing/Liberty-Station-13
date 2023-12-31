@@ -144,7 +144,7 @@
 	force = WEAPON_FORCE_WEAK+1
 	throwforce = WEAPON_FORCE_WEAK+1
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 4, MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 4, MATERIAL_ALUMINIUM = 4)
 	mopspeed  = 15
 	sweep_time = 4
 

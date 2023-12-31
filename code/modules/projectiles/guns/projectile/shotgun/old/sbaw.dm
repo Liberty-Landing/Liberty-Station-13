@@ -12,7 +12,7 @@
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE|MAG_WELL_DRUM // Pre-existing sprites say otherwise.
 	origin_tech = list(TECH_COMBAT = 20, TECH_MATERIAL = 3) //So rnd has a use to get their hands on one
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 3000
 	penetration_multiplier = 1.5 //50% more ap
 	damage_multiplier = 1.1 //Payload "rifle" has a scope so fair enough

@@ -13,7 +13,7 @@
 	fire_sound = 'sound/weapons/guns/fire/grease_fire.ogg'
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG|MAG_WELL_DRUM
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
 	init_firemodes = list(
 		FULL_AUTO_300
 		)
@@ -34,7 +34,7 @@
 	name = "Broz frame"
 	desc = "A Broz SMG. It's not handmade, but.. it's definetely not quality made either."
 	icon_state = "frame_luty"
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	resultvars = list(/obj/item/gun/projectile/automatic/broz)
 	gripvars = list(/obj/item/part/gun/grip/wood)
 	mechanismvar = /obj/item/part/gun/mechanism/smg

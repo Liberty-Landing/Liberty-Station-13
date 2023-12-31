@@ -118,15 +118,15 @@
 	//src.malfAImodule += new /obj/item/rtf(src) //We don't have these features
 
 	var/datum/matter_synth/metal = new /datum/matter_synth/metal(80000)
-	var/datum/matter_synth/plasteel = new /datum/matter_synth/plasteel(40000)
+	var/datum/matter_synth/indsteel = new /datum/matter_synth/indsteel(40000)
 	var/datum/matter_synth/glass = new /datum/matter_synth/glass(60000)
 	var/datum/matter_synth/wire = new /datum/matter_synth/wire(60)
 	synths += metal
-	synths += plasteel
+	synths += indsteel
 	synths += glass
 	synths += wire
 
-	var/obj/item/stack/material/cyborg/steel/M = new (src)
+	var/obj/item/stack/material/cyborg/aluminium/M = new (src)
 	M.synths = list(metal)
 	src.modules += M
 
@@ -138,8 +138,8 @@
 	Ro.synths = list(metal)
 	src.modules += Ro
 
-	var/obj/item/stack/material/cyborg/plasteel/S = new (src)
-	S.synths = list(plasteel)
+	var/obj/item/stack/material/cyborg/indsteel/S = new (src)
+	S.synths = list(indsteel)
 	src.modules += S
 
 	var/obj/item/stack/material/cyborg/glass/reinforced/RG = new (src)

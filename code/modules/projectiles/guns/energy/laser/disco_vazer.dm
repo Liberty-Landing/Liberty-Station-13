@@ -14,7 +14,7 @@
 	charge_meter = FALSE
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
-	matter = list(MATERIAL_PLASTEEL = 11, MATERIAL_STEEL = 13, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 1, MATERIAL_GLASS = 2)
+	matter = list(MATERIAL_INDSTEEL = 11, MATERIAL_ALUMINIUM = 13, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 1, MATERIAL_GLASS = 2)
 	price_tag = 400
 	damage_multiplier = 0.5 //makeshift laser
 	init_recoil = HANDGUN_RECOIL(0.2)

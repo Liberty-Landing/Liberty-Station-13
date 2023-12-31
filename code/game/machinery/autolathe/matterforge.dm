@@ -603,18 +603,18 @@
 
 //here we have the conversion rates of the forge, unless an exploit is found, those should not be touched if possible
 /obj/machinery/matter_nanoforge/proc/matter_assoc_list()
-	lst[MATERIAL_IRON] = 0.30			//"a kilogram of steel"
+	lst[MATERIAL_IRON] = 0.30			//"a kilogram of aluminium"
 	lst[MATERIAL_GLASS] = 0.45			//as long as guild is not mass producing sand...
-	lst[MATERIAL_RGLASS] = 0.70
-	lst[MATERIAL_STEEL] = 0.50			//why mixing a kilogram of steel and onde of feathers be worse than it's source?
-	lst[MATERIAL_PLASMAGLASS] = 0.70	//better off using it on crafts or to repair specific windows
+	lst[MATERIAL_LGLASS] = 0.70
+	lst[MATERIAL_ALUMINIUM] = 0.50			//why mixing a kilogram of aluminium and onde of feathers be worse than it's source?
+	lst[MATERIAL_LBGLASS] = 0.70	//better off using it on crafts or to repair specific windows
 	lst[MATERIAL_RPLASMAGLASS] = 0.90 	//but why?
 	lst[MATERIAL_DIAMOND] = 1.20 		//who actually does that?
-	lst[MATERIAL_PLASMA] = 0.70
+	lst[MATERIAL_HYDROGENC] = 0.70
 	lst[MATERIAL_GOLD] = 0.70
 	lst[MATERIAL_URANIUM] = 1
 	lst[MATERIAL_SILVER] = 0.70			//while guild has no problem obtaining, using as fuel for the forge is still not reccomended
-	lst[MATERIAL_PLASTEEL] = 0.70		//hard to happen, Guild needs it far more for crafts
+	lst[MATERIAL_INDSTEEL] = 0.70		//hard to happen, Guild needs it far more for crafts
 	lst[MATERIAL_CARBON_FIBER] = 0.55
 	lst[MATERIAL_BIO_SILK] = 0.55
 	lst[MATERIAL_PLASTIC] = 0.45		//"a kilogram of feathers"

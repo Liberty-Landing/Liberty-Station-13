@@ -8,7 +8,7 @@
 	caliber = CAL_RIFLE
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3)
 	max_shells = 5
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 6)
 	price_tag = 1400
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.4

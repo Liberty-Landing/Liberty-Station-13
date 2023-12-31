@@ -6,7 +6,7 @@
 	desc = "Hellion Electronics Concern branded rechargeable L-standardized power cell. This one is the cheapest you can find."
 	icon_state = "b_st"
 	maxcharge = 1000
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3)
 	preloaded_reagents = list("lithium" = 25)
 	price_tag = 200
 
@@ -64,7 +64,7 @@
 	name = "Phokorus Institute \"Omega-Geyser 20000L\""
 	desc = "Phokorus Institute-brand rechargeable L-standardized power cell. This one being part of the Omega line, making it the be-all-end-all power cell of its type, yet to hit the open market."
 	icon_state = "meb_b_omega"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3, MATERIAL_GOLD = 6)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3, MATERIAL_GOLD = 6)
 	preloaded_reagents = list("lithium" = 15, "radium" = 10)
 	origin_tech = list(TECH_POWER = 7)
 	maxcharge = 20000
@@ -76,7 +76,7 @@
 	icon_state = "meb_b_nu"
 	autorecharging = TRUE
 	origin_tech = list(TECH_POWER = 6)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3, MATERIAL_URANIUM = 6)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 3, MATERIAL_URANIUM = 6)
 	preloaded_reagents = list("radium" = 10, "lithium" = 10, "phosphorus" = 5)
 	maxcharge = 13000
 	price_tag = 400
@@ -90,7 +90,7 @@
 	maxcharge = 13000
 	autorecharging = TRUE
 	autorecharge_rate = 0.05
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3, MATERIAL_PLATINUM = 3, MATERIAL_URANIUM = 6)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 3, MATERIAL_PLATINUM = 3, MATERIAL_URANIUM = 6)
 	preloaded_reagents = list("radium" = 10, "lithium" = 10, "phosphorus" = 5)
 	price_tag = 600
 
@@ -100,7 +100,7 @@
 	desc = "Astrakhan Tankograd rechargeable L-standardized power cell. Power to the people!"
 	icon_state = "exs_l"
 	origin_tech = list(TECH_POWER = 3)
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_PLASTIC = 2)
 	maxcharge = 18000
 
 //Meme cells - for fun
@@ -129,7 +129,7 @@
 	throw_speed = 5
 	throw_range = 7
 	maxcharge = 600
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2)
 	preloaded_reagents = list("lithium" = 15)
 	price_tag = 100
 
@@ -199,7 +199,7 @@
 	name = "Phokorus Institute \"Omega-Geyser 1600M\""
 	desc = "Phokorus Institute branded rechargeable M-standardized power cell. This one being part of the Omega line, making it the be-all-end-all power cell of its type, yet to hit the open market."
 	icon_state = "meb_m_omega"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_GOLD = 4)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_GOLD = 4)
 	preloaded_reagents = list("lithium" = 10, "radium" = 5)
 	origin_tech = list(TECH_POWER = 7)
 	maxcharge = 1600
@@ -210,7 +210,7 @@
 	desc = "Phokorus Institute branded rechargeable M-standardized power cell. This version able to recharge itself over time."
 	icon_state = "meb_m_nu"
 	autorecharging = TRUE
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_URANIUM = 4)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_URANIUM = 4)
 	preloaded_reagents = list("lithium" = 5, "radium" = 5, "phosphorus" = 5)
 	origin_tech = list(TECH_POWER = 6)
 	maxcharge = 1000
@@ -225,7 +225,7 @@
 	maxcharge = 1000
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 2, MATERIAL_URANIUM = 4)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 2, MATERIAL_URANIUM = 4)
 	preloaded_reagents = list("lithium" = 5, "radium" = 5, "phosphorus" = 5)
 	price_tag = 300
 
@@ -235,7 +235,7 @@
 	desc = "Astrakhan Tankograd rechargeable M-standardized power cell. Power to the people!"
 	icon_state = "exs_m"
 	origin_tech = list(TECH_POWER = 3)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	maxcharge = 1100
 
 //SMALL CELLS - for small devices, such as flashlights, analyzers and HUDs.
@@ -250,7 +250,7 @@
 	throw_speed = 5
 	throw_range = 7
 	maxcharge = 100
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1)
 	preloaded_reagents = list("lithium" = 5)
 	price_tag = 50
 
@@ -316,7 +316,7 @@
 	name = "Phokorus Institute \"Omega-Geyser 550S\""
 	desc = "Phokorus Institute branded rechargeable S-standardized power cell. This one being part of the Omega line making it the be-all-end-all power cell of its type, yet to hit the open market."
 	icon_state = "meb_s_omega"
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1, MATERIAL_GOLD = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1, MATERIAL_GOLD = 2)
 	preloaded_reagents = list("radium" = 5)
 	origin_tech = list(TECH_POWER = 7)
 	maxcharge = 550
@@ -327,7 +327,7 @@
 	icon_state = "meb_s_nu"
 	autorecharging = TRUE
 	origin_tech = list(TECH_POWER = 6)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1, MATERIAL_URANIUM = 2)
 	preloaded_reagents = list("radium" = 5)
 	maxcharge = 300
 	price_tag = 100
@@ -337,7 +337,7 @@
 	desc = "Phokorus Institute branded S-standardized microreactor cell. Recharges itself over time."
 	icon_state = "meb_pda"
 	origin_tech = list(TECH_POWER = 4)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_URANIUM = 1)
 	preloaded_reagents = list("radium" = 5)
 	maxcharge = 50
 	// Autorecharge rate is buffed compared to eris, to compensate for the cell's cooldown.
@@ -355,7 +355,7 @@
 	maxcharge = 300
 	autorecharging = TRUE
 	autorecharge_rate = 0.025
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_PLATINUM = 1, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_PLATINUM = 1, MATERIAL_URANIUM = 2)
 	preloaded_reagents = list("radium" = 5)
 	price_tag = 150
 
@@ -365,7 +365,7 @@
 	desc = "Astrakhan Tankograd rechargeable S-standardized power cell. Power to the people!"
 	icon_state = "exs_s"
 	origin_tech = list(TECH_POWER = 3)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1)
 	maxcharge = 400
 
 // Hand crank
@@ -374,7 +374,7 @@
 	desc = "A basic hand crank recharger utilizing a manual mechanism."
 	icon = 'icons/obj/machines/chemistry.dmi'
 	icon_state = "centrifuge_makeshift"
-	matter = list(MATERIAL_STEEL = 30)
+	matter = list(MATERIAL_ALUMINIUM = 30)
 	cell = null
 	suitable_cell = /obj/item/cell
 	var/charge_per_cycle = 30

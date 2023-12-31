@@ -30,7 +30,7 @@
 	desc = "A basic capacitor used in the construction of a variety of devices."
 	icon_state = "capacitor"
 	origin_tech = list(TECH_POWER = 1)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/scanning_module
@@ -38,7 +38,7 @@
 	desc = "A compact, high resolution scanning module used in the construction of certain devices."
 	icon_state = "scan_module"
 	origin_tech = list(TECH_MAGNET = 1)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/manipulator
@@ -46,7 +46,7 @@
 	desc = "A tiny little manipulator used in the construction of certain devices."
 	icon_state = "micro_mani"
 	origin_tech = list(TECH_MATERIAL = 1, TECH_DATA = 1)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/micro_laser
@@ -54,7 +54,7 @@
 	desc = "A tiny laser used in certain devices."
 	icon_state = "micro_laser"
 	origin_tech = list(TECH_MAGNET = 1)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/matter_bin
@@ -73,7 +73,7 @@
 	icon_state = "adv_capacitor"
 	origin_tech = list(TECH_POWER = 3)
 	rating = 2
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/scanning_module/adv
@@ -82,7 +82,7 @@
 	icon_state = "adv_scan_module"
 	origin_tech = list(TECH_MAGNET = 3)
 	rating = 2
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/manipulator/nano
@@ -91,7 +91,7 @@
 	icon_state = "nano_mani"
 	origin_tech = list(TECH_MATERIAL = 3, TECH_DATA = 2)
 	rating = 2
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/micro_laser/high
@@ -100,7 +100,7 @@
 	icon_state = "high_micro_laser"
 	origin_tech = list(TECH_MAGNET = 3)
 	rating = 2
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1)
 	price_tag = 30
 
 /obj/item/stock_parts/matter_bin/adv
@@ -120,7 +120,7 @@
 	icon_state = "super_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
 	rating = 3
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 35
 
 /obj/item/stock_parts/scanning_module/phasic
@@ -129,7 +129,7 @@
 	icon_state = "super_scan_module"
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 3
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 35
 
 /obj/item/stock_parts/manipulator/pico
@@ -138,7 +138,7 @@
 	icon_state = "pico_mani"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
 	rating = 3
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2)
 	price_tag = 35
 
 /obj/item/stock_parts/micro_laser/ultra
@@ -147,7 +147,7 @@
 	desc = "A tiny laser used in certain devices."
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 3
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 35
 
 /obj/item/stock_parts/matter_bin/super
@@ -167,7 +167,7 @@
 	icon_state = "one_capacitor"
 	origin_tech = list(TECH_POWER = 7, TECH_MATERIAL = 7)
 	rating = 4
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/scanning_module/one_star
@@ -176,7 +176,7 @@
 	icon_state = "one_scan_module"
 	origin_tech = list(TECH_MAGNET = 7)
 	rating = 4
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/manipulator/one_star
@@ -185,7 +185,7 @@
 	icon_state = "one_mani"
 	origin_tech = list(TECH_MATERIAL = 7, TECH_DATA = 6)
 	rating = 4
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/micro_laser/one_star
@@ -194,7 +194,7 @@
 	desc = "A tiny laser used in certain devices."
 	origin_tech = list(TECH_MAGNET = 7)
 	rating = 4
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/matter_bin/one_star
@@ -213,7 +213,7 @@
 	icon_state = "guild_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
 	rating = 4
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_GOLD  = 2, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_GOLD  = 2, MATERIAL_SILVER = 2)
 	price_tag = 75
 
 /obj/item/stock_parts/scanning_module/guild
@@ -222,7 +222,7 @@
 	icon_state = "guild_scan_module"
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 4
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_RGLASS  = 1, MATERIAL_GOLD  = 2, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 2, MATERIAL_LGLASS  = 1, MATERIAL_GOLD  = 2, MATERIAL_SILVER = 2)
 	price_tag = 75
 
 /obj/item/stock_parts/manipulator/guild
@@ -231,7 +231,7 @@
 	icon_state = "guild_mani"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
 	rating = 4
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 5)
 	price_tag = 75
 
 /obj/item/stock_parts/micro_laser/guild
@@ -240,7 +240,7 @@
 	desc = "An ultra-high micro laser with a perfected lens to increase productivity."
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 4
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_RGLASS = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_LGLASS = 1, MATERIAL_SILVER = 1)
 	price_tag = 75
 
 /obj/item/stock_parts/matter_bin/guild
@@ -249,7 +249,7 @@
 	icon_state = "guild_matter_bin"
 	origin_tech = list(TECH_MATERIAL = 5)
 	rating = 4
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_GLASS = 1, MATERIAL_PLASMAGLASS = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_GLASS = 1, MATERIAL_LBGLASS = 1)
 	price_tag = 75
 
 //PIRS stock parts (rating 5)
@@ -259,7 +259,7 @@
 	icon_state = "guild_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1, MATERIAL_GOLD  = 1, MATERIAL_SILVER = 1) //Sorry, you want me to use 2 sheets of gold and silver for ONE capacitor? Fat chance.
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 1, MATERIAL_GOLD  = 1, MATERIAL_SILVER = 1) //Sorry, you want me to use 2 sheets of gold and silver for ONE capacitor? Fat chance.
 	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/scanning_module/handmade
@@ -268,7 +268,7 @@
 	icon_state = "guild_scan_module"
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_RGLASS  = 1, MATERIAL_GOLD  = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_LGLASS  = 1, MATERIAL_GOLD  = 1, MATERIAL_SILVER = 1)
 	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/manipulator/handmade
@@ -277,7 +277,7 @@
 	icon_state = "guild_mani"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
 	rating = 5
-	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 1) //Point and case.
+	matter = list(MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 1) //Point and case.
 	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/micro_laser/handmade
@@ -286,7 +286,7 @@
 	desc = "An ultra-high micro laser with a compound lense to decrease beam divergence and increase peak power output. Being made by skilled tinkerers; this also features a better driver circuit, extra thermal coupling - and a more powerful diode, easily outperforming lathe counterparts."
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_RGLASS = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_LGLASS = 1, MATERIAL_SILVER = 1)
 	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 /obj/item/stock_parts/matter_bin/handmade
@@ -295,7 +295,7 @@
 	icon_state = "guild_matter_bin"
 	origin_tech = list(TECH_MATERIAL = 5)
 	rating = 5
-	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_INDSTEEL = 2, MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 1)
 	price_tag = 800 //Why were these so cheap? ORIGINAL: 200
 
 //excelsior stock parts (rating 5)
@@ -305,7 +305,7 @@
 	icon_state = "excel_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 4)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 100
 
 /obj/item/stock_parts/scanning_module/excelsior
@@ -314,7 +314,7 @@
 	icon_state = "excel_scan_module"
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 100
 
 /obj/item/stock_parts/manipulator/excelsior
@@ -323,7 +323,7 @@
 	icon_state = "excel_mani"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2)
 	price_tag = 100
 
 /obj/item/stock_parts/micro_laser/excelsior
@@ -332,7 +332,7 @@
 	desc = "A tiny laser used in certain devices."
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 5
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 100
 
 /obj/item/stock_parts/matter_bin/excelsior
@@ -352,7 +352,7 @@
 	icon_state = "alien_capacitor"
 	origin_tech = list(TECH_POWER = 5, TECH_MATERIAL = 5)
 	rating = 6
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 3)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 3)
 	price_tag = 700
 
 /obj/item/stock_parts/scanning_module/alien
@@ -361,7 +361,7 @@
 	icon_state = "alien_scan_module"
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 6
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 700
 
 /obj/item/stock_parts/manipulator/alien
@@ -370,7 +370,7 @@
 	icon_state = "alien_mani"
 	origin_tech = list(TECH_MATERIAL = 5, TECH_DATA = 2)
 	rating = 6
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2)
 	price_tag = 700
 
 /obj/item/stock_parts/micro_laser/alien
@@ -379,7 +379,7 @@
 	desc = "A bright glass orb with a port on its back. It glows faint blue from time to time. Seems like it can be used in construction of certain devices."
 	origin_tech = list(TECH_MAGNET = 5)
 	rating = 6
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
 	price_tag = 700
 
 /obj/item/stock_parts/matter_bin/alien
@@ -399,7 +399,7 @@
 	icon_state = "subspace_ansible"
 	desc = "A compact module capable of sensing extradimensional activity."
 	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 5 ,TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
 	price_tag = 150
 
 /obj/item/stock_parts/subspace/filter
@@ -407,7 +407,7 @@
 	icon_state = "hyperwave_filter"
 	desc = "A tiny device capable of filtering and converting super-intense radiowaves."
 	origin_tech = list(TECH_DATA = 4, TECH_MAGNET = 2)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 	price_tag = 100
 
 /obj/item/stock_parts/subspace/amplifier
@@ -415,7 +415,7 @@
 	icon_state = "subspace_amplifier"
 	desc = "A compact micro-machine capable of amplifying weak subspace transmissions."
 	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 	price_tag = 100
 
 /obj/item/stock_parts/subspace/treatment
@@ -423,7 +423,7 @@
 	icon_state = "treatment_disk"
 	desc = "A compact micro-machine capable of stretching out hyper-compressed radio waves."
 	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 2, TECH_MATERIAL = 5, TECH_BLUESPACE = 2)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 	price_tag = 100
 
 /obj/item/stock_parts/subspace/analyzer
@@ -431,7 +431,7 @@
 	icon_state = "wavelength_analyzer"
 	desc = "A sophisticated analyzer capable of analyzing cryptic subspace wavelengths."
 	origin_tech = list(TECH_DATA = 3, TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 	price_tag = 100
 
 /obj/item/stock_parts/subspace/crystal
@@ -439,7 +439,7 @@
 	icon_state = "ansible_crystal"
 	desc = "A crystal made from pure glass used to transmit laser data bursts to subspace."
 	origin_tech = list(TECH_MAGNET = 4, TECH_MATERIAL = 4, TECH_BLUESPACE = 2)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
 	price_tag = 150
 
 /obj/item/stock_parts/subspace/transmitter
@@ -447,5 +447,5 @@
 	icon_state = "subspace_transmitter"
 	desc = "A large piece of equipment used to open a window into the subspace dimension."
 	origin_tech = list(TECH_MAGNET = 5, TECH_MATERIAL = 5, TECH_BLUESPACE = 3)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 1)
 	price_tag = 100

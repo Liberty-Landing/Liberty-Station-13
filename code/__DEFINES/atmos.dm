@@ -51,9 +51,10 @@
 #define CARBON_LIFEFORM_FIRE_RESISTANCE (T0C + 200)
 #define CARBON_LIFEFORM_FIRE_DAMAGE     4
 
-// Plasma fire properties.
+Plasma fire properties. //I have to see a way to turn high-temp hydrogen into plasma by default
 #define PLASMA_MINIMUM_BURN_TEMPERATURE    (T0C +  126) //400 K - autoignite temperature in tanks and canisters - enclosed environments I guess
 #define PLASMA_FLASHPOINT                  (T0C +  246) //519 K - autoignite temperature in air if that ever gets implemented.
+
 
 // Hydrogen fire properties.
 #define HYDROGEN_MINIMUM_BURN_TEMPERATURE   (T0C + 268) // 541 K - autoignite temperature in tanks and canisters

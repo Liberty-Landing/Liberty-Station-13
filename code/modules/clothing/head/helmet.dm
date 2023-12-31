@@ -123,7 +123,7 @@
 
 /obj/item/clothing/head/helmet/handmade
 	name = "handmade combat helmet"
-	desc = "It looks like it was made from a bucket and some steel. Uncomfortable and heavy but better than nothing."
+	desc = "It looks like it was made from a bucket and some aluminium. Uncomfortable and heavy but better than nothing."
 	icon_state = "hm_helmet"
 	armor_list = list(
 		melee = 25,
@@ -138,7 +138,7 @@
 
 /obj/item/clothing/head/helmet/handmade/greathelm
 	name = "bucket-helm"
-	desc = "A bucket with two holes for eyes and some smaller ones for ventilation, with steel added to gain some protection. One may say, <i>'Situla Vult!'</i>."
+	desc = "A bucket with two holes for eyes and some smaller ones for ventilation, with aluminium added to gain some protection. One may say, <i>'Situla Vult!'</i>."
 	icon_state = "hm_greathelm"
 	armor_list = list(melee = 27, bullet = 15,energy = 25, bomb = 12, bio = 1, rad = 0) // Only difference with handmade combat helmet is 2 sheets of metal, shouldn't be that far superior.
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
@@ -291,7 +291,7 @@
 
 /obj/item/clothing/head/helmet/marshal/ushanka
 	name = "watchmen Armored Ushanka"
-	desc = "Standard operator gear. an security ushanka with skull protector made out of plasteel and scale armor in the exterior, features an eye shield and ideal ear warmth!"
+	desc = "Standard operator gear. an security ushanka with skull protector made out of indsteel and scale armor in the exterior, features an eye shield and ideal ear warmth!"
 	icon_state = "LWushanka"
 	icon_state = "LWushanka"
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
@@ -319,7 +319,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = HEAD|FACE|EARS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
 
 /obj/item/clothing/head/helmet/custodian/firesuit
 	name = "flameshield helmet"
@@ -355,7 +355,7 @@
 	icon_state = "oathpledge_helmet"
 	item_state = "oathpledge_helmet"
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 100, rad = 0)
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
+	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_INDSTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 
 //Hunter's Lodge
 /obj/item/clothing/head/helmet/huntmaster_helmet
@@ -496,7 +496,7 @@
 	armor_list = list(melee = 15, bullet = 15, energy = 25, bomb = 35, bio = 50, rad = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 	flash_protection = FLASH_PROTECTION_MINOR
 	max_upgrades = 2
 
@@ -590,7 +590,7 @@
 	armor_list = list(melee = 20, bullet = 20, energy = 70, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	cold_protection = HEAD
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 10, MATERIAL_PLATINUM = 2) //cheaper
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_PLATINUM = 2) //cheaper
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.5
 	price_tag = 150
@@ -1059,7 +1059,7 @@
 	tint_down = TINT_NONE
 	obscuration_down = LIGHT_OBSCURATION
 	matter = list(
-		MATERIAL_PLASTEEL = 10,
+		MATERIAL_INDSTEEL = 10,
 		MATERIAL_GLASS = 5,
 		MATERIAL_PLASTIC = 5,
 		MATERIAL_PLATINUM = 2
@@ -1169,6 +1169,6 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_BIO_SILK = 5)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_BIO_SILK = 5)
 	max_upgrades = 2
 

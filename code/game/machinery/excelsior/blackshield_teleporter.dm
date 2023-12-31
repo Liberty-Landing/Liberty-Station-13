@@ -24,11 +24,11 @@ var/global/blackshield_max_energy //Maximaum combined energy of all teleporters
 
 	var/list/nanoui_data = list()			// Additional data for NanoUI use
 	var/list/materials_list = list(
-		MATERIAL_STEEL = list("amount" = 15, "price" = 50), //base prices doubled untill new item are in
+		MATERIAL_ALUMINIUM = list("amount" = 15, "price" = 50), //base prices doubled untill new item are in
 		MATERIAL_WOOD = list("amount" = 15, "price" = 15),
 		MATERIAL_PLASTIC = list("amount" = 15, "price" = 50),
 		MATERIAL_GLASS = list("amount" = 15, "price" = 50),
-		MATERIAL_PLASTEEL = list("amount" = 10, "price" = 250)
+		MATERIAL_INDSTEEL = list("amount" = 10, "price" = 250)
 		)
 
 	var/list/parts_list = list(

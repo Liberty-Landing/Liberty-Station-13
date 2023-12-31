@@ -396,7 +396,7 @@
 	dir = 4
 	},
 /obj/random/circuitboard,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "iH" = (
 /obj/structure/table/onestar,
@@ -407,7 +407,7 @@
 	dir = 8
 	},
 /obj/random/powercell/large_safe_Skylight,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "iM" = (
 /obj/item/trash/material/metal,
@@ -514,7 +514,7 @@
 	dir = 4
 	},
 /obj/random/cloth/belt/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "kY" = (
 /obj/structure/window/reinforced{
@@ -648,7 +648,7 @@
 	dir = 8
 	},
 /obj/item/device/radio/phone/medbay,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "nY" = (
 /obj/structure/window/reinforced{
@@ -686,7 +686,7 @@
 	dir = 8
 	},
 /obj/random/pouch,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ot" = (
 /obj/structure/extinguisher_cabinet{
@@ -826,7 +826,7 @@
 	},
 /obj/structure/table/rack/shelf,
 /obj/random/medical_lowcost,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "rC" = (
 /obj/structure/flora/grass/both,
@@ -883,17 +883,17 @@
 /obj/item/stack/material/iron/random,
 /obj/item/stack/material/plasma/random,
 /obj/item/stack/material/plasma/random,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/platinum/random,
 /obj/item/stack/material/platinum/random,
 /obj/item/stack/material/silver/random,
 /obj/item/stack/material/silver/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/uranium/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/rods/random,
@@ -1228,7 +1228,7 @@
 	dir = 4
 	},
 /obj/random/common_oddities/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "yr" = (
 /obj/structure/salvageable/machine_os,
@@ -1252,7 +1252,7 @@
 	dir = 4
 	},
 /obj/random/cigarettes,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "yD" = (
 /obj/item/oddity/common/lighter,
@@ -1262,7 +1262,7 @@
 /obj/structure/bed/chair/custom/onestar/red{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "yQ" = (
 /obj/random/mob/roomba/range,
@@ -1479,18 +1479,18 @@
 /obj/item/stack/material/iron/random,
 /obj/item/stack/material/iron/random,
 /obj/item/stack/material/plasma/random,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/platinum/random,
 /obj/item/stack/material/platinum/random,
 /obj/item/stack/material/silver/random,
 /obj/item/stack/material/silver/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/rods/random,
@@ -1584,7 +1584,7 @@
 /obj/random/medical_lowcost,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/medical/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "EJ" = (
 /obj/structure/table/rack/shelf,
@@ -1637,7 +1637,7 @@
 /obj/random/medical_lowcost,
 /obj/random/medical_lowcost,
 /obj/random/medical_lowcost/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "FL" = (
 /obj/structure/table/woodentable,
@@ -1686,7 +1686,7 @@
 	dir = 4
 	},
 /obj/random/powercell/medium_safe_Skylight,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "GO" = (
 /obj/structure/window/reinforced{
@@ -1845,7 +1845,7 @@
 	dir = 8
 	},
 /obj/random/cloth/helmet,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Ka" = (
 /obj/structure/flora/grass/both,
@@ -1880,7 +1880,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "KM" = (
 /obj/landmark/mob/carpspawn,
@@ -1909,7 +1909,7 @@
 	dir = 8
 	},
 /obj/random/circuitboard,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Lk" = (
 /obj/item/remains,
@@ -1932,7 +1932,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "LV" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -2104,7 +2104,7 @@
 	dir = 8
 	},
 /obj/random/booze,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "Pe" = (
 /turf/simulated/floor/snow,
@@ -2140,7 +2140,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/medical_lowcost,
 /obj/random/medical_lowcost,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "PG" = (
 /turf/simulated/floor/snow,
@@ -2304,7 +2304,7 @@
 	dir = 8
 	},
 /obj/random/powercell/small_safe_Skylight,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "SQ" = (
 /obj/structure/table/onestar,
@@ -2668,7 +2668,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "ZA" = (
 /obj/structure/window/reinforced{

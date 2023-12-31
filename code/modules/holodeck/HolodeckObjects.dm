@@ -26,7 +26,7 @@
 	name = "floor"
 	icon = 'icons/turf/flooring/tiles_steel.dmi'
 	icon_state = "tiles"
-	initial_flooring = /decl/flooring/tiling/steel
+	initial_flooring = /decl/flooring/tiling/aluminium
 
 /turf/simulated/floor/holofloor/tiled/dark
 	name = "floor"

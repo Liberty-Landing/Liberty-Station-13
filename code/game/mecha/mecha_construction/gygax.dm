@@ -75,9 +75,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The circuit shielding has been placed in the chassis, but needs to be bolted down."),
 		//12
-		list("key"=/obj/item/stack/material/plasteel,
+		list("key"=/obj/item/stack/material/indsteel,
 			//"backkey"=QUALITY_SCREW_DRIVING,
-			"desc"="The advanced capacitor is secured and the internal circutry is complete. 5 sheets of plasteel are needed to shield the circuitry."),
+			"desc"="The advanced capacitor is secured and the internal circutry is complete. 5 sheets of indsteel are needed to shield the circuitry."),
 		//13
 		list("key"=QUALITY_SCREW_DRIVING,
 			//"backkey"=QUALITY_PRYING,
@@ -429,7 +429,7 @@
 						"[usr] pries the circuit shielding from the [holder].", \
 						"You pry the circuit shielding from the [holder]."
 					)
-					new /obj/item/stack/material/plasteel (get_turf(holder), 5)
+					new /obj/item/stack/material/indsteel (get_turf(holder), 5)
 					holder.icon_state = "gygax12"
 			if(11)
 				if(diff==FORWARD)

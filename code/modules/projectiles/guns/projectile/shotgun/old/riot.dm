@@ -18,7 +18,7 @@
 	handle_casings = EJECT_CASINGS
 	fire_sound = 'sound/weapons/guns/fire/shotgun_combat.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/shotgun_insert.ogg'
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 1250
 	damage_multiplier = 1.2
 	init_recoil = RIFLE_RECOIL(1.3)
@@ -66,7 +66,7 @@
 	origin_tech = list(TECH_COMBAT = 7, TECH_MATERIAL = 4)
 	max_shells = 7
 	ammo_type = /obj/item/ammo_casing/shotgun
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 12)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_PLASTIC = 12)
 	price_tag = 1000
 	damage_multiplier = 0.8
 	penetration_multiplier = 1.0

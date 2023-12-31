@@ -364,7 +364,7 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "hT" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "hV" = (
@@ -468,10 +468,10 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "jL" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/plasteel/full,
-/obj/item/stack/material/plasteel/full,
-/obj/item/stack/material/plasteel/full,
-/obj/item/stack/material/plasteel/full,
+/obj/item/stack/material/indsteel/full,
+/obj/item/stack/material/indsteel/full,
+/obj/item/stack/material/indsteel/full,
+/obj/item/stack/material/indsteel/full,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "jQ" = (
@@ -708,7 +708,7 @@
 "pb" = (
 /obj/structure/table/onestar,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered_lit)
 "pf" = (
 /obj/structure/cable{
@@ -727,7 +727,7 @@
 "po" = (
 /obj/structure/table/onestar,
 /obj/item/storage/toolbox/syndicate,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered_lit)
 "pE" = (
 /obj/structure/table/onestar,
@@ -735,7 +735,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/outpost/abandoned_fortress/powered_lit)
 "pS" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "qh" = (
@@ -954,11 +954,11 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "uv" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "uJ" = (
@@ -1017,7 +1017,7 @@
 "wl" = (
 /obj/structure/table/onestar,
 /obj/item/storage/toolbox/electrical,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered_lit)
 "wn" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -1137,8 +1137,8 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "zn" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/plasteel/full,
-/obj/item/stack/material/plasteel/full,
+/obj/item/stack/material/indsteel/full,
+/obj/item/stack/material/indsteel/full,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "zt" = (
@@ -1157,7 +1157,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/outpost/abandoned_fortress/powered_lit)
 "zD" = (
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered_lit)
 "zE" = (
 /obj/structure/table/rack,
@@ -1248,7 +1248,7 @@
 	anchored = 1;
 	announce_stability = 0
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered_lit)
 "Cq" = (
 /turf/simulated/floor/tiled/derelict/red_white_edges,
@@ -1272,7 +1272,7 @@
 "CM" = (
 /obj/structure/table/onestar,
 /obj/item/am_containment,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered_lit)
 "CN" = (
 /obj/machinery/door/airlock/multi_tile{
@@ -2050,7 +2050,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/outpost/abandoned_fortress/powered_lit)
 "XC" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/tiled/derelict,
 /area/outpost/abandoned_fortress/powered_lit)
 "XE" = (
@@ -2133,7 +2133,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered_lit)
 "ZS" = (
 /obj/structure/table/rack/shelf,

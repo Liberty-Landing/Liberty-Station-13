@@ -16,7 +16,7 @@
 	mag_well = MAG_WELL_SMG
 	auto_eject = FALSE
 	magazine_type = /obj/item/ammo_magazine/smg_35
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 9)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 9)
 	price_tag = 10
 	serial_type = "LG"
 

@@ -247,7 +247,7 @@
 	desc = "A basic centrifuge utilising a manual mechanism."
 	icon = 'icons/obj/machines/chemistry.dmi'
 	icon_state = "centrifuge_makeshift"
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	var/obj/item/reagent_containers/mainBeaker
 	var/list/obj/item/reagent_containers/separationBeakers = list()
 	var/beakerSlots = 2

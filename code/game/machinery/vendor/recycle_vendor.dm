@@ -10,7 +10,7 @@
 
 	// Can't use subtypeof(), since we have lots of retarded materials
 	var/list/materials_supported = list(
-		MATERIAL_STEEL,
+		MATERIAL_ALUMINIUM,
 		MATERIAL_GLASS,
 		MATERIAL_PLASTIC,
 		MATERIAL_WOOD,
@@ -18,9 +18,9 @@
 		MATERIAL_GOLD,
 		MATERIAL_URANIUM,
 		MATERIAL_CARDBOARD,
-		MATERIAL_PLASMA,
+		MATERIAL_HYDROGENC,
 		MATERIAL_PLATINUM,
-		MATERIAL_PLASTEEL,
+		MATERIAL_INDSTEEL,
 		MATERIAL_DIAMOND)
 	var/list/materials_allowed = list()
 	var/list/materials_stored = list()

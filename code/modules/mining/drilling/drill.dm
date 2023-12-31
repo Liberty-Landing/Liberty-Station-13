@@ -31,7 +31,7 @@
 		MATERIAL_GOLD = /obj/item/stack/ore/gold,
 		MATERIAL_SILVER = /obj/item/stack/ore/silver,
 		MATERIAL_DIAMOND = /obj/item/stack/ore/diamond,
-		MATERIAL_PLASMA  = /obj/item/stack/ore/plasma,
+		MATERIAL_HYDROGENC  = /obj/item/stack/ore/plasma,
 		MATERIAL_OSMIUM  = /obj/item/stack/ore/osmium,
 		MATERIAL_TRITIUM  = /obj/item/stack/ore/hydrogen,
 		MATERIAL_GLASS  = /obj/item/stack/ore/glass,

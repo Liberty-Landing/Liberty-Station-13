@@ -280,7 +280,7 @@
 	desc = "A study, handcrafted helmet reinforced with lightweight material and an added line down its center, depicting that of a Shepherd; herding his employees."
 	icon_state = "shepherd_visor"
 	item_state = "shepherd_visor"
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 30, MATERIAL_SILVER = 12) //worth stealing
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_ALUMINIUM = 30, MATERIAL_SILVER = 12) //worth stealing
 	price_tag = 1200
 	armor_list = list(
 		melee = 40,

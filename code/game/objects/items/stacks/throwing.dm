@@ -15,7 +15,7 @@
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
-	matter = list(MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_INDSTEEL = 1)
 	amount = 1
 	max_amount = 3
 	w_class = ITEM_SIZE_SMALL
@@ -67,7 +67,7 @@
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
-	matter = list(MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_INDSTEEL = 1)
 	amount = 1
 	max_amount = 3
 	w_class = ITEM_SIZE_SMALL

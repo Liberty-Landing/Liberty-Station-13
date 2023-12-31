@@ -108,7 +108,7 @@
 /area/precursor)
 "at" = (
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "au" = (
 /obj/structure/bed/chair/comfy/black{
@@ -155,7 +155,7 @@
 "aB" = (
 /obj/structure/girder,
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "aC" = (
 /obj/structure/table/standard,
@@ -171,7 +171,7 @@
 /obj/structure/girder,
 /obj/structure/barricade,
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "aF" = (
 /turf/simulated/floor/asteroid/grass,
@@ -191,7 +191,7 @@
 /area/precursor)
 "aJ" = (
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "aK" = (
 /obj/structure/barricade,
@@ -205,7 +205,7 @@
 /area/precursor)
 "aM" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "aN" = (
 /obj/structure/flora/pottedplant{
@@ -223,7 +223,7 @@
 "aP" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/barricade,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "aQ" = (
 /obj/structure/table/woodentable,
@@ -242,7 +242,7 @@
 /area/precursor)
 "aS" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "aT" = (
 /obj/effect/decal/cleanable/blood,
@@ -367,11 +367,11 @@
 /obj/effect/floor_decal/spline/grass_edge{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/precursor)
 "bo" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "bp" = (
 /turf/simulated/wall/rust_reinforced,
@@ -403,7 +403,7 @@
 	},
 /obj/random/junk,
 /obj/effect/floor_decal/spline/grass_edge,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/precursor)
 "bv" = (
 /obj/structure/bed/chair{
@@ -412,7 +412,7 @@
 /obj/effect/floor_decal/spline/grass_edge{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/precursor)
 "bw" = (
 /obj/item/remains/human,
@@ -471,11 +471,11 @@
 /area/precursor)
 "bE" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "bF" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "bG" = (
 /obj/machinery/light{

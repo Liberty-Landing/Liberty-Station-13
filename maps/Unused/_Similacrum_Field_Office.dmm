@@ -40,7 +40,7 @@
 	dir = 1
 	},
 /obj/random/mob/roomba/range,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "ar" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
@@ -97,7 +97,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "aO" = (
 /obj/structure/bed/chair/custom/onestar,
@@ -140,7 +140,7 @@
 	pixel_x = 7;
 	pixel_y = -18
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "bf" = (
 /obj/effect/floor_decal/industrial/botright/yellow,
@@ -237,7 +237,7 @@
 /obj/machinery/recharger/industrial,
 /obj/structure/table/onestar,
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "bL" = (
 /obj/effect/floor_decal/spline/fancy/three_quarters,
@@ -263,7 +263,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "bT" = (
 /obj/item/storage/deferred/crate/iron_lock_security_uniform,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "bU" = (
 /obj/random/mob/roomba/job,
@@ -325,7 +325,7 @@
 "cp" = (
 /obj/item/stack/material/iron/random,
 /obj/item/stack/material/platinum/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/glass,
 /obj/item/stack/material/glass,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
@@ -383,13 +383,13 @@
 /mob/living/simple_animal/hostile/hivebot/range{
 	faction = "simulacrum"
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "cL" = (
 /obj/structure/bed/chair/custom/onestar/red{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "cM" = (
 /obj/structure/flora/small/busha2,
@@ -451,7 +451,7 @@
 /obj/structure/salvageable/console_os{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "dr" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -536,7 +536,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "dM" = (
 /obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "dN" = (
 /obj/random/mob/roomba/job,
@@ -719,7 +719,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "ff" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/epistol/esmg,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "fg" = (
 /obj/structure/table/onestar,
@@ -770,7 +770,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "fx" = (
 /obj/structure/salvageable/data_os,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "fC" = (
 /turf/simulated/wall/untinted/onestar,
@@ -783,7 +783,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "fH" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/synthetic,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "fJ" = (
 /obj/structure/table/onestar,
@@ -831,7 +831,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "fW" = (
 /obj/random/mob/roomba/mecha/low,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "fY" = (
 /obj/structure/table/rack/shelf,
@@ -854,7 +854,7 @@
 /obj/random/powercell,
 /obj/random/powercell/low_chance,
 /obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "ge" = (
 /obj/machinery/light/floor{
@@ -1183,7 +1183,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "jg" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/boomba,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "ji" = (
 /obj/structure/bed/chair/sofa/brown/left,
@@ -1600,7 +1600,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "mn" = (
 /obj/structure/salvageable/console_os,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "mp" = (
 /obj/structure/table/onestar,
@@ -1664,7 +1664,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "mW" = (
 /obj/machinery/mech_recharger,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "mX" = (
 /obj/structure/toilet{
@@ -1818,7 +1818,7 @@
 /obj/structure/table/onestar,
 /obj/item/device/camera,
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "nS" = (
 /obj/structure/flora/small/rock3,
@@ -1883,7 +1883,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "op" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "or" = (
@@ -2155,7 +2155,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "qk" = (
 /obj/random/mob/roomba/any,
-/turf/simulated/floor/tiled/steel/airless,
+/turf/simulated/floor/tiled/aluminium/airless,
 /area/liberty/outside/one_star/fo_outside)
 "ql" = (
 /obj/effect/floor_decal/spline/fancy/three_quarters,
@@ -2404,7 +2404,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "sh" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/airless,
+/turf/simulated/floor/tiled/aluminium/airless,
 /area/liberty/outside/one_star/fo_outside)
 "sk" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/synthetic,
@@ -2573,7 +2573,7 @@
 /obj/machinery/door/airlock{
 	name = "Bathroom"
 	},
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "tK" = (
@@ -2598,7 +2598,7 @@
 "tS" = (
 /obj/machinery/light/floor,
 /mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
-/turf/simulated/floor/tiled/steel/airless,
+/turf/simulated/floor/tiled/aluminium/airless,
 /area/liberty/outside/one_star/fo_outside)
 "tT" = (
 /turf/simulated/floor/rock/manmade/road,
@@ -2661,7 +2661,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "uu" = (
 /obj/structure/bed/chair/custom/onestar/red,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "uv" = (
 /obj/structure/table/onestar,
@@ -2737,7 +2737,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "uZ" = (
 /obj/structure/table/onestar,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "va" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/boomba,
@@ -2758,7 +2758,7 @@
 "ve" = (
 /obj/structure/table/onestar,
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "vh" = (
 /obj/item/gun/energy/ntpistol,
@@ -2907,7 +2907,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "wi" = (
 /obj/structure/filingcabinet/chestdrawer,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "wj" = (
 /obj/structure/target_stake,
@@ -3270,7 +3270,7 @@
 "yD" = (
 /obj/item/tank/onestar_regenerator,
 /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/epistol/heavy,
-/turf/simulated/floor/tiled/steel/airless,
+/turf/simulated/floor/tiled/aluminium/airless,
 /area/liberty/outside/one_star/fo_outside)
 "yF" = (
 /obj/structure/railing/grey{
@@ -3547,7 +3547,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "AR" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "AU" = (
 /obj/structure/salvageable/autolathe_os,
@@ -3570,7 +3570,7 @@
 	dir = 1
 	},
 /obj/random/mob/roomba/range/low,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Be" = (
 /obj/item/storage/briefcase,
@@ -3758,7 +3758,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "CE" = (
 /obj/machinery/door/airlock/multi_tile/metal{
@@ -3766,7 +3766,7 @@
 	locked = 1;
 	name = "Simulacrum Robotics Outpost"
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "CJ" = (
 /obj/effect/floor_decal/spline/fancy/three_quarters,
@@ -4010,7 +4010,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "EI" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "EK" = (
 /obj/structure/filingcabinet/chestdrawer,
@@ -4076,7 +4076,7 @@
 /obj/structure/table/onestar,
 /obj/item/paper_bin,
 /obj/item/pen/multi,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Fh" = (
 /obj/effect/floor_decal/spline/fancy/three_quarters,
@@ -4279,7 +4279,7 @@
 /turf/simulated/mineral/planet,
 /area/liberty/outside/one_star/fo_outside)
 "GN" = (
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "GO" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -4368,7 +4368,7 @@
 "Hn" = (
 /obj/random/powercell/low_chance,
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "Hp" = (
 /obj/structure/table/onestar,
@@ -4418,7 +4418,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "HN" = (
 /obj/machinery/light,
@@ -4516,7 +4516,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "IO" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "IP" = (
 /obj/random/structures/os,
@@ -4532,7 +4532,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "IU" = (
 /obj/random/mob/roomba/any,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "IW" = (
 /obj/item/trash/mre/os,
@@ -4737,7 +4737,7 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "Kl" = (
-/turf/simulated/floor/tiled/steel/airless,
+/turf/simulated/floor/tiled/aluminium/airless,
 /area/liberty/outside/one_star/fo_outside)
 "Km" = (
 /obj/machinery/light/floor,
@@ -4860,7 +4860,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "Ll" = (
 /obj/random/mob/roomba/job,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Lm" = (
 /obj/item/folder/cyan,
@@ -5056,7 +5056,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_outside)
 "MC" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "ME" = (
 /obj/machinery/vending/snack,
@@ -5065,7 +5065,7 @@
 "MF" = (
 /obj/structure/table/onestar,
 /obj/item/pen/multi,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "ML" = (
 /obj/structure/bed/chair/custom/onestar,
@@ -5097,7 +5097,7 @@
 "MT" = (
 /obj/structure/table/onestar,
 /obj/random/common_oddities/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "MV" = (
 /turf/simulated/floor/tiled/white,
@@ -5362,14 +5362,14 @@
 /area/liberty/outside/one_star/fo_internal)
 "OK" = (
 /obj/random/oddity_guns,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/toilet,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "OL" = (
 /obj/machinery/recharger,
 /obj/structure/table/onestar,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "ON" = (
 /obj/machinery/light/floor,
@@ -5480,7 +5480,7 @@
 	dir = 4
 	},
 /obj/random/mob/roomba/range,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Py" = (
 /obj/structure/table/onestar,
@@ -5489,7 +5489,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "Pz" = (
 /obj/random/mob/roomba/range/low,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "PB" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -5586,7 +5586,7 @@
 "Qp" = (
 /obj/structure/bed/chair/custom/onestar/red,
 /obj/random/mob/roomba/range/low,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Qq" = (
 /obj/structure/table/onestar,
@@ -5622,7 +5622,7 @@
 /obj/structure/table/onestar,
 /obj/item/paper_bin,
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "QH" = (
 /obj/structure/closet/onestar/tier1/mineral,
@@ -5630,7 +5630,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "QI" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "QK" = (
 /obj/machinery/light{
@@ -5780,7 +5780,7 @@
 "RM" = (
 /obj/structure/bed/chair/custom/onestar/red,
 /obj/random/mob/roomba/range,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "RP" = (
 /obj/random/mob/roomba/any,
@@ -5932,7 +5932,7 @@
 "Tn" = (
 /obj/structure/table/onestar,
 /obj/item/folder/cyan,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "To" = (
 /obj/structure/railing/grey,
@@ -5953,7 +5953,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "Tt" = (
 /obj/random/mob/roomba/range/low,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Tu" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/chemical/med/healer,
@@ -6186,7 +6186,7 @@
 /obj/structure/table/onestar,
 /obj/item/pen/multi,
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Vs" = (
 /obj/map_data/simulacrum_field_offices,
@@ -6242,7 +6242,7 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_internal)
 "VJ" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "VK" = (
@@ -6287,7 +6287,7 @@
 "VV" = (
 /obj/machinery/light/floor,
 /mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/one_star/fo_internal)
 "VX" = (
 /obj/structure/table/onestar,
@@ -6311,7 +6311,7 @@
 /obj/machinery/light/floor,
 /obj/item/gun/energy/cog,
 /obj/item/cell/medium,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "We" = (
 /obj/structure/table/onestar,
@@ -6340,7 +6340,7 @@
 /obj/structure/table/onestar,
 /obj/machinery/light/floor,
 /obj/random/common_oddities/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Wp" = (
 /obj/structure/table/rack/shelf,
@@ -6748,12 +6748,12 @@
 "Ze" = (
 /obj/structure/table/onestar,
 /obj/item/paper_bin,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Zf" = (
 /obj/structure/table/onestar,
 /obj/item/device/camera,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "Zg" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba/plasma,
@@ -6872,7 +6872,7 @@
 "ZL" = (
 /obj/structure/salvageable/console_os,
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star/fo_outside)
 "ZM" = (
 /obj/structure/closet/onestar/tier3/mineral,
@@ -6911,7 +6911,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "ZU" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/custodian/engineer,
-/turf/simulated/floor/tiled/steel/airless,
+/turf/simulated/floor/tiled/aluminium/airless,
 /area/liberty/outside/one_star/fo_outside)
 "ZX" = (
 /obj/structure/table/onestar,

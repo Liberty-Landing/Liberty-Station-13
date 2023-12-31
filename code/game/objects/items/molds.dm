@@ -52,7 +52,7 @@
 	singular_name = "blacksmithing tool"
 	desc = "A set of metalsmithing hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
 	icon_state = "blacksmithing_kit"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 8)
 
 /obj/item/stack/mold_kit/tailoring
 	name = "tailoring toolset"

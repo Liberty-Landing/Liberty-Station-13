@@ -20,7 +20,7 @@
 	fire_sound = 'sound/weapons/guns/fire/mosin.ogg'
 	reload_sound = 'sound/weapons/guns/interact/rifle_load.ogg'
 	fire_sound_silenced = 'sound/weapons/guns/fire/silenced_rifle.ogg' // More cohesive sound, still loud for its caliber
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 500
 	var/bolt_open = 0
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut") // Considering attached bayonet
@@ -57,7 +57,7 @@
 	damage_multiplier = 0.9
 	fire_delay = 4
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SILENCABLE)
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 4)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 4)
 	saw_off = FALSE
 	bolt_training = FALSE //Training didnt cover obrez
 	gun_parts = list(/obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/lrifle = 1)

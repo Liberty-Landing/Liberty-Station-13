@@ -2,7 +2,7 @@
 	name = "Hardware"
 	desc = "Unknown Hardware."
 	icon = 'icons/obj/modular_components.dmi'
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 1)
 	price_tag = 50
 	var/obj/item/modular_computer/holder2 = null
 	var/power_usage = 0 			// If the hardware uses extra power, change this.

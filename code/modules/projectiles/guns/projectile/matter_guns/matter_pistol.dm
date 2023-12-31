@@ -12,7 +12,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	icon_state = "forger"
 	item_state = "forger"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 5)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_WOOD = 5)
 	price_tag = 300
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	can_dual = TRUE
@@ -84,7 +84,7 @@ No more 1 shot guns but hey, at least you no longer need cells and can carry a f
 	icon_state = "railgun"
 	item_state = "railgun"
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
-	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 18, MATERIAL_PLASTIC = 6)
 	price_tag = 650
 	fire_sound = 'sound/weapons/energy/emitter2.ogg'
 	can_dual = FALSE

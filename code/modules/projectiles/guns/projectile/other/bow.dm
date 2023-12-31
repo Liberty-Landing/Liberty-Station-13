@@ -116,9 +116,9 @@
 
 /obj/item/gun/projectile/bow/xbow
 	name = "\"Whaler\" heavy compound bow"
-	desc = "A heavy compound bow made from plastic, with a plasteel riser. Not originally an Terra-Therma Union design, but the tight tolerances and high skill required to construct means that they remain the only group capable of manufacturing them. \
+	desc = "A heavy compound bow made from plastic, with a indsteel riser. Not originally an Terra-Therma Union design, but the tight tolerances and high skill required to construct means that they remain the only group capable of manufacturing them. \
 	A scope is attached to the riser, with arrow drop markers for various weights of arrow present."
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 40, MATERIAL_PLASMAGLASS = 2)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 40, MATERIAL_LBGLASS = 2)
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.2
 	gun_tags = list(ARROW_FIRING)

@@ -15,7 +15,7 @@
 	sharp = 0
 	caliber = CAL_HRIFLE
 	load_method = SINGLE_CASING|SPEEDLOADER
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 10)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 10)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SILENCABLE)
 	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'

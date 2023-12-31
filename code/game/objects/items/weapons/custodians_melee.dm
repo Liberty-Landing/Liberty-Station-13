@@ -11,7 +11,7 @@
 	throwforce = WEAPON_FORCE_WEAK
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 300
-	matter = list(MATERIAL_BIO_SILK = 25, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 25, MATERIAL_ALUMINIUM = 5)
 
 /obj/item/tool/sword/custodian/equipped(mob/living/M)
 	. = ..()
@@ -31,7 +31,7 @@
 	throwforce = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 650
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_ALUMINIUM = 10)
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 
@@ -49,7 +49,7 @@
 	price_tag = 850
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips the axe to its broad side"
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_CARBON_FIBER = 8)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 16, MATERIAL_ALUMINIUM = 30, MATERIAL_CARBON_FIBER = 8)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
@@ -66,7 +66,7 @@
 	armor_penetration = ARMOR_PEN_HALF // With the same amount of penetration
 	backstab_damage = 23 // Beware the ides of March.
 	price_tag = 300
-	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_ALUMINIUM = 10)
 
 /obj/item/tool/knife/dagger/custodian/equipped(mob/living/M)
 	. = ..()
@@ -88,7 +88,7 @@
 	throwforce = WEAPON_FORCE_LETHAL
 	slot_flags = SLOT_BACK | SLOT_BELT
 	price_tag = 850
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
@@ -116,7 +116,7 @@
 	var/stun = 0
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 800
-	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 10, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 10, MATERIAL_INDSTEEL = 2, MATERIAL_ALUMINIUM = 10)
 	has_alt_mode = FALSE
 
 /obj/item/tool/sword/custodian/whip/apply_hit_effect(mob/living/carbon/human/target, mob/living/user, hit_zone)
@@ -137,7 +137,7 @@
 	price_tag = 400
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips the axe to its broad side"
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_INDSTEEL = 2, MATERIAL_ALUMINIUM = 5)
 
 /obj/item/tool/sword/custodian/throwaxe/equipped(mob/living/W)
 	. = ..()
@@ -165,7 +165,7 @@
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
 	attack_verb = list("attacked", "smashed", "bludgeoned", "beaten")
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 16, MATERIAL_ALUMINIUM = 30, MATERIAL_SILVER = 2)
 	tool_qualities = list(QUALITY_HAMMERING = 10) //Not designed for that fine nailing
 	var/glowing = FALSE
 	sharp = FALSE
@@ -227,7 +227,7 @@
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 1200
 	alt_mode_lossrate = 0.7
-	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_STEEL = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 8, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_ALUMINIUM = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 6, MATERIAL_INDSTEEL = 8, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10)
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	var/glowing = FALSE
 	slot_flags = SLOT_BACK | SLOT_BELT
@@ -301,10 +301,10 @@
 	icon_state = "custodian_scutum"
 	item_state = "custodian_scutum"
 	force = WEAPON_FORCE_ROBUST
-	throwforce = WEAPON_FORCE_ROBUST + 4 // 30 damage, it's made of steel rather than pre-preg
+	throwforce = WEAPON_FORCE_ROBUST + 4 // 30 damage, it's made of aluminium rather than pre-preg
 	hitsound = 'sound/weapons/shield/shieldbash_metal.ogg'
 	armor_list = list(melee = 20, bullet = 20, energy = 10, bomb = 15, bio = 0, rad = 0)
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
+	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_SILVER = 6, MATERIAL_INDSTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	price_tag = 1000
 	base_block_chance = 60
 	item_flags = DRAG_AND_DROP_UNEQUIP
@@ -375,7 +375,7 @@
 	icon = 'icons/obj/custodians_melee.dmi'
 	icon_state = "custodian_heater"
 	item_state = "custodian_heater"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 2)
 	price_tag = 500
 	base_block_chance = 45
 	item_flags = DRAG_AND_DROP_UNEQUIP

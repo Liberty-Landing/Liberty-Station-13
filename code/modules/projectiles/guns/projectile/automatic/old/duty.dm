@@ -4,7 +4,7 @@
 	to suplement the ancient pattern boltguns as a standard issue rifle of Blackshield. \
 	Having the stopping power of the Kardashev-Mosin but with a faster fire rate and less recoil. \
 	The design took a lot of old world designs yet modernized it with the new caliber of 6.5mm \
-	and a light polymer body balanced with heavy steel and plasteel. \
+	and a light polymer body balanced with heavy aluminium and indsteel. \
 	A full production rifle, it also has melee capabilities with its bayonet \
 	and it can be reloaded with a stripper clip due to the adapter guide installed on the receiver. \
 	Overall a solid battle rifle for a Blackshield trooper."
@@ -15,7 +15,7 @@
 	caliber = CAL_SRIFLE
 	mag_well = MAG_WELL_RIFLE
 	load_method = SINGLE_CASING|SPEEDLOADER|MAGAZINE
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 25)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_PLASTIC = 25)
 	price_tag = 900
 	penetration_multiplier = 1.2
 	damage_multiplier = 1.2

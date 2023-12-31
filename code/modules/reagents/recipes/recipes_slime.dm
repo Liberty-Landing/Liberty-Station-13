@@ -104,10 +104,10 @@
 	required = /obj/item/slime_extract/metal
 
 /datum/chemical_reaction/slime/metal/on_reaction(var/datum/reagents/holder)
-	var/obj/item/stack/material/steel/M = new /obj/item/stack/material/steel
+	var/obj/item/stack/material/aluminium/M = new /obj/item/stack/material/aluminium
 	M.amount = 15
 	M.loc = get_turf(holder.my_atom)
-	var/obj/item/stack/material/plasteel/P = new /obj/item/stack/material/plasteel
+	var/obj/item/stack/material/indsteel/P = new /obj/item/stack/material/indsteel
 	P.amount = 5
 	P.loc = get_turf(holder.my_atom)
 	..()

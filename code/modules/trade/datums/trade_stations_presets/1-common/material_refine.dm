@@ -37,8 +37,8 @@
 		"Refined Materials" = list(
 			/obj/item/stack/material/plastic/full = good_data("plastic sheets (x120)", list(4, 5), 720),
 			/obj/item/stack/material/cardboard/full = good_data("cardboard sheets (x120)", list(2, 5), 720),
-			/obj/item/stack/material/steel/full = good_data("steel sheets (x120)", list(3, 5), 720),
-			/obj/item/stack/material/plasteel/full = good_data("plasteel sheets (x120)", list(2, 3), 2880),
+			/obj/item/stack/material/aluminium/full = good_data("aluminium sheets (x120)", list(3, 5), 720),
+			/obj/item/stack/material/indsteel/full = good_data("indsteel sheets (x120)", list(2, 3), 2880),
 			/obj/item/stack/material/wood/full = good_data("wood planks (x120)", list(2, 5), 360),
 			/obj/item/stack/material/glass/full = good_data("glass sheets (x120)", list(2, 5), 720),
 			/obj/item/stack/material/plasma/full = good_data("plasma sheets (x120)", list(1, 2), 3600),

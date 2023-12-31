@@ -12,7 +12,7 @@
 	throw_range = 4
 	w_class = ITEM_SIZE_BULKY
 	origin_tech = list(TECH_MATERIAL = 4, TECH_COMBAT = 4)
-	matter = list(MATERIAL_PLASMAGLASS = 1, MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 10)
+	matter = list(MATERIAL_LBGLASS = 1, MATERIAL_ALUMINIUM = 5, MATERIAL_INDSTEEL = 10)
 	price_tag = 1200
 	attack_verb = list("shoved", "bashed")
 	var/structure_form_type = /obj/structure/shield_deployed
@@ -29,7 +29,7 @@
 	Now a broken shell of its former self, maybe it can still be scrapped for what it's worth..."
 	icon = 'icons/obj/bastion.dmi'
 	icon_state = "bastion_broken"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_INDSTEEL = 4)
 	w_class = ITEM_SIZE_NORMAL
 
 /obj/item/shield/riot/bastion/attack_self(mob/user)

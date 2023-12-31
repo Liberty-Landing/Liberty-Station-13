@@ -41,14 +41,14 @@
 /obj/item/training_dummy/cultist
 	desc = "Meant to be emplaced on the floor to use for martial practice. This one looks armored."
 	icon_state = "dummy_cult_item"
-	matter = list(MATERIAL_WOOD = 20, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_WOOD = 20, MATERIAL_ALUMINIUM = 10)
 	deployed_state = /obj/structure/training_dummy/cultist
 
 
 /obj/item/training_dummy/merc
 	desc = "Meant to be emplaced on the floor to use for martial practice. This one looks armored."
 	icon_state = "dummy_merc_item"
-	matter = list(MATERIAL_WOOD = 20, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_WOOD = 20, MATERIAL_ALUMINIUM = 10)
 	deployed_state = /obj/structure/training_dummy/merc
 
 // Structure training dummies
@@ -185,7 +185,7 @@
 	icon_state = "dummy_cult"
 	maxHealth = 1200 // Sturdier because it's plated with metal
 	health = 1200
-	matter = list(MATERIAL_WOOD = 20, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_WOOD = 20, MATERIAL_ALUMINIUM = 10)
 	item_form = /obj/item/training_dummy/cultist
 	dummy_sound = 'sound/weapons/sword_clash.ogg'
 
@@ -195,7 +195,7 @@
 	icon_state = "dummy_mercenary"
 	maxHealth = 1200 // Sturdier because it's plated with metal
 	health = 1200
-	matter = list(MATERIAL_WOOD = 20, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_WOOD = 20, MATERIAL_ALUMINIUM = 10)
 	item_form = /obj/item/training_dummy/merc
 	dummy_sound = 'sound/weapons/sword_clash.ogg'
 

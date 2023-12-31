@@ -8,7 +8,7 @@
 	icon_state = "conpipe-s"
 	anchored = 0
 	density = 0
-	matter = list(MATERIAL_STEEL = 6)
+	matter = list(MATERIAL_ALUMINIUM = 6)
 	level = ABOVE_PLATING_LEVEL
 	var/sortType = list()
 	var/pipe_type = 0

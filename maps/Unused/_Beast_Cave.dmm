@@ -2478,7 +2478,7 @@
 /obj/effect/window_lwall_spawn,
 /obj/structure/curtain/black,
 /obj/structure/invislight,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/swamp_hut)
 "jX" = (
 /obj/structure/flora/small/bushb2,
@@ -5417,7 +5417,7 @@
 /area/liberty/outside/forest/swamp_hut)
 "uG" = (
 /obj/machinery/door/unpowered/simple/wood/saloon,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/swamp_hut)
 "uH" = (
 /obj/structure/closet/secure_closet/freezer/fridge,

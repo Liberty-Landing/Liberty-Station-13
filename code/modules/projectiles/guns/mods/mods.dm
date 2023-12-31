@@ -2,7 +2,7 @@
 	icon = 'icons/obj/guns/mods.dmi'
 	w_class = ITEM_SIZE_TINY
 	price_tag = 100 //These should be sold in the player market.
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1)
 	var/can_remove = TRUE
 
 /obj/item/gun_upgrade/barrel
@@ -11,7 +11,7 @@
 /obj/item/gun_upgrade/muzzle/silencer
 	name = "Silencer"
 	desc = "A threaded silencer that can be attached to the muzzle of certain guns. Vastly reduces noise."
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 1)
 	icon_state = "silencer"
 	price_tag = 100
 
@@ -31,7 +31,7 @@
 	desc = "A threaded barrel that can be attached to the muzzle of most projectile guns. \
 	Threaded barrel device made of a coil sensor and heater. As bullets pass the device they are slowed down and heated up by the coil, causing them to deform when hitting a target and imparting all their painful energy. \
 	Typically used when taking a hostages or kidnapping."
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 1)
 	icon_state = "silencer"
 	price_tag = 100
 
@@ -56,7 +56,7 @@
 /obj/item/gun_upgrade/muzzle/pepper_spray
 	name = "SR Hot Box"
 	desc = "A threaded chemical box that coats bullets as they fly out of the barrel, produced by Seinemetall Defense GmbH."
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 1)
 	icon_state = "silencer"
 	price_tag = 100
 
@@ -75,7 +75,7 @@
 //Decreases fire delay. Acquired through loot spawns or guild crafting
 /obj/item/gun_upgrade/barrel/forged
 	name = "Forged barrel"
-	desc = "Despite advancements in 3D printing, a properly reinforced plasteel barrel can still outperform anything that comes from an autolathe."
+	desc = "Despite advancements in 3D printing, a properly reinforced indsteel barrel can still outperform anything that comes from an autolathe."
 	icon_state = "Forged_barrel"
 	price_tag = 120
 
@@ -115,7 +115,7 @@
 	name = "Phokorus Institute \"Penetrator\" magnetic accelerator barrel"
 	desc = "Uses sympathetic magnetic coiling to increase exit velocity and penetration capabilities of a metal projectile. The added strain to the gun's barrel requires an additional cooldown period between shots."
 	icon_state = "Penetrator"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1)
 	price_tag = 160
 
 /obj/item/gun_upgrade/barrel/mag_accel/New()
@@ -136,7 +136,7 @@
 	name = "Phokorus Institute \"Caster\" magnetic overheat barrel"
 	desc = "Uses magnetic induction to heat the projectile of a weapon. Arguable combat effectiveness, but flashy nonetheless."
 	icon_state = "Caster"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1)
 	price_tag = 160
 
 /obj/item/gun_upgrade/barrel/overheat/New()
@@ -184,7 +184,7 @@
 	name = "New Testament \"EXCRUCIATOR\" giga lens"
 	desc = "It's time for us to shine."
 	icon_state = "Excruciator"
-	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
 	price_tag = 160
 
 /obj/item/gun_upgrade/barrel/excruciator/New()
@@ -204,7 +204,7 @@
 	name = "Factorial \"EXCRUCIATOR\" hyper lens"
 	desc = "It's time for us to shine. This device has been modified by members of the factorial path, doubling its strength and drawbacks, for better or worse."
 	icon_state = "Excruciator_plus"
-	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
 	price_tag = 160
 
 /obj/item/gun_upgrade/barrel/excruciator_plus/New()
@@ -220,7 +220,7 @@
 	I.prefix = "hyper focused"
 
 /obj/item/gun_upgrade/trigger
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1)
 */
 //Disables the ability to toggle the safety, toggles the safety permanently off, decreases fire delay. Acquired through loot spawns
 /obj/item/gun_upgrade/trigger/dangerzone
@@ -262,7 +262,7 @@
 	name = "Phokorus Institute \"DNA lock\" Finger Imprinter Trigger"
 	desc = "There are many guns, but that one will be yours. Prevents others from using weapon with this trigger."
 	icon_state = "DNA_lock"
-	matter = list(MATERIAL_SILVER = 1, MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 3) //DNA stuff needs silver i guess
+	matter = list(MATERIAL_SILVER = 1, MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 3) //DNA stuff needs silver i guess
 	price_tag = 100
 
 /obj/item/gun_upgrade/trigger/dnalock/New()
@@ -308,7 +308,7 @@
 	name = "Simulacrum \"Glass Widow\" infuser"
 	desc = "An old technology from the Simulacrum's glory days, used to make formerly useless civilian-grade weaponry into something much more lethal. This mechanism fits 9mm weapons only and coats the bullets in dangerous caustic toxins."
 	icon_state = "Glass_Widow"
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTEEL = 4, MATERIAL_PLATINUM = 4)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 4, MATERIAL_PLATINUM = 4)
 	price_tag = 800
 
 /obj/item/gun_upgrade/mechanism/glass_widow/New()
@@ -327,7 +327,7 @@
 // Guild made upgrade kit that makes 12mm guns a bit more viable
 /obj/item/gun_upgrade/mechanism/upgrade_kit
 	name = "Kurtz's refinement kit"
-	desc = "A kit made of plasteel designed to refit and refine any kurtz loaded 12mm weapon. This kit is produced by the Terra-Therma Union so even \
+	desc = "A kit made of indsteel designed to refit and refine any kurtz loaded 12mm weapon. This kit is produced by the Terra-Therma Union so even \
 	the heaviest caliber pistols might stand a chance of competing with their legendary myrmidon design."
 	icon_state = "kit_heavy_alt"
 	can_remove = FALSE
@@ -469,7 +469,7 @@
 	name = "Phokorus Institute \"Thunder\" battery shunt"
 	desc = "This experimental battery shunt is a cutting edge tool attachment which bypasses battery protection circuits to deliver the maximum amount of power in the shortest amount of time. For those who care more about stopping power than number of shots."
 	icon_state = "battery_shunt"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_URANIUM = 1)
 	price_tag = 160
 
 /obj/item/gun_upgrade/mechanism/battery_shunt/New()
@@ -489,7 +489,7 @@
 	name = "Phokorus Institute \"Tesla\" overdrive chip"
 	desc = "This experimental chip is a cutting edge tool attachment which bypasses power management protocols to dramatically increase the rate of fire at the cost of reduced stopping power."
 	icon_state = "overdrive"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_URANIUM = 1)
 	price_tag = 160
 
 /obj/item/gun_upgrade/mechanism/overdrive/New()
@@ -529,7 +529,7 @@
 	name = "\"Banana Split\" emitter"
 	desc = "This experimental trigger mechanism taps directly into the bluespace dimension and refines its energy to produce the purest sounds possible, for the classic prankster at least."
 	icon_state = "honker"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1)
 	price_tag = 73
 
 /obj/item/gun_upgrade/trigger/honker/New()
@@ -545,7 +545,7 @@
 	name = "Phokorus Institute \"Black Viper\" toxin coater"
 	desc = "This experimental barrel coats bullets with a thin layer of toxins just before they leave the weapon. Do not lick it."
 	icon_state = "toxin_coater"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 2)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 2)
 	price_tag = 110
 
 /obj/item/gun_upgrade/barrel/toxin_coater/New()
@@ -563,7 +563,7 @@
 	name = "Phokorus Institute \"Atomik\" isotope diffuser"
 	desc = "This experimental barrel constantly sprays a thin mist of radioactive isotopes to make projectiles leaving the weapons deadlier, whether bullets, lasers or energy bolts. Do not put it in your mouth."
 	icon_state = "isotope_diffuser"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1, MATERIAL_URANIUM = 2)
 
 /obj/item/gun_upgrade/barrel/isotope_diffuser/New()
 	..()
@@ -578,7 +578,7 @@
 	name = "Phokorus Institute \"Mastermind\" psionic catalyst"
 	desc = "This controversial device greatly amplifies the natural psionic ability of the user and allows them to project their will into the world. Before the development of the Psi Amp, psionic disciplines were mostly detectable only in a lab environment."
 	icon_state = "psionic_catalyst"
-	matter = list(MATERIAL_SILVER = 3, MATERIAL_PLASTEEL = 3, MATERIAL_URANIUM = 3)
+	matter = list(MATERIAL_SILVER = 3, MATERIAL_INDSTEEL = 3, MATERIAL_URANIUM = 3)
 
 /obj/item/gun_upgrade/mechanism/psionic_catalyst/New()
 	..()
@@ -594,7 +594,7 @@
 	name = "H&S \"HandHolder\" Barrel Rail"
 	desc = "A simple magnetic barrel rail, designed to fit onto a variety of weapons. Easy to attach, impossible to remove."
 	icon_state = "auto_spingbox"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 3, MATERIAL_GLASS = 2)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 3, MATERIAL_GLASS = 2)
 	can_remove = FALSE
 	price_tag = 60
 
@@ -616,7 +616,7 @@
 	name = "Simulacrum \"Master Unmaker\" infuser"
 	desc = "One of the rarest and most powerful weapon modifications ever made by Simulacrum Robotics and one of the numerous reasons they remain a threat even after the company collapsed into malfunctioning artificial intelligences. It can infuse any weapon with immense power that causes utter ruin to machine and organic matter alike."
 	icon_state = "psionic_catalyst"
-	matter = list(MATERIAL_PLATINUM = 5, MATERIAL_PLASTEEL = 3, MATERIAL_DIAMOND = 10)
+	matter = list(MATERIAL_PLATINUM = 5, MATERIAL_INDSTEEL = 3, MATERIAL_DIAMOND = 10)
 	price_tag = 4500
 
 /obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst/New()
@@ -683,9 +683,9 @@
 
 /obj/item/gun_upgrade/scope/watchman
 	name = "PIRS \"All Seeing\" scope"
-	desc = "In an age where lathe-printed parts are too common; these scopes stand out an oddity. From the PIRS Weapons Division; these are made with reinforced glass, with a plasteel frame - each one manually polished and made by 'hand', undoubtedly by lines of fabrication synthetics."
+	desc = "In an age where lathe-printed parts are too common; these scopes stand out an oddity. From the PIRS Weapons Division; these are made with reinforced glass, with a indsteel frame - each one manually polished and made by 'hand', undoubtedly by lines of fabrication synthetics."
 	icon_state = "Watchman"
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASMAGLASS = 2, MATERIAL_URANUM = 2)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_LBGLASS = 2, MATERIAL_URANUM = 2)
 	price_tag = 40
 
 /obj/item/gun_upgrade/scope/watchman/New()
@@ -704,7 +704,7 @@
 	name = "H&S \"AGOG\" scope"
 	desc = "In the age of 3D printing, the design of a scope one can rely on is common, but a scope that is special is a rarity. This is not one such scope. Mass produced, lathe machined and incredibly cheap. These often misaligned optics are truly ubiquitous."
 	icon_state = "agog"
-	matter = list(MATERIAL_GLASS = 2, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_GLASS = 2, MATERIAL_ALUMINIUM = 1)
 	price_tag = 20
 
 /obj/item/gun_upgrade/scope/acog/New()
@@ -747,7 +747,7 @@
 	name = "H&S \"Dropper\" Magwell Autodrop Mechanism"
 	desc = "A rather smartly-designed magwell breaker box that, when added to guns that do not already possess an auto-eject feature, will automatically drop the gun's magazine into the floor once it empties! When force-ejecting a mag, it will play a beeping sound."
 	icon_state = "auto_spingbox"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 3, MATERIAL_GLASS = 2)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 3, MATERIAL_GLASS = 2)
 	price_tag = 70
 
 /obj/item/gun_upgrade/magwell/auto_eject/New()
@@ -767,7 +767,7 @@
 	desc = "A rather oddly-designed magwell breaker box that, when added to guns that do not already possess an auto-eject feature, will automatically drop the gun's magazine into the floor once it empties! When force-ejecting a mag, it will play a beeping sound.\
 	Unlike the other versions on the market this, once added, will not be removable as it replaces key components of the receiver to be as seamless as possible."
 	can_remove = FALSE
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GLASS = 2, MATERIAL_SILVER = 1, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1, MATERIAL_GLASS = 2, MATERIAL_SILVER = 1, MATERIAL_GOLD = 1)
 
 /obj/item/gun_upgrade/magwell/auto_eject/no_removal/New()
 	..()
@@ -787,7 +787,7 @@
 	name = "H&S \"Stand\" bipod"
 	desc = "A simple set of telescopic poles to keep a weapon stabilized during firing. It greatly reduces recoil when deployed, but also increases the gun's weight, making it unwieldy unless braced."
 	icon_state = "bipod"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 3)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 3)
 	price_tag = 130
 
 /obj/item/gun_upgrade/underbarrel/bipod/New()

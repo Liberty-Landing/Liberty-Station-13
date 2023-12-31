@@ -56,7 +56,7 @@
 	name = "Relay Positioning Device"
 	desc = "Triangulates the approximate co-ordinates."
 	build_path = /obj/item/device/gps
-	materials = list(MATERIAL_STEEL = 25, MATERIAL_GLASS = 5)
+	materials = list(MATERIAL_ALUMINIUM = 25, MATERIAL_GLASS = 5)
 	category = "Bluespace Telecoms"
 
 /datum/design/research/item/bs_snare

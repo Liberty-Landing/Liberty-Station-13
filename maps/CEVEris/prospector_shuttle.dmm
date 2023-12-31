@@ -215,7 +215,7 @@
 	},
 /area/space)
 "ei" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/simulated/shuttle/floor/mining{
@@ -252,7 +252,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/microwave,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
@@ -386,7 +386,7 @@
 	},
 /area/space)
 "gi" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/device/radio/off,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "10,2"
@@ -814,7 +814,7 @@
 	},
 /area/space)
 "mL" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/cell/large/high,
 /obj/item/cell/large/high,
 /obj/item/cell/large/high,
@@ -844,7 +844,7 @@
 	},
 /area/space)
 "na" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/oddity/ls/starscope,
 /turf/simulated/shuttle/floor/mining,
 /area/space)
@@ -898,7 +898,7 @@
 /turf/simulated/shuttle/floor/mining,
 /area/space)
 "nH" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/crowbar,
 /obj/item/device/radio/off,
 /turf/simulated/shuttle/floor/mining,
@@ -929,13 +929,13 @@
 /obj/machinery/camera/network/third_section{
 	dir = 4
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
 	},
 /area/shuttle/rocinante_shuttle_area)
 "ow" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
 	},
@@ -1153,7 +1153,7 @@
 	},
 /area/space)
 "tl" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/paper_bin,
 /obj/item/pen,
 /turf/simulated/shuttle/floor/mining{
@@ -1214,7 +1214,7 @@
 /turf/space,
 /area/shuttle/rocinante_shuttle_area)
 "uB" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/box/donkpockets,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
@@ -1235,7 +1235,7 @@
 /turf/simulated/shuttle/floor/mining,
 /area/space)
 "uV" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/crowbar,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "7,2"
@@ -1565,7 +1565,7 @@
 	},
 /area/space)
 "AA" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/camera/network/mining,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "10,4"
@@ -1629,7 +1629,7 @@
 	},
 /area/space)
 "Be" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
 /turf/simulated/shuttle/floor/mining{
@@ -1723,7 +1723,7 @@
 	name = "West APC";
 	pixel_x = -28
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"
@@ -1765,7 +1765,7 @@
 	},
 /area/shuttle/rocinante_shuttle_area)
 "Dy" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/oddity/ls/starscope,
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
@@ -1924,7 +1924,7 @@
 	name = "West APC";
 	pixel_x = -28
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/structure/cable/yellow{
 	d2 = 4;
 	icon_state = "0-4"
@@ -2218,7 +2218,7 @@
 /area/shuttle/rocinante_shuttle_area)
 "LF" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/shuttle/rocinante_shuttle_area)
 "LG" = (
 /obj/structure/cable/yellow{
@@ -2391,7 +2391,7 @@
 /turf/simulated/floor,
 /area/space)
 "NF" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "7,4"
 	},
@@ -2431,7 +2431,7 @@
 /area/space)
 "Oa" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/space)
 "Ob" = (
 /turf/simulated/shuttle/floor/mining{
@@ -2445,7 +2445,7 @@
 	},
 /area/space)
 "Om" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
 	},
@@ -2482,7 +2482,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/microwave,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
@@ -2580,14 +2580,14 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "Qo" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/box/donkpockets,
 /turf/simulated/shuttle/floor/mining{
 	icon_state = "8,23"
 	},
 /area/shuttle/rocinante_shuttle_area)
 "Qr" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/crowbar,
 /obj/item/device/radio/off,
 /obj/machinery/light,
@@ -2641,7 +2641,7 @@
 /turf/space,
 /area/shuttle/rocinante_shuttle_area)
 "QY" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/pickaxe,
 /obj/item/storage/belt/utility,
 /obj/item/storage/toolbox/mechanical,
@@ -2751,7 +2751,7 @@
 /turf/simulated/shuttle/floor/mining,
 /area/shuttle/rocinante_shuttle_area)
 "SL" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
 /turf/simulated/shuttle/floor/mining{

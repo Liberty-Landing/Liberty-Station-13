@@ -623,7 +623,7 @@
 	seed_name = "metal cap"
 	display_name = "metal caps"
 	chems = list("aluminum" = list(10,10))
-	materials = list(MATERIAL_STEEL = 1)
+	materials = list(MATERIAL_ALUMINIUM = 1)
 	origin_tech = list(TECH_MATERIAL = 1)
 	mutants = null
 	evolutions = list("plasmacap"=list("plasma"))
@@ -638,7 +638,7 @@
 	seed_name = "plasma cap"
 	display_name = "Plasma Caps"
 	chems = list("plasma" = list(1,25))
-	materials = list(MATERIAL_PLASTEEL = 1, MATERIAL_PLASMA = 1)
+	materials = list(MATERIAL_INDSTEEL = 1, MATERIAL_HYDROGENC = 1)
 	evolutions = null
 	origin_tech = list(TECH_MATERIAL = 2, TECH_PLASMA = 2)
 

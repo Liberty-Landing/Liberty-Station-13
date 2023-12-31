@@ -10,7 +10,7 @@
 	fire_sound = 'sound/weapons/energy/laser_rifle.ogg' // Big unwieldy gun, despite the shit lasers
 	slot_flags = null
 	w_class = ITEM_SIZE_HUGE
-	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_WOOD = 25, MATERIAL_GLASS = 15, MATERIAL_SILVER = 5, MATERIAL_GOLD = 3)
+	matter = list(MATERIAL_INDSTEEL = 30, MATERIAL_WOOD = 25, MATERIAL_GLASS = 15, MATERIAL_SILVER = 5, MATERIAL_GOLD = 3)
 	projectile_type = /obj/item/projectile/beam/drone
 	init_recoil = CARBINE_RECOIL(2)
 	charge_cost = 25

@@ -13,7 +13,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 750
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -66,7 +66,7 @@
 	name = "Federalist frame"
 	desc = "An Federalist carbine frame. The homeowner's dream."
 	icon_state = "frame_ak"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/federalist
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)
 	resultvars = list(/obj/item/gun/projectile/automatic/federalist, /obj/item/gun/projectile/automatic/federalist/homemaker)

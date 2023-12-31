@@ -162,7 +162,7 @@
 				target = T
 				break
 		if(maketiles && !target)
-			for(var/obj/item/stack/material/steel/T in view(src))
+			for(var/obj/item/stack/material/aluminium/T in view(src))
 				if(T in ignorelist)
 					continue
 				target = T
@@ -284,7 +284,7 @@
 				if(!F.flooring)
 					floor_build_type = F.initial_flooring // Gets map-based var, that changes decl
 					if(!floor_build_type) // If it's plating from start..
-						floor_build_type = /decl/flooring/tiling // ...it makes base steel floor sprite.
+						floor_build_type = /decl/flooring/tiling // ...it makes base aluminium floor sprite.
 					else
 						F.set_flooring(get_flooring_data(floor_build_type))
 						addTiles(-1)
@@ -309,7 +309,7 @@
 		update_icons()
 	else if(istype(A, /obj/item/stack/material) && amount + 4 <= maxAmount)
 		var/obj/item/stack/material/M = A
-		if(M.get_material_name() == MATERIAL_STEEL)
+		if(M.get_material_name() == MATERIAL_ALUMINIUM)
 			visible_message(SPAN_NOTICE("\The [src] begins to make tiles."))
 			var/message = pick("Hard work pays off.", "I don't like all this standing around.", "My masterpiece!")
 			say(message)

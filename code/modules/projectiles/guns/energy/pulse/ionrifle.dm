@@ -12,7 +12,7 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
 	charge_cost = 200
-	matter = list(MATERIAL_PLASTEEL = 24, MATERIAL_WOOD = 8, MATERIAL_SILVER = 10)
+	matter = list(MATERIAL_INDSTEEL = 24, MATERIAL_WOOD = 8, MATERIAL_SILVER = 10)
 	price_tag = 1500
 	projectile_type = /obj/item/projectile/ion
 	init_recoil = CARBINE_RECOIL(1.6)

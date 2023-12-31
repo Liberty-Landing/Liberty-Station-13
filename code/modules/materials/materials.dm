@@ -294,7 +294,7 @@ var/list/name_to_material
 	sheet_plural_name = "ingots"
 
 /material/plasma
-	name = MATERIAL_PLASMA
+	name = MATERIAL_HYDROGENC
 	stack_type = /obj/item/stack/material/plasma
 	ignition_point = PLASMA_MINIMUM_BURN_TEMPERATURE
 	icon_base = "stone"
@@ -344,36 +344,36 @@ var/list/name_to_material
 	integrity = 201 //hack to stop kitchen benches being flippable, todo: refactor into weight system
 	stack_type = /obj/item/stack/material/marble
 
-/material/steel
-	name = MATERIAL_STEEL
-	stack_type = /obj/item/stack/material/steel
+/material/aluminium
+	name = MATERIAL_ALUMINIUM
+	stack_type = /obj/item/stack/material/aluminium
 	integrity = 150
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
-	icon_colour = PLASTEEL_COLOUR
+	icon_colour = indsteel_COLOUR
 	hitsound = 'sound/weapons/genhit.ogg'
 
-/material/steel/holographic
-	name = "holo" + MATERIAL_STEEL
-	display_name = MATERIAL_STEEL
+/material/aluminium/holographic
+	name = "holo" + MATERIAL_ALUMINIUM
+	display_name = MATERIAL_ALUMINIUM
 	stack_type = null
 	shard_type = SHARD_NONE
 
-/material/plasteel
-	name = MATERIAL_PLASTEEL
-	stack_type = /obj/item/stack/material/plasteel
+/material/indsteel
+	name = MATERIAL_INDSTEEL
+	stack_type = /obj/item/stack/material/indsteel
 	integrity = 400
 	melting_point = 6000
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
-	icon_colour = PLASTEEL_COLOUR//"#777777"
+	icon_colour = indsteel_COLOUR//"#777777"
 	explosion_resistance = 25
 	hardness = 80
 	weight = 23
 	stack_origin_tech = list(TECH_MATERIAL = 2)
 	hitsound = 'sound/weapons/genhit.ogg'
 
-/material/plasteel/titanium
+/material/indsteel/titanium
 	name = "titanium"
 	stack_type = null
 	icon_base = "metal"
@@ -498,7 +498,7 @@ var/list/name_to_material
 	return (hardness > 35) //todo
 
 /material/glass/reinforced
-	name = MATERIAL_RGLASS
+	name = MATERIAL_LGLASS
 	display_name = "reinforced glass"
 	stack_type = /obj/item/stack/material/glass/reinforced
 	flags = MATERIAL_BRITTLE
@@ -510,7 +510,7 @@ var/list/name_to_material
 	hardness = 40
 	weight = 30
 	stack_origin_tech = "materials=2"
-	composite_material = list(MATERIAL_STEEL = 1,MATERIAL_GLASS = 1)
+	composite_material = list(MATERIAL_ALUMINIUM = 1,MATERIAL_GLASS = 1)
 	window_options = list("One Direction" = 1, "Full Window" = 6, "Windoor" = 5)
 	created_window = /obj/structure/window/reinforced
 	created_window_full = /obj/structure/window/reinforced/full
@@ -518,7 +518,7 @@ var/list/name_to_material
 	rod_product = null
 
 /material/glass/plasma
-	name = MATERIAL_PLASMAGLASS
+	name = MATERIAL_LBGLASS
 	display_name = "borosilicate glass"
 	stack_type = /obj/item/stack/material/glass/plasmaglass
 	flags = MATERIAL_BRITTLE

@@ -17,11 +17,11 @@
 	result = /obj/item/shield/riot/bastion
 	steps = list(
 		list(/obj/item/shield/riot, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 20, "time" = 60),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_WELDING, 20, "time"= 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS, "time" = 30),
 		list(QUALITY_HAMMERING, 20, "time" = 40)
 	)
 
@@ -43,9 +43,9 @@
 	name = "Handmade Machinegun Mechanism"
 	result = /obj/item/part/gun/mechanism/machinegun
 	steps = list(
-		list(/obj/item/part/gun/mechanism/autorifle, 1, "time" = 20), // Printing is better as it costs the same plasteel
+		list(/obj/item/part/gun/mechanism/autorifle, 1, "time" = 20), // Printing is better as it costs the same indsteel
 		list(QUALITY_DRILLING, 20),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_WELDING, 20),
 		list(QUALITY_SAWING, 20)
 	)
@@ -56,7 +56,7 @@
 	steps = list(
 		list(/obj/item/part/gun/barrel/lrifle, 1, "time" = 30), // Shotgun bore is too big for 14.5mm
 		list(QUALITY_DRILLING, 20), // Making the bore bigger
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_HAMMERING, 20),
 		list(QUALITY_WELDING, 20)
 	)
@@ -71,7 +71,7 @@
 		list(/obj/item/part/gun/frame/ranger, 1, "time" = 30), // Closest high end highest caliber revolver available in design.
 		list(CRAFT_MATERIAL, 2, MATERIAL_WOOD, "time" = 30),
 		list(QUALITY_SCREW_DRIVING, 20, "time"= 30),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_HAMMERING, 20, "time" = 30),
 		list(QUALITY_DRILLING, 15, "time" = 30),
 		list(QUALITY_WELDING, 20, "time"= 30)
@@ -82,7 +82,7 @@
 	result = /obj/item/part/gun/frame/judge
 	steps = list(
 		list(/obj/item/part/gun/frame/sweeper, 1, "time" = 30), // Sort of the same mechanism behind automatic shotgun
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_HAMMERING, 20, "time" = 30),
 		list(QUALITY_DRILLING, 15, "time" = 30),
 		list(QUALITY_WELDING, 20, "time"= 30),
@@ -94,7 +94,7 @@
 	result = /obj/item/part/gun/frame/specialist
 	steps = list(
 		list(/obj/item/part/gun/frame/broz, 1, "time" = 30), // 9mm SMG, no need to rebore
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_HAMMERING, 20, "time" = 30),
 		list(QUALITY_DRILLING, 15, "time" = 30),
 		list(QUALITY_WELDING, 20, "time"= 30),
@@ -106,7 +106,7 @@
 	result = /obj/item/part/gun/frame/tactical
 	steps = list(
 		list(/obj/item/part/gun/frame/umbani, 1, "time" = 30), // 10mm SMG, no need to rebore
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_HAMMERING, 20, "time" = 30),
 		list(QUALITY_DRILLING, 15, "time" = 30),
 		list(QUALITY_WELDING, 20, "time"= 30),
@@ -121,7 +121,7 @@
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 30),
 		list(QUALITY_HAMMERING, 20, "time" = 30),
 		list(QUALITY_DRILLING, 15, "time" = 30),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_WELDING, 20, "time"= 30),
 		list(QUALITY_SCREW_DRIVING, 20, "time"= 30)
 	)
@@ -131,7 +131,7 @@
 	result = /obj/item/part/gun/frame/operator_rifle
 	steps = list(
 		list(/obj/item/part/gun/frame/kraut, 1, "time" = 30), // So high end we require another high-end
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_HAMMERING, 20, "time" = 30),
 		list(QUALITY_WELDING, 20, "time"= 30),
 		list(QUALITY_SCREW_DRIVING, 20, "time"= 30)
@@ -143,7 +143,7 @@
 	result = /obj/item/part/gun/frame/heavysniper
 	steps = list(
 		list(/obj/item/part/gun/frame/operator_rifle, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 30, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 30, MATERIAL_INDSTEEL),
 		list(QUALITY_SAWING, 30, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 30),
 		list(QUALITY_WELDING, 30, "time"= 30),
@@ -167,7 +167,7 @@
 	result = /obj/item/gun_upgrade/mechanism/weintraub
 	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 20, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 20, "time" = 40),
@@ -180,7 +180,7 @@
 	result = /obj/item/gun_upgrade/mechanism/overshooter
 	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 20, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 20, "time" = 40),
@@ -193,7 +193,7 @@
 	result = /obj/item/gun_upgrade/trigger/dangerzone
 	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 20, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 20, "time" = 40),
@@ -206,7 +206,7 @@
 	result = /obj/item/gun_upgrade/barrel/forged
 	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 20, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 20, "time" = 40),
@@ -219,7 +219,7 @@
 	result = /obj/item/gun_upgrade/barrel/bore
 	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 20, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 20, "time" = 40),
@@ -229,7 +229,7 @@
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 20, "time" = 40),
 		list(QUALITY_DRILLING, 20, "time" = 90),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_BOLT_TURNING, 20, "time" = 90)
 	)
 
@@ -238,7 +238,7 @@
 	result = /obj/item/gun_upgrade/muzzle/silencer
 	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 20, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 20, "time" = 40),

@@ -7,7 +7,7 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
 	dir = SOUTH
-	matter = list(MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15)
 	var/body_part = "part"
 
 /obj/item/robot_parts/set_dir()
@@ -45,7 +45,7 @@
 	desc = "A heavily reinforced case containing cyborg logic boards, with space for a standard power cell."
 	icon_state = "chest"
 	body_part = "chest"
-	matter = list(MATERIAL_STEEL = 25)
+	matter = list(MATERIAL_ALUMINIUM = 25)
 	var/wires = 0.0
 	cell = null
 	suitable_cell = /obj/item/cell/large
@@ -77,7 +77,7 @@
 	name = "endoskeleton"
 	desc = "A complex metal backbone with standard limb sockets and pseudomuscle anchors."
 	icon_state = "robo_suit"
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 	var/list/req_parts = list(
 		"chest",
 		"head",
@@ -114,7 +114,7 @@
 
 /obj/item/robot_parts/robot_suit/attackby(obj/item/W as obj, mob/user as mob)
 	..()
-	if(istype(W, /obj/item/stack/material) && W.get_material_name() == MATERIAL_STEEL && !parts.len)
+	if(istype(W, /obj/item/stack/material) && W.get_material_name() == MATERIAL_ALUMINIUM && !parts.len)
 		var/obj/item/stack/material/M = W
 		if (M.use(1))
 			var/obj/item/secbot_assembly/ed209_assembly/B = new(loc)

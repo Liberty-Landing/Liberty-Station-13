@@ -3,7 +3,7 @@
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	time = 150
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM),
 	)
 	related_stats = list(STAT_MEC)
 	requiredPerk = PERK_HANDYMAN
@@ -64,7 +64,7 @@
 	name = "multi-tile airlock assembly"
 	result = /obj/structure/door_assembly/multi_tile
 	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/airlock/research

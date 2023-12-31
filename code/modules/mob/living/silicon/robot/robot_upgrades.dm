@@ -6,7 +6,7 @@
 	desc = "Protected by FRM."
 	icon = 'icons/obj/module.dmi'
 	icon_state = "cyborg_upgrade"
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 	var/locked = 0
 	var/require_module = FALSE
 	var/installed = 0
@@ -28,7 +28,7 @@
 	name = "robotic module reset board"
 	desc = "Used to reset a cyborg's module. Destroys any other upgrades applied to the robot."
 	icon_state = "cyborg_upgrade1"
-	matter = list(MATERIAL_STEEL = 12, MATERIAL_GLASS = 6, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_ALUMINIUM = 12, MATERIAL_GLASS = 6, MATERIAL_PLASTIC = 6)
 	require_module = TRUE
 	permanent = FALSE
 
@@ -96,7 +96,7 @@
 	name = "robot emergency restart module"
 	desc = "Used to force a restart of a disabled-but-repaired robot, bringing it back online."
 	icon_state = "cyborg_upgrade1"
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_GLASS = 5)
 	permanent = FALSE
 
 /obj/item/borg/upgrade/restart/action(var/mob/living/silicon/robot/R)
@@ -122,7 +122,7 @@
 	name = "robotic VTEC Module"
 	desc = "Used to kick in a robot's VTEC systems, increasing their speed."
 	icon_state = "cyborg_upgrade2"
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_GLASS = 6, MATERIAL_GOLD = 5)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_GLASS = 6, MATERIAL_GOLD = 5)
 	var/speed_buff = 0.5
 	robot_traits = CYBORG_TRAIT_SPEED_BOOSTED
 
@@ -143,7 +143,7 @@
 	name = "robotic Power Saver Module"
 	desc = "Used to kick in a robot's Power Saver systems, increasing their power efficiency."
 	icon_state = "cyborg_upgrade2"
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_GLASS = 6, MATERIAL_GOLD = 2, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_GLASS = 6, MATERIAL_GOLD = 2, MATERIAL_SILVER = 2)
 	require_module = TRUE
 	var/pwer_gamer = 0.5
 	robot_traits = CYBORG_TRAIT_POWER_SAVER
@@ -159,7 +159,7 @@
 	name = "robotic Rapid Taser Cooling Module"
 	desc = "Used to cool a mounted taser, increasing the potential current in it and thus its recharge rate."
 	icon_state = "cyborg_upgrade3"
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_GLASS = 6, MATERIAL_GOLD = 2, MATERIAL_DIAMOND = 2)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_GLASS = 6, MATERIAL_GOLD = 2, MATERIAL_DIAMOND = 2)
 	require_module = TRUE
 	var/cooling_buff = 4
 
@@ -240,7 +240,7 @@
 	name = "engineering robot RCD"
 	desc = "A rapid construction device module for use during construction operations."
 	icon_state = "cyborg_upgrade3"
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASMA = 10, MATERIAL_URANIUM = 10)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_HYDROGENC = 10, MATERIAL_URANIUM = 10)
 	require_module = TRUE
 	var/ref_to_rcd = null
 
@@ -267,7 +267,7 @@
 	name = "engineering robot arc welder"
 	desc = "An electric based, safe welder that runs on its own mini reactor. Use during construction operations."
 	icon_state = "cyborg_upgrade3"
-	matter = list(MATERIAL_PLASTEEL = 6, MATERIAL_SILVER = 1, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_INDSTEEL = 6, MATERIAL_SILVER = 1, MATERIAL_ALUMINIUM = 10)
 	require_module = TRUE
 	var/ref_to_welder = null
 
@@ -341,7 +341,7 @@
 	name = "Overclocking equipment module"
 	desc = "Unlocks hidden, deadlier functions of a robot or overclocked equipment."
 	icon_state = "cyborg_upgrade3"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 5)
 	require_module = TRUE
 	robot_traits = CYBORG_TRAIT_EMAGGED
 
@@ -349,7 +349,7 @@
 	name = "large knife equipment module"
 	desc = "Mounts a large knife onto sec class borgs"
 	icon_state = "cyborg_upgrade3"
-	matter = list(MATERIAL_STEEL = 25)
+	matter = list(MATERIAL_ALUMINIUM = 25)
 	require_module = TRUE
 	var/ref_to_knife = null
 
@@ -375,7 +375,7 @@
 	name = "satchel of holding equipment module"
 	desc = "Mounts a unstable bluespace satchel of holding borgs"
 	icon_state = "cyborg_upgrade2"
-	matter = list(MATERIAL_STEEL = 12, MATERIAL_GOLD = 6, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 12, MATERIAL_GOLD = 6, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 2)
 	require_module = TRUE
 	var/ref_to_bag = null
 

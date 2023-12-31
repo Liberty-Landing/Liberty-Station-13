@@ -162,7 +162,7 @@
 	max_blood_storage = 2.5
 	oxygen_req = 0
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_GOLD = 1)
 
 /obj/item/organ/internal/brain/plant
 	name = "nuclei"

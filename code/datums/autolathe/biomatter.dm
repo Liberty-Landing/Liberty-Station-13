@@ -182,7 +182,7 @@
 	name = "Radiance Sigil"
 	build_path = /obj/item/stack/mold_kit/radiance_sigil
 
-// Total cost: 25 bio silk (stacks and kit itself), 5 biomatter (splints), 5 steel and 5 plastic (syrettes)
+// Total cost: 25 bio silk (stacks and kit itself), 5 biomatter (splints), 5 aluminium and 5 plastic (syrettes)
 /datum/design/bioprinter/custodian_healthpack
 	name = "Bonfire Medkit"
 	build_path = /obj/item/storage/firstaid/nt

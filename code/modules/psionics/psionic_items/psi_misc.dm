@@ -63,7 +63,7 @@
 	telepathic messages, but also prevents psions from using their abilities altogether when worn. The perfect Psionic Containment device. \
 	Despite the advanced technology involved, it looks a little like a tin-foil hat."
 	origin_tech = list(TECH_MAGNET = 6)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_SILVER = 0.5)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_SILVER = 0.5)
 	psi_blocking = 10
 	price_tag = 150
 

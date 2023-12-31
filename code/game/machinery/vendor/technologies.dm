@@ -17,7 +17,7 @@
 	item_state = "electronic"
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
-	matter = list(MATERIAL_STEEL = 10) // Drones cost a lot of steel
+	matter = list(MATERIAL_ALUMINIUM = 10) // Drones cost a lot of aluminium
 
 /obj/item/build_a_drone_kit/attack_self(mob/user as mob)
 	if(build_a_drone(user)) // If the user get their drone

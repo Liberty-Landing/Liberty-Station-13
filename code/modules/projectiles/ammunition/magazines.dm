@@ -18,7 +18,7 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PISTOL
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	caliber = CAL_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 10
@@ -70,7 +70,7 @@
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_DRUM
 	caliber = CAL_PISTOL
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 71
 	multiple_sprites = FALSE //I guess?
@@ -122,7 +122,7 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_H_PISTOL
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	caliber = CAL_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 16
@@ -167,7 +167,7 @@
 	origin_tech = list(TECH_COMBAT = 2)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_SMG
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	caliber = CAL_PISTOL
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 32
@@ -222,7 +222,7 @@
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PISTOL
 	ammo_type = /obj/item/ammo_casing/magnum_40
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	caliber = CAL_MAGNUM
 	max_ammo = 10
 	multiple_sprites = 1
@@ -270,7 +270,7 @@
 	origin_tech = list(TECH_COMBAT = 3)
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_SMG
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	caliber = CAL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum_40
 	max_ammo = 30
@@ -320,7 +320,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = "lrifle"
 	caliber = CAL_SRIFLE
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 30
 	multiple_sprites = 1
@@ -372,7 +372,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = "lrifle"
 	caliber = CAL_SRIFLE
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 20
 	multiple_sprites = 1
@@ -417,7 +417,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	caliber = "lrifle"
 	caliber = CAL_SRIFLE
-	matter = list(MATERIAL_STEEL = 12)
+	matter = list(MATERIAL_ALUMINIUM = 12)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 50
 	multiple_sprites = 1
@@ -461,7 +461,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = "rifle"
 	caliber = CAL_RIFLE
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	max_ammo = 20
 	multiple_sprites = 1
@@ -508,7 +508,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = "rifle"
 	caliber = CAL_RIFLE
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	max_ammo = 10
 	multiple_sprites = 1
@@ -548,7 +548,7 @@
 	mag_well = MAG_WELL_RIFLE
 	caliber = "rifle"
 	caliber = CAL_RIFLE
-	matter = list(MATERIAL_STEEL = 12)
+	matter = list(MATERIAL_ALUMINIUM = 12)
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	max_ammo = 40
 	multiple_sprites = 1
@@ -587,7 +587,7 @@
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_LINKED_BOX
 	caliber = CAL_RIFLE
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	max_ammo = 100
 	multiple_sprites = 1
@@ -629,7 +629,7 @@
 	icon_state = "pkl_box"
 	caliber = CAL_SRIFLE
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	multiple_sprites = 1
 
 /obj/item/ammo_magazine/rifle_75_linked_box/light_rifle_257/highvelocity
@@ -656,7 +656,7 @@
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_PAN
 	caliber = CAL_RIFLE
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	max_ammo = 96
 	multiple_sprites = 1
@@ -673,7 +673,7 @@
 	mag_type = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_CLRIFLE
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_PLASTIC = 1)
 	ammo_type = /obj/item/ammo_casing/cl7mm
 	max_ammo = 40
 	multiple_sprites = 1
@@ -692,7 +692,7 @@
 	icon_state = "slpistol_base"
 	icon = 'icons/obj/ammo_speed.dmi'
 	caliber = CAL_PISTOL
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	max_ammo = 6
 
@@ -736,7 +736,7 @@
 	icon = 'icons/obj/ammo_speed.dmi'
 	caliber = CAL_MAGNUM
 	ammo_type = /obj/item/ammo_casing/magnum_40
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	max_ammo = 6
 
 /obj/item/ammo_magazine/speed_loader_magnum_40/update_icon()
@@ -786,7 +786,7 @@
 	icon_state = "stripper_base"
 	icon = 'icons/obj/ammo_speed.dmi'
 	caliber = CAL_RIFLE
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	ammo_type = /obj/item/ammo_casing/rifle_75
 	max_ammo = 10
 
@@ -811,7 +811,7 @@
 	icon_state = "stripper_base"
 	icon = 'icons/obj/ammo_speed.dmi'
 	caliber = CAL_SRIFLE
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	ammo_type = /obj/item/ammo_casing/light_rifle_257
 	max_ammo = 10
 
@@ -838,7 +838,7 @@
 	icon_state = "shot_tube_s"
 	caliber = CAL_SHOTGUN
 	ammo_type = /obj/item/ammo_casing/shotgun
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	max_ammo = 6
 	multiple_sprites = 1
 
@@ -872,7 +872,7 @@
 	caliber = CAL_CAP
 	color = "#FF0000"
 	ammo_type = /obj/item/ammo_casing/cap
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	max_ammo = 8
 	multiple_sprites = 1
 
@@ -886,7 +886,7 @@
 	mag_well = MAG_WELL_DRUM
 	caliber = CAL_SHOTGUN
 	ammo_type = /obj/item/ammo_casing/shotgun
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	max_ammo = 20 // 5 times a Grizzly's capacity (or four if you cock a round in), how did a drum hold less ammo than a mag...
 	ammo_color = "-hv"
 
@@ -931,7 +931,7 @@
 /obj/item/ammo_magazine/sbaw/empty
 	name = "20mm SBAW magazine"
 	icon_state = "sbaw"
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	initial_ammo = 0
 
 /obj/item/ammo_magazine/sbaw/beanbag

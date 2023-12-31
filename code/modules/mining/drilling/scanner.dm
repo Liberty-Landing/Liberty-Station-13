@@ -4,7 +4,7 @@
 	icon_state = "mining-scanner"
 	item_state = "electronic"
 	origin_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2)
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_STEEL = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_ALUMINIUM = 1, MATERIAL_GLASS = 1)
 
 	charge_per_use = 0.5
 	var/precision = FALSE
@@ -46,7 +46,7 @@
 					ore_type = "precious metals"
 				if(MATERIAL_URANIUM)
 					ore_type = "nuclear fuel"
-				if(MATERIAL_PLASMA, MATERIAL_OSMIUM, MATERIAL_TRITIUM)
+				if(MATERIAL_HYDROGENC, MATERIAL_OSMIUM, MATERIAL_TRITIUM)
 					ore_type = "exotic matter"
 
 			if(ore_type)

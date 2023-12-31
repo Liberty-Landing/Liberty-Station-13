@@ -6,7 +6,7 @@
 	item_state = "mk58"
 	caliber = CAL_PISTOL
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 6)
 	price_tag = 450
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	can_dual = TRUE
@@ -56,7 +56,7 @@
 	icon = 'icons/obj/guns/projectile/mk58_wood.dmi'
 	icon_state = "mk58"
 	item_state = "mk58"
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 6)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_WOOD = 6)
 	price_tag = 550
 	mag_well = MAG_WELL_PISTOL
 	caliber = CAL_MAGNUM

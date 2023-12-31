@@ -4,7 +4,7 @@
 	verb_name = "Deploy tool"
 	icon_state = "multitool"
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	price_tag = 535
 	var/list/items = list()
 

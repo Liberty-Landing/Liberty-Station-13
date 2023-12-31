@@ -22,7 +22,7 @@
 /obj/structure/simple_door/New(var/newloc, var/material_name)
 	..()
 	if(!material_name)
-		material_name = MATERIAL_STEEL
+		material_name = MATERIAL_ALUMINIUM
 	material = get_material_by_name(material_name)
 	if(!material)
 		qdel(src)
@@ -187,7 +187,7 @@
 	..(newloc, MATERIAL_SANDSTONE)
 
 /obj/structure/simple_door/plasma/New(var/newloc,var/material_name)
-	..(newloc, MATERIAL_PLASMA)
+	..(newloc, MATERIAL_HYDROGENC)
 
 /obj/structure/simple_door/diamond/New(var/newloc,var/material_name)
 	..(newloc, MATERIAL_DIAMOND)

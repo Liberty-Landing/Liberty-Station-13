@@ -59,10 +59,10 @@
 
 /obj/item/grenade/frag/pipebomb
 	name = "improvised pipebomb"
-	desc = "A jury rigged small cell filled with plasma. Throw at authorities."
+	desc = "A jury rigged small cell filled with hydrogen plasma. Throw at authorities."
 	icon_state = "frag_pipebomb"
 	item_state = "fraggrenade_pipebomb"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 2, MATERIAL_PLASMA = 2, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_INDSTEEL = 2, MATERIAL_HYDROGENC = 2, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 2)
 	num_fragments = 65 // Almost half the normal one, to not be worthless
 	fragment_damage = 10
 	damage_step = 5

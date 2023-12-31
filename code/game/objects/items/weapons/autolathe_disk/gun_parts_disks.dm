@@ -5,7 +5,7 @@
 This is the master-file for all gun parts crafting disks. All gun parts in autolathe printing form can be found inside datums/autolathe/parts.dm.
 
 Parts disks should be kept VERY RARE to encourage players to trade and go to specific departments to buy bulk-parts, or encourage them to go and find parts themselves.
-However, bootleg parts - i.e steel parts - should be easily printed and easier to find as they, currently (as of the making of the gun parts PR), can only be used in bootleg hamdemades.
+However, bootleg parts - i.e aluminium parts - should be easily printed and easier to find as they, currently (as of the making of the gun parts PR), can only be used in bootleg hamdemades.
 
 Avoid any disks here being found or used commonly beyond an intended purpose, otherwise you will flood the economy full of parts.
 */
@@ -63,20 +63,20 @@ Avoid any disks here being found or used commonly beyond an intended purpose, ot
 	disk_name = "No Owner - \"Partizaner's Paradise\" gun parts"
 	icon_state = "freeworlds"
 
-	license = -1	// No point to limit prints, steel parts can only be used in homemade guns.
+	license = -1	// No point to limit prints, aluminium parts can only be used in homemade guns.
 	designs = list(
 		/datum/design/autolathe/part/grip/wood,
-		/datum/design/autolathe/part/mechanism/pistol/steel,
-		/datum/design/autolathe/part/mechanism/revolver/steel,
-		/datum/design/autolathe/part/mechanism/shotgun/steel,
-		/datum/design/autolathe/part/mechanism/autorifle/steel,
-		/datum/design/autolathe/part/mechanism/smg/steel,
+		/datum/design/autolathe/part/mechanism/pistol/aluminium,
+		/datum/design/autolathe/part/mechanism/revolver/aluminium,
+		/datum/design/autolathe/part/mechanism/shotgun/aluminium,
+		/datum/design/autolathe/part/mechanism/autorifle/aluminium,
+		/datum/design/autolathe/part/mechanism/smg/aluminium,
 		/datum/design/autolathe/part/mechanism/boltgun,
-		/datum/design/autolathe/part/barrel/pistol/steel,
-		/datum/design/autolathe/part/barrel/magnum/steel,
-		/datum/design/autolathe/part/barrel/carbine/steel,
-		/datum/design/autolathe/part/barrel/rifle/steel,
-		/datum/design/autolathe/part/barrel/shotgun/steel,
+		/datum/design/autolathe/part/barrel/pistol/aluminium,
+		/datum/design/autolathe/part/barrel/magnum/aluminium,
+		/datum/design/autolathe/part/barrel/carbine/aluminium,
+		/datum/design/autolathe/part/barrel/rifle/aluminium,
+		/datum/design/autolathe/part/barrel/shotgun/aluminium,
 	)
 
 

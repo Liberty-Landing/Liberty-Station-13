@@ -14,7 +14,7 @@
 	max_shells = 54
 	penetration_multiplier = 1.3 // and good AP
 	proj_step_multiplier = 0.8 // faster than non-shotgun bullets, slower than non-shotgun bullets with an accelerator
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_WOOD = 15)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_WOOD = 15)
 	gun_tags = list(GUN_PROJECTILE)
 	price_tag = 300
 	init_recoil = LMG_RECOIL(2)
@@ -37,11 +37,11 @@
 	name = "Motherfucker frame"
 	desc = "The Motherfucker. You just know someone is about to have a bad day."
 	icon_state = "frame_motherfucker"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 10, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 10, MATERIAL_PLASTIC = 10)
 	resultvars = list(/obj/item/gun/projectile/automatic/motherfucker)
 	gripvars = list(/obj/item/part/gun/grip/wood)
-	mechanismvar = /obj/item/part/gun/mechanism/shotgun // its effectively a shotgun // 5 plasteel into the mechanism
-	barrelvars = list(/obj/item/part/gun/barrel/pistol/steel) // Handmade gun, 2 steel barrel on a 20 steel crafting recipe
+	mechanismvar = /obj/item/part/gun/mechanism/shotgun // its effectively a shotgun // 5 indsteel into the mechanism
+	barrelvars = list(/obj/item/part/gun/barrel/pistol/aluminium) // Handmade gun, 2 aluminium barrel on a 20 aluminium crafting recipe
 
 /obj/item/gun/projectile/automatic/motherfucker/attack_self(mob/living/user)
 	if(world.time >= recentpumpmsg + 10)

@@ -29,7 +29,7 @@
 		new /datum/data/mining_equipment("Quick-Clot Autoinjector",								/obj/item/reagent_containers/hypospray/autoinjector/quickclot,		500),
 		new /datum/data/mining_equipment("Anit-Rads Autoinjector",								/obj/item/reagent_containers/hypospray/autoinjector/antirad,		500),
 		new /datum/data/mining_equipment("Tramadol Autoinjector",								/obj/item/reagent_containers/hypospray/autoinjector/tramadol,		500),
-		new /datum/data/mining_equipment("Plasteel Pickaxe",									/obj/item/tool/pickaxe/upgraded,									1200),
+		new /datum/data/mining_equipment("indsteel Pickaxe",									/obj/item/tool/pickaxe/upgraded,									1200),
 		new /datum/data/mining_equipment("Advanced Subsurface Scanner",							/obj/item/device/scanner/mining/advanced,							2000),
 		new /datum/data/mining_equipment("Scrip Bundle - 200",									/obj/item/spacecash/bundle/c200,									1500),
 		new /datum/data/mining_equipment("Hardsuit - Control Module",							/obj/item/rig/industrial,											2000),

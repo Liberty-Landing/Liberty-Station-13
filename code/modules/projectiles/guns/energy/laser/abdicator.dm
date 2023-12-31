@@ -21,7 +21,7 @@ It also has more matterals then it takes to craft as a way to have a sunk cost.
 	projectile_type = /obj/item/projectile/bullet/pellet/shotgun/energy
 	can_dual = FALSE
 	w_class = ITEM_SIZE_HUGE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 10, MATERIAL_URANIUM = 1, MATERIAL_PLASMAGLASS = 1, MATERIAL_WOOD = 8)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_ALUMINIUM = 8, MATERIAL_PLASTIC = 10, MATERIAL_URANIUM = 1, MATERIAL_LBGLASS = 1, MATERIAL_WOOD = 8)
 	origin_tech = list(TECH_COMBAT = 6, TECH_MAGNET = 8, TECH_ENGINEERING = 8) //With how hard it is to make? High value.
 	fire_delay = 20
 	charge_cost = 150

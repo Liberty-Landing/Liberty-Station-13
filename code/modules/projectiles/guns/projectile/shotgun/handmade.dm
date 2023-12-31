@@ -15,7 +15,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/shotgun_insert.ogg'
 	fire_sound = 'sound/weapons/guns/fire/max_sawn_off.ogg'
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_WOOD = 10)
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_PAINFUL
 	damage_multiplier = 0.8
@@ -26,7 +26,7 @@
 	var/bolt_open = 0
 	wield_delay = 0.2 SECOND // It shouldn't be slower to dual than an actual non-sawn double barrel. It's way smaller.
 	wield_delay_factor = 0.2 // 20 vig, not gonna make it instant like a sawn off despite being the same size for balance reasons.
-	gun_parts = list(/obj/item/part/gun/frame/slideshot = 1, /obj/item/part/gun/grip/wood = 1 , /obj/item/part/gun/mechanism/shotgun/steel = 1, /obj/item/part/gun/barrel/shotgun/steel = 1)
+	gun_parts = list(/obj/item/part/gun/frame/slideshot = 1, /obj/item/part/gun/grip/wood = 1 , /obj/item/part/gun/mechanism/shotgun/aluminium = 1, /obj/item/part/gun/barrel/shotgun/aluminium = 1)
 
 /obj/item/gun/projectile/shotgun/slidebarrel/update_icon()
 	..()
@@ -60,9 +60,9 @@
 	name = "Homemade shotgun frame"
 	desc = "A homemade slide shotgun frame. Cobbled together from scrap metal and wood it looks like it might hold together, for now."
 	icon_state = "frame_slideshot"
-	matter = list(MATERIAL_STEEL = 8)
+	matter = list(MATERIAL_ALUMINIUM = 8)
 	resultvars = list(/obj/item/gun/projectile/shotgun/slidebarrel)
 	gripvars = list(/obj/item/part/gun/grip/wood)
-	mechanismvar = /obj/item/part/gun/mechanism/shotgun/steel
-	barrelvars = list(/obj/item/part/gun/barrel/shotgun/steel)
+	mechanismvar = /obj/item/part/gun/mechanism/shotgun/aluminium
+	barrelvars = list(/obj/item/part/gun/barrel/shotgun/aluminium)
 	nra = FALSE		//This controls if the weapon checks for barrels or not. If you want a gun to have MULTIPLE calibers that it can be chambered in, put FALSE.

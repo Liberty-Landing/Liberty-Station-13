@@ -11,7 +11,7 @@
 	w_class = ITEM_SIZE_TINY
 	var/obj/item/implant/implant = null
 	var/case_color = null
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_GLASS = 3)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_GLASS = 3)
 
 /obj/item/implantcase/New()
 	..()

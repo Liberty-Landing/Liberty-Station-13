@@ -437,12 +437,12 @@ disabled
 	meteordrop = /obj/item/material/shard
 
 /obj/effect/meteor/dust/rods
-	name = "steel rod"
+	name = "aluminium rod"
 	meteordrop = /obj/item/stack/rods
 
 /obj/effect/meteor/dust/metal
-	name = "steel wreck"
-	meteordrop = /obj/item/stack/material/steel
+	name = "metal wreck"
+	meteordrop = /obj/item/stack/material/aluminium
 
 //Medium-sized
 /obj/effect/meteor/medium

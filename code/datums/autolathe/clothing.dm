@@ -38,15 +38,15 @@
 /datum/design/autolathe/clothing/scav_armor
 	name = "Fontaine Plate Carrier"
 	build_path = /obj/item/clothing/suit/storage/scavengerarmor/fontaine
-	materials = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 10, MATERIAL_PLATINUM = 1) //so hand crafting is better
+	materials = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 10, MATERIAL_PLATINUM = 1) //so hand crafting is better
 
 /datum/design/autolathe/clothing/scav_armor_void
 	name = "Scavenger Voidsuit"
 	build_path = /obj/item/clothing/suit/space/void/riggedvoidsuit
-	materials = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 10) //so hand crafting is better
+	materials = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 10) //so hand crafting is better
 
 /datum/design/autolathe/clothing/scav_helm_void
 	name = "Scavenger Voidsuit Helmet"
 	build_path = /obj/item/clothing/head/space/void/riggedvoidsuit
-	materials = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 8, MATERIAL_PLASTEEL = 3) //so hand crafting is better
+	materials = list(MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 8, MATERIAL_INDSTEEL = 3) //so hand crafting is better
 

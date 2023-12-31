@@ -12,7 +12,7 @@ This should be identical to NEV's Soulcrypt; credit to them for this code.
 	icon_state = "frame"
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL=2, TECH_BIO=7, TECH_DATA=5)
-	matter = list(MATERIAL_BIOMATTER = 1, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_BIOMATTER = 1, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_ALUMINIUM = 3)
 
 	var/host_dead = FALSE //Our host is dead. Or not? Binary doesn't care for philosphy.
 	var/was_emp  = FALSE//Were we emp'd? This triggers the longer memory gap message.

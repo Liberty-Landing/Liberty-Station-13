@@ -46,7 +46,7 @@
 	gain_text = "Your trigger finger feels more relaxed than ever..."
 	icon_state = "gunslinger" // https://game-icons.net/1x1/delapouite/reload-gun-barrel.html
 
-/datum/perk/oddity/balls_of_plasteel
+/datum/perk/oddity/balls_of_indsteel
 	name = "True Grit"
 	desc = "Pain comes and goes, you feel as though can withstand far worse than ever before."
 	gain_text = "Pain is merely weakness leaving the body."
@@ -67,7 +67,7 @@
 	name = "Natural Armor"
 	desc = "Your skin has become harder, more durable, able to accept blunt force and endure."
 	gain_text = "After all you've endured, you can't help but feel tougher than normal, your skin feels like iron."
-	icon_state = "armor" // This one is good enough. Abs of steel.
+	icon_state = "armor" // This one is good enough. Abs of aluminium.
 
 /datum/perk/oddity/harden/assign(mob/living/carbon/human/H)
 	..()

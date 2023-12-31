@@ -2,7 +2,7 @@
 	name = "ashtray"
 	result = /obj/item/material/ashtray
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_COG)
 
@@ -10,7 +10,7 @@
 	name = "dinner tray"
 	result = /obj/item/tray
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 40),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 40),
 		list(QUALITY_WIRE_CUTTING, 10, 120)
 	)
 	related_stats = list(STAT_COG)
@@ -55,7 +55,7 @@
 	result = /obj/item/stack/rods
 	time = 0
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 	flags = CRAFT_BATCH
 	related_stats = list(STAT_COG)
@@ -103,7 +103,7 @@
 	name = "hair pin"
 	result = /obj/item/clothing/head/pin
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
 // Leaving the following commented out until Consumer crafts are finally coded

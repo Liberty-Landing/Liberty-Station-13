@@ -145,7 +145,7 @@
 
 
 /obj/machinery/door/firedoor/get_material()
-	return get_material_by_name(MATERIAL_STEEL)
+	return get_material_by_name(MATERIAL_ALUMINIUM)
 /*
 /obj/machinery/door/firedoor/proc/update_firedoor_data()
 	SHOULD_NOT_SLEEP(TRUE)

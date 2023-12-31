@@ -6,7 +6,7 @@
 	icon_state = "taser"
 	item_state = "taser"
 	item_charge_meter = TRUE
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 3)
 	price_tag = 450
 	charge_cost = 50
 	fire_sound = 'sound/weapons/energy/Taser.ogg'
@@ -49,7 +49,7 @@
 	can_dual = TRUE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3, TECH_POWER = 2)
 	charge_cost = 50
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_STEEL = 6, MATERIAL_SILVER = 2, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_ALUMINIUM = 6, MATERIAL_SILVER = 2, MATERIAL_PLASTIC = 5)
 	price_tag = 750
 	suitable_cell = /obj/item/cell/small
 	cell_type = /obj/item/cell/small

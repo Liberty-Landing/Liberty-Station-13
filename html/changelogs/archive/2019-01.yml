@@ -8,7 +8,7 @@
   - rscadd: Added a couple new item recipes, disk cloner and the new Excelsior armored
       space suit, sprites thanks to Watler.
   - rscadd: Excelsior Armor is balanced around the teleporter. It requires a moderate
-      amount of plasteel, and you can manufacture a full set every 10 minutes. It's
+      amount of indsteel, and you can manufacture a full set every 10 minutes. It's
       moderately powerful all around, especially vs laser weapons.
   - tweak: Excelsior Shieldwall now unlocks for any excelsior instead of requiring
       engineering access. The shield barrier itself now also selectively allows excelsior-implanted
@@ -119,4 +119,4 @@
   - tweak: Majorly reworked how material costs are calculated for protolathe, autolathe
       and circuit imprinter designs. Some costs were adjusted in the process
   - tweak: Made the prices of ordering materials in the guild far cheaper. Also added
-      a bulk metal crate for large quantities of steel at once.
+      a bulk metal crate for large quantities of aluminium at once.

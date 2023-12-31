@@ -300,7 +300,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Scorch Canister"
 	build_path = /obj/structure/reagent_dispensers/scorch
 	materials = list(
-		/obj/item/stack/material/steel = 4,
+		/obj/item/stack/material/aluminium = 4,
 		/obj/item/stack/material/plastic = 2,
 		/obj/item/stack/mold_kit/masonry = 1,
 	)
@@ -308,7 +308,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Large Scorch Canister"
 	build_path = /obj/structure/reagent_dispensers/scorch/large
 	materials = list(
-		/obj/item/stack/material/steel = 16,
+		/obj/item/stack/material/aluminium = 16,
 		/obj/item/stack/material/plastic = 4,
 		/obj/item/stack/mold_kit/masonry = 1,
 	)
@@ -330,7 +330,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Flarelathe"
 	build_path = /obj/machinery/autolathe/flarelathe
 	materials = list(
-		/obj/item/stack/material/steel = 10,
+		/obj/item/stack/material/aluminium = 10,
 		/obj/item/stack/material/glass = 2,
 		/obj/item/stack/material/silver = 6,
 		/obj/item/storage/toolbox = 1
@@ -341,7 +341,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Sewing Artificer"
 	build_path = /obj/machinery/sewing_artificer
 	materials = list(
-		/obj/item/stack/material/steel = 20,
+		/obj/item/stack/material/aluminium = 20,
 		/obj/item/stack/material/silver = 5,
 		/obj/structure/reagent_dispensers/scorch = 1
 	)
@@ -351,7 +351,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Composite Artificer"
 	build_path = /obj/machinery/sewing_artificer/composite_artificer
 	materials = list(
-		/obj/item/stack/material/steel = 12,
+		/obj/item/stack/material/aluminium = 12,
 		/obj/item/stack/material/glass = 2,
 		/obj/item/tool/saw = 1
 	)
@@ -386,7 +386,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/item/training_dummy/cultist
 	materials = list(
 		/obj/item/stack/material/wood = 20,
-		/obj/item/stack/material/steel = 10
+		/obj/item/stack/material/aluminium = 10
 	)
 	build_time = 8 SECONDS
 
@@ -395,7 +395,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/item/training_dummy/merc
 	materials = list(
 		/obj/item/stack/material/wood = 20,
-		/obj/item/stack/material/steel = 10
+		/obj/item/stack/material/aluminium = 10
 	)
 	build_time = 8 SECONDS
 
@@ -415,7 +415,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/item/tool_upgrade/custodian/armor/bullet
 	materials = list(
 		/obj/item/stack/material/biopolymer_silk = 40,
-		/obj/item/stack/material/plasteel = 10,
+		/obj/item/stack/material/indsteel = 10,
 		/obj/item/stack/material/plastic = 10
 	)
 	build_time = 20 SECONDS
@@ -443,7 +443,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Common Hatchway"
 	build_path = /obj/machinery/door/bonfire
 	materials = list(
-		/obj/item/stack/material/steel = 5,
+		/obj/item/stack/material/aluminium = 5,
 		/obj/item/stack/material/biopolymer_silk = 20,
 		/obj/item/stack/material/silver = 2,
 		/obj/item/stack/mold_kit/masonry = 1,
@@ -479,7 +479,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Bonfire: Loader"
 	build_path = /obj/machinery/multistructure/bonfire_part/loader
 	materials = list(
-		/obj/item/stack/material/steel = 10,
+		/obj/item/stack/material/aluminium = 10,
 		/obj/item/stack/material/silver = 3,
 		/obj/item/stack/material/glass = 2,
 		/obj/structure/reagent_dispensers/scorch = 1
@@ -490,7 +490,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Bonfire: Unloader" //Basically a hopper
 	build_path = /obj/machinery/multistructure/bonfire_part/platform
 	materials = list(
-		/obj/item/stack/material/steel = 10
+		/obj/item/stack/material/aluminium = 10
 	)
 	build_time = 2 SECONDS
 
@@ -498,7 +498,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Bonfire: Metrics"
 	build_path = /obj/machinery/multistructure/bonfire_part/console
 	materials = list(
-		/obj/item/stack/material/steel = 2,
+		/obj/item/stack/material/aluminium = 2,
 		/obj/item/stack/material/silver = 5,
 		/obj/item/stack/material/glass = 4,
 		/obj/item/stack/cable_coil = 30
@@ -519,7 +519,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/machinery/multistructure/bonfire_part/scorchtank_platform
 	materials = list(
 		/obj/item/stack/material/plastic = 10,
-		/obj/item/stack/material/steel = 20,
+		/obj/item/stack/material/aluminium = 20,
 		/obj/structure/reagent_dispensers/scorch/large = 1
 	)
 	build_time = 6 SECONDS
@@ -538,7 +538,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Bonfire: Platform"
 	build_path = /obj/machinery/multistructure/bonfire_part/platform
 	materials = list(
-		/obj/item/stack/material/steel = 10,
+		/obj/item/stack/material/aluminium = 10,
 		/obj/item/stack/rods = 2
 	)
 	build_time = 8 SECONDS
@@ -547,7 +547,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Bonfire: Scorch Canister Platform"
 	build_path = /obj/machinery/multistructure/bonfire_part/scorchtank_platform
 	materials = list(
-		/obj/item/stack/material/steel = 10,
+		/obj/item/stack/material/aluminium = 10,
 		/obj/item/stack/material/plastic = 4,
 		/obj/item/stack/tile/floor = 1
 	)
@@ -569,7 +569,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/item/hearthcore_upgrade/natures_blessing
 	materials = list(
 		/obj/item/stack/material/biomatter = 100,
-		/obj/item/stack/material/plasteel = 5,
+		/obj/item/stack/material/indsteel = 5,
 		/obj/item/stack/material/gold = 5
 	)
 	build_time = 8 SECONDS
@@ -579,7 +579,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/item/hearthcore_upgrade/cleansing_flames
 	materials = list(
 		/obj/item/stack/material/biopolymer_silk = 50,
-		/obj/item/stack/material/plasteel = 5,
+		/obj/item/stack/material/indsteel = 5,
 		/obj/item/stack/material/silver = 5
 	)
 	build_time = 8 SECONDS
@@ -602,7 +602,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Embers of Theoretical Philosophy"
 	build_path = /obj/machinery/power/eotp
 	materials = list(
-		/obj/item/stack/material/plasteel = 15,
+		/obj/item/stack/material/indsteel = 15,
 		/obj/item/stack/material/biopolymer_silk = 10,
 		/obj/item/stack/material/gold = 5,
 		/obj/item/stack/material/diamond = 3,
@@ -645,7 +645,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Hearthcore Upgrade - \"Blazing Aegis\""
 	build_path = /obj/item/hearthcore_upgrade/blazing_aegis
 	materials = list(
-		/obj/item/stack/material/plasteel = 10,
+		/obj/item/stack/material/indsteel = 10,
 		/obj/item/stack/material/carbon_fiber = 100,
 		/obj/item/stack/material/gold = 5
 	)
@@ -655,7 +655,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Hearthcore Upgrade - \"Martyr's Gift\""
 	build_path = /obj/item/hearthcore_upgrade/martyr_gift
 	materials = list(
-		/obj/item/stack/material/plasteel = 5,
+		/obj/item/stack/material/indsteel = 5,
 		/obj/item/stack/material/biomatter = 100, // Heals, thus, biomatter.
 		/obj/item/stack/material/gold = 5,
 		/obj/item/stack/material/plasma = 5
@@ -666,7 +666,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Hearthcore Upgrade - \"Burning Fury\""
 	build_path = /obj/item/hearthcore_upgrade/burning_fury
 	materials = list(
-		/obj/item/stack/material/plasteel = 10,
+		/obj/item/stack/material/indsteel = 10,
 		/obj/item/stack/material/biopolymer_silk = 50,
 		/obj/item/stack/material/carbon_fiber = 50,
 		/obj/item/stack/material/silver = 5
@@ -678,7 +678,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	build_path = /obj/item/hearthcore_upgrade/embers_of_swiftness
 	//Speed is king, so we requires a kings randsom to make!
 	materials = list(
-		/obj/item/stack/material/plasteel = 10,
+		/obj/item/stack/material/indsteel = 10,
 		/obj/item/stack/material/biopolymer_silk = 70,
 		/obj/item/stack/material/silver = 10,
 		/obj/item/stack/material/gold = 3,

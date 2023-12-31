@@ -319,18 +319,18 @@
 	desc = "An elegant teapot. It simply oozes class."
 	icon_state = "teapot"
 	item_state = "teapot"
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	amount_per_transfer_from_this = 10
 	volume = 120
 	center_of_mass = list("x"=17, "y"=7)
 
 /obj/item/reagent_containers/food/drinks/pitcher
 	name = "insulated pitcher"
-	desc = "A stainless steel insulated pitcher. Everyone's best friend in the morning."
+	desc = "A stainless aluminium insulated pitcher. Everyone's best friend in the morning."
 	icon_state = "pitcher"
 	volume = 120
 	amount_per_transfer_from_this = 10
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	possible_transfer_amounts = list(5,10,20,30,60,120)
 	center_of_mass = "x=16;y=9"
 	filling_states = "15;30;50;70;85;100"

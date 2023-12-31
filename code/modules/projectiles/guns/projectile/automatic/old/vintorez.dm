@@ -12,7 +12,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE //need a new magwell type?
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 5)
 	price_tag = 1125
 	zoom_factors = list(0.8) // double as IH_heavy
 	penetration_multiplier = 1.2

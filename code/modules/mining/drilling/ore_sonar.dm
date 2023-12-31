@@ -6,7 +6,7 @@
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2)
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
 	var/cooldowntime = 0
 
 /obj/item/device/ore_sonar/attack_self(mob/living/carbon/user as mob)

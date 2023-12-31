@@ -5,7 +5,7 @@
 	icon_state = "makeshift"
 	item_state = "makeshift"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 1)
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 15)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 15)
 	item_charge_meter = FALSE
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_NORMAL

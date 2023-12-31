@@ -210,7 +210,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "aL" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/science,
 /obj/machinery/light/small{
 	dir = 1
@@ -821,7 +821,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "cJ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junk,
 /obj/machinery/light/small{
 	dir = 1
@@ -839,7 +839,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "cO" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/junk,
 /obj/machinery/light/small{
@@ -896,7 +896,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "df" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/toy/figure/character/bobblehead/excelsior,
 /obj/machinery/light/small{
 	dir = 1
@@ -1076,7 +1076,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "eJ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junkfood,
 /obj/random/junkfood,
 /obj/random/rations,
@@ -1217,7 +1217,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "gw" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_shotgun/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
@@ -1227,7 +1227,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "gB" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_cheap,
 /obj/machinery/light/small{
 	dir = 1
@@ -1349,7 +1349,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "hB" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_energy_cheap,
 /obj/random/powercell,
 /obj/machinery/light/small{
@@ -1538,7 +1538,7 @@
 /obj/machinery/portable_atmospherics/hydroponics{
 	pixel_y = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "iO" = (
 /obj/machinery/light/small{
@@ -1873,7 +1873,7 @@
 	pixel_y = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "kl" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2170,7 +2170,7 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "lD" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/cloth/shoes,
 /obj/random/cloth/holster,
 /obj/random/cloth/helmet,
@@ -2443,7 +2443,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "nL" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junk,
 /obj/random/junk,
 /obj/machinery/light/small{
@@ -3361,7 +3361,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "rb" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/common_oddities,
 /obj/random/cloth/helmet,
 /obj/machinery/light/small{
@@ -4961,7 +4961,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vT" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junk,
 /obj/random/junk,
 /obj/effect/decal/cleanable/dirt,
@@ -5016,7 +5016,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "wv" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junk,
 /obj/machinery/light/small{
 	dir = 1
@@ -5423,18 +5423,18 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "yd" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/rare/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "ye" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/tool_upgrade/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "yf" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/tool/advanced/low_chance,
 /turf/simulated/floor/tiled/dark,
@@ -5575,7 +5575,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "yN" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/structure/flora/pottedplant/dead{
 	oldified = 1;
 	pixel_y = 16
@@ -6336,7 +6336,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "CA" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/cloth/suit,
 /obj/machinery/light/small{
 	dir = 1

@@ -10,7 +10,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_NORMAL
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 5)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 5)
 	price_tag = 550
 	projectile_type = /obj/item/projectile/beam/midlaser
 	fire_delay = 5

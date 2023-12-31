@@ -60,7 +60,7 @@
 	name = "wire frier"
 	desc = "A haphazardly-put-together machine used for pulsing wires, measuring electrical grids and bypassing security protocols. Its improvised design heavily consumes power, but allows for a greater range of customization."
 	icon_state = "impro_multitool"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_STEEL = 2) //Needs two rods
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 2) //Needs two rods
 	use_power_cost = 0.1
 	workspeed = 0.9
 	max_upgrades = 5 // As much as every other improvised tool

@@ -3,7 +3,7 @@
 	desc = "a generic gun frame. consider debug"
 	icon_state = "frame_olivaw"
 	generic = FALSE
-	matter = list(MATERIAL_PLASTEEL = 4)
+	matter = list(MATERIAL_INDSTEEL = 4)
 
 	// What gun the frame makes when it only accepts one grip
 	var/result = /obj/item/gun/projectile
@@ -262,10 +262,10 @@
 ///////////////////////
 /*
 These are the individual parts that fit into a gun. If you make any unique gun parts, such as a new caliber or mechanism for.. whatever reason, it needs to go here.
-Steel parts are for bootleg firearms, such as handmade firearms, low-tier / trash guns, and the like. Plasteel parts are for normal firearms.
+aluminium parts are for bootleg firearms, such as handmade firearms, low-tier / trash guns, and the like. aluminium parts are for normal firearms.
 
 Possible TO:DO for future coding:
-Make it so steel parts fit into any gun you want but can 'break', or cause jams. Allows bootleg high-quality firearms but comes with downsides to cheapness.
+Make it so aluminium parts fit into any gun you want but can 'break', or cause jams. Allows bootleg high-quality firearms but comes with downsides to cheapness.
 */
 
 //Grips
@@ -317,7 +317,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	desc = "All the bits that makes the bullet go bang."
 	icon_state = "mechanism_pistol"
 	generic = FALSE
-	matter = list(MATERIAL_PLASTEEL = 4)
+	matter = list(MATERIAL_INDSTEEL = 4)
 	price_tag = 100
 	var/refence_for_legal = "baseline"
 
@@ -357,43 +357,43 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	icon_state = "mechanism_machinegun"
 	refence_for_legal = "machinegun"
 
-// steel mechanisms
-/obj/item/part/gun/mechanism/pistol/steel
+// aluminium mechanisms
+/obj/item/part/gun/mechanism/pistol/aluminium
 	name = "cheap pistol mechanism"
 	desc = "All the bits that makes the bullet go bang, all in a small, convenient frame. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 
-/obj/item/part/gun/mechanism/revolver/steel
+/obj/item/part/gun/mechanism/revolver/aluminium
 	name = "cheap revolver mechanism"
 	desc = "All the bits that makes the bullet go bang, rolling round and round. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 
-/obj/item/part/gun/mechanism/shotgun/steel
+/obj/item/part/gun/mechanism/shotgun/aluminium
 	name = "cheap shotgun mechanism"
 	desc = "All the bits that makes the bullet go bang, perfect for long shells.  \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 
-/obj/item/part/gun/mechanism/smg/steel
+/obj/item/part/gun/mechanism/smg/aluminium
 	name = "cheap SMG mechanism"
 	desc = "All the bits that makes the bullet go bang, in a speedy package. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 
-/obj/item/part/gun/mechanism/boltgun // fits better in this category despite not being a steel variant
+/obj/item/part/gun/mechanism/boltgun // fits better in this category despite not being a aluminium variant
 	name = "bolt-action mechanism"
 	desc = "All the bits that makes the bullet go bang, slow and methodical."
 	icon_state = "mechanism_boltaction"
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	refence_for_legal = "boltaction"
 
-/obj/item/part/gun/mechanism/autorifle/steel
+/obj/item/part/gun/mechanism/autorifle/aluminium
 	name = "cheap self-loading mechanism"
 	desc = "All the bits that makes the bullet go bang, for all the military hardware you know and love. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 
 //Barrels
 /obj/item/part/gun/barrel
@@ -401,7 +401,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	desc = "A gun barrel, which keeps the bullet going in the right direction."
 	icon_state = "barrel_9mm"
 	generic = FALSE
-	matter = list(MATERIAL_PLASTEEL = 4)
+	matter = list(MATERIAL_INDSTEEL = 4)
 	price_tag = 200
 	var/caliber = CAL_PISTOL
 	var/refence_for_legal = "baseline"
@@ -426,7 +426,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	name = "6.5mm carbine barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 6.5mm carbine."
 	icon_state = "barrel_carbine"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	caliber = CAL_SRIFLE
 	refence_for_legal = "srifle"
 
@@ -434,7 +434,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	name = "7mm caseless barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 10x24mm caseless."
 	icon_state = "barrel_caseless"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	caliber = CAL_CLRIFLE
 	refence_for_legal = "clrifle"
 
@@ -442,7 +442,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	name = "7.62mm rifle barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 7.62mm rifle."
 	icon_state = "barrel_rifle"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	caliber = CAL_RIFLE
 	refence_for_legal = "lrifle"
 
@@ -450,7 +450,7 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	name = "shotgun barrel"
 	desc = "A gun barrel, which keeps the bullet (or bullets) going in the right direction. Chambered for 12 gauge cartridges."
 	icon_state = "barrel_shotgun"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	caliber = CAL_SHOTGUN
 	refence_for_legal = "shotgun"
 
@@ -458,43 +458,43 @@ Make it so steel parts fit into any gun you want but can 'break', or cause jams.
 	name = "14.5mm AMR barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered in 14.5mm AMR."
 	icon_state = "barrel_amr"
-	matter = list(MATERIAL_PLASTEEL = 16)
+	matter = list(MATERIAL_INDSTEEL = 16)
 	caliber = CAL_ANTIM
 	refence_for_legal = "antim"
 
-// steel barrels
-/obj/item/part/gun/barrel/pistol/steel
+// aluminium barrels
+/obj/item/part/gun/barrel/pistol/aluminium
 	name = "cheap 9mm barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 9mm. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 
-/obj/item/part/gun/barrel/magnum/steel
+/obj/item/part/gun/barrel/magnum/aluminium
 	name = "cheap 10mm barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 10mm. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 
-/obj/item/part/gun/barrel/srifle/steel
+/obj/item/part/gun/barrel/srifle/aluminium
 	name = "cheap 6.5mm barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 6.5mm carbine. \
 			 This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 
-/obj/item/part/gun/barrel/clrifle/steel
+/obj/item/part/gun/barrel/clrifle/aluminium
 	name = "cheap caseless barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 7mm caseless. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 
-/obj/item/part/gun/barrel/lrifle/steel
+/obj/item/part/gun/barrel/lrifle/aluminium
 	name = "cheap 7.62 barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 7.62mm rifle. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 
-/obj/item/part/gun/barrel/shotgun/steel
+/obj/item/part/gun/barrel/shotgun/aluminium
 	name = "cheap shotgun barrel"
 	desc = "A gun barrel, which keeps the bullet (or bullets) going in the right direction. Chambered for 20mm cartridges. \
 			This one does not look as high quality."
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)

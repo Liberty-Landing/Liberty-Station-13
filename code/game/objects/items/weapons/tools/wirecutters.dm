@@ -6,7 +6,7 @@
 	force = WEAPON_FORCE_WEAK
 	worksound = WORKSOUND_WIRECUTTING
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 1)
 	attack_verb = list("pinched", "nipped")
 	sharp = TRUE
 	edge = TRUE
@@ -36,7 +36,7 @@
 	icon_state = "arm-cutter"
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_NORMAL
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 1)
 	tool_qualities = list(QUALITY_WIRE_CUTTING = 45, QUALITY_CUTTING = 30)
 	degradation = 0.7
 	max_upgrades = 4
@@ -61,7 +61,7 @@
 	sharp = TRUE//Are
 	tool_qualities = list(QUALITY_WIRE_CUTTING = 35, QUALITY_CLAMPING = 35, QUALITY_BOLT_TURNING = 35, QUALITY_BONE_SETTING = 35, QUALITY_RETRACTING = 20)
 	degradation = 2
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 1)
 	max_upgrades = 2
 	workspeed = 1.5
 	price_tag = 300

@@ -319,7 +319,7 @@ var/world_topic_spam_protect_time = world.timeofday
 	s += "Default"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")"
-	s += "<br>horror themed eris-code roleplay server, colonial struggling experience, multiple alien races, day and night cycle. (+18) Server"
+	s += "<br>An Industrial Horror roleplay server with intense worldbuilding, on the bastion of civilization in the cosmic frontier. Colonial struggles amidst diverse array of factions, alien species, political views and mysteries beyond human comprehension. (+18) Server"
 
 	var/list/features = list()
 

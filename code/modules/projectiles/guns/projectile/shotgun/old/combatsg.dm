@@ -10,7 +10,7 @@
 	max_shells = 6 //less ammo and regular recoil
 	ammo_type = /obj/item/ammo_casing/shotgun
 	fire_sound = 'sound/weapons/guns/fire/regulator.ogg'
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 12)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_PLASTIC = 12)
 	price_tag = 1250
 	damage_multiplier = 1.2
 	penetration_multiplier = 1
@@ -41,7 +41,7 @@
 	icon_state = "short"
 	item_state = "short"
 	w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 1000
 	init_recoil = RIFLE_RECOIL(2.8)
 	damage_multiplier = 0.9

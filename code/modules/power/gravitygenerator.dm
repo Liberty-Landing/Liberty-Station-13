@@ -9,7 +9,7 @@ var/const/PULSE_FREQ = 9 SECONDS
 
 var/const/GRAV_NEEDS_SCREWDRIVER = 0
 var/const/GRAV_NEEDS_WELDING = 1
-var/const/GRAV_NEEDS_PLASTEEL = 2
+var/const/GRAV_NEEDS_indsteel = 2
 var/const/GRAV_NEEDS_WRENCH = 3
 
 //
@@ -180,16 +180,16 @@ var/const/GRAV_NEEDS_WRENCH = 3
 		if(ABORT_CHECK)
 			return
 
-	if(GRAV_NEEDS_PLASTEEL)
-		if(istype(I, /obj/item/stack/material/plasteel))
-			var/obj/item/stack/material/plasteel/PS = I
+	if(GRAV_NEEDS_indsteel)
+		if(istype(I, /obj/item/stack/material/indsteel))
+			var/obj/item/stack/material/indsteel/PS = I
 			if(PS.amount >= 10)
 				PS.use(10)
 				to_chat(user, SPAN_NOTICE("You add the plating to the framework."))
 				playsound(src.loc, 'sound/machines/click.ogg', 75, 1)
 				broken_state++
 			else
-				to_chat(user, SPAN_WARNING("You need 10 sheets of plasteel!"))
+				to_chat(user, SPAN_WARNING("You need 10 sheets of indsteel!"))
 	if(old_broken_state != broken_state)
 		update_icon()
 	else
@@ -357,5 +357,5 @@ var/const/GRAV_NEEDS_WRENCH = 3
 	please proceed to panic; otherwise follow these steps.</p><ol>
 	<li>Secure the screws of the framework with a screwdriver.</li>
 	<li>Mend the damaged framework with a welding tool.</li>
-	<li>Add additional plasteel plating.</li>
+	<li>Add additional indsteel plating.</li>
 	<li>Secure the additional plating with a wrench.</li></ol>"}

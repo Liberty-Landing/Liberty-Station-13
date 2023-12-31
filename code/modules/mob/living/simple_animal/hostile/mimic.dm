@@ -38,4 +38,4 @@
 	move_to_delay = 2
 
 /mob/living/simple_animal/hostile/mimic/Initialize()
-	icon_state = "mimic_[pick("trashcart","crate","bin","steel","wood","med","freezer","wep","stool","body","ore")]"
+	icon_state = "mimic_[pick("trashcart","crate","bin","aluminium","wood","med","freezer","wep","stool","body","ore")]"

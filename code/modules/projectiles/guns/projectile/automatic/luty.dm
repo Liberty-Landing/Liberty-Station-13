@@ -14,7 +14,7 @@
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG|MAG_WELL_DRUM
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
 	init_firemodes = list(
 		FULL_AUTO_300,
 		SEMI_AUTO_NODELAY,
@@ -27,7 +27,7 @@
 	serial_type = "INDEX"
 	serial_shown = FALSE
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
-	gun_parts = list(/obj/item/part/gun/frame/luty = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/smg/steel = 1, /obj/item/part/gun/barrel/pistol/steel = 1)
+	gun_parts = list(/obj/item/part/gun/frame/luty = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/smg/aluminium = 1, /obj/item/part/gun/barrel/pistol/aluminium = 1)
 
 	wield_delay = 0 // No delay for this , its litteraly a junk gun
 
@@ -35,11 +35,11 @@
 	name = "Luty frame"
 	desc = "A Luty SMG. It rattles a bit, but it's okay. Just don't shake it too hard."
 	icon_state = "frame_luty"
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	resultvars = list(/obj/item/gun/projectile/automatic/luty)
 	gripvars = list(/obj/item/part/gun/grip/wood)
-	mechanismvar = /obj/item/part/gun/mechanism/smg/steel
-	barrelvars = list(/obj/item/part/gun/barrel/pistol/steel, /obj/item/part/gun/barrel/magnum/steel)	//9mm or 10mm.
+	mechanismvar = /obj/item/part/gun/mechanism/smg/aluminium
+	barrelvars = list(/obj/item/part/gun/barrel/pistol/aluminium, /obj/item/part/gun/barrel/magnum/aluminium)	//9mm or 10mm.
 	nra = FALSE		//This controls if the weapon checks for barrels or not. If you want a gun to have MULTIPLE calibers that it can be chambered in, put FALSE.
 
 /obj/item/gun/projectile/automatic/luty/update_icon()

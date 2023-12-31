@@ -51,7 +51,7 @@
 				m = round(m)
 				if(m)
 					use_metal(m)
-					var/obj/item/stack/material/steel/MM = new (get_turf(src))
+					var/obj/item/stack/material/aluminium/MM = new (get_turf(src))
 					MM.amount = m
 					user.visible_message(
 						SPAN_NOTICE("[user] removes [m] sheet\s of metal from \the [src]."),
@@ -82,7 +82,7 @@
 		if(ABORT_CHECK)
 			return
 
-	if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_STEEL)
+	if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_ALUMINIUM)
 
 		var/result = load_metal(I)
 		if(isnull(result))

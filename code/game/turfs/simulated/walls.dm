@@ -8,7 +8,7 @@
 	density = TRUE
 	blocks_air = TRUE
 	thermal_conductivity = WALL_HEAT_TRANSFER_COEFFICIENT
-	heat_capacity = 312500 //a little over 5 cm thick , 312500 for 1 m by 2.5 m by 0.25 m plasteel wall
+	heat_capacity = 312500 //a little over 5 cm thick , 312500 for 1 m by 2.5 m by 0.25 m indsteel wall
 
 	var/ricochet_id = 0
 	var/damage = 0
@@ -70,7 +70,7 @@
 
 	icon_state = "blank"
 	if(!materialtype)
-		materialtype = MATERIAL_STEEL
+		materialtype = MATERIAL_ALUMINIUM
 	material = get_material_by_name(materialtype)
 	if(!isnull(rmaterialtype))
 		reinf_material = get_material_by_name(rmaterialtype)
@@ -244,7 +244,7 @@
 			return PROJECTILE_CONTINUE // complete projectile permutation
 
 	//cut some projectile damage here and not in projectile.dm, because we need not to all things what are using get_str_dam() becomes thin and weak.
-	//in general, bullets have 35-95 damage, and they are plased in ~30 bullets magazines, so 50*30 = 150, but plasteel walls have only 400 hp =|
+	//in general, bullets have 35-95 damage, and they are plased in ~30 bullets magazines, so 50*30 = 150, but indsteel walls have only 400 hp =|
 	//but you may also increase materials thickness or etc.
 	proj_damage = round(Proj.get_structure_damage() / 3)//Yo may replace 3 to 5-6 to make walls fucking stronk as a Poland
 

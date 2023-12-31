@@ -4,7 +4,7 @@
 	icon = 'icons/obj/guns/energy/cassad.dmi'
 	icon_state = "cassad"
 	item_state = "cassad"
-	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 8, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 6)
+	matter = list(MATERIAL_INDSTEEL = 18, MATERIAL_PLASTIC = 8, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 6)
 	fire_sound = 'sound/weapons/energy/pulse.ogg'
 	projectile_type = /obj/item/projectile/beam/pulse
 	sel_mode = 1
@@ -31,7 +31,7 @@
 	icon = 'icons/obj/guns/plasma/marqua.dmi'
 	icon_state = "skrell_carbine"
 	item_state = "skrell_carbine"
-	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 8, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 6)
+	matter = list(MATERIAL_INDSTEEL = 18, MATERIAL_PLASTIC = 8, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 6)
 	fire_sound = 'sound/weapons/energy/pulse.ogg'
 	projectile_type = /obj/item/projectile/beam/pulse
 	sel_mode = 1

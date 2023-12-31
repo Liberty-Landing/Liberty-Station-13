@@ -1,6 +1,6 @@
 //Material stacks names defines
 
-#define MATERIAL_STEEL "steel"
+#define MATERIAL_ALUMINIUM "aluminium"
 #define MATERIAL_GLASS "glass"
 #define MATERIAL_SILVER "silver"
 #define MATERIAL_GOLD "gold"
@@ -50,15 +50,15 @@
 // Pre-Industrial Materials
 /*
 #define MATERIAL_PLASTEEL "plasteel"
-#define MATERIAL_PLASMA "plasma"
+#define MATERIAL_PLASMA "plasma" //plasma here is just high-temp hydrogen 
 #define MATERIAL_AMERIDIAN "ameridian"
 #define MATERIAL_PLATINUM "platinum"
 #define MATERIAL_MHYDROGEN "mhydrogen"
 #define MATERIAL_OSMIUM "osmium"
 #define MATERIAL_PLATINUM "platinum"
 #define MATERIAL_TRITIUM "tritium"
-#define MATERIAL_RGLASS "rglass"
-#define MATERIAL_PLASMAGLASS "borosilicate glass"
+#define MATERIAL_LGLASS "rglass"
+#define MATERIAL_LBGLASS "borosilicate glass"
 #define MATERIAL_RPLASMAGLASS "reinforced borosilicate glass"
 */
 #define MATERIAL_LIST list(\
@@ -106,7 +106,9 @@
 	MATERIAL_NACRE
 	MATERIAL_TITANIUMCNT)
 
-#define PLASTEEL_COLOUR "#8e9799"
+
+
+#define INDSTEEL_COLOUR "#8e9799"
 //Color to exactly match concept art #b0bcbe
 //I made it slightly darker than that, because the original color was too bright and causes eyestrain imo
 

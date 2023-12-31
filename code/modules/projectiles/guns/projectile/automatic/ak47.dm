@@ -13,7 +13,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 750
 	fire_sound = 'sound/weapons/guns/fire/ak.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -47,7 +47,7 @@
 	excelsior = FALSE
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_NORMAL
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_WOOD = 5)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_WOOD = 5)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	price_tag = 600
 	init_recoil = RIFLE_RECOIL(1.2)
@@ -62,7 +62,7 @@
 	name = "AK frame"
 	desc = "An AK rifle frame. The eternal firearm."
 	icon_state = "frame_ak"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/ak47
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/wood)
 	resultvars = list(/obj/item/gun/projectile/automatic/ak47, /obj/item/gun/projectile/automatic/ak47/sa)
@@ -97,7 +97,7 @@
 	icon_state = "AK"
 	item_state = "AK"
 	caliber = CAL_SRIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 10)
 	price_tag = 700
 	init_recoil = RIFLE_RECOIL(1)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
@@ -144,21 +144,21 @@
 	init_recoil = RIFLE_RECOIL(0.9)
 	mag_well = MAG_WELL_RIFLE
 	excelsior = FALSE
-	gun_parts = list(/obj/item/part/gun = 3 ,/obj/item/stack/material/plasteel = 7)
+	gun_parts = list(/obj/item/part/gun = 3 ,/obj/item/stack/material/indsteel = 7)
 
 	origin_tech = list(TECH_COMBAT = 2)	//bad copies don't give good science
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_WOOD = 10)
 	damage_multiplier = 1.1
 	penetration_multiplier = 0.8
 
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY	//too poorly made for burst or automatic
 	)
-	matter = list(MATERIAL_STEEL = 22, MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
+	matter = list(MATERIAL_ALUMINIUM = 22, MATERIAL_INDSTEEL = 18, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
 	price_tag = 500
 	serial_type = "INDEX"
 	serial_shown = FALSE
-	gun_parts = list(/obj/item/part/gun/frame/kalash = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/autorifle/steel = 1, /obj/item/part/gun/barrel/lrifle/steel = 1)
+	gun_parts = list(/obj/item/part/gun/frame/kalash = 1, /obj/item/part/gun/grip/black = 1, /obj/item/part/gun/mechanism/autorifle/aluminium = 1, /obj/item/part/gun/barrel/lrifle/aluminium = 1)
 
 /obj/item/gun/projectile/automatic/ak47/makeshift/update_icon()
 	..()
@@ -182,9 +182,9 @@
 	name = "Homemade Kalash frame"
 	desc = "A homemade Kalash rifle frame. Cobbled together, but as good as new. Sort of."
 	icon_state = "frame_kalash"
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 	resultvars = list(/obj/item/gun/projectile/automatic/ak47/makeshift)
 	gripvars = list(/obj/item/part/gun/grip/black)
-	mechanismvar = /obj/item/part/gun/mechanism/autorifle/steel
-	barrelvars = list(/obj/item/part/gun/barrel/lrifle/steel, /obj/item/part/gun/barrel/srifle/steel)	//6.5mm or 7.62mm.
+	mechanismvar = /obj/item/part/gun/mechanism/autorifle/aluminium
+	barrelvars = list(/obj/item/part/gun/barrel/lrifle/aluminium, /obj/item/part/gun/barrel/srifle/aluminium)	//6.5mm or 7.62mm.
 	nra = FALSE		//This controls if the weapon checks for barrels or not. If you want a gun to have MULTIPLE calibers that it can be chambered in, put FALSE.

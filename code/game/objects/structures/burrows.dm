@@ -507,7 +507,7 @@ percentage is a value in the range 0..1 that determines what portion of this mob
 
 //Trys to remove the bulk of the burrow
 /obj/structure/burrow/proc/burrow_removal(obj/item/I, mob/user)
-	if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_STEEL)
+	if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_ALUMINIUM)
 		var/obj/item/stack/G = I
 
 		user.visible_message("[user] starts covering [src] with the [I]", "You start covering [src] with \the [I]")

@@ -15,7 +15,7 @@
 	penetration_multiplier  = 1.1
 	zoom_factors = list(0.4)
 	extra_damage_mult_scoped = 0.2 //scoping this should be rewarded its not that good
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_WOOD = 10, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_WOOD = 10, MATERIAL_INDSTEEL = 5)
 	saw_off = FALSE
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SILENCABLE)
 	serial_type = "H&S"
@@ -43,6 +43,6 @@
 	price_tag = 1200
 	fire_sound = 'sound/weapons/guns/fire/sniper_fire.ogg'
 	init_recoil = HMG_RECOIL(0.6)
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 15, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 15, MATERIAL_WOOD = 10)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SCOPE)
 	gun_parts = list(/obj/item/part/gun/frame/armstrong = 1, /obj/item/part/gun/grip/serb = 1, /obj/item/part/gun/mechanism/boltgun = 1, /obj/item/part/gun/barrel/hrifle = 1)

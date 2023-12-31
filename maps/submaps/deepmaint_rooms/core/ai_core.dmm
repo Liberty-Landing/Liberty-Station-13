@@ -1,19 +1,19 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "ab" = (
 /turf/simulated/wall/r_wall,
 /area/deepmaint)
 "ac" = (
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "ad" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "ae" = (
 /obj/structure/catwalk,
@@ -118,7 +118,7 @@
 	dir = 8
 	},
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "aw" = (
 /obj/structure/disposalpipe/segment,
@@ -220,7 +220,7 @@
 	id = "deep_maint_AI_core";
 	name = "AI Core"
 	},
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "aJ" = (
 /obj/structure/disposalpipe/segment{
@@ -231,13 +231,13 @@
 /area/deepmaint)
 "aK" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "aL" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "aM" = (
 /obj/structure/table/reinforced,
@@ -253,7 +253,7 @@
 /area/deepmaint)
 "aO" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "aP" = (
 /obj/structure/catwalk,
@@ -279,7 +279,7 @@
 /area/deepmaint)
 "aT" = (
 /obj/structure/barricade,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "aU" = (
 /obj/structure/table/reinforced,
@@ -309,7 +309,7 @@
 /obj/random/pack/cloth,
 /obj/random/pack/cloth,
 /obj/random/pack/gun_loot,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "aY" = (
 /obj/structure/disposalpipe/segment,
@@ -366,14 +366,14 @@
 	icon_state = "console";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "bi" = (
 /obj/item/modular_computer/console/preset/command{
 	icon_state = "console";
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "bj" = (
 /obj/structure/disposalpipe/segment{
@@ -390,21 +390,21 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "bl" = (
 /obj/item/modular_computer/console/preset/command{
 	icon_state = "console";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bm" = (
 /obj/item/modular_computer/console/preset/command{
 	icon_state = "console";
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bn" = (
 /obj/random/junk,
@@ -412,7 +412,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "bo" = (
 /obj/machinery/door/airlock/vault{
@@ -420,7 +420,7 @@
 	locked = 1;
 	name = "AI Core"
 	},
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "cY" = (
 /obj/structure/table/reinforced,
@@ -435,7 +435,7 @@
 /area/deepmaint)
 "id" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "jp" = (
 /obj/structure/catwalk,
@@ -459,7 +459,7 @@
 /area/deepmaint)
 "rL" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/deepmaint)
 "Ff" = (
 /obj/structure/table/reinforced,

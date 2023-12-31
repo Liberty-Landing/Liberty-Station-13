@@ -58,7 +58,7 @@
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
 	fire_sound = 'sound/weapons/Genhit.ogg'
 	origin_tech = list(TECH_COMBAT = 1, TECH_MATERIAL = 1, TECH_BIO = 2)
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_WOOD = 3, MATERIAL_PLASTIC = 15)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_WOOD = 3, MATERIAL_PLASTIC = 15)
 	matter_type = MATERIAL_WOOD
 	serial_type = "PI"
 	projectile_type = /obj/item/arrow/cleansing

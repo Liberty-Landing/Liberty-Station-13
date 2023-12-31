@@ -61,12 +61,12 @@
 /datum/design/autolathe/device/camera
 	name = "hand camera"
 	build_path = /obj/item/device/camera
-	materials = list(MATERIAL_PLASTIC = 5, MATERIAL_GLASS = 2, MATERIAL_STEEL = 0.2)
+	materials = list(MATERIAL_PLASTIC = 5, MATERIAL_GLASS = 2, MATERIAL_ALUMINIUM = 0.2)
 
 /datum/design/autolathe/device/camerafilm
 	name = "camera film"
 	build_path = /obj/item/device/camera_film
-	materials = list(MATERIAL_PLASTIC = 1, MATERIAL_STEEL = 0.2)
+	materials = list(MATERIAL_PLASTIC = 1, MATERIAL_ALUMINIUM = 0.2)
 
 /datum/design/autolathe/device/landmine
 	name = "landmine"

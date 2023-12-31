@@ -1,12 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "b" = (
 /turf/simulated/wall,
 /area/deepmaint)
 "c" = (
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/deepmaint)
 "d" = (
 /obj/structure/table/rack/shelf,
@@ -16,7 +16,7 @@
 /obj/random/pack/cloth/low_chance,
 /obj/random/pack/cloth/low_chance,
 /obj/random/pack/cloth/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/deepmaint)
 "e" = (
 /obj/structure/table/rack/shelf,
@@ -25,17 +25,17 @@
 /obj/random/medical/low_chance,
 /obj/random/medical/low_chance,
 /obj/random/medical/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/deepmaint)
 "f" = (
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/deepmaint)
 "g" = (
 /obj/machinery/door/airlock/maintenance_common{
 	name = "Service Maintenance";
 	req_access = list(12)
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "h" = (
 /obj/structure/table/rack/shelf,
@@ -45,7 +45,7 @@
 /obj/random/pack/tech_loot/low_chance,
 /obj/random/pack/tech_loot/low_chance,
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/deepmaint)
 "i" = (
 /obj/structure/table/rack/shelf,
@@ -55,7 +55,7 @@
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/dungeon_gun_ballistic/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/deepmaint)
 "j" = (
 /obj/structure/table/rack/shelf,
@@ -64,33 +64,33 @@
 /obj/random/powercell/low_chance,
 /obj/random/lathe_disk/advanced/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "k" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/deepmaint)
 "l" = (
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/deepmaint)
 "m" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "n" = (
 /obj/machinery/light/small,
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/deepmaint)
 "o" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/deepmaint)
 "p" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "A" = (
 /obj/structure/table/rack/shelf,
@@ -100,11 +100,11 @@
 /obj/random/lathe_disk/advanced/low_chance,
 /obj/random/pouch/low_chance,
 /obj/random/tool_upgrade/rare/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "F" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/deepmaint)
 "L" = (
 /obj/structure/table/rack/shelf,
@@ -114,7 +114,7 @@
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/dungeon_gun_energy/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/deepmaint)
 "O" = (
 /obj/structure/table/rack/shelf,
@@ -123,7 +123,7 @@
 /obj/random/powercell/low_chance,
 /obj/random/lathe_disk/advanced/low_chance,
 /obj/random/techpart/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 
 (1,1,1) = {"

@@ -8,7 +8,7 @@
 	switched_on_forcemult = 2.1 //15
 	throwforce = WEAPON_FORCE_WEAK
 	worksound = WORKSOUND_WELDING
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	origin_tech = list(TECH_ENGINEERING = 1)
 	switched_on_qualities = list(QUALITY_WELDING = 35, QUALITY_CAUTERIZING = 10, QUALITY_WIRE_CUTTING = 10)
 
@@ -72,7 +72,7 @@
 	glow_color = COLOR_BLUE_LIGHT
 	switched_on_qualities = list(QUALITY_WELDING = 45, QUALITY_CAUTERIZING = 15, QUALITY_WIRE_CUTTING = 15)
 	max_fuel = 40
-	matter = list(MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 5)
 	switched_on_forcemult = 2.5 //17
 	heat = 3773
 	degradation = 0.7
@@ -92,7 +92,7 @@
 	desc = "An old and legendary Simulacrum Robotics welding tool. Very powerful and reliable, but its compact design causes it to suffer from a lack of both fuel storage and efficiency, requiring regular maintenance."
 	icon_state = "one_star_welder"
 	item_state = "welder"
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_PLATINUM = 2)
 	origin_tech = list(TECH_ENGINEERING = 2, TECH_MATERIAL = 3)
 	switched_on_qualities = list(QUALITY_WELDING = 60, QUALITY_CAUTERIZING = 25, QUALITY_WIRE_CUTTING = 25)
 	glow_color = COLOR_RED_LIGHT

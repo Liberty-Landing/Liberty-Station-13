@@ -10,7 +10,7 @@
 /area/template_noop)
 "ac" = (
 /obj/random/mob/carp,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/template_noop)
 "ad" = (
 /turf/simulated/wall/r_wall,
@@ -135,7 +135,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/template_noop)
 "aE" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "aF" = (
 /obj/structure/catwalk,
@@ -151,7 +151,7 @@
 "aI" = (
 /obj/random/junk/low_chance,
 /mob/living/simple_animal/hostile/carp/baby,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "aJ" = (
 /obj/structure/cable/green{
@@ -171,7 +171,7 @@
 	name = "Service Maintenance";
 	req_access = list(12)
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/template_noop)
 "aM" = (
 /obj/structure/table/rack,
@@ -299,17 +299,17 @@
 "aY" = (
 /obj/structure/table/rack,
 /obj/random/gun_cheap/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/template_noop)
 "aZ" = (
 /obj/structure/table/rack,
 /obj/random/gun_energy_cheap/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/template_noop)
 "ba" = (
 /obj/structure/table/rack,
 /obj/random/firstaid/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/template_noop)
 "bb" = (
 /obj/structure/reagent_dispensers/fueltank/huge,
@@ -320,17 +320,17 @@
 /area/template_noop)
 "bd" = (
 /obj/random/pack/cloth/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "be" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "bf" = (
 /mob/living/simple_animal/hostile/carp/baby,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "bg" = (
 /obj/structure/cable/green{
@@ -362,7 +362,7 @@
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/template_noop)
 "bk" = (
 /obj/structure/cable/green{
@@ -389,7 +389,7 @@
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "bo" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "bq" = (
 /obj/machinery/light/small{
@@ -430,7 +430,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "bw" = (
 /obj/structure/cable/green{
@@ -528,7 +528,7 @@
 /turf/template_noop,
 /area/template_noop)
 "mW" = (
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/template_noop)
 "pu" = (
 /obj/random/structures/low_chance,
@@ -562,7 +562,7 @@
 /area/template_noop)
 "Bg" = (
 /obj/random/closet_tech/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "FE" = (
 /obj/random/material/low_chance,

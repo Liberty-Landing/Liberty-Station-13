@@ -24,7 +24,7 @@
 "aq" = (
 /obj/structure/table/standard,
 /obj/item/folder/blue,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "as" = (
 /obj/structure/filingcabinet/filingcabinet,
@@ -41,13 +41,13 @@
 /area/template_noop)
 "az" = (
 /obj/random/mob/space_legion,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "aH" = (
 /obj/item/modular_computer/console{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "aJ" = (
 /obj/structure/closet/bombcloset/security,
@@ -78,7 +78,7 @@
 /area/template_noop)
 "bl" = (
 /obj/random/mob/space_legion,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "bB" = (
 /obj/random/scrap/sparse_weighted,
@@ -107,11 +107,11 @@
 	pixel_x = -32
 	},
 /obj/random/mob/space_legion,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "fb" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "ff" = (
 /obj/machinery/shower{
@@ -128,7 +128,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "fS" = (
 /obj/random/material/low_chance,
@@ -137,13 +137,13 @@
 "gJ" = (
 /obj/structure/table/standard,
 /obj/item/storage/box/donut,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "ia" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "ip" = (
 /obj/structure/table/standard,
@@ -174,7 +174,7 @@
 /area/template_noop)
 "jE" = (
 /obj/random/material/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "jP" = (
 /obj/machinery/door/firedoor,
@@ -193,7 +193,7 @@
 "lO" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "lU" = (
 /obj/structure/table/woodentable,
@@ -205,13 +205,13 @@
 	dir = 8
 	},
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "nu" = (
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "oA" = (
 /obj/structure/table/woodentable,
@@ -221,7 +221,7 @@
 "oL" = (
 /obj/structure/table/standard,
 /obj/random/techpart/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "oO" = (
 /obj/structure/bed/chair/comfy/black,
@@ -301,11 +301,11 @@
 /turf/simulated/floor/wood,
 /area/template_noop)
 "um" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "uK" = (
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "vA" = (
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -378,7 +378,7 @@
 /area/template_noop)
 "Al" = (
 /obj/item/modular_computer/console,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "As" = (
 /obj/structure/table/rack,
@@ -397,7 +397,7 @@
 /area/template_noop)
 "CY" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "Df" = (
 /obj/random/material/low_chance,
@@ -441,15 +441,15 @@
 /obj/item/modular_computer/console/preset/security/camera{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "FL" = (
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "FS" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "Gs" = (
 /obj/random/junk/low_chance,
@@ -476,7 +476,7 @@
 /obj/machinery/light_construct{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "Km" = (
 /obj/random/junkfood/rotten,
@@ -497,7 +497,7 @@
 	pixel_y = 32
 	},
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "Mb" = (
 /turf/simulated/floor/tiled/dark,
@@ -512,7 +512,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/template_noop)
 "OP" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "Pa" = (
 /obj/item/stool,
@@ -535,7 +535,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "So" = (
 /obj/structure/bed/chair,
@@ -553,14 +553,14 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "Vt" = (
 /obj/structure/bed/chair,
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "VJ" = (
 /obj/structure/table/woodentable,
@@ -577,7 +577,7 @@
 /area/template_noop)
 "Yj" = (
 /obj/structure/bed/chair,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "Yp" = (
 /obj/structure/table/rack,
@@ -604,7 +604,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "YZ" = (
 /turf/simulated/wall/r_wall,

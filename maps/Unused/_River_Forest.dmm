@@ -280,7 +280,7 @@
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_underground)
 "cW" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/river_forest_underground)
 "cY" = (
@@ -2274,7 +2274,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/river_forest_light)
 "yR" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/grey,
 /area/liberty/outside/forest/river_forest_underground)
 "yU" = (

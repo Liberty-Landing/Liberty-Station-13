@@ -329,7 +329,7 @@
 /area/template_noop)
 "bq" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/material/steel{
+/obj/item/stack/material/aluminium{
 	amount = 120
 	},
 /obj/random/junk,
@@ -803,7 +803,7 @@
 	locked = 1;
 	name = "Internal Atmospherics Airlock"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/template_noop)
 "dd" = (
 /obj/structure/railing{
@@ -982,7 +982,7 @@
 /turf/template_noop,
 /area/template_noop)
 "NP" = (
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/template_noop)
 "NQ" = (
 /obj/structure/railing{

@@ -39,7 +39,7 @@
 	desc = "A very sharp axe blade upon a short fiber-metal handle. It has a long history of chopping things, but now it is used for chopping wood."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "hatchet"
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_PLASTIC = 3)
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_PAINFUL
 	throwforce = WEAPON_FORCE_PAINFUL
@@ -100,11 +100,11 @@
 
 /obj/item/tool/fireaxe/handmade
 	name = "makeshift axe"
-	desc = "A heavy plasteel blade affixed to a welded metal shaft, for close up carnage."
+	desc = "A heavy indsteel blade affixed to a welded metal shaft, for close up carnage."
 	icon_state = "makeshift_axe"
 	item_state = "makeshift_axe"
 	wielded_icon = "makeshift_axe_wielded"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_INDSTEEL = 3)
 	force = WEAPON_FORCE_DANGEROUS
 	throwforce = WEAPON_FORCE_NORMAL
 	armor_penetration = ARMOR_PEN_MODERATE
@@ -127,7 +127,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "hoe"
 	item_state = "hoe"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2)
 	force = WEAPON_FORCE_WEAK
 	throwforce = WEAPON_FORCE_WEAK
 	max_upgrades = 2
@@ -140,7 +140,7 @@
 	desc = "A sharp and curved blade on a long fiber-metal handle, this tool makes it easy to reap what you sow."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "scythe0"
-	matter = list(MATERIAL_PLASTEEL = 7, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_INDSTEEL = 7, MATERIAL_PLASTIC = 3)
 	sharp = TRUE
 	edge = TRUE
 	worksound = WORKSOUND_HARD_SLASH
@@ -195,7 +195,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "claymore"
 	item_state = "claymore"
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 5)
 	sharp = TRUE
 	edge = TRUE
 	slot_flags = SLOT_BELT
@@ -223,7 +223,7 @@
 	icon_state = "katana" // New sprite courtesy of Kavric
 	item_state = "katana"
 	hitsound = 'sound/weapons/heavyslash.ogg'
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_EXTREME
@@ -240,7 +240,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "combat_sword"//new sprites by dromki.
 	item_state = "combat_sword"
-	matter = list(MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15)
 	sharp = TRUE
 	edge = TRUE
 	w_class = ITEM_SIZE_NORMAL
@@ -277,7 +277,7 @@
 	icon_state = "diamond_edge" //by dromki with new design and mob sprites.
 	item_state = "diamond_edge"
 	hitsound = 'sound/weapons/heavyslash.ogg'
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
 	slot_flags = SLOT_BELT | SLOT_BACK
 	force = WEAPON_FORCE_ROBUST//the same as the normal katana since this one is pretty much very similar to one.
 	armor_penetration =  ARMOR_PEN_EXTREME
@@ -295,7 +295,7 @@
 	desc = "Modern Japanese-style blade that has no curve to it. This one is two knives welded together, proving where there's a will and a weeb there's a way."
 	icon_state = "katana_improv"
 	item_state = "katana_improv"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 2) //twice the value of a kitche knife
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 2) //twice the value of a kitche knife
 	slot_flags = SLOT_BELT|SLOT_BACK
 	force = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_SHALLOW
@@ -433,18 +433,18 @@
 	icon_state = "msword"
 	item_state = "msword"
 	slot_flags = SLOT_BELT|SLOT_BACK
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 2) // 2 rods, 5 plasteel
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 2) // 2 rods, 5 indsteel
 	armor_penetration = ARMOR_PEN_MODERATE
 	tool_qualities = list(QUALITY_CUTTING = 15,  QUALITY_SAWING = 5)
 	degradation = 1.5 // Crappily made
 	max_upgrades = 5 // Handmade nature
-	price_tag = 100 // Made with plasteel
+	price_tag = 100 // Made with indsteel
 
 /obj/item/tool/sword/foreman
 	name = "\"Maw Opener\" Greatsword"
 	desc = "This thing is too big to be called a sword. \
 			Too big, too thick, too heavy, and too rough, \
-			it is more like a large hunk of plasteel. \nA \
+			it is more like a large hunk of indsteel. \nA \
 			Shepherd's weapon of choice when bashing is not enough; \
 			you have to cleave through the hordes to survive, and keep struggling."
 	icon_state = "renderslayer"
@@ -454,7 +454,7 @@
 	armor_penetration = ARMOR_PEN_MASSIVE // Sharp edge
 	effective_faction = list("agape") // Called like this for a reason
 	damage_mult = 2
-	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 30, MATERIAL_ALUMINIUM = 5)
 	w_class = ITEM_SIZE_BULKY
 	origin_tech = list(TECH_COMBAT = 3)
 	attack_verb = list("attacked", "CLANG'd", "slashed", "sliced", "diced", "cut")
@@ -470,7 +470,7 @@
 	desc = "The last stage of ascension a ritual knife, its latent powers fully awoken by the crayons' magic. \
 			Suspiciously glowing runes are drawn on its surface that glow at random intervals."
 	icon_state = "crayon_blade"
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_STEEL = 2, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_ALUMINIUM = 2, MATERIAL_DIAMOND = 1)
 	force = WEAPON_FORCE_ROBUST + 4 // 30 damage
 	armor_penetration = ARMOR_PEN_MASSIVE // More balanced than psi weapons with psi mania perk.
 	w_class = ITEM_SIZE_BULKY
@@ -615,9 +615,9 @@
 
 
 
-/obj/item/tool/spear/steel
-	name = "steel spear"
-	desc = "A steel spearhead welded to a crude metal shaft, made from two welded rods. It'll serve well enough."
+/obj/item/tool/spear/aluminium
+	name = "aluminium spear"
+	desc = "A aluminium spearhead welded to a crude metal shaft, made from two welded rods. It'll serve well enough."
 	icon_state = "spear_steel"
 	item_state = "spear_steel"
 	wielded_icon = "spear_steel_wielded"
@@ -625,25 +625,25 @@
 	throwforce = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_DEEP
 	tool_qualities = list(QUALITY_CUTTING = 10,  QUALITY_WIRE_CUTTING = 5, QUALITY_SCREW_DRIVING = 5)
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	structure_damage_factor = STRUCTURE_DAMAGE_WEAK
 
-/obj/item/tool/spear/plasteel
-	name = "plasteel spear"
-	desc = "A carefully crafted plasteel spearhead affixed to a metal shaft, it is welded securely on and feels balanced. Show them the past still lives."
-	icon_state = "spear_plasteel"
-	item_state = "spear_plasteel"
-	wielded_icon = "spear_plasteel_wielded"
+/obj/item/tool/spear/indsteel
+	name = "indsteel spear"
+	desc = "A carefully crafted indsteel spearhead affixed to a metal shaft, it is welded securely on and feels balanced. Show them the past still lives."
+	icon_state = "spear_indsteel"
+	item_state = "spear_indsteel"
+	wielded_icon = "spear_indsteel_wielded"
 	force = WEAPON_FORCE_ROBUST
 	throwforce = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_DEEP
 	tool_qualities = list(QUALITY_CUTTING = 15,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 10)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_INDSTEEL = 2)
 	structure_damage_factor = STRUCTURE_DAMAGE_NORMAL
 
 /obj/item/tool/spear/uranium
 	name = "uranium spear"
-	desc = "A steel spear with a uranium lined spearhead. Your foes may survive the stab, but the toxin will linger."
+	desc = "A aluminium spear with a uranium lined spearhead. Your foes may survive the stab, but the toxin will linger."
 	icon_state = "spear_uranium"
 	item_state = "spear_uranium"
 	wielded_icon = "spear_uranium_wielded"
@@ -651,7 +651,7 @@
 	throwforce = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_DEEP
 	tool_qualities = list(QUALITY_CUTTING = 10,  QUALITY_WIRE_CUTTING = 5, QUALITY_SCREW_DRIVING = 5)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_URANIUM = 1)
 
 /obj/item/tool/spear/uranium/apply_hit_effect(mob/living/carbon/human/target, mob/living/user, hit_zone)
 	..()
@@ -668,7 +668,7 @@
 	throwforce = WEAPON_FORCE_NORMAL
 	armor_penetration = ARMOR_PEN_SHALLOW
 	tool_qualities = list(QUALITY_CUTTING = 10)
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	alt_mode_toggle = "flips the halberd to its broad side"
 
 /obj/item/tool/spear/hunter_halberd
@@ -681,7 +681,7 @@
 	force = WEAPON_FORCE_BRUTAL
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 500
-	matter = list(MATERIAL_STEEL = 22, MATERIAL_WOOD = 10, MATERIAL_PLASTEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 22, MATERIAL_WOOD = 10, MATERIAL_INDSTEEL = 4)
 
 //Shitty loadout weapons
 /obj/item/tool/cheap
@@ -690,7 +690,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "cheap_sword"
 	item_state = "cheap_sword"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5)
 	sharp = TRUE
 	edge = TRUE
 	w_class = ITEM_SIZE_NORMAL
@@ -736,7 +736,7 @@
 	item_state = "cheap_spear"
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK|SLOT_BELT
-	throwforce = WEAPON_FORCE_ROBUST // Not as strong as a crafted plasteel one. Shouldn't be.
+	throwforce = WEAPON_FORCE_ROBUST // Not as strong as a crafted indsteel one. Shouldn't be.
 	throw_speed = 3
 	embed_mult = 1.5
 	structure_damage_factor = STRUCTURE_DAMAGE_WEAK

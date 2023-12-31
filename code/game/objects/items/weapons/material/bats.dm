@@ -25,11 +25,11 @@
 //Predefined materials go here.
 
 /obj/item/material/baseballbat/metal
-	default_material = MATERIAL_STEEL
-	color = PLASTEEL_COLOUR
+	default_material = MATERIAL_ALUMINIUM
+	color = indsteel_COLOUR
 
 /obj/item/material/baseballbat/metal/New(var/newloc)
-	..(newloc,MATERIAL_STEEL)
+	..(newloc,MATERIAL_ALUMINIUM)
 	color = material.icon_colour
 
 /obj/item/material/baseballbat/uranium

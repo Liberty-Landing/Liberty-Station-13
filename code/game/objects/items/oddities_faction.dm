@@ -139,7 +139,7 @@
 	price_tag = 20000
 	origin_tech = list(TECH_BIO = 9, TECH_MATERIAL = 9, TECH_PLASMA = 3)
 	unacidable = TRUE //glass doesn't dissolve in acid
-	matter = list(MATERIAL_GLASS = 3, MATERIAL_STEEL = 2, MATERIAL_PLASMA = 5, MATERIAL_BIOMATTER = 50)
+	matter = list(MATERIAL_GLASS = 3, MATERIAL_ALUMINIUM = 2, MATERIAL_HYDROGENC = 5, MATERIAL_BIOMATTER = 50)
 	var/blood_amount = 0
 
 /obj/item/reagent_containers/enricher/New()
@@ -218,7 +218,7 @@
 	armor_penetration = ARMOR_PEN_EXTREME
 	structure_damage_factor = STRUCTURE_DAMAGE_HEAVY
 	fire_delay = 15
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_BIOMATTER = 20, MATERIAL_SILVER = 10)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_BIOMATTER = 20, MATERIAL_SILVER = 10)
 	price_tag = 3000
 	w_class = ITEM_SIZE_HUGE
 
@@ -774,7 +774,7 @@ No more of that.
 	price_tag = 4000
 	attack_verb = list("liquidates", "divests", "outsources", "lays off", "downsizes")
 	hitsound = 'sound/weapons/ring.ogg'
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 4)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 4)
 	preloaded_reagents = list("plasticide" = 20, "copper" = 6, "silicon" = 10)
 	var/unlocks_left = 1
 	var/credits_to_fund = 0

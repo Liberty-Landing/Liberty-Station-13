@@ -18,7 +18,7 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/beanbag
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/shotgun_insert.ogg'
 	fire_sound = 'sound/weapons/guns/fire/max_sawn_off.ogg' //Actual double barrel sound
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 10)
 	price_tag = 600
 	init_recoil = RIFLE_RECOIL(1.3)
 	var/bolt_open = 0
@@ -111,7 +111,7 @@
 	can_dual = TRUE
 	caliber = CAL_SHOTGUN
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_WOOD = 10)
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_PAINFUL
 	damage_multiplier = 0.8 //slightly weaker due to sawn-off barrels

@@ -25,7 +25,7 @@
 	..(newloc)
 	color = null
 	if(!new_material)
-		new_material = MATERIAL_STEEL
+		new_material = MATERIAL_ALUMINIUM
 	material = get_material_by_name(new_material)
 	if(!istype(material))
 		qdel(src)
@@ -406,7 +406,7 @@
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_BULKY
 	var/structure_form_type = /obj/structure/bed/roller //The deployed form path.
-	matter = list(MATERIAL_PLASTIC = 20, MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_PLASTIC = 20, MATERIAL_ALUMINIUM = 15)
 
 /obj/item/roller/compact
 	name = "compact roller bed"
@@ -415,7 +415,7 @@
 	slot_flags = NONE
 	w_class = ITEM_SIZE_NORMAL
 	structure_form_type = /obj/structure/bed/roller/compact
-	matter = list(MATERIAL_PLASTIC = 20, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_PLASTIC = 20, MATERIAL_INDSTEEL = 5)
 
 /obj/item/roller_holder
 	name = "roller bed rack"

@@ -4,7 +4,7 @@
 	desc = "A tube of paste containing swarms of repair nanites. Very effective in repairing mechanical bodyparts, organs, and smart purging of toxic buildup."
 	icon = 'icons/obj/stack/items.dmi'
 	icon_state = "nanopaste"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 0.2, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 0.2, MATERIAL_ALUMINIUM = 1)
 	preloaded_reagents = list("nanites" = 1)
 	origin_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3)
 	amount = 5

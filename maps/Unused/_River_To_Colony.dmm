@@ -70,7 +70,7 @@
 /turf/simulated/floor/wood_old,
 /area/colony/exposedsun/crashed_shop/workshop)
 "bx" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "by" = (
 /obj/item/trash/material/metal,
@@ -213,7 +213,7 @@
 /area/colony/exposedsun/crashed_shop)
 "eW" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "fc" = (
 /turf/simulated/floor/asteroid/dirt,
@@ -313,11 +313,11 @@
 "hE" = (
 /obj/item/scrap_lump,
 /obj/item/trash/material/metal,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/grey,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "hJ" = (
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/colony/exposedsun/crashed_shop/workshop)
 "hO" = (
 /obj/structure/table/rack,
@@ -465,7 +465,7 @@
 	id = "sh_belt"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "lp" = (
 /obj/item/trash/material/metal,
@@ -662,13 +662,13 @@
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
 "pD" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/invislight,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "qw" = (
 /obj/item/stack/rods/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/flora/small/lavarock3,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
@@ -712,7 +712,7 @@
 	dir = 4
 	},
 /obj/structure/ore_box,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "rA" = (
 /obj/item/stack/rods/random,
@@ -753,7 +753,7 @@
 	dir = 6
 	},
 /obj/structure/closet/crate,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "sm" = (
 /obj/item/trash/material/metal,
@@ -937,7 +937,7 @@
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
 "vJ" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "vR" = (
@@ -1010,7 +1010,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "xW" = (
 /obj/structure/table/rack,
@@ -1035,7 +1035,7 @@
 "ys" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/human/voidwolf/elite/laserak,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/colony/exposedsun/crashed_shop/workshop)
 "yw" = (
 /obj/structure/low_wall,
@@ -1144,7 +1144,7 @@
 /area/colony/exposedsun/crashed_shop)
 "AO" = (
 /obj/machinery/mineral/unloading_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "AP" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -1183,7 +1183,7 @@
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
 "Bl" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/grey,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Bm" = (
@@ -1415,7 +1415,7 @@
 /area/colony/exposedsun/crashed_shop)
 "GO" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/colony/exposedsun/crashed_shop/workshop)
 "GS" = (
 /turf/simulated/floor/asteroid/dirt/burned,
@@ -1480,7 +1480,7 @@
 /turf/simulated/open,
 /area/colony/exposedsun/crashed_shop)
 "Hw" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "HF" = (
@@ -1555,7 +1555,7 @@
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Kg" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/glass/random,
 /obj/item/stack/material/glass/reinforced,
@@ -1601,7 +1601,7 @@
 /obj/machinery/conveyor/south{
 	id = "sh_belt"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "KE" = (
 /obj/structure/closet/crate,
@@ -1610,7 +1610,7 @@
 "KF" = (
 /obj/item/scrap_lump,
 /obj/item/stack/rods/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "KK" = (
@@ -1705,7 +1705,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "MB" = (
 /obj/structure/table/steel_reinforced,
@@ -1842,7 +1842,7 @@
 /area/colony/exposedsun/crashed_shop)
 "OK" = (
 /obj/machinery/mineral/stacking_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "OV" = (
 /obj/structure/table/rack,
@@ -1905,7 +1905,7 @@
 /area/colony/exposedsun/crashed_shop/workshop)
 "Qh" = (
 /obj/machinery/mineral/processing_unit/scrap_heaven,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "Qq" = (
 /obj/structure/scrap/vehicle,
@@ -1922,7 +1922,7 @@
 "QD" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/stack/material/plasma/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/tool/tape_roll/flextape,
 /obj/random/material_rare/low_chance,
 /obj/random/material_ore/low_chance,
@@ -2147,7 +2147,7 @@
 "UQ" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "UX" = (
 /turf/unsimulated/mask,
@@ -2175,7 +2175,7 @@
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop)
 "Vy" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "VE" = (
@@ -2196,7 +2196,7 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/colony/exposedsun/crashed_shop)
 "Wr" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Wu" = (
@@ -2213,7 +2213,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "Wy" = (
 /obj/structure/invislight,
@@ -2325,7 +2325,7 @@
 	id = "sh_belt"
 	},
 /obj/landmark/machinery/input,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "YM" = (
 /obj/map_data/river_to_colony,
@@ -2363,7 +2363,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "ZB" = (
 /obj/structure/closet/secure_closet/freezer/kitchen/mining,

@@ -23,7 +23,7 @@
 
 /obj/item/material/butterflyhandle
 	name = "concealed knife grip"
-	desc = "A plasteel grip with screw fittings for a blade."
+	desc = "A indsteel grip with screw fittings for a blade."
 	icon = 'icons/obj/buildingobject.dmi'
 	icon_state = "butterfly1"
 	force_divisor = 0.1

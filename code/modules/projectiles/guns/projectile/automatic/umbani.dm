@@ -13,7 +13,7 @@
 	fire_sound = 'sound/weapons/guns/fire/grease_fire.ogg'
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
 	init_firemodes = list(
 		FULL_AUTO_300,
 		SEMI_AUTO_NODELAY,
@@ -33,7 +33,7 @@
 	name = "Umbani frame"
 	desc = "A Umbani SMG. For those on a budget but still wanting to blow someone away."
 	icon_state = "frame_luty"
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	resultvars = list(/obj/item/gun/projectile/automatic/umbani)
 	gripvars = list(/obj/item/part/gun/grip/wood)
 	mechanismvar = /obj/item/part/gun/mechanism/smg

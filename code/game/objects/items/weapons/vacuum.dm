@@ -10,7 +10,7 @@
 	w_class = ITEM_SIZE_BULKY
 	slot_flags = SLOT_BELT|SLOT_BACK
 	attack_verb = list("bashed", "bludgeoned", "whacked")
-	matter = list(MATERIAL_PLASTIC = 5, MATERIAL_STEEL = 10, MATERIAL_BIOMATTER = 5)
+	matter = list(MATERIAL_PLASTIC = 5, MATERIAL_ALUMINIUM = 10, MATERIAL_BIOMATTER = 5)
 	price_tag = 300
 
 	var/filth = 0

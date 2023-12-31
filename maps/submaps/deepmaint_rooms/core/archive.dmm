@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ab" = (
 /turf/simulated/wall/r_wall,
@@ -44,7 +44,7 @@
 "ai" = (
 /obj/random/junk,
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aj" = (
 /obj/structure/table/standard,
@@ -72,7 +72,7 @@
 /area/deepmaint)
 "am" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "an" = (
 /turf/simulated/floor/carpet/turcarpet,
@@ -102,7 +102,7 @@
 /area/deepmaint)
 "at" = (
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "au" = (
 /obj/structure/bed/chair/comfy/black{
@@ -133,23 +133,23 @@
 /obj/structure/girder,
 /obj/structure/barricade,
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "az" = (
 /obj/machinery/deployable/barrier,
 /obj/structure/barricade,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/deepmaint)
 "aA" = (
 /obj/structure/girder,
 /obj/machinery/deployable/barrier,
 /obj/structure/barricade,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/deepmaint)
 "aB" = (
 /obj/structure/girder,
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "aC" = (
 /obj/structure/table/standard,
@@ -165,10 +165,10 @@
 /obj/structure/girder,
 /obj/structure/barricade,
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "aF" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "aG" = (
 /obj/structure/table/woodentable,
@@ -185,7 +185,7 @@
 /area/deepmaint)
 "aJ" = (
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "aK" = (
 /obj/structure/barricade,
@@ -199,7 +199,7 @@
 /area/deepmaint)
 "aM" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "aN" = (
 /obj/structure/flora/pottedplant{
@@ -217,7 +217,7 @@
 "aP" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/barricade,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "aQ" = (
 /obj/structure/table/woodentable,
@@ -236,7 +236,7 @@
 /area/deepmaint)
 "aS" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "aT" = (
 /obj/effect/decal/cleanable/blood,
@@ -291,7 +291,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bc" = (
 /obj/item/remains/human,
@@ -355,11 +355,11 @@
 /area/deepmaint)
 "bn" = (
 /obj/structure/bed/chair,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "bo" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bp" = (
 /obj/random/junk,
@@ -367,7 +367,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bq" = (
 /obj/structure/table/woodentable,
@@ -395,13 +395,13 @@
 	dir = 1
 	},
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "bv" = (
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "bw" = (
 /obj/item/remains/human,
@@ -458,17 +458,17 @@
 /area/deepmaint)
 "bE" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "bF" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "bG" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bH" = (
 /obj/random/traps/low_chance,
@@ -478,7 +478,7 @@
 /obj/random/junk,
 /obj/random/junk,
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bJ" = (
 /obj/random/cluster/psi_monster/low_chance,
@@ -497,7 +497,7 @@
 /area/deepmaint)
 "ry" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "xs" = (
 /obj/structure/table/rack,

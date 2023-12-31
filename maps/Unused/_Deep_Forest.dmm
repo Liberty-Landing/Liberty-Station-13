@@ -563,7 +563,7 @@
 /area/asteroid/rogue)
 "aIZ" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "aJw" = (
 /obj/effect/decal/cleanable/rubble,
@@ -816,7 +816,7 @@
 "aZT" = (
 /obj/structure/table/onestar,
 /obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "baH" = (
 /obj/structure/cable/yellow,
@@ -991,7 +991,7 @@
 /obj/structure/bed/chair/custom/onestar/red{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "blc" = (
 /turf/simulated/floor/carpet/sblucarpet,
@@ -1227,7 +1227,7 @@
 	icon_state = "4-8";
 	pixel_x = 0
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/dungeon/outside/zoo)
 "bwt" = (
 /obj/structure/flora/small/bushb2,
@@ -1440,7 +1440,7 @@
 	},
 /obj/item/folder,
 /obj/item/device/radio/phone,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "bLm" = (
 /obj/item/trash/chips,
@@ -1820,7 +1820,7 @@
 	dir = 4
 	},
 /obj/random/common_oddities/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "cjC" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -1841,7 +1841,7 @@
 	dir = 1
 	},
 /obj/item/oddity/common/old_money,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "cki" = (
 /obj/random/closet_tech,
@@ -2030,7 +2030,7 @@
 	dir = 8
 	},
 /obj/item/device/radio/phone,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "csi" = (
 /obj/structure/table/standard,
@@ -2423,7 +2423,7 @@
 /area/liberty/outside/one_star)
 "cMk" = (
 /obj/structure/closet/crate/serbcrate,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
 /obj/random/furniture/bedsheet,
 /obj/random/furniture/bedsheet,
 /obj/random/furniture/bedsheetdouble,
@@ -2444,7 +2444,7 @@
 /obj/random/tool/advanced/onestar/low_chance,
 /obj/random/material,
 /obj/item/tool/crowbar/onestar,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "cNI" = (
 /obj/machinery/door/unpowered/simple/wood/saloon,
@@ -3198,7 +3198,7 @@
 	dir = 4
 	},
 /obj/item/folder/blue,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "dFL" = (
 /obj/structure/sign/departmentold/science/variant1{
@@ -3404,7 +3404,7 @@
 	dir = 8
 	},
 /obj/item/device/radio/phone/medbay,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "dRI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3897,7 +3897,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "etM" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/common_oddities,
 /obj/random/cloth/helmet,
 /obj/machinery/light/small{
@@ -4418,7 +4418,7 @@
 	name = "server room";
 	req_access = list(999)
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "feI" = (
 /obj/structure/cable/yellow{
@@ -4501,7 +4501,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "fit" = (
 /obj/structure/bed/chair,
@@ -4706,7 +4706,7 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/asteroid/rogue)
 "fwb" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_cheap,
 /obj/machinery/light/small{
 	dir = 1
@@ -4714,7 +4714,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "fwl" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_shotgun/low_chance,
 /obj/machinery/light/small{
 	dir = 1
@@ -5007,7 +5007,7 @@
 "fNT" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/stack/material/plasma/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/tool/tape_roll/flextape,
 /obj/random/material_rare/low_chance,
 /obj/random/material_ore/low_chance,
@@ -5100,7 +5100,7 @@
 	pixel_y = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "fUA" = (
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -5200,7 +5200,7 @@
 	dir = 8
 	},
 /obj/random/junkfood/onlyburger,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "fYu" = (
 /turf/simulated/floor/tiled/dark,
@@ -5324,7 +5324,7 @@
 	},
 /obj/item/device/lighting/glowstick/flare/torch,
 /obj/item/device/lighting/glowstick/flare/torch,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/device/lighting/glowstick/flare/torch,
 /obj/item/device/lighting/glowstick/flare/torch,
 /turf/simulated/shuttle/floor/mining{
@@ -5826,7 +5826,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "gJw" = (
 /obj/structure/invislight,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/prepper)
 "gKF" = (
 /obj/machinery/light/small,
@@ -6270,7 +6270,7 @@
 "hjR" = (
 /obj/random/traps/low_chance,
 /obj/machinery/door/airlock/highsecurity,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/prepper)
 "hkf" = (
 /obj/structure/bed/chair/sofa/black/corner{
@@ -6281,7 +6281,7 @@
 "hkw" = (
 /obj/machinery/door/airlock/glass,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/prepper)
 "hkz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6846,7 +6846,7 @@
 	dir = 8
 	},
 /obj/random/junkfood,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "hRL" = (
 /turf/simulated/floor/asteroid/grass,
@@ -7444,7 +7444,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "ixC" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/junk,
 /obj/machinery/light/small{
@@ -7561,7 +7561,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "iEi" = (
 /obj/structure/multiz/ladder/up,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "iEm" = (
 /obj/machinery/light,
@@ -7851,7 +7851,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/dungeon/outside/monster_cave)
 "iTR" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/tool/advanced/low_chance,
 /turf/simulated/floor/tiled/dark,
@@ -8398,7 +8398,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/dungeon/outside/zoo)
 "jxV" = (
 /obj/random/mob/prepper,
@@ -8968,7 +8968,7 @@
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 2
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/prepper)
 "kew" = (
 /obj/structure/flora/small/lavarock2,
@@ -9205,7 +9205,7 @@
 /area/liberty/dungeon/outside/zoo)
 "kqF" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/glass/random,
 /obj/item/stack/material/glass/reinforced,
@@ -9485,7 +9485,7 @@
 	dir = 4
 	},
 /obj/structure/bed/chair/custom/onestar/red,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "kJQ" = (
 /obj/structure/salvageable/server_os,
@@ -9570,7 +9570,7 @@
 /obj/random/medical_lowcost,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/medical/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "kOX" = (
 /obj/structure/cable/yellow{
@@ -9628,7 +9628,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/dungeon/outside/safehouse)
 "kUx" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/science,
 /obj/machinery/light/small{
 	dir = 1
@@ -9709,7 +9709,7 @@
 /obj/random/tool/advanced/onestar/low_chance,
 /obj/random/tool/advanced/onestar/low_chance,
 /obj/random/material,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "kYm" = (
 /obj/item/paper_bin,
@@ -10085,7 +10085,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/dungeon/outside/zoo)
 "lvJ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junk,
 /obj/machinery/light/small{
 	dir = 1
@@ -10192,7 +10192,7 @@
 	dir = 4
 	},
 /obj/random/common_oddities/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "lDW" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -10322,7 +10322,7 @@
 /obj/structure/table/onestar,
 /obj/random/powercell/low_chance,
 /obj/item/stock_parts/matter_bin/one_star,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "lJW" = (
 /obj/effect/decal/cleanable/blood/gibs/down,
@@ -10406,7 +10406,7 @@
 /area/liberty/dungeon/outside/zoo)
 "lQo" = (
 /obj/structure/bed/chair/custom/onestar/red,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "lQB" = (
 /obj/structure/boulder,
@@ -10543,7 +10543,7 @@
 /obj/structure/table/onestar,
 /obj/random/material,
 /obj/item/tool/wrench/big_wrench,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "lXi" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -10963,7 +10963,7 @@
 	dir = 8
 	},
 /obj/structure/bed/chair/custom/onestar/red,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "mvp" = (
 /obj/structure/table/steel_reinforced,
@@ -11140,7 +11140,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "mEL" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/tool_upgrade/low_chance,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
@@ -11220,7 +11220,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "mHK" = (
 /obj/machinery/light/small,
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone)
 "mHO" = (
@@ -11716,7 +11716,7 @@
 /area/liberty/outside/one_star)
 "neD" = (
 /obj/structure/multiz/ladder,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "neF" = (
 /obj/structure/bed/chair{
@@ -11916,7 +11916,7 @@
 	dir = 4
 	},
 /obj/item/oddity/common/old_money,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "npL" = (
 /obj/structure/girder,
@@ -12237,7 +12237,7 @@
 	dir = 1
 	},
 /obj/structure/window/reinforced,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "nJz" = (
 /obj/structure/multiz/stairs/active{
@@ -12342,7 +12342,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "nTV" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junkfood,
 /obj/random/junkfood,
 /obj/random/rations,
@@ -12618,7 +12618,7 @@
 /obj/structure/window/reinforced,
 /obj/item/device/radio/phone,
 /obj/item/oddity/common/old_money,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "oiQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12845,7 +12845,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "oum" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "ovb" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12864,7 +12864,7 @@
 	pixel_x = 0
 	},
 /obj/machinery/power/smes/buildable,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/dungeon/outside/zoo)
 "ovU" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -13938,7 +13938,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor2)
 "pzc" = (
 /obj/machinery/power/smes/batteryrack,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/dungeon/outside/zoo)
 "pzg" = (
 /obj/structure/table/steel_reinforced,
@@ -14103,7 +14103,7 @@
 /obj/machinery/portable_atmospherics/hydroponics{
 	pixel_y = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "pIY" = (
 /obj/structure/flora/small/busha3,
@@ -14186,7 +14186,7 @@
 /obj/structure/bed/chair/custom/onestar/red{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "pMD" = (
 /obj/machinery/light{
@@ -14531,7 +14531,7 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "qaq" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/structure/flora/pottedplant/dead{
 	oldified = 1;
 	pixel_y = 16
@@ -15137,7 +15137,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "qGS" = (
 /obj/structure/flora/small/bushc2,
@@ -15540,7 +15540,7 @@
 "rcc" = (
 /obj/machinery/light/floor,
 /mob/living/carbon/superior_animal/robot/simulacrum/roomba/gun_ba,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "rce" = (
 /obj/structure/bed/double/padded,
@@ -16800,7 +16800,7 @@
 	},
 /obj/item/folder/blue,
 /obj/item/device/radio/phone,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "swF" = (
 /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/epistol/esmg,
@@ -17506,7 +17506,7 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone_u)
 "toN" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/rare/low_chance,
 /turf/simulated/floor/tiled/dark,
@@ -17680,7 +17680,7 @@
 	dir = 8
 	},
 /obj/random/pack/tech_loot/onestar,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "tzX" = (
 /obj/structure/boulder,
@@ -18320,7 +18320,7 @@
 	dir = 8
 	},
 /obj/random/common_oddities,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "ulj" = (
 /obj/item/clothing/mask/gas/industrial{
@@ -19229,7 +19229,7 @@
 /obj/item/folder,
 /obj/item/device/radio/phone,
 /obj/item/oddity/common/old_money,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "vhR" = (
 /obj/structure/catwalk,
@@ -19276,7 +19276,7 @@
 	dir = 8
 	},
 /obj/random/junkfood,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "vkt" = (
 /obj/effect/decal/cleanable/blood,
@@ -19432,7 +19432,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star)
 "vtB" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junk,
 /obj/random/junk,
 /obj/effect/decal/cleanable/dirt,
@@ -19522,7 +19522,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vAu" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/dungeon/outside/zoo)
 "vAC" = (
 /obj/structure/bed/chair/custom/onestar,
@@ -19636,7 +19636,7 @@
 /obj/item/stock_parts/matter_bin/one_star,
 /obj/item/tool/weldingtool/onestar,
 /obj/item/tool/multitool/advanced/onestar,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "vGv" = (
 /obj/structure/table/steel_reinforced,
@@ -19835,7 +19835,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/colony/exposedsun/pastgate)
 "vQU" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junk,
 /obj/random/junk,
 /obj/machinery/light/small{
@@ -20157,7 +20157,7 @@
 "wjn" = (
 /obj/structure/table/onestar,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "wjL" = (
 /obj/structure/closet/secure_closet/injection,
@@ -20312,7 +20312,7 @@
 /obj/machinery/door/airlock/vault/bolted{
 	req_access = list(999)
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "wtg" = (
 /obj/machinery/light/small{
@@ -20377,7 +20377,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "wxv" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20496,7 +20496,7 @@
 	dir = 1
 	},
 /obj/random/common_oddities,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "wFt" = (
 /turf/simulated/floor/asteroid/dirt,
@@ -21372,7 +21372,7 @@
 /obj/random/tool_upgrade/low_chance,
 /obj/random/powercell/low_chance,
 /obj/item/storage/toolbox/mechanical,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/one_star)
 "xEh" = (
 /obj/machinery/light/floor,
@@ -21809,7 +21809,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/power/smes/buildable,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/dungeon/outside/zoo)
 "ycU" = (
 /obj/structure/table/onestar,
@@ -21867,7 +21867,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/meadow)
 "ygn" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone)
 "ygG" = (
@@ -21935,7 +21935,7 @@
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone)
 "ylq" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/toy/figure/character/bobblehead/excelsior,
 /obj/machinery/light/small{
 	dir = 1

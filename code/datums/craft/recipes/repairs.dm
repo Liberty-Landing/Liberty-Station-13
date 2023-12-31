@@ -9,7 +9,7 @@
 	result = /obj/item/gun/projectile/shotgun/doublebarrel
 	steps = list(
 		list(/obj/item/gun/projectile/shotgun/doublebarrel/sawn, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_INDSTEEL),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_WELDING, 30, "time" = 60)
 	)
@@ -22,7 +22,7 @@
 		list(/obj/item/gun/projectile/boltgun/lever, 1, time = 60),
 		list(QUALITY_ADHESIVE, 10, 60),
 		list(QUALITY_SCREW_DRIVING, 10),
-		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_ALUMINIUM),
 		list(QUALITY_BOLT_TURNING, 20, 30),
 		list(QUALITY_WELDING, 10, 20)
 	)
@@ -32,7 +32,7 @@
 	result = /obj/item/gun/projectile/boltgun/lever/shotgun
 	steps = list(
 		list(/obj/item/gun/projectile/boltgun/lever/shotgun/sawn, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_INDSTEEL),
 		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTIC),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_WELDING, 30, "time" = 60)
@@ -43,7 +43,7 @@
 	result = /obj/item/gun/projectile/shotgun/pump
 	steps = list(
 		list(/obj/item/gun/projectile/shotgun/pump/sawn, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_INDSTEEL),
 		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTIC),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 60)
@@ -54,7 +54,7 @@
 	result = /obj/item/gun/projectile/shotgun/judge
 	steps = list(
 		list(/obj/item/gun/projectile/shotgun/judge/sawn, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 8, MATERIAL_INDSTEEL),
 		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTIC),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 60)
@@ -65,8 +65,8 @@
 	result = /obj/item/gun/projectile/automatic/ak47
 	steps = list(
 		list(/obj/item/gun/projectile/automatic/ak47/sawn, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_ALUMINIUM),
+		list(CRAFT_MATERIAL, 6, MATERIAL_INDSTEEL),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 60)
 	)
@@ -77,7 +77,7 @@
 	steps = list(
 		list(/obj/item/gun/projectile/boltgun/rosefield/sawn, 1, "time" = 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL),
 		list(CRAFT_MATERIAL, 10, MATERIAL_GLASS),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 60),
@@ -90,7 +90,7 @@
 	steps = list(
 		list(/obj/item/gun/projectile/boltgun/sawn, 1, "time" = 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 60),
 		list(QUALITY_WELDING, 30, "time" = 60)
@@ -103,8 +103,8 @@
 		list(/obj/item/clothing/head/helmet/space/bomb, 1, "time" = 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC),
 		list(/obj/item/tool_upgrade/armor/melee, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(/obj/item/tool_upgrade/armor/bullet, 1, "time" = 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_SILK),
@@ -120,8 +120,8 @@
 		list(/obj/item/clothing/suit/space/bomb, 1, "time" = 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC),
 		list(/obj/item/tool_upgrade/armor/melee, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(/obj/item/tool_upgrade/armor/bullet, 1, "time" = 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_SILK),

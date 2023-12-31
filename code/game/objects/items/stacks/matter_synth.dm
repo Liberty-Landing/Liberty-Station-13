@@ -42,8 +42,8 @@
 /datum/matter_synth/metal
 	name = "Metal Synthesizer"
 
-/datum/matter_synth/plasteel
-	name = "Plasteel Synthesizer"
+/datum/matter_synth/indsteel
+	name = "indsteel Synthesizer"
 	max_energy = 10000
 
 /datum/matter_synth/glass

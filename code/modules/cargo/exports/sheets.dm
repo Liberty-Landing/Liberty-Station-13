@@ -70,7 +70,7 @@
 /datum/export/stack/metal
 	cost = 2
 	message = "of metal"
-	export_types = list(/obj/item/stack/material/steel)
+	export_types = list(/obj/item/stack/material/aluminium)
 
 // Glass. Common building material.
 /datum/export/stack/glass
@@ -78,11 +78,11 @@
 	message = "of glass"
 	export_types = list(/obj/item/stack/material/glass)
 
-// Plasteel. Lightweight, strong and contains some plasma too.
-/datum/export/stack/plasteel
+// indsteel. Lightweight, strong and contains some plasma too.
+/datum/export/stack/indsteel
 	cost = 10
-	message = "of plasteel"
-	export_types = list(/obj/item/stack/material/plasteel)
+	message = "of indsteel"
+	export_types = list(/obj/item/stack/material/indsteel)
 
 // Reinforced Glass. Common building material. 1 glass + 0.5 metal, cost is rounded up.
 /datum/export/stack/rglass

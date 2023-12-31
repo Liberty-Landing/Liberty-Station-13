@@ -26,7 +26,7 @@
 	name = "sheet spanner"
 	result = /obj/item/tool/wrench/improvised
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 		list(QUALITY_SAWING, 10, 70)
 	)
 
@@ -89,7 +89,7 @@
 	name = "junk shovel"
 	result = /obj/item/tool/shovel/improvised
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 		list(/obj/item/stack/rods, 1, 30),
 		list(QUALITY_ADHESIVE, 15, 85)
 	)
@@ -99,7 +99,7 @@
 	name = "\improper Improvised omnitool implant"
 	result = /obj/item/organ_module/active/simple/makeshift
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, 20),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, 20),
 		list(/obj/item/circuitboard, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(/obj/item/tool/screwdriver/improvised, 1),
@@ -144,7 +144,7 @@ Disabled as this is meant to be implant not free floating
 	name = "makeshift grinder"
 	result = /obj/item/storage/makeshift_grinder
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM),
 		list(QUALITY_WIRE_CUTTING, 10, 20),
 		list(QUALITY_PRYING, 10, 80),
 		list(/obj/item/stack/rods, 1, 30)
@@ -155,7 +155,7 @@ Disabled as this is meant to be implant not free floating
 	result = /obj/item/device/makeshift_centrifuge
 
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM),
 		list(QUALITY_SAWING, 10, "time" = 80),
 		list(/obj/item/stack/rods, 2, 30),
 		list(QUALITY_WIRE_CUTTING, 10, 20),
@@ -167,7 +167,7 @@ Disabled as this is meant to be implant not free floating
 	result = /obj/item/device/makeshift_electrolyser
 	icon_state = "electronic"
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM),
 		list(QUALITY_WIRE_CUTTING, 10, 20),
 		list(/obj/item/stack/cable_coil, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 10, 20),
@@ -178,7 +178,7 @@ Disabled as this is meant to be implant not free floating
 	name = "improvised crank charger"
 	result = /obj/item/device/manual_charger/improv
 	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_WELDING, 20, 30),
 		list(/obj/item/stack/rods, 10, 10),
 		list(QUALITY_WELDING, 10, 20),
@@ -208,7 +208,7 @@ Disabled as this is meant to be implant not free floating
 	result = /obj/item/tool_upgrade/reinforcement/stick
 	steps = list(
 		list(/obj/item/stack/rods, 3, 30),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL),
 		list(QUALITY_ADHESIVE, 30, 150)
 	)
 
@@ -218,8 +218,8 @@ Disabled as this is meant to be implant not free floating
 	result = /obj/item/tool_upgrade/augment/fuel_tank
 
 	steps = list(
-		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTEEL), //To make the tank
-		list(QUALITY_WELDING, 10, 50), // welding the plasteel bits
+		list(CRAFT_MATERIAL, 8, MATERIAL_INDSTEEL), //To make the tank
+		list(QUALITY_WELDING, 10, 50), // welding the indsteel bits
 		list(QUALITY_HAMMERING, 10, 100), //Make sure its round and storable
 		list(/obj/item/stack/rods, 2, 30), //welding solder
 		list(QUALITY_WELDING, 10, 100), //welding down the solder and making it more air-tight
@@ -235,7 +235,7 @@ Disabled as this is meant to be implant not free floating
 	steps = list(
 		list(/obj/item/stack/rods, 2, 30),
 		list(QUALITY_WELDING, 10, 150),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 10, 150)
 	)
 */
@@ -248,7 +248,7 @@ Disabled as this is meant to be implant not free floating
 	steps = list(
 		list(/obj/item/frame/apc, 2, "time" = 30),			//hull
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 40),		//prepare hull
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),			//additional frame to support wires
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL),			//additional frame to support wires
 		list(QUALITY_WELDING, 10, "time" = 70),				//secure frame
 		list(/obj/item/stack/cable_coil, 30, "time" = 10),	//add wiring
 		list(QUALITY_WIRE_CUTTING, 10, "time" = 60),		//adjust wiring
@@ -262,7 +262,7 @@ Disabled as this is meant to be implant not free floating
 	name = "reinforced plate"
 	result = /obj/item/tool_upgrade/reinforcement/plating
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL),
 		list(QUALITY_DRILLING, 10, 150),
 		list(/obj/item/stack/rods, 2, 30),
 		list(QUALITY_BOLT_TURNING, 10, 150)
@@ -294,9 +294,9 @@ Disabled as this is meant to be implant not free floating
 	name = "spiked plate"
 	result = /obj/item/tool_upgrade/augment/hammer_addon
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM),
 		list(QUALITY_HAMMERING, 20, 30),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL),
 		list(/obj/item/tool_upgrade/augment/spikes, 1, 30), // The spikes!
 		list(QUALITY_WELDING, 20, 30),
 		list(CRAFT_MATERIAL, 1, MATERIAL_DIAMOND), // Even sharper tips!
@@ -307,7 +307,7 @@ Disabled as this is meant to be implant not free floating
 	name = "wax coating"
 	result = /obj/item/tool_upgrade/productivity/waxcoat
 	steps = list(
-			list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+			list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 			list(QUALITY_WIRE_CUTTING, 10, 50),
 			list(/obj/item/stack/wax, 4, 4)
 	)

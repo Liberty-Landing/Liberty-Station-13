@@ -1453,7 +1453,7 @@
 	price_tag = 60
 
 /obj/item/toy/consumer/product
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	name = " Notably Generic Consumer Product"
 	desc = "Do NOT produce."
 	icon = 'icons/obj/crafts_consumergood.dmi'

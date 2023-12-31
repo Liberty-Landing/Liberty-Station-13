@@ -11,7 +11,7 @@
 /area/template_noop)
 "D" = (
 /obj/random/mob/space_legion,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "M" = (
 /turf/template_noop,
@@ -21,7 +21,7 @@
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "R" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 
 (1,1,1) = {"

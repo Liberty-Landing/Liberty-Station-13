@@ -7,7 +7,7 @@
 /turf/simulated/floor/asteroid/dirt/dark/plough,
 /area/liberty/outside/forest/hunting_lodge)
 "ac" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/shovel/improvised,
 /obj/machinery/light/small{
 	dir = 8
@@ -197,8 +197,8 @@
 /area/liberty/outside/forest/hunting_lodge)
 "bc" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "bg" = (
@@ -436,7 +436,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/hunting_lodge)
 "cr" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/wood/wild2,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "ct" = (
@@ -535,7 +535,7 @@
 /area/liberty/outside/forest/hunting_lodge)
 "cR" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "cS" = (
@@ -1245,7 +1245,7 @@
 /turf/simulated/floor/wood/wild1,
 /area/liberty/outside/forest/hunting_lodge)
 "gM" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/shovel/improvised,
 /turf/simulated/floor/wood/wild2,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -1260,7 +1260,7 @@
 /turf/simulated/floor/asteroid/grass/colonial1,
 /area/liberty/outside/forest/hunting_lodge)
 "gV" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/recharger,
 /turf/simulated/floor/wood/wild2,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -2038,7 +2038,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "sW" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light{
 	dir = 1;
 	light_color = "#0892d0"
@@ -3071,7 +3071,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "TX" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/shovel/improvised,
 /obj/machinery/light/small,
 /turf/simulated/floor/wood/wild2,

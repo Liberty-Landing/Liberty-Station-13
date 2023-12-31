@@ -70,10 +70,10 @@
 /area/liberty/outside/mountainsolars)
 "am" = (
 /obj/random/furniture/pottedplant,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "au" = (
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "av" = (
 /obj/structure/flora/small/snow/rock7,
@@ -82,10 +82,10 @@
 "aw" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/air,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "aB" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "aE" = (
 /turf/simulated/floor/carpet/oracarpet,
@@ -267,7 +267,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "bk" = (
 /obj/machinery/door/airlock/multi_tile/glass{
@@ -326,7 +326,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "bu" = (
 /obj/map_data/liberty_solars,
@@ -439,7 +439,7 @@
 /obj/machinery/camera/network/engineering{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "cd" = (
 /obj/structure/table/standard,
@@ -478,7 +478,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "co" = (
 /obj/structure/flora/tree/snow/five,
@@ -566,7 +566,7 @@
 /area/liberty/outside/mountainsolars)
 "cS" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "cV" = (
 /obj/structure/cable{
@@ -707,7 +707,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "fn" = (
 /obj/structure/cable{
@@ -720,7 +720,7 @@
 "fo" = (
 /obj/structure/table/standard,
 /obj/item/device/pipe_painter,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "fp" = (
 /obj/structure/railing{
@@ -754,7 +754,7 @@
 "fL" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/vehicle/train/cargo/trolley,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "gD" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -775,17 +775,17 @@
 	},
 /obj/structure/closet/crate/solar,
 /obj/effect/floor_decal/industrial/box,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "gT" = (
 /obj/machinery/door/window/southright,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "hb" = (
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "hd" = (
 /obj/structure/catwalk,
@@ -812,7 +812,7 @@
 	name = "FILTER REFUSE"
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "hZ" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -821,7 +821,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "ik" = (
 /obj/structure/bed/chair/office/light{
@@ -830,7 +830,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "is" = (
 /obj/structure/flora/small/snow/rock4,
@@ -841,7 +841,7 @@
 /obj/item/contraband/poster/placed/generic/firesafety{
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "ix" = (
 /obj/machinery/vending/dinnerware,
@@ -853,14 +853,14 @@
 /area/liberty/outside/mountainsolars)
 "iY" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "ji" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "jm" = (
 /obj/structure/sign/warning/hazard_hotloop,
@@ -879,11 +879,11 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "ju" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "jE" = (
 /obj/structure/cable{
@@ -891,7 +891,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "jM" = (
 /obj/structure/catwalk,
@@ -905,11 +905,11 @@
 "kq" = (
 /obj/structure/closet/crate/solar,
 /obj/effect/floor_decal/industrial/box,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "ku" = (
 /obj/machinery/atmospherics/pipe/simple/visible/universal,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "kC" = (
 /obj/machinery/atmospherics/trinary/filter/m_filter{
@@ -922,7 +922,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "kP" = (
 /obj/effect/decal/cleanable/rubble,
@@ -935,7 +935,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "lm" = (
 /obj/structure/catwalk,
@@ -955,11 +955,11 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "lK" = (
 /obj/machinery/atmospherics/binary/circulator,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "lL" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -972,7 +972,7 @@
 /area/liberty/outside/mountainsolars)
 "lX" = (
 /obj/vehicle/train/cargo/trolley,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "mI" = (
 /turf/simulated/floor/rock,
@@ -986,13 +986,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "np" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "nt" = (
 /turf/simulated/wall,
@@ -1018,7 +1018,7 @@
 "nW" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/machinery/portable_atmospherics/canister/empty,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "nY" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
@@ -1026,24 +1026,24 @@
 	},
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "on" = (
 /obj/structure/closet/radiation,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "ou" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "oG" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "oJ" = (
 /obj/structure/railing{
@@ -1064,7 +1064,7 @@
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "oX" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -1075,7 +1075,7 @@
 	dir = 9
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "pl" = (
 /obj/machinery/computer/general_air_control/supermatter_core{
@@ -1086,7 +1086,7 @@
 	dir = 1;
 	frequency = 1442
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "pp" = (
 /obj/structure/railing{
@@ -1103,7 +1103,7 @@
 	dir = 8;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "pU" = (
 /obj/structure/sign/warning/high_voltage,
@@ -1115,7 +1115,7 @@
 /area/liberty/outside/mountainsolars)
 "qg" = (
 /obj/structure/bed/chair/office/light,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "qL" = (
 /obj/structure/table/glass,
@@ -1130,13 +1130,13 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "qX" = (
 /obj/machinery/camera/network/engineering{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "rM" = (
 /obj/random/scrap/dense_weighted,
@@ -1151,7 +1151,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "sh" = (
 /obj/structure/cable{
@@ -1159,7 +1159,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "sj" = (
 /obj/structure/table/standard,
@@ -1168,7 +1168,7 @@
 /obj/machinery/camera/network/engineering{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "st" = (
 /obj/structure/cable{
@@ -1180,7 +1180,7 @@
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "sS" = (
 /obj/structure/cable{
@@ -1195,7 +1195,7 @@
 /area/liberty/outside/mountainsolars)
 "sX" = (
 /obj/random/junk/cigbutt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "sZ" = (
 /obj/structure/catwalk,
@@ -1221,7 +1221,7 @@
 /area/liberty/outside/mountainsolars)
 "tr" = (
 /obj/machinery/door/window/southleft,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "tv" = (
 /obj/effect/decal/cleanable/rubble,
@@ -1245,7 +1245,7 @@
 /area/liberty/outside/mountainsolars)
 "uz" = (
 /obj/machinery/atmospherics/binary/pump,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "uY" = (
 /obj/machinery/atmospherics/pipe/simple/visible/red{
@@ -1258,11 +1258,11 @@
 /area/liberty/outside/mountainsolars)
 "vb" = (
 /obj/machinery/door/window/northright,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "vk" = (
 /obj/machinery/pipedispenser,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "vR" = (
 /obj/machinery/photocopier,
@@ -1291,7 +1291,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "wu" = (
 /obj/machinery/power/apc/hyper{
@@ -1304,7 +1304,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "wO" = (
 /obj/machinery/air_sensor{
@@ -1325,7 +1325,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "wZ" = (
 /obj/structure/catwalk,
@@ -1342,7 +1342,7 @@
 "xf" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/food/drinks/bottle/small/beer,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "xg" = (
 /obj/structure/closet/crate/solar,
@@ -1352,7 +1352,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "xk" = (
 /obj/structure/flora/big/rocks3,
@@ -1413,7 +1413,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "zi" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
@@ -1427,7 +1427,7 @@
 "zV" = (
 /obj/machinery/atmospherics/portables_connector,
 /obj/effect/floor_decal/industrial/warning/fulltile,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Af" = (
 /obj/random/scrap/dense_weighted,
@@ -1462,7 +1462,7 @@
 /area/liberty/outside/mountainsolars)
 "Br" = (
 /obj/machinery/atmospherics/pipe/manifold/visible,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "BA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -1471,7 +1471,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "BD" = (
 /obj/machinery/camera/network/engineering{
@@ -1492,7 +1492,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Cm" = (
 /obj/structure/table/glass,
@@ -1508,7 +1508,7 @@
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "CY" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -1516,12 +1516,12 @@
 	dir = 10
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Dm" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/atmospherics/pipe/manifold/visible/cyan,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "DA" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan,
@@ -1529,7 +1529,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "DI" = (
 /obj/structure/cable{
@@ -1540,14 +1540,14 @@
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "DJ" = (
 /obj/machinery/power/generator,
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "DU" = (
 /obj/machinery/door/airlock/highsecurity{
@@ -1555,7 +1555,7 @@
 	name = "Supermatter Chamber"
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "DV" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging/junction{
@@ -1584,27 +1584,27 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/engineering,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Es" = (
 /obj/item/modular_computer/console/preset/engineering/supermatter{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Ev" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Ew" = (
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "EB" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "EI" = (
 /obj/structure/cable{
@@ -1618,7 +1618,7 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "EN" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -1629,7 +1629,7 @@
 	dir = 5
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Fk" = (
 /obj/machinery/atmospherics/pipe/simple/heat_exchanging{
@@ -1656,7 +1656,7 @@
 "FD" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/vehicle/train/cargo/engine,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "FX" = (
 /obj/structure/invislight/outside,
@@ -1677,13 +1677,13 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "GD" = (
 /obj/machinery/atmospherics/pipe/simple/visible/cyan{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "GU" = (
 /obj/structure/closet/crate/solar,
@@ -1708,7 +1708,7 @@
 	dir = 6
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Hw" = (
 /obj/structure/railing{
@@ -1741,7 +1741,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "HW" = (
 /obj/machinery/vending/coffee,
@@ -1778,13 +1778,13 @@
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "JJ" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
 	target_pressure = 5000
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "JU" = (
 /obj/structure/boulder,
@@ -1797,14 +1797,14 @@
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Kb" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/yellow,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Kf" = (
 /obj/random/scrap/dense_weighted,
@@ -1814,7 +1814,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "KB" = (
 /obj/structure/railing{
@@ -1827,7 +1827,7 @@
 /obj/machinery/atmospherics/pipe/manifold/visible/blue{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "KR" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -1840,11 +1840,11 @@
 	dir = 6
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "KX" = (
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Ld" = (
 /obj/structure/cable{
@@ -1873,7 +1873,7 @@
 	dir = 5
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Lz" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible,
@@ -1893,7 +1893,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "LS" = (
 /obj/structure/flora/tree/pine,
@@ -1920,7 +1920,7 @@
 	dir = 4
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "MP" = (
 /obj/structure/catwalk,
@@ -1942,7 +1942,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "Nq" = (
 /obj/structure/flora/small/trailrocka4,
@@ -1966,7 +1966,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "NQ" = (
 /obj/effect/decal/cleanable/rubble,
@@ -1982,7 +1982,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Og" = (
 /obj/structure/low_wall,
@@ -2038,7 +2038,7 @@
 	name = "Engineering";
 	req_access = list(10)
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Qa" = (
 /obj/machinery/hologram/holopad,
@@ -2049,7 +2049,7 @@
 	dir = 4
 	},
 /obj/machinery/door/window/eastleft,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Qm" = (
 /obj/structure/railing{
@@ -2060,7 +2060,7 @@
 /area/liberty/outside/mountainsolars)
 "Qr" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "QL" = (
 /obj/structure/cable{
@@ -2068,7 +2068,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "QP" = (
 /obj/machinery/light{
@@ -2088,7 +2088,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Rm" = (
 /obj/structure/boulder,
@@ -2099,7 +2099,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "RP" = (
 /obj/structure/railing,
@@ -2116,7 +2116,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "SE" = (
 /obj/random/tool_upgrade/low_chance,
@@ -2126,7 +2126,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "SO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -2140,13 +2140,13 @@
 	dir = 1
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Te" = (
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "Tq" = (
 /obj/random/tool/advanced/low_chance,
@@ -2167,7 +2167,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "TF" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -2177,7 +2177,7 @@
 	dir = 9
 	},
 /obj/machinery/meter,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "TO" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -2202,14 +2202,14 @@
 	},
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/door/window/eastright,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Uj" = (
 /obj/machinery/atmospherics/valve/digital{
 	dir = 4;
 	name = "EMERGENCY COOLING"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Uk" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/red{
@@ -2218,10 +2218,10 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Um" = (
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "Un" = (
 /obj/machinery/atmospherics/binary/pump/high_power{
@@ -2231,7 +2231,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Uo" = (
 /obj/effect/decal/cleanable/rubble,
@@ -2240,7 +2240,7 @@
 /area/liberty/outside/mountainsolars)
 "UE" = (
 /obj/machinery/atmospherics/pipe/manifold4w/visible/yellow,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "UN" = (
 /obj/structure/sign/faction/technomancers{
@@ -2271,7 +2271,7 @@
 /obj/machinery/holoposter{
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "VU" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -2287,7 +2287,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "VW" = (
 /obj/structure/sign/warningnew/radiation,
@@ -2305,7 +2305,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "WE" = (
 /obj/structure/railing{
@@ -2346,7 +2346,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Xc" = (
 /obj/structure/catwalk,
@@ -2361,7 +2361,7 @@
 /obj/structure/bed/chair/office/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Xp" = (
 /obj/structure/catwalk,
@@ -2388,13 +2388,13 @@
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "Yv" = (
 /obj/item/device/radio/intercom{
 	pixel_y = 22
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "YI" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -2415,7 +2415,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "YR" = (
 /obj/structure/cable{
@@ -2424,13 +2424,13 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/engineering/dorm)
 "Zh" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "Zj" = (
 /obj/structure/cable{
@@ -2457,20 +2457,20 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "ZC" = (
 /obj/machinery/atmospherics/binary/pump{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/outside/mountainsolars)
 "ZH" = (
 /obj/machinery/atmospherics/binary/pump/high_power/on{
 	dir = 1;
 	target_pressure = 295
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/engineering/dorm)
 "ZY" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -2479,7 +2479,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/mountainsolars)
 "ZZ" = (
 /obj/structure/cable{

@@ -69,8 +69,8 @@
       wiki using the config, and not hardcode.
   - bugfix: Psychedelic jumpsuit no longer appears with the debug item icon.
   - bugfix: Tweaked the debug tile stack icon, fixed white grayplatform stacks having
-      the debug sprite, fixed steel platform tile stacks having their colors inverted.
-      Removed matter from the tiles parent, so cyborgs can't produce steel.
+      the debug sprite, fixed aluminium platform tile stacks having their colors inverted.
+      Removed matter from the tiles parent, so cyborgs can't produce aluminium.
   Nanako:
   - rscadd: Added several new fun features to mice, mostly ported from my work on
       Aurora, but some completely new too.

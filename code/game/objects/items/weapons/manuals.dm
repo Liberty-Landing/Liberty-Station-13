@@ -98,7 +98,7 @@
 				<br>
 				<h2>OPERATING PRINCIPLES</h2>
 				<br>
-				<li>The supermatter crystal serves as the fundamental power source of the engine. Upon being charged, it begins to emit large amounts of heat and radiation, as well and oxygen and plasma gas. As oxygen accelerates the reaction, and plasma carries the risk of fire, these must be filtered out. NOTE: Supermatter radiation will not charge radiation collectors.</li>
+				<li>The supermatter crystal serves as the fundamental power source of the engine. Upon being charged, it begins to emit large amounts of heat and radiation, as well and oxygen and Hydrogen gas. As oxygen accelerates the reaction, and Hydrogen carries the risk of fire, these must be filtered out. NOTE: Supermatter radiation will not charge radiation collectors.</li>
 				<br>
 				<li>Air in the reactor chamber housing the supermatter is circulated through the reactor loop, which passes through the filters and thermoelectric generators. The thermoelectric generators transfer heat from the reactor loop to the colder radiator loop, thereby generating power. Additional power is generated from internal turbines in the circulators.</li>
 				<br>
@@ -125,7 +125,7 @@
 				<ol>
 				<li>Ensure that radiation protection and meson goggles are worn at all times while working in the engine room.</li>
 				<li>Ensure that reactor and radiator loops are undamaged and unobstructed.</li>
-				<li>Ensure that plasma and oxygen gas exhaust from filters is properly contained or disposed. Do not allow exhaust pressure to exceed 4500 kPa.</li>
+				<li>Ensure that Hydrogen and oxygen gas exhaust from filters is properly contained or disposed. Do not allow exhaust pressure to exceed 4500 kPa.</li>
 				<li>Ensure that engine room Area Power Controller (APC) and engine Superconducting Magnetic Energy Storage unit (SMES) are properly charged.</li>
 				<li>Ensure that reactor temperature does not exceed 5000K. In event of reactor temperature exceeding 5000K, see EMERGENCY COOLING PROCEDURE.</li>
 				<li>In event of imminent and/or unavoidable delamination, see EJECTION PROCEDURE.</li>
@@ -380,7 +380,7 @@
 				<ul>
 					<li>The firefighting variation is made in a similar fashion.</li>
 					<li>A firesuit must be connected to the firefighter chassis for heat shielding.</li>
-					<li>Internal armor is plasteel for additional strength.</li>
+					<li>Internal armor is indsteel for additional strength.</li>
 					<li>External armor must be installed in 2 parts, totalling 10 sheets.</li>
 					<li>Completed mech is more resilient against fire, and is a bit more durable overall.</li>
 					<li>The Company is determined to ensure the safety of its <s>investments</s> employees.</li>
@@ -440,7 +440,7 @@
 				This machine, along with the Protolathe, is used to actually produce new devices. The Circuit Imprinter takes glass and various chemicals (depends on the design) to produce new circuit boards to build new machines or computers. It can even be used to print AI modules.
 
 				<h2>Protolathe</h2>
-				This machine is an advanced form of the Autolathe that produce non-circuit designs. Unlike the Autolathe, it can use processed metal, glass, solid plasma, silver, gold, and diamonds along with a variety of chemicals to produce devices.
+				This machine is an advanced form of the Autolathe that produce non-circuit designs. Unlike the Autolathe, it can use processed metal, glass, solid Hydrogen, silver, gold, and diamonds along with a variety of chemicals to produce devices.
 				The downside is that, again, not all devices you make are 100% reliable when you first discover them.
 
 				<h2>Reliability and You</h2>
@@ -1858,50 +1858,50 @@
 				<a name='2'><H3>Green</H3>
 				Ideally greens will be made when you have someone doing genetics. They are useful for purgers.
 				Water will create a ready to use genetics purger
-				plasma (more units at once the better) will create mutation toxin. This will turn people into slime people!
+				Hydrogen (more units at once the better) will create mutation toxin. This will turn people into slime people!
 				<a name='3'><h3>Metal</h3>
 				Metal slimes are a workhorse of the material production process. The first step in getting raw mats for our department.
-				Plasma will produce metal sheets and the wondrous plasteel! Used in mass quantities by those seeking armaments or a mech.
+				Hydrogen will produce metal sheets and the wondrous indsteel! Used in mass quantities by those seeking armaments or a mech.
 				Water will produce some plastic, ready to be molded into various shapes by lathes.
 				Radium will produce uranium. Useful for batteries and such. Be careful of the initial burst of radiation. Protection is needed!
 				<a name='4'><h3>Gold</h3>
 				Gold slimes are the gateway to adamantine slimes and produce the wondrous bars that every dragon dreams of.
-				plasma will produce gold! Wondrous gold.
+				Hydrogen will produce gold! Wondrous gold.
 				nutriment in 5 units will produce honey. Delicious and useful for other reactions.
 				<a name='5'><h3>Silver</h3>
 				Silver slimes are a strange breed. They produce food based items. Not quite sure why. But it tends to be tasty. They can also produce silver! For batteries and such.
-				Plasma will create a bright (eye protection suggested) flash before food appears! I've yet to figure out how it can cook such a strange abundance.
+				Hydrogen will create a bright (eye protection suggested) flash before food appears! I've yet to figure out how it can cook such a strange abundance.
 				Nutriment will create universal enzyme. A favorite of mine to make my favorite drinks. Sweet sweet curacao.
 				Liquid Uranium will create silver bars. Useful and generally needed in decent quantities.
 				<a name='6'><h3>Blue</h3>
 				Blue slimes are the least used slimes. They are generally used for glass.
 				Water will result in frost oil. In large quantities they can make quite a bit. But generally xenoflora grows its own plants for it.
-				Plasma will create glass and borosilicate glass. Borosilicate is harder to come by in a reliable manner so it does help with that if really needed.
+				Hydrogen will create glass and borosilicate glass. Borosilicate is harder to come by in a reliable manner so it does help with that if really needed.
 				<a name='7'><h3>Dark Blue</h3>
 				Dark blue slimes are a gateway slime to diamonds, creating a unique jelly inside.
-				Plasma results in a time delayed freezing effect that drastically lowers the temperature.
+				Hydrogen results in a time delayed freezing effect that drastically lowers the temperature.
 				Honey in 5 units results in the rarer pure slime jelly. A vary small amount is produced per reaction.
 				<a name='8'><h3>Orange</h3>
 				Orange slimes pave the way to upgrade clothing of various kinds. They lead to red slimes which in turn lead to oil.
 				Water will create a slime jar. This one in particular makes clothing resistant to high temps (Not Flames!) and even pressure resistant.
-				Plasma will create a violent reaction that results in mass fire. Be very careful about doing this, lest you roast yourself or others.
+				Hydrogen will create a violent reaction that results in mass fire. Be very careful about doing this, lest you roast yourself or others.
 				Blood will create pepper spray! Useful for would-be wife poachers or spiders.
 				<a name='9'><h3>Yellow</h3>
 				Easily one of my favorite slimes just for the light it creates. Although dangerous if given blood.
 				Blood causes an EMP effect with quite a decent size to it. This can kill people with mechanical organs.
 				Water creates slime lights! It's like having a floodlight in your pocket that never runs out!
-				Plasma will create a slime jar. This one gives clothing a higher resistance to shocks. It might take more than one jar to make it shock proof though.
+				Hydrogen will create a slime jar. This one gives clothing a higher resistance to shocks. It might take more than one jar to make it shock proof though.
 				<a name='10'><h3>Purple</h3>
 				Purple slimes can be a core slime if people want to use slime steroids to produce more cores.
-				Plasma creates a slime jar. This one causes baby slimes to split their core into 3 but only while still alive.
+				Hydrogen creates a slime jar. This one causes baby slimes to split their core into 3 but only while still alive.
 				Sugar creates more slime jelly. Usefull if you need to make more slime revival jars.
 				<a name='11'><h3>Dark Purple</h3>
-				Dark purple slimes are a staple. YOU NEED THESE! They are the only way to make more plasma without external shopping, trading or looting.
-				Plasma creates more plasma sheets! Grind these down!
+				Dark purple slimes are a staple. YOU NEED THESE! They are the only way to make more Hydrogen without external shopping, trading or looting.
+				Hydrogen creates more Hydrogen sheets! Grind these down!
 				Liquid Uranium, Gold and Silver all at once will create a random tool mod. I havn't figured out how they go about this reaction yet. But its like a roulette on what you get.
 				<a name='12'><h3>Red</h3>
 				A valuable yet very dangerous slime. They have a lot of reactions though.
-				Plasma makes Glycerol. A chemical used in Nitroglycerin... explosives.
+				Hydrogen makes Glycerol. A chemical used in Nitroglycerin... explosives.
 				Frost oil creates the rarely used materials of Osmium and Metallic Hydrogen.
 				Water creates a slime jar. This is one of the most wanted things xenobio produces. SPEED jars make armor easier to move in, but it takes alot of them.
 				Blood... Never use this. It enrages all the slimes around. They become nothing short of rabid and completely hostile to everything.
@@ -1910,18 +1910,18 @@
 				Nutriment in 5 units will create a slime jar useful for taming baby slimes.
 				Honey in 5 units will create a similar slime jar but for adults.
 				<a name='14'><h3>Black</h3>
-				Plasma will create a mutation toxin that's stronger than greens... It will fully turn someone into a slime... Very dangerous.
-				Advanced Mutation Toxin will cause a reaction like Grey Slimes with Plasma. Except it can create a wide variety of colors instead of just grey!
+				Hydrogen will create a mutation toxin that's stronger than greens... It will fully turn someone into a slime... Very dangerous.
+				Advanced Mutation Toxin will cause a reaction like Grey Slimes with Hydrogen. Except it can create a wide variety of colors instead of just grey!
 				<a name='15'><h3>Oil</h3>
 				Oil slimes are a strange mix. They have few reactions, most of which are nothing short of illegal. But the nonslipping power of them makes them wonderful.
-				Plasma... This is nothing short of a hellishly strong hand grenade. Blackshield wishes they had fire power like this thing.
+				Hydrogen... This is nothing short of a hellishly strong hand grenade. Blackshield wishes they had fire power like this thing.
 				Water will create a intresting mod for weapons. When applied to scopes it gives them thermal vision... which sadly is illegal.
 				Space Lube in 5 units will create a reverse friction substance for shoes! NON SLIP SOLES! No more slipping on wet floors!
 				<a name='16'><h3>Light Pink</h3>
 				A strange thing to see such friendly reactions become so forceful. Plastic produces a odd colored auto pistol. And wood pulp is reformed into bats.
 				<a name='17'><h3>Adamantine</h3>
 				The only source of renewable diamonds. They take alot of work to create regardless due to needing dark blue slimes.
-				Plasma will create various strange runes upon the floor. I've worked on deciphering them but haven't fully been able to do so. I've seen golems appear from these runes however.
+				Hydrogen will create various strange runes upon the floor. I've worked on deciphering them but haven't fully been able to do so. I've seen golems appear from these runes however.
 				Pure slime jelly will create diamonds! This creates some biomatter too leading me to believe the pure slime jelly is actually seperating the core into various aspects somehow.
 				Liquid Uranium, Gold and Silver at the same time will create Platinum. Useful for posicells and a few stronger goods in RnD
 				<a name='18'><h3>Rainbow</h3>

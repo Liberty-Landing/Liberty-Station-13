@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aaa" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -73,7 +73,7 @@
 	req_one_access = list(1,63,19,10);
 	pixel_y = 26
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "aal" = (
 /obj/machinery/washing_machine,
@@ -84,13 +84,13 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "aam" = (
 /obj/machinery/camera/network/cev_eris{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "aan" = (
 /obj/effect/decal/cleanable/rubble,
@@ -110,7 +110,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "aaq" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -118,7 +118,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "aar" = (
 /obj/machinery/light{
@@ -631,7 +631,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "abE" = (
 /obj/structure/disposalpipe/segment,
@@ -650,7 +650,7 @@
 	req_access = newlist();
 	req_one_access = list(1,70)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/side/f2section1)
 "abJ" = (
 /obj/structure/catwalk,
@@ -724,7 +724,7 @@
 "abT" = (
 /obj/structure/table/standard,
 /obj/item/device/lighting/toggleable/lamp,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -739,13 +739,13 @@
 /area/liberty/engineering/atmos/surface)
 "abV" = (
 /obj/machinery/papershredder,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/security/vacantoffice2)
 "abW" = (
 /obj/structure/table/standard,
 /obj/item/pen/multi,
 /obj/item/paper_bin,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -781,7 +781,7 @@
 /obj/structure/bed/chair/office/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -813,8 +813,8 @@
 /obj/structure/table/rack/shelf,
 /obj/structure/catwalk,
 /obj/effect/floor_decal/border/borderfloor/cee,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/prep)
 "ack" = (
@@ -866,7 +866,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -877,7 +877,7 @@
 /obj/machinery/camera/network/third_section{
 	dir = 9
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/security/vacantoffice2)
 "acp" = (
 /obj/structure/disposalpipe/segment{
@@ -956,7 +956,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "acA" = (
 /obj/structure/curtain/open,
@@ -1061,7 +1061,7 @@
 	name = "Front Desk";
 	req_access = list(1,19)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "acR" = (
 /obj/structure/cable/green{
@@ -1081,7 +1081,7 @@
 	name = "Church";
 	req_access = list(70)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/absolutism/bioreactor)
 "acT" = (
 /obj/structure/disposalpipe/segment{
@@ -1140,7 +1140,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -1278,7 +1278,7 @@
 	name = "Sergeant Office";
 	req_access = list(1)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/tactical_blackshield)
 "ado" = (
 /obj/structure/disposalpipe/segment{
@@ -1395,7 +1395,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/quartermaster/vault{
 	name = "\improper Clinic"
 	})
@@ -1427,7 +1427,7 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "adE" = (
 /obj/machinery/hologram/holopad,
@@ -1456,7 +1456,7 @@
 /area/liberty/engineering/atmos/surface)
 "adH" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -1524,7 +1524,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "adO" = (
 /obj/machinery/hologram/holopad,
@@ -1612,7 +1612,7 @@
 /area/liberty/security/triage_blackshield)
 "adX" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "adY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1649,7 +1649,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "aeb" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
@@ -1670,7 +1670,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "aec" = (
 /obj/structure/disposalpipe/segment,
@@ -1710,7 +1710,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "aei" = (
 /obj/effect/floor_decal/industrial/loading/white{
@@ -1846,7 +1846,7 @@
 "aez" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/liquid_fuel,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "aeA" = (
 /obj/structure/bed/chair/shuttle{
@@ -1911,7 +1911,7 @@
 	dir = 1;
 	icon_state = "term"
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "aeK" = (
 /turf/simulated/shuttle/wall/escpod{
@@ -2335,7 +2335,7 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "afF" = (
 /obj/structure/disposalpipe/segment,
@@ -2344,14 +2344,14 @@
 	icon_state = "tube1";
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "afG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "afH" = (
 /obj/structure/disposalpipe/segment,
@@ -2362,7 +2362,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "afI" = (
 /obj/machinery/door/blast/regular{
@@ -2774,7 +2774,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "agz" = (
 /obj/machinery/power/torchbearer,
@@ -2883,7 +2883,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -3178,7 +3178,7 @@
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "ahv" = (
 /obj/structure/cable/yellow{
@@ -3522,7 +3522,7 @@
 /area/liberty/dungeon/outside/abandoned_solars)
 "aig" = (
 /obj/machinery/recharge_station/upgraded_t_three,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "aih" = (
 /obj/structure/extinguisher_cabinet{
@@ -3602,7 +3602,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/abandoned_solars)
 "aio" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/crew_quarters/hydroponics/garden)
@@ -3695,7 +3695,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/abandoned_solars)
 "aiD" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/item/tool/shovel/improvised,
 /turf/simulated/floor/tiled/dark/monofloor,
@@ -3835,7 +3835,7 @@
 	})
 "aiV" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "aiW" = (
 /obj/structure/closet/wall_mounted/firecloset{
@@ -3849,7 +3849,7 @@
 	icon_state = "box_corners_red"
 	},
 /obj/effect/floor_decal/industrial/box/red/corners,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -3887,7 +3887,7 @@
 /obj/structure/table/woodentable,
 /obj/item/paper_bin,
 /obj/item/pen,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "ajd" = (
 /obj/structure/table/woodentable,
@@ -3895,7 +3895,7 @@
 	department = "Foreman's Office"
 	},
 /obj/random/booze/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "aje" = (
 /obj/machinery/light{
@@ -4195,7 +4195,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/crew_quarters/hydroponics/garden)
 "ajP" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/machinery/recharger,
 /obj/structure/cable/green{
@@ -4981,7 +4981,7 @@
 /obj/machinery/alarm{
 	pixel_y = 23
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/security/laber_area)
 "anu" = (
 /obj/structure/boulder,
@@ -5054,7 +5054,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/border/borderfloor/cee,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/prep)
 "aqI" = (
@@ -5084,7 +5084,7 @@
 "atd" = (
 /obj/structure/reagent_dispensers/watertank/huge,
 /obj/structure/invislight,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "atr" = (
 /obj/structure/table/steel_reinforced,
@@ -5094,7 +5094,7 @@
 	},
 /obj/item/paper_bin,
 /obj/item/pen/multi,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "avt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5114,7 +5114,7 @@
 	pixel_y = 0
 	},
 /obj/structure/cable/green,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "awp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5138,7 +5138,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "axd" = (
 /obj/structure/low_wall,
@@ -5262,7 +5262,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "aCC" = (
 /obj/structure/cable/yellow{
@@ -5305,7 +5305,7 @@
 /obj/machinery/alarm{
 	pixel_y = 26
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "aDU" = (
 /obj/machinery/camera/network/cev_eris,
@@ -5341,7 +5341,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "aFI" = (
 /obj/structure/flora/small/grassa3,
@@ -5403,7 +5403,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "aKh" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -5424,7 +5424,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals5{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "aLc" = (
 /obj/structure/flora/small/bushc3,
@@ -5458,7 +5458,7 @@
 /obj/structure/closet/emcloset/legacy,
 /obj/item/grenade/chem_grenade/metalfoam,
 /obj/item/grenade/chem_grenade/metalfoam,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -5531,7 +5531,7 @@
 	name = "Expedition prep";
 	req_access = list(5)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -5566,7 +5566,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -5677,7 +5677,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "aUv" = (
 /obj/effect/floor_decal/corner_techfloor_grid/diagonal,
@@ -5688,7 +5688,7 @@
 /obj/structure/mirror{
 	pixel_x = 28
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "aUI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5745,7 +5745,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "aXS" = (
 /obj/structure/flora/small/busha1,
@@ -5791,7 +5791,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -5802,7 +5802,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "bci" = (
 /turf/simulated/wall/r_wall,
@@ -5971,7 +5971,7 @@
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "bjU" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -5985,7 +5985,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -6004,7 +6004,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -6029,7 +6029,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "bmO" = (
 /obj/machinery/light{
@@ -6059,7 +6059,7 @@
 	req_one_access = list(1,70)
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/side/f2section1)
 "bny" = (
 /obj/machinery/space_heater,
@@ -6106,7 +6106,7 @@
 /area/liberty/outside/forest)
 "bqa" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -6118,7 +6118,7 @@
 /obj/machinery/door/blast/regular/open{
 	id = "Colony Lockdown"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "bqf" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -6207,7 +6207,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "btt" = (
 /obj/structure/flora/small/bushb1,
@@ -6239,7 +6239,7 @@
 	dir = 4;
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "bvn" = (
 /obj/structure/closet/secure_closet/armorer,
@@ -6287,7 +6287,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "bxe" = (
 /obj/machinery/newscaster{
@@ -6298,7 +6298,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/security/tactical_blackshield)
 "bxH" = (
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "bxJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6416,11 +6416,11 @@
 	dir = 4;
 	pixel_x = 11
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "bDQ" = (
 /obj/structure/closet/secure_closet/personal/trapper,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "bEP" = (
 /obj/structure/flora/tree/jungle/variant2,
@@ -6517,7 +6517,7 @@
 	},
 /obj/item/oddity/rare/golden_cup,
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "bHY" = (
 /obj/structure/flora/ausbushes/palebush,
@@ -6564,7 +6564,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/floor_decal/industrial/warningred,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "bIQ" = (
 /obj/structure/flora/ausbushes/genericbush,
@@ -6588,7 +6588,7 @@
 /obj/machinery/door/airlock/maintenance_interior{
 	req_access = list(70)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/absolutism/bioreactor)
 "bJp" = (
 /obj/structure/flora/small/bushc2,
@@ -6688,7 +6688,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "bOe" = (
 /obj/structure/disposalpipe/segment{
@@ -6712,7 +6712,7 @@
 "bPl" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "bPE" = (
 /mob/living/simple_animal/hostile/bear,
@@ -6725,7 +6725,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "bPY" = (
 /obj/structure/sign/warning/caution/small,
@@ -6828,7 +6828,7 @@
 	icon_state = "alarm0";
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "bYM" = (
 /obj/effect/floor_decal/industrial/box/white,
@@ -6904,7 +6904,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "cbM" = (
 /obj/structure/flora/small/grassa4,
@@ -6925,7 +6925,7 @@
 	icon_state = "term"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "cbX" = (
 /turf/simulated/floor/asteroid/grass,
@@ -7064,7 +7064,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "ciA" = (
 /obj/structure/multiz/stairs/enter/bottom,
@@ -7105,7 +7105,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "ckc" = (
 /obj/structure/flora/tree/jungle_small/variant4,
@@ -7195,7 +7195,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "coX" = (
 /turf/simulated/wall/r_wall,
@@ -7258,7 +7258,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "csU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7273,7 +7273,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "cuk" = (
 /obj/machinery/door/airlock/external,
@@ -7288,7 +7288,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "cuZ" = (
 /turf/simulated/floor/beach/sand,
@@ -7312,7 +7312,7 @@
 "cxN" = (
 /obj/machinery/light,
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "cyn" = (
 /obj/structure/table/rack/shelf,
@@ -7337,7 +7337,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "cyu" = (
 /obj/structure/reagent_dispensers/biomatter,
@@ -7457,7 +7457,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "cDR" = (
 /obj/effect/floor_decal/industrial/warningred{
@@ -7481,11 +7481,11 @@
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "cEo" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "cEy" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -7548,13 +7548,13 @@
 /obj/machinery/alarm{
 	pixel_y = 26
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "cHt" = (
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "cHu" = (
 /obj/structure/flora/tree/jungle/variant1,
@@ -7575,7 +7575,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "cIv" = (
 /obj/random/scrap/moderate_weighted/low_chance,
@@ -7618,7 +7618,7 @@
 	pixel_x = -25;
 	req_one_access = list(1,63,19,10)
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "cJt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7631,14 +7631,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "cJy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/modular_computer/console/preset/engineering/shield{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "cJE" = (
 /obj/structure/flora/small/rock2,
@@ -7667,7 +7667,7 @@
 "cKj" = (
 /obj/structure/table/woodentable,
 /obj/machinery/microwave,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "cKp" = (
 /obj/machinery/vending/hydroseeds{
@@ -7683,7 +7683,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "cMb" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -7758,7 +7758,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "cPX" = (
 /obj/structure/flora/small/busha3,
@@ -7853,14 +7853,14 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "cTs" = (
 /obj/machinery/camera/network/cev_eris{
 	dir = 4
 	},
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "cTu" = (
 /obj/structure/flora/big/bush3,
@@ -7887,7 +7887,7 @@
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "cUu" = (
 /obj/structure/cable/yellow{
@@ -7947,7 +7947,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "cWE" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -8018,7 +8018,7 @@
 /area/liberty/pros/prep)
 "cYM" = (
 /obj/effect/damagedfloor/rust,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "cYP" = (
 /obj/machinery/conveyor_switch/oneway{
@@ -8185,7 +8185,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "dka" = (
 /obj/effect/floor_decal/industrial/outline/red,
@@ -8196,7 +8196,7 @@
 /obj/item/stock_parts/smes_coil/super_io,
 /obj/item/stock_parts/smes_coil/super_io,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "dkB" = (
 /obj/machinery/light{
@@ -8215,7 +8215,7 @@
 /turf/simulated/floor/wood/wild3,
 /area/liberty/command/prime)
 "dkW" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/alarm{
 	pixel_y = 23
 	},
@@ -8238,7 +8238,7 @@
 /area/liberty/outside/meadow)
 "dnb" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "dnP" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -8284,7 +8284,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "dpo" = (
 /obj/structure/flora/big/bush1,
@@ -8294,7 +8294,7 @@
 /area/liberty/outside/forest)
 "dpz" = (
 /obj/structure/grille/broken,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "dpB" = (
 /obj/structure/cable/green{
@@ -8361,7 +8361,7 @@
 	name = "Church";
 	req_access = list(70)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/absolutism/storage)
 "duN" = (
 /obj/structure/sign/faction/neotheology_cross/gold{
@@ -8470,7 +8470,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "dyA" = (
 /obj/structure/disposalpipe/segment{
@@ -8575,7 +8575,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "dEY" = (
 /obj/effect/decal/cleanable/generic,
@@ -8585,7 +8585,7 @@
 /turf/simulated/floor/carpet/oracarpet,
 /area/liberty/pros/foreman)
 "dGk" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/security/laber_area)
 "dHx" = (
 /obj/structure/disposalpipe/segment,
@@ -8668,7 +8668,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/farm)
 "dKC" = (
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "dKE" = (
 /obj/structure/table/marble,
@@ -8730,7 +8730,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -8753,7 +8753,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -8838,7 +8838,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/tactical_blackshield)
 "dSH" = (
 /obj/structure/catwalk,
@@ -8964,7 +8964,7 @@
 	name = "Expedition prep";
 	req_access = list(5)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -9054,7 +9054,7 @@
 	dir = 1;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "edg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -9068,16 +9068,16 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "edz" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "edL" = (
 /obj/landmark/join/start/shipbreaker,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "edT" = (
 /obj/random/traps/low_chance,
@@ -9110,7 +9110,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -9123,7 +9123,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "egp" = (
 /obj/structure/cable/yellow{
@@ -9168,7 +9168,7 @@
 	name = "Exploration";
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "eiJ" = (
 /obj/structure/bed/chair/comfy/brown{
@@ -9233,14 +9233,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "eop" = (
 /obj/machinery/suit_storage_unit/standard_unit,
 /obj/machinery/alarm{
 	pixel_y = 26
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -9269,7 +9269,7 @@
 	id = "labor_internal"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "epR" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -9278,7 +9278,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "eqp" = (
 /turf/simulated/floor/tiled/white/greencorner,
@@ -9304,7 +9304,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "erT" = (
 /turf/simulated/floor/asteroid/grass,
@@ -9326,7 +9326,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -9554,7 +9554,7 @@
 	pixel_y = -30
 	},
 /obj/effect/floor_decal/industrial/warningred,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "eET" = (
 /obj/effect/damagedfloor/fire,
@@ -9604,7 +9604,7 @@
 /obj/structure/bed/chair/office/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -9630,7 +9630,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "eLe" = (
 /obj/structure/table/steel_reinforced,
@@ -9653,7 +9653,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "eMc" = (
 /obj/effect/floor_decal/industrial/warningwhite,
@@ -9662,7 +9662,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "eMo" = (
 /obj/structure/disposalpipe/junction{
@@ -9670,7 +9670,7 @@
 	icon_state = "pipe-j1"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "eMP" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -9691,7 +9691,7 @@
 	},
 /obj/random/scrap/sparse_even/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "eNf" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -9699,7 +9699,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/liquid_fuel,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "eNg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -9720,7 +9720,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "ePd" = (
 /obj/structure/flora/ausbushes/stalkybush,
@@ -9742,13 +9742,13 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/absolutism/chapel)
 "ePM" = (
 /obj/structure/sign/department/dock{
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "eQa" = (
 /obj/structure/table/woodentable,
@@ -9802,7 +9802,7 @@
 "eSk" = (
 /obj/landmark/join/start/trapper,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "eSP" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -9827,7 +9827,7 @@
 	},
 /obj/machinery/door/firedoor/multi_tile,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "eTL" = (
 /obj/structure/table/woodentable,
@@ -9903,7 +9903,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "eXL" = (
 /obj/machinery/holoposter{
@@ -9943,7 +9943,7 @@
 /obj/structure/disposalpipe/junction/yjunction{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "eYO" = (
 /obj/machinery/door/airlock{
@@ -9996,7 +9996,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "fcx" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -10011,7 +10011,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "fdA" = (
 /obj/structure/flora/big/bush3,
@@ -10025,7 +10025,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "fdV" = (
 /obj/effect/floor_decal/industrial/loading/white{
@@ -10037,7 +10037,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "fee" = (
 /obj/structure/flora/tree/jungle_small/variant2,
@@ -10104,12 +10104,12 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "fhL" = (
 /obj/random/scrap/moderate_weighted,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "fiB" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -10125,7 +10125,7 @@
 	pixel_y = -30
 	},
 /obj/effect/floor_decal/industrial/warningred,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "fjy" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -10133,7 +10133,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "fjV" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/camera/network/third_section,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/pros/prep)
@@ -10165,7 +10165,7 @@
 /area/liberty/outside/meadow)
 "fnk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "fnJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10177,7 +10177,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "foo" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -10190,7 +10190,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "fps" = (
 /obj/structure/disposalpipe/segment,
@@ -10218,7 +10218,7 @@
 /obj/structure/sign/faction/technomancers{
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "frZ" = (
 /obj/structure/invislight,
@@ -10248,7 +10248,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "ftK" = (
 /obj/random/junkfood,
@@ -10265,12 +10265,12 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 9
 	},
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "fuk" = (
 /obj/structure/table/rack,
 /obj/random/scrap/dense_weighted/low_chance,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/proelav)
 "fuK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -10293,7 +10293,7 @@
 /area/liberty/command/prime)
 "fuN" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "fuO" = (
 /obj/item/modular_computer/telescreen/preset/generic{
@@ -10302,12 +10302,12 @@
 	},
 /obj/structure/table/standard,
 /obj/random/booze/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/foreman)
 "fvz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "fwm" = (
 /obj/structure/flora/ausbushes/reedbush,
@@ -10371,7 +10371,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/security/laber_area)
 "fzm" = (
 /obj/structure/table/woodentable,
@@ -10442,7 +10442,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "fDg" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -10583,7 +10583,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -10625,7 +10625,7 @@
 	pixel_y = -30
 	},
 /obj/effect/floor_decal/industrial/warningred,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -10639,7 +10639,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "fPk" = (
 /obj/structure/flora/big/rocks3,
@@ -10657,13 +10657,13 @@
 /area/liberty/outside/meadow)
 "fQy" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/absolutism/vectorrooms)
 "fQH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -10686,7 +10686,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -10705,7 +10705,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -10725,14 +10725,14 @@
 	icon_state = "2-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "fTr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/vending/security{
 	categories = 3
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "fTA" = (
 /obj/machinery/power/torchbearer,
@@ -10845,13 +10845,13 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "fYa" = (
 /obj/structure/table/rack,
 /obj/item/clothing/suit/space/anomaly,
 /obj/item/clothing/head/helmet/space/anomaly,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -10896,7 +10896,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "fZZ" = (
 /obj/structure/catwalk,
@@ -10950,7 +10950,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "gcQ" = (
 /obj/item/device/radio/intercom/department/security{
@@ -11081,7 +11081,7 @@
 /obj/machinery/light,
 /obj/structure/table/steel_reinforced,
 /obj/item/storage/box/drinkingglasses,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "gjT" = (
 /obj/effect/decal/cleanable/dirt,
@@ -11127,7 +11127,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "glV" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -11150,7 +11150,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "gml" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -11174,7 +11174,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -11213,7 +11213,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "gph" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -11245,7 +11245,7 @@
 /obj/machinery/door/blast/regular/open{
 	id = "Colony Lockdown"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "grV" = (
 /obj/structure/medical_stand,
@@ -11253,7 +11253,7 @@
 /area/liberty/security/triage_blackshield)
 "grZ" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "gst" = (
 /obj/random/traps/low_chance,
@@ -11280,7 +11280,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "gtD" = (
 /obj/structure/catwalk,
@@ -11302,7 +11302,7 @@
 /obj/structure/sign/department/dock{
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "gtX" = (
 /obj/machinery/door/airlock/external,
@@ -11311,7 +11311,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/machinery/door/firedoor/multi_tile,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "guw" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -11353,7 +11353,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "gwx" = (
 /obj/structure/flora/big/bush2,
@@ -11376,7 +11376,7 @@
 /area/liberty/engineering/atmos/surface)
 "gyh" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "gyw" = (
 /obj/structure/bed/chair/comfy/brown,
@@ -11394,7 +11394,7 @@
 /obj/machinery/light_switch{
 	pixel_x = 28
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -11669,14 +11669,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "gOm" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "gOq" = (
 /obj/structure/disposalpipe/segment{
@@ -11694,7 +11694,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/prep)
 "gOC" = (
 /obj/structure/flora/tree/jungle/variant5,
@@ -11784,7 +11784,7 @@
 /area/liberty/outside/forest)
 "gTd" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -11881,7 +11881,7 @@
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "gWR" = (
 /obj/structure/table/rack/shelf,
@@ -11996,7 +11996,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "haQ" = (
 /obj/structure/table/rack/shelf,
@@ -12095,7 +12095,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "hfP" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -12150,7 +12150,7 @@
 /area/liberty/dungeon/outside/burned_outpost)
 "hjs" = (
 /obj/machinery/camera/network/third_section,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "hjH" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -12165,7 +12165,7 @@
 /area/liberty/outside/forest)
 "hkn" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "hkt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -12179,7 +12179,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "hky" = (
 /turf/simulated/shuttle/wall/mining{
@@ -12233,7 +12233,7 @@
 	dir = 4;
 	pixel_x = 30
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "hnH" = (
 /obj/structure/catwalk,
@@ -12269,7 +12269,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals_central1{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/prep)
 "hol" = (
 /obj/structure/flora/small/grassa4,
@@ -12291,7 +12291,7 @@
 /area/liberty/crew_quarters/hydroponics/garden)
 "hpo" = (
 /obj/structure/bed/chair,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "hqd" = (
 /obj/structure/flora/small/rock5,
@@ -12320,7 +12320,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "hsj" = (
 /obj/item/bedsheet/captaindouble,
@@ -12388,7 +12388,7 @@
 	},
 /obj/random/traps/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "huS" = (
 /obj/structure/catwalk,
@@ -12503,7 +12503,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "hzk" = (
 /obj/random/junk/low_chance,
@@ -12526,7 +12526,7 @@
 /area/liberty/absolutism/bioreactor)
 "hAn" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "hAE" = (
 /obj/structure/flora/ausbushes/reedbush,
@@ -12544,7 +12544,7 @@
 	})
 "hBM" = (
 /obj/structure/bed/chair/office/light,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -12567,7 +12567,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "hDa" = (
 /obj/structure/cable/green{
@@ -12640,7 +12640,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/security/laber_area)
 "hFG" = (
 /obj/structure/cable/yellow{
@@ -12670,7 +12670,7 @@
 	dir = 4;
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -12682,10 +12682,10 @@
 /area/liberty/outside/forest)
 "hGc" = (
 /obj/machinery/camera/network/third_section,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "hGg" = (
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "hGl" = (
 /obj/machinery/optable/altar,
@@ -12748,7 +12748,7 @@
 	dir = 1;
 	icon_state = "pipe-j2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "hKq" = (
 /obj/random/scrap/dense_weighted/low_chance,
@@ -12812,12 +12812,12 @@
 /obj/structure/table/standard,
 /obj/item/device/camera,
 /obj/item/device/camera,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
 "hML" = (
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -12887,7 +12887,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "hQN" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -13036,7 +13036,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "hWS" = (
 /obj/structure/catwalk,
@@ -13294,7 +13294,7 @@
 	pixel_y = 28
 	},
 /obj/random/booze/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/foreman)
 "igt" = (
 /obj/structure/disposalpipe/segment{
@@ -13341,7 +13341,7 @@
 /obj/effect/floor_decal/industrial/warningwhite/corner{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "iia" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13425,7 +13425,7 @@
 /obj/structure/table/rack,
 /obj/random/scrap/dense_weighted/low_chance,
 /obj/machinery/camera/network/cev_eris,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/proelav)
 "ilt" = (
 /obj/structure/catwalk,
@@ -13472,7 +13472,7 @@
 "imt" = (
 /obj/random/cluster/spiders,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "imC" = (
 /turf/simulated/wall/r_wall,
@@ -13534,7 +13534,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "iqF" = (
 /obj/structure/flora/small/grassb3,
@@ -13550,7 +13550,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -13571,7 +13571,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "isu" = (
 /turf/simulated/shuttle/wall/mining{
@@ -13612,7 +13612,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "ivO" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -13637,7 +13637,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "iwO" = (
 /obj/structure/bookcase{
@@ -13694,7 +13694,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -13702,7 +13702,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "iyh" = (
 /obj/item/remains/lizard,
@@ -13717,11 +13717,11 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "iAf" = (
 /obj/random/mob/roaches,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "iBe" = (
 /obj/effect/floor_decal/industrial/hatch,
@@ -13786,7 +13786,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "iCK" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10{
@@ -13830,7 +13830,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "iDO" = (
 /obj/structure/flora/tree/jungle/variant3,
@@ -14047,7 +14047,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "iLb" = (
 /obj/machinery/light{
@@ -14102,7 +14102,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "iNY" = (
 /obj/structure/cable/green{
@@ -14148,7 +14148,7 @@
 /obj/machinery/camera/network/third_section{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "iRO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -14190,7 +14190,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "iSH" = (
 /obj/structure/table/rack/shelf,
@@ -14287,7 +14287,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/triage_blackshield)
 "iYu" = (
 /obj/item/modular_computer/console/preset/security/records{
@@ -14316,7 +14316,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "iYJ" = (
 /obj/structure/flora/small/grassb4,
@@ -14353,7 +14353,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "iZn" = (
 /obj/structure/cable/yellow{
@@ -14406,7 +14406,7 @@
 	icon_state = "box_corners_white"
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals3,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "jaM" = (
 /obj/machinery/camera/network/security{
@@ -14463,7 +14463,7 @@
 /obj/item/device/radio/intercom{
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "jhk" = (
 /obj/structure/disposalpipe/junction{
@@ -14475,7 +14475,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -14536,7 +14536,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "jjP" = (
 /obj/random/cluster/spiders/low_chance,
@@ -14593,7 +14593,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/tactical_blackshield)
 "jpo" = (
 /obj/structure/table/standard,
@@ -14642,7 +14642,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "jrz" = (
 /obj/structure/table/rack/shelf,
@@ -14676,7 +14676,7 @@
 "jtE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "jtU" = (
 /obj/structure/flora/small/busha3,
@@ -14740,7 +14740,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/washing_machine,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "jzc" = (
 /obj/machinery/disposal,
@@ -14890,7 +14890,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "jHu" = (
 /obj/structure/sign/faction/neotheology{
@@ -14907,7 +14907,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "jIj" = (
 /obj/effect/floor_decal/industrial/road/warning4,
@@ -14924,7 +14924,7 @@
 	icon_state = "tube1"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "jKd" = (
 /obj/structure/disposalpipe/segment,
@@ -15020,7 +15020,7 @@
 	dir = 8;
 	icon_state = "box_corners_white"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "jPh" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -15092,7 +15092,7 @@
 "jTo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "jTI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -15102,7 +15102,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -15148,7 +15148,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "jWi" = (
 /obj/structure/disposalpipe/segment{
@@ -15293,7 +15293,7 @@
 	pixel_x = -26;
 	pixel_y = -10
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/lathe_disk,
 /obj/machinery/light/small{
 	dir = 8
@@ -15351,7 +15351,7 @@
 	icon_state = "4-8"
 	},
 /obj/structure/disposalpipe/junction,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "kiG" = (
 /obj/effect/floor_decal/industrial/stand_clear/red{
@@ -15367,7 +15367,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/armory_blackshield)
 "kkB" = (
 /obj/structure/cable/green{
@@ -15440,7 +15440,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "knt" = (
 /obj/structure/flora/tree/jungle/variant5,
@@ -15484,7 +15484,7 @@
 	icon_state = "box_corners_red"
 	},
 /obj/effect/floor_decal/industrial/box/red/corners,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -15524,7 +15524,7 @@
 	icon_state = "pipe-j2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "kse" = (
 /obj/structure/grille/broken,
@@ -15559,7 +15559,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "kwc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -15606,7 +15606,7 @@
 	pixel_x = 0;
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -15634,7 +15634,7 @@
 	icon_state = "warningcorner"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "kBY" = (
 /obj/structure/table/woodentable,
@@ -15749,7 +15749,7 @@
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "kGc" = (
 /obj/structure/disposalpipe/segment{
@@ -15784,7 +15784,7 @@
 "kHD" = (
 /obj/random/traps/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "kIo" = (
 /obj/structure/table/glass,
@@ -15913,7 +15913,7 @@
 "kMA" = (
 /obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "kNH" = (
 /obj/structure/bed/chair{
@@ -16009,7 +16009,7 @@
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "kUu" = (
 /obj/structure/flora/big/rocks3,
@@ -16043,7 +16043,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "kVQ" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -16063,7 +16063,7 @@
 	pixel_y = 0
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -16115,11 +16115,11 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "lbi" = (
 /obj/machinery/mineral/processing_unit/laber,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "lbo" = (
 /turf/simulated/floor/asteroid/dirt,
@@ -16128,7 +16128,7 @@
 /obj/structure/bed/chair{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "lbG" = (
 /obj/machinery/camera/network/cev_eris{
@@ -16225,7 +16225,7 @@
 /obj/machinery/camera/network/third_section{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "lgG" = (
 /obj/machinery/light{
@@ -16340,7 +16340,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "lps" = (
 /obj/item/device/radio/intercom{
@@ -16408,7 +16408,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "lsl" = (
 /obj/structure/flora/small/grassb3,
@@ -16543,7 +16543,7 @@
 /area/liberty/absolutism/vectorrooms)
 "lAh" = (
 /obj/random/scrap/sparse_even/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "lAx" = (
 /obj/structure/cable/yellow,
@@ -16562,7 +16562,7 @@
 "lAW" = (
 /obj/effect/decal/cleanable/generic,
 /obj/landmark/storyevent/midgame_stash_spawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "lBI" = (
 /obj/machinery/door/airlock/engineering{
@@ -16576,7 +16576,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/engineering/atmos/surface)
 "lBJ" = (
 /obj/effect/floor_decal/industrial/warningwhite,
@@ -16608,7 +16608,7 @@
 	},
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "lCJ" = (
 /obj/random/mob/roaches/low_chance,
@@ -16652,7 +16652,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "lED" = (
 /obj/landmark/storyevent/hidden_vent_antag,
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -16700,7 +16700,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "lIy" = (
 /obj/effect/decal/cleanable/dirt,
@@ -16713,7 +16713,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "lJO" = (
 /obj/structure/flora/small/bushb1,
@@ -16732,7 +16732,7 @@
 "lKm" = (
 /obj/effect/floor_decal/industrial/warningwhite,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "lKv" = (
 /obj/structure/flora/tree/jungle_small/variant5,
@@ -16754,7 +16754,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "lKX" = (
 /obj/item/material/shard/shrapnel/scrap,
@@ -16775,7 +16775,7 @@
 /obj/machinery/conveyor/south{
 	id = "labor_internal"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "lLK" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -16874,7 +16874,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "lPZ" = (
 /obj/structure/flora/ausbushes/genericbush,
@@ -16911,7 +16911,7 @@
 /area/liberty/outside/forest)
 "lUa" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "lUj" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -16960,7 +16960,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "lWR" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -16978,7 +16978,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "lWT" = (
 /turf/simulated/shuttle/wall/mining{
@@ -16993,7 +16993,7 @@
 	pixel_x = 24
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "lXr" = (
 /obj/effect/decal/cleanable/dirt,
@@ -17013,7 +17013,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "lXw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -17035,7 +17035,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "lXC" = (
 /obj/structure/table/woodentable,
@@ -17103,7 +17103,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "lZE" = (
 /obj/machinery/camera/network/third_section,
@@ -17118,7 +17118,7 @@
 	dir = 1;
 	icon_state = "box_corners_red"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "lZF" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -17161,7 +17161,7 @@
 	d2 = 8;
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "mfl" = (
 /obj/structure/bed/chair{
@@ -17206,7 +17206,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -17230,7 +17230,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "mjb" = (
 /obj/structure/table/woodentable,
@@ -17279,7 +17279,7 @@
 "mla" = (
 /obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/liquid_fuel,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "mlO" = (
 /obj/structure/flora/small/rock1,
@@ -17395,7 +17395,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "mqV" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -17440,7 +17440,7 @@
 /obj/machinery/camera/network/cev_eris{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "msE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -17449,7 +17449,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "mtE" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -17458,7 +17458,7 @@
 	name = "\improper Outdoors - Pad"
 	})
 "mtY" = (
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -17522,7 +17522,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "mwM" = (
 /obj/structure/showcase/sign,
@@ -17530,7 +17530,7 @@
 /area/liberty/outside/forest)
 "mwV" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -17564,7 +17564,7 @@
 /obj/machinery/camera/network/third_section{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -17636,7 +17636,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -17648,7 +17648,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "mCn" = (
 /obj/effect/decal/cleanable/rubble,
@@ -17700,7 +17700,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "mFU" = (
 /obj/structure/flora/ausbushes/leafybush,
@@ -17967,7 +17967,7 @@
 	pixel_y = -32
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals_central6,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "mVO" = (
 /obj/structure/flora/big/rocks2,
@@ -18063,7 +18063,7 @@
 "nca" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/damagedfloor/fire,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "ncc" = (
 /obj/structure/flora/tree/jungle_small/variant1,
@@ -18114,7 +18114,7 @@
 /obj/structure/mirror{
 	pixel_x = 28
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "ngL" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -18143,7 +18143,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "nia" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -18162,14 +18162,14 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "niO" = (
 /obj/structure/fireaxecabinet{
 	pixel_x = -30
 	},
 /obj/random/mob/roaches/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "niQ" = (
 /obj/structure/grille{
@@ -18200,7 +18200,7 @@
 	})
 "njg" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "njm" = (
 /obj/structure/table/woodentable,
@@ -18226,7 +18226,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "nkM" = (
 /obj/structure/disposalpipe/segment{
@@ -18255,7 +18255,7 @@
 	icon_state = "window"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "nlo" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -18330,7 +18330,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "npV" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -18401,7 +18401,7 @@
 /area/liberty/dungeon/outside/trashcave)
 "nsG" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "nsM" = (
 /obj/structure/flora/tree/jungle_small/variant3,
@@ -18411,7 +18411,7 @@
 "nub" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/roaches/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "nug" = (
 /obj/structure/table/woodentable,
@@ -18448,7 +18448,7 @@
 /obj/structure/disposalpipe/junction{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "nyQ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -18458,7 +18458,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "nyW" = (
 /obj/machinery/vending/wallmed{
@@ -18537,7 +18537,7 @@
 "nGe" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -18558,7 +18558,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -18608,7 +18608,7 @@
 	name = "TRIAGE";
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "nLu" = (
 /obj/effect/floor_decal/industrial/warning/corner{
@@ -18621,13 +18621,13 @@
 	pixel_x = 0;
 	pixel_y = 32
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "nLJ" = (
 /obj/structure/noticeboard/anomaly{
 	pixel_x = 31
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -18672,7 +18672,7 @@
 /obj/structure/disposalpipe/junction{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "nPw" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -18721,7 +18721,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "nRs" = (
 /obj/structure/bookcase,
@@ -18775,7 +18775,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -18804,7 +18804,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "nUY" = (
 /obj/random/cluster/spiders,
@@ -18851,7 +18851,7 @@
 /obj/machinery/camera/network/third_section{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "nXz" = (
 /obj/structure/toilet,
@@ -18867,7 +18867,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -18918,7 +18918,7 @@
 /area/liberty/outside/forest)
 "ocz" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "ocC" = (
 /obj/machinery/door/firedoor,
@@ -18964,7 +18964,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "oen" = (
 /obj/structure/flora/tree/jungle_small,
@@ -18987,7 +18987,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "ofU" = (
 /obj/structure/flora/small/bushb1,
@@ -19005,7 +19005,7 @@
 	dir = 4
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "ogW" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -19095,7 +19095,7 @@
 	dir = 8;
 	icon_state = "box_corners_red"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/proelav)
 "old" = (
 /obj/structure/table/woodentable,
@@ -19135,7 +19135,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "omq" = (
 /turf/simulated/floor/asteroid/dirt,
@@ -19179,7 +19179,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "ooH" = (
 /obj/effect/floor_decal/industrial/road/warning2,
@@ -19225,12 +19225,12 @@
 /area/liberty/command/prime)
 "orn" = (
 /obj/structure/salvageable/autolathe,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "orK" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "oss" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19258,7 +19258,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -19341,7 +19341,7 @@
 /area/liberty/security/tactical_blackshield)
 "oxv" = (
 /obj/random/closet_maintloot/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "oxH" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -19355,7 +19355,7 @@
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "oyq" = (
 /obj/structure/flora/ausbushes/reedbush,
@@ -19436,7 +19436,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "oBG" = (
 /obj/machinery/button/remote/blast_door{
@@ -19456,7 +19456,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "oCM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -19584,7 +19584,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "oJR" = (
 /obj/machinery/conveyor_switch{
@@ -19706,7 +19706,7 @@
 	name = "Church";
 	req_access = list(70)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/absolutism/storage)
 "oOb" = (
 /obj/structure/flora/big/bush3,
@@ -19751,7 +19751,7 @@
 	req_access = list(1)
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/tactical_blackshield)
 "oOH" = (
 /obj/structure/flora/small/rock5,
@@ -19766,7 +19766,7 @@
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "oOW" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19784,7 +19784,7 @@
 /area/liberty/dungeon/outside/burned_outpost)
 "oPM" = (
 /obj/random/scrap/moderate_weighted,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "oPY" = (
 /obj/structure/flora/small/grassa3,
@@ -19803,7 +19803,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals5{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "oQU" = (
 /obj/structure/cable/green{
@@ -19946,7 +19946,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "oYr" = (
 /obj/machinery/sorter/biomatter{
@@ -20030,13 +20030,13 @@
 	},
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
 "pdf" = (
 /obj/random/closet_maintloot/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "pdZ" = (
 /obj/machinery/holoposter{
@@ -20136,7 +20136,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "pfX" = (
 /obj/structure/railing,
@@ -20154,7 +20154,7 @@
 "pgO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "pgP" = (
 /obj/machinery/shower{
@@ -20170,7 +20170,7 @@
 	dir = 4;
 	name = "shower door"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "phU" = (
 /obj/structure/bed/chair{
@@ -20186,7 +20186,7 @@
 "pio" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "pix" = (
 /obj/structure/table/bench/padded,
@@ -20215,7 +20215,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "pjN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -20255,7 +20255,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -20367,7 +20367,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -20382,7 +20382,7 @@
 	slogan_delay = 700
 	},
 /obj/structure/invislight,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "pqI" = (
 /obj/structure/disposalpipe/segment,
@@ -20416,7 +20416,7 @@
 /area/liberty/security/laber_area)
 "psh" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "psu" = (
 /obj/structure/flora/small/bushc1,
@@ -20446,7 +20446,7 @@
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "ptt" = (
 /obj/structure/bed/chair{
@@ -20478,7 +20478,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "pxz" = (
 /turf/simulated/mineral,
@@ -20489,7 +20489,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/box/red,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "pyP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -20498,12 +20498,12 @@
 	pixel_x = -22
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "pzv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/broken,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "pzQ" = (
 /obj/structure/bed/chair/wood{
@@ -20657,7 +20657,7 @@
 /obj/item/stock_parts/smes_coil/super_io,
 /obj/item/stock_parts/smes_coil/super_io,
 /obj/item/stock_parts/smes_coil/super_io,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "pFm" = (
 /obj/machinery/alarm{
@@ -20726,7 +20726,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "pHh" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -20772,7 +20772,7 @@
 "pIk" = (
 /obj/machinery/vending/hydronutrients,
 /obj/structure/invislight,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "pIv" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
@@ -20793,7 +20793,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "pIS" = (
 /obj/structure/sign/faction/neotheology_cross{
@@ -20818,7 +20818,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "pJG" = (
 /obj/effect/floor_decal/industrial/hatch,
@@ -20929,7 +20929,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/absolutism/storage)
 "pPh" = (
 /turf/simulated/floor/carpet/bcarpet,
@@ -20985,7 +20985,7 @@
 /area/liberty/crew_quarters/hydroponics/garden)
 "pUA" = (
 /obj/structure/salvageable/server,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "pUH" = (
 /obj/structure/flora/big/bush1,
@@ -21045,7 +21045,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/smc/quarters)
 "pWt" = (
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/proelav)
 "pWv" = (
 /obj/structure/flora/small/rock5,
@@ -21081,7 +21081,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "pXL" = (
 /obj/structure/flora/big/bush3,
@@ -21095,7 +21095,7 @@
 "pYx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warningwhite,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "pYF" = (
 /turf/simulated/floor/wood,
@@ -21124,7 +21124,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -21147,7 +21147,7 @@
 	d2 = 8;
 	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "pZZ" = (
 /turf/simulated/floor/asteroid/grass,
@@ -21169,7 +21169,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/proelav)
 "qaz" = (
 /obj/structure/flora/big/rocks1,
@@ -21236,7 +21236,7 @@
 	dir = 4;
 	icon_state = "box_corners_red"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "qeN" = (
 /obj/structure/flora/small/busha2,
@@ -21292,7 +21292,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/laber_area)
 "qgY" = (
 /obj/structure/cable/green{
@@ -21339,7 +21339,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "qjs" = (
 /obj/structure/grille{
@@ -21395,7 +21395,7 @@
 "qky" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "qkH" = (
 /obj/machinery/light{
@@ -21413,7 +21413,7 @@
 /area/liberty/hallway/surface/section1)
 "qlt" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/security/laber_area)
 "qlL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21445,7 +21445,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -21486,7 +21486,7 @@
 	icon_state = "window"
 	},
 /obj/random/scrap/sparse_even/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "qnJ" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -21506,7 +21506,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "qox" = (
 /obj/structure/flora/small/busha1,
@@ -21516,7 +21516,7 @@
 "qoE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/frame/apc,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "qoT" = (
 /obj/machinery/conveyor/southwest{
@@ -21527,7 +21527,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "qpM" = (
 /obj/landmark/costume/elpresidente,
@@ -21537,7 +21537,7 @@
 /area/liberty/dungeon/outside/campground)
 "qqm" = (
 /obj/structure/closet/secure_closet/personal/shipbreaker,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "qqH" = (
 /obj/structure/flora/tree/jungle/variant2,
@@ -21562,7 +21562,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "qtp" = (
 /obj/machinery/door/airlock/glass_security{
@@ -21584,7 +21584,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/tactical_blackshield)
 "qtz" = (
 /turf/simulated/wall,
@@ -21599,7 +21599,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "qtR" = (
 /obj/structure/flora/ausbushes/reedbush,
@@ -21652,7 +21652,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "qwx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21670,7 +21670,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -21712,7 +21712,7 @@
 /area/liberty/engineering/atmos/surface)
 "qyV" = (
 /obj/machinery/mineral/stacking_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "qze" = (
 /obj/structure/flora/tree/jungle/variant4,
@@ -21741,16 +21741,16 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/foreman)
 "qAi" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "qAt" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/liquid_fuel,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "qAw" = (
 /obj/structure/disposalpipe/segment{
@@ -21793,7 +21793,7 @@
 /area/liberty/engineering/atmos/surface)
 "qCb" = (
 /obj/random/scrap/moderate_weighted/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "qDo" = (
 /obj/structure/multiz/stairs,
@@ -21823,7 +21823,7 @@
 	d2 = 4;
 	icon_state = "2-4"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "qFD" = (
 /obj/structure/flora/small/grassb4,
@@ -21867,7 +21867,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "qIo" = (
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -21995,7 +21995,7 @@
 	pixel_x = -30;
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -22035,7 +22035,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/hallway/surface/section1)
 "qRB" = (
 /obj/machinery/portable_atmospherics/hydroponics,
@@ -22100,7 +22100,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "qWl" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -22127,7 +22127,7 @@
 "qYJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "qZi" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -22168,13 +22168,13 @@
 "rcj" = (
 /obj/structure/table/woodentable,
 /obj/item/storage/box/donkpockets,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "rct" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/liquid_fuel,
 /obj/landmark/storyevent/midgame_stash_spawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "rcC" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -22191,7 +22191,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "rdr" = (
 /obj/machinery/light{
@@ -22228,7 +22228,7 @@
 /area/liberty/outside/lakeside)
 "reX" = (
 /obj/machinery/photocopier,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/security/vacantoffice2)
 "rfa" = (
 /obj/structure/flora/small/bushb3,
@@ -22331,7 +22331,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "rlH" = (
 /obj/effect/floor_decal/industrial/warningwhite{
@@ -22377,12 +22377,12 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "roj" = (
 /obj/item/computer_hardware/hard_drive/portable/design/misc,
 /obj/structure/catwalk,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/lathe_disk,
 /obj/effect/floor_decal/border/borderfloor/cee,
 /turf/simulated/floor/plating/under,
@@ -22422,7 +22422,7 @@
 "rpZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/roaches,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "rra" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -22486,7 +22486,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "rtM" = (
 /obj/machinery/alarm{
@@ -22691,7 +22691,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "rAN" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -22710,7 +22710,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "rBK" = (
 /obj/structure/railing,
@@ -22729,7 +22729,7 @@
 "rDz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/steeldecal/steel_decals_central3,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "rDL" = (
 /obj/structure/cable/green{
@@ -22737,7 +22737,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "rDX" = (
 /obj/structure/disposalpipe/segment{
@@ -22860,7 +22860,7 @@
 /area/liberty/engineering/atmos/surface)
 "rJb" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/security/laber_area)
 "rJF" = (
 /obj/structure/flora/small/busha1,
@@ -22915,7 +22915,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -23052,7 +23052,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -23071,7 +23071,7 @@
 	dir = 1;
 	pixel_y = -28
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "rSc" = (
 /obj/machinery/camera/network/cev_eris,
@@ -23108,7 +23108,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "rSZ" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -23223,7 +23223,7 @@
 	name = "High Risk Holding";
 	req_access = list(63)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/laber_area)
 "rYx" = (
 /obj/structure/flora/small/bushb3,
@@ -23337,7 +23337,7 @@
 "seg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "sek" = (
 /obj/machinery/camera/network/security,
@@ -23390,7 +23390,7 @@
 /area/liberty/dungeon/outside/abandoned_outpost)
 "sgV" = (
 /obj/machinery/vending/propis_loot_box,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "sgW" = (
 /obj/structure/flora/small/busha1,
@@ -23452,7 +23452,7 @@
 	},
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/box/red,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "sjC" = (
 /obj/structure/flora/small/bushb1,
@@ -23464,7 +23464,7 @@
 /obj/machinery/light/small,
 /obj/item/pen/multi,
 /obj/item/paper_bin,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -23480,13 +23480,13 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "skj" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -23524,7 +23524,7 @@
 	icon_state = "pipe-j2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "smm" = (
 /obj/structure/table/rack/shelf,
@@ -23580,7 +23580,7 @@
 "snu" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "soq" = (
 /mob/living/simple_animal/goose{
@@ -23601,7 +23601,7 @@
 /obj/machinery/vending/weapon_machine{
 	categories = 3
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "spu" = (
 /obj/structure/bed,
@@ -23629,7 +23629,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -23640,7 +23640,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "srw" = (
 /obj/structure/flora/small/trailrocka1,
@@ -23673,7 +23673,7 @@
 /obj/structure/bed/chair/office/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -23706,7 +23706,7 @@
 "swk" = (
 /obj/random/scrap/moderate_weighted/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "swp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -23736,7 +23736,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "syA" = (
 /obj/machinery/conveyor/south{
@@ -23746,7 +23746,7 @@
 /area/liberty/absolutism/bioreactor)
 "szx" = (
 /obj/structure/bed,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -23773,7 +23773,7 @@
 "sAT" = (
 /obj/machinery/seed_extractor,
 /obj/structure/invislight,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "sAV" = (
 /obj/effect/floor_decal/industrial/loading/white{
@@ -23803,7 +23803,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "sDm" = (
 /obj/structure/flora/small/grassb4,
@@ -23865,7 +23865,7 @@
 	dir = 8;
 	pixel_y = 33
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -23882,7 +23882,7 @@
 	name = "North APC";
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/proelav)
 "sIU" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -23929,7 +23929,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "sMu" = (
 /turf/simulated/floor/beach/sand,
@@ -24066,7 +24066,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/hallway/side/f2section1)
 "sQG" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/hand_labeler,
 /obj/machinery/light{
 	dir = 8;
@@ -24101,7 +24101,7 @@
 	dir = 8;
 	pixel_x = -28
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "sTc" = (
 /obj/structure/cable/yellow{
@@ -24208,7 +24208,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "taz" = (
 /obj/structure/table/rack/shelf,
@@ -24270,7 +24270,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -24307,7 +24307,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/hallway/surface/section1)
 "teP" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -24315,7 +24315,7 @@
 	},
 /obj/structure/table/woodentable,
 /obj/item/stamp/fr,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "tfa" = (
 /turf/simulated/mineral,
@@ -24337,7 +24337,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "tgB" = (
 /obj/machinery/door/airlock/external,
@@ -24346,7 +24346,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "thr" = (
 /obj/structure/flora/small/busha1,
@@ -24383,7 +24383,7 @@
 	name = "Shield generator";
 	req_one_access = list(1,63,19,10)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/engineering/shield_generator)
 "tjN" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -24524,7 +24524,7 @@
 /obj/machinery/camera/network/third_section{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "tqc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24546,7 +24546,7 @@
 	},
 /obj/structure/table/rack,
 /obj/random/scrap/dense_weighted/low_chance,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/proelav)
 "tss" = (
 /turf/simulated/shuttle/wall/mining{
@@ -24583,7 +24583,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "tuH" = (
 /obj/structure/table/reinforced,
@@ -24634,7 +24634,7 @@
 	id = "Colony Lockdown"
 	},
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/absolutism/chapel)
 "twH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -24668,7 +24668,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/bioreactor)
 "tzf" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "tzp" = (
 /obj/machinery/atmospherics/pipe/simple/visible/blue{
@@ -24702,7 +24702,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "tAk" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -24799,7 +24799,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "tDN" = (
 /obj/structure/flora/small/grassb2,
@@ -24820,7 +24820,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "tHa" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24852,7 +24852,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "tHt" = (
 /obj/structure/flora/tree/jungle/variant4,
@@ -24864,7 +24864,7 @@
 /area/liberty/outside/forest)
 "tIX" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "tJj" = (
 /obj/structure/cable/green{
@@ -24885,7 +24885,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "tKY" = (
 /obj/machinery/power/apc{
@@ -24897,7 +24897,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -24935,7 +24935,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "tMp" = (
 /turf/simulated/floor/wood/wild3,
@@ -24992,7 +24992,7 @@
 /area/liberty/outside/dcave)
 "tRD" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "tRS" = (
 /obj/structure/disposalpipe/segment{
@@ -25002,7 +25002,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "tRV" = (
 /obj/structure/disposalpipe/junction{
@@ -25097,7 +25097,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "tWw" = (
 /obj/random/furniture,
@@ -25137,7 +25137,7 @@
 /turf/simulated/floor/tiled/white/golden,
 /area/liberty/engineering/atmos/surface)
 "tXG" = (
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/security/laber_area)
 "tYc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25203,7 +25203,7 @@
 	dir = 1;
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -25272,7 +25272,7 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "udo" = (
 /obj/structure/flora/small/bushc3,
@@ -25289,7 +25289,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "ufi" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -25409,7 +25409,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "ult" = (
 /obj/machinery/atmospherics/unary/vent_pump/on,
@@ -25430,7 +25430,7 @@
 	dir = 1;
 	icon_state = "pipe-j2"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "uok" = (
 /turf/simulated/floor/asteroid/dirt/dark,
@@ -25467,7 +25467,7 @@
 /obj/random/booze,
 /obj/random/booze,
 /obj/random/booze/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "uqe" = (
 /obj/structure/flora/rock{
@@ -25485,13 +25485,13 @@
 	pixel_x = 30
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
 "urr" = (
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "urG" = (
 /obj/structure/cable/green{
@@ -25530,7 +25530,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "uuc" = (
 /obj/machinery/door/airlock/glass_research{
@@ -25542,7 +25542,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/pros/proelav)
 "uuK" = (
 /obj/random/cluster/spiders,
@@ -25581,7 +25581,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/violetcorener,
+/turf/simulated/floor/tiled/aluminium/violetcorener,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -25694,7 +25694,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -25738,7 +25738,7 @@
 /obj/effect/floor_decal/industrial/arrows/white{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/foreman)
 "uBy" = (
 /turf/unsimulated/mineral,
@@ -25764,7 +25764,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "uCd" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25786,7 +25786,7 @@
 /area/liberty/outside/bcave)
 "uDc" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "uDz" = (
 /obj/effect/floor_decal/steeldecal/steel_decals10{
@@ -25838,7 +25838,7 @@
 	icon_state = "tube1";
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/pros/foreman)
 "uFK" = (
 /obj/structure/disposalpipe/segment{
@@ -25910,7 +25910,7 @@
 /area/liberty/pros/prep)
 "uJJ" = (
 /obj/machinery/mineral/unloading_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "uJT" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -25931,7 +25931,7 @@
 "uKG" = (
 /obj/landmark/join/start/shipbreaker,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "uLn" = (
 /obj/structure/grille,
@@ -25958,7 +25958,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "uLv" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -26049,7 +26049,7 @@
 /area/liberty/outside/forest)
 "uNn" = (
 /obj/machinery/camera/network/third_section,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "uNo" = (
 /obj/structure/flora/small/busha1,
@@ -26200,7 +26200,7 @@
 	d2 = 4;
 	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "uVp" = (
 /obj/structure/disposalpipe/segment{
@@ -26263,7 +26263,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "uYu" = (
 /obj/machinery/door/blast/regular/open{
@@ -26279,7 +26279,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "uYN" = (
 /obj/random/scrap/sparse_weighted/low_chance,
@@ -26308,7 +26308,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "vaQ" = (
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -26328,7 +26328,7 @@
 	name = "Expedition prep";
 	req_access = list(5)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -26374,7 +26374,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/security/maingate{
 	name = "\improper Outdoors - Pad"
 	})
@@ -26419,7 +26419,7 @@
 	dir = 4;
 	icon_state = "box_corners_red"
 	},
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "vhr" = (
 /obj/structure/cable/yellow,
@@ -26544,7 +26544,7 @@
 /obj/machinery/conveyor/north{
 	id = "churchgardenCon"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/crew_quarters/hydroponics/garden)
 "voV" = (
 /obj/structure/catwalk,
@@ -26589,7 +26589,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "vqm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -26598,7 +26598,7 @@
 	pixel_x = -30;
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "vqq" = (
 /obj/structure/table/standard,
@@ -26607,7 +26607,7 @@
 	pixel_y = -22
 	},
 /obj/item/toy/plushie/deer,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -26616,7 +26616,7 @@
 	id = "labor_internal"
 	},
 /obj/landmark/machinery/input,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/security/laber_area)
 "vqC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -26658,7 +26658,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/absolutism/storage)
 "vuA" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/turbolift/ElevatorOne/surface)
 "vuJ" = (
 /obj/structure/flora/small/grassb4,
@@ -26689,7 +26689,7 @@
 /obj/structure/closet/crate,
 /obj/random/toolbox,
 /obj/random/toolbox/low_chance,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "vxq" = (
 /obj/machinery/power/apc{
@@ -26708,7 +26708,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "vxv" = (
 /obj/structure/toilet{
@@ -26723,7 +26723,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 10
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/pros/prep)
 "vxC" = (
 /obj/structure/bed/roller,
@@ -26734,7 +26734,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "vyu" = (
 /obj/structure/railing{
@@ -26766,7 +26766,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/prep)
 "vAd" = (
 /obj/structure/table/woodentable,
@@ -26837,7 +26837,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "vBq" = (
 /obj/structure/catwalk,
@@ -26878,7 +26878,7 @@
 	name = "Expedition prep";
 	req_access = list(5)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -26892,7 +26892,7 @@
 "vDy" = (
 /obj/effect/floor_decal/industrial/loading/white,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "vDB" = (
 /obj/structure/cable/yellow{
@@ -26964,7 +26964,7 @@
 /area/liberty/outside/meadow)
 "vGk" = (
 /obj/random/structures/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "vGo" = (
 /obj/structure/flora/big/bush1,
@@ -26991,7 +26991,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "vIe" = (
 /obj/structure/flora/small/grassa2,
@@ -27051,7 +27051,7 @@
 	req_access = list(1)
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "vLq" = (
 /obj/effect/decal/cleanable/dirt,
@@ -27069,7 +27069,7 @@
 	dir = 1;
 	icon_state = "box_corners_red"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "vMk" = (
 /obj/structure/table/woodentable,
@@ -27097,7 +27097,7 @@
 /obj/structure/sign/levels/stairsdown{
 	pixel_y = 30
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/hallway/surface/section1)
 "vOB" = (
 /obj/structure/flora/small/bushb1,
@@ -27121,7 +27121,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "vPF" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -27158,7 +27158,7 @@
 "vTg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "vTk" = (
 /obj/structure/disposalpipe/segment,
@@ -27225,7 +27225,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "vXf" = (
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "vXN" = (
 /obj/effect/decal/cleanable/dirt,
@@ -27305,7 +27305,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "vZr" = (
 /obj/structure/flora/small/grassb1,
@@ -27322,7 +27322,7 @@
 "waY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/fact_plaque,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/pros/prep)
 "wbr" = (
 /obj/structure/flora/small/bushb2,
@@ -27386,7 +27386,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "weD" = (
 /obj/structure/cable/yellow{
@@ -27449,7 +27449,7 @@
 "whn" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/security/laber_area)
 "wiv" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -27483,7 +27483,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "wjo" = (
 /obj/structure/flora/small/bushb1,
@@ -27502,7 +27502,7 @@
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "wko" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -27520,7 +27520,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "wlj" = (
 /obj/structure/catwalk,
@@ -27552,7 +27552,7 @@
 	pixel_y = 0
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals10,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/engineering/shield_generator)
 "wlS" = (
 /obj/structure/bed/chair/comfy/brown{
@@ -27663,7 +27663,7 @@
 "wqj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/closet_maintloot/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "wrx" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -27695,7 +27695,7 @@
 "wtj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/liberty/security/laber_area)
 "wtm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -27709,7 +27709,7 @@
 	dir = 4;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "wtw" = (
 /turf/simulated/shuttle/wall/mining{
@@ -27733,7 +27733,7 @@
 /obj/machinery/vending/wallmed/lobby{
 	pixel_y = 32
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/firstaid,
 /obj/random/firstaid,
 /obj/effect/floor_decal/industrial/arrows/white{
@@ -27829,7 +27829,7 @@
 	icon_state = "warning"
 	},
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "wza" = (
 /obj/structure/flora/ausbushes/pointybush,
@@ -27925,7 +27925,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "wHh" = (
 /obj/structure/flora/ausbushes/ppflowers,
@@ -27971,7 +27971,7 @@
 /area/liberty/absolutism/chapel)
 "wJf" = (
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "wJg" = (
 /obj/structure/flora/tree/jungle_small,
@@ -27993,7 +27993,7 @@
 	id = "Shield Lockdown";
 	name = "Shield Generator Lock"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/engineering/shield_generator)
 "wJq" = (
 /obj/structure/cable/yellow{
@@ -28060,7 +28060,7 @@
 	icon_state = "warning"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "wNm" = (
 /obj/structure/flora/tree/jungle/variant5,
@@ -28115,7 +28115,7 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "wPM" = (
 /obj/structure/flora/ausbushes/brflowers,
@@ -28135,7 +28135,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "wRg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28144,7 +28144,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "wRp" = (
 /obj/structure/window/basic,
@@ -28179,14 +28179,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "wSJ" = (
 /obj/machinery/alarm{
 	pixel_y = 23
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "wSV" = (
 /obj/machinery/newscaster{
@@ -28216,7 +28216,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/hallway/surface/section1)
 "wTg" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28234,7 +28234,7 @@
 	pixel_y = -32
 	},
 /obj/effect/floor_decal/industrial/arrows/white,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "wVi" = (
 /turf/simulated/floor/wood/wild3,
@@ -28375,7 +28375,7 @@
 /turf/simulated/floor/wood,
 /area/liberty/command/smc/quarters)
 "xfb" = (
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/mine/gulag)
 "xfi" = (
 /obj/structure/flora/small/grassb4,
@@ -28428,7 +28428,7 @@
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/command/prime)
 "xiN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -28444,7 +28444,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/hallway/surface/section1)
 "xjr" = (
 /obj/structure/flora/small/busha1,
@@ -28453,9 +28453,9 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest)
 "xkz" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/booze/low_chance,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/pros/prep)
 "xkO" = (
 /obj/structure/flora/small/rock3,
@@ -28485,7 +28485,7 @@
 /obj/effect/floor_decal/steeldecal/steel_decals_central1{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/pros/prep)
 "xmt" = (
 /obj/structure/toilet{
@@ -28515,7 +28515,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "xmL" = (
 /obj/machinery/light,
@@ -28554,7 +28554,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/security/armory_blackshield)
 "xnt" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -28623,7 +28623,7 @@
 	dir = 1;
 	icon_state = "pipe-j2"
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "xrB" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -28636,7 +28636,7 @@
 	name = "Expedition prep";
 	req_access = list(5)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/pros/proelav)
 "xsh" = (
 /obj/structure/flora/small/busha1,
@@ -28760,7 +28760,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "xCW" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -28814,7 +28814,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/pros/prep)
 "xIR" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "xIU" = (
 /turf/simulated/wall/r_wall,
@@ -28857,7 +28857,7 @@
 /obj/structure/table/standard,
 /obj/item/device/camera_film,
 /obj/item/device/camera_film,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/rnd/circuitlab{
 	name = "Science Expedition prep"
 	})
@@ -28875,7 +28875,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "xOn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28886,7 +28886,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -28930,7 +28930,7 @@
 /area/liberty/outside/pond)
 "xTY" = (
 /obj/random/mob/roaches/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/dungeon/outside/burned_outpost)
 "xUB" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -29010,7 +29010,7 @@
 	d2 = 2;
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "xYv" = (
 /obj/effect/window_lwall_spawn/reinforced/polarized{
@@ -29028,7 +29028,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/greencorner,
+/turf/simulated/floor/tiled/aluminium/greencorner,
 /area/liberty/hallway/surface/section1)
 "xZr" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
@@ -29078,7 +29078,7 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warningred,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "yah" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
@@ -29144,7 +29144,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "yfd" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -29197,7 +29197,7 @@
 	icon_state = "1-2"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/liberty/hallway/surface/section1)
 "ygz" = (
 /obj/machinery/door/unpowered/simple/wood{
@@ -29212,7 +29212,7 @@
 	pixel_y = 32
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals_central6,
-/turf/simulated/floor/tiled/steel/golden,
+/turf/simulated/floor/tiled/aluminium/golden,
 /area/liberty/hallway/surface/section1)
 "ygN" = (
 /obj/machinery/firealarm{
@@ -29234,7 +29234,7 @@
 	pixel_y = 23
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/liberty/security/tactical_blackshield)
 "ygW" = (
 /obj/machinery/disposal,
@@ -29247,7 +29247,7 @@
 	pixel_y = 30
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals_central6,
-/turf/simulated/floor/tiled/steel/monofloor{
+/turf/simulated/floor/tiled/aluminium/monofloor{
 	dir = 4;
 	icon_state = "monofloor"
 	},
@@ -29320,7 +29320,7 @@
 /area/liberty/hallway/surface/section1)
 "ylP" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/crew_quarters/toilet/public)
 "ylZ" = (
 /obj/machinery/vending/coffee,

@@ -3,7 +3,7 @@
 	icon = 'icons/obj/device.dmi'
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MATERIAL = 9, TECH_BIO = 9, TECH_DATA = 9, TECH_ENGINEERING = 12, TECH_COMBAT = 8)
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_SILVER = 25, MATERIAL_CARBON_FIBER = 40, MATERIAL_BIO_SILK = 20)//changing materials to be more relatable to the current material-esque of hearthcores. I just hope this does force-include all other augments. I didn't found anywhere else to implement hearthcore-only materials. -Monochrome
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_SILVER = 25, MATERIAL_CARBON_FIBER = 40, MATERIAL_BIO_SILK = 20)//changing materials to be more relatable to the current material-esque of hearthcores. I just hope this does force-include all other augments. I didn't found anywhere else to implement hearthcore-only materials. -Monochrome
 	external = TRUE
 	var/implant_type = /obj/item/implant/core_implant
 	var/active = FALSE

@@ -38,9 +38,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The External armor plating leaves a gap for a heatsink to be installed."),
 		//4
-		list("key"=/obj/item/stack/material/plasteel,
+		list("key"=/obj/item/stack/material/indsteel,
 			//"backkey"=QUALITY_WELDING,
-			"desc"="The Medical HUD is installed. 5 sheets of plasteel are needed to form the external armor."),
+			"desc"="The Medical HUD is installed. 5 sheets of indsteel are needed to form the external armor."),
 		//5
 		list("key"=/obj/item/stack/cable_coil,
 			//"backkey"=QUALITY_SCREW_DRIVING,
@@ -62,9 +62,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The circuit shielding has been placed in the chassis, but needs to be bolted down."),
 		//10
-		list("key"=/obj/item/stack/material/steel,
+		list("key"=/obj/item/stack/material/aluminium,
 			//"backkey"=QUALITY_SCREW_DRIVING,
-			"desc"="The internal circutry is installed. 5 sheets of steel are needed to shield it."),
+			"desc"="The internal circutry is installed. 5 sheets of aluminium are needed to shield it."),
 		//11
 		list("key"=QUALITY_SCREW_DRIVING,
 			//"backkey"=QUALITY_PRYING,
@@ -282,7 +282,7 @@
 						"[usr] pries internal armor layer from [holder].", \
 						"You prie internal armor layer from [holder]."
 					)
-					new /obj/item/stack/material/steel (get_turf(holder), 5)
+					new /obj/item/stack/material/aluminium (get_turf(holder), 5)
 					holder.icon_state = "odysseus8"
 			if(8)
 				if(diff==FORWARD)
@@ -374,7 +374,7 @@
 					)
 					holder.icon_state = "odysseus13"
 				else
-					var/obj/item/stack/material/plasteel/MS = new (get_turf(holder), 5)
+					var/obj/item/stack/material/indsteel/MS = new (get_turf(holder), 5)
 					usr.visible_message(
 						"[usr] pries [MS] from [holder].", \
 						"You prie [MS] from [holder]."

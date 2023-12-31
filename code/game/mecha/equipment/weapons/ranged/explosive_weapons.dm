@@ -54,7 +54,7 @@
 	desc = "A rack of advanced tactical missiles lacking proper targetting computers onboard to cheapen their production. Fires in salvos of three and can do so as many times before having to be refitted."
 	icon_state = "mecha_missilerack"
 	projectile = /obj/item/missile
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 10, MATERIAL_SILVER = 5)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 10, MATERIAL_SILVER = 5)
 	missile_speed = 2
 	fire_sound = 'sound/mecha/weapons/rocketlauncher.ogg'
 	projectiles = 9
@@ -77,7 +77,7 @@
 	desc = "A singular massive bunker-buster missile strapped into a single use pod to be mountable onto a mech. Capable of leveling any building at cost of extremely slow speed and massive strain on it's platform."
 	icon_state = "mecha_tom"
 	projectile = /obj/item/longtom
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTEEL = 20, MATERIAL_SILVER = 5, MATERIAL_GOLD = 5, MATERIAL_URANIUM = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_INDSTEEL = 20, MATERIAL_SILVER = 5, MATERIAL_GOLD = 5, MATERIAL_URANIUM = 5)
 	ammo_type = null //Cannot reload it
 	missile_speed = 0.1 //Comically slow
 	fire_sound = 'sound/mecha/weapons/rocketlauncher.ogg'
@@ -96,7 +96,7 @@
 /obj/item/mecha_parts/mecha_equipment/ranged_weapon/ballistic/missile_rack/flashbang
 	name = "\improper SGL-4 grenade launcher"
 	icon_state = "mecha_grenadelnchr"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 10)
 	projectile = /obj/item/grenade/flashbang
 	fire_sound = 'sound/effects/bang.ogg'
 	projectiles = 4

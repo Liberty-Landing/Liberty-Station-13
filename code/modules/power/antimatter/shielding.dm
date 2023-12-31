@@ -213,7 +213,7 @@
 	throwforce = 5
 	throw_speed = 1
 	throw_range = 2
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 
 /obj/item/am_shielding_container/attackby(obj/item/I as obj, mob/user as mob)
 	if((QUALITY_PULSING in I.tool_qualities) && isturf(src.loc))

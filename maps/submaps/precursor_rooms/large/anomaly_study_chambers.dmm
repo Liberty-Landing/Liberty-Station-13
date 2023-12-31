@@ -1,11 +1,11 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "ae" = (
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor)
 "bi" = (
 /obj/item/material/shard/shrapnel/scrap,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bv" = (
 /obj/structure/table/standard{
@@ -27,7 +27,7 @@
 /area/precursor)
 "bO" = (
 /obj/structure/closet/secure_closet/freezer/blood,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "cf" = (
 /obj/structure/flora/tree/jungle/variant3,
@@ -49,18 +49,18 @@
 	icon_state = "tube1"
 	},
 /obj/machinery/smartfridge,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ct" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/effect/damagedfloor/fire,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "cQ" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/random/psi_megafauna,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "df" = (
 /obj/effect/damagedfloor/fire,
@@ -71,16 +71,16 @@
 	dir = 4
 	},
 /obj/effect/damagedfloor/fire,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ey" = (
 /obj/effect/damagedfloor/fire,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "eF" = (
 /obj/structure/table/standard,
 /obj/machinery/electrolyzer,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "fi" = (
 /obj/effect/floor_decal/rust,
@@ -117,7 +117,7 @@
 /obj/random/medical/low_chance,
 /obj/random/medical/low_chance,
 /obj/random/medical/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "jd" = (
 /obj/structure/table/standard,
@@ -136,7 +136,7 @@
 /area/precursor)
 "kn" = (
 /obj/random/pack/junk_machine,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ks" = (
 /obj/structure/table/standard{
@@ -145,18 +145,18 @@
 /obj/random/powercell,
 /obj/random/powercell,
 /obj/random/powercell,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "lo" = (
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "lU" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/machinery/microscope,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "mv" = (
 /obj/structure/table/standard{
@@ -166,7 +166,7 @@
 /obj/item/paper_bin,
 /obj/item/oddity/common/healthscanner,
 /obj/item/oddity/ls/puzzlebox,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "mC" = (
 /obj/machinery/light/small,
@@ -176,7 +176,7 @@
 /area/precursor)
 "mR" = (
 /obj/machinery/gibber/autogibber,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "mU" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -189,7 +189,7 @@
 "oH" = (
 /obj/machinery/optable,
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "oW" = (
 /turf/simulated/wall,
@@ -199,7 +199,7 @@
 	dir = 8
 	},
 /obj/effect/damagedfloor/fire,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "pK" = (
 /obj/effect/decal/cleanable/blood/gibs,
@@ -215,14 +215,14 @@
 	name = "plastic table frame"
 	},
 /obj/item/oddity/common/old_knife,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "qD" = (
 /obj/machinery/shower{
 	dir = 4
 	},
 /obj/structure/catwalk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "qG" = (
 /obj/item/material/shard/shrapnel/scrap,
@@ -230,7 +230,7 @@
 /area/precursor)
 "qP" = (
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor)
 "rr" = (
 /obj/random/lowkeyrandom/low_chance,
@@ -240,11 +240,11 @@
 "rF" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/surgery,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "rM" = (
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "rO" = (
 /obj/effect/decal/cleanable/blood/gibs,
@@ -252,7 +252,7 @@
 /area/precursor)
 "rT" = (
 /obj/machinery/chem_master,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "rX" = (
 /obj/effect/floor_decal/rust,
@@ -262,12 +262,12 @@
 "sk" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "sn" = (
 /obj/structure/table/standard,
 /obj/machinery/chem_heater,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "te" = (
 /obj/structure/table/glass,
@@ -277,7 +277,7 @@
 /obj/random/medical/low_chance,
 /obj/random/medical/low_chance,
 /obj/random/medical/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "tO" = (
 /turf/simulated/floor/tiled/white/brown_perforated,
@@ -301,14 +301,14 @@
 /obj/random/medical_lowcost/low_chance,
 /obj/random/medical_lowcost/low_chance,
 /obj/random/medical_lowcost/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "tU" = (
 /obj/machinery/light_construct,
 /obj/structure/kitchenspike,
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "vd" = (
 /obj/random/scrap/dense_weighted,
@@ -357,7 +357,7 @@
 	},
 /obj/random/material,
 /obj/random/material,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "yp" = (
 /obj/effect/decal/cleanable/dirt,
@@ -374,14 +374,14 @@
 /obj/effect/floor_decal/steeldecal/steel_decals10{
 	dir = 5
 	},
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "zl" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
 	},
 /obj/random/pack/junk_machine/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Am" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -402,7 +402,7 @@
 	},
 /obj/effect/damagedfloor/fire,
 /obj/random/pack/junk_machine/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "BB" = (
 /obj/effect/decal/cleanable/blood/splatter,
@@ -427,17 +427,17 @@
 	},
 /obj/item/storage/box/beakers,
 /obj/item/reagent_containers/glass/beaker/large,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "Dk" = (
 /obj/effect/damagedfloor/fire,
 /obj/random/pack/junk_machine,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Do" = (
 /obj/machinery/optable,
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ED" = (
 /obj/effect/decal/cleanable/dirt,
@@ -453,11 +453,11 @@
 	dir = 4;
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "HD" = (
 /obj/structure/medical_stand,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "HJ" = (
 /obj/effect/damagedfloor/fire,
@@ -465,7 +465,7 @@
 /turf/simulated/floor/reinforced,
 /area/precursor)
 "IC" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "IK" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -475,21 +475,21 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "IZ" = (
 /obj/structure/closet/l3closet/virology,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Jh" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/item/storage/firstaid/surgery,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Jk" = (
 /obj/structure/anomaly_container,
@@ -505,14 +505,14 @@
 /area/precursor)
 "Jz" = (
 /obj/random/cluster/psi_monster,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Kz" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Lo" = (
 /obj/random/cluster/psi_monster/low_chance,
@@ -538,21 +538,21 @@
 	dir = 1
 	},
 /obj/machinery/constructable_frame/machine_frame,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "MA" = (
 /obj/structure/table/standard{
 	name = "plastic table frame"
 	},
 /obj/random/medical,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Ol" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Pd" = (
 /obj/structure/table/standard,
@@ -566,7 +566,7 @@
 /obj/item/storage/box/beakers,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/tool/screwdriver,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "Pp" = (
 /obj/effect/decal/cleanable/mucus,
@@ -581,11 +581,11 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Qy" = (
 /obj/structure/bed/chair/office/dark,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "QV" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -594,7 +594,7 @@
 /area/precursor)
 "Rb" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Rl" = (
 /obj/machinery/door/blast/regular/open,
@@ -607,11 +607,11 @@
 "Tr" = (
 /obj/effect/decal/cleanable/blood/gibs,
 /obj/structure/anomaly_container,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "TE" = (
 /obj/random/lowkeyrandom/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "TU" = (
 /obj/machinery/door/blast/regular,
@@ -634,15 +634,15 @@
 "UQ" = (
 /obj/structure/table/standard,
 /obj/machinery/centrifuge,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 "UV" = (
 /obj/effect/decal/cleanable/blood/gibs,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "UY" = (
 /obj/machinery/door/airlock/highsecurity,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Vb" = (
 /obj/machinery/light/small{
@@ -661,7 +661,7 @@
 	dir = 4
 	},
 /obj/structure/closet/secure_closet/freezer,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Vp" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
@@ -705,7 +705,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/blood/splatter,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Yl" = (
 /obj/random/cluster/psi_monster,
@@ -722,7 +722,7 @@
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Zz" = (
 /obj/effect/decal/cleanable/blood/gibs,
@@ -735,7 +735,7 @@
 /obj/structure/table/glass,
 /obj/item/storage/freezer/medical,
 /obj/item/cell/medium/high,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/precursor)
 
 (1,1,1) = {"

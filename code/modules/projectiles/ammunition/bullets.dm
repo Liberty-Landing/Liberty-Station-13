@@ -634,7 +634,7 @@
 	desc = "An old improvised rocket shell for the RPG-7 launcher. Has a tubular shape."
 	icon_state = "old_rocketshell"
 	projectile_type = /obj/item/projectile/bullet/rocket/scrap
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASMA = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_HYDROGENC = 2)
 
 /obj/item/ammo_casing/rocket/scrap/prespawned
 	amount = 1
@@ -673,7 +673,7 @@
 	w_class = ITEM_SIZE_SMALL
 	caliber = CAL_GRENADE
 	maxamount = 1
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2)
 
 /obj/item/ammo_casing/grenade/blast
 	name = "blast grenade shell"
@@ -711,7 +711,7 @@
 	icon_state = "bolt"
 	caliber = CAL_CROSSBOW
 	projectile_type = /obj/item/projectile/bullet/crossbow_bolt
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	maxamount = 10
 	is_caseless = TRUE
 
@@ -723,7 +723,7 @@
 	desc = "A finely made bolt designed for a crossbow with sharp shards of ores and rocks attached to the tip that break apart inside the target."
 	icon_state = "bolt"
 	projectile_type = /obj/item/projectile/bullet/crossbow_bolt/lethal
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	maxamount = 10
 
 /obj/item/ammo_casing/crossbow_bolts/fragment/bulk //Admin spawn stuff
@@ -734,7 +734,7 @@
 	desc = "A finely made bolt designed for a crossbow added fletching and balance to shoot true and faster."
 	icon_state = "bolt"
 	projectile_type = /obj/item/projectile/bullet/crossbow_bolt/hv
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	maxamount = 10
 
 /obj/item/ammo_casing/crossbow_bolts/speed/bulk //Admin spawn stuff
@@ -747,7 +747,7 @@
 	icon_state = "metal-rod"
 	caliber = "crude bolts" //not a define
 	projectile_type = /obj/item/projectile/bullet/reusable/rod_bolt
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	maxamount = 10
 	is_caseless = TRUE
 
@@ -770,7 +770,7 @@
 	force = WEAPON_FORCE_NORMAL
 	armor_penetration = ARMOR_PEN_GRAZING
 	projectile_type = /obj/item/projectile/bullet/reusable/arrow
-	matter = list(MATERIAL_STEEL = 0.2, MATERIAL_WOOD = 0.2, MATERIAL_CARDBOARD = 0.2)
+	matter = list(MATERIAL_ALUMINIUM = 0.2, MATERIAL_WOOD = 0.2, MATERIAL_CARDBOARD = 0.2)
 	maxamount = 5
 	is_caseless = TRUE
 

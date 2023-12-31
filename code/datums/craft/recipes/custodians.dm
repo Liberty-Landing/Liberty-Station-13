@@ -18,7 +18,7 @@
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/blacksmithing, 2),
 		list(QUALITY_WELDING, 30, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
@@ -39,7 +39,7 @@
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/blacksmithing, 2),
 		list(QUALITY_WELDING, 30, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
@@ -60,7 +60,7 @@
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/stack/mold_kit/blacksmithing, 2),
 		list(QUALITY_WELDING, 30, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(/obj/item/clothing/suit/armor/custodian/firesuit, 1),
@@ -117,7 +117,7 @@
 	steps = list(
 		list(/obj/item/mold/weapon, 1),
 		list(CRAFT_MATERIAL, 10, MATERIAL_BIO_SILK, "time" = 5),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 5),
 		list(QUALITY_WELDING, 30, "time" = 20),
 	)
 
@@ -129,7 +129,7 @@
 		list(/obj/item/mold/weapon, 1),
 		list(/obj/item/stack/mold_kit/tailoring, 1),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 5),
 		list(QUALITY_SCREW_DRIVING, 30, "time" = 10),
 	)
 
@@ -213,10 +213,10 @@
 	steps = list(
 		list(/obj/item/mold/weapon, 1),
 		list(QUALITY_HAMMERING, 25, "time" = 10),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_WELDING, 30, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 5),
 		list(QUALITY_CUTTING, 20, "time" = 10),
 		list(CRAFT_MATERIAL, 15, MATERIAL_BIO_SILK, "time" = 5),
 		list(QUALITY_WELDING, 30, "time" = 20),
@@ -230,11 +230,11 @@
 	steps = list(
 		list(/obj/item/mold/weapon, 1),
 		list(CRAFT_MATERIAL, 20, MATERIAL_BIO_SILK, "time" = 5),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 10),
 		list(CRAFT_MATERIAL, 20, MATERIAL_BIO_SILK, "time" = 5),
 		list(QUALITY_CUTTING, 20, "time" = 10),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 5),
 		list(CRAFT_MATERIAL, 10, MATERIAL_CARBON_FIBER, "time" = 5),
 		list(QUALITY_HAMMERING, 25, "time" = 10),
 	)

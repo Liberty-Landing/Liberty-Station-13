@@ -8,7 +8,7 @@
 	fire_sound = 'sound/weapons/energy/Laser.ogg' // Leaving the OG sound as it's not only iconic but also fitting for an old gun
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 15, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 15, MATERIAL_GLASS = 5)
 	projectile_type = /obj/item/projectile/beam
 	fire_delay = 10 //old technology
 	charge_cost = 50
@@ -37,7 +37,7 @@
 	item_state = "shorty"
 	fire_sound = 'sound/weapons/energy/laser_pistol.ogg'
 	slot_flags = SLOT_BACK|SLOT_HOLSTER
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5)
 	damage_multiplier = 0.8
 	penetration_multiplier = 0.8
 	charge_cost = 50

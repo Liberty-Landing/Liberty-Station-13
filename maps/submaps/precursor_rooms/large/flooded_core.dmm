@@ -416,7 +416,7 @@
 	locked = 1;
 	name = "AI Core"
 	},
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "cY" = (
 /obj/structure/table/reinforced,

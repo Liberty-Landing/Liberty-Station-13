@@ -2,13 +2,13 @@
 	icon_state = "rgeneric"
 
 /turf/simulated/wall/r_wall/New(var/newloc)
-	..(newloc, MATERIAL_PLASTEEL, MATERIAL_PLASTEEL) //3strong
+	..(newloc, MATERIAL_INDSTEEL, MATERIAL_INDSTEEL) //3strong
 
 /turf/simulated/wall/cult
 	icon_state = "cult"
 
 /turf/simulated/wall/cult/New(var/newloc)
-	..(newloc,MATERIAL_STEEL,MATERIAL_STEEL)
+	..(newloc,MATERIAL_ALUMINIUM,MATERIAL_ALUMINIUM)
 
 /turf/unsimulated/wall/cult
 	name = "cult wall"
@@ -26,7 +26,7 @@
 	icon_base_reinf = "Nashef_reinforced"
 
 /turf/simulated/wall/tomb_king/New(var/newloc)
-	..(newloc, MATERIAL_STEEL)
+	..(newloc, MATERIAL_ALUMINIUM)
 
 /turf/simulated/wall/church
 	name = "stronghold wall"
@@ -40,7 +40,7 @@
 	reinf_color_override = "#FFFFFF"
 
 /turf/simulated/wall/church/New(var/newloc)
-	..(newloc, MATERIAL_STEEL)
+	..(newloc, MATERIAL_ALUMINIUM)
 
 /turf/simulated/wall/church_reinforced
 	name = "stronghold wall"
@@ -68,10 +68,10 @@
 	icon_base_reinf_override = "rust_reinforced"
 
 /turf/simulated/wall/rust_reinforced/New(var/newloc)
-	..(newloc, MATERIAL_PLASTEEL, MATERIAL_PLASTEEL)
+	..(newloc, MATERIAL_INDSTEEL, MATERIAL_INDSTEEL)
 
 /turf/simulated/wall/church_reinforced/New(var/newloc)
-	..(newloc, MATERIAL_PLASTEEL, MATERIAL_PLASTEEL) //3strong
+	..(newloc, MATERIAL_INDSTEEL, MATERIAL_INDSTEEL) //3strong
 
 /turf/simulated/wall/rock
 	name = "rock wall"
@@ -232,11 +232,11 @@
 /turf/simulated/wall/silver/New(var/newloc)
 	..(newloc,MATERIAL_SILVER)
 /turf/simulated/wall/plasma/New(var/newloc)
-	..(newloc,MATERIAL_PLASMA)
+	..(newloc,MATERIAL_HYDROGENC)
 /turf/simulated/wall/sandstone/New(var/newloc)
 	..(newloc,MATERIAL_SANDSTONE)
 /turf/simulated/wall/ironplasma/New(var/newloc)
-	..(newloc,MATERIAL_IRON,MATERIAL_PLASMA)
+	..(newloc,MATERIAL_IRON,MATERIAL_HYDROGENC)
 /turf/simulated/wall/golddiamond/New(var/newloc)
 	..(newloc,MATERIAL_GOLD,MATERIAL_DIAMOND)
 /turf/simulated/wall/silvergold/New(var/newloc)
@@ -309,7 +309,7 @@
 
 
 /turf/simulated/wall/untinted/onestar/New(var/newloc)
-	..(newloc, MATERIAL_STEEL)
+	..(newloc, MATERIAL_ALUMINIUM)
 
 
 /turf/simulated/wall/untinted/onestar_reinforced
@@ -318,7 +318,7 @@
 	icon_base_reinf_override = "onestar_reinforced"
 
 /turf/simulated/wall/untinted/onestar_reinforced/New(var/newloc)
-	..(newloc, MATERIAL_STEEL,MATERIAL_STEEL)
+	..(newloc, MATERIAL_ALUMINIUM,MATERIAL_ALUMINIUM)
 
 
 /turf/simulated/shuttle/proc/underlay_update()

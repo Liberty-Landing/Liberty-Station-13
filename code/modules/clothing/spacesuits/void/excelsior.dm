@@ -9,7 +9,7 @@
 	matter = list(
 		MATERIAL_PLASTIC = 20,
 		MATERIAL_GLASS = 10,
-		MATERIAL_PLASTEEL = 3
+		MATERIAL_INDSTEEL = 3
 	)
 
 	armor_list = list(
@@ -47,7 +47,7 @@
 	siemens_coefficient = 0 //Shockproof!
 	matter = list(
 		MATERIAL_PLASTIC = 30,
-		MATERIAL_STEEL = 10,
-		MATERIAL_PLASTEEL = 5
+		MATERIAL_ALUMINIUM = 10,
+		MATERIAL_INDSTEEL = 5
 	)
 	helmet = /obj/item/clothing/head/helmet/space/void/excelsior

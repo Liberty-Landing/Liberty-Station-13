@@ -9,7 +9,7 @@
 	result = /obj/item/clothing/suit/armor/vest/handmade
 	steps = list(
 		list(/obj/item/clothing/suit/storage/hazardvest, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM),
 		list(/obj/item/stack/cable_coil, 4)
 	)
 
@@ -47,7 +47,7 @@
 		list(/obj/item/reagent_containers/glass/bucket, 1, "time" = 30),
 		list(QUALITY_CUTTING, 15, 120),
 		list(QUALITY_DRILLING, 10, 60),
-		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_ALUMINIUM),
 		list(/obj/item/stack/cable_coil, 4)
 	)
 
@@ -67,14 +67,14 @@
 		list(CRAFT_MATERIAL, 3, MATERIAL_CARDBOARD)
 	)
 
-// Add some steel to gloves. Simple.
+// Add some aluminium to gloves. Simple.
 /datum/craft_recipe/clothing/combat_gloves
 	name = "combat gloves"
 	result = /obj/item/clothing/gloves/thick/handmade
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/gloves/thick, 1, "time" = 15),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM),
 		list(/obj/item/stack/cable_coil, 2)
 	)
 
@@ -84,8 +84,8 @@
 	icon_state = "armor_part"
 	steps = list(
 		list(/obj/item/clothing/gloves/thick/handmade, 1, "time" = 15), // Grab combat gloves
-		list(/obj/item/clothing/gloves/dusters/plasteel, 1, "time" = 15), // Attach knuckle dusters
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL), // Plate the armguards with extra plasteel...
+		list(/obj/item/clothing/gloves/dusters/aluminium, 1, "time" = 15), // Attach knuckle dusters
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL), // Plate the armguards with extra aluminium...
 		list(QUALITY_WELDING, 10, 20) // ...And weld it in place!
 	)
 
@@ -94,7 +94,7 @@
 	result = /obj/item/clothing/head/helmet/handmade
 	steps = list(
 		list(/obj/item/reagent_containers/glass/bucket, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM),
 		list(/obj/item/stack/cable_coil, 2)
 	)
 
@@ -112,7 +112,7 @@
 	result = /obj/item/clothing/head/space/void/riggedvoidsuit
 	steps = list(
 		list(/obj/item/clothing, 1, time = 30),
-		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_ALUMINIUM),
 		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTIC),
 		list(CRAFT_MATERIAL, 3, MATERIAL_GLASS),
 		list(/obj/item/stack/cable_coil, 2),
@@ -124,7 +124,7 @@
 	result = /obj/item/clothing/suit/space/void/riggedvoidsuit
 	steps = list(
 		list(/obj/item/clothing/under, 1),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL),
 		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTIC),
 		list(QUALITY_ADHESIVE, 15, "time" = 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_GLASS),
@@ -136,8 +136,8 @@
 	result = /obj/item/clothing/suit/storage/scavengerarmor
 	steps = list(
 		list(/obj/item/clothing/under, 1),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL), // Melee
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL), // Bullets
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM), // Melee
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL), // Bullets
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_GLASS), // Reflective plating?
 		list(QUALITY_ADHESIVE, 15, "time" = 60)
@@ -150,7 +150,7 @@
 		list(/obj/item/clothing/head/helmet/handmade, 1), // Take your average combat helm
 		list(CRAFT_MATERIAL, 2, MATERIAL_CLOTH), // Additional warmth protection
 		list(QUALITY_ADHESIVE, 15, 15), // Make sure it sticks!
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL), // Prepare the additional external plates...
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL), // Prepare the additional external plates...
 		list(QUALITY_HAMMERING, 10, 15), // ...Hammer them into place...
 		list(QUALITY_WELDING, 10, 20), // ...and weld them, tadah!
 	)
@@ -161,7 +161,7 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/stack/material/cloth, 5, time = 15),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 		list(QUALITY_CUTTING, 10, 60)
 	)
 
@@ -195,7 +195,7 @@
 		list(/obj/item/clothing/suit/armor/vest/handmade, 1, "time" = 30),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM), // One metal per limb
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
 
@@ -206,7 +206,7 @@
 		list(/obj/item/clothing/suit/armor/vest, 1, "time" = 30), //TODO: a better way to do this, every children of armor/vest will be eligible for crafting this one...
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One sheet per limb
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM), // One sheet per limb
 		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTIC),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
@@ -218,7 +218,7 @@
 		list(/obj/item/clothing/suit/armor/vest/capsa, 1, "time" = 30),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM),
 		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTIC),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
@@ -230,7 +230,7 @@
 		list(/obj/item/clothing/suit/armor/vest/ironhammer, 1, "time" = 30),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM), // One metal per limb
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
 
@@ -241,8 +241,8 @@
 		list(/obj/item/clothing/suit/storage/scavengerarmor/fontaine, 1),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 15, 30),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
@@ -254,8 +254,8 @@
 		list(/obj/item/clothing/suit/armor/platecarrier, 1, "time" = 30),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM), // One metal per limb
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 15, 30),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
@@ -267,8 +267,8 @@
 		list(/obj/item/clothing/suit/armor/bulletproof/, 1, "time" = 30),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM), // One metal per limb
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 15, 30),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
@@ -280,9 +280,9 @@
 		list(/obj/item/clothing/suit/armor/flakvest, 1, "time" = 30),
 		list(/obj/item/clothing/under, 1),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL), // One metal per limb
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM), // One metal per limb
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM), // One metal per limb
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 15, 30),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
@@ -298,7 +298,7 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
 		list(QUALITY_SAWING, 10, 60),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM),
 		list(/obj/item/stack/material/cloth, 2, time = 30),
 		list(QUALITY_CUTTING, 10, 30)
 	)
@@ -362,8 +362,8 @@
 	steps = list(
 		list(/obj/item/clothing/gloves/thick, 1, "time" = 30),
 		list(QUALITY_CUTTING, 15, 30),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 30), // We plate the gloves to justify its armor values
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 30), // We plate the gloves to justify its armor values
 		list(QUALITY_WELDING, 10, "time" = 30), // Melt the metal, then...
 		list(QUALITY_HAMMERING, 15, 10), // ...harden into shape
 		list(/obj/item/clothing/gloves/insulated, 1, "time" = 30), // This means it can also take budget insuls
@@ -375,10 +375,10 @@
 // Nuckle Dusters and melee based things
 
 /datum/craft_recipe/clothing/dusters
-	name = "steel knuckle dusters"
+	name = "Aluminium knuckle dusters"
 	result = /obj/item/clothing/gloves/dusters
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL), //Grab some steel
+		list(CRAFT_MATERIAL, 3, MATERIAL_ALUMINIUM), //Grab some aluminium
 		list(QUALITY_WELDING, 10, "time" = 30), //Weld it into basic form
 		list(QUALITY_HAMMERING, 15, 10) //Harden into shape
 	)
@@ -392,11 +392,11 @@
 		list(QUALITY_HAMMERING, 15, 10) //Harden into shape
 	)
 
-/datum/craft_recipe/clothing/dusters/plasteel
-	name = "plasteel knuckle dusters"
-	result = /obj/item/clothing/gloves/dusters/plasteel
+/datum/craft_recipe/clothing/dusters/indsteel
+	name = "Industrial aluminium knuckle dusters"
+	result = /obj/item/clothing/gloves/dusters/indsteel
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL), //Grab some plasteel
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL), //Grab some Indsteel
 		list(QUALITY_WELDING, 10, "time" = 30), //Weld it into basic form
 		list(QUALITY_HAMMERING, 15, 10) //Harden into shape
 	)
@@ -426,7 +426,7 @@
 	result = /obj/item/clothing/gloves/dusters/gloves
 	steps = list(
 		list(/obj/item/clothing/gloves/dusters, 1, "time" = 5), //Tear up the gloves
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL), //Grab some plasteel
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL), //Grab some indsteel
 		list(QUALITY_HAMMERING, 15, 10), //Harden into powder
 		list(QUALITY_HAMMERING, 15, 10), //Harden into FINE powder
 		list(/obj/item/stack/medical/bruise_pack/handmade, 2, "time" = 10) //Cover the holes up

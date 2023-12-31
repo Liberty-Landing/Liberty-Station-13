@@ -8,7 +8,7 @@
 	throwforce = WEAPON_FORCE_HARMLESS
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1)
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	var/breakouttime = 300	//Deciseconds = 30s = 0.5 minute
 
 /obj/item/legcuffs/fuzzy

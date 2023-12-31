@@ -16,7 +16,7 @@
 	handle_casings = HOLD_CASINGS
 	fire_sound = 'sound/weapons/guns/fire/shotgunp_fire.ogg'
 	bulletinsert_sound 	= 'sound/weapons/guns/interact/shotgun_insert.ogg'
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 500
 	damage_multiplier = 1 //Baseline shotgun
 	init_recoil = RIFLE_RECOIL(1.1)
@@ -78,7 +78,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_PAINFUL
 	slot_flags = SLOT_BACK|SLOT_BELT|SLOT_HOLSTER
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 6)
 	price_tag = 300
 	damage_multiplier = 0.9
 	penetration_multiplier = 0.8

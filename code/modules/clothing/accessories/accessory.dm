@@ -1102,7 +1102,7 @@
 
 /obj/item/clothing/accessory/necklace
 	name = "metal necklace"
-	desc = "A shiny steel chain with a vague metallic object dangling off it."
+	desc = "A shiny aluminium chain with a vague metallic object dangling off it."
 	icon_state = "tronket"
 	item_state = "tronket"
 	slot_flags = SLOT_MASK | SLOT_ACCESSORY_BUFFER

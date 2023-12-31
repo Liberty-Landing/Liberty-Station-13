@@ -3,7 +3,7 @@
 	desc = "A shield generator that forms a rectangular, unidirectionally projectile-blocking wall in front of the exosuit."
 	icon_state = "shield_droid"
 	origin_tech = list(TECH_PLASMA = 3, TECH_MAGNET = 6, TECH_ILLEGAL = 4)
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_GOLD = 6, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 4, MATERIAL_PLATINUM = 4, MATERIAL_DIAMOND = 2)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_GOLD = 6, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 4, MATERIAL_PLATINUM = 4, MATERIAL_DIAMOND = 2)
 	equip_cooldown = 5
 	energy_drain = 20
 	range = 0
@@ -200,7 +200,7 @@
 	icon_state = "shield1"
 	w_class = ITEM_SIZE_SMALL
 	slot_flags = SLOT_POCKET|SLOT_BELT
-	matter = list(MATERIAL_PLASTEEL = 6, MATERIAL_GOLD = 3, MATERIAL_SILVER = 3, MATERIAL_URANIUM = 2, MATERIAL_PLATINUM = 2, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_INDSTEEL = 6, MATERIAL_GOLD = 3, MATERIAL_SILVER = 3, MATERIAL_URANIUM = 2, MATERIAL_PLATINUM = 2, MATERIAL_DIAMOND = 1)
 	var/active = FALSE					// If it's on.
 	var/shield_health = 400				// How much damage the shield blocks before breaking.  This is a shared health pool for all shields attached to this projector.
 	var/max_shield_health = 400			// Ditto.  This is fairly high, but shields are really big, you can't miss them, and laser carbines pump out so much hurt.

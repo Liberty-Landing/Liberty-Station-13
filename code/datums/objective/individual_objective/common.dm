@@ -1,5 +1,5 @@
 /datum/individual_objective/upgrade
-	name = "Strength in Steel"
+	name = "Strength in aluminium"
 	desc =  "After seeing some advertisements about bionic implants, you've been thinking about them alot lately. Getting a new bionic or implant would surely satisfy your curiosity."
 	allow_psion = FALSE
 

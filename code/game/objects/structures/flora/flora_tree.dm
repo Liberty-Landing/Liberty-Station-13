@@ -240,7 +240,7 @@
 	name = "Cherry Tree"
 	icon = 'icons/obj/flora/church_stuff.dmi'
 	icon_state = "red_tree_alt"
-	desc = "A large hard wood tree with bark like steel, typically used for meditation."
+	desc = "A large hard wood tree with bark like aluminium, typically used for meditation."
 	anchored = TRUE
 	density = FALSE
 	layer = ABOVE_MOB_LAYER

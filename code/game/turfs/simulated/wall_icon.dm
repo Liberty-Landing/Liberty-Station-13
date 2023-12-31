@@ -21,7 +21,7 @@
 		else
 			construction_stage = null
 		if(!material)
-			material = get_material_by_name(MATERIAL_STEEL)
+			material = get_material_by_name(MATERIAL_ALUMINIUM)
 		if(material)
 			explosion_resistance = material.explosion_resistance
 			hitsound = material.hitsound

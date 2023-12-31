@@ -9,7 +9,7 @@
 	force_icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi' //Sprites were done by Kirov on request
 	model = "ghetto"
 	armor_list = list(melee = 10, bullet = 10, energy = 10, bomb = -5, bio = 100, rad = 100)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	min_broken_damage = 30
 	min_malfunction_damage = 15
 	price_tag = 100
@@ -195,7 +195,7 @@
 	desc = "A reinforced purple and white prosthesis designed for space exploration and light combat."
 	force_icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	model = "moebius"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1)
 	max_damage = 60
 	min_broken_damage = 40
 	min_malfunction_damage = 30
@@ -228,7 +228,7 @@
 	desc = "Gold and black prosthetics designed by the Church of the Bonfire."
 	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
 	model = "church"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 30)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 30)
 	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 	max_damage = 60
 	min_broken_damage = 40
@@ -267,7 +267,7 @@
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"
 	armor_list = list(melee = 65, bullet = 65, energy = 65, bomb = 65, bio = 0, rad = 100)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 4, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 4, MATERIAL_PLATINUM = 2)
 	max_damage = 70
 	min_broken_damage = 50
 	price_tag = 1200

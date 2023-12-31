@@ -21,7 +21,7 @@ var/list/custom_table_appearance = list(
 	climbable = 1
 	layer = PROJECTILE_HIT_THRESHHOLD_LAYER
 	throwpass = 1
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	var/flipped = 0
 	maxHealth = 10
 	health = 10
@@ -296,7 +296,7 @@ var/list/custom_table_appearance = list(
 // The repeated
 //     S = [x].place_shard(loc)
 //     if(S) shards += S
-// is to avoid filling the list with nulls, as place_shard won't place shards of certain materials (holo-wood, holo-steel)
+// is to avoid filling the list with nulls, as place_shard won't place shards of certain materials (holo-wood, holo-aluminium)
 
 /obj/structure/table/proc/break_to_parts(full_return = 0)
 	var/list/shards = list()
@@ -316,9 +316,9 @@ var/list/custom_table_appearance = list(
 	if(custom_appearance && (full_return || prob(50))) // Higher chance to get the carpet back intact, since there's no non-intact option
 		new /obj/item/stack/tile/carpet(src.loc)
 	if(full_return || prob(20))
-		new /obj/item/stack/material/steel(src.loc)
+		new /obj/item/stack/material/aluminium(src.loc)
 	else
-		var/material/M = get_material_by_name(MATERIAL_STEEL)
+		var/material/M = get_material_by_name(MATERIAL_ALUMINIUM)
 		S = M.place_shard(loc)
 		if(S) shards += S
 	qdel(src)

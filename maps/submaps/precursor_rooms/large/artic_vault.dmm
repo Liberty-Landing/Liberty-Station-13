@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ab" = (
 /turf/simulated/wall/r_wall,
@@ -10,7 +10,7 @@
 /area/precursor)
 "ad" = (
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "ae" = (
 /turf/simulated/floor/plating/under,
@@ -35,7 +35,7 @@
 	name = "Service Maintenance";
 	req_access = list(12)
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "ak" = (
 /obj/structure/disposalpipe/segment,
@@ -62,7 +62,7 @@
 /area/precursor)
 "ap" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aq" = (
 /obj/structure/railing{
@@ -101,10 +101,10 @@
 /turf/simulated/floor/holofloor/snow,
 /area/precursor)
 "aw" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor)
 "ax" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "ay" = (
 /obj/random/junk,
@@ -116,13 +116,13 @@
 /area/precursor)
 "az" = (
 /obj/item/modular_computer/console/preset/security/records,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "aA" = (
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor)
 "aB" = (
 /obj/structure/disposalpipe/segment{
@@ -142,7 +142,7 @@
 	name = "Security Checkpoint";
 	req_access = list(1)
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/precursor)
 "aD" = (
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -151,7 +151,7 @@
 /obj/item/modular_computer/console/preset/command{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "aF" = (
 /obj/machinery/door/airlock,
@@ -206,12 +206,12 @@
 /area/precursor)
 "aN" = (
 /obj/machinery/washing_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/precursor)
 "aO" = (
 /obj/structure/table/standard,
 /obj/structure/bedsheetbin,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/precursor)
 "aP" = (
 /obj/random/junk,
@@ -274,7 +274,7 @@
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot/low_chance,
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/precursor)
 "aX" = (
 /obj/structure/table/standard,
@@ -282,7 +282,7 @@
 /obj/random/pack/cloth,
 /obj/random/pack/cloth/low_chance,
 /obj/random/pack/cloth/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/precursor)
 "aY" = (
 /obj/machinery/door/firedoor,
@@ -417,7 +417,7 @@
 /area/precursor)
 "bt" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "bu" = (
 /obj/structure/catwalk,
@@ -438,12 +438,12 @@
 /area/precursor)
 "bw" = (
 /obj/structure/girder,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "bx" = (
 /obj/structure/girder,
 /obj/structure/girder,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/precursor)
 "by" = (
 /obj/structure/disposalpipe/segment{
@@ -473,11 +473,11 @@
 "bB" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "bC" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bD" = (
 /obj/machinery/door/airlock/maintenance_common{
@@ -485,7 +485,7 @@
 	req_access = list(12)
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "bE" = (
 /obj/structure/catwalk,
@@ -512,14 +512,14 @@
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "bI" = (
 /obj/item/device/radio/intercom{
 	dir = 2;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bJ" = (
 /obj/machinery/door/airlock/glass,
@@ -534,7 +534,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "bM" = (
 /obj/structure/bed/chair/office/dark{
@@ -544,7 +544,7 @@
 /obj/random/pack/cloth,
 /obj/random/pack/cloth,
 /obj/random/pack/gun_loot,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "bN" = (
 /obj/structure/bed/chair{
@@ -554,7 +554,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor)
 "bO" = (
 /obj/random/junk,
@@ -579,7 +579,7 @@
 "bR" = (
 /obj/structure/table/reinforced,
 /obj/random/pack/rare/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "bS" = (
 /obj/structure/catwalk,
@@ -610,7 +610,7 @@
 /area/precursor)
 "bV" = (
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor)
 "bW" = (
 /obj/random/junk,

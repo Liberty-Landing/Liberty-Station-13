@@ -155,8 +155,8 @@
 		to_chat(user, SPAN_WARNING("There is not enough matter in the printer."))
 
 /obj/machinery/bioprinter/prosthetics/attackby(obj/item/W, mob/user)
-	// Steel for matter.
-	if(istype(W, /obj/item/stack/material) && W.get_material_name() == MATERIAL_STEEL)
+	// aluminium for matter.
+	if(istype(W, /obj/item/stack/material) && W.get_material_name() == MATERIAL_ALUMINIUM)
 		var/obj/item/stack/S = W
 		stored_matter += S.amount * 10
 		user.drop_item()

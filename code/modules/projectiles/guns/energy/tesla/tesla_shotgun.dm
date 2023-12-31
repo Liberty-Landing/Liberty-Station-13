@@ -4,7 +4,7 @@
 	icon = 'icons/obj/guns/energy/tesla_shotgun.dmi'
 	icon_state = "tesla_shotgun"
 	item_state = "tesla_shotgun"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5)
 	price_tag = 1600
 	charge_cost = 100
 	fire_sound = 'sound/effects/lightningshock.ogg'

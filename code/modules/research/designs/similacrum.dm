@@ -6,25 +6,25 @@
 /datum/design/research/item/simulacrum/iron_lock_security_armor
 	name = "Simulacrum Robotics Ablative Vest"
 	build_path = /obj/item/clothing/suit/armor/vest/iron_lock_security
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
+	materials = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
 	category = CAT_CLOTHING
 
 /datum/design/research/item/simulacrum/iron_lock_security_helmet
 	name = "Simulacrum Robotics Ablative Helmet"
 	build_path = /obj/item/clothing/head/helmet/laserproof/iron_lock_security
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
+	materials = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
 	category = CAT_CLOTHING
 
 /datum/design/research/item/simulacrum/iron_lock_security_boots
 	name = "Simulacrum Robotics Ablative Jackboots"
 	build_path = /obj/item/clothing/shoes/ablasive/iron_lock_security
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
+	materials = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
 	category = CAT_CLOTHING
 
 /datum/design/research/item/simulacrum/iron_lock_security_gloves
 	name = "Simulacrum Robotics Ablative Gloves"
 	build_path = /obj/item/clothing/gloves/thick/ablasive/iron_lock_security
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
+	materials = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 10) //So its costs more for being RnD printed
 	category = CAT_CLOTHING
 
 /datum/design/research/item/simulacrum/thermals

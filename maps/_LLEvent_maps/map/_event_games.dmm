@@ -14,7 +14,7 @@
 /area/event_games/outside)
 "as" = (
 /obj/effect/floor_decal/spline/fancy,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "av" = (
 /obj/effect/floor_decal/spline/snow_edge{
@@ -208,7 +208,7 @@
 /area/event_games/outside)
 "db" = (
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/event_games/inside)
 "dd" = (
 /obj/structure/cable{
@@ -446,7 +446,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "gO" = (
 /obj/effect/floor_decal/spline/wood/corner,
@@ -758,7 +758,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "na" = (
 /obj/machinery/light,
@@ -1002,7 +1002,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "rx" = (
 /obj/item/gun/projectile/shotgun/pump{
@@ -1153,7 +1153,7 @@
 /obj/structure/table/gamblingtable,
 /obj/item/material/ashtray{
 	icon_state = "ashtray";
-	material = "steel"
+	material = "aluminium"
 	},
 /turf/simulated/floor/wood/wild3,
 /area/event_games/inside)
@@ -1300,7 +1300,7 @@
 /obj/machinery/light{
 	light_color = "#b9e8ea"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/event_games/inside)
 "vV" = (
 /obj/effect/floor_decal/spline/wood{
@@ -1406,7 +1406,7 @@
 /area/event_games/outside)
 "xO" = (
 /obj/machinery/portable_atmospherics/hydroponics,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/event_games/inside)
 "xP" = (
 /obj/machinery/light{
@@ -1513,7 +1513,7 @@
 	d2 = 4;
 	icon_state = "0-4"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/event_games/inside)
 "zx" = (
 /obj/effect/floor_decal/spline/snow_edge{
@@ -1895,7 +1895,7 @@
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "Fx" = (
 /obj/effect/floor_decal/spline/wood{
@@ -1938,7 +1938,7 @@
 "GC" = (
 /obj/structure/reagent_dispensers/fueltank/huge,
 /obj/effect/floor_decal/industrial/warningred/box,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/event_games/inside)
 "GJ" = (
 /obj/structure/table/marble,
@@ -2148,7 +2148,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "Kg" = (
 /obj/effect/floor_decal/industrial/warningred{
@@ -2268,7 +2268,7 @@
 /obj/structure/curtain/black,
 /obj/item/material/ashtray{
 	icon_state = "ashtray";
-	material = "steel"
+	material = "aluminium"
 	},
 /obj/machinery/floor_light{
 	anchored = 1
@@ -2543,7 +2543,7 @@
 /obj/effect/floor_decal/spline/fancy{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "OP" = (
 /obj/structure/sign/painting/paintingwaves{
@@ -2772,7 +2772,7 @@
 "Rk" = (
 /obj/structure/reagent_dispensers/watertank/huge,
 /obj/effect/floor_decal/industrial/warningwhite/box,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/event_games/inside)
 "Rp" = (
 /obj/machinery/door/blast/shutters/glass{
@@ -2799,7 +2799,7 @@
 	d2 = 2;
 	icon_state = "0-2"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/event_games/inside)
 "RC" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -3152,7 +3152,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/event_games/inside)
 "Xv" = (
 /obj/structure/bed/chair/custom/wood{
@@ -3170,7 +3170,7 @@
 /obj/structure/table/gamblingtable,
 /obj/item/material/ashtray{
 	icon_state = "ashtray";
-	material = "steel"
+	material = "aluminium"
 	},
 /obj/machinery/light{
 	dir = 8
@@ -3263,7 +3263,7 @@
 	dir = 8;
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/event_games/inside)
 "YY" = (
 /obj/effect/floor_decal/industrial/warningred{

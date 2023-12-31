@@ -4,7 +4,7 @@
 	icon = 'icons/obj/objects.dmi'
 	icon_state = "golden_scarab"
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 1, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 1, MATERIAL_SILVER = 2)
 
 /obj/item/scarab/add_initial_transforms()
 	. = ..()

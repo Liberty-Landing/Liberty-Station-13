@@ -139,7 +139,7 @@
 	desc = "Little metal bits that bones can be reinforced with."
 	icon = 'icons/obj/surgery.dmi'
 	icon_state = "bone_braces"
-	matter = list(MATERIAL_PLASTEEL = 3)
+	matter = list(MATERIAL_INDSTEEL = 3)
 	price_tag = 90
 
 /obj/item/modification/organ/internal/electromechanical/bone_braces/update_icon()

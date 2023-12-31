@@ -22,7 +22,7 @@
 	name = "Roomba Frame"
 	result = /obj/item/bot_part/roomba/roomba_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 90)
@@ -48,7 +48,7 @@
 	name = "Roomba Plating"
 	result = /obj/item/bot_part/roomba/roomba_plating
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60)
 	)
 
@@ -57,7 +57,7 @@
 	result = /obj/item/bot_part/roomba/roomba_plating/heavy
 	steps = list(
 		list(/obj/item/bot_part/roomba/roomba_plating, 1, "time" = 60),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60)
 	)
 
@@ -66,8 +66,8 @@
 	name = "Sword Drone Frame"
 	result = /obj/item/bot_part/sword_part/main_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 90)
@@ -78,8 +78,8 @@
 	name = "Mantis Drone Frame"
 	result = /obj/item/bot_part/mantis_part/main_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 90)
@@ -90,8 +90,8 @@
 	name = "Head Frame"
 	result = /obj/item/bot_part/head_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/camera, 1, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
@@ -102,8 +102,8 @@
 	name = "Left Arm Frame"
 	result = /obj/item/bot_part/left_arm_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/actuator, 1, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
@@ -114,8 +114,8 @@
 	name = "Right Arm Frame"
 	result = /obj/item/bot_part/right_arm_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/actuator, 1, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
@@ -126,8 +126,8 @@
 	name = "Left Leg Frame"
 	result = /obj/item/bot_part/left_leg_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/actuator, 1, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
@@ -138,8 +138,8 @@
 	name = "Right Leg Frame"
 	result = /obj/item/bot_part/right_leg_frame
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 60),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/actuator, 1, "time" = 60),
 		list(QUALITY_WELDING, 10, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 10, "time" = 180),
@@ -150,7 +150,7 @@
 	name = "Aether Mining Bot"
 	result = /mob/living/carbon/superior_animal/robot/mining/aether
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 60),
 		list(/obj/item/bot_part/roomba/roomba_treads, 2, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/actuator, 2, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/camera, 1, "time" = 60),
@@ -164,9 +164,9 @@
 	name = "Chemical Housing Internal Combustion Kit"
 	result = /mob/living/simple_animal/metal_chicken
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 30),
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 30),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 30),
 		list(CRAFT_MATERIAL, 10, MATERIAL_GLASS, "time" = 30),
 		list(/obj/item/bot_part/roomba/roomba_treads, 2, "time" = 60),
 		list(/obj/item/robot_parts/robot_component/actuator, 2, "time" = 60),
@@ -189,7 +189,7 @@
 		list(QUALITY_SCREW_DRIVING, 10, 70),
 		list(/obj/item/tool_upgrade/augment/hydraulic, 1, "time" = 60),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 30, "time" = 40),
 		list(/obj/item/tool_upgrade/augment/spikes, 1, "time" = 60)
 	)
@@ -198,8 +198,8 @@
 	name = "robot mark v armor plating"
 	result = /obj/item/robot_parts/robot_component/armour/mkv
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 90),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 90),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_WELDING, 35, "time" = 90),
 		list(QUALITY_CUTTING, 30, "time" = 180),
 		list(QUALITY_HAMMERING, 30, "time" = 180),

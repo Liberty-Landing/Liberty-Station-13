@@ -20,7 +20,7 @@
 	var/contents_spawned = FALSE
 
 	name = "box"
-	desc = "A steel-cased box."
+	desc = "A aluminium-cased box."
 	icon = 'icons/obj/storage/deferred.dmi'
 	icon_state = "box"
 	item_state = "box"

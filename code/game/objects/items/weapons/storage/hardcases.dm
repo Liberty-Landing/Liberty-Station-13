@@ -8,7 +8,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	max_w_class = ITEM_SIZE_NORMAL
 	max_storage_space = DEFAULT_SMALL_STORAGE * 1.5 //a better fancy box
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 	var/sticker = null
 	var/closed = TRUE
 
@@ -136,7 +136,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	desc = "A generic ammo can. Can hold ammo magazines, boxes, bullets, a assortment of grenades and some gear. Alt+click to open and close."
 	icon_state = "ammo_case"
 	sticker_name = "ammo"
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 
 	can_hold = list(
 		/obj/item/ammo_magazine,
@@ -253,7 +253,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	name = "hardware hard case"
 	desc = "A hard case that can hold electronic parts. Alt+click to open and close."
 	icon_state = "hcase_parts"
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 	max_w_class = ITEM_SIZE_NORMAL
 
 	can_hold = list(
@@ -286,7 +286,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	name = "medical hard case"
 	desc = "A hardcase with medical markings that can hold a lot of medical supplies. Alt+click to open and close."
 	icon_state = "hcase_medi"
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 
 	max_w_class = ITEM_SIZE_NORMAL
 
@@ -387,7 +387,7 @@ obj/item/storage/hcases/attackby(obj/item/W, mob/user)
 	name = "tool hard case"
 	desc = "A hardcase with engineering markings that can hold a variety of different tools and materials. Alt+click to open and close."
 	icon_state = "hcase_engi"
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 	max_w_class = ITEM_SIZE_NORMAL
 	can_hold = list(
 		/obj/item/cell,

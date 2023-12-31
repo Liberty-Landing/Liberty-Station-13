@@ -199,4 +199,3 @@ var/global/list/ore_data = list()
 	ore = /obj/item/stack/ore/osmium
 	scan_icon = "mineral_rare"
 */
-

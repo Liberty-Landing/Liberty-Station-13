@@ -419,7 +419,7 @@
 	if(default_part_replacement(O, user))
 		return
 
-	if(istype(O,/obj/item/stack/material) && O.get_material_name() == MATERIAL_STEEL)
+	if(istype(O,/obj/item/stack/material) && O.get_material_name() == MATERIAL_ALUMINIUM)
 		var/obj/item/stack/material/S = O
 		if(S.use(1))
 			to_chat(user, SPAN_NOTICE("You insert a sheet of \the [S]. \The [src] now has [repair_amount] repair points remaining."))

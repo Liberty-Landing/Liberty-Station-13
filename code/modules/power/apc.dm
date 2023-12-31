@@ -571,7 +571,7 @@
 			if(opened && has_electronics==0 && !terminal)
 				if(I.use_tool(user, src, WORKTIME_FAST, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 					if (emagged || (stat & BROKEN) || opened==2)
-						new /obj/item/stack/material/steel(loc)
+						new /obj/item/stack/material/aluminium(loc)
 						user.visible_message(\
 							SPAN_WARNING("[src] has been cut apart by [user.name] with the weldingtool."),\
 							SPAN_NOTICE("You disassembled the broken APC frame."),\

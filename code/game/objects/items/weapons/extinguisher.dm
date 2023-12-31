@@ -12,7 +12,7 @@
 	throw_speed = 2
 	throw_range = 10
 	force = WEAPON_FORCE_DANGEROUS
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	attack_verb = list("slammed", "whacked", "bashed", "thunked", "battered", "bludgeoned", "thrashed")
 
 	var/spray_particles = 3

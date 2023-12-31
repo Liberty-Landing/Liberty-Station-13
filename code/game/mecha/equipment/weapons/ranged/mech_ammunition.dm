@@ -9,7 +9,7 @@
 	var/ammo_max_amout = 0 //How many shells can this big box hold?
 	var/amount_per_click = 1 //how many we load per click. Used to
 	var/ammo_type = null//What kinda ammo do we load?
-	matter = list(MATERIAL_STEEL = 35)
+	matter = list(MATERIAL_ALUMINIUM = 35)
 
 /obj/item/mech_ammo_box/examine(mob/user)
 	..()

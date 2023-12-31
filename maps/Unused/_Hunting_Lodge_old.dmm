@@ -1910,7 +1910,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "fT" = (
@@ -2064,8 +2064,8 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gr" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gs" = (
@@ -2137,7 +2137,7 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gD" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gE" = (
@@ -3063,7 +3063,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -3773,7 +3773,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "Ob" = (

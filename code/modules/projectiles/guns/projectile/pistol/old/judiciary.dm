@@ -7,7 +7,7 @@
 	item_state = "judiciary"
 	caliber = CAL_PISTOL
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 6)
 	price_tag = 550
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	can_dual = TRUE

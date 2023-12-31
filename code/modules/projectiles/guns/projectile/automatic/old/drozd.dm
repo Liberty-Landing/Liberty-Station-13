@@ -13,7 +13,7 @@
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL|MAG_WELL_SMG
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 3)
 	price_tag = 800
 	damage_multiplier = 0.95
 	init_recoil = SMG_RECOIL(0.4)

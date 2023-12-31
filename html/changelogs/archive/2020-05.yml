@@ -9,8 +9,8 @@
   - imageadd: New folder sprites.
   - bugfix: AI now properly receives cryosleep respawn bonus when using the 'Wipe
       Core' command, and entering Intelligence Storage.
-  - imageadd: Added new sprites for existing material stack items, that being steel,
-      plasteel, plastic, iron, wood, and all glass.
+  - imageadd: Added new sprites for existing material stack items, that being aluminium,
+      indsteel, plastic, iron, wood, and all glass.
   - imagedel: Removed replaced material sprites from the above addition.
   - imagedel: Removed unused fcardholder icon.
   - imageadd: New Ian sprite done by Watler, in addition of a puppy sprite I did based

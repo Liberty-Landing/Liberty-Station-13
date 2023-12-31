@@ -163,7 +163,7 @@
 		/datum/stat_modifier/mob/living/carbon/superior_animal/slowdraw = 10,
 	)
 
-	range_telegraph = "takes aim at"
+	range_telegraph = "attempts to reflect unstable plasma at"
 	ranged = TRUE
 	comfy_range = 7
 	rapid = FALSE

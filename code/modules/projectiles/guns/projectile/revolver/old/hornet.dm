@@ -7,7 +7,7 @@
 	item_state = "hornet"
 	force = WEAPON_FORCE_PAINFUL
 	caliber = CAL_50
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 8)
 	price_tag = 1200
 	can_dual = TRUE
 	proj_agony_multiplier = 1.4

@@ -14,7 +14,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_SMG|MAG_WELL_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 14, MATERIAL_WOOD = 12)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_ALUMINIUM = 14, MATERIAL_WOOD = 12)
 	price_tag = 850
 	penetration_multiplier = 0.8
 	init_recoil = SMG_RECOIL(0.8)
@@ -59,7 +59,7 @@
 	name = "Thompson frame"
 	desc = "A Thompson SMG frame. Just like in the gangster movies!"
 	icon_state = "frame_thompson"
-	matter = list(MATERIAL_PLASTEEL = 4, MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_INDSTEEL = 4, MATERIAL_ALUMINIUM = 4)
 	result = /obj/item/gun/projectile/automatic/thompson
 	resultvars = list(/obj/item/gun/projectile/automatic/thompson)
 	gripvars = list(/obj/item/part/gun/grip/wood)

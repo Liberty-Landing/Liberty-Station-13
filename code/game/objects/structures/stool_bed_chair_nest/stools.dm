@@ -19,7 +19,7 @@ var/global/list/stool_cache = list() //haha stool
 /obj/item/stool/New(var/newloc, var/new_material, var/new_padding_material)
 	..(newloc)
 	if(!new_material)
-		new_material = MATERIAL_STEEL
+		new_material = MATERIAL_ALUMINIUM
 	material = get_material_by_name(new_material)
 	if(new_padding_material)
 		padding_material = get_material_by_name(new_padding_material)
@@ -30,7 +30,7 @@ var/global/list/stool_cache = list() //haha stool
 	update_icon()
 
 /obj/item/stool/padded/New(var/newloc, var/new_material)
-	..(newloc, MATERIAL_STEEL, MATERIAL_CARPET)
+	..(newloc, MATERIAL_ALUMINIUM, MATERIAL_CARPET)
 
 /obj/item/stool/update_icon()
 	// Prep icon.

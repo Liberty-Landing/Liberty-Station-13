@@ -411,15 +411,15 @@
 				R.amount = rand(5,25)
 
 			if(2)
-				var/obj/item/stack/material/plasteel/R = new(src)
+				var/obj/item/stack/material/indsteel/R = new(src)
 				R.amount = rand(5,25)
 
 			if(3)
-				var/obj/item/stack/material/steel/R = new(src)
+				var/obj/item/stack/material/aluminium/R = new(src)
 				R.amount = rand(5,25)
 
 			if(4)
-				var/obj/item/stack/material/plasteel/R = new(src)
+				var/obj/item/stack/material/indsteel/R = new(src)
 				R.amount = rand(5,25)
 
 			if(5)

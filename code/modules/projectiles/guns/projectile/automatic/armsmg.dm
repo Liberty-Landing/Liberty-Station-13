@@ -13,7 +13,7 @@
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL | MAG_WELL_SMG | MAG_WELL_DRUM
 	auto_eject = TRUE
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 3)
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	damage_multiplier = 0.9
 	penetration_multiplier = 0.5

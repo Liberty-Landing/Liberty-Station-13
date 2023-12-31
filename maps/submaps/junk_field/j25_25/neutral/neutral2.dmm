@@ -137,7 +137,7 @@
 /area/template_noop)
 "aF" = (
 /obj/random/lowkeyrandom/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "aG" = (
 /obj/machinery/light/small{
@@ -269,7 +269,7 @@
 /area/template_noop)
 "aV" = (
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "aW" = (
 /obj/machinery/light/small{
@@ -304,15 +304,15 @@
 /obj/structure/table/rack,
 /obj/random/pack/tech_loot,
 /obj/random/boxes,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/template_noop)
 "bb" = (
 /obj/random/mob/carp,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "bc" = (
 /obj/structure/scrap/poor/large,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/template_noop)
 "bd" = (
 /obj/random/scrap/sparse_even/low_chance,
@@ -336,7 +336,7 @@
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "bg" = (
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/template_noop)
 "bh" = (
 /obj/random/pack/tech_loot,
@@ -353,7 +353,7 @@
 /obj/structure/table/standard,
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/template_noop)
 "bk" = (
 /obj/structure/cable/green{

@@ -73,7 +73,7 @@
 
 /tipsAndTricks/jobs/scrap_stuff
     jobs_list = list(JOBS_PROSPECTOR)
-    tipText = "Broken Devices, Scrap Metal, and Burnt Boards are all worth grabbing, as they can have random materials or at least some steel, glass and/or plastic."
+    tipText = "Broken Devices, Scrap Metal, and Burnt Boards are all worth grabbing, as they can have random materials or at least some aluminium, glass and/or plastic."
 
 /tipsAndTricks/jobs/scrap_ammo_uses
     jobs_list = list(JOBS_PROSPECTOR)

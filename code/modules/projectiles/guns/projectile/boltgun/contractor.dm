@@ -22,7 +22,7 @@
 	max_shells = 20
 	fire_sound = 'sound/weapons/guns/fire/vintorez.ogg'
 	reload_sound = 'sound/weapons/guns/interact/rifle_load.ogg'
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 15)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_PLASTIC = 15)
 	price_tag = 500
 	sharp = FALSE
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG)

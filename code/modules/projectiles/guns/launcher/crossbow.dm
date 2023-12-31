@@ -269,8 +269,8 @@
 		if (M.use(amount) && stored_matter >= max_stored_matter)
 			to_chat(user, "<span class='notice'>The RXD is full.")
 
-	// Alternatively, load it with steel sheets
-	if(istype(M, /obj/item/stack/material/steel))
+	// Alternatively, load it with aluminium sheets
+	if(istype(M, /obj/item/stack/material/aluminium))
 		var/metal_amount = min(M.get_amount(), round(max_stored_matter - stored_matter))
 		if(M.use(metal_amount) && stored_matter < max_stored_matter)
 			stored_matter += metal_amount

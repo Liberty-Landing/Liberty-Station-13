@@ -82,7 +82,7 @@
  */
 /obj/item/tank/plasma
 	name = "plasma tank"
-	desc = "Contains dangerous plasma. Do not inhale. Warning: extremely flammable."
+	desc = "Contains dangerous hydrogen plasma. Do not inhale. Warning: extremely flammable."
 	icon_state = "plasma"
 	force = WEAPON_FORCE_NORMAL
 	gauge_icon = null

@@ -11,7 +11,7 @@
 	force = WEAPON_FORCE_PAINFUL //looks heavier than a pistol
 	self_recharge = 1
 	modifystate = null
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_URANIUM = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_URANIUM = 10)
 	price_tag = 1700
 	charge_cost = 50
 	can_dual = FALSE

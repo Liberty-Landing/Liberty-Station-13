@@ -108,7 +108,7 @@
 	name = "tray"
 	desc = "An empty tray."
 	icon_state = "tray"
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/trash/candle
 	name = "candle"

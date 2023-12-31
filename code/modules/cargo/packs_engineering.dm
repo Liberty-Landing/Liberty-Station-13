@@ -103,7 +103,7 @@
 
 /datum/supply_pack/metal120
 	name = "Metal Sheets Crate (120)"
-	contains = list(/obj/item/stack/material/steel)
+	contains = list(/obj/item/stack/material/aluminium)
 	amount = 120
 	cost = 400
 	containertype = /obj/structure/closet/crate/secure
@@ -112,10 +112,10 @@
 
 /datum/supply_pack/metal480
 	name = "Bulk Metal Sheets Crate"
-	contains = list(/obj/item/stack/material/steel/full,
-	/obj/item/stack/material/steel/full,
-	/obj/item/stack/material/steel/full,
-	/obj/item/stack/material/steel/full)
+	contains = list(/obj/item/stack/material/aluminium/full,
+	/obj/item/stack/material/aluminium/full,
+	/obj/item/stack/material/aluminium/full,
+	/obj/item/stack/material/aluminium/full)
 	cost = 1160
 	containertype = /obj/structure/largecrate
 	crate_name = "Bulk metal crate"
@@ -179,13 +179,13 @@
 	crate_name = "wooden planks crate"
 	group = "Engineering"
 
-/datum/supply_pack/plasteel60
-	name = "Plasteel Sheets Crate (60)"
-	contains = list(/obj/item/stack/material/plasteel)
+/datum/supply_pack/indsteel60
+	name = "indsteel Sheets Crate (60)"
+	contains = list(/obj/item/stack/material/indsteel)
 	amount = 60
 	cost = 1300
 	containertype = /obj/structure/closet/crate/secure
-	crate_name = "plasteel sheets crate"
+	crate_name = "indsteel sheets crate"
 	group = "Engineering"
 
 /datum/supply_pack/electrical

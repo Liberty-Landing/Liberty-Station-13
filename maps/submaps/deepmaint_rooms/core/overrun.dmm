@@ -21,12 +21,12 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "am" = (
 /obj/item/material/shard,
 /obj/structure/girder,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "an" = (
 /obj/item/stack/material/wood,
@@ -92,7 +92,7 @@
 /area/deepmaint)
 "aL" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aM" = (
 /obj/structure/table/rack/shelf,
@@ -159,7 +159,7 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/deepmaint)
 "bk" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/deepmaint)
 "bm" = (
@@ -172,7 +172,7 @@
 /area/deepmaint)
 "bq" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "br" = (
 /obj/item/trash/material/metal,
@@ -185,7 +185,7 @@
 /area/deepmaint)
 "bD" = (
 /obj/item/material/shard,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bG" = (
 /obj/structure/barricade,
@@ -259,7 +259,7 @@
 /area/deepmaint)
 "cc" = (
 /obj/random/traps,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cd" = (
 /obj/structure/grille/broken,
@@ -283,23 +283,23 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ck" = (
 /obj/item/material/shard,
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cl" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cm" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cn" = (
 /turf/simulated/floor/tiled/dark,
@@ -311,12 +311,12 @@
 /area/deepmaint)
 "cp" = (
 /obj/structure/barricade,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cq" = (
 /obj/item/material/shard,
 /obj/random/structures,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cr" = (
 /obj/item/material/shard,
@@ -372,7 +372,7 @@
 "jv" = (
 /obj/random/structures,
 /obj/item/trash/material/metal,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "jX" = (
 /obj/structure/bed/chair{
@@ -416,13 +416,13 @@
 /area/deepmaint)
 "pc" = (
 /obj/random/structures,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "qj" = (
 /obj/item/stack/material/wood,
 /obj/structure/table/rack/shelf,
 /obj/item/stack/material/uranium/random,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "qq" = (
 /obj/random/closet_maintloot,
@@ -442,7 +442,7 @@
 "rO" = (
 /obj/item/material/shard,
 /obj/random/scrap,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "rP" = (
 /obj/machinery/light{
@@ -483,7 +483,7 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/deepmaint)
 "ud" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /mob/living/carbon/superior_animal/psi_monster/cerebral_crusher,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/deepmaint)
@@ -519,7 +519,7 @@
 /area/deepmaint)
 "yb" = (
 /obj/item/inflatable/door/torn,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/trash/material/metal,
 /mob/living/carbon/superior_animal/psi_monster/flesh_tower,
@@ -538,7 +538,7 @@
 /area/deepmaint)
 "zk" = (
 /obj/item/material/shard,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/structure/table,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/deepmaint)
@@ -573,8 +573,8 @@
 /area/deepmaint)
 "FK" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/deepmaint)
 "FO" = (
@@ -591,12 +591,12 @@
 	dir = 1
 	},
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "GL" = (
 /obj/item/material/shard,
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Hi" = (
 /obj/item/ammo_magazine/light_rifle_257/empty,
@@ -616,12 +616,12 @@
 /area/deepmaint)
 "IW" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Jw" = (
 /obj/item/material/shard,
 /obj/random/traps,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "JY" = (
 /obj/machinery/light,
@@ -642,7 +642,7 @@
 /area/deepmaint)
 "LN" = (
 /obj/structure/girder,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "MF" = (
 /obj/structure/girder,
@@ -670,7 +670,7 @@
 "PG" = (
 /obj/random/structures,
 /obj/random/material,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Qy" = (
 /obj/machinery/light/floor,
@@ -693,7 +693,7 @@
 "Tf" = (
 /obj/item/material/shard,
 /obj/item/stack/material/plastic/random,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Ve" = (
 /obj/item/stack/rods,
@@ -704,12 +704,12 @@
 	dir = 8
 	},
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Wo" = (
 /obj/structure/low_wall,
 /obj/item/stack/material/plastic/random,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "XB" = (
 /obj/item/inflatable/door/torn,
@@ -727,12 +727,12 @@
 /area/deepmaint)
 "Yf" = (
 /obj/item/stack/rods,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/deepmaint)
 "Ym" = (
 /obj/item/trash/material/metal,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "YL" = (
 /obj/item/material/shard,

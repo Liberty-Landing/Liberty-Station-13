@@ -270,7 +270,7 @@
 			var/obj/item/stack/material/M = AM
 			if(M.amount)
 				switch(M.default_type)
-					if(MATERIAL_PLASMA)
+					if(MATERIAL_HYDROGENC)
 						M.amount--
 						energy_supplied = 192000
 					if(MATERIAL_URANIUM)

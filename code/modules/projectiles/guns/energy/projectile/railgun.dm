@@ -37,7 +37,7 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 3, TECH_MAGNET = 2)
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_ALUMINIUM = 8)
 	charge_cost = 100
 	suitable_cell = /obj/item/cell/medium
 	init_recoil = RIFLE_RECOIL(1.1)
@@ -111,7 +111,7 @@
 	item_state = "railgun"
 	slot_flags = SLOT_BACK
 	origin_tech = list(TECH_COMBAT = 4, TECH_MAGNET = 6, TECH_ENGINEERING = 6)
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 8, MATERIAL_SILVER = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_ALUMINIUM = 8, MATERIAL_SILVER = 10)
 	charge_cost = 500
 	gun_tags = list(GUN_PROJECTILE, GUN_ENERGY, GUN_SCOPE)
 	suitable_cell = /obj/item/cell/large
@@ -204,7 +204,7 @@
 	item_state = "gauss"
 	fire_sound = 'sound/weapons/guns/fire/gaussrifle.ogg'
 	w_class = ITEM_SIZE_HUGE
-	matter = list(MATERIAL_PLASTEEL = 40, MATERIAL_SILVER = 10, MATERIAL_GOLD = 8, MATERIAL_PLATINUM = 4)
+	matter = list(MATERIAL_INDSTEEL = 40, MATERIAL_SILVER = 10, MATERIAL_GOLD = 8, MATERIAL_PLATINUM = 4)
 	charge_cost = 750
 	fire_delay = 20
 	init_recoil = HMG_RECOIL(1)

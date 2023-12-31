@@ -523,8 +523,8 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	throw_speed = 2
 	throw_range = 5
 	matter = null //Cant have nice things, peole abused it way to much. Thank you players.
-	//matter = list(MATERIAL_STEEL = 0.15, MATERIAL_PLASTIC = 0.15) less then 1 vaules make for endless mats in some places - Namely matterforge.
-	//matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1) Eris vaules, broken do to 30 x 3-4 per eletrical box making mechs in wires...
+	//matter = list(MATERIAL_ALUMINIUM = 0.15, MATERIAL_PLASTIC = 0.15) less then 1 vaules make for endless mats in some places - Namely matterforge.
+	//matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1) Eris vaules, broken do to 30 x 3-4 per eletrical box making mechs in wires...
 	flags = CONDUCT
 	slot_flags = SLOT_BELT
 	item_state = "coil"

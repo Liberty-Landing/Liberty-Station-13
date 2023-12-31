@@ -133,7 +133,7 @@
   Hyperio:
   - bugfix: Fix shuttle travel time when moving to another sector on overmap
   - bugfix: Fix shuttles not being able to move back to Eris
-  - rscadd: Cyborg tile stack can copy steel tiles by clicking on them for easy reconstruction
+  - rscadd: Cyborg tile stack can copy aluminium tiles by clicking on them for easy reconstruction
       of damaged areas
   - tweak: Increased overmap size from (50, 50) to (200, 200)
   - tweak: Increased number of overmap events to keep the same density on overmap

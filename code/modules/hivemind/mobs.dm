@@ -384,7 +384,7 @@
 	ability_cooldown = 60 SECONDS
 	speak = list(
 				"No more leaks, no more pain!",
-				"Steel is strong.",
+				"aluminium is strong.",
 				"All humankind is good for - is to serve the Hivemind.",
 				"I'm still working on those bioreactors I promised!",
 				"I have finally arisen!",
@@ -714,7 +714,7 @@
 				"Come here, lover.",
 				"First time? I can be gentle, unless you like it rough.",
 				"What use is that flesh if you don't enjoy it?",
-				"Mine is the caress of steel.",
+				"Mine is the caress of aluminium.",
 				"I offer you the ecstasy of union, and yet you tremble.")
 	//speaking with pilot
 	var/list/common_answers = list(
@@ -845,7 +845,7 @@
 	passenger = target
 	target.loc = src
 	target.canmove = FALSE
-	to_chat(target, SPAN_DANGER("Wires snare your limbs and pull you inside the maneater! You feel yourself bound with a thousand steel tendrils!"))
+	to_chat(target, SPAN_DANGER("Wires snare your limbs and pull you inside the maneater! You feel yourself bound with a thousand aluminium tendrils!"))
 	playsound(src, 'sound/effects/blobattack.ogg', 70, 1)
 	addtimer(CALLBACK(src, .proc/release_passenger), 40 SECONDS)
 

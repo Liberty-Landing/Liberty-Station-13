@@ -282,7 +282,7 @@
 		if (has_items)
 			spill()
 
-		new /obj/item/stack/material/steel(src.loc, 10)
+		new /obj/item/stack/material/aluminium(src.loc, 10)
 		new /obj/item/stack/material/plastic(src.loc, 10)
 		new /obj/item/stack/rods(src.loc, 20)
 		dismantled = 1
@@ -411,7 +411,7 @@
 
 /obj/item/key
 	name = "key"
-	desc = "A keyring with a small steel key, and a pink fob reading \"Pussy Wagon\"."
+	desc = "A keyring with a small aluminium key, and a pink fob reading \"Pussy Wagon\"."
 	icon = 'icons/obj/vehicles.dmi'
 	icon_state = "keys"
 	w_class = ITEM_SIZE_TINY

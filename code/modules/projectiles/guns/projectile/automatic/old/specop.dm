@@ -12,7 +12,7 @@
 	ammo_type =  /obj/item/ammo_casing/7mm
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well =  MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 14, MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_INDSTEEL = 14, MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 8)
 	price_tag = 1150
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
@@ -56,7 +56,7 @@
 	name = "Specop SMG frame"
 	desc = "A Spec-Op SMG frame. For the most talented urban assassin."
 	icon_state = "frame_specop"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/specop
 	resultvars = list(/obj/item/gun/projectile/automatic/specop)
 	gripvars = list(/obj/item/part/gun/grip/rubber)

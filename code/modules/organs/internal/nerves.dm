@@ -40,7 +40,7 @@
 	icon_state = "wire"
 	desc = "Used to carry the sensation of touch of robotic limbs."
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1)
 
 /obj/item/organ/internal/nerve/sensitive_nerve
 	name = "sensitive nerve synapses"

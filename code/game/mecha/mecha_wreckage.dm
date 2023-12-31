@@ -11,7 +11,7 @@
 	anchored = 0
 	opacity = 0
 	layer = TURF_LAYER + 0.6
-	var/list/welder_salvage = list(/obj/item/stack/material/plasteel,/obj/item/stack/material/steel,/obj/item/stack/rods)
+	var/list/welder_salvage = list(/obj/item/stack/material/indsteel,/obj/item/stack/material/aluminium,/obj/item/stack/rods)
 	var/list/wirecutters_salvage = list(/obj/item/stack/cable_coil)
 	var/list/crowbar_salvage
 	var/salvage_num = 5
@@ -83,9 +83,9 @@
 		if(QUALITY_SAWING)
 			to_chat(user, SPAN_NOTICE("You started to cut the mech apart..."))
 			if(I.use_tool(user, src, WORKTIME_SLOW, tool_type, FAILCHANCE_NORMAL, required_stat = STAT_MEC))
-				new /obj/item/stack/material/steel(get_turf(src), 1 ? 60 : 2)
+				new /obj/item/stack/material/aluminium(get_turf(src), 1 ? 60 : 2)
 				new /obj/item/stack/material/plastic(get_turf(src), 1 ? 30 : 2)
-				new /obj/item/stack/material/plasteel(get_turf(src), 1 ? 20 : 2)
+				new /obj/item/stack/material/indsteel(get_turf(src), 1 ? 20 : 2)
 				new /obj/item/stack/material/glass(get_turf(src), 1 ? 10 : 2)
 				new /obj/item/stack/material/refined_scrap(get_turf(src), 1 ? 30 : 2)
 				to_chat(user, SPAN_NOTICE("You cut up the mech."))

@@ -21,7 +21,7 @@
 /datum/design/autolathe/part/cable_coil
 	name = "cable coil"
 	build_path = /obj/item/stack/cable_coil
-	materials = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 4) //Idea is that this is were your getting the plasticside and copper
+	materials = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 4) //Idea is that this is were your getting the plasticside and copper
 	takes_chemicals = FALSE //geting plasticside and copper is hard
 
 /datum/design/autolathe/part/timer
@@ -312,44 +312,44 @@
 	name = "firearm 14.5mm anti-material rifle barrel"
 	build_path = /obj/item/part/gun/barrel/antim
 
-// Bootleg steel parts - for the shitty disk.
+// Bootleg aluminium parts - for the shitty disk.
 
-/datum/design/autolathe/part/barrel/pistol/steel
-	name = "firearm steel 9mm pistol barrel"
-	build_path = /obj/item/part/gun/barrel/pistol/steel
+/datum/design/autolathe/part/barrel/pistol/aluminium
+	name = "firearm aluminium 9mm pistol barrel"
+	build_path = /obj/item/part/gun/barrel/pistol/aluminium
 
-/datum/design/autolathe/part/barrel/magnum/steel
-	name = "firearm steel 10mm pistol barrel"
-	build_path = /obj/item/part/gun/barrel/magnum/steel
+/datum/design/autolathe/part/barrel/magnum/aluminium
+	name = "firearm aluminium 10mm pistol barrel"
+	build_path = /obj/item/part/gun/barrel/magnum/aluminium
 
-/datum/design/autolathe/part/barrel/carbine/steel
-	name = "firearm steel 6.5mm carbine barrel"
-	build_path = /obj/item/part/gun/barrel/srifle/steel
+/datum/design/autolathe/part/barrel/carbine/aluminium
+	name = "firearm aluminium 6.5mm carbine barrel"
+	build_path = /obj/item/part/gun/barrel/srifle/aluminium
 
-/datum/design/autolathe/part/barrel/rifle/steel
-	name = "firearm steel 7.62mm rifle barrel"
-	build_path = /obj/item/part/gun/barrel/lrifle/steel
+/datum/design/autolathe/part/barrel/rifle/aluminium
+	name = "firearm aluminium 7.62mm rifle barrel"
+	build_path = /obj/item/part/gun/barrel/lrifle/aluminium
 
-/datum/design/autolathe/part/barrel/shotgun/steel
-	name = "firearm steel 20mm shotgun barrel"
-	build_path = /obj/item/part/gun/barrel/shotgun/steel
+/datum/design/autolathe/part/barrel/shotgun/aluminium
+	name = "firearm aluminium 20mm shotgun barrel"
+	build_path = /obj/item/part/gun/barrel/shotgun/aluminium
 
-/datum/design/autolathe/part/mechanism/pistol/steel
-	name = "firearm steel pistol mechanism"
-	build_path = /obj/item/part/gun/mechanism/pistol/steel
+/datum/design/autolathe/part/mechanism/pistol/aluminium
+	name = "firearm aluminium pistol mechanism"
+	build_path = /obj/item/part/gun/mechanism/pistol/aluminium
 
-/datum/design/autolathe/part/mechanism/revolver/steel
-	name = "firearm steel revolver mechanism"
-	build_path = /obj/item/part/gun/mechanism/revolver/steel
+/datum/design/autolathe/part/mechanism/revolver/aluminium
+	name = "firearm aluminium revolver mechanism"
+	build_path = /obj/item/part/gun/mechanism/revolver/aluminium
 
-/datum/design/autolathe/part/mechanism/shotgun/steel
-	name = "firearm steel shotgun mechanism"
-	build_path = /obj/item/part/gun/mechanism/shotgun/steel
+/datum/design/autolathe/part/mechanism/shotgun/aluminium
+	name = "firearm aluminium shotgun mechanism"
+	build_path = /obj/item/part/gun/mechanism/shotgun/aluminium
 
-/datum/design/autolathe/part/mechanism/smg/steel
-	name = "firearm steel SMG mechanism"
-	build_path = /obj/item/part/gun/mechanism/smg/steel
+/datum/design/autolathe/part/mechanism/smg/aluminium
+	name = "firearm aluminium SMG mechanism"
+	build_path = /obj/item/part/gun/mechanism/smg/aluminium
 
-/datum/design/autolathe/part/mechanism/autorifle/steel
-	name = "firearm steel self-loading mechanism"
-	build_path = /obj/item/part/gun/mechanism/autorifle/steel
+/datum/design/autolathe/part/mechanism/autorifle/aluminium
+	name = "firearm aluminium self-loading mechanism"
+	build_path = /obj/item/part/gun/mechanism/autorifle/aluminium

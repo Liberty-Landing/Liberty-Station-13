@@ -40,7 +40,7 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD, "time" = 30),
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 20), //So knifes and other misc tools work on it.
-		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 3, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_ADHESIVE, 10, "time" = 60)
 	)
 	related_stats = list(STAT_COG)
@@ -214,7 +214,7 @@
 	name = "closet"
 	result = /obj/structure/closet
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/storage/coffin
@@ -232,32 +232,32 @@
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC)
 	)
 
-/datum/craft_recipe/storage/crate/steel
-	name = "crate, steel"
+/datum/craft_recipe/storage/crate/aluminium
+	name = "crate, aluminium"
 	result = /obj/structure/closet/crate
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/storage/rack
 	name = "rack"
 	result = /obj/structure/table/rack
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/storage/shelf
 	name = "shelf"
 	result = /obj/structure/table/rack/shelf
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/storage/ammo_case
 	name = "Scrap ammo case"
 	result = /obj/item/storage/hcases/ammo/scrap
 	steps = list(
-		list(CRAFT_MATERIAL, 25, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 25, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20)
 	)
 
@@ -265,7 +265,7 @@
 	name = "Scrap Engi Hardcase"
 	result = /obj/item/storage/hcases/engi/scrap
 	steps = list(
-		list(CRAFT_MATERIAL, 25, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 25, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20)
 	)
 
@@ -273,7 +273,7 @@
 	name = "Scrap Parts Hardcase"
 	result = /obj/item/storage/hcases/parts/scrap
 	steps = list(
-		list(CRAFT_MATERIAL, 25, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 25, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20)
 	)
 
@@ -281,6 +281,6 @@
 	name = "Scrap Medi Hardcase"
 	result = /obj/item/storage/hcases/med/scrap
 	steps = list(
-		list(CRAFT_MATERIAL, 25, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 25, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20)
 	)

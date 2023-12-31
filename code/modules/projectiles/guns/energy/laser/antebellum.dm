@@ -10,7 +10,7 @@
 	fire_sound = 'sound/weapons/energy/laser_rifle.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_NORMAL
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 15, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3, MATERIAL_GOLD = 2, MATERIAL_BIOMATTER = 30)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 15, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3, MATERIAL_GOLD = 2, MATERIAL_BIOMATTER = 30)
 	suitable_cell = /obj/item/cell/medium
 	projectile_type = /obj/item/projectile/plasma/light
 	fire_delay = 15
@@ -52,7 +52,7 @@
 	fire_sound = 'sound/weapons/energy/lasmusket_fire.ogg'
 	slot_flags = SLOT_BACK
 	w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_WOOD = 10, MATERIAL_GLASS = 3, MATERIAL_SILVER = 3, MATERIAL_GOLD = 3, MATERIAL_BIOMATTER = 15)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_WOOD = 10, MATERIAL_GLASS = 3, MATERIAL_SILVER = 3, MATERIAL_GOLD = 3, MATERIAL_BIOMATTER = 15)
 	projectile_type = /obj/item/projectile/beam/musket
 	fire_delay = 70 //the original weapon used to have a charge mode, to make it a zero sum, the delay had to be adjsuted
 	charge_cost = 150 // 4 shots on a 600M

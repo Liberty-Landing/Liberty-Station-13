@@ -8,7 +8,7 @@
 	worksound = WORKSOUND_HAMMER
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_ENGINEERING = 1)
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_WOOD = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_WOOD = 2)
 	price_tag = 30
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked","flattened","pulped")
 	tool_qualities = list(QUALITY_HAMMERING = 35, QUALITY_PRYING = 10)
@@ -26,11 +26,11 @@
 
 /obj/item/tool/hammer/deadblow
 	name = "deadblow hammer"
-	desc = "Used for applying blunt force to a surface. This one has sand inside its plasteel head to help do strikes much more constantly in the same place with the same force well reducing trama onto soft surfaces."
+	desc = "Used for applying blunt force to a surface. This one has sand inside its indsteel head to help do strikes much more constantly in the same place with the same force well reducing trama onto soft surfaces."
 	icon_state = "deadblow"
 	item_state = "hammer"
 	tool_qualities = list(QUALITY_HAMMERING = 45)
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_WOOD = 2, MATERIAL_GLASS = 1, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_WOOD = 2, MATERIAL_GLASS = 1, MATERIAL_INDSTEEL = 2)
 	attack_verb = list("attacked", "blunted", "brused", "smacked", "whacked", "striked", "bonked")
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_ENGINEERING = 3)
@@ -45,7 +45,7 @@
 	structure_damage_factor = STRUCTURE_DAMAGE_BREACHING
 	w_class = ITEM_SIZE_BULKY
 	slot_flags = SLOT_BELT|SLOT_BACK
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 6, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 6, MATERIAL_PLASTIC = 1)
 	price_tag = 340
 	switched_on_qualities = list(QUALITY_HAMMERING = 45)
 	switched_off_qualities = list(QUALITY_HAMMERING = 30)
@@ -90,7 +90,7 @@
 	armor_penetration = ARMOR_PEN_EXTREME // Retains AP when turned off - it's a hammer.
 	structure_damage_factor = STRUCTURE_DAMAGE_DESTRUCTIVE
 	damage_mult = 1.1 // Let's not go overboard
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLATINUM = 3, MATERIAL_DIAMOND = 3)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_PLATINUM = 3, MATERIAL_DIAMOND = 3)
 	price_tag = 860
 	switched_on_qualities = list(QUALITY_HAMMERING = 60)
 	switched_off_qualities = list(QUALITY_HAMMERING = 35)
@@ -114,7 +114,7 @@
 	throwforce = WEAPON_FORCE_LETHAL
 	effective_faction = list("spider") // Spiders are weak to crushing.
 	damage_mult = 1.2 // 20% increase, it's already good.
-	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_INDSTEEL = 30, MATERIAL_PLASTIC = 5)
 	throw_speed = 1
 	throw_range = 7
 	w_class = ITEM_SIZE_BULKY
@@ -126,7 +126,7 @@
 
 /obj/item/tool/hammer/homewrecker
 	name = "homewrecker"
-	desc = "A large steel chunk welded to a long handle. Extremely heavy."
+	desc = "A large aluminium chunk welded to a long handle. Extremely heavy."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "homewrecker"
 	item_state = "homewrecker0"
@@ -158,7 +158,7 @@
 	force = WEAPON_FORCE_LETHAL
 	structure_damage_factor = STRUCTURE_DAMAGE_BORING
 	tool_qualities = list(QUALITY_HAMMERING = 40, QUALITY_PRYING = 1)
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 15)
 
 /obj/item/tool/hammer/ironhammer/attack()
 	..()
@@ -166,11 +166,11 @@
 
 /obj/item/tool/hammer/mace
 	name = "Combat Mace"
-	desc = "A heavy Combat Mace reinforced with plasteel, a design seen commonly in the galaxy in hands of almost anyone with competent welding skills."
+	desc = "A heavy Combat Mace reinforced with indsteel, a design seen commonly in the galaxy in hands of almost anyone with competent welding skills."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "combat_mace"
 	item_state = "combat_mace"
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 	price_tag = 30
 	effective_faction = list("spider") // Spiders are weak to crushing.
 	damage_mult = 1.5
@@ -200,7 +200,7 @@
 	item_state = "makeshift_staff"
 	wielded_icon = "makeshift_staff_wielded"
 	tool_qualities = list(QUALITY_HAMMERING = 5)
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	max_upgrades = 3
 	effective_faction = list("spider") // Spiders are weak to crushing.
 	damage_mult = 2
@@ -214,7 +214,7 @@
 	icon_state = "dumbbell"
 	item_state = "dumbbell"
 	tool_qualities = list(QUALITY_HAMMERING = 15)
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 
 /obj/item/tool/hammer/charge
 	name = "rocket hammer"

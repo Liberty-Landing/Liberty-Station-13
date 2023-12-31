@@ -183,14 +183,14 @@
 
 /obj/item/material/shard/shrapnel/New(loc)
 
-	..(loc, MATERIAL_STEEL)
+	..(loc, MATERIAL_ALUMINIUM)
 
 /obj/item/material/shard/shrapnel/scrap
 	name = "scrap metal"
 	amount = 1
 
 /obj/item/material/shard/plasma/New(loc)
-	..(loc, MATERIAL_PLASMAGLASS)
+	..(loc, MATERIAL_LBGLASS)
 
 /obj/item/material/shard/ameridian
 	name = "ameridian"

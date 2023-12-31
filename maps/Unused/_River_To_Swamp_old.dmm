@@ -134,11 +134,11 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/colony/exposedsun/crashed_shop)
 "ck" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/plating/under,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "cl" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/grey,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "cq" = (
@@ -190,7 +190,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "cW" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "da" = (
@@ -240,7 +240,7 @@
 /area/colony/exposedsun/crashed_shop)
 "er" = (
 /obj/machinery/mineral/stacking_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "eF" = (
 /obj/item/material/shard/shrapnel/scrap,
@@ -269,7 +269,7 @@
 "fq" = (
 /obj/item/scrap_lump,
 /obj/item/trash/material/metal,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/grey,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "ft" = (
@@ -324,7 +324,7 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "fY" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "gj" = (
@@ -640,7 +640,7 @@
 /area/nadezhda/outside/forest/hunting_lodge_dark)
 "ms" = (
 /obj/machinery/mineral/unloading_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "mt" = (
 /turf/simulated/floor/asteroid/dirt,
@@ -681,7 +681,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "mL" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -790,7 +790,7 @@
 	id = "sh_belt"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "pJ" = (
 /obj/item/material/shard/shrapnel/scrap,
@@ -807,7 +807,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "pQ" = (
 /obj/item/material/shard/shrapnel/scrap,
@@ -860,7 +860,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "qp" = (
 /obj/structure/catwalk,
@@ -905,7 +905,7 @@
 /obj/machinery/conveyor/south{
 	id = "sh_belt"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "rH" = (
 /obj/structure/table/steel_reinforced,
@@ -1333,7 +1333,7 @@
 	dir = 4
 	},
 /obj/structure/ore_box,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "AC" = (
 /obj/random/mob/nightmare/low_chance,
@@ -1450,7 +1450,7 @@
 /turf/simulated/floor/wood_old,
 /area/colony/exposedsun/crashed_shop/workshop)
 "CT" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "CU" = (
 /obj/structure/catwalk,
@@ -1582,7 +1582,7 @@
 	dir = 6
 	},
 /obj/structure/closet/crate,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "Fo" = (
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech/ranged,
@@ -1594,7 +1594,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "FC" = (
 /obj/structure/closet/crate,
@@ -1691,7 +1691,7 @@
 "He" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/stack/material/plasma/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/tool/tape_roll/flextape,
 /obj/random/material_rare/low_chance,
 /obj/random/material_ore/low_chance,
@@ -1737,7 +1737,7 @@
 /area/colony/exposedsun/crashed_shop)
 "HY" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/glass/random,
 /obj/item/stack/material/glass/reinforced,
@@ -1815,7 +1815,7 @@
 /area/colony/exposedsun/crashed_shop)
 "Jk" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "Jn" = (
 /obj/structure/table/rack,
@@ -1864,7 +1864,7 @@
 	id = "sh_belt"
 	},
 /obj/landmark/machinery/input,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "Ke" = (
 /obj/item/clothing/head/helmet/faceshield/riot,
@@ -1899,7 +1899,7 @@
 "KP" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/carbon/superior_animal/human/voidwolf/elite/laserak,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/colony/exposedsun/crashed_shop/workshop)
 "KS" = (
 /obj/structure/table/rack,
@@ -1911,7 +1911,7 @@
 /turf/simulated/floor/rock/grey,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Ld" = (
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/colony/exposedsun/crashed_shop/workshop)
 "Lg" = (
 /obj/item/stack/rods/random,
@@ -2067,7 +2067,7 @@
 /area/colony/exposedsun/crashed_shop/workshop)
 "Ou" = (
 /obj/item/stack/rods/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/flora/small/lavarock3,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
@@ -2144,7 +2144,7 @@
 "PN" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/colony/exposedsun/crashed_shop/workshop)
 "PR" = (
 /turf/simulated/floor/beach/water/ocean,
@@ -2201,7 +2201,7 @@
 "QN" = (
 /obj/item/scrap_lump,
 /obj/item/stack/rods/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "QQ" = (
@@ -2224,7 +2224,7 @@
 /turf/simulated/floor/asteroid/dirt/dark,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Re" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/rock,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
 "Rm" = (
@@ -2251,10 +2251,10 @@
 /area/colony/exposedsun/crashed_shop)
 "RN" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/colony/exposedsun/crashed_shop/workshop)
 "RO" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/invislight,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/colony/exposedsun/crashed_shop/bottom_floor)
@@ -2560,7 +2560,7 @@
 /area/colony/exposedsun/crashed_shop)
 "XC" = (
 /obj/machinery/mineral/processing_unit/scrap_heaven,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/colony/exposedsun/crashed_shop/workshop)
 "XE" = (
 /mob/living/carbon/superior_animal/human/voidwolf/elite/myrmidon,

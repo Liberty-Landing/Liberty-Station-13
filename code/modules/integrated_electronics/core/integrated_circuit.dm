@@ -104,8 +104,8 @@ a creative player the means to solve many problems.  Circuits are held inside an
 	setup_io(inputs, /datum/integrated_io, inputs_default, IC_INPUT)
 	setup_io(outputs, /datum/integrated_io, outputs_default, IC_OUTPUT)
 	setup_io(activators, /datum/integrated_io/activate, null, IC_ACTIVATOR)
-	if(!matter[MATERIAL_STEEL])
-		matter[MATERIAL_STEEL] = w_class * SScircuit.cost_multiplier // Default cost.
+	if(!matter[MATERIAL_ALUMINIUM])
+		matter[MATERIAL_ALUMINIUM] = w_class * SScircuit.cost_multiplier // Default cost.
 
 /obj/item/integrated_circuit/proc/get_power_cell(atom/movable/AM)
 	var/efficient = 1

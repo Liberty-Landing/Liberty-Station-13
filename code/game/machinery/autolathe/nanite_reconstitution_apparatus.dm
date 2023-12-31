@@ -36,7 +36,7 @@
 	var/have_materials = TRUE
 	var/obj/item/reagent_containers/glass/container = null
 	//var/forbidden_materials = list(MATERIAL_BIOMATTER)
-	var/allowed_materials = list(MATERIAL_STEEL, MATERIAL_PLASTEEL, MATERIAL_WOOD, MATERIAL_CARDBOARD, MATERIAL_PLASTIC, MATERIAL_GLASS, MATERIAL_SILVER, MATERIAL_GOLD)
+	var/allowed_materials = list(MATERIAL_ALUMINIUM, MATERIAL_INDSTEEL, MATERIAL_WOOD, MATERIAL_CARDBOARD, MATERIAL_PLASTIC, MATERIAL_GLASS, MATERIAL_SILVER, MATERIAL_GOLD)
 	var/can_fix = FALSE
 	var/working = FALSE
 
@@ -48,7 +48,7 @@
 	var/activated = FALSE
 
 	var/STEEL_REQ = 3
-	var/PLASTEEL_REQ = 1
+	var/INDSTEEL_REQ = 1
 	var/NANITE_REQ = 1
 	var/ROUND_FRACTION = 0.1
 
@@ -135,14 +135,14 @@
 	if (container)
 		nanites_needed = round(container.reagents.get_reagent_amount("nanites") - (NANITE_REQ / mat_efficiency), ROUND_FRACTION)
 
-	var/steel_needed = round((stored_material["steel"] || 0) - (STEEL_REQ / mat_efficiency), ROUND_FRACTION)
-	var/plasteel_needed = round((stored_material["plasteel"] || 0) - (PLASTEEL_REQ / mat_efficiency), ROUND_FRACTION)
+	var/steel_needed = round((stored_material["aluminium"] || 0) - (STEEL_REQ / mat_efficiency), ROUND_FRACTION)
+	var/indsteel_needed = round((stored_material["indsteel"] || 0) - (INDSTEEL_REQ / mat_efficiency), ROUND_FRACTION)
 
 	to_chat(user, SPAN_WARNING("There are not enough materials to use \the [src.name]! You need:"))
 	if (steel_needed < 0)
-		to_chat(user, SPAN_WARNING("[abs(steel_needed)] steel"))
-	if (plasteel_needed < 0)
-		to_chat(user, SPAN_WARNING("[abs(plasteel_needed)] plasteel"))
+		to_chat(user, SPAN_WARNING("[abs(steel_needed)] aluminium"))
+	if (indsteel_needed < 0)
+		to_chat(user, SPAN_WARNING("[abs(indsteel_needed)] indsteel"))
 	if (nanites_needed < 0)
 		to_chat(user, SPAN_WARNING("[abs(nanites_needed)] industrial nanites"))
 
@@ -181,12 +181,12 @@
 /obj/machinery/nanite_reconstitution_apparatus/proc/consume_materials()
 
 	var/steel_cost = round((STEEL_REQ / mat_efficiency), ROUND_FRACTION)
-	var/plasteel_cost = round((PLASTEEL_REQ / mat_efficiency), ROUND_FRACTION)
+	var/indsteel_cost = round((indsteel_REQ / mat_efficiency), ROUND_FRACTION)
 	var/nanite_cost = round((NANITE_REQ / mat_efficiency), ROUND_FRACTION)
 
-	if((stored_material[MATERIAL_STEEL] >= steel_cost) && (stored_material[MATERIAL_PLASTEEL] >= plasteel_cost) && (container.reagents.get_reagent_amount("nanites") >= nanite_cost))
-		stored_material[MATERIAL_STEEL] -= steel_cost
-		stored_material[MATERIAL_PLASTEEL] -= plasteel_cost
+	if((stored_material[MATERIAL_ALUMINIUM] >= steel_cost) && (stored_material[MATERIAL_INDSTEEL] >= indsteel_cost) && (container.reagents.get_reagent_amount("nanites") >= nanite_cost))
+		stored_material[MATERIAL_ALUMINIUM] -= steel_cost
+		stored_material[MATERIAL_INDSTEEL] -= indsteel_cost
 		container.reagents.remove_reagent("nanites", nanite_cost, TRUE)
 		return TRUE
 
@@ -645,8 +645,8 @@
 
 /obj/machinery/nanite_reconstitution_apparatus/loaded
 	stored_material = list(
-		MATERIAL_STEEL = 30,
-		MATERIAL_PLASTEEL = 9,
+		MATERIAL_ALUMINIUM = 30,
+		MATERIAL_INDSTEEL = 9,
 		)
 
 /obj/machinery/nanite_reconstitution_apparatus/loaded/Initialize()

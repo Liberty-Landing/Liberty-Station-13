@@ -5,7 +5,7 @@
 	icon_state = "0"
 	density = TRUE
 	anchored = FALSE
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	var/state = 0
 	var/obj/item/circuitboard/circuit = null
 //	weight = 1.0E8

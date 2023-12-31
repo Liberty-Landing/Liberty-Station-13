@@ -327,7 +327,7 @@ var/list/turret_icons
 							installation.forceMove(loc)
 							installation = null
 						if(prob(50))
-							new /obj/item/stack/material/steel(loc, rand(1,4))
+							new /obj/item/stack/material/aluminium(loc, rand(1,4))
 						if(prob(50))
 							new /obj/item/device/assembly/prox_sensor(loc)
 					else
@@ -892,13 +892,13 @@ var/list/turret_icons
 			if(build_step == 0 && !anchored)
 				if(I.use_tool(user, src, WORKTIME_FAST, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 					to_chat(user, SPAN_NOTICE("You dismantle the turret construction."))
-					new /obj/item/stack/material/steel( loc, 8)
+					new /obj/item/stack/material/aluminium( loc, 8)
 					qdel(src)
 					return
 			if(build_step == 7)
 				if(I.use_tool(user, src, WORKTIME_FAST, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 					to_chat(user, SPAN_NOTICE("You pry off the turret's exterior armor."))
-					new /obj/item/stack/material/steel(loc, 2)
+					new /obj/item/stack/material/aluminium(loc, 2)
 					build_step = 6
 					return
 			return
@@ -907,7 +907,7 @@ var/list/turret_icons
 			if(build_step == 2)
 				if(I.use_tool(user, src, WORKTIME_FAST, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 					to_chat(user, "You remove the turret's interior metal armor.")
-					new /obj/item/stack/material/steel( loc, 2)
+					new /obj/item/stack/material/aluminium( loc, 2)
 					build_step = 1
 					return
 			if(build_step == 7)
@@ -947,7 +947,7 @@ var/list/turret_icons
 
 	switch(build_step)
 		if(1)
-			if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_STEEL)
+			if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_ALUMINIUM)
 				var/obj/item/stack/M = I
 				if(M.use(2))
 					to_chat(user, SPAN_NOTICE("You add some metal armor to the interior frame."))
@@ -987,7 +987,7 @@ var/list/turret_icons
 			//attack_hand() removes the prox sensor
 
 		if(6)
-			if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_STEEL)
+			if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_ALUMINIUM)
 				var/obj/item/stack/M = I
 				if(M.use(2))
 					to_chat(user, SPAN_NOTICE("You add some metal armor to the exterior frame."))

@@ -8,7 +8,7 @@
 	w_class = ITEM_SIZE_SMALL
 	var/data_to_write = null
 	var/accepting_refs = FALSE
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 5, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GLASS = 5, MATERIAL_PLASTIC = 5)
 	var/copy_values = FALSE
 	var/copy_id = FALSE
 	var/datum/weakref/idlock = null

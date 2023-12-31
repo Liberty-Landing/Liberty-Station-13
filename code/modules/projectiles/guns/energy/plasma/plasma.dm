@@ -8,7 +8,7 @@
 	w_class = ITEM_SIZE_HUGE
 	slot_flags = SLOT_BACK
 	force = WEAPON_FORCE_PAINFUL
-	matter = list(MATERIAL_PLASTEEL = 17, MATERIAL_WOOD = 8, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 4)
+	matter = list(MATERIAL_INDSTEEL = 17, MATERIAL_WOOD = 8, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 4)
 	price_tag = 2000
 	origin_tech = list(TECH_COMBAT = 3, TECH_PLASMA = 2)
 	fire_sound = 'sound/weapons/energy/pulse.ogg'
@@ -51,7 +51,7 @@
 	desc = "An older Astrakhan corporation brand plasma rifle, developed in direct response to compete against the highly successful \"Cassad\" design by Hellion Electronics Concern. Reliable and capable of firing suppressive bursts of lower-temperature plasma."
 	icon = 'icons/obj/guns/energy/destroyer.dmi'
 	fire_sound = 'sound/weapons/energy/pulse.ogg'
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 10, MATERIAL_URANIUM = 7)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 10, MATERIAL_URANIUM = 7)
 	projectile_type = /obj/item/projectile/beam/pulse
 	charge_cost = 150 //4 shots out of a 600M
 	fire_delay = 15
@@ -71,7 +71,7 @@
 	projectile_type = /obj/item/projectile/plasma/heavy/super_heavy
 	cell_type = /obj/item/cell/medium
 	charge_cost = 150
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 20, MATERIAL_SILVER = 5, MATERIAL_PLASMA = 10)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 20, MATERIAL_SILVER = 5, MATERIAL_HYDROGENC = 10)
 	damage_multiplier = 1
 	twohanded = FALSE
 	can_dual = TRUE
@@ -92,7 +92,7 @@
 	var/explosion_f_size = 5
 
 	init_firemodes = list(
-		list(mode_name="Super-heavy Plasma", mode_desc="A massive plasma bolt to melt even plasteel", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#FFFF00"),
+		list(mode_name="Super-heavy Plasma", mode_desc="A massive plasma bolt to melt even indsteel", projectile_type=/obj/item/projectile/plasma/heavy/super_heavy, fire_sound='sound/weapons/energy/pulse.ogg', fire_delay=5, icon="kill", projectile_color = "#FFFF00"),
 	)
 
 /obj/item/gun/energy/plasma/super_heavy/examine(mob/user)

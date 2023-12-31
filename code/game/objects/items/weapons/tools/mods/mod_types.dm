@@ -8,11 +8,11 @@
 //This includes most mechanical ones
 /obj/item/tool_upgrade/reinforcement/stick
 	name = "brace bar"
-	desc = "A sturdy pole made of fiber tape and plasteel rods. Can be used to reinforce the shaft of many tools."
+	desc = "A sturdy pole made of fiber tape and indsteel rods. Can be used to reinforce the shaft of many tools."
 	icon_state = "brace_bar"
 
 	price_tag = 120
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
 
 //list/tool_upgrades, list/required_qualities, list/negative_qualities, prefix, req_fuel, req_cell
@@ -31,9 +31,9 @@
 //Heatsink can be attached to any tool that uses fuel or power
 /obj/item/tool_upgrade/reinforcement/heatsink
 	name = "heatsink"
-	desc = "An array of plasteel fins which dissipates heat, reducing damage and extending the lifespan of power tools or improving energy weapon cooling."
+	desc = "An array of indsteel fins which dissipates heat, reducing damage and extending the lifespan of power tools or improving energy weapon cooling."
 	icon_state = "heatsink"
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
 
 /obj/item/tool_upgrade/reinforcement/heatsink/New()
@@ -54,9 +54,9 @@
 
 /obj/item/tool_upgrade/reinforcement/plating
 	name = "reinforced plating"
-	desc = "A sturdy bit of plasteel that can be bolted onto any tool to protect it. Tough, but bulky."
+	desc = "A sturdy bit of indsteel that can be bolted onto any tool to protect it. Tough, but bulky."
 	icon_state = "plate"
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 2) //steel to compensate for metal rods used in crafting
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 2) //aluminium to compensate for metal rods used in crafting
 	preloaded_reagents = list("iron" = 20)
 
 /obj/item/tool_upgrade/reinforcement/plating/New()
@@ -74,7 +74,7 @@
 	name = "metal guard"
 	desc = "A bent piece of metal that wraps around sensitive parts of a tool, protecting it from impacts, debris, and stray fingers. Could be added to the back of a gun to help stablize it as well."
 	icon_state = "guard"
-	matter = list(MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 5)
 	preloaded_reagents = list("aluminum" = 9, "iron" = 9)
 	price_tag = 160
 
@@ -97,7 +97,7 @@
 	name = "plasmablock"
 	desc = "A plasmablock is way more efficient to dissipate heat than classic heatsinks or waterblocks thanks to the tremendous heat-transfer capacity of liquid plasma. The fluid that is actively pumped through a radiator and cooled by fans. It greatly extends the lifespan of power tools or heat dissipation of energy weapons."
 	icon_state = "plasmablock"
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 2, MATERIAL_PLASMA = 1)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 2, MATERIAL_HYDROGENC = 1)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5, "plasma" = 3)
 
 /obj/item/tool_upgrade/reinforcement/plasmablock/New()
@@ -140,7 +140,7 @@
 	name = "ergonomic grip"
 	desc = "A replacement grip for a tool which allows it to be more precisely controlled with one hand. Can be placed under a gun's barrel to reduce recoil. However, it also makes bracing impossible."
 	icon_state = "ergonomic"
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 5)
 	preloaded_reagents = list("aluminum" = 9, "plasticide" = 3)
 	price_tag = 120
 
@@ -162,7 +162,7 @@
 	name = "ratcheting mechanism"
 	desc = "A mechanical upgrade for wrenches and screwdrivers which allows the tool to only turn in one direction."
 	icon_state = "ratchet"
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 4, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 4, MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
 
 /obj/item/tool_upgrade/productivity/ratchet/New()
@@ -178,7 +178,7 @@
 	name = "red paint"
 	desc = "Do red tools really work faster or is the effect purely psychological? Needless to say, you can't strip it off once applied. Ye'z boyz kin' put in on ya shootahz too!"
 	icon_state = "paint_red"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("acetone" = 15, "iron" = 5)
 	can_remove = FALSE
 	price_tag = 60
@@ -205,7 +205,7 @@
 	name = "sharpening block"
 	desc = "A rough single-use block to sharpen a blade or a rifle bayonet. The honed edge cuts smoothly, and can never be dulled."
 	icon_state = "whetstone"
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_DIAMOND = 3)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_DIAMOND = 3)
 	can_remove = FALSE
 	price_tag = 260
 
@@ -230,7 +230,7 @@
 	desc = "An adaptable industrial grade cutting disc, with diamond dust worked into the metal. Exceptionally durable. Works for both cutting tools and rifle bayonets."
 	icon_state = "diamond_blade"
 	price_tag = 300
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_DIAMOND = 4)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_DIAMOND = 4)
 
 /obj/item/tool_upgrade/productivity/diamond_blade/New()
 	..()
@@ -253,7 +253,7 @@
 	name = "oxyjet canister"
 	desc = "A canister of pure, compressed oxygen with adapters for mounting onto a welding tool. Used alongside fuel, it allows for higher burn temperatures."
 	icon_state = "oxyjet"
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
 	price_tag = 180
 
@@ -273,7 +273,7 @@
 	name = "high power motor"
 	desc = "A motor for power tools with a higher horsepower than usually expected. Significantly enhances productivity and lifespan, but more expensive to run and harder to control."
 	icon_state = "motor"
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 4)
 	preloaded_reagents = list("iron" = 15, "oil"= 9)
 
 /obj/item/tool_upgrade/productivity/motor/New()
@@ -309,7 +309,7 @@
 	desc = "Applying a thin coat of this paint on a tool prevents blood stains, dirt or dust to adhere to its surface. Everyone works better and faster with clean tools. Once applied, it can't ever be stripped."
 	icon_state = "antistaining"
 	preloaded_reagents = list("oil" = 5, "aluminum" = 5, "mercury" = 5)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_PLASMA = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 2, MATERIAL_HYDROGENC = 3)
 	can_remove = FALSE
 	price_tag = 180
 
@@ -328,7 +328,7 @@
 	desc = "This handcrafted device shunts the power safeties of a tool, massively increasing its workspeed at the cost of fuel or power efficiency. \
 			It can also be installed on energy weaponry for more concentrated blasts at the cost of cell efficiency."
 	icon_state = "booster"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 1)
 	price_tag = 230
 
 /obj/item/tool_upgrade/productivity/booster/New()
@@ -354,7 +354,7 @@
 	desc = "This handcrafted device injects small amounts of plasma in the fuel mix of a tool before combustion to greatly increase its power output, making all kinds of tasks easier to perform. \
 			It can also be installed on energy weapons for laser combining with ionized plasma, granting an extra kick to your shots."
 	icon_state = "injector"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_PLASMA = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 2, MATERIAL_HYDROGENC = 2)
 	preloaded_reagents = list("iron" = 15, "plasticide" = 5, "plasma" = 3)
 	price_tag = 280
 
@@ -383,7 +383,7 @@
 	icon = 'icons/obj/items.dmi'
 	icon_state = "rocket_engine"
 	origin_tech = list(TECH_ENGINEERING = 3, TECH_POWER = 4)
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_GOLD = 1)
 	preloaded_reagents = list("iron" = 15, "oil"= 9)
 
 /obj/item/tool_upgrade/productivity/rocket_engine/New()
@@ -477,7 +477,7 @@
 	name = "magnetic bit"
 	desc = "Magnetises tools used for handling small objects, reducing instances of dropping screws and bolts."
 	icon_state = "magnetic"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_INDSTEEL = 2)
 	preloaded_reagents = list("iron" = 15)
 	price_tag = 100
 
@@ -494,7 +494,7 @@
 	name = "composite barrel"
 	desc = "A barrel extension for a welding tool (or gun) which increases gas pressure on either torch or gun. When attached to a gun it allows for greater stopping power at the cost of recoil control and firerate."
 	icon_state = "ported_barrel"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_INDSTEEL = 2)
 	preloaded_reagents = list("aluminum" = 9, "iron" = 9)
 	price_tag = 100
 
@@ -524,7 +524,7 @@
 	desc = "A barrel extension for welding tools that integrates a miniaturized gravity generator that help keep the torch steady by compensating the weight of the tool. \
 			It can also be attached to guns both energy and projectile to offer greater recoil control at the cost of stopping power."
 	icon_state = "compensatedbarrel"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GOLD = 1)
 	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "iron" = 3)
 	price_tag = 175
 
@@ -579,7 +579,7 @@
 	name = "heavy cell mount"
 	icon_state = "cell_mount"
 	desc = "A bulky adapter which allows oversized power cells to be installed into small tools. Due to its delicate integration, it can't be removed once installed."
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 1)
 	can_remove = FALSE // To fix exploit of fitting large cells on tools then taking out the mod while conserving a large cell.
 	price_tag = 115
 	preloaded_reagents = list("iron" = 8, "plasticide" = 5)
@@ -599,7 +599,7 @@
 	name = "small cell adapter"
 	icon_state = "cell_adapt"
 	desc = "A cell adapter which allows undersized power cells to be installed into tools. Due to its delicate integration, it can't be removed once installed."
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 1)
 	can_remove = FALSE // To fix exploit of fitting large cells on tools then taking out the mod while conserving a large cell.
 	price_tag = 115
 	preloaded_reagents = list("iron" = 8, "plasticide" = 5)
@@ -625,7 +625,7 @@
 	name = "expanded fuel tank"
 	desc = "An auxiliary tank which stores 100 extra units of fuel at the cost of degradation."
 	icon_state = "canister"
-	matter = list(MATERIAL_PLASTEEL = 4, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 4, MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "plasma" = 3)
 	price_tag = 90
 
@@ -644,7 +644,7 @@
 	name = "expanded fuel tank of holding"
 	desc = "Rare relic of Simulacrum Robotics, it uses bluetech space to store additional 600 units of fuel at the cost of degradation."
 	icon_state = "canister_holding"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 4, MATERIAL_PLATINUM = 4)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 4, MATERIAL_PLATINUM = 4)
 	price_tag = 250
 
 /obj/item/tool_upgrade/augment/holding_tank/New()
@@ -665,7 +665,7 @@
 	name = "expansion port"
 	icon_state = "expand"
 	desc = "A bulky adapter which allows more modifications to be attached to the tool or gun. A bit fragile but you can compensate. Due to its complex design it cannot be removed once installed."
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 1)
 	preloaded_reagents = list("aluminum" = 9, "plasticide" = 5, "iron" = 9)
 	can_remove = FALSE
 	price_tag = 125
@@ -691,8 +691,8 @@
 /obj/item/tool_upgrade/augment/spikes
 	name = "spikes"
 	icon_state = "spike"
-	desc = "An array of sharp bits of steel, seemingly adapted for easy affixing to a tool. Would make it into a better weapon, but won't do much for productivity. Alternatively you could slap it on the end of a gun barrel as a ghetto bayonet at the cost of some accuracy."
-	matter = list(MATERIAL_STEEL = 2)
+	desc = "An array of sharp bits of aluminium, seemingly adapted for easy affixing to a tool. Would make it into a better weapon, but won't do much for productivity. Alternatively you could slap it on the end of a gun barrel as a ghetto bayonet at the cost of some accuracy."
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	preloaded_reagents = list("iron" = 9)
 	price_tag = 10
 
@@ -772,7 +772,7 @@
 	name = "righteous seal"
 	desc = "A runic seal that interfaces with a weapon in unclear ways, but which enhances its deadliness at the cost of heightened power drain. Often given as a reward to those who risk their safety in the name of the Bonfire."
 	icon_state = "seal"
-	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
 	price_tag = 160
 
 /obj/item/tool_upgrade/augment/crusader_seal/New()
@@ -795,7 +795,7 @@
 	icon_state = "spiked_plate" // Sprite by Nayu, thank you so much!!!
 	desc = "A crude attachment of diamond-tipped spikes that fits on most flat hammer heads and maces, \
 			granting an extra oomph behind every swing, but making it unwieldy and unfit as a tool.\nOnce soldered, it cannot be removed."
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_STEEL = 2, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_ALUMINIUM = 2, MATERIAL_DIAMOND = 1)
 	can_remove = FALSE
 
 /obj/item/tool_upgrade/augment/hammer_addon/New()
@@ -816,7 +816,7 @@
 	name = "aural dampener"
 	desc = "This aural dampener is a cutting edge tool attachment which mostly nullifies sound waves within a tiny radius. It minimises the noise created during use, perfect for stealth operations."
 	icon_state = "dampener"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 1, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 1, MATERIAL_PLATINUM = 1)
 	preloaded_reagents = list("mercury" = 20, "lithium" = 15, "iron" = 3)
 	price_tag = 155
 
@@ -836,7 +836,7 @@
 	desc = "A forgotten Simulacrum Robotics tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
 		A powerful AI will integrate itself into this tool with the aid of nanotechnology and improve it in every way possible. Once added, it's embedded into the object making it a permanent integration."
 	icon_state = "ai_tool"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_PLATINUM = 3, MATERIAL_GOLD = 3, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 3, MATERIAL_PLATINUM = 3, MATERIAL_GOLD = 3, MATERIAL_DIAMOND = 1)
 	price_tag = 725
 	can_remove = FALSE
 
@@ -870,7 +870,7 @@
 	desc = "An attempt by the Astrakhan R&D institute to copy the superior Simulacrum nano-AI for their weaponry. It isn't nearly as good, but its cheaper to produce and can fit any tool, not just energy based, as it draws its power from old soviet teleporation technology.\
 	 Once added its embeding into the object making it a permanent integration."
 	icon_state = "ai_tool_excelsior"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 3)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 3, MATERIAL_GOLD = 3)
 	price_tag = 325 //freee markeetttt
 	can_remove = FALSE
 
@@ -899,7 +899,7 @@
 	name = "repair nano"
 	desc = "Very rare tool mod from Simulacrum powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
 	icon_state = "repair_nano"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_PLASTEEL = 1, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 1, MATERIAL_PLATINUM = 1)
 	price_tag = 325
 
 /obj/item/tool_upgrade/augment/repair_nano/New()
@@ -917,7 +917,7 @@
 	name = "hydraulic circuits"
 	desc = "A complex set of hydraulic circuits that can be installed on a tool to greatly improve its functions. It's loud as hell though so do not plan on being stealthy."
 	icon_state = "hydraulic"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 3)
 	price_tag = 175
 
 /obj/item/tool_upgrade/augment/hydraulic/New()
@@ -939,7 +939,7 @@
 	name = "SR \"Randomizer\" tool polish"
 	desc = "This unidentified tar-like stable liquid warps and bends reality around it. Applying it to a tool may have unexpected results."
 	icon_state = "randomizer"
-	matter = list(MATERIAL_PLASMA = 4, MATERIAL_URANIUM = 4)
+	matter = list(MATERIAL_HYDROGENC = 4, MATERIAL_URANIUM = 4)
 	price_tag = 100
 
 /obj/item/tool_upgrade/augment/randomizer/New()

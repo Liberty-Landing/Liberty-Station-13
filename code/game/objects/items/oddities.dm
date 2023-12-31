@@ -661,11 +661,11 @@
 	perk = PERK_HARDEN
 
 /obj/item/oddity/si_bluespace_scanner
-	name = "Bluespace Tuning Device"
-	desc = "An anomalous, experimental tool produced by the CAPSA to get accurate readings of local and global Bluespace entropy." // It's a lie that it stabilizes Bluespace.
+	name = "Cosmic Tuning Device"
+	desc = "An anomalous, experimental tool produced by the CAPSA to get accurate readings of local and global Cosmic entropy." // It's a lie that it stabilizes the cosmos.
 	icon_state = "si_scan"
 	item_state = "si_scan"
-	matter = list(MATERIAL_PLASTIC = 15, MATERIAL_STEEL = 10, MATERIAL_PLASMAGLASS = 2, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_PLASMA = 5, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_PLASTIC = 15, MATERIAL_ALUMINIUM = 10, MATERIAL_LBGLASS = 2, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_HYDROGENC = 5, MATERIAL_DIAMOND = 1)
 	oddity_stats = list(
 		STAT_COG = 2, //trash stats for mass-printed trash
 		STAT_MEC = 2
@@ -827,7 +827,7 @@
 	desc = "A replica of the blades given to Kriosan military officers, as a reward for their loyal service."
 	icon_state = "kriosan_sword"
 	item_state = "saber"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 5)
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 	force = WEAPON_FORCE_DANGEROUS
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")

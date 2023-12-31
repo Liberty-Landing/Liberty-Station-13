@@ -12,18 +12,18 @@
 	var/storage_capacity = 20 // How many of each resource could be stored. Multiplied by matter bin rating
 	var/productivity_bonus = 5 // Sum of micro-laser and manipulator ratings, increases effectiveness of ammo crafting
 	var/list/materials_stored = list()
-	var/list/materials_compatible = list (MATERIAL_PLASTEEL, MATERIAL_STEEL, MATERIAL_PLASTIC, MATERIAL_WOOD, MATERIAL_CARDBOARD, MATERIAL_PLASMA)
-	var/list/materials_ammo = list(MATERIAL_STEEL = 10, MATERIAL_CARDBOARD = 2)
-	var/list/materials_rocket = list(MATERIAL_PLASMA = 5, MATERIAL_PLASTIC = 5, MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 10)
-	var/list/materials_lbarrel = list(MATERIAL_PLASTEEL = 8)
-	var/list/materials_sbarrel = list(MATERIAL_PLASTEEL = 4)
-	var/list/materials_lmechanism = list(MATERIAL_PLASTEEL = 10)
-	var/list/materials_smechanism = list(MATERIAL_PLASTEEL = 5)
-	var/list/materials_lbarrel_steel = list(MATERIAL_STEEL = 8)
-	var/list/materials_sbarrel_steel = list(MATERIAL_STEEL = 4)
-	var/list/materials_lmechanism_steel = list(MATERIAL_STEEL = 10)
-	var/list/materials_smechanism_steel = list(MATERIAL_STEEL = 5)
-	var/list/materials_hpart = list(MATERIAL_PLASTEEL = 16)
+	var/list/materials_compatible = list (MATERIAL_INDSTEEL, MATERIAL_ALUMINIUM, MATERIAL_PLASTIC, MATERIAL_WOOD, MATERIAL_CARDBOARD, MATERIAL_HYDROGENC)
+	var/list/materials_ammo = list(MATERIAL_ALUMINIUM = 10, MATERIAL_CARDBOARD = 2)
+	var/list/materials_rocket = list(MATERIAL_HYDROGENC = 5, MATERIAL_PLASTIC = 5, MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 10)
+	var/list/materials_lbarrel = list(MATERIAL_INDSTEEL = 8)
+	var/list/materials_sbarrel = list(MATERIAL_INDSTEEL = 4)
+	var/list/materials_lmechanism = list(MATERIAL_INDSTEEL = 10)
+	var/list/materials_smechanism = list(MATERIAL_INDSTEEL = 5)
+	var/list/materials_lbarrel_steel = list(MATERIAL_ALUMINIUM = 8)
+	var/list/materials_sbarrel_steel = list(MATERIAL_ALUMINIUM = 4)
+	var/list/materials_lmechanism_steel = list(MATERIAL_ALUMINIUM = 10)
+	var/list/materials_smechanism_steel = list(MATERIAL_ALUMINIUM = 5)
+	var/list/materials_hpart = list(MATERIAL_INDSTEEL = 16)
 	var/list/materials_pgrip = list(MATERIAL_PLASTIC = 6)
 	var/list/materials_wgrip = list(MATERIAL_WOOD = 6)
 
@@ -74,10 +74,10 @@
 		"RPG shell" = materials_rocket,
 		"19mm gyrojet rockets" = materials_rocket,
 		//"armor parts" = materials_armorpart, - Not implimented yet.
-//		"barrels" = "4 plasteel for small; 8 plasteel for large; 16 plasteel for heavy",
-//		"mechanisms" ="5 plasteel for small; 10 plasteel for large; 16 plasteel for heavy",
-//		"cheap barrels" = "4 steel for small; 8 steel for large",
-//		"cheap mechanisms" = "5 steel for small; 10 steel for large",
+//		"barrels" = "4 indsteel for small; 8 indsteel for large; 16 indsteel for heavy",
+//		"mechanisms" ="5 indsteel for small; 10 indsteel for large; 16 indsteel for heavy",
+//		"cheap barrels" = "4 aluminium for small; 8 aluminium for large",
+//		"cheap mechanisms" = "5 aluminium for small; 10 aluminium for large",
 //		"grips" = "6 plastic or 6 wood"
 		)
 
@@ -93,10 +93,10 @@
 		matter_count += " [materials_stored[material]] [material]"
 
 	//Lazy temppermit fix for the above
-	to_chat(user, SPAN_NOTICE("Materials required to craft barrels: 4 plasteel for small; 8 plasteel for large."))
-	to_chat(user, SPAN_NOTICE("Materials required to craft mechanisms: 5 plasteel for small; 10 plasteel for large."))
-	to_chat(user, SPAN_NOTICE("Materials required to craft cheap barrels: 4 steel for small; 8 steel for large."))
-	to_chat(user, SPAN_NOTICE("Materials required to craft cheap mechanisms: 5 steel for small; 10 steel for large."))
+	to_chat(user, SPAN_NOTICE("Materials required to craft barrels: 4 indsteel for small; 8 indsteel for large."))
+	to_chat(user, SPAN_NOTICE("Materials required to craft mechanisms: 5 indsteel for small; 10 indsteel for large."))
+	to_chat(user, SPAN_NOTICE("Materials required to craft cheap barrels: 4 aluminium for small; 8 aluminium for large."))
+	to_chat(user, SPAN_NOTICE("Materials required to craft cheap mechanisms: 5 aluminium for small; 10 aluminium for large."))
 	to_chat(user, SPAN_NOTICE("Materials required to craft grips: 6 plastic or 6 wood."))
 
 
@@ -230,22 +230,22 @@
 							switch(choice)
 								if("9mm barrel")
 									required_resources = materials_sbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/pistol/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/barrel/pistol/aluminium)
 								if("10mm barrel")
 									required_resources = materials_sbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/magnum/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/barrel/magnum/aluminium)
 								if("6.5mm barrel")
 									required_resources = materials_lbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/srifle/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/barrel/srifle/aluminium)
 								if("caseless barrel")
 									required_resources = materials_lbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/clrifle/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/barrel/clrifle/aluminium)
 								if("7.62mm barrel")
 									required_resources = materials_lbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/lrifle/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/barrel/lrifle/aluminium)
 								if("Shotgun barrel")
 									required_resources = materials_lbarrel_steel
-									items_to_spawn = list("" = /obj/item/part/gun/barrel/shotgun/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/barrel/shotgun/aluminium)
 
 								else
 									return
@@ -255,22 +255,22 @@
 							switch(choice)
 								if("Pistol mechanism")
 									required_resources = materials_smechanism_steel
-									items_to_spawn = list("" = /obj/item/part/gun/mechanism/pistol/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/mechanism/pistol/aluminium)
 								if("Revolver mechanism")
 									required_resources = materials_smechanism_steel
-									items_to_spawn = list("" = /obj/item/part/gun/mechanism/revolver/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/mechanism/revolver/aluminium)
 								if("SMG mechanism")
 									required_resources = materials_smechanism_steel
-									items_to_spawn = list("" = /obj/item/part/gun/mechanism/smg/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/mechanism/smg/aluminium)
 								if("Bolt-action mechanism")
 									required_resources = materials_lmechanism_steel
 									items_to_spawn = list("" = /obj/item/part/gun/mechanism/boltgun)
 								if("Self-loading mechanism")
 									required_resources = materials_lmechanism_steel
-									items_to_spawn = list("" = /obj/item/part/gun/mechanism/autorifle/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/mechanism/autorifle/aluminium)
 								if("Shotgun mechanism")
 									required_resources = materials_lmechanism_steel
-									items_to_spawn = list("" = /obj/item/part/gun/mechanism/shotgun/steel)
+									items_to_spawn = list("" = /obj/item/part/gun/mechanism/shotgun/aluminium)
 
 								else
 									return

@@ -61,8 +61,8 @@
 	backpack_contents = list(/obj/item/rcd/industrial = 1, \
 							/obj/item/stack/material/compressed_matter/full = 1, \
 							/obj/item/stack/material/glass/plasmarglass/full = 1, \
-							/obj/item/stack/material/plasteel/full = 1, \
-							/obj/item/stack/material/steel/full = 1, \
+							/obj/item/stack/material/indsteel/full = 1, \
+							/obj/item/stack/material/aluminium/full = 1, \
 							/obj/item/stack/material/plastic/full = 1, \
 							/obj/item/stack/cable_coil/random = 2, \
 							/obj/item/rpd = 1, \

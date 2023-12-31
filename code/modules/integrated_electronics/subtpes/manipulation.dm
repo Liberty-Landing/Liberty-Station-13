@@ -594,7 +594,7 @@
 	spawn_flags = IC_SPAWN_RESEARCH
 	action_flags = IC_ACTION_LONG_RANGE
 
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 2, MATERIAL_GOLD = 2)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_SILVER = 2, MATERIAL_GOLD = 2)
 	var/entropy_value = 1
 
 /obj/item/integrated_circuit/manipulation/bluespace_rift/do_work()

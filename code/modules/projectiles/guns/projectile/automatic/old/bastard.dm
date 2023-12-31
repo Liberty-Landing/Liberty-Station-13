@@ -14,7 +14,7 @@
 	tac_reloads = FALSE
 	penetration_multiplier = 0.8
 	damage_multiplier = 0.9
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 4, MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 4, MATERIAL_ALUMINIUM = 15)
 	price_tag = 1000
 	fire_sound = 'sound/weapons/guns/fire/sfrifle_fire.ogg'
 	init_recoil = LMG_RECOIL(0.7)

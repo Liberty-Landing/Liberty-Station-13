@@ -1,6 +1,6 @@
 /obj/item/material/butterfly
 	name = "butterfly knife"
-	desc = "A basic metal blade concealed in a lightweight plasteel grip. Small enough when folded to fit in a pocket."
+	desc = "A basic metal blade concealed in a lightweight indsteel grip. Small enough when folded to fit in a pocket."
 	icon_state = "butterflyknife"
 	item_state = null
 	hitsound = null
@@ -8,8 +8,8 @@
 	var/backstab_damage = 10
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("patted", "tapped")
-	force_divisor = 0.25 // 15 when wielded with hardness 60 (steel)
-	thrown_force_divisor = 0.25 // 5 when thrown with weight 20 (steel)
+	force_divisor = 0.25 // 15 when wielded with hardness 60 (aluminium)
+	thrown_force_divisor = 0.25 // 5 when thrown with weight 20 (aluminium)
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 	is_material_weapon = TRUE
 
@@ -72,5 +72,5 @@
 	desc = "A french flag has been embossed on the handle, the deftness of this blade and how supremely lethal its diamond edged blade is would make this perfect for sinking said blade \
 			into a monsters back... or another colonist."
 	icon_state = "frenchmen"
-	matter = list(MATERIAL_SILVER = 2, MATERIAL_PLASTEEL = 10, MATERIAL_DIAMOND = 3)
+	matter = list(MATERIAL_SILVER = 2, MATERIAL_INDSTEEL = 10, MATERIAL_DIAMOND = 3)
 	backstab_damage = 25

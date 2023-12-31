@@ -35,7 +35,7 @@
 	name = "Nature's blessing"
 	desc = "This upgrade stabilizes the Faithful and nurtures the plants near the follower. Useful for the aspiring Agrolytes."
 	icon_state = "natures_blessing"
-	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 5)
 	var/cooldown = 1 SECONDS // Just to make sure that upgrade don't go berserk.
 	var/initial_time
 
@@ -72,7 +72,7 @@
 	name = "Blazing Aegis"
 	desc = "This upgrade will slightly increase a Custodian's resistance to physical trauma and burns from any source."
 	icon_state = "blazing_aegis"
-	matter = list(MATERIAL_CARBON_FIBER = 50, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 10)
+	matter = list(MATERIAL_CARBON_FIBER = 50, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 10)
 	var/shield_mod = 0.1
 
 /obj/item/hearthcore_upgrade/blazing_aegis/OnInstall(var/disciple, var/_hearthcore)
@@ -89,7 +89,7 @@
 	name = "Cleansing Flames"
 	desc = "This upgrade cleans tiles that the Custodian walks upon. Will slowly cause space vines and maint-shrooms to wither and die in the follower's presence."
 	icon_state = "cleansing_flames"
-	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_SILVER = 5, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 50, MATERIAL_SILVER = 5, MATERIAL_INDSTEEL = 5)
 	var/area_radius = 5
 
 /obj/item/hearthcore_upgrade/cleansing_flames/OnInstall(var/disciple, var/_hearthcore)
@@ -112,14 +112,14 @@
 	name = "Martyr's gift"
 	desc = "This upgrade causes a Custodian to cause a healing burst upon dying. It will heal for a massive amount to all humanoid creatures, even those without hearthcores. However, in the process of doing so, this upgrade destroys itself."
 	icon_state = "martyr_gift"
-	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5, MATERIAL_PLASMA = 5)
+	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 5, MATERIAL_HYDROGENC = 5)
 	var/damage_healed = 50 //Heals everyone and every mob around it
 
 /obj/item/hearthcore_upgrade/burning_fury
 	name = "Burning Fury"
 	desc = "The flame that burns twice as bright burns half as long. This upgrade make the follower deal more damage in melee, but also receive a slightly more damage from almost all sources."
 	icon_state = "burning_fury"
-	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 15)
+	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 15)
 	var/damage_mod = 0.2 //20% more damage in melee attacking
 	var/receive_damage_mod = 0.2 //20% more damage form all sources other than clone
 
@@ -145,7 +145,7 @@
 	name = "Embers of Swiftness"
 	desc = "This upgrade increases the movement speed of the Custodian."
 	icon_state = "embers_swiftness"
-	matter = list(MATERIAL_BIO_SILK = 70, MATERIAL_SILVER = 10, MATERIAL_PLASTEEL = 10, MATERIAL_GOLD = 3, MATERIAL_PLASMA = 1)
+	matter = list(MATERIAL_BIO_SILK = 70, MATERIAL_SILVER = 10, MATERIAL_INDSTEEL = 10, MATERIAL_GOLD = 3, MATERIAL_HYDROGENC = 1)
 	var/speed_increase = 0.1 //10% faster, stacks with other sorces so its to be balanced with that
 
 /obj/item/hearthcore_upgrade/phoenix_edict

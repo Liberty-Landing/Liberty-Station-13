@@ -13,5 +13,5 @@
 /obj/structure/mine/mine_scraps/attack_hand(mob/living/user as mob)
 	if(do_after(user,10,src))
 		visible_message(SPAN_WARNING("Mine fell apart into pieces of metal"))
-		new /obj/item/stack/material/steel/random(src.loc)
+		new /obj/item/stack/material/aluminium/random(src.loc)
 		qdel(src)

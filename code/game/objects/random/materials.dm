@@ -5,13 +5,13 @@
 
 //This stuff can't be easily converted to pickweight because of these amount fields
 /obj/random/material/item_to_spawn()
-	return pick(/obj/item/stack/material/steel/random,\
+	return pick(/obj/item/stack/material/aluminium/random,\
 				/obj/item/stack/material/glass/random,\
 				/obj/item/stack/material/plastic/random,\
 				/obj/item/stack/material/wood/random,\
 				/obj/item/stack/material/cardboard/random,\
 				/obj/item/stack/rods/random,\
-				/obj/item/stack/material/plasteel/random)
+				/obj/item/stack/material/indsteel/random)
 
 /obj/random/material/low_chance
 	name = "low chance random building material"
@@ -24,7 +24,7 @@
 	spawn_nothing_percentage = 20
 
 /obj/random/material_resources/item_to_spawn()
-	return pickweight(list(/obj/item/stack/material/steel/random = 5,\
+	return pickweight(list(/obj/item/stack/material/aluminium/random = 5,\
 				/obj/item/stack/material/glass/random = 4,\
 				/obj/item/stack/material/glass/plasmaglass/random = 3,\
 				/obj/item/stack/material/iron/random = 2,\
@@ -75,7 +75,7 @@
 				/obj/item/stack/material/uranium/random = 1,\
 				/obj/item/stack/material/silver/random = 2,\
 				/obj/item/stack/material/platinum/random = 2,\
-				/obj/item/stack/material/plasteel/random = 2))
+				/obj/item/stack/material/indsteel/random = 2))
 
 /obj/random/material_ore/item_to_spawn()
 	return pickweight(list(/obj/item/stack/ore/coal = 4,\

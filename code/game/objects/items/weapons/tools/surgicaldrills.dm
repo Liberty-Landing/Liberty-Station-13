@@ -4,7 +4,7 @@
 	icon_state = "drill"
 	hitsound = WORKSOUND_DRIVER_TOOL
 	worksound = WORKSOUND_DRIVER_TOOL
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_PLASTIC = 2)
 	flags = CONDUCT
 	force = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_MODERATE
@@ -23,13 +23,13 @@
 	icon_state = "longdrill"
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_DEEP //Diamond tip!
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 2, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 2, MATERIAL_DIAMOND = 1)
 	tool_qualities = list(QUALITY_DRILLING = 60)
 	use_power_cost = 0.60
 	price_tag = 650
 
 /obj/item/tool/surgicaldrill/adv/si
 	icon_state = "drill_SI"
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 4, MATERIAL_PLASTEEL = 1) //we use a plasteel tip rather then diamond, thus less AP
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_PLASTIC = 4, MATERIAL_INDSTEEL = 1) //we use a indsteel tip rather then diamond, thus less AP
 	armor_penetration = ARMOR_PEN_MODERATE
 	price_tag = 450

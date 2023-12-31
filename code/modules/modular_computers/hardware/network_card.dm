@@ -74,7 +74,7 @@ var/global/ntnet_card_uid = 1
 	name = "advanced network card"
 	desc = "An advanced network card for usage with standard frequencies. It's transmitter is strong enough to connect even when far away."
 	long_range = TRUE
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1, MATERIAL_SILVER = 2)
 	origin_tech = list(TECH_DATA = 4, TECH_ENGINEERING = 2)
 	power_usage = 30 // Better range but higher power usage.
 	icon_state = "netcard_adv"

@@ -38,7 +38,7 @@
 
 /obj/item/tool/tape_roll/fiber
 	name = "fiber tape"
-	desc = "A roll of flexible adhesive polymer mesh, which sets as strong as welded steel."
+	desc = "A roll of flexible adhesive polymer mesh, which sets as strong as welded aluminium."
 	icon_state = "fiber_tape"
 	tool_qualities = list(QUALITY_ADHESIVE = 50, QUALITY_SEALING = 50)
 	matter = list(MATERIAL_PLASTIC = 20)

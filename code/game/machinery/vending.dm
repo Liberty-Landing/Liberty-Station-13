@@ -340,7 +340,7 @@
 					return
 				if(I.use_tool(user, src, WORKTIME_EXTREMELY_LONG, tool_type, FAILCHANCE_NORMAL, required_stat = STAT_MEC))
 					visible_message(SPAN_WARNING("\The [src] has been dismantled by [user]!"),"You hear welding.")
-					new /obj/item/stack/material/steel(loc, 8)
+					new /obj/item/stack/material/aluminium(loc, 8)
 					for(var/datum/data/vending_product/R in product_records)
 						for(var/obj/O in R.instances)
 							O.forceMove(loc)

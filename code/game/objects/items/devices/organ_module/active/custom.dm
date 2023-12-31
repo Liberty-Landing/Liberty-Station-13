@@ -4,7 +4,7 @@
 	desc = "A device that can take any object, and allow the person to quickly deploy it."
 	verb_name = "Deploy object"
 	icon_state = "multitool"
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
 	holding_type = null
 	price_tag = 200 //Just some metal

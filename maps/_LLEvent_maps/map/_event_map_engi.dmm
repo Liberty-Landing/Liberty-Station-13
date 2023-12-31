@@ -934,7 +934,7 @@
 /turf/simulated/floor/industrial/greybricks,
 /area/event_engi/building_upper)
 "rv" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -1278,7 +1278,7 @@
 /turf/simulated/open,
 /area/event_engi/building_upper)
 "xF" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/event_engi/rooms)
 "xN" = (
@@ -1525,17 +1525,17 @@
 /area/event_engi)
 "Bz" = (
 /obj/structure/closet/crate,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
+/obj/item/stack/material/aluminium/full,
 /turf/simulated/floor/industrial_pristine/greybricks,
 /area/event_engi)
 "BK" = (
@@ -1868,7 +1868,7 @@
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/event_engi/building_upper)
 "Jg" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/structure/bedsheetbin,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/event_engi/rooms)
@@ -1909,7 +1909,7 @@
 /turf/simulated/floor/wood,
 /area/event_engi/building_upper)
 "Kq" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/soap,
 /turf/simulated/floor/industrial/blue_slates_long,
 /area/event_engi/rooms)
@@ -2002,7 +2002,7 @@
 /turf/simulated/floor/industrial/navy_large_slates,
 /area/event_engi/bathroom)
 "MD" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -2608,10 +2608,10 @@
 /area/event_engi/building_main)
 "Yr" = (
 /obj/structure/closet/crate,
-/obj/item/stack/material/plasteel/full,
-/obj/item/stack/material/plasteel/full,
-/obj/item/stack/material/plasteel/full,
-/obj/item/stack/material/plasteel/full,
+/obj/item/stack/material/indsteel/full,
+/obj/item/stack/material/indsteel/full,
+/obj/item/stack/material/indsteel/full,
+/obj/item/stack/material/indsteel/full,
 /turf/simulated/floor/reinforced,
 /area/event_engi/supply)
 "Yw" = (

@@ -552,14 +552,14 @@ var/global/list/robot_modules = list(
 	src.emag += new /obj/item/tool/baton/robot(src)
 
 	var/datum/matter_synth/metal = new /datum/matter_synth/metal(80000)
-	var/datum/matter_synth/plasteel = new /datum/matter_synth/plasteel(40000)
+	var/datum/matter_synth/indsteel = new /datum/matter_synth/indsteel(40000)
 	var/datum/matter_synth/glass = new /datum/matter_synth/glass(60000)
 	var/datum/matter_synth/wire = new /datum/matter_synth/wire(60)
 	var/datum/matter_synth/wood = new /datum/matter_synth/wood(20000)
 	var/datum/matter_synth/plastic = new /datum/matter_synth/plastic(15000)
 	synths += metal
 	synths += glass
-	synths += plasteel
+	synths += indsteel
 	synths += wire
 	synths += wood
 	synths += plastic
@@ -569,7 +569,7 @@ var/global/list/robot_modules = list(
 	MD.glass = glass
 	src.modules += MD
 
-	var/obj/item/stack/material/cyborg/steel/M = new (src)
+	var/obj/item/stack/material/cyborg/aluminium/M = new (src)
 	M.synths = list(metal)
 	src.modules += M
 
@@ -593,8 +593,8 @@ var/global/list/robot_modules = list(
 	RG.synths = list(metal, glass)
 	src.modules += RG
 
-	var/obj/item/stack/material/cyborg/plasteel/PL = new (src)
-	PL.synths = list(plasteel)
+	var/obj/item/stack/material/cyborg/indsteel/PL = new (src)
+	PL.synths = list(indsteel)
 	src.modules += PL
 
 	var/obj/item/stack/material/cyborg/wood/W = new (src)
@@ -637,7 +637,7 @@ var/global/list/robot_modules = list(
 	//src.modules += FTF
 
 	//var/obj/item/stack/tile/floor_dark/cyborg/FTD = new (src)
-	//FTD.synths = list(plasteel)
+	//FTD.synths = list(indsteel)
 	//src.modules += FTD
 
 //Possible todo: Discuss giving security module some kind of lethal ranged weapon
@@ -1183,7 +1183,7 @@ var/global/list/robot_modules = list(
 	MD.plastic = plastic
 	src.modules += MD
 
-	var/obj/item/stack/material/cyborg/steel/M = new (src)
+	var/obj/item/stack/material/cyborg/aluminium/M = new (src)
 	M.synths = list(metal)
 	src.modules += M
 
