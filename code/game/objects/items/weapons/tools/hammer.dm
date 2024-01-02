@@ -90,7 +90,7 @@
 	armor_penetration = ARMOR_PEN_EXTREME // Retains AP when turned off - it's a hammer.
 	structure_damage_factor = STRUCTURE_DAMAGE_DESTRUCTIVE
 	damage_mult = 1.1 // Let's not go overboard
-	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_PLATINUM = 3, MATERIAL_DIAMOND = 3)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_TITANIUM = 3, MATERIAL_DIAMOND = 3)
 	price_tag = 860
 	switched_on_qualities = list(QUALITY_HAMMERING = 60)
 	switched_off_qualities = list(QUALITY_HAMMERING = 35)

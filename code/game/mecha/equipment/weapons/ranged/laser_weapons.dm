@@ -110,7 +110,7 @@
 	icon_state = "hydrogen_cannon"
 	energy_drain = 1000
 	fire_cooldown = 25
-	matter = list(MATERIAL_INDSTEEL = 30, MATERIAL_MHYDROGEN = 6, MATERIAL_TRITIUM = 6)
+	matter = list(MATERIAL_TITANIUMRTC = 30, MATERIAL_HYDROGENC = 6, MATERIAL_TRITIUM = 6)
 	origin_tech = list(TECH_COMBAT = 9, TECH_MATERIAL = 7, TECH_PLASMA = 10)
 	projectile = /obj/item/projectile/hydrogen/cannon/max
 	fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg'

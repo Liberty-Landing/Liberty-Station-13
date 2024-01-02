@@ -145,7 +145,7 @@ obj/structure/salvageable/computer/Initialize()
 		/obj/item/stack/material/indsteel{amount = 5} = 40,
 		/obj/item/stack/material/silver{amount = 5} = 20,
 		/obj/item/stack/material/gold{amount = 5} = 20,
-		/obj/item/stack/material/plasma{amount = 5} = 20,
+		/obj/item/stack/material/hydrogenc{amount = 5} = 20,
 		/obj/item/stack/material/uranium{amount = 3} = 5,
 		/obj/item/stack/material/diamond{amount = 1} = 1
 	)
@@ -388,11 +388,11 @@ obj/structure/salvageable/bliss/Initialize()
 		/obj/item/stack/material/aluminium{amount = 10} = 60,
 		/obj/item/stack/material/glass{amount = 10} = 60,
 		/obj/item/stack/material/plastic{amount = 10} = 60,
-		/obj/item/stack/material/platinum{amount = 10} = 60,
+		/obj/item/stack/material/titanium{amount = 10} = 60,
 		/obj/item/stack/material/indsteel{amount = 5} = 20,
 		/obj/item/stack/material/silver{amount = 5} = 50,
 		/obj/item/stack/material/gold{amount = 5} = 50,
-		/obj/item/stack/material/plasma{amount = 5} = 10,
+		/obj/item/stack/material/hydrogenc{amount = 5} = 10,
 		/obj/item/stack/material/uranium{amount = 3} = 5,
 		/obj/item/stack/material/diamond{amount = 1} = 1,
 		/obj/item/gun_upgrade/mechanism/glass_widow = 5,

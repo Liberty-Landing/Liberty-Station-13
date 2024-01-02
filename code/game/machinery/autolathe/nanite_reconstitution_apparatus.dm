@@ -47,7 +47,7 @@
 	var/show_rconfig = FALSE
 	var/activated = FALSE
 
-	var/STEEL_REQ = 3
+	var/ALUMINIUM_REQ = 3
 	var/INDSTEEL_REQ = 1
 	var/NANITE_REQ = 1
 	var/ROUND_FRACTION = 0.1
@@ -135,11 +135,11 @@
 	if (container)
 		nanites_needed = round(container.reagents.get_reagent_amount("nanites") - (NANITE_REQ / mat_efficiency), ROUND_FRACTION)
 
-	var/steel_needed = round((stored_material["aluminium"] || 0) - (STEEL_REQ / mat_efficiency), ROUND_FRACTION)
+	var/aluminium_needed = round((stored_material["aluminium"] || 0) - (ALUMINIUM_REQ / mat_efficiency), ROUND_FRACTION)
 	var/indsteel_needed = round((stored_material["indsteel"] || 0) - (INDSTEEL_REQ / mat_efficiency), ROUND_FRACTION)
 
 	to_chat(user, SPAN_WARNING("There are not enough materials to use \the [src.name]! You need:"))
-	if (steel_needed < 0)
+	if (aluminium_needed < 0)
 		to_chat(user, SPAN_WARNING("[abs(steel_needed)] aluminium"))
 	if (indsteel_needed < 0)
 		to_chat(user, SPAN_WARNING("[abs(indsteel_needed)] indsteel"))
@@ -180,12 +180,12 @@
 
 /obj/machinery/nanite_reconstitution_apparatus/proc/consume_materials()
 
-	var/steel_cost = round((STEEL_REQ / mat_efficiency), ROUND_FRACTION)
-	var/indsteel_cost = round((indsteel_REQ / mat_efficiency), ROUND_FRACTION)
+	var/aluminium_cost = round((ALUMINIUM_REQ / mat_efficiency), ROUND_FRACTION)
+	var/indsteel_cost = round((INDSTEEL_REQ / mat_efficiency), ROUND_FRACTION)
 	var/nanite_cost = round((NANITE_REQ / mat_efficiency), ROUND_FRACTION)
 
-	if((stored_material[MATERIAL_ALUMINIUM] >= steel_cost) && (stored_material[MATERIAL_INDSTEEL] >= indsteel_cost) && (container.reagents.get_reagent_amount("nanites") >= nanite_cost))
-		stored_material[MATERIAL_ALUMINIUM] -= steel_cost
+	if((stored_material[MATERIAL_ALUMINIUM] >= aluminium_cost) && (stored_material[MATERIAL_INDSTEEL] >= indsteel_cost) && (container.reagents.get_reagent_amount("nanites") >= nanite_cost))
+		stored_material[MATERIAL_ALUMINIUM] -= aluminium_cost
 		stored_material[MATERIAL_INDSTEEL] -= indsteel_cost
 		container.reagents.remove_reagent("nanites", nanite_cost, TRUE)
 		return TRUE

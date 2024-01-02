@@ -167,7 +167,7 @@
 	icon_state = "one_capacitor"
 	origin_tech = list(TECH_POWER = 7, TECH_MATERIAL = 7)
 	rating = 4
-	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_TITANIUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/scanning_module/one_star
@@ -176,7 +176,7 @@
 	icon_state = "one_scan_module"
 	origin_tech = list(TECH_MAGNET = 7)
 	rating = 4
-	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_TITANIUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/manipulator/one_star
@@ -185,7 +185,7 @@
 	icon_state = "one_mani"
 	origin_tech = list(TECH_MATERIAL = 7, TECH_DATA = 6)
 	rating = 4
-	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_TITANIUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/micro_laser/one_star
@@ -194,7 +194,7 @@
 	desc = "A tiny laser used in certain devices."
 	origin_tech = list(TECH_MAGNET = 7)
 	rating = 4
-	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_TITANIUM = 2)
 	price_tag = 40
 
 /obj/item/stock_parts/matter_bin/one_star
@@ -203,7 +203,7 @@
 	icon_state = "one_matter"
 	origin_tech = list(TECH_MATERIAL = 7)
 	rating = 4
-	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_PLASTIC = 3, MATERIAL_GLASS = 1, MATERIAL_TITANIUM = 2)
 	price_tag = 40
 
 //PIRS stock parts (rating 4) - DO NOT USE THESE. MAKE THEM CRAFT THEM.

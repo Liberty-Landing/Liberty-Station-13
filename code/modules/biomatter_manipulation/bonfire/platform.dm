@@ -83,7 +83,7 @@
 
 
 /obj/machinery/multistructure/bonfire_part/platform/attackby(var/obj/item/I, var/mob/user)
-	if(istype(I, /obj/item/stack/material/glass/reinforced))
+	if(istype(I, /obj/item/stack/material/glass/laminated))
 		var/obj/item/stack/material/glass = I
 		var/list/glassless_dirs = get_opened_dirs()
 		if(glass.use(glassless_dirs.len))

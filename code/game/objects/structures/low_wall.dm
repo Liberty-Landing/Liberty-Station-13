@@ -27,7 +27,7 @@
 	icon_state = "metal"
 	throwpass = TRUE
 	var/connected = TRUE
-	var/wall_color = indsteel_COLOUR
+	var/wall_color = INDSTEEL_COLOUR
 	var/roundstart = FALSE
 	var/list/connections = list("0", "0", "0", "0")
 	var/list/wall_connections = list("0", "0", "0", "0")

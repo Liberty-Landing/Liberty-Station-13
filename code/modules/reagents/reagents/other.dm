@@ -269,16 +269,16 @@
 			return TRUE
 	return TRUE
 
-/datum/reagent/liquid_ameridian
-	name = "Liquid Ameridian"
-	id = MATERIAL_AMERIDIAN
+/datum/reagent/liquid_nacre
+	name = "Liquid nacre"
+	id = MATERIAL_NACRE
 	description = "A green liquid with small crystals floating in it."
 	taste_description = "crystalline crystals"
 	reagent_state = SOLID
 	color = "#5FE45E"
 	metabolism = 5
 
-/datum/reagent/liquid_ameridian/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+/datum/reagent/liquid_nacre/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.apply_effect(effect_multiplier, IRRADIATE, 0, 0) // We ignore physical protection because we're inside
 
 /datum/reagent/adrenaline

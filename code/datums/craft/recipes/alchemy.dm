@@ -280,7 +280,7 @@
 	result = /obj/item/reagent_containers/glass/bottle/tungsten
 	steps = list(
 		list(/obj/item/reagent_containers/glass, 1),
-		list(/obj/item/stack/ore/coal, 1),
+		list(/obj/item/stack/ore/lignite, 1),
 		list(/obj/item/stack/ore, 1),
 		list(QUALITY_HEATING, 5, 10)
 	)

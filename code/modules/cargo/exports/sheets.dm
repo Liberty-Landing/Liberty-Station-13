@@ -88,7 +88,7 @@
 /datum/export/stack/rglass
 	cost = 8
 	message = "of reinforced glass"
-	export_types = list(/obj/item/stack/material/glass/reinforced)
+	export_types = list(/obj/item/stack/material/glass/laminated)
 
 // Wood. Quite expensive in the grim and dark 26 century.
 /datum/export/stack/wood
@@ -134,7 +134,7 @@
 // Plasma. The oil of 26 century.
 /datum/export/stack/plasma
 	cost = 25
-	export_types = list(/obj/item/stack/material/plasma)
+	export_types = list(/obj/item/stack/material/hydrogenc)
 	message = "of plasma"
 
 /datum/export/stack/plasma/get_cost(obj/O, contr = 0, emag = 0)
@@ -170,7 +170,7 @@
 /datum/export/stack/platinum
 	cost = 40
 	message = "of platinum"
-	export_types = list(/obj/item/stack/material/platinum)
+	export_types = list(/obj/item/stack/material/titanium)
 
 /datum/export/stack/nanopaste
 	cost = 80

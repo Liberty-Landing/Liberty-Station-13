@@ -16,7 +16,7 @@
 	ammo_type = /obj/item/ammo_casing/antim
 	fire_sound = 'sound/weapons/guns/fire/AMR.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/rifle_load.ogg'
-	matter = list(MATERIAL_INDSTEEL = 40, MATERIAL_PLASTIC = 20, MATERIAL_DIAMOND = 3, MATERIAL_OSMIUM = 5, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_INDSTEEL = 40, MATERIAL_PLASTIC = 20, MATERIAL_DIAMOND = 3, MATERIAL_TITANIUMRTC = 5, MATERIAL_URANIUM = 2)
 	price_tag = 7500
 	damage_multiplier = 0.8
 	zoom_factors = list(1,2)

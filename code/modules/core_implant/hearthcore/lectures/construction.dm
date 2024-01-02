@@ -658,7 +658,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/indsteel = 5,
 		/obj/item/stack/material/biomatter = 100, // Heals, thus, biomatter.
 		/obj/item/stack/material/gold = 5,
-		/obj/item/stack/material/plasma = 5
+		/obj/item/stack/material/hydrogenc = 5
 	)
 	build_time = 8 SECONDS
 
@@ -682,7 +682,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/biopolymer_silk = 70,
 		/obj/item/stack/material/silver = 10,
 		/obj/item/stack/material/gold = 3,
-		/obj/item/stack/material/plasma = 1
+		/obj/item/stack/material/hydrogenc = 1
 	)
 	build_time = 8 SECONDS
 
@@ -693,7 +693,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/biomatter = 100,
 		/obj/item/stack/material/biopolymer_silk = 50,
 		/obj/item/stack/material/carbon_fiber = 50,
-		/obj/item/stack/material/platinum = 10
+		/obj/item/stack/material/titanium = 10
 	)
 	build_time = 8 SECONDS
 

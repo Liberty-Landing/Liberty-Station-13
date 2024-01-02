@@ -141,10 +141,12 @@
 	name = "Hydrogen \"Sollex\" Cannon"
 	build_path = /obj/item/gun/hydrogen/cannon
 
+/* Commented until fixed.
 /datum/design/research/item/weapon/hydrogrenade
 	name = "Hydrogen Grenade"
 	desc = "A hilt that can support an hydrogen fuel cell. It has a flimsy safe guard that prevents it from exploding from the weakest impact."
 	build_path = /obj/item/hydrogen_grenade
+*/
 
 // Ammo
 /datum/design/research/item/ammo
@@ -246,7 +248,7 @@
 /datum/design/research/item/weapon/bastion
 	name = "bastion shield"
 	build_path = /obj/item/shield/riot/bastion
-	materials = list(MATERIAL_LBGLASS = 3, MATERIAL_OSMIUM = 1) //So making it at the guild is objectively always better
+	materials = list(MATERIAL_LBGLASS = 3, MATERIAL_OSMIU = 1) //So making it at the guild is objectively always better
 
 //Weapon mods
 /datum/design/research/item/weapon/weapon_upgrade

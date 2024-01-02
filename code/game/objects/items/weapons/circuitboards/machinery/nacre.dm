@@ -1,9 +1,9 @@
-// Circuit boards for ameridian-related machinery
+// Circuit boards for nacre-related machinery
 
-/obj/item/circuitboard/ameridianshieldwallgen
+/obj/item/circuitboard/nacreshieldwallgen
 	build_name = "sonic fence generator"
 	board_type = "machine"
-	build_path = /obj/machinery/shieldwallgen/ameridian
+	build_path = /obj/machinery/shieldwallgen/nacre
 	origin_tech = list(TECH_BLUESPACE = 3, TECH_MAGNET = 3)
 	req_components = list(
 		/obj/item/stock_parts/subspace/transmitter = 1,
@@ -13,10 +13,10 @@
 		/obj/item/stack/cable_coil = 30
 	)
 
-/obj/item/circuitboard/ameridian_refinery
-	name = "ameridian refinery"
+/obj/item/circuitboard/nacre_refinery
+	name = "nacre refinery"
 	board_type = "machine"
-	build_path = /obj/machinery/ameridian_refinery
+	build_path = /obj/machinery/nacre_refinery
 	origin_tech = list(TECH_DATA = 4, TECH_MATERIAL = 9, TECH_ENGINEERING = 5)
 	frame_type = FRAME_VERTICAL
 	req_components = list(
@@ -24,24 +24,24 @@
 		/obj/item/stock_parts/manipulator = 2
 	)
 
-/obj/item/circuitboard/liquid_ameridian_processor
-	name = "liquid ameridian processor"
+/obj/item/circuitboard/liquid_nacre_processor
+	name = "liquid nacre processor"
 	board_type = "machine"
-	build_path = /obj/machinery/liquid_ameridian_processor
+	build_path = /obj/machinery/liquid_nacre_processor
 	origin_tech = list(TECH_DATA = 4, TECH_MATERIAL = 9, TECH_ENGINEERING = 5)
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 1,
 		/obj/item/stock_parts/manipulator = 1,
-		/obj/item/ameridian_core = 1
+		/obj/item/nacre_core = 1
 	)
 
-/obj/item/circuitboard/ameridian_analyzer
-	name = "liquid ameridian analyzer"
+/obj/item/circuitboard/nacre_analyzer
+	name = "liquid nacre analyzer"
 	board_type = "machine"
-	build_path = /obj/machinery/ameridian_analyzer
+	build_path = /obj/machinery/nacre_analyzer
 	origin_tech = list(TECH_DATA = 4, TECH_MATERIAL = 9, TECH_ENGINEERING = 5)
 	req_components = list(
 		/obj/item/stock_parts/matter_bin = 1,
 		/obj/item/stock_parts/manipulator = 1,
-		/obj/item/ameridian_core = 1
+		/obj/item/nacre_core = 1
 	)

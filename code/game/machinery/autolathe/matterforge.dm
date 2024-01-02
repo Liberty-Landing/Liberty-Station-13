@@ -607,31 +607,30 @@
 	lst[MATERIAL_GLASS] = 0.45			//as long as guild is not mass producing sand...
 	lst[MATERIAL_LGLASS] = 0.70
 	lst[MATERIAL_ALUMINIUM] = 0.50			//why mixing a kilogram of aluminium and onde of feathers be worse than it's source?
-	lst[MATERIAL_LBGLASS] = 0.70	//better off using it on crafts or to repair specific windows
-	lst[MATERIAL_RPLASMAGLASS] = 0.90 	//but why?
+	lst[MATERIAL_BGLASS] = 0.70	//better off using it on crafts or to repair specific windows
+	lst[MATERIAL_LBGLASS] = 0.90 	//but why?
 	lst[MATERIAL_DIAMOND] = 1.20 		//who actually does that?
 	lst[MATERIAL_HYDROGENC] = 0.70
 	lst[MATERIAL_GOLD] = 0.70
 	lst[MATERIAL_URANIUM] = 1
 	lst[MATERIAL_SILVER] = 0.70			//while guild has no problem obtaining, using as fuel for the forge is still not reccomended
 	lst[MATERIAL_INDSTEEL] = 0.70		//hard to happen, Guild needs it far more for crafts
-	lst[MATERIAL_CARBON_FIBER] = 0.55
-	lst[MATERIAL_BIO_SILK] = 0.55
+	lst[MATERIAL_CARBON_FIBER] = 0.60	//carbon fiber is costier than biosilk
+	lst[MATERIAL_BIO_SILK] = 0.40
 	lst[MATERIAL_PLASTIC] = 0.45		//"a kilogram of feathers"
 	lst[MATERIAL_TRITIUM] = 1			//only exists if guild mines it themselves
-	lst[MATERIAL_PLATINUM] = 1
-	lst[MATERIAL_MHYDROGEN] = 1			//only exists if guild mines it themselves
-	lst[MATERIAL_OSMIUM] = 1			//only exists if guild mines it themselves
+	lst[MATERIAL_TITANIUM] = 0.50
 	lst[MATERIAL_WOOD] = 0.20
 	lst[MATERIAL_CLOTH] = 0.10
 	lst[MATERIAL_SILK] = 0.10
 	lst[MATERIAL_CARDBOARD] = 0.10
 	lst[MATERIAL_LEATHER] = 0.20
 	lst[MATERIAL_BONE] = 0.20
-	lst[MATERIAL_TITANIUM] = 0.80		//only exists if guild mines it themselves
+	lst[MATERIAL_COPPER] = 0.20		
 	lst[MATERIAL_COMPRESSED_MATTER] = 1 //we make this!
 	lst[MATERIAL_RSCRAP] = 0.75			//we also make this, now standarized
-	lst[MATERIAL_AMERIDIAN] = 0.90		//so ameridian is useful to guild now?
+	lst[MATERIAL_NACRE] = 0.90		//of course NACRE is useful. Yes.
+	lst[MATERIAL_FRAGNACRE] = 0.90		//practically the same thing, but ore
 /obj/machinery/matter_nanoforge/proc/check_user(mob/user)
 	if(user.stats?.getPerk(PERK_HANDYMAN))
 		return TRUE

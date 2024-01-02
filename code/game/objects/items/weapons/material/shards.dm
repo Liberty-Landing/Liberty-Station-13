@@ -192,8 +192,8 @@
 /obj/item/material/shard/plasma/New(loc)
 	..(loc, MATERIAL_LBGLASS)
 
-/obj/item/material/shard/ameridian
-	name = "ameridian"
+/obj/item/material/shard/nacre
+	name = "nacre"
 
-/obj/item/material/shard/ameridian/New(loc)
-	..(loc, MATERIAL_AMERIDIAN)
+/obj/item/material/shard/nacre/New(loc)
+	..(loc, MATERIAL_NACRE)

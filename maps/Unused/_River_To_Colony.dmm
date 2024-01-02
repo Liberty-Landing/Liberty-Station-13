@@ -1558,7 +1558,7 @@
 /obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/glass/random,
-/obj/item/stack/material/glass/reinforced,
+/obj/item/stack/material/glass/laminated,
 /obj/random/toolbox,
 /obj/machinery/light/small{
 	dir = 1
@@ -1921,7 +1921,7 @@
 /area/colony/exposedsun/crashed_shop/workshop)
 "QD" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /obj/item/stack/material/indsteel/random,
 /obj/item/tool/tape_roll/flextape,
 /obj/random/material_rare/low_chance,
@@ -2136,7 +2136,7 @@
 /area/colony/exposedsun/crashed_shop)
 "UJ" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /obj/random/material_ore/low_chance,
 /obj/item/tool/omnitool,
 /turf/simulated/floor/tiled/dark/brown_platform,

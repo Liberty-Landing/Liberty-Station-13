@@ -1,16 +1,16 @@
-// This machine turn ameridian crystals into liquid ameridian and put it in a bidon connected to it.
-/obj/machinery/liquid_ameridian_processor
-	name = "liquid ameridian processor"
-	desc = "Convert Liquid Ameridian into multiple materials."
+// This machine turn nacre crystals into liquid nacre and put it in a bidon connected to it.
+/obj/machinery/liquid_nacre_processor
+	name = "liquid nacre processor"
+	desc = "Convert Liquid nacre into multiple materials."
 	icon = 'icons/obj/machines/grinder.dmi'
-	icon_state = "ameridian_processor"
+	icon_state = "nacre_processor"
 	density = TRUE
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
 	use_power = IDLE_POWER_USE
 	anchor_type = /obj/structure/reagent_dispensers/bidon
 	anchor_direction = WEST
-	circuit = /obj/item/circuitboard/liquid_ameridian_processor
+	circuit = /obj/item/circuitboard/liquid_nacre_processor
 	var/obj/structure/reagent_dispensers/bidon/Container
 	/*
 	Current as of wrighting is balance is around t5 parts aka 50% reduction
@@ -26,26 +26,26 @@
 						list(name = "indsteel", cost = 50, path = /obj/item/stack/material/indsteel),
 						list(name = "Silver", cost = 20, path = /obj/item/stack/material/silver),
 						list(name = "Gold", cost = 20, path = /obj/item/stack/material/gold),
-						list(name = "Platinum", cost = 60, path = /obj/item/stack/material/platinum),
+						list(name = "Titanium", cost = 60, path = /obj/item/stack/material/titanium),
 						list(name = "Uranium", cost = 60, path = /obj/item/stack/material/uranium),
-						list(name = "Plasma", cost = 60, path = /obj/item/stack/material/plasma),
-						list(name = "Osmium", cost = 100, path = /obj/item/stack/material/osmium),
+						list(name = "hydrogen", cost = 60, path = /obj/item/stack/material/hydrogenc),
+						list(name = "Titanium Composite", cost = 100, path = /obj/item/stack/material/composite),
 						list(name = "Diamonds", cost = 180, path = /obj/item/stack/material/diamond),
-						list(name = "Metallic Hydrogen", cost = 180, path=/obj/item/stack/material/mhydrogen),
+						list(name = "titaniumrtc", cost = 180, path=/obj/item/stack/material/mhydrogen),
 						list(name = "Tritium", cost = 180, path = /obj/item/stack/material/tritium),
-						list(name = "Ameridian Core", cost = 1200, path=/obj/item/ameridian_core) //At t8 parts its 1:1
+						list(name = "nacre Core", cost = 1200, path=/obj/item/nacre_core) //At t8 parts its 1:1
 						)
 	var/cost_modifier = 1
 
-/obj/machinery/liquid_ameridian_processor/New()
+/obj/machinery/liquid_nacre_processor/New()
 	..()
 
-/obj/machinery/liquid_ameridian_processor/examine(mob/user)
+/obj/machinery/liquid_nacre_processor/examine(mob/user)
 	..()
 	if(isghost(user))
 		interact(user)
 
-/obj/machinery/liquid_ameridian_processor/attackby(obj/item/I, mob/user)
+/obj/machinery/liquid_nacre_processor/attackby(obj/item/I, mob/user)
 
 	if(default_deconstruction(I, user))
 		return
@@ -57,7 +57,7 @@
 
 	updateDialog()
 
-/obj/machinery/liquid_ameridian_processor/RefreshParts()
+/obj/machinery/liquid_nacre_processor/RefreshParts()
 	var/man_rating = 0
 	var/man_amount = 0
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
@@ -72,35 +72,35 @@
 
 	updateDialog()
 
-/obj/machinery/liquid_ameridian_processor/attack_hand(mob/user as mob)
+/obj/machinery/liquid_nacre_processor/attack_hand(mob/user as mob)
 	interact(user)
 	return
 
-// Return the amount of ameridian the bidon has.
-/obj/machinery/liquid_ameridian_processor/proc/get_bidon_ameridian()
-	return Container?.reagents.get_reagent_amount(MATERIAL_AMERIDIAN)
+// Return the amount of nacre the bidon has.
+/obj/machinery/liquid_nacre_processor/proc/get_bidon_nacre()
+	return Container?.reagents.get_reagent_amount(MATERIAL_NACRE)
 
-// Check if we have at least [amount] amount of liquid ameridian. It is different from get_bidon_ameridian() in that it only return TRUE or FALSE, and not the quantity of ameridian we have
-/obj/machinery/liquid_ameridian_processor/proc/check_bidon_ameridian(var/amount)
-	return Container?.reagents.has_reagent(MATERIAL_AMERIDIAN, amount)
+// Check if we have at least [amount] amount of liquid nacre. It is different from get_bidon_nacre() in that it only return TRUE or FALSE, and not the quantity of nacre we have
+/obj/machinery/liquid_nacre_processor/proc/check_bidon_nacre(var/amount)
+	return Container?.reagents.has_reagent(MATERIAL_NACRE, amount)
 
-// Use [amount] of liquid ameridian
-/obj/machinery/liquid_ameridian_processor/proc/use_bidon_ameridian(var/amount)
-	return check_bidon_ameridian(amount) ? Container?.reagents.remove_reagent(MATERIAL_AMERIDIAN, amount) : 0
+// Use [amount] of liquid nacre
+/obj/machinery/liquid_nacre_processor/proc/use_bidon_nacre(var/amount)
+	return check_bidon_nacre(amount) ? Container?.reagents.remove_reagent(MATERIAL_NACRE, amount) : 0
 
 // This proc search for nearby anchored BIDONS
-/obj/machinery/liquid_ameridian_processor/proc/search_bidons()
+/obj/machinery/liquid_nacre_processor/proc/search_bidons()
 	for(var/obj/structure/reagent_dispensers/bidon/B in range(1, src))
 		if(B.anchored_machine == src)
 			Container = B
 			return
 	Container = null // This should only happen if there was no anchored BIDONs nearby
 
-/obj/machinery/liquid_ameridian_processor/interact(mob/user as mob)
+/obj/machinery/liquid_nacre_processor/interact(mob/user as mob)
 	if((get_dist(src, user) > 1) || (stat & (BROKEN|NOPOWER)))
 		if(!isAI(user) && !isghost(user))
 			user.unset_machine()
-			user << browse(null, "window=LiquidAmeridianProcessor")
+			user << browse(null, "window=LiquidnacreProcessor")
 			return
 
 	search_bidons()
@@ -108,34 +108,34 @@
 	user.set_machine(src)
 
 	var/dat = ""
-	dat += "<head><title>Liquid Ameridian Processor</title></head>"
-	dat += "Liquid Ameridian Processor<BR>"
+	dat += "<head><title>Liquid nacre Processor</title></head>"
+	dat += "Liquid nacre Processor<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR>"
 	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</A><BR><BR>"
 	if(Container)
-		dat += "Current quantity of liquid ameridian : [get_bidon_ameridian()].<BR><BR>"
+		dat += "Current quantity of liquid nacre : [get_bidon_nacre()].<BR><BR>"
 		dat += mats_list_html()
 	else
 		dat += "No bidon detected. Please connect a bidon."
 
-	user << browse(dat, "window=LiquidAmeridianProcessor")
-	onclose(user, "LiquidAmeridianProcessor")
+	user << browse(dat, "window=LiquidnacreProcessor")
+	onclose(user, "LiquidnacreProcessor")
 	return
 
-/obj/machinery/liquid_ameridian_processor/Topic(href, href_list)
+/obj/machinery/liquid_nacre_processor/Topic(href, href_list)
 	if(isghost(usr)) // Ghosts can't do shit
 		return
 
 	//Ignore input if we are broken or guy is not touching us, AI can control from a ways away
 	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1 && !isAI(usr)))
 		usr.unset_machine()
-		usr << browse(null, "window=LiquidAmeridianProcessor")
+		usr << browse(null, "window=LiquidnacreProcessor")
 		return
 
 	..()
 
 	if(href_list["close"])
-		usr << browse(null, "window=LiquidAmeridianProcessor")
+		usr << browse(null, "window=LiquidnacreProcessor")
 		usr.unset_machine()
 		return
 
@@ -152,14 +152,14 @@
 		if(!successful)
 			return
 
-		if(use_bidon_ameridian((L["cost"]) * L["amount"])) // Check if we have enough liquid ameridian
+		if(use_bidon_nacre((L["cost"]) * L["amount"])) // Check if we have enough liquid nacre
 			if(ispath(L["path"], /obj/item/stack/material)) // Material sheets are handled differently
 				new L_path(get_turf(src), L["amount"])
 			else
 				for(var/i = 0, L["amount"] > i, i++) // Create 1 item at a time
 					new L_path(get_turf(src))
 		else
-			ping("Not enough liquid ameridian.")
+			ping("Not enough liquid nacre.")
 
 	updateDialog()
 	return
@@ -168,20 +168,20 @@
 
 // Output list format : list(name=[text], cost=[num], path=[path])
 // name is the visible name of what we're trying to make.
-// cost is how much liquid ameridian is used to make 1 object.
+// cost is how much liquid nacre is used to make 1 object.
 // path is the actual path of the object
 
-/obj/machinery/liquid_ameridian_processor/proc/mats_list_html()
+/obj/machinery/liquid_nacre_processor/proc/mats_list_html()
 	var/dat = ""
 	dat += "List of materials : <BR>"
 	for(var/list/L in outputs)
-		dat += "[L["name"]], cost : [L["cost"] / cost_modifier] Liquid Ameridian.<BR>"
+		dat += "[L["name"]], cost : [L["cost"] / cost_modifier] Liquid nacre.<BR>"
 		dat += "- Print : "
-		dat += "[check_bidon_ameridian((L["cost"]/cost_modifier)*1) ? "<A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=1'>x1</A>" : "Not enough liquid ameridian"]"
-		dat += "[check_bidon_ameridian((L["cost"]/cost_modifier)*5) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=5'>x5</A>" : ""]"
-		dat += "[check_bidon_ameridian((L["cost"]/cost_modifier)*10) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=10'>x10</A>" : ""]"
-		dat += "[check_bidon_ameridian((L["cost"]/cost_modifier)*20) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=20'>x20</A>" : ""]"
-		dat += "[check_bidon_ameridian((L["cost"]/cost_modifier)*60) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=60'>x60</A>" : ""]"
-		dat += "[check_bidon_ameridian((L["cost"]/cost_modifier)*120) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=120'>x120</A>" : ""]"
+		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*1) ? "<A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=1'>x1</A>" : "Not enough liquid nacre"]"
+		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*5) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=5'>x5</A>" : ""]"
+		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*10) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=10'>x10</A>" : ""]"
+		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*20) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=20'>x20</A>" : ""]"
+		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*60) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=60'>x60</A>" : ""]"
+		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*120) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=120'>x120</A>" : ""]"
 		dat += ".<BR><BR>"
 	return dat

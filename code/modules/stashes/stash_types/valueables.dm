@@ -6,7 +6,7 @@
 	contents_list_base = list(/obj/random/credits/c5000 = 1)
 
 	contents_list_random = list(/obj/item/stack/material/diamond/random = 10,
-	/obj/item/stack/material/platinum/random = 10,
+	/obj/item/stack/material/titanium/random = 10,
 	/obj/item/stack/material/gold/random = 15,
 	/obj/item/stack/material/silver/random = 25,
 	/obj/random/credits/c5000 = 30,

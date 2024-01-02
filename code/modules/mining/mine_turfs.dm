@@ -438,7 +438,7 @@
 
 /turf/simulated/mineral/random
 	name = "Mineral deposit"
-	var/mineralSpawnChanceList = list(ORE_URANIUM = 5, ORE_PLATINUM = 5, ORE_IRON = 35, ORE_CARBON = 35, ORE_DIAMOND = 1, ORE_GOLD = 5, ORE_SILVER = 5, ORE_PLASMA = 10, ORE_HYDROGEN = 1)
+	var/mineralSpawnChanceList = list(ORE_URANIUM = 5, ORE_TITANIUM = 5, ORE_IRON = 20, ORE_LIGNITE = 20, ORE_DIAMOND = 1, ORE_GOLD = 5, ORE_SILVER = 5, ORE_CLATHRATES = 10, ORE_COPPER = 25, ORE_ALUMINIUM = 30)
 	var/mineralChance = 100 //10 //means 10% chance of this plot changing to a mineral deposit
 
 /turf/simulated/mineral/random/New()

@@ -1043,7 +1043,7 @@
 /turf/simulated/floor/tiled/aluminium/danger,
 /area/mine/hallway)
 "df" = (
-/obj/structure/ameridian_crystal/spire/fake{
+/obj/structure/nacre_crystal/spire/fake{
 	spread_range = 0
 	},
 /turf/simulated/floor/asteroid,
@@ -1151,8 +1151,8 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/table/steel_reinforced,
 /obj/item/gun/energy/sonic_emitter/preloaded,
-/obj/item/ameridian_core,
-/obj/item/ameridian_core,
+/obj/item/nacre_core,
+/obj/item/nacre_core,
 /obj/machinery/light/small{
 	dir = 4
 	},
@@ -1556,7 +1556,7 @@
 /turf/simulated/floor/tiled/aluminium,
 /area/mine/processing)
 "eH" = (
-/obj/machinery/ameridian_refinery,
+/obj/machinery/nacre_refinery,
 /turf/simulated/floor/tiled/aluminium,
 /area/mine/processing)
 "eI" = (
@@ -1874,7 +1874,7 @@
 /turf/simulated/floor/asteroid,
 /area/mine/unexplored)
 "fA" = (
-/obj/machinery/liquid_ameridian_processor,
+/obj/machinery/liquid_nacre_processor,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/aluminium/danger,
 /area/mine/processing)
@@ -9120,11 +9120,11 @@
 /area/liberty/rnd/outpoststorage)
 "Kn" = (
 /obj/structure/catwalk,
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 1
 	},
-/obj/structure/window/reinforced/plasma,
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate,
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 8
 	},
 /obj/machinery/camera/network/research{
@@ -9376,11 +9376,11 @@
 /area/mine/unexplored)
 "Ol" = (
 /obj/structure/catwalk,
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 4
 	},
-/obj/structure/window/reinforced/plasma,
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate,
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 8
 	},
 /obj/machinery/camera/network/research,
@@ -9454,13 +9454,13 @@
 /area/mine/unexplored)
 "OY" = (
 /obj/structure/catwalk,
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 8
 	},
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 1
 	},
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 4
 	},
 /obj/machinery/camera/network/research{

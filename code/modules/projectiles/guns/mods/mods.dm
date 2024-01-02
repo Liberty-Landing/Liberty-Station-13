@@ -308,7 +308,7 @@
 	name = "Simulacrum \"Glass Widow\" infuser"
 	desc = "An old technology from the Simulacrum's glory days, used to make formerly useless civilian-grade weaponry into something much more lethal. This mechanism fits 9mm weapons only and coats the bullets in dangerous caustic toxins."
 	icon_state = "Glass_Widow"
-	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 4, MATERIAL_PLATINUM = 4)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 4, MATERIAL_TITANIUM = 4)
 	price_tag = 800
 
 /obj/item/gun_upgrade/mechanism/glass_widow/New()
@@ -616,7 +616,7 @@
 	name = "Simulacrum \"Master Unmaker\" infuser"
 	desc = "One of the rarest and most powerful weapon modifications ever made by Simulacrum Robotics and one of the numerous reasons they remain a threat even after the company collapsed into malfunctioning artificial intelligences. It can infuse any weapon with immense power that causes utter ruin to machine and organic matter alike."
 	icon_state = "psionic_catalyst"
-	matter = list(MATERIAL_PLATINUM = 5, MATERIAL_INDSTEEL = 3, MATERIAL_DIAMOND = 10)
+	matter = list(MATERIAL_TITANIUM = 5, MATERIAL_INDSTEEL = 3, MATERIAL_DIAMOND = 10)
 	price_tag = 4500
 
 /obj/item/gun_upgrade/mechanism/simulacrum_master_catalyst/New()

@@ -45,7 +45,7 @@
 			/obj/item/inflatable/door,
 			/obj/item/inflatable/wall,
 			/obj/item/stack/material/aluminium/full = good_data("aluminium sheets (x120)", list(3, 5), 660), //Better deal here
-			/obj/item/stack/material/glass/plasmaglass = good_data("borosilicate glass sheets (x120)", list(3, 5), 3200),
+			/obj/item/stack/material/glass/mendsilicate = good_data("borosilicate glass sheets (x120)", list(3, 5), 3200),
 			/obj/item/storage/belt/utility/full,
 			/obj/item/clothing/head/welding,
 			/obj/item/tool/omnitool,

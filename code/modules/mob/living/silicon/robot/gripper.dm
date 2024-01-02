@@ -303,7 +303,7 @@
 		/obj/item/reagent_containers/food/snacks/meat, //For grinding up roaches
 		/obj/item/reagent_containers/food/snacks/grown, //For grinding up herbs
 		/obj/item/bodybag/cryobag,
-		/obj/item/stack/material/plasma
+		/obj/item/stack/material/hydrogenc
 		)
 
 /obj/item/gripper/service //Used to handle food, drinks, and seeds.

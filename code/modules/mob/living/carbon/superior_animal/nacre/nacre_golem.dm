@@ -1,9 +1,9 @@
-/mob/living/carbon/superior_animal/ameridian_golem
-	name = "ameridian golem"
-	desc = "A weird creature made of ameridian"
-	icon = 'icons/obj/ameridian.dmi'
-	icon_state = "golem_ameridian" // Sprite from Eris, I don't know who made them. -R4d6
-	faction = "ameridian"
+/mob/living/carbon/superior_animal/nacre_golem
+	name = "nacre golem"
+	desc = "A weird creature made of nacre"
+	icon = 'icons/obj/nacre.dmi'
+	icon_state = "golem_nacre" // Sprite from Eris, I don't know who made them. -R4d6
+	faction = "nacre"
 	attacktext = "smashed"
 	breath_required_type = 0 // Doesn't need to breath, in a space suit
 	breath_poison_type = 0 // Can't be poisoned
@@ -38,7 +38,7 @@
 	colony_friend = FALSE
 	friendly_to_colony = FALSE
 	known_languages = list(LANGUAGE_COMMON)
-	var/obj/structure/ameridian_crystal/node
+	var/obj/structure/nacre_crystal/node
 	var/drop_amount = 1 // How many crystals we drop on death
 	var/size_factor = 1 // Size, in %, of the golem
 	never_stimulate_air = TRUE
@@ -55,23 +55,23 @@
 		/datum/stat_modifier/mob/living/carbon/superior_animal/aggressive = 10
 	)
 
-/mob/living/carbon/superior_animal/ameridian_golem/add_initial_transforms()
+/mob/living/carbon/superior_animal/nacre_golem/add_initial_transforms()
 	. = ..()
 
-	add_new_transformation(/datum/transform_type/modular, list(size_factor, size_factor, flag = AMERIDIAN_GOLEM_INITIAL_SCALE_TRANSFORM, priority = AMERIDIAN_GOLEM_INITIAL_SCALE_TRANSFORM_PRIORITY))
+	add_new_transformation(/datum/transform_type/modular, list(size_factor, size_factor, flag = nacre_GOLEM_INITIAL_SCALE_TRANSFORM, priority = nacre_GOLEM_INITIAL_SCALE_TRANSFORM_PRIORITY))
 
-/mob/living/carbon/superior_animal/ameridian_golem/death()
+/mob/living/carbon/superior_animal/nacre_golem/death()
 	. = ..()
 	playsound(get_turf(src), "sound/effects/crumble[pick(1, 2, 3, 4, 5)].ogg", 50)
 	if(drop_amount)
-		var/obj/item/stack/material/ameridian/loot = new /obj/item/stack/material/ameridian(get_turf(src))
+		/obj/item/stack/material/mendingnacre/loot = new /obj/item/stack/material/mendingnacre(get_turf(src))
 		loot.amount = drop_amount
 	qdel(src)
 
-/mob/living/carbon/superior_animal/ameridian_golem/Destroy()
+/mob/living/carbon/superior_animal/nacre_golem/Destroy()
 	. = ..()
 
-/mob/living/carbon/superior_animal/ameridian_golem/bullet_act(var/obj/item/projectile/P, var/def_zone)
+/mob/living/carbon/superior_animal/nacre_golem/bullet_act(var/obj/item/projectile/P, var/def_zone)
 	if(istype(P, /obj/item/projectile/sonic_bolt))
 		if (!(P.testing))
 			var/obj/item/projectile/sonic_bolt/SB = P
@@ -80,14 +80,14 @@
 
 	. = ..()
 
-	addtimer(CALLBACK(src, /mob/living/carbon/superior_animal/ameridian_golem/.proc/maintain_drop_amount), 100 MILLISECONDS) //consider converting this to ticks?
+	addtimer(CALLBACK(src, /mob/living/carbon/superior_animal/nacre_golem/.proc/maintain_drop_amount), 100 MILLISECONDS) //consider converting this to ticks?
 
-/mob/living/carbon/superior_animal/ameridian_golem/proc/maintain_drop_amount()
+/mob/living/carbon/superior_animal/nacre_golem/proc/maintain_drop_amount()
 	if (!is_dead(src)) // We're still alive!
 		drop_amount = initial(drop_amount) // So we still have loot
 
 // Stole this code from 'code/__HELPERS/matrices.dm' because otherwise the golems shrink during the shake animation. -R4d6
-/mob/living/carbon/superior_animal/ameridian_golem/shake_animation(var/intensity = 8)
+/mob/living/carbon/superior_animal/nacre_golem/shake_animation(var/intensity = 8)
 	var/init_px = pixel_x
 	var/shake_dir = pick(-1, 1)
 	animate(src, transform=turn(matrix(), intensity*shake_dir)*size_factor, pixel_x=init_px + 2*shake_dir, time=1)

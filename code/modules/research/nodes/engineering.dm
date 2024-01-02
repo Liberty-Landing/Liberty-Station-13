@@ -438,22 +438,22 @@
 							)
 
 
-/datum/technology/ameridian
-	name = "Ameridian Refindment"
-	desc = "Advanced refindments of ameridian to liquid and then soild again."
+/datum/technology/nacre
+	name = "nacre Refindment"
+	desc = "Advanced refindments of nacre to liquid and then soild again."
 	tech_type = RESEARCH_ENGINEERING
 
 	x = 0.9
 	y = 0.7
-	icon = "ameridian"
+	icon = "nacre"
 
 	required_technologies = list(/datum/technology/industrial_printing)
 	required_tech_levels = list()
 	cost = 1500 //Cheap-ish I guess?
 
-	unlocks_designs = list(/datum/design/research/circuit/ameridian_refinery,
-							/datum/design/research/circuit/liquid_ameridian_processor,
-							/datum/design/research/circuit/ameridian_analyzer
+	unlocks_designs = list(/datum/design/research/circuit/nacre_refinery,
+							/datum/design/research/circuit/liquid_nacre_processor,
+							/datum/design/research/circuit/nacre_analyzer
 							)
 
 

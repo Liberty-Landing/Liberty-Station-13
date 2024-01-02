@@ -590,7 +590,7 @@
 	armor_list = list(melee = 20, bullet = 20, energy = 70, bomb = 50, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	cold_protection = HEAD
-	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_PLATINUM = 2) //cheaper
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_TITANIUM = 2) //cheaper
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.5
 	price_tag = 150
@@ -1062,7 +1062,7 @@
 		MATERIAL_INDSTEEL = 10,
 		MATERIAL_GLASS = 5,
 		MATERIAL_PLASTIC = 5,
-		MATERIAL_PLATINUM = 2
+		MATERIAL_TITANIUM = 2
 		)
 	armor_up = list(melee = 5, bullet = 20, energy = 10, bomb = 10, bio = 100, rad = 50)
 	armor_list = list(melee = 25, bullet = 25, energy = 25, bomb = 20, bio = 100, rad = 50)

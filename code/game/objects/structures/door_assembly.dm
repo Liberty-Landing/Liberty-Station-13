@@ -56,7 +56,7 @@
 			else if(glass == 1)
 				if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_NORMAL, required_stat = STAT_MEC))
 					to_chat(user, SPAN_NOTICE("You welded the glass panel out!"))
-					new /obj/item/stack/material/glass/reinforced(src.loc)
+					new /obj/item/stack/material/glass/laminated(src.loc)
 					glass = 0
 			else if(!anchored)
 				if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_NORMAL, required_stat = STAT_MEC))

@@ -9,7 +9,7 @@
 	contained_sprite = TRUE
 	item_state_slots = list(slot_l_hand_str = "plasma_can_left", slot_r_hand_str = "plasma_can_right")
 	origin_tech = list(TECH_POWER = 1)
-	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_MHYDROGEN = 1, MATERIAL_OSMIUM = 1, MATERIAL_TRITIUM = 1)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_HYDROGENC = 1, MATERIAL_TITANIUMRTC = 1, MATERIAL_TRITIUM = 1)
 	force = WEAPON_FORCE_WEAK
 	throwforce = WEAPON_FORCE_WEAK
 	throw_speed = 3

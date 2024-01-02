@@ -163,7 +163,7 @@
 
 /datum/supply_pack/borosilicate_glass120
 	name = "Borosilicate Glass Sheets Crate (120)"
-	contains = list(/obj/item/stack/material/glass/plasmaglass)
+	contains = list(/obj/item/stack/material/glass/mendsilicate)
 	amount = 120
 	cost = 1400
 	containertype = /obj/structure/closet/crate/secure

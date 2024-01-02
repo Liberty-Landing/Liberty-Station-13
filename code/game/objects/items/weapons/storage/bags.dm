@@ -214,7 +214,7 @@
 		/obj/item/reagent_containers/food/snacks/monkeycube,
 		/obj/item/slime_extract,
 		/obj/item/reagent_containers/glass/bottle,
-		/obj/item/stack/material/plasma,
+		/obj/item/stack/material/hydrogenc,
 		/obj/item/slime_thermals,
 		/obj/item/slime_potion/slime_docile,
 		/obj/item/slime_potion/slime_docile_adult,

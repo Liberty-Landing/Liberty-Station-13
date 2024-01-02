@@ -152,7 +152,22 @@
 	rand_min = 1
 	rand_max = 5
 
-/obj/item/stack/material/diamond/tenstack
+/obj/item/stack/material/briquette
+	name = "lignite briquette"
+	desc = "compressed block of lignite coal with a shape that aids the fire to spread due to its plentiful airflow. It is used for fuel, as kindling, to power up a generator or heat up places when energy is out."
+	icon_state = "sheet-briquette"
+	default_type = MATERIAL_BRIQUETTE
+	price_tag = 1
+	novariants = FALSE
+
+/obj/item/stack/material/briquette/full
+	amount = 120
+
+/obj/item/stack/material/briquette/random
+	rand_min = 1
+	rand_max = 5
+
+/obj/item/stack/material/briquette/tenstack
 	rand_min = 10
 	rand_max = 12
 
@@ -312,7 +327,7 @@
 	rand_min = 3
 	rand_max = 15
 
-/obj/item/stack/material/glass/reinforced
+/obj/item/stack/material/glass/laminated
 	name = "laminated glass"
 	icon_state = "sheet-lglass"
 	default_type = MATERIAL_LGLASS
@@ -452,15 +467,27 @@
 	rand_min = 1
 	rand_max = 4
 
+/obj/item/stack/material/hydrogenc
+	name = "hydrogen Clathrates"
+	icon_state = "sheet-hydrogen" 
+	default_type = MATERIAL_HYDROGENC
+	price_tag = 8
+	novariants = FALSE
 
+/obj/item/stack/material/hydrogenc/random
+	rand_min = 3
+	rand_max = 5
+
+/obj/item/stack/material/hydrogenc/full
+	amount = 120
 
 //pre-industrial materials, all removed.
 /*
-/obj/item/stack/material/glass/plasmaglass
+/obj/item/stack/material/glass/mendsilicate
 	name = "borosilicate glass"
 	desc = "This sheet is special plasma-glass alloy designed to withstand large temperatures"
 	singular_name = "borosilicate glass sheet"
-	icon_state = "sheet-plasmaglass"
+	icon_state = "sheet-mendsilicate"
 	default_type = MATERIAL_LBGLASS
 	price_tag = 6
 
@@ -472,7 +499,7 @@
 	icon_state = "ameridian_crystal_item"
 	default_type = MATERIAL_AMERIDIAN
 	novariants = TRUE
-	price_tag = 50 // Ameridian mining is extremly dangerous and very profitable
+	price_tag = 50 // ameridian mining is extremly dangerous and very profitable
 	max_amount = 360
 
 /obj/item/stack/material/ameridian/full
@@ -481,7 +508,7 @@
 /obj/item/stack/material/osmium
 	name = "osmium"
 	icon_state = "sheet-silver"
-	default_type = MATERIAL_OSMIUM
+	default_type = MATERIAL_TITANIUMRTC
 	apply_colour = 1
 	price_tag = 12
 
@@ -492,7 +519,7 @@
 /obj/item/stack/material/platinum
 	name = "platinum"
 	icon_state = "sheet-platinum"
-	default_type = MATERIAL_PLATINUM
+	default_type = MATERIAL_TITANIUM
 	price_tag = 20
 	novariants = FALSE
 
@@ -514,18 +541,18 @@
 /obj/item/stack/material/mhydrogen/full
 	amount = 120
 
-/obj/item/stack/material/plasma
+/obj/item/stack/material/hydrogenc
 	name = "solid plasma"
 	icon_state = "sheet-plasma" //Sprites by CeUvi#1236
 	default_type = MATERIAL_HYDROGENC
 	price_tag = 8
 	novariants = FALSE
 
-/obj/item/stack/material/plasma/random
+/obj/item/stack/material/hydrogenc/random
 	rand_min = 3
 	rand_max = 5
 
-/obj/item/stack/material/plasma/full
+/obj/item/stack/material/hydrogenc/full
 	amount = 120
 
 */ 
@@ -551,7 +578,7 @@
 	rand_max = 12
 
 /obj/item/stack/material/mendingnacre
-	name = "mending Nacre"
+	name = "mending nacre"
 	desc = "Mending piece from a still studied substance that looks alike nacre, and it is constantly healing with microscopic activity."
 	singular_name = "Mending Nacre"
 	icon_state = "mending_nacre_item"

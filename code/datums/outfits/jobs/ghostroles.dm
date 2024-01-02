@@ -60,7 +60,7 @@
 	back = /obj/item/storage/backpack
 	backpack_contents = list(/obj/item/rcd/industrial = 1, \
 							/obj/item/stack/material/compressed_matter/full = 1, \
-							/obj/item/stack/material/glass/plasmarglass/full = 1, \
+							/obj/item/stack/material/mendsilicate/reinforced/full = 1, \
 							/obj/item/stack/material/indsteel/full = 1, \
 							/obj/item/stack/material/aluminium/full = 1, \
 							/obj/item/stack/material/plastic/full = 1, \

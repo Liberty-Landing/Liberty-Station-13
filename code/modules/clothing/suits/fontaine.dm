@@ -33,7 +33,7 @@
 	desc = "A rigged yet sturdy Fontaine branded armor. Strong and protective as most vests, it is made entirely from reclaimed materials. It even has pockets as well as room for additional plates of armor to be added."
 	icon_state = "fontaine_platecarrier"
 	item_state = "fontaine_platecarrier"
-	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_ALUMINIUM = 10, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_ALUMINIUM = 10, MATERIAL_TITANIUM = 2)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	heat_protection = UPPER_TORSO|LOWER_TORSO
@@ -110,8 +110,8 @@
 /obj/item/clothing/suit/greatcoat/trapper/prismatic
 	name = "Prismatic Furred Coat"
 	desc = "A warm, crystal-embellished woolen coat adorned with the emblem of Fontaine. The crystals ability to bend/disperse light and absorb plasma beams is far too great to not be used even if the armor itself looks horrible to wear. This amerydian armor has been properly sterilized to avoid spreading. Do not hug people while using this if you want to avoid getting people free acupuncture."
-	icon_state = "furcoat_ameridian"
-	item_state = "furcoat_ameridian"
+	icon_state = "furcoat_nacre"
+	item_state = "furcoat_nacre"
 	armor_list = list(
 		melee = 55,
 		bullet = 25,

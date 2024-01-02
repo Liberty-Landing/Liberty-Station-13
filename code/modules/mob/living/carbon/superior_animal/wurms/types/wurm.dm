@@ -208,7 +208,7 @@ GLOBAL_LIST_INIT(wurms_special, list(/mob/living/carbon/superior_animal/wurm/osm
 	armor = list(melee = 35, bullet = 59, energy = 20, bomb = 50, bio = 100, rad = 0)
 
 //Loot related variables
-	ore = /obj/item/stack/ore/osmium
+	ore = /obj/item/stack/ore/niobium
 
 
 //Diamond Wurm - melee, doesn't give a fuck, high-damage
@@ -235,7 +235,7 @@ GLOBAL_LIST_INIT(wurms_special, list(/mob/living/carbon/superior_animal/wurm/osm
 	armor = list(melee = 20, bullet = 35, energy = 50, bomb = 50, bio = 100, rad = 0)
 
 //Loot related variables
-	ore = /obj/item/stack/ore/osmium
+	ore = /obj/item/stack/ore/niobium
 
 
 //Wurm summon for genetics. Friendly to colony. Colony isn't friendly to it.

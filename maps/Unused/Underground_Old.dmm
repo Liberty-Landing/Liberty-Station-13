@@ -17114,7 +17114,7 @@
 /area/liberty/rnd/xenobiology)
 "aSE" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/material/plasma{
+/obj/item/stack/material/hydrogenc{
 	layer = 2.9
 	},
 /turf/simulated/floor/tiled/aluminium,
@@ -43257,8 +43257,8 @@
 "cep" = (
 /obj/structure/table/standard,
 /obj/machinery/reagentgrinder/portable,
-/obj/item/stack/material/plasma/random,
-/obj/item/stack/material/plasma,
+/obj/item/stack/material/hydrogenc/random,
+/obj/item/stack/material/hydrogenc,
 /turf/simulated/floor/tiled/white/greencorner,
 /area/liberty/medical/chemistry)
 "ceq" = (

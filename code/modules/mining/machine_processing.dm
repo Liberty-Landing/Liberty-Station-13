@@ -164,9 +164,8 @@
 		ORE_URANIUM = 2,
 		ORE_DIAMOND = 2.5,
 		ORE_PLATINUM = 2.5,
-		ORE_COPPER = 0.3
-		ORE_TIN = 0.3
-		ORE_VANADIUM = 0.4
+		ORE_COPPER = 0.3,
+		ORE_VANADIUM = 0.4,
 		ORE_TITANIUM = 1.5)
 
 /obj/machinery/mineral/processing_unit/laber

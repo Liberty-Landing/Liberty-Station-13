@@ -84,7 +84,7 @@
 	icon_state = "armor_part"
 	steps = list(
 		list(/obj/item/clothing/gloves/thick/handmade, 1, "time" = 15), // Grab combat gloves
-		list(/obj/item/clothing/gloves/dusters/aluminium, 1, "time" = 15), // Attach knuckle dusters
+		list(/obj/item/clothing/gloves/dusters/indsteel, 1, "time" = 15), // Attach knuckle dusters
 		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL), // Plate the armguards with extra aluminium...
 		list(QUALITY_WELDING, 10, 20) // ...And weld it in place!
 	)
@@ -406,7 +406,7 @@
 	result = /obj/item/clothing/gloves/dusters/gold
 	steps = list(
 		list(CRAFT_MATERIAL, 3, MATERIAL_GOLD), //Grab some gold
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLATINUM), //Grab some platinum as well
+		list(CRAFT_MATERIAL, 3, MATERIAL_TITANIUM), //Grab some platinum as well
 		list(QUALITY_WELDING, 10, "time" = 30), //Weld it into basic form
 		list(QUALITY_HAMMERING, 15, 10) //Harden into shape
 	)
@@ -415,7 +415,7 @@
 	name = "spiked platinum knuckle dusters"
 	result = /obj/item/clothing/gloves/dusters/platinum
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLATINUM), //Grab some platinum
+		list(CRAFT_MATERIAL, 3, MATERIAL_TITANIUM), //Grab some platinum
 		list(QUALITY_WELDING, 10, "time" = 30), //Weld it into basic form
 		list(QUALITY_HAMMERING, 15, 10), //Harden into shape
 		list(/obj/item/tool_upgrade/augment/spikes, 1, "time" = 10) //Put 'spiked' in the name

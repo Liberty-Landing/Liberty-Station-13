@@ -1,7 +1,7 @@
-// This machine turn ameridian crystals into liquid ameridian and put it in a bidon connected to it.
-/obj/machinery/ameridian_analyzer
-	name = "liquid ameridian analyzer"
-	desc = "Analyze & Consume liquid ameridian to produce research points."
+// This machine turn nacre crystals into liquid nacre and put it in a bidon connected to it.
+/obj/machinery/nacre_analyzer
+	name = "liquid nacre analyzer"
+	desc = "Analyze & Consume liquid nacre to produce research points."
 	icon = 'icons/obj/genetics/dna_machine_samples.dmi'
 	icon_state = "dna_machine"
 	density = TRUE
@@ -10,23 +10,23 @@
 	use_power = IDLE_POWER_USE
 	anchor_type = /obj/structure/reagent_dispensers/bidon
 	anchor_direction = WEST
-	circuit = /obj/item/circuitboard/ameridian_analyzer
+	circuit = /obj/item/circuitboard/nacre_analyzer
 	var/obj/structure/reagent_dispensers/bidon/Container
-	var/point_worth = 10 // How many points is each unit of liquid ameridian worth. Currently, combined with the refinery's rate, it is 100 points per raw crystal
-	var/consume_rate = 5 // How many liquid ameridian is used every tick while active.
+	var/point_worth = 10 // How many points is each unit of liquid nacre worth. Currently, combined with the refinery's rate, it is 100 points per raw crystal
+	var/consume_rate = 5 // How many liquid nacre is used every tick while active.
 	var/analyzing = FALSE // Are we currently turning Liquid A into points?
 	var/points = 0 // How many points do we have stored
 
-/obj/machinery/ameridian_analyzer/New()
+/obj/machinery/nacre_analyzer/New()
 	..()
 	STOP_PROCESSING(SSmachines, src)
 
-/obj/machinery/ameridian_analyzer/examine(mob/user)
+/obj/machinery/nacre_analyzer/examine(mob/user)
 	..()
 	if(isghost(user))
 		interact(user)
 
-/obj/machinery/ameridian_analyzer/attackby(obj/item/I, mob/user)
+/obj/machinery/nacre_analyzer/attackby(obj/item/I, mob/user)
 
 	if(default_deconstruction(I, user))
 		return
@@ -38,7 +38,7 @@
 
 	updateDialog()
 
-/obj/machinery/ameridian_analyzer/RefreshParts()
+/obj/machinery/nacre_analyzer/RefreshParts()
 	var/man_rating = 0
 	var/man_amount = 0
 	for(var/obj/item/stock_parts/manipulator/M in component_parts)
@@ -59,62 +59,62 @@
 
 	updateDialog()
 
-/obj/machinery/ameridian_analyzer/attack_hand(mob/user as mob)
+/obj/machinery/nacre_analyzer/attack_hand(mob/user as mob)
 	interact(user)
 	return
 
-// Return the amount of ameridian the bidon has.
-/obj/machinery/ameridian_analyzer/proc/get_bidon_ameridian()
-	return Container?.reagents.get_reagent_amount(MATERIAL_AMERIDIAN)
+// Return the amount of nacre the bidon has.
+/obj/machinery/nacre_analyzer/proc/get_bidon_nacre()
+	return Container?.reagents.get_reagent_amount(MATERIAL_NACRE)
 
-// Check if we have at least [amount] amount of liquid ameridian. It is different from get_bidon_ameridian() in that it only return TRUE or FALSE, and not the quantity of ameridian we have
-/obj/machinery/ameridian_analyzer/proc/check_bidon_ameridian(var/amount)
-	return Container?.reagents.has_reagent(MATERIAL_AMERIDIAN, amount)
+// Check if we have at least [amount] amount of liquid nacre. It is different from get_bidon_nacre() in that it only return TRUE or FALSE, and not the quantity of nacre we have
+/obj/machinery/nacre_analyzer/proc/check_bidon_nacre(var/amount)
+	return Container?.reagents.has_reagent(MATERIAL_NACRE, amount)
 
-// Use [amount] of liquid ameridian
-/obj/machinery/ameridian_analyzer/proc/use_bidon_ameridian(var/amount)
-	return check_bidon_ameridian(amount) ? Container?.reagents.remove_reagent(MATERIAL_AMERIDIAN, amount) : 0
+// Use [amount] of liquid nacre
+/obj/machinery/nacre_analyzer/proc/use_bidon_nacre(var/amount)
+	return check_bidon_nacre(amount) ? Container?.reagents.remove_reagent(MATERIAL_NACRE, amount) : 0
 
 // This proc search for nearby anchored BIDONS
-/obj/machinery/ameridian_analyzer/proc/search_bidons()
+/obj/machinery/nacre_analyzer/proc/search_bidons()
 	for(var/obj/structure/reagent_dispensers/bidon/B in range(1, src))
 		if(B.anchored_machine == src)
 			Container = B
 			return
 	Container = null // This should only happen if there was no anchored BIDONs nearby
 
-/obj/machinery/ameridian_analyzer/proc/start_analyze()
+/obj/machinery/nacre_analyzer/proc/start_analyze()
 	START_PROCESSING(SSmachines, src)
 	analyzing = TRUE
 	updateDialog()
 
-/obj/machinery/ameridian_analyzer/Process()
-	if(use_bidon_ameridian(consume_rate))
+/obj/machinery/nacre_analyzer/Process()
+	if(use_bidon_nacre(consume_rate))
 		points += consume_rate * point_worth
 	else
-		ping("Error : Ran out of Liquid Ameridian.")
+		ping("Error : Ran out of Liquid nacre.")
 		stop_analyze()
 	updateDialog()
 
-/obj/machinery/ameridian_analyzer/proc/stop_analyze()
+/obj/machinery/nacre_analyzer/proc/stop_analyze()
 	STOP_PROCESSING(SSmachines, src)
 	analyzing = FALSE
 	for(var/obj/machinery/computer/rdconsole/RD in GLOB.computer_list) // Check every RnD computer in existance
 		if(RD.id == 1) // only core gets the science
 			RD.files.research_points += points // Give the points
 			var/obj/item/device/radio/radio = new /obj/item/device/radio{channels=list("PIRS")}(src) // Create a new radio
-			radio.autosay("Liquid Ameridian Sample analyze completed. Transfering [points] research points to primary console.", src.name, "PIRS") // Make the radio say a message.
+			radio.autosay("Liquid nacre Sample analyze completed. Transfering [points] research points to primary console.", src.name, "PIRS") // Make the radio say a message.
 			spawn(1) qdel(radio)
 			points = 0 // No more points to give
 			break
 
 	updateDialog()
 
-/obj/machinery/ameridian_analyzer/interact(mob/user as mob)
+/obj/machinery/nacre_analyzer/interact(mob/user as mob)
 	if((get_dist(src, user) > 1) || (stat & (BROKEN|NOPOWER)))
 		if(!isAI(user) && !isghost(user))
 			user.unset_machine()
-			user << browse(null, "window=AmeridianAnalyzer")
+			user << browse(null, "window=nacreAnalyzer")
 			return
 
 	search_bidons()
@@ -122,39 +122,39 @@
 	user.set_machine(src)
 
 	var/dat = ""
-	dat += "<head><title>Liquid Ameridian Analyzer</title></head>"
-	dat += "Liquid Ameridian Analyzer<BR>"
+	dat += "<head><title>Liquid nacre Analyzer</title></head>"
+	dat += "Liquid nacre Analyzer<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR>"
 	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</A><BR><BR>"
 	if(Container)
-		dat += "Current quantity of liquid ameridian : [get_bidon_ameridian()].<BR><BR>"
+		dat += "Current quantity of liquid nacre : [get_bidon_nacre()].<BR><BR>"
 		if(!analyzing)
 			dat += "<A href='?src=\ref[src];start=1'>Start Analyzing.</A><BR><BR>"
 		else
-			dat += "Analyzing ameridian sample...<BR>"
+			dat += "Analyzing nacre sample...<BR>"
 			dat += "Current stored points : [points].<BR>"
 			dat += "<A href='?src=\ref[src];stop=1'>Stop Analyzing.</A><BR>"
 	else
 		dat += "No bidon detected. Please connect a bidon."
 
-	user << browse(dat, "window=AmeridianAnalyzer")
-	onclose(user, "AmeridianAnalyzer")
+	user << browse(dat, "window=nacreAnalyzer")
+	onclose(user, "nacreAnalyzer")
 	return
 
-/obj/machinery/ameridian_analyzer/Topic(href, href_list)
+/obj/machinery/nacre_analyzer/Topic(href, href_list)
 	if(isghost(usr)) // Ghosts can't do shit
 		return
 
 	//Ignore input if we are broken or guy is not touching us, AI can control from a ways away
 	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1 && !isAI(usr)))
 		usr.unset_machine()
-		usr << browse(null, "window=AmeridianAnalyzer")
+		usr << browse(null, "window=nacreAnalyzer")
 		return
 
 	..()
 
 	if(href_list["close"])
-		usr << browse(null, "window=AmeridianAnalyzer")
+		usr << browse(null, "window=nacreAnalyzer")
 		usr.unset_machine()
 		return
 

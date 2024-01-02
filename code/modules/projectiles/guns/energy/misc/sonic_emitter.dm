@@ -1,6 +1,6 @@
 /obj/item/gun/energy/sonic_emitter
 	name = "handheld sonic emitter"
-	desc = "A sonic weapon prototype specially designed to counter ameridian-based lifeforms by targeting the crystal's resonant frequency. \
+	desc = "A sonic weapon prototype specially designed to counter nacre-based lifeforms by targeting the crystal's resonant frequency. \
 			It is, however, very power-intensive and slow to shoot. It take large cells."
 	icon = 'icons/obj/guns/energy/sonic_emitter.dmi'
 	icon_state = "sonic_emitter"

@@ -8,7 +8,7 @@
 	caliber = CAL_50
 	can_dual = TRUE
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_INDSTEEL = 28, MATERIAL_PLASTIC = 6, MATERIAL_PLATINUM = 18)
+	matter = list(MATERIAL_INDSTEEL = 28, MATERIAL_PLASTIC = 6, MATERIAL_TITANIUM = 18)
 	price_tag = 2250
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL

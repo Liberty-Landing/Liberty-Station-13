@@ -45,7 +45,7 @@
 		ORE_FRAGNACRE = 1,
 		ORE_SAND = 2
 		)
-	product = /obj/item/stack/material/glass/nacreglass
+	product = /obj/item/stack/material/glass/mendsilicate
 
 /datum/alloy/composite
 	name = "Titanium Composite"
@@ -89,5 +89,5 @@
 		ORE_PLASMA = 1,
 		ORE_SAND = 2
 		)
-	product = /obj/item/stack/material/glass/plasmaglass
+	product = /obj/item/stack/material/glass/mendsilicate
 */

@@ -41,7 +41,7 @@
 	name = "energy plating"
 	desc = "A sturdy bit of indsteel that can be bolted onto any armor to enhance its energy resistance."
 	icon_state = "energy"
-	matter = list(MATERIAL_PLATINUM = 3, MATERIAL_PLASTIC = 12)
+	matter = list(MATERIAL_TITANIUM = 3, MATERIAL_PLASTIC = 12)
 	price_tag = 1000
 
 /obj/item/tool_upgrade/armor/energy/New()

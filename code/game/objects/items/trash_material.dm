@@ -27,7 +27,7 @@
 		list(MATERIAL_ALUMINIUM, 10, 20),
 		list(MATERIAL_INDSTEEL, 10, 5),
 		list(MATERIAL_INDSTEEL, 5, 10),
-		list(MATERIAL_PLATINUM, 4, 2),
+		list(MATERIAL_TITANIUM, 4, 2),
 	)
 
 /obj/item/trash/material/metal/Initialize()

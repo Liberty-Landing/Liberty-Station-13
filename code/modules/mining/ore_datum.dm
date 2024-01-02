@@ -66,14 +66,14 @@ var/global/list/ore_data = list()
 	alloy = TRUE
 
 /ore/hydrogen
-	name = ORE_CLATHRATES
+	name = ORE_HYDROGENC
 	display_name = "Gaseous Clathrates"
-	compresses_to = MATERIAL_MHYDROGEN
+	compresses_to = MATERIAL_HYDROGENC
 	smelts_to = MATERIAL_TRITIUM
 	alloy = TRUE
 	result_amount = 6
 	spread_chance = 8
-	ore = /obj/item/stack/ore/hydrogen
+	ore = /obj/item/stack/ore/hydrogenc
 	scan_icon = "mineral_uncommon"
 	xarch_ages = list(
 		"thousand" = 999,
@@ -176,26 +176,14 @@ var/global/list/ore_data = list()
 
 /ore/fragnacre
 	name = ORE_FRAGNACRE
-	display_name = "Fragmented Nacre"
-	smelts_to = MATERIAL_FRAGNACRE
+	display_name = "fragmented macre"
+	alloy = TRUE
 	result_amount = 0
 	spread_chance = 0
 	ore = /obj/item/stack/ore/fragnacre
-	scan_icon = "mineral_uncommon"
+	scan_icon = "mineral_rare"
 	xarch_ages = list(
 		"thousand" = 999,
 		"million" = 704
 		)
 	xarch_source_mineral = "potassium"
-
-/* /ore/platinum
-	name = ORE_PLATINUM
-	display_name = "raw platinum"
-	smelts_to = MATERIAL_PLATINUM
-	compresses_to = MATERIAL_OSMIUM
-	alloy = 1
-	result_amount = 5
-	spread_chance = 10
-	ore = /obj/item/stack/ore/osmium
-	scan_icon = "mineral_rare"
-*/

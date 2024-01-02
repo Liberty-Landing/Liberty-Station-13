@@ -22,7 +22,7 @@ var/global/obj/machinery/power/eotp/eotp
 
 	var/list/materials = list(/obj/item/stack/material/gold = 20,
 							/obj/item/stack/material/uranium = 10,
-							/obj/item/stack/material/plasma = 10,
+							/obj/item/stack/material/hydrogenc = 10,
 							/obj/item/stack/material/diamond = 5,
 							/obj/item/stack/material/indsteel = 30,
 							/obj/item/stack/material/silver = 20)

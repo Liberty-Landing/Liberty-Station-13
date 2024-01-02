@@ -2153,7 +2153,7 @@
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/mountainsolars)
 "Tz" = (
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 4
 	},
 /turf/simulated/floor/plating/under,

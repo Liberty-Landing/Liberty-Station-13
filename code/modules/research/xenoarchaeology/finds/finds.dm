@@ -253,8 +253,8 @@
 			possible_spawns += /obj/item/stack/material/aluminium
 			possible_spawns += /obj/item/stack/material/indsteel
 			possible_spawns += /obj/item/stack/material/glass
-			possible_spawns += /obj/item/stack/material/glass/reinforced
-			possible_spawns += /obj/item/stack/material/plasma
+			possible_spawns += /obj/item/stack/material/glass/laminated
+			possible_spawns += /obj/item/stack/material/hydrogenc
 			possible_spawns += /obj/item/stack/material/gold
 			possible_spawns += /obj/item/stack/material/silver
 			possible_spawns += /obj/item/stack/material/uranium

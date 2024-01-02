@@ -803,7 +803,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/dungeon/outside/prepper)
 "aZu" = (
-/obj/structure/table/plasmaglass,
+/obj/structure/table/mendsilicate,
 /obj/machinery/light,
 /obj/item/storage/box/baton_rounds,
 /obj/item/storage/box/emp_grenade_shells,
@@ -931,7 +931,7 @@
 /area/liberty/dungeon/outside/safehouse)
 "bgC" = (
 /obj/structure/closet/crate/radiation,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "bip" = (
@@ -3028,7 +3028,7 @@
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "dya" = (
-/obj/structure/table/plasmaglass,
+/obj/structure/table/mendsilicate,
 /obj/item/gun/projectile/boltgun/flare_gun,
 /obj/item/gun/projectile/boltgun/flare_gun,
 /turf/simulated/floor/tiled/dark/danger,
@@ -5006,7 +5006,7 @@
 /area/liberty/dungeon/outside/prepper/vault/entryway)
 "fNT" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /obj/item/stack/material/indsteel/random,
 /obj/item/tool/tape_roll/flextape,
 /obj/random/material_rare/low_chance,
@@ -6590,7 +6590,7 @@
 "hAq" = (
 /obj/item/tank/plasma,
 /obj/item/tank/plasma,
-/obj/structure/table/plasmaglass,
+/obj/structure/table/mendsilicate,
 /obj/item/storage/box/frag,
 /obj/item/storage/box/frag_grenade_shells,
 /turf/simulated/floor/tiled/dark/danger,
@@ -8163,7 +8163,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/meadow)
 "jiT" = (
-/obj/structure/table/plasmaglass,
+/obj/structure/table/mendsilicate,
 /obj/item/device/transfer_valve,
 /obj/item/device/transfer_valve,
 /obj/item/device/transfer_valve,
@@ -8243,7 +8243,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "jkG" = (
 /obj/structure/table/rack,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "jkI" = (
@@ -9208,7 +9208,7 @@
 /obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/glass/random,
-/obj/item/stack/material/glass/reinforced,
+/obj/item/stack/material/glass/laminated,
 /obj/random/toolbox,
 /turf/simulated/floor/wood/wild5,
 /area/liberty/dungeon/outside/smuggler_zone_u)
@@ -11463,7 +11463,7 @@
 "mSw" = (
 /obj/item/tank/plasma,
 /obj/item/tank/plasma,
-/obj/structure/table/plasmaglass,
+/obj/structure/table/mendsilicate,
 /obj/item/storage/box/explosive,
 /obj/item/storage/box/blast_grenade_shells,
 /turf/simulated/floor/tiled/dark/danger,
@@ -15898,7 +15898,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "rwa" = (
 /obj/structure/table/steel_reinforced,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /obj/random/material_ore/low_chance,
 /obj/item/tool/omnitool,
 /turf/simulated/floor/wood/wild5,
@@ -17085,7 +17085,7 @@
 /area/liberty/outside/meadow)
 "sPt" = (
 /obj/structure/table/rack,
-/obj/item/stack/ore/plasma,
+/obj/item/stack/ore/hydrogenc,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "sPU" = (
@@ -19340,7 +19340,7 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vom" = (
-/obj/structure/table/plasmaglass,
+/obj/structure/table/mendsilicate,
 /obj/item/ammo_casing/flare/blue/prespawn,
 /obj/item/ammo_casing/flare/green/prespawn,
 /obj/item/ammo_casing/flare/old/prespawn,

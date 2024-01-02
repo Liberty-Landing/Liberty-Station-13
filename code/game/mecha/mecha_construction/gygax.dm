@@ -43,7 +43,7 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The windshield hangs loose in the chassis, and must be screwed into place."),
 		//4
-		list("key"=/obj/item/stack/material/glass/reinforced,
+		list("key"=/obj/item/stack/material/glass/laminated,
 			//"backkey"=QUALITY_WELDING,
 			"desc"="External armor is installed. 5 sheets of reinforced glass are needed for the windshield."),
 		//5
@@ -537,7 +537,7 @@
 						"[usr] removes the windshield from the [holder].", \
 						"You remove the windshield from the [holder]."
 					)
-					new /obj/item/stack/material/glass/reinforced (get_turf(holder), 5)
+					new /obj/item/stack/material/glass/laminated (get_turf(holder), 5)
 					holder.icon_state = "gygax17"
 			if(3)
 				if(diff==FORWARD)

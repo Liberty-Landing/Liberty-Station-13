@@ -31,11 +31,11 @@
 		MATERIAL_GOLD = /obj/item/stack/ore/gold,
 		MATERIAL_SILVER = /obj/item/stack/ore/silver,
 		MATERIAL_DIAMOND = /obj/item/stack/ore/diamond,
-		MATERIAL_HYDROGENC  = /obj/item/stack/ore/plasma,
-		MATERIAL_OSMIUM  = /obj/item/stack/ore/osmium,
+		MATERIAL_HYDROGENC  = /obj/item/stack/ore/hydrogenc,
+		MATERIAL_TITANIUMRTC  = /obj/item/stack/ore/niobium,
 		MATERIAL_TRITIUM  = /obj/item/stack/ore/hydrogen,
 		MATERIAL_GLASS  = /obj/item/stack/ore/glass,
-		MATERIAL_PLASTIC  = /obj/item/stack/ore/coal
+		MATERIAL_PLASTIC  = /obj/item/stack/ore/lignite
 		)
 
 	//Upgrades

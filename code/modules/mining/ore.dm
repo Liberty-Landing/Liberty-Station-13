@@ -18,24 +18,28 @@
 	pixel_x = rand(0,16)-8
 	pixel_y = rand(0,8)-8
 	if(material_randomly_has)
-		if(prob(5))
-			material = ORE_HYDROGEN
 		if(prob(15))
-			material = ORE_PLATINUM
+			material = ORE_TITANIUM
 		if(prob(10))
 			material = ORE_DIAMOND
-		if(prob(20))
-			material = ORE_GOLD
 		if(prob(15))
+			material = ORE_GOLD
+		if(prob(10))
 			material = ORE_URANIUM
-		if(prob(20))
+		if(prob(15))
 			material = ORE_SILVER
 		if(prob(10))
-			material = ORE_PLASMA
-		if(prob(40))
-			material = ORE_CARBON
-		if(prob(40))
+			material = ORE_HYDROGENC
+		if(prob(20))
+			material = ORE_LIGNITE
+		if(prob(20))
 			material = ORE_IRON
+		if(prob(15))
+			material = ORE_NIOBIUM
+		if(prob(25))
+			material = ORE_COPPER
+		if(prob(30))
+			material = ORE_ALUMINIUM
 		else
 			material = ORE_SAND
 
@@ -98,6 +102,15 @@
 	material = MATERIAL_URANIUM
 	sheet_amout = 0.5
 
+/obj/item/stack/ore/fragnacre //function: Alloyed to make mendsilicate glass.
+	name = "nacre fragment"
+	icon_state = "ore_fragnacre"
+	origin_tech = list(TECH_MATERIAL = 5)
+	material = ORE_FRAGNACRE
+	crushable = FALSE
+	material_randomly_has = FALSE
+	price_tag = 50
+
 /obj/item/stack/ore/iron
 	name = "hematite"
 	icon_state = "ore_iron"
@@ -110,16 +123,52 @@
 	name = "hematite nugget"
 	sheet_amout = 0.5
 
-/obj/item/stack/ore/coal
-	name = "raw carbon"
-	icon_state = "ore_coal"
+/obj/item/stack/ore/copper
+	name = "malachite"
+	icon_state = "ore_copper"
 	origin_tech = list(TECH_MATERIAL = 1)
-	material = ORE_CARBON
+	material = ORE_COPPER
 	crushable = FALSE
 	material_randomly_has = FALSE
 
-/obj/item/stack/ore/coal/small
-	name = "raw carbon chunk"
+/obj/item/stack/ore/copper/small
+	name = "malachite nugget"
+	sheet_amout = 0.5
+
+/obj/item/stack/ore/lignite
+	name = "raw lignite"
+	icon_state = "ore_lignite"
+	origin_tech = list(TECH_MATERIAL = 1)
+	material = ORE_LIGNITE
+	crushable = FALSE
+	material_randomly_has = FALSE
+
+/obj/item/stack/ore/lignite/small
+	name = "lignite nugget"
+	sheet_amout = 0.5
+
+/obj/item/stack/ore/titanium
+	name = "raw ilminite"
+	icon_state = "ore_ilminite"
+	origin_tech = list(TECH_MATERIAL = 2)
+	material = ORE_TITANIUM
+	crushable = FALSE
+	material_randomly_has = FALSE
+
+/obj/item/stack/ore/titanium/small
+	name = "ilminite nugget"
+	sheet_amout = 0.5
+
+/obj/item/stack/ore/hydrogenc
+	name = "gaseous clathrates"
+	icon_state = "ore_clathrates"
+	origin_tech = list(TECH_MATERIAL = 2)
+	material = ORE_HYDROGENC
+	crushable = FALSE
+	material_randomly_has = FALSE
+
+/obj/item/stack/ore/hydrogenc/small
+	name = "gaseous water matrix"
 	sheet_amout = 0.5
 
 /obj/item/stack/ore/glass
@@ -141,20 +190,6 @@
 		H.eye_blurry += 10
 		spawn(1)
 			if(istype(loc, /turf/)) qdel(src)
-
-
-/obj/item/stack/ore/plasma
-	name = "plasma crystals"
-	icon_state = "ore_plasma"
-	origin_tech = list(TECH_MATERIAL = 2)
-	material = ORE_PLASMA
-	crushable = FALSE
-	material_randomly_has = FALSE
-	price_tag = 5
-
-/obj/item/stack/ore/plasma/small
-	name = "plasma crystal"
-	sheet_amout = 0.5
 
 /obj/item/stack/ore/silver
 	name = "native silver ore"
@@ -195,6 +230,38 @@
 	name = "diamond dust"
 	sheet_amout = 0.5
 
+/obj/item/stack/ore/niobium
+	name = "niobium"
+	icon_state = "ore_niobium"
+	origin_tech = list(TECH_MATERIAL = 4)
+	material = ORE_NIOBIUM
+	crushable = FALSE
+	material_randomly_has = FALSE
+	price_tag = 5
+
+/obj/item/stack/ore/niobium/small
+	name = "niobium nugget"
+	sheet_amout = 0.5
+
+/obj/item/stack/ore/aluminium
+	name = "bauxite"
+	icon_state = "ore_aluminium"
+	origin_tech = list(TECH_MATERIAL = 1)
+	material = ORE_ALUMINIUM
+	crushable = FALSE
+	material_randomly_has = FALSE
+	price_tag = 5
+
+/obj/item/stack/ore/slag
+	name = "Slag"
+	desc = "Someone screwed up..."
+	icon_state = "slag"
+	material = null
+	price_tag = 0
+
+
+// Unused ores
+/*
 /obj/item/stack/ore/osmium
 	name = "raw platinum"
 	icon_state = "ore_platinum"
@@ -205,6 +272,19 @@
 
 /obj/item/stack/ore/osmium/small
 	name = "raw platinum shard"
+	sheet_amout = 0.5
+
+/obj/item/stack/ore/plasma
+	name = "plasma crystals"
+	icon_state = "ore_plasma"
+	origin_tech = list(TECH_MATERIAL = 2)
+	material = ORE_PLASMA
+	crushable = FALSE
+	material_randomly_has = FALSE
+	price_tag = 5
+
+/obj/item/stack/ore/plasma/small
+	name = "plasma crystal"
 	sheet_amout = 0.5
 
 /obj/item/stack/ore/hydrogen
@@ -219,9 +299,4 @@
 	name = "raw hydrogen nugget" //Its a nugget?
 	sheet_amout = 0.5
 
-/obj/item/stack/ore/slag
-	name = "Slag"
-	desc = "Someone screwed up..."
-	icon_state = "slag"
-	material = null
-	price_tag = 0
+*/ 

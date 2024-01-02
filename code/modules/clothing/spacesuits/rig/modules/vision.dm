@@ -101,7 +101,7 @@
 	name = "hardsuit thermal scanner"
 	desc = "A layered, translucent visor system for a hardsuit."
 	icon_state = "thermal"
-	matter = list(MATERIAL_ALUMINIUM = 12, MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 6, MATERIAL_PLATINUM = 5)
+	matter = list(MATERIAL_ALUMINIUM = 12, MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 6, MATERIAL_TITANIUM = 5)
 	usable = 0
 	price_tag = 5000
 
@@ -115,7 +115,7 @@
 	name = "hardsuit night vision interface"
 	desc = "A multi input night vision system for a hardsuit."
 	icon_state = "night"
-	matter = list(MATERIAL_ALUMINIUM = 12, MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 6, MATERIAL_PLATINUM = 5)
+	matter = list(MATERIAL_ALUMINIUM = 12, MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 6, MATERIAL_TITANIUM = 5)
 	usable = 0
 	price_tag = 2000
 

@@ -644,7 +644,7 @@
 	name = "expanded fuel tank of holding"
 	desc = "Rare relic of Simulacrum Robotics, it uses bluetech space to store additional 600 units of fuel at the cost of degradation."
 	icon_state = "canister_holding"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 4, MATERIAL_PLATINUM = 4)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 4, MATERIAL_TITANIUM = 4)
 	price_tag = 250
 
 /obj/item/tool_upgrade/augment/holding_tank/New()
@@ -816,7 +816,7 @@
 	name = "aural dampener"
 	desc = "This aural dampener is a cutting edge tool attachment which mostly nullifies sound waves within a tiny radius. It minimises the noise created during use, perfect for stealth operations."
 	icon_state = "dampener"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 1, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 1, MATERIAL_TITANIUM = 1)
 	preloaded_reagents = list("mercury" = 20, "lithium" = 15, "iron" = 3)
 	price_tag = 155
 
@@ -836,7 +836,7 @@
 	desc = "A forgotten Simulacrum Robotics tech. Due to its unique installation method of \"slapping it hard enough onto anything should do the trick\", it is highly sought after. \
 		A powerful AI will integrate itself into this tool with the aid of nanotechnology and improve it in every way possible. Once added, it's embedded into the object making it a permanent integration."
 	icon_state = "ai_tool"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 3, MATERIAL_PLATINUM = 3, MATERIAL_GOLD = 3, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 3, MATERIAL_GOLD = 3, MATERIAL_DIAMOND = 1)
 	price_tag = 725
 	can_remove = FALSE
 
@@ -899,7 +899,7 @@
 	name = "repair nano"
 	desc = "Very rare tool mod from Simulacrum powered by their nanomachines. It repairs the tool while in use and makes it near unbreakable."
 	icon_state = "repair_nano"
-	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 1, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_PLASTIC = 1, MATERIAL_INDSTEEL = 1, MATERIAL_TITANIUM = 1)
 	price_tag = 325
 
 /obj/item/tool_upgrade/augment/repair_nano/New()

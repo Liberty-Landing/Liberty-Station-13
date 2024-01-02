@@ -59,7 +59,7 @@
 	desc = "A standard Simulacrum Robotics digging tool. Whatever secrets they used to make this so powerful and cheap is a mystery."
 	icon_state = "one_star_pickaxe"
 	item_state = "pickaxe"
-	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_PLATINUM = 2, MATERIAL_DIAMOND = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_TITANIUM = 2, MATERIAL_DIAMOND = 2)
 	price_tag = 900 //Diamond and fancy.
 	origin_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 2, TECH_POWER = 3)
 	switched_on_forcemult = 1.3 //26
@@ -108,7 +108,7 @@
 	desc = "A heavy Simulacrum Robotics tool that cracks rocks with blasts, perfect for killing capitalist pigs."
 	icon_state = "one_star_jackhammer"
 	item_state = "jackhammer"
-	matter = list(MATERIAL_ALUMINIUM = 7, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 7, MATERIAL_TITANIUM = 2)
 	tool_qualities = list(QUALITY_EXCAVATION = 35)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 35)
 	switched_on_qualities = list(QUALITY_DIGGING = 75)
@@ -141,7 +141,7 @@
 	tool_qualities = list(QUALITY_EXCAVATION = 20, QUALITY_DRILLING = 20)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 20, QUALITY_DRILLING = 20)
 	switched_on_qualities = list(QUALITY_DIGGING = 60, QUALITY_DRILLING = 60)
-	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_TITANIUM = 2)
 	origin_tech = list(TECH_MATERIAL = 4, TECH_POWER = 3, TECH_ENGINEERING = 2)
 	degradation = 0.6
 	workspeed = 1.7

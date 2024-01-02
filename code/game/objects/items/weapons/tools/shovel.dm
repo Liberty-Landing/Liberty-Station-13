@@ -69,7 +69,7 @@
 	icon_state = "one_star_shovel"
 	force = WEAPON_FORCE_DANGEROUS
 	throwforce = WEAPON_FORCE_DANGEROUS
-	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 6, MATERIAL_PLATINUM = 3)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 6, MATERIAL_TITANIUM = 3)
 	tool_qualities = list(QUALITY_SHOVELING = 60, QUALITY_DIGGING = 45, QUALITY_EXCAVATION = 45)
 	workspeed = 1.4
 	degradation = 2

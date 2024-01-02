@@ -1685,14 +1685,14 @@
 /area/event_engi/building_upper)
 "EW" = (
 /obj/structure/closet/crate,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
 /turf/simulated/floor/reinforced,
 /area/event_engi/supply)
 "Fd" = (
@@ -2358,17 +2358,17 @@
 /area/event_engi/fud)
 "TC" = (
 /obj/structure/closet/crate,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
-/obj/item/stack/material/glass/plasmarglass/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
+/obj/item/stack/material/mendsilicate/reinforced/full,
 /turf/simulated/floor/reinforced,
 /area/event_engi/supply)
 "TE" = (

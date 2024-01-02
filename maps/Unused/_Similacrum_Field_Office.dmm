@@ -324,7 +324,7 @@
 /area/liberty/outside/one_star/fo_outside)
 "cp" = (
 /obj/item/stack/material/iron/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/glass,
 /obj/item/stack/material/glass,
@@ -2448,7 +2448,7 @@
 /turf/unsimulated/wall/jungle,
 /area/liberty/outside/one_star/fo_internal)
 "sO" = (
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /obj/item/stack/material/silver/random,
 /obj/item/stack/material/glass,
 /obj/item/stack/material/glass,
@@ -2528,7 +2528,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "th" = (
 /obj/item/stack/material/gold/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "tm" = (
@@ -3081,7 +3081,7 @@
 /obj/structure/table/rack/shelf,
 /obj/item/rcd/industrial,
 /obj/item/stack/material/cloth/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "xt" = (
@@ -3870,8 +3870,8 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/one_star/fo_outside)
 "Dz" = (
-/obj/item/stack/material/plasma/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/hydrogenc/random,
+/obj/item/stack/material/titanium/random,
 /obj/item/stack/material/uranium/random,
 /obj/machinery/vending/one_star,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
@@ -4763,7 +4763,7 @@
 "KB" = (
 /obj/structure/salvageable/autolathe_os,
 /obj/item/stack/material/cardboard/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "KC" = (
@@ -5266,7 +5266,7 @@
 /obj/random/medical/always_spawn,
 /obj/random/medical/always_spawn,
 /obj/item/stack/material/plastic/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "NV" = (
@@ -6493,7 +6493,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "Xr" = (
 /obj/item/stack/material/diamond/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/liberty/outside/one_star/fo_outside)
 "Xv" = (

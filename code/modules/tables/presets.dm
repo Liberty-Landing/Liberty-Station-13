@@ -57,7 +57,7 @@
 		material = get_material_by_name(MATERIAL_GLASS)
 		..()
 
-/obj/structure/table/plasmaglass
+/obj/structure/table/mendsilicate
 	icon_state = "plain_preview"
 	color = "#FC2BC5"
 	alpha = 77 // 0.3 * 255

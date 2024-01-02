@@ -152,7 +152,7 @@
 		list(QUALITY_SCREW_DRIVING, 30, "time"= 50),
 		list(CRAFT_MATERIAL, 2, MATERIAL_URANIUM), // Consider it a small atomcell for the NV's
 		list(QUALITY_SCREW_DRIVING, 30, "time"= 50),
-		list(CRAFT_MATERIAL, 5, MATERIAL_OSMIUM),
+		list(CRAFT_MATERIAL, 5, MATERIAL_TITANIUMRTC),
 		list(QUALITY_HAMMERING, 30, "time" = 30),
 		list(QUALITY_WELDING, 30, "time"= 30),
 		list(CRAFT_MATERIAL, 3, MATERIAL_DIAMOND),

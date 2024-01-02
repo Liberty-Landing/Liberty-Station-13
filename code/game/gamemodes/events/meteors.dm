@@ -471,7 +471,7 @@ disabled
 	icon_state = "flaming"
 	hits = 5
 	heavy = 1
-	meteordrop = /obj/item/stack/ore/plasma
+	meteordrop = /obj/item/stack/ore/hydrogenc
 
 /obj/effect/meteor/flaming/meteor_effect()
 	..()
@@ -506,7 +506,7 @@ disabled
 	name = "conducting meteor"
 	icon_state = "glowing_blue"
 	desc = "Hide your floppies!"
-	meteordrop = /obj/item/stack/ore/osmium
+	meteordrop = /obj/item/stack/ore/niobium
 	dropamt = 2
 
 /obj/effect/meteor/emp/meteor_effect()

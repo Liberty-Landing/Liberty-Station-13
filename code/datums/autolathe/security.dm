@@ -72,4 +72,4 @@
 /datum/design/autolathe/sec/bastion
 	name = "bastion shield"
 	build_path = /obj/item/shield/riot/bastion
-	materials = list(MATERIAL_LBGLASS = 3, MATERIAL_OSMIUM = 1) //So making it at the guild is objectively always better
+	materials = list(MATERIAL_LBGLASS = 3, MATERIAL_COMPOSITE = 1) //So making it at the guild is objectively always better

@@ -4934,7 +4934,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "bjf" = (
 /obj/structure/railing/grey{
 	dir = 1
@@ -11114,7 +11114,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "cJq" = (
 /obj/structure/catwalk,
 /obj/random/cluster/spiders/low_chance,
@@ -11504,7 +11504,7 @@
 	state = 2
 	},
 /turf/simulated/floor/plating/under,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "cOt" = (
 /obj/item/wheelchair,
 /obj/effect/decal/cleanable/dirt,
@@ -14178,7 +14178,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "duv" = (
 /obj/structure/flora/big/bush1,
 /obj/structure/flora/small/grassb4,
@@ -20973,7 +20973,7 @@
 "eVH" = (
 /obj/machinery/suit_storage_unit/rad_unit,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "eVS" = (
 /obj/machinery/door/airlock/maintenance_rnd{
 	req_access = list(5)
@@ -21714,7 +21714,7 @@
 /area/liberty/command/merchant)
 "fea" = (
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "fej" = (
 /turf/simulated/floor/tiled/dark/violetcorener,
 /area/liberty/medical/genetics)
@@ -21830,7 +21830,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "fgi" = (
 /obj/structure/scrap/medical/large,
 /obj/effect/decal/cleanable/rubble,
@@ -24145,7 +24145,7 @@
 /obj/machinery/suit_storage_unit/rad_unit,
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "fGy" = (
 /obj/machinery/door/unpowered/simple/wood,
 /turf/simulated/floor/carpet/blucarpet,
@@ -28094,7 +28094,7 @@
 "gBA" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "gBB" = (
 /obj/machinery/door/airlock{
 	name = "Toilet"
@@ -37350,7 +37350,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "iHU" = (
 /obj/structure/table/rack,
 /obj/random/gun_cheap,
@@ -46620,7 +46620,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "kPv" = (
 /obj/effect/floor_decal/industrial/warningwhite{
 	dir = 1
@@ -52234,7 +52234,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "mgS" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -54449,7 +54449,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "mHs" = (
 /obj/structure/table/glass,
 /obj/item/paper_bin{
@@ -55961,7 +55961,7 @@
 /area/liberty/outside/forest)
 "mZg" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "mZm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/hoverpod,
@@ -72860,7 +72860,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "qKt" = (
 /obj/structure/table/rack/shelf,
 /obj/effect/decal/cleanable/dirt,
@@ -81486,7 +81486,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "sKs" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -86731,7 +86731,7 @@
 	state = 2
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "tSa" = (
 /obj/machinery/light/floor,
 /obj/structure/disposalpipe/segment{
@@ -89351,7 +89351,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "uvn" = (
 /obj/structure/lattice,
 /obj/structure/catwalk,
@@ -93635,7 +93635,7 @@
 	d2 = 8;
 	icon_state = "0-8"
 	},
-/obj/item/stack/material/plasma{
+/obj/item/stack/material/hydrogenc{
 	amount = 25
 	},
 /turf/simulated/shuttle/floor/science{
@@ -96973,7 +96973,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "wfI" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/item/stack/cable_coil/random,

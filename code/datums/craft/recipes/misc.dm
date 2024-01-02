@@ -89,14 +89,14 @@
 		list(QUALITY_CUTTING, 15, "time" = 30)
 	)
 
-/datum/craft_recipe/ameridian_spire
-	name = "ameridian growth"
+/datum/craft_recipe/nacre_spire
+	name = "nacre growth"
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
-	result = /obj/structure/ameridian_crystal/spire/fake
+	result = /obj/structure/nacre_crystal/spire/fake
 	icon_state = "device"
 	steps = list(
-		list(/obj/item/ameridian_core, 1, "time" = 25),
-		list(CRAFT_MATERIAL, 60, MATERIAL_AMERIDIAN, "time" = 25)
+		list(/obj/item/nacre_core, 1, "time" = 25),
+		list(CRAFT_MATERIAL, 60, MATERIAL_NACRE, "time" = 25)
 	)
 
 /datum/craft_recipe/hair_pin

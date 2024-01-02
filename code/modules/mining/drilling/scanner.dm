@@ -46,7 +46,7 @@
 					ore_type = "precious metals"
 				if(MATERIAL_URANIUM)
 					ore_type = "nuclear fuel"
-				if(MATERIAL_HYDROGENC, MATERIAL_OSMIUM, MATERIAL_TRITIUM)
+				if(MATERIAL_HYDROGENC, MATERIAL_TITANIUMRTC, MATERIAL_TRITIUM)
 					ore_type = "exotic matter"
 
 			if(ore_type)

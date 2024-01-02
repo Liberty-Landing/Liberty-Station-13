@@ -122,15 +122,15 @@
 	icon_state = "impact_stun"
 
 //----------------------------
-// Ameridian beam
+// nacre beam
 //----------------------------
-/obj/effect/projectile/ameridian/tracer
+/obj/effect/projectile/nacre/tracer
 	icon_state = "xray_old"
 
-/obj/effect/projectile/ameridian/muzzle
+/obj/effect/projectile/nacre/muzzle
 	icon_state = "muzzle_xray_old"
 
-/obj/effect/projectile/ameridian/impact
+/obj/effect/projectile/nacre/impact
 	icon_state = "impact_xray_old"
 
 //----------------------------

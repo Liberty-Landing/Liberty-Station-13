@@ -11,20 +11,20 @@
 #define TRANSFORM_PRIORITY_DEFAULT 4500 //arbitrary
 
 // BASE TYPES, USED ONLY IN BASETYPES
-#define AMERIDIAN_TRANSFORM "ameridian_transform"
-#define AMERIDIAN_TRANSFORM_PRIORITY INFINITY // do not use
+#define nacre_TRANSFORM "nacre_transform"
+#define nacre_TRANSFORM_PRIORITY INFINITY // do not use
 #define MODULAR_BASE_TRANSFORM_DO_NOT_USE "DO_NOT_USE_transform"
 #define MODULAR_BASE_TRANSFORM_DO_NOT_USE_PRIORITY INFINITY //PLEASE DONT USE THIS
 
 // INITIAL
 
 // SCALES, SHOULD PROBABLY BE APPLIED FIRST
-#define AMERIDIAN_TENDER_INITIAL_SCALE_TRANSFORM "ameridian_tender_initial_scale_transform"
-#define AMERIDIAN_TENDER_INITIAL_SCALE_TRANSFORM_PRIORITY 2000
-#define AMERIDIAN_GOLEM_INITIAL_SCALE_TRANSFORM "ameridian_golem_initial_scale_transform"
-#define AMERIDIAN_GOLEM_INITIAL_SCALE_TRANSFORM_PRIORITY 2001
-#define AMERIDIAN_SPIRE_INITIAL_SCALE_TRANSFORM "ameridian_spire_initial_scale_transform"
-#define AMERIDIAN_SPIRE_INITIAL_SCALE_TRANSFORM_PRIORITY 2002
+#define nacre_TENDER_INITIAL_SCALE_TRANSFORM "nacre_tender_initial_scale_transform"
+#define nacre_TENDER_INITIAL_SCALE_TRANSFORM_PRIORITY 2000
+#define nacre_GOLEM_INITIAL_SCALE_TRANSFORM "nacre_golem_initial_scale_transform"
+#define nacre_GOLEM_INITIAL_SCALE_TRANSFORM_PRIORITY 2001
+#define nacre_SPIRE_INITIAL_SCALE_TRANSFORM "nacre_spire_initial_scale_transform"
+#define nacre_SPIRE_INITIAL_SCALE_TRANSFORM_PRIORITY 2002
 
 #define SCARAB_INITIAL_SCALE_TRANSFORM "scarab_initial_scale_transform"
 #define SCARAB_INITIAL_SCALE_TRANSFORM_PRIORITY 2000
@@ -68,8 +68,8 @@
 // TRANSLATIONS
 
 // CUSTOM
-#define AMERIDIAN_CRYSTAL_RESIZING_TRANSFORM "ameridian_crystal_resizing_transform"
-#define AMERIDIAN_CRYSTAL_RESIZING_TRANSFORM_PRIORITY 3100 // comes after the initial resizes but before anything else
+#define nacre_CRYSTAL_RESIZING_TRANSFORM "nacre_crystal_resizing_transform"
+#define nacre_CRYSTAL_RESIZING_TRANSFORM_PRIORITY 3100 // comes after the initial resizes but before anything else
 
 #define BLOB_INITIAL_TRANSFORM "blob_initial_transform"
 #define BLOB_INITIAL_TRANSFORM_PRIORITY 3600 //has a bunch of different types of transforms

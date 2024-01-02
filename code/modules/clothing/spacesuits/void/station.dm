@@ -588,7 +588,7 @@
 	)
 	siemens_coefficient = 0.4
 	helmet = /obj/item/clothing/head/space/void/medarmor
-	matter = list(MATERIAL_ALUMINIUM = 40, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10, MATERIAL_PLATINUM = 8)
+	matter = list(MATERIAL_ALUMINIUM = 40, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10, MATERIAL_TITANIUM = 8)
 	stiffness = MEDIUM_STIFFNESS
 
 /obj/item/clothing/suit/space/void/medarmor/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")

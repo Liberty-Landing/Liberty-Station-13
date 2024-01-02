@@ -188,7 +188,7 @@
 #define PERK_GUNSLINGER /datum/perk/oddity/gunslinger
 #define PERK_TERRIBLE_FATE /datum/perk/oddity/terrible_fate
 #define PERK_TOXIC_REVENGER /datum/perk/oddity/toxic_revenger
-#define PERK_BALLS_OF_indsteel /datum/perk/oddity/balls_of_indsteel
+#define PERK_BALLS_OF_STEEL /datum/perk/oddity/balls_of_steel
 #define PERK_WEAK_MIND /datum/perk/oddity/weak_mind
 #define PERK_HARDEN /datum/perk/oddity/harden
 #define PERK_THIN_SKIN /datum/perk/oddity/thin_skin
@@ -211,7 +211,7 @@
 #define PERK_SIDE_LOADING /datum/perk/oddity/side_loading
 
 
-#define GOOD_ODDITY_PERKS list(PERK_FAST_WALKER, PERK_GUNSLINGER, PERK_BALLS_OF_indsteel, PERK_HARDEN, PERK_BETTER_TOXINS, PERK_SHARP_MIND, PERK_STRANGTH, PERK_IRON_WILL, PERK_SNACKIVORE, PERK_SIDE_LOADING)
+#define GOOD_ODDITY_PERKS list(PERK_FAST_WALKER, PERK_GUNSLINGER, PERK_BALLS_OF_STEEL, PERK_HARDEN, PERK_BETTER_TOXINS, PERK_SHARP_MIND, PERK_STRANGTH, PERK_IRON_WILL, PERK_SNACKIVORE, PERK_SIDE_LOADING)
 
 ////////////////////
 //Specilized Perks//

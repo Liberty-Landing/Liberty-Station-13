@@ -123,7 +123,7 @@ The idea behind these weapons is that they are 'one-of-a-time' or single batch p
 	item_state = "brass"
 	caliber = CAL_MAGNUM
 	origin_tech = list(TECH_MAGNET = 10) //3500 points for rnd, eh its meant to stay in player hands not be deconned
-	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_GLASS = 10, MATERIAL_PLATINUM = 8)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_GLASS = 10, MATERIAL_TITANIUM = 8)
 	price_tag = 2450
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	can_dual = TRUE

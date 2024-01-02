@@ -558,8 +558,8 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "lh" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/plasma/full,
-/obj/item/stack/material/plasma/full,
+/obj/item/stack/material/hydrogenc/full,
+/obj/item/stack/material/hydrogenc/full,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "lq" = (
@@ -614,9 +614,9 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "mk" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/osmium/full,
-/obj/item/stack/material/osmium/full,
-/obj/item/stack/material/osmium/full,
+/obj/item/stack/material/composite/full,
+/obj/item/stack/material/composite/full,
+/obj/item/stack/material/composite/full,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "my" = (
@@ -642,9 +642,9 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "mL" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/glass/plasmarglass,
-/obj/item/stack/material/glass/plasmarglass,
-/obj/item/stack/material/glass/plasmarglass,
+/obj/item/stack/material/mendsilicate/reinforced,
+/obj/item/stack/material/mendsilicate/reinforced,
+/obj/item/stack/material/mendsilicate/reinforced,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "mO" = (
@@ -866,9 +866,9 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "sA" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/glass/reinforced,
-/obj/item/stack/material/glass/reinforced,
-/obj/item/stack/material/glass/reinforced,
+/obj/item/stack/material/glass/laminated,
+/obj/item/stack/material/glass/laminated,
+/obj/item/stack/material/glass/laminated,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "sB" = (
@@ -1512,10 +1512,10 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "HV" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/glass/plasmaglass/random,
-/obj/item/stack/material/glass/plasmaglass/random,
-/obj/item/stack/material/glass/plasmaglass/random,
-/obj/item/stack/material/glass/plasmaglass/random,
+/obj/item/stack/material/glass/mendsilicate/random,
+/obj/item/stack/material/glass/mendsilicate/random,
+/obj/item/stack/material/glass/mendsilicate/random,
+/obj/item/stack/material/glass/mendsilicate/random,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "HY" = (
@@ -1575,8 +1575,8 @@
 /area/outpost/abandoned_fortress/powered_lit)
 "Jy" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/platinum/full,
-/obj/item/stack/material/platinum/full,
+/obj/item/stack/material/titanium/full,
+/obj/item/stack/material/titanium/full,
 /turf/simulated/floor/tiled/derelict/red_white_edges,
 /area/outpost/abandoned_fortress/powered_lit)
 "Jz" = (

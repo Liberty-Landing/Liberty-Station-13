@@ -4758,12 +4758,12 @@
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "ve" = (
 /obj/structure/table/rack,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vf" = (
 /obj/structure/table/rack,
-/obj/item/stack/ore/plasma,
+/obj/item/stack/ore/hydrogenc,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/dungeon/outside/prepper/vault/floor3)
 "vg" = (
@@ -5091,7 +5091,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "wY" = (
 /obj/structure/closet/crate/radiation,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/dungeon/outside/prepper/vault/floor4)
 "wZ" = (

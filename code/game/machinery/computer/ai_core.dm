@@ -75,7 +75,7 @@
 						icon_state = "3b"
 					else
 						icon_state = "3"
-					new /obj/item/stack/material/glass/reinforced( loc, 2 )
+					new /obj/item/stack/material/glass/laminated( loc, 2 )
 					return
 			return
 

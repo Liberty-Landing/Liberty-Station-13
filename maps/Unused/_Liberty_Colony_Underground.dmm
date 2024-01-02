@@ -23472,7 +23472,7 @@
 /area/liberty/medical/chemistry)
 "bcT" = (
 /obj/structure/table/standard,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/liberty/medical/chemistry)
 "bcU" = (
@@ -30606,7 +30606,7 @@
 	dir = 4
 	},
 /obj/item/melee/baton,
-/obj/item/stack/material/plasma{
+/obj/item/stack/material/hydrogenc{
 	layer = 2.9
 	},
 /turf/simulated/floor/tiled/white/brown_perforated,

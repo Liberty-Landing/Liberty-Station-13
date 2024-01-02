@@ -855,7 +855,7 @@
 		. = ..()
 
 	proc/init()
-		fuel = new /obj/item/stack/material/plasma(src)
+		fuel = new /obj/item/stack/material/hydrogenc(src)
 		fuel.amount = 0
 		pr_mech_generator = new /datum/global_iterator/mecha_generator(list(src),0)
 		pr_mech_generator.set_delay(equip_cooldown)

@@ -43,7 +43,7 @@
 	default_material = MATERIAL_INDSTEEL
 
 /obj/item/material/sword/platinum
-	default_material = MATERIAL_PLATINUM
+	default_material = MATERIAL_TITANIUM
 
 /obj/item/material/sword/iron
 	default_material = MATERIAL_IRON
@@ -86,7 +86,7 @@
 	default_material = MATERIAL_INDSTEEL
 
 /obj/item/material/sword/katana/platinum
-	default_material = MATERIAL_PLATINUM
+	default_material = MATERIAL_TITANIUM
 
 /obj/item/material/sword/katana/iron
 	default_material = MATERIAL_IRON

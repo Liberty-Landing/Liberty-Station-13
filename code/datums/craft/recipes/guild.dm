@@ -63,7 +63,7 @@
 	result = /obj/item/tool_upgrade/armor/energy
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLATINUM, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_TITANIUM, "time" = 30),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC , "time" = 30),
 		list(QUALITY_WELDING, 35, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 180),
@@ -93,8 +93,8 @@
 //Material Craft ------------------
 
 /datum/craft_recipe/terra/plasma_glass
-	name = "borosilicate glass"
-	result = /obj/item/stack/material/glass/plasmaglass
+	name = "mendsilicate glass"
+	result = /obj/item/stack/material/glass/mendsilicate
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 2, MATERIAL_GLASS, "time" = 1),
@@ -696,7 +696,7 @@
 	steps = list(
 		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
-		list(CRAFT_MATERIAL, 5, MATERIAL_OSMIUM, "time" = 30), // Balance purposes
+		list(CRAFT_MATERIAL, 5, MATERIAL_TRITIUM, "time" = 30), // Balance purposes
 		list(/obj/item/device/assembly/timer, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 30),

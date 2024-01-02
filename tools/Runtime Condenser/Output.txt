@@ -277,7 +277,7 @@ proc name: crash with (/proc/crash_with)
 
 
 The following runtime has occurred 1 time(s).
-runtime error: WARNING: /obj/structure/window/reinforced/plasma/full is not returning a qdel hint. It is being placed in the queue. Further instances of this type will also be queued.
+runtime error: WARNING: /obj/structure/window/reinforced/mendsilicate/full is not returning a qdel hint. It is being placed in the queue. Further instances of this type will also be queued.
 proc name: crash with (/proc/crash_with)
   source file: unsorted.dm,1264
 
@@ -331,7 +331,7 @@ proc name: crash with (/proc/crash_with)
 
 
 The following runtime has occurred 1 time(s).
-runtime error: WARNING: /obj/structure/window/reinforced/plasma is not returning a qdel hint. It is being placed in the queue. Further instances of this type will also be queued.
+runtime error: WARNING: /obj/structure/window/reinforced/mendsilicate is not returning a qdel hint. It is being placed in the queue. Further instances of this type will also be queued.
 proc name: crash with (/proc/crash_with)
   source file: unsorted.dm,1264
 

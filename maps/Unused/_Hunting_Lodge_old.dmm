@@ -565,7 +565,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/grey,
-/obj/item/stack/ore/coal,
+/obj/item/stack/ore/lignite,
 /obj/structure/bonfire/permanent,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -573,7 +573,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/grey,
-/obj/item/stack/ore/coal,
+/obj/item/stack/ore/lignite,
 /obj/structure/bonfire/permanent,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -587,8 +587,8 @@
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/wood/random,
 /obj/structure/table/rack,
-/obj/item/stack/ore/coal,
-/obj/item/stack/ore/coal,
+/obj/item/stack/ore/lignite,
+/obj/item/stack/ore/lignite,
 /obj/item/newspaper,
 /obj/item/newspaper,
 /turf/simulated/floor/tiled/dark,

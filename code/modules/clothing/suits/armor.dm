@@ -473,7 +473,7 @@
 	desc = "An \"Iron Eagle Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by the Terran Federation."
 	icon_state = "northtech_new"
 	has_alternative_armor_icon = FALSE
-	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 20, MATERIAL_TITANIUM = 5)
 	armor_list = list(
 		melee = 15,
 		bullet = 15,
@@ -488,7 +488,7 @@
 	desc = "An ablative vest with plates designed to absorb rather than reflect energy projectiles."
 	icon_state = "northtech"
 	has_alternative_armor_icon = FALSE
-	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 20, MATERIAL_TITANIUM = 10)
 	armor_list = list(
 		melee = 15,
 		bullet = 15,
@@ -540,7 +540,7 @@
 	name = "Phokorus Institute reflective armor vest"
 	desc = "A Phokorus Institute branded vest that excels in protecting the wearer against energy projectiles. While it is much better at defending against lasers compared to standard ablative armor it lacks as much protection against melee and bullets but can be modified more."
 	icon_state = "ablative_ironhammer"
-	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 15)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 20, MATERIAL_TITANIUM = 15)
 	armor_list = list(
 		melee = 20,
 		bullet = 20,
@@ -1052,7 +1052,7 @@
 		MATERIAL_INDSTEEL = 10,
 		MATERIAL_ALUMINIUM = 5,
 		MATERIAL_PLASTIC = 5,
-		MATERIAL_PLATINUM = 3,
+		MATERIAL_TITANIUM = 3,
 		MATERIAL_URANIUM = 4,
 		MATERIAL_SILVER = 2
 		)

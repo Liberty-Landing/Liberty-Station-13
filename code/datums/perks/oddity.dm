@@ -46,7 +46,7 @@
 	gain_text = "Your trigger finger feels more relaxed than ever..."
 	icon_state = "gunslinger" // https://game-icons.net/1x1/delapouite/reload-gun-barrel.html
 
-/datum/perk/oddity/balls_of_indsteel
+/datum/perk/oddity/balls_of_steel
 	name = "True Grit"
 	desc = "Pain comes and goes, you feel as though can withstand far worse than ever before."
 	gain_text = "Pain is merely weakness leaving the body."

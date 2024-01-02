@@ -1571,7 +1571,7 @@
 /obj/item/stack/ore/hydrogen{
 	sheet_amout = 30
 	},
-/obj/item/stack/ore/osmium{
+/obj/item/stack/ore/niobium{
 	sheet_amout = 30
 	},
 /turf/unsimulated/mineral{
@@ -1640,7 +1640,7 @@
 /area/liberty/outside/forest/river_forest_cabin)
 "sY" = (
 /obj/structure/flora/small/trailrocka5,
-/obj/item/stack/ore/plasma,
+/obj/item/stack/ore/hydrogenc,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/river_forest_light)
 "sZ" = (
@@ -4082,7 +4082,7 @@
 /area/liberty/outside/one_star/fo_internal)
 "RH" = (
 /obj/structure/table/onestar,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/titanium/random,
 /turf/simulated/floor/tiled/derelict,
 /area/liberty/outside/one_star/fo_internal)
 "RO" = (
@@ -4434,7 +4434,7 @@
 /turf/simulated/floor/asteroid/grass,
 /area/liberty/outside/forest/river_forest_light)
 "Ve" = (
-/obj/item/stack/ore/plasma,
+/obj/item/stack/ore/hydrogenc,
 /turf/simulated/floor/asteroid/dirt,
 /area/liberty/outside/forest/river_forest_light)
 "Vl" = (
