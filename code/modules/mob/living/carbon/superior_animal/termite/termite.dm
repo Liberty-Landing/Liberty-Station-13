@@ -11,6 +11,16 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 /mob/living/carbon/superior_animal/termite
 	name = "Pekhota termite"
 	desc = "A termite, the earth and wood eaters of the colony. Hide your hard-wood kitchen floors and nick-nacks!"
+	description_info = "Binomial Nomenclature: Blattodea Isoptera Perniciosas:\n\n\
+						Like most of the giant insectoids within the colony, this one is under effects of Perniciosus viral agent. This viral agent was the second accomplished way to unpregulate key genes with viral cap-snatching process. \
+						However, it had more compatibility with some species from the arthoproda phylum, such as arachnida and blattodea, rather than Eukaryotas. \
+						With the disease going far and wide on colonial grounds, the mutated species became an severe nuance on any colonial effort, even causing colonies to break down from such pest. \
+						On the termites, the virus enhanced many characteritics, . \
+						. \
+						and, for last, a cellular proliferation override, allowing a uncontrollable growth that results in expansion of tissues and organs, but lowers the life expectacy and bring higher risk of cancer. \n\
+						The termites,  \
+						Soon enough, termites became an common sight alongside roaches and spiders on the maintenance, \
+						."
 	icon = 'icons/mob/40x40.dmi' // Sprites made by Polyushko#0323
 	icon_state = "rabochiy_termite"
 	speak_emote = list("clicks")

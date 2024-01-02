@@ -62,7 +62,7 @@
 		return
 
 /obj/structure/nacre_crystal/spire/add_initial_transforms()
-	add_new_transformation(/datum/transform_type/modular, list(scale_x = 1.5, scale_y = 1.5, flag = nacre_SPIRE_INITIAL_SCALE_TRANSFORM, priority = nacre_SPIRE_INITIAL_SCALE_TRANSFORM_PRIORITY))
+	add_new_transformation(/datum/transform_type/modular, list(scale_x = 1.5, scale_y = 1.5, flag = NACRE_SPIRE_INITIAL_SCALE_TRANSFORM, priority = NACRE_SPIRE_INITIAL_SCALE_TRANSFORM_PRIORITY))
 	. = ..()
 
 /obj/structure/nacre_crystal/spire/harvest_crystals()

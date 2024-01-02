@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/roach/glowing
-	name = "Glowing Roach"
-	desc = "A huge dog-sized roach that been evolved to produce small amouts of uranium in its glad, becoming stronger and glowing sickly green."
+	name = "Lucihormetica Roach"
+	desc = "A heavily mutated roach under Perniciosus viral agent. Dog-sized and filled with radioactive bioluminescent glowspots, this creatures is both venomous and poisonous."
 	icon_state = "glowingroach"
 	light_range = 2
 	light_color = COLOR_LIGHTING_GREEN_DARK
