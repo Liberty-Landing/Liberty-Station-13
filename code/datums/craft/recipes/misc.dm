@@ -90,7 +90,7 @@
 	)
 
 /datum/craft_recipe/nacre_spire
-	name = "nacre growth"
+	name = "nacre cluster"
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	result = /obj/structure/nacre_crystal/spire/fake
 	icon_state = "device"

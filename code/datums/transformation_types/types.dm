@@ -58,12 +58,12 @@
 	return ..()
 
 /datum/transform_type/nacre_structures
-	flag = nacre_TRANSFORM
-	priority = nacre_TRANSFORM_PRIORITY
+	flag = NACRE_TRANSFORM
+	priority = NACRE_TRANSFORM_PRIORITY
 
 /datum/transform_type/nacre_structures/crystal_resizing
-	flag = nacre_CRYSTAL_RESIZING_TRANSFORM
-	priority = nacre_CRYSTAL_RESIZING_TRANSFORM_PRIORITY
+	flag = NACRE_CRYSTAL_RESIZING_TRANSFORM
+	priority = NACRE_CRYSTAL_RESIZING_TRANSFORM_PRIORITY
 
 /datum/transform_type/nacre_structures/crystal_resizing/update_values()
 	. = ..()

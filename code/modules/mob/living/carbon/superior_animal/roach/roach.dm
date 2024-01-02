@@ -1,6 +1,16 @@
 /mob/living/carbon/superior_animal/roach
 	name = "Overgrown Roach"
 	desc = "A monstrous, dog-sized cockroach. These huge mutants can be everywhere where humans are, on ships, planets and stations."
+	description_info = "Binomial Nomenclature: Blattaria Macropanesthia Perniciosas:\n\n\
+						Like most of the giant insectoids within the colony, this one is under effects of Perniciosus viral agent. This viral agent was the second accomplished way to unpregulate key genes with viral cap-snatching process. \
+						However, it had more compatibility with some species from the arthoproda phylum, such as arachnida and blattodea, rather than Eukaryotas. \
+						With the disease going far and wide on colonial grounds, the mutated species became an severe nuance on any colonial effort, even causing colonies to break down from such pest. \
+						On the roaches, the virus enhanced many characteritics, such as the respiration system with oxygen storage vesicles, muscular contractions to improve inner ventilation of the spiracles, and lung-like organs alongside the Tracheal system. \
+						The chitin stays during the early days internally, acting like a endoskeleton before being replaced by a proper exoskeleton when matured, allowing a bigger size with mininal amount of shedding. \
+						and, for last, a cellular proliferation override, allowing a uncontrollable growth that results in expansion of tissues and organs, but lowers the life expectacy and bring higher risk of cancer. \n\
+						Everything else came natural with evolution in short years, the fastpaced reproduction rewarded the bold and most eusocial among the mutated roaches, as the shy ones starved and had their genepool exterminated. \
+						Soon enough, roaches became an common sight alongside spiders and termites on the maintenance, competing for nourishment from trash or the flesh of fallen enemies. The roaches has the advantage of being omnivorous, allowing \
+						these creatures to not rely entirely on meat, as they are by far the weakest Perniciosus mutants - essentially prey to others - but organic matter from trash and usage of swarming tactics keeps the existence of these roaches unbeatable."
 	icon = 'icons/mob/mobs-roach.dmi'
 	icon_state = "roach"
 

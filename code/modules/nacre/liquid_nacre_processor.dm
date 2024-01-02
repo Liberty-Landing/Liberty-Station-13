@@ -20,20 +20,20 @@
 	- Trilby 8/24/2022
 	*/
 	var/outputs = list(
-						list(name = "aluminium", cost = 10, path = /obj/item/stack/material/aluminium),
+						list(name = "Aluminium", cost = 10, path = /obj/item/stack/material/aluminium),
 						list(name = "Plastic", cost = 10, path = /obj/item/stack/material/plastic),
 						list(name = "Glass", cost = 10, path = /obj/item/stack/material/glass),
-						list(name = "indsteel", cost = 50, path = /obj/item/stack/material/indsteel),
+						list(name = "Indsteel", cost = 50, path = /obj/item/stack/material/indsteel),
 						list(name = "Silver", cost = 20, path = /obj/item/stack/material/silver),
 						list(name = "Gold", cost = 20, path = /obj/item/stack/material/gold),
 						list(name = "Titanium", cost = 60, path = /obj/item/stack/material/titanium),
 						list(name = "Uranium", cost = 60, path = /obj/item/stack/material/uranium),
-						list(name = "hydrogen", cost = 60, path = /obj/item/stack/material/hydrogenc),
+						list(name = "Hydrogen", cost = 60, path = /obj/item/stack/material/hydrogenc),
 						list(name = "Titanium Composite", cost = 100, path = /obj/item/stack/material/composite),
 						list(name = "Diamonds", cost = 180, path = /obj/item/stack/material/diamond),
-						list(name = "titaniumrtc", cost = 180, path=/obj/item/stack/material/mhydrogen),
+						list(name = "Titaniumrtc", cost = 180, path=/obj/item/stack/material/mhydrogen),
 						list(name = "Tritium", cost = 180, path = /obj/item/stack/material/tritium),
-						list(name = "nacre Core", cost = 1200, path=/obj/item/nacre_core) //At t8 parts its 1:1
+						list(name = "Nacre Core", cost = 1200, path=/obj/item/nacre_core) //At t8 parts its 1:1
 						)
 	var/cost_modifier = 1
 
