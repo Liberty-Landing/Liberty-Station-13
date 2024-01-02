@@ -1012,7 +1012,7 @@
 /area/liberty/dungeon/outside/prepper/vault/floor5)
 "dZ" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/monofloor,
 /area/liberty/dungeon/outside/prepper/vault/floor5)

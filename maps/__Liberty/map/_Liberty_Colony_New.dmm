@@ -88835,7 +88835,7 @@
 /turf/simulated/floor/asteroid/dirt/dust,
 /area/liberty/outside/inside_colony)
 "uof" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/dungeon/outside/burned_outpost)
 "uoq" = (

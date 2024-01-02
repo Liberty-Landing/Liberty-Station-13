@@ -426,9 +426,9 @@
 /area/deepmaint)
 "Jn" = (
 /obj/structure/low_wall,
-/obj/item/material/shard/plasma,
-/obj/item/material/shard/plasma,
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
+/obj/item/material/shard/mend,
+/obj/item/material/shard/mend,
 /obj/effect/damagedfloor/fire,
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/deepmaint)

@@ -66,7 +66,7 @@
 	if(S.glass_type == /obj/item/stack/material/glass/mendsilicate) //if the panel is in plasma glass
 		health *= 2
 		glass_power = 1.2 //1800
-	if(S.glass_type == /obj/item/stack/material/glass/lmendsilicate) //if the panel is in reinforced plasma glass
+	if(S.glass_type == /obj/item/stack/material/mendsilicate/reinforced) //if the panel is in reinforced plasma glass
 		health *= 3
 		glass_power = 1.3 //1950
 

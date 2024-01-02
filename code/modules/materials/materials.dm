@@ -502,7 +502,7 @@ var/list/name_to_material
 	stack_type = /obj/item/stack/material/glass/mendsilicate
 	flags = MATERIAL_BRITTLE
 	integrity = 100
-	icon_colour = "#4e1a40"
+	icon_colour = "#550b41"
 	stack_origin_tech = list(TECH_MATERIAL = 4)
 	created_window = /obj/structure/window/mendsilicatebasic
 	created_window_full = /obj/structure/window/mendsilicatebasic/full

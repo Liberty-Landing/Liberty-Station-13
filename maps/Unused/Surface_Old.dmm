@@ -19571,7 +19571,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/dungeon/outside/abandoned_solars)
 "aUd" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/dungeon/outside/burned_outpost)
 "aUe" = (

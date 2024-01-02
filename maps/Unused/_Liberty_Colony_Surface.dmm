@@ -25044,7 +25044,7 @@
 /turf/simulated/floor/tiled/techmaint_panels,
 /area/liberty/dungeon/outside/abandoned_outpost)
 "tUo" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/dungeon/outside/burned_outpost)
 "tUs" = (

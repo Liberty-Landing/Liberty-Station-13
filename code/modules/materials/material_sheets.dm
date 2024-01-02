@@ -347,7 +347,7 @@
 	rand_min = 3
 	rand_max = 8
 
-/obj/item/stack/material/glass/lmendsilicate
+/obj/item/stack/material/mendsilicate/reinforced
 	name = "laminated mendsilicate glass"
 	desc = "This sheet is made from the constantly mending and heat-reflecting capacities of cosmic nacre. It has been laminated for bulletproof capacities."
 	singular_name = "laminated mendsilicate glass sheet"
@@ -355,7 +355,7 @@
 	default_type = MATERIAL_LBGLASS
 	price_tag = 12
 
-/obj/item/stack/material/glass/lmendsilicate/full
+/obj/item/stack/material/mendsilicate/reinforced/full
 	amount = 120
 
 /obj/item/stack/material/biomatter

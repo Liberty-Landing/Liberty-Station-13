@@ -62,7 +62,7 @@
 /area/outpost/abandoned_fortress/powered)
 "an" = (
 /obj/structure/table/reinforced,
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/space)
 "ao" = (
@@ -3577,7 +3577,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "sA" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/space,
 /area/space)
 "sC" = (
@@ -4825,7 +4825,7 @@
 /turf/simulated/wall/r_wall,
 /area/awaymission/spacebattle/syndicate7)
 "yr" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/rock,
 /area/space)
 "yt" = (
@@ -6641,7 +6641,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Ii" = (
 /obj/structure/table/reinforced,
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "Im" = (
@@ -8812,7 +8812,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "SS" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/plating/under,
 /area/space)
 "ST" = (

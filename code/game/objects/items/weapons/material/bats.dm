@@ -26,7 +26,7 @@
 
 /obj/item/material/baseballbat/metal
 	default_material = MATERIAL_ALUMINIUM
-	color = indsteel_COLOUR
+	color = INDSTEEL_COLOUR
 
 /obj/item/material/baseballbat/metal/New(var/newloc)
 	..(newloc,MATERIAL_ALUMINIUM)

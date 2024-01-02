@@ -189,7 +189,7 @@
 	name = "scrap metal"
 	amount = 1
 
-/obj/item/material/shard/plasma/New(loc)
+/obj/item/material/shard/mend/New(loc)
 	..(loc, MATERIAL_LBGLASS)
 
 /obj/item/material/shard/nacre

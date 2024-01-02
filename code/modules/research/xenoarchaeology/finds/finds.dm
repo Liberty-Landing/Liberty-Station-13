@@ -308,7 +308,7 @@
 			if(prob(50))
 				new_item = new /obj/item/material/shard(src.loc)
 			else
-				new_item = new /obj/item/material/shard/plasma(src.loc)
+				new_item = new /obj/item/material/shard/mend(src.loc)
 			apply_prefix = 0
 			apply_image_decorations = 0
 			apply_material_decorations = 0

@@ -1,6 +1,6 @@
 // Hydrogen Sword, like an energy sword that use hydrogen fuel cell. It explode if it is EMP'ed while active.
 
-/* Likely to get removed and respectively replaced.
+
 /obj/item/tool/hydrogen_sword
 	name = "hydrogen-plasma sword"
 	desc = "An energy sword that uses super heated hydrogen shaped into plasma. The only thing preventing this from blowing up in your face is a magnetic field produced by the hilt."
@@ -8,7 +8,7 @@
 	icon_state = "sword"
 	item_state = "hydrogen"
 	origin_tech = list(TECH_PLASMA = 10, TECH_POWER = 5, TECH_COMBAT = 12, TECH_MATERIAL = 7) // Currently it is a unique, RP-only item.
-	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_HYDROGENC = 0.8, MATERIAL_TITANIUMRTC = 0.8, MATERIAL_TRITIUM = 0.8)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_HYDROGENC = 0.8, MATERIAL_TITANIUMRTC = 4, MATERIAL_TRITIUM = 0.8)
 	force = WEAPON_FORCE_WEAK
 	throwforce = WEAPON_FORCE_WEAK
 	throw_speed = 3
@@ -136,7 +136,7 @@
 	item_state = "grenade"
 	contained_sprite = TRUE
 	origin_tech = list(TECH_POWER = 3)
-	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_MHYDROGEN = 0.5, MATERIAL_TITANIUMRTC = 0.5, MATERIAL_TRITIUM = 0.5)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_HYDROGENC = 0.5, MATERIAL_COMPOSITE = 2, MATERIAL_TRITIUM = 0.5)
 	force = WEAPON_FORCE_WEAK
 	throwforce = WEAPON_FORCE_WEAK
 	throw_speed = 3
@@ -208,4 +208,4 @@
 	spawn(20)
 		qdel(src)
 
-*/
+
