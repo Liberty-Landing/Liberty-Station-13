@@ -569,8 +569,8 @@
 	resistance = RESISTANCE_FLIMSY
 	flags = null
 
-/obj/structure/window/mendsillicate
-	name = "mendsillicate window"
+/obj/structure/window/mendsilicate
+	name = "mendsilicate window"
 	desc = "A window containing microrganisms constantly mending the glass together after impact. It does not heal over time. It seems to be quite strong."
 	basestate = "mwindow"
 	icon_state = "mendwindow"
@@ -581,7 +581,7 @@
 	maxHealth = 150
 	resistance = RESISTANCE_AVERAGE
 
-/obj/structure/window/mendsillicate/full
+/obj/structure/window/mendsilicate/full
 	dir = SOUTH|EAST
 	icon = 'icons/obj/structures/windows.dmi'
 	icon_state = "mendwindow_mask"
@@ -620,7 +620,7 @@
 	flags = null
 
 /obj/structure/window/reinforced/mendsilicate
-	name = "reinforced mendsillicate window"
+	name = "reinforced mendsilicate window"
 	desc = "A window containing microrganisms constantly mending the glass together after impact. It is reinforced with rods. You will struggle to break this apart."
 	basestate = "rpwindow"
 	icon_state = "rpwindow"

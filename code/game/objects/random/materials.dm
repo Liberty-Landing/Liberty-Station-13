@@ -92,7 +92,7 @@
 				/obj/item/stack/ore/hydrogenc = 2,\
 				/obj/item/stack/ore/silver = 3,\
 				/obj/item/stack/ore/uranium = 1,\
-				/obj/item/stack/ore/lignite = 4.\
+				/obj/item/stack/ore/lignite = 4,\
 				/obj/item/stack/ore/diamond = 0.1))
 
 

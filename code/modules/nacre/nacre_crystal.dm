@@ -138,7 +138,7 @@
 		harvest_crystals(src)
 
 /obj/structure/nacre_crystal/proc/harvest_crystals()
-	/obj/item/stack/material/mendingnacre/T = new(get_turf(src))
+	var/obj/item/stack/material/nacre/T = new(get_turf(src))
 	T.amount = growth // Drop more crystal the further along we are
 	activate_mobs_in_range(src, 7) // Wake up the nearby golems
 	qdel(src)

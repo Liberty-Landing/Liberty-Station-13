@@ -1,7 +1,7 @@
 // This machine turn nacre crystals into liquid nacre and put it in a bidon connected to it.
 /obj/machinery/liquid_nacre_processor
 	name = "liquid nacre processor"
-	desc = "Convert Liquid nacre into multiple materials."
+	desc = "Convert Liquid Nacre into multiple materials."
 	icon = 'icons/obj/machines/grinder.dmi'
 	icon_state = "nacre_processor"
 	density = TRUE
@@ -14,7 +14,7 @@
 	var/obj/structure/reagent_dispensers/bidon/Container
 	/*
 	Current as of wrighting is balance is around t5 parts aka 50% reduction
-	Meaning: 1 ameridain shard is worth 10, and 50% of 10 = 5 this 1 shards makes 2 aluminium
+	Meaning: 1 ameridain shard is worth 10, and 50% of 10 = 5 this 1 shards makes 2 steel
 	Its balance this way to both encurage its use to fill in gaps when a drill is failing or to round out numbers when needed
 	Ontop of it being able to be farmed semi-easily with an invest of 1 to 3 cores + time on return.
 	- Trilby 8/24/2022
@@ -29,9 +29,9 @@
 						list(name = "Titanium", cost = 60, path = /obj/item/stack/material/titanium),
 						list(name = "Uranium", cost = 60, path = /obj/item/stack/material/uranium),
 						list(name = "Hydrogen", cost = 60, path = /obj/item/stack/material/hydrogenc),
-						list(name = "Titanium Composite", cost = 100, path = /obj/item/stack/material/composite),
+						list(name = "Niobium", cost = 60, path = /obj/item/stack/material/niobium),
 						list(name = "Diamonds", cost = 180, path = /obj/item/stack/material/diamond),
-						list(name = "Titaniumrtc", cost = 180, path=/obj/item/stack/material/mhydrogen),
+						list(name = "TitaniumRTC", cost = 180, path=/obj/item/stack/material/titaniumrtc),
 						list(name = "Tritium", cost = 180, path = /obj/item/stack/material/tritium),
 						list(name = "Nacre Core", cost = 1200, path=/obj/item/nacre_core) //At t8 parts its 1:1
 						)
@@ -100,7 +100,7 @@
 	if((get_dist(src, user) > 1) || (stat & (BROKEN|NOPOWER)))
 		if(!isAI(user) && !isghost(user))
 			user.unset_machine()
-			user << browse(null, "window=LiquidnacreProcessor")
+			user << browse(null, "window=LiquidNacreProcessor")
 			return
 
 	search_bidons()
@@ -108,8 +108,8 @@
 	user.set_machine(src)
 
 	var/dat = ""
-	dat += "<head><title>Liquid nacre Processor</title></head>"
-	dat += "Liquid nacre Processor<BR>"
+	dat += "<head><title>Liquid Nacre Processor</title></head>"
+	dat += "Liquid Nacre Processor<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR>"
 	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</A><BR><BR>"
 	if(Container)
@@ -118,8 +118,8 @@
 	else
 		dat += "No bidon detected. Please connect a bidon."
 
-	user << browse(dat, "window=LiquidnacreProcessor")
-	onclose(user, "LiquidnacreProcessor")
+	user << browse(dat, "window=LiquidNacreProcessor")
+	onclose(user, "LiquidNacreProcessor")
 	return
 
 /obj/machinery/liquid_nacre_processor/Topic(href, href_list)
@@ -129,13 +129,13 @@
 	//Ignore input if we are broken or guy is not touching us, AI can control from a ways away
 	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1 && !isAI(usr)))
 		usr.unset_machine()
-		usr << browse(null, "window=LiquidnacreProcessor")
+		usr << browse(null, "window=LiquidNacreProcessor")
 		return
 
 	..()
 
 	if(href_list["close"])
-		usr << browse(null, "window=LiquidnacreProcessor")
+		usr << browse(null, "window=LiquidNacreProcessor")
 		usr.unset_machine()
 		return
 
@@ -175,7 +175,7 @@
 	var/dat = ""
 	dat += "List of materials : <BR>"
 	for(var/list/L in outputs)
-		dat += "[L["name"]], cost : [L["cost"] / cost_modifier] Liquid nacre.<BR>"
+		dat += "[L["name"]], cost : [L["cost"] / cost_modifier] Liquid Nacre.<BR>"
 		dat += "- Print : "
 		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*1) ? "<A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=1'>x1</A>" : "Not enough liquid nacre"]"
 		dat += "[check_bidon_nacre((L["cost"]/cost_modifier)*5) ? ", <A href='?src=\ref[src];material=[L["path"]];cost=[L["cost"]/cost_modifier];amount=5'>x5</A>" : ""]"

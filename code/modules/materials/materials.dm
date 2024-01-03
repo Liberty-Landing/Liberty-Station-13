@@ -496,7 +496,7 @@ var/list/name_to_material
 	wire_product = null
 	rod_product = null
 
-/material/glass/mendsillicate
+/material/glass/mendsilicate
 	name = MATERIAL_BGLASS
 	display_name = "mendsilicate glass"
 	stack_type = /obj/item/stack/material/glass/mendsilicate
@@ -550,7 +550,7 @@ var/list/name_to_material
 
 /material/nacre
 	name = MATERIAL_NACRE
-	stack_type = /obj/item/stack/material/mendingnacre
+	stack_type = /obj/item/stack/material/nacre
 	icon_colour = "#f8e2e2"
 	stack_origin_tech = list(TECH_MATERIAL = 5)
 	sheet_singular_name = "sphere"
@@ -950,7 +950,7 @@ var/list/name_to_material
 	sheet_plural_name = "crystals"
 
 /material/nacre
-	name = MATERIAL_nacre
+	name = MATERIAL_nNA
 	stack_type = /obj/item/stack/material/nacre
 	icon_colour = "#007A00"
 	sheet_singular_name = "shard"

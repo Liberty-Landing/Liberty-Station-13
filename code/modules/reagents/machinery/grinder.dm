@@ -23,12 +23,14 @@
 	var/list/holdingitems = list()
 	var/list/sheet_reagents = list(
 		/obj/item/stack/material/iron = "iron",
-		/obj/item/stack/material/aluminium = "iron",
+		/obj/item/stack/material/aluminium = "aluminium",
 		/obj/item/stack/material/uranium = "uranium",
-		/obj/item/stack/material/hydrogenc = "plasma",
+		/obj/item/stack/material/hydrogenc = "hydrogen",
 		/obj/item/stack/material/gold = "gold",
 		/obj/item/stack/material/silver = "silver",
-		/obj/item/stack/material/mhydrogen = "hydrogen",
+		/obj/item/stack/material/niobium = "niobium",
+		/obj/item/stack/material/copper = "copper",
+		/obj/item/stack/material/titanium = "titanium"
 	)
 
 /obj/machinery/reagentgrinder/RefreshParts()

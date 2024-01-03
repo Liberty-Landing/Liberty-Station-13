@@ -58,13 +58,13 @@
 /mob/living/carbon/superior_animal/nacre_golem/add_initial_transforms()
 	. = ..()
 
-	add_new_transformation(/datum/transform_type/modular, list(size_factor, size_factor, flag = nacre_GOLEM_INITIAL_SCALE_TRANSFORM, priority = nacre_GOLEM_INITIAL_SCALE_TRANSFORM_PRIORITY))
+	add_new_transformation(/datum/transform_type/modular, list(size_factor, size_factor, flag = NACRE_GOLEM_INITIAL_SCALE_TRANSFORM, priority = NACRE_GOLEM_INITIAL_SCALE_TRANSFORM_PRIORITY))
 
 /mob/living/carbon/superior_animal/nacre_golem/death()
 	. = ..()
 	playsound(get_turf(src), "sound/effects/crumble[pick(1, 2, 3, 4, 5)].ogg", 50)
 	if(drop_amount)
-		/obj/item/stack/material/mendingnacre/loot = new /obj/item/stack/material/mendingnacre(get_turf(src))
+		var/obj/item/stack/material/nacre/loot = new /obj/item/stack/material/nacre(get_turf(src))
 		loot.amount = drop_amount
 	qdel(src)
 

@@ -92,7 +92,7 @@
 	if(use_bidon_nacre(consume_rate))
 		points += consume_rate * point_worth
 	else
-		ping("Error : Ran out of Liquid nacre.")
+		ping("Error : Ran out of Liquid Nacre.")
 		stop_analyze()
 	updateDialog()
 
@@ -103,7 +103,7 @@
 		if(RD.id == 1) // only core gets the science
 			RD.files.research_points += points // Give the points
 			var/obj/item/device/radio/radio = new /obj/item/device/radio{channels=list("PIRS")}(src) // Create a new radio
-			radio.autosay("Liquid nacre Sample analyze completed. Transfering [points] research points to primary console.", src.name, "PIRS") // Make the radio say a message.
+			radio.autosay("Liquid Nacre Sample analyze completed. Transfering [points] research points to primary console.", src.name, "PIRS") // Make the radio say a message.
 			spawn(1) qdel(radio)
 			points = 0 // No more points to give
 			break
@@ -114,7 +114,7 @@
 	if((get_dist(src, user) > 1) || (stat & (BROKEN|NOPOWER)))
 		if(!isAI(user) && !isghost(user))
 			user.unset_machine()
-			user << browse(null, "window=nacreAnalyzer")
+			user << browse(null, "window=NacreAnalyzer")
 			return
 
 	search_bidons()
@@ -122,8 +122,8 @@
 	user.set_machine(src)
 
 	var/dat = ""
-	dat += "<head><title>Liquid nacre Analyzer</title></head>"
-	dat += "Liquid nacre Analyzer<BR>"
+	dat += "<head><title>Liquid Nacre Analyzer</title></head>"
+	dat += "Liquid Nacre Analyzer<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR>"
 	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</A><BR><BR>"
 	if(Container)
@@ -137,8 +137,8 @@
 	else
 		dat += "No bidon detected. Please connect a bidon."
 
-	user << browse(dat, "window=nacreAnalyzer")
-	onclose(user, "nacreAnalyzer")
+	user << browse(dat, "window=NacreAnalyzer")
+	onclose(user, "NacreAnalyzer")
 	return
 
 /obj/machinery/nacre_analyzer/Topic(href, href_list)
@@ -148,13 +148,13 @@
 	//Ignore input if we are broken or guy is not touching us, AI can control from a ways away
 	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1 && !isAI(usr)))
 		usr.unset_machine()
-		usr << browse(null, "window=nacreAnalyzer")
+		usr << browse(null, "window=NacreAnalyzer")
 		return
 
 	..()
 
 	if(href_list["close"])
-		usr << browse(null, "window=nacreAnalyzer")
+		usr << browse(null, "window=NacreAnalyzer")
 		usr.unset_machine()
 		return
 

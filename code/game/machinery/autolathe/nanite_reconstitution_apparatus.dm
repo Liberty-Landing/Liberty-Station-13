@@ -140,7 +140,7 @@
 
 	to_chat(user, SPAN_WARNING("There are not enough materials to use \the [src.name]! You need:"))
 	if (aluminium_needed < 0)
-		to_chat(user, SPAN_WARNING("[abs(steel_needed)] aluminium"))
+		to_chat(user, SPAN_WARNING("[abs(aluminium_needed)] aluminium"))
 	if (indsteel_needed < 0)
 		to_chat(user, SPAN_WARNING("[abs(indsteel_needed)] indsteel"))
 	if (nanites_needed < 0)

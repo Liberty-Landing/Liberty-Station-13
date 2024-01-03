@@ -38,7 +38,7 @@
 
 
 // Design categories
-#define CAT_NACRE    "Nacre"
+#define CAT_NACRE    "Mending Nacre"
 #define CAT_MISC        "Misc"
 #define CAT_COMP        "Computers"
 #define CAT_AI          "AI"

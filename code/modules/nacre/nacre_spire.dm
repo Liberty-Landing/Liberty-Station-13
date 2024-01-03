@@ -1,9 +1,7 @@
-// nacre Spire, an indestructible building that constantly refill missing nacre around it.
+// Nacre Spire, an indestructible building that constantly refill missing nacre around it.
 /obj/structure/nacre_crystal/spire
-	name = "coralite cluster"
-	desc = "A formation that resembles a cluster of corals, the sight of convergent evolution. \
-	Found solely in the cosmic frontier where radiation is the highest, coralites has spread far and wide on many planets. \
-	It colonises worlds and spreads wide, filtering nutriments out of atmospheres and the soil. It is a source of Healing Nacar."
+	name = "nacre spire"
+	desc = "A strange crystal formation that seems to have grown from a rarer crystal core."
 	icon_state = "nacre_crystal_purple"
 	anchored = TRUE
 	density = TRUE
@@ -30,7 +28,7 @@
 
 /obj/structure/nacre_crystal/spire/fake
 	spread_range = -1 //Invest 3 into me before a return
-	name = "artificial coralites cluster growth"
+	name = "artificial nacre spire growth"
 	desc = "An artificially constructed version of a sprite growth, made with a pure nacre core pulsing around tons of nacre shards."
 	colour_type = "FAKE"
 	is_growing = FALSE
@@ -66,7 +64,7 @@
 	. = ..()
 
 /obj/structure/nacre_crystal/spire/harvest_crystals()
-	/obj/item/stack/material/mendingnacre/T = new(get_turf(src))
+	var/obj/item/stack/material/nacre/T = new(get_turf(src))
 	///new /obj/item/nacre_core(T) - So PI cant sneakly get these and start their own farms without LSS or what ever
 	T.amount = 60 //Half a stack for a rare find
 	activate_mobs_in_range(src, 7) // Wake up the nearby golems

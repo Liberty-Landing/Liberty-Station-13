@@ -577,7 +577,7 @@
 	rand_min = 3
 	rand_max = 12
 
-/obj/item/stack/material/mendingnacre
+/obj/item/stack/material/nacre
 	name = "mending nacre"
 	desc = "Mending piece from a still studied substance that looks alike nacre, and it is constantly healing with microscopic activity."
 	singular_name = "Mending Nacre"
@@ -587,7 +587,7 @@
 	price_tag = 50 // obtaining nacre is extremely dangerous and very profitable
 	max_amount = 360
 
-/obj/item/stack/material/mendingnacre/full
+/obj/item/stack/material/nacre/full
 	amount = 360
 
 /obj/item/stack/material/niobium

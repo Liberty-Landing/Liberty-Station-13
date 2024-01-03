@@ -1,4 +1,4 @@
-// nacre Core, a snow-flake item used in all objects fueled by nacre.
+// Nacre Core, a snow-flake item used in all objects fueled by nacre.
 /obj/item/nacre_core
 	name = "nacre core"
 	desc = "A sphere of the purest compressed nacre. It is the core component of all nacre-based technology."

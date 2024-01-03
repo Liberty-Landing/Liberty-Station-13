@@ -62,7 +62,7 @@
 				mineralmapss.DrawBox(rgb(0,0,255),TA.x,TA.y,TA.x, TA.y)
 				continue
 				//addgreysih and continue
-			if(istype(TA.mineral, /ore/hydrogen))
+			if(istype(TA.mineral, /ore/hydrogenc))
 				mineralmapss.DrawBox(rgb(124,143,90),TA.x,TA.y,TA.x, TA.y)
 				continue
 				//adddarkishcolor and continue

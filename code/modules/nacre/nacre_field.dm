@@ -29,7 +29,7 @@
 			AC.visible_message("[AC] shatter into dust under the sonic field.")
 			AC.Destroy()
 
-		for(/obj/item/stack/material/mendingnacre/A in get_turf(src))
+		for(var/obj/item/stack/material/nacre/A in get_turf(src))
 			A.visible_message("[A] shatter into dust under the sonic field.")
 			qdel(A)
 
@@ -41,7 +41,7 @@
 	return TRUE // Everything can go through, it's a sound barrier, not a physical thing
 
 /obj/machinery/shieldwall/nacre/Crossed(atom/movable/O)
-	if(istype(O, /obj/item/stack/material/mendingnacre) || istype(O, /obj/item/projectile/nacre_shard))
+	if(istype(O, /obj/item/stack/material/nacre) || istype(O, /obj/item/projectile/nacre_shard))
 		O.visible_message(SPAN_NOTICE("[O] shatter into dust under the sonic field."))
 		qdel(O)
 		return

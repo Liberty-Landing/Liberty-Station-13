@@ -65,7 +65,7 @@ var/global/list/ore_data = list()
 	compresses_to = MATERIAL_SANDSTONE
 	alloy = TRUE
 
-/ore/hydrogen
+/ore/hydrogenc
 	name = ORE_HYDROGENC
 	display_name = "Gaseous Clathrates"
 	compresses_to = MATERIAL_HYDROGENC

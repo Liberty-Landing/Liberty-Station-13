@@ -39,7 +39,7 @@
 	if(default_part_replacement(I, user))
 		return
 
-	if(istype(I, /obj/item/stack/material/mendingnacre))
+	if(istype(I, /obj/item/stack/material/nacre))
 		insert_item(I, user)
 
 	updateDialog()
@@ -71,7 +71,7 @@
 // Those procs return the stuff inside the refinery and the bidon connected to it.
 /obj/machinery/nacre_refinery/proc/get_solid_nacre()
 	var/count = 0
-	for(/obj/item/stack/material/mendingnacre/AC in contents)
+	for(var/obj/item/stack/material/nacre/AC in contents)
 		count += AC.amount
 	return count
 
@@ -85,7 +85,7 @@
 
 // This proc turn solid nacre into its liquid counterpart.
 /obj/machinery/nacre_refinery/proc/process_crystals()
-	for(/obj/item/stack/material/mendingnacre/AC in contents)
+	for(var/obj/item/stack/material/nacre/AC in contents)
 		while(AC.amount >= 1)
 			if(reagents.maximum_volume - reagents.total_volume < crystal_worth)
 				return
@@ -108,13 +108,13 @@
 			return
 	Container = null // This should only happen if there was no anchored BIDONs nearby
 
-// Eject a given number of nacre Shards.
+// Eject a given number of Nacre Shards.
 /obj/machinery/nacre_refinery/proc/remove_crystals(var/amount = 0)
 	if(amount < 1)
 		return
 
 	var/amount_to_eject = (amount > get_solid_nacre() ? get_solid_nacre() : amount)
-	/obj/item/stack/material/mendingnacre/Current_Sheet = new(get_turf(src))
+	var/obj/item/stack/material/nacre/Current_Sheet = new(get_turf(src))
 	var/use_extra_sheet = TRUE // We need to use an extra sheet to compensate for the one that come with the object we spawned
 	while(amount_to_eject)
 		if(Current_Sheet?.get_amount() >= Current_Sheet?.get_max_amount())
@@ -122,7 +122,7 @@
 		if(!Current_Sheet)
 			Current_Sheet = new(get_turf(src))
 			use_extra_sheet = TRUE
-		for(/obj/item/stack/material/mendingnacre/AC in contents)
+		for(var/obj/item/stack/material/nacre/AC in contents)
 			if(use_extra_sheet)
 				AC.use(1) // We're using and not transfering because the destination has one sheet extra
 				amount_to_eject--
@@ -146,8 +146,8 @@
 	user.set_machine(src)
 
 	var/dat = ""
-	dat += "<head><title>nacre Refinery</title></head>"
-	dat += "nacre Refinery<BR>"
+	dat += "<head><title>Nacre Refinery</title></head>"
+	dat += "Nacre Refinery<BR>"
 	dat += "<A href='?src=\ref[src];close=1'>Close</A><BR>"
 	dat += "<A href='?src=\ref[src];refresh=1'>Refresh</A><BR><BR>"
 	dat += "Current quantity of solid nacre : [get_solid_nacre()].<BR>"
@@ -167,8 +167,8 @@
 	else
 		dat += "No Bidon connected. Please connect a Bidon to start the transfer.<BR>"
 
-	user << browse(dat, "window=nacreRefinery")
-	onclose(user, "nacreRefinery")
+	user << browse(dat, "window=NacreRefinery")
+	onclose(user, "NacreRefinery")
 	return
 
 /obj/machinery/nacre_refinery/Topic(href, href_list)
@@ -178,13 +178,13 @@
 	//Ignore input if we are broken or guy is not touching us, AI can control from a ways away
 	if(stat & (BROKEN|NOPOWER) || (get_dist(src, usr) > 1 && !isAI(usr)))
 		usr.unset_machine()
-		usr << browse(null, "window=nacreRefinery")
+		usr << browse(null, "window=NacreRefinery")
 		return
 
 	..()
 
 	if(href_list["close"])
-		usr << browse(null, "window=nacreRefinery")
+		usr << browse(null, "window=NacreRefinery")
 		usr.unset_machine()
 		return
 

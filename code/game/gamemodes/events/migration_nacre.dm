@@ -42,9 +42,9 @@
 /datum/event/nacre_migration/announce()
 	var/announcement = ""
 	if(severity == EVENT_LEVEL_MAJOR)
-		announcement = "Massive growth of nacre has been detected outside colony walls, please stand-by."
+		announcement = "Massive growth of Nacre has been detected outside colony walls, please stand-by."
 	else
-		announcement = "nacre [spawned_nacre.len == 1 ? "growth has" : "growths have"] been detected outside the colony."
+		announcement = "Nacre [spawned_nacre.len == 1 ? "growth has" : "growths have"] been detected outside the colony."
 
 	command_announcement.Announce(announcement, "Lifesign Alert")
 

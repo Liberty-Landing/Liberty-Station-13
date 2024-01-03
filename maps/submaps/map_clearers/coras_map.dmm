@@ -1032,7 +1032,7 @@
 /area/nadezhda/outside/meadow)
 "KF" = (
 /obj/structure/table/marble,
-/obj/item/stack/material/mendingnacre,
+/obj/item/stack/material/nacre,
 /turf/simulated/floor/rock/manmade/ruin3,
 /area/asteroid/rogue)
 "KM" = (
