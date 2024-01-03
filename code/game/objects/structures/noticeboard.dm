@@ -217,15 +217,15 @@ P.S - <u><h1>Don't leave the drills running unattended!</u></h1>"
 
 	P = new()
 	P.name = "Memo RE: nacre handling"
-	P.info = "Remember, when dealing with nacre Crystals, to :<ol> \
+	P.info = "Remember, when dealing with Cosmic Nacre, to :<ol> \
 	<li> Wear a Radiation Suit. The crystals are radioactive with a radius of 2 meters, and the small ones are as radioactive as the grown ones.\
 	<li> Let the crystals grow. Fully grown crystals are the best to harvest as they give the most.\
 	<li> If you need to leave, DONT DESTORY THE SPIRE UNLESS NESSARY. You can let it spread out and clear the golems, and then walk away safely, golems only grow when new shards uproot up.\
 	<li> Golems will only grow when a new shard growth is spread. Meaning if you let the main spire grow out its maximum  amount clearing all the golems, the area is safe from any golems regrowing, but not the radiation.\
 	<li> Crystals grown from the spire itself can also spread to its neighboring area, the offspring of these lesser growths can not spread.\
 	<li> You can also use the Handheld Sonic emitter to destroy the golem, using said Sonic emitter will not result in you getting extra shards from the golems, or from the crystals if used.\
-	<li> Refine the shards. While nacre is valuable on its own, it's true value can only be used when refining it into Liquid nacre using an nacre Refinery, after which it can be further transformed into regular materials in the Liquid nacre Processor.\
-	<li> If you set up a Sonic Fence, carry the shards through the fence. Your body interfere with the Sonic Fence, allowing you to carry nacre shards through the fence. The same cannot be said for dragged or thrown crystals, which will get destroyed on contact. Do not throw money away.</ol> "
+	<li> Refine the shards. While Cosmic Nacre is valuable on its own, it's true value can only be used when refining it into Liquid nacre using an nacre Refinery, after which it can be further transformed into regular materials in the Liquid nacre Processor.\
+	<li> If you set up a Sonic Fence, carry the shards through the fence. Your body interfere with the Sonic Fence, allowing you to carry cosmic nacre shards through the fence. The same cannot be said for dragged or thrown crystals, which will get destroyed on contact. Do not throw money away.</ol> "
 	P.copy_overlays(list("paper_stamp-dots"), TRUE)
 	P.stamped &= STAMP_FACTION
 	src.contents += P

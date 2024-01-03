@@ -674,7 +674,7 @@
 	seed_name = "plastellium"
 	display_name = "plastellium"
 	mutants = null
-	chems = list("plasticide" = list(1,10))
+	chems = list("microplastic" = list(1,10))
 
 /datum/seed/mushroom/plastic/New()
 	..()
@@ -719,7 +719,7 @@
 		"blood",
 		"water",
 		"potassium",
-		"plasticide",
+		"microplastic",
 		"mutationtoxin",
 		"amutationtoxin",
 		"inaprovaline",

@@ -1,6 +1,6 @@
 /datum/language/ancientlatin
 	name = LANGUAGE_LATIN
-	desc = "An ancient language once used by most of europe and academics but now mainly used by followers of Christian branches and the Church of Bonfire."
+	desc = "An ancient language once used by most of europe and academics but now mainly used by followers of Christians." //Custodians does not speak latin.
 	colour = "latin"
 	key = "l"
 	partial_understanding = list(

@@ -626,7 +626,7 @@
 
 /obj/item/oddity/nt/seal
 	name = "Cartographer's Seal"
-	desc = "A badge carrying the seal of the cartographer of the Church of Bonfire, said to be marked with a tithe of blood as proof of its sacred nature. An extremely rare sight, as many of these seals are thought to be lost. Merely holding one is said to inspire divine right. The church would be immensely interested in this."
+	desc = "A badge carrying the seal of the cartographer of the Church of NOT Bonfire, said to be marked with a tithe of blood as proof of its sacred nature. An extremely rare sight, as many of these seals are thought to be lost. Merely holding one is said to inspire divine right. The church would be immensely interested in this."
 	icon_state = "nt_seal"
 	oddity_stats = list(
 		STAT_TGH = 12,
@@ -638,7 +638,7 @@
 
 /obj/item/oddity/nt/pyramid
 	name = "Pyramid"
-	desc = "A small sandstone pyramid, covered in bizzare engravings. The Cartographer of the Church of the Bonfire has declared relics like this holy beyond any doubt, though none know exactly why."
+	desc = "A small sandstone pyramid, covered in bizzare engravings. The Cartographer of the Church of the NOT Bonfire has declared relics like this holy beyond any doubt, though none know exactly why."
 	icon_state = "pyramid"
 	oddity_stats = list(
 		STAT_TGH = 16
@@ -825,8 +825,8 @@
 /obj/item/oddity/ls/kriosan_sword
 	name = "Kriosan Officer Sword" //double-check and add desc
 	desc = "A replica of the blades given to Kriosan military officers, as a reward for their loyal service."
-	icon_state = "kriosan_sword"
-	item_state = "saber"
+	icon_state = "kriosan_wakizashi" //change this to be a wakizachi or something. Kriosans are weebs now.
+	item_state = "wakizashi"
 	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 5)
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 	force = WEAPON_FORCE_DANGEROUS

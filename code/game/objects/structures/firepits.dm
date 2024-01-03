@@ -1,6 +1,6 @@
 /obj/structure/bonfire
 	name = "bonfire"
-	desc = "For grilling, broiling, charring, smoking, heating, roasting, toasting, simmering, searing, melting, and occasionally burning things."
+	desc = "For grilling, broiling, charring, smoking, heating, roasting, toasting, simmering, searing, melting, and occasionally burning things. Not related to the Custodians of Bonfire unless they are burning a living person.
 	icon = 'icons/obj/structures.dmi'
 	icon_state = "bonfire"
 	density = FALSE // We can go over it, needed to buckle people to it.

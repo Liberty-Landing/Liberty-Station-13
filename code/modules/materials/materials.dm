@@ -949,9 +949,9 @@ var/list/name_to_material
 	sheet_singular_name = "crystal"
 	sheet_plural_name = "crystals"
 
-/material/nacre
-	name = MATERIAL_nNA
-	stack_type = /obj/item/stack/material/nacre
+/material/ameridian
+	name = MATERIAL_AMERIDIAN
+	stack_type = /obj/item/stack/material/ameridian
 	icon_colour = "#007A00"
 	sheet_singular_name = "shard"
 	sheet_plural_name = "shards"

@@ -223,17 +223,17 @@
 	default_description = /datum/organ_description/head
 
 // Custodians of the Bonfire - Full Body
-/obj/item/organ/external/robotic/church
+/obj/item/organ/external/robotic/custodian //remove church
 	name = "\"Emberblaze\""
-	desc = "Gold and black prosthetics designed by the Church of the Bonfire."
-	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
-	model = "church"
-	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 30)
+	desc = "Knightly, silvery-metal prosthetics designed by the Forgemasters of Custodians of Bonfire."
+	force_icon = 'icons/mob/human_races/cyberlimbs/emberblaze.dmi'
+	model = "emberblaze"
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 5, MATERIAL_CARBON_FIBER = 30)
 	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 	max_damage = 60
 	min_broken_damage = 40
 	min_malfunction_damage = 30
-	price_tag = 400
+	price_tag = 800
 
 /obj/item/organ/external/robotic/church/l_arm
 	default_description = /datum/organ_description/arm/left

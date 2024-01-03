@@ -30,7 +30,7 @@ var/global/list/cached_icons = list()
 			name = paint_type + " " + name
 		..()
 		reagents.add_reagent("water", volume*3/5)
-		reagents.add_reagent("plasticide", volume/5)
+		reagents.add_reagent("microplastic", volume/5)
 		if(paint_type == "white") //why don't white crayons exist
 			reagents.add_reagent("aluminum", volume/5)
 		else if (paint_type == "black")

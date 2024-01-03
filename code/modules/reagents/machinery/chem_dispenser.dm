@@ -435,7 +435,7 @@
 	)
 
 	level1 = list("oil", "cryptobiolin", "sterilizine")
-	level2 = list("foaming_agent", "plasticide", "instant_ice")
+	level2 = list("foaming_agent", "microplastic", "instant_ice")
 	level3 = list("pacid") //Now it has chems for what it's supposed to do, and worth upgrading past Picos
 
 	hacked_reagents = list("cleaner","surfactant","silicate","coolant") //So we have a reason to keep you

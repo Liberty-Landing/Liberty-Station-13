@@ -27,9 +27,9 @@
 
 
 /obj/item/grenade/heatwave/nt
-	name = "NT HG \"Inferno\""
+	name = "Circhosian HG \"Inferno\""
 	desc = "A military-grade offensive heatwave grenade. \
-			There\'s an inscription along the bands. \'Fear the Fire whose fuel is men and aluminium,- which is prepared for those who reject Faith.\'"
+			There\'s an inscription along the bands. \'Fear the Fire whose fuel is men and iron,- which is prepared for those who reject Faith.\'"
 	icon_state = "heatwave_nt"
 	item_state = "fraggrenade_nt"
 	heavy_range = 2

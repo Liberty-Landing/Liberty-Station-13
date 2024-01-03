@@ -775,7 +775,7 @@ No more of that.
 	attack_verb = list("liquidates", "divests", "outsources", "lays off", "downsizes")
 	hitsound = 'sound/weapons/ring.ogg'
 	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 4)
-	preloaded_reagents = list("plasticide" = 20, "copper" = 6, "silicon" = 10)
+	preloaded_reagents = list("microplastic" = 20, "copper" = 6, "silicon" = 10)
 	var/unlocks_left = 1
 	var/credits_to_fund = 0
 	var/favours_to_call = 0

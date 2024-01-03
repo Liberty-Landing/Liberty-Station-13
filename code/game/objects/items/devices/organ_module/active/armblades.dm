@@ -55,12 +55,12 @@
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
 	holding_type = /obj/item/tool/fireaxe/militia_tomahawk
 
-/obj/item/organ_module/active/simple/armblade/longsword
-	name = "Embedded Longsword"
-	desc = "A longsword designed to be inserted into an arm. You can't expect God to do all the work."
-	verb_name = "Deploy longsword"
-	icon_state = "nt_longsword"
-	matter = list(MATERIAL_BIOMATTER = 25, MATERIAL_ALUMINIUM = 5)
+/obj/item/organ_module/active/simple/armblade/custodianblade
+	name = "Embedded Blade"
+	desc = "A blade made out of nano machines that stays hidden underneath the muscle fibers, it is released at the person's will. You can't expect the old philosophers to do all the quoting when you can bleed someone instead."
+	verb_name = "Deploy Custodian Blade"
+	icon_state = "horseaxe"
+	matter = list(MATERIAL_CARBON_FIBER = 25, MATERIAL_INDSTEEL = 15)
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
 	holding_type = /obj/item/tool/sword/custodian/horseaxe
 

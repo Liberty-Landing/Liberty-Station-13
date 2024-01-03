@@ -517,7 +517,7 @@
 //Peace thru a iron fist~
 /datum/chemical_reaction/slime/slaughto
 	result = null
-	required_reagents = list("plasticide" = 5)
+	required_reagents = list("microplastic" = 5)
 	result_amount = 1
 	required = /obj/item/slime_extract/lightpink
 	mix_message = "The slime extract begins to twist and bend!"

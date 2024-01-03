@@ -193,7 +193,7 @@
 	..(loc, MATERIAL_LBGLASS)
 
 /obj/item/material/shard/nacre
-	name = "nacre"
+	name = "cosmic nacre"
 
 /obj/item/material/shard/nacre/New(loc)
 	..(loc, MATERIAL_NACRE)

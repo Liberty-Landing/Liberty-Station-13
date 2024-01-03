@@ -530,7 +530,7 @@ obj/structure/cable/proc/cableColor(var/colorC)
 	item_state = "coil"
 	attack_verb = list("whipped", "lashed", "disciplined", "flogged")
 	stacktype = /obj/item/stack/cable_coil
-	preloaded_reagents = list("copper" = 12, "plasticide" = 6) //Normal is 8 copper 2 plastic
+	preloaded_reagents = list("copper" = 12, "microplastic" = 6) //Normal is 8 copper 2 plastic
 
 /obj/item/stack/cable_coil/cyborg
 	name = "cable coil synthesizer"

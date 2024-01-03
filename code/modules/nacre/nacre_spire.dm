@@ -1,7 +1,9 @@
 // Nacre Spire, an indestructible building that constantly refill missing nacre around it.
 /obj/structure/nacre_crystal/spire
-	name = "nacre spire"
-	desc = "A strange crystal formation that seems to have grown from a rarer crystal core."
+	name = "Coralite Cluster"
+	desc = "A formation that resembles a cluster of corals, the sight of convergent evolution. \
+	Found solely in the cosmic frontier where radiation is the highest, coralites has spread far and wide on many planets. \
+	It colonises worlds and spreads wide, filtering nutriments out of atmospheres and the soil. It is a source of Healing Nacar."
 	icon_state = "nacre_crystal_purple"
 	anchored = TRUE
 	density = TRUE

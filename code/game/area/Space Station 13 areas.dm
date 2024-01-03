@@ -901,7 +901,7 @@ area/space/atmosalert()
 /area/crystal_field/Entered(atom/movable/Obj, atom/newloc)
 	if(istype(Obj, /mob/living) && !istype(Obj, /mob/living/carbon/superior_animal/nacre_golem)) // If a mob enter the area, start processing, except if it is a golem
 		start_crystal_processing()
-		//to_chat(usr, "The crystals seems to wake up") // TODO, better sentence and have it only be visible to psions -R4d6
+		//to_chat(usr, "The crystals seems to wake up") // TODO, better sentence and have it only be visible to psions -R4d6 // Never going to happen. Not here, not ever. -Monochrome
 
 /area/crystal_field/Exited(atom/movable/Obj, atom/newloc)
 	if(!check_contents()) // If we don't have any mobs inside the area, stop processing the crystals

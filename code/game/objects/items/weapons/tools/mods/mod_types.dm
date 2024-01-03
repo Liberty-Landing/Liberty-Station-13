@@ -13,7 +13,7 @@
 
 	price_tag = 120
 	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
+	preloaded_reagents = list("iron" = 15, "microplastic" = 5)
 
 //list/tool_upgrades, list/required_qualities, list/negative_qualities, prefix, req_fuel, req_cell
 
@@ -34,7 +34,7 @@
 	desc = "An array of indsteel fins which dissipates heat, reducing damage and extending the lifespan of power tools or improving energy weapon cooling."
 	icon_state = "heatsink"
 	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
+	preloaded_reagents = list("iron" = 15, "microplastic" = 5)
 
 /obj/item/tool_upgrade/reinforcement/heatsink/New()
 	..()
@@ -98,7 +98,7 @@
 	desc = "A plasmablock is way more efficient to dissipate heat than classic heatsinks or waterblocks thanks to the tremendous heat-transfer capacity of liquid plasma. The fluid that is actively pumped through a radiator and cooled by fans. It greatly extends the lifespan of power tools or heat dissipation of energy weapons."
 	icon_state = "plasmablock"
 	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 2, MATERIAL_HYDROGENC = 1)
-	preloaded_reagents = list("iron" = 15, "plasticide" = 5, "plasma" = 3)
+	preloaded_reagents = list("iron" = 15, "microplastic" = 5, "plasma" = 3)
 
 /obj/item/tool_upgrade/reinforcement/plasmablock/New()
 	..()
@@ -141,7 +141,7 @@
 	desc = "A replacement grip for a tool which allows it to be more precisely controlled with one hand. Can be placed under a gun's barrel to reduce recoil. However, it also makes bracing impossible."
 	icon_state = "ergonomic"
 	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 5)
-	preloaded_reagents = list("aluminum" = 9, "plasticide" = 3)
+	preloaded_reagents = list("aluminum" = 9, "microplastic" = 3)
 	price_tag = 120
 
 /obj/item/tool_upgrade/productivity/ergonomic_grip/New()
@@ -163,7 +163,7 @@
 	desc = "A mechanical upgrade for wrenches and screwdrivers which allows the tool to only turn in one direction."
 	icon_state = "ratchet"
 	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 4, MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
+	preloaded_reagents = list("iron" = 15, "microplastic" = 5)
 
 /obj/item/tool_upgrade/productivity/ratchet/New()
 	..()
@@ -254,7 +254,7 @@
 	desc = "A canister of pure, compressed oxygen with adapters for mounting onto a welding tool. Used alongside fuel, it allows for higher burn temperatures."
 	icon_state = "oxyjet"
 	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("iron" = 15, "plasticide" = 5)
+	preloaded_reagents = list("iron" = 15, "microplastic" = 5)
 	price_tag = 180
 
 /obj/item/tool_upgrade/productivity/oxyjet/New()
@@ -355,7 +355,7 @@
 			It can also be installed on energy weapons for laser combining with ionized plasma, granting an extra kick to your shots."
 	icon_state = "injector"
 	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 2, MATERIAL_HYDROGENC = 2)
-	preloaded_reagents = list("iron" = 15, "plasticide" = 5, "plasma" = 3)
+	preloaded_reagents = list("iron" = 15, "microplastic" = 5, "plasma" = 3)
 	price_tag = 280
 
 /obj/item/tool_upgrade/productivity/injector/New()
@@ -435,7 +435,7 @@
 			Helps improve precision. Can also be installed on firearms to assist with aiming."
 	icon_state = "laser_guide"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_URANIUM = 1)
-	preloaded_reagents = list("plasticide" = 3, "radium" = 5, "phosphorus" = 15)
+	preloaded_reagents = list("microplastic" = 3, "radium" = 5, "phosphorus" = 15)
 	price_tag = 90
 
 /obj/item/tool_upgrade/refinement/laserguide/New()
@@ -458,7 +458,7 @@
 			Can also be applied to guns to slightly help with recoil control."
 	icon_state = "stabilizing"
 	matter = list(MATERIAL_PLASTIC = 3)
-	preloaded_reagents = list("plasticide" = 5)
+	preloaded_reagents = list("microplastic" = 5)
 	price_tag = 30
 
 /obj/item/tool_upgrade/refinement/stabilized_grip/New()
@@ -525,7 +525,7 @@
 			It can also be attached to guns both energy and projectile to offer greater recoil control at the cost of stopping power."
 	icon_state = "compensatedbarrel"
 	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 1, MATERIAL_GOLD = 1)
-	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "iron" = 3)
+	preloaded_reagents = list("aluminum" = 15, "microplastic" = 5, "iron" = 3)
 	price_tag = 175
 
 /obj/item/tool_upgrade/refinement/compensatedbarrel/New()
@@ -582,7 +582,7 @@
 	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 1)
 	can_remove = FALSE // To fix exploit of fitting large cells on tools then taking out the mod while conserving a large cell.
 	price_tag = 115
-	preloaded_reagents = list("iron" = 8, "plasticide" = 5)
+	preloaded_reagents = list("iron" = 8, "microplastic" = 5)
 
 /obj/item/tool_upgrade/augment/cell_mount/New()
 	..()
@@ -602,7 +602,7 @@
 	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 1)
 	can_remove = FALSE // To fix exploit of fitting large cells on tools then taking out the mod while conserving a large cell.
 	price_tag = 115
-	preloaded_reagents = list("iron" = 8, "plasticide" = 5)
+	preloaded_reagents = list("iron" = 8, "microplastic" = 5)
 
 /obj/item/tool_upgrade/augment/cell_adapt/New()
 	..()
@@ -626,7 +626,7 @@
 	desc = "An auxiliary tank which stores 100 extra units of fuel at the cost of degradation."
 	icon_state = "canister"
 	matter = list(MATERIAL_INDSTEEL = 4, MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("aluminum" = 15, "plasticide" = 5, "plasma" = 3)
+	preloaded_reagents = list("aluminum" = 15, "microplastic" = 5, "plasma" = 3)
 	price_tag = 90
 
 /obj/item/tool_upgrade/augment/fuel_tank/New()
@@ -666,7 +666,7 @@
 	icon_state = "expand"
 	desc = "A bulky adapter which allows more modifications to be attached to the tool or gun. A bit fragile but you can compensate. Due to its complex design it cannot be removed once installed."
 	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("aluminum" = 9, "plasticide" = 5, "iron" = 9)
+	preloaded_reagents = list("aluminum" = 9, "microplastic" = 5, "iron" = 9)
 	can_remove = FALSE
 	price_tag = 125
 
@@ -770,7 +770,7 @@
 
 /obj/item/tool_upgrade/augment/crusader_seal
 	name = "righteous seal"
-	desc = "A runic seal that interfaces with a weapon in unclear ways, but which enhances its deadliness at the cost of heightened power drain. Often given as a reward to those who risk their safety in the name of the Bonfire."
+	desc = "A runic seal that interfaces with a weapon in unclear ways, but which enhances its deadliness at the cost of heightened power drain. Often given as a reward to those who risk their safety in the name of the Circhosian."
 	icon_state = "seal"
 	matter = list(MATERIAL_BIOMATTER = 3, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_GLASS = 1)
 	price_tag = 160

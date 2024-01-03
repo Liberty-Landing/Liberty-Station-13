@@ -22,7 +22,7 @@
 	force = WEAPON_FORCE_HARMLESS
 	price_tag = 400
 	matter = list(MATERIAL_BIOMATTER = 20)
-	preloaded_reagents = list("ethanol" = 10, "plasticide" = 5, "water" = 1)
+	preloaded_reagents = list("ethanol" = 10, "microplastic" = 5, "water" = 1)
 
 // Start of C-4 code.
 

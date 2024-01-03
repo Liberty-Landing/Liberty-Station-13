@@ -9,7 +9,7 @@
 	charge_per_use = 2
 
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1)
-	preloaded_reagents = list("mercury" = 15, "lithium" = 5, "plasticide" = 9)
+	preloaded_reagents = list("mercury" = 15, "lithium" = 5, "microplastic" = 9)
 	origin_tech = list(TECH_MAGNET = 1, TECH_BIO = 1)
 
 	var/mode = 1
@@ -107,7 +107,7 @@
 		. += SPAN_WARNING("Warning: Blood Level ERROR: --% --cl.</span> <span class='notice'>Type: ERROR")
 		. += span("highlight", "Subject's pulse: <font color='red'>-- bpm.</font>")
 		return
-	
+
 	var/mob/living/carbon/human/H = M
 
 	var/fake_oxy = max(rand(1, 40), M.getOxyLoss(), (300 - (M.getFireLoss() + M.getBruteLoss())))

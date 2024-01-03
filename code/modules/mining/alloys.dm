@@ -12,7 +12,7 @@
 #define MATERIAL_BGLASS "borosilicate glass"
 #define MATERIAL_DILATANT "dilatant plate"
 #define MATERIAL_INDSTEEL "industrial steel"
-#define MATERIAL_COMPOSITE "industrial steel"
+#define MATERIAL_COMPOSITE "titanium-niobium composite"
 
 
 // Post Industrial Materials

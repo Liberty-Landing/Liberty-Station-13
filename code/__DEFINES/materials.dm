@@ -53,7 +53,7 @@
 /*
 #define MATERIAL_PLASTEEL "plasteel"
 #define MATERIAL_PLASMA "plasma" //plasma here is just high-temp hydrogen
-#define MATERIAL_NACRE "nacre"
+#define MATERIAL_AMERIDIAN "nacre"
 #define MATERIAL_PLATINUM "platinum"
 #define MATERIAL_MHYDROGEN "mhydrogen"
 #define MATERIAL_OSMIUM "osmium"

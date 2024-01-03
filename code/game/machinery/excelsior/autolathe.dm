@@ -1,6 +1,6 @@
 /obj/machinery/autolathe/excelsior
 	name = "astrakhan autolathe"
-	desc = "It produces items using metal and glass."
+	desc = "It produces items using metals and glass."
 	icon = 'icons/obj/machines/excelsior/autolathe.dmi'
 	icon_state = "stanok"
 	circuit = /obj/item/circuitboard/excelsiorautolathe

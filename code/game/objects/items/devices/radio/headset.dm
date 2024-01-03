@@ -5,7 +5,7 @@
 	icon_state = "headset"
 	item_state = "headset"
 	matter = list(MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("silicon" = 15, "plasticide" = 9)
+	preloaded_reagents = list("silicon" = 15, "microplastic" = 9)
 	subspace_transmission = 1
 	canhear_range = 0 // can't hear headsets from very far away
 	multi_z_capable = FALSE
@@ -274,7 +274,7 @@
 
 /obj/item/device/radio/headset/bonfire
 	name = "bonfire custodian headset"
-	desc = "For comunication within the chapter through long distances."
+	desc = "For comunication within the military chapter through long distances."
 	icon_state = "nt_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_bonfire

@@ -510,7 +510,7 @@ var/global/chicken_count = 0
 				egg_type = /obj/item/stack/material/hydrogenc
 			if(MATERIAL_URANIUM)
 				egg_type = /obj/item/stack/material/uranium
-			if("plasticide")
+			if("microplastic")
 				egg_type = /obj/item/stack/material/plastic
 			if("woodpulp")
 				egg_type = /obj/item/stack/material/wood

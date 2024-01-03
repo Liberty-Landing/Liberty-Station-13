@@ -423,7 +423,7 @@
 
 /datum/chemical_reaction/hexogen
 	result = null
-	required_reagents = list("ethanol" = 10, "plasticide" = 0.5, "water" = 0.1)
+	required_reagents = list("ethanol" = 10, "microplastic" = 0.5, "water" = 0.1)
 	result_amount = 1
 	mix_message = "The solution solidifies into a malleable block."
 
@@ -443,7 +443,7 @@
 
 /datum/chemical_reaction/plastication
 	result = null
-	required_reagents = list("pacid" = 1, "plasticide" = 2)
+	required_reagents = list("pacid" = 1, "microplastic" = 2)
 	result_amount = 1
 	mix_message = "The solution coalesces into solid sheets of plastic!"
 
@@ -902,8 +902,8 @@
 	maximum_temperature = INFINITY
 	minimum_temperature = 480
 
-/datum/chemical_reaction/plasticide
-	result = "plasticide"
+/datum/chemical_reaction/microplastic
+	result = "microplastic"
 	required_reagents = list("oil" = 1, "ethanol" = 1, "silicon" = 1)
 	result_amount = 3
 	maximum_temperature = 270
@@ -916,7 +916,7 @@
 
 /datum/chemical_reaction/glue
 	result = "glue"
-	required_reagents = list("plasticide" = 1, "ethanol" = 1, "carbon" = 1)
+	required_reagents = list("microplastic" = 1, "ethanol" = 1, "carbon" = 1)
 	result_amount = 3
 	maximum_temperature = INFINITY
 	minimum_temperature = 363
