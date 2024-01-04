@@ -235,25 +235,25 @@
 	min_malfunction_damage = 30
 	price_tag = 800
 
-/obj/item/organ/external/robotic/church/l_arm
+/obj/item/organ/external/robotic/custodian/l_arm
 	default_description = /datum/organ_description/arm/left
 
-/obj/item/organ/external/robotic/church/r_arm
+/obj/item/organ/external/robotic/custodian/r_arm
 	default_description = /datum/organ_description/arm/right
 
-/obj/item/organ/external/robotic/church/l_leg
+/obj/item/organ/external/robotic/custodian/l_leg
 	default_description = /datum/organ_description/leg/left
 
-/obj/item/organ/external/robotic/church/r_leg
+/obj/item/organ/external/robotic/custodian/r_leg
 	default_description = /datum/organ_description/leg/right
 
-/obj/item/organ/external/robotic/church/groin
+/obj/item/organ/external/robotic/custodian/groin
 	default_description = /datum/organ_description/groin
 
-/obj/item/organ/external/robotic/church/chest
+/obj/item/organ/external/robotic/custodian/chest
 	default_description = /datum/organ_description/chest
 
-/obj/item/organ/external/robotic/church/head
+/obj/item/organ/external/robotic/custodian/head
 	default_description = /datum/organ_description/head
 
 /////////////////////////

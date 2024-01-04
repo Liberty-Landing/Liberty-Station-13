@@ -15,6 +15,7 @@
 #define MATERIAL_MARBLE "marble"
 #define MATERIAL_TITANIUM "titanium"
 #define MATERIAL_SANDSTONE "sandstone"
+#define MATERIAL_BRIQUETTE "briquette"
 #define MATERIAL_WOOD "wood"
 #define MATERIAL_XENOCHITIN "chitin"
 #define MATERIAL_VOXALLOY "voxalloy"

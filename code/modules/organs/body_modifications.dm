@@ -218,11 +218,11 @@ var/global/list/modifications_types = list(
 	icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	department_specific = list(DEPARTMENT_SCIENCE)
 
-/datum/body_modification/limb/prosthesis/church
+/datum/body_modification/limb/prosthesis/custodian
 	id = "prosthesis_church"
-	replace_limb = /obj/item/organ/external/robotic/church
+	replace_limb = /obj/item/organ/external/robotic/custodian
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-	icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
+	icon = 'icons/mob/human_races/cyberlimbs/emberblaze.dmi'
 	department_specific = list(DEPARTMENT_CHURCH)
 
 /datum/body_modification/limb/mutation/New()

@@ -615,11 +615,11 @@
 	novariants = TRUE
 	price_tag = 6  
 	
-/obj/item/stack/material/copperrandom
+/obj/item/stack/material/copper/random
 	rand_min = 1
 	rand_max = 10
 
-/obj/item/stack/material/copperfull
+/obj/item/stack/material/copper/full
 	amount = 120
 
 /obj/item/stack/material/titanium

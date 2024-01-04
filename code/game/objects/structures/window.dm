@@ -581,7 +581,7 @@
 	maxHealth = 150
 	resistance = RESISTANCE_AVERAGE
 
-/obj/structure/window/mendsilicate/full
+/obj/structure/window/mendsilicatebasic/full
 	dir = SOUTH|EAST
 	icon = 'icons/obj/structures/windows.dmi'
 	icon_state = "mendwindow_mask"
@@ -625,7 +625,7 @@
 	basestate = "rpwindow"
 	icon_state = "rpwindow"
 	shardtype = /obj/item/material/shard/mend
-	glasstype = /obj/item/stack/material/mendsilicate/reinforced
+	glasstype = /obj/item/stack/material/glass/laminated
 	maximal_heat = T0C + 99453 // Safe use temperature at 100,000 kelvin. I think?
 	damage_per_fire_tick = 1.5
 	maxHealth = 200
