@@ -34,7 +34,7 @@
 
 /obj/machinery/autolathe/rnd/protolathe
 	name = "protolathe"
-	desc = "A machine used for construction of advanced prototypes. Operated from an R\&D console."
+	desc = "A advanced autolathe machine with nanotechnology used for construction of advanced prototypes. Operated from an R\&D console."
 	icon_state = "protolathe"
 	circuit = /obj/item/circuitboard/protolathe
 	unsuitable_materials = list() //So we can use biomatter and others
@@ -45,7 +45,7 @@
 
 /obj/machinery/autolathe/rnd/imprinter
 	name = "circuit imprinter"
-	desc = "A machine used for printing advanced circuit boards. Operated from an R\&D console."
+	desc = "A machine used for printing advanced circuit boards, in other words, this machine makes rock dust think about yes or no by using acid. Operated from an R\&D console."
 	icon_state = "imprinter"
 	circuit = /obj/item/circuitboard/circuit_imprinter
 	max_efficiency = 0.2

@@ -922,3 +922,19 @@
 	new /obj/item/clothing/suit/armor/custodian/forgemaster(src)
 	new /obj/item/clothing/head/helmet/custodian/forgemaster(src)
 
+/obj/item/storage/box/emberblaze_set
+	name = "reinforced emberblaze limbs"
+	desc = "A box containing many mechanical limbs from the armored Emberblaze Synthetic Limbs."
+	illustration = null
+
+/obj/item/storage/box/emberblaze_set/New()
+	. = ..()
+
+/obj/item/storage/box/emberblaze_set/populate_contents()
+	new /obj/item/organ/external/robotic/custodian/l_arm(src)
+	new /obj/item/organ/external/robotic/custodian/r_arm(src)
+	new /obj/item/organ/external/robotic/custodian/l_leg(src)
+	new /obj/item/organ/external/robotic/custodian/r_leg(src)
+	new /obj/item/organ/external/robotic/custodian/groin(src)
+	new /obj/item/organ/external/robotic/custodian/chest(src)
+	new /obj/item/organ/external/robotic/custodian/head(src)

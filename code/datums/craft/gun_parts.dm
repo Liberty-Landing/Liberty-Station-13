@@ -361,25 +361,25 @@ Make it so aluminium parts fit into any gun you want but can 'break', or cause j
 /obj/item/part/gun/mechanism/pistol/aluminium
 	name = "cheap pistol mechanism"
 	desc = "All the bits that makes the bullet go bang, all in a small, convenient frame. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 3)
 
 /obj/item/part/gun/mechanism/revolver/aluminium
 	name = "cheap revolver mechanism"
 	desc = "All the bits that makes the bullet go bang, rolling round and round. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 3)
 
 /obj/item/part/gun/mechanism/shotgun/aluminium
 	name = "cheap shotgun mechanism"
 	desc = "All the bits that makes the bullet go bang, perfect for long shells.  \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 3)
 
 /obj/item/part/gun/mechanism/smg/aluminium
 	name = "cheap SMG mechanism"
 	desc = "All the bits that makes the bullet go bang, in a speedy package. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 3)
 
 /obj/item/part/gun/mechanism/boltgun // fits better in this category despite not being a aluminium variant
@@ -392,7 +392,7 @@ Make it so aluminium parts fit into any gun you want but can 'break', or cause j
 /obj/item/part/gun/mechanism/autorifle/aluminium
 	name = "cheap self-loading mechanism"
 	desc = "All the bits that makes the bullet go bang, for all the military hardware you know and love. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 10)
 
 //Barrels
@@ -466,35 +466,35 @@ Make it so aluminium parts fit into any gun you want but can 'break', or cause j
 /obj/item/part/gun/barrel/pistol/aluminium
 	name = "cheap 9mm barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 9mm. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 2)
 
 /obj/item/part/gun/barrel/magnum/aluminium
 	name = "cheap 10mm barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 10mm. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 2)
 
 /obj/item/part/gun/barrel/srifle/aluminium
 	name = "cheap 6.5mm barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 6.5mm carbine. \
-			 This one does not look as high quality."
+			 This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 5)
 
 /obj/item/part/gun/barrel/clrifle/aluminium
 	name = "cheap caseless barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 7mm caseless. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 5)
 
 /obj/item/part/gun/barrel/lrifle/aluminium
 	name = "cheap 7.62 barrel"
 	desc = "A gun barrel, which keeps the bullet going in the right direction. Chambered for 7.62mm rifle. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 5)
 
 /obj/item/part/gun/barrel/shotgun/aluminium
 	name = "cheap shotgun barrel"
 	desc = "A gun barrel, which keeps the bullet (or bullets) going in the right direction. Chambered for 20mm cartridges. \
-			This one does not look as high quality."
+			This one was likely printed from an autolathe, made from a soft, cheap metal."
 	matter = list(MATERIAL_ALUMINIUM = 2)

@@ -225,10 +225,10 @@
 // Custodians of the Bonfire - Full Body
 /obj/item/organ/external/robotic/custodian //remove church
 	name = "\"Emberblaze\""
-	desc = "Knightly, silvery-metal prosthetics designed by the Forgemasters of Custodians of Bonfire."
+	desc = "Knightly, silvery-metal prosthetics designed by the Forgemasters of Custodians of Bonfire. Related to the Emberblaze Warhammer."
 	force_icon = 'icons/mob/human_races/cyberlimbs/emberblaze.dmi'
 	model = "emberblaze"
-	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 5, MATERIAL_CARBON_FIBER = 30)
+	matter = list(MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 2, MATERIAL_CARBON_FIBER = 1, MATERIAL_ALUMINIUM = 1)
 	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 	max_damage = 60
 	min_broken_damage = 40
@@ -266,7 +266,7 @@
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"
-	armor_list = list(melee = 65, bullet = 65, energy = 65, bomb = 65, bio = 0, rad = 100)
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 100) //decreased the protection from 65 to 40, it is still the best option of robotlimbs nonetheless.
 	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 4, MATERIAL_TITANIUM = 2)
 	max_damage = 70
 	min_broken_damage = 50

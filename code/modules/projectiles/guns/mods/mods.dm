@@ -75,7 +75,7 @@
 //Decreases fire delay. Acquired through loot spawns or guild crafting
 /obj/item/gun_upgrade/barrel/forged
 	name = "Forged barrel"
-	desc = "Despite advancements in 3D printing, a properly reinforced indsteel barrel can still outperform anything that comes from an autolathe."
+	desc = "Despite advancements in 3D printing, a customized small-batch production of reinforced steel barrel using steel adjustments outperforms in quality the mass-produced barrels made by autolathes." //Dehumanize yourself, jaeggy
 	icon_state = "Forged_barrel"
 	price_tag = 120
 
