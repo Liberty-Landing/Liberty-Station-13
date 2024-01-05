@@ -756,3 +756,53 @@
 	desc = "A saber of acceptable quality, mass-produced by Skylight. Probably not fit for parrying, but why not give it a try?"
 	icon_state = "cheap_saber"
 	item_state = "cutlass"
+
+/obj/item/tool/totem
+	name = "frostwalker totem"
+	desc = "A absurdly large Frostwalker totem. Used mainly to meditate, it is used as a weapon just as well. This is not made of wood, this is made of LOG"
+	icon = 'icons/obj/weapon.dmi'
+	icon_state = "totem"
+	item_state = "totem"
+	matter = list(MATERIAL_WOOD = 30, MATERIAL_DURALUMIN = 5)
+	force = WEAPON_FORCE_ROBUST
+	throwforce = WEAPON_FORCE_ROBUST
+	w_class = ITEM_SIZE_HUGE
+	origin_tech = list(TECH_COMBAT = 2)
+	attack_verb = list("beaten", "slammed", "smacked", "struck", "battered")
+	structure_damage_factor = STRUCTURE_DAMAGE_HEAVY
+	max_upgrades = 4
+	tool_qualities = list(QUALITY_HAMMERING = 10)
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 2
+
+/obj/item/tool/sword/macuahuitl
+	name = "Macuahuitl"
+	desc = "The most used blade of the Frostwalker tribals, containing obsidian stone edges to cut down the enemy, and have the shards easily replaced."
+	icon = 'icons/obj/weapons-blades.dmi'
+	icon_state = "macua"
+	item_state = "macua"
+	matter = list(MATERIAL_WOOD = 25, MATERIAL_DURALUMIN = 10)
+	tool_qualities = list(QUALITY_CUTTING = 10,  QUALITY_SAWING = 20) //So we can cut down trees
+	force = WEAPON_FORCE_DANGEROUS + 2
+	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
+	w_class = ITEM_SIZE_NORMAL
+	price_tag = 170
+
+/obj/item/tool/sword/rungu
+	name = "rungu throwing club"
+	desc = "A long, narrow shaft with a heavy ball at the end, a throwing cudgel that can easily break bones. Used for hunting."
+	icon = 'icons/obj/weapons-blades.dmi'
+	icon_state = "rungu"
+	item_state = "rungu"
+	matter = list(MATERIAL_WOOD = 15)
+	force = WEAPON_FORCE_PAINFUL
+	throwforce = WEAPON_FORCE_ROBUST
+	throw_speed = 3
+	w_class = ITEM_SIZE_NORMAL
+	origin_tech = list(TECH_COMBAT = 2)
+	attack_verb = list("beaten", "slammed", "smacked", "struck", "battered")
+	structure_damage_factor = STRUCTURE_DAMAGE_BLUNT
+	max_upgrades = 3
+	tool_qualities = list(QUALITY_HAMMERING = 10)
+	effective_faction = list("spider") // Spiders are weak to crushing.
+	damage_mult = 2
