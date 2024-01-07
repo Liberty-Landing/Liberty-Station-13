@@ -368,6 +368,10 @@
 	beakers += B1
 	beakers += B2
 
+/obj/item/grenade/chem_grenade/teargas/nt
+	name = "Bonfire TGG \"Red Mist\""
+	desc = "Concentrated Capsaicin teargas grenade. Contents under pressure. Use with caution."
+
 #undef EMPTY
 #undef WIRED
 #undef READY

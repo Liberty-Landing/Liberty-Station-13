@@ -149,7 +149,7 @@
 	M.update_icons()
 
 /obj/item/grenade/flashbang/nt
-	name = "NT FBG \"Holy Light\""
+	name = "Bonfire FBG \"Holy Light\""
 	desc = "An \"Cult\" branded flashbang grenade, to spread the light of Crustor and Petaline"
 	icon_state = "flashbang_nt"
 	item_state = "flashbang_nt"

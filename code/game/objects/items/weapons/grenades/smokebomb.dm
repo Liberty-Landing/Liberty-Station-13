@@ -38,7 +38,7 @@
 	return
 
 /obj/item/grenade/smokebomb/nt
-	name = "NT smoke grenade \"Holy Fog\""
+	name = "Bonfire smoke grenade \"Holy Fog\""
 	desc = "Smoke grenade, used to create a cloud of smoke providing cover and hiding movement."
 	icon_state = "smokegrenade_nt"
 	item_state = "smokegrenade_nt"

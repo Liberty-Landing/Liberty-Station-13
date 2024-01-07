@@ -108,161 +108,23 @@
 	name = "Cannoneer bombardement Prototype" //"RANDOM SH!T GOOOOO!"
 	phrase = "Oxidate Lecture: Cannoneer bombardement"
 	desc = "The true essence of the Grenadier Knight in form of lecture, unstability beyond redemption. This power manifests pressured radiance with random portions of chemicals acquired from the body and air, which will react like no different of a grenade - beyond being literally any grenade at random, without having the right to choose. \
-	However, this lecture still is an useless prototype that does nothing. Avoid using it."
+	However, this lecture still is a prototype."
 	power = 70
-
-	//still making. Make it a RnG grenade that pops anything at random.
+	var/list/spawn_list = list(/obj/item/grenade/spawnergrenade/manhacks/radiance,
+	/obj/item/grenade/smokebomb/nt,
+	/obj/item/grenade/empgrenade/low_yield/nt,
+	/obj/item/grenade/flashbang/nt,
+	/obj/item/grenade/frag/nt,
+	/obj/item/grenade/heatwave/nt,
+	/obj/item/grenade/explosive/nt,
+	/obj/item/grenade/chem_grenade/teargas/nt,
+	/obj/item/grenade/chem_grenade/cleaner/nt_cleaner)
 
 /datum/lecture/hearthcore/grenadier/grenadiercurse/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	var/grenadier_rng_nade = new /obj/item/grenade/grenadier
+	var/chosen_one = pick(spawn_list)
+	var/grenadier_rng_nade = new chosen_one
 	if(lecturer.equip_to_slot_if_possible(grenadier_rng_nade, lecturer.get_active_hand()))
 		return TRUE
 	to_chat(lecturer, "<span class='info'>You need your active hand to be free!.</span>")
 	qdel(grenadier_rng_nade)
 	return FALSE
-
-//explosive object hehe
-/obj/item/grenade/grenadier
-	desc = "It is set to detonate in 5 seconds. It will unleash unleash an unspecified anomaly into the vicinity."
-	name = "delivery grenade"
-	icon = 'icons/obj/grenade.dmi'
-	icon_state = "delivery"
-	item_state = "flashbang"
-	var/banglet = 0
-	var/spawner_type = null // must be an object path
-	var/deliveryamt = 1 // amount of type to deliver
-	var/will_flash = TRUE
-/*
-/obj/item/grenade/spawnergrenade/prime()
-	var/random_effect =  rand(1,7)    // Prime now just handles the two loops that query for people in lockers and people who can see it.
-	if(spawner_type && deliveryamt)
-		// Make a quick flash
-		var/turf/T = get_turf(src)
-		playsound(T, 'sound/effects/phasein.ogg', 100, 1)
-		for(var/mob/living/carbon/human/M in viewers(T, null))
-			if(M.eyecheck() < FLASH_PROTECTION_MINOR && will_flash == TRUE)
-				M.flash(0, FALSE , FALSE , FALSE , 0)
-
-		for(var/i=1, i<=deliveryamt, i++)
-			var/atom/movable/x = new spawner_type
-			switch(random_effect)
-				if(1)
-					/obj/item/grenade/heatwave/prime()
-						set waitfor = 0
-						..()
-						var/turf/O = get_turf(src)
-						if(!O) return
-						on_explosion(O)
-						qdel(src)
-
-					/obj/item/grenade/heatwave/proc/on_explosion(var/turf/O)
-						heatwave(O, heavy_range, weak_range, heat_damage, fire_stacks, penetration)
-				if(2)
-					/obj/item/grenade/frag/prime()
-						set waitfor = 0
-						..()
-						var/turf/O = get_turf(src)
-						if(!O) return
-						if(num_fragments)
-							var/lying = FALSE
-							if(isturf(src.loc))
-								for(var/mob/living/M in O)
-									//lying on a frag grenade while the grenade is on the ground causes you to absorb most of the shrapnel.
-									//you will most likely be dead, but others nearby will be spared the fragments that hit you instead.
-									if(M.lying)
-										lying = TRUE
-							if(!lying)
-								fragment_explosion(O, spread_range, fragment_type, num_fragments, fragment_damage, damage_step)
-							else
-								fragment_explosion(O, 0, fragment_type, num_fragments, fragment_damage, damage_step)
-						qdel(src)
-
-				if(3)
-					/obj/item/grenade/chem_grenade/incendiary/Initialize()
-						. = ..()
-						var/obj/item/reagent_containers/glass/beaker/B1 = new(src)
-						var/obj/item/reagent_containers/glass/beaker/B2 = new(src)
-
-						B1.reagents.add_reagent("aluminum", 15)
-						B1.reagents.add_reagent("fuel",20)
-						B2.reagents.add_reagent("plasma", 15)
-						B2.reagents.add_reagent("sacid", 15)
-						B1.reagents.add_reagent("fuel",20)
-
-						detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
-
-						beakers += B1
-						beakers += B2
-				if(4) //cleaner
-					/obj/item/grenade/chem_grenade/cleaner/Initialize()
-						. = ..()
-						var/obj/item/reagent_containers/glass/beaker/B1 = new(src)
-						var/obj/item/reagent_containers/glass/beaker/B2 = new(src)
-
-						B1.reagents.add_reagent("surfactant", 40)
-						B2.reagents.add_reagent("water", 40)
-						B2.reagents.add_reagent("cleaner", 10)
-
-						detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
-
-						beakers += B1
-						beakers += B2
-					if(5) //teargas
-						/obj/item/grenade/chem_grenade/teargas/Initialize()
-							. = ..()
-							var/obj/item/reagent_containers/glass/beaker/large/B1 = new(src)
-							var/obj/item/reagent_containers/glass/beaker/large/B2 = new(src)
-
-							B1.reagents.add_reagent("phosphorus", 40)
-							B1.reagents.add_reagent("potassium", 40)
-							B1.reagents.add_reagent("condensedcapsaicin", 40)
-							B2.reagents.add_reagent("sugar", 40)
-							B2.reagents.add_reagent("condensedcapsaicin", 80)
-
-							detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
-
-							beakers += B1
-							beakers += B2
-					if(6) //antiweed
-						/obj/item/grenade/chem_grenade/antiweed/Initialize()
-							. = ..()
-							var/obj/item/reagent_containers/glass/beaker/B1 = new(src)
-							var/obj/item/reagent_containers/glass/beaker/B2 = new(src)
-
-							B1.reagents.add_reagent("surfactant", 40)
-							B2.reagents.add_reagent("water", 40)
-							B2.reagents.add_reagent("plantbgone", 10)
-
-							detonator = new/obj/item/device/assembly_holder/timer_igniter(src)
-
-							beakers += B1
-							beakers += B2
-							icon_state = "grenade"
-					if(7) //radiance funny
-						/obj/item/grenade/spawnergrenade/prime(/obj/item/grenade/spawnergrenade/manhacks/radiance)	// Prime now just handles the two loops that query for people in lockers and people who can see it.
-							if(spawner_type && deliveryamt)
-								// Make a quick flash
-								var/turf/T = get_turf(src)
-								playsound(T, 'sound/effects/phasein.ogg', 100, 1)
-								for(var/mob/living/carbon/human/M in viewers(T, null))
-									if(M.eyecheck() < FLASH_PROTECTION_MINOR && will_flash == TRUE)
-										M.flash(0, FALSE , FALSE , FALSE , 0)
-								for(var/i=1, i<=deliveryamt, i++)
-									var/atom/movable/x = new spawner_type
-									x.loc = T
-									if(prob(50))
-										for(var/j = 1, j <= rand(1, 3), j++)
-											step(x, pick(NORTH,SOUTH,EAST,WEST))
-									// spawn some hostile creatures
-							qdel(src)
-							return
-*/
-
-
-/*
-			x.loc = T
-				if(prob(50))
-					for(var/j = 1, j <= rand(1, 3), j++)
-					step(x, pick(NORTH,SOUTH,EAST,WEST))
-*/
-// Spawn some hostile syndicate critterss
