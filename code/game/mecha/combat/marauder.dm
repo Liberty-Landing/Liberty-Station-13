@@ -1,5 +1,5 @@
 /obj/mecha/combat/juggernaut
-	desc = "Heavy-duty, combat exosuit, developed after the Durand model. Rarely found among civilian populations."
+	desc = "Heavy-duty, combat exosuit, developed after the Durand model. It is still found among civilian populations albeit being a very uncommon sight."
 	name = "Juggernaut"
 	icon_state = "marauder"
 	initial_icon = "marauder"

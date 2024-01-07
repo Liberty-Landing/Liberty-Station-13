@@ -8,8 +8,8 @@
 
 
 /obj/machinery/autolathe
-	name = "autolathe"
-	desc = "It produces items using metal and glass."
+	name = "Dynamic 'Autolathe' Stereofab"
+	desc = "A non-industrial standard 3dprinter possessing high-precision machining with a hybrid system of Stereolithographic and CNC system due to real-time sensors. It cannot work with exotic material such as Biomatter, and struggles to use non-thermoplastic polymers such as Kevlar."
 	icon = 'icons/obj/machines/autolathe.dmi'
 	icon_state = "autolathe"
 	density = 1

@@ -30,8 +30,8 @@
 
 /obj/structure/nacre_crystal/spire/fake
 	spread_range = -1 //Invest 3 into me before a return
-	name = "artificial nacre spire growth"
-	desc = "An artificially constructed version of a sprite growth, made with a pure nacre core pulsing around tons of nacre shards."
+	name = "artificial nacre coralite growth"
+	desc = "An artificially constructed version of a sprite growth, made with a pure nacre core pulsing around tons of coralite polyps."
 	colour_type = "FAKE"
 	is_growing = FALSE
 
