@@ -17,7 +17,7 @@
 /datum/design/autolathe/tool/multitool/multitool_onestar
 	name = "Simulacrum Robotics multitool"
 	build_path = /obj/item/tool/multitool/advanced/onestar
-	materials = list(MATERIAL_INDSTEEL = 1, MATERIAL_TITANIUM = 2)
+	materials = list(MATERIAL_INDSTEEL = 1, MATERIAL_TITANIUMRTCRTC = 2)
 
 /datum/design/autolathe/tool/weldertool
 	name = "welding tool"
@@ -30,7 +30,7 @@
 /datum/design/autolathe/tool/weldertool_onestar
 	name = "Simulacrum Robotics welding tool"
 	build_path = /obj/item/tool/weldingtool/onestar
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/weldermask
 	name = "welding mask"
@@ -56,7 +56,7 @@
 /datum/design/autolathe/tool/combi_driver_onestar
 	name = "Simulacrum Robotics combination drill"
 	build_path = /obj/item/tool/screwdriver/combi_driver/onestar
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/wirecutters
 	name = "wire cutters"
@@ -69,7 +69,7 @@
 /datum/design/autolathe/tool/onestar_pliers
 	name = "Simulacrum Robotics pliers"
 	build_path = /obj/item/tool/wirecutters/onestar_pliers
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/ducttape
 	name = "roll of duct tape"
@@ -106,7 +106,7 @@
 /datum/design/autolathe/tool/hammer_onestar
 	name = "Simulacrum sledgehammer"
 	build_path = /obj/item/tool/hammer/powered_hammer/onestar_hammer
-	materials = list(MATERIAL_INDSTEEL = 6, MATERIAL_TITANIUM = 2)
+	materials = list(MATERIAL_INDSTEEL = 6, MATERIAL_TITANIUMRTC = 2)
 
 /datum/design/autolathe/tool/ironhammer
 	name = "Seinemetall Defense \"Ironhammer\" Breaching Hammer"
@@ -123,12 +123,12 @@
 /datum/design/autolathe/tool/jackhammer_onestar
 	name = "Simulacrum Robotics jackhammer"
 	build_path = /obj/item/tool/pickaxe/jackhammer/onestar
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/drill_onestar
 	name = "Simulacrum Robotics drill"
 	build_path = /obj/item/tool/pickaxe/drill/onestar
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/pickaxe_excavation
 	name = "excavation pick"
@@ -137,7 +137,7 @@
 /datum/design/autolathe/tool/pickaxe_onestar
 	name = "Simulacrum Robotics pickaxe"
 	build_path = /obj/item/tool/pickaxe/onestar
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/knife
 	name = "kitchen knife"
@@ -162,7 +162,7 @@
 /datum/design/autolathe/tool/onestar_shovel
 	name = "Simulacrum Robotics shovel"
 	build_path = /obj/item/tool/shovel/onestar_shovel
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/combat_shovel
 	name = "combat shovel"
@@ -195,7 +195,7 @@
 /datum/design/autolathe/tool/onestar_saw
 	name = "Simulacrum Robotics saw"
 	build_path = /obj/item/tool/saw/onestar_saw
-	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 3, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/circularsaw
 	name = "circular saw"
@@ -248,7 +248,7 @@
 /datum/design/autolathe/tool/omni_surgery_onestar
 	name = "Simulacrum Robotics medical multitool"
 	build_path = /obj/item/tool/medmultitool
-	materials = list(MATERIAL_INDSTEEL = 2, MATERIAL_TITANIUM = 1)
+	materials = list(MATERIAL_INDSTEEL = 2, MATERIAL_TITANIUMRTC = 1)
 
 /datum/design/autolathe/tool/bonegel
 	name = "bone gel"

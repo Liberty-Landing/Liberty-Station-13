@@ -267,7 +267,7 @@
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"
 	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 100) //decreased the protection from 65 to 40, it is still the best option of robotlimbs nonetheless.
-	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 4, MATERIAL_TITANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 4, MATERIAL_TITANIUMRTC = 2)
 	max_damage = 70
 	min_broken_damage = 50
 	price_tag = 1200

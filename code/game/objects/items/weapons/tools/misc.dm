@@ -53,7 +53,7 @@
 	name = "Simulacrum Robotics medical omnitool"
 	desc = "A compact Simulacrum Robotics medical omnitool. It has all surgery tools and takes a medium cell in its handle."
 	icon_state = "medmulti"
-	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 2, MATERIAL_TITANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 2, MATERIAL_TITANIUMRTC = 2)
 	flags = CONDUCT
 	origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 4)
 	tool_qualities = list(QUALITY_CLAMPING = 40, QUALITY_RETRACTING = 40, QUALITY_BONE_SETTING = 40, QUALITY_CAUTERIZING = 40, QUALITY_DRILLING = 35, QUALITY_CUTTING = 40, QUALITY_LASER_CUTTING = 40, QUALITY_WIRE_CUTTING = 20, QUALITY_BONE_FIXING = 50)

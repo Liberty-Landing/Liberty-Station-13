@@ -153,7 +153,7 @@
 	desc = "This upgrade is a powerful limiter removal that allows a Custodian to resucitate instantly after death. \
 			The massive strain on the Hearthcore, however, vaporizes the upgrade once used."
 	icon_state = "hearthcore_upgrade" // Placeholder.
-	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_BIO_SILK = 50, MATERIAL_CARBON_FIBER = 50, MATERIAL_TITANIUM = 10) // Rare and costly
+	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_BIO_SILK = 50, MATERIAL_CARBON_FIBER = 50, MATERIAL_TITANIUMRTC = 10) // Rare and costly
 
 
 /obj/item/hearthcore_upgrade/phoenix_edict/OnInstall(var/disciple, var/_hearthcore)

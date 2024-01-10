@@ -14,7 +14,7 @@
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 8
 	ammo_type = /obj/item/ammo_magazine/cl7mm
-	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 5, MATERIAL_IRON = 5, MATERIAL_WOOD = 3)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 5, MATERIAL_METAL = 5, MATERIAL_WOOD = 3)
 	can_dual = TRUE
 	price_tag = 1400
 	damage_multiplier = 1.6

@@ -40,7 +40,7 @@ var/global/list/ore_data = list()
 /ore/hematite
 	name = ORE_IRON
 	display_name = "hematite"
-	smelts_to = MATERIAL_IRON
+	smelts_to = MATERIAL_METAL
 	alloy = TRUE
 	result_amount = 10
 	spread_chance = 15
@@ -120,7 +120,7 @@ var/global/list/ore_data = list()
 /ore/niobium
 	name = ORE_NIOBIUM
 	display_name = "pyrochlore"
-	smelts_to = MATERIAL_NIOBIUM //why would you do this?
+	smelts_to = MATERIAL_METAL //why would you do this?
 	alloy = TRUE
 	result_amount = 8
 	spread_chance = 10
@@ -163,7 +163,8 @@ var/global/list/ore_data = list()
 /ore/titanium
 	name = ORE_TITANIUM
 	display_name = "ilminite"
-	smelts_to = MATERIAL_TITANIUM
+	smelts_to = MATERIAL_METAL
+	alloy = TRUE
 	result_amount = 10
 	spread_chance = 10
 	ore = /obj/item/stack/ore/uranium

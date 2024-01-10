@@ -63,7 +63,7 @@
 	result = /obj/item/tool_upgrade/armor/energy
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_TITANIUM, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_TITANIUMRTC, "time" = 30),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC , "time" = 30),
 		list(QUALITY_WELDING, 35, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 180),

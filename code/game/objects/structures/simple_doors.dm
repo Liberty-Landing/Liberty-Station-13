@@ -172,7 +172,7 @@
 		return
 
 /obj/structure/simple_door/iron/New(var/newloc,var/material_name)
-	..(newloc, MATERIAL_IRON)
+	..(newloc, MATERIAL_METAL)
 
 /obj/structure/simple_door/silver/New(var/newloc,var/material_name)
 	..(newloc, MATERIAL_SILVER)

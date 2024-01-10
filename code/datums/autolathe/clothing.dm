@@ -38,7 +38,7 @@
 /datum/design/autolathe/clothing/scav_armor
 	name = "Fontaine Plate Carrier"
 	build_path = /obj/item/clothing/suit/storage/scavengerarmor/fontaine
-	materials = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 10, MATERIAL_TITANIUM = 1) //so hand crafting is better
+	materials = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 10, MATERIAL_NACRE = 1) //so hand crafting is better
 
 /datum/design/autolathe/clothing/scav_armor_void
 	name = "Scavenger Voidsuit"

@@ -26,7 +26,7 @@
 	var/last_use = 0.0
 	var/mob/living/soul = null
 	var/ore_types = list(
-		MATERIAL_IRON  = /obj/item/stack/ore/iron,
+		MATERIAL_METAL  = /obj/item/stack/ore/iron,
 		MATERIAL_URANIUM = /obj/item/stack/ore/uranium,
 		MATERIAL_GOLD = /obj/item/stack/ore/gold,
 		MATERIAL_SILVER = /obj/item/stack/ore/silver,

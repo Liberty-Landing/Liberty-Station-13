@@ -114,7 +114,7 @@
 	maxcharge = 13000
 	autorecharging = TRUE
 	autorecharge_rate = 0.05
-	matter = list(MATERIAL_DURALUMIN = 3, MATERIAL_COPPER = 3, MATERIAL_TITANIUM = 3, MATERIAL_URANIUM = 6)
+	matter = list(MATERIAL_DURALUMIN = 3, MATERIAL_COPPER = 3, MATERIAL_TITANIUMRTC = 3, MATERIAL_URANIUM = 6)
 	preloaded_reagents = list("radium" = 10, "lithium" = 10, "phosphorus" = 5)
 	price_tag = 600
 
@@ -249,7 +249,7 @@
 	maxcharge = 1000
 	autorecharging = TRUE
 	autorecharge_rate = 0.06
-	matter = list(MATERIAL_DURALUMIN = 2, MATERIAL_COPPER = 2, MATERIAL_TITANIUM = 2, MATERIAL_URANIUM = 4)
+	matter = list(MATERIAL_DURALUMIN = 2, MATERIAL_COPPER = 2, MATERIAL_TITANIUMRTC = 2, MATERIAL_URANIUM = 4)
 	preloaded_reagents = list("lithium" = 5, "radium" = 5, "phosphorus" = 5)
 	price_tag = 300
 
@@ -379,7 +379,7 @@
 	maxcharge = 300
 	autorecharging = TRUE
 	autorecharge_rate = 0.025
-	matter = list(MATERIAL_DURALUMIN = 1, MATERIAL_COPPER = 1, MATERIAL_TITANIUM = 1, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_DURALUMIN = 1, MATERIAL_COPPER = 1, MATERIAL_TITANIUMRTC = 1, MATERIAL_URANIUM = 2)
 	preloaded_reagents = list("radium" = 5)
 	price_tag = 150
 

@@ -500,7 +500,7 @@ var/global/chicken_count = 0
 	if(reagents.remove_reagent(chem, chem_to_egg, TRUE))
 		switch(chem)
 			// Turn liquid metal into solids
-			if(MATERIAL_IRON) // aluminium isn't a chem, so we use the next best thing
+			if(MATERIAL_METAL) // metal isn't a chem, so we use the next best thing
 				egg_type = /obj/item/stack/material/aluminium
 			if(MATERIAL_SILVER)
 				egg_type = /obj/item/stack/material/silver

@@ -113,7 +113,7 @@
 	icon_state = "ihscombat"
 	item_state = "ihscombat"
 	price_tag = 150
-	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_TITANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_DILATANT = 2)
 
 /obj/item/clothing/gloves/thick/ablasive/iron_lock_security
 	name = "outdated gloves"

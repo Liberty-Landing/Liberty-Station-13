@@ -33,7 +33,7 @@
 	desc = "A rigged yet sturdy Fontaine branded armor. Strong and protective as most vests, it is made entirely from reclaimed materials. It even has pockets as well as room for additional plates of armor to be added."
 	icon_state = "fontaine_platecarrier"
 	item_state = "fontaine_platecarrier"
-	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_ALUMINIUM = 10, MATERIAL_TITANIUM = 2)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_ALUMINIUM = 10, MATERIAL_COPPER = 2)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LOWER_TORSO
 	heat_protection = UPPER_TORSO|LOWER_TORSO

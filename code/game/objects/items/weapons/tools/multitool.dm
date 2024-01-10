@@ -34,7 +34,7 @@
 			The advanced and precise engineering allows for more DIY improvements than most Simulacrum Robotics tools ."
 	icon_state = "one_star_multitool"
 	tool_qualities = list(QUALITY_PULSING = 60)
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_TITANIUM = 1, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_TITANIUMRTC = 1, MATERIAL_DIAMOND = 1)
 	origin_tech = list(TECH_MAGNET = 6, TECH_ENGINEERING = 6)
 	use_power_cost = 0.01
 	degradation = 2

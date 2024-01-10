@@ -49,11 +49,11 @@
 	color = material.icon_colour
 
 /obj/item/material/baseballbat/platinum
-	default_material = MATERIAL_TITANIUM
+	default_material = MATERIAL_TITANIUMRTC
 	color = "#9999FF"
 
 /obj/item/material/baseballbat/platinum/New(var/newloc)
-	..(newloc,MATERIAL_TITANIUM)
+	..(newloc,MATERIAL_TITANIUMRTC)
 	color = material.icon_colour
 
 /obj/item/material/baseballbat/diamond

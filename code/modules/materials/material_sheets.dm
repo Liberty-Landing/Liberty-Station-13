@@ -109,21 +109,6 @@
 	update_strings()
 
 
-/obj/item/stack/material/iron
-	name = "iron"
-	desc = "Without alloying with another material, nowadays it solely has uses for structural constructions."
-	icon_state = "sheet-iron"
-	default_type = MATERIAL_IRON
-	price_tag = 1
-	novariants = FALSE
-
-/obj/item/stack/material/iron/random
-	rand_min = 3
-	rand_max = 8
-
-/obj/item/stack/material/iron/full
-	amount = 120
-
 /obj/item/stack/material/sandstone
 	name = "sandstone brick"
 	desc = "thick construction material from compressed sand. Rustic and cheap, not very durable on its own."
@@ -172,7 +157,7 @@
 	rand_max = 12
 
 /obj/item/stack/material/uranium
-	name = MATERIAL_URANIUM
+	name = "uranium disc"
 	desc = "Heavy and radioactive metallic element, key component in nuclear fuel. Somewhat replaced by Thorium on earth, but the ease for this material to be found in alien planets allowed its uses to be brought back. \
 	Can be depleted and used for mecha armor."
 	icon_state = "sheet-uranium"
@@ -469,7 +454,7 @@
 
 /obj/item/stack/material/hydrogenc
 	name = "hydrogen Clathrates"
-	icon_state = "sheet-hydrogen" 
+	icon_state = "sheet-hydrogen"
 	default_type = MATERIAL_HYDROGENC
 	price_tag = 8
 	novariants = FALSE
@@ -555,7 +540,7 @@
 /obj/item/stack/material/hydrogenc/full
 	amount = 120
 
-*/ 
+*/
 
 
 
@@ -581,7 +566,7 @@
 	name = "mending nacre"
 	desc = "Mending piece from a still studied substance that looks alike nacre, and it is constantly healing with microscopic activity."
 	singular_name = "Mending Nacre"
-	icon_state = "mending_nacre_item"
+	icon_state = "sheet-nacre"
 	default_type = MATERIAL_FRAGNACRE
 	novariants = TRUE
 	price_tag = 50 // obtaining nacre is extremely dangerous and very profitable
@@ -591,51 +576,21 @@
 	amount = 360
 
 /obj/item/stack/material/niobium
-	name = "niobium ingot"
-	desc = "Fragmented piece from a still studied substance that looks alike nacre, and it is constantly healing with microscopic activity."
-	singular_name = "niobium ingot"
-	icon_state = "niobium"
-	default_type = MATERIAL_NIOBIUM
-	novariants = TRUE
-	price_tag = 6  
-	
-/obj/item/stack/material/niobium/random
-	rand_min = 1
-	rand_max = 4
-
-/obj/item/stack/material/niobium/full
-	amount = 120
 
 /obj/item/stack/material/copper
 	name = "copper ingot"
 	desc = "ductile and malleable metal with excellent conductivity, widely utilized in electrical applications and alloys. Nowadays it is useless on is own, but can easily be used to make non-toxic kitchenware."
 	singular_name = "copper ingot"
-	icon_state = "copper"
+	icon_state = "sheet-copper"
 	default_type = MATERIAL_COPPER
 	novariants = TRUE
-	price_tag = 6  
-	
+	price_tag = 6
+
 /obj/item/stack/material/copper/random
 	rand_min = 1
 	rand_max = 10
 
 /obj/item/stack/material/copper/full
-	amount = 120
-
-/obj/item/stack/material/titanium
-	name = "titanium"
-	desc = "Lightweight, corrosion-resistant metal with high strength, commonly used in aerospace, medical, industrial applications and medium-high tier weapons. Most useful when properly alloyed."
-	singular_name = "titanium ingot"
-	icon_state = "titanium"
-	default_type = MATERIAL_TITANIUM
-	novariants = TRUE
-	price_tag = 8
-
-/obj/item/stack/material/titanium/random
-	rand_min = 1
-	rand_max = 4
-
-/obj/item/stack/material/titanium/full
 	amount = 120
 
 /obj/item/stack/material/composite
@@ -652,7 +607,7 @@
 
 /obj/item/stack/material/titaniumrtc
 	name = "reinforced titanium composite"
-	desc = "cutting-edge material with the properties of carbon nanotubes and the tensile, high-performace Titanium-Niobium composite. Used only for the best equipments in the universe , a difficult material to be obtained by any colony but the most wealthy of capital worlds."
+	desc = "cutting-edge material with the properties of carbon nanotubes and the tensile, high-performace Titanium-Niobium composite. Used only for the best equipments in the universe, a difficult material to be obtained by any colony but the most wealthy of capital worlds."
 	singular_name = "reinforced titanium composite"
 	icon_state = "titaniumrtc"
 	default_type = MATERIAL_TITANIUMRTC
@@ -707,3 +662,73 @@
 
 /obj/item/stack/material/duralumin/full
 	amount = 120
+
+
+/obj/item/stack/material/metal
+	name = "metal"
+	desc = "Without alloying with another material, it becomes difficult to know and have use for many types of pure metals. \
+	Even with limited uses, it has structural and handmade crafting usage, but no much industrial uses. \
+	This one could be Iron, Niobium or Titanium, you simply have no idea."
+	icon_state = "sheet-metal"
+	default_type = MATERIAL_METAL
+	price_tag = 2
+	novariants = FALSE
+
+/obj/item/stack/material/metal/random
+	rand_min = 3
+	rand_max = 8
+
+/obj/item/stack/material/metal/full
+	amount = 120
+
+
+/*=> Currently commented out since I replaced these with "metal" ingot. Just killing off the rather useless splits.
+/obj/item/stack/material/titanium
+	name = "titanium"
+	desc = "Lightweight, corrosion-resistant metal with high strength, commonly used in aerospace, medical, industrial applications and medium-high tier weapons. Most useful when properly alloyed."
+	singular_name = "titanium ingot"
+	icon_state = "sheet-titanium"
+	default_type = MATERIAL_TITANIUM
+	novariants = TRUE
+	price_tag = 8
+
+/obj/item/stack/material/titanium/random
+	rand_min = 1
+	rand_max = 4
+
+/obj/item/stack/material/titanium/full
+	amount = 120
+
+/obj/item/stack/material/niobium
+	name = "niobium ingot"
+	desc = "Fragmented piece from a still studied substance that looks alike nacre, and it is constantly healing with microscopic activity."
+	singular_name = "niobium ingot"
+	icon_state = "niobium"
+	default_type = MATERIAL_NIOBIUM
+	novariants = TRUE
+	price_tag = 6
+
+/obj/item/stack/material/niobium/random
+	rand_min = 1
+	rand_max = 4
+
+/obj/item/stack/material/niobium/full
+	amount = 120
+
+/obj/item/stack/material/iron
+	name = "iron"
+	desc = "Without alloying with another material, nowadays it solely has uses for structural constructions."
+	icon_state = "sheet-iron"
+	default_type = MATERIAL_METAL
+	price_tag = 1
+	novariants = FALSE
+
+/obj/item/stack/material/iron/random
+	rand_min = 3
+	rand_max = 8
+
+/obj/item/stack/material/iron/full
+	amount = 120
+
+
+*/

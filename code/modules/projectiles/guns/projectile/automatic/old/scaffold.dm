@@ -13,7 +13,7 @@
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PULSE
 	auto_eject = TRUE
-	matter = list(MATERIAL_INDSTEEL = 35, MATERIAL_PLASTIC = 35, MATERIAL_TITANIUM = 20)
+	matter = list(MATERIAL_INDSTEEL = 35, MATERIAL_PLASTIC = 35, MATERIAL_TITANIUMRTC = 20)
 	price_tag = 2000
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/sfrifle_magout.ogg'

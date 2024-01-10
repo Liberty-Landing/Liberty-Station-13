@@ -14,7 +14,6 @@
 #define MATERIAL_INDSTEEL "industrial steel"
 #define MATERIAL_COMPOSITE "titanium-niobium composite"
 
-
 // Post Industrial Materials
 /datum/alloy/duralumin
 	name = "Duralumin"

@@ -556,25 +556,16 @@ var/list/name_to_material
 	sheet_singular_name = "sphere"
 	sheet_plural_name = "spheres"
 
-/material/titanium
-	name = MATERIAL_TITANIUM
-	stack_type = /obj/item/stack/material/titanium
+/material/metal
+	name = MATERIAL_METAL
+	stack_type = /obj/item/stack/material/metal
 	icon_colour = "#9999FF"
 	weight = 27
 	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
-/material/iron
-	name = MATERIAL_IRON
-	stack_type = /obj/item/stack/material/iron
-	icon_colour = "#5C5454"
-	weight = 22
-	sheet_singular_name = "ingot"
-	sheet_plural_name = "ingots"
-	hitsound = 'sound/weapons/smash.ogg'
-
-/material/iron
+/material/copper
 	name = MATERIAL_COPPER
 	stack_type = /obj/item/stack/material/copper
 	icon_colour = "#9b5167"

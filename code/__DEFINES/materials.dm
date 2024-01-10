@@ -1,19 +1,17 @@
 //Material stacks names defines
 
-#define MATERIAL_ALUMINIUM "aluminium"
 #define MATERIAL_GLASS "glass"
 #define MATERIAL_SILVER "silver"
 #define MATERIAL_GOLD "gold"
 #define MATERIAL_URANIUM "uranium"
 #define MATERIAL_DIAMOND "diamond"
 #define MATERIAL_PLASTIC "plastic blend"
-#define MATERIAL_IRON "iron"
+#define MATERIAL_METAL "metal"
 #define MATERIAL_CARDBOARD "cardboard"
 #define MATERIAL_SILK "silk"
 #define MATERIAL_LEATHER "leather"
 #define MATERIAL_BONE "bone"
 #define MATERIAL_MARBLE "marble"
-#define MATERIAL_TITANIUM "titanium"
 #define MATERIAL_SANDSTONE "sandstone"
 #define MATERIAL_BRIQUETTE "briquette"
 #define MATERIAL_WOOD "wood"
@@ -34,7 +32,7 @@
 #define MATERIAL_ALUMINIUM "aluminium"
 #define MATERIAL_INDSTEEL "industrial steel"
 #define MATERIAL_DILATANT "dilatant plate"
-#define MATERIAL_NIOBIUM "niobium"
+
 #define MATERIAL_LGLASS "laminated glass"
 #define MATERIAL_BGLASS "mendsilicate glass"
 #define MATERIAL_LBGLASS "laminated mendsilicate glass"
@@ -42,7 +40,6 @@
 #define MATERIAL_LIGNITE "lignite"
 #define MATERIAL_DURALUMIN "duralumin"
 #define MATERIAL_HYDROGENC "hydrogen clathrate"
-#define MATERIAL_TITANIUM "titanium"
 #define MATERIAL_BRIQUETTE "briquette"
 #define MATERIAL_COMPOSITE "titanium composite"
 #define MATERIAL_NACRE "mending nacre"
@@ -70,14 +67,13 @@
 	MATERIAL_URANIUM,\
 	MATERIAL_DIAMOND,\
 	MATERIAL_PLASTIC,\
-	MATERIAL_IRON,\
+	MATERIAL_METAL,\
 	MATERIAL_CARDBOARD,\
 	MATERIAL_CLOTH,\
 	MATERIAL_SILK,\
 	MATERIAL_LEATHER,\
 	MATERIAL_BONE,\
 	MATERIAL_MARBLE,\
-	MATERIAL_TITANIUM,\
 	MATERIAL_SANDSTONE,\
 	MATERIAL_TRITIUM,\
 	MATERIAL_WOOD,\
@@ -93,7 +89,6 @@
 	MATERIAL_ALUMINIUM, \
 	MATERIAL_INDSTEEL, \
 	MATERIAL_DILATANT, \
-	MATERIAL_NIOBIUM, \
 	MATERIAL_LGLASS, \
 	MATERIAL_BGLASS, \
 	MATERIAL_LBGLASS, \
@@ -101,7 +96,6 @@
 	MATERIAL_LIGNITE, \
 	MATERIAL_DURALUMIN, \
 	MATERIAL_HYDROGENC, \
-	MATERIAL_TITANIUM, \
 	MATERIAL_COMPOSITE, \
 	MATERIAL_NACRE, \
 	MATERIAL_TITANIUMRTC)

@@ -67,7 +67,7 @@
 	name = "Simulacrum Robotics combination drill"
 	desc = "Does better than the standard combination drivers on the market, but has less slots for tool mods."
 	icon_state = "one_star_combidriver"
-	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_TITANIUM = 3)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_TITANIUMRTC = 3)
 	tool_qualities = list(QUALITY_SCREW_DRIVING = 60, QUALITY_BOLT_TURNING = 60, QUALITY_DRILLING = 25)
 	origin_tech = list(TECH_ENGINEERING = 3, TECH_MATERIAL = 2)
 	degradation = 2.5

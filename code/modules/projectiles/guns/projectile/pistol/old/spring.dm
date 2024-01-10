@@ -11,7 +11,7 @@
 	caliber = CAL_PISTOL
 	can_dual = TRUE
 	silenced = FALSE
-	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 6, MATERIAL_TITANIUM = 6)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 6, MATERIAL_TITANIUMRTC = 6)
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL | MAG_WELL_DRUM
