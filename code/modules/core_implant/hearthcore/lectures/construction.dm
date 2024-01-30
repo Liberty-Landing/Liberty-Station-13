@@ -357,6 +357,17 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 5 SECONDS
 
+/datum/custodian_blueprint/medium/emberblaze
+	name = "Emberblaze Limbs"
+	build_path = /obj/item/storage/box/emberblaze_set //test the materials to see how much!
+	materials = list(
+		/obj/item/stack/material/carbon_fiber = 60
+	)
+	build_time = 20 SECONDS
+
+
+	/obj/item/organ_module/active/simple/armblade/custodianblade
+
 /datum/custodian_blueprint/weak/bricktiles
 	name = "Pristine brick stack"
 	build_path = /obj/item/stack/tile/greybricks_pristine/full
@@ -401,7 +412,7 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 
 /datum/custodian_blueprint/medium
 	manifestation_tier = "Medium"
-
+/*
 /datum/custodian_blueprint/medium/melee_armor
 	name = "Carbon Fiber Melee Plating"
 	build_path = /obj/item/tool_upgrade/custodian/armor/melee
@@ -439,41 +450,8 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 20 SECONDS
 
-/datum/custodian_blueprint/medium/door_common
-	name = "Common Hatchway"
-	build_path = /obj/machinery/door/bonfire
-	materials = list(
-		/obj/item/stack/material/aluminium = 5,
-		/obj/item/stack/material/biopolymer_silk = 20,
-		/obj/item/stack/material/silver = 2,
-		/obj/item/stack/mold_kit/masonry = 1,
-	)
-	build_time = 8 SECONDS
-
-/datum/custodian_blueprint/medium/door_secure
-	name = "Secure Gate"
-	build_path = /obj/machinery/door/bonfire/secure
-	materials = list(
-		/obj/item/stack/material/biopolymer_silk = 20,
-		/obj/item/stack/material/silver = 3,
-		/obj/item/stack/mold_kit/blacksmithing = 1,
-		/obj/item/stack/mold_kit/masonry = 1,
-	)
-	build_time = 8 SECONDS
-
-/datum/custodian_blueprint/medium/sentinel
-	name = "Sentinel"
-	build_path = /obj/machinery/power/sentinel
-	materials = list(
-		/obj/item/stack/material/carbon_fiber = 10,
-		/obj/item/stack/material/biopolymer_silk = 30,
-		/obj/item/stack/material/silver = 10,
-		/obj/item/stack/mold_kit/masonry = 2,
-		/obj/item/stack/mold_kit/blacksmithing = 2,
-		/obj/item/book/lectures/hearthlantern = 1,
-		/obj/item/stack/mold_kit/tailoring = 3,
-	)
-	build_time = 8 SECONDS
+The Custodians of Bonfire must protect the Bonfire, not replace them! Besides, lorewise the Bonfire is connected to the underground by a literal star core.
+So you can't just make it because yeah why not
 
 /datum/custodian_blueprint/medium/bioreactor_loader
 	name = "Bonfire: Loader"
@@ -550,6 +528,43 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 		/obj/item/stack/material/aluminium = 10,
 		/obj/item/stack/material/plastic = 4,
 		/obj/item/stack/tile/floor = 1
+	)
+	build_time = 8 SECONDS
+*/
+
+/datum/custodian_blueprint/medium/door_common
+	name = "Common Hatchway"
+	build_path = /obj/machinery/door/bonfire
+	materials = list(
+		/obj/item/stack/material/aluminium = 5,
+		/obj/item/stack/material/biopolymer_silk = 20,
+		/obj/item/stack/material/silver = 2,
+		/obj/item/stack/mold_kit/masonry = 1,
+	)
+	build_time = 8 SECONDS
+
+/datum/custodian_blueprint/medium/door_secure
+	name = "Secure Gate"
+	build_path = /obj/machinery/door/bonfire/secure
+	materials = list(
+		/obj/item/stack/material/biopolymer_silk = 20,
+		/obj/item/stack/material/silver = 3,
+		/obj/item/stack/mold_kit/blacksmithing = 1,
+		/obj/item/stack/mold_kit/masonry = 1,
+	)
+	build_time = 8 SECONDS
+
+/datum/custodian_blueprint/medium/sentinel
+	name = "Sentinel"
+	build_path = /obj/machinery/power/sentinel
+	materials = list(
+		/obj/item/stack/material/carbon_fiber = 10,
+		/obj/item/stack/material/biopolymer_silk = 30,
+		/obj/item/stack/material/silver = 10,
+		/obj/item/stack/mold_kit/masonry = 2,
+		/obj/item/stack/mold_kit/blacksmithing = 2,
+		/obj/item/book/lectures/hearthlantern = 1,
+		/obj/item/stack/mold_kit/tailoring = 3,
 	)
 	build_time = 8 SECONDS
 

@@ -137,7 +137,7 @@
 
 	var/pregame = FALSE
 
-//We will sort the storyteller choices carefully. Guide is always first, all the rest are in a random order
+//We will sort the storyteller choices carefully. commonplace is always first, all the rest are in a random order
 /datum/poll/storyteller/init_choices()
 	master_storyteller = null
 	var/datum/vote_choice/storyteller/base = null
@@ -148,7 +148,7 @@
 		CS.desc = S.description
 		CS.new_storyteller = ch
 
-		//The base storyteller, Guide, is put aside for a moment
+		//The base storyteller, commonplace, is put aside for a moment
 		if (S.config_tag == STORYTELLER_BASE)
 			base = CS
 			continue

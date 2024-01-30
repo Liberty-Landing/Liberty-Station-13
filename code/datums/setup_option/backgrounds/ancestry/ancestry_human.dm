@@ -44,11 +44,20 @@
 
 /datum/category_item/setup_option/background/ancestry/human_vatgrown
 	name = "Vatgrown Humanoid"
-	desc = "You are a Vatgrown, also sometimes known as 'Flashgrown', human. Your kind are commonly made by corpotations, criminal organizations, and sometimes even governments. \
+	desc = "You are a Vatgrown, also sometimes known as 'Homunculus'. Your kind are commonly made by corpotations, criminal organizations, and sometimes even governments. \
 			Why, you may ask? Simple. Cheap, exploitable, and importantly 'self-thinking' labor. Unlike FBPs Vatgrowns have typically more limited life spans and capable of inovation. \
 			This makes the vast majority of Vatgrowns debtors, owing their creation to the relevant company responsible for their creation."
 
-	restricted_depts = COMMAND
+	restricted_jobs = list( //changed this because Custodians does not limit Vatgrowns from being the Oathpledge. In fact, they are saw as more valuable than normal colonial volunteers.
+		/datum/job/clubmanager,
+		/datum/job/dc,
+		/datum/job/shepherd,
+		/datum/job/rp,
+		/datum/job/cso,
+		/datum/job/chief_engineer,
+		/datum/job/dc,
+		/datum/job/outsider,
+		)
 
 	restricted_to_species = list(FORM_HUMAN)
 

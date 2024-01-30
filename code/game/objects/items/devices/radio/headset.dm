@@ -230,7 +230,7 @@
 
 /obj/item/device/radio/headset/heads/oathpledge
 	name = "oathpledge's headset"
-	desc = "The headset of the one who leads the local chapter of the Custodians."
+	desc = "The headset of the leader of the argyria tin-can knights, the one who leads the local chapter of the Custodians."
 	icon_state = "nt_com_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/heads/oathpledge
@@ -274,7 +274,7 @@
 
 /obj/item/device/radio/headset/bonfire
 	name = "bonfire custodian headset"
-	desc = "For comunication within the military chapter through long distances."
+	desc = "For comunication within the military chapter through long distances, for when argyria is not enough to handle an enemy."
 	icon_state = "nt_headset"
 	item_state = "headset"
 	ks2type = /obj/item/device/encryptionkey/headset_bonfire

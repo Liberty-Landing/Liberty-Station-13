@@ -19,7 +19,7 @@
 
 /obj/item/trash/material/metal
 	name = "scrap metal"
-	desc = "A piece of metal that can be recycled in an autolathe."
+	desc = "A piece of commonly found metal that has been scrapped and damaged beyond conventional use. It can be recycled easily by any autolathe."
 	icon_state = "metal0"
 	matter_chances = list(
 		list(MATERIAL_ALUMINIUM, 100, 15),
@@ -37,7 +37,7 @@
 
 /obj/item/trash/material/circuit
 	name = "burnt circuit"
-	desc = "A burnt circuit that can be recycled in an autolathe."
+	desc = "A circuit that has been burnt from overuse or radiation. It can be recycled by any autolathe, mostly for glass and rare metals."
 	w_class = ITEM_SIZE_SMALL
 	icon_state = "circuit0"
 	matter_chances = list(
@@ -56,7 +56,7 @@
 
 /obj/item/trash/material/device
 	name = "broken device"
-	desc = "A broken device that can be recycled in an autolathe."
+	desc = "A broken device that you barely can understand what it was used for, but it is surprisingly in a state that it is easy to recycle."
 	w_class = ITEM_SIZE_SMALL
 	icon_state = "device0"
 	matter_chances = list(
@@ -71,6 +71,24 @@
 /obj/item/trash/material/device/Initialize()
 	. = ..()
 	icon_state = "device[rand(3)]"
+
+/obj/item/trash/material/trinkets
+	name = "lost trinkets"
+	desc = "A bundle of cheap wearable trickets with surprisingly low amount of rare metals and stones. Surely useful when recycled - if you don't mind how most of it is just glass."
+	w_class = ITEM_SIZE_SMALL
+	icon_state = "trinkets0"
+	matter_chances = list(
+		list(MATERIAL_COPPER, 100, 10),
+		list(MATERIAL_GLASS, 90, 7),
+		list(MATERIAL_BIO_SILK, 100, 10),
+		list(MATERIAL_SILVER, 16, 7),
+		list(MATERIAL_GOLD, 15, 5),
+		list(MATERIAL_DIAMOND, 5, 2),
+	)
+
+/obj/item/trash/material/trinkets/Initialize()
+	. = ..()
+	icon_state = "trinkets[rand(3)]"
 
 /obj/item/trash/material/e_sword_cutlass
 	name = "broken energy cutlass"

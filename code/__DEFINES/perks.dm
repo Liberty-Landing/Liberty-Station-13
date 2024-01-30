@@ -91,6 +91,10 @@
 #define PERK_BUTCHER /datum/perk/job/butcher
 #define PERK_MASTER_HERBALIST /datum/perk/job/master_herbalist
 
+// OUTSIDER OR ANTAG
+#define PERK_TRIBAL /datum/perk/job/tribal
+#define PERK_PRECURSOR_HERITAGE /datum/perk/job/cultist
+
 //////////////
 //Race Perks//
 //////////////

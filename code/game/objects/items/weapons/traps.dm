@@ -259,7 +259,7 @@ Freeing yourself is much harder than freeing someone else. Calling for help is a
 			to_chat(user, SPAN_NOTICE("You failed to release the trap. There was a [round(100 - difficulty)]% chance of success"))
 
 
-/obj/item/beartrap/proc/attack_mob(mob/living/L)
+/obj/item/beartrap/proc/attack_mob(mob/living/L) //make changes here
 	//Small mobs won't trigger the trap
 	//Imagine a mouse running harmlessly over it
 	if (!L || L.mob_size < min_size)

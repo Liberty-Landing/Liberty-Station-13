@@ -1,9 +1,10 @@
 GLOBAL_VAR_INIT(miracle_points, 0)
 var/global/obj/machinery/power/eotp/eotp
+//We're likely going to give these random buffs to Psionics. It does not suit the Custodians at all.
 
 /obj/machinery/power/eotp
 	name = "Embers of Theoretical Philosophy"
-	desc = "A specialized machine designed to supply the surface stronghold with Custodian design disks and blessings from the lower stronghold. By making offerings of supplies or materials readily produced \
+	desc = "A specialized machine designed to supply the surface stronghold with Custodian design disks and equipments either the lower stronghold or Elohopea. By making offerings of supplies or materials readily produced \
 	by the Custodians, members can obtain disks and other goods. The EOTP also provides various blessings and monitors areas protected by torchbearers for potential threats to the colony, marked by its \
 	observation level, letting it warn Custodians ahead of time. Additionally, it passively gains power before unleashing various blessings to Hearthcore users."
 	icon = 'icons/obj/eotp.dmi'

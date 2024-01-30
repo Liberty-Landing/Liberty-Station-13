@@ -26,7 +26,7 @@
 #define DEPARTMENT_PROSPECTOR	"Fontaine Heavy Industries"
 #define DEPARTMENT_CHURCH		"Custodians of Bonfire"
 #define DEPARTMENT_CIVILIAN		"Contractors"
-#define DEPARTMENT_INDEPENDENT	"Contractors"
+#define DEPARTMENT_INDEPENDENT	"Outsiders"
 
 #define DEPARTMENT_SIMULACRUM	"Simulacrum Robotics"
 

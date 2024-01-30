@@ -178,15 +178,15 @@ It focuses on spawning large numbers of moderate-to-weak monsters, and includes 
 			chosen_mob_classification[/obj/effect/spider/eggcluster] = 0.2
 			chosen_mob_classification[/obj/structure/spider_nest] = 0.1
 		if(INFESTATION_SPIDERS)
-			event_name = "Spider Infestation"
+			event_name = "Perniciosus Spider Infestation"
 			chosen_verb = "have burrowed into"
 			chosen_mob_classification += /obj/random/mob/spiders
 		if(INFESTATION_ROACHES)
-			event_name = "Giant Roach Infestation"
+			event_name = "Giant Perniciosus Roach Infestation"
 			chosen_verb = "have burrowed into"
 			chosen_mob_classification += /obj/random/mob/roaches
 		if(INFESTATION_TERMIE)
-			event_name = "Giant Termite Infestation"
+			event_name = "Giant Perniciosus Termite Infestation"
 			chosen_verb = "have burrowed into"
 			chosen_mob_classification += /obj/random/mob/termite_no_despawn
 /*		if(INFESTATION_YITHIAN)

@@ -168,6 +168,11 @@
 			return "Custodians of the Bonfire"
 		if(ACCESS_REGION_FONTAINE) //Prospectors
 			return "Fontaine Heavy Industries"
+		if(ACCESS_REGION_CULT) //Precursor cult
+			return "Precursor Cult"
+		if(ACCESS_REGION_REBEL) //insurgency
+			return "Khambataar Insurgency"
+
 
 /proc/get_access_desc(id)
 	var/list/AS = get_all_access_datums_by_id()

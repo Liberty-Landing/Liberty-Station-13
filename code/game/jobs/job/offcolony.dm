@@ -44,8 +44,8 @@
 
 /datum/job/tribal
 	title = "Frostwalker Tribal"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 5
+	spawn_positions = 5
 	flag = OUTSIDER
 	faction = MAP_FACTION
 	department = DEPARTMENT_INDEPENDENT
@@ -61,7 +61,6 @@
 	outfit_type = /decl/hierarchy/outfit/job/tribal
 	difficulty = "Survive!"
 	has_id = TRUE //only a wooden dogtag showing name and your job, no access whasoever tho
-	//playtimerequired = 1200000	- Not needed now.
 
 	stat_modifiers = list(
 		STAT_BIO = 10,
@@ -79,6 +78,96 @@
 
 	duties = "Protect your settlement and ensure that it will not be raided. Reinforce the walls, forge duraluminium weapons and make traps, if needed. Diplomacy may suffice if not. <br>\
 		Protect your fellow frostwalker natives, as these are the sons of Abyssal Mother. <br>\
+		Maintain your holy grounds safe from the corporate greed of the colonies. Remember the other fallen tribes who met a cruel fate coming from them. <br>\
+		Collect and bring light to precursor technology to enhance said tools with Abyssal Mother's light. <br>\
+		Antagonises cultists as those are followers of Long Darkness, who salts the earth. Spit on their comparation of Abyssal Mother and 'Dissident God'"
+
+/obj/landmark/join/start/tribal
+	name = "Frostwalker"
+	icon_state = "player-black"
+	join_tag = /datum/job/tribal
+
+/datum/job/cultist
+	title = "Equipoise Cultist"
+	total_positions = 4
+	spawn_positions = 4
+	flag = OUTSIDER
+	faction = MAP_FACTION
+	department = DEPARTMENT_INDEPENDENT
+	department_flag = INDEPENDENT
+	supervisors = "You adhere to the hierarchy based on the upper extremities of an arm, with the Pronator serving as your foremost expedition leader."
+	selection_color = "#191919"
+	account_allowed = 0
+	create_record = 0
+	initial_balance = INIT_BALANCE_NONE
+	wage = WAGE_NONE
+	alt_titles = list("Pronator", "Metacarpus", "Phalange")
+	//minimal_access = list(access_maint_tunnels)	- No.
+	outfit_type = /decl/hierarchy/outfit/job/cultist
+	difficulty = "Survive!"
+	has_id = TRUE //only for name and job
+
+	stat_modifiers = list(
+		STAT_BIO = 20,
+		STAT_COG = 15
+		STAT_MECH = 15
+	)
+
+	description = "You belong to a rather controversial religious movement, the Circhosian Cult. Essentially the continuation of the Precursor religion with a deep rooted origins on scientific research. \
+	You have suffered the exodus from the colony years ago, and now guided by the Vanguard Codicem under the words of Lucca Argyros, your religion suffered a Schism, split between the radicals and non-radicals. \
+	at least that's how you perceive it - as a member of the Equipoise Circhosian Cult, you directly antagonizes the Vehement Circhosian Cult for their degenerative rituals that leads to death and debauchery. \
+	The rituals of the cult focuses on the fertility and abundance of harvest, both in plants and in people. Seeking out precursor technology is a very important aspect of your religion, and psionics is part of your powers. \
+	Torture to receive adenochrome, alcohol-fueled orgies and forced brainwash and manipulation does not make part of your faith, and it is infact considered abominable, a corruption of Lucca's teachings. \
+	The Equipoise Cult directly perceives Lucca Argyros as a man who has been enlightened, not a awakened divine, much less the merging of both divine entities."
+
+	duties = "Explore the world in search of psionic essence anywhere. You can kill if you deem suitable. <br>\
+		Praise Petaline and Crustor. Antagonize 'Dissident God', or 'Abyssal Mother', which are both the same divine. The rituals you make will ewmpower you. <br>\
+		Create weaponries of biomatter technology and turn your fellow cultists or yourself into light-eaters. <br>\
+		Albeit most of the reasons your cult has been banished coming because of Vehement's cult, you are still essentially the enemy of the colony. Protect yourself from them. <br>\
+		Avoid or stay away from the Tribesmen from the Frostwalker tribe. They desire psionic essence as much as you - but with the desire to destroy what you deem holy. <br>\
+		The Equipoise Cult still contains the stolen technology of the colonial departments. Perhaps keeping this a secret can help you..."
+
+/obj/landmark/join/start/cultist
+	name = "cultist"
+	icon_state = "player-black"
+	join_tag = /datum/job/cultist
+
+/datum/job/tribal
+	title = "Khambataar Insurgent"
+	total_positions = 5
+	spawn_positions = 5
+	flag = OUTSIDER
+	faction = MAP_FACTION
+	department = DEPARTMENT_INDEPENDENT
+	department_flag = INDEPENDENT
+	supervisors = "The Combat Leader - anyone who chooses such alt title. Otherwise, you are on your own."
+	selection_color = "#191919"
+	account_allowed = 0
+	create_record = 0
+	initial_balance = INIT_BALANCE_NONE
+	wage = WAGE_NONE
+	alt_titles = list("Patriotic Fighter", "Combat Leader", "Rebel", "Insurgent")
+	//minimal_access = list(access_maint_tunnels)	- No.
+	outfit_type = /decl/hierarchy/outfit/job/rebel
+	difficulty = "Survive!"
+	has_id = TRUE //only for name and job
+
+	stat_modifiers = list(
+		STAT_VIG = 20,
+		STAT_ROB = 15
+		STAT_TGH = 15
+	)
+
+	description = "You are a Phokorus native from the Frostwalker Tribe. Your shamanistic religion declares that your forefathers has been kidnapped by the long darkness. \
+	In reverence to the Abyssal Mother and her ethereal spirits, you embody some powers by bringing light to the long darkness - the Precursors and their filthy cultists. \
+	You are peaceful, but compelled by current challenges, you are a now a reluctant warrior. Living in these cursed lands allowed you to use your unique tradition as a weapon. \
+	The cannibal Mappukini Tribe harass your people, while newcomers punctures the earth and settle their greedy hands on what is holy, with little to no respect to where you thread. \
+	Cultists of the Long Darkness came as they promised in the carved stones, salting the earth with its psionic presence. Now other outsiders steal and raid your settlements. \
+	So, by the Abyssal mother, those made from the clay of this land must wield the war totems and smash the filth into mush, you may be peaceful, but never weak."
+
+	duties = "Protect your settlement and ensure that it will not be raided. Reinforce the walls, forge duraluminium weapons and make traps, if needed. Diplomacy may suffice if not. <br>\
+		Protect your fellow frostwalker natives, as these are the sons of Abyssal Mother. <br>\
+		Maintain your holy grounds safe from the corporate greed of the colonies. Remember the other fallen tribes who met a cruel fate coming from them. <br>\
 		Collect and bring light to precursor technology to enhance said tools with Abyssal Mother's light. <br>\
 		Antagonises cultists as those are followers of Long Darkness, who salts the earth. Spit on their comparation of Abyssal Mother and 'Dissident God'"
 

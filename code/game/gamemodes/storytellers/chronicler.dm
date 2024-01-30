@@ -1,9 +1,14 @@
-//Chronicler is basically for antag vs antag fights.
-/datum/storyteller/chronicler
-	config_tag = "chronicler"
-	name = "The Chronicler"
-	welcome = "Today will be a glorious day!"
-	description = "A storyteller with a focus on player vs player combat. Spawns lots of antagonists, but fewer random events."
+//Epitaph is basically for antag vs antag fights.
+/datum/storyteller/epitaph
+	config_tag = "epitaph"
+	name = "The Epitaph"
+	welcome = "The colony is plunged into chaos with the emergence of internal foes. Rebels and mercenaries clash, exchanging gunfire in the streets. \
+	Stay confined within your homes or departments and adhere to the Vanguard branches at all costs."
+	description = "The Epitaph symbolizes the pinnacle of human civilization brought down by the bullet. \
+	Aggressive political factions vie for power, mercenaries exploit the current instability to invade the colony, \
+	and psionic power fuels the cultists. Certain factions deploy covert members for anti-spying measures and mete out punishments to traitors. \
+	But antagonist enemies will only spawn if there is enough active players."
+
 
 	gain_mult_mundane = 0.7
 	gain_mult_moderate = 0.7

@@ -549,7 +549,7 @@ No more of that.
 		to_chat(src, SPAN_DANGER("You were interrupted!"))
 		return
 
-	var/bang_text = pick("HOLY LIGHT!", "GOD HAVE MERCY!", "HOLY HAVEN!", "YOU SEE THE LIGHT!")
+	var/bang_text = pick("AO BRADO DA ESPADA!", "EM NOME DA HONRA!", "À VITÓRIA OU À MORTE!", "JAMAIS VENCIDOS!")
 
 	for(var/obj/structure/closet/L in hear(7, get_turf(src)))
 		if(locate(/mob/living/carbon/, L))

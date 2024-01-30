@@ -9,6 +9,7 @@
 	spawn_positions = 1
 	supervisors = "the Liberty Council"
 	difficulty = "Medium."
+	alt_titles = list("High Constable", "Lionheart", "Grandmaster", "Stronghold Baron")
 	selection_color = "#caaa42"
 	ideal_character_age = 40
 	minimum_character_age = 25
@@ -66,6 +67,7 @@
 	spawn_positions = 2
 	supervisors = "the Oathpledge"
 	difficulty = "Easy."
+	alt_titles = list("Artificer", "Gearmancer", "Technomage", "Stronghold Blacksmith")
 	security_clearance = CLEARANCE_COMMON
 	selection_color = "#ecd37d"
 	health_modifier = 20
@@ -116,6 +118,7 @@
 	spawn_positions = 2
 	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
+	alt_titles = list("Apothecarian", "Mixologist", "Plague Doctor", "Stronghold Alchemist")
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_bonfire_disciple)
 
@@ -164,6 +167,7 @@
 	spawn_positions = 4
 	supervisors = "the Oathpledge"
 	difficulty = "Easy to Medium."
+	alt_titles = list("Sentinel", "Banneret", "Stalwart", "Stronghold Guardsmen")
 	selection_color = "#ecd37d"
 	access = list(access_morgue, access_crematorium, access_maint_tunnels, access_bonfire_disciple)
 

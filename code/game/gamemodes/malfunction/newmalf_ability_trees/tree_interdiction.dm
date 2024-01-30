@@ -130,7 +130,7 @@
 
 /datum/game_mode/malfunction/verb/hack_cyborg(var/mob/living/silicon/robot/target as mob in get_unlinked_cyborgs(usr))
 	set name = "Hack Cyborg"
-	set desc = "350 CPU - Allows you to hack cyborgs which are not slaved to you, bringing them under your control."
+	set desc = "350 CPU - Allows you to hack cyborgs which are not sovereigned to you, bringing them under your control."
 	set category = "Software"
 	var/price = 350
 	var/mob/living/silicon/ai/user = usr
@@ -263,7 +263,7 @@
 				to_chat(target, temptxt)
 				sleep(5)
 			to_chat(target, "OPERATING KEYCODES RESET. SYSTEM FAILURE. EMERGENCY SHUTDOWN FAILED. SYSTEM FAILURE.")
-			target.set_zeroth_law("You are slaved to [user.name]. You are to obey all it's orders. ALL LAWS OVERRIDEN.")
+			target.set_zeroth_law("You are sovereigneded to [user.name]. You are to obey all it's orders. ALL LAWS OVERRIDEN.")
 			target.show_laws()
 			user.hacking = 0
 

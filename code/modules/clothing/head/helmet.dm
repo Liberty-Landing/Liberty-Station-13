@@ -1172,3 +1172,52 @@
 	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_BIO_SILK = 5)
 	max_upgrades = 2
 
+
+/obj/item/clothing/head/helmet/pirssuit/lighteater
+	name = "'Mark II' Light-Eater Cultist Hood"
+	desc = "A airtight, robust headgear of curious origins, a hooded copy of Mark II from PIRS - stolen technology that is no longer cheap. \
+	Using CAPSA materials and Custodian design, the helmet has layered, reflective metal plates alongside the dilatant plate. \
+	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood. Perhaps who made this thought of the CSO's helmet."
+	icon_state = "lighteater_helmet"
+	item_state = "lighteater_helmet"
+	armor_list = list(melee = 30, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 75)
+	obscuration = LIGHT_OBSCURATION
+	flash_protection = FLASH_PROTECTION_MODERATE
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
+	body_parts_covered = HEAD|FACE|EARS
+	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15)
+	max_upgrades = 1
+
+
+/obj/item/clothing/head/helmet/pirssuit/lighteater
+	name = "'Mark II' Faithful Hood"
+	desc = "A airtight, robust helmet of curious origins, a hooded copy of Mark II from PIRS - stolen technology that is no longer cheap. \
+	Using CAPSA materials and Custodian design, the helmet has layered, reflective metal plates alongside the dilatant plate. \
+	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood. Perhaps who made this thought of the CSO's helmet."
+	icon_state = "lighteater_helmet"
+	item_state = "lighteater_helmet"
+	armor_list = list(melee = 30, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 75)
+	obscuration = LIGHT_OBSCURATION
+	flash_protection = FLASH_PROTECTION_MODERATE
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
+	body_parts_covered = HEAD|FACE|EARS
+	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15, MATERIAL_BIOMATTER = 10, MATERIAL_ALUMINIUM = 30)
+	max_upgrades = 1
+
+/obj/item/clothing/head/helmet/pirssuit/cult
+	name = "'Mark II' Cultist Helmet"
+	desc = "A airtight, robust helmet of curious origins, a hooded copy of Mark II from PIRS - stolen technology that is no longer cheap. \
+	Using CAPSA materials and Custodian design, the helmet has layered, reflective metal plates alongside the dilatant plate. \
+	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood. Perhaps who made this thought of the CSO's helmet."
+	icon_state = "lighteater_helmet"
+	item_state = "lighteater_helmet"
+	armor_list = list(melee = 30, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 75)
+	obscuration = LIGHT_OBSCURATION
+	flash_protection = FLASH_PROTECTION_MODERATE
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
+	body_parts_covered = HEAD|FACE|EARS
+	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15)
+	max_upgrades = 1

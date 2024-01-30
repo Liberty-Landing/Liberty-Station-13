@@ -1,5 +1,5 @@
 /mob/living/carbon/superior_animal/human/lighteater_cultist
-	name = "Lighteater Cultist"
+	name = "Lighteater Vehement Cultist"
 	desc = "Zealous cultist consumed by a haunting reminder of the terror lurking beneath the ice, subjected to unholy transformation \
 			- its body fused with chitinous, crab-like limbs. The smell of pollen is too strong to endure."
 	icon = 'icons/mob/mobs-humanoid.dmi'
@@ -78,7 +78,7 @@
 
 
 /mob/living/carbon/superior_animal/human/lighteater_cultist/ranged
-	name = "Ranged Lighteater Cultist"
+	name = "Ranged Lighteater Vehement Cultist"
 	desc = "Zealous cultist consumed by a haunting reminder of the terror lurking beneath the ice, subjected to unholy transformation \
 			- its body fused with chitinous, crab-like limbs. The smell of pollen is too strong to endure. \
 			This one appears to have kept the ability to crudely handle a shotgun in its meaty claws."

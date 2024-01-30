@@ -15,12 +15,12 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 						Like most of the giant insectoids within the colony, this one is under effects of Perniciosus viral agent. This viral agent was the second accomplished way to unpregulate key genes with viral cap-snatching process. \
 						However, it had more compatibility with some species from the arthoproda phylum, such as arachnida and blattodea, rather than Eukaryotas. \
 						With the disease going far and wide on colonial grounds, the mutated species became an severe nuance on any colonial effort, even causing colonies to break down from such pest. \
-						On the termites, the virus enhanced many characteritics, . \
-						. \
+						On the termites, the virus enhanced many characteritics, such as the creation of new lungs under its skin, replacing glands and making their blood toxic. \
+						The chitin has been reinforced, but only found in the head. The body has a endoskeleton that can endure buckshots with ease, albeit the organs may not have the same fate. \
 						and, for last, a cellular proliferation override, allowing a uncontrollable growth that results in expansion of tissues and organs, but lowers the life expectacy and bring higher risk of cancer. \n\
-						The termites,  \
-						Soon enough, termites became an common sight alongside roaches and spiders on the maintenance, \
-						."
+						The termites focused on a high degree of eusocial evolution with many division of labor into reproductive and non-reproductive groups, which can be considerd 'castes'. They became omnivorous with evolution. \
+						Soon enough, termites became an common sight alongside roaches and spiders on the maintenance, as they manage to adquire their nourishment from aluminium and steel walls from the colony. \
+						The unique bacterial fauna within their intestines alloes them to rely entirely on eating minerals, and they are by far the strongest perniciosus mutants, preying on Spiders and Roaches at the same time."
 	icon = 'icons/mob/40x40.dmi' // Sprites made by Polyushko#0323
 	icon_state = "rabochiy_termite"
 	speak_emote = list("clicks")

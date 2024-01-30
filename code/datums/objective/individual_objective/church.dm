@@ -65,7 +65,7 @@
 	..()
 */
 /datum/individual_objective/spread
-	name = "Spread the Word"
+	name = "Spread the Knowledge"
 	req_hearthcore = TRUE
 	req_department = list(DEPARTMENT_CHURCH)
 	var/datum/lecture/ritual
@@ -89,7 +89,7 @@
 			continue
 		valid_targets += H
 	target = pick(valid_targets)
-	desc = "[target] may need spiritual guidance, using [ritual_name] will give peace of mind to you and hopefully them."
+	desc = "[target] may need guidance, using [ritual_name] will give peace of mind to you and hopefully them."
 	ritual = GLOB.all_lectures[ritual_name]
 	RegisterSignal(mind_holder, COMSIG_LECTURE, .proc/task_completed)
 
@@ -103,7 +103,7 @@
 	..()
 
 /datum/individual_objective/sanctify
-	name = "Sanctify"
+	name = "Purify"
 	req_department = list(DEPARTMENT_CHURCH)
 	req_hearthcore = TRUE
 	var/area/target_area
@@ -111,7 +111,7 @@
 /datum/individual_objective/sanctify/assign()
 	..()
 	target_area = random_ship_area()
-	desc = "\the [target_area] may be the target of infestation by maligned forces, it should be blessed and cleansed."
+	desc = "\the [target_area] may be the target of infestation by maligned forces, it should be purified and cleansed."
 	RegisterSignal(target_area, COMSIG_AREA_SANCTIFY, .proc/task_completed)
 
 /datum/individual_objective/sanctify/task_completed()
