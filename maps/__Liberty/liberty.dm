@@ -39,7 +39,7 @@
 	is_accessable_level = FALSE
 	is_sealed = TRUE
 	generate_asteroid = TRUE
-	height = 4
+	height = 3
 	digsites = "HOUSE"
 
 

@@ -92,7 +92,3 @@
 /obj/item/remains/robot/attack_hand(mob/user as mob)
 	return
 
-/obj/item/remains/human5
-	desc = "They could look like human remains if you use your imagination. something horrible happened down here and you are able to see it, looks like some human beings tried to mix themselves up using some method, it didn't worked how they expected."
-	icon_state = "human_marriage"
-	sanity_damage = 25

@@ -1,7 +1,5 @@
 #include "map/frozen_forest.dmm"
 #include "map/frozen_crashsite.dmm"
-#include "map/Forest-pre-village.dmm"
-#include "map/Forest-space_scrap.dmm"
 
 //#include "map/_Deep_Forest.dmm"
 //#include "map/_Beast_Cave.dmm"
@@ -12,24 +10,6 @@
 
 /obj/map_data/frozen_forest
 	name = "Frozen Forest"
-	is_player_level = TRUE
-	is_contact_level = FALSE
-	is_accessable_level = FALSE
-	is_sealed = TRUE
-	height = 1
-	digsites = "TEMPLE"
-
-/obj/map_data/frozen_space_scrap
-	name = "Frozen space scrap"
-	is_player_level = TRUE
-	is_contact_level = FALSE
-	is_accessable_level = FALSE
-	is_sealed = TRUE
-	height = 1
-	digsites = "TEMPLE"
-
-/obj/map_data/frozen_pre_village
-	name = "Frozen Forest Pre Village"
 	is_player_level = TRUE
 	is_contact_level = FALSE
 	is_accessable_level = FALSE

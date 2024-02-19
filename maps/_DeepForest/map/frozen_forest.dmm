@@ -103,11 +103,7 @@
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest_simil_base)
 "cs" = (
-/obj/effect/step_trigger/surface_to_forest_2_B{
-	id = "fss_to_forest_2_B";
-	id_target = "fss_to_forest_1_B";
-	name = "fss_to_forest_2_B"
-	},
+/obj/effect/step_trigger/surface_to_forest_2_B,
 /obj/effect/decal/cleanable/dirt/snow,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -1199,11 +1195,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
 "xL" = (
-/obj/effect/step_trigger/surface_to_forest_2_A{
-	name = "fss_to_forest_2_A";
-	id = "fss_to_forest_2_A";
-	id_target = "fss_to_forest_1_A"
-	},
+/obj/effect/step_trigger/surface_to_forest_2_A,
 /obj/effect/decal/cleanable/dirt/snow,
 /turf/simulated/floor/rock/manmade/road,
 /area/liberty/dungeon/outside/frozen_forest)
@@ -1626,10 +1618,6 @@
 /obj/structure/scrap/cloth,
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
-"Fn" = (
-/obj/item/remains/human5,
-/turf/simulated/floor/snow,
-/area/liberty/dungeon/outside/frozen_forest)
 "Fu" = (
 /turf/simulated/floor/rock/dark,
 /area/liberty/dungeon/outside/frozen_forest_caves)
@@ -60308,7 +60296,7 @@ rf
 HG
 rf
 jJ
-Fn
+rf
 tJ
 rf
 rf
