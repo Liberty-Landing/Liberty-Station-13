@@ -19,8 +19,9 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 						The chitin has been reinforced, but only found in the head. The body has a endoskeleton that can endure buckshots with ease, albeit the organs may not have the same fate. \
 						and, for last, a cellular proliferation override, allowing a uncontrollable growth that results in expansion of tissues and organs, but lowers the life expectacy and bring higher risk of cancer. \n\
 						The termites focused on a high degree of eusocial evolution with many division of labor into reproductive and non-reproductive groups, which can be considerd 'castes'. They became omnivorous with evolution. \
-						Soon enough, termites became an common sight alongside roaches and spiders on the maintenance, as they manage to adquire their nourishment from aluminium and steel walls from the colony. \
-						The unique bacterial fauna within their intestines alloes them to rely entirely on eating minerals, and they are by far the strongest perniciosus mutants, preying on Spiders and Roaches at the same time."
+						Soon enough, termites became an common sight alongside roaches and spiders on the maintenance, as they managed to evolve mutualism with wurms to adquire their nourishment from the colony's wall materials. \
+						The termites does not eat metals, instead, they break it down with meat before feeding Wurms, which regurgigate honeyed fluid used to eat right away, or use to spread mushroom soils on previously unfertile ground. \
+						Because of the mutualism in which allows them to survive mostly on eating minerals, they are by far the strongest and most numerous perniciosus mutants, preying on Spiders and Roaches as the hives and wurms needs it."
 	icon = 'icons/mob/40x40.dmi' // Sprites made by Polyushko#0323
 	icon_state = "rabochiy_termite"
 	speak_emote = list("clicks")

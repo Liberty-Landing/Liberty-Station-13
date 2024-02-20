@@ -2,6 +2,17 @@
 	name = "Lighteater Vehement Cultist"
 	desc = "Zealous cultist consumed by a haunting reminder of the terror lurking beneath the ice, subjected to unholy transformation \
 			- its body fused with chitinous, crab-like limbs. The smell of pollen is too strong to endure."
+	description_info = "Binomial Nomenclature: Homo Sapiens Sapiens:\n\n\
+						A member of the Illegal Circhosian Cult, coming from the radical Vehement religious branch ever since Lucca Argyros's mysterious disappearence. \
+						A faithful believer of fate, one that cannot be fighted against but rather, embraced, thus never afraid of death due to such spiritual awareness that one cannot worry about what you can't change. \
+						This man or woman were a normal colonist previously - most likely a scientist - who dwelled too deep within the directions of Lucca Argyros, \
+						soon enough, received the 'enlightement' from carcinification procedures, either from natural Precursor psionic influence or biomatter infusions considered 'holy rituals'. \
+						This one in specific is an elite type of Cultist, one who has been granted the Crustor's heart connected to their occipital lobe, in which they can control radiance to a low degree, \
+						which is without a doubt a direct copy of the hearthcore, yet no longer fueled by a plasmacore - but with neurophyta itself, the radiance the only thing disabling the neurophyta from taking over. \
+						The Lighteaters fuels their implants with light, causing them to turn environments into darkness at their will. However, this does come with a downside, \
+						as their minds are united with the still living, unsterilised radiance, it is constantly attempting to activate the mind protection of the previous owner, \
+						this results in the Cultists hearing constant 'demon whispers', a secondary voice constantly punishing them with insults and dares, intoxicating their bloodsteam with silver, \
+						forcing hallucinations, loss of vision, ringing in the ears, itching that doesn't go away, vomiting, nausea and suicidal tendencies. What further proofs the Radiance's personality nature."
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "lighteater_cultist"
 	icon_dead = "lighteater_cultist_dead"
@@ -82,6 +93,13 @@
 	desc = "Zealous cultist consumed by a haunting reminder of the terror lurking beneath the ice, subjected to unholy transformation \
 			- its body fused with chitinous, crab-like limbs. The smell of pollen is too strong to endure. \
 			This one appears to have kept the ability to crudely handle a shotgun in its meaty claws."
+	description_info = "Binomial Nomenclature: Homo Sapiens Sapiens:\n\n\
+						A member of the Illegal Circhosian Cult, coming from the radical Vehement religious branch ever since Lucca Argyros's mysterious disappearence. \
+						A faithful believer of fate, one that cannot be fighted against but rather, embraced, thus never afraid of death due to such spiritual awareness that one cannot worry about what you can't change. \
+						This man or woman were a normal colonist previously - most likely a scientist - who dwelled too deep within the directions of Lucca Argyros, \
+						soon enough, received the 'enlightement' from carcinification procedures, either from natural Precursor psionic influence or biomatter infusions considered 'holy rituals'. \
+						This one is a lighteater cultist possessing a weaker form of the Crustor Heart, one that the radiance has been removed and completely lacks neurophyta, \
+						this results in less options for power while being fueled by welding fuel alone. The entire thing is flamming hot, unstable and not versatile, likely to explode any moment. \
 	icon_state = "lighteater_cultist_range"
 	icon_dead = "lighteater_cultist_range_dead"
 	maxHealth = 100

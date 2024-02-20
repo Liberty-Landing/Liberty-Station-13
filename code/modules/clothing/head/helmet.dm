@@ -1180,44 +1180,42 @@
 	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood. Perhaps who made this thought of the CSO's helmet."
 	icon_state = "lighteater_helmet"
 	item_state = "lighteater_helmet"
-	armor_list = list(melee = 30, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 75)
+	armor_list = list(melee = 30, bullet = 60, energy = 45, bomb = 50, bio = 100, rad = 75)
 	obscuration = LIGHT_OBSCURATION
 	flash_protection = FLASH_PROTECTION_MODERATE
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15)
+	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15,  MATERIAL_DURALUMIN = 35)
 	max_upgrades = 1
 
 
-/obj/item/clothing/head/helmet/pirssuit/lighteater
+/obj/item/clothing/head/helmet/pirssuit/faithful
 	name = "'Mark II' Faithful Hood"
-	desc = "A airtight, robust helmet of curious origins, a hooded copy of Mark II from PIRS - stolen technology that is no longer cheap. \
-	Using CAPSA materials and Custodian design, the helmet has layered, reflective metal plates alongside the dilatant plate. \
-	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood. Perhaps who made this thought of the CSO's helmet."
-	icon_state = "lighteater_helmet"
-	item_state = "lighteater_helmet"
-	armor_list = list(melee = 30, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 75)
+	desc = "A reinforced hood with the inner workings of a Mark II - stolen technology that received proper reinforcements that allows it to be competitive. \
+	Using CAPSA materials and Custodian design, the helmet makes use of dilatant plates layered above welded metal shards, mimicking lamellar armor. \
+	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood, but the mask beneath is completely visible together with the user's eyes."
+	icon_state = "faithful_helmet"
+	item_state = "faithful_helmet"
+	armor_list = list(melee = 25, bullet = 45, energy = 30, bomb = 30, bio = 100, rad = 55)
 	obscuration = LIGHT_OBSCURATION
-	flash_protection = FLASH_PROTECTION_MODERATE
+	flash_protection = FLASH_PROTECTION_MINOR
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15, MATERIAL_BIOMATTER = 10, MATERIAL_ALUMINIUM = 30)
+	matter = list(MATERIAL_DILATANT = 25, MATERIAL_INDSTEEL = 10, MATERIAL_DURALUMIN = 15, MATERIAL_ALUMINIUM = 20)
 	max_upgrades = 1
 
 /obj/item/clothing/head/helmet/pirssuit/cult
 	name = "'Mark II' Cultist Helmet"
-	desc = "A airtight, robust helmet of curious origins, a hooded copy of Mark II from PIRS - stolen technology that is no longer cheap. \
-	Using CAPSA materials and Custodian design, the helmet has layered, reflective metal plates alongside the dilatant plate. \
-	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood. Perhaps who made this thought of the CSO's helmet."
+	desc = "A really cheap helmet that is a clear copy of PIRS's Mark II, but made with stronger material and cultist engravings. \
+	It uses CAPSA's dilatant materials together with aluminium that has been cold-hammered by a automatic protolathe. \
+	Surprisingly enough, the Cultists truly did improve such cheap design and kept its capacity to be upgraded more than once. \
+	Makes you wonder how they didn't got hired twice by the colony at this point. Oh yeah, these cultists have been kicked out for a reason."
 	icon_state = "lighteater_helmet"
 	item_state = "lighteater_helmet"
-	armor_list = list(melee = 30, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 75)
-	obscuration = LIGHT_OBSCURATION
-	flash_protection = FLASH_PROTECTION_MODERATE
+	armor_list = list(melee = 20, bullet = 30, energy = 25, bomb = 35, bio = 100, rad = 50)
+	flash_protection = FLASH_PROTECTION_MINOR
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15)
-	max_upgrades = 1
+	matter = list(MATERIAL_DILATANT = 10, MATERIAL_ALUMINIUM = 20)
+	max_upgrades = 2

@@ -342,7 +342,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	min_cold_protection_temperature = T0C - 20
 	max_upgrades = 2
-	armor_list = list(melee = 35, bullet = 25, energy = 25, bomb = 30, bio = 50, rad = 50)
+	armor_list = list(melee = 30, bullet = 25, energy = 25, bomb = 30, bio = 50, rad = 50) //bad armor remains as badder armor. PIRs are getting new armors.
 	extra_allowed = list(/obj/item/extinguisher,
 						 /obj/item/tool,
 						 /obj/item/tool_upgrade,
@@ -1034,7 +1034,7 @@
 	item_state = "hm_woodvest"
 	armor_list = list(
 		melee = 20,
-		bullet = 10, // Justifying keeping somewhat decent values on bullet just because I changed the recipe to include aluminium. - Seb
+		bullet = 10, // Justifying keeping somewhat decent values on bullet just because I changed the recipe to include steel. - Seb / Sorry seb. Changed it to Aluminium now. -Monochrome.
 		energy = 0, // It's mostly made of wood, it will char easily.
 		bomb = 10,
 		bio = 25,
@@ -1112,3 +1112,70 @@
 			speed_boost_ready = TRUE
 			if(user.head && istype(user.head, matching_helmet))
 				to_chat(usr, SPAN_WARNING("[user.head] beeps: 'Capacitors have been recharged.'"))
+
+
+//Cultist Armor
+/obj/item/clothing/suit/armor/vest/pirssuit/lighteater
+	name = "Mark II' Light-Eater Cultist suit"
+	desc = "A modified Mark II built for most environment - including space. This suit is a high-quality copy of Mark II, made by pirs, a copy of Terra-Therma original design, making it a copy of a copy. \
+	It offers high protection against bullets and lasers, suitable to endure modern warfare flawlessly, yet fails to protect the user against slashes and slow-hitting impacts due to its dilatant materials. \
+	The gloves of the armor attempts to resemble crab pinchers, but the cloth stretches and dilates to the hand of the user to avoid causing issues when holding anything."
+	icon_state = "lighteater_armor"
+	has_alternative_armor_icon = FALSE
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	max_upgrades = 1
+	armor_list = list(melee = 30, bullet = 60, energy = 45, bomb = 60, bio = 100, rad = 50)
+	extra_allowed = list(/obj/item/extinguisher,
+						 /obj/item/tool,
+						 /obj/item/tool_upgrade,
+						 /obj/item/stack/cable_coil,
+						 /obj/item/device/t_scanner,
+						 /obj/item/device/scanner/gas,
+						 /obj/item/taperoll/engineering,
+						 /obj/item/storage/toolbox)
+	matter = list(MATERIAL_DILATANT = 40, MATERIAL_INDSTEEL = 20,  MATERIAL_DURALUMIN = 55)
+
+/obj/item/clothing/suit/armor/vest/pirssuit/faithful
+	name = "Mark II' Faithful suit"
+	desc = "."
+	icon_state = "faithful_armor"
+	has_alternative_armor_icon = FALSE
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	max_upgrades = 1
+	armor_list = list(melee = 25, bullet = 45, energy = 30, bomb = 30, bio = 100, rad = 55)
+	extra_allowed = list(/obj/item/extinguisher,
+						 /obj/item/tool,
+						 /obj/item/tool_upgrade,
+						 /obj/item/stack/cable_coil,
+						 /obj/item/device/t_scanner,
+						 /obj/item/device/scanner/gas,
+						 /obj/item/taperoll/engineering,
+						 /obj/item/storage/toolbox)
+	matter = list(MATERIAL_DILATANT = 25, MATERIAL_INDSTEEL = 15, MATERIAL_DURALUMIN = 20, MATERIAL_ALUMINIUM = 30)
+
+/obj/item/clothing/suit/armor/vest/pirssuit/cult
+	name = "Mark II' cultist suit"
+	desc = "."
+	icon_state = "cult_armor"
+	has_alternative_armor_icon = FALSE
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	max_upgrades = 2
+	armor_list = list(melee = 20, bullet = 30, energy = 25, bomb = 35, bio = 100, rad = 50)
+	extra_allowed = list(/obj/item/extinguisher,
+						 /obj/item/tool,
+						 /obj/item/tool_upgrade,
+						 /obj/item/stack/cable_coil,
+						 /obj/item/device/t_scanner,
+						 /obj/item/device/scanner/gas,
+						 /obj/item/taperoll/engineering,
+						 /obj/item/storage/toolbox)
+	matter = list(MATERIAL_DILATANT = 15, MATERIAL_DURALUMIN = 10, MATERIAL_ALUMINIUM = 20)

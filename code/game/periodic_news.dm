@@ -1,12 +1,11 @@
 // This system defines news that will be displayed in the course of a round.
-// Uses BYOND's type system to put everything into a nice format
-
+// Uses BYOND's type system to put everything into a nice format.
 /datum/news_announcement
 	var
 		round_time // time of the round at which this should be announced, in seconds
 		message // body of the message
-		author = "NanoTrasen Editor"
-		channel_name = "Nyx Daily"
+		author = "Liberty Group Editor"
+		channel_name = "Liberty Daily"
 		can_be_redacted = 0
 		message_type = "Story"
 
@@ -123,11 +122,59 @@
 
 			message = {"More on the Refuge food riots: The Refuge Council has condemned Terran withdrawal from
 			the colony, claiming \"there has been no increase in anti-Terran activity\", and \"\[the only] reason
-			Federation withdrew was because the \[Tenebrae Lupus] system's Plasma deposits have been completely mined out.
+			Federation withdrew was because the \[Tenebrae Lupus] system's Hydrogen clathrates have been completely mined out.
 			We have little to trade with them now\". Federation officials have denied these allegations, calling them
 			\"further proof\" of the colony's anti-Terran stance. Meanwhile, Refuge Security has been unable to quell
 			the riots. More on this at 6."}
 			round_time = 60 * 60
+
+	colonial_occourences
+
+		underground_activities
+			author = "Editor Rowling Mancier"
+			channel_name = "The Sounds of Liberty"
+			round_time = 60*20
+			message = pick(list(
+				"In a surge reminiscent of migrations, more colonial refugees are flocking to Freeport Liberty, our neutral outpost amidst the frontier turmoil. \
+				The colonial warfare, piracy, and economic hardships have displaced countless families from their homes. Now facing severe financial strain, \
+				many colonies grapple with crumbling infrastructure and collapsing services. Soaring costs of living and rampant inflation \
+				drive families to seek refuge in Freeport Liberty, a symbol of stability in the frontier on the brink. All coming from tight-packed, entrepreneur private ships, \
+				their only option for space travel after selling all their assets for a mere travel and edge of a stateroom.",
+
+				"Renowned for their nomadic prowess and agility, the Sablekyne species, often associated with piracy, is undergoing a significant shift. \
+				A curiously large number of Sablekyne refugees are choosing sanctuary in Freeport Liberty amid cosmic conflicts, distancing from Kriosan sovereignty. \
+				This paradigm sees Sablekyne actively rejecting their species' piracy stereotype. Opting for Freeport Liberty for a new beginning, \
+				liberated from criminal stereotypes and embracing their traditional peace-seeking culture before their homeplanet annexation by the Kriosan.",
+
+				"Guided by the human ideals of freedom and autonomy, some Kriosan citizens - rebels and moderates - driven by a pursuit of personal liberty, \
+				challenges the societal norms of honor, loyalty and collectivism that once shaped their existence.  Now seeking an inclusive environment, \
+				Freeport Liberty was the choice of many of these refugees this week, which may go noticed by our fellow Sablekyne and Neptunians, but hopefully \
+				the past narratives will not go toe-to-toe with the current ones, as those who dwell on freeport lands are unbound by the rigid principles of authoritarian past.",
+
+				"After an exhaustive month-long quest tinged with anxiety, rescuers on this day located the remnants of the handwrought Sharley Ship, which vanished during its expedition to explore wreckage. \
+				All nine entrepenours has perished. This outcome, not anticipated by those who harbored even the slightest hope of a successful rescue, prompted divergent reactions \
+				- with the public on FacePalm social media downplaying the tragedy of the lost lives. 'The Ship imploded, instantly killing nine billionaries. Can we now address the hypocritical double \
+				standards for Sablekyne migrants left in the void trying reach here?' remarked one user. 'The rich deserve to meet their demise in space, on the skies- just anywhere. \
+				We don't deserve the consequences billionaries intentionally cause for profit,'posted another. The response diverges from reaction to other tragedies, despite potential \
+				flaw in the ships design - something remarked even by Black Bolt Company - and questions about the necessity of exploring space wreckage without using Custodian Gatepyre \
+				Technology, the stark reality remains... families will never reunite with their loved ones."
+			))
+
+[pick("Consume...","Assimilate...","Blot out the light...", "CRUDUX CRUO!!!", "Join us...", "Louhi opasta minua!")]")
+
+# News Messages
+news_messages = [
+    "Liberty LLC Announces Expansion Plans Despite Rising Tensions",
+    "In a surprising move, Liberty LLC reveals ambitious expansion plans amidst growing unrest. The corporation's decision sparks debates over priorities, with citizens questioning the timing given recent challenges. Keep an eye on The Sounds of Liberty for updates on this corporate decision.",
+
+    "Custodians of Bonfire Showcase Technological Breakthrough",
+    "The Custodians of Bonfire unveil a groundbreaking technological advancement that promises to revolutionize space travel. Speculations arise about the potential impact on colonial defense and trade. For in-depth coverage, stay tuned to The Sounds of Liberty.",
+
+    "Artificial Intelligence Integration Raises Ethical Concerns",
+    "Recent advancements in artificial intelligence integration raise ethical questions within the colonial community. Discussions intensify over the implications of AI in various sectors, from governance to everyday life. Explore the ethical debate with The Sounds of Liberty.",
+
+    # Add more news messages as needed
+]
 
 
 var/global/list/newscaster_standard_feeds = list(/datum/news_announcement/ceti_station_overtake, /datum/news_announcement/astrakhan_strike, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots)
