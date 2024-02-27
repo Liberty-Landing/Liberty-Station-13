@@ -64,6 +64,9 @@
 	var/can_burrow = FALSE //If true, this mob can travel around using the burrow network.
 	//When this mob spawns at roundstart, a burrow will be created near it if it can't find one
 
+	var/bad_environment = FALSE //Briefly set true whenever anything in the atmosphere damages this mob
+	//When this is true, mobs will attempt to evacuate via the nearest burrow
+
 	var/mob/living/cameraFollow = null
 	var/list/datum/action/actions = list()
 	var/step_count = 0
@@ -129,6 +132,8 @@
 	var/delay_for_rapid_range = 0 SECONDS
 	var/delay_for_melee = 0 SECONDS
 	var/delay_for_all = 0 SECONDS
+
+	var/life_tick = 0      // The amount of life ticks that have processed on this mob.
 
 	//vars pertaining to the mob's relation to atmos and if they are on fire
 	var/never_stimulate_air = FALSE
