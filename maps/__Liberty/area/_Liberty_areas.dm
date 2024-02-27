@@ -145,6 +145,40 @@
 	name = "Surface Central Maintenance"
 	icon_state = "erisblue"
 
+
+/area/liberty/maintenance/sewerarea1north//Sewer dungeons of fear and hunger
+	name = "Sewer Area North Maintenance"
+	icon_state = "erisblue"
+	requires_power = FALSE
+
+/area/liberty/maintenance/sewercaves
+	name = "Underground Sewer Caves"
+	icon_state = "erisyellow"
+
+/area/liberty/maintenance/sewerarea1south
+	name = "Sewer Aerea South Maintenance"
+	icon_state = "erisblue"
+
+/area/liberty/maintenance/sewerarea1west
+	name = "Sewer Area West Maintenance"
+	icon_state = "erisyellow"
+	requires_power = FALSE
+
+/area/liberty/maintenance/sewerarea1east
+	name = "Sewer Area East Maintenance"
+	icon_state = "erisgreen"
+	requires_power = FALSE
+
+/area/liberty/maintenance/sewerarea2factory
+	name = "Plagued Factory"
+	icon_state = "erisgreen"
+	requires_power = FALSE
+
+/area/liberty/maintenance/sewerarea1central
+	name = "Sewer Area Central Maintenance"
+	icon_state = "erisblue"
+	requires_power = FALSE
+
 /area/liberty/maintenance/undergroundfloor1oldgarden
 	name = "Underground Floor 1 Old Garden"
 	icon_state = "erisyellow"
@@ -273,6 +307,43 @@
 /area/liberty/dungeon/outside/frozen_forest
 	name = "Frozen Forest"
 	icon_state = "green"
+	allows_weather_of_snow = TRUE
+	turf_initializer = null
+
+/area/liberty/dungeon/outside/occupied_forest
+	name = "Frozen lumberjack Forest"
+	icon_state = "green"
+	allows_weather_of_snow = TRUE
+	turf_initializer = null
+
+/area/liberty/dungeon/outside/occupied_camp
+	name = "lumberjack Camp"
+	icon_state = "green"
+	allows_weather_of_snow = TRUE
+	turf_initializer = null
+
+/area/liberty/dungeon/outside/abbandoned_caves
+	name = "Unknown Caves"
+	icon_state = "green"
+	allows_weather_of_snow = TRUE
+	turf_initializer = null
+
+
+/area/liberty/dungeon/outside/abbandoned_caverns
+	name = "missing data"
+	icon_state = "green"
+	allows_weather_of_snow = TRUE
+	turf_initializer = null
+
+/area/liberty/dungeon/outside/crashed_spaceloot
+	name = "crashed scrap"
+	icon_state = "erisblue"
+	allows_weather_of_snow = TRUE
+	turf_initializer = null
+
+/area/liberty/dungeon/outside/hill_forest
+	name = "Hill Forest"
+	icon_state = "erisblue"
 	allows_weather_of_snow = TRUE
 	turf_initializer = null
 
@@ -1237,6 +1308,7 @@
 	name = "\improper Engine Waste Handling"
 	icon_state = "engine_waste"
 	flags = AREA_FLAG_CRITICAL
+	requires_power = FALSE//temporary fix for the sewer dungeon area
 
 /area/liberty/engineering/engineering_monitoring
 	name = "\improper Engineering Monitoring Room"
