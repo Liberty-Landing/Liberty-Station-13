@@ -66,6 +66,10 @@
 	icon_state = "meds-grey-low"
 	spawn_nothing_percentage = 80
 
+/obj/random/medical_lowcost/always_spawn
+	name = "random low tier medicine always spawn"
+	spawn_nothing_percentage = 0
+
 /obj/random/firstaid
 	name = "random first aid kit"
 	icon_state = "meds-red"
@@ -87,6 +91,10 @@
 	name = "random low tier handmade medicine"
 	icon_state = "meds-grey"
 	spawn_nothing_percentage = 30
+
+/obj/random/medical_lowcost_handmade/always_spawn
+	name = "random low tier handmade medicine always spawn"
+	spawn_nothing_percentage = 0
 
 /obj/random/medical_lowcost_handmade/item_to_spawn()
 	return pickweight(list(/obj/item/stack/medical/bruise_pack/handmade = 4,\

@@ -3404,4 +3404,6 @@
 #include "modular_liberty\task_master\human_helper.dm"
 #include "modular_liberty\task_master\task_helpers.dm"
 #include "modular_liberty\task_master\tasks.dm"
+#include "modular_liberty\task_master\npcs\npc.dm"
+#include "modular_liberty\task_master\npcs\npc_components.dm"
 // END_INCLUDE
