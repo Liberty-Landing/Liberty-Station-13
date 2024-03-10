@@ -237,10 +237,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/liberty/hallway/side/f2section1)
 "acK" = (
-/obj/structure/ameridian_crystal/spire/range_3,
+/obj/structure/nacre_crystal/spire/range_3,
 /obj/structure/flora/tree/snow/two,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "acT" = (
 /obj/structure/sign/department/conference_room{
 	name = "Command Room"
@@ -2731,7 +2731,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/flora/small/snow/boulder1,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "aCp" = (
 /obj/structure/table/rack,
 /obj/machinery/light,
@@ -3708,7 +3708,7 @@
 "aLt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -5033,7 +5033,7 @@
 /obj/effect/decal/cleanable/blood,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "aYn" = (
@@ -5985,7 +5985,7 @@
 "bhI" = (
 /obj/structure/table/standard,
 /obj/item/oddity/ls/manual,
-/obj/item/stack/material/plasma/random,
+/obj/item/stack/material/hydrogenc/random,
 /obj/item/cell/small/depleted,
 /obj/item/device/assembly/igniter,
 /obj/item/stack/cable_coil,
@@ -6458,7 +6458,7 @@
 	},
 /obj/item/stack/cable_coil/random,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "bmM" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -7695,7 +7695,7 @@
 "byV" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "bzb" = (
 /obj/effect/floor_decal/industrial/warningred{
 	dir = 1
@@ -8425,7 +8425,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "bHe" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -9337,7 +9337,7 @@
 /area/liberty/engineering/atmos)
 "bOV" = (
 /turf/simulated/floor/beach/water/jungledeep,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "bOX" = (
 /obj/structure/toilet{
 	dir = 8
@@ -9879,7 +9879,7 @@
 "bTz" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "bTA" = (
 /turf/simulated/floor/asteroid/grass/colonialbeach,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -12485,7 +12485,7 @@
 "csb" = (
 /obj/item/remains,
 /turf/simulated/floor/rock/alt,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "csi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/unary/vent_pump,
@@ -12513,7 +12513,7 @@
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "csv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -15164,7 +15164,7 @@
 /area/liberty/maintenance/undergroundfloor1east)
 "cRD" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem,
+/mob/living/carbon/superior_animal/nacre_golem,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "cRF" = (
@@ -15381,7 +15381,7 @@
 "cTL" = (
 /obj/machinery/suit_storage_unit/rad_unit,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "cTM" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
 	dir = 8
@@ -15416,7 +15416,7 @@
 "cTX" = (
 /obj/structure/flora/tree/dead,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "cUg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/aluminium,
@@ -16606,7 +16606,7 @@
 "deo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "dep" = (
@@ -17456,7 +17456,7 @@
 "dlx" = (
 /obj/structure/flora/snowgrass/vegetation,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "dly" = (
 /obj/structure/cable/cyan{
 	d1 = 4;
@@ -18150,7 +18150,7 @@
 "dsK" = (
 /obj/structure/flora/tree/jungle_small/variant5,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "dsL" = (
 /obj/structure/table/standard,
 /obj/item/pen,
@@ -18376,7 +18376,7 @@
 	dir = 6
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "dvS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
@@ -18478,7 +18478,7 @@
 "dwJ" = (
 /obj/structure/sink/puddle,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "dwL" = (
 /obj/effect/decal/cleanable/dirt/snow,
 /obj/structure/invislight/outside,
@@ -18538,7 +18538,7 @@
 "dxD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/grenade/frag/pipebomb,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "dxF" = (
@@ -18899,7 +18899,7 @@
 "dAv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "dAB" = (
@@ -19742,7 +19742,7 @@
 /obj/item/circuitboard/smelter,
 /obj/structure/table/rack/shelf,
 /obj/item/stack/ore/diamond,
-/obj/item/stack/ore/osmium,
+/obj/item/stack/ore/niobium,
 /turf/simulated/floor/industrial/fancy_slates,
 /area/liberty/maintenance/bank)
 "dIL" = (
@@ -19843,7 +19843,7 @@
 /obj/item/gun/projectile/automatic/broz,
 /obj/structure/table/bench/aluminium,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem/ameridian_shooter,
+/mob/living/carbon/superior_animal/nacre_golem/nacre_shooter,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "dJO" = (
@@ -21749,7 +21749,7 @@
 /obj/item/remains/human,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "edh" = (
@@ -22641,8 +22641,8 @@
 "emk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain/black,
-/obj/structure/ameridian_crystal,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "emo" = (
@@ -22963,7 +22963,7 @@
 /obj/structure/flora/snowgrass/vegetation,
 /obj/structure/boulder,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "epu" = (
 /obj/item/modular_computer/console/preset/trade_orders{
 	dir = 1;
@@ -23666,7 +23666,7 @@
 "exi" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "exs" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -24414,7 +24414,7 @@
 /area/liberty/hallway/side/f2section1)
 "eFp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/industrial_pristine,
 /area/liberty/maintenance/undergroundfloor2north)
 "eFs" = (
@@ -24433,7 +24433,7 @@
 "eFt" = (
 /obj/structure/flora/big/rocks3,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "eFv" = (
 /obj/effect/floor_decal/industrial/hatch/blue,
 /obj/effect/floor_decal/industrial/stand_clear/white{
@@ -26377,7 +26377,7 @@
 /area/liberty/hallway/surface/section1)
 "eZQ" = (
 /turf/simulated/mineral/planet,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "eZR" = (
 /obj/machinery/light/small,
 /obj/effect/decal/cleanable/dirt,
@@ -27595,7 +27595,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "fkZ" = (
@@ -28324,7 +28324,7 @@
 /area/liberty/maintenance/oldarmory)
 "fqE" = (
 /turf/unsimulated/mineral,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "fqH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -29078,7 +29078,7 @@
 "fzb" = (
 /obj/structure/flora/big/bush2,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "fze" = (
 /obj/effect/window_lwall_spawn/reinforced,
 /obj/machinery/door/firedoor,
@@ -29807,7 +29807,7 @@
 /obj/item/trash/cigbutt/comred,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem/behemoth,
+/mob/living/carbon/superior_animal/nacre_golem/behemoth,
 /obj/effect/decal/cleanable/liquid_fuel,
 /turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -30645,7 +30645,7 @@
 "fOZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem/ameridian_shooter,
+/mob/living/carbon/superior_animal/nacre_golem/nacre_shooter,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "fPd" = (
@@ -32185,7 +32185,7 @@
 "gdS" = (
 /obj/structure/flora/ausbushes/grassybush,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "gdY" = (
 /obj/structure/sign/warning/moving_parts/small{
 	dir = 8;
@@ -33071,7 +33071,7 @@
 "gnr" = (
 /obj/structure/flora/small/snow/rock1,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "gnB" = (
 /obj/random/mob/roaches/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -36123,7 +36123,7 @@
 "gPT" = (
 /obj/structure/flora/ausbushes/fullgrass,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "gPV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/boulder,
@@ -37249,7 +37249,7 @@
 "har" = (
 /obj/structure/flora/big/rocks1,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "hat" = (
 /obj/structure/table/woodentable,
 /obj/item/paper_bin,
@@ -37528,7 +37528,7 @@
 "hdE" = (
 /obj/structure/boulder,
 /turf/simulated/mineral/planet,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "hdG" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -37667,7 +37667,7 @@
 "heM" = (
 /obj/structure/flora/ausbushes/brflowers,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "heP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -39467,7 +39467,7 @@
 "hwu" = (
 /obj/structure/flora/small/snow/boulder2,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "hwx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair{
@@ -39867,7 +39867,7 @@
 "hzN" = (
 /obj/structure/flora/small/snow/rock1,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "hAc" = (
 /obj/random/closet_maintloot/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -40173,7 +40173,7 @@
 "hDf" = (
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/simulated/floor/beach/water/swamp,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "hDp" = (
 /obj/effect/floor_decal/industrial/loading/white,
 /obj/item/device/radio/intercom{
@@ -41114,7 +41114,7 @@
 /area/liberty/maintenance/undergroundfloor2east)
 "hMe" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem,
+/mob/living/carbon/superior_animal/nacre_golem,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -41723,7 +41723,7 @@
 "hRE" = (
 /obj/structure/flora/small/snow/rock8,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "hRJ" = (
 /obj/machinery/door/airlock/maintenance_engineering{
 	name = "Engineering Maintenance";
@@ -43056,7 +43056,7 @@
 "igF" = (
 /obj/structure/invislight,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "igL" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
@@ -44095,7 +44095,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "irE" = (
 /obj/structure/cable/cyan{
 	d1 = 1;
@@ -44163,7 +44163,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warningdust/fulltile,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "iso" = (
@@ -46467,7 +46467,7 @@
 /area/liberty/bonfire/forge)
 "iPc" = (
 /turf/simulated/wall/r_wall,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "iPf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warning{
@@ -48234,7 +48234,7 @@
 "jgY" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "jhc" = (
 /obj/structure/bed/chair{
 	dir = 1
@@ -49107,7 +49107,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "jpD" = (
 /obj/machinery/vending/engivend,
 /obj/machinery/holoposter{
@@ -49233,7 +49233,7 @@
 /obj/structure/flora/big/bush1,
 /obj/structure/flora/ausbushes/sunnybush,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "jrD" = (
 /obj/item/remains/mouse,
 /obj/item/material/shard,
@@ -50252,7 +50252,7 @@
 "jBC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem,
+/mob/living/carbon/superior_animal/nacre_golem,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial/warningdust/fulltile,
 /turf/simulated/floor/tiled/techmaint,
@@ -50355,7 +50355,7 @@
 "jCq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/clothing/suit/armor/vest/handmade,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "jCx" = (
@@ -51032,7 +51032,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "jIQ" = (
 /obj/machinery/atmospherics/pipe/simple/visible/black{
 	dir = 4
@@ -51491,7 +51491,7 @@
 /obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/gold/random,
 /obj/item/stack/material/silver/random,
-/obj/item/stack/material/platinum/random,
+/obj/item/stack/material/niobium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor3south)
 "jMQ" = (
@@ -52608,7 +52608,7 @@
 /turf/simulated/floor/rock/alt,
 /area/liberty/maintenance/maint_merc)
 "jXQ" = (
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 8
 	},
 /obj/structure/flora/pottedplant/green_rock,
@@ -53999,7 +53999,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
-/mob/living/carbon/superior_animal/ameridian_golem,
+/mob/living/carbon/superior_animal/nacre_golem,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "klf" = (
@@ -54234,7 +54234,7 @@
 	pixel_y = 4
 	},
 /obj/structure/table/reinforced,
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/danger,
@@ -54843,7 +54843,7 @@
 "ksY" = (
 /obj/structure/flora/tree/jungle_small/variant2,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "kta" = (
 /obj/machinery/disposal,
 /obj/effect/floor_decal/industrial/outline/red,
@@ -59236,7 +59236,7 @@
 "lln" = (
 /obj/structure/invislightsmall/outside,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "llq" = (
 /obj/effect/floor_decal/steeldecal/steel_decals_central6,
 /obj/structure/cable/cyan{
@@ -59590,7 +59590,7 @@
 "lqg" = (
 /obj/structure/flora/small/snow/boulder1,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "lqj" = (
 /obj/structure/grille/broken,
 /turf/simulated/floor/beach/water/jungledeep{
@@ -61041,7 +61041,7 @@
 "lFj" = (
 /obj/structure/flora/tree/jungle_small/variant3,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "lFn" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -62177,7 +62177,7 @@
 /area/liberty/maintenance/undergroundfloor2north)
 "lPt" = (
 /turf/unsimulated/wall/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "lPu" = (
 /obj/machinery/door/airlock/glass_engineering{
 	name = "Engineering";
@@ -63126,7 +63126,7 @@
 "lYA" = (
 /obj/structure/flora/big/bush3,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "lYG" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -63436,7 +63436,7 @@
 /area/liberty/crew_quarters/dorm4)
 "mbZ" = (
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "mca" = (
 /obj/structure/table/gamblingtable,
 /obj/item/reagent_containers/food/drinks/bottle/vodka,
@@ -64334,7 +64334,7 @@
 /turf/simulated/floor/tiled/aluminium/techfloor,
 /area/liberty/engineering/engine_room)
 "mmI" = (
-/obj/item/ameridian_core,
+/obj/item/nacre_core,
 /obj/item/stack/ore/gold,
 /obj/effect/decal/cleanable/rubble,
 /obj/effect/decal/cleanable/rubble,
@@ -65527,7 +65527,7 @@
 "mzB" = (
 /obj/random/oddity_guns,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "mzE" = (
 /obj/effect/floor_decal/industrial/stand_clear/white{
 	dir = 4
@@ -70598,7 +70598,7 @@
 /obj/structure/flora/small/snow/boulder2,
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "nyx" = (
 /obj/structure/cyberplant{
 	emagged = 1;
@@ -72107,7 +72107,7 @@
 /obj/structure/flora/snowgrass/rockandgrass,
 /obj/structure/boulder,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "nNI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/cobweb{
@@ -72736,7 +72736,7 @@
 "nSo" = (
 /obj/structure/flora/big/rocks2,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "nSr" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -73027,7 +73027,7 @@
 "nVu" = (
 /mob/living/simple_animal/frog,
 /turf/simulated/floor/beach/water/swamp,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "nVA" = (
 /obj/effect/floor_decal/industrial/danger{
 	dir = 1
@@ -73298,7 +73298,7 @@
 "nYV" = (
 /obj/structure/flora/small/snow/rock2,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "nZe" = (
 /obj/machinery/telecomms/server/presets/nt,
 /turf/simulated/floor/bluegrid{
@@ -73476,7 +73476,7 @@
 /area/liberty/hallway/side/f2section1)
 "oaN" = (
 /obj/machinery/door/airlock/research{
-	name = "Ameridian Lab";
+	name = "nacre Lab";
 	req_access = list(5)
 	},
 /obj/structure/cable/green{
@@ -73495,7 +73495,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "oaS" = (
 /obj/structure/salvageable/computer{
 	pixel_y = 10
@@ -75804,7 +75804,7 @@
 /area/liberty/maintenance/cavenightmare)
 "owZ" = (
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "oxb" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 10
@@ -76140,7 +76140,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/industrial_pristine,
 /area/liberty/maintenance/undergroundfloor2north)
 "oAn" = (
@@ -77169,7 +77169,7 @@
 "oJe" = (
 /obj/structure/barricade,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "oJi" = (
 /obj/structure/table/aluminium,
 /obj/random/tool,
@@ -77337,9 +77337,9 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/liberty/crew_quarters/skyyard)
 "oKO" = (
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "oKU" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/hoverpod,
@@ -79100,7 +79100,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/engineering/atmos/storage)
 "pcl" = (
-/mob/living/carbon/superior_animal/ameridian_golem,
+/mob/living/carbon/superior_animal/nacre_golem,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -79186,7 +79186,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/bench/aluminium,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "pcK" = (
@@ -79282,7 +79282,7 @@
 "pdG" = (
 /obj/structure/boulder,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "pdI" = (
 /obj/structure/reagent_dispensers/water_cooler,
 /obj/effect/decal/cleanable/dirt,
@@ -79982,8 +79982,8 @@
 /area/liberty/maintenance/undergroundfloor2north)
 "pkD" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "pkJ" = (
@@ -81313,7 +81313,7 @@
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/quartermaster/hangarsupply)
 "pyO" = (
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 4
 	},
 /obj/machinery/button/remote/blast_door{
@@ -81412,7 +81412,7 @@
 "pzl" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "pzp" = (
 /obj/effect/floor_decal/spline/wood{
 	dir = 8
@@ -81924,7 +81924,7 @@
 "pEO" = (
 /obj/structure/flora/small/snow/rock2,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "pEW" = (
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
@@ -82578,7 +82578,7 @@
 "pKG" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "pKJ" = (
 /obj/structure/cable/green{
 	d1 = 1;
@@ -84221,7 +84221,7 @@
 /obj/machinery/suit_storage_unit/rad_unit,
 /obj/machinery/light/small,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "pZB" = (
 /obj/effect/floor_decal/steeldecal/steel_decals_central6{
 	dir = 4;
@@ -85209,7 +85209,7 @@
 "qiA" = (
 /obj/structure/invislight/outside,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "qiC" = (
 /obj/random/cluster/roaches/low_chance,
 /turf/simulated/floor/plating/under,
@@ -85371,7 +85371,7 @@
 /area/liberty/maintenance/maint_merc)
 "qjG" = (
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "qjI" = (
 /obj/machinery/door/airlock/glass{
 	name = "Watches R' IUs"
@@ -85795,7 +85795,7 @@
 "qoc" = (
 /obj/structure/flora/snowgrass/rockandgrass,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "qoe" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial_plant/steel_grate_warning,
@@ -87000,7 +87000,7 @@
 "qAH" = (
 /obj/structure/flora/tree/jungle_small/variant1,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "qAJ" = (
 /obj/structure/table/standard,
 /obj/random/furniture/pottedplant,
@@ -87326,7 +87326,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "qDQ" = (
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
@@ -88032,7 +88032,7 @@
 "qJv" = (
 /obj/structure/flora/tree/snow/snow,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "qJG" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/boulder,
@@ -89121,7 +89121,7 @@
 "qTN" = (
 /obj/structure/flora/ausbushes/reedbush,
 /turf/simulated/floor/beach/water/swamp,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "qTT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood{
@@ -90160,7 +90160,7 @@
 "reo" = (
 /obj/structure/flora/winterflowers,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "rex" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/nightmare,
@@ -90775,7 +90775,7 @@
 "rju" = (
 /obj/structure/flora/grass/brown,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "rjw" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
@@ -91480,7 +91480,7 @@
 "rrC" = (
 /obj/structure/bed/padded,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/industrial_pristine,
 /area/liberty/maintenance/undergroundfloor2north)
 "rrK" = (
@@ -93956,7 +93956,7 @@
 /obj/structure/boulder,
 /obj/structure/boulder,
 /turf/simulated/mineral/planet,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "rPQ" = (
 /obj/machinery/camera/network/gate,
 /obj/item/device/radio/intercom/department/security{
@@ -94268,7 +94268,7 @@
 "rTg" = (
 /obj/structure/invislight,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "rTk" = (
 /obj/structure/cable/green{
 	d1 = 4;
@@ -96130,7 +96130,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/rubble,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
 "skj" = (
@@ -97041,7 +97041,7 @@
 "sto" = (
 /obj/structure/boulder,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "str" = (
 /turf/simulated/shuttle/wall/science{
 	icon_state = "10,2"
@@ -97188,8 +97188,8 @@
 /obj/item/stack/ore/diamond,
 /obj/item/stack/ore/gold,
 /obj/item/stack/ore/gold,
-/obj/item/stack/ore/osmium,
-/obj/item/stack/ore/osmium,
+/obj/item/stack/ore/niobium,
+/obj/item/stack/ore/niobium,
 /obj/item/stack/ore/uranium,
 /obj/item/stack/ore/uranium,
 /obj/item/stack/ore/uranium,
@@ -97687,7 +97687,7 @@
 "szL" = (
 /obj/structure/invislightsmall,
 /turf/simulated/floor/beach/water/jungledeep,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "szO" = (
 /obj/structure/table/gamblingtable,
 /obj/effect/decal/cleanable/dirt,
@@ -99049,7 +99049,7 @@
 	pixel_y = -32
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "sLo" = (
 /obj/random/mob/termite_no_despawn/low_chance,
 /obj/effect/decal/cleanable/dirt,
@@ -100075,7 +100075,7 @@
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/liberty/crew_quarters/fitness)
 "sWr" = (
-/obj/structure/window/reinforced/plasma{
+/obj/structure/window/reinforced/mendsilicate{
 	dir = 8
 	},
 /obj/machinery/camera/network/research,
@@ -100473,7 +100473,7 @@
 "tap" = (
 /obj/structure/flora/ausbushes/leafybush,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "tas" = (
 /obj/structure/table/standard,
 /obj/random/lowkeyrandom,
@@ -101057,7 +101057,7 @@
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/sparsegrass,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "tgB" = (
 /obj/item/remains/mouse,
 /obj/item/remains/mouse,
@@ -101412,7 +101412,7 @@
 "tki" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "tkk" = (
 /obj/machinery/power/smes/buildable{
 	RCon_tag = "Substation - Surface";
@@ -101785,7 +101785,7 @@
 /obj/structure/boulder,
 /obj/structure/boulder,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "tnR" = (
 /obj/structure/bed/chair/custom/bar_special{
 	dir = 4
@@ -102487,7 +102487,7 @@
 /area/liberty/maintenance/undergroundfloor2east)
 "tuD" = (
 /obj/item/clothing/gloves/thick/handmade,
-/mob/living/carbon/superior_animal/ameridian_golem/ameridian_shooter,
+/mob/living/carbon/superior_animal/nacre_golem/nacre_shooter,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "tuE" = (
@@ -103998,7 +103998,7 @@
 /area/liberty/maintenance/undergroundfloor2east)
 "tIS" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem/behemoth,
+/mob/living/carbon/superior_animal/nacre_golem/behemoth,
 /turf/simulated/floor/carpet/bcarpet,
 /area/liberty/maintenance/undergroundfloor2north)
 "tIU" = (
@@ -105314,7 +105314,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "tWP" = (
@@ -105747,7 +105747,7 @@
 "uaM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/maintenance/undergroundfloor2north)
 "uaP" = (
@@ -106329,7 +106329,7 @@
 "ugf" = (
 /obj/structure/barricade,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "ugm" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/floor_decal/industrial_plant/steel_grate_warning,
@@ -107001,7 +107001,7 @@
 "umf" = (
 /mob/living/simple_animal/frog,
 /turf/simulated/floor/beach/water/jungledeep,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "umk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -107378,7 +107378,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/structure/flora/ausbushes/stalkybush,
 /turf/simulated/floor/asteroid/dirt/dark,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "uqp" = (
 /obj/structure/scrap/poor,
 /obj/machinery/light/small,
@@ -107618,7 +107618,7 @@
 "usv" = (
 /obj/structure/boulder,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "usw" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/wall/r_wall,
@@ -108932,7 +108932,7 @@
 	state = 2
 	},
 /turf/simulated/floor/plating/under,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "uFk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/pipedispenser,
@@ -109160,7 +109160,7 @@
 /area/liberty/maintenance/undergroundfloor2east)
 "uIg" = (
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "uIi" = (
 /obj/structure/flora/tree/snow/two,
 /turf/simulated/floor/snow,
@@ -109429,7 +109429,7 @@
 /area/liberty/security/maingate)
 "uKE" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem/ameridian_shooter,
+/mob/living/carbon/superior_animal/nacre_golem/nacre_shooter,
 /turf/simulated/floor/tiled/dark,
 /area/liberty/maintenance/undergroundfloor2north)
 "uKF" = (
@@ -109453,7 +109453,7 @@
 "uKM" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/beach/water/jungledeep,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "uKT" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable/green{
@@ -110223,7 +110223,7 @@
 "uTy" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/mineral/planet,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "uTA" = (
 /obj/structure/bed/chair/comfy/black,
 /obj/effect/decal/cleanable/dirt,
@@ -112062,7 +112062,7 @@
 /area/liberty/crew_quarters)
 "vmY" = (
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "vnb" = (
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
@@ -113511,7 +113511,7 @@
 	pixel_x = -2;
 	pixel_y = -2
 	},
-/obj/item/stack/material/plasma{
+/obj/item/stack/material/hydrogenc{
 	amount = 25
 	},
 /turf/simulated/shuttle/floor/science{
@@ -113553,7 +113553,7 @@
 /area/liberty/maintenance/undergroundfloor2north)
 "vAB" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "vAD" = (
@@ -114717,7 +114717,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/danger,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "vKD" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/techfloor,
@@ -114841,7 +114841,7 @@
 /area/liberty/maintenance/oldmining)
 "vMi" = (
 /obj/effect/decal/cleanable/dirt,
-/mob/living/carbon/superior_animal/ameridian_golem/behemoth,
+/mob/living/carbon/superior_animal/nacre_golem/behemoth,
 /turf/simulated/floor/tiled/aluminium,
 /area/liberty/maintenance/undergroundfloor2north)
 "vMt" = (
@@ -114941,7 +114941,7 @@
 "vNf" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/simulated/floor/asteroid/grass/jungle,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "vNg" = (
 /obj/machinery/microwave/burnbarrel,
 /obj/effect/decal/cleanable/filth,
@@ -115442,7 +115442,7 @@
 "vRn" = (
 /obj/structure/invislight/outside,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "vRp" = (
 /obj/item/remains,
 /turf/simulated/floor/rock/alt,
@@ -115974,7 +115974,7 @@
 /obj/item/clothing/head/helmet/steelpot,
 /obj/item/remains/human,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "vXB" = (
@@ -116362,7 +116362,7 @@
 "wbd" = (
 /obj/structure/flora/small/snow/rock5,
 /turf/simulated/floor/snow,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "wbl" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/wall/r_wall,
@@ -116731,7 +116731,7 @@
 /area/liberty/quartermaster/miningdock)
 "weH" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
 "weJ" = (
@@ -118264,7 +118264,7 @@
 /area/liberty/maintenance/substation/medical)
 "wsV" = (
 /turf/simulated/floor/beach/water/swamp,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "wtd" = (
 /obj/item/device/lighting/toggleable/lantern,
 /turf/simulated/floor/plating/under,
@@ -123435,7 +123435,7 @@
 "xqP" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "xqS" = (
 /obj/effect/floor_decal/industrial/arrows/white,
 /obj/structure/cable/green{
@@ -123600,7 +123600,7 @@
 /obj/effect/decal/cleanable/rubble,
 /obj/machinery/camera/network/research,
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "xss" = (
 /obj/structure/table/steel_reinforced,
 /obj/item/device/camera,
@@ -123748,7 +123748,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/asteroid,
-/area/liberty/rnd/xenobiology/ameridian)
+/area/liberty/rnd/xenobiology/nacre)
 "xtu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -125127,7 +125127,7 @@
 "xGV" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/unsimulated/mineral,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "xHc" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -125808,7 +125808,7 @@
 /area/liberty/command/tcommsat/computer)
 "xNR" = (
 /turf/simulated/mineral,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "xNS" = (
 /obj/effect/decal/cleanable/rubble,
 /turf/simulated/floor/rock,
@@ -126675,7 +126675,7 @@
 /area/liberty/maintenance/undergroundfloor3south)
 "xUZ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/ameridian_crystal,
+/obj/structure/nacre_crystal,
 /turf/simulated/floor/plating/under,
 /area/liberty/maintenance/undergroundfloor2north)
 "xVa" = (
@@ -127970,7 +127970,7 @@
 /obj/structure/boulder,
 /obj/structure/boulder,
 /turf/simulated/floor/beach/water/ice,
-/area/liberty/maintenance/caveameridian)
+/area/liberty/maintenance/cavenacre)
 "yhx" = (
 /obj/machinery/door/airlock/mining{
 	name = "Cargo Maintenance";

@@ -476,18 +476,18 @@
 	default_type = MATERIAL_LBGLASS
 	price_tag = 6
 
-/obj/item/stack/material/ameridian
-	name = "ameridian shard"
+/obj/item/stack/material/nacre
+	name = "nacre shard"
 	desc = "A weird green crystal that seems to grow on its own."
-	singular_name = "ameridian crystal"
-	icon = 'icons/obj/ameridian.dmi'
-	icon_state = "ameridian_crystal_item"
-	default_type = MATERIAL_AMERIDIAN
+	singular_name = "nacre crystal"
+	icon = 'icons/obj/nacre.dmi'
+	icon_state = "nacre_crystal_item"
+	default_type = MATERIAL_nacre
 	novariants = TRUE
-	price_tag = 50 // ameridian mining is extremly dangerous and very profitable
+	price_tag = 50 // nacre mining is extremly dangerous and very profitable
 	max_amount = 360
 
-/obj/item/stack/material/ameridian/full
+/obj/item/stack/material/nacre/full
 	amount = 360
 
 /obj/item/stack/material/osmium
@@ -501,18 +501,18 @@
 	amount = 120
 
 //Valuable resource, cargo can sell it.
-/obj/item/stack/material/platinum
+/obj/item/stack/material/niobium
 	name = "platinum"
 	icon_state = "sheet-platinum"
 	default_type = MATERIAL_TITANIUM
 	price_tag = 20
 	novariants = FALSE
 
-/obj/item/stack/material/platinum/random
+/obj/item/stack/material/niobium/random
 	rand_min = 1
 	rand_max = 6
 
-/obj/item/stack/material/platinum/full
+/obj/item/stack/material/niobium/full
 	amount = 120
 
 //Extremely valuable to Research. (NOT ANYMORE. -Monochrome)

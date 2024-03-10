@@ -270,7 +270,7 @@
 
 // Unused ores
 /*
-/obj/item/stack/ore/osmium
+/obj/item/stack/ore/niobium
 	name = "raw platinum"
 	icon_state = "ore_platinum"
 	material = ORE_PLATINUM
@@ -278,7 +278,7 @@
 	material_randomly_has = FALSE
 	price_tag = 9
 
-/obj/item/stack/ore/osmium/small
+/obj/item/stack/ore/niobium/small
 	name = "raw platinum shard"
 	sheet_amout = 0.5
 

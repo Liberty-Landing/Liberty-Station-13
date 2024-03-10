@@ -1103,7 +1103,7 @@
 /turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/outside/forest/crashed_spaceloot)
 "ob" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "oe" = (
@@ -1224,7 +1224,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "oQ" = (
 /obj/structure/table/reinforced,
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -2240,7 +2240,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "yQ" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /obj/structure/boulder,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -2381,7 +2381,7 @@
 /turf/simulated/floor/tiled/techmaint_cargo,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Ax" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Az" = (
