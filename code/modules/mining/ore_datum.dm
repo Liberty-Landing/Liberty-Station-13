@@ -35,12 +35,12 @@ var/global/list/ore_data = list()
 		"thousand" = 999,
 		"million" = 704
 		)
-	xarch_source_mineral = "potassium"
+	xarch_source_mineral = "radium"
 
 /ore/hematite
 	name = ORE_IRON
 	display_name = "hematite"
-	smelts_to = MATERIAL_METAL
+	smelts_to = MATERIAL_IRON
 	alloy = TRUE
 	result_amount = 10
 	spread_chance = 15
@@ -67,7 +67,7 @@ var/global/list/ore_data = list()
 
 /ore/hydrogenc
 	name = ORE_HYDROGENC
-	display_name = "Gaseous Clathrates"
+	display_name = "Clathrate hydrate"
 	compresses_to = MATERIAL_HYDROGENC
 	smelts_to = MATERIAL_TRITIUM
 	alloy = TRUE
@@ -115,12 +115,12 @@ var/global/list/ore_data = list()
 	spread_chance = 10
 	ore = /obj/item/stack/ore/diamond
 	scan_icon = "mineral_rare"
-	xarch_source_mineral = "nitrogen"
+	xarch_source_mineral = "carbon"
 
 /ore/niobium
 	name = ORE_NIOBIUM
 	display_name = "pyrochlore"
-	smelts_to = MATERIAL_METAL //why would you do this?
+	smelts_to = MATERIAL_NIOBIUM //why would you do this?
 	alloy = TRUE
 	result_amount = 8
 	spread_chance = 10
@@ -130,7 +130,7 @@ var/global/list/ore_data = list()
 		"thousand" = 999,
 		"million" = 704
 		)
-	xarch_source_mineral = "potassium"
+	xarch_source_mineral = "niobium"
 
 /ore/copper
 	name = ORE_COPPER
@@ -144,7 +144,7 @@ var/global/list/ore_data = list()
 		"thousand" = 999,
 		"million" = 704
 		)
-	xarch_source_mineral = "potassium"
+	xarch_source_mineral = "copper"
 
 /ore/aluminium
 	name = ORE_ALUMINIUM
@@ -163,7 +163,7 @@ var/global/list/ore_data = list()
 /ore/titanium
 	name = ORE_TITANIUM
 	display_name = "ilminite"
-	smelts_to = MATERIAL_METAL
+	smelts_to = MATERIAL_TITANIUM
 	alloy = TRUE
 	result_amount = 10
 	spread_chance = 10

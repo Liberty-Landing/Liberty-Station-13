@@ -172,7 +172,8 @@
 			return "Precursor Cult"
 		if(ACCESS_REGION_REBEL) //insurgency
 			return "Khambataar Insurgency"
-
+		if(ACCESS_REGION_TRIBAL) //frostwalkers
+			return "Tribal"
 
 /proc/get_access_desc(id)
 	var/list/AS = get_all_access_datums_by_id()

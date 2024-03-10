@@ -151,7 +151,7 @@
 
 
 /obj/machinery/door/unpowered/simple/iron/New(var/newloc,var/material_name)
-	..(newloc, MATERIAL_METAL)
+	..(newloc, MATERIAL_IRON)
 
 /obj/machinery/door/unpowered/simple/silver/New(var/newloc,var/material_name)
 	..(newloc, MATERIAL_SILVER)

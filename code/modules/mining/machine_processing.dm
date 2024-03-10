@@ -158,14 +158,15 @@
 		ORE_SAND = 0.1,
 		ORE_IRON = 0.5,
 		ORE_LIGNITE = 0.5,
-		ORE_HYDROGEN = 1,
+		ORE_HYDROGENC = 1,
 		ORE_SILVER = 1.5,
 		ORE_GOLD = 2,
 		ORE_URANIUM = 2,
 		ORE_DIAMOND = 2.5,
-		ORE_PLATINUM = 2.5,
-		ORE_COPPER = 0.3,
-		ORE_VANADIUM = 0.4,
+		ORE_TITANIUM = 2.5,
+		ORE_COPPER = 0.2,
+		ORE_ALUMINIUM = 0.3,
+		ORE_NIOBIUM = 0.8,
 		ORE_TITANIUM = 1.5)
 
 /obj/machinery/mineral/processing_unit/laber

@@ -83,11 +83,11 @@
 	price_tag = 50
 
 /obj/item/clothing/gloves/dusters/platinum
-	name = "spiked platinum knuckle dusters"
+	name = "spiked titanium knuckle dusters"
 	desc = "Hurt like hell, and stylish as well."
 	icon_state = "dusters_platinum"
 	item_state = "dusters_platinum"
-	punch_increase = 15 // Made of platinum and are crafted with spikes, extra damage.
+	punch_increase = 15 // Made of titanium and are crafted with spikes, extra damage.
 	price_tag = 30
 
 /obj/item/clothing/gloves/dusters/gloves

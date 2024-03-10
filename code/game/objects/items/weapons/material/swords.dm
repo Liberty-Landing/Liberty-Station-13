@@ -43,10 +43,13 @@
 	default_material = MATERIAL_INDSTEEL
 
 /obj/item/material/sword/platinum
-	default_material = MATERIAL_TITANIUMRTC
+	default_material = MATERIAL_TITANIUM
 
 /obj/item/material/sword/iron
-	default_material = MATERIAL_METAL
+	default_material = MATERIAL_IRON
+
+/obj/item/material/sword/niobium
+	default_material = MATERIAL_NIOBIUM
 
 /obj/item/material/sword/silver
 	default_material = MATERIAL_SILVER
@@ -86,10 +89,13 @@
 	default_material = MATERIAL_INDSTEEL
 
 /obj/item/material/sword/katana/platinum
-	default_material = MATERIAL_TITANIUMRTC
+	default_material = MATERIAL_TITANIUM
 
 /obj/item/material/sword/katana/iron
-	default_material = MATERIAL_METAL
+	default_material = MATERIAL_IRON
+
+/obj/item/material/sword/katana/niobium
+	default_material = MATERIAL_NIOBIUM
 
 /obj/item/material/sword/katana/silver
 	default_material = MATERIAL_SILVER

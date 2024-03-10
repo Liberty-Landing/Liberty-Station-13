@@ -1,7 +1,7 @@
 //Sprite by Rebel
 /obj/item/gun/projectile/revolver/wayfarer
 	name = "\"Wayfarer\" caseless revolver"
-	desc = "A sleek and well-made revolver that has been hand-produced with care, menacing with reinforcements of indsteel which reinforces the barrel assembly, which has been forged from a mix of high-carbon aluminium, banded with low-carbon iron around the cylinder; and possesses a polished mahogany handle for a grip. \
+	desc = "A sleek and well-made revolver that has been hand-produced with care, menacing with reinforcements of indsteel which reinforces the barrel assembly, which has been forged from a mix of high-carbon aluminium, banded with titanium around the cylinder; and possesses a polished mahogany handle for a grip. \
 	The Barrel is refined to use high-power 7mm caseless munitions while being easy to clean. \
 	While seemingly produced by Libritor Arms; hinted by the stamp placed upon its grip, it lacks most of the normal markings - and is instead tagged with a simple quote - \
 	\"The hopeless don't revolt, because revolution is an act of hope.\""
@@ -14,7 +14,7 @@
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 8
 	ammo_type = /obj/item/ammo_magazine/cl7mm
-	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 5, MATERIAL_METAL = 5, MATERIAL_WOOD = 3)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 5, MATERIAL_TITANIUM = 5, MATERIAL_WOOD = 3)
 	can_dual = TRUE
 	price_tag = 1400
 	damage_multiplier = 1.6

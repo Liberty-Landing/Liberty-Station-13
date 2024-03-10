@@ -365,9 +365,6 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	)
 	build_time = 20 SECONDS
 
-
-	/obj/item/organ_module/active/simple/armblade/custodianblade
-
 /datum/custodian_blueprint/weak/bricktiles
 	name = "Pristine brick stack"
 	build_path = /obj/item/stack/tile/greybricks_pristine/full

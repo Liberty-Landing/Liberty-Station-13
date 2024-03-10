@@ -246,7 +246,9 @@
 		M.add_chemical_effect(CE_BLOODCLOT, 0.2)
 		M.adjustNutrition(0.8) //used in a lot of crafting
 
-	if(M.stats.getPerk(PERK_))
+/*	if(holder.get_core_implant(/obj/item/implant/core_implant/hearthcore))
+	M.adjust
+*/
 
 /datum/reagent/metal/uranium
 	name ="Uranium"

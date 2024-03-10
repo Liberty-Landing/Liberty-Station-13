@@ -32,7 +32,7 @@
 	maxcharge = 20000
 
 /obj/item/cell/large/copper
-	name = "Fusioncore \"Electrasphere 20000L\"
+	name = "Fusioncore \"Electrasphere 20000L\""
 	desc = "Fusioncore branded non-rechargeable L-standardized power cell. A rare, and likely found in the trash, batteries made of copper coils from a now bankrupt Terran industry."
 	icon_state = "b_nt"
 	matter = list(MATERIAL_COPPER = 2, MATERIAL_DURALUMIN = 4)
@@ -41,7 +41,7 @@
 	created_max_charge = TRUE
 
 /obj/item/cell/large/copper/superior
-	name = "Fusioncore \"Photonmatrix 20000L\"
+	name = "Fusioncore \"Photonmatrix 20000L\""
 	desc = "Fusioncore branded non-rechargeable L-standardized power cell. A rare, and likely found in the trash, batteries made of copper coils from a now bankrupt Terran industry."
 	icon_state = "b_nt_pl"
 	matter = list(MATERIAL_COPPER = 3, MATERIAL_DURALUMIN = 4, MATERIAL_SILVER = 1)
@@ -265,7 +265,7 @@
 //Badcells - Medium
 
 /obj/item/cell/medium/copper
-	name = "Fusioncore \"Electrasphere 900M\"
+	name = "Fusioncore \"Electrasphere 900M\""
 	desc = "Fusioncore branded non-rechargeable M-standardized power cell. A rare, and likely found in the trash, batteries made of copper coils from a now bankrupt Terran industry."
 	icon_state = "b_nt"
 	matter = list(MATERIAL_COPPER = 2, MATERIAL_DURALUMIN = 2)
@@ -274,7 +274,7 @@
 	created_max_charge = TRUE
 
 /obj/item/cell/medium/copper/superior
-	name = "Fusioncore \"Photonmatrix 1200M\"
+	name = "Fusioncore \"Photonmatrix 1200M\""
 	desc = "Fusioncore branded non-rechargeable M-standardized power cell. A rare, and likely found in the trash, batteries made of copper coils from a now bankrupt Terran industry."
 	icon_state = "b_nt_pl"
 	maxcharge = 1200
@@ -283,7 +283,7 @@
 	name = "Fusioncore \"Hyperflux 1500M\""
 	desc = "Fusioncore branded non-rechargeable M-standardized power cell. A rare, and likely found in the trash, batteries made of copper coils from a now bankrupt Terran industry."
 	icon_state = "b_nt_pl"
-	maxcharge = 1500M
+	maxcharge = 1500
 
 //SMALL CELLS - for small devices, such as flashlights, analyzers and HUDs.
 
@@ -433,7 +433,7 @@
 	maxcharge = 400
 
 /obj/item/cell/small/copper/advanced
-	name = "Fusioncore \"Hyperflux 500S""
+	name = "Fusioncore \"Hyperflux 500S\""
 	desc = "Fusioncore branded non-rechargeable S-standardized power cell. A rare, and likely found in the trash, batteries made of copper coils from a now bankrupt Terran industry."
 	icon_state = "b_nt_pl"
 	maxcharge = 500

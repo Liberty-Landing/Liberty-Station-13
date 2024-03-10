@@ -42,7 +42,7 @@
 	desc = "Previously nothing more than a prototype, these Simulacrum Robotics thermal goggles are incredibly battery-efficient."
 	icon_state = "onestar_thermal"
 	off_state = "onestar_thermal"
-	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_TITANIUMRTC = 2) // SD tech all use platinum
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_TITANIUM = 2) // SD tech all use titanium
 	tick_cost = 0.25 // 400 ticks on a stock cell. Incredibly efficient due to being cutting edge tech, also justifies the research node rather than just taking syndie ones.
 
 /obj/item/clothing/glasses/powered/thermal/plain

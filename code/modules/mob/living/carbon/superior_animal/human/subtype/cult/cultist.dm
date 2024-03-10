@@ -99,7 +99,7 @@
 						This man or woman were a normal colonist previously - most likely a scientist - who dwelled too deep within the directions of Lucca Argyros, \
 						soon enough, received the 'enlightement' from carcinification procedures, either from natural Precursor psionic influence or biomatter infusions considered 'holy rituals'. \
 						This one is a lighteater cultist possessing a weaker form of the Crustor Heart, one that the radiance has been removed and completely lacks neurophyta, \
-						this results in less options for power while being fueled by welding fuel alone. The entire thing is flamming hot, unstable and not versatile, likely to explode any moment. \
+						this results in less options for power while being fueled by welding fuel alone. The entire thing is flamming hot, unstable and not versatile, likely to explode any moment."
 	icon_state = "lighteater_cultist_range"
 	icon_dead = "lighteater_cultist_range_dead"
 	maxHealth = 100

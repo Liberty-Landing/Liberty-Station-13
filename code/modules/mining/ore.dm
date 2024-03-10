@@ -143,6 +143,14 @@
 	crushable = FALSE
 	material_randomly_has = FALSE
 
+/obj/item/stack/ore/lignite/attackby(obj/item/I, mob/user)
+	..()
+	if(QUALITY_HAMMERING in I.tool_qualities)
+		to_chat(user, SPAN_NOTICE("You compress the lignite into a well-ventilated block, ideal for igniting fires."))
+		new /obj/item/stack/material/briquette (user.loc)
+		qdel(src)
+		return
+
 /obj/item/stack/ore/lignite/small
 	name = "lignite nugget"
 	sheet_amout = 0.5
@@ -299,4 +307,4 @@
 	name = "raw hydrogen nugget" //Its a nugget?
 	sheet_amout = 0.5
 
-*/ 
+*/

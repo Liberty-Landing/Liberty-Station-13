@@ -311,8 +311,9 @@
 	gain_text = "You are filled with philosophical inspiration."
 
 /datum/perk/nt_oddity/holy_light
-	name = "Radiant Light"
-	desc = "You now provide a weak healing aura, healing both brute and burn damage to any Hearthcore users nearby as well as yourself."
+	name = "Healing Influx"
+	desc = "Deep within your bloodstream, radiant nanobots diligently mend and heal both yours and hearthcore bearers's wounds. \
+	It relies on the hearthcore for transportation using Li-Fi systems, and does not seem to work with non-knight personnel."
 	icon_state = "third_eye"  //https://game-icons.net/1x1/lorc/third-eye.html
 	var/healing_power = 0.1
 	var/cooldown = 1 SECONDS // Just to make sure that perk don't go berserk.

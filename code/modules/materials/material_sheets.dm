@@ -575,8 +575,6 @@
 /obj/item/stack/material/nacre/full
 	amount = 360
 
-/obj/item/stack/material/niobium
-
 /obj/item/stack/material/copper
 	name = "copper ingot"
 	desc = "ductile and malleable metal with excellent conductivity, widely utilized in electrical applications and alloys. Nowadays it is useless on is own, but can easily be used to make non-toxic kitchenware."
@@ -663,26 +661,6 @@
 /obj/item/stack/material/duralumin/full
 	amount = 120
 
-
-/obj/item/stack/material/metal
-	name = "metal"
-	desc = "Without alloying with another material, it becomes difficult to know and have use for many types of pure metals. \
-	Even with limited uses, it has structural and handmade crafting usage, but no much industrial uses. \
-	This one could be Iron, Niobium or Titanium, you simply have no idea."
-	icon_state = "sheet-metal"
-	default_type = MATERIAL_METAL
-	price_tag = 2
-	novariants = FALSE
-
-/obj/item/stack/material/metal/random
-	rand_min = 3
-	rand_max = 8
-
-/obj/item/stack/material/metal/full
-	amount = 120
-
-
-/*=> Currently commented out since I replaced these with "metal" ingot. Just killing off the rather useless splits.
 /obj/item/stack/material/titanium
 	name = "titanium"
 	desc = "Lightweight, corrosion-resistant metal with high strength, commonly used in aerospace, medical, industrial applications and medium-high tier weapons. Most useful when properly alloyed."
@@ -701,7 +679,8 @@
 
 /obj/item/stack/material/niobium
 	name = "niobium ingot"
-	desc = "Fragmented piece from a still studied substance that looks alike nacre, and it is constantly healing with microscopic activity."
+	desc = "A important material that greadly improve steel, currently improving low-temperature steel alloys such as the current Industrial Steel. \
+	It is a superconductor and important for pipelines, beams, jet engines and advanced weaponry. If Niobium never existed, humanity would never reach the stars as it is today."
 	singular_name = "niobium ingot"
 	icon_state = "niobium"
 	default_type = MATERIAL_NIOBIUM
@@ -716,10 +695,11 @@
 	amount = 120
 
 /obj/item/stack/material/iron
-	name = "iron"
-	desc = "Without alloying with another material, nowadays it solely has uses for structural constructions."
+	name = "cast iron"
+	desc = "Without alloying with another material, iron does not find much use. Cast iron tend to be too brittle, \
+	and have a relatively low melting point, but good fluidity and castability. Suitable for some machinability, but more viable for furniture and cooking utensils."
 	icon_state = "sheet-iron"
-	default_type = MATERIAL_METAL
+	default_type = MATERIAL_IRON
 	price_tag = 1
 	novariants = FALSE
 
@@ -730,5 +710,3 @@
 /obj/item/stack/material/iron/full
 	amount = 120
 
-
-*/

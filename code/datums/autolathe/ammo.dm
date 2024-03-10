@@ -737,7 +737,7 @@
 /datum/design/autolathe/ammo/grenade/emp
 	name = "EMP grenade shell"
 	build_path = /obj/item/ammo_casing/grenade/emp
-	materials = list(MATERIAL_DURALUMIN = 2, MATERIAL_METAL = 1, MATERIAL_URANIUM = 1)
+	materials = list(MATERIAL_DURALUMIN = 2, MATERIAL_NIOBIUM = 1, MATERIAL_URANIUM = 1)
 
 /datum/design/autolathe/ammo/grenade/flash
 	name= "flash grenade shell"

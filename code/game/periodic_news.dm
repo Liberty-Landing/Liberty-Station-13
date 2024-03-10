@@ -127,7 +127,7 @@
 			\"further proof\" of the colony's anti-Terran stance. Meanwhile, Refuge Security has been unable to quell
 			the riots. More on this at 6."}
 			round_time = 60 * 60
-
+/*
 	colonial_occourences
 
 		underground_activities
@@ -159,23 +159,7 @@
 				flaw in the ships design - something remarked even by Black Bolt Company - and questions about the necessity of exploring space wreckage without using Custodian Gatepyre \
 				Technology, the stark reality remains... families will never reunite with their loved ones."
 			))
-
-[pick("Consume...","Assimilate...","Blot out the light...", "CRUDUX CRUO!!!", "Join us...", "Louhi opasta minua!")]")
-
-# News Messages
-news_messages = [
-    "Liberty LLC Announces Expansion Plans Despite Rising Tensions",
-    "In a surprising move, Liberty LLC reveals ambitious expansion plans amidst growing unrest. The corporation's decision sparks debates over priorities, with citizens questioning the timing given recent challenges. Keep an eye on The Sounds of Liberty for updates on this corporate decision.",
-
-    "Custodians of Bonfire Showcase Technological Breakthrough",
-    "The Custodians of Bonfire unveil a groundbreaking technological advancement that promises to revolutionize space travel. Speculations arise about the potential impact on colonial defense and trade. For in-depth coverage, stay tuned to The Sounds of Liberty.",
-
-    "Artificial Intelligence Integration Raises Ethical Concerns",
-    "Recent advancements in artificial intelligence integration raise ethical questions within the colonial community. Discussions intensify over the implications of AI in various sectors, from governance to everyday life. Explore the ethical debate with The Sounds of Liberty.",
-
-    # Add more news messages as needed
-]
-
+*/
 
 var/global/list/newscaster_standard_feeds = list(/datum/news_announcement/ceti_station_overtake, /datum/news_announcement/astrakhan_strike, /datum/news_announcement/lotus_tree, /datum/news_announcement/random_junk,  /datum/news_announcement/food_riots)
 
