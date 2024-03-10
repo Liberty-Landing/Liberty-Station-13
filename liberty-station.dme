@@ -1707,7 +1707,7 @@
 #include "code\modules\client\preference_setup\loadout\lists\factionbonfire.dm"
 #include "code\modules\client\preference_setup\loadout\lists\factioncapsa.dm"
 #include "code\modules\client\preference_setup\loadout\lists\factioncommand.dm"
-#include "code\modules\client\preference_setup\loadout\lists\factionfontaine.dm"
+#include "code\modules\client\preference_setup\loadout\lists\factionlogistics.dm"
 #include "code\modules\client\preference_setup\loadout\lists\factionphokorus.dm"
 #include "code\modules\client\preference_setup\loadout\lists\factionsecurity.dm"
 #include "code\modules\client\preference_setup\loadout\lists\factionskylight.dm"
