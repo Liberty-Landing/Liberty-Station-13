@@ -13,7 +13,7 @@
 "ao" = (
 /obj/random/scrap,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "au" = (
 /obj/effect/decal/cleanable/dirt,
@@ -70,7 +70,7 @@
 "aO" = (
 /obj/effect/decal/cleanable/rubble,
 /obj/item/stack/rods/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "aR" = (
@@ -156,7 +156,7 @@
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/forest/crashed_spaceloot)
 "bz" = (
 /obj/structure/table/standard,
@@ -238,8 +238,8 @@
 "cw" = (
 /obj/effect/floor_decal/industrial/botright,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/steel/random,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/obj/item/stack/material/aluminium/random,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "cx" = (
 /obj/effect/step_trigger/surface_to_forest_1_A{
@@ -254,7 +254,7 @@
 	name = "Service Maintenance";
 	req_access = list(12)
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/outside/forest/crashed_spaceloot)
 "cB" = (
 /obj/random/cluster/roaches,
@@ -341,7 +341,7 @@
 "dQ" = (
 /obj/effect/floor_decal/industrial/botright,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "dW" = (
 /obj/random/mob/termite_no_despawn,
@@ -543,7 +543,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "gq" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/forest/crashed_spaceloot)
 "gr" = (
 /obj/structure/railing,
@@ -631,7 +631,7 @@
 "hy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "hF" = (
 /obj/structure/scrap/guns,
@@ -644,10 +644,10 @@
 "hL" = (
 /obj/random/scrap/dense_even,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "hN" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "hP" = (
@@ -771,7 +771,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/outside/forest/crashed_spaceloot)
 "jo" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/abbandoned_caverns)
 "jr" = (
@@ -794,7 +794,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 10
 	},
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "jH" = (
@@ -875,7 +875,7 @@
 /area/liberty/outside/forest/hill_forest)
 "kI" = (
 /obj/item/stack/rods/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "kR" = (
@@ -887,7 +887,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "lg" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/constructable_frame/machine_frame,
 /turf/simulated/floor/reinforced,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -959,7 +959,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/outside/forest/crashed_spaceloot)
 "mr" = (
@@ -1077,7 +1077,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "nM" = (
@@ -1086,7 +1086,7 @@
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/hill_forest)
 "nO" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1";
@@ -1100,7 +1100,7 @@
 /turf/unsimulated/wall/snow)
 "nY" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/liberty/outside/forest/crashed_spaceloot)
 "ob" = (
 /obj/item/material/shard/plasma,
@@ -1167,7 +1167,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "oB" = (
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow{
@@ -1260,7 +1260,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "pi" = (
@@ -1485,7 +1485,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "ri" = (
-/obj/item/tool/spear/plasteel,
+/obj/item/tool/spear/indsteel,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/crashed_spaceloot)
 "rj" = (
@@ -1564,7 +1564,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "sr" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/girder,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -1590,7 +1590,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "sQ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/outside/forest/crashed_spaceloot)
 "sZ" = (
@@ -1609,7 +1609,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "ti" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -1639,7 +1639,7 @@
 "tq" = (
 /obj/effect/floor_decal/industrial/botleft,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "tt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1652,7 +1652,7 @@
 /area/colony)
 "tz" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "tA" = (
@@ -1663,7 +1663,7 @@
 	pixel_y = 28
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/outside/forest/crashed_spaceloot)
 "tG" = (
@@ -1755,7 +1755,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "uK" = (
@@ -1873,7 +1873,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "vI" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "vK" = (
 /obj/structure/reagent_dispensers/fueltank/derelict,
@@ -1895,7 +1895,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "vR" = (
 /obj/effect/decal/cleanable/rubble,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "vX" = (
@@ -1927,7 +1927,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/outside/forest/crashed_spaceloot)
 "wo" = (
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/forest/crashed_spaceloot)
 "ws" = (
 /obj/random/cluster/termite_no_despawn_swarm,
@@ -1939,7 +1939,7 @@
 	d2 = 8;
 	icon_state = "4-8"
 	},
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "wz" = (
@@ -2010,7 +2010,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "wV" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/crashed_spaceloot)
 "wW" = (
@@ -2028,7 +2028,7 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/outside/forest/crashed_spaceloot)
 "wZ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/tool_upgrade,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -2132,7 +2132,7 @@
 "ya" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/forest/crashed_spaceloot)
 "yb" = (
 /obj/structure/flora/snowgrass/vegetation,
@@ -2175,7 +2175,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "yx" = (
 /obj/machinery/light/small{
@@ -2217,7 +2217,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "yK" = (
 /obj/random/scrap/dense_even,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "yN" = (
@@ -2307,7 +2307,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "zA" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -2405,7 +2405,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "AG" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "AM" = (
@@ -2487,7 +2487,7 @@
 /obj/random/scrap,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "BC" = (
 /obj/item/remains/human4,
@@ -2646,7 +2646,7 @@
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/abbandoned_caverns)
 "Dg" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Dj" = (
 /obj/structure/bed/chair{
@@ -2726,7 +2726,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "DL" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "DN" = (
@@ -2781,7 +2781,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "Em" = (
 /obj/structure/lattice,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Ep" = (
@@ -2998,7 +2998,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/random/mob/carp,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -3097,7 +3097,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "HJ" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/random/mob/carp,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -3196,7 +3196,7 @@
 "II" = (
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/liberty/outside/forest/crashed_spaceloot)
 "IJ" = (
 /obj/structure/disposalpipe/segment{
@@ -3260,7 +3260,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "JG" = (
 /obj/item/deck/cards,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/pill_bottle/dice_nerd,
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/carp,
@@ -3336,7 +3336,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Ka" = (
 /obj/structure/flora/small/snow/rock5,
@@ -3461,7 +3461,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/colony)
 "LD" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
@@ -3474,7 +3474,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "LJ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/tool/tape_roll,
 /turf/simulated/floor/rock,
@@ -3497,7 +3497,7 @@
 "LW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Md" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -3639,7 +3639,7 @@
 /obj/structure/bed/chair/shuttle{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "NJ" = (
 /obj/effect/floor_decal/industrial/road/straight3,
@@ -3688,7 +3688,7 @@
 /turf/simulated/floor/tiled/techmaint_cargo,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Om" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Or" = (
@@ -3792,7 +3792,7 @@
 "Pn" = (
 /obj/structure/table/standard,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Pt" = (
 /obj/structure/table/woodentable,
@@ -3839,7 +3839,7 @@
 	locked = 1;
 	name = "Internal Atmospherics Airlock"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Qa" = (
 /obj/structure/catwalk,
@@ -3879,7 +3879,7 @@
 /area/liberty/outside/forest/abbandoned_caverns)
 "QC" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/reinforced,
 /area/liberty/outside/forest/crashed_spaceloot)
 "QJ" = (
@@ -3919,7 +3919,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Ra" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/flame/lighter/zippo,
 /obj/item/storage/fancy/cigarettes,
 /obj/effect/decal/cleanable/dirt,
@@ -3998,7 +3998,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "Sr" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/material/steel{
+/obj/item/stack/material/aluminium{
 	amount = 120
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -4044,7 +4044,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "SH" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "SO" = (
@@ -4060,7 +4060,7 @@
 "ST" = (
 /obj/structure/table/rack,
 /obj/random/scrap,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "SU" = (
 /turf/simulated/floor/snow,
@@ -4147,7 +4147,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/white/cargo,
 /area/liberty/outside/forest/crashed_spaceloot)
 "TK" = (
@@ -4167,7 +4167,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "TW" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Ug" = (
@@ -4231,7 +4231,7 @@
 /obj/structure/table/rack,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "UJ" = (
 /obj/structure/extinguisher_cabinet{
@@ -4277,7 +4277,7 @@
 /area/liberty/outside/forest/hill_forest)
 "Vn" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Vq" = (
 /obj/structure/bed{
@@ -4309,7 +4309,7 @@
 "Vy" = (
 /obj/effect/floor_decal/industrial/botleft,
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/liberty/outside/forest/crashed_spaceloot)
 "VD" = (
 /obj/random/scrap/dense_weighted,
@@ -4321,7 +4321,7 @@
 /turf/simulated/floor/rock/dark,
 /area/liberty/outside/forest/crashed_spaceloot)
 "VQ" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/liberty/outside/forest/crashed_spaceloot)
 "VR" = (
@@ -4361,7 +4361,7 @@
 /mob/living/simple_animal/hostile/carp,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Wr" = (
 /obj/structure/bed/chair{
@@ -4401,10 +4401,10 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "WL" = (
 /obj/structure/closet/crate/trashcart,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/crashed_spaceloot)
 "WM" = (
@@ -4438,7 +4438,7 @@
 /turf/simulated/mineral/planet)
 "WV" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/outside/forest/crashed_spaceloot)
 "WW" = (
@@ -4491,7 +4491,7 @@
 /area/liberty/outside/forest/crashed_spaceloot)
 "Xv" = (
 /obj/item/stack/rods/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Xy" = (
@@ -4501,7 +4501,7 @@
 /turf/simulated/floor/reinforced,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Xz" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/weldpack/canister,
 /obj/item/stack/medical/bruise_pack/handmade,
 /turf/simulated/floor/rock,
@@ -4532,7 +4532,7 @@
 	},
 /mob/living/simple_animal/hostile/bear,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/liberty/outside/forest/crashed_spaceloot)
 "XN" = (
 /obj/machinery/space_heater,
@@ -4646,7 +4646,7 @@
 /turf/simulated/floor/plating/under,
 /area/liberty/outside/forest/crashed_spaceloot)
 "Zo" = (
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/rock,
 /area/liberty/outside/forest/crashed_spaceloot)

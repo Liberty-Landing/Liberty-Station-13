@@ -2157,7 +2157,7 @@
 /area/liberty/dungeon/outside/farm)
 "sQ" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/silver/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/plastic/random,
@@ -2721,7 +2721,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/dungeon/outside/shuttle_crash)
 "xn" = (
 /mob/living/carbon/superior_animal/human/lighteater_cultist,
@@ -2969,7 +2969,7 @@
 	dir = 4;
 	tag = "icon-cryopod_0 (EAST)"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/dungeon/outside/shuttle_crash)
 "zr" = (
 /obj/machinery/light{
@@ -3160,7 +3160,7 @@
 "AU" = (
 /obj/structure/table/rack/shelf,
 /obj/item/stack/material/wood/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/plasma/random,
 /obj/item/stack/material/diamond/random,
@@ -3245,7 +3245,7 @@
 /turf/simulated/floor/wood/wild4,
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "BH" = (
-/obj/item/tool/spear/steel,
+/obj/item/tool/spear/aluminium,
 /turf/simulated/floor/rock/grey,
 /area/liberty/dungeon/outside/frozen_forest/crashsite_cave)
 "BI" = (
@@ -3343,7 +3343,7 @@
 "Cu" = (
 /obj/structure/table/rack/shelf,
 /obj/random/ammo,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/uranium/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/platinum/random,
@@ -3598,7 +3598,7 @@
 /area/liberty/dungeon/outside/frozen_forest/crashsite)
 "EW" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/platinum/random,
 /obj/item/stack/material/gold/random,
@@ -5457,7 +5457,7 @@
 "Td" = (
 /obj/structure/table/rack/shelf,
 /obj/item/stack/material/wood/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/leather/random,
 /obj/item/stack/material/leather/random,
@@ -5496,7 +5496,7 @@
 "Tp" = (
 /obj/structure/table/rack/shelf,
 /obj/random/ammo,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/platinum/random,
 /obj/item/stack/material/plasma/random,
@@ -5710,7 +5710,7 @@
 	dir = 4;
 	tag = "icon-cryo_rear (EAST)"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/liberty/dungeon/outside/shuttle_crash)
 "UE" = (
 /obj/item/ammo_casing/shotgun/spent,
@@ -6344,7 +6344,7 @@
 "Ze" = (
 /obj/structure/table/rack/shelf,
 /obj/item/stack/material/wood/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/plastic/random,
 /obj/item/stack/material/plasma/random,
 /obj/item/stack/rods/random,
