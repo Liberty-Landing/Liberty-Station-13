@@ -65,16 +65,16 @@
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/prospectors
-	name = "Prospectors - CEO H. Fontaine"
+	name = "Black Bolt Logistics - Black Bolt Lower Colony Headquarters"
 
-	fax_alert = "FONTAINE FAX"
-	fax_response = "Fontaine Advisory"
+	fax_alert = "SCAVENGER FAX"
+	fax_response = "Logistics Advisory"
 
 	color = "#ff0000"
 	darkcolor = "#ac0101"
 	lightcolor = "#fb5b4d"
 
-	stamptext = "This paper has been stamped with the notary of H. Fontaine."
+	stamptext = "This paper has been stamped with the notary of Black Bolt Logistics."
 	stampshape = "paper_stamp-dots"
 
 /datum/faction/liberty/Union

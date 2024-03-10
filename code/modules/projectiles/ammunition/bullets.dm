@@ -151,6 +151,9 @@
 
 //// 6.5 carbine ////
 
+/obj/item/ammo_casing/light_rifle_257/spent
+	projectile_type = null
+
 /obj/item/ammo_casing/light_rifle_257
 	desc = "A 6.5mm bullet casing."
 	icon_state = "srifle_c_l"

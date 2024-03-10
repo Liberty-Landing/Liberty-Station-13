@@ -281,7 +281,7 @@
 
 /obj/item/clothing/under/iron_lock_security
 	name = "Iron Eagle Security Uniform"
-	desc = "An outdated uniform of a now almost extinct volunteer force \"Iron Eagle Security\". A private security force mainly formed by volunteers to work in the frontier of the known galaxy, or just by vatborns \"donated\" to work as guards that got its start centuries ago being \"menaged\" by the Terran Federation to support new colonies."
+	desc = "An outdated uniform of a now almost extinct force \"Iron Eagle Security\". One of The few Federation security forces mainly formed by vat-grown to work in the frontier of the known galaxy, or just by volunteer citizens who wanted a comfy life, they were here to support new colonies."
 	icon_state = "northtech"
 	has_sensor = 0
 

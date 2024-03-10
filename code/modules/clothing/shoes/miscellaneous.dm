@@ -27,7 +27,7 @@
 
 /obj/item/clothing/shoes/ablasive/iron_lock_security
 	name = "outdated jackboots"
-	desc = "An \"Iron Eagle Security\" ablative boots with plates designed to absorb energy projectiles, even after all this time a lot of people improved its design originally produced in mass by the Terran Federation."
+	desc = "An antique pair of \"Iron Eagle Security\" ablative boots with plates designed to absorb energy projectiles, even after all this time a lot of people improved its design originally produced in mass by the Terran Federation, approved to run after criminal scum."
 
 /obj/item/clothing/shoes/swat
 	name = "\improper SWAT shoes"

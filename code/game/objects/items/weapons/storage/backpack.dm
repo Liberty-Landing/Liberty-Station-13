@@ -402,3 +402,23 @@
 	max_storage_space = DEFAULT_HUGE_STORAGE * 1.5
 	matter = list(MATERIAL_BIOMATTER = 20, MATERIAL_PLASTIC = 3)
 	equip_access = FALSE
+/*
+//new exosatchels commisioned from an event winner (metrobotic) as his reward
+*/
+
+/obj/item/storage/backpack/exosatchel
+	name = "grey exoskeleton satchel"
+	desc = "A trendy looking satchel modified to adjust the slings into exoskeletons and armors in a more comfortable way."
+	icon_state = "exobag_gray"
+	max_storage_space = DEFAULT_HUGE_STORAGE * 0.7//is just a quirky satchel with different sprite
+	worn_access = TRUE
+
+/obj/item/storage/backpack/exosatchel/medical
+	name = "medical exoskeleton satchel"
+	desc = "A Medical style looking satchel modified to adjust the slings into exoskeletons and armors in a more comfortable way."
+	icon_state = "exobag_medical"
+
+/obj/item/storage/backpack/exosatchel/leather
+	name = "Leather exoskeleton satchel"
+	desc = "A Leather satchel modified to adjust the slings into exoskeletons and armors in a more comfortable way."
+	icon_state = "exobag_leather"

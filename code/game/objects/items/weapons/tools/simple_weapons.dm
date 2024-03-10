@@ -225,7 +225,7 @@
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = WEAPON_FORCE_ROBUST
+	force = WEAPON_FORCE_ROBUST + 4
 	armor_penetration = ARMOR_PEN_EXTREME
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
@@ -251,7 +251,7 @@
 		slot_back_str = "combat_sword"
 		)
 	worksound = WORKSOUND_HARD_SLASH
-	force = WEAPON_FORCE_NORMAL
+	force = WEAPON_FORCE_ROBUST + 3
 	armor_penetration = ARMOR_PEN_MODERATE
 	effective_faction = list("roach") // The factions mentioned on the blade's description
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
@@ -279,7 +279,7 @@
 	hitsound = 'sound/weapons/heavyslash.ogg'
 	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 5, MATERIAL_DIAMOND = 1) //sharpened using diamond dust or whatever// now has literally the diamonds on the blade
 	slot_flags = SLOT_BELT | SLOT_BACK
-	force = WEAPON_FORCE_ROBUST//the same as the normal katana since this one is pretty much very similar to one.
+	force = WEAPON_FORCE_ROBUST + 4 //the same as the normal katana since this one is pretty much very similar to one.
 	armor_penetration =  ARMOR_PEN_EXTREME
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	item_icons = list(
@@ -297,7 +297,7 @@
 	item_state = "katana_improv"
 	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 2) //twice the value of a kitche knife
 	slot_flags = SLOT_BELT|SLOT_BACK
-	force = WEAPON_FORCE_DANGEROUS
+	force = WEAPON_FORCE_DANGEROUS + 3
 	armor_penetration = ARMOR_PEN_SHALLOW
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	price_tag = 40
@@ -432,6 +432,7 @@
 	desc = "Hack and slash!"
 	icon_state = "msword"
 	item_state = "msword"
+	force = WEAPON_FORCE_ROBUST + 3 //nerfs it a bit because it was better than a katana?
 	slot_flags = SLOT_BELT|SLOT_BACK
 	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 2) // 2 rods, 5 indsteel
 	armor_penetration = ARMOR_PEN_MODERATE
@@ -445,7 +446,7 @@
 	desc = "This thing is too big to be called a sword. \
 			Too big, too thick, too heavy, and too rough, \
 			it is more like a large hunk of indsteel. \nA \
-			Shepherd's weapon of choice when bashing is not enough; \
+			Leader's weapon of choice when bashing is not enough; \
 			you have to cleave through the hordes to survive, and keep struggling."
 	icon_state = "renderslayer"
 	item_state = "renderslayer"
@@ -666,7 +667,7 @@
 	wielded_icon = "makeshift_halberd_wielded"
 	force = WEAPON_FORCE_ROBUST
 	throwforce = WEAPON_FORCE_NORMAL
-	armor_penetration = ARMOR_PEN_SHALLOW
+	armor_penetration = ARMOR_PEN_MODERATE
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	matter = list(MATERIAL_ALUMINIUM = 5)
 	alt_mode_toggle = "flips the halberd to its broad side"
@@ -725,7 +726,7 @@
 /obj/item/tool/cheap/katana
 	name = "cheap katana"
 	desc = "A katana of acceptable quality, mass-produced by Skylight. Easily their best-selling product from this lineup."
-	armor_penetration = ARMOR_PEN_MODERATE // Something something sharper
+	armor_penetration = ARMOR_PEN_SHALLOW // Something something sharper//found the 15 ap habibi, you get 10 now, no more tricks.- dromkii
 	icon_state = "katana_old"
 	item_state = "katana"
 

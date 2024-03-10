@@ -119,7 +119,7 @@ Advanced Voidsuit: Union Chief
 	name = "advanced hardsuit control module"
 	suit_type = "advanced hardsuit"
 	desc = "An advanced hardsuit that protects against hazardous, low pressure environments. Shines with a high polish."
-	icon_state = "union_rig"
+	icon_state = "ce_rig"
 	armor_list = list(
 		melee = 40,
 		bullet = 40,
@@ -379,8 +379,8 @@ Union RIG
 	It is best suited for surviving and combating wild life, but has reasonably decent kevlar plating and impact pads to absorb bullets and energy blasts."
 	icon_state = "response_team"
 	armor_list = list(
-		melee = 45, // This is still barely below a combat hardsuit, mind you.
-		bullet = 35,
+		melee = 30, // This is still barely below a combat hardsuit, mind you.//rebalanced to be lighter? the previous 45% defense was even better than industrial/union.
+		bullet = 30,
 		energy = 30,
 		bomb = 50,
 		bio = 100,

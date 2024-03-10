@@ -39,8 +39,8 @@
 	leather_amount = 0
 	bones_amount = 0
 
-	maxHealth = 15
-	health = 15
+	maxHealth = 25//more hp to balance them a bit, they are way too easy to kill even with your bare hands and can't be considered a threat even in good numbers, also makes them farmable by the custodians since they don't explode after one slap
+	health = 25
 
 	var/blattedin_revives_left = 3 // how many times blattedin can get us back to life (as num for adminbus fun).
 	//The common roach, gets to live 4 times, same as a roachling. They have so much to live for.

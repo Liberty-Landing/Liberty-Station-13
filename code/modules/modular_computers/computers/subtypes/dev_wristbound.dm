@@ -6,7 +6,7 @@
 	w_class = ITEM_SIZE_SMALL
 	screen_light_strength = 1.8 //A lot brighter than normal PDA
 	screen_light_range = 2
-	slot_flags = SLOT_GLOVES
+	slot_flags = SLOT_ID | SLOT_GLOVES //now can be used in the ID and work as a fallout pipboy
 	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 2)
 	hardware_flag = PROGRAM_PDA
 	max_hardware_size = 1

@@ -12,6 +12,18 @@
 /decl/backpack_outfit/nothing/spawn_backpack(var/location, var/metadata, var/desired_type)
 	return
 
+/decl/backpack_outfit/backpack/exosatchel
+	name = "grey exoskeleton satchel"
+	path =/obj/item/storage/backpack/exosatchel
+
+/decl/backpack_outfit/backpack/exosatchel/medical
+	name = "medical exoskeleton satchel"
+	path =/obj/item/storage/backpack/exosatchel/medical
+
+/decl/backpack_outfit/backpack/exosatchel/leather
+	name = "Leather exoskeleton satchel"
+	path =/obj/item/storage/backpack/exosatchel/leather
+
 /decl/backpack_outfit/backpack
 	name = "Department Backpack"
 	path = /obj/item/storage/backpack

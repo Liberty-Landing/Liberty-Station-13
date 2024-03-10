@@ -88,7 +88,7 @@
 	jobs_in_department = list(JOBS_SERVICE)
 
 /datum/department/prospector
-	name = "Fontaine Heavy Industries Account"
+	name = "Black Bolt Logistics Surface Team Account"
 	id = DEPARTMENT_PROSPECTOR
 	account_initial_balance = 5000 //Entire job is just making money so you get this
 	jobs_in_department = list(JOBS_PROSPECTOR)

@@ -59,6 +59,26 @@
 	desc = "They look like the remains of a small reptile."
 	icon_state = "lizard"
 
+/obj/item/remains/human0
+	desc = "They look like the remains of human."
+	icon_state = "human_remains0"
+
+/obj/item/remains/human1
+	desc = "They look like the remains of human."
+	icon_state = "human_remains1"
+
+/obj/item/remains/human2
+	desc = "They look like the remains of human."
+	icon_state = "human_remains2"
+
+/obj/item/remains/human3
+	desc = "They look like the remains of human."
+	icon_state = "human_remains3"
+
+/obj/item/remains/human4
+	desc = "They look like the remains of human."
+	icon_state = "human_remains4"
+
 /obj/item/remains/attack_hand(mob/user as mob)
 	to_chat(user, SPAN_NOTICE("[src] sinks together into a pile of ash."))
 	var/turf/simulated/floor/F = get_turf(src)
@@ -68,3 +88,11 @@
 
 /obj/item/remains/robot/attack_hand(mob/user as mob)
 	return
+
+/obj/item/remains/robot/attack_hand(mob/user as mob)
+	return
+
+/obj/item/remains/human5
+	desc = "They could look like human remains if you use your imagination. something horrible happened down here and you are able to see it, looks like some human beings tried to mix themselves up using some method, it didn't worked how they expected."
+	icon_state = "human_marriage"
+	sanity_damage = 25

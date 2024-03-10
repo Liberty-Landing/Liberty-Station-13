@@ -159,9 +159,9 @@
 
 /obj/item/storage/deferred/crate/ak
 	name = "rifleman crate"
-	desc = "A crate containing six AKM rifles, and plenty of magazines."
+	desc = "A crate containing six AK rifles, and plenty of magazines."
 	icon_state = "serbcrate_deferred_green"
-	initial_contents = list(/obj/item/gun/projectile/automatic/ak47/sa  = 6,
+	initial_contents = list(/obj/item/gun/projectile/automatic/ak47  = 6,//fixed it to don't spawn carbine ak and now spawns rifle ak
 	/obj/item/ammo_magazine/rifle_75 = 18)
 
 /obj/item/storage/deferred/crate/grenadier
@@ -323,6 +323,63 @@
 	/obj/item/storage/firstaid/ifak = 1,
 	/obj/item/storage/backpack = 1,
 	/obj/item/storage/backpack/satchel = 1)
+
+//khambataar gear
+/obj/item/storage/deferred/crate/rebel0//REBEL 0 !?!?!?!?
+	name = "Populist Gear kit"
+	desc = "A moderately sized crate full of populist gear."
+	icon_state = "khambataar_deferred"
+	initial_contents = list(
+	/obj/item/gun/projectile/makarov = 1,
+	/obj/item/gun/projectile/automatic/ak47 = 1,
+	/obj/item/ammo_magazine/rifle_75 = 6,
+	/obj/item/storage/belt/utility/handmade = 1,
+	/obj/item/grenade/frag/pipebomb = 3,
+	/obj/item/storage/pouch/ammo = 1,
+	/obj/item/ammo_magazine/highcap_pistol_35  = 2,
+	/obj/item/clothing/under/serbiansuit/black = 1,
+	/obj/item/clothing/accessory/holster/leg= 1,
+	/obj/item/clothing/suit/storage/vest/merc/rebel2= 1,
+	/obj/item/clothing/head/helmet/rebel3= 1,
+	/obj/item/clothing/head/helmet/rebel2 = 1,
+	/obj/item/storage/firstaid/ifak = 1,
+	/obj/item/extinguisher/mini = 1,
+	/obj/item/clothing/head/helmet/rebel1 = 1,
+	/obj/item/clothing/mask/gas/industrial=1,
+	/obj/item/plastique = 2,
+	/obj/item/clothing/shoes/jackboots = 1,
+	/obj/item/device/lighting/toggleable/flashlight/heavy = 1,
+	/obj/item/clothing/gloves/thick/swat/insulated = 1,
+	/obj/item/tool/knife/boot = 1,
+	/obj/item/reagent_containers/food/drinks/bottle/vodka = 1)
+
+/obj/item/storage/deferred/crate/rebel1
+	name = "Populist Leader Gear kit"
+	desc = "A moderately sized crate full of populist gear to lead them to victory."
+	icon_state = "khambataar_deferred"
+	initial_contents = list(
+	/obj/item/gun/projectile/makarov = 1,
+	/obj/item/gun/projectile/automatic/ak47 = 1,
+	/obj/item/ammo_magazine/rifle_75 = 6,
+	/obj/item/storage/belt/utility/handmade = 1,
+	/obj/item/storage/pouch/ammo = 1,
+	/obj/item/grenade/frag/pipebomb = 3,
+	/obj/item/ammo_magazine/highcap_pistol_35  = 2,
+	/obj/item/clothing/under/serbiansuit/black = 1,
+	/obj/item/clothing/accessory/holster/leg= 1,
+	/obj/item/clothing/suit/storage/vest/merc/rebel1= 1,
+	/obj/item/clothing/head/helmet/rebel= 1,
+	/obj/item/storage/firstaid/ifak = 1,
+	/obj/item/plastique = 2,
+	/obj/item/extinguisher/mini = 1,
+	/obj/item/clothing/head/helmet/rebel = 1,
+	/obj/item/device/lighting/toggleable/flashlight/heavy = 1,
+	/obj/item/clothing/mask/gas/industrial=1,
+	/obj/item/clothing/shoes/jackboots = 1,
+	/obj/item/clothing/gloves/thick/swat/insulated = 1,
+	/obj/item/tool/knife/boot = 1,
+	/obj/item/reagent_containers/food/drinks/bottle/vodka = 1)
+//they need a medic loadout but idk how to make one so slap em a combat medkit to a medic player for now
 
 
 // TRADE

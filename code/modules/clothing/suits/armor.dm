@@ -179,23 +179,37 @@
 	name = "watchmen armor vest"
 	desc = "An armored vest that protects against some damage. This one has been done in Watchmen security colors. Not designed for serious operations."
 	icon_state = "watch_basic"
-	has_alternative_armor_icon = FALSE
+	permeability_coefficient = 0.50
+	armor_list = list(melee = 30, bullet = 35, energy = 30, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+	stiffness = MEDIUM_STIFFNESS
 
 /obj/item/clothing/suit/armor/vest/ironhammer/full
-	name = "watchmen tactical unit armor"
+	name = "watchmen tactical unit armor"//equivalent to FLAK or so
 	desc = "An armored vest painted in Watchmen colors. This one has shoulderpads and kneepads included to protect all parts of the body."
 	icon_state = "watch_basic_full"
+	blood_overlay_type = "armor"
+	permeability_coefficient = 0.50
+	armor_list = list(melee = 40, bullet = 45, energy = 45, bomb = 35, bio = 0, rad = 0)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
-	stiffness = LIGHT_STIFFNESS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+	stiffness = MEDIUM_STIFFNESS
+	slowdown = 0.6 // Heavier since it now covers more of the body
+
 
 /obj/item/clothing/suit/armor/vest/ironhammer/detective
-	name = "watchmen criminal investigator vest"
+	name = "watchmen surplus vest"
 	desc = "An armored vest that protects against some damage. This one appears to be in Watchmen colors and uses lighweight fibers; allowing for heavier armor without compromising on added weight."
 	icon_state = "watch_detective"
 	armor_list = list(
-		melee = 45,
-		bullet = 45,
-		energy = 45,
+		melee = 35,
+		bullet = 35,
+		energy = 35,
 		bomb = 20,
 		bio = 0,
 		rad = 0
@@ -207,7 +221,7 @@
 	icon_state = "coatsecurity_long"
 	has_alternative_armor_icon = FALSE
 
-/obj/item/clothing/suit/armor/bulletproof/ironhammer
+/obj/item/clothing/suit/armor/bulletproof/full/ironhammer
 	name = "watchmen bulletproof suit"
 	desc = "A bulky vest that excels in protecting the wearer against high-velocity solid projectiles with added shoulderpads and kneepads for extra coverage produced by Seinemetall Defense GmbH."
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -221,6 +235,14 @@
 	desc = "A specialized armored plate carrier outfitted with light absorption and heat disperesion technology. This one has been done in Watchmen security colors."
 	icon_state = "watch_ablative"
 	item_state = "watch_ablative"
+	permeability_coefficient = 0.50
+	armor_list = list(melee = 25, bullet = 25, energy = 60, bomb = 30, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	min_cold_protection_temperature = T0C - 20
+	siemens_coefficient = 0.7
+	stiffness = MEDIUM_STIFFNESS
+	slowdown = 0.6 // Heavier since it now covers more of the body
 
 ////////////
 
@@ -309,7 +331,7 @@
 	modifiable = FALSE
 	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_INDSTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 
-//Guild
+//Worker Union
 /obj/item/clothing/suit/armor/vest/technomancersuit
 	name = "'Mark V' environmental protection suit"
 	desc = "For working in hazardous environments. While it is built for most environments, one of those is not space. As a tradeoff, it can be modified more."
@@ -470,15 +492,15 @@
 
 /obj/item/clothing/suit/armor/vest/iron_lock_security
 	name = "outdated ablative vest"
-	desc = "An \"Iron Eagle Security\" ablative vest with plates designed to absorb rather than reflect energy projectiles. Produced by the Terran Federation."
+	desc = "An antique \"Iron Eagle Security\" ablative vest with plates designed to absorb Energy Proyectiles, this armor wasn't Designed to protect the troopers from the ganger's or the local fauna, either the cold climates you sure you want to use this? Produced by the Terran Federation."
 	icon_state = "northtech_new"
 	has_alternative_armor_icon = FALSE
 	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 20, MATERIAL_DILATANT = 5)
 	armor_list = list(
-		melee = 15,
-		bullet = 15,
+		melee = 20,
+		bullet = 20,
 		energy = 50,
-		bomb = 0,
+		bomb = 20,
 		bio = 0,
 		rad = 0
 	)
@@ -870,13 +892,14 @@
 
 /obj/item/clothing/suit/armor/hos
 	name = "deputy chief armored coat"
-	desc = "A greatcoat enhanced with a special alloy for some protection and style."
+	desc = "An Armored greatcoat enhanced with a special alloy for some protection and style."
 	icon_state = "watch_deputy"
+	item_state = "watch_deputy"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	armor_list = list(
 		melee = 40,
 		bullet = 40,
-		energy = 30,
+		energy = 35,
 		bomb = 25,
 		bio = 0,
 		rad = 0
@@ -1112,3 +1135,44 @@
 			speed_boost_ready = TRUE
 			if(user.head && istype(user.head, matching_helmet))
 				to_chat(usr, SPAN_WARNING("[user.head] beeps: 'Capacitors have been recharged.'"))
+
+//Khambataar populist fighters armor
+/obj/item/clothing/suit/storage/vest/merc/rebel1
+	name = "Heavy Populist Combat Coat"
+	desc = "A high-quality armored snowcoat made by the best Populist Armorers,Uses a set of Heavy Ballistic Plates for extra protection against any kind of threat towards the populist fighters and includes pouches to carry extra supplies."
+	icon_state = "rebel_heavy"
+	item_state = "rebel_heavy"
+	max_upgrades = 0 //No upgrading this one
+	tool_qualities = list()
+	price_tag = 3500//worth capturing it
+	armor_list = list(
+		melee = 45,
+		bullet = 45,
+		energy = 45,
+		bomb = 45,
+		bio = 0,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	slowdown = 1.0
+
+/obj/item/clothing/suit/storage/vest/merc/rebel2
+	name = "Populist Combat Coat"
+	desc = "An armored snowcoat made by the best Populist Armorers,Uses a set of Heavy Ballistic Plates for extra protection against any kind of threat towards the populist fighters and includes pouches to carry extra supplies."
+	icon_state = "rebel_light"
+	item_state = "rebel_light"
+	max_upgrades = 0 //No upgrading this one
+	tool_qualities = list()
+	price_tag = 2000//worth capturing it
+	armor_list = list(
+		melee = 35,
+		bullet = 40,
+		energy = 40,
+		bomb = 35,
+		bio = 0,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	cold_protection = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
+	slowdown = 0.5

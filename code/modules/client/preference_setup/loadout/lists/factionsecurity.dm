@@ -1,4 +1,4 @@
-/datum/gear/factionsecurity
+/datum/gear/factionsecurity/marshal/ushanka
 	display_name = "Armored watch Ushanka"
 	path = /obj/item/clothing/head/helmet/marshal/ushanka
 	allowed_roles = list(JOBS_SECURITY)

@@ -151,10 +151,10 @@ GLOBAL_LIST_INIT(chameleon_key_to_path, list(
 	uniform = /obj/item/clothing/under/turtleneck/fontaine,
 	hat = /obj/item/clothing/head/helmet/handmade/scavengerhelmet,
 	suit = /obj/item/clothing/suit/storage/scavengerarmor,
-	shoes = /obj/item/clothing/shoes/jackboots/fontaine,
+	shoes = /obj/item/clothing/shoes/jackboots/blackbolt,
 	back = /obj/item/storage/backpack/satchel,
-	gloves = /obj/item/clothing/gloves/thick/fontaine,
-	mask = /obj/item/clothing/mask/gas/fontaine,
+	gloves = /obj/item/clothing/gloves/thick/blackbolt,
+	mask = /obj/item/clothing/mask/gas/blackbolt,
 	glasses = /obj/item/clothing/glasses/sunglasses/fontaine,
 	gun = /obj/item/gun/projectile/automatic/ak47/makeshift,
 	headset = /obj/item/device/radio/headset/headset_pro)

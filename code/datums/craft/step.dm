@@ -133,10 +133,27 @@
 			to_chat(user, SPAN_WARNING("Wrong item!"))
 			building = FALSE
 			return
-		if(I.contents.len > 0)
-			to_chat(user, SPAN_WARNING("There is something inside \the [I] that must be removed before using it to craft!"))
-			building = FALSE
-			return
+
+	//Lib changes
+	//This gets messy quickly for a good check all
+	//We ask if we even have contents in the first place
+		if(I.contents.len)
+			var/nested_test_failed = FALSE
+			//We found items now go through them all 1 by 1
+			for(var/obj/NIT in I.contents) //We only care about obj's inside are items
+				if(!istype(NIT, /obj/item/storage)) //Were not internal pockets/storage? We instantly fail
+					nested_test_failed = TRUE
+					break
+
+				if(NIT.contents.len) //Were are internal pockets/storage but have items in are second layer of storage, so we fail
+					nested_test_failed = TRUE
+					break
+
+			if(nested_test_failed)
+				to_chat(user, SPAN_WARNING("There is something inside \the [I] that must be removed before using it to craft!"))
+				building = FALSE
+				return
+	//End of lib changes
 		if(!is_valid_to_consume(I, user))
 			to_chat(user, SPAN_WARNING("That item can't be used for crafting!"))
 			building = FALSE

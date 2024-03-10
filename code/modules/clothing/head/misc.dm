@@ -438,21 +438,21 @@ obj/item/clothing/head/ribbon/red
  */
 /obj/item/clothing/head/ushanka
 	name = "ushanka"
-	desc = "A warm, black fur cap with a soviet design."
+	desc = "A warm, brown fur cap with a nice cover."
 	icon_state = "ushanka"
 	item_state = "ushanka"
 	flags_inv = HIDEEARS
+	min_cold_protection_temperature = T0C - 20
 
-// No more bulky ushanka, no need for this.
-/*
+// No more bulky ushanka, no need for this.//gets changed habibi, ushanka drip supremacy is back.
 /obj/item/clothing/head/ushanka/attack_self(mob/user as mob)
-	if(src.icon_state == "ushankadown")
-		src.icon_state = "ushankaup"
+	if(src.icon_state == "ushankadown_old")
+		src.icon_state = "ushankaup_old"
 		to_chat(user, "You raise the ear flaps on the ushanka.")
 	else
 		src.icon_state = "ushankadown"
 		to_chat(user, "You lower the ear flaps on the ushanka.")
-*/
+
 
 // Hood for the Outsider cloak
 

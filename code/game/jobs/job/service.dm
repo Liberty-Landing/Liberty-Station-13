@@ -50,7 +50,7 @@
 	spawn_positions = 2
 	supervisors = "the Club Manager"
 	difficulty = "Easy."
-	alt_titles = list("Sales Technician", "Trade Router", "Smuggler")
+	alt_titles = list("Sales Technician", "Trade Router")
 	selection_color = "#dddddd"
 	access = list(access_cargo, access_janitor)
 

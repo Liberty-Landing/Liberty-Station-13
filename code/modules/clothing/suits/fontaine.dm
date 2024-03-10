@@ -14,7 +14,7 @@
 		melee = 30, //Not the best armor, but easily crafted and adds some utility with decent protection all round.
 		bullet = 20,
 		energy = 25,
-		bomb = 30,
+		bomb = 25,//5% armor less because is a bit unfair compared to printed vests, watch out with the landmines
 		bio = 0,
 		rad = 0
 	)
@@ -25,42 +25,41 @@
 	min_cold_protection_temperature = T0C - 25
 	siemens_coefficient = 0.7
 
-// TODO: Maybe flakification of scavenger armor (see Fontaine fullbody plate carrier)
+// TODO: Maybe flakification of scavenger armor (see Fontaine fullbody plate carrier)//gets rebalanced to be more fair in a stat upgrade with a reduction of melee armor and a bonus in bullets for PVE/PVP
 
-// Fontaine versions below.
-/obj/item/clothing/suit/storage/scavengerarmor/fontaine
-	name = "Fontaine plate carrier"
-	desc = "A rigged yet sturdy Fontaine branded armor. Strong and protective as most vests, it is made entirely from reclaimed materials. It even has pockets as well as room for additional plates of armor to be added."
-	icon_state = "fontaine_platecarrier"
-	item_state = "fontaine_platecarrier"
+// Black Bolt Armors
+/obj/item/clothing/suit/storage/scavengerarmor/blackbolt
+	name = "Scrapper Coat"
+	desc = "A Heavy Robust Leather Coat Made By Black Bolt Logistics For his Scrappers, it has an Improved Plate carrier on the front, durable enough to deflect Bullets and Laser shots of low power, it also has some big pouches to carry supplies or extra ammunitions, with this totally trusty protection you can loot the world Scrapper! "
+	icon_state = "black_bolt_scrapper_coat"
+	item_state = "black_bolt_scrapper_coat"
 	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_ALUMINIUM = 10, MATERIAL_COPPER = 2)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO
-	cold_protection = UPPER_TORSO|LOWER_TORSO
-	heat_protection = UPPER_TORSO|LOWER_TORSO
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS//is a leather coat that covers the whole body
+	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	min_cold_protection_temperature = T0C - 20
 
-/obj/item/clothing/suit/storage/scavengerarmor/fontaine/fullbody
-	name = "Fontaine full-body plate carrier"
-	desc = "A set of Fontaine brand armor with additional armour plating installed. Though the haphazardly-made plates are heavy and don't exactly excel against projectiles, they shrug off melee attacks nicely."
-	icon_state = "fontaine_fullbody_platecarrier"
-	item_state = "fontaine_fullbody_platecarrier"
+/obj/item/clothing/suit/storage/scavengerarmor/blackbolt/fullbody
+	name = "Scraplate Armored Coat"
+	desc = "An Improvised Upgrade For The Scrapper Coat, This version has more Metals over it and can be considered a proper armor, with this on you show sign of Wealth and experience besides be extra Intimidant to thieves and more resistant to gunshots or beasts trying to devour you, Go to loot in even dangerous areas Scrapper!"
+	icon_state = "black_bolt_scraplate_coat"
+	item_state = "black_bolt_scraplate_coat"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	max_upgrades = 1
 	armor_list = list(
-		melee = 50, //A bit worse than riot armour
-		bullet = 25,
-		energy = 25,
-		bomb = 30,
+		melee = 35, //nerfing it a bit more because this isn't hunter armor or something like that to have a ridiculous 50% melee
+		bullet = 35,//standard protection
+		energy = 30,//has to have decent protection because is an upgraded armor, while with an upgrade it can't become extremely powerful
+		bomb = 30,//funny enough this is barely enough to survive a explosion
 		bio = 0,
 		rad = 0
-	)
-	slowdown = 0.9
+	)//no slowdown in the armor requested by nayu, they are scouts in light armor
 
 /obj/item/clothing/suit/greatcoat/trapper
 	name = "trapper furcoat"
-	desc = "A warm woolen coat, adorned with the band of Fontaine, fleece, hide, and wool sourced from what is likely to be a hunted animal. Boiled leather is integrated between its layers for protection. This coat has been designed to withstand the harsh cold of the planet."
+	desc = "A warm woolen coat."
 	icon_state = "furcoat_trapper"
 	item_state = "furcoat_trapper"
 	blood_overlay_type = "coat"
@@ -121,11 +120,11 @@
 		rad = 50
 	)
 */
-/obj/item/clothing/suit/armor/shepherd
-	name = "Fontaine shepherd armored coat"
-	desc = "A Fontaine branded armored coat made of fleece, synthetic material and lined with light-weight armored fabric. It sports some advanced plating ."
-	icon_state = "shepherd_coat"
-	item_state = "shepherd_coat"
+/obj/item/clothing/suit/armor/leader
+	name = "Black Bolt Leader Scraplate Armor"
+	desc = "This is a Robust Suit made out of More Resistant Materials For The most Important Black Bolt Operator, has Free movement while it also provides some High Protection to Deal with almost Anything on the planet, Lead these Scrappers to the Fortune using this Intimidant armor! "
+	icon_state = "black_bolt_scraplate"
+	item_state = "black_bolt_scraplate"
 	max_upgrades = 1
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -133,8 +132,8 @@
 	armor_list = list(
 		melee = 45,
 		bullet = 35,
-		energy = 30,
-		bomb = 25,
+		energy = 35,
+		bomb = 35,//adding more armor here, an scrap armor had better stats?
 		bio = 0,
 		rad = 0
 	)

@@ -43,6 +43,49 @@
 	base_turf = /turf/simulated/floor/plating/under
 	flags = AREA_FLAG_RAD_SHIELDED
 
+//Sewer Maintenance areas
+
+/area/liberty/maintenance/undergroundsewersouth
+	name = "Sewer South Maintenance"
+	icon_state = "erisblue"
+	ambience = list('sound/ambience/maintambience.ogg')
+
+/area/liberty/maintenance/undergroundsewernorth
+	name = "Sewer North Maintenance"
+	icon_state = "erisgreen"
+	ambience = list('sound/ambience/maintambience.ogg')
+
+/area/liberty/maintenance/undergroundsewerwest
+	name = "Sewer West Maintenance"
+	icon_state = "erisyellow"
+	ambience = list('sound/ambience/maintambience.ogg')
+
+/area/liberty/maintenance/undergroundsewereast
+	name = "Sewer East Maintenance"
+	icon_state = "erisgreen"
+	ambience = list('sound/ambience/maintambience.ogg')
+
+/area/liberty/maintenance/undergroundfsewerplague
+	name = "Plagued Factory"
+	icon_state = "erisyellow"
+	ambience = list('sound/ambience/maintambience.ogg')
+
+/area/liberty/maintenance/undergroundsewerentral
+	name = "Sewer Central Maintenance"
+	icon_state = "erisblue"
+	ambience = list('sound/ambience/maintambience.ogg')
+
+/area/liberty/maintenance/terrasewers
+	name = "Terra Therma Worker Union Sewers"
+	icon_state = "erisyellow"
+	requires_power = FALSE // underfloor cable from lowar colony
+	ambience = list('sound/ambience/maintambience.ogg')
+
+/area/liberty/maintenance/sewercaverns
+	name = "Sewer Cave System"
+	icon_state = "erisred"
+	forced_ambience = list('sound/ambience/occ_scaryambie.ogg') // Deep maint entrance spoilers.
+
 //Maintenance
 
 /area/liberty/maintenance
@@ -490,6 +533,48 @@
 /area/liberty/outside/forest/river_forest_lake
 	name = "Hunting Plains River"
 	icon_state = "hammerblue"
+
+/area/liberty/outside/forest/hill_forest
+	name = "Snow Hills"
+	icon_state = "erisblue"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/crashed_spaceloot
+	name = "Space Crash"
+	icon_state = "erisred"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/abbandoned_caverns
+	name = "Unknown Caverns"
+	icon_state = "erisyellow"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/dangerous_forest
+	name = "Dangerous Forest"
+	icon_state = "erisgreen"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/occupied_camp
+	name = "Unknown Camp"
+	icon_state = "erisred"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/forest/Hills_Dark
+	name = "Dark Caves"
+	icon_state = "erisyellow"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
 
 /area/liberty/outside/forest/river_forest_cabin
 	name = "Hunting Plains Cabin"
@@ -1040,7 +1125,7 @@
 	ambience = list('sound/ambience/honorguard.ogg') // Under Sebs allowance, the soundtrack for the Custodians has been changed. This song is COPYRIGHT FREE and has been only slightly modified. Music by <a href="https://pixabay.com/users/dstechnician-26430546/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=115551">DSTechnician</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=115551">Pixabay</a>
 	sound_env = LARGE_ENCLOSED
 
-// /area/liberty/bonfire/stronghold 
+// /area/liberty/bonfire/stronghold
 //		name = "\improper Stronghold"
 //		icon_state = "hammerblue"
 //		ambience = list('sound/ambience/stronghold.ogg') // Less church, more knight-y. Marching soldiers, fire and chants. Courtesy of me. - Seb
@@ -1782,18 +1867,18 @@ area/liberty/medical/medbaymeeting
 	icon_state = "server"
 
 
-//Fontaine
+//Fontaine//Black Bolt
 
 /area/liberty/pros/dorm
-	name = "\improper Fontaine Dorm"
+	name = "\improper Black Bolt Dorms"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/prep
-	name = "\improper Fontaine Prep"
+	name = "\improper Black Bolt Prep"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/foreman
-	name = "\improper Field Shepherd Office"
+	name = "\improper Expeditionary Leader Office"
 	icon_state = "erisgreen"
 
 /area/liberty/pros/shuttle
@@ -1806,7 +1891,7 @@ area/liberty/medical/medbaymeeting
 	icon_state = "erisgreen"
 
 /area/liberty/pros/prostorage
-	name = "\improper Fontaine Storage"
+	name = "\improper Black Bolt Storage"
 	icon_state = "erisgreen"
 
 //Storage

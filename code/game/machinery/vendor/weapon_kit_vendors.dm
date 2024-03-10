@@ -1,7 +1,7 @@
 //For Security Kits
 /obj/machinery/vending/marshal_kit
 	name = "\improper Liberty Watch Kit Vendor"
-	desc = "A vendor that can dispense specialized equipment kits for Marshal Officers."
+	desc = "A vendor that can dispense specialized equipment kits for Liberty Watch Officers."
 	icon_state = "trashvend"
 	products = list(
 		/obj/item/storage/box/m_kit/stinger = 5,
@@ -78,7 +78,7 @@
 
 /obj/machinery/vending/marshal_kit/proc/RedeemRangerPrimary(obj/item/voucher/voucher, mob/redeemer)
 	var/items = list(
-					"Oeprator Kit" = /obj/item/storage/box/m_kit/operator_rifle,
+					"Operator Kit" = /obj/item/storage/box/m_kit/operator_rifle,
 					"Street Sweeper Kit" = /obj/item/storage/box/m_kit/sweeper,
 					"Wrist Breaker Kit" = /obj/item/storage/box/m_kit/wristbreaker)
 	var/selection = items[input(redeemer, "Pick your primary weapon", "Marshal Voucher Redemption") as null|anything in items]

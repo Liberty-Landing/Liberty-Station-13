@@ -23,7 +23,7 @@
 #define DEPARTMENT_SCIENCE		"Phokorus Institute of Research and Science"
 #define DEPARTMENT_SECURITY		"Liberty Watch"
 #define DEPARTMENT_SERVICE		"Skylight Syndicate"
-#define DEPARTMENT_PROSPECTOR	"Fontaine Heavy Industries"
+#define DEPARTMENT_PROSPECTOR	"Black Bolt Logistics"
 #define DEPARTMENT_CHURCH		"Custodians of Bonfire"
 #define DEPARTMENT_CIVILIAN		"Contractors"
 #define DEPARTMENT_INDEPENDENT	"Outsiders"

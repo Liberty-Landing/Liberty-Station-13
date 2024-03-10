@@ -44,7 +44,7 @@
 	new /obj/item/clothing/head/rank/commander(src)
 	new /obj/item/clothing/mask/gas/ihs/security(src)
 	new /obj/item/clothing/suit/armor/hos(src)
-	new /obj/item/clothing/suit/armor/platecarrier/hos(src)
+	new /obj/item/clothing/suit/space/void/security(src)
 	new /obj/item/clothing/under/rank/ih_commander(src)
 	new /obj/item/clothing/accessory/halfcape/wo(src)
 	new /obj/item/clothing/glasses/sechud(src)
@@ -64,7 +64,7 @@
 	new /obj/item/device/camera(src)
 	new /obj/item/melee/classic_baton(src)
 	new /obj/item/oddity/code_book(src)
-	new /obj/item/clothing/head/helmet/warrant_officer(src)
+	new /obj/item/clothing/head/helmet/space/void/security(src)
 	new /obj/item/storage/sheath/judgement/filled(src)
 	new /obj/item/device/radio/headset/heads/hos(src)
 

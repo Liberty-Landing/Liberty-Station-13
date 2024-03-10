@@ -251,7 +251,7 @@
 	tank = /obj/item/tank/emergency_oxygen/double
 
 /obj/item/clothing/head/helmet/space/void/hunt//technohunter faction armor and helmet, this one is for the basic hired pirates, being a reskinned blood red suit
-	name = "Techno pirate upgraded helmet"
+	name = "Technopirate Armored Void helmet"
 	desc = "An Highly developed Combat helmet of unknown manufacturer that somehow is more robust than their standard military models."
 	icon_state = "technopirate"
 	item_state = "technopirate"
@@ -279,7 +279,7 @@
 
 /obj/item/clothing/suit/space/void/hunt
 	icon_state = "technopirate"
-	name = "technopirate"
+	name = "Technopirate Armored Voidsuit"
 	desc = "An Robust looking combat suit of unknown manufacturer, seems to be made with cheap materials and somehow feels better than the standard military models."
 	item_state = "technopirate"
 	armor_list = list(

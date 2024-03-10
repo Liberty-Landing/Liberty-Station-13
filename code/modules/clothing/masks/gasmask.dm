@@ -412,10 +412,10 @@
 	icon_state = "srebreath_purple"
 	is_alts = FALSE
 
-//Fontaine Logistics
-/obj/item/clothing/mask/gas/fontaine
-	name = "fontaine gas mask"
-	desc = "A Fontaine-brand gas mask; completed with a rebreather and a green visor."
-	icon_state = "smask_fontaine"
-	item_state = "smask_fontaine"
+//Black Bolt Logistics
+/obj/item/clothing/mask/gas/blackbolt
+	name = "Black Bolt Gas Mask"
+	desc = "A Gas Mask Brought by Black Bolt in mass from the Federation to protect his workers, does the job quite well protecting your lungs and eyes from the enviroment, has a small note in the front saying always wear it because the gas roaches can root your organs!!."
+	icon_state = "blackbolt_mask"
+	item_state = "blackbolt_mask"
 	is_alts = FALSE

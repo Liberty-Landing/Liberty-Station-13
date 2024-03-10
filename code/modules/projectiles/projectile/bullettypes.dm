@@ -136,9 +136,10 @@
 
 //For Nanoforge pistol
 /obj/item/projectile/bullet/pistol_35/nano
-	damage_types = list(BURN = 14)
+	damage_types = list(BURN = 8, BRUTE = 8)//half melted proyectile go zooink!
 	armor_penetration = 10
 	step_delay = 0.6
+	nocap_structures = TRUE //Door breaching
 	affective_damage_range = 5
 	affective_ap_range = 5
 	can_ricochet = TRUE
@@ -897,7 +898,7 @@
 	base_spread = 90
 	agony = 3
 	pellets = 6
-	range_step = 1
+	range_step = 5//more range for the pellets so they can bonk more enemies that travel in straight lines (becomes good against plagues)
 	spread_step = 10
 	knockback = 0 //We do not knockback do to issues with bullet douping
 	step_delay = 0.9
@@ -993,7 +994,7 @@
 //Overall less damage than slugs in exchange for more damage at very close range and more embedding//now should work like an weak 9mm being shot 6 times, the old damage type was never used by the players
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
-	icon_state = "birdshot-1"
+	icon_state = "buckshot"//changed the sprite for a different one
 	damage_types = list(BRUTE = 6.5)
 	base_spread = 90
 	agony = 3
@@ -1008,7 +1009,7 @@
 
 /obj/item/projectile/bullet/pellet/shotgun/Initialize()
 	. = ..()
-	icon_state = "birdshot-[rand(1,4)]"
+	icon_state = "buckshot"//changed for a test of performance
 
 /obj/item/projectile/bullet/pellet/shotgun/scattershot //VERY dangerous, the weapon has a low refire rate for a reason. DO NOT use this for non exo weapons without tweaking.
 	name = "heavy shrapnel"

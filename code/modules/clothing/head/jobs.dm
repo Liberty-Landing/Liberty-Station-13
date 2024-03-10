@@ -30,7 +30,6 @@
 
 	if(!isliving(loc))
 		return
-
 	var/mob/M = usr
 	var/list/options = list()
 	options["Secretary's Hat"] = "captain"
@@ -274,24 +273,25 @@
 	icon_state = "divisor_cap"
 	item_state = "divisor_cap"
 
-//Fontaine Logistics
-/obj/item/clothing/head/helmet/shepherd
-	name = "Field Shepherd helmet"
-	desc = "A study, handcrafted helmet reinforced with lightweight material and an added line down its center, depicting that of a Shepherd; herding his employees."
-	icon_state = "shepherd_visor"
-	item_state = "shepherd_visor"
+
+//Black Bolt Logistics
+/obj/item/clothing/head/helmet/blackbolt/leader
+	name = "Reinforced Scrap Cap"
+	desc = "An Intimidating Scrap Metal Cap Made By Black Bolt Able to Deflect bullets, lasers, Rocks and a lot of things more, it comes with a flashlight to illuminate your way and see if your scrappers aren't beating an stone or stop them from scrapping a landmine for parts then lose an arm you got to pay!"
+	icon_state = "black_bolt_leader"
+	item_state = "black_bolt_leader"
 	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_ALUMINIUM = 30, MATERIAL_SILVER = 12) //worth stealing
 	price_tag = 1200
 	armor_list = list(
 		melee = 40,
-		bullet = 30,
+		bullet = 35,
 		energy = 30,
 		bomb = 65,
 		bio = 100,
 		rad = 0
 	)
-	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
-	body_parts_covered = HEAD|FACE|EARS
+	flags_inv = BLOCKHAIR
+	body_parts_covered = HEAD|EARS
 	action_button_name = "Toggle Headlamp"
 	light_overlay = "technohelmet_light"
 	brightness_on = 5 //Slightly better do to the sear costs
@@ -315,11 +315,22 @@
 	brightness_on = 5
 	obscuration = LIGHT_OBSCURATION
 
-/obj/item/clothing/head/helmet/handmade/scavengerhelmet/fontaine
-	name = "Shipbreaker helmet"
-	desc = "A sleek and sturdy helmet in Fontaine colors. It's well balanced and sits low on your head, with padding on the inside."
-	icon_state = "fontaine_visor"
-	item_state = "fontaine_visor"
+/obj/item/clothing/head/helmet/blackbolt
+	name = "Scrapper Cap"
+	desc = "An Intimidating Scrap Metal Cap Made by Black Bolt for their Scrappers, Feels heavy and is Approved to be used as Emergency Weapon to Break noses, bones, roaches and deflect bullets from reach your Empty brain!, also has a small flashlight to illuminate where you put your hands or where your gun hits."
+	icon_state = "black_bolt_cap"
+	item_state = "black_bolt_cap"
+	armor_list = list(melee = 35, bullet = 35, energy = 25, bomb = 25, bio = 10, rad = 0)//better protection against bullets for PVP reasons, they allow you to survive one or two shots
+	flags_inv = BLOCKHAIR
+	body_parts_covered = HEAD|EARS
+	cold_protection = HEAD|EARS
+	min_cold_protection_temperature = T0C - 20
+	price_tag = 200
+	max_upgrades = 1
+	action_button_name = "Toggle Headlamp"
+	light_overlay = "technohelmet_light"
+	brightness_on = 5
+	obscuration = LIGHT_OBSCURATION
 
 /obj/item/clothing/head/trapper
 	name = "Trapper brimmed hat"

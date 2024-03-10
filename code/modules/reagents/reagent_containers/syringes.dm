@@ -43,7 +43,7 @@
 	update_icon()
 
 /obj/item/reagent_containers/syringe/attack_self(mob/user as mob)
-	if(!user.stat_check(STAT_BIO, 10) && !user.stat_check(STAT_COG, 20) && !user.stats.getPerk(PERK_ADDICT))
+	if(!user.stat_check(STAT_BIO, 5) && !user.stat_check(STAT_COG, 5) && !user.stats.getPerk(PERK_ADDICT))
 		to_chat(user, SPAN_WARNING("You have no idea how to properly use this syringe!"))
 		return
 
@@ -72,7 +72,7 @@
 		to_chat(user, SPAN_WARNING("This syringe is broken!"))
 		return
 
-	if(user.stats.getStat(STAT_BIO) < 15 && !usr.stat_check(STAT_COG, 30) && !usr.stats.getPerk(PERK_ADDICT))
+	if(user.stats.getStat(STAT_BIO) < 10 && !usr.stat_check(STAT_COG, 10) && !usr.stats.getPerk(PERK_ADDICT))
 		to_chat(user, SPAN_WARNING("You have no idea how to properly use this syringe!"))
 		return
 

@@ -31,6 +31,45 @@ var/global/list/random_junk
 		random_junk -= /obj/item/trash/snack_bowl
 		random_junk -= /obj/item/trash/syndi_cakes
 		random_junk -= /obj/item/trash/tray
+		random_junk -= /obj/item/trash/material/brokenarmorIE
+		random_junk -= /obj/item/trash/material/brokenhelmetIE
+		random_junk -= /obj/item/trash/material/brokenarmorIE1
+		random_junk -= /obj/item/trash/material/brokenhelmetIE1
+		random_junk -= /obj/item/trash/material/brokenarmorIE2
+		random_junk -= /obj/item/trash/material/brokenhelmetIE2
+		random_junk -= /obj/item/trash/material/brokenarmorIE3
+		random_junk -= /obj/item/trash/material/brokenhelmetIE3
+		random_junk -= /obj/item/trash/material/brokenarmorIE4
+		random_junk -= /obj/item/trash/material/brokenhelmetIE4
+		random_junk -= /obj/item/trash/material/brokenarmorIE5
+		random_junk -= /obj/item/trash/material/brokenhelmetsquire0
+		random_junk -= /obj/item/trash/material/brokenhelmetsquire1
+		random_junk -= /obj/item/trash/material/brokenhelmetsquire2
+		random_junk -= /obj/item/trash/material/brokenhelmetsquire3
+		random_junk -= /obj/item/trash/material/brokenhelmetsquire4
+		random_junk -= /obj/item/trash/material/brokenarmorsquire0
+		random_junk -= /obj/item/trash/material/brokenarmorsquire2
+		random_junk -= /obj/item/trash/material/brokenarmorsquire3
+		random_junk -= /obj/item/trash/material/brokenarmorsquire4
+		random_junk -= /obj/item/trash/material/brokenarmorsquire5
+		random_junk -= /obj/item/trash/material/brokenarmorsquire6
+		random_junk -= /obj/item/trash/material/brokenarmorrebel0
+		random_junk -= /obj/item/trash/material/brokenarmorrebel1
+		random_junk -= /obj/item/trash/material/brokenarmorrebel2
+		random_junk -= /obj/item/trash/material/brokenarmorrebel3
+		random_junk -= /obj/item/trash/material/brokenarmorrebel4
+		random_junk -= /obj/item/trash/material/brokenarmorrebel5
+		random_junk -= /obj/item/trash/material/brokenarmorrebel6
+		random_junk -= /obj/item/trash/material/brokenarmorrebel7
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel0
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel1
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel2
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel3
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel4
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel5
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel6
+		random_junk -= /obj/item/trash/material/brokenhelmetrebel7
+
 	return pick(random_junk)
 
 /datum/turf_initializer/maintenance/proc/attempt_web(var/turf/simulated/T)

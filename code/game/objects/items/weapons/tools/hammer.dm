@@ -103,7 +103,7 @@
 
 /obj/item/tool/hammer/foremansledge
 	name = "shepherd's sledgehammer"
-	desc = "Once a tool used to nail rivets, now a tool used to crush skulls. The signature weapon of the Fontaine Field Shepherd."
+	desc = "Once a tool used to nail rivets, now a tool used to crush skulls. The signature weapon of the Black Bolt Expeditionary Leader."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "sledgehammer"
 	item_state = "sledgehammer0"
@@ -175,7 +175,7 @@
 	effective_faction = list("spider") // Spiders are weak to crushing.
 	damage_mult = 1.5
 	armor_penetration = ARMOR_PEN_DEEP
-	force = WEAPON_FORCE_DANGEROUS
+	force = WEAPON_FORCE_DANGEROUS + 5 //the damage was really low on this weapon? gets less damage than a machete/scrap katana
 
 	tool_qualities = list(QUALITY_HAMMERING = 20)
 

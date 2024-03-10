@@ -146,14 +146,14 @@
 	channels = list("Skylight" = 1)
 
 /obj/item/device/encryptionkey/headset_pro
-	name = "fontaine radio encryption key"
+	name = "Black Bolt radio encryption key"
 	icon_state = "srv_cypherkey"
-	channels = list("Fontaine" = 1)
+	channels = list("Black Bolt" = 1)
 
 /obj/item/device/encryptionkey/heads/foreman
-	name = "shepherd radio encryption key"
+	name = "Expeditionary Leader radio encryption key"
 	icon_state = "qm_cypherkey"
-	channels = list("Fontaine" = 1, "Board" = 1)
+	channels = list("Black Bolt" = 1, "Board" = 1)
 
 /obj/item/device/encryptionkey/entertainment
 	name = "entertainment radio key"

@@ -176,9 +176,9 @@
 		usr.update_action_buttons()
 		return 1
 
-//Fontaine Industries
-/obj/item/clothing/shoes/jackboots/fontaine
-	name = "Fontaine snowboots"
-	desc = "A pair of standard-issue snowboots with a reinforced metal tip built into them. Branded by Fontaine Logistics."
-	icon_state = "sboots_fontaine"
-	item_state = "sboots_fontaine"
+//Black Bolt Logistics
+/obj/item/clothing/shoes/jackboots/blackbolt
+	name = "Black Bolt Workboots"
+	desc = "A pair of standard-issue Work boots with reinforced metal tip built into them, designed to kick metal airlocks until they open or kick bugs until they open too, they are your trusty pair."
+	icon_state = "blackboots"
+	item_state = "blackboots"

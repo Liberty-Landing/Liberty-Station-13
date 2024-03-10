@@ -85,8 +85,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3, TECH_BIO = 8, TECH_ILLEGAL = 1)
 	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_PLASTIC = 20)
 	matter_type = MATERIAL_WOOD
-
 	stored_matter = 0
 	projectile_cost = 1
 	projectile_type = /obj/item/arrow/reclaiming
-	serial_type = "AG"
+	serial_type = "Terra"

@@ -3,7 +3,7 @@
 //To anyone editing this, I advise using if statements over switch to better have control of what loot spawns, it rolls each in order of success so you can better set the odds.
 //The lockers are set to personal to prevent prospectors from opening every locker in an effort to get the best gear rolls. -Kazkin
 /obj/structure/closet/secure_closet/personal/shipbreaker
-	name = "shipbreaker locker"
+	name = "scrapper locker"
 	req_access = list(access_field_shepherd)
 	access_occupy = list(access_fontaine)
 	icon_state = "prospector" // TODO: Snow-themed locker sprite please
@@ -24,7 +24,7 @@
 
 	new /obj/item/device/radio/headset/headset_pro(src)
 	new /obj/item/clothing/accessory/cape/prospie(src)
-	new /obj/item/clothing/mask/gas/fontaine(src)
+	new /obj/item/clothing/mask/gas/blackbolt(src)
 	new /obj/item/gunbox/shipbreaker(src)
 	new /obj/item/bodybag/cryobag(src)
 
@@ -93,10 +93,10 @@
 		new /obj/item/grenade/spawnergrenade/manhacks/junkbot(src)
 
 /obj/structure/closet/secure_closet/personal/trapper
-	name = "trapper locker"
+	name = "Stalker locker"
 	req_access = list(access_field_shepherd)
 	access_occupy = list(access_fontaine)
-	icon_state = "oldstyle" // TODO: Better sprite
+	icon_state = "oldstyle_stalker" // TODO: Better sprite
 	var/side_arm_cache
 	var/melee_cache
 	var/bag_cache
@@ -112,7 +112,7 @@
 
 	new /obj/item/device/radio/headset/headset_pro(src)
 	new /obj/item/clothing/accessory/cape/prospie(src)
-	new /obj/item/clothing/mask/gas/fontaine(src)
+	new /obj/item/clothing/mask/gas/blackbolt(src)
 	new /obj/item/gunbox/trapper(src)
 	new /obj/item/bodybag/cryobag(src)
 
@@ -169,7 +169,7 @@
 
 
 /obj/structure/closet/secure_closet/reinforced/field_shepherd
-	name = "field shepherds' locker"
+	name = "Expeditionary Leader locker"
 	req_access = list(access_field_shepherd)
 	icon_state = "foreman"
 
@@ -190,7 +190,7 @@
 	new /obj/item/clothing/accessory/cape/prospie(src)
 	new /obj/item/clothing/accessory/halfcape/foreman(src)
 	new /obj/item/computer_hardware/hard_drive/portable/design/scav/forman(src)
-	new /obj/item/clothing/mask/gas/fontaine(src)
+	new /obj/item/clothing/mask/gas/blackbolt(src)
 	new /obj/item/gunbox/shepherd(src)
 	new /obj/item/bodybag/cryobag(src)
 

@@ -587,7 +587,7 @@
 	name = "outdated ablative helmet"
 	desc = "A \"Iron Eagle Security\" helmet that excels in protecting the wearer against energy projectiles this even after all these years still is the base of ablative helmet design. Produced by The Terran Federation."
 	icon_state = "ablative_new"
-	armor_list = list(melee = 20, bullet = 20, energy = 70, bomb = 50, bio = 10, rad = 0)
+	armor_list = list(melee = 20, bullet = 30, energy = 70, bomb = 35, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	cold_protection = HEAD
 	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 2) //cheaper. //Had to change it to insdteel because TitaniumRTC is costy as hell, and making it just "titanium" would be a waste
@@ -687,7 +687,7 @@
 		icon_state = "watch_riot"
 		set_light(0, 0)
 	else
-		icon_state = "watch_riot_on"
+		icon_state = "watch_riot"
 		set_light(2, 2, COLOR_LIGHTING_ORANGE_MACHINERY)
 	update_wear_icon()
 	..()
@@ -938,8 +938,8 @@
 	name = "altyn helmet"
 	desc = "A titanium helmet of serbian origin. Still widely used despite being discontinued."
 	icon_state = "altyn"
-	armor_up = list(melee = 20, bullet = 15, energy = 15, bomb = 15, bio = 0, rad = 0)
-	armor_list = list(melee = 40, bullet = 45, energy = 20, bomb = 35, bio = 0, rad = 0)//was totally weird see a metal helmet without laser protection so it gets a bit
+	armor_up = list(melee = 40, bullet = 45, energy = 25, bomb = 35, bio = 0, rad = 0)// swapped the stats i wrote them wrong T_T
+	armor_list = list(melee = 35, bullet = 25, energy = 15, bomb = 15, bio = 0, rad = 0)//was totally weird see a metal helmet without laser protection so it gets a bit
 	siemens_coefficient = 1
 	up = TRUE
 
@@ -982,7 +982,7 @@
 	name = "maska helmet"
 	desc = "\"I do not know who I am, I don\'t know why I\'m here. All I know is that I must kill.\""
 	icon_state = "maska"
-	armor_list = list(melee = 55, bullet = 55, energy = 20, bomb = 45, bio = 0, rad = 0) // best what you can get, unless you face lasers//got the stats changed because made no sense lmao
+	armor_list = list(melee = 55, bullet = 55, energy = 25, bomb = 45, bio = 0, rad = 0) // best what you can get, unless you face lasers//got the stats changed because made no sense lmao//added 25 laser armor because is below a scrap helmet in laser
 
 
 /obj/item/clothing/head/helmet/faceshield/altyn/maska/toggle_style()
@@ -1172,7 +1172,6 @@
 	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_BIO_SILK = 5)
 	max_upgrades = 2
 
-
 /obj/item/clothing/head/helmet/pirssuit/lighteater
 	name = "'Mark II' Light-Eater Cultist Hood"
 	desc = "A airtight, robust headgear of curious origins, a hooded copy of Mark II from PIRS - stolen technology that is no longer cheap. \
@@ -1221,3 +1220,37 @@
 	body_parts_covered = HEAD|FACE|EARS
 	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15)
 	max_upgrades = 1
+
+//Freeport: Liberty ‘Khambataar’ insurgency.!11!
+
+/obj/item/clothing/head/helmet/rebel
+	name = "Populist Raider Helmet"//top guy on the rebel team
+	desc = "An Formidable Helmet Made by the finest populist armorers of The Great General Khambataar, The Bravest Fighters and Leaders of the populism use this sign of power,The Iron Eagle Troopers Already Are Destroyed! your mission is Continue with The Watchmen Comrade, Lead Your Fighters To Victory!!. "
+	icon_state = "rebel_heavy_helmet"
+	icon_state = "rebel_heavy_helmet"
+	armor_list = list(melee = 45, bullet = 45,energy = 45, bomb = 45, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE
+
+/obj/item/clothing/head/helmet/rebel1//WOAH REBEL1!?!?!
+	name = "Populist Combat Helmet"//infantry/combat tech and medic gear
+	desc = "An heavy and sturdy helmet produced by the Populist armorers for the popular fighters of the General Khambataar. simple and effective stills being the terror of The iron eagle troopers."
+	icon_state = "rebel_heavy_cap"
+	icon_state = "rebel_heavy_cap"
+	armor_list = list(melee = 35, bullet = 35,energy = 35, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE
+
+/obj/item/clothing/head/helmet/rebel2
+	name = "Populist Combat Helmet"//infantry/combat tech and medic gear
+	desc = "An heavy and sturdy helmet produced by the Populist armorers for the popular fighters of the General Khambataar. simple and effective stills being the terror of The iron eagle troopers."
+	icon_state = "rebel_heavy_warhat"
+	icon_state = "rebel_heavy_warhat"
+	armor_list = list(melee = 35, bullet = 35,energy = 35, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE
+
+/obj/item/clothing/head/helmet/rebel3
+	name = "Populist Combat Helmet"//infantry/combat tech and medic gear
+	desc = "An Light and sturdy armored ushanka produced by the Populist armorers for the popular fighters of the General Khambataar. simple and effective stills being the most effective armor to hide and use in the attacks."
+	icon_state = "rebel_impro_cap"
+	icon_state = "rebel_impro_cap"
+	armor_list = list(melee = 35, bullet = 35,energy = 35, bomb = 25, bio = 0, rad = 0)
+	body_parts_covered = HEAD|EARS|FACE

@@ -55,9 +55,6 @@
 				/obj/item/clothing/suit/armor/vest/handmade = 20,
 				/obj/item/clothing/suit/space/void/SCAF = 1,
 				/obj/item/clothing/suit/storage/vest/merc = 1,
-				/obj/item/clothing/suit/space/void/odst/red = 1,
-				/obj/item/clothing/suit/space/void/odst/blue = 1,
-				/obj/item/clothing/suit/space/void/odst/orange = 1,
 				/obj/item/clothing/suit/armor/vest = 20))
 
 /obj/random/cloth/armor/low_chance
@@ -221,9 +218,6 @@
 				/obj/item/clothing/head/helmet/faceshield/altyn/maska = 2,
 				/obj/item/clothing/head/helmet/mercenary = 2,
 				/obj/item/clothing/head/helmet/bulletproof = 2,
-				/obj/item/clothing/head/helmet/space/void/odst/red = 1,
-				/obj/item/clothing/head/helmet/space/void/odst/blue = 1,
-				/obj/item/clothing/head/helmet/space/void/odst/orange = 1,
 				/obj/item/clothing/head/helmet/space/void/SCAF = 1,
 				/obj/item/clothing/head/helmet/bulletproof/ironhammer_nvg = 1))
 

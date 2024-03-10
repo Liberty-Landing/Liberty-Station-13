@@ -185,7 +185,7 @@
 	icon_state = "wo_headset_bowman"
 
 /obj/item/device/radio/headset/heads/bscom
-	name = "blackshield commander headset"
+	name = "Deputy chief headset"
 	desc = "The headset of the men who protects your worthless lives. This has a small symbol denoting its built-in backup transmitter."
 	icon_state = "bscom_headset"
 	item_state = "headset"
@@ -193,7 +193,7 @@
 	ks2type = /obj/item/device/encryptionkey/heads/hos
 
 /obj/item/device/radio/headset/heads/bscom/bowman
-	name = "blackshield commander bowman headset"
+	name = "Deputy chief bowman headset"
 	desc = "The headset of the men who protects your worthless lives, in a comfortable bowman style.\nThis has a small symbol denoting its built-in backup transmitter."
 	icon_state = "bs_bowman_headset"
 	item_state = "bs_bowman_headset"
@@ -250,18 +250,18 @@
 	ks2type = /obj/item/device/encryptionkey/headset_service
 
 /obj/item/device/radio/headset/headset_pro
-	name = "Fontaine radio headset"
-	desc = "A headset used by Fontaine Logistics. This has a small symbol denoting its built-in backup transmitter."
-	icon_state = "fontaine_headset"
-	item_state = "headset"
+	name = "Black Bolt radio headset"
+	desc = "A headset used by Black Bolt Scavengers. This has a small symbol denoting its built-in backup transmitter."
+	icon_state = "blackbolt_headset"
+	item_state = "blackbolt_headset"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/headset_pro
 
 /obj/item/device/radio/headset/heads/foreman
-	name = "Shepherd radio headset"
-	desc = "A headset used by the Field Shepherd. This has a small symbol denoting its built-in backup transmitter."
-	icon_state = "fontaine_bowman"
-	item_state = "headset"
+	name = "Expeditionary Leader radio headset"
+	desc = "A headset used by the Leader of Scavengers. This has a small symbol denoting its built-in backup transmitter."
+	icon_state = "blackbolt_bowman"
+	item_state = "blackbolt_bowman"
 	adhoc_fallback = TRUE
 	ks2type = /obj/item/device/encryptionkey/heads/foreman
 

@@ -9,7 +9,7 @@
 /datum/craft_recipe/terra/handmade
 	name = "Union Improvised Armor Upgrade Kit"
 	result = /obj/item/tool_upgrade/armor/handmade
-	icon_state = "armor_frame"
+	icon_state = "armor_part"
 	steps = list(
 		list(CRAFT_MATERIAL, 25, MATERIAL_ALUMINIUM, "time" = 40),
 		list(QUALITY_WELDING, 35, "time" = 60),
@@ -200,17 +200,18 @@
 	name = "MKI Forger compressed-matter pistol"
 	result = /obj/item/gun/projectile/matter_gun
 	steps = list(
-		list(CRAFT_MATERIAL, 15, MATERIAL_INDSTEEL, "time" = 15),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 15),
 		list(QUALITY_CUTTING, 30, "time" = 10),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 15),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 20),
-		list(/obj/item/cell/medium, 1, "time" = 5),
-		list(/obj/item/computer_hardware/tesla_link, 1, "time" = 10),
+		list(/obj/item/part/gun/barrel/magnum, 1, "time" = 5),
+		list(/obj/item/part/gun/mechanism/pistol, 1, "time" = 10),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
 		list(/obj/item/stack/cable_coil, 10, "time" = 15),
+		list(/obj/item/device/manual_charger/improv, 1, "time" = 15),
 		list(QUALITY_WIRE_CUTTING, 40, "time" = 15),
-		list(/obj/item/stock_parts/manipulator/nano, 1, "time" = 15),
-		list(/obj/item/stock_parts/matter_bin/adv, 1, "time" = 5),
+		list(/obj/item/circuitboard/matter_nanoforge, 1, "time" = 15),
+		list(/obj/item/stock_parts/matter_bin, 1, "time" = 5),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
 	)
 
@@ -228,8 +229,8 @@
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
 		list(/obj/item/stack/cable_coil, 20, "time" = 15),
 		list(QUALITY_WIRE_CUTTING, 40, "time" = 15),
-		list(/obj/item/stock_parts/capacitor/adv, 1, "time" = 10),
-		list(/obj/item/stock_parts/micro_laser/high, 1, "time" = 10),
+		list(/obj/item/tool/baton/arcwelder, 1, "time" = 10),
+		list(/obj/item/oddity/blackbox_nanoforge, 1, "time" = 10),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
 	)
 

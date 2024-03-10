@@ -8,6 +8,7 @@
 /area/mine/unexplored)
 "ac" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "ad" = (
@@ -22,6 +23,7 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "ag" = (
@@ -29,6 +31,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/rubble,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "ai" = (
@@ -205,15 +208,18 @@
 /area/mine/prep)
 "aO" = (
 /obj/random/junk,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "aP" = (
 /obj/structure/railing,
 /obj/random/junk,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "aQ" = (
 /obj/structure/railing,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "aR" = (
@@ -799,6 +805,7 @@
 /obj/item/device/scanner/mining,
 /obj/item/device/scanner/mining,
 /obj/item/device/scanner/mining,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "ct" = (
@@ -1186,6 +1193,7 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "dF" = (
@@ -1460,6 +1468,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/rubble,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "ev" = (
@@ -2371,6 +2380,7 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 8
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "gK" = (
@@ -2578,6 +2588,7 @@
 /area/mine/processing)
 "hm" = (
 /obj/effect/decal/cleanable/rubble,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/mine/processing)
 "hn" = (
@@ -4460,6 +4471,7 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 4
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "mf" = (
@@ -7117,6 +7129,7 @@
 /obj/effect/floor_decal/spline/plain{
 	dir = 1
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "sf" = (
@@ -7134,6 +7147,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/rubble,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "sh" = (
@@ -7143,6 +7157,7 @@
 /turf/simulated/floor/asteroid,
 /area/mine/hallway)
 "si" = (
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/mine/processing)
 "sj" = (
@@ -7465,10 +7480,8 @@
 /turf/simulated/floor/tiled/aluminium/danger,
 /area/mine/processing)
 "sU" = (
-/obj/effect/decal/cleanable/rubble,
-/obj/effect/floor_decal/spline/plain{
-	dir = 1
-	},
+/obj/structure/catwalk,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "sV" = (
@@ -8867,14 +8880,14 @@
 /turf/simulated/wall/r_wall,
 /area/mine/hallway)
 "FJ" = (
-/obj/structure/low_wall,
 /obj/structure/railing{
 	dir = 8
 	},
-/obj/structure/railing,
 /obj/structure/sandbags{
 	dir = 8
 	},
+/obj/structure/catwalk,
+/obj/structure/low_wall,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "FT" = (
@@ -9326,6 +9339,7 @@
 /obj/structure/sandbags{
 	dir = 1
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "MR" = (
@@ -9874,6 +9888,7 @@
 /obj/structure/sandbags{
 	dir = 1
 	},
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "VD" = (
@@ -9957,6 +9972,14 @@
 	},
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/liberty/rnd/outpostgeneral)
+"Xr" = (
+/obj/effect/floor_decal/spline/plain{
+	dir = 1
+	},
+/obj/structure/catwalk,
+/obj/structure/catwalk,
+/turf/simulated/floor/asteroid,
+/area/liberty/quartermaster/mining_outside_doc)
 "Xx" = (
 /obj/machinery/door/airlock/external{
 	req_access = list(48)
@@ -9986,6 +10009,7 @@
 	dir = 8
 	},
 /obj/random/material_ore,
+/obj/structure/catwalk,
 /turf/simulated/floor/asteroid,
 /area/liberty/quartermaster/mining_outside_doc)
 "XW" = (
@@ -37255,11 +37279,11 @@ bo
 td
 sL
 DL
-gb
 FJ
-Zb
-Fs
-Zb
+FJ
+gb
+gb
+TO
 Zb
 ti
 ti
@@ -37457,11 +37481,11 @@ Kt
 ai
 ai
 ai
-Kt
-Kt
+ai
+ai
 Ma
-TO
-Zb
+Ao
+pK
 Zb
 ab
 ti
@@ -37662,8 +37686,8 @@ ed
 ed
 tb
 St
+Ao
 sf
-Zb
 Fs
 ab
 ti
@@ -37864,8 +37888,8 @@ sO
 ed
 tc
 St
+Ao
 sf
-Zb
 Zb
 ab
 ti
@@ -38066,8 +38090,8 @@ gt
 ia
 gt
 Ma
+Ao
 pK
-Fs
 Zb
 ti
 ti
@@ -38268,8 +38292,8 @@ sP
 gV
 gt
 Ao
+Ao
 pK
-Fs
 Zb
 ti
 ti
@@ -38470,8 +38494,8 @@ sQ
 gV
 gt
 fG
+Ao
 pK
-Zb
 Zb
 ti
 ti
@@ -39681,7 +39705,7 @@ sM
 vJ
 fG
 Ao
-Zb
+Ao
 pK
 Fs
 Zb
@@ -39881,9 +39905,9 @@ st
 st
 sN
 vJ
-Zb
-Fs
-Zb
+Ao
+fG
+Ao
 pK
 Zb
 Zb
@@ -40082,10 +40106,10 @@ sd
 af
 af
 af
-Zb
-Fs
-Zb
-Zb
+Ao
+fG
+Ao
+Ao
 pK
 Zb
 Zb
@@ -40280,8 +40304,8 @@ bX
 bo
 aK
 so
-sU
-Fs
+vJ
+fG
 UW
 CK
 CK
@@ -40482,8 +40506,8 @@ is
 bo
 aK
 he
-sU
-Zb
+vJ
+Ao
 pK
 Zb
 Zb
@@ -40685,7 +40709,7 @@ bn
 aK
 he
 dE
-Fs
+fG
 pK
 Zb
 Zb
@@ -40887,7 +40911,7 @@ bo
 aK
 so
 me
-Zb
+Ao
 pK
 Zb
 Zb
@@ -41474,7 +41498,7 @@ Zb
 Zb
 Zb
 sK
-Zb
+Ao
 Vb
 aK
 at
@@ -41493,7 +41517,7 @@ bn
 gy
 aK
 so
-dE
+Xr
 pK
 Hr
 Zb
@@ -41676,7 +41700,7 @@ Zb
 Zb
 Zb
 OG
-Fs
+fG
 Vb
 aK
 aU
@@ -41878,7 +41902,7 @@ Zb
 Zb
 Zb
 OG
-Fs
+fG
 Vb
 aK
 aV
@@ -41898,7 +41922,7 @@ RZ
 aK
 so
 sg
-Zb
+Ao
 pK
 Zb
 Zb
@@ -42080,7 +42104,7 @@ Zb
 Zb
 Fs
 sK
-Zb
+Ao
 Mz
 aK
 aW
@@ -42282,7 +42306,7 @@ Zb
 Zb
 Fs
 sK
-Zb
+Ao
 aD
 aD
 aD
@@ -42484,7 +42508,7 @@ Zb
 Zb
 Zb
 IM
-Zb
+Ao
 aE
 aL
 aX
@@ -42686,7 +42710,7 @@ Zb
 Hr
 Fs
 IM
-Zb
+Ao
 aE
 aM
 aY
@@ -42888,7 +42912,7 @@ Zb
 Zb
 Zb
 IM
-Zb
+Ao
 aE
 aM
 aZ
@@ -43090,7 +43114,7 @@ Zb
 Zb
 Zb
 RV
-Fs
+fG
 aE
 aN
 ba
@@ -43292,7 +43316,7 @@ Zb
 Fs
 Zb
 sK
-Zb
+Ao
 aD
 aD
 aD
@@ -43494,9 +43518,9 @@ Zb
 Zb
 Zb
 sK
-Zb
-Fs
-Fs
+Ao
+fG
+fG
 aD
 bs
 bK
@@ -43696,9 +43720,9 @@ Zb
 Zb
 Zb
 sK
-Zb
-Zb
-Fs
+Ao
+Ao
+fG
 aD
 bt
 bL
@@ -43898,9 +43922,9 @@ Zb
 Zb
 Zb
 sK
-Zb
-Zb
-Fs
+Ao
+Ao
+fG
 aD
 bu
 bM
@@ -44100,8 +44124,8 @@ Zb
 Zb
 Zb
 sK
-Zb
-Zb
+Ao
+Ao
 aO
 aD
 aE
@@ -44302,8 +44326,8 @@ Zb
 Zb
 Zb
 Fb
-Zb
-Zb
+Ao
+Ao
 aP
 bb
 bc
@@ -44322,7 +44346,7 @@ gJ
 hm
 si
 sd
-Zb
+Ao
 pK
 Zb
 Zb
@@ -44504,8 +44528,8 @@ Zb
 Zb
 Zb
 sK
-Zb
-Zb
+Ao
+Ao
 aQ
 uc
 uc
@@ -44518,13 +44542,13 @@ eh
 eh
 eh
 fD
-Zb
-Zb
-Zb
+Ao
+Ao
+Ao
 af
 ag
-Zb
-Zb
+Ao
+Ao
 pK
 Zb
 Zb
@@ -44706,8 +44730,8 @@ Zb
 Zb
 Zb
 sK
-Zb
-Fs
+Ao
+fG
 aQ
 ud
 ud
@@ -44720,13 +44744,13 @@ eh
 eh
 fa
 fE
-Fs
+fG
 ac
 ac
-Fs
-Zb
-Zb
-Zb
+fG
+Ao
+Ao
+Ao
 pK
 Zb
 Zb
@@ -44908,8 +44932,8 @@ Zb
 Zb
 Fs
 sK
-Zb
-Fs
+Ao
+fG
 aQ
 uc
 uc
@@ -44922,7 +44946,7 @@ ei
 eM
 fb
 fF
-Fs
+fG
 UW
 CK
 CK
@@ -45110,20 +45134,20 @@ Zb
 Zb
 Zb
 sK
-Zb
-Zb
-Zb
+Ao
+Ao
+Ao
 bd
 bv
 bN
 cY
 cs
 XT
-Zb
-Fs
-Fs
-Zb
-Zb
+Ao
+fG
+fG
+Ao
+Ao
 ac
 pK
 Fs
@@ -45312,21 +45336,21 @@ Zb
 Zb
 Zb
 sK
-Zb
-Zb
-Zb
-Zb
-Zb
-Zb
-Fs
-Fs
-Zb
-Zb
-Fs
-Zb
-Fs
-Zb
-Zb
+Ao
+Ao
+sU
+Ao
+Ao
+Ao
+fG
+fG
+Ao
+Ao
+fG
+Ao
+fG
+Ao
+Ao
 pK
 Zb
 Zb
