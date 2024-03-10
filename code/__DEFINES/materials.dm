@@ -32,13 +32,11 @@
 #define MATERIAL_BGLASS "mendsilicate glass"
 #define MATERIAL_LBGLASS "laminated mendsilicate glass"
 #define MATERIAL_COPPER "copper"
-#define MATERIAL_LIGNITE "lignite"
 #define MATERIAL_DURALUMIN "duralumin"
 #define MATERIAL_HYDROGENC "hydrogen clathrate"
 #define MATERIAL_BRIQUETTE "briquette"
 #define MATERIAL_COMPOSITE "titanium-niobium composite"
 #define MATERIAL_NACRE "mending nacre"
-#define MATERIAL_FRAGNACRE "fragmented nacre"
 #define MATERIAL_TITANIUMRTC "reinforced titanium composite"
 #define MATERIAL_TRITIUM "tritium"
 #define MATERIAL_TITANIUM "titanium"
@@ -93,7 +91,6 @@
 	MATERIAL_BGLASS, \
 	MATERIAL_LBGLASS, \
 	MATERIAL_COPPER, \
-	MATERIAL_LIGNITE, \
 	MATERIAL_NIOBIUM, \
 	MATERIAL_TITANIUM, \
 	MATERIAL_IRON, \

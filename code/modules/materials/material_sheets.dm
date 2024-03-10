@@ -567,7 +567,7 @@
 	desc = "Mending piece from a still studied substance that looks alike nacre, and it is constantly healing with microscopic activity."
 	singular_name = "Mending Nacre"
 	icon_state = "sheet-nacre"
-	default_type = MATERIAL_FRAGNACRE
+	default_type = MATERIAL_NACRE
 	novariants = TRUE
 	price_tag = 50 // obtaining nacre is extremely dangerous and very profitable
 	max_amount = 360

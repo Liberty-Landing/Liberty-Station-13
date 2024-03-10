@@ -630,7 +630,6 @@
 	lst[MATERIAL_COMPRESSED_MATTER] = 1 	//we make this!
 	lst[MATERIAL_RSCRAP] = 0.75				//we also make this, now standarized
 	lst[MATERIAL_NACRE] = 0.90				//of course NACRE is useful. Yes.
-	lst[MATERIAL_FRAGNACRE] = 0.90			//practically the same thing, but ore
 /obj/machinery/matter_nanoforge/proc/check_user(mob/user)
 	if(user.stats?.getPerk(PERK_HANDYMAN))
 		return TRUE

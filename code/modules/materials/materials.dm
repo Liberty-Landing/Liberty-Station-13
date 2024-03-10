@@ -536,7 +536,7 @@ var/list/name_to_material
 
 /material/plastic/holographic
 	name = "holoplastic"
-	display_name = "plastic"
+	display_name = "plastic blend"
 	stack_type = null
 	shard_type = SHARD_NONE
 
@@ -547,6 +547,14 @@ var/list/name_to_material
 	stack_origin_tech = list(TECH_MATERIAL = 5)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
+
+/material/tritium
+	name = MATERIAL_DURALUMIN
+	stack_type = /obj/item/stack/material/duralumin
+	icon_colour = "#915e24"
+	stack_origin_tech = list(TECH_MATERIAL = 2)
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
 
 /material/nacre
 	name = MATERIAL_NACRE
@@ -589,8 +597,8 @@ var/list/name_to_material
 	icon_colour = "#9999FF"
 	weight = 27
 	stack_origin_tech = list(TECH_MATERIAL = 3)
-	sheet_singular_name = "ingot"
-	sheet_plural_name = "ingots"
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
 
 /material/titaniumrtc
 	name = MATERIAL_TITANIUMRTC
@@ -600,6 +608,15 @@ var/list/name_to_material
 	stack_origin_tech = list(TECH_MATERIAL = 4)
 	sheet_singular_name = "matrix"
 	sheet_plural_name = "matrices"
+
+/material/titanium
+	name = MATERIAL_TITANIUM
+	stack_type = /obj/item/stack/material/titanium
+	icon_colour = "#8a8aaf"
+	weight = 30
+	stack_origin_tech = list(TECH_MATERIAL = 2)
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
 
 /material/dilatant
 	name = MATERIAL_DILATANT
@@ -649,6 +666,19 @@ var/list/name_to_material
 	stack_type = null
 	shard_type = SHARD_NONE
 
+/material/hydrogenc
+	name = MATERIAL_HYDROGENC
+	stack_type = /obj/item/stack/material/hydrogenc
+	ignition_point = PLASMA_MINIMUM_BURN_TEMPERATURE
+	icon_base = "stone"
+	icon_colour = "#74c0ec"
+	shard_type = SHARD_SHARD
+	hardness = 30
+	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_PLASMA = 2)
+	door_icon_base = "stone"
+	sheet_singular_name = "clathrate"
+	sheet_plural_name = "clathrates"
+
 /material/cardboard
 	name = MATERIAL_CARDBOARD
 	stack_type = /obj/item/stack/material/cardboard
@@ -693,6 +723,14 @@ var/list/name_to_material
 	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 2)
 	sheet_singular_name = "canister"
 	sheet_plural_name = "canisters"
+
+/material/briquette
+	name = MATERIAL_BRIQUETTE
+	stack_type = /obj/item/stack/material/briquette
+	icon_colour = "#1f1d1d"
+	stack_origin_tech = list(TECH_MATERIAL = 1)
+	sheet_singular_name = "fuel"
+	sheet_plural_name = "pile"
 
 /material/biopolymer_silk
 	name = MATERIAL_BIO_SILK

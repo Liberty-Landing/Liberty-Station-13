@@ -21,7 +21,7 @@
 /datum/design/autolathe/part/cable_coil
 	name = "cable coil"
 	build_path = /obj/item/stack/cable_coil
-	materials = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 4) //Idea is that this is were your getting the plasticside and copper
+	materials = list(MATERIAL_DURALUMIN = 2, MATERIAL_PLASTIC = 4) //Idea is that this is were your getting the plasticside and copper
 	takes_chemicals = FALSE //geting plasticside and copper is hard
 
 /datum/design/autolathe/part/timer

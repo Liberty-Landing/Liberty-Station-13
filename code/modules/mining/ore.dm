@@ -102,7 +102,7 @@
 	material = MATERIAL_URANIUM
 	sheet_amout = 0.5
 
-/obj/item/stack/ore/fragnacre //function: Alloyed to make mendsilicate glass.
+/obj/item/stack/ore/fragnacre //function: Alloyed to make mendsilicate glass. No forging/ORM is able to turn it back into nacre. Can only be get by breaking nacre.
 	name = "nacre fragment"
 	icon_state = "ore_fragnacre"
 	origin_tech = list(TECH_MATERIAL = 5)
