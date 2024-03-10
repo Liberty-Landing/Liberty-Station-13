@@ -50,7 +50,7 @@
 	id = "aluminum"
 	taste_description = "metal"
 	taste_mult = 1.1
-	description = "A silvery white and ductile member of the boron group of chemical elements."
+	description = "A silvery white and malleable member of the boron group of chemical elements. Aluminum is a metallic chemical element with the symbol Al and atomic number 13."
 	reagent_state = SOLID
 	color = "#A8A8A8"
 	common = TRUE //Identifiable on sight
@@ -101,7 +101,7 @@
 /datum/reagent/metal/copper
 	name = "Copper"
 	id = "copper"
-	description = "A highly ductile metal."
+	description = "A highly ductile metal. Copper is a metallic chemical element with the symbol Cu and atomic number 29."
 	taste_description = "copper"
 	color = "#6E3B08"
 	common = TRUE //Identifiable on sight
@@ -244,7 +244,7 @@
 /datum/reagent/metal/iron
 	name = "Iron"
 	id = "iron"
-	description = "Pure iron is a metal."
+	description = "Iron is a metallic chemical element with the symbol Fe and atomic number 26"
 	taste_description = "metal"
 	reagent_state = SOLID
 	color = "#353535"
@@ -258,7 +258,7 @@
 /datum/reagent/metal/lithium
 	name = "Lithium"
 	id = "lithium"
-	description = "A chemical element, used as antidepressant."
+	description = "A chemical element, used as antidepressant. Lithium is a metallic chemical element with the symbol Li and atomic number 3."
 	taste_description = "metal"
 	reagent_state = SOLID
 	color = "#808080"
@@ -273,7 +273,7 @@
 /datum/reagent/metal/mercury
 	name = "Mercury"
 	id = "mercury"
-	description = "A chemical element."
+	description = "A chemical element. Mercury is a metallic chemical element with the symbol Hg and atomic number 80."
 	taste_mult = 0 //mercury apparently is tasteless. IDK
 	reagent_state = LIQUID
 	color = "#484848"
@@ -301,7 +301,7 @@
 /datum/reagent/metal/potassium
 	name = "Potassium"
 	id = "potassium"
-	description = "A soft, low-melting solid that can easily be cut with a knife. Reacts violently with water."
+	description = "A soft, low-melting solid that can easily be cut with a knife. Reacts violently with water. Potassium is a metallic chemical element with the symbol K and atomic number 19."
 	taste_description = "sweetness" //potassium is bitter in higher doses but sweet in lower ones.
 	reagent_state = SOLID
 	color = "#A0A0A0"
@@ -317,7 +317,7 @@
 /datum/reagent/metal/radium
 	name = "Radium"
 	id = "radium"
-	description = "Radium is an alkaline earth metal. It is extremely radioactive."
+	description = "Radium is an alkaline earth metal. It is extremely radioactive. Radium is a metallic chemical element with the symbol Ra and atomic number 88."
 	taste_description = "the color blue, and regret"
 	reagent_state = SOLID
 	color = "#C7C7C7"
@@ -346,7 +346,7 @@
 /datum/reagent/acid
 	name = "Sulphuric acid"
 	id = "sacid"
-	description = "A very corrosive mineral acid with the molecular formula H2SO4."
+	description = "Sulfuric acid is a highly corrosive compound with the chemical formula H2SO4."
 	taste_description = "acid"
 	reagent_state = LIQUID
 	color = "#DB5008"
@@ -503,3 +503,11 @@
 	taste_mult = 0 //no taste
 	reagent_state = SOLID
 	color = "#DCDCDC"
+
+/datum/reagent/metal/radium
+	name = "Radium"
+	id = "radium"
+	description = "Radium is an alkaline earth metal. It is extremely radioactive."
+	taste_description = "the color blue, and regret"
+	reagent_state = SOLID
+	color = "#C7C7C7"

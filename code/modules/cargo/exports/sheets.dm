@@ -166,10 +166,10 @@
 	export_types = list(/obj/item/stack/material/plastic)
 	message = "of plastic"
 
-// Platinum.
-/datum/export/stack/platinum
+// Titanium
+/datum/export/stack/titanium
 	cost = 40
-	message = "of platinum"
+	message = "of titanium"
 	export_types = list(/obj/item/stack/material/titanium)
 
 /datum/export/stack/nanopaste

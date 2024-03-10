@@ -8,12 +8,6 @@
 	var/product
 	var/metaltag
 
-#define MATERIAL_DURALUMIN "duralumin"
-#define MATERIAL_BGLASS "borosilicate glass"
-#define MATERIAL_DILATANT "dilatant plate"
-#define MATERIAL_INDSTEEL "industrial steel"
-#define MATERIAL_COMPOSITE "titanium-niobium composite"
-
 // Post Industrial Materials
 /datum/alloy/duralumin
 	name = "Duralumin"

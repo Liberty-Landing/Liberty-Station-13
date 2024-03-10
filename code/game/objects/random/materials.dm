@@ -28,6 +28,8 @@
 				/obj/item/stack/material/glass/random = 4,\
 				/obj/item/stack/material/glass/mendsilicate/random = 3,\
 				/obj/item/stack/material/iron/random = 2,\
+				/obj/item/stack/material/niobium/random = 2,\
+				/obj/item/stack/material/titanium/random = 2,\
 				/obj/item/stack/material/copper/random = 1,\
 				/obj/item/stack/material/briquette/random = 4,\
 				/obj/item/stack/material/duralumin/random = 2,\

@@ -858,7 +858,10 @@
 		/obj/item/toy/figure/character/ironhammer/warden = 5,
 		/obj/item/toy/figure/character/ironhammer/detective = 5,
 		// Bobbleheads
-		/obj/item/toy/figure/character/bobblehead/acolyte = 5,
+		/obj/item/toy/figure/character/bobblehead/oathbound = 5,
+		/obj/item/toy/figure/character/bobblehead/forgemaster = 5,
+		/obj/item/toy/figure/character/bobblehead/enkindled = 5,
+		/obj/item/toy/figure/character/bobblehead/elohopean = 5,
 		/obj/item/toy/figure/character/bobblehead/roach = 5,
 		/obj/item/toy/figure/character/bobblehead/vagabond = 5,
 		/obj/item/toy/figure/character/bobblehead/rooster = 5,
@@ -992,7 +995,10 @@
 		/obj/item/toy/figure/character/ironhammer/warden = 25,
 		/obj/item/toy/figure/character/ironhammer/detective = 25,
 		// Bobbleheads
-		/obj/item/toy/figure/character/bobblehead/acolyte = 25,
+		/obj/item/toy/figure/character/bobblehead/oathbound = 25,
+		/obj/item/toy/figure/character/bobblehead/forgemaster = 25,
+		/obj/item/toy/figure/character/bobblehead/enkindled = 25,
+		/obj/item/toy/figure/character/bobblehead/elohopean = 25,
 		/obj/item/toy/figure/character/bobblehead/excelsior = 25,
 		/obj/item/toy/figure/character/bobblehead/serbian = 25,
 		/obj/item/toy/figure/character/bobblehead/carrion = 25,

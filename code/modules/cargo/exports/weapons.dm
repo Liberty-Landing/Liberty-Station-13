@@ -89,7 +89,7 @@
 
 /datum/export/weapon/katana/platinum
 	cost = 3000
-	unit_name = "platinum katana"
+	unit_name = "titanium katana"
 	export_types = list(/obj/item/material/sword/katana/platinum)
 
 /datum/export/weapon/katana/indsteel

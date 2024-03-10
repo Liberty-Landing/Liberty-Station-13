@@ -556,10 +556,19 @@ var/list/name_to_material
 	sheet_singular_name = "sphere"
 	sheet_plural_name = "spheres"
 
-/material/metal
-	name = MATERIAL_METAL
-	stack_type = /obj/item/stack/material/metal
-	icon_colour = "#9999FF"
+/material/iron
+	name = MATERIAL_IRON
+	stack_type = /obj/item/stack/material/iron
+	icon_colour = "#828291"
+	weight = 27
+	stack_origin_tech = list(TECH_MATERIAL = 2)
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
+
+/material/niobium
+	name = MATERIAL_NIOBIUM
+	stack_type = /obj/item/stack/material/niobium
+	icon_colour = "#828291"
 	weight = 27
 	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"

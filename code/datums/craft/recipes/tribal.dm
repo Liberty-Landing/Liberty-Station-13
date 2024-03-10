@@ -1,12 +1,12 @@
-/datum/craft_recipe/trapper
+/datum/craft_recipe/tribal //WIP area. Still working on this
 	category = "Tribal"
 	time = 100
 	related_stats = list(STAT_BIO)
-	requiredPerk = PERK_BUTCHER
+	requiredPerk = PERK_TRIBAL
 
 // Weaponry -----------------
 
-
+/*
 /datum/craft_recipe/trapper/arrow_hunting
 	name = "hunting arrows"
 	result = /obj/item/ammo_casing/arrow/hunting/bulk
@@ -147,3 +147,4 @@
 		list(QUALITY_ADHESIVE, 10, "time" = 60)
 	)
 
+*/

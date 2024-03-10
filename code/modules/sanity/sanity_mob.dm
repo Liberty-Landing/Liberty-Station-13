@@ -306,7 +306,7 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 /datum/sanity/proc/finish_rest()
 	desires.Cut()
 	if(!rest_timer_active)
-		to_chat(owner, "<font color='purple'>[owner.stats.getPerk(PERK_ARTIFICER) ? "You have created art." : "You have rested well."]\
+		to_chat(owner, "<font color='purple'>[owner.stats.getPerk(PERK_ARTIFICER) ? "Through cognitive work, you adeptly materialized abstract thoughts into tangible reality." : "You have rested well."]\
 					<br>Select what you wish to do with your fulfilled insight <a HREF=?src=\ref[src];here_and_now=TRUE>here and now</a> or get to safety first if you are in danger.\
 					<br>The prompt will appear in one minute.</font>")
 		rest_timer_active = TRUE
@@ -323,7 +323,8 @@ GLOBAL_VAR_INIT(GLOBAL_INSIGHT_MOD, 1)
 
 	if(rest == "Focus on an oddity")
 		if(owner.stats.getPerk(PERK_ARTIFICER))
-			to_chat(owner, SPAN_NOTICE("Your artistic mind prevents you from using an oddity."))
+			to_chat(owner, SPAN_NOTICE("Within the confines of your cognitive domain, the guardianship of your artistic mind refrains from embracing psionic-infused oddities, \
+			steadfastly adhering to normative expressions and eschewing the eccentric threads that might otherwise intertwine within the intricate tapestry of imagination.")) //Forgemasters characteristic. Thus why the long-ass texts.
 			rest = "Internalize your recent experiences"
 		else
 			var/oddity_in_posession = FALSE

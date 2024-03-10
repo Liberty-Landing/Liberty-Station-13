@@ -603,10 +603,10 @@
 
 //here we have the conversion rates of the forge, unless an exploit is found, those should not be touched if possible
 /obj/machinery/matter_nanoforge/proc/matter_assoc_list()
-	lst[MATERIAL_METAL] = 0.30				//"a kilogram of aluminium"
+	lst[MATERIAL_IRON] = 0.30				//"a kilogram of aluminium"
 	lst[MATERIAL_GLASS] = 0.45				//as long as guild is not mass producing sand...
 	lst[MATERIAL_LGLASS] = 0.70
-	lst[MATERIAL_ALUMINIUM] = 0.50			//why mixing a kilogram of aluminium and onde of feathers be worse than it's source?
+	lst[MATERIAL_ALUMINIUM] = 0.50			//why mixing a kilogram of aluminium and onde of feathers be worse than it's source? //Sorry Trilby. I killed off your joke here.
 	lst[MATERIAL_BGLASS] = 0.70				//better off using it on crafts or to repair specific windows
 	lst[MATERIAL_LBGLASS] = 0.90 			//but why?
 	lst[MATERIAL_DIAMOND] = 1.20 			//who actually does that?

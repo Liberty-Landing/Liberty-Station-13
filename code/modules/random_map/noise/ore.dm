@@ -55,7 +55,7 @@
 
 			var/current_cell = map[get_map_cell(x,y)]
 			if(current_cell < rare_val)      // Surface metals.
-				T.resources[MATERIAL_METAL] =     rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
+				T.resources[MATERIAL_IRON] =     rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
 				T.resources[MATERIAL_GOLD] =     rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
 				T.resources[MATERIAL_SILVER] =   rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
 				T.resources[MATERIAL_URANIUM] =  rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
@@ -71,14 +71,14 @@
 				T.resources[MATERIAL_TITANIUMRTC] =   rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
 				T.resources[MATERIAL_TRITIUM] = 0
 				T.resources[MATERIAL_DIAMOND] =  0
-				T.resources[MATERIAL_METAL] =     0
+				T.resources[MATERIAL_NIOBIUM] =     0
 			else                             // Deep metals.
 				T.resources[MATERIAL_URANIUM] =  rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
 				T.resources[MATERIAL_DIAMOND] =  rand(RESOURCE_LOW_MIN,  RESOURCE_LOW_MAX)
 				T.resources[MATERIAL_HYDROGENC] =   rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
 				T.resources[MATERIAL_TITANIUMRTC] =   rand(RESOURCE_HIGH_MIN, RESOURCE_HIGH_MAX)
 				T.resources[MATERIAL_TRITIUM] = rand(RESOURCE_MID_MIN,  RESOURCE_MID_MAX)
-				T.resources[MATERIAL_METAL] =     0
+				T.resources[MATERIAL_NIOBIUM] =     0
 				T.resources[MATERIAL_GOLD] =     0
 				T.resources[MATERIAL_SILVER] =   0
 			CHECK_TICK

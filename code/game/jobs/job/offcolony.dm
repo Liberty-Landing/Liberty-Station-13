@@ -27,7 +27,7 @@
 		STAT_COG = 10
 	)
 
-	description = "You stand alone, an outsider detached from the colony.  Whether you're an exile, Whether an amnesiac, stranded spacefarer, pirate, mercenary, hermit, or simply \
+	description = "You stand alone, an outsider detached from the colony.  Whether you're an exile, an amnesiac, stranded spacefarer, pirate, mercenary, hermit, or simply \
 	the right person in the wrong place, solitude is your constant companion. What friends you can make and rely on should be cherished, for there are other looters and outsiders there who might \
 	be less than friendly short of giving out lead and ionized laser shots. You better stake your claim, fortify a safe spot, then venture out for supplies and whatever loot you can use, sell, or \
 	stockpile. Remember, you are not protected by colony law, few people with care or even raise an eyebrow if you're shot to death for whatever you're carrying. \
@@ -70,11 +70,11 @@
 	)
 
 	description = "You are a Phokorus native from the Frostwalker Tribe. Your shamanistic religion declares that your forefathers has been kidnapped by the long darkness. \
-	In reverence to the Abyssal Mother and her ethereal spirits, you embody some powers by bringing light to the long darkness - the Precursors and their filthy cultists. \
+	In reverence to the Abyssal Mother, named Eris, and her ethereal spirits, you embody some powers by bringing light to the long darkness - the Precursors and their filthy cultists. \
 	You are peaceful, but compelled by current challenges, you are a now a reluctant warrior. Living in these cursed lands allowed you to use your unique tradition as a weapon. \
 	The cannibal Mappukini Tribe harass your people, while newcomers punctures the earth and settle their greedy hands on what is holy, with little to no respect to where you thread. \
 	Cultists of the Long Darkness came as they promised in the carved stones, salting the earth with its psionic presence. Now other outsiders steal and raid your settlements. \
-	So, by the Abyssal mother, those made from the clay of this land must wield the war totems and smash the filth into mush, you may be peaceful, but never weak."
+	So, by Eris those made from the clay of this land must wield the war totems and smash the filth into mush, you may be peaceful, but never weak."
 
 	duties = "Protect your settlement and ensure that it will not be raided. Reinforce the walls, forge duraluminium weapons and make traps, if needed. Diplomacy may suffice if not. <br>\
 		Protect your fellow frostwalker natives, as these are the sons of Abyssal Mother. <br>\
@@ -95,7 +95,7 @@
 	faction = MAP_FACTION
 	department = DEPARTMENT_INDEPENDENT
 	department_flag = INDEPENDENT
-	supervisors = "You adhere to the hierarchy based on the upper extremities of an arm, with the Pronator serving as your foremost expedition leader."
+	supervisors = "The Pronator, who serves as your foremost expedition leader. You adhere to the hierarchy based on the upper extremities of an arm, to the lowest."
 	selection_color = "#191919"
 	account_allowed = 0
 	create_record = 0
@@ -109,7 +109,7 @@
 
 	stat_modifiers = list(
 		STAT_BIO = 20,
-		STAT_COG = 15
+		STAT_COG = 15,
 		STAT_MECH = 15
 	)
 
@@ -123,8 +123,8 @@
 	duties = "Explore the world in search of psionic essence anywhere. You can kill if you deem suitable. <br>\
 		Praise Petaline and Crustor. Antagonize 'Dissident God', or 'Abyssal Mother', which are both the same divine. The rituals you make will ewmpower you. <br>\
 		Create weaponries of biomatter technology and turn your fellow cultists or yourself into light-eaters. <br>\
-		Albeit most of the reasons your cult has been banished coming because of Vehement's cult, you are still essentially the enemy of the colony. Protect yourself from them. <br>\
-		Avoid or stay away from the Tribesmen from the Frostwalker tribe. They desire psionic essence as much as you - but with the desire to destroy what you deem holy. <br>\
+		Albeit most of the reasons your cult has been banished comes mostly because of Vehement's cult, you are still essentially the enemy of the colony. Protect yourself from them. <br>\
+		Avoid, antagonize or stay away from the Tribesmen from the Frostwalker tribe. They desire psionic essence as much as you - but with the desire to destroy what you deem holy. <br>\
 		The Equipoise Cult still contains the stolen technology of the colonial departments. Perhaps keeping this a secret can help you..."
 
 /obj/landmark/join/start/cultist
@@ -132,7 +132,7 @@
 	icon_state = "player-black"
 	join_tag = /datum/job/cultist
 
-/datum/job/tribal
+/datum/job/insurgent
 	title = "Khambataar Insurgent"
 	total_positions = 5
 	spawn_positions = 5
@@ -154,24 +154,25 @@
 
 	stat_modifiers = list(
 		STAT_VIG = 20,
-		STAT_ROB = 15
+		STAT_ROB = 15,
 		STAT_TGH = 15
 	)
 
-	description = "You are a Phokorus native from the Frostwalker Tribe. Your shamanistic religion declares that your forefathers has been kidnapped by the long darkness. \
-	In reverence to the Abyssal Mother and her ethereal spirits, you embody some powers by bringing light to the long darkness - the Precursors and their filthy cultists. \
-	You are peaceful, but compelled by current challenges, you are a now a reluctant warrior. Living in these cursed lands allowed you to use your unique tradition as a weapon. \
-	The cannibal Mappukini Tribe harass your people, while newcomers punctures the earth and settle their greedy hands on what is holy, with little to no respect to where you thread. \
-	Cultists of the Long Darkness came as they promised in the carved stones, salting the earth with its psionic presence. Now other outsiders steal and raid your settlements. \
-	So, by the Abyssal mother, those made from the clay of this land must wield the war totems and smash the filth into mush, you may be peaceful, but never weak."
+	description = "You are a rebel, one of the many populist fighters under the banner of the self-appointed General Khambataar. \
+	While you embody the spirit of the underdog, your radical ideologies, ethical ambiguity, and aggressive tactics hinder broader sympathy from the population. \
+	The vision of your faction for Freeport Liberty advocates for a shift towards a presidential mandate, eschewing reliance on external factions, corporate entities, and literal army from another colony. \
+	You staunchly oppose Abhuman Bioaugment, viewing it as a corruption of Human geneseed with potential repercussions for other alien races, though Drifter Genemodders remain acceptable due to methodical reasons. \
+	Despite losing the war in every tangible sense, you remain steadfast in spirit. The Vanguard Branch of Freeport Liberty has ruthlessly quashed your war-conquered settlement, relegating you to the sewers and isolated outposts, \
+	Even if you did managed to break the early colonial army, the Iron Eagle, the victory did not last with the constant executions with fire by the Custodians of Bonfire, and the formation of the Liberty Watch just after. \
+	Nevertheless, you receive clandestine financial support from a significant major power. However, you're branded as hostile and traitorous by the colony, so you may expect only bullets. "
 
-	duties = "Protect your settlement and ensure that it will not be raided. Reinforce the walls, forge duraluminium weapons and make traps, if needed. Diplomacy may suffice if not. <br>\
-		Protect your fellow frostwalker natives, as these are the sons of Abyssal Mother. <br>\
-		Maintain your holy grounds safe from the corporate greed of the colonies. Remember the other fallen tribes who met a cruel fate coming from them. <br>\
-		Collect and bring light to precursor technology to enhance said tools with Abyssal Mother's light. <br>\
-		Antagonises cultists as those are followers of Long Darkness, who salts the earth. Spit on their comparation of Abyssal Mother and 'Dissident God'"
+	duties = "Keep the sewers well protected from potential attacks by the colony. This is your only home, and currently Khambataar only have a dirty hidden place to be rather than a office. <br>\
+		Perform scouting duties and plant spying assets around the colony to steal information from factions. Adquiring assets for the cause is very important. <br>\
+		Try to conquer the heart of those who believes in the same views as yours, of an planet lacking in wageslaves, where politics are not dependent on the rich, the military, unions or universities. <br>\
+		Antagonises the colony if a radio is found, and fight only when necessary, but be wary - you are in disadvantage afterall. <br>\
+		Many strategies can be done to fullfill this, and the easiest is using human rights as argument rights, your people suffered, use your pain as fuel."
 
-/obj/landmark/join/start/tribal
-	name = "Frostwalker"
+/obj/landmark/join/start/insurgent
+	name = "insurgent"
 	icon_state = "player-black"
-	join_tag = /datum/job/tribal
+	join_tag = /datum/job/insurgent

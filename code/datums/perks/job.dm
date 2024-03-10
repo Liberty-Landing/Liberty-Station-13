@@ -366,3 +366,19 @@
 	desc = "You are a professional gunsmith, your knowledge allows to not only repair firearms but expertly craft them. \
 			This includes the machines required to do so, including the bullet fabricator."
 	icon_state = "guns" // https://game-icons.net/1x1/delapouite/shotgun-rounds.html
+
+
+// Outsider Perks
+
+/datum/perk/job/tribal
+	name = "Tribal Erudition"
+	desc = "The Abyssal Mother Eris granted your people with knowledge. You saw the ones before you create wonders with the most basic of equipments. \
+			From weapons, clothes, armor, equipments, guns and even a source of power. You have the knowledge to bring down the long darkness."
+	icon_state = "tribal" // https://game-icons.net/1x1/delapouite/hut.html
+
+/datum/perk/job/cultist
+	name = "Precursor Heritage"
+	desc = "Your faith comes with many blessings, and your inner psionic rays are by no means different. You've been granted the all-knowing eye. \
+			You can manipulate what remains from the precursors as you see fit - the blood is by all means a delight to be controlled by the fingertips. \
+			All you need to do is remain steadfast on your faith, and prove to the enlightened the alien races deserves to stay within the embrace of predestination."
+	icon_state = "cult" // https://game-icons.net/1x1/lorc/holy-symbol.html

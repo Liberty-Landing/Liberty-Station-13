@@ -687,7 +687,7 @@
 //Shitty loadout weapons
 /obj/item/tool/cheap
 	name = "cheap sword"
-	desc = "A sword of acceptable quality, mass-produced by Skylight. It's no work art, but it's sharp enough to get the job done."
+	desc = "A sword of acceptable quality, mass-brought by Skylight. It's no work art, but it's sharp enough to get the job done."
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "cheap_sword"
 	item_state = "cheap_sword"
@@ -717,7 +717,7 @@
 
 /obj/item/tool/cheap/axe
 	name = "cheap tomahawk"
-	desc = "A tomahawk of acceptable quality, mass-produced by Skylight. Just expensive enough to be called tactical."
+	desc = "A tomahawk of acceptable quality, mass-brought by Skylight. Just expensive enough to be called tactical."
 	throwforce = WEAPON_FORCE_ROBUST // Tomahawks are meant to be thrown
 	icon_state = "cheap_axe"
 	item_state = "cheap_axe"
@@ -725,14 +725,14 @@
 
 /obj/item/tool/cheap/katana
 	name = "cheap katana"
-	desc = "A katana of acceptable quality, mass-produced by Skylight. Easily their best-selling product from this lineup."
-	armor_penetration = ARMOR_PEN_SHALLOW // Something something sharper//found the 15 ap habibi, you get 10 now, no more tricks.- dromkii
+	desc = "A katana of acceptable quality, mass-brought by Skylight. Easily their best-selling product from this lineup."
+	armor_penetration = ARMOR_PEN_MODERATE // Something something sharper
 	icon_state = "katana_old"
 	item_state = "katana"
 
 /obj/item/tool/cheap/spear
 	name = "cheap spear"
-	desc = "A spear of acceptable quality, mass-produced by Skylight. Place sharp end towards enemy."
+	desc = "A spear of acceptable quality, mass-brought by Skylight. Place sharp end towards enemy."
 	icon_state = "cheap_spear"
 	item_state = "cheap_spear"
 	w_class = ITEM_SIZE_HUGE
@@ -754,14 +754,14 @@
 
 /obj/item/tool/cheap/saber
 	name = "cheap saber"
-	desc = "A saber of acceptable quality, mass-produced by Skylight. Probably not fit for parrying, but why not give it a try?"
+	desc = "A saber of acceptable quality, mass-brought by Skylight. Probably not fit for parrying, but why not give it a try?"
 	icon_state = "cheap_saber"
 	item_state = "cutlass"
 
 /obj/item/tool/totem
 	name = "frostwalker totem"
 	desc = "A absurdly large Frostwalker totem. Used mainly to meditate, it is used as a weapon just as well. This is not made of wood, this is made of LOG"
-	icon = 'icons/obj/weapon.dmi'
+	icon = 'icons/obj/weapons.dmi'
 	icon_state = "totem"
 	item_state = "totem"
 	matter = list(MATERIAL_WOOD = 30, MATERIAL_DURALUMIN = 5)
@@ -778,7 +778,7 @@
 
 /obj/item/tool/sword/macuahuitl
 	name = "Macuahuitl"
-	desc = "The most used blade of the Frostwalker tribals, containing obsidian stone edges to cut down the enemy, and have the shards easily replaced."
+	desc = "The most used blade of the Frostwalker tribals, containing duraluminium shards to cut down the enemy, and so they can have the shards easily replaced after."
 	icon = 'icons/obj/weapons-blades.dmi'
 	icon_state = "macua"
 	item_state = "macua"

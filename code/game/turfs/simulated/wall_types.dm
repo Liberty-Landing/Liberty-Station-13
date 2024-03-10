@@ -222,7 +222,7 @@
     return 0
 
 /turf/simulated/wall/iron/New(var/newloc)
-	..(newloc,MATERIAL_METAL)
+	..(newloc,MATERIAL_IRON)
 /turf/simulated/wall/uranium/New(var/newloc)
 	..(newloc,MATERIAL_URANIUM)
 /turf/simulated/wall/diamond/New(var/newloc)
@@ -236,7 +236,7 @@
 /turf/simulated/wall/sandstone/New(var/newloc)
 	..(newloc,MATERIAL_SANDSTONE)
 /turf/simulated/wall/ironplasma/New(var/newloc)
-	..(newloc,MATERIAL_METAL,MATERIAL_HYDROGENC)
+	..(newloc,MATERIAL_IRON,MATERIAL_HYDROGENC)
 /turf/simulated/wall/golddiamond/New(var/newloc)
 	..(newloc,MATERIAL_GOLD,MATERIAL_DIAMOND)
 /turf/simulated/wall/silvergold/New(var/newloc)
@@ -245,6 +245,10 @@
 	..(newloc,MATERIAL_SANDSTONE,MATERIAL_DIAMOND)
 /turf/simulated/wall/wood/New(var/newloc)
 	..(newloc,MATERIAL_WOOD)
+turf/simulated/wall/brickete/New(var/newloc)
+	..(newloc,MATERIAL_BRIQUETTE)
+turf/simulated/wall/titanium/New(var/newloc)
+	..(newloc,MATERIAL_TITANIUM)
 
 
 /turf/simulated/wall/marble/New(var/newloc)

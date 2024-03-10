@@ -406,16 +406,16 @@
 	result = /obj/item/clothing/gloves/dusters/gold
 	steps = list(
 		list(CRAFT_MATERIAL, 5, MATERIAL_GOLD), //Grab some gold
-		list(CRAFT_MATERIAL, 3, MATERIAL_METAL), //increase silliness because Gold is smooth
+		list(CRAFT_MATERIAL, 3, MATERIAL_NIOBIUM), //increase silliness because Gold is smooth
 		list(QUALITY_WELDING, 10, "time" = 30), //Weld it into basic form
 		list(QUALITY_HAMMERING, 15, 10) //Harden into shape
 	)
 
 /datum/craft_recipe/clothing/dusters/platinum
-	name = "spiked platinum knuckle dusters"
+	name = "spiked titanium knuckle dusters"
 	result = /obj/item/clothing/gloves/dusters/platinum
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_TITANIUMRTC), //Grab some titaniumrtc
+		list(CRAFT_MATERIAL, 3, MATERIAL_TITANIUM), //Grab some titaniumrtc
 		list(QUALITY_WELDING, 10, "time" = 30), //Weld it into basic form
 		list(QUALITY_HAMMERING, 15, 10), //Harden into shape
 		list(/obj/item/tool_upgrade/augment/spikes, 1, "time" = 10) //Put 'spiked' in the name

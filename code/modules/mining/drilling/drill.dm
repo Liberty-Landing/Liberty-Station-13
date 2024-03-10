@@ -26,13 +26,14 @@
 	var/last_use = 0.0
 	var/mob/living/soul = null
 	var/ore_types = list(
-		MATERIAL_METAL  = /obj/item/stack/ore/iron,
+		MATERIAL_IRON  = /obj/item/stack/ore/iron,
 		MATERIAL_URANIUM = /obj/item/stack/ore/uranium,
 		MATERIAL_GOLD = /obj/item/stack/ore/gold,
 		MATERIAL_SILVER = /obj/item/stack/ore/silver,
 		MATERIAL_DIAMOND = /obj/item/stack/ore/diamond,
 		MATERIAL_HYDROGENC  = /obj/item/stack/ore/hydrogenc,
 		MATERIAL_NIOBIUM  = /obj/item/stack/ore/niobium,
+		MATERIAL_TITANIUM  = /obj/item/stack/ore/titanium,
 		MATERIAL_GLASS  = /obj/item/stack/ore/glass,
 		MATERIAL_PLASTIC  = /obj/item/stack/ore/lignite
 		)

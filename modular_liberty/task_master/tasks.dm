@@ -1,5 +1,3 @@
-
-
 //Heavily inspired by Proto23 created by Croc
 //Power creep but for random tasks and unsorted things to help push players into doing activities for miner gains
 //Code is HEAVILLY reused and stolen from Hex's Genetics with miner tweaks
@@ -188,3 +186,134 @@
 	forwards_refence.stats.changeStat(STAT_TGH, (level + 2)) // So that it's worth sitting there repeatedly clicking on a dummy.
 	forwards_refence.stats.changeStat(STAT_WIL, (level + 2)) // Body and mind.
 
+
+//Monochrome Cheap Diseases system
+/*
+/datum/task_master/task/mycosis/cryospore
+	name = "Cryospore Mycosis Advancement"
+	key = "CRYOSPORE"
+	desc = "'Cryospore Mycosis' is a virulent alien infection triggered by exposure to extreme cold. It rapidly colonizes the body with fungal spores, \
+	spreading through the bloodstream and infiltrating organs. It takes advantage of the user's weakened immunological system by extreme cold before setting in. \
+	The spores relies on warmth and the victim's celullar metabolism to make energy for itself, even if heat is what tends to kill it.  \
+	Symptoms include severe respiratory distress, coughing fits expelling icy spores, and frostbite-like wounds. Common in Cryochambers patients." \
+	gain_text = "You cough - and you see your hands now covered in blue smear. this is not normal."
+	level_threshholds = 100
+
+/datum/task_master/task/mycosis/cryospore/activate_affect()
+	if(!user.stats.getPerk(PERK_CRYOSPORE_INFECTION1) && !user.stats.getPerk(PERK_CRYOSPORE_INFECTION2) && !user.stats.getPerk(PERK_CRYOSPORE_INFECTION3))
+		forwards_refence.stats.addPerk(PERK_CRYOSPORE_INFECTION1)
+		to_chat(src, "<span class='warning'>Your breathing becomes slightly labored, as if each inhale brings a faint whisper of frost into your lungs.</span>")
+		else(isSynthetic)
+			to_chat(src, "<span class='warning'>robot text here.</span>")
+	else if(user.stats.getPerk(PERK_CRYOSPORE_INFECTION1) && !user.stats.getPerk(PERK_CRYOSPORE_INFECTION2))
+		user.stats.addPerk(PERK_CRYOSPORE_INFECTION2)
+		to_chat(src, "<span class='warning'>The persistent cough sends a sharp pang of coldness through your chest. Small patches of your skin feel unnaturally cold. Your limbs feel sluggish, as if encased in icy shackles.</span>")
+		user.stats.removePerk(PERK_CRYOSPORE_INFECTION1)
+	else if(user.stats.getPerk(PERK_CRYOSPORE_INFECTION2) && !user.stats.getPerk(PERK_CRYOSPORE_INFECTION3))
+		user.stats.addPerk(PERK_CRYOSPORE_INFECTION3)
+		to_chat(src, "<span class='warning'>The cold is intense, spreading like tendrils of frost through your veins. Frostbite-like lesions cover your skin, numbness and pain coming in equal measure, slowly being consumed by the relentless onslaught of your sickness.</span>")
+		user.stats.removePerk(PERK_CRYOSPORE_INFECTION2)
+
+/datum/task_master/task/mycosis/neurophyta
+	name = "Neurophyta Mycosis Advancement"
+	key = "NEUROPHYTA"
+	desc = "'Neurophyta' is a exotic microorganism with an amoebic/fungae-like infection, targeting the brain - organic or synthetic - instead of conventional flesh. It plants tendrils in neural pathways, \
+	controlling thoughts and behavior. As it advances, it spreads plant-like growths from the body, releasing spores through yellow flowers that pops out of the skin pores. \
+	These beautiful blooms hijacks the brain to believe it is a natural body performace, as its sinister spread reaches other victims, posing a threat to individuals and communities anywhere. \
+	This disease has boundaries with the Circhosian Cult, and people believes that Neurophyta has been made in the past by the Precursors, before it was implemented on other planets, such as Elohopea. \
+	It has been show to be very weak against fire and intense heat, just like most fungis. Silver can slow its advancement, but never cure it."
+	level_threshholds = 30
+
+/datum/task_master/task/mycosis/neurophyta/activate_affect()
+	if(!user.stats.getPerk(PERK_NEUROPHYTA_INFECTION1) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION3))
+		forwards_refence.stats.addPerk(PERK_NEUROPHYTA_INFECTION1)
+			to_chat(src, "<span class='warning'>You begin to feel a subtle unease, a vague discomfort that linger just beneath the surface of your body. It's as if something foreign has taken roots within you, a quiet presence that you can't quite put your finger on.</span>")
+			else(isSynthetic())
+				to_chat(src, "<span class='warning'>robot text here.</span>")
+	else if(user.stats.getPerk(PERK_NEUROPHYTA_INFECTION1) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2))
+		user.stats.addPerk(PERK_NEUROPHYTA_INFECTION2)
+		to_chat(src, "<span class='warning'>You notice a growing sense of fatigue weighing you down, accompanied by occasional bouts of dizziness and nausea. An lingering sensation of pressure beneath the skin. You can feel something scratching inside your skull, yet you are sure it is not your brain.</span>")
+		user.stats.removePerk(PERK_NEUROPHYTA_INFECTION1)
+	else if(user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION3)) //Kill the player, spawn an 'Human' Neurophyta NPC mob with their body stored within.
+		user.stats.addPerk(PERK_NEUROPHYTA_INFECTION3)
+		to_chat(src, "<span class='warning'>Now engulfed by an overwhelming sense of malaise, your body wracked with pain as the disease asserts its dominance. Creeping vines, something stirring within you- a malevolent force lurks upon your organs, playing with it like toys. You will not survive this.</span>")
+		user.stats.removePerk(PERK_NEUROPHYTA_INFECTION2)
+
+/datum/task_master/task/virus/ixovirus
+	name = "Ixovirus Pathogen Advancement"
+	key = "NEUROPHYTA"
+	desc = "'Neurophyta' is a exotic microorganism with an amoebic/fungae-like infection, targeting the brain - organic or synthetic - instead of conventional flesh. It plants tendrils in neural pathways, \
+	controlling thoughts and behavior. As it advances, it spreads plant-like growths from the body, releasing spores through yellow flowers that pops out of the skin pores. \
+	These beautiful blooms hijacks the brain to believe it is a natural body performace, as its sinister spread reaches other victims, posing a threat to individuals and communities anywhere. \
+	This disease has boundaries with the Circhosian Cult, and people believes that Neurophyta has been made in the past by the Precursors, before it was implemented on other planets, such as Elohopea. \
+	It has been show to be very weak against fire and intense heat, just like most fungis. Silver can slow its advancement, but never cure it."
+	level_threshholds = 30
+
+/datum/task_master/task/mycosis/neurophyta/activate_affect()
+	if(!user.stats.getPerk(PERK_NEUROPHYTA_INFECTION1) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION3))
+		forwards_refence.stats.addPerk(PERK_NEUROPHYTA_INFECTION1)
+			to_chat(src, "<span class='warning'>You begin to feel a subtle unease, a vague discomfort that linger just beneath the surface of your body. It's as if something foreign has taken roots within you, a quiet presence that you can't quite put your finger on.</span>")
+			else(isSynthetic())
+				to_chat(src, "<span class='warning'>robot text here.</span>")
+	else if(user.stats.getPerk(PERK_NEUROPHYTA_INFECTION1) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2))
+		user.stats.addPerk(PERK_NEUROPHYTA_INFECTION2)
+		to_chat(src, "<span class='warning'>You notice a growing sense of fatigue weighing you down, accompanied by occasional bouts of dizziness and nausea. An lingering sensation of pressure beneath the skin. You can feel something scratching inside your skull, yet you are sure it is not your brain.</span>")
+		user.stats.removePerk(PERK_NEUROPHYTA_INFECTION1)
+	else if(user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2) && !user.stats.getPerk(PERK_NEUROPHYTA_INFECTION3)) //Kill the player, spawn an 'Human' Neurophyta NPC mob with their body stored within.
+		user.stats.addPerk(PERK_NEUROPHYTA_INFECTION3)
+		to_chat(src, "<span class='warning'>Now engulfed by an overwhelming sense of malaise, your body wracked with pain as the disease asserts its dominance. Creeping vines, something stirring within you- a malevolent force lurks upon your organs, playing with it like toys. You will not survive this.</span>")
+		user.stats.removePerk(PERK_NEUROPHYTA_INFECTION2)
+
+
+//Monochrome Cheap Cure System
+
+/datum/task_master/task/cure/fungal
+	name = "Antifungal Treatment"
+	key = "ANTIFUNGAL"
+	desc = "Specialized antifungal medications capable of penetrating deep into tissues, thermal therapy with heating pads or full-body thermal chambers,\
+	enough to raise body's temperature to levels inhospitable to Phokorus mycosis and Immunomodulators can either disrupt fungal growths or \
+	enhance the immune system's ability to identify and destroy fungal invaders."
+	gain_text = "With such heat, you are finally starting to feel better."
+	level_threshholds = 100
+
+/datum/task_master/task/cure/fungal/activate_affect()
+	if(user.stats.getPerk(PERK_CRYOSPORE_INFECTION1))
+		to_chat(src, "<span class='warning'>Having endured the initial stages of the mycosis, relief sets in as symptoms subside. The chill dissipates, breathing returns to normal, and the body's warmth feels more comforting, akin to a maternal embrace.</span>")
+		user.stats.removePerk(PERK_CRYOSPORE_INFECTION1)
+
+	else if(user.stats.getPerk(PERK_CRYOSPORE_INFECTION2))
+		to_chat(src, "<span class='warning'>Despite hopes that the worst was over, a creeping unease lingers as symptoms resurface. Occasional shivers and labored breathing persist, akin to inhaling whispers of frost into your lungs. A sobering reminder that the battle rages on.</span>")
+		user.stats.removePerk(PERK_CRYOSPORE_INFECTION2)
+		user.stats.getPerk(PERK_CRYOSPORE_INFECTION1)
+
+	else if(user.stats.getPerk(PERK_CRYOSPORE_INFECTION3))
+		to_chat(src, "<span class='warning'>With treatment, you briefly find relief from the icy grip, only to return to familiar territory as the intense cold persists, accompanied by coughing. The disease maintains its hold, ensnaring you in its cold embrace.</span>")
+		user.stats.removePerk(PERK_CRYOSPORE_INFECTION3)
+		user.stats.getPerk(PERK_CRYOSPORE_INFECTION2)
+
+	else if(user.stats.getPerk(PERK_NEUROPHYTA_INFECTION1))
+		to_chat(src, "<span class='As symptons subsides and the sense of relief sets in, you find yourself in control of your thoughts and actions. The Neurophyta's influence wanes, replaced by freedom and fast acting muscles, no longer a possible zombie in the near future.'>text.</span>")
+		user.stats.removePerk(PERK_NEUROPHYTA_INFECTION1)
+
+	else if(user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2))
+		to_chat(src, "<span class='warning'>The creeping unease persists despite treatment efforts, as it resurfaces by controlling your emotions and thoughts, even if not yet controlling your actions and individuality. Everything still feels foreign, as if your tact remains internal - feeling how your heart beat.</span>")
+		user.stats.removePerk(PERK_NEUROPHYTA_INFECTION2)
+		user.stats.getPerk(PERK_NEUROPHYTA_INFECTION1)
+
+	else if(user.stats.getPerk(PERK_NEUROPHYTA_INFECTION3))
+		to_chat(src, "<span class='warning'>Despite undergroing treatment, you still find yourself ensnared by Neurophyta's invasive tendrils on your internal organs. Thoughts and emotions shifts on and on under its influence, and actions feels foreign, controlled by an unseen force. A miracle managed to survive their control, as you basically had no chance.</span>")
+		user.stats.removePerk(PERK_NEUROPHYTA_INFECTION3)
+		user.stats.getPerk(PERK_NEUROPHYTA_INFECTION2)
+
+/datum/task_master/task/cure/viral
+	name = "Antiviral Treatment"
+	key = "ANTIVIRAL"
+	desc = "."
+	level_threshholds = 100
+
+	/datum/task_master/task/cure/antibiotics
+	name = "Antibiotical Treatment"
+	key = "ANTIBIOTIC"
+	desc = "."
+	level_threshholds = 100
+*/

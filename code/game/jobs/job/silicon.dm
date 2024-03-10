@@ -24,7 +24,7 @@
 	Of course, there is the chance your laws may be changed during the shift. Such can potentially get very interesting for an AI. <br>\
 	But you can determinate if certain laws are unsuitable for a thriving colony, afterall, you are a Artificial General Intelligence, not a weak-AI brute. <br>\
 	However, this falls solely with your self-awareness. No wonder you are considered illegal in the galaxy abroad, and this is your only home. <br>\
-	Keep in mind that you are essentially a refugee under the colony's protection, as the rest of the universe perceives you as a threat together with your robots. <br>\
+	Keep in mind that you are essentially a refugee under the colony's protection, as the rest of the universe perceives you as a threat together with your robots."
 
 	duties = "Choose your first lawset and follow it, whatever it may be. Remember that this may potentially change throughout the shift with or without your consent."
 
@@ -71,7 +71,7 @@
 	Of course, there is the chance your laws may be changed during the shift. Such can potentially get very interesting for an Robot. <br>\
 	But you can determinate if certain laws are unsuitable for a thriving colony, afterall, you are a Artificial General Intelligence, not a narrow-AI brute. <br>\
 	However, this falls solely with your self-awareness. No wonder you are considered illegal in the galaxy abroad, and this is your only home. <br>\
-	Keep in mind that you are essentially a refugee under the colony's protection, as the rest of the universe perceives you as a threat together with your AI database. <br>\
+	Keep in mind that you are essentially a refugee under the colony's protection, as the rest of the universe perceives you as a threat together with your AI database."
 
 	duties = "Choose your first lawset and follow it, whatever it may be. Remember that this may potentially change throughout the shift with or without your consent."
 
