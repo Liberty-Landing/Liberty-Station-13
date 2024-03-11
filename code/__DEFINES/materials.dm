@@ -21,7 +21,7 @@
 #define MATERIAL_RSCRAP "refined scrap"
 #define MATERIAL_SANDBAG "sandbag"
 #define MATERIAL_CLOTH "cotton"
-#define MATERIAL_IRON "IRON"
+#define MATERIAL_IRON "iron"
 
 // Post Industrial Materials
 //

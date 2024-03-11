@@ -548,7 +548,7 @@ var/list/name_to_material
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
-/material/tritium
+/material/duralumin
 	name = MATERIAL_DURALUMIN
 	stack_type = /obj/item/stack/material/duralumin
 	icon_colour = "#915e24"

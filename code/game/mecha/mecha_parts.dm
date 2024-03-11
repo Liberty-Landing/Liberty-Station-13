@@ -55,7 +55,7 @@
 	desc = "A torso part of Ripley APLU. Contains power unit, processing core and life support systems."
 	icon_state = "ripley_harness"
 	origin_tech = list(TECH_DATA = 2, TECH_MATERIAL = 2, TECH_BIO = 2, TECH_ENGINEERING = 2)
-	matter = list(MMATERIAL_ALUMINIUM = 40, MATERIAL_GLASS = 25)
+	matter = list(MATERIAL_ALUMINIUM = 40, MATERIAL_GLASS = 25)
 	price_tag = 700
 
 /obj/item/mecha_parts/part/ripley_left_arm
