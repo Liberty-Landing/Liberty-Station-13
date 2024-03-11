@@ -320,7 +320,7 @@
 
 /tipsAndTricks/jobs/plants_n_meat
     jobs_list = list(JOBS_CHURCH)
-    tipText = "If you are out of scorch, kill it. You are meant to shrink down the insectoid population, not buy its flesh."
+    tipText = "If you are out of scorch, kill for it. You are here to shrink down the plague population, not buy its flesh."
 
 /tipsAndTricks/jobs/cleaning_carbine
     jobs_list = list(JOBS_CHURCH)

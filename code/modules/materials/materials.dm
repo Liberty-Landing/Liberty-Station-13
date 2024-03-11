@@ -536,7 +536,7 @@ var/list/name_to_material
 
 /material/plastic/holographic
 	name = "holoplastic"
-	display_name = "plastic blend"
+	display_name = "plastic"
 	stack_type = null
 	shard_type = SHARD_NONE
 

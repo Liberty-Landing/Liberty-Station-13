@@ -181,74 +181,74 @@
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_0"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2)
 
 /obj/item/trash/material/brokenhelmetsquire1 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_1"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2)
 
 /obj/item/trash/material/brokenhelmetsquire2 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_2"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_BIO_SILK = 2)
 
 /obj/item/trash/material/brokenhelmetsquire3 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_3"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2)
 
 /obj/item/trash/material/brokenhelmetsquire4 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Helmet"
 	desc = "A few deformated, unusable and broken pieces of an Custodian Squire helmet, they seem to be extremely damaged to be used as anything, the metals seem to be reusable..."
 	icon_state = "helmet_scrap_squire_4"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2)
 
 	//custodian squire armor scraps
 obj/item/trash/material/brokenarmorsquire0 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_0"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 1)
 
 obj/item/trash/material/brokenarmorsquire1 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_1"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 1)
 
 obj/item/trash/material/brokenarmorsquire2 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_2"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 1)
 
 obj/item/trash/material/brokenarmorsquire3 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_3"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 1)
 
 obj/item/trash/material/brokenarmorsquire4 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_4"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 1)
 
 obj/item/trash/material/brokenarmorsquire5 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_5"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 1)
 
 obj/item/trash/material/brokenarmorsquire6 //scrap metal but with new sprite and lore
 	name = "Remains of Custodian Squire Armor"
 	desc = "A few deformated, unusable and broken pieces of Custodian Squire armor, they seem to be far away from be fixed and re used, they still having some remains of material..."
 	icon_state = "armor_scrap_squire_6"
-	matter = list(MATERIAL_ALUMINIUM = 4,MATERIAL_SILK = 2, MATERIAL_CARBON_FIBER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_BIO_SILK = 2, MATERIAL_CARBON_FIBER = 1)
 
 //Khambataar Rebels Remains
 
