@@ -69,7 +69,7 @@
 	icon_state = "holo_preview"
 	color = "#EEEEEE"
 	New()
-		material = get_material_by_name("holo[MATERIAL_PLASTIC]")
+		material = get_material_by_name("holo[PLASTIC]")
 		..()
 
 /obj/structure/table/holo_woodentable
