@@ -112,7 +112,7 @@
 #define ORE_DIAMOND "o_diamond"
 #define ORE_SILVER "o_silver"
 #define ORE_GOLD "o_gold"
-#define ORE_COPPER "o_copper"
+#define ORE_COPPER "o_malachite"
 #define ORE_ALUMINIUM "o_bauxite"
 #define ORE_TITANIUM "o_ilminite"
 #define ORE_NIOBIUM "o_pyrochlore"
