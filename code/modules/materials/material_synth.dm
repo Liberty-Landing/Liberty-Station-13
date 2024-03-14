@@ -17,7 +17,7 @@
 	default_type = MATERIAL_PLASTIC
 
 /obj/item/stack/material/cyborg/aluminium
-	icon_state = "sheet-metal"
+	icon_state = "sheet-aluminium"
 	default_type = MATERIAL_ALUMINIUM
 
 /obj/item/stack/material/cyborg/indsteel

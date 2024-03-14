@@ -70,11 +70,9 @@
 
 	if(amount>1)
 		name = "[material.use_name] [material.sheet_plural_name]"
-		desc = "A stack of [material.use_name] [material.sheet_plural_name]."
 		gender = PLURAL
 	else
 		name = "[material.use_name] [material.sheet_singular_name]"
-		desc = "A [material.sheet_singular_name] of [material.use_name]."
 		gender = NEUTER
 
 /obj/item/stack/material/use(var/used)
@@ -314,14 +312,14 @@
 
 /obj/item/stack/material/glass/laminated
 	name = "laminated glass"
-	icon_state = "sheet-lglass"
+	icon_state = "sheet-rglass"
 	default_type = MATERIAL_LGLASS
 
 /obj/item/stack/material/glass/mendsilicate
 	name = "mendsilicate glass"
 	desc = "This sheet is made from the constantly mending and heat-reflecting capacities of cosmic nacre, designed to withstand large temperatures"
 	singular_name = "mendsilicate glass sheet"
-	icon_state = "sheet-mendsilicateglass"
+	icon_state = "sheet-mendglass"
 	default_type = MATERIAL_BGLASS
 	price_tag = 6
 
@@ -336,7 +334,7 @@
 	name = "laminated mendsilicate glass"
 	desc = "This sheet is made from the constantly mending and heat-reflecting capacities of cosmic nacre. It has been laminated for bulletproof capacities."
 	singular_name = "laminated mendsilicate glass sheet"
-	icon_state = "sheet-lmendsilicateglass"
+	icon_state = "sheet-rmendglass"
 	default_type = MATERIAL_LBGLASS
 	price_tag = 12
 
@@ -454,7 +452,7 @@
 
 /obj/item/stack/material/hydrogenc
 	name = "hydrogen Clathrates"
-	icon_state = "sheet-hydrogen"
+	icon_state = "sheet-hydrogenc"
 	default_type = MATERIAL_HYDROGENC
 	price_tag = 8
 	novariants = FALSE
@@ -548,9 +546,9 @@
 
 /obj/item/stack/material/indsteel
 	name = "industrial steel"
-	desc = "One of the most robust and versatile steel alloys in existence. Enhanced mainly with niobium, it became the staple material for aerospace, armor, engineering, automative, welding and weapon manufacturing industry."
+	desc = "One of the most robust and versatile steel alloys in existence. Enhanced mainly with niobium, it became the staple material for aerospace, armor, engineering, automotives, welding and weapon manufacturing industry."
 	icon_state = "sheet-indsteel"
-	item_state = "sheet-metal"
+	item_state = "sheet-steel"
 	default_type = MATERIAL_INDSTEEL
 	price_tag = 8
 	novariants = FALSE
@@ -571,6 +569,14 @@
 	novariants = TRUE
 	price_tag = 50 // obtaining nacre is extremely dangerous and very profitable
 	max_amount = 360
+
+/obj/item/stack/material/nacre/attackby(obj/item/I, mob/user)
+	..()
+	if(QUALITY_HAMMERING in I.tool_qualities)
+		to_chat(user, SPAN_NOTICE("You smash down the nacre, revealing the mending paste within."))
+		new /obj/item/stack/ore/fragnacre (user.loc)
+		qdel(src)
+		return
 
 /obj/item/stack/material/nacre/full
 	amount = 360
@@ -595,7 +601,7 @@
 	name = "titanium composite"
 	desc = "A durable and lightweight composite combining titanium and niobium made by TerraTherma, the precursor for the Titanium CNT in which the entire universe craves - besides such important use, it has minor aerospace utilities. You will need PIRS and the Custodians of Bonfire to make something better."
 	singular_name = "titanium composite"
-	icon_state = "composite"
+	icon_state = "sheet-composite"
 	default_type = MATERIAL_COMPOSITE
 	novariants = TRUE
 	price_tag = 12
@@ -607,7 +613,7 @@
 	name = "reinforced titanium composite"
 	desc = "cutting-edge material with the properties of carbon nanotubes and the tensile, high-performace Titanium-Niobium composite. Used only for the best equipments in the universe, a difficult material to be obtained by any colony but the most wealthy of capital worlds."
 	singular_name = "reinforced titanium composite"
-	icon_state = "titaniumrtc"
+	icon_state = "sheet-titaniumrtc"
 	default_type = MATERIAL_TITANIUMRTC
 	novariants = TRUE
 	price_tag = 25
@@ -633,7 +639,7 @@
 /obj/item/stack/material/aluminium
 	name = "aluminium"
 	desc = "While aluminium may be considered a weak metal, its recyclability and malleability contribute heavily to its widespread use in various industries, from packing, tools, machines to even makeshift weapons. Cheapness has a cost for the latter"
-	icon_state = "sheet-metal"
+	icon_state = "sheet-aluminium"
 	default_type = MATERIAL_ALUMINIUM
 	price_tag = 2
 	novariants = FALSE
@@ -682,7 +688,7 @@
 	desc = "A important material that greadly improve steel, currently improving low-temperature steel alloys such as the current Industrial Steel. \
 	It is a superconductor and important for pipelines, beams, jet engines and advanced weaponry. If Niobium never existed, humanity would never reach the stars as it is today."
 	singular_name = "niobium ingot"
-	icon_state = "niobium"
+	icon_state = "sheet-niobium"
 	default_type = MATERIAL_NIOBIUM
 	novariants = TRUE
 	price_tag = 6

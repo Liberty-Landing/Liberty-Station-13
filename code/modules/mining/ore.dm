@@ -157,7 +157,7 @@
 
 /obj/item/stack/ore/titanium
 	name = "raw ilminite"
-	icon_state = "ore_ilminite"
+	icon_state = "ore_titanium"
 	origin_tech = list(TECH_MATERIAL = 2)
 	material = ORE_TITANIUM
 	crushable = FALSE
@@ -169,7 +169,7 @@
 
 /obj/item/stack/ore/hydrogenc
 	name = "gaseous clathrates"
-	icon_state = "ore_clathrates"
+	icon_state = "ore_hydrogenc"
 	origin_tech = list(TECH_MATERIAL = 2)
 	material = ORE_HYDROGENC
 	crushable = FALSE
