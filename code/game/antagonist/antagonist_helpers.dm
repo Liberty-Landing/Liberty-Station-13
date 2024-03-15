@@ -19,7 +19,7 @@
 		if (report) to_chat(report, SPAN_NOTICE("Failure: [player] is not human and this antag requires it"))
 		return FALSE
 	if(!allow_neotheology && is_custodian_of_bonfire(player.current))
-		if (report) to_chat(report, SPAN_NOTICE("Failure: [player] is an NT disciple and this antag disallows it"))
+		if (report) to_chat(report, SPAN_NOTICE("Failure: [player] is an Hearthcore Bearer Knight and this antag disallows it"))
 		return FALSE
 
 	return TRUE

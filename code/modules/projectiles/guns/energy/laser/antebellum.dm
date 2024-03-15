@@ -1,12 +1,12 @@
 /obj/item/gun/energy/plasma/antebellum
-	name = "\"Antebellum\" laser blunderbuss"
+	name = "\"Leviathan\" laser blunderbuss"
 	icon = 'icons/obj/guns/energy/antebellum.dmi'
 	icon_state = "antebellum"
 	item_state = null	//so the human update icon uses the icon_state instead.
 	item_charge_meter = TRUE
-	desc = "Created by the Numericals and distributed by the Testament in hopes of combatting psionic creatures. \
-	The Antebellum is a plasma shotgun that uses only Church-branded cells, consuming them and releasing their contents in a formidable burst of plasma and ionized shrapnel.\
-	This one bears a rosary, for good luck."
+	desc = "This piece of Cultist technology has been made from stolen PIRS blueprints, yet showing a blunderbuss frame. \
+	The Leviathan is a plasma shotgun that uses only Copper cells, consuming them and releasing their contents in a formidable burst of plasma and ionized shrapnel.\
+	One of the few cultist guns that does not destroy itself by firing."
 	fire_sound = 'sound/weapons/energy/laser_rifle.ogg'
 	slot_flags = SLOT_BELT|SLOT_BACK
 	w_class = ITEM_SIZE_NORMAL
@@ -24,7 +24,7 @@
 	)
 	twohanded = FALSE
 	var/consume_cell = TRUE
-	serial_type = "Bonfire"
+	serial_type = "INDEX"
 
 /obj/item/gun/energy/plasma/antebellum/consume_next_projectile()
 	if(!cell) return null
@@ -40,7 +40,7 @@
 		return null
 	else
 		return new projectile_type(src)
-
+/*
 /obj/item/gun/energy/carpediem
 	name = "\"Carpediem\" laser musket"
 	icon = 'icons/obj/guns/energy/carpediem.dmi'
@@ -63,4 +63,5 @@
 		list(mode_name="Musket", burst =1, icon="kill", penetrating = 1)
 	)
 	twohanded = TRUE // NO YOU DON'T
-	serial_type = "Bonfire"
+	serial_type = "INDEX"
+/*

@@ -228,6 +228,13 @@
 	colony_friend = TRUE
 	friendly_to_colony = TRUE
 
+/mob/living/simple_animal/hostile/viscerator/unstable_radiance
+	name = "Confused Radiance"
+	desc = "Radiance that was deployed heartlessly by a Grenadier Knight. The thing was attempting to deliver chemicals to a grenade lecture, yet was betrayed and used as the grenade instead.\
+	Without alveoli or direct oxygenation from the bloodstream, it is suffocating, causing it to attack anything to draw blood to oxygenate itself in genuine panic. Death is the only way out for this one."
+	faction = "unstable"
+
+
 /mob/living/simple_animal/hostile/elitemercenary
 	name = "\improper Elite operative"
 	desc = "A vat grown elite mercenary with bionic enhancements and high quality armor. You feel like you're about to have a bad time."

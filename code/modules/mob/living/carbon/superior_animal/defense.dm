@@ -159,6 +159,10 @@
 				M.visible_message("\red [M] has punched \the [src]")
 
 				adjustBruteLoss(damage)
+				if(H.shining_finger)
+					visible_message(SPAN_DANGER("[M]'s punch lights \the [src] up in flames!"))
+					scorch_attack(src, 15)
+				// Light them on fire THEN update their health.
 				updatehealth()
 				M.do_attack_animation(src)
 

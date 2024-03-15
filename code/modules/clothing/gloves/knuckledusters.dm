@@ -90,6 +90,32 @@
 	punch_increase = 15 // Made of titanium and are crafted with spikes, extra damage.
 	price_tag = 30
 
+// Custodian Druzhina-exclusive cestus. Ignites all living carbon forms in flames when punches connect.
+/obj/item/clothing/gloves/dusters/flamecestus
+	name = "Druzhina flame cestus"
+	desc = "Silvery wrapping with hollow tubes for radiance. Coats the enemy in radiance to ignite."
+	icon_state = "dusters_radiance"
+	item_state = "dusters_radiance"
+	punch_increase = 5 // Just a little extra damage, already strong by being able to light non-robots on fire.
+	price_tag = 0
+
+/obj/item/clothing/gloves/dusters/flamecestus/update_dusters(mob/living/carbon/human/user)
+	if(istype(user))
+		// Give us the flag that causes us to light people on fire with unarmed attacks.
+		if(user.gloves == src && !dusters_givith)
+			user.punch_damage_increase += punch_increase
+			dusters_givith = TRUE
+			to_remove_givith = TRUE
+			user.shining_finger = TRUE
+			user.fire_punch += 1
+		// Remove the flag from us when we take off our gloves.
+		if(to_remove_givith && !(user.gloves == src))
+			user.punch_damage_increase -= punch_increase
+			dusters_givith = FALSE
+			to_remove_givith = FALSE
+			user.shining_finger = FALSE
+			user.fire_punch -= 1
+
 /obj/item/clothing/gloves/dusters/gloves
 	name = "knuckle gloves"
 	desc = "Gloves with additional reinforcment on the knuckles. \
@@ -149,3 +175,4 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return TRUE
+//

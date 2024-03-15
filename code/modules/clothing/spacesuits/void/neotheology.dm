@@ -102,9 +102,9 @@
 	brightness_on = 4 //luminosity when on
 	armor_list = list(
 		melee = 40,
-		bullet = 30,
-		energy = 30,
-		bomb = 30,
+		bullet = 40,
+		energy = 40,
+		bomb = 40,
 		bio = 100,
 		rad = 50
 	)
@@ -112,7 +112,7 @@
 	light_overlay = "helmet_light"
 
 /obj/item/clothing/suit/space/void/huscarl
-	name = "huscarl voidsuit"
+	name = "huscarl voidsuit" //remember to change this name to be non-nordid
 	desc = "A voidsuit designed by the Custodians using a mix of Bio-Silk and Carbon Fiber."
 	icon_state = "huscarl_voidsuit"
 	item_state = "huscarl_voidsuit"
@@ -120,9 +120,9 @@
 	slowdown = 0.15
 	armor_list = list(
 		melee = 40,
-		bullet = 30,
-		energy = 30,
-		bomb = 30,
+		bullet = 40,
+		energy = 40,
+		bomb = 40,
 		bio = 100,
 		rad = 50
 	)

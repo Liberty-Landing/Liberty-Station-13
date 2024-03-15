@@ -1392,3 +1392,14 @@
 	..()
 	if (smoke)
 		QDEL_NULL(smoke)
+
+/obj/item/projectile/bullet/reusable/arrow/radiant
+	name = "Silvery Inferno"
+	icon_state = "infernal_arrow"
+	damage_types = list(BURN = 3) /*Multiplied by 10 when fired. Perhaps we will buff this depending of testing and\
+	player opinion, afterall, Custodians got the "Our stuff rivals modern stuff!!!" mindset for a reason. Also used only\ 
+	on a very rare, specialization bow.*/
+	hitscan = TRUE // Sniping round, fast
+	affective_damage_range = 10 // Higher range.
+	affective_ap_range = 10
+	create_type = null // Do remember this is NOT reusable. Much like bullets.

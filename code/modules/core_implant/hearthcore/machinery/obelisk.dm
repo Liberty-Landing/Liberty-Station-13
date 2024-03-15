@@ -163,3 +163,6 @@ GLOBAL_LIST_EMPTY(all_obelisk)
 
 /obj/machinery/power/torchbearer/update_icon()
 	icon_state = "torchbearer[active?"_activate":""]"
+
+//Experimental area to make the 'stand' boys. Still need a whole lot of help, but as far I see it, it's pretty much turning the player into a different, limited torchbearer that deals more damage, but only around the player, and the damage ATTACKS EVERYTHING around the user. That's all 
+

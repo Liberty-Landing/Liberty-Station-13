@@ -115,6 +115,8 @@
 
 	var/punch_damage_increase = 0 // increases... punch damage... can be affected by clothing or implants.
 
+	var/shining_finger = FALSE // When this is true, our harm intent punches burn carbon creatures. Used on Custodian knuckledusters.
+
 	var/language_blackout = 0
 	var/suppress_communication = 0
 
@@ -134,3 +136,8 @@
 	var/frost_warnings
 	var/frost_warnings_cooldown = 49
 	var/max_frost = 1200 //were out of 1.2k so are values are a bit inflated
+	//Elemental-Fighting
+	var/frost_punch = 0
+	var/fire_punch = 0
+	var/water_punch = 0
+	var/eletric_punch = 0

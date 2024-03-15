@@ -251,6 +251,16 @@
 */
 
 //Custodians
+
+/obj/item/clothing/suit/armor/equite
+	name = "Equite Breastplate"
+	desc = "The cheaper, mass produced version of the standard Custodian's armor. With less material costs, this armor only rivals the other basic armors, but it is easy to be made by any autolathe."
+	icon_state = "equite_armor"
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	stiffness = LIGHT_STIFFNESS
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 6, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10)
+
 /obj/item/clothing/suit/armor/custodian
 	name = "base custodian armor item"
 	desc = "Not meant to appear in-game."
@@ -258,8 +268,8 @@
 	item_state = "oathbound"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
-	max_upgrades = 2
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)  //It was 30 before. Got higher due to high cost + Cannot Upgrade + Difficulty to produce + the Custodians are the Main "armor" faction.
+	max_upgrades = 0 //I hope this still means it can get nice capes.
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
@@ -327,7 +337,7 @@
 	desc = "The formidable armor of the leaders and guides of the Custodians. A sturdy and fire-resistant design."
 	icon_state = "oathpledge"
 	item_state = "oathpledge"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor_list = list(melee = 50, bullet = 50, energy = 50, bomb = 50, bio = 0, rad = 0)
 	modifiable = FALSE
 	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_INDSTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 

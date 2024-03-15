@@ -105,6 +105,18 @@
 
 	stat_modifiers = list(STAT_TGH = -5, STAT_WIL = 5)
 
+/datum/category_item/setup_option/background/path/peerage
+	name = "Colonial Noble"
+	desc = "Despite lacking powers in Freeport, your familial connections to Elohopea's bloodlines afford you noble status, whether by birth or adoption. \
+	Chivalric films, festivities, warfare and martial knowledge shaped your cultural upbringing. \
+	Your mornings resonated with clashes of steel, molding you into an elite knight from youth by Custodian mentors. \
+	Family oaths have kept you away from firearms, as menial tasks unrelated to combat has no appeal for you. \
+	However, the powers of your specialization will only come if you have a hearthcore during your adult years."
+
+	perks = list(PERK_PEERAGE)
+	stat_modifiers = list(STAT_ROB = 8, STAT_TGH = 8, STAT_BIO = -5, STAT_MEC = -5, STAT_VIG = -10, STAT_WIL = -10)
+
+//put the funny special hearthcore module here
 /*
 /datum/category_item/setup_option/background/habit/psi_sufficiency
 	name = "Enlightened Scholar"

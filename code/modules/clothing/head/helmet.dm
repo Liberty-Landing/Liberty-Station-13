@@ -291,7 +291,7 @@
 
 /obj/item/clothing/head/helmet/marshal/ushanka
 	name = "watchmen Armored Ushanka"
-	desc = "Standard operator gear. an security ushanka with skull protector made out of indsteel and scale armor in the exterior, features an eye shield and ideal ear warmth!"
+	desc = "Standard operator gear. an security ushanka with skull protector made out of steel and scale armor in the exterior, features an eye shield and ideal ear warmth!"
 	icon_state = "LWushanka"
 	icon_state = "LWushanka"
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
@@ -304,14 +304,24 @@
 
 //Custodians
 
+/obj/item/clothing/head/helmet/equite
+	name = "Custodian Equite Helmet"
+	desc = "A custodian non-artistry made in cheaper design to be mass produced by a Firelathe, with a conical dome crafted from hardened steel in a bowl-shaped design with nose guards that protects the face, \
+	together with ear covers and impact-relief material on the neck, so impact of bullets have less chance to break the neck of the user."
+	icon_state = "equite_helmet"
+	icon_state = "equite_helmet"
+	armor_list = list(melee = 30, bullet = 30,energy = 30, bomb = 20, bio = 40, rad = 0)
+	body_parts_covered = HEAD|FACE|EARS
+	obscuration = LIGHT_OBSCURATION
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 6, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10) //There is no radiance infusion on this armor. Full materials.
 
 /obj/item/clothing/head/helmet/custodian
 	name = "custodian helmet base item"
 	desc = "Not supposed to be seen in-game"
 	icon_state = "oathbound_helmet"
 	item_state = "oathbound_helmet"
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
-	max_upgrades = 2
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0) //It was 30 before. Got higher due to high cost + Cannot Upgrade + Difficulty to produce + the Custodians are the Main "armor" faction + Recycling leads to lost materials.
+	max_upgrades = 0 //I hope this still means it can get nice details on the head.
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	obscuration = LIGHT_OBSCURATION
@@ -319,7 +329,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = HEAD|FACE|EARS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_INDSTEEL = 5, MATERIAL_BIO_SILK = 8, MATERIAL_PLASTIC = 4, MATERIAL_SILVER = 1) //Custodian Radiance-Infusion system. Major portion of its material are lost in the recycling process.
 
 /obj/item/clothing/head/helmet/custodian/firesuit
 	name = "flameshield helmet"
@@ -354,8 +364,8 @@
 	desc = "A helmet for the leaders and guides of the Custodians, this design is extremely resistant to damage."
 	icon_state = "oathpledge_helmet"
 	item_state = "oathpledge_helmet"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 100, rad = 0)
-	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_INDSTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
+	armor_list = list(melee = 50, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 0)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 8, MATERIAL_BIO_SILK = 8, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 2) //Custodian Radiance-Infusion system. Major portion of its material are lost in the recycling process.
 
 //Hunter's Lodge
 /obj/item/clothing/head/helmet/huntmaster_helmet

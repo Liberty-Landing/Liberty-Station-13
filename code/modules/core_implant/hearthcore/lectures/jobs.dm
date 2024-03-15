@@ -89,6 +89,11 @@ datum/lecture/hearthcore/oathbound/fireball
 	scorch_attack(target) //now that you've hit something, trigger a scorch attack of 20 damage
 	return TRUE
 
+/obj/item/projectile/blazelance //the nobility projectile used
+	name = "blazelance"
+	icon_state = "firelance_discharger"
+	damage_types = list(BURN = WEAPON_FORCE_NORMAL) //deal 10 burn
+
 /* might exist eventually, might not
 
 /obj/item/gun/custodian_fireball/explosion

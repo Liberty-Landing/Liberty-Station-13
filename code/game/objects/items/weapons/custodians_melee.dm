@@ -35,6 +35,13 @@
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 
+/obj/item/tool/sword/custodian/shortsword/attackby(obj/item/I, mob/user)
+	if(istype(I, /obj/item/mold/purifier_essence))
+		user.unEquip(I, src)
+		new /obj/item/tool/spear/atgeir(user.loc)
+		qdel(src)
+		qdel(I)
+
 /obj/item/tool/sword/custodian/horseaxe
 	name = "horseman axe"
 	desc = "An efficient tin-opener of a weapon, excellent for penetrating armor - the sight of such a large axe is not far-fetched from horror stories, as such blade and weight can easily chop an arm. \
@@ -105,7 +112,7 @@
 /obj/item/tool/sword/custodian/whip
 	name = "custodian nagaika"
 	desc = "A whip made from compacted and oil-hardened silk with dense dark silver on its tip, with protuding blades that open and close on impact to inflict superfluous injury, the very same reason why Hollow-points are considered a war crime to use. \
-	Good thing whoever wrote that only included “bullets”."
+	Good thing whoever wrote that only included “bullets”, otherwise the Custodians would be practicing warcrimes every day by default."
 	icon_state = "custodian_nagaika"
 	item_state = "custodian_nagaika"
 	force = WEAPON_FORCE_PAINFUL

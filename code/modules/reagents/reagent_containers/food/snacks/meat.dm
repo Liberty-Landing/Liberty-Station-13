@@ -27,10 +27,9 @@
 	name = "synthetic meat"
 	desc = "A synthetic slab of flesh. You probably won't not be able to not tell the difference from the real thing maybe!"
 
-// Seperate definitions because some food likes to know if it's human.
+// Seperate definitions because some food likes to know if it's human. //AF Edit: Not anymore. Human meat has a new definition now.
 // TODO: rewrite kitchen code to check a var on the meat item so we can remove
 // all these sybtypes.
-/obj/item/reagent_containers/food/snacks/meat/human
 /obj/item/reagent_containers/food/snacks/meat/monkey
 	//same as plain meat
 
@@ -263,3 +262,12 @@
 	preloaded_reagents = list("protein" = 8, "polystem" = 5, "quickclot" = 5)
 	slice_path = /obj/item/reagent_containers/food/snacks/chickenbreast
 	slices_num = 4
+
+/obj/item/reagent_containers/food/snacks/meat/human
+	name = "Longpork"
+	desc = "The food of the desesperate and tribal societies that believes in power by Anthropophagism. This slab of meat looks like beef, albeit less reddish and with pale yellow fat. Due to midia depiction over rampage cannibalism on neglected criminal communities, the average colonist is wary of human meat, and can quickly notice the difference."
+	icon_state = "humanmeat" // I'm respriting this, do not worry.
+	filling_color = "#FF1C1C"
+	preloaded_reagents = list("longpork" = 8)
+	slice_path = /obj/item/reagent_containers/food/snacks/rawcutlet
+	slices_num = 3

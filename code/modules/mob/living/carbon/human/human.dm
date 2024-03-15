@@ -122,7 +122,7 @@
 		var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 		if(C)
 			stat("Radiance", "[C.power]/[C.max_power]")
-			stat("Radiance regeneration multiplier", "[C.channeling_boost]")
+			stat("Radiance Mitosis", "[C.channeling_boost]")
 
 		var/obj/item/organ/internal/psionic_tumor/B = random_organ_by_process(BP_PSION)
 		if(B)
@@ -309,6 +309,8 @@ var/list/rank_prefix = list(\
 	"Field Shepherd" = "Shepherd",\
 	"Oathpledge" = "Oathpledge",\
 	)
+
+//Asking trilby for help to make the Forgemaster, Enkindled and Oathbound to be named "Lord" for males, "Lady" for females.
 
 /mob/living/carbon/human/proc/rank_prefix_name(name)
 	if(get_id_rank())

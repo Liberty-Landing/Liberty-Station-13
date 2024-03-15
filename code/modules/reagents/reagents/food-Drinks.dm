@@ -94,6 +94,20 @@
 
 	return ..()
 
+/datum/reagent/organic/nutriment/longpork
+	name = "People-sourced Protein"
+	taste_description = "suspicious, fatless porky taste"
+	id = "longpork"
+	description = "Essential nutrient for the human body, because it likely is nutrient from the human body."
+	color = "#440000"
+	common = TRUE //Protein Shake
+	sanity_gain_ingest = -2
+
+/datum/reagent/organic/nutriment/longpork/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
+	M.adjustNutrition(nutriment_factor * (issmall(M) ? effect_multiplier * 2 : effect_multiplier)) // For hunger and fatness
+	M.add_chemical_effect(CE_BLOODRESTORE, 0.1 * (issmall(M) ? effect_multiplier * 2 : effect_multiplier))
+// Please, use this content for the future disease content.
+
 /datum/reagent/organic/nutriment/protein/egg
 	name = "Egg Yolk"
 	taste_description = "egg"
@@ -319,7 +333,7 @@
 /datum/reagent/organic/nutriment/hell_ramen
 	name = "Hell Ramen"
 	id = "hell_ramen"
-	description = "The noodles are boiled, the flavors are artificial, just like being back in college."
+	description = "The noodles are boiled, the flavors are artificial, just like being back in college. Confirmed to be deadly for human use. Why is this still being sold?"
 	taste_description = "wet and cheap noodles on fire"
 	reagent_state = LIQUID
 	nutriment_factor = "#302000"
@@ -1826,10 +1840,15 @@
 /datum/reagent/ethanol/bonfirebrew
 	name = "Custodian Brew"
 	id = "bonfirebrew"
-	description = "A hearty cinnamon drink that purges the body of toxins, but causes severe impairment."
-	taste_description = "purifying cinnamon relishness"
-	color = "#2725afd0"
+	description = "A hearty cinnamon drink that purges the body of toxins. It is made of apple brandy, ice cider, cinnamon and cream, but causes severe impairment."
+	taste_description = "spiced, purifying relishness"
+	color = "#953553"
 	strength = 30
+
+	glass_unique_appearance = TRUE
+	glass_icon_state = "makeit"// remember to sprite this
+	glass_name = "Spiced Cream Brew"
+	glass_desc = "Weird colored and with a fancy cinnamon smell. The drink manifests both nobility fanciness and 'friendly' bar brawl."
 
 /datum/reagent/ethanol/bonfirebrew/affect_ingest(var/mob/living/carbon/M, var/alien, var/effect_multiplier)
 	..()

@@ -1,11 +1,12 @@
 
-///////////Hive mobs//////////
-//Some of them can be too tough and dangerous, but they must be so. Also don't forget, they are really rare thing.
-//Just bring corpses from wires away, and little mobs is not a problem
-//Mechiver have 15% chance to spawn from machinery. With failure chance calculation, this is rare depending where the hive shows up.
-//But if players get some of these 'big guys', only teamwork, fast legs and trickery will works fine
-//So combine all of that to defeat them
-
+///////////Neurophyta mobs//////////
+//The extension of the old Precursor gods, praised by the Circhosian cult - yet still hostile to them due to the 'embracing' nature of Neurophyta.
+//The enemies are tough and dangerous, but they must be so. Neurophyta must only appear in events, where the Fleshlings will be the weaker, round-spawning version.
+//These enemies must always be unique both in codework and spritework to convey danger and how exotic these enemies are. Each one much focus on fitting a combat niche.
+//Players can destroy Neurophyta with teamwork, or make use of non-convenctional weaponry such as fire to deal more damage.
+//Perhaps the Neurophyta can transform normal human player bodies into Neurophyta enemies, but after killed, it will drop their recoverable body.
+//plans to make Neurophyta a disease draw by pollen can be made by any willing coder, something that happens with gas. This can either weaken the player, or slowly turn them into a Neurophyta enemy.
+//To avoid Neurophyta disease, one must use a mask.
 
 /mob/living/simple_animal/hostile/hivemind
 	name = "creature"
