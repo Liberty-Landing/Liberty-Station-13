@@ -27,7 +27,7 @@
 
 /datum/announcement/priority/security/New(var/do_log = 1, var/new_sound = 'sound/misc/notice1.ogg', var/do_newscast = 0) // Serious business. High alert.
 	..(do_log, new_sound, do_newscast)
-	title = "Security Announcement"
+	title = "Vanguard Branch Announcement"
 	announcement_type = "Security Announcement"
 
 /datum/announcement/proc/Announce(var/message as text, var/new_title = "", var/new_sound = null, var/do_newscast = newscast, var/msg_sanitized = 0, var/zlevels = GLOB.maps_data.contact_levels)
@@ -103,13 +103,14 @@ datum/announcement/proc/Log(message as text, message_title as text)
 	return I.assignment ? "[I.registered_name] ([I.assignment])" : I.registered_name
 
 /proc/level_six_announcement()
-	command_announcement.Announce("Confirmed outbreak of level 5 floral-biohazard within the [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", new_sound = 'sound/AI/outbreak5.ogg')
+	command_announcement.Announce("Confirmed outbreak of level 5 invasive, kudzu-like pest within the [station_name()]. The Custodians of Bonfire must contain the outbreak.", "Biohazard Alert", new_sound = 'sound/AI/outbreak5.ogg')
 
 /proc/level_seven_announcement()
-	command_announcement.Announce("Confirmed outbreak of level 7 biohazard within the [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", new_sound = 'sound/AI/outbreak7.ogg')
+	command_announcement.Announce("Confirmed outbreak of level 7 biomatter entity threat within the [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", new_sound = 'sound/AI/outbreak7.ogg')
 
 /proc/level_eight_announcement() //new announcment so the crew doesn't have to fuck around trying to figure out if its a blob, hivemind, or a literal fungus
-	command_announcement.Announce("Confirmed outbreak of level 8 Bio-mechanical infestation within the [station_name()]. All personnel must contain the outbreak.", "Biohazard Alert", new_sound = 'sound/AI/outbreak7.ogg')
+	command_announcement.Announce("Confirmed outbreak of level 8 parasitic biohazard threat within the [station_name()]. All Vanguard Branch personnel must mobilize immediately to contain the outbreak. \
+	Follow the established protocol and ensure swift containment.", new_sound = 'sound/AI/outbreak7.ogg') //Audio from: play.ht, Donna (narrative)
 
 /proc/level_eight_beta_announcement() //announcment which tells the crew that the hivemind has been killed, job well done crew.
 	command_announcement.Announce("Diagnostic Systems report level 8 Bio-mechanical infestation within the [station_name()] has been contained.")

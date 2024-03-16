@@ -24,8 +24,8 @@
 	return 1
 */
 /datum/uplink_item/abstract/announcements/fake_crew_arrival
-	name = "Crew Arrival Announcement/Records"
-	desc = "Creates a fake crew arrival announcement as well as fake crew records, using your current appearance (including held items!) and worn id card. Trigger with care!"
+	name = "Denizen Arrival Announcement/Records"
+	desc = "Creates a fake denizen arrival announcement as well as fake denizen records, using your current appearance (including held items!) and worn id card. Trigger with care!"
 	item_cost = 8
 
 /datum/uplink_item/abstract/announcements/fake_crew_arrival/New()

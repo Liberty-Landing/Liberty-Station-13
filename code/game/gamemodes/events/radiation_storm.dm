@@ -30,7 +30,7 @@ disabled
 	//ic_name = "radiation"
 
 /datum/event/radiation_storm/announce()
-	command_announcement.Announce("High levels of radiation detected in a nearby anomalous storm. Radiation will begin flooding the vents soon, all colonist are suggested to move to the more secure maintenance areas.", "Anomaly Alert", new_sound = 'sound/AI/radiation.ogg')
+	command_announcement.Announce("High levels of radiation detected in a nearby anomalous storm. Radiation will begin flooding the vents soon, all denizens are suggested to move to the more secure maintenance areas.", "Anomaly Alert", new_sound = 'sound/AI/radiation.ogg')
 
 /datum/event/radiation_storm/start()
 	make_maint_all_access()

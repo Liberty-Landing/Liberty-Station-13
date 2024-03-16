@@ -308,7 +308,7 @@
 
 /tipsAndTricks/jobs/church_wine_anti_toxin
     jobs_list = list(JOBS_CHURCH)
-    tipText = "The Custodian Alcoholic drinks can be drank to help combat toxin damage or injected to be a mild painkiller."
+    tipText = "The Custodian Alcoholic drinks can be drank to help combat toxin damage or injected to be a mild painkiller. Just don't ask CAPSA for an explanation on how that works."
 
 /tipsAndTricks/jobs/best_dagger_ever
     jobs_list = list(JOBS_CHURCH)

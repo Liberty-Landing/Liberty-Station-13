@@ -36,7 +36,7 @@
 	attacktext = "punched"
 	attack_sound = 'sound/weapons/punch1.ogg'
 	meat_amount = 0
-	meat_type = null
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 	leather_amount = 0
 	bones_amount = 0
 

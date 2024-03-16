@@ -12,16 +12,14 @@ GLOBAL_LIST_INIT(termites_special, list(/mob/living/carbon/superior_animal/termi
 	name = "Pekhota termite"
 	desc = "A termite, the earth and wood eaters of the colony. Hide your hard-wood kitchen floors and nick-nacks!"
 	description_info = "Binomial Nomenclature: Blattodea Isoptera Perniciosas:\n\n\
-						Like most of the giant insectoids within the colony, this one is under effects of Perniciosus viral agent. This viral agent was the second accomplished way to unpregulate key genes with viral cap-snatching process. \
-						However, it had more compatibility with some species from the arthoproda phylum, such as arachnida and blattodea, rather than Eukaryotas. \
-						With the disease going far and wide on colonial grounds, the mutated species became an severe nuance on any colonial effort, even causing colonies to break down from such pest. \
-						On the termites, the virus enhanced many characteritics, such as the creation of new lungs under its skin, replacing glands and making their blood toxic. \
-						The chitin has been reinforced, but only found in the head. The body has a endoskeleton that can endure buckshots with ease, albeit the organs may not have the same fate. \
-						and, for last, a cellular proliferation override, allowing a uncontrollable growth that results in expansion of tissues and organs, but lowers the life expectacy and bring higher risk of cancer. \n\
-						The termites focused on a high degree of eusocial evolution with many division of labor into reproductive and non-reproductive groups, which can be considerd 'castes'. They became omnivorous with evolution. \
-						Soon enough, termites became an common sight alongside roaches and spiders on the maintenance, as they managed to evolve mutualism with wurms to adquire their nourishment from the colony's wall materials. \
-						The termites does not eat metals, instead, they break it down with meat before feeding Wurms, which regurgigate honeyed fluid used to eat right away, or use to spread mushroom soils on previously unfertile ground. \
-						Because of the mutualism in which allows them to survive mostly on eating minerals, they are by far the strongest and most numerous perniciosus mutants, preying on Spiders and Roaches as the hives and wurms needs it."
+						Like most giant insectoids within the colony, this one is affected by the Perniciosus viral agent. This viral agent, achieved through a cap-snatching process, was the most successful method to unpregulate key genes. \
+						On termites, there is chitin reinforcement concentrated on the head, as the body possesses an endoskeleton capable of withstanding buckshots, but internal organs may not fare just as well. \
+						Additionally, they suffered a cellular proliferation override that has lead to uncontrollable growth, expanding tissues and organ but decreasing lifespan and increasing cancer risk. \n\n\
+						The termites underwent eusocial evolution, with divisions of labor into reproductive and non-reproductive groups resembling castes. \
+						They remain vegetarians and don't actually eat metal, they instead focuses on mutualism with wurms to acquire nourishment from colony wall by breaking down refined metal into honeyed fluid. \
+						With the help of wurms, they can use the fluid to create mushroom composts into previously unfertile ground. \
+						Due to this mutualism, termites are the strongest and most numerous Perniciosus mutants, preying on spiders and roaches as needed for the hive and wurm's survival."
+
 	icon = 'icons/mob/40x40.dmi' // Sprites made by Polyushko#0323
 	icon_state = "rabochiy_termite"
 	speak_emote = list("clicks")

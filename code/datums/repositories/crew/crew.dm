@@ -126,18 +126,18 @@ var/global/datum/repository/crew/crew_repository = new()
 
 /datum/repository/crew/proc/add_modifier(var/base_type, var/crew_sensor_modifier/csm)
 	if(!istype(csm, base_type))
-		CRASH("The given crew sensor modifier was not of the given base type.")
+		CRASH("The given denizen sensor modifier was not of the given base type.")
 	var/PriorityQueue/pq = modifier_queues_by_type[base_type]
 	if(!pq)
 		CRASH("The given base type was not a valid base type.")
 	if(csm in pq.L)
-		CRASH("This crew sensor modifier has already been supplied.")
+		CRASH("This denizen sensor modifier has already been supplied.")
 	pq.Enqueue(csm)
 	return TRUE
 
 /datum/repository/crew/proc/remove_modifier(var/base_type, var/crew_sensor_modifier/csm)
 	if(!istype(csm, base_type))
-		CRASH("The given crew sensor modifier was not of the given base type.")
+		CRASH("The given denizen sensor modifier was not of the given base type.")
 	var/PriorityQueue/pq = modifier_queues_by_type[base_type]
 	if(!pq)
 		CRASH("The given base type was not a valid base type.")

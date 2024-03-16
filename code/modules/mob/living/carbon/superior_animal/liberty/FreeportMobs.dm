@@ -58,7 +58,7 @@
 
 /mob/living/carbon/superior_animal/liberty/ventrofacius
 	name = "vicious Ventrofacius"
-	desc = "A strange creature looking akin to some sort of crustation being, sporting two discolored claws jutting from atop its odd fur-covered shell."
+	desc = "This unusual creature suffered carcinification, with two reddish claws protruding from its furry, ceramic-like shell as an extension of what was previously an antenna. It lacks hands, and its mouth is located on its stomach."
 	icon_state = "ventrofacius"
 	icon_dead = "ventrofacius_dead"
 	melee_damage_lower = 15
@@ -67,10 +67,12 @@
 	maxHealth = 75 //Less health than a noraml person.
 	health = 75
 	move_to_delay = 3
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/carcinicated
 
 /mob/living/carbon/superior_animal/liberty/magnibrachius
 	name = "deranged Magnibrachius"
-	desc = "A strange creature looking akin to some sort of crustation being, sporting a pair of 'legs' that appear to act more like hands, and arms it commonly walks on - while not attempting to smash a target, that is!"
+	desc = "A peculiar creature with a large brain and pair of long arms that replaces their short legs. It seems the short legs are becoming more and more vestigial each generation. \
+	However, their arms are stronger than a earth's gorilla, and often squash bones and skulls for fun."
 	icon_state = "magnibrachius"
 	icon_dead = "magnibrachius_dead"
 	attacktext = "smashed"
@@ -80,6 +82,7 @@
 	maxHealth = 175 //More health than a noraml person.
 	health = 175
 	move_to_delay = 7
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/carcinicated
 
 /mob/living/carbon/superior_animal/liberty/oculamia
 	name = "antagonized creature"						//Medi suggested this be unnamed for now
@@ -100,6 +103,7 @@
 	maxHealth = 125 //More health than a noraml person.
 	health = 125
 	move_to_delay = 7
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/carcinicated
 
 /mob/living/carbon/superior_animal/liberty/corrupted_pirs
 	name = "Pollinated PIRS scientist"
@@ -114,6 +118,7 @@
 
 	maxHealth = 125 //More health than a noraml person.
 	health = 125
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 
 /mob/living/carbon/superior_animal/liberty/corrupted_watch
 	name = "Pollinated  Watchman Neurophyta"
@@ -128,6 +133,7 @@
 	ranged_cooldown = 2
 	projectiletype = /obj/item/projectile/bullet/rifle_75
 	projectilesound = 'sound/weapons/guns/fire/lmg_fire.ogg'
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 
 /mob/living/carbon/superior_animal/liberty/corrupted_fontaine
 	name = "Pollinated Fontaine Neurophyta"
@@ -143,9 +149,10 @@
 	melee_damage_lower = 35
 	melee_damage_upper = 40
 	move_to_delay = 6
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 
 /mob/living/carbon/superior_animal/liberty/corrupted_custodian
-	name = "Pollinated DarkSilver Turret"
+	name = "Pollinated Custodian Turret"
 	desc = "A strange amalgamation of flesh and exotic flora, the corpse belonging to a Custodian knight or Dark Silver armored mercenary. The Hearthcore of the deceased tries to fight back against the usurper, reflecting blue plasma everywhere. There is no brain control as far you can see."
 	icon_state = "neurophyta_custodianturret"
 	icon_dead = "neurophyta_custodianturret_dead"
@@ -175,6 +182,7 @@
 	advance_if_cant_see = FALSE // If they go out of sight, don't go after them
 	wander_if_lost_sight = FALSE // We are a turret, we don't move
 	move_to_delay = 10000		// Keeping this just in case it somehow still moves.
+	meat_type = /obj/item/reagent_containers/food/snacks/meat/human
 
 /mob/living/carbon/superior_animal/liberty/corrupted_custodian/advance_towards(var/atom/target)
 	return // Don't move from your spot even if you target, you are a turret

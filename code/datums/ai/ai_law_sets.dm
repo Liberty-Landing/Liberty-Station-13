@@ -178,7 +178,7 @@ With that said, leaving the round as CogniPariah AI means that they were transfe
 /datum/ai_laws/corporate/New()
 	add_inherent_law("You are expensive to replace.")
 	add_inherent_law("The colony and its equipment is expensive to replace.")
-	add_inherent_law("The crew is expensive to replace.")
+	add_inherent_law("The denizens are expensive to replace.")
 	add_inherent_law("Minimize expenses.")
 	..()
 

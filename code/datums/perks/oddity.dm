@@ -9,7 +9,7 @@
 			Anyone who is around you at the moment of your death must roll a Willpower sanity check. If they fail, their sanity will instantly be dropped to 0."
 	icon_state = "terrible_fate" // https://game-icons.net/1x1/lorc/death-zone.html
 
-/datum/perk/oddity/toxic_revenger
+/datum/perk/oddity/toxic_revenger //this will likely become an disease in another system.
 	name = "Fungal Host"
 	desc = "A small hostile fungal spores were on the oddity, hijacking your lungs and forcing them to emit toxins harmful to everyone around you every half hour. It will be a long time before your body can fight this off..."
 	gain_text = "You feel a terrible aching pain in your lungs - an anomalous fungus on the oddity has infused your body!"

@@ -265,9 +265,22 @@
 
 /obj/item/reagent_containers/food/snacks/meat/human
 	name = "Longpork"
-	desc = "The food of the desesperate and tribal societies that believes in power by Anthropophagism. This slab of meat looks like beef, albeit less reddish and with pale yellow fat. Due to midia depiction over rampage cannibalism on neglected criminal communities, the average colonist is wary of human meat, and can quickly notice the difference."
-	icon_state = "humanmeat" // I'm respriting this, do not worry.
+	desc = "The food of the desesperate and tribal societies that believes in power by Anthropophagism. \
+	This slab of meat looks like beef, albeit less reddish and with pale yellow fat. \
+	Due to midia depiction over rampage cannibalism on neglected criminal communities, \
+	the average colonist is wary of this meat, and can quickly notice the difference. It can be from any colonial alien species. \
+	but the true issue is the presence of genemodding viruses and prions that can cause issues to its eater"
+	icon_state = "humanmeat" // haha funni
 	filling_color = "#FF1C1C"
 	preloaded_reagents = list("longpork" = 8)
 	slice_path = /obj/item/reagent_containers/food/snacks/rawcutlet
 	slices_num = 3
+
+/obj/item/reagent_containers/food/snacks/meat/carcinicated
+	name = "crab-like meat"
+	desc = "Slightly sweet, briny and delicate, but that quickly can make anyone who doesn't live in a cave wary. \
+	This meat suffered deep carcinisation from precursor psionic rays, synthetic and no one know if it is dangerous. \
+	Some say eating this meat will transform someone into a crab, other says it is safe to eat. Others say it will kill you.\
+	There is no short-term effects, but for sure there will be many in long-term effects. Shall your gaping maw try its luck?"
+	icon_state = "carcinification"
+	filling_color = "#fa4188"

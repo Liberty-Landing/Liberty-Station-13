@@ -43,10 +43,10 @@ disabled
 /datum/event/meteor_wave/announce()
 	switch(severity)
 		if(EVENT_LEVEL_MAJOR)
-			command_announcement.Announce("Meteors have been detected on collision course with the colony. ETA 3 minutes until impact. Colonist are advised to seek shelter, be advised, objects coming from orbit may penetrate the ground and hit lower colony levels.", "Meteor Alert", new_sound = 'sound/AI/meteors.ogg')
+			command_announcement.Announce("Artillery fire have been detected on collision course with the colony. ETA 3 minutes until impact. Denizens are advised to seek shelter immediately, be advised, shells may penetrate the surface's layer and reach downstairs.", "Artillery Alert", new_sound = 'sound/AI/meteors.ogg')
 
 		else
-			command_announcement.Announce("Meteors have been detected on collision course with the colony. ETA 3 minutes until impact. Colonist are advised to seek shelter, be advised, objects coming from orbit may penetrate the ground and hit lower colony levels.", "Meteor Alert", new_sound = 'sound/AI/meteors.ogg')
+			command_announcement.Announce("Artillery fire have been detected on collision course with the colony. ETA 3 minutes until impact. Denizens are advised to seek shelter immediately, be advised, shells may penetrate the surface's layer and reach downstairs.", "Artillery Alert", new_sound = 'sound/AI/meteors.ogg')
 
 /datum/event/meteor_wave/tick()
 	if(activeFor >= next_meteor)
@@ -59,9 +59,9 @@ disabled
 /datum/event/meteor_wave/end()
 	switch(severity)
 		if(EVENT_LEVEL_MAJOR)
-			command_announcement.Announce("The meteor storm has ended.", "Meteor Alert")
+			command_announcement.Announce("The artillery barrage has ended.", "Artillery Alert")
 		else
-			command_announcement.Announce("The meteor storm has ended.", "Meteor Alert")
+			command_announcement.Announce("The artillery barrage has ended.", "Artillery Alert")
 
 /datum/event/meteor_wave/proc/get_meteors()
 	switch(severity)
@@ -86,7 +86,7 @@ disabled
 	. = ..()
 
 /datum/event/meteor_wave/overmap/announce()
-	command_announcement.Announce("Alert: Meteors are about to hit the colony. Brace for impact", "Asteroid Alert", new_sound = 'sound/AI/meteors.ogg')
+	command_announcement.Announce("Alert: Artillery shells are about to hit the colony. Brace for impact or activate energy shields.", "Asteroid Alert", new_sound = 'sound/AI/meteors.ogg')
 
 
 /*
@@ -547,3 +547,49 @@ disabled
 
 /obj/effect/meteor/supermatter/get_shield_damage()
 	return ..() * rand(80, 120)
+
+//Artillery Shells, what makes more sense for our server.
+
+/obj/effect/meteor/shell/tempest
+	name = ".55mmTS"
+	desc = "The .55mm Tempest Shell design. Handmade, Cheap, weak and massproduced used by pipe mortars, such as the designs that mimics the chinese Type 67 mortar"
+	icon_state = ".55mmTS"
+	meteordrop = null
+	hits = 1
+	hitpwr = 3
+
+/obj/effect/meteor/shell/eradication
+	name = ".87mm Eradication Rail"
+	desc = "A cheap but reliable shell, but relies on machinery to be produced and used by field guns on a battlefield, not very accurate but very efficient to make rubbles out of walls."
+	meteordrop = null
+	icon_state = ".87mm_er"
+
+/obj/effect/meteor/shell/eradication/meteor_effect()
+	..()
+	explosion(src.loc, 0, 1, 2, 3, 0)
+
+/obj/effect/meteor/shell/nona
+	name = ".120 Nona shell"
+	desc = "Military grade artillery shell user by ground artillery and space ships to destroy smaller assets. Well sold everywhere, found anywhere, but still fairly costy.."
+	meteordrop = null
+	icon_state = ".120mm_nona"
+	hits = 6
+	heavy = 1
+	dropamt = 3
+
+/obj/effect/meteor/shell/nona/meteor_effect()
+	..()
+	explosion(src.loc, 1, 2, 3, 4, 0)
+
+/obj/effect/meteor/shell/tzar
+	name = ".155 tzar bomba"
+	desc = "Military grade thermonuclear shell with radioactive isotopes. Dangerous, intoxicating and based on the ancient Tzar Bomb."
+	meteordrop = null
+	icon_state = ".155_tzar"
+	hits = 10
+	hitpwr = 1
+	heavy = 1
+
+/obj/effect/meteor/shell/tzar/meteor_effect()
+	..()
+	explosion(src.loc, 3, 6, 9, 20, 0)

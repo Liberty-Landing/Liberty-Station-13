@@ -1,17 +1,15 @@
 //basic spider mob, these generally guard nests
 /mob/living/carbon/superior_animal/giant_spider
 	name = "guardian spider"
-	desc = "Furry and black, it makes you shudder to look at it. This one has deep red eyes."
+	desc = "Oversized pest who draw blood from the local maintenance fauna. This one has deep red eyes and willing to taste flesh."
 	description_info = "Binomial Nomenclature: Arachnida Tetrapulomonata Perniciosas:\n\n\
-						Like most of the giant insectoids within the colony, this one is under effects of Perniciosus viral agent. This viral agent was the second accomplished way to unpregulate key genes with viral cap-snatching process. \
-						However, it had more compatibility with some species from the arthoproda phylum, such as arachnida and blattodea, rather than Eukaryotas. \
-						With the disease going far and wide on colonial grounds, the mutated species became an severe nuance on any colonial effort, even causing colonies to break down from such pest. \
-						On the spiders, the virus enhanced many characteritics, such as the respiration system relying less on the book lungs, and more on oxygen-carrying molecules from active ventilation structures on the chitin, and human-like lungs. \
-						the chitin is made of a different material, flexible and reinforces itself as the spider grows, adding more material and bending depending of necessity, resulting in no need for shedding. \
-						and, for last, a cellular proliferation override, allowing a uncontrollable growth that results in expansion of tissues and organs, but lowers the life expectacy and bring higher risk of cancer. \n\
-						The spiders, for the sake of survival, became eusocial and started having a curious wasp-like hierarchy system depending of fed hormones on a webhive, where empress are the only ones with capacity to lay eggs. The rest, beyond the emperor spider, is neutered. \
-						Soon enough, spiders became an common sight alongside roaches and termites on the maintenance, hunting down fallen enemies due to its carnivorous nature. The spiders are stronger than the other insectoid mutants, and have different toxin specializations to fit its needs. \
-						The silk of these specimens are valuable for wound-dressing of burns, due to its antibiotic nature, and primitive skin grafts."
+						Like most giant insectoids within the colony, this one is affected by the Perniciosus viral agent. This viral agent, achieved through a cap-snatching process, was the most successful method to unpregulate key genes. \n\n\
+						On the spiders, the virus enhances various traits. Firstly, it alters respiration, relying less on book lungs and more on chitin-based oxygen-carrying structures resembling human lungs. \
+						Secondly, the flexible chitin reinforces and grows with the spider, eliminating the need for shedding. \
+						Finally, a cellular proliferation override leads to uncontrollable growth, expanding tissues and organs but reducing lifespan and increasing cancer risk. \n\n\
+						Spiders adopted a eusocial behavior with a wasp-like hierarchy centered around empresses, the sole egg layers, and neutered workers. \
+						They became common in abandoned regions, hunting prey due to their carnivorous nature and possessing superior strength and toxin specializations. \
+						Their silk is prized for wound dressing and primitive skin grafts due to its antibiotic properties."
 	icon = 'icons/mob/mobs-spider.dmi'
 	icon_state = "guard"
 	icon_living = "guard"

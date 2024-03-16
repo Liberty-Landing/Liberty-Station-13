@@ -116,7 +116,7 @@
 								"Player Setup", "Yes", "No") == "No")
 						ready = 0
 						return
-				var/datum/preferences/records_check = client.prefs.get_records()
+				var/datum/preferences/records_check = client.prefs.get_records() // Change Here
 				if(!records_check)
 					if(alert(src,"Are you sure you wish to spawn without records? Our rules require them!. \
 								If not, go to the Backround section of Setup Character and set Records. \
@@ -139,7 +139,7 @@
 
 	if(href_list["observe"])
 
-		if(alert(src,"Are you sure you wish to observe? You will have to wait 30 minutes before being able join the crew! But you can play as a mouse or drone immediately.","Player Setup","Yes","No") == "Yes")
+		if(alert(src,"Are you sure you wish to observe? You will have to wait 30 minutes before being able join the denizens! But you can play as a mouse or drone immediately.","Player Setup","Yes","No") == "Yes")
 			if(!client)	return 1
 			var/mob/observer/ghost/observer = new()
 
@@ -153,7 +153,7 @@
 				to_chat(src, SPAN_NOTICE("You are observer now."))
 				observer.forceMove(T)
 			else
-				to_chat(src, "<span class='danger'>Could not locate an observer spawn point. Use the Teleport verb to jump to the station map.</span>")
+				to_chat(src, "<span class='danger'>Could not locate an observer spawn point. Use the Teleport verb to jump to the colony map.</span>")
 			observer.timeofdeath = world.time // Set the time of death so that the respawn timer works correctly.
 
 			announce_ghost_joinleave(src)
@@ -196,7 +196,7 @@
 			              If not, go to the Augmentation section of Setup Character and change the \"eyes\" slot from Removed to the desired kind of eyes.", \
 						  "Player Setup", "Yes", "No") == "No")
 				return 0
-		var/datum/preferences/records_check = client.prefs.get_records()
+		var/datum/preferences/records_check = client.prefs.get_records() // Change Here
 		if(!records_check)
 			if(alert(src,"Are you sure you wish to spawn without records? You will likely be arrested. \
 						If not, go to the Backround section of Setup Character and set Records.", \

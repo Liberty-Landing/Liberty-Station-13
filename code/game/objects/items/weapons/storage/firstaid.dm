@@ -542,7 +542,7 @@
 /obj/item/storage/pill_bottle/spaceacillin
 	name = "bottle of Spaceacillin pills"
 	icon_state = "pill_white"
-	desc = "A theta-lactam antibiotic. Effective against many diseases likely to be encountered in space."
+	desc = "A theta-lactam antibiotic. Effective against many diseases likely to be encountered on colonial grounds."
 	prespawn_item = /obj/item/reagent_containers/pill/spaceacillin
 
 /obj/item/storage/pill_bottle/tramadol
