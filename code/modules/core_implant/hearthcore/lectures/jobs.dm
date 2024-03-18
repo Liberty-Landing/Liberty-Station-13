@@ -338,9 +338,9 @@ datum/lecture/hearthcore/oathbound/fireball_big
 
 /datum/lecture/hearthcore/enkindled/convalescence/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
 	if(H.species?.reagent_tag == IS_SYNTHETIC)
-		to_chat(H, SPAN_WARNING("You fail to cast the litany due to your non-organic body..."))
+		to_chat(H, SPAN_WARNING("You notice the radiance struggling to weave your metallic body with polydioxanone."))
 		return FALSE
-	to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain.</span>")
+	to_chat(H, "<span class='info'>Your wounds are weaved and settled into shape by your own radiance.</span>")
 	H.reagents.add_reagent("laudanum", 5)
 	H.adjustBruteLoss(-15)
 	H.adjustFireLoss(-15)
@@ -365,10 +365,10 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		people_around.Add(H) //add them to a list
 
 	if(people_around.len > 0) //anyone there? if so, run the effect
-		to_chat(user, SPAN_NOTICE("Your feel the air thrum with an inaudible vibration."))
+		to_chat(user, SPAN_NOTICE("You feel your radiance leaving your body as it spreads far and wide. A sacrifice to heal the neurons of those around you."))
 		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
 		for(var/mob/living/carbon/human/participant in people_around)
-			to_chat(participant, SPAN_NOTICE("You hear a silent signal..."))
+			to_chat(participant, SPAN_NOTICE("You feel more... stable. Long lost memories recovered just as much as your hope, at least just a little."))
 			heal_other(participant)
 			add_effect(participant, FILTER_HOLY_GLOW, 25)
 		set_personal_cooldown(user)
@@ -423,7 +423,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/enkindled/realignment
 	name = "Realignment"
 	phrase = "Oxidate Lecture: Realignment."
-	desc = "Recovers all damage from toxin exposure, purges all chemical and stimulants reagents with toxic effects in the bloodstream, while curing addictions and healing damaged liver tissues. The radiance needs to recover itself for five minutes after oxidated"
+	desc = "Recovers all damage from toxin exposure, purges all chemical and stimulants reagents with toxic effects in the bloodstream, while curing addictions and healing damaged liver tissues. The radiance needs to recover itself for 15 minutes after oxidated"
 	power = 50
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
@@ -852,7 +852,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 
 /datum/lecture/hearthcore/oathpledge/reimagining/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
 	if(H.species?.reagent_tag == IS_SYNTHETIC)
-		to_chat(H, SPAN_WARNING("Amusing. You witnessed the radiance falter, attempting to ment your injuries. The freshly formed monocryl slides off your mechanical bits."))
+		to_chat(H, SPAN_WARNING("Amusing. You witnessed the radiance falter, attempting to mend your injuries. The freshly formed monocryl slides off your mechanical bits."))
 		return FALSE
 	to_chat(H, "<span class='info'>A sharp pain which soon subsides, followed by your wounds now knitted by the hard working radiance with a absorbable material.</span>")
 	H.reagents.add_reagent("laudanum", 5)
@@ -911,7 +911,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 			E.take_damage(5, sharp = FALSE)
 			//Deal 25 damage in five hits. Using multiple small hits mostly prevents internal damage
 
-		M.custom_pain("You feel the wings of the Hearthcore driving deep into your back, wrapping warm metal around all the extension of the spine! Why you suddently created sensitivity in places you never felt before?!",1)
+		M.custom_pain("You feel the wings of the Hearthcore driving deep into your back, wrapping warm metal around all the extension of the spine! Why you suddently created sensitivity in places way beyond your own body?!",1)
 		M.update_implants()
 		M.updatehealth()
 

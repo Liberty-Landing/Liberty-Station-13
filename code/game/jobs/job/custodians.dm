@@ -94,7 +94,7 @@
 							 /datum/computer_file/program/reports)
 
 	description = "Where the Oathpledge discipline the Oathbounds, the Forgemaster discipline the fire - specialized in engineering and tinkering, the Forgemasters are the backbone of the Custodian’s supportive operations.<br>\
-    Artisans of marvels beyond normal comprehension, one uses the fist as a hammer and fire as fuel to discipline red hot aluminium into shape, creating statues, walls, machines, Hearthcore upgrades, artistic oddities and weapon mods.<br>\
+    Artisans of marvels beyond normal comprehension, one uses the fist as a hammer and fire as fuel to discipline red hot steel into shape, creating statues, walls, machines, Hearthcore upgrades, artistic oddities and weapon mods.<br>\
     Forgemasters may not have the fighting capability of the unspecialized Oathbounds, yet their creative mind provides financial support, combat prowess, equipment and upgrades to the Custodians.<br>\
     In addition, you do not gain desires like other members of the colony, you spend your insight at your workbench to create expensive works of art fit to trade or to be used to recover the insight of the common people."
 

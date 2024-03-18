@@ -31,6 +31,7 @@
 
 /obj/item/hearthcore_upgrade/proc/OnUninstall()
 
+/* Custodians are not peasants. Begone, NeoTheology Commoners.
 /obj/item/hearthcore_upgrade/natures_blessing
 	name = "Nature's blessing"
 	desc = "This upgrade stabilizes the Faithful and nurtures the plants near the follower. Useful for the aspiring Agrolytes."
@@ -67,10 +68,13 @@
 				H.adjustBruteLoss(-0.2)
 			if(H.getFireLoss() > 50)
 				H.adjustFireLoss(-0.2)
+*/
 
+//The Cataphract focus on defense and defending others, while making use of radiance to manifest ways to counter enemy's move in the battlefield. They make ~stands~ (automatons) to supply their defensive capacity and area-negating capacity.
 /obj/item/hearthcore_upgrade/blazing_aegis
-	name = "Blazing Aegis"
-	desc = "This upgrade will slightly increase a Custodian's resistance to physical trauma and burns from any source."
+	name = "Cataphract - Blazing Aegis"
+	desc = "The Cataphract is the embodyment eternal resilience, recalling ancient tactics old, safeguarding comrades and allowing their survival under any condition. \
+	This Hearthcore expansion will slightly increase a Knight's resistance to physical trauma and burns from any source."
 	icon_state = "blazing_aegis"
 	matter = list(MATERIAL_CARBON_FIBER = 50, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 10)
 	var/shield_mod = 0.1
@@ -85,6 +89,7 @@
 	wearer.species.brute_mod += shield_mod
 	wearer.species.burn_mod += shield_mod
 
+/* Custodians are not peasants. Begone, NeoTheology Commoners.
 /obj/item/hearthcore_upgrade/cleansing_flames
 	name = "Cleansing Flames"
 	desc = "This upgrade cleans tiles that the Custodian walks upon. Will slowly cause space vines and maint-shrooms to wither and die in the follower's presence."
@@ -107,8 +112,9 @@
 		if(istype(shroom.seed, /datum/seed/mushroom/maintshroom))
 			shroom.health -= (shroom.max_health * 0.1)
 			shroom.check_health()
+*/
 
-/obj/item/hearthcore_upgrade/martyr_gift
+/obj/item/hearthcore_upgrade/martyr_gift //Change this to Eris's Martyr Gift
 	name = "Martyr's gift"
 	desc = "This upgrade causes a Custodian to cause a healing burst upon dying. It will heal for a massive amount to all humanoid creatures, even those without hearthcores. However, in the process of doing so, this upgrade destroys itself."
 	icon_state = "martyr_gift"
@@ -116,8 +122,9 @@
 	var/damage_healed = 50 //Heals everyone and every mob around it
 
 /obj/item/hearthcore_upgrade/burning_fury
-	name = "Burning Fury"
-	desc = "The flame that burns twice as bright burns half as long. This upgrade make the follower deal more damage in melee, but also receive a slightly more damage from almost all sources."
+	name = "Druzhina - Burning Fury"
+	desc = "The Druzhina Knights stand with allies, a beacon of power that punishes enemies without burning those held dear with fiery wrath. \
+	The flame that burns twice as bright burns half as long. This hearthcore expansion make the knight deal more damage in melee, but also receive a slightly more damage from almost all sources."
 	icon_state = "burning_fury"
 	matter = list(MATERIAL_BIOMATTER = 50, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 15)
 	var/damage_mod = 0.2 //20% more damage in melee attacking
@@ -142,8 +149,8 @@
 	wearer.species.radiation_mod -= receive_damage_mod
 
 /obj/item/hearthcore_upgrade/embers_of_swiftness
-	name = "Embers of Swiftness"
-	desc = "This upgrade increases the movement speed of the Custodian."
+	name = "Hussar - Embers of Swiftness"
+	desc = "The Hussar embodies swiftness and sophistication, executing dazzling feats to open holes in enemy defenses and seize the advantage before falling back in a hit-and-run. This upgrade increases the movement speed of the Knights."
 	icon_state = "embers_swiftness"
 	matter = list(MATERIAL_BIO_SILK = 70, MATERIAL_SILVER = 10, MATERIAL_INDSTEEL = 10, MATERIAL_GOLD = 3, MATERIAL_HYDROGENC = 1)
 	var/speed_increase = 0.1 //10% faster, stacks with other sorces so its to be balanced with that
