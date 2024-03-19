@@ -79,19 +79,27 @@
 	var/obj/item/implant/core_implant/hearthcore/C = get_core_implant(/obj/item/implant/core_implant/hearthcore)
 	if(C && C.active)
 		var/obj/item/hearthcore_upgrade/upgrade = C.upgrade
-		if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_MARTYR_GIFT))
-			var/obj/item/hearthcore_upgrade/martyr_gift/martyr = upgrade
-			visible_message(SPAN_DANGER("The [C] emit a massive light!"))
-			var/damage_healed
+		if(upgrade && upgrade.active && istype(upgrade, CUPGRADE_ATONEMENT_GIFT))
+			var/obj/item/hearthcore_upgrade/atonement_gift/atonement = upgrade
+			visible_message(SPAN_DANGER("The [C] emit a massive fire!"))
+			var/burn_damage_done
 			for(var/mob/living/L in oviewers(6, src))
 				if(ishuman(L))
 					var/mob/living/carbon/human/H = L
-					damage_healed = martyr.damage_healed / get_dist(src, H)
-					H.adjustFireLoss(-damage_healed)
-					H.adjustBruteLoss(-damage_healed)
-					to_chat(H, SPAN_DANGER("You are get healed by radiance!"))
+					if(H in disciples)
+						continue
+					else if (H.random_organ_by_process(BP_SPCORE) || H.active_mutations.len)
+						burn_damage_done = (atonement.burn_damage / get_dist(src, H)) * 2
+						H.adjustFireLoss(burn_damage_done)
+					else
+						burn_damage_done = atonement.burn_damage / get_dist(src, H)
+						H.adjustFireLoss(burn_damage_done)
+					to_chat(H, SPAN_DANGER("You are hurt by the intense radiance!"))
+				else
+					burn_damage_done = atonement.burn_damage / get_dist(src, L)
+					L.damage_through_armor(burn_damage_done, BURN)
 
-			qdel(martyr)
+			qdel(atonement)
 			C.upgrade = null
 
 /mob/living/carbon/human/proc/ChangeToHusk()

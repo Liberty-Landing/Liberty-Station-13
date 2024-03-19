@@ -13,6 +13,7 @@
 	category = "Special"
 	ignore_stuttering = TRUE
 
+/* Not using this anymore.
 /datum/lecture/hearthcore/special/develop
 	name = "Neural Development"
 	phrase = "Oxidate Lecture: Neural Development."
@@ -49,3 +50,4 @@
 
 	anti_cheata = FALSE
 	return TRUE
+*/

@@ -234,21 +234,13 @@
 	build_path = /obj/item/hearthcore_upgrade
 	materials = list(MATERIAL_CARBON_FIBER = 24)
 
-/datum/design/autolathe/hearthcore_upgrade/natures_blessing
-	name = "Nature's blessing"
-	build_path = /obj/item/hearthcore_upgrade/natures_blessing
-
 /datum/design/autolathe/hearthcore_upgrade/blazing_aegis
 	name = "Blazing Aegis"
 	build_path = /obj/item/hearthcore_upgrade/blazing_aegis
 
-/datum/design/autolathe/hearthcore_upgrade/cleansing_flames
-	name = "Cleansing Flames"
-	build_path = /obj/item/hearthcore_upgrade/cleansing_flames
-
-/datum/design/autolathe/hearthcore_upgrade/martyr_gift
-	name = "Martyr's gift"
-	build_path = /obj/item/hearthcore_upgrade/martyr_gift
+/datum/design/autolathe/hearthcore_upgrade/atonement_gift
+	name = "Atonement's gift"
+	build_path = /obj/item/hearthcore_upgrade/atonement_gift
 
 /datum/design/autolathe/hearthcore_upgrade/burning_fury
 	name = "Wrath of god"

@@ -84,12 +84,10 @@
 	desc = "A disk from the lower Stronghold, containing advanced Forgemaster designs for upgrades to be applied to a Hearthcore with powerful effects."
 	icon_state = "custodian_armory"
 	designs = list(
-		/datum/design/autolathe/hearthcore_upgrade/cleansing_flames,
-		/datum/design/autolathe/hearthcore_upgrade/natures_blessing,
 		/datum/design/autolathe/hearthcore_upgrade/embers_of_swiftness,
 		/datum/design/autolathe/hearthcore_upgrade/blazing_aegis,
 		/datum/design/autolathe/hearthcore_upgrade/burning_fury,
-		/datum/design/autolathe/hearthcore_upgrade/martyr_gift,
+		/datum/design/autolathe/hearthcore_upgrade/atonement_gift,
 		/datum/design/autolathe/hearthcore_upgrade/phoenix_edict
 	)
 

@@ -19,7 +19,6 @@
 #define PERK_ATHLETE /datum/perk/background/athlete
 #define PERK_CUBAN_DELIGHT /datum/perk/background/cuban_delight
 #define PERK_KLUTZ /datum/perk/background/klutz
-#define PERK_PEERAGE /datum/perk/background/peerage
 
 //Sanity
 #define PERK_VETERAN /datum/perk/background/veteran
@@ -73,6 +72,8 @@
 #define PERK_APOTHECARY /datum/perk/job/apothecary
 #define PERK_ARTIFICER /datum/perk/job/artificer
 #define PERK_PHOENIX /datum/perk/job/phoenix_rekindlement
+#define PERK_INFLUX /datum/perk/job/influx
+
 
 // Medical
 #define PERK_CHEMIST /datum/perk/job/chemist
@@ -205,7 +206,6 @@
 #define PERK_STRANGTH /datum/perk/oddity/strangth
 #define PERK_MIND_OF_MATTER /datum/perk/oddity/mind_of_matter
 #define PERK_IRON_WILL /datum/perk/oddity/iron_will
-#define PERK_HOLY_LIGHT /datum/perk/nt_oddity/holy_light
 #define PERK_LUNGS_OF_IRON /datum/perk/oddity/lungs_of_iron
 #define PERK_BLOOD_OF_LEAD /datum/perk/oddity/blood_of_lead
 #define PERK_NIGHTCRAWLER /datum/perk/oddity/nightcrawler

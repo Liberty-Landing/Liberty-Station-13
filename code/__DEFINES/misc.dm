@@ -225,7 +225,7 @@
 #define CUPGRADE_NATURES_BLESSING /obj/item/hearthcore_upgrade/natures_blessing
 #define CUPGRADE_BLAZING_AEGIS /obj/item/hearthcore_upgrade/blazing_aegis
 #define CUPGRADE_CLEANSING_PSESENCE /obj/item/hearthcore_upgrade/cleansing_flames
-#define CUPGRADE_MARTYR_GIFT /obj/item/hearthcore_upgrade/martyr_gift
+#define CUPGRADE_ATONEMENT_GIFT /obj/item/hearthcore_upgrade/atonement_gift
 #define CUPGRADE_BURNING_FURY /obj/item/hearthcore_upgrade/burning_fury
 #define CUPGRADE_EMBERS_OF_SWIFTNESS /obj/item/hearthcore_upgrade/embers_of_swiftness
 #define CUPGRADE_PHOENIX_EDICT /obj/item/hearthcore_upgrade/phoenix_edict

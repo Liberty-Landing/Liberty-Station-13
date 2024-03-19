@@ -307,38 +307,6 @@
 //////// JOB ODDITYS PERKS ////////////
 ///////////////////////////////////////
 
-/datum/perk/nt_oddity
-	gain_text = "You are filled with philosophical inspiration."
-
-/datum/perk/nt_oddity/holy_light
-	name = "Healing Influx"
-	desc = "Deep within your bloodstream, radiant nanobots diligently mend and heal both yours and hearthcore bearers's wounds. \
-	It relies on the hearthcore for transportation using Li-Fi systems, and does not seem to work with non-knight personnel."
-	icon_state = "third_eye"  //https://game-icons.net/1x1/lorc/third-eye.html
-	var/healing_power = 0.1
-	var/cooldown = 1 SECONDS // Just to make sure that perk don't go berserk.
-	var/initial_time
-
-/datum/perk/nt_oddity/holy_light/assign(mob/living/carbon/human/H)
-	..()
-	initial_time = world.time
-
-/datum/perk/nt_oddity/holy_light/on_process()
-	if(!..())
-		return
-	if(!holder.get_core_implant(/obj/item/implant/core_implant/hearthcore))
-		return
-	if(world.time < initial_time + cooldown)
-		return
-	initial_time = world.time
-	for(var/mob/living/L in viewers(holder, 7))
-		if(ishuman(L))
-			var/mob/living/carbon/human/H = L
-			if(H.stat == DEAD || !(H.get_core_implant(/obj/item/implant/core_implant/hearthcore)))
-				continue
-			H.adjustBruteLoss(-healing_power)
-			H.adjustFireLoss(-healing_power)
-
 /datum/perk/bluespace
 	name = "Bluespace Alignement"
 	desc = "The Tuning Device is taxing on the mind but rewarding... Along with some other side affects..."

@@ -35,12 +35,14 @@
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 
+/* Going to use this for something else.
 /obj/item/tool/sword/custodian/shortsword/attackby(obj/item/I, mob/user)
 	if(istype(I, /obj/item/mold/purifier_essence))
 		user.unEquip(I, src)
 		new /obj/item/tool/spear/atgeir(user.loc)
 		qdel(src)
 		qdel(I)
+*/
 
 /obj/item/tool/sword/custodian/horseaxe
 	name = "horseman axe"
@@ -133,8 +135,8 @@
 
 /obj/item/tool/sword/custodian/throwaxe
 	name = "custodian francisca"
-	desc = "The Francisca is an efficient throwing axe with an arch-shaped head. Small and concealable, the angle of the blade allows better breaking of shields, disrupting enemy lines and wounding an enemy hand-to-hand combat would happen. \
-	Even if the blade were not to strike the target, its weight has the potential of breaking necks."
+	desc = "The Francisca is an efficient throwing axe with an arch-shaped head. Small and concealable, the angle of the blade allows better breaking of shields and disruption of enemy lines. \
+	Even if the blade were not to strike the target, its weight has the potential of breaking necks, not to say absolutely destroying ceramic or kevlar armor with ease."
 	icon_state = "custodian_francisca"
 	item_state = "custodian_francisca"
 	force = WEAPON_FORCE_DANGEROUS
@@ -226,7 +228,7 @@
 
 /obj/item/tool/sword/custodian/conflagration
 	name = "conflagration sword"
-	desc = "An advanced, expensive, and work-intensive sword produced by the Custodians, the blade is enhanced under the Radiance."
+	desc = "An advanced, expensive, and work-intensive sword produced by the Custodians, the blade is enhanced under the Radiance, but due to it's hollow structure, can be snapped after long use."
 	icon_state = "conflagrationsword"
 	item_state = "conflagrationsword"
 	force = WEAPON_FORCE_BRUTAL

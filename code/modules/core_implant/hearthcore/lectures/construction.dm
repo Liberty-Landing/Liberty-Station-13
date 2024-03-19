@@ -580,26 +580,6 @@ So you can't just make it because yeah why not
 	)
 	build_time = 5 SECONDS
 
-/datum/custodian_blueprint/medium/natures_blessing
-	name = "Hearthcore Upgrade - \"Nature's Blessing\""
-	build_path = /obj/item/hearthcore_upgrade/natures_blessing
-	materials = list(
-		/obj/item/stack/material/biomatter = 100,
-		/obj/item/stack/material/indsteel = 5,
-		/obj/item/stack/material/gold = 5
-	)
-	build_time = 8 SECONDS
-
-/datum/custodian_blueprint/medium/cleansing_flames
-	name = "Hearthcore Upgrade - \"Cleansing Flames\""
-	build_path = /obj/item/hearthcore_upgrade/cleansing_flames
-	materials = list(
-		/obj/item/stack/material/biopolymer_silk = 50,
-		/obj/item/stack/material/indsteel = 5,
-		/obj/item/stack/material/silver = 5
-	)
-	build_time = 8 SECONDS
-
 /datum/custodian_blueprint/strong
 	manifestation_tier = "strong"
 
@@ -667,9 +647,9 @@ So you can't just make it because yeah why not
 	)
 	build_time = 8 SECONDS
 
-/datum/custodian_blueprint/strong/martyr_gift
-	name = "Hearthcore Upgrade - \"Martyr's Gift\""
-	build_path = /obj/item/hearthcore_upgrade/martyr_gift
+/datum/custodian_blueprint/strong/atonement_gift
+	name = "Grenadier Expansion - \"Atonement's Gift\""
+	build_path = /obj/item/hearthcore_upgrade/atonement_gift
 	materials = list(
 		/obj/item/stack/material/indsteel = 5,
 		/obj/item/stack/material/biomatter = 100, // Heals, thus, biomatter.

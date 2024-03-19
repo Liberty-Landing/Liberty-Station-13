@@ -88,7 +88,6 @@
 	desc = "Training (and an ear implant) given to you as a Ranger makes it hard for secrets to escape your ears. Beware, loud noises are especially dangerous to you as a side effect."
 	icon_state = "ear" // https://game-icons.net
 
-// TODO: Make this revival perk obtainable through Hearthcore upgrades once implemented
 /datum/perk/job/phoenix_rekindlement
 	name = "Phoenix Rekindlement"
 	desc = "Your Hearthcore is more than just an emblem of knighthood. \
@@ -312,6 +311,35 @@
 			ignites a sensory dance on once dormant powers, trascending the ordinary - \
 			all within a single vial."
 	icon_state = "alchemy"
+
+/datum/perk/job/influx //Perhaps we can nerf this making it related to how much radiance you have later down the line. Something you activate until the radiance reaches 0, no less.
+	name = "Healing Influx"
+	desc = "Deep within your bloodstream, radiant nanobots diligently mend and heal both yours and hearthcore bearers's wounds. \
+	It relies on the hearthcore for transportation using Li-Fi systems, and does not seem to work with non-knight personnel."
+	icon_state = "healinginflux" // https://game-icons.net/1x1/lorc/kindle.html
+	var/healing_power = 0.1
+	var/cooldown = 1 SECONDS // Just to make sure that perk don't go berserk.
+	var/initial_time
+
+/datum/perk/job/influx/assign(mob/living/carbon/human/H)
+	..()
+	initial_time = world.time
+
+/datum/perk/job/influx/on_process()
+	if(!..())
+		return
+	if(!holder.get_core_implant(/obj/item/implant/core_implant/hearthcore))
+		return
+	if(world.time < initial_time + cooldown)
+		return
+	initial_time = world.time
+	for(var/mob/living/L in viewers(holder, 7))
+		if(ishuman(L))
+			var/mob/living/carbon/human/H = L
+			if(H.stat == DEAD || !(H.get_core_implant(/obj/item/implant/core_implant/hearthcore)))
+				continue
+			H.adjustBruteLoss(-healing_power)
+			H.adjustFireLoss(-healing_power)
 
 /datum/perk/job/codespeak
 	name = "Codespeak"

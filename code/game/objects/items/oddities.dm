@@ -624,18 +624,6 @@
 
  /* // Commented out as it does not fit Bonfire lore, but might become repurposed in the future
 
-/obj/item/oddity/nt/seal
-	name = "Cartographer's Seal"
-	desc = "A badge carrying the seal of the cartographer of the Church of NOT Bonfire, said to be marked with a tithe of blood as proof of its sacred nature. An extremely rare sight, as many of these seals are thought to be lost. Merely holding one is said to inspire divine right. The church would be immensely interested in this."
-	icon_state = "nt_seal"
-	oddity_stats = list(
-		STAT_TGH = 12,
-		STAT_VIG = 12,
-		STAT_ROB = 12
-	)
-	price_tag = 8000
-	perk = PERK_HOLY_LIGHT
-
 /obj/item/oddity/nt/pyramid
 	name = "Pyramid"
 	desc = "A small sandstone pyramid, covered in bizzare engravings. The Cartographer of the Church of the NOT Bonfire has declared relics like this holy beyond any doubt, though none know exactly why."

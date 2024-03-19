@@ -729,7 +729,7 @@
 		if(istype(user)) to_chat(user, "You [harvest_sample ? "take a sample" : "harvest"] from the [display_name].")
 
 		// People belonging to nobility who work the fields are like vampires going to the sun.
-		if(ishuman(user) && user.stats && user.stats.getPerk(PERK_PEERAGE) && !harvest_sample)
+		if(ishuman(user) && user.stats && user.get_core_implant(/obj/item/implant/core_implant/hearthcore) && !harvest_sample)
 			var/mob/living/carbon/human/H = user
 			if(H.sanity)
 				H.sanity.changeLevel(-2.5)

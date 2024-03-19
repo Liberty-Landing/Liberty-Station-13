@@ -53,14 +53,6 @@
 	The nanosized grains, when powered by radiance, implement vibrational technology within a blade, causing it to vibrate at high frequencies before impact, greatly enhancing cutting effectiveness."
 	icon_state = "cartwheel_infusive"
 
-/obj/item/mold/purifier_essence //only spawned by hearthcoreless Peerage
-	name = "Essence of the Purifier"
-	desc = "Radiance in cristalized form, with important alveoli functions to keep it alive. \
-	It exists to replace those who cannot abide by the oaths, or are too susceptible to the symptons of argyria. \
-	This bundle of radiance is used to improve some civilizan-grade custodian weapons into an squire-themed one. \
-	Since this is still a prototype, you will not be able to make much at all."
-	icon_state = "purifier_infusive"
-
 /obj/item/stack/mold_kit
 	name = "moldkit stack base item"
 	desc = "Not to be seen in-game."
