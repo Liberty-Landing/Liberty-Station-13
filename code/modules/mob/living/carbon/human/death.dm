@@ -88,7 +88,7 @@
 					var/mob/living/carbon/human/H = L
 					if(H in disciples)
 						continue
-					else if (H.random_organ_by_process(BP_SPCORE) || H.active_mutations.len)
+					else if (H.random_organ_by_process(BP_SPCORE))
 						burn_damage_done = (atonement.burn_damage / get_dist(src, H)) * 2
 						H.adjustFireLoss(burn_damage_done)
 					else

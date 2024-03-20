@@ -118,8 +118,10 @@
 						return
 				var/datum/preferences/records_check = client.prefs.get_records() // Change Here
 				if(!records_check)
-					if(alert(src,"Are you sure you wish to spawn without records? Our rules require them!. \
-								If not, go to the Backround section of Setup Character and set Records. \
+					if(alert(src,"Albeit we have no rules against spawning without records, \
+								it means your character citizenship to freeport colony is questionable, \
+								and it is devoid of background information expected for a world-building server. \
+								You can go to the Backround section of Setup Character and set Records. \
 								Our records templates and requirement specifics can be found at: https://liberty13.space/wiki/Example_Paperwork#Character_Records", \
 								"Player Setup", "Yes", "No") == "No")
 						ready = 0

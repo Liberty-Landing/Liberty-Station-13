@@ -142,12 +142,12 @@
 
 /obj/item/hearthcore_upgrade/atonement_gift/OnInstall(var/disciple, var/_hearthcore)
 	..()
-	wearer.add_module(new HEARTHCORE_GRENADIER)
+	hearthcore.add_module(new HEARTHCORE_GRENADIER)
 	to_chat(wearer, SPAN_NOTICE("The Radiance weaves through your organs, refining your lungs to breath and fuel the fire within."))
 
 /obj/item/hearthcore_upgrade/atonement_gift/OnUninstall()
 	..()
-	wearer.remove_module(HEARTHCORE_GRENADIER)
+	hearthcore.remove_module(HEARTHCORE_GRENADIER)
 	to_chat(wearer, SPAN_NOTICE("Your trained radiance is stripped bare from knowledge, and you can feel it breathing underneath your skin, relieved rather than angry. Hold it. You've been torturing your own neurons this entire time?!f"))
 
 /obj/item/hearthcore_upgrade/burning_fury
@@ -161,7 +161,7 @@
 
 /obj/item/hearthcore_upgrade/burning_fury/OnInstall(var/disciple, var/_hearthcore)
 	..()
-	wearer.add_module(new HEARTHCORE_DRUZHINA)
+	hearthcore.add_module(new HEARTHCORE_DRUZHINA)
 	to_chat(wearer, SPAN_NOTICE("The radiance weaves into the fabric of your strategic acumen, bolstering collective protection, while fortifying your cognitive framework."))
 	wearer.damage_multiplier += damage_mod
 	wearer.species.brute_mod += receive_damage_mod
@@ -172,7 +172,7 @@
 
 /obj/item/hearthcore_upgrade/burning_fury/OnUninstall()
 	..()
-	wearer.remove_module(HEARTHCORE_DRUZHINA)
+	hearthcore.remove_module(HEARTHCORE_DRUZHINA)
 	to_chat(wearer, SPAN_NOTICE("Your trained radiance is stripped bare from knowledge suffering briefly the symptoms of dementia, you even forget your own name until realization kicks in."))
 	wearer.damage_multiplier -= damage_mod
 	wearer.species.brute_mod -= receive_damage_mod
@@ -190,12 +190,12 @@
 
 /obj/item/hearthcore_upgrade/embers_of_swiftness/OnInstall(var/disciple, var/_hearthcore)
 	..()
-	wearer.add_module(new HEARTHCORE_HUSSAR)
+	hearthcore.add_module(new HEARTHCORE_HUSSAR)
 	to_chat(wearer, SPAN_NOTICE("The Radiance intertwines with your muscles, infusing your legs with oxygenated vitality that propels you beyond limits."))
 
 /obj/item/hearthcore_upgrade/embers_of_swiftness/OnUninstall()
 	..()
-	wearer.remove_module(HEARTHCORE_HUSSAR)
+	hearthcore.remove_module(HEARTHCORE_HUSSAR)
 	to_chat(wearer, SPAN_NOTICE("Your trained radiance is stripped bare from knowledge as your vision goes darker. You feel short of air as your legs feel numb, but soon enough these feelings end."))
 
 /obj/item/hearthcore_upgrade/phoenix_edict
