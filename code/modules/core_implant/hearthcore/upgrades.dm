@@ -72,7 +72,7 @@
 
 //The Cataphract focus on defense and defending others, while making use of radiance to manifest ways to counter enemy's move in the battlefield. They make ~stands~ (automatons) to supply their defensive capacity and area-negating capacity.
 /obj/item/hearthcore_upgrade/blazing_aegis
-	name = "Cataphract - Blazing Aegis"
+	name = "Cataphract Expansion - Blazing Aegis"
 	desc = "The Cataphract is the embodyment eternal resilience, recalling ancient tactics old, safeguarding comrades and allowing their survival under any condition. \
 	This Hearthcore expansion will slightly increase a Knight's resistance to physical trauma and burns from any source."
 	icon_state = "blazing_aegis"
@@ -81,11 +81,15 @@
 
 /obj/item/hearthcore_upgrade/blazing_aegis/OnInstall(var/disciple, var/_hearthcore)
 	..()
+	hearthcore.add_module(new HEARTHCORE_CATAPHRACT)
+	to_chat(wearer, SPAN_NOTICE("The Radiance weaves into your physical form and mind, effortlessly shielding against the roaming plague."))
 	wearer.species.brute_mod -= shield_mod
 	wearer.species.burn_mod -= shield_mod
 
 /obj/item/hearthcore_upgrade/blazing_aegis/OnUninstall()
 	..()
+	hearthcore.remove_module(HEARTHCORE_CATAPHRACT)
+	to_chat(wearer, SPAN_NOTICE("Your trained radiance is stripped bare from knowledge, and by how much you were used to be an unstoppable living wall, you feel no different of being a mere glass panel now."))
 	wearer.species.brute_mod += shield_mod
 	wearer.species.burn_mod += shield_mod
 
@@ -200,11 +204,10 @@
 
 /obj/item/hearthcore_upgrade/phoenix_edict
 	name = "Phoenix Edict"
-	desc = "This upgrade is a powerful limiter removal that allows a Custodian to resucitate instantly after death. \
+	desc = "This expansion is a powerful limiter removal that allows a Custodian to resucitate instantly after death. \
 			The massive strain on the Hearthcore, however, vaporizes the upgrade once used."
-	icon_state = "hearthcore_upgrade" // Placeholder.
+	icon_state = "phoenixedict"
 	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_BIO_SILK = 50, MATERIAL_CARBON_FIBER = 50, MATERIAL_TITANIUMRTC = 10) // Rare and costly
-
 
 /obj/item/hearthcore_upgrade/phoenix_edict/OnInstall(var/disciple, var/_hearthcore)
 	..()
@@ -214,11 +217,11 @@
 	..()
 	wearer.stats.removePerk(PERK_PHOENIX)
 
-/obj/item/hearthcore_upgrade/holy
-	name = "Recovery"
-	desc = "This upgrade is a powerful limiter removal that allows a Custodian to resucitate instantly after death. \
-			The massive strain on the Hearthcore, however, vaporizes the upgrade once used."
-	icon_state = "hearthcore_upgrade" // Placeholder.
+/obj/item/hearthcore_upgrade/influx
+	name = "Recovery Influx"
+	desc = "This expansion was made to control Li-Fi systems to deliver nanobots trained specifically to constantly weave wounds. \
+			However, this only works on other hearthcore users as it relies on a receptor, since it needs to be reverted into data."
+	icon_state = "influx"
 	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_BIO_SILK = 50, MATERIAL_CARBON_FIBER = 50, MATERIAL_TITANIUMRTC = 10) // Rare and costly
 
 

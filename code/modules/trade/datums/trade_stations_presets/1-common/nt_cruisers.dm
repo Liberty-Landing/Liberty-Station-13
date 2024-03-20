@@ -2,8 +2,8 @@
 	icon_states = "nt_cruiser"
 	markup = RARE_GOODS	// dept-specific stuff should be more expensive for guild
 	name_pool = list(
-		"CAV 'Faith'" = "Gatepyre Assault Vessel 'Frontline': \"Selling assets for the colony is not an standard activity, yet for you we can make an exception. Just don't ask how we got guns to sell.\"",
-		"CAV 'Hope'" = "Gatepyre Assault Vessel 'Champion': \"You know we are getting these guns from your fellow void pirates we just killed, right? No problem with that? Then come get these goods back with thy coins.\""
+		"GAV 'Frontline'" = "Gatepyre Assault Vessel 'Frontline': \"Selling assets for the colony is not an standard activity, yet for you we can make an exception. Just don't ask how we got guns to sell.\"",
+		"GAV 'Champion'" = "Gatepyre Assault Vessel 'Champion': \"You know we are getting these guns from your fellow void pirates we just killed, right? No problem with that? Then come get these goods back with thy coins.\""
 		)
 	icon_states = list("nt_frigate", "ship")
 	uid = "nt_basic"

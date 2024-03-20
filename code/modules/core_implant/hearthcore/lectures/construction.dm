@@ -361,7 +361,10 @@ GLOBAL_LIST_INIT(nt_constructs, init_nt_constructs())
 	name = "Emberblaze Limbs"
 	build_path = /obj/item/storage/box/emberblaze_set //test the materials to see how much!
 	materials = list(
-		/obj/item/stack/material/carbon_fiber = 60
+		/obj/item/stack/material/biopolymer_silk = 60,
+		/obj/item/stack/material/aluminium = 60,
+		/obj/item/stack/material/carbon_fiber = 25,
+		/obj/item/stack/material/indsteel = 25
 	)
 	build_time = 20 SECONDS
 

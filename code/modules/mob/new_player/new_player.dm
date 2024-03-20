@@ -200,7 +200,7 @@
 				return 0
 		var/datum/preferences/records_check = client.prefs.get_records() // Change Here
 		if(!records_check)
-			if(alert(src,"Are you sure you wish to spawn without records? You will likely be arrested. \
+			if(alert(src,"Are you sure you wish to spawn without records? You will practically have no rights. \
 						If not, go to the Backround section of Setup Character and set Records.", \
 						"Player Setup", "Yes", "No") == "No")
 				return 0

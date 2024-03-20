@@ -36,7 +36,7 @@
 	desc = "These neurons contains SMAs (Shape-Memory Alloy) that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
 	It only works for Darksilver subtype of steel. The radiance itself heatens the metal so the equipment will go back to it's original shape after deformation, \
 	Which adds resilience against repeated impacts, deformation, and keeping a blade sharp for longer. It barely does something against metal that was removed after impact."
-	icon_state = "oathpledge_battleneuron"
+	icon_state = "granule_infusive"
 
 /obj/item/mold/renshaw_neuron
 	name = "Infusive Renshaw Neuron"
