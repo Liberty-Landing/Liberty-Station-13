@@ -446,3 +446,20 @@ var/list/obj/effect/step_trigger/STEP_TELEPORTERS = list()
 /obj/effect/step_trigger/temple_to_bigtemple_2_A
 	id = "temple_to_bigtemple_2_A"
 	id_target = "temple_to_bigtemple_1_A"
+
+//secret labs
+/obj/effect/step_trigger/frozen_crashsite_to_secret_labs_1_A
+	id = "frozen_crashsite_to_secret_labs_1_A"
+	id_target = "frozen_crashsite_to_secret_labs_2_A"
+
+/obj/effect/step_trigger/frozen_crashsite_to_secret_labs_2_A
+	id = "frozen_crashsite_to_secret_labs_2_A"
+	id_target = "frozen_crashsite_to_secret_labs_1_A"
+
+/obj/effect/step_trigger/frozen_forest_to_secret_labs_1_A
+	id = "frozen_forest_to_secret_labs_1_A"
+	id_target = "frozen_forest_to_secret_labs_2_A"
+
+/obj/effect/step_trigger/frozen_forest_to_secret_labs_2_A
+	id = "frozen_forest_to_secret_labs_2_A"
+	id_target = "frozen_forest_to_secret_labs_1_A"
