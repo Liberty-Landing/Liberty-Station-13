@@ -506,6 +506,24 @@
 	allows_weather_of_snow = TRUE
 	ambience = list('sound/ambience/winterwind.ogg')
 
+//Secret labs
+
+/area/liberty/outside/forest/lowsignal
+	name = "Low Signal Forest"
+	icon_state = "lowsignals"
+	sound_env = FOREST
+	allows_weather_of_snow = TRUE
+	ambience = list('sound/ambience/winterwind.ogg')
+
+/area/liberty/outside/cavernlowsignal
+	name = "Low Signal Cave"
+	icon_state = "erisgreen"
+
+/area/liberty/outside/lowercavernlowsignal
+	name = "%!#ERR0R$?&" // errors done by the failed experiments down below
+	icon_state = "erisgreen"
+	dynamic_lighting = TRUE
+
 /area/liberty/outside/forest/beast_cave_light
 	name = "Swamp Caves"
 	icon_state = "forest"

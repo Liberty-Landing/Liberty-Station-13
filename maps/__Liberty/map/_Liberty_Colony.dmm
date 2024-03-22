@@ -7420,15 +7420,10 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
 "bwr" = (
-/obj/structure/table/woodentable,
-/obj/item/material/ashtray{
-	material = "steel";
-	icon_state = "ashtray"
+/obj/structure/bonfire/permanent,
+/obj/machinery/door/blast/shutters/glass{
+	name = "Fireplace  Cover"
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm3)
 "bws" = (
@@ -7975,15 +7970,10 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/crew_quarters/skyyard)
 "bCx" = (
-/obj/structure/table/woodentable,
-/obj/item/material/ashtray{
-	material = "steel";
-	icon_state = "ashtray"
+/obj/structure/bonfire/permanent,
+/obj/machinery/door/blast/shutters/glass{
+	name = "Fireplace  Cover"
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm5)
 "bCI" = (
@@ -8095,11 +8085,17 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/liberty/maintenance/undergroundfloor2north)
 "bDZ" = (
-/obj/structure/bonfire/permanent,
-/obj/machinery/door/blast/shutters/glass{
-	name = "Fireplace  Cover"
+/obj/structure/table/woodentable,
+/obj/item/material/ashtray{
+	material = "steel";
+	icon_state = "ashtray"
 	},
-/turf/simulated/floor/tiled/white/gray_platform,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/item/flame/lighter/random,
+/turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm2)
 "bEc" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -13261,18 +13257,29 @@
 /turf/simulated/floor/tiled/dark/gray_perforated,
 /area/liberty/engineering/workshop)
 "cyL" = (
-/obj/structure/closet/secure_closet/freezer/mini,
-/obj/item/reagent_containers/food/drinks/bottle/cola,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/structure/cable/green,
-/obj/item/reagent_containers/food/drinks/bottle/wine,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "cyU" = (
@@ -25116,15 +25123,10 @@
 /turf/simulated/floor/industrial/navy_slates,
 /area/liberty/maintenance/bank)
 "eKB" = (
-/obj/structure/table/woodentable,
-/obj/item/material/ashtray{
-	material = "steel";
-	icon_state = "ashtray"
+/obj/structure/bonfire/permanent,
+/obj/machinery/door/blast/shutters/glass{
+	name = "Fireplace  Cover"
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm4)
 "eKC" = (
@@ -29769,11 +29771,17 @@
 /turf/simulated/floor/industrial/black_large_slates,
 /area/liberty/maintenance/undergroundfloor1north)
 "fEX" = (
-/obj/structure/bonfire/permanent,
-/obj/machinery/door/blast/shutters/glass{
-	name = "Fireplace  Cover"
+/obj/structure/table/woodentable,
+/obj/item/material/ashtray{
+	material = "steel";
+	icon_state = "ashtray"
 	},
-/turf/simulated/floor/tiled/white/gray_platform,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/item/flame/lighter/random,
+/turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm4)
 "fFb" = (
 /obj/effect/overlay/water,
@@ -51104,11 +51112,17 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/liberty/hallway/surface/section1)
 "jHO" = (
-/obj/structure/bonfire/permanent,
-/obj/machinery/door/blast/shutters/glass{
-	name = "Fireplace  Cover"
+/obj/structure/table/woodentable,
+/obj/item/material/ashtray{
+	material = "steel";
+	icon_state = "ashtray"
 	},
-/turf/simulated/floor/tiled/white/gray_platform,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/item/flame/lighter/random,
+/turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm5)
 "jHU" = (
 /obj/structure/disposalpipe/junction{
@@ -51441,6 +51455,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
+/obj/item/storage/firstaid/ifak,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
 "jLn" = (
@@ -51812,18 +51827,29 @@
 /turf/simulated/floor/tiled/techmaint_perforated,
 /area/liberty/maintenance/undergroundfloor2west)
 "jOT" = (
-/obj/structure/closet/secure_closet/freezer/mini,
-/obj/item/reagent_containers/food/drinks/bottle/cola,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/structure/cable/green,
-/obj/item/reagent_containers/food/drinks/bottle/wine,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm4)
 "jPi" = (
@@ -62455,11 +62481,17 @@
 /turf/simulated/floor/industrial_pristine/green_large_slates,
 /area/liberty/maintenance/undergroundfsewerplague)
 "lPX" = (
-/obj/structure/bonfire/permanent,
-/obj/machinery/door/blast/shutters/glass{
-	name = "Fireplace  Cover"
+/obj/structure/table/woodentable,
+/obj/item/material/ashtray{
+	material = "steel";
+	icon_state = "ashtray"
 	},
-/turf/simulated/floor/tiled/white/gray_platform,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/item/flame/lighter/random,
+/turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm1)
 "lPY" = (
 /obj/machinery/door/airlock/maintenance_common{
@@ -64641,11 +64673,17 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/liberty/security/armoryshop)
 "mnz" = (
-/obj/structure/bonfire/permanent,
-/obj/machinery/door/blast/shutters/glass{
-	name = "Fireplace  Cover"
+/obj/structure/table/woodentable,
+/obj/item/material/ashtray{
+	material = "steel";
+	icon_state = "ashtray"
 	},
-/turf/simulated/floor/tiled/white/gray_platform,
+/obj/structure/extinguisher_cabinet{
+	pixel_y = -30
+	},
+/obj/effect/floor_decal/industrial/warningred,
+/obj/item/flame/lighter/random,
+/turf/simulated/floor/carpet/bcarpet,
 /area/liberty/crew_quarters/dorm3)
 "mnA" = (
 /obj/machinery/light{
@@ -67703,6 +67741,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
+/obj/item/storage/firstaid/ifak,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
 "mUJ" = (
@@ -76136,18 +76175,29 @@
 /turf/simulated/floor/tiled/steel/orangecorner,
 /area/liberty/security/prisoncells)
 "oxU" = (
-/obj/structure/closet/secure_closet/freezer/mini,
-/obj/item/reagent_containers/food/drinks/bottle/cola,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/structure/cable/green,
-/obj/item/reagent_containers/food/drinks/bottle/wine,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm5)
 "oxX" = (
@@ -90956,15 +91006,10 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/liberty/command/teleporter)
 "rjc" = (
-/obj/structure/table/woodentable,
-/obj/item/material/ashtray{
-	material = "steel";
-	icon_state = "ashtray"
+/obj/structure/bonfire/permanent,
+/obj/machinery/door/blast/shutters/glass{
+	name = "Fireplace  Cover"
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm2)
 "rjg" = (
@@ -98053,15 +98098,10 @@
 /turf/simulated/floor/tiled/dark/techfloor,
 /area/liberty/engineering/engine_room)
 "sAF" = (
-/obj/structure/table/woodentable,
-/obj/item/material/ashtray{
-	material = "steel";
-	icon_state = "ashtray"
+/obj/structure/bonfire/permanent,
+/obj/machinery/door/blast/shutters/glass{
+	name = "Fireplace  Cover"
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
-/obj/effect/floor_decal/industrial/warningred,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
 "sAG" = (
@@ -105711,18 +105751,29 @@
 /turf/simulated/floor/tiled/cafe,
 /area/liberty/command/captain/quarters)
 "tXL" = (
-/obj/structure/closet/secure_closet/freezer/mini,
-/obj/item/reagent_containers/food/drinks/bottle/cola,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/structure/cable/green,
-/obj/item/reagent_containers/food/drinks/bottle/wine,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm1)
 "tXN" = (
@@ -111801,18 +111852,29 @@
 /turf/simulated/floor/tiled/steel/techfloor_grid,
 /area/liberty/engineering/atmos/storage)
 "vic" = (
-/obj/structure/closet/secure_closet/freezer/mini,
-/obj/item/reagent_containers/food/drinks/bottle/cola,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
-/obj/item/reagent_containers/food/snacks/sosjerky,
-/obj/item/reagent_containers/food/snacks/candy/sunflowerseeds,
-/obj/item/reagent_containers/food/snacks/candy/pistachios_pack,
 /obj/structure/cable/green,
-/obj/item/reagent_containers/food/drinks/bottle/wine,
 /obj/machinery/atmospherics/unary/vent_scrubber{
 	dir = 1
 	},
+/obj/structure/closet/secure_closet/freezer,
+/obj/item/reagent_containers/food/drinks/bottle/pineapplejuice,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/drinks/drinkingglass/wineglass,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/medialuna,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/mre_cracker,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/snacks/openable/liquidfood,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
+/obj/item/reagent_containers/food/drinks/cans/waterbottle,
 /turf/simulated/floor/wood/wild1,
 /area/liberty/crew_quarters/dorm3)
 "vif" = (
@@ -122556,6 +122618,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/item/storage/firstaid/ifak,
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/liberty/pros/prep)
 "xfN" = (
@@ -123033,7 +123096,6 @@
 /area/liberty/dungeon/outside/campground)
 "xjJ" = (
 /obj/structure/table/steel,
-/obj/item/ammo_kit,
 /obj/item/ammo_kit,
 /obj/machinery/light/small{
 	dir = 1

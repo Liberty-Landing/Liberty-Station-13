@@ -358,3 +358,19 @@
 		my_burrow.collapse()
 
 	..()
+
+/obj/structure/multiz/stairs/rock
+	name = "Rock stairs"
+	desc = "A Rocky Debris leading to another level in an improvised way. Not too useful if you close it with more stones."
+	icon_state = "stonerampdown"
+	layer = 2.4
+
+/obj/structure/multiz/stairs/rock/enter
+	icon_state = "stoneramp"
+
+/obj/structure/multiz/stairs/rock/enter/bottom
+	istop = FALSE
+
+/obj/structure/multiz/stairs/rock/active
+	density = TRUE
+	icon_state = "stoneramp"
