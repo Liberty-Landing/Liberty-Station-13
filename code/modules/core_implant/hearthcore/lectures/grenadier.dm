@@ -65,9 +65,9 @@
 /datum/lecture/hearthcore/grenadier/sblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob >= 40) //You need 40 robustness at minimum to use this lecture
-		var/flame = new /obj/item/gun/siege_blazelance(src)
+		var/flame = new /obj/item/gun/siege_blazelance(src, lecturer)
 		if(lecturer.put_in_active_hand(flame))
-			addtimer(CALLBACK(lecturer, /datum/lecture/hearthcore/grenadier/sblazelance/proc/warn_nuker, lecturer, flame), 3 SECONDS)
+			addtimer(CALLBACK(C, /obj/item/implant/core_implant/proc/warn_nuker, lecturer, flame, C), 3 SECONDS)
 
 			lecturer.visible_message("As [lecturer] speaks, their hand now covered with a strange, blood-red ionized metal that sparks with pure unstability.")
 			lecturer.adjustFireLoss(10)
@@ -79,7 +79,7 @@
 	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons, but this time you think this is for the best.</span>")
 	return FALSE
 
-/datum/lecture/hearthcore/grenadier/sblazelance/proc/warn_nuker(mob/lecturer, obj/flame)
+/obj/item/implant/core_implant/proc/warn_nuker(mob/lecturer, obj/flame, obj/item/implant/core_implant/C)
 	if(ishuman(flame.loc))
 		to_chat(lecturer, "<span class='info'>\
 		You struggle to keep hold of the radiance in your hand, \
@@ -87,13 +87,13 @@
 		You can feel the cortisol your own silvery neurons being released, \
 		the fear that it might explode in your hand before you can even shoot it. \
 		You feel stressed. It slightly burns..</span>")
-		addtimer(CALLBACK(lecturer, /datum/lecture/hearthcore/grenadier/sblazelance/proc/nukier_holder, lecturer, flame), 3 SECONDS)
+		addtimer(CALLBACK(C, /obj/item/implant/core_implant/proc/nukier_holder, lecturer, flame, C), 3 SECONDS)
 	else
 		playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
 		new /obj/effect/explosion(flame.loc)
 		qdel(flame)
 
-/datum/lecture/hearthcore/grenadier/sblazelance/proc/nukier_holder(mob/lecturer, obj/flame)
+/obj/item/implant/core_implant/proc/nukier_holder(mob/lecturer, obj/flame)
 	if(ishuman(flame.loc))
 		var/mob/nukier_holder = flame.loc
 		var/turf/T = get_turf(src)
