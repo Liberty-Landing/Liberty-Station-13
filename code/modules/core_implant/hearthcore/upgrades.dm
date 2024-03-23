@@ -213,7 +213,7 @@
 	..()
 	wearer.stats.addPerk(PERK_PHOENIX)
 
-/obj/item/hearthcore_upgrade/cleansing_flames/OnUninstall()
+/obj/item/hearthcore_upgrade/phoenix_edict/OnUninstall()
 	..()
 	wearer.stats.removePerk(PERK_PHOENIX)
 
@@ -225,11 +225,11 @@
 	matter = list(MATERIAL_BIOMATTER = 100, MATERIAL_BIO_SILK = 50, MATERIAL_CARBON_FIBER = 50, MATERIAL_TITANIUMRTC = 10) // Rare and costly
 
 
-/obj/item/hearthcore_upgrade/holy/OnInstall(var/disciple, var/_hearthcore)
+/obj/item/hearthcore_upgrade/influx/OnInstall(var/disciple, var/_hearthcore)
 	..()
 	wearer.stats.addPerk(PERK_INFLUX)
 
-/obj/item/hearthcore_upgrade/cleansing_flames/OnUninstall()
+/obj/item/hearthcore_upgrade/influx/OnUninstall()
 	..()
 	wearer.stats.removePerk(PERK_INFLUX)
 

@@ -23,10 +23,9 @@
 	return TRUE
 
 /obj/item/shield_projector/rectangle/cataphract_personal
-	name = "Cataphract personal shield Prototype"
-	description_info = "A fast deploying, personal energy shield. Powered by the Hearthcore internal plasma and delivered and manifested by radiance, it ensures the protection of the user when attacked by surprise. Not the best option, but what you can have any time. \
-	This is only a mere prototype, and is being worked on by Custodian Forgemasters and Enkindleds to properly work as intended. \
-	The shield also cannot block certain effects which take place over an area, such as flashbangs or explosions."
+	name = "Cataphract personal shield"
+	description_info = "A fast deploying, personal energy shield. Powered by the Hearthcore internal plasma and delivered and manifested by radiance, it ensures the protection of the user when attacked by surprise. \
+	Highly dependant on radiance reserves, but what you can have any time. The shield also cannot block certain effects which take place over an area, such as flashbangs or explosions."
 	icon_state = "last_shelter"
 	high_color = "#FFFFFF"
 	shield_health = 2
@@ -35,23 +34,26 @@
 	size_y = 1
 	shield_regen_amount = 0
 	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // Used to delete when dropped
 	var/obj/item/implant/core_implant/hearthcore/linked_hearthcore
 
 //Still need to make the shield delete itself when it disactivates (after the power reaches 0), and when the holder dropsit
-/*
+/obj/item/shield_projector/rectangle/cataphract_personal/New(var/loc, var/mob/living/carbon/lecturer)
+	..()
+	holder = lecturer
+	START_PROCESSING(SSobj, src)
+
 /obj/item/shield_projector/rectangle/cataphract_personal/Process()
-	if(loc != holder || ([put Power here]<= 0))
+	if(loc != holder)
 		visible_message("[src] has been broken! The struggling radiance sinks into your skin to breath after so much punishment.")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
-*/
 
 // All the shields tied to their projector are one 'unit', and don't have individualized health values like most other shields.
 /obj/effect/directional_shield/cataphract_personal/adjust_health(amount)
 	if(projector)
 		projector.adjust_health(amount)
-
 
 /obj/item/shield_projector/rectangle/cataphract_personal/create_shield(newloc, new_dir)
 	var/obj/effect/directional_shield/cataphract_personal/S = new(newloc, src)
@@ -86,7 +88,7 @@
 	power = 90
 
 /datum/lecture/hearthcore/cataphract/purification/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	var/obj/item/gun/purification/flame = new /obj/item/gun/purification(src, lecturer)
+	var/obj/item/gun/custodian_fireball/purification/flame = new /obj/item/gun/custodian_fireball/purification(src, lecturer)
 	lecturer.visible_message(
 		"As [lecturer] speaks, their hand now covered with a strange, silvery ionized metal.",
 		"The radiance completely covers one of your hands, willing to sacrifice itself to punish others as you see fit."
@@ -95,84 +97,42 @@
 	usr.put_in_hands(flame)
 	return TRUE
 
-/obj/item/gun/purification //It works now. Whoever, it does not disappear when dropped or when the amount is zero. Attackself destroys it (intended). Need help to fix this.
+/obj/item/gun/custodian_fireball/purification
 	name = "Genuine Purification Prototype"
 	desc = "The beloved, benevolent purification of the body, to allow these maintenance pests and mutants to finally rest in piece. \
 	However, it is still a prototype. After spending the radiance, it does not get back to your bloodstream. Somehow, the radiance becomes alveolar cells and just remains there."
 	icon = 'icons/obj/guns/projectile/firelance.dmi'
 	icon_state = "firelance_discharger"
 	item_state = "firelance_discharger"
-	origin_tech = list()
-	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
-	fire_sound_text = "fireball"
-	max_upgrades = 0
-	slot_flags = null
-	w_class = ITEM_SIZE_HUGE
-	damtype = BURN
-	var/projectile_type = /obj/item/projectile/flamer_lob/flamethrower // What does it shoot
-	var/use_amount = 50 // How much fuel is used per shot
-	var/fuel_type = "fuel" // What kind of chem do we use?
-	var/obj/item/weldpack/canister/fuel_can = null // The canister the gun use for ammo
-	var/mob/living/carbon/holder  // Used to delete when dropped
-	serial_shown = FALSE
-	safety = FALSE
+	projectile_type = /obj/item/projectile/flamer_lob/flamethrower // What does it shoot
+	use_amount = 4 // How many times the gun can shoot
 	fire_sound = 'sound/weapons/flamethrower_fire.ogg'
 
-/obj/item/gun/purification/consume_next_projectile()
-	if(!ispath(projectile_type)) // Do we actually shoot something?
-		return null
-	if(use_amount <= 0) //Are we out of charges?
-		return null
-	use_amount -= 1
-	return new projectile_type(src)
-
-// Alternative to drop it: Use in hand to extinguish
-/obj/item/gun/purification/attack_self(mob/user)
-	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the silvery metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, deionized."), "You hear the sounds of purification in progress.")
-	STOP_PROCESSING(SSobj, src)
-	qdel(src)
-	return
-
-/obj/item/gun/purification/Process()
+/obj/item/gun/custodian_fireball/purification/Process()
 	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
 		visible_message("[src] is far too weak to stay outside a body.")
 		STOP_PROCESSING(SSobj, src)
 		qdel(src)
 		return
 
-/obj/item/gun/purification/Initialize()
-	..()
-	fuel_can = new /obj/item/weldpack/canister/flamethrower(src) // Give the gun a new flask when mapped in.
-
-/obj/item/gun/purification/examine(mob/user)
-	..(user)
-	if(!fuel_can)
-		to_chat(user, SPAN_NOTICE("The radiance seems fairly calm."))
-		return
-	if(use_amount) // In case we don't use any ammo
-		to_chat(user, "The radiance seems angry enough for another shot.")
+// Alternative to drop it: Use in hand to delete the gun
+/obj/item/gun/custodian_fireball/purification/attack_self(mob/user)
+	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the silvery metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, deionized."), "You hear the sounds of purification in progress.")
+	STOP_PROCESSING(SSobj, src)
+	qdel(src)
 	return
 
-/obj/item/gun/purification/examine(mob/user)
-	..(user)
-	if(!fuel_can)
-		to_chat(user, SPAN_NOTICE("The radiances are calm. They are likely to get back to your bloodstream soon enough."))
-		return
-	if(use_amount) // In case we don't use any ammo
-		var/shots_remaining = round(fuel_can.reagents.total_volume / use_amount)
-		to_chat(user, "The [src.name] has agitated radiances, allowing [shots_remaining] manifestation\s of purying neural goods.")
-	return
-
-/obj/item/gun/purification/New()
+/obj/item/gun/custodian_fireball/purification/New(var/loc, var/mob/living/carbon/lecturer)
 	..()
+	holder = lecturer
+	START_PROCESSING(SSobj, src)
 
-/obj/item/gun/purification/consume_next_projectile()
-	if(!fuel_can) // Do we have a fuel can?
-		return null
+/obj/item/gun/custodian_fireball/purification/consume_next_projectile()
 	if(!ispath(projectile_type)) // Do we actually shoot something?
 		return null
-	if(!fuel_can.reagents.remove_reagent(fuel_type, use_amount)) // Do we have enough fuel? (Also consume the fuel if we have enough)
+	if(use_amount <= 0) //Are we out of charges?
 		return null
+	use_amount -= 1
 	return new projectile_type(src)
 
 /datum/lecture/hearthcore/cataphract/dummy

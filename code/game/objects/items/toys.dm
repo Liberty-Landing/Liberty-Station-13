@@ -734,13 +734,13 @@
 
 /obj/item/toy/figure/character/bobblehead/oathbound
 	name = "custodian figurine"
-	desc = "Custodians of Bonfire \"accolade\" brand figurine of an oathbound, protected both physically and mentally from that which would lead them astray."
+	desc = "Custodians of Bonfire \"accolade\" brand figurine of an Oathbound, protected both physically and mentally from that which would lead them astray."
 	icon_state = "oathbound"
 	toysay = "\"You're the king? Well. I didn't vote for you...\"" //Mounty Python and the Holy Grail reference
 
 /obj/item/toy/figure/character/bobblehead/forgemaster
 	name = "custodian figurine"
-	desc = "Custodians of Bonfire \"accolade\" brand figurine of an oathbound, ready to punch metal into shape rather than bending it with a hammer."
+	desc = "Custodians of Bonfire \"accolade\" brand figurine of an Forgemaster, ready to punch metal into shape rather than bending it with a hammer."
 	icon_state = "forgemaster"
 	toysay = "\"We found a witch! May we burn her?\""
 

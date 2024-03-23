@@ -1,7 +1,44 @@
 //Holds all the proj, guns and spells for the Grenadier. The Grenadier is essentially the risk taker. High damage and AOE attack, but constantly deals damage to themselves. Very risky to play.
 
-/obj/item/gun/energy/siege_blazelance
-	projectile_type = /obj/item/projectile/grenadier/siege_blazelance
+/obj/item/gun/siege_blazelance
+	name = "Siege Blazelance"
+	desc = "Radiance in aggressive form, this one is explosive and ready to perform its favourite activity."
+	icon = 'icons/obj/guns/projectile/firelance.dmi'
+	icon_state = "firelance_discharger"
+	item_state = "firelance_discharger"
+	origin_tech = list()
+	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
+	fire_sound_text = "fireball"
+	max_upgrades = 0
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
+	var/projectile_type = /obj/item/projectile/grenadier/siege_blazelance
+	var/use_amount = 1 // How many times can it be used
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // Used to delete when dropped
+	serial_shown = FALSE
+	safety = FALSE
+
+/obj/item/gun/siege_blazelance/consume_next_projectile()
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(use_amount <= 0) //Are we out of charges?
+		return null
+	use_amount -= 1
+	return new projectile_type(src)
+
+/obj/item/gun/siege_blazelance/New(var/loc, var/mob/living/carbon/lecturer)
+	..()
+	holder = lecturer
+	START_PROCESSING(SSobj, src)
+
+/obj/item/gun/siege_blazelance/Process()
+	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
+		visible_message("[src] is far too weak to stay outside a body.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
 
 /obj/item/projectile/grenadier/siege_blazelance
 	name = "Siege Blaze lance"
@@ -28,7 +65,7 @@
 /datum/lecture/hearthcore/grenadier/sblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
 	var/rob = lecturer.stats.getStat(STAT_ROB)
 	if(rob >= 40) //You need 40 robustness at minimum to use this lecture
-		var/flame = new /obj/item/gun/energy/siege_blazelance(src)
+		var/flame = new /obj/item/gun/siege_blazelance(src)
 		if(lecturer.put_in_active_hand(flame))
 			addtimer(CALLBACK(lecturer, /datum/lecture/hearthcore/grenadier/sblazelance/proc/warn_nuker, lecturer, flame), 3 SECONDS)
 
@@ -43,15 +80,6 @@
 	return FALSE
 
 /datum/lecture/hearthcore/grenadier/sblazelance/proc/warn_nuker(mob/lecturer, obj/flame)
-/*
-	"NO. YOU NEED TO LAUNCH THIS SOMEWHERE.
-	YOUR RADIANCE IS ACTIVELY PANICKING AND BOILING ON ITS SURFACE.
-	EVER SINCE WHEN THIS FELT FEAR?!"
-
-	The thing will explode in 6 seconds.
-	So essentially after this message,
-	the player have three seconds to throw this thing
-*/
 	if(ishuman(flame.loc))
 		to_chat(lecturer, "<span class='info'>\
 		You struggle to keep hold of the radiance in your hand, \
@@ -59,7 +87,6 @@
 		You can feel the cortisol your own silvery neurons being released, \
 		the fear that it might explode in your hand before you can even shoot it. \
 		You feel stressed. It slightly burns..</span>")
-
 		addtimer(CALLBACK(lecturer, /datum/lecture/hearthcore/grenadier/sblazelance/proc/nukier_holder, lecturer, flame), 3 SECONDS)
 	else
 		playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)

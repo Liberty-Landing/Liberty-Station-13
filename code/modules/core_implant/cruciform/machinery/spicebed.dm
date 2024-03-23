@@ -705,3 +705,42 @@
 					if(istype(W, /obj/item/organ/external/robotic) || istype(W, /obj/item/implant)) //drop prosthetic limbs and implants, you are a slime now.
 						W.dropped()
 				H.set_species(SPECIES_SLIME)
+
+
+/*ASSETS AREA
+/obj/item/material/shard/Crossed(AM as mob|obj)
+	..()
+	if(isliving(AM))
+		var/mob/M = AM
+
+		if(M.buckled) //wheelchairs, office chairs, rollerbeds
+			return
+
+		playsound(src.loc, 'sound/effects/glass_step.ogg', 50, 1) // not sure how to handle metal shards with sounds
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+
+			if(H.species.siemens_coefficient<0.5) //Thick skin.
+				return
+
+			if(H.shoes)
+				return
+
+			to_chat(M, SPAN_DANGER("You step on \the [src]!"))
+
+			var/list/check = list(BP_L_LEG, BP_R_LEG)
+			while(check.len)
+				var/picked = pick(check)
+				var/obj/item/organ/external/affecting = H.get_organ(picked)
+				if(affecting)
+					if(BP_IS_ROBOTIC(affecting))
+						return
+					if(affecting.take_damage(5, BRUTE))
+						H.UpdateDamageIcon()
+					H.updatehealth()
+					if(!(H.species.flags & NO_PAIN))
+						H.Weaken(3)
+					return
+				check -= picked
+			return
+*/

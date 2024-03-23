@@ -116,7 +116,7 @@ datum/announcement/proc/Log(message as text, message_title as text)
 	command_announcement.Announce("Diagnostic Systems report level 8 Bio-mechanical infestation within the [station_name()] has been contained.")
 
 /proc/level_nine_announcement()
-	command_announcement.Announce("Confirmed outbreak of level 9 Excelsior communist infiltration within the [station_name()].", "Biohazard Alert")
+	command_announcement.Announce("Confirmed outbreak of level 9 Legionaries infiltrators within the [station_name()]. THIS IS WAR. Conscription of non-combatants is now allowed and encouraged. All Vanguard Branch must mobilize immediately.", "Invasion Alert")
 
 /proc/ion_storm_announcement()
 	command_announcement.Announce("It has come to our attention that an ion storm has formed.  Please monitor all electronic equipment for malfunctions.", "Anomaly Alert", new_sound = 'sound/AI/ionstorm.ogg')

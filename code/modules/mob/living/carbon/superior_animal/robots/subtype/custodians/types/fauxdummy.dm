@@ -1,7 +1,7 @@
 /mob/living/carbon/superior_animal/robot/custodians/faux_dummy
 	name = "Radiant Faux Dummy"
-	desc = "The Radiant Faux Dummy, a rather makeshifted pseudo-automaton of the Custodians, settled and built by any specialized Hussar Knight.\
-	Inert, neutral and almost undestructible. The Radiance stresses itself as springs, as it releases heat and air to simulate breathing, so enemies will attack it instead of the knight."
+	desc = "The Radiant Faux Dummy, a makeshift pseudo-automaton of the Custodians, constructed by specialized Cataphract Knights. \
+	Inert, neutral, and nearly indestructible, it simulates breathing by releasing heat and air to divert enemy towards itself. It uses a spring system as armor."
 	faction = "neutral"
 	icon_state = "fauxdummy"
 	icon_dead = "fauxdummy_dead"

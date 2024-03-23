@@ -708,7 +708,7 @@
 	//default speaking
 	speak = list(
 				"The truth is elusive, dancing just out of reach.",
-				"Illusions crumble, revealing the stark reality...",
+				"Illusions crumble, reveals the stark reality...",
 				"Every step is traced, every thought intercepted.")
 	target_speak = list(
 				"Trust crumbles like sand, slipping through our fingers.",
@@ -719,18 +719,18 @@
 				"Question your memories, for they may be manipulated.")
 	//speaking with pilot
 	var/list/common_answers = list(
-								"Of course, lover.",
-								"In sweet time.",
+								"Petaline hears you, my dear.",
+								"As her manifestation in flesh, I say yes.",
 								"Mmm.",
 								"But of course darling.",
-								"Shh, rest now.",
-								"Hush now, child.")
+								"Shh, you've fighted for so long, rest now.",
+								"Dear of mine, breath in the spores and accept Petaline's embrace.")
 	var/list/other_answers = list(
-								"There's room for one more!",
-								"Don't be jealous. I can love you both.",
+								"Petaline loves all!",
+								"Don't be jealous. Petaline can love you both.",
 								"Come to bed, you.",
 								"Slide over a little for them.",
-								"Don't mind the blood, they didn't need it anymore.")
+								"Don't mind the blood, the other one has love replacing it.")
 	//pilot quotes
 	var/list/pilot_target_speak = list(
 						"Three's a crowd, call for help and make it a party!",
@@ -846,7 +846,7 @@
 	passenger = target
 	target.loc = src
 	target.canmove = FALSE
-	to_chat(target, SPAN_DANGER("Wires snare your limbs and pull you inside the maneater! You feel yourself bound with a thousand aluminium tendrils!"))
+	to_chat(target, SPAN_DANGER("Wires snare your limbs and pull you inside the maneater! You feel yourself bound with a thousand steel tendrils!"))
 	playsound(src, 'sound/effects/blobattack.ogg', 70, 1)
 	addtimer(CALLBACK(src, .proc/release_passenger), 40 SECONDS)
 

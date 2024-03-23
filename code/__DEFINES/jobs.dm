@@ -9,7 +9,7 @@
 #define JOBS_CHURCH "Oathpledge", "Forgemaster", "Enkindled", "Oathbound"
 #define JOBS_CIVILIAN "Colonist"
 #define JOBS_NONHUMAN "AI","Robot","pAI"
-#define JOBS_INDEPENDENT "Outsider", "Tribal"
+#define JOBS_INDEPENDENT "Outsider", "Tribal", "Insurgent", "Cultist"
 
 #define JOBS_ANTI_HIVEMIND "Deputy Chief","Armorer","Criminal Investigator","Watchmen","Oathpledge","Forgemaster","Enkindled","Oathbound","Field Shepherd","Trapper","Shipbreaker","Board Secretary","AI","Sanitation Technician","Paramedic","PIRS Roboticist","Mining Technician"
 
