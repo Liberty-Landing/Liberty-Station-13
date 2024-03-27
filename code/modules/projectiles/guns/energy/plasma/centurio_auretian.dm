@@ -9,7 +9,7 @@
 	can_dual = TRUE
 	sel_mode = 1
 	origin_tech = list(TECH_COMBAT = 5, TECH_PLASMA = 4)
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASMA = 5)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_HYDROGENC = 5)
 	price_tag = 1250
 	damage_multiplier = 1
 	init_firemodes = list(
@@ -38,7 +38,7 @@
 	suitable_cell = /obj/item/cell/small
 	charge_cost = 50
 	damage_multiplier = 1
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 8, MATERIAL_PLASMA = 2, MATERIAL_SILVER = 3, MATERIAL_URANIUM = 3)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 8, MATERIAL_HYDROGENC = 2, MATERIAL_SILVER = 3, MATERIAL_URANIUM = 3)
 	gun_tags = list(GUN_LASER, GUN_ENERGY)
 
 	init_firemodes = list(

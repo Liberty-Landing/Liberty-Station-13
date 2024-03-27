@@ -31,6 +31,28 @@
 	desc = "A unique component given to Oathpledges in order to forge their armor."
 	icon_state = "oathpledge_battleneuron"
 
+/obj/item/mold/granule_neuron
+	name = "Infusive Granule Neuron"
+	desc = "These neurons contains SMAs (Shape-Memory Alloy) that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
+	It only works for Darksilver subtype of steel. The radiance itself heatens the metal so the equipment will go back to it's original shape after deformation, \
+	Which adds resilience against repeated impacts, deformation, and keeping a blade sharp for longer. It barely does something against metal that was removed after impact."
+	icon_state = "granule_infusive"
+
+/obj/item/mold/renshaw_neuron
+	name = "Infusive Renshaw Neuron"
+	desc = "These neurons contains Graphene-Infused Steel Alloys with nanocomposites that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
+	It only works for Darksilver subtype of steel due to it's compatible metal matrix. The radiance reinforces the steel alloy with nanocomposites together with graphene rods within the steel matrix.\
+	The nanocomposites absorbs and dissipates energy, together with graphene rods to better distribute electrical charges and impact across the body to lessen the chance of the user getting severely damage in only one place."
+	icon_state = "renshaw_infusive"
+
+/obj/item/mold/cartwheel_neuron
+	name = "Infusive Cartwheel Neuron"
+	desc = "These neurons contains Nanostructured Steel Alloys with vibrating technology that are deployed by infusive radiance in the darksilver matrix of custodian armor and weapons. \
+	It only works for Darksilver subtype of steel. The radiance reinforces the steel alloy with nano-sized grains that enhances hardness and toughness, \
+	making the metal resistant to penetration, making it less brittle and more deformable, relying on SMAs to keep it in place. \
+	The nanosized grains, when powered by radiance, implement vibrational technology within a blade, causing it to vibrate at high frequencies before impact, greatly enhancing cutting effectiveness."
+	icon_state = "cartwheel_infusive"
+
 /obj/item/stack/mold_kit
 	name = "moldkit stack base item"
 	desc = "Not to be seen in-game."
@@ -52,7 +74,7 @@
 	singular_name = "blacksmithing tool"
 	desc = "A set of metalsmithing hand-tools created by the Custodians. Only designed to bring shape to their nanomolds, these toolkits are mass-produced and disposable, wearing away into uselessness after their work is done."
 	icon_state = "blacksmithing_kit"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 8)
 
 /obj/item/stack/mold_kit/tailoring
 	name = "tailoring toolset"

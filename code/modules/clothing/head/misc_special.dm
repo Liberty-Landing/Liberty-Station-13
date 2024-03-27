@@ -9,7 +9,7 @@
 		slot_l_hand_str = "welding",
 		slot_r_hand_str = "welding",
 		)
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_GLASS = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_GLASS = 2)
 	var/up = 0
 	armor_list = list(
 		melee = 20,

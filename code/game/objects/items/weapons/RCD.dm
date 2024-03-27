@@ -14,7 +14,7 @@
 	throw_range = 5
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_ENGINEERING = 4, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASMA = 10, MATERIAL_URANIUM = 10)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_HYDROGENC = 10, MATERIAL_URANIUM = 10)
 	price_tag = 1000
 	var/max_stored_matter = 60
 	var/datum/effect/effect/system/spark_spread/spark_system

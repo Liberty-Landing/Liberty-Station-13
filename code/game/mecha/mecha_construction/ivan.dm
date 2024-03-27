@@ -65,9 +65,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The circuit shielding has been placed in the chassis, but needs to be bolted down."),
 		//10
-		list("key"=/obj/item/stack/material/steel,
+		list("key"=/obj/item/stack/material/aluminium,
 			//"backkey"=QUALITY_SCREW_DRIVING,
-			"desc"="The internal circutry is installed. 5 sheets of steel are needed to shield it."),
+			"desc"="The internal circutry is installed. 5 sheets of aluminium are needed to shield it."),
 		//11
 		list("key"=QUALITY_SCREW_DRIVING,
 			//"backkey"=QUALITY_PRYING,
@@ -294,7 +294,7 @@
 						"[usr] pries the circuit shielding from the [holder].", \
 						"You pry the circuit shielding from the [holder]."
 					)
-					new /obj/item/stack/material/steel (get_turf(holder), 5)
+					new /obj/item/stack/material/aluminium (get_turf(holder), 5)
 					holder.icon_state = "ripley7"
 			if(9)
 				if(diff==FORWARD)
@@ -348,7 +348,7 @@
 						"[usr] removes the external armor layer from the [holder].", \
 						"You remove the external armor layer from the [holder]."
 					)
-					new /obj/item/stack/material/plasteel (get_turf(holder), 5)
+					new /obj/item/stack/material/indsteel (get_turf(holder), 5)
 					holder.icon_state = "ripley10"
 			if(5)
 				if(diff==FORWARD)

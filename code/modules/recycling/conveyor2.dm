@@ -16,7 +16,7 @@ GLOBAL_LIST_EMPTY(conveyor_switches)
 	desc = "A conveyor belt, commonly used to transport large numbers of items elsewhere quite quickly."
 	layer = BELOW_OPEN_DOOR_LAYER
 	anchored = TRUE
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 2)
 
 	var/operating = FALSE	// NB: this can be TRUE while the belt doesn't go
 	var/forwards			// The direction the conveyor sends you in
@@ -245,7 +245,7 @@ GLOBAL_LIST_EMPTY(conveyor_switches)
 	icon = 'icons/obj/machines/conveyor.dmi'
 	icon_state = "switch-off"
 	anchored = TRUE
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 
 	var/position = DIRECTION_OFF
 	var/reversed = TRUE
@@ -372,7 +372,7 @@ GLOBAL_LIST_EMPTY(conveyor_switches)
 	icon = 'icons/obj/machines/conveyor.dmi'
 	icon_state = "conveyor_loose"
 	w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 4)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 4)
 	var/id = "" //inherited by the belt
 
 /obj/item/construct/conveyor/attackby(obj/item/I, mob/user, params)
@@ -405,7 +405,7 @@ GLOBAL_LIST_EMPTY(conveyor_switches)
 	icon = 'icons/obj/machines/conveyor.dmi'
 	icon_state = "switch"
 	w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	var/id = "" //inherited by the switch
 
 /obj/item/construct/conveyor_switch/New(loc, new_id)

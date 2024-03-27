@@ -1,5 +1,66 @@
 #define REPAIR_COST 25
 
+//// This area has the projectiles in which the Custodian uses without expansions.
+
+/obj/item/projectile/oathbound
+	damage_types = list(BURN = WEAPON_FORCE_HARMLESS)
+	mob_hit_sound = list('sound/effects/gore/sear.ogg')
+	hitsound_wall = 'sound/weapons/guns/misc/laser_searwall.ogg'
+	pass_flags = PASSTABLE | PASSGLASS | PASSGRILLE
+	armor_penetration = list(ARMOR_PEN_GRAZING)
+	check_armour = ARMOR_ENERGY
+	hitscan = 1
+	invisibility = 101	//beam projectiles are invisible as they are rendered by the effect engine
+
+	recoil = 1
+
+	//Temp for debug testing untill C-sprites are done
+	muzzle_type = /obj/effect/projectile/stun/muzzle
+	tracer_type = /obj/effect/projectile/stun/tracer
+	impact_type = /obj/effect/projectile/stun/impact
+
+/*
+	muzzle_type = /obj/effect/projectile/laser/cmuzzle
+	tracer_type = /obj/effect/projectile/laser/ctracer
+	impact_type = /obj/effect/projectile/laser/cimpact
+*/
+
+//end of normal blazelances
+/obj/item/projectile/cblazelance/normal
+	damage_types = list(BRUTE = WEAPON_FORCE_NORMAL) //10 of damage
+	armor_penetration = ARMOR_PEN_SHALLOW
+
+/obj/item/projectile/cblazelance/dangerous
+	damage_types = list(BRUTE = WEAPON_FORCE_DANGEROUS) //20 of damage
+	armor_penetration = ARMOR_PEN_SHALLOW
+
+/obj/item/projectile/cblazelance/robust
+	damage_types = list(BRUTE = WEAPON_FORCE_ROBUST) //26 of damage
+	armor_penetration = ARMOR_PEN_SHALLOW
+
+/obj/item/projectile/cblazelance/brutal
+	damage_types = list(BRUTE = WEAPON_FORCE_BRUTAL) //33 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+//end of normal blazelances
+
+//armor penetration blazelances
+/obj/item/projectile/tblazelance/normal
+	damage_types = list(BRUTE = WEAPON_FORCE_NORMAL) //10 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+
+/obj/item/projectile/tblazelance/dangerous
+	damage_types = list(BRUTE = WEAPON_FORCE_DANGEROUS) //20 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+
+/obj/item/projectile/tblazelance/robust
+	damage_types = list(BRUTE = WEAPON_FORCE_ROBUST) //26 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+
+/obj/item/projectile/tblazelance/brutal
+	damage_types = list(BRUTE = WEAPON_FORCE_BRUTAL) //33 of damage
+	armor_penetration = ARMOR_PEN_MASSIVE
+
+
 //////////////////////////////////////////////////
 /////////         OATHBOUND             /////////
 //////////////////////////////////////////////////
@@ -18,107 +79,10 @@
 	category = "Oathbound"
 	ignore_stuttering = TRUE
 
-datum/lecture/hearthcore/oathbound/fireball
-	name = "Manifestation of Flames"
-	phrase = "Oxidate Lecture: Manifestation of Flames."
-	desc = "Allows your radiance to spread to the surface of your skin, creating a protective layer before releasing concentrated, launchable plasma."
-	power = 35
-
-/datum/lecture/hearthcore/oathbound/fireball/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	var/obj/item/gun/custodian_fireball/flame = new /obj/item/gun/custodian_fireball(src, lecturer)
-	lecturer.visible_message(
-		"As [lecturer] speaks, their hand is covered in a fierce blue fireball.",
-		"A blue fireball completely covers one of your hands."
-		)
-	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
-	usr.put_in_hands(flame)
-	return TRUE
-
-/obj/item/gun/custodian_fireball //the fireball item created by Manifestation of Flames
-	name = "radiant fireball"
-	desc = "A summoned, throwable fireball that disappears if dropped, or by closing your hand."
-	icon = 'icons/obj/guns/projectile/fireball.dmi'
-	icon_state = "fireball_lecture"
-	item_state = "fireball_lecture"
-	origin_tech = list()
-	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
-	fire_sound_text = "fireball"
-	max_upgrades = 0
-	slot_flags = null
-	w_class = ITEM_SIZE_HUGE
-	damtype = BURN
-	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
-	var/use_amount = 1 // How many times can it be used
-	var/mob/living/carbon/holder // Used to delete when dropped
-	serial_shown = FALSE
-	safety = FALSE
-
-/obj/item/gun/custodian_fireball/New(var/loc, var/mob/living/carbon/lecturer)
-	..()
-	holder = lecturer
-	START_PROCESSING(SSobj, src)
-
-/obj/item/gun/custodian_fireball/consume_next_projectile()
-	if(!ispath(projectile_type)) // Do we actually shoot something?
-		return null
-	if(use_amount <= 0) //Are we out of charges?
-		return null
-	use_amount -= 1
-	return new projectile_type(src)
-
-/obj/item/gun/custodian_fireball/Process()
-	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
-		visible_message("[src] fades into nothingness.")
-		STOP_PROCESSING(SSobj, src)
-		qdel(src)
-		return
-
-// Alternative to drop it: Use in hand to extinguish
-/obj/item/gun/custodian_fireball/attack_self(mob/user)
-	user.visible_message(SPAN_NOTICE("[user] closes their palm, extinguishing the fireball."), SPAN_NOTICE("You close your hand and decide to extinguish \the [src]."), "You hear sizzling stop.")
-	STOP_PROCESSING(SSobj, src)
-	qdel(src)
-	return
-
-/obj/item/projectile/custodian_fireball //the fireball projectile used
-	name = "fireball"
-	icon_state = "fireball_lecture"
+/obj/item/projectile/blazelance //the projectile used
+	name = "blazelance"
+	icon_state = "blazelance"
 	damage_types = list(BURN = WEAPON_FORCE_NORMAL) //deal 10 burn
-
-/obj/item/projectile/custodian_fireball/on_impact(atom/target)
-	scorch_attack(target) //now that you've hit something, trigger a scorch attack of 20 damage
-	return TRUE
-
-/* might exist eventually, might not
-
-/obj/item/gun/custodian_fireball/explosion
-	projectile_type = /obj/item/projectile/custodian_bigfireball
-
-/obj/item/projectile/custodian_bigfireball
-	name = "fireball"
-	icon_state = "fireball_lecture"
-	var/list/explosion_values = list(0, 1, 2, 4) // Explosions strengths, same value as a regular missile.
-
-/obj/item/projectile/custodian_bigfireball/on_impact(atom/target)
-	explosion(loc, explosion_values[1], explosion_values[2], explosion_values[3], explosion_values[4])
-	return TRUE
-
-datum/lecture/hearthcore/oathbound/fireball_big
-	name = "Manifestation of Inferno"
-	phrase = "Oxidate Lecture: Manifestation of Inferno."
-	desc = "Create a launchable exploding fireball on a free hand."
-	power = 25
-
-/datum/lecture/hearthcore/oathbound/fireball_big/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	var/obj/item/gun/custodian_fireball/explosion/flame = new /obj/item/gun/custodian_fireball/explosion(src, lecturer)
-	lecturer.visible_message(
-		"As [lecturer] speaks, their hand is covered in a fierce blue fireball.",
-		"A blue fireball completely covers one of your hands."
-		)
-	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
-	usr.put_in_hands(flame)
-	return TRUE
-*/
 
 /datum/lecture/hearthcore/oathbound/eyeflare
 	name = "Eyeflare"
@@ -167,47 +131,6 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		return FALSE
 
 	return FALSE
-
-
-/datum/lecture/hearthcore/oathbound/searing_of_torment
-	name = "Searing of Torment"
-	phrase = "Oxidate Lecture: Searing of Torment."
-	desc = "A short lecture that removes all pain and heals some damage, requires fifteen minutes between uses."
-	power = 50
-	cooldown = TRUE
-	cooldown_time = 15 MINUTES
-	cooldown_category = "searing"
-
-/datum/lecture/hearthcore/oathbound/searing_of_torment/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
-	H.reagents.add_reagent("nepenthe", 10)
-	H.adjustBruteLoss(-10)
-	H.adjustFireLoss(-10)
-	H.adjustOxyLoss(-20)
-	H.adjustBrainLoss(-5)
-	H.updatehealth()
-	set_personal_cooldown(H)
-	return TRUE
-
-/datum/lecture/hearthcore/oathbound/scorching_shell
-	name = "Scorching Shell"
-	phrase = "Oxidate Lecture: Scorching Shell."
-	desc = "A lecture that channels radiance by the bloodstream, enveloping the skin in a silvery layer. The speaker bear the substantial burden of radiance covering their skin, yet the protection diminishes all harm inflicted upon them. This lecture has a cooldown of fifteen minutes, so the radiance can replenish."
-	cooldown = TRUE
-	cooldown_time = 15 MINUTES
-	cooldown_category = "scorching_shell"
-	effect_time = 1 MINUTES
-	power = 90
-
-/datum/lecture/hearthcore/oathbound/scorching_shell/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
-	user.stats.addPerk(PERK_SCORCHING_SHELL) //Adding a temporary perk due to the slowdown, simply adding slowdown via += will see it reset in seconds
-	set_personal_cooldown(user)
-	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
-	return TRUE
-
-/datum/lecture/hearthcore/oathbound/scorching_shell/proc/discard_effect(mob/living/carbon/human/user)
-	if(!user)
-		return
-	user.stats.removePerk(PERK_SCORCHING_SHELL)
 
 /datum/lecture/hearthcore/oathbound/scorching_smite
 	name = "Scorching Smite"
@@ -271,6 +194,239 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	user.visible_message(SPAN_DANGER("A wave of flame radiates out from [user]!"))
 	return TRUE
 
+/datum/lecture/hearthcore/oathbound/blazelance
+	name = "Compact Blazelance"
+	phrase = "Oxidate Lecture: Compact Blazelance."
+	desc = "By allowing your radiance to spread to the surface of your skin, it is possible to quickly release protective layer of silver from the skin pores heated up by the Hearthcore's internal plasma, which can be disparated against any enemy with great accuracy."
+	power = 35
+
+/datum/lecture/hearthcore/oathbound/blazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/gun/cblazelance/flame = new /obj/item/gun/cblazelance(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand now covered with a strange, silvery ionized metal.",
+		"The radiance completely covers one of your hands, willing to sacrifice itself to punish others as you see fit."
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
+
+/obj/item/gun/cblazelance //compact blazelance by Oathbounds. Cheaper, unspecialized.
+	name = "Compact Blaze Lance"
+	desc = "Radiance in aggressive form, absurdly ionized and ready to deliver all its heat against an enemy. It does not ignite people. It disappears if dropped, or by closing the hand."
+	icon = 'icons/obj/guns/projectile/blazelance.dmi'
+	icon_state = "blazelance"
+	item_state = "blazelance"
+	origin_tech = list()
+	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
+	fire_sound_text = "fireball"
+	max_upgrades = 0
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
+	var/projectile_type = /obj/item/projectile/blazelance // What does it shoot
+	var/use_amount = 1 // How many times can it be used
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // Used to delete when dropped
+	serial_shown = FALSE
+	safety = FALSE
+
+/obj/item/gun/cblazelance/New(var/loc, var/mob/living/carbon/lecturer)
+	..()
+	holder = lecturer
+	var/rob = holder.stats.getStat(STAT_ROB)
+	if(changes_projectile)
+		switch(rob)
+			if(1 to 20)
+				force = /obj/item/projectile/cblazelance/normal
+			if(21 to 40)
+				force = /obj/item/projectile/cblazelance/dangerous
+			if(41 to 60)
+				force = /obj/item/projectile/cblazelance/robust
+			if(61 to INFINITY)
+				force = /obj/item/projectile/cblazelance/brutal
+			else
+				force = /obj/item/projectile/cblazelance
+	START_PROCESSING(SSobj, src)
+
+/obj/item/gun/cblazelance/consume_next_projectile()
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(use_amount <= 0) //Are we out of charges?
+		return null
+	use_amount -= 1
+	return new projectile_type(src)
+
+/obj/item/gun/cblazelance/Process()
+	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
+		visible_message("[src] is far too weak to stay outside a body.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
+
+// Alternative to drop it: Use in hand to extinguish
+/obj/item/gun/cblazelance/attack_self(mob/user)
+	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the silvery metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, deionized."), "You hear the sounds of purification in progress.")
+	STOP_PROCESSING(SSobj, src)
+	qdel(src)
+	return
+
+/datum/lecture/hearthcore/oathbound/iblazelance
+	name = "Infernal Blazelance"
+	phrase = "Oxidate Lecture: Infernal Blazelance."
+	desc = "By allowing your radiance to spread to the surface of your skin with a slim converging silver lense, it is possible to make your fiery radiance to spread out. Very low with accuracy."
+	power = 50
+
+/datum/lecture/hearthcore/oathbound/iblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/gun/iblazelance/flame = new /obj/item/gun/iblazelance(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand now covered with a strange, reddish ionized metal.",
+		"The radiance completely covers one of your hands, seeking nothing but blood of the impure."
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
+
+/obj/item/gun/iblazelance //A burst of blazelances used by Oathbounds. Costier, pretty much used to maximize attacks. Hard to control.
+	name = "Infernal Blazelance"
+	desc = "Radiance in a very aggressive form, absurdly ionised and with gaseous splits with hydrogen so it can spread on the battlefield, just to deliver all its heat against many enemy or pin them down. It does not ignite people. It disappears if dropped, or by closing the hand."
+	icon = 'icons/obj/guns/projectile/blazelance.dmi'
+	icon_state = "blazelance"
+	item_state = "blazelance"
+	origin_tech = list()
+	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
+	fire_sound_text = "fireball"
+	max_upgrades = 0
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
+	var/projectile_type = /obj/item/projectile/blazelance // What does it shoot
+	var/use_amount = 3 // How many times can it be used
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // If we change are bullet type on spawn
+	serial_shown = FALSE
+	safety = FALSE
+	init_firemodes = list(
+		list(mode_name="3-round bursts", mode_desc="Your radiance craves it. Punish thy enemy thrice.", burst=3, fire_delay=0.2, move_delay=null, icon="burst"),
+		)
+
+/obj/item/gun/iblazelance/New(loc, mob/living/carbon/lecturer)
+	..()
+	holder = lecturer
+	var/rob = holder.stats.getStat(STAT_ROB)
+	if(changes_projectile)
+		switch(rob)
+			if(5 to 30)
+				force = /obj/item/projectile/cblazelance/normal
+			if(30 to 55)
+				force = /obj/item/projectile/cblazelance/dangerous
+			if(56 to 79)
+				force = /obj/item/projectile/cblazelance/robust
+			if(80 to INFINITY)
+				force = /obj/item/projectile/cblazelance/brutal
+			else
+				force = /obj/item/projectile/cblazelance
+	START_PROCESSING(SSobj, src)
+
+/obj/item/gun/iblazelance/consume_next_projectile()
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(use_amount <= 0) //Are we out of charges?
+		return null
+	use_amount -= 1
+	return new projectile_type(src)
+
+/obj/item/gun/iblazelance/Process()
+	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
+		visible_message("[src] is far too weak to stay outside a body.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
+
+// Alternative to drop it: Use in hand to extinguish
+/obj/item/gun/iblazelance/attack_self(mob/user)
+	user.unEquip(src)
+	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the reddish metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, disappointed for not being used."), "You hear the sounds of purification in progress.")
+	STOP_PROCESSING(SSobj, src)
+	qdel(src)
+	return
+
+/datum/lecture/hearthcore/oathbound/tblazelance
+	name = "Trenchant Blazelance"
+	phrase = "Oxidate Lecture: Trenchant Blazelance."
+	desc = "By allowing your radiance to spread to the surface of your skin with a slim diverging silver lense, it is possible to make your fiery radiance to concentrate in one point, capable of destroying armor, but causing less damage in the flesh. Very high with accuracy."
+	power = 50
+
+/datum/lecture/hearthcore/oathbound/tblazelance/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/gun/tblazelance/flame = new /obj/item/gun/tblazelance(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand now covered with a strange, bluish ionized metal.",
+		"The radiance completely covers one of your hands, seeking to show how unprotected the enemy is"
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
+
+/obj/item/gun/tblazelance //A single blazelances used by Oathbounds to break down armor more efficiently.
+	name = "Trenchant Blazelance"
+	desc = "Radiance in a compressed form, absurdly ionised and under the effect of lenses so it can most efficiently ignore enemy armor, just to deliver all its heat against one armored enemy. It does not ignite people. It disappears if dropped, or by closing the hand."
+	icon = 'icons/obj/guns/projectile/blazelance.dmi'
+	icon_state = "blazelance"
+	item_state = "blazelance"
+	origin_tech = list()
+	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
+	fire_sound_text = "fireball"
+	max_upgrades = 0
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
+	var/projectile_type = /obj/item/projectile/blazelance // What does it shoot
+	var/use_amount = 1 // How many times can it be used
+	var/mob/living/carbon/holder  // Used to delete when dropped
+	var/changes_projectile = TRUE // Used to delete when dropped
+	serial_shown = FALSE
+	safety = FALSE
+
+/obj/item/gun/tblazelance/New(var/loc, var/mob/living/carbon/lecturer)
+	..()
+	holder = lecturer
+	var/rob = holder.stats.getStat(STAT_ROB)
+	if(changes_projectile)
+		switch(rob)
+			if(1 to 20)
+				force = /obj/item/projectile/tblazelance/normal
+			if(21 to 40)
+				force = /obj/item/projectile/tblazelance/dangerous
+			if(41 to 60)
+				force = /obj/item/projectile/tblazelance/robust
+			if(61 to INFINITY)
+				force = /obj/item/projectile/tblazelance/brutal
+			else
+				force = /obj/item/projectile/tblazelance
+	START_PROCESSING(SSobj, src)
+
+/obj/item/gun/tblazelance/consume_next_projectile()
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(use_amount <= 0) //Are we out of charges?
+		return null
+	use_amount -= 1
+	return new projectile_type(src)
+
+/obj/item/gun/tblazelance/Process()
+	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
+		visible_message("[src] is far too weak to stay outside a body.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
+
+// Alternative to drop it: Use in hand to extinguish
+/obj/item/gun/tblazelance/attack_self(mob/user)
+	user.unEquip(src)
+	user.visible_message(SPAN_NOTICE("[user] closes their palm, letting the metal sink into their skin."), SPAN_NOTICE("You close your hand and decide to allow \the [src] to go back into your bloodstream, disappointed for not being used."), "You hear the sounds of purification in progress.")
+	STOP_PROCESSING(SSobj, src)
+	qdel(src)
+	return
+
 //////////////////////////////////////////////////
 /////////         ENKINDLED             /////////
 //////////////////////////////////////////////////
@@ -333,9 +489,9 @@ datum/lecture/hearthcore/oathbound/fireball_big
 
 /datum/lecture/hearthcore/enkindled/convalescence/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
 	if(H.species?.reagent_tag == IS_SYNTHETIC)
-		to_chat(H, SPAN_WARNING("You fail to cast the litany due to your non-organic body..."))
+		to_chat(H, SPAN_WARNING("You notice the radiance struggling to weave your metallic body with polydioxanone."))
 		return FALSE
-	to_chat(H, "<span class='info'>A sensation of relief bathes you, washing away your pain.</span>")
+	to_chat(H, "<span class='info'>Your wounds are weaved and settled into shape by your own radiance.</span>")
 	H.reagents.add_reagent("laudanum", 5)
 	H.adjustBruteLoss(-15)
 	H.adjustFireLoss(-15)
@@ -360,10 +516,10 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		people_around.Add(H) //add them to a list
 
 	if(people_around.len > 0) //anyone there? if so, run the effect
-		to_chat(user, SPAN_NOTICE("Your feel the air thrum with an inaudible vibration."))
+		to_chat(user, SPAN_NOTICE("You feel your radiance leaving your body as it spreads far and wide. A sacrifice to heal the neurons of those around you."))
 		playsound(user.loc, 'sound/machines/signal.ogg', 50, 1)
 		for(var/mob/living/carbon/human/participant in people_around)
-			to_chat(participant, SPAN_NOTICE("You hear a silent signal..."))
+			to_chat(participant, SPAN_NOTICE("You feel more... stable. Long lost memories recovered just as much as your hope, at least just a little."))
 			heal_other(participant)
 			add_effect(participant, FILTER_HOLY_GLOW, 25)
 		set_personal_cooldown(user)
@@ -418,7 +574,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 /datum/lecture/hearthcore/enkindled/realignment
 	name = "Realignment"
 	phrase = "Oxidate Lecture: Realignment."
-	desc = "Recovers all damage from toxin exposure, purges all chemical and stimulants reagents with toxic effects in the bloodstream, while curing addictions and healing damaged liver tissues. The radiance needs to recover itself for five minutes after oxidated"
+	desc = "Recovers all damage from toxin exposure, purges all chemical and stimulants reagents with toxic effects in the bloodstream, while curing addictions and healing damaged liver tissues. The radiance needs to recover itself for 15 minutes after oxidated"
 	power = 50
 	cooldown = TRUE
 	cooldown_time = 15 MINUTES
@@ -568,6 +724,25 @@ datum/lecture/hearthcore/oathbound/fireball_big
 
 	return TRUE
 
+/datum/lecture/hearthcore/enkindled/searing_of_torment
+	name = "Searing of Torment"
+	phrase = "Oxidate Lecture: Searing of Torment."
+	desc = "A short lecture that removes all pain and heals some damage, requires fifteen minutes between uses, and it only works on yourself."
+	power = 50
+	cooldown = TRUE
+	cooldown_time = 15 MINUTES
+	cooldown_category = "searing"
+
+/datum/lecture/hearthcore/enkindled/searing_of_torment/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C)
+	H.reagents.add_reagent("nepenthe", 10)
+	H.adjustBruteLoss(-10)
+	H.adjustFireLoss(-10)
+	H.adjustOxyLoss(-20)
+	H.adjustBrainLoss(-5)
+	H.updatehealth()
+	set_personal_cooldown(H)
+	return TRUE
+
 //////////////////////////////////////////////////
 /////////         FORGEMASTER             /////////
 //////////////////////////////////////////////////
@@ -682,7 +857,27 @@ datum/lecture/hearthcore/oathbound/fireball_big
 
 	return TRUE
 
-/* hash out specific details on how upgrading works  and who does it later
+/datum/lecture/hearthcore/forgemaster/scorching_shell
+	name = "Scorching Shell"
+	phrase = "Oxidate Lecture: Scorching Shell."
+	desc = "A lecture that channels radiance by the bloodstream, enveloping the skin in a silvery layer. The speaker bear the substantial burden of radiance covering their skin, yet the protection diminishes all harm inflicted upon them. This lecture has a cooldown of fifteen minutes, so the radiance can replenish."
+	cooldown = TRUE
+	cooldown_time = 15 MINUTES
+	cooldown_category = "scorching_shell"
+	effect_time = 1 MINUTES
+	power = 90
+
+/datum/lecture/hearthcore/forgemaster/scorching_shell/perform(mob/living/carbon/human/user, obj/item/implant/core_implant/C)
+	user.stats.addPerk(PERK_SCORCHING_SHELL) //Adding a temporary perk due to the slowdown, simply adding slowdown via += will see it reset in seconds
+	set_personal_cooldown(user)
+	addtimer(CALLBACK(src, .proc/discard_effect, user), src.effect_time)
+	return TRUE
+
+/datum/lecture/hearthcore/forgemaster/scorching_shell/proc/discard_effect(mob/living/carbon/human/user)
+	if(!user)
+		return
+	user.stats.removePerk(PERK_SCORCHING_SHELL)
+
 /datum/lecture/hearthcore/forgemaster/unupgrade
 	name = "Nerve Purging"
 	phrase = "Oxidate Lecture: Nerve Purging."
@@ -709,7 +904,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 		log_and_message_admins("removed upgrade from [C] hearthcore with nerve purging lecture")
 
 	return TRUE
-*/
+
 
 /datum/lecture/hearthcore/forgemaster/greater_empower
 	name = "Greater Empower"
@@ -847,7 +1042,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 
 /datum/lecture/hearthcore/oathpledge/reimagining/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C,list/targets)
 	if(H.species?.reagent_tag == IS_SYNTHETIC)
-		to_chat(H, SPAN_WARNING("Amusing. You witnessed the radiance falter, attempting to ment your injuries. The freshly formed monocryl slides off your mechanical bits."))
+		to_chat(H, SPAN_WARNING("Amusing. You witnessed the radiance falter, attempting to mend your injuries. The freshly formed monocryl slides off your mechanical bits."))
 		return FALSE
 	to_chat(H, "<span class='info'>A sharp pain which soon subsides, followed by your wounds now knitted by the hard working radiance with a absorbable material.</span>")
 	H.reagents.add_reagent("laudanum", 5)
@@ -906,7 +1101,7 @@ datum/lecture/hearthcore/oathbound/fireball_big
 			E.take_damage(5, sharp = FALSE)
 			//Deal 25 damage in five hits. Using multiple small hits mostly prevents internal damage
 
-		M.custom_pain("You feel the wings of the Hearthcore driving deep into your back, wrapping warm metal around all the extension of the spine! Why you suddently created sensitivity in places you never felt before?!",1)
+		M.custom_pain("You feel the wings of the Hearthcore driving deep into your back, wrapping warm metal around all the extension of the spine! Why you suddently created sensitivity in places way beyond your own body?!",1)
 		M.update_implants()
 		M.updatehealth()
 
@@ -978,7 +1173,6 @@ datum/lecture/hearthcore/oathbound/fireball_big
 	else
 		fail("Deprivation does not work upon the living.", user, C)
 		return FALSE
-
 
 /datum/lecture/hearthcore/oathpledge/reconsecration
 	name = "Reconsecration"

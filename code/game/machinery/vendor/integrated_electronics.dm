@@ -30,7 +30,7 @@
 		/obj/item/tool/screwdriver = 6,
 		/obj/item/tool/crowbar = 6,
 		/obj/item/implanter = 6)
-	product_ads = "Automation for all your research needs!;Stainless steel!"
+	product_ads = "Automation for all your research needs!;Stainless aluminium!"
 	auto_price = FALSE
 	give_discounts = FALSE
 	give_discount_points = FALSE

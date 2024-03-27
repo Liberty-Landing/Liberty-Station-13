@@ -16,7 +16,7 @@
 	projectile_color = "#C48A18"
 	cell_type = /obj/item/cell/medium
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_SILVER = 4, MATERIAL_GLASS = 10, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 10, MATERIAL_SILVER = 4, MATERIAL_GLASS = 10, MATERIAL_URANIUM = 2)
 	init_recoil = CARBINE_RECOIL(0.1)
 	damage_multiplier = 0.75
 	penetration_multiplier = 1.0

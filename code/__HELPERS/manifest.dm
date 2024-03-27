@@ -7,7 +7,7 @@
 
 	var/datum/nanoui/ui = SSnano.try_update_ui(user, src_object, "manifest", null, data, TRUE)
 	if (!ui)
-		ui = new(user, src_object, "manifest", "crew_manifest.tmpl", "Crew Manifest", 450, 600, state = nano_state)
+		ui = new(user, src_object, "manifest", "crew_manifest.tmpl", "Denizen Manifest", 450, 600, state = nano_state)
 		ui.auto_update_layout = 1
 		ui.set_initial_data(data)
 		ui.open()

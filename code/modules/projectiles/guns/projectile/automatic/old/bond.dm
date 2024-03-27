@@ -16,7 +16,7 @@
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well =  MAG_WELL_RIFLE
 	auto_eject = FALSE
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 5)
 	price_tag = 750
 	penetration_multiplier = 1.3
 	damage_multiplier = 1.1

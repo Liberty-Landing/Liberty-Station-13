@@ -81,7 +81,7 @@ var/global/list/modifications_types = list(
 				to_chat(usr, "This body-mod does not match your highest-priority department.")
 				return FALSE
 
-	if(!allow_nt && H?.get_core_implant(/obj/item/implant/core_implant/hearthcore))
+	if(!allow_nt && H?.get_core_implant(/obj/item/implant/core_implant/hearthcore)) //The Hearthcore does not prevent anyone from using synthetic modifications.
 		to_chat(usr, "Your hearthcore prevents you from using this modification.")
 		return FALSE
 
@@ -218,11 +218,11 @@ var/global/list/modifications_types = list(
 	icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	department_specific = list(DEPARTMENT_SCIENCE)
 
-/datum/body_modification/limb/prosthesis/church
+/datum/body_modification/limb/prosthesis/custodian
 	id = "prosthesis_church"
-	replace_limb = /obj/item/organ/external/robotic/church
+	replace_limb = /obj/item/organ/external/robotic/custodian
 	body_parts = list(BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_CHEST, BP_GROIN, BP_HEAD)
-	icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
+	icon = 'icons/mob/human_races/cyberlimbs/emberblaze.dmi'
 	department_specific = list(DEPARTMENT_CHURCH)
 
 /datum/body_modification/limb/mutation/New()

@@ -8,7 +8,7 @@
 	caliber = CAL_50
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 8)
 	price_tag = 800
 	can_dual = TRUE
 	damage_multiplier = 1.1

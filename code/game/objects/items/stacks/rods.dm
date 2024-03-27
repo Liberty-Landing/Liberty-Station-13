@@ -11,7 +11,7 @@
 	throwforce = WEAPON_FORCE_WEAK
 	throw_speed = 5
 	throw_range = 20
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	max_amount = 120
 	attack_verb = list("hit", "bludgeoned", "whacked")
 	price_tag = 1
@@ -40,7 +40,7 @@
 			return
 
 		if(I.use_tool(user, src, WORKTIME_FAST, QUALITY_WELDING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
-			var/obj/item/stack/material/steel/new_item = new (usr.loc)
+			var/obj/item/stack/material/aluminium/new_item = new (usr.loc)
 			new_item.add_to_stacks(usr)
 			for (var/mob/M in viewers(src))
 				M.show_message(SPAN_NOTICE("[src] is shaped into metal by [user.name] with the [I.name]."), 3, SPAN_NOTICE("You hear welding."), 2)

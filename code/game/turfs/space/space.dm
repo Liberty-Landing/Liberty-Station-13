@@ -73,7 +73,7 @@
 	if (istype(C, /obj/item/stack/material))
 		var/obj/item/stack/material/M = C
 		var/material/mat = M.get_material()
-		if (!mat.name == MATERIAL_STEEL)
+		if (!mat.name == MATERIAL_ALUMINIUM)
 			return
 		var/obj/structure/lattice/L = locate(/obj/structure/lattice, src)
 		if(L)

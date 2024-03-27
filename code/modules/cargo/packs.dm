@@ -58,7 +58,7 @@ var/list/all_supply_groups = list("Operations","Enforcement","Hospitality","Engi
 		* Yes, there are limits, I could itterate over every content of the item too and set its surplus_tag to TRUE
 		* But that doesn't work with stackables when you can just make a new stack, and gets comp-expensive and not worth it just to spite people getting extra numbers
 		*/
-		if(src.amount && istype(n_item, /obj/item/stack/material/steel))
+		if(src.amount && istype(n_item, /obj/item/stack/material/aluminium))
 			var/obj/item/stack/material/n_sheet = n_item
 			n_sheet.amount = src.amount
 

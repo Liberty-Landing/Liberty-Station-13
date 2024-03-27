@@ -13,7 +13,7 @@
 		)
 	flags = CONDUCT
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
-	matter = list(MATERIAL_STEEL = 6)
+	matter = list(MATERIAL_ALUMINIUM = 6)
 	w_class = ITEM_SIZE_NORMAL
 	throwforce = 5
 	throw_speed = 4
@@ -53,7 +53,7 @@
 	var/braced = FALSE //for gun_brace proc.
 	var/braceable = 1 //can the gun be used for gun_brace proc, modifies recoil. If the gun has foregrip mod installed, it's not braceable. Bipod mod increases value by 1.
 
-	var/list/gun_parts = list(/obj/item/part/gun = 1 ,/obj/item/stack/material/steel = 4)
+	var/list/gun_parts = list(/obj/item/part/gun = 1 ,/obj/item/stack/material/aluminium = 4)
 
 	var/muzzle_flash = 3
 	var/dual_wielding

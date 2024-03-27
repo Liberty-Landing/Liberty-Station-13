@@ -70,7 +70,7 @@
 /datum/export/stack/metal
 	cost = 2
 	message = "of metal"
-	export_types = list(/obj/item/stack/material/steel)
+	export_types = list(/obj/item/stack/material/aluminium)
 
 // Glass. Common building material.
 /datum/export/stack/glass
@@ -78,17 +78,17 @@
 	message = "of glass"
 	export_types = list(/obj/item/stack/material/glass)
 
-// Plasteel. Lightweight, strong and contains some plasma too.
-/datum/export/stack/plasteel
+// indsteel. Lightweight, strong and contains some plasma too.
+/datum/export/stack/indsteel
 	cost = 10
-	message = "of plasteel"
-	export_types = list(/obj/item/stack/material/plasteel)
+	message = "of indsteel"
+	export_types = list(/obj/item/stack/material/indsteel)
 
 // Reinforced Glass. Common building material. 1 glass + 0.5 metal, cost is rounded up.
 /datum/export/stack/rglass
 	cost = 8
 	message = "of reinforced glass"
-	export_types = list(/obj/item/stack/material/glass/reinforced)
+	export_types = list(/obj/item/stack/material/glass/laminated)
 
 // Wood. Quite expensive in the grim and dark 26 century.
 /datum/export/stack/wood
@@ -134,7 +134,7 @@
 // Plasma. The oil of 26 century.
 /datum/export/stack/plasma
 	cost = 25
-	export_types = list(/obj/item/stack/material/plasma)
+	export_types = list(/obj/item/stack/material/hydrogenc)
 	message = "of plasma"
 
 /datum/export/stack/plasma/get_cost(obj/O, contr = 0, emag = 0)
@@ -166,11 +166,11 @@
 	export_types = list(/obj/item/stack/material/plastic)
 	message = "of plastic"
 
-// Platinum.
-/datum/export/stack/platinum
+// Titanium
+/datum/export/stack/titanium
 	cost = 40
-	message = "of platinum"
-	export_types = list(/obj/item/stack/material/platinum)
+	message = "of titanium"
+	export_types = list(/obj/item/stack/material/titanium)
 
 /datum/export/stack/nanopaste
 	cost = 80

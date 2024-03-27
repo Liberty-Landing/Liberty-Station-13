@@ -9,7 +9,7 @@
 	force_icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi' //Sprites were done by Kirov on request
 	model = "ghetto"
 	armor_list = list(melee = 10, bullet = 10, energy = 10, bomb = -5, bio = 100, rad = 100)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	min_broken_damage = 30
 	min_malfunction_damage = 15
 	price_tag = 100
@@ -195,7 +195,7 @@
 	desc = "A reinforced purple and white prosthesis designed for space exploration and light combat."
 	force_icon = 'icons/mob/human_races/cyberlimbs/moebius.dmi'
 	model = "moebius"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_INDSTEEL = 1)
 	max_damage = 60
 	min_broken_damage = 40
 	min_malfunction_damage = 30
@@ -223,37 +223,37 @@
 	default_description = /datum/organ_description/head
 
 // Custodians of the Bonfire - Full Body
-/obj/item/organ/external/robotic/church
+/obj/item/organ/external/robotic/custodian //remove church
 	name = "\"Emberblaze\""
-	desc = "Gold and black prosthetics designed by the Church of the Bonfire."
-	force_icon = 'icons/mob/human_races/cyberlimbs/church.dmi'
-	model = "church"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5, MATERIAL_BIOMATTER = 30)
+	desc = "Knightly, silvery-metal prosthetics designed by the Forgemasters of Custodians of Bonfire. Related to the Emberblaze Warhammer."
+	force_icon = 'icons/mob/human_races/cyberlimbs/emberblaze.dmi'
+	model = "emberblaze"
+	matter = list(MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_CARBON_FIBER = 1, MATERIAL_ALUMINIUM = 1)
 	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 100, rad = 100)
 	max_damage = 60
 	min_broken_damage = 40
 	min_malfunction_damage = 30
-	price_tag = 400
+	price_tag = 800
 
-/obj/item/organ/external/robotic/church/l_arm
+/obj/item/organ/external/robotic/custodian/l_arm
 	default_description = /datum/organ_description/arm/left
 
-/obj/item/organ/external/robotic/church/r_arm
+/obj/item/organ/external/robotic/custodian/r_arm
 	default_description = /datum/organ_description/arm/right
 
-/obj/item/organ/external/robotic/church/l_leg
+/obj/item/organ/external/robotic/custodian/l_leg
 	default_description = /datum/organ_description/leg/left
 
-/obj/item/organ/external/robotic/church/r_leg
+/obj/item/organ/external/robotic/custodian/r_leg
 	default_description = /datum/organ_description/leg/right
 
-/obj/item/organ/external/robotic/church/groin
+/obj/item/organ/external/robotic/custodian/groin
 	default_description = /datum/organ_description/groin
 
-/obj/item/organ/external/robotic/church/chest
+/obj/item/organ/external/robotic/custodian/chest
 	default_description = /datum/organ_description/chest
 
-/obj/item/organ/external/robotic/church/head
+/obj/item/organ/external/robotic/custodian/head
 	default_description = /datum/organ_description/head
 
 /////////////////////////
@@ -266,8 +266,8 @@
 	desc = "Advanced, extremely resilient and mobile prosthetic. Inscribed with \"Made in\" followed by gibberish, must have been lost to time."
 	force_icon = 'icons/mob/human_races/cyberlimbs/one_star.dmi'
 	model = "one_star"
-	armor_list = list(melee = 65, bullet = 65, energy = 65, bomb = 65, bio = 0, rad = 100)
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 4, MATERIAL_PLATINUM = 2)
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 100) //decreased the protection from 65 to 40, it is still the best option of robotlimbs nonetheless.
+	matter = list(MATERIAL_ALUMINIUM = 1) //Emberblaze actually has more materials, but this is infused. The true quantity of materials are impossible to recycle.
 	max_damage = 70
 	min_broken_damage = 50
 	price_tag = 1200

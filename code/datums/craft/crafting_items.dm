@@ -8,7 +8,7 @@
 	desc = "A singular rocket engine, used in assisted ballistics."
 	icon_state = "rocket_engine"
 	origin_tech = list(TECH_ENGINEERING = 3, TECH_POWER = 4)
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_GOLD = 1)
 
 /obj/item/part
 	icon ='icons/obj/crafts.dmi'
@@ -20,7 +20,7 @@
 	desc = "Spare part of armor."
 	icon_state = "armor_part"
 	spawn_tags = SPAWN_TAG_PART_ARMOR
-	matter = list(MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 5, MATERIAL_CARDBOARD = 5, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 5, MATERIAL_CARDBOARD = 5, MATERIAL_ALUMINIUM = 5)
 
 /obj/item/part/armor/artwork
 	desc = "This is an artistically-made armor part."
@@ -42,7 +42,7 @@
 	icon_state = "gun_part_1"
 	spawn_tags = SPAWN_TAG_GUN_PART
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 5)
 	var/generic = TRUE
 
 /obj/item/part/gun/Initialize()
@@ -83,7 +83,7 @@
 /obj/item/craft_frame/guns
 	name = "gun assembly"
 	desc = "Add some weapon parts to complete this, use your knowledge of mechanics and create a gun."
-	matter = list(MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_INDSTEEL = 5)
 	suitable_part = /obj/item/part/gun
 	tags_to_spawn = list(SPAWN_GUN)
 

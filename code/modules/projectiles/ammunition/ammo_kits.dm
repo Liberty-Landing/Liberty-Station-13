@@ -30,7 +30,7 @@
 	if(!istype(user))
 		return
 
-	var/material_points = 15 + extra_material_points // 10 steel and 5 cardboard
+	var/material_points = 15 + extra_material_points // 10 aluminium and 5 cardboard
 
 	if(user.stats)
 		if(user.stats.getPerk(PERK_HANDYMAN))

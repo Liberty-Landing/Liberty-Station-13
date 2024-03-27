@@ -120,31 +120,31 @@
 	icon_state = "comfychair_preview"
 
 /obj/structure/bed/chair/comfy/brown/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL, MATERIAL_LEATHER)
+	..(newloc,MATERIAL_ALUMINIUM, MATERIAL_LEATHER)
 
 /obj/structure/bed/chair/comfy/red/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL, MATERIAL_CARPET)
+	..(newloc,MATERIAL_ALUMINIUM, MATERIAL_CARPET)
 
 /obj/structure/bed/chair/comfy/teal/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL,"teal")
+	..(newloc,MATERIAL_ALUMINIUM,"teal")
 
 /obj/structure/bed/chair/comfy/black/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL,"black")
+	..(newloc,MATERIAL_ALUMINIUM,"black")
 
 /obj/structure/bed/chair/comfy/green/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL,"green")
+	..(newloc,MATERIAL_ALUMINIUM,"green")
 
 /obj/structure/bed/chair/comfy/purp/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL,"purple")
+	..(newloc,MATERIAL_ALUMINIUM,"purple")
 
 /obj/structure/bed/chair/comfy/blue/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL,"blue")
+	..(newloc,MATERIAL_ALUMINIUM,"blue")
 
 /obj/structure/bed/chair/comfy/beige/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL,"beige")
+	..(newloc,MATERIAL_ALUMINIUM,"beige")
 
 /obj/structure/bed/chair/comfy/lime/New(var/newloc,var/newmaterial)
-	..(newloc,MATERIAL_STEEL,"lime")
+	..(newloc,MATERIAL_ALUMINIUM,"lime")
 
 /obj/structure/bed/chair/office
 	anchored = 0

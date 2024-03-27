@@ -80,7 +80,7 @@
 
 /obj/item/clothing/gloves/thick/handmade
 	name = "handmade combat gloves"
-	desc = "A pair of modified work gloves with some steel."
+	desc = "A pair of modified work gloves with some aluminium."
 	icon_state = "hm_combat"
 	item_state = "hm_combat"
 	armor_list = list(melee = 25, bullet = 5, energy = 20, bomb = 0, bio = 0, rad = 0)
@@ -113,7 +113,7 @@
 	icon_state = "ihscombat"
 	item_state = "ihscombat"
 	price_tag = 150
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 10, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_DILATANT = 2)
 
 /obj/item/clothing/gloves/thick/ablasive/iron_lock_security
 	name = "outdated gloves"

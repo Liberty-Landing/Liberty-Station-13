@@ -11,7 +11,7 @@
 	throwforce = WEAPON_FORCE_WEAK
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 300
-	matter = list(MATERIAL_BIO_SILK = 25, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 25, MATERIAL_ALUMINIUM = 5)
 
 /obj/item/tool/sword/custodian/equipped(mob/living/M)
 	. = ..()
@@ -31,9 +31,18 @@
 	throwforce = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_DEEP
 	price_tag = 650
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_ALUMINIUM = 10)
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
+
+/* Going to use this for something else.
+/obj/item/tool/sword/custodian/shortsword/attackby(obj/item/I, mob/user)
+	if(istype(I, /obj/item/mold/purifier_essence))
+		user.unEquip(I, src)
+		new /obj/item/tool/spear/atgeir(user.loc)
+		qdel(src)
+		qdel(I)
+*/
 
 /obj/item/tool/sword/custodian/horseaxe
 	name = "horseman axe"
@@ -49,7 +58,7 @@
 	price_tag = 850
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips the axe to its broad side"
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_CARBON_FIBER = 8)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 16, MATERIAL_ALUMINIUM = 30, MATERIAL_CARBON_FIBER = 8)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
@@ -66,7 +75,7 @@
 	armor_penetration = ARMOR_PEN_HALF // With the same amount of penetration
 	backstab_damage = 23 // Beware the ides of March.
 	price_tag = 300
-	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_ALUMINIUM = 10)
 
 /obj/item/tool/knife/dagger/custodian/equipped(mob/living/M)
 	. = ..()
@@ -88,7 +97,7 @@
 	throwforce = WEAPON_FORCE_LETHAL
 	slot_flags = SLOT_BACK | SLOT_BELT
 	price_tag = 850
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	item_icons = list(
 		slot_back_str = 'icons/inventory/back/mob.dmi')
 	item_state_slots = list(
@@ -105,7 +114,7 @@
 /obj/item/tool/sword/custodian/whip
 	name = "custodian nagaika"
 	desc = "A whip made from compacted and oil-hardened silk with dense dark silver on its tip, with protuding blades that open and close on impact to inflict superfluous injury, the very same reason why Hollow-points are considered a war crime to use. \
-	Good thing whoever wrote that only included “bullets”."
+	Good thing whoever wrote that only included “bullets”, otherwise the Custodians would be practicing warcrimes every day by default."
 	icon_state = "custodian_nagaika"
 	item_state = "custodian_nagaika"
 	force = WEAPON_FORCE_PAINFUL
@@ -116,7 +125,7 @@
 	var/stun = 0
 	w_class = ITEM_SIZE_SMALL
 	price_tag = 800
-	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 10, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_CARBON_FIBER = 10, MATERIAL_INDSTEEL = 2, MATERIAL_ALUMINIUM = 10)
 	has_alt_mode = FALSE
 
 /obj/item/tool/sword/custodian/whip/apply_hit_effect(mob/living/carbon/human/target, mob/living/user, hit_zone)
@@ -126,8 +135,8 @@
 
 /obj/item/tool/sword/custodian/throwaxe
 	name = "custodian francisca"
-	desc = "The Francisca is an efficient throwing axe with an arch-shaped head. Small and concealable, the angle of the blade allows better breaking of shields, disrupting enemy lines and wounding an enemy hand-to-hand combat would happen. \
-	Even if the blade were not to strike the target, its weight has the potential of breaking necks."
+	desc = "The Francisca is an efficient throwing axe with an arch-shaped head. Small and concealable, the angle of the blade allows better breaking of shields and disruption of enemy lines. \
+	Even if the blade were not to strike the target, its weight has the potential of breaking necks, not to say absolutely destroying ceramic or kevlar armor with ease."
 	icon_state = "custodian_francisca"
 	item_state = "custodian_francisca"
 	force = WEAPON_FORCE_DANGEROUS
@@ -137,7 +146,7 @@
 	price_tag = 400
 	alt_mode_lossrate = 0.7
 	alt_mode_toggle = "flips the axe to its broad side"
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTEEL = 2, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_INDSTEEL = 2, MATERIAL_ALUMINIUM = 5)
 
 /obj/item/tool/sword/custodian/throwaxe/equipped(mob/living/W)
 	. = ..()
@@ -165,7 +174,7 @@
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 800
 	attack_verb = list("attacked", "smashed", "bludgeoned", "beaten")
-	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_PLASTEEL = 16, MATERIAL_STEEL = 30, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 16, MATERIAL_ALUMINIUM = 30, MATERIAL_SILVER = 2)
 	tool_qualities = list(QUALITY_HAMMERING = 10) //Not designed for that fine nailing
 	var/glowing = FALSE
 	sharp = FALSE
@@ -219,7 +228,7 @@
 
 /obj/item/tool/sword/custodian/conflagration
 	name = "conflagration sword"
-	desc = "An advanced, expensive, and work-intensive sword produced by the Custodians, the blade is enhanced under the Radiance."
+	desc = "An advanced, expensive, and work-intensive sword produced by the Custodians, the blade is enhanced under the Radiance, but due to it's hollow structure, can be snapped after long use."
 	icon_state = "conflagrationsword"
 	item_state = "conflagrationsword"
 	force = WEAPON_FORCE_BRUTAL
@@ -227,7 +236,7 @@
 	w_class = ITEM_SIZE_BULKY
 	price_tag = 1200
 	alt_mode_lossrate = 0.7
-	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_STEEL = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 8, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_ALUMINIUM = 15, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 6, MATERIAL_INDSTEEL = 8, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10)
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	var/glowing = FALSE
 	slot_flags = SLOT_BACK | SLOT_BELT
@@ -301,10 +310,10 @@
 	icon_state = "custodian_scutum"
 	item_state = "custodian_scutum"
 	force = WEAPON_FORCE_ROBUST
-	throwforce = WEAPON_FORCE_ROBUST + 4 // 30 damage, it's made of steel rather than pre-preg
+	throwforce = WEAPON_FORCE_ROBUST + 4 // 30 damage, it's made of aluminium rather than pre-preg
 	hitsound = 'sound/weapons/shield/shieldbash_metal.ogg'
 	armor_list = list(melee = 20, bullet = 20, energy = 10, bomb = 15, bio = 0, rad = 0)
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
+	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_SILVER = 6, MATERIAL_INDSTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 20, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	price_tag = 1000
 	base_block_chance = 60
 	item_flags = DRAG_AND_DROP_UNEQUIP
@@ -375,7 +384,7 @@
 	icon = 'icons/obj/custodians_melee.dmi'
 	icon_state = "custodian_heater"
 	item_state = "custodian_heater"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 8, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15, MATERIAL_SILVER = 2)
 	price_tag = 500
 	base_block_chance = 45
 	item_flags = DRAG_AND_DROP_UNEQUIP

@@ -13,7 +13,7 @@
 	caliber = CAL_SRIFLE
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 10)
 	damage_multiplier = 1.0
 	penetration_multiplier = 1.0
 	extra_damage_mult_scoped = 0.2
@@ -75,7 +75,7 @@
 	caliber = CAL_RIFLE
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 10)
 	price_tag = 1200
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.1
@@ -144,7 +144,7 @@
 	slot_flags = SLOT_BACK
 	caliber = CAL_RIFLE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 12)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 12)
 	price_tag = 1400
 	fire_delay = 15
 	damage_multiplier = 1.2
@@ -169,7 +169,7 @@
 	name = "Mamba frame"
 	desc = "An Mamba carbine frame. A sleek operator's dream."
 	icon_state = "frame_mamba"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/mamba
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)
 	resultvars = list(/obj/item/gun/projectile/automatic/mamba, /obj/item/gun/projectile/automatic/mamba/copperhead)

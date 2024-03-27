@@ -88,7 +88,7 @@
 	off_state = "denight"
 	origin_tech = list(TECH_MAGNET = 2)
 	price_tag = 250
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 5, MATERIAL_URANIUM = 2)
 	tick_cost = 0.5 //i.g a basic 100 will last 200 ticks
 
 /obj/item/clothing/glasses/powered/night/Initialize()
@@ -106,7 +106,7 @@
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 	origin_tech = list(TECH_MAGNET = 3)
 	price_tag = 350
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_GLASS = 2, MATERIAL_PLASTEEL = 2, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 2, MATERIAL_INDSTEEL = 2, MATERIAL_URANIUM = 1)
 	tick_cost = 0.2 // ~40% more battery life so you have a reason to go to the guild and get these
 
 

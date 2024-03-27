@@ -67,7 +67,7 @@ GLOBAL_LIST_EMPTY(wedge_icon_cache)
 /obj/machinery/door/airlock/get_material()
 	if(mineral)
 		return get_material_by_name(mineral)
-	return get_material_by_name(MATERIAL_STEEL)
+	return get_material_by_name(MATERIAL_ALUMINIUM)
 
 /obj/machinery/door/airlock/command
 	name = "Airlock"
@@ -882,7 +882,7 @@ There are 9 wires.
 	if (isElectrified())
 		if (istype(mover, /obj/item))
 			var/obj/item/i = mover
-			if (i.matter && (MATERIAL_STEEL in i.matter) && i.matter[MATERIAL_STEEL] > 0)
+			if (i.matter && (MATERIAL_ALUMINIUM in i.matter) && i.matter[MATERIAL_ALUMINIUM] > 0)
 				var/datum/effect/effect/system/spark_spread/s = new /datum/effect/effect/system/spark_spread
 				s.set_up(5, 1, src)
 				s.start()

@@ -11,7 +11,7 @@
 	icon = 'icons/obj/syringe.dmi'
 	item_state = "syringe_0"
 	icon_state = "0"
-	matter = list(MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 1)
 	amount_per_transfer_from_this = 5
 	possible_transfer_amounts = null
 	volume = 15
@@ -25,7 +25,7 @@
 	var/image/filling //holds a reference to the current filling overlay
 	var/visible_name = "a syringe"
 	var/time = 30
-	price_tag = 3 //1 glass and 1 steel for something clean is reasonable
+	price_tag = 3 //1 glass and 1 aluminium for something clean is reasonable
 
 /obj/item/reagent_containers/syringe/on_reagent_change()
 	if(mode == SYRINGE_INJECT && !reagents.total_volume)
@@ -376,7 +376,7 @@
 	icon = 'icons/obj/syringe.dmi'
 	item_state = "syringe_-0"
 	icon_state = "-0"
-	matter = list(MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 1)
 	amount_per_transfer_from_this = 5
 	possible_transfer_amounts = list(5,10)
 	volume = 30

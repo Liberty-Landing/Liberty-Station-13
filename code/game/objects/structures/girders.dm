@@ -5,7 +5,7 @@
 	anchored = 1
 	density = 1
 	layer = BELOW_OBJ_LAYER
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	var/state = 0
 	health = 150
 	var/cover = 50 //how much cover the girder provides against projectiles.
@@ -22,7 +22,7 @@
 //Low girders are used to build low walls
 /obj/structure/girder/low
 	name = "low wall girder"
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	health = 120
 	cover = 25 //how much cover the girder provides against projectiles.
 
@@ -243,8 +243,8 @@
 	if(!istype(M))
 		return 0
 
-	if (!istype(M, /material/steel))
-		to_chat(user, SPAN_NOTICE("Low walls can only be made of steel."))
+	if (!istype(M, /material/aluminium))
+		to_chat(user, SPAN_NOTICE("Low walls can only be made of aluminium."))
 		return 0
 	add_hiddenprint(usr)
 

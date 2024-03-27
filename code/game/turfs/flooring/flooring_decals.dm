@@ -774,7 +774,7 @@ var/list/floor_decals = list()
 	icon_state = "borderfloorcee_white"
 
 /obj/effect/floor_decal/steeldecal
-	name = "steel decal"
+	name = "aluminium decal"
 	icon_state = "steel_decals1"
 
 /obj/effect/floor_decal/steeldecal/steel_decals1
@@ -1611,61 +1611,61 @@ obj/effect/floor_decal/corner_techfloor_gray
 	icon_state = "ice_water_corners"
 
 /obj/effect/floor_decal/industrial_plant
-	name = "steel industrial header"
+	name = "aluminium industrial header"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_industrial"
 
 /obj/effect/floor_decal/industrial_plant/border
-	name = "steel industrial border"
+	name = "aluminium industrial border"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_industrial_b"
 
 /obj/effect/floor_decal/industrial_plant/border_corner
-	name = "steel industrial border corner"
+	name = "aluminium industrial border corner"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_industrial_b_corner"
 
 /obj/effect/floor_decal/industrial_plant/border_sides
-	name = "steel industrial border sides"
+	name = "aluminium industrial border sides"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_industrial_b_sides"
 
 /obj/effect/floor_decal/industrial_plant/border_cap
-	name = "steel industrial border cap"
+	name = "aluminium industrial border cap"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_industrial_b_end"
 
 /obj/effect/floor_decal/industrial_plant/steel_grate
-	name = "steel industrial grate"
+	name = "aluminium industrial grate"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_grate"
 
 /obj/effect/floor_decal/industrial_plant/steel_grate_alt
-	name = "steel industrial grate alt"
+	name = "aluminium industrial grate alt"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_grate_alt"
 
 /obj/effect/floor_decal/industrial_plant/steel_grate_border
-	name = "steel industrial grate border"
+	name = "aluminium industrial grate border"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_grate_border"
 
 /obj/effect/floor_decal/industrial_plant/steel_grate_warning
-	name = "steel industrial grate warning"
+	name = "aluminium industrial grate warning"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_grate_warning"
 
 /obj/effect/floor_decal/industrial_plant/steel_warning
-	name = "steel industrial warning box"
+	name = "aluminium industrial warning box"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_warning"
 
 /obj/effect/floor_decal/industrial_plant/steel_stayclear
-	name = "steel industrial stayclear"
+	name = "aluminium industrial stayclear"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_stayclear"
 
 /obj/effect/floor_decal/industrial_plant/steel_stayclear
-	name = "steel industrial stayclear"
+	name = "aluminium industrial stayclear"
 	icon = 'icons/turf/flooring/decals.dmi'
 	icon_state = "steel_stayclear"

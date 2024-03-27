@@ -16,7 +16,7 @@
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "e" = (
 /obj/machinery/light/small{
@@ -27,7 +27,7 @@
 "f" = (
 /obj/machinery/recharge_station,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "g" = (
 /obj/machinery/door/airlock/maintenance_common{
@@ -41,7 +41,7 @@
 /obj/machinery/door/airlock{
 	name = "Unisex Restrooms"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/precursor)
 "i" = (
 /turf/simulated/floor/snow,
@@ -57,14 +57,14 @@
 /obj/random/pack/tech_loot/low_chance,
 /obj/random/pack/tech_loot/low_chance,
 /obj/random/pouch/low_chance,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor)
 "l" = (
 /obj/random/mob/psi_monster/low_chance,
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor)
 "m" = (
 /obj/structure/toilet{
@@ -75,7 +75,7 @@
 /obj/random/pack/rare/low_chance,
 /obj/random/mob/psi_monster/low_chance,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "n" = (
 /obj/random/cluster/psi_monster/lower_chance,
@@ -87,7 +87,7 @@
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor)
 "p" = (
 /obj/structure/toilet{
@@ -97,7 +97,7 @@
 /obj/random/pack/rare/low_chance,
 /obj/random/mob/psi_monster/low_chance,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "q" = (
 /turf/simulated/floor/beach/water/ice,
@@ -178,7 +178,7 @@
 /obj/item/ammo_kit,
 /obj/random/mob/psi_monster/low_chance,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "L" = (
 /obj/random/mob/psi_monster/low_chance,

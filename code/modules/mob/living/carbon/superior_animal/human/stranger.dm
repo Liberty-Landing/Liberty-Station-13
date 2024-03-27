@@ -126,7 +126,7 @@
 	desc = "A plasma gun from unknown origin"
 	icon = 'icons/obj/guns/energy/lancer.dmi'
 	icon_state = "lancer"
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 7, MATERIAL_URANIUM = 8, MATERIAL_GOLD = 4)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 8, MATERIAL_SILVER = 7, MATERIAL_URANIUM = 8, MATERIAL_GOLD = 4)
 	price_tag = 5000
 	origin_tech = list(TECH_COMBAT = 7, TECH_PLASMA = 7, TECH_BLUESPACE = 8)
 	charge_cost = 5

@@ -7,7 +7,7 @@
 	worksound = WORKSOUND_SIMPLE_SAW
 	flags = CONDUCT
 	w_class = ITEM_SIZE_NORMAL
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	attack_verb = list("attacked", "slashed", "sawed", "cut")
 	sharp = TRUE
 	edge = TRUE
@@ -27,7 +27,7 @@
 	force = WEAPON_FORCE_PAINFUL
 	tool_qualities = list(QUALITY_SAWING = 60, QUALITY_CUTTING = 45, QUALITY_WIRE_CUTTING = 25)
 	degradation = 2
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1, MATERIAL_TITANIUMRTC = 2)
 	max_upgrades = 2
 	workspeed = 1.2
 	price_tag = 500 //Still just a saw.
@@ -51,7 +51,7 @@
 	worksound = WORKSOUND_CIRCULAR_SAW
 	force = WEAPON_FORCE_ROBUST
 	armor_penetration = ARMOR_PEN_MODERATE
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 2)
 	tool_qualities = list(QUALITY_SAWING = 45, QUALITY_CUTTING = 30, QUALITY_WIRE_CUTTING = 30)
 	price_tag = 240
 
@@ -63,7 +63,7 @@
 	desc = "For clean bone cutting but doesn't seem all that durable. Spins slower than the normal saw to allow for higher surgical precision."
 	icon_state = "saw_medical"
 	force = WEAPON_FORCE_PAINFUL
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 4, MATERIAL_PLASTEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 4, MATERIAL_INDSTEEL = 2)
 	tool_qualities = list(QUALITY_SAWING = 60, QUALITY_CUTTING = 40, QUALITY_WIRE_CUTTING = 40)
 	use_power_cost = 0.05
 	degradation = 2.65
@@ -78,7 +78,7 @@
 	desc = "You think you can cut anything with it. More power efficient than a regular circular saw."
 	icon_state = "advanced_saw"
 	armor_penetration = ARMOR_PEN_DEEP
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 2)
 	tool_qualities = list(QUALITY_SAWING = 50, QUALITY_CUTTING = 40, QUALITY_WIRE_CUTTING = 40)
 	degradation = 0.7
 	use_power_cost = 0.29
@@ -95,7 +95,7 @@
 	switched_on_forcemult = 4 //28 total
 	w_class = ITEM_SIZE_NORMAL
 	armor_penetration = ARMOR_PEN_SHALLOW
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 2)
 	tool_qualities = list(QUALITY_SAWING = 5, QUALITY_CUTTING = 5, QUALITY_WIRE_CUTTING = 5) //barely usable when off, but allows mods to be applied
 	switched_off_qualities = list(QUALITY_CUTTING = 5)
 	max_upgrades = 3
@@ -130,7 +130,7 @@
 	switched_on_forcemult = 4 //28 total
 	w_class = ITEM_SIZE_NORMAL
 	armor_penetration = ARMOR_PEN_SHALLOW
-	matter = list(MATERIAL_SILVER = 2, MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_SILVER = 2, MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 3)
 	tool_qualities = list(QUALITY_SAWING = 5, QUALITY_CUTTING = 5, QUALITY_WIRE_CUTTING = 5) //barely usable when off, but allows mods to be applied
 	switched_off_qualities = list(QUALITY_CUTTING = 5)
 	max_upgrades = 2

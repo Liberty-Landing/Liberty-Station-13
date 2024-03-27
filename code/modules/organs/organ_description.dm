@@ -301,35 +301,34 @@
 
 
 // Church
-/datum/organ_description/chest/church_synthetic
-	default_type = /obj/item/organ/external/robotic/church
+/datum/organ_description/chest/custodian_synthetic
+	default_type = /obj/item/organ/external/robotic/custodian
 
-/datum/organ_description/groin/church_synthetic
-	default_type = /obj/item/organ/external/robotic/church
+/datum/organ_description/groin/custodian_synthetic
+	default_type = /obj/item/organ/external/robotic/custodian
 
-/datum/organ_description/head/church_synthetic
-	default_type = /obj/item/organ/external/robotic/church
+/datum/organ_description/head/custodian_synthetic
+	default_type = /obj/item/organ/external/robotic/custodian
 	functions = null
 
-/datum/organ_description/arm/left/church_synthetic
-	default_type = /obj/item/organ/external/robotic/church
+/datum/organ_description/arm/left/custodian_synthetic
+	default_type = /obj/item/organ/external/robotic/custodian
 
-/datum/organ_description/arm/right/church_synthetic
-	default_type = /obj/item/organ/external/robotic/church
+/datum/organ_description/arm/right/custodian_synthetic
+	default_type = /obj/item/organ/external/robotic/custodian
 
-/datum/organ_description/leg/left/church_synthetic
-	default_type = /obj/item/organ/external/robotic/church
+/datum/organ_description/leg/left/custodian_synthetic
+	default_type = /obj/item/organ/external/robotic/custodian
 
-/datum/organ_description/leg/right/church_synthetic
-	default_type = /obj/item/organ/external/robotic/church
-
-/datum/organ_description/arm/left/church_synthetic/full
+/datum/organ_description/leg/right/custodian_synthetic
+	default_type = /obj/item/organ/external/robotic/custodian
+/datum/organ_description/arm/left/custodian_synthetic/full
 	additional_limb_parts = BP_L_ARM_EXTRA
-/datum/organ_description/arm/right/church_synthetic/full
+/datum/organ_description/arm/right/custodian_synthetic/full
 	additional_limb_parts = BP_R_ARM_EXTRA
-/datum/organ_description/leg/left/church_synthetic/full
+/datum/organ_description/leg/left/custodian_synthetic/full
 	additional_limb_parts = BP_L_LEG_EXTRA
-/datum/organ_description/leg/right/church_synthetic/full
+/datum/organ_description/leg/right/custodian_synthetic/full
 	additional_limb_parts = BP_R_LEG_EXTRA
 
 ////SKELETON////

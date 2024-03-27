@@ -231,7 +231,7 @@ see multiz/movement.dm for some info.
 		var/obj/item/stack/material/M = C
 
 		var/material/mat = M.get_material()
-		if (!mat.name == MATERIAL_STEEL)
+		if (!mat.name == MATERIAL_ALUMINIUM)
 
 			return
 

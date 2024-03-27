@@ -8,11 +8,8 @@
 	var/list/acceptable_items = list(
 	/obj/item/implant/core_implant/hearthcore,
 	/obj/item/hearthcore_upgrade,
-	/obj/item/hearthcore_upgrade/natures_blessing,
 	/obj/item/hearthcore_upgrade/blazing_aegis,
-	/obj/item/hearthcore_upgrade/cleansing_flames,
-	/obj/item/hearthcore_upgrade/martyr_gift,
-	/obj/item/hearthcore_upgrade/burning_fury,
+	/obj/item/hearthcore_upgrade/atonement_gift,
 	/obj/item/hearthcore_upgrade/embers_of_swiftness
 	)
 	var/list/available_slots = list()

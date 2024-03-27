@@ -1,3 +1,5 @@
+/* Custodians DO NOT baptize people, nor have reasons to forcefully increase their numbers with the non-loyal or non-knightly cultured.
+
 /datum/objective/baptize
 
 /datum/objective/baptize/get_panel_entry()
@@ -6,7 +8,7 @@
 
 /datum/objective/baptize/update_explanation()
 	if(target && target.current)
-		explanation_text = "Baptize [target.current.real_name], the [target.assigned_role]."
+		explanation_text = "Knight up [target.current.real_name], the [target.assigned_role]."
 	else
 		explanation_text = "Target has not arrived today. Is it a coincidence?"
 
@@ -25,4 +27,4 @@
  		!possible_target.current.get_core_implant(/obj/item/implant/core_implant/hearthcore))
 			possible_targets.Add(possible_target)
 	return possible_targets
-
+*/

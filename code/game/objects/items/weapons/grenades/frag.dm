@@ -36,17 +36,14 @@
 
 	qdel(src)
 
- // Old NeoTheo leftover grenade
- /*
 /obj/item/grenade/frag/nt
-	name = "NT DF grenade \"Holy Thunder\""
+	name = "Bonfire DF grenade \"Holy Thunder\""
 	desc = "A military-grade defensive fragmentation grenade, designed to be thrown from cover."
 	icon_state = "frag_nt"
 	item_state = "frggrenade_nt"
 	matter = list(MATERIAL_BIOMATTER = 75)
 	fragment_damage = 7
 	damage_step = 3
-*/
 
 /obj/item/grenade/frag/stinger
 	name = "\"Stinger\" Rubber Fragmentation Grenade"
@@ -59,10 +56,10 @@
 
 /obj/item/grenade/frag/pipebomb
 	name = "improvised pipebomb"
-	desc = "A jury rigged small cell filled with plasma. Throw at authorities."
+	desc = "A jury rigged small cell filled with hydrogen plasma. Throw at authorities."
 	icon_state = "frag_pipebomb"
 	item_state = "fraggrenade_pipebomb"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTEEL = 2, MATERIAL_PLASMA = 2, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_INDSTEEL = 2, MATERIAL_HYDROGENC = 2, MATERIAL_PLASTIC = 3, MATERIAL_SILVER = 2)
 	num_fragments = 65 // Almost half the normal one, to not be worthless
 	fragment_damage = 10
 	damage_step = 5

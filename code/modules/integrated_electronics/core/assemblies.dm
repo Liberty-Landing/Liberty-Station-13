@@ -64,7 +64,7 @@
 	src.max_complexity = round(max_complexity)
 
 	START_PROCESSING(SScircuit, src)
-	matter[MATERIAL_STEEL] = round((max_complexity + max_components) / 4) * SScircuit.cost_multiplier
+	matter[MATERIAL_ALUMINIUM] = round((max_complexity + max_components) / 4) * SScircuit.cost_multiplier
 
 	access_card = new(src)
 

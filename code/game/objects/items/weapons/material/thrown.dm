@@ -2,8 +2,8 @@
 	name = "shuriken"
 	desc = "A sharp, perfectly weighted piece of metal."
 	icon_state = "star"
-	force_divisor = 0.1 // 6 with hardness 60 (steel)
-	thrown_force_divisor = 0.75 // 15 with weight 20 (steel)
+	force_divisor = 0.1 // 6 with hardness 60 (aluminium)
+	thrown_force_divisor = 0.75 // 15 with weight 20 (aluminium)
 	throw_speed = 10
 	throw_range = 15
 	sharp = 1
@@ -25,4 +25,4 @@
 		M.adjustCloneLoss(rand(20,40))
 
 /obj/item/material/star/ninja
-	default_material = MATERIAL_STEEL
+	default_material = MATERIAL_ALUMINIUM

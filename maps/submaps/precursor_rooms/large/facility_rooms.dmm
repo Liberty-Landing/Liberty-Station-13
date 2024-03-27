@@ -1,14 +1,14 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ab" = (
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ac" = (
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ad" = (
 /obj/structure/table/steel_reinforced,
@@ -18,24 +18,24 @@
 "ae" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "af" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ag" = (
 /obj/structure/salvageable/data_os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ai" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aj" = (
 /obj/random/lowkeyrandom/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ak" = (
 /obj/random/pack/tech_loot/low_chance,
@@ -49,109 +49,109 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "am" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/card_carp,
 /obj/random/card_carp,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "an" = (
 /obj/effect/floor_decal/industrial/warning,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor)
 "ao" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/lathe_disk/advanced/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ap" = (
 /obj/random/pack/machine,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aq" = (
 /obj/structure/salvageable/autolathe,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "ar" = (
 /obj/random/pack/machine,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "as" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/dungeon_gun_energy/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "at" = (
 /obj/machinery/door/airlock/vault{
 	name = "Laboratory 2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "av" = (
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/precursor)
 "aw" = (
 /obj/random/pack/machine/low_chance,
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "ax" = (
 /obj/effect/floor_decal/rust,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "ay" = (
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "az" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/junk/low_chance,
 /obj/random/dungeon_ammo/low_chance,
 /obj/random/dungeon_ammo/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "aA" = (
 /obj/random/pack/machine/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aB" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aC" = (
 /obj/effect/window_lwall_spawn/plasma/reinforced,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aE" = (
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/precursor)
 "aF" = (
 /obj/effect/damagedfloor/rust,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/precursor)
 "aG" = (
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "aH" = (
 /obj/random/pack/machine/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "aI" = (
 /obj/structure/salvageable/console_os,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "aJ" = (
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "aK" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -162,7 +162,7 @@
 "aL" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/machinery/power/emitter,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor)
 "aM" = (
 /obj/effect/floor_decal/industrial/warning,
@@ -170,12 +170,12 @@
 /area/precursor)
 "aN" = (
 /obj/effect/gibspawner/human,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "aO" = (
 /obj/effect/floor_decal/rust,
 /obj/effect/gibspawner/human,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "aP" = (
 /obj/random/pack/machine,
@@ -187,17 +187,17 @@
 	pixel_y = 0
 	},
 /obj/random/junk/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aR" = (
 /obj/machinery/door/airlock/centcom,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aS" = (
 /obj/structure/table/steel_reinforced,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lathe_disk/advanced,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "aT" = (
 /obj/random/pack/machine/low_chance,
@@ -205,7 +205,7 @@
 	dir = 4;
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "aU" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -227,7 +227,7 @@
 /area/precursor)
 "aW" = (
 /obj/random/cluster/psi_monster/lower_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "aX" = (
 /turf/simulated/wall/r_wall,
@@ -238,16 +238,16 @@
 "aZ" = (
 /obj/effect/damagedfloor/rust,
 /obj/effect/gibspawner/human,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "ba" = (
 /obj/random/cluster/psi_monster/lower_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bb" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/random/pack/machine,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor)
 "bc" = (
 /obj/random/junk/low_chance,
@@ -260,7 +260,7 @@
 /obj/effect/floor_decal/rust,
 /obj/random/cluster/psi_monster,
 /obj/random/psi_megafauna,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/precursor)
 "be" = (
 /obj/random/pack/machine/low_chance,
@@ -278,7 +278,7 @@
 	dir = 8
 	},
 /obj/effect/gibspawner/human,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "bi" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -288,7 +288,7 @@
 /area/precursor)
 "bj" = (
 /obj/random/furniture/pottedplant,
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/precursor)
 "bk" = (
 /obj/structure/bed/chair{
@@ -315,14 +315,14 @@
 /area/precursor)
 "bn" = (
 /obj/random/pack/tech_loot,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bo" = (
 /obj/machinery/light/small{
 	dir = 4;
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bp" = (
 /obj/machinery/light/small{
@@ -330,7 +330,7 @@
 	pixel_y = 0
 	},
 /obj/random/pack/machine/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "bq" = (
 /obj/random/pack/gun_loot,
@@ -349,7 +349,7 @@
 /obj/random/gun_energy_cheap/low_chance,
 /obj/random/ammo_lowcost/low_chance,
 /obj/random/ammo_lowcost/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "bu" = (
 /obj/effect/floor_decal/industrial/warning{
@@ -395,7 +395,7 @@
 /area/precursor)
 "bB" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "bC" = (
 /obj/structure/table/steel_reinforced,
@@ -407,13 +407,13 @@
 /area/precursor)
 "bD" = (
 /obj/random/pack/rare,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bE" = (
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bF" = (
 /obj/structure/salvageable/server_os,
@@ -423,7 +423,7 @@
 /obj/structure/table/steel_reinforced,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "bH" = (
 /obj/structure/table/steel_reinforced,
@@ -431,18 +431,18 @@
 /obj/machinery/light/small,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/precursor)
 "iA" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "Pa" = (
 /obj/machinery/light/small{
 	dir = 8
 	},
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 
 (1,1,1) = {"

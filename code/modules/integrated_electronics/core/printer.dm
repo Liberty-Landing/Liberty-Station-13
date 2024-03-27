@@ -6,7 +6,7 @@
 	icon = 'icons/obj/assemblies/electronic_tools.dmi'
 	icon_state = "circuit_printer"
 	w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 3, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_GLASS = 3, MATERIAL_SILVER = 3)
 	var/upgraded = FALSE		// When hit with an upgrade disk, will turn true, allowing it to print the higher tier circuits.
 	var/can_clone = TRUE		// Allows the printer to clone circuits, either instantly or over time depending on upgrade. Set to FALSE to disable entirely.
 	var/fast_clone = FALSE		// If this is false, then cloning will take an amount of deciseconds equal to the metal cost divided by 100.
@@ -15,7 +15,7 @@
 	var/cloning = FALSE			// If the printer is currently creating a circuit
 	var/recycling = FALSE		// If an assembly is being emptied into this printer
 	var/list/program			// Currently loaded save, in form of list
-	var/materials = list(MATERIAL_STEEL = 0)
+	var/materials = list(MATERIAL_ALUMINIUM = 0)
 	var/metal_max = 25 * SHEET_MATERIAL_AMOUNT
 	var/datum/weakref/idlock = null
 

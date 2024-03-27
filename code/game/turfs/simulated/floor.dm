@@ -13,7 +13,7 @@
 	var/flooring_override
 	var/initial_flooring = /decl/flooring/reinforced/plating
 	var/decl/flooring/flooring
-	var/mineral = MATERIAL_STEEL
+	var/mineral = MATERIAL_ALUMINIUM
 	var/set_update_icon
 	thermal_conductivity = 0.040
 	heat_capacity = 10000

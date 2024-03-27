@@ -2109,7 +2109,7 @@
 /turf/simulated/floor/snow,
 /area/liberty/outside/forest/dangerous_forest)
 "Kv" = (
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/rock,
 /area/colony)
 "Kx" = (

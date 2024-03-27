@@ -21,7 +21,7 @@
  */
 
 /obj/item/mecha_parts/mecha_equipment/tool
-	matter = list(MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15)
 
 /obj/item/mecha_parts/mecha_equipment/tool/hydraulic_clamp
 	name = "hydraulic clamp"
@@ -165,7 +165,7 @@
 	desc = "This is an upgraded version of the drill that'll pierce the heavens! (Can be attached to: Combat and Engineering Exosuits)"
 	icon_state = "mecha_diamond_drill"
 	origin_tech = list(TECH_MATERIAL = 4, TECH_ENGINEERING = 3)
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_DIAMOND = 3)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_DIAMOND = 3)
 	equip_cooldown = 10 // 3 diamonds for 3x the speed!
 	force = 25 //Lets not be out classed by a wrench...
 
@@ -294,7 +294,7 @@
 	equip_cooldown = 10
 	energy_drain = 250
 	range = MECHA_MELEE|MECHA_RANGED
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASMA = 15, MATERIAL_URANIUM = 15)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_HYDROGENC = 15, MATERIAL_URANIUM = 15)
 	price_tag = 1500
 	var/mode = 0 //0 - deconstruct, 1 - wall or floor, 2 - airlock.
 	var/disabled = 0 //malf
@@ -533,7 +533,7 @@
 	range = 0 // Can't attack
 	force = 0
 	required_type = /obj/mecha
-	matter = list(MATERIAL_STEEL = 15) //Its only 30 damage compared to the 15 steel 60 damage sword
+	matter = list(MATERIAL_ALUMINIUM = 15) //Its only 30 damage compared to the 15 aluminium 60 damage sword
 	var/damage_reduction = 0.1
 
 	attach(obj/mecha/M)
@@ -600,7 +600,7 @@
 	desc = "Close-combat armor booster. Boosts exosuit armor against armed melee attacks. Requires energy to operate."
 	icon_state = "mecha_abooster_ccw"
 	origin_tech = list(TECH_MATERIAL = 4)
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_SILVER = 5)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_SILVER = 5)
 	deflect_coeff = 1.15
 	damage_coeff = 0.8
 	melee = 1
@@ -625,7 +625,7 @@
 	desc = "Ranged-weaponry armor booster. Boosts exosuit armor against ranged attacks. Completely blocks taser shots, but requires energy to operate."
 	icon_state = "mecha_abooster_proj"
 	origin_tech = list(TECH_MATERIAL = 4)
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_GOLD = 5)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_GOLD = 5)
 	deflect_coeff = 1.15
 	damage_coeff = 0.8
 	melee = 0
@@ -652,7 +652,7 @@
 	equip_cooldown = 20
 	energy_drain = 100
 	range = 0
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_GOLD = 10, MATERIAL_SILVER = 2, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GOLD = 10, MATERIAL_SILVER = 2, MATERIAL_GLASS = 5)
 	price_tag = 1200
 	var/health_boost = 2
 	var/datum/global_iterator/pr_repair_droid
@@ -745,7 +745,7 @@
 	desc = "Wirelessly drains energy from any available power channel in area. The performance index is quite low."
 	icon_state = "tesla"
 	origin_tech = list(TECH_MAGNET = 4, TECH_ILLEGAL = 2)
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_GOLD = 2, MATERIAL_SILVER = 3, MATERIAL_GLASS = 2)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GOLD = 2, MATERIAL_SILVER = 3, MATERIAL_GLASS = 2)
 	equip_cooldown = 10
 	energy_drain = 0
 	range = 0
@@ -835,7 +835,7 @@
 	equip_cooldown = 10
 	energy_drain = 0
 	range = MECHA_MELEE
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 5, MATERIAL_GLASS = 1)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_SILVER = 5, MATERIAL_GLASS = 1)
 	var/datum/global_iterator/pr_mech_generator
 	var/coeff = 100
 	var/obj/item/stack/material/fuel
@@ -855,7 +855,7 @@
 		. = ..()
 
 	proc/init()
-		fuel = new /obj/item/stack/material/plasma(src)
+		fuel = new /obj/item/stack/material/hydrogenc(src)
 		fuel.amount = 0
 		pr_mech_generator = new /datum/global_iterator/mecha_generator(list(src),0)
 		pr_mech_generator.set_delay(equip_cooldown)
@@ -970,7 +970,7 @@
 	desc = "Generates power using uranium recklessly. Radiates the environment."
 	icon_state = "uranium"
 	origin_tech = list(TECH_POWER = 3, TECH_ENGINEERING = 3)
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 5, MATERIAL_GLASS = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_SILVER = 5, MATERIAL_GLASS = 10)
 	max_fuel = 50000
 	fuel_per_cycle_idle = 10
 	fuel_per_cycle_active = 30
@@ -1085,7 +1085,7 @@
 	desc = "A mountable passenger compartment for exo-suits. Rather cramped."
 	icon_state = "mecha_abooster_ccw"
 	origin_tech = list(TECH_ENGINEERING = 1, TECH_BIO = 1)
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_GLASS = 5)
 	energy_drain = 10
 	range = MECHA_MELEE
 	equip_cooldown = 20

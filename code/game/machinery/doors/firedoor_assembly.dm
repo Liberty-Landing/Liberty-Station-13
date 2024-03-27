@@ -39,7 +39,7 @@ obj/structure/firedoor_assembly/attackby(obj/item/I, mob/user)
 				if(I.use_tool(user, src, WORKTIME_FAST, tool_type, FAILCHANCE_EASY, required_stat = STAT_MEC))
 					user.visible_message(SPAN_WARNING("[user] has dissassembled \the [src]."),
 										"You have dissassembled \the [src].")
-					new /obj/item/stack/material/steel(src.loc, 2)
+					new /obj/item/stack/material/aluminium(src.loc, 2)
 					qdel(src)
 					return
 			return

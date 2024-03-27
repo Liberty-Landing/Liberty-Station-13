@@ -2,7 +2,7 @@
 /obj/machinery/textials
 	name = "flarelathe"
 	desc = "A gas heated fire lathe used for enfusing silk and biomatter into silk, \
-	and bind carbon fibers from steel to cloth strands."
+	and bind carbon fibers from aluminium to cloth strands."
 	icon = 'icons/obj/machines/autolathe.dmi'
 	icon_state = "flarelathe"
 	density = TRUE
@@ -167,10 +167,10 @@
 				to_chat(user, SPAN_WARNING("You can't insert [sheets_amount_to_transphere] in [name]"))
 			return
 
-	if (istype(I, /obj/item/stack/material/steel))
-		var/obj/item/stack/material/steel/S = I
+	if (istype(I, /obj/item/stack/material/aluminium))
+		var/obj/item/stack/material/aluminium/S = I
 		if (S.amount)
-			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "Steel loading", 1) as num
+			var/sheets_amount_to_transphere = input(user, "How many sheets you want to load?", "aluminium loading", 1) as num
 			if (sheets_amount_to_transphere > S.amount || sheets_amount_to_transphere < 1) //No cheating!
 				to_chat(user, SPAN_WARNING("You don't have that many [S.name]"))
 				return

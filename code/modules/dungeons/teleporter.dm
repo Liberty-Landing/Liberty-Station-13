@@ -66,14 +66,14 @@
 	var/monsoon_coefficient = 1
 
 	switch(GLOB.storyteller.config_tag)
-		if("warrior")
+		if("wrathful")
 			max_mobs = 5
 			min_mobs = 2
 			monsoon_coefficient = 2
 		if("healer")
 			max_mobs = 2
 			monsoon_coefficient = 0.5
-		if("jester")//because it's funnier this way
+		if("turmoil")//because it's funnier this way
 			max_mobs = rand(0, 7)
 			min_mobs = rand(0, 3)
 			monsoon_coefficient = (rand(5, 30)/10)

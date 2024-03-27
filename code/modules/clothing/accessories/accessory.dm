@@ -1102,7 +1102,7 @@
 
 /obj/item/clothing/accessory/necklace
 	name = "metal necklace"
-	desc = "A shiny steel chain with a vague metallic object dangling off it."
+	desc = "A shiny aluminium chain with a vague metallic object dangling off it."
 	icon_state = "tronket"
 	item_state = "tronket"
 	slot_flags = SLOT_MASK | SLOT_ACCESSORY_BUFFER
@@ -1115,8 +1115,8 @@
 
 /obj/item/clothing/accessory/necklace/fractalrosary
 	name = "Fractal Rosary"
-	desc = "This is an insignia given out by the Church of Bonfire to people who consider themself to be a Fractal: \
-			An individual who believes and follows the Church but has not yet or cannot be inducted to full membership."
+	desc = "This is an insignia given out by the Circhosian Cult to people who consider themself to be a Allysian Cultist: \
+			An individual who believes and follows the cult but has not yet or cannot be inducted to full membership."
 	icon_state = "fractal_rosary"
 	item_state = "fractal_rosary"
 

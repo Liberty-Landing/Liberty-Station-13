@@ -9,7 +9,7 @@ var/global/list/cached_icons = list()
 	icon = 'icons/obj/items.dmi'
 	icon_state = "paint_neutral"
 	item_state = "paintcan"
-	matter = list(MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2)
 	w_class = ITEM_SIZE_NORMAL
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list(10,20,30,60)
@@ -30,7 +30,7 @@ var/global/list/cached_icons = list()
 			name = paint_type + " " + name
 		..()
 		reagents.add_reagent("water", volume*3/5)
-		reagents.add_reagent("plasticide", volume/5)
+		reagents.add_reagent("microplastic", volume/5)
 		if(paint_type == "white") //why don't white crayons exist
 			reagents.add_reagent("aluminum", volume/5)
 		else if (paint_type == "black")

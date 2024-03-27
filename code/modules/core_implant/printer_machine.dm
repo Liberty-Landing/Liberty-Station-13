@@ -25,7 +25,7 @@ PLANNED FEATURES
 
 /obj/machinery/capsa/implantprinter
 	name = "Implant Fabricator"
-	desc = "This unique piece of technology can be fed biomatter, plasteel, silver, and gold in order to print various implants. \
+	desc = "This unique piece of technology can be fed biomatter, indsteel, silver, and gold in order to print various implants. \
 			All implants produced by this machine are licenced or produced by CAPSA, subsidiary of Liberty Group. \
 			Due to this machine's complexity, only CAPSA personnel are trained in its usage."
 	icon_state = "implantforge"
@@ -41,7 +41,7 @@ PLANNED FEATURES
 	var/work_time = 30 SECONDS
 	var/storage_capacity = 250
 	var/list/stored_material = list()
-	var/list/needed_material = list(MATERIAL_BIOMATTER = 1, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_STEEL = 3)
+	var/list/needed_material = list(MATERIAL_BIOMATTER = 1, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_ALUMINIUM = 3)
 	var/spawn_type = /obj/item/implant/death_alarm
 
 	// A vis_contents hack for materials loading animation.
@@ -72,27 +72,27 @@ PLANNED FEATURES
 			switch(new_print)
 				if("Death Alarm")
 					spawn_type = /obj/item/implant/death_alarm
-					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_INDSTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 1)
 					to_chat(user, SPAN_NOTICE("Now printing Death Alarms"))
-					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Steel, 1 Glass"))
+					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 aluminium, 1 Glass"))
 					return
 				if("Conciousness Backup Implant")
 					spawn_type = /obj/item/implant/conback
-					needed_material = list(MATERIAL_BIOMATTER = 1, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_STEEL = 3)
+					needed_material = list(MATERIAL_BIOMATTER = 1, MATERIAL_INDSTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 3, MATERIAL_ALUMINIUM = 3)
 					to_chat(user, SPAN_NOTICE("Now printing Conciousness Backup Implant"))
-					to_chat(user, SPAN_NOTICE("Conciousness Backup Implants Require: 1 Biomatter, 1 Plasteel, 1 Steel, 3 Glass, 3 Gold, 3 Silver"))
+					to_chat(user, SPAN_NOTICE("Conciousness Backup Implants Require: 1 Biomatter, 1 indsteel, 1 aluminium, 3 Glass, 3 Gold, 3 Silver"))
 					return
 				if("Psionic Tumour")
 					spawn_type = /obj/item/organ/internal/psionic_tumor
-					needed_material = list(MATERIAL_BIOMATTER = 120, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 0, MATERIAL_STEEL = 0)
+					needed_material = list(MATERIAL_BIOMATTER = 120, MATERIAL_INDSTEEL = 0, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1, MATERIAL_GLASS = 0, MATERIAL_ALUMINIUM = 0)
 					to_chat(user, SPAN_NOTICE("Now printing Psionic Tomours"))
 					to_chat(user, SPAN_NOTICE("Psionic Tomours Require: 120 Biomatter, 1 Gold, 1 Silver"))
 					return
 				else // Why.
 					spawn_type = /obj/item/implant/death_alarm
-					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_PLASTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
+					needed_material = list(MATERIAL_BIOMATTER = 0, MATERIAL_INDSTEEL = 0, MATERIAL_GOLD = 0, MATERIAL_SILVER = 0, MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 1)
 					to_chat(user, SPAN_NOTICE("Now printing Death Alarms"))
-					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 Steel, 1 Glass"))
+					to_chat(user, SPAN_NOTICE("Death Alarms Require: 1 aluminium, 1 Glass"))
 					return
 		else
 			return

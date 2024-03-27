@@ -10,7 +10,7 @@
 	drawChargeMeter = FALSE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 9
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 8)
 	price_tag = 450
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.1
@@ -21,7 +21,7 @@
 		SEMI_AUTO_NODELAY,
 		list(mode_name="fire 20mm shell", mode_desc="Shoot the underbarrel shotgun shell",  burst=null, fire_delay=null, move_delay=null,  icon="grenade", use_launcher=1)
 		)
-	serial_type = "Bonfire"
+	serial_type = "INDEX"
 
 	wield_delay = 0.4 SECOND
 	wield_delay_factor = 0.4 // 40 vig
@@ -179,7 +179,7 @@
 	drawChargeMeter = FALSE
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 9
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 8)
 	price_tag = 700
 	damage_multiplier = 1.3
 	penetration_multiplier = 1.2

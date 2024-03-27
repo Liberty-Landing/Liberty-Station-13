@@ -12,7 +12,7 @@
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	auto_eject = 1
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 10, MATERIAL_URANIUM = 1)
 	price_tag = 2000
 	fire_sound = 'sound/weapons/guns/fire/rifle.ogg'
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
@@ -55,7 +55,7 @@
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	gun_tags = list(GUN_PROJECTILE)
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_STEEL = 10, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_ALUMINIUM = 10, MATERIAL_WOOD = 10)
 	price_tag = 700
 	zoom_factors = list(0.6)
 	damage_multiplier = 0.9
@@ -102,7 +102,7 @@
 	item_state = "strelki"
 	w_class = ITEM_SIZE_NORMAL
 	slot_flags = SLOT_BACK|SLOT_BELT
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 6, MATERIAL_WOOD = 5)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 6, MATERIAL_WOOD = 5)
 	price_tag = 450
 	zoom_factors = list()
 	init_recoil = SMG_RECOIL(2.3)

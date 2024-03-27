@@ -4,11 +4,11 @@
 /turf/simulated/floor/plating/under,
 /area/template_noop)
 "m" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 "K" = (
 /obj/random/turret/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/template_noop)
 
 (1,1,1) = {"

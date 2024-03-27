@@ -7,7 +7,7 @@
 	can_dual = TRUE
 	item_state = "crossbow"
 	origin_tech = list(TECH_COMBAT = 2, TECH_MAGNET = 2, TECH_ILLEGAL = 5)
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 6)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_SILVER = 6, MATERIAL_URANIUM = 6)
 	slot_flags = SLOT_BELT
 	silenced = TRUE
 	fire_sound = 'sound/weapons/Genhit.ogg'
@@ -16,7 +16,7 @@
 	charge_meter = 0
 	charge_cost = 200
 	price_tag = 1250
-	serial_type = "Bonfire"
+	serial_type = "INDEX"
 
 	wield_delay = 0.8 SECOND
 	wield_delay_factor = 0.2 // 20 vig

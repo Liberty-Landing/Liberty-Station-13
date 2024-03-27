@@ -58,7 +58,7 @@
 
 /datum/chemical_reaction/red_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_red" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_red" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/red_paint/send_data()
@@ -66,7 +66,7 @@
 
 /datum/chemical_reaction/orange_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_orange" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_orange" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/orange_paint/send_data()
@@ -74,7 +74,7 @@
 
 /datum/chemical_reaction/yellow_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_yellow" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_yellow" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/yellow_paint/send_data()
@@ -82,7 +82,7 @@
 
 /datum/chemical_reaction/green_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_green" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_green" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/green_paint/send_data()
@@ -90,7 +90,7 @@
 
 /datum/chemical_reaction/blue_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_blue" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_blue" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/blue_paint/send_data()
@@ -98,7 +98,7 @@
 
 /datum/chemical_reaction/purple_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_purple" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_purple" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/purple_paint/send_data()
@@ -106,7 +106,7 @@
 
 /datum/chemical_reaction/grey_paint //mime
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_grey" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_grey" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/grey_paint/send_data()
@@ -114,7 +114,7 @@
 
 /datum/chemical_reaction/brown_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "crayon_dust_brown" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "crayon_dust_brown" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/brown_paint/send_data()
@@ -122,7 +122,7 @@
 
 /datum/chemical_reaction/blood_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "blood" = 2)
+	required_reagents = list("microplastic" = 1, "water" = 3, "blood" = 2)
 	result_amount = 5
 
 /datum/chemical_reaction/blood_paint/send_data(var/datum/reagents/T)
@@ -133,7 +133,7 @@
 
 /datum/chemical_reaction/milk_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "milk" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "milk" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/milk_paint/send_data()
@@ -141,7 +141,7 @@
 
 /datum/chemical_reaction/orange_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "orangejuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "orangejuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/orange_juice_paint/send_data()
@@ -149,7 +149,7 @@
 
 /datum/chemical_reaction/tomato_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "tomatojuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "tomatojuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/tomato_juice_paint/send_data()
@@ -157,7 +157,7 @@
 
 /datum/chemical_reaction/lime_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "limejuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "limejuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/lime_juice_paint/send_data()
@@ -165,7 +165,7 @@
 
 /datum/chemical_reaction/carrot_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "carrotjuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "carrotjuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/carrot_juice_paint/send_data()
@@ -173,7 +173,7 @@
 
 /datum/chemical_reaction/berry_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "berryjuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "berryjuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/berry_juice_paint/send_data()
@@ -181,7 +181,7 @@
 
 /datum/chemical_reaction/grape_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "grapejuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "grapejuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/grape_juice_paint/send_data()
@@ -189,7 +189,7 @@
 
 /datum/chemical_reaction/poisonberry_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "poisonberryjuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "poisonberryjuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/poisonberry_juice_paint/send_data()
@@ -197,7 +197,7 @@
 
 /datum/chemical_reaction/watermelon_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "watermelonjuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "watermelonjuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/watermelon_juice_paint/send_data()
@@ -205,7 +205,7 @@
 
 /datum/chemical_reaction/lemon_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "lemonjuice" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "lemonjuice" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/lemon_juice_paint/send_data()
@@ -213,7 +213,7 @@
 
 /datum/chemical_reaction/banana_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "banana" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "banana" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/banana_juice_paint/send_data()
@@ -221,7 +221,7 @@
 
 /datum/chemical_reaction/potato_juice_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "potato" = 5)
+	required_reagents = list("microplastic" = 1, "water" = 3, "potato" = 5)
 	result_amount = 5
 
 /datum/chemical_reaction/potato_juice_paint/send_data()
@@ -229,7 +229,7 @@
 
 /datum/chemical_reaction/carbon_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "carbon" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "carbon" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/carbon_paint/send_data()
@@ -237,7 +237,7 @@
 
 /datum/chemical_reaction/aluminum_paint
 	result = "paint"
-	required_reagents = list("plasticide" = 1, "water" = 3, "aluminum" = 1)
+	required_reagents = list("microplastic" = 1, "water" = 3, "aluminum" = 1)
 	result_amount = 5
 
 /datum/chemical_reaction/aluminum_paint/send_data()

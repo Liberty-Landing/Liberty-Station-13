@@ -2,7 +2,7 @@
 
 /obj/machinery/cooking_with_jane/grill
 	name = "Grill"
-	desc = "A deep pit of charcoal for cooking food. A slot on the side of the machine takes wood and converts it into charcoal. Is... That a camera? \nCtrl+Click: Set Temperatures / Timers \nShift+Ctrl+Click: Turn on a burner."
+	desc = "A deep pit of charcoal for cooking food. A slot on the side of the machine takes briquettes of coal for this. Is... That a camera? \nCtrl+Click: Set Temperatures / Timers \nShift+Ctrl+Click: Turn on a burner."
 	icon = 'icons/obj/cwj_cooking/grill.dmi'
 	icon_state = "grill"
 	density = FALSE
@@ -19,8 +19,8 @@
 	use_power = 0
 	interact_offline = TRUE
 
-	var/stored_wood = 0
-	var/wood_maximum = 30
+	var/stored_briquette = 0
+	var/briquette_maximum = 30
 
 	var/reference_time = 0 //The exact moment when we call the process routine, just to account for lag.
 
@@ -55,16 +55,16 @@
 		check_on_10 = 0
 
 	if(switches[1] == 1)
-		if(!stored_wood)
+		if(!stored_briquette)
 			handle_switch(null, 1)
 		else
-			stored_wood -= 1
+			stored_briquette -= 1
 
 	if(switches[2] == 1)
-		if(!stored_wood)
+		if(!stored_briquette)
 			handle_switch(null, 1)
 		else
-			stored_wood -= 1
+			stored_briquette -= 1
 
 	if(!(stat & NOPOWER))
 		decide_action()
@@ -84,13 +84,13 @@
 	var/bin_rating = 0
 	for(var/obj/item/stock_parts/matter_bin/M in component_parts)
 		bin_rating += M.rating
-	wood_maximum = 15 * bin_rating
+	briquette_maximum = 15 * bin_rating
 
 /obj/machinery/cooking_with_jane/grill/examine(var/mob/user)
 	if(!..(user, 1))
 		return FALSE
 	if(contents)
-		to_chat(user, SPAN_NOTICE("Charcoal: [stored_wood]/[wood_maximum]"))
+		to_chat(user, SPAN_NOTICE("Charcoal: [stored_briquette]/[briquette_maximum]"))
 
 //Process how a specific grill is interacting with material
 /obj/machinery/cooking_with_jane/grill/proc/cook_checkin(var/input)
@@ -159,20 +159,20 @@
 		return
 
 
-	if(istype(used_item, /obj/item/stack/material/wood))
-		var/obj/item/stack/material/wood/stack = used_item
-		var/used_sheets = min(stack.get_amount(), (wood_maximum - stored_wood))
+	if(istype(used_item, /obj/item/stack/material/briquette))
+		var/obj/item/stack/material/briquette/stack = used_item
+		var/used_sheets = min(stack.get_amount(), (briquette_maximum - stored_briquette))
 		if(!used_sheets)
 			to_chat(user, SPAN_NOTICE("The grill's hopper is full."))
 			return
-		to_chat(user, SPAN_NOTICE("You add [used_sheets] wood plank[used_sheets>1?"s":""] into the grill's hopper."))
+		to_chat(user, SPAN_NOTICE("You add [used_sheets] briquette[used_sheets>1?"s":""] into the grill's hopper."))
 		if(!stack.use(used_sheets))
 			qdel(stack)	// Protects against weirdness
-		stored_wood += used_sheets
+		stored_briquette += used_sheets
 		if(prob(5))
 			src.visible_message(SPAN_DANGER("The Grill exclaims: \"OM NOM NOM~! YUMMIE~~!\""))
 
-		flick("wood_load", hopper_insert)
+		flick("briquette_load", hopper_insert)
 
 		return
 
@@ -296,7 +296,7 @@
 		log_debug("Timerstamp no. [input] set! New timerstamp: [timerstamp[input]]")
 		#endif
 		cooking_timestamp[input] = world.time
-	else if(stored_wood)
+	else if(stored_briquette)
 		switches[input] = 1
 		cooking_timestamp[input] = world.time
 		cook_checkin(input)

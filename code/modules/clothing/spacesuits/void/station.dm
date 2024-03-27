@@ -18,7 +18,7 @@
 	armor_list = list(
 		melee = 35,
 		bullet = 30,
-		energy =30,
+		energy = 30,
 		bomb = 40,
 		bio = 100,
 		rad = 100
@@ -78,7 +78,7 @@
 	item_flags = STOPPRESSUREDAMAGE|THICKMATERIAL|AIRTIGHT|COVER_PREVENT_MANIPULATION
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
 
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_GLASS = 4, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_GLASS = 4, MATERIAL_PLASTIC = 3)
 	armor_list = list(
 		melee = 25,
 		bullet = 20,
@@ -132,7 +132,7 @@
 	siemens_coefficient = 0.8
 	slowdown = 1.6
 	helmet = /obj/item/clothing/head/space/void/riggedvoidsuit
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_GLASS = 10, MATERIAL_PLASTIC = 20)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_GLASS = 10, MATERIAL_PLASTIC = 20)
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	flash_protection = FLASH_PROTECTION_MODERATE
 	item_flags = STOPPRESSUREDAMAGE|THICKMATERIAL|AIRTIGHT|COVER_PREVENT_MANIPULATION
@@ -630,7 +630,7 @@
 	)
 	siemens_coefficient = 0.4
 	light_overlay = "helmet_light_dual"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5, MATERIAL_GLASS = 5)
 	obscuration = 0
 
 /obj/item/clothing/suit/space/void/medarmor
@@ -648,7 +648,7 @@
 	)
 	siemens_coefficient = 0.4
 	helmet = /obj/item/clothing/head/space/void/medarmor
-	matter = list(MATERIAL_STEEL = 40, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10, MATERIAL_PLATINUM = 8)
+	matter = list(MATERIAL_ALUMINIUM = 40, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10, MATERIAL_DILATANT = 8)
 	stiffness = MEDIUM_STIFFNESS
 
 /obj/item/clothing/suit/space/void/medarmor/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
@@ -1261,7 +1261,6 @@ obj/item/clothing/suit/space/void/union/heavy/steelweave
 		bio = 100,
 		rad = 100
 	)
-
 
 /obj/item/clothing/head/helmet/space/void/union/heavy/chief_helmet/toggle_style()
 	set name = "Adjust Armored Plates"

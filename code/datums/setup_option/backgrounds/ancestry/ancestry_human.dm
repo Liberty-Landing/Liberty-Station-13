@@ -15,7 +15,7 @@
 /datum/category_item/setup_option/background/ancestry/human_periphery
 	name = "Periphery Resident"
 	desc = "While not an official term on how to refer to residents of the edges of human space it is generally accepted as a colloquial term for such. \
-			Hardy space-farers, pirates, mercenaries looking out for their next hit or even just unfortunate souls trying to live outside of centralized government, all of these find home here. \
+			Hardy space-farers, pirates, custodians, mercenaries looking out for their next hit or even just unfortunate souls trying to live outside of centralized government, all of these find home here. \
 			You are one such person, what brought you there in first place is noone's question, what you became is what matters living in such conditions."
 
 	restricted_to_species = list(FORM_HUMAN)
@@ -44,11 +44,20 @@
 
 /datum/category_item/setup_option/background/ancestry/human_vatgrown
 	name = "Vatgrown Humanoid"
-	desc = "You are a Vatgrown, also sometimes known as 'Flashgrown', human. Your kind are commonly made by corpotations, criminal organizations, and sometimes even governments. \
+	desc = "You are a Vatgrown, also sometimes known as 'Homunculus'. Your kind are commonly made by corpotations, criminal organizations, and sometimes even governments. \
 			Why, you may ask? Simple. Cheap, exploitable, and importantly 'self-thinking' labor. Unlike FBPs Vatgrowns have typically more limited life spans and capable of inovation. \
 			This makes the vast majority of Vatgrowns debtors, owing their creation to the relevant company responsible for their creation."
 
-	restricted_depts = COMMAND
+	restricted_jobs = list( //changed this because Custodians does not limit Vatgrowns from being the Oathpledge. In fact, they are saw as more valuable than normal colonial volunteers.
+		/datum/job/clubmanager,
+		/datum/job/dc,
+		/datum/job/shepherd,
+		/datum/job/rp,
+		/datum/job/cso,
+		/datum/job/chief_engineer,
+		/datum/job/dc,
+		/datum/job/outsider,
+		)
 
 	restricted_to_species = list(FORM_HUMAN)
 

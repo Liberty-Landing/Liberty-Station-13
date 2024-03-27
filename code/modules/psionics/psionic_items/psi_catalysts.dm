@@ -12,7 +12,7 @@
 	icon_state = "psi_catalyst"
 	item_state = "psi_catalyst"
 	origin_tech = list(TECH_BIO = 9, TECH_MATERIAL = 9, TECH_PLASMA = 3)
-	matter = list(MATERIAL_GLASS = 1, MATERIAL_PLASTEEL = 2, MATERIAL_PLASMA = 1, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_GLASS = 1, MATERIAL_INDSTEEL = 2, MATERIAL_HYDROGENC = 1, MATERIAL_DIAMOND = 1)
 	price_tag = 0
 	var/stored_power
 
@@ -23,7 +23,7 @@
 	icon_state = "psi_catalyst_dull"
 	item_state = "psi_catalyst"
 	origin_tech = list(TECH_BIO = 2, TECH_MATERIAL = 1, TECH_PLASMA = 1)
-	matter = list(MATERIAL_GLASS = 1, MATERIAL_PLASTEEL = 2, MATERIAL_PLASMA = 1)
+	matter = list(MATERIAL_GLASS = 1, MATERIAL_INDSTEEL = 2, MATERIAL_HYDROGENC = 1)
 
 // Found catalysts
 /obj/item/device/psionic_catalyst/nightmare_mind

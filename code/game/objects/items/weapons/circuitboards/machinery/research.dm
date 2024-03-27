@@ -44,7 +44,7 @@
 /obj/item/circuitboard/autolathe_industrial
 	build_name = "industrial autolathe"
 	build_path = /obj/machinery/autolathe/industrial
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 6, MATERIAL_GOLD = 2, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 6, MATERIAL_GOLD = 2, MATERIAL_SILVER = 2)
 	board_type = "machine"
 	origin_tech = list(TECH_ENGINEERING = 4, TECH_DATA = 3)
 	req_components = list(
@@ -57,7 +57,7 @@
 /obj/item/circuitboard/autolathe_simulacrum
 	build_name = "simulacrum autolathe"
 	build_path = /obj/machinery/autolathe/simulacrum
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 6, MATERIAL_GOLD = 2, MATERIAL_SILVER = 2, MATERIAL_PLATINUM = 4)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 6, MATERIAL_GOLD = 2, MATERIAL_SILVER = 2, MATERIAL_TITANIUMRTC = 4)
 	board_type = "machine"
 	origin_tech = list(TECH_ENGINEERING = 8, TECH_DATA = 6)
 	req_components = list(

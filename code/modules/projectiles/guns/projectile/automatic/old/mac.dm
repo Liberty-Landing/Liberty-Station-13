@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_SMG|MAG_WELL_H_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 16, MATERIAL_PLASTIC = 4)
+	matter = list(MATERIAL_INDSTEEL = 16, MATERIAL_PLASTIC = 4)
 	price_tag = 700
 	damage_multiplier = 0.9
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)
@@ -61,7 +61,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_SMG|MAG_WELL_H_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 16, MATERIAL_PLASTIC = 4)
+	matter = list(MATERIAL_INDSTEEL = 16, MATERIAL_PLASTIC = 4)
 	price_tag = 1000
 	damage_multiplier = 0.75
 	init_recoil = SMG_RECOIL(0.3)

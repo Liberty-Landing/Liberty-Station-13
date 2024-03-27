@@ -251,6 +251,16 @@
 */
 
 //Custodians
+
+/obj/item/clothing/suit/armor/equite
+	name = "Equite Breastplate"
+	desc = "The cheaper, mass produced version of the standard Custodian's armor. With less material costs, this armor only rivals the other basic armors, but it is easy to be made by any autolathe."
+	icon_state = "equite_armor"
+	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO
+	stiffness = LIGHT_STIFFNESS
+	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 6, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10)
+
 /obj/item/clothing/suit/armor/custodian
 	name = "base custodian armor item"
 	desc = "Not meant to appear in-game."
@@ -258,14 +268,14 @@
 	item_state = "oathbound"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
-	max_upgrades = 2
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)  //It was 30 before. Got higher due to high cost + Cannot Upgrade + Difficulty to produce + the Custodians are the Main "armor" faction.
+	max_upgrades = 0 //I hope this still means it can get nice capes.
 	flags_inv = HIDEJUMPSUIT
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
 	var/modifiable = TRUE //used to determine if you can use wire-cutters on this item to change the appearance
 
 /obj/item/clothing/suit/armor/custodian/attackby(var/obj/item/I, var/mob/user)
@@ -327,9 +337,9 @@
 	desc = "The formidable armor of the leaders and guides of the Custodians. A sturdy and fire-resistant design."
 	icon_state = "oathpledge"
 	item_state = "oathpledge"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0)
+	armor_list = list(melee = 50, bullet = 50, energy = 50, bomb = 50, bio = 0, rad = 0)
 	modifiable = FALSE
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
+	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_INDSTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
 
 //Worker Union
 /obj/item/clothing/suit/armor/vest/technomancersuit
@@ -356,7 +366,7 @@
 /obj/item/clothing/suit/armor/vest/pirssuit
 	name = "'Mark II' environmental protection suit"
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
-	Unlike its superior variant, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build while also being easier to modify."
+	Unlike its superior variant, it offers significantly less armor but it is made out of basic aluminium, making it a cheaper, easier alternative to build while also being easier to modify."
 	icon_state = "science_armor"
 	has_alternative_armor_icon = FALSE
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
@@ -373,7 +383,7 @@
 						 /obj/item/device/scanner/gas,
 						 /obj/item/taperoll/engineering,
 						 /obj/item/storage/toolbox)
-	matter = list(MATERIAL_STEEL = 40)
+	matter = list(MATERIAL_ALUMINIUM = 40)
 
 // CAPSA
 
@@ -495,7 +505,7 @@
 	desc = "An antique \"Iron Eagle Security\" ablative vest with plates designed to absorb Energy Proyectiles, this armor wasn't Designed to protect the troopers from the ganger's or the local fauna, either the cold climates you sure you want to use this? Produced by the Terran Federation."
 	icon_state = "northtech_new"
 	has_alternative_armor_icon = FALSE
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 20, MATERIAL_DILATANT = 5)
 	armor_list = list(
 		melee = 20,
 		bullet = 20,
@@ -510,7 +520,7 @@
 	desc = "An ablative vest with plates designed to absorb rather than reflect energy projectiles."
 	icon_state = "northtech"
 	has_alternative_armor_icon = FALSE
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 20, MATERIAL_DILATANT = 10)
 	armor_list = list(
 		melee = 15,
 		bullet = 15,
@@ -562,7 +572,7 @@
 	name = "Phokorus Institute reflective armor vest"
 	desc = "A Phokorus Institute branded vest that excels in protecting the wearer against energy projectiles. While it is much better at defending against lasers compared to standard ablative armor it lacks as much protection against melee and bullets but can be modified more."
 	icon_state = "ablative_ironhammer"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 20, MATERIAL_PLATINUM = 15)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 20, MATERIAL_DILATANT = 15)
 	armor_list = list(
 		melee = 20,
 		bullet = 20,
@@ -770,7 +780,7 @@
 	Due to its jury-rigged yet robust design, it's able to take more armor plates than a standard heavy vest."
 	icon_state = "forehead_armor"
 	max_upgrades = 2 //Like all scav armor, this means investing into these will be better but buying gear will still be viable
-	matter = list(MATERIAL_PLASTEEL = 24, MATERIAL_PLASTIC = 25, MATERIAL_SILVER = 8,  MATERIAL_STEEL = 40) //worth stealing
+	matter = list(MATERIAL_INDSTEEL = 24, MATERIAL_PLASTIC = 25, MATERIAL_SILVER = 8,  MATERIAL_ALUMINIUM = 40) //worth stealing
 	price_tag = 1200
 	body_parts_covered = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
 	cold_protection = UPPER_TORSO|LEGS|ARMS|LOWER_TORSO
@@ -1023,7 +1033,7 @@
 
 /obj/item/clothing/suit/armor/hunter/reinforced
 	name = "hunter armor"
-	desc = "A heavily armored breastplate and knee-guards supplied by the local hunting-lodge. It appears to be rather crudely self made with steel plating functioning as make-shift kevlar plates."
+	desc = "A heavily armored breastplate and knee-guards supplied by the local hunting-lodge. It appears to be rather crudely self made with aluminium plating functioning as make-shift kevlar plates."
 	icon_state = "hunter_armor_reinforced"
 	item_state = "hunter_armor_reinforced"
 	blood_overlay_type = "armor"
@@ -1057,7 +1067,7 @@
 	item_state = "hm_woodvest"
 	armor_list = list(
 		melee = 20,
-		bullet = 10, // Justifying keeping somewhat decent values on bullet just because I changed the recipe to include steel. - Seb
+		bullet = 10, // Justifying keeping somewhat decent values on bullet just because I changed the recipe to include aluminium. - Seb
 		energy = 0, // It's mostly made of wood, it will char easily.
 		bomb = 10,
 		bio = 25,
@@ -1072,10 +1082,10 @@
 	icon_state = "paramedic_armor"
 	item_state = "paramedic_armor"
 	matter = list(
-		MATERIAL_PLASTEEL = 10,
-		MATERIAL_STEEL = 5,
+		MATERIAL_INDSTEEL = 10,
+		MATERIAL_ALUMINIUM = 5,
 		MATERIAL_PLASTIC = 5,
-		MATERIAL_PLATINUM = 3,
+		MATERIAL_DILATANT = 3,
 		MATERIAL_URANIUM = 4,
 		MATERIAL_SILVER = 2
 		)

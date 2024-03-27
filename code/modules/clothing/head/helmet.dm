@@ -123,7 +123,7 @@
 
 /obj/item/clothing/head/helmet/handmade
 	name = "handmade combat helmet"
-	desc = "It looks like it was made from a bucket and some steel. Uncomfortable and heavy but better than nothing."
+	desc = "It looks like it was made from a bucket and some aluminium. Uncomfortable and heavy but better than nothing."
 	icon_state = "hm_helmet"
 	armor_list = list(
 		melee = 25,
@@ -138,7 +138,7 @@
 
 /obj/item/clothing/head/helmet/handmade/greathelm
 	name = "bucket-helm"
-	desc = "A bucket with two holes for eyes and some smaller ones for ventilation, with steel added to gain some protection. One may say, <i>'Situla Vult!'</i>."
+	desc = "A bucket with two holes for eyes and some smaller ones for ventilation, with aluminium added to gain some protection. One may say, <i>'Situla Vult!'</i>."
 	icon_state = "hm_greathelm"
 	armor_list = list(melee = 27, bullet = 15,energy = 25, bomb = 12, bio = 1, rad = 0) // Only difference with handmade combat helmet is 2 sheets of metal, shouldn't be that far superior.
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|BLOCKHAIR
@@ -291,7 +291,7 @@
 
 /obj/item/clothing/head/helmet/marshal/ushanka
 	name = "watchmen Armored Ushanka"
-	desc = "Standard operator gear. an security ushanka with skull protector made out of plasteel and scale armor in the exterior, features an eye shield and ideal ear warmth!"
+	desc = "Standard operator gear. an security ushanka with skull protector made out of steel and scale armor in the exterior, features an eye shield and ideal ear warmth!"
 	icon_state = "LWushanka"
 	icon_state = "LWushanka"
 	armor_list = list(melee = 30, bullet = 30,energy = 25, bomb = 25, bio = 70, rad = 0)
@@ -304,14 +304,24 @@
 
 //Custodians
 
+/obj/item/clothing/head/helmet/equite
+	name = "Custodian Equite Helmet"
+	desc = "A custodian non-artistry made in cheaper design to be mass produced by a Firelathe, with a conical dome crafted from hardened steel in a bowl-shaped design with nose guards that protects the face, \
+	together with ear covers and impact-relief material on the neck, so impact of bullets have less chance to break the neck of the user."
+	icon_state = "equite_helmet"
+	icon_state = "equite_helmet"
+	armor_list = list(melee = 30, bullet = 30,energy = 30, bomb = 20, bio = 40, rad = 0)
+	body_parts_covered = HEAD|FACE|EARS
+	obscuration = LIGHT_OBSCURATION
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 6, MATERIAL_BIO_SILK = 15, MATERIAL_PLASTIC = 10) //There is no radiance infusion on this armor. Full materials.
 
 /obj/item/clothing/head/helmet/custodian
 	name = "custodian helmet base item"
 	desc = "Not supposed to be seen in-game"
 	icon_state = "oathbound_helmet"
 	item_state = "oathbound_helmet"
-	armor_list = list(melee = 30, bullet = 30, energy = 30, bomb = 30, bio = 0, rad = 0)
-	max_upgrades = 2
+	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 0, rad = 0) //It was 30 before. Got higher due to high cost + Cannot Upgrade + Difficulty to produce + the Custodians are the Main "armor" faction + Recycling leads to lost materials.
+	max_upgrades = 0 //I hope this still means it can get nice details on the head.
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
 	obscuration = LIGHT_OBSCURATION
@@ -319,7 +329,7 @@
 	max_heat_protection_temperature = FIRESUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	cold_protection = HEAD|FACE|EARS
 	min_cold_protection_temperature = T0C - 20
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 13, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_INDSTEEL = 5, MATERIAL_BIO_SILK = 8, MATERIAL_PLASTIC = 4, MATERIAL_SILVER = 1) //Custodian Radiance-Infusion system. Major portion of its material are lost in the recycling process.
 
 /obj/item/clothing/head/helmet/custodian/firesuit
 	name = "flameshield helmet"
@@ -332,20 +342,25 @@
 	matter = list(MATERIAL_BIO_SILK = 10)
 
 /obj/item/clothing/head/helmet/custodian/oathbound
-	name = "oathbound helmet"
-	desc = "A forged helm made for the front lines of the Custodians, the Oathbound. The unique design and materials keep the fire at bay."
+	name = "Warhound \"Oathbound\" helmet"
+	desc = "A forget helmet made for the frontline units of the custodians, the Oathbounds. The materials and design ensures protection against weapons and fire. \
+	The helmet design has the similarity to Custodian's giant borzoi warhounds to not only intimidate the enemies with the monstrous appearance while portraying loyalty, \
+	but to take advantage of the hounskull-style of the visor so damage can glance to the sides and lose major portion of the impact, very important against fast moving projectiles."
 	icon_state = "oathbound_helmet"
 	item_state = "oathbound_helmet"
 
 /obj/item/clothing/head/helmet/custodian/enkindled
-	name = "enkindled helmet"
-	desc = "A helmet design tooled after ancient healing legends, made for the Enkindled, incredibly resistant to fire."
+	name = "Plague Doctor \"Enkindled\" helmet"
+	desc = "A helmet design tooled after ancient healing legends, made for the Enkindled to keep fire at bay. The helmet design is unique, as it keeps the protective metal inside, \
+	while the silk and foam remains outside. This is done to focus less on reflecting damage, but absorbing it like a trampoline so less impact reaches the neck and skull. \
+	The helmet is based on Plague Doctors during medieval age so people can easily identify to who ask for help in the battlefield. The same design can be found on CSO's helmet."
 	icon_state = "enkindled_helmet"
 	item_state = "enkindled_helmet"
 
 /obj/item/clothing/head/helmet/custodian/forgemaster
-	name = "forgemaster helmet"
-	desc = "A helmet designed to keep the user safe from hot sparks and searing heat, made for the Forgemasters."
+	name = "Steelmason \"Forgemaster\" helmet"
+	desc = "A helmet designed to keep the user safe from hot sparks and searing heat, made for the Forgemasters, from Forgemasters. The design focuses on helping in identification, \
+	as the upper portion of the helmet looks like an armored hard hat with nasal and cheek protection. The nasal layer is made of pure radiance to better improve the user's sight."
 	icon_state = "forgemaster_helmet"
 	item_state = "forgemaster_helmet"
 
@@ -354,8 +369,8 @@
 	desc = "A helmet for the leaders and guides of the Custodians, this design is extremely resistant to damage."
 	icon_state = "oathpledge_helmet"
 	item_state = "oathpledge_helmet"
-	armor_list = list(melee = 40, bullet = 40, energy = 40, bomb = 40, bio = 100, rad = 0)
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTEEL = 16, MATERIAL_BIO_SILK = 30, MATERIAL_PLASTIC = 15)
+	armor_list = list(melee = 50, bullet = 50, energy = 50, bomb = 50, bio = 100, rad = 0)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 8, MATERIAL_BIO_SILK = 8, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 2) //Custodian Radiance-Infusion system. Major portion of its material are lost in the recycling process.
 
 //Hunter's Lodge
 /obj/item/clothing/head/helmet/huntmaster_helmet
@@ -496,7 +511,7 @@
 	armor_list = list(melee = 15, bullet = 15, energy = 25, bomb = 35, bio = 50, rad = 50)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_STEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20)
 	flash_protection = FLASH_PROTECTION_MINOR
 	max_upgrades = 2
 
@@ -590,7 +605,7 @@
 	armor_list = list(melee = 20, bullet = 30, energy = 70, bomb = 35, bio = 10, rad = 0)
 	flags_inv = HIDEEARS|HIDEEYES
 	cold_protection = HEAD
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 10, MATERIAL_PLATINUM = 2) //cheaper
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 10, MATERIAL_INDSTEEL = 2) //cheaper. //Had to change it to insdteel because TitaniumRTC is costy as hell, and making it just "titanium" would be a waste
 	min_cold_protection_temperature = SPACE_HELMET_MIN_COLD_PROTECTION_TEMPERATURE
 	siemens_coefficient = 0.5
 	price_tag = 150
@@ -1059,10 +1074,10 @@
 	tint_down = TINT_NONE
 	obscuration_down = LIGHT_OBSCURATION
 	matter = list(
-		MATERIAL_PLASTEEL = 10,
+		MATERIAL_INDSTEEL = 10,
 		MATERIAL_GLASS = 5,
 		MATERIAL_PLASTIC = 5,
-		MATERIAL_PLATINUM = 2
+		MATERIAL_DILATANT = 2
 		)
 	armor_up = list(melee = 5, bullet = 20, energy = 10, bomb = 10, bio = 100, rad = 50)
 	armor_list = list(melee = 25, bullet = 25, energy = 25, bomb = 20, bio = 100, rad = 50)
@@ -1169,7 +1184,54 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
 	body_parts_covered = HEAD|FACE|EARS
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_BIO_SILK = 5)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_BIO_SILK = 5)
+	max_upgrades = 2
+
+/obj/item/clothing/head/helmet/pirssuit/lighteater
+	name = "'Mark II' Light-Eater Cultist Hood"
+	desc = "A airtight, robust headgear of curious origins, a hooded copy of Mark II from PIRS - stolen technology that is no longer cheap. \
+	Using CAPSA materials and Custodian design, the helmet has layered, reflective metal plates alongside the dilatant plate. \
+	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood. Perhaps who made this thought of the CSO's helmet."
+	icon_state = "lighteater_helmet"
+	item_state = "lighteater_helmet"
+	armor_list = list(melee = 30, bullet = 60, energy = 45, bomb = 50, bio = 100, rad = 75)
+	obscuration = LIGHT_OBSCURATION
+	flash_protection = FLASH_PROTECTION_MODERATE
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	item_flags = BLOCK_GAS_SMOKE_EFFECT|AIRTIGHT // Doubles as gas mask, like the paramedic helmet
+	body_parts_covered = HEAD|FACE|EARS
+	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15,  MATERIAL_DURALUMIN = 35)
+	max_upgrades = 1
+
+
+/obj/item/clothing/head/helmet/pirssuit/faithful
+	name = "'Mark II' Faithful Hood"
+	desc = "A reinforced hood with the inner workings of a Mark II - stolen technology that received proper reinforcements that allows it to be competitive. \
+	Using CAPSA materials and Custodian design, the helmet makes use of dilatant plates layered above welded metal shards, mimicking lamellar armor. \
+	There is an pattern of circhosian chitin that adorns its exterior, giving it the appearence of a hood, but the mask beneath is completely visible together with the user's eyes."
+	icon_state = "faithful_helmet"
+	item_state = "faithful_helmet"
+	armor_list = list(melee = 25, bullet = 45, energy = 30, bomb = 30, bio = 100, rad = 55)
+	obscuration = LIGHT_OBSCURATION
+	flash_protection = FLASH_PROTECTION_MINOR
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EARS
+	matter = list(MATERIAL_DILATANT = 25, MATERIAL_INDSTEEL = 10, MATERIAL_DURALUMIN = 15, MATERIAL_ALUMINIUM = 20)
+	max_upgrades = 1
+
+/obj/item/clothing/head/helmet/pirssuit/cult
+	name = "'Mark II' Cultist Helmet"
+	desc = "A really cheap helmet that is a clear copy of PIRS's Mark II, but made with stronger material and cultist engravings. \
+	It uses CAPSA's dilatant materials together with aluminium that has been cold-hammered by a automatic protolathe. \
+	Surprisingly enough, the Cultists truly did improve such cheap design and kept its capacity to be upgraded more than once. \
+	Makes you wonder how they didn't got hired twice by the colony at this point. Oh yeah, these cultists have been kicked out for a reason."
+	icon_state = "lighteater_helmet"
+	item_state = "lighteater_helmet"
+	armor_list = list(melee = 20, bullet = 30, energy = 25, bomb = 35, bio = 100, rad = 50)
+	flash_protection = FLASH_PROTECTION_MINOR
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EARS
+	matter = list(MATERIAL_DILATANT = 35, MATERIAL_INDSTEEL = 15)
 	max_upgrades = 2
 
 //Freeport: Liberty ‘Khambataar’ insurgency.!11!
@@ -1205,3 +1267,4 @@
 	icon_state = "rebel_impro_cap"
 	armor_list = list(melee = 35, bullet = 35,energy = 35, bomb = 25, bio = 0, rad = 0)
 	body_parts_covered = HEAD|EARS|FACE
+	matter = list(MATERIAL_DILATANT = 10, MATERIAL_ALUMINIUM = 20)

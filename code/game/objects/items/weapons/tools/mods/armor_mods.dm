@@ -2,9 +2,9 @@
 //Armor mods
 /obj/item/tool_upgrade/armor/melee
 	name = "melee plating"
-	desc = "A sturdy bit of plasteel that can be bolted onto any armor to enhance its melee resistance."
+	desc = "A sturdy bit of indsteel that can be bolted onto any armor to enhance its melee resistance."
 	icon_state = "melee"
-	matter = list(MATERIAL_STEEL = 30)
+	matter = list(MATERIAL_ALUMINIUM = 30)
 	price_tag = 275
 
 /obj/item/tool_upgrade/armor/melee/New()
@@ -21,9 +21,9 @@
 
 /obj/item/tool_upgrade/armor/bullet
 	name = "ballistic plating"
-	desc = "A sturdy bit of plasteel that can be bolted onto any armor to enhance its ballistic resistance."
+	desc = "A sturdy bit of indsteel that can be bolted onto any armor to enhance its ballistic resistance."
 	icon_state = "bullet"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 10)
 	price_tag = 750
 
 /obj/item/tool_upgrade/armor/bullet/New()
@@ -39,9 +39,9 @@
 
 /obj/item/tool_upgrade/armor/energy
 	name = "energy plating"
-	desc = "A sturdy bit of plasteel that can be bolted onto any armor to enhance its energy resistance."
+	desc = "A sturdy bit of titaniumRTC that can be bolted onto any armor to enhance its energy resistance."
 	icon_state = "energy"
-	matter = list(MATERIAL_PLATINUM = 3, MATERIAL_PLASTIC = 12)
+	matter = list(MATERIAL_TITANIUMRTC = 3, MATERIAL_PLASTIC = 12)
 	price_tag = 1000
 
 /obj/item/tool_upgrade/armor/energy/New()
@@ -57,9 +57,9 @@
 
 /obj/item/tool_upgrade/armor/bomb
 	name = "bomb proofing"
-	desc = "A sturdy bit of plasteel that can be bolted onto any armor to enhance its bomb resistance."
+	desc = "A sturdy bit of indsteel that can be bolted onto any armor to enhance its bomb resistance."
 	icon_state = "bomb"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 20)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 20)
 	price_tag = 450
 
 /obj/item/tool_upgrade/armor/bomb/New()
@@ -106,7 +106,7 @@
 	desc = "High-tensile and tough silk combined with other polymers provides major protection against ballistic threats. \
 			Lightweight and sturdy - perfect for battles where speed is a necessity."
 	icon_state = "polymer_plating"
-	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_BIO_SILK = 40, MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 10)
 
 /obj/item/tool_upgrade/custodian/armor/bullet/New()
 	..()
@@ -160,10 +160,10 @@
 	I.required_qualities = list(QUALITY_ARMOR)
 
 	/obj/item/tool_upgrade/armor/handmade
-	name = "Handmade Armor Upgrade kit"//is the replacement for every armor plating the union can make, its pretty weak but will do the work of be an armor upgrade even if its shitty, the guys with quality are the custodians, plus they can mass produce cheap armor upgrades if some miner is providing plasteel.
+	name = "Handmade Armor Upgrade kit"//is the replacement for every armor plating the union can make, its pretty weak but will do the work of be an armor upgrade even if its shitty, the guys with quality are the custodians, plus they can mass produce cheap armor upgrades if some miner is providing indsteel.
 	desc = "A Very improvised set of armor plates and tiny metal reinforcements made out with metal remains by someone with knowledge of metalworking, it that can be bolted onto any armor to lightly enhance its general resistance in desperate times or times with low budget."
 	icon_state = "metal_plating"
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_INDSTEEL = 5)
 	price_tag = 150
 
 /obj/item/tool_upgrade/armor/handmade/New()
@@ -173,7 +173,7 @@
 	UPGRADE_MELEE_ARMOR = 8,
 	UPGRADE_ENERGY_ARMOR = 8,
 	UPGRADE_BALLISTIC_ARMOR = 8,
-	UPGRADE_BOMB_ARMOR = 10,// best armor quality here due to being mostly plasteel and steel welded together
+	UPGRADE_BOMB_ARMOR = 10,// best armor quality here due to being mostly indsteel and aluminium welded together
 	UPGRADE_SLOWDOWN_ARMOR = 0.2,
 	UPGRADE_STIFFNESS_ARMOR = 0.1
 //	UPGRADE_OBSCURATION_ARMOR = 0.1 this is here just so anyone can see that it actually works easier

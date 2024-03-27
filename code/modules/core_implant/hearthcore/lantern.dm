@@ -7,7 +7,7 @@
 	slot_flags = SLOT_BELT
 	price_tag = 150
 	tool_qualities = list(QUALITY_PURIFY = 25)
-	matter = list(MATERIAL_SILVER = 2, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_SILVER = 2, MATERIAL_ALUMINIUM = 5)
 
 /obj/item/book/lectures/hearthlantern/nano_ui_interact(mob/user, ui_key = "main", datum/nanoui/ui = null, force_open = NANOUI_FOCUS)
 	var/list/data = nano_ui_data(user, ui_key)
@@ -31,5 +31,5 @@
 	price_tag = 250
 	slot_flags = SLOT_BELT
 	tool_qualities = list(QUALITY_PURIFY = 40)
-	matter = list(MATERIAL_SILVER = 5, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_SILVER = 5, MATERIAL_ALUMINIUM = 5)
 

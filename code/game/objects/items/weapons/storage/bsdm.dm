@@ -7,7 +7,7 @@
 	max_storage_space = DEFAULT_BULKY_STORAGE
 	max_w_class = ITEM_SIZE_BULKY
 	origin_tech = list(TECH_BLUESPACE = 3, TECH_ILLEGAL = 3)
-	matter = list(MATERIAL_STEEL = 6)
+	matter = list(MATERIAL_ALUMINIUM = 6)
 	level = BELOW_PLATING_LEVEL //We can hide under tiles :D
 	var/del_on_send = TRUE
 	var/datum/mind/owner

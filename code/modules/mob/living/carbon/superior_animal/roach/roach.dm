@@ -1,6 +1,14 @@
 /mob/living/carbon/superior_animal/roach
 	name = "Overgrown Roach"
 	desc = "A monstrous, dog-sized cockroach. These huge mutants can be everywhere where humans are, on ships, planets and stations."
+	description_info = "Binomial Nomenclature: Blattaria Macropanesthia Perniciosas:\n\n\
+						Like most giant insectoids within the colony, this one is affected by the Perniciosus viral agent. This viral agent, achieved through a cap-snatching process, was the most successful method to unpregulate key genes. \n\n\
+						In roaches, the virus enhances various characteristics, including the respiratory system with oxygen storage vesicles, muscular contractions to improve spiracle ventilation, and lung-like organs alongside the tracheal system. \
+						During early development, chitin acts as an endoskeleton before being replaced by a proper exoskeleton upon maturity, allowing for larger size with minimal shedding. \n\n\
+						Additionally, a cellular proliferation override leads to uncontrollable growth, resulting in tissue and organ expansion but decreasing lifespan and increasing cancer risk. \n\
+						Everything else came natural with evolution in short years, the fastpaced reproduction rewarded the bold and most eusocial among the mutated roaches, as the shy ones starved and had their genepool exterminated. \
+						Natural evolution over short years rewards fast-paced reproduction, favoring the boldest and most eusocial roaches. \
+						Although they are the weakest Perniciosus mutants and essentially prey to others, their omnivorous nature and swarming tactics ensure their survival."
 	icon = 'icons/mob/mobs-roach.dmi'
 	icon_state = "roach"
 

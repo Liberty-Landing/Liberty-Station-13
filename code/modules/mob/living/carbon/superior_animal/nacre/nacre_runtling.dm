@@ -1,8 +1,8 @@
 // Smol but fast variant of the golem
-/mob/living/carbon/superior_animal/ameridian_golem/runtling
-	name = "ameridian runtling"
-	desc = "A weird creature made of ameridian. It is smaller and weaker, but numerous and fast."
-	icon_state = "golem_ameridian_blue"
+/mob/living/carbon/superior_animal/nacre_golem/runtling
+	name = "nacre runtling"
+	desc = "A weird creature made of nacre. It is smaller and weaker, but numerous and fast."
+	icon_state = "golem_nacre_blue"
 	health = 30
 	maxHealth = 30
 	move_to_delay = 1 // Very fast

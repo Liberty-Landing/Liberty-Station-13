@@ -13,6 +13,77 @@
 	category = "Common"
 	ignore_stuttering = TRUE
 
+/datum/lecture/hearthcore/base/fireball
+	name = "Manifestation of Flames"
+	phrase = "Oxidate Lecture: Manifestation of Flames."
+	desc = "Allows your radiance to spread to the surface of your skin, creating a protective layer before releasing concentrated, launchable plasma."
+	power = 35
+
+/datum/lecture/hearthcore/base/fireball/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/obj/item/gun/custodian_fireball/flame = new /obj/item/gun/custodian_fireball(src, lecturer)
+	lecturer.visible_message(
+		"As [lecturer] speaks, their hand is covered in a fierce blue fireball.",
+		"A blue fireball completely covers one of your hands."
+		)
+	playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+	usr.put_in_hands(flame)
+	return TRUE
+
+/obj/item/gun/custodian_fireball //the fireball item created by Manifestation of Flames
+	name = "radiant fireball"
+	desc = "A summoned, throwable fireball that disappears if dropped, or by closing your hand."
+	icon = 'icons/obj/guns/projectile/fireball.dmi'
+	icon_state = "fireball_lecture"
+	item_state = "fireball_lecture"
+	origin_tech = list()
+	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
+	fire_sound_text = "fireball"
+	max_upgrades = 0
+	slot_flags = null
+	w_class = ITEM_SIZE_HUGE
+	damtype = BURN
+	var/projectile_type = /obj/item/projectile/custodian_fireball // What does it shoot
+	var/use_amount = 1 // How many times can it be used
+	var/mob/living/carbon/holder // Used to delete when dropped
+	serial_shown = FALSE
+	safety = FALSE
+
+/obj/item/gun/custodian_fireball/New(var/loc, var/mob/living/carbon/lecturer)
+	..()
+	holder = lecturer
+	START_PROCESSING(SSobj, src)
+
+/obj/item/gun/custodian_fireball/consume_next_projectile()
+	if(!ispath(projectile_type)) // Do we actually shoot something?
+		return null
+	if(use_amount <= 0) //Are we out of charges?
+		return null
+	use_amount -= 1
+	return new projectile_type(src)
+
+/obj/item/gun/custodian_fireball/Process()
+	if(loc != holder || (use_amount <= 0)) // We're no longer in the lecturer's hand or we're out of charges.
+		visible_message("[src] fades into nothingness.")
+		STOP_PROCESSING(SSobj, src)
+		qdel(src)
+		return
+
+// Alternative to drop it: Use in hand to extinguish
+/obj/item/gun/custodian_fireball/attack_self(mob/user)
+	user.visible_message(SPAN_NOTICE("[user] closes their palm, extinguishing the fireball."), SPAN_NOTICE("You close your hand and decide to extinguish \the [src]."), "You hear sizzling stop.")
+	STOP_PROCESSING(SSobj, src)
+	qdel(src)
+	return
+
+/obj/item/projectile/custodian_fireball //the fireball projectile used
+	name = "fireball"
+	icon_state = "fireball_lecture"
+	damage_types = list(BURN = WEAPON_FORCE_NORMAL) //deal 10 burn
+
+/obj/item/projectile/custodian_fireball/on_impact(atom/target)
+	scorch_attack(target) //now that you've hit something, trigger a scorch attack of 20 damage
+	return TRUE
+
 /datum/lecture/hearthcore/base/thumbspire
 	name = "Thumbspire"
 	phrase = "Oxidate Lecture: Thumbspire."
@@ -357,7 +428,7 @@
 /datum/lecture/hearthcore/base/search
 	name = "Search"
 	phrase = "Oxidate Lecture: Search."
-	desc = "Find the location of disciple."
+	desc = "Find the location of a Knight."
 	success_message = "On the verge of audibility you hear pleasant music with an encoded location in its notes."
 	fail_message = "Your calls have not been answered."
 	power = 25

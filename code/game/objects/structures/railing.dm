@@ -1,6 +1,6 @@
 /obj/structure/railing
 	name = "orange railing"
-	desc = "A standard steel railing painted in copper color. Prevents stupid people from falling to their doom."
+	desc = "A standard aluminium railing painted in copper color. Prevents stupid people from falling to their doom."
 	icon = 'icons/obj/railing.dmi'
 	density = TRUE
 	throwpass = TRUE
@@ -9,7 +9,7 @@
 	anchored = TRUE
 	flags = ON_BORDER
 	icon_state = "railing0"
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	var/broken = 0
 	health = 70
 	var/maxhealth = 70
@@ -20,7 +20,7 @@
 
 /obj/structure/railing/grey
 	name = "grey railing"
-	desc = "A standard steel railing. Prevents stupid people from falling to their doom."
+	desc = "A standard aluminium railing. Prevents stupid people from falling to their doom."
 	icon_modifier = "grey_"
 	icon_state = "grey_railing0"
 

@@ -1,11 +1,12 @@
 GLOBAL_VAR_INIT(miracle_points, 0)
 var/global/obj/machinery/power/eotp/eotp
+//We're likely going to give these random buffs to Psionics. It does not suit the Custodians at all.
 
 /obj/machinery/power/eotp
 	name = "Embers of Theoretical Philosophy"
-	desc = "A specialized machine designed to supply the surface stronghold with Custodian design disks and blessings from the lower stronghold. By making offerings of supplies or materials readily produced \
-	by the Custodians, members can obtain disks and other goods. The EOTP also provides various blessings and monitors areas protected by torchbearers for potential threats to the colony, marked by its \
-	observation level, letting it warn Custodians ahead of time. Additionally, it passively gains power before unleashing various blessings to Hearthcore users."
+	desc = "A specialized gatepyre machine designed to supply the surface stronghold with Custodian disks and equipment from either the lower Custodian Stronghold \
+	or Elohopean Outposts - from other orders - by transporting materials, an mutual exchange between orders, allowing their operations to run in other portions of the universe. \
+	The EOTP provides improvement to the hearthcore and monitor areas protected by torchbearer for potential threats to the colony, warning Custodians ahead of time."
 	icon = 'icons/obj/eotp.dmi'
 	icon_state = "eotp"
 
@@ -22,9 +23,9 @@ var/global/obj/machinery/power/eotp/eotp
 
 	var/list/materials = list(/obj/item/stack/material/gold = 20,
 							/obj/item/stack/material/uranium = 10,
-							/obj/item/stack/material/plasma = 10,
+							/obj/item/stack/material/hydrogenc = 10,
 							/obj/item/stack/material/diamond = 5,
-							/obj/item/stack/material/plasteel = 30,
+							/obj/item/stack/material/indsteel = 30,
 							/obj/item/stack/material/silver = 20)
 
 

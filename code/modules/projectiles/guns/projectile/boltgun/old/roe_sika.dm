@@ -13,7 +13,7 @@
 	force = WEAPON_FORCE_PAINFUL
 	sharp = FALSE
 	caliber = CAL_SRIFLE
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 10, MATERIAL_GLASS = 10)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 10, MATERIAL_GLASS = 10)
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SILENCABLE)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/boltgun/sawn/light
@@ -29,7 +29,7 @@
 	caliber = CAL_SRIFLE
 	load_method = SINGLE_CASING
 	init_recoil = HMG_RECOIL(0.6)
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_WOOD = 5)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_WOOD = 5)
 	max_shells = 10
 	saw_off = FALSE
 	serial_type = "Hunt Inc"

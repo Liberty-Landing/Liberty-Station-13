@@ -293,19 +293,6 @@ var/list/name_to_material
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
-/material/plasma
-	name = MATERIAL_PLASMA
-	stack_type = /obj/item/stack/material/plasma
-	ignition_point = PLASMA_MINIMUM_BURN_TEMPERATURE
-	icon_base = "stone"
-	icon_colour = "#FC2BC5"
-	shard_type = SHARD_SHARD
-	hardness = 30
-	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_PLASMA = 2)
-	door_icon_base = "stone"
-	sheet_singular_name = "crystal"
-	sheet_plural_name = "crystals"
-
 /*
 // Commenting this out while fires are so spectacularly lethal, as I can't seem to get this balanced appropriately.
 /material/plasma/combustion_effect(var/turf/T, var/temperature, var/effect_multiplier)
@@ -344,42 +331,34 @@ var/list/name_to_material
 	integrity = 201 //hack to stop kitchen benches being flippable, todo: refactor into weight system
 	stack_type = /obj/item/stack/material/marble
 
-/material/steel
-	name = MATERIAL_STEEL
-	stack_type = /obj/item/stack/material/steel
+/material/aluminium
+	name = MATERIAL_ALUMINIUM
+	stack_type = /obj/item/stack/material/aluminium
 	integrity = 150
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
-	icon_colour = PLASTEEL_COLOUR
+	icon_colour = INDSTEEL_COLOUR
 	hitsound = 'sound/weapons/genhit.ogg'
 
-/material/steel/holographic
-	name = "holo" + MATERIAL_STEEL
-	display_name = MATERIAL_STEEL
+/material/aluminium/holographic
+	name = "holo" + MATERIAL_ALUMINIUM
+	display_name = MATERIAL_ALUMINIUM
 	stack_type = null
 	shard_type = SHARD_NONE
 
-/material/plasteel
-	name = MATERIAL_PLASTEEL
-	stack_type = /obj/item/stack/material/plasteel
+/material/indsteel
+	name = MATERIAL_INDSTEEL
+	stack_type = /obj/item/stack/material/indsteel
 	integrity = 400
 	melting_point = 6000
 	icon_base = "solid"
 	icon_reinf = "reinf_over"
-	icon_colour = PLASTEEL_COLOUR//"#777777"
+	icon_colour = INDSTEEL_COLOUR//"#777777"
 	explosion_resistance = 25
 	hardness = 80
 	weight = 23
 	stack_origin_tech = list(TECH_MATERIAL = 2)
 	hitsound = 'sound/weapons/genhit.ogg'
-
-/material/plasteel/titanium
-	name = "titanium"
-	stack_type = null
-	icon_base = "metal"
-	door_icon_base = "metal"
-	icon_colour = "#D1E6E3"
-	icon_reinf = "reinf_metal"
 
 /material/glass
 	name = MATERIAL_GLASS
@@ -397,7 +376,7 @@ var/list/name_to_material
 	window_options = list("One Direction" = 1, "Full Window" = 6)
 	created_window = /obj/structure/window/basic
 	created_window_full = /obj/structure/window/basic/full
-	rod_product = /obj/item/stack/material/glass/reinforced
+	rod_product = /obj/item/stack/material/glass/laminated
 	hitsound = 'sound/effects/Glasshit.ogg'
 
 /material/glass/build_windows(var/mob/living/user, var/obj/item/stack/used_stack)
@@ -498,9 +477,9 @@ var/list/name_to_material
 	return (hardness > 35) //todo
 
 /material/glass/reinforced
-	name = MATERIAL_RGLASS
+	name = MATERIAL_LGLASS
 	display_name = "reinforced glass"
-	stack_type = /obj/item/stack/material/glass/reinforced
+	stack_type = /obj/item/stack/material/glass/laminated
 	flags = MATERIAL_BRITTLE
 	icon_colour = "#00E1FF"
 	opacity = 0.3
@@ -510,34 +489,34 @@ var/list/name_to_material
 	hardness = 40
 	weight = 30
 	stack_origin_tech = "materials=2"
-	composite_material = list(MATERIAL_STEEL = 1,MATERIAL_GLASS = 1)
+	composite_material = list(MATERIAL_ALUMINIUM = 1, MATERIAL_GLASS = 1)
 	window_options = list("One Direction" = 1, "Full Window" = 6, "Windoor" = 5)
 	created_window = /obj/structure/window/reinforced
 	created_window_full = /obj/structure/window/reinforced/full
 	wire_product = null
 	rod_product = null
 
-/material/glass/plasma
-	name = MATERIAL_PLASMAGLASS
-	display_name = "borosilicate glass"
-	stack_type = /obj/item/stack/material/glass/plasmaglass
+/material/glass/mendsilicate
+	name = MATERIAL_BGLASS
+	display_name = "mendsilicate glass"
+	stack_type = /obj/item/stack/material/glass/mendsilicate
 	flags = MATERIAL_BRITTLE
 	integrity = 100
-	icon_colour = "#FC2BC5"
+	icon_colour = "#550b41"
 	stack_origin_tech = list(TECH_MATERIAL = 4)
-	created_window = /obj/structure/window/plasmabasic
-	created_window_full = /obj/structure/window/plasmabasic/full
+	created_window = /obj/structure/window/mendsilicatebasic
+	created_window_full = /obj/structure/window/mendsilicatebasic/full
 	wire_product = null
-	rod_product = /obj/item/stack/material/glass/plasmarglass
+	rod_product = /obj/item/stack/material/mendsilicate/reinforced
 
-/material/glass/plasma/reinforced
-	name = MATERIAL_RPLASMAGLASS
-	display_name = "reinforced borosilicate glass"
-	stack_type = /obj/item/stack/material/glass/plasmarglass
+/material/glass/mendsilicate/reinforced
+	name = MATERIAL_LBGLASS
+	display_name = "laminated mendsilicate glass"
+	stack_type = /obj/item/stack/material/glass/mendsilicate
 	stack_origin_tech = list(TECH_MATERIAL = 5)
 	composite_material = list() //todo
-	created_window = /obj/structure/window/reinforced/plasma
-	created_window_full = /obj/structure/window/reinforced/plasma/full
+	created_window = /obj/structure/window/reinforced/mendsilicate
+	created_window_full = /obj/structure/window/reinforced/mendsilicate/full
 	hardness = 40
 	weight = 30
 	//composite_material = list() //todo
@@ -561,14 +540,6 @@ var/list/name_to_material
 	stack_type = null
 	shard_type = SHARD_NONE
 
-/material/osmium
-	name = MATERIAL_OSMIUM
-	stack_type = /obj/item/stack/material/osmium
-	icon_colour = "#9999FF"
-	stack_origin_tech = list(TECH_MATERIAL = 5)
-	sheet_singular_name = "ingot"
-	sheet_plural_name = "ingots"
-
 /material/tritium
 	name = MATERIAL_TRITIUM
 	stack_type = /obj/item/stack/material/tritium
@@ -577,30 +548,84 @@ var/list/name_to_material
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
-/material/mhydrogen
-	name = MATERIAL_MHYDROGEN
-	stack_type = /obj/item/stack/material/mhydrogen
-	icon_colour = "#E6C5DE"
-	stack_origin_tech = list(TECH_MATERIAL = 6, TECH_POWER = 6, TECH_MAGNET = 5)
-	display_name = "metallic hydrogen"
+/material/duralumin
+	name = MATERIAL_DURALUMIN
+	stack_type = /obj/item/stack/material/duralumin
+	icon_colour = "#915e24"
+	stack_origin_tech = list(TECH_MATERIAL = 2)
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
 
-/material/platinum
-	name = MATERIAL_PLATINUM
-	stack_type = /obj/item/stack/material/platinum
-	icon_colour = "#9999FF"
+/material/nacre
+	name = MATERIAL_NACRE
+	stack_type = /obj/item/stack/material/nacre
+	icon_colour = "#f8e2e2"
+	stack_origin_tech = list(TECH_MATERIAL = 5)
+	sheet_singular_name = "sphere"
+	sheet_plural_name = "spheres"
+
+/material/iron
+	name = MATERIAL_IRON
+	stack_type = /obj/item/stack/material/iron
+	icon_colour = "#828291"
 	weight = 27
 	stack_origin_tech = list(TECH_MATERIAL = 2)
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 
-/material/iron
-	name = MATERIAL_IRON
-	stack_type = /obj/item/stack/material/iron
-	icon_colour = "#5C5454"
+/material/niobium
+	name = MATERIAL_NIOBIUM
+	stack_type = /obj/item/stack/material/niobium
+	icon_colour = "#828291"
+	weight = 27
+	stack_origin_tech = list(TECH_MATERIAL = 2)
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
+
+/material/copper
+	name = MATERIAL_COPPER
+	stack_type = /obj/item/stack/material/copper
+	icon_colour = "#9b5167"
 	weight = 22
 	sheet_singular_name = "ingot"
 	sheet_plural_name = "ingots"
 	hitsound = 'sound/weapons/smash.ogg'
+
+/material/composite
+	name = MATERIAL_COMPOSITE
+	stack_type = /obj/item/stack/material/composite
+	icon_colour = "#9999FF"
+	weight = 27
+	stack_origin_tech = list(TECH_MATERIAL = 3)
+	sheet_singular_name = "sheet"
+	sheet_plural_name = "sheets"
+
+/material/titaniumrtc
+	name = MATERIAL_TITANIUMRTC
+	stack_type = /obj/item/stack/material/titaniumrtc
+	icon_colour = "#4f4f94"
+	weight = 30
+	stack_origin_tech = list(TECH_MATERIAL = 4)
+	sheet_singular_name = "matrix"
+	sheet_plural_name = "matrices"
+
+/material/titanium
+	name = MATERIAL_TITANIUM
+	stack_type = /obj/item/stack/material/titanium
+	icon_colour = "#8a8aaf"
+	weight = 30
+	stack_origin_tech = list(TECH_MATERIAL = 2)
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
+
+/material/dilatant
+	name = MATERIAL_DILATANT
+	stack_type = /obj/item/stack/material/dilatant
+	icon_colour = "#1d6d3e"
+	weight = 24
+	stack_origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 4)
+	sheet_singular_name = "plate"
+	sheet_plural_name = "plates"
 
 // Adminspawn only, do not let anyone get this.
 /material/voxalloy
@@ -640,6 +665,19 @@ var/list/name_to_material
 	display_name = "wood"
 	stack_type = null
 	shard_type = SHARD_NONE
+
+/material/hydrogenc
+	name = MATERIAL_HYDROGENC
+	stack_type = /obj/item/stack/material/hydrogenc
+	ignition_point = PLASMA_MINIMUM_BURN_TEMPERATURE
+	icon_base = "stone"
+	icon_colour = "#74c0ec"
+	shard_type = SHARD_SHARD
+	hardness = 30
+	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_PLASMA = 2)
+	door_icon_base = "stone"
+	sheet_singular_name = "clathrate"
+	sheet_plural_name = "clathrates"
 
 /material/cardboard
 	name = MATERIAL_CARDBOARD
@@ -681,15 +719,23 @@ var/list/name_to_material
 /material/biomatter
 	name = MATERIAL_BIOMATTER
 	stack_type = /obj/item/stack/material/biomatter
-	icon_colour = "#F48042"
+	icon_colour = "#19b421"
 	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_BIO = 2)
-	sheet_singular_name = "sheet"
-	sheet_plural_name = "sheets"
+	sheet_singular_name = "canister"
+	sheet_plural_name = "canisters"
+
+/material/briquette
+	name = MATERIAL_BRIQUETTE
+	stack_type = /obj/item/stack/material/briquette
+	icon_colour = "#1f1d1d"
+	stack_origin_tech = list(TECH_MATERIAL = 1)
+	sheet_singular_name = "fuel"
+	sheet_plural_name = "pile"
 
 /material/biopolymer_silk
 	name = MATERIAL_BIO_SILK
 	stack_type = /obj/item/stack/material/biopolymer_silk
-	icon_colour = "#F48042"
+	icon_colour = "#0d8a8f"
 	stack_origin_tech = list(TECH_MATERIAL = 3, TECH_BIO = 5)
 	sheet_singular_name = "spindle"
 	sheet_plural_name = "spindle"
@@ -697,7 +743,7 @@ var/list/name_to_material
 /material/carbon_fiber
 	name = MATERIAL_CARBON_FIBER
 	stack_type = /obj/item/stack/material/carbon_fiber
-	icon_colour = "#F48042"
+	icon_colour = "#0f0731"
 	stack_origin_tech = list(TECH_MATERIAL = 5, TECH_BIO = 1)
 	sheet_singular_name = "sheet"
 	sheet_plural_name = "sheets"
@@ -823,14 +869,6 @@ var/list/name_to_material
 	ignition_point = T0C+232
 	melting_point = T0C+300
 
-/material/ameridian
-	name = MATERIAL_AMERIDIAN
-	stack_type = /obj/item/stack/material/ameridian
-	icon_colour = "#007A00"
-	sheet_singular_name = "shard"
-	sheet_plural_name = "shards"
-	stack_origin_tech = list(TECH_MATERIAL = 9)
-
 /material/refined_scrap
 	name = MATERIAL_RSCRAP
 	stack_type = /obj/item/stack/material/refined_scrap
@@ -918,3 +956,43 @@ var/list/name_to_material
 	if(do_after(user, 30, T)) // Takes some time to set them down, prevents easy spam
 		O.Created(user)
 		return 1
+
+
+/* Deleted Materials
+/material/mhydrogen
+	name = MATERIAL_MHYDROGEN
+	stack_type = /obj/item/stack/material/mhydrogen
+	icon_colour = "#E6C5DE"
+	stack_origin_tech = list(TECH_MATERIAL = 6, TECH_POWER = 6, TECH_MAGNET = 5)
+	display_name = "metallic hydrogen"
+
+/material/osmium
+	name = MATERIAL_TITANIUMRTC
+	stack_type = /obj/item/stack/material/osmium
+	icon_colour = "#9999FF"
+	stack_origin_tech = list(TECH_MATERIAL = 5)
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
+
+/material/plasma
+	name = MATERIAL_HYDROGENC
+	stack_type = /obj/item/stack/material/hydrogenc
+	ignition_point = PLASMA_MINIMUM_BURN_TEMPERATURE
+	icon_base = "stone"
+	icon_colour = "#FC2BC5"
+	shard_type = SHARD_SHARD
+	hardness = 30
+	stack_origin_tech = list(TECH_MATERIAL = 2, TECH_PLASMA = 2)
+	door_icon_base = "stone"
+	sheet_singular_name = "crystal"
+	sheet_plural_name = "crystals"
+
+/material/nacre
+	name = MATERIAL_nacre
+	stack_type = /obj/item/stack/material/nacre
+	icon_colour = "#007A00"
+	sheet_singular_name = "shard"
+	sheet_plural_name = "shards"
+	stack_origin_tech = list(TECH_MATERIAL = 9)
+
+*/

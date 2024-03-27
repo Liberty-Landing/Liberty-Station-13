@@ -503,7 +503,7 @@ GLOBAL_LIST_INIT(blackshield_item_targets,list(
 	desc_text = "and destabilize the colony by either killing or converting them."
 
 /datum/antag_contract/excel/targeted/liberate
-	name = "Liberate"
+	name = "Corruption"
 	reward = 800
 	hearthcore_check = TRUE
 	desc_text = "by converting them to excelsior."

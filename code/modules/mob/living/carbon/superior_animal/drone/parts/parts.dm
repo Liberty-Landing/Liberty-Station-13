@@ -45,7 +45,7 @@
 // Armor Plating
 /obj/item/bot_part/roomba/roomba_plating
 	name = "roomba plating"
-	desc = "Some steel sheets for attaching on a roomba to give it protection."
+	desc = "Some aluminium sheets for attaching on a roomba to give it protection."
 	icon_state = "roomba_armor"
 	var/health_bonus = 100
 
@@ -61,7 +61,7 @@
 
 /obj/item/bot_part/roomba/roomba_plating/heavy
 	name = "heavy roomba plating"
-	desc = "Some plasteel sheets for attaching on a roomba to give it extra protection."
+	desc = "Some indsteel sheets for attaching on a roomba to give it extra protection."
 	icon_state = "roomba_armor_heavy"
 	health_bonus = 200
 	armor_stat = list(

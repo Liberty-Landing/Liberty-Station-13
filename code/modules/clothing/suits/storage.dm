@@ -679,7 +679,7 @@
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/suit/storage/toggle/absolutehoodie
-	name = "absolutist hoodie"
+	name = "Circhosian hoodie"
 	desc = "A cotton black hoodie that's just a size too big. Very comfy."
 	icon_state = "absolutehoodie"
 	item_state = "absolutehoodie"

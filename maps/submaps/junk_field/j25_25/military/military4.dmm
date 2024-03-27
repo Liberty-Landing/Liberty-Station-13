@@ -4,47 +4,47 @@
 /area/template_noop)
 "c" = (
 /obj/random/firstaid,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "d" = (
 /obj/random/material/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "j" = (
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "r" = (
 /obj/item/remains,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "v" = (
 /obj/random/mob/space_legion,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "D" = (
 /obj/random/cluster/xenomorphs,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "J" = (
 /obj/random/scrap/sparse_even,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "N" = (
 /obj/machinery/door/airlock/command,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "R" = (
 /obj/random/techpart/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "T" = (
 /obj/random/structures/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "V" = (
 /obj/random/ammo,
 /obj/structure/table/rack,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "W" = (
 /turf/simulated/wall/r_wall,

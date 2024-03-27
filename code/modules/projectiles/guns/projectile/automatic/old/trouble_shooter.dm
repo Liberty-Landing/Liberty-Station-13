@@ -5,7 +5,7 @@
 	icon = 'icons/obj/guns/projectile/type_21.dmi'
 	icon_state = "type_21" //Sprite by Valo#3611
 	item_state = "type_21"
-	matter = list(MATERIAL_PLASTEEL = 45, MATERIAL_PLASTIC = 55, MATERIAL_PLATINUM = 30)
+	matter = list(MATERIAL_INDSTEEL = 45, MATERIAL_PLASTIC = 55, MATERIAL_TITANIUMRTC = 30)
 	w_class = ITEM_SIZE_NORMAL
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE

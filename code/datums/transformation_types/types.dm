@@ -57,18 +57,18 @@
 
 	return ..()
 
-/datum/transform_type/ameridian_structures
-	flag = AMERIDIAN_TRANSFORM
-	priority = AMERIDIAN_TRANSFORM_PRIORITY
+/datum/transform_type/nacre_structures
+	flag = NACRE_TRANSFORM
+	priority = NACRE_TRANSFORM_PRIORITY
 
-/datum/transform_type/ameridian_structures/crystal_resizing
-	flag = AMERIDIAN_CRYSTAL_RESIZING_TRANSFORM
-	priority = AMERIDIAN_CRYSTAL_RESIZING_TRANSFORM_PRIORITY
+/datum/transform_type/nacre_structures/crystal_resizing
+	flag = NACRE_CRYSTAL_RESIZING_TRANSFORM
+	priority = NACRE_CRYSTAL_RESIZING_TRANSFORM_PRIORITY
 
-/datum/transform_type/ameridian_structures/crystal_resizing/update_values()
+/datum/transform_type/nacre_structures/crystal_resizing/update_values()
 	. = ..()
 
-	var/obj/structure/ameridian_crystal/crystal = (value_target?.resolve())
+	var/obj/structure/nacre_crystal/crystal = (value_target?.resolve())
 
 	if (!crystal)
 		return

@@ -27,7 +27,7 @@
 /turf/template_noop,
 /area/template_noop)
 "aj" = (
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "al" = (
 /obj/structure/computerframe{
@@ -41,13 +41,13 @@
 	icon_state = "door_locked";
 	locked = 1
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "ao" = (
 /obj/structure/bed/chair/office/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "ap" = (
 /obj/item/remains/human,
@@ -61,15 +61,15 @@
 	anchored = 1;
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "as" = (
 /obj/machinery/disposal,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "at" = (
 /obj/item/remains/human,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "au" = (
 /obj/structure/bed/chair/office/light{
@@ -91,17 +91,17 @@
 /obj/item/modular_computer/console{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "az" = (
 /obj/structure/table/reinforced,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aA" = (
 /obj/machinery/light_construct{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aB" = (
 /obj/random/techpart/low_chance,
@@ -110,7 +110,7 @@
 /area/template_noop)
 "aD" = (
 /obj/machinery/light_construct,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aE" = (
 /obj/random/junk,
@@ -130,12 +130,12 @@
 /area/template_noop)
 "aH" = (
 /obj/machinery/telecomms/relay,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aI" = (
 /obj/machinery/light_construct,
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aK" = (
 /obj/random/structures,
@@ -143,33 +143,33 @@
 /area/template_noop)
 "aL" = (
 /obj/machinery/door/airlock/command,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aM" = (
 /obj/structure/table/rack,
 /obj/random/techpart/low_chance,
 /obj/random/techpart/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aN" = (
 /obj/structure/table/rack,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aO" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aP" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aQ" = (
 /obj/random/structures/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aR" = (
 /obj/structure/reagent_dispensers/water_cooler,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aS" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -177,15 +177,15 @@
 /area/template_noop)
 "aT" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aU" = (
 /obj/random/junkfood,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aV" = (
 /obj/random/structures,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aW" = (
 /obj/random/structures/low_chance,
@@ -194,12 +194,12 @@
 "aX" = (
 /obj/structure/table/rack,
 /obj/random/firstaid,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aY" = (
 /obj/structure/table/rack,
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "aZ" = (
 /obj/structure/noticeboard,
@@ -207,23 +207,23 @@
 /area/template_noop)
 "ba" = (
 /obj/item/paper,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bb" = (
 /obj/structure/bed/chair/comfy/blue,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bc" = (
 /obj/structure/table/reinforced,
 /obj/item/pen,
 /obj/random/material/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bd" = (
 /obj/structure/table/reinforced,
 /obj/item/paper,
 /obj/random/material/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "be" = (
 /obj/structure/table/reinforced,
@@ -242,7 +242,7 @@
 	dir = 4
 	},
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bh" = (
 /obj/structure/table/reinforced,
@@ -255,75 +255,75 @@
 "bi" = (
 /obj/item/remains/human,
 /obj/random/structures/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bj" = (
 /obj/structure/bed/chair/comfy/blue{
 	dir = 1;
 	icon_state = "comfychair_preview"
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bl" = (
 /obj/random/techpart/low_chance,
 /obj/structure/closet/secure_closet/rare_loot,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bm" = (
 /obj/structure/table/rack,
 /obj/random/techpart/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bn" = (
 /obj/structure/bed/chair/office/light,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bo" = (
 /obj/item/remains,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bp" = (
 /obj/structure/table/rack,
 /obj/random/ammo,
 /obj/random/ammo,
 /obj/random/ammo,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bq" = (
 /obj/random/junk,
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "br" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 8
 	},
 /obj/random/scrap/sparse_even,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bs" = (
 /obj/random/mob/space_legion,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bt" = (
 /obj/structure/table/rack,
 /obj/item/clothing/mask/gas/ihs,
 /obj/item/clothing/mask/gas/ihs,
 /obj/item/clothing/gloves/stungloves,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "bw" = (
 /obj/structure/table/rack,
 /obj/random/ammo/shotgun,
 /obj/random/rig_module/low_chance,
 /obj/random/rig_module/rare/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "dg" = (
 /obj/random/material/low_chance,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "dn" = (
 /obj/random/mob/space_legion,
@@ -336,7 +336,7 @@
 /area/template_noop)
 "ep" = (
 /obj/random/scrap/sparse_even,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "fT" = (
 /obj/random/structures/low_chance,
@@ -361,7 +361,7 @@
 	icon_state = "comfychair_preview"
 	},
 /obj/structure/inflatable,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "sl" = (
 /obj/random/junk,
@@ -372,7 +372,7 @@
 	dir = 8
 	},
 /obj/random/scrap/sparse_even,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "wz" = (
 /obj/structure/girder,
@@ -411,7 +411,7 @@
 "RW" = (
 /obj/structure/table/reinforced,
 /obj/structure/inflatable,
-/turf/simulated/floor/tiled/steel/bluecorner,
+/turf/simulated/floor/tiled/aluminium/bluecorner,
 /area/template_noop)
 "To" = (
 /obj/structure/inflatable,

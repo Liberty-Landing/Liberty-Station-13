@@ -27,7 +27,7 @@
 	icon_state = "metal"
 	throwpass = TRUE
 	var/connected = TRUE
-	var/wall_color = PLASTEEL_COLOUR
+	var/wall_color = INDSTEEL_COLOUR
 	var/roundstart = FALSE
 	var/list/connections = list("0", "0", "0", "0")
 	var/list/wall_connections = list("0", "0", "0", "0")
@@ -456,8 +456,8 @@
 	if(!istype(I,/obj/item/rcd) && !istype(I, /obj/item/reagent_containers))
 		if(!I.force)
 			return attack_hand(user)
-		var/dam_threshhold = 150 //Integrity of Steel
-		var/dam_prob = min(100,60*1.5) //60 is hardness of steel
+		var/dam_threshhold = 150 //Integrity of aluminium
+		var/dam_prob = min(100,60*1.5) //60 is hardness of aluminium
 		if(dam_prob < 100 && I.force > (dam_threshhold/10))
 			playsound(src, hitsound, 80, 1)
 			if(!prob(dam_prob))
@@ -478,7 +478,7 @@
 	playsound(src, 'sound/items/Welder.ogg', 100, 1)
 	if(!no_product)
 		new /obj/structure/girder/low(loc)
-		new /obj/item/stack/material/steel(loc, 1)
+		new /obj/item/stack/material/aluminium(loc, 1)
 
 	clear_plants()
 	update_connections(1)

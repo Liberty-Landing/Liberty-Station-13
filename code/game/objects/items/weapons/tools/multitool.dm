@@ -34,7 +34,7 @@
 			The advanced and precise engineering allows for more DIY improvements than most Simulacrum Robotics tools ."
 	icon_state = "one_star_multitool"
 	tool_qualities = list(QUALITY_PULSING = 60)
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_PLATINUM = 1, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_TITANIUMRTC = 1, MATERIAL_DIAMOND = 1)
 	origin_tech = list(TECH_MAGNET = 6, TECH_ENGINEERING = 6)
 	use_power_cost = 0.01
 	degradation = 2
@@ -60,7 +60,7 @@
 	name = "wire frier"
 	desc = "A haphazardly-put-together machine used for pulsing wires, measuring electrical grids and bypassing security protocols. Its improvised design heavily consumes power, but allows for a greater range of customization."
 	icon_state = "impro_multitool"
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_STEEL = 2) //Needs two rods
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 2) //Needs two rods
 	use_power_cost = 0.1
 	workspeed = 0.9
 	max_upgrades = 5 // As much as every other improvised tool

@@ -54,7 +54,7 @@
 	pixel_y = -32
 	},
 /obj/machinery/door/window/northleft,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "am" = (
 /obj/structure/catwalk,
@@ -62,12 +62,12 @@
 /area/outpost/abandoned_fortress/powered)
 "an" = (
 /obj/structure/table/reinforced,
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/space)
 "ao" = (
 /obj/structure/filingcabinet,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "ap" = (
 /obj/machinery/door/firedoor,
@@ -100,7 +100,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "av" = (
 /obj/structure/flora/pottedplant/fern,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "aw" = (
 /obj/machinery/suit_storage_unit/rad_unit,
@@ -139,7 +139,7 @@
 	dir = 8
 	},
 /obj/random/powercell/small_safe,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "aL" = (
 /turf/simulated/floor/wood,
@@ -277,7 +277,7 @@
 	name = "Service Maintenance";
 	req_access = list(12)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "bB" = (
 /obj/machinery/door/firedoor,
@@ -291,12 +291,12 @@
 /obj/machinery/firealarm{
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "bF" = (
 /obj/structure/table/rack,
 /obj/random/rations/crayon,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "bG" = (
 /obj/machinery/conveyor/east{
@@ -374,7 +374,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "bV" = (
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "bW" = (
 /obj/landmark/corpse/excelsior,
@@ -393,7 +393,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "ca" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/booze/low_chance,
 /obj/random/booze/low_chance,
 /obj/random/rations/low_chance,
@@ -413,7 +413,7 @@
 /area/outpost/abandoned_fortress/powered)
 "cg" = (
 /obj/landmark/corpse/security/prisonguard,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "cj" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -451,11 +451,11 @@
 /obj/item/modular_computer/console/preset/civilian/professional{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "co" = (
 /obj/machinery/vending/engineering,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "cp" = (
 /mob/living/carbon/superior_animal/human/prisoner/elite,
@@ -475,7 +475,7 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "ct" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/grenade/frag/white_phosphorous,
 /obj/item/grenade/frag/white_phosphorous,
 /obj/item/grenade/frag/white_phosphorous,
@@ -574,7 +574,7 @@
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
 /obj/item/clothing/mask/breath,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "cP" = (
 /obj/machinery/light/small{
@@ -591,7 +591,7 @@
 "cR" = (
 /obj/structure/table/rack,
 /obj/random/rig_module/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "cT" = (
 /obj/structure/bed/chair/office/dark{
@@ -608,7 +608,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "dc" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -617,7 +617,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "dd" = (
 /obj/machinery/door/airlock/vault,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "dh" = (
 /obj/machinery/shower{
@@ -669,19 +669,19 @@
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/item/reagent_containers/glass/beaker/large,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "dq" = (
 /obj/structure/table/rack,
 /obj/random/mecha_utility/low_chance,
 /obj/random/mecha_utility/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "ds" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/reinforced,
 /area/outpost/abandoned_fortress/powered)
 "dt" = (
@@ -710,12 +710,12 @@
 "dx" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/outpost/abandoned_fortress/powered)
 "dy" = (
 /obj/item/material/shard,
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "dA" = (
 /obj/structure/cable{
@@ -767,7 +767,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "dL" = (
 /obj/machinery/door/airlock/science,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "dM" = (
 /turf/simulated/shuttle/floor/mining,
@@ -776,7 +776,7 @@
 /obj/machinery/door/airlock/glass_mining{
 	name = "General Storage"
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "dQ" = (
 /obj/machinery/alarm{
@@ -835,7 +835,7 @@
 	dir = 1;
 	pixel_y = -23
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "ed" = (
 /obj/structure/shuttle/engine/heater,
@@ -905,7 +905,7 @@
 /area/outpost/abandoned_fortress/powered)
 "ex" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "ey" = (
 /obj/structure/table/rack,
@@ -915,7 +915,7 @@
 /obj/item/device/radio,
 /obj/item/device/radio,
 /obj/item/device/radio,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "ez" = (
 /obj/structure/reagent_dispensers/water_cooler,
@@ -935,7 +935,7 @@
 	},
 /obj/structure/table/rack,
 /obj/random/rations/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "eD" = (
 /turf/simulated/mineral,
@@ -950,7 +950,7 @@
 /turf/simulated/floor/plating/under,
 /area/outpost/abandoned_fortress/powered)
 "eG" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/dark/golden,
 /area/awaymission/spacebattle/syndicate1)
@@ -994,13 +994,13 @@
 /obj/structure/table/standard,
 /obj/structure/table/standard,
 /obj/item/device/destTagger,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "eP" = (
 /obj/structure/table/rack,
 /obj/random/rig_module/rare/low_chance,
 /obj/random/rig/damaged/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "eQ" = (
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech/ranged,
@@ -1054,7 +1054,7 @@
 /turf/simulated/floor/tiled/cafe,
 /area/awaymission/spacebattle/syndicate2)
 "fm" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/lathe_disk/any_gun,
 /obj/random/lathe_disk/any_gun,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -1131,7 +1131,7 @@
 "fM" = (
 /obj/structure/low_wall,
 /obj/item/material/shard,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "fN" = (
 /obj/structure/table/standard,
@@ -1149,7 +1149,7 @@
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate7)
 "fQ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junkfood/onlypizza,
 /turf/simulated/floor/tiled/techmaint,
 /area/outpost/abandoned_fortress/powered)
@@ -1168,7 +1168,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/techmaint,
@@ -1190,7 +1190,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "fZ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -1265,7 +1265,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "gx" = (
 /obj/structure/catwalk,
@@ -1331,7 +1331,7 @@
 /obj/machinery/light,
 /obj/structure/closet,
 /obj/random/rig/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "gM" = (
 /obj/structure/catwalk,
@@ -1362,7 +1362,7 @@
 /area/outpost/abandoned_fortress/powered)
 "gV" = (
 /obj/machinery/shield_diffuser,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "gW" = (
 /obj/structure/catwalk,
@@ -1379,7 +1379,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "gZ" = (
 /obj/machinery/vending/assist,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "ha" = (
 /obj/structure/catwalk,
@@ -1445,7 +1445,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "hC" = (
 /obj/effect/floor_decal/industrial/loading{
@@ -1455,7 +1455,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "hE" = (
 /obj/structure/closet/emcloset,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "hG" = (
 /obj/structure/multiz/stairs/enter,
@@ -1501,7 +1501,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "hQ" = (
 /obj/machinery/shieldwallgen/excelsior,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "hS" = (
 /obj/structure/bed,
@@ -1511,7 +1511,7 @@
 /area/awaymission/spacebattle/syndicate2)
 "hU" = (
 /obj/machinery/door/airlock/vault/bolted,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "hV" = (
 /obj/structure/bed/chair{
@@ -1548,7 +1548,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "ii" = (
 /obj/structure/disposalpipe/up,
@@ -1574,7 +1574,7 @@
 /turf/simulated/floor/tiled/white/techfloor,
 /area/space)
 "ip" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/grenade/heatwave,
 /obj/item/grenade/heatwave,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -1602,7 +1602,7 @@
 "iw" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/electrical,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "iA" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -1614,7 +1614,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "iC" = (
 /obj/structure/catwalk,
@@ -1674,7 +1674,7 @@
 	req_access = list(5);
 	req_one_access = newlist()
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "iR" = (
 /mob/living/carbon/superior_animal/human/prisoner,
@@ -1687,7 +1687,7 @@
 "iU" = (
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "iV" = (
 /obj/structure/table/standard,
@@ -1725,7 +1725,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "jb" = (
 /mob/living/carbon/superior_animal/human/marine,
@@ -1734,16 +1734,16 @@
 /area/awaymission/spacebattle/syndicate7)
 "jc" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "jd" = (
 /obj/effect/floor_decal/industrial/botright,
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/awaymission/spacebattle/syndicate1)
 "jh" = (
 /obj/structure/closet/coffin,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "ji" = (
 /obj/machinery/door/firedoor,
@@ -1804,12 +1804,12 @@
 /obj/item/modular_computer/console/preset/civilian/professional{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "ju" = (
 /obj/item/storage/box/solution_trays,
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "jw" = (
 /obj/landmark/mob/carpspawn,
@@ -1836,10 +1836,10 @@
 "jD" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/closet/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "jE" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/recharger,
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate1)
@@ -1847,14 +1847,14 @@
 /obj/machinery/conveyor_switch/oneway{
 	id = "minetocargo"
 	},
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "jJ" = (
 /obj/machinery/light{
 	dir = 4
 	},
 /obj/machinery/porta_turret/excelsior/preloaded,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "jK" = (
 /mob/living/simple_animal/hostile/megafauna/excelsior_cosmonaught,
@@ -1878,7 +1878,7 @@
 	},
 /obj/effect/floor_decal/industrial/hatch,
 /obj/structure/closet/crate/excelsior,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "jV" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -1925,7 +1925,7 @@
 	pixel_x = 26
 	},
 /obj/structure/cyberplant,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "kf" = (
 /obj/machinery/light{
@@ -1937,7 +1937,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "kh" = (
 /mob/living/carbon/superior_animal/human/prisoner/melee,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "ki" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -1958,7 +1958,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "kp" = (
 /obj/structure/catwalk,
@@ -2017,7 +2017,7 @@
 /area/outpost/abandoned_fortress/powered)
 "kK" = (
 /obj/structure/closet/firecloset,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "kL" = (
 /obj/structure/catwalk,
@@ -2169,7 +2169,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "ls" = (
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/awaymission/spacebattle/syndicate7)
 "lt" = (
 /obj/machinery/shieldwallgen{
@@ -2180,7 +2180,7 @@
 	name = "Genetics Containment Blast Doors";
 	pixel_x = 24
 	},
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/outpost/abandoned_fortress/powered)
 "lv" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -2238,7 +2238,7 @@
 	dir = 4;
 	pixel_y = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "lE" = (
 /obj/machinery/light{
@@ -2250,10 +2250,10 @@
 "lG" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/boxes/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "lI" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/awaymission/spacebattle/syndicate1)
 "lJ" = (
 /obj/machinery/light,
@@ -2301,7 +2301,7 @@
 /obj/machinery/door/firedoor,
 /obj/structure/disposalpipe/segment,
 /obj/machinery/door/airlock/multi_tile/metal,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "lW" = (
 /obj/machinery/door/firedoor,
@@ -2346,7 +2346,7 @@
 /obj/structure/table/rack,
 /obj/random/rations/low_chance,
 /obj/random/rations/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "mm" = (
 /obj/structure/disposalpipe/broken{
@@ -2369,7 +2369,7 @@
 /turf/simulated/floor/carpet/sblucarpet,
 /area/awaymission/spacebattle/syndicate1)
 "mu" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/lathe_disk/ammo,
 /obj/random/lathe_disk/ammo,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -2381,7 +2381,7 @@
 	},
 /obj/item/storage/box/beakers,
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "mz" = (
 /obj/structure/sign/department/morgue,
@@ -2526,7 +2526,7 @@
 /obj/item/modular_computer/console/preset/engineering/shield{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "nb" = (
 /obj/machinery/light/small{
@@ -2599,7 +2599,7 @@
 	id = "QMLoad2"
 	},
 /obj/machinery/door/blast/regular,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "nq" = (
 /obj/machinery/conveyor/south{
@@ -2609,7 +2609,7 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "nr" = (
 /turf/simulated/floor/tiled/white/techfloor_grid,
@@ -2624,7 +2624,7 @@
 	opacity = 0
 	},
 /obj/machinery/door/airlock/maintenance_common,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "nu" = (
 /obj/random/scrap,
@@ -2635,7 +2635,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/awaymission/spacebattle/syndicate1)
 "nx" = (
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "ny" = (
 /obj/machinery/door/window{
@@ -2678,12 +2678,12 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/outpost/abandoned_fortress/powered)
 "nH" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/computer_hardware/hard_drive/portable/advanced/shady,
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate1)
 "nJ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/ammo_magazine/ammobox/heavy_rifle_408,
 /obj/item/ammo_magazine/ammobox/heavy_rifle_408,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -2731,7 +2731,7 @@
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate7)
 "nZ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/flame/lighter/zippo,
 /obj/item/storage/fancy/cigarettes,
 /turf/simulated/floor/tiled/dark/cargo,
@@ -2793,7 +2793,7 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/outpost/abandoned_fortress/powered)
 "ou" = (
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "ov" = (
 /obj/structure/table/standard,
@@ -2832,7 +2832,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "oG" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "oH" = (
 /obj/machinery/door/airlock/maintenance_common,
@@ -2867,12 +2867,12 @@
 /area/space)
 "oM" = (
 /mob/living/carbon/superior_animal/human/xiang,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/awaymission/spacebattle/syndicate1)
 "oP" = (
 /obj/structure/table/rack/shelf,
 /obj/random/prothesis/one_star,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "oQ" = (
 /turf/space,
@@ -2983,7 +2983,7 @@
 /area/outpost/abandoned_fortress/powered)
 "pk" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "pm" = (
 /obj/machinery/recharge_station,
@@ -3017,9 +3017,9 @@
 /area/awaymission/spacebattle/syndicate7)
 "py" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/reinforced,
 /area/outpost/abandoned_fortress/powered)
 "pz" = (
@@ -3084,7 +3084,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/awaymission/spacebattle/syndicate7)
 "pP" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/microwave,
 /obj/machinery/light{
 	dir = 8;
@@ -3147,11 +3147,11 @@
 /area/awaymission/spacebattle/syndicate7)
 "pY" = (
 /obj/machinery/telecomms/server/presets/blackshield,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "pZ" = (
 /obj/structure/flora/pottedplant/clockcult,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "qf" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -3240,7 +3240,7 @@
 /obj/machinery/alarm{
 	pixel_y = 26
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "qC" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -3281,7 +3281,7 @@
 "qS" = (
 /obj/structure/table/rack/shelf,
 /obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "qT" = (
 /obj/structure/door_assembly/door_assembly_ext,
@@ -3289,7 +3289,7 @@
 /area/outpost/abandoned_fortress/powered)
 "qV" = (
 /obj/structure/cyberplant,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "rc" = (
 /obj/structure/table/standard,
@@ -3299,11 +3299,11 @@
 	req_access = list(31)
 	},
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "rd" = (
 /obj/machinery/portable_atmospherics/powered/pump,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "re" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -3322,7 +3322,7 @@
 	name = "Cargo Booth Lockdown";
 	opacity = 0
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "rg" = (
 /obj/machinery/door/airlock/external,
@@ -3331,7 +3331,7 @@
 "rk" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/closet_tech,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "rl" = (
 /obj/landmark/corpse/generic/prisoner,
@@ -3406,7 +3406,7 @@
 /turf/simulated/floor/wood,
 /area/awaymission/spacebattle/syndicate7)
 "rF" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/tool/knife/dagger/skinning,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
@@ -3440,7 +3440,7 @@
 /turf/simulated/floor/tiled/white,
 /area/awaymission/spacebattle/syndicate7)
 "rM" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "rN" = (
 /obj/machinery/door/airlock/maintenance,
@@ -3459,7 +3459,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "rP" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/outpost/abandoned_fortress/powered)
 "rQ" = (
 /obj/machinery/porta_turret/prepper,
@@ -3469,13 +3469,13 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/simple/hidden,
 /obj/machinery/door/airlock/research,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "rT" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "rU" = (
 /obj/effect/decal/cleanable/blood/gibs/body,
@@ -3497,7 +3497,7 @@
 /obj/item/modular_computer/console/preset/civilian{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "sg" = (
 /obj/structure/low_wall,
@@ -3507,7 +3507,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "sh" = (
 /obj/machinery/telecomms/broadcaster,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "si" = (
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech,
@@ -3567,7 +3567,7 @@
 "sv" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/multi_tile/metal,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "sx" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume,
@@ -3577,7 +3577,7 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "sA" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/space,
 /area/space)
 "sC" = (
@@ -3585,7 +3585,7 @@
 	dir = 4
 	},
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "sF" = (
 /obj/effect/gibspawner/human,
@@ -3642,7 +3642,7 @@
 	icon_state = "bsposter50";
 	pixel_x = -32
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "sR" = (
 /obj/item/reagent_containers/glass/beaker{
@@ -3738,7 +3738,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/porta_turret/excelsior/preloaded,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "ti" = (
 /obj/structure/shuttle/engine/propulsion,
@@ -3789,7 +3789,7 @@
 /obj/machinery/atm{
 	pixel_x = 32
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "ty" = (
 /obj/machinery/door/airlock/multi_tile/glass{
@@ -3809,7 +3809,7 @@
 	pixel_y = -28;
 	req_one_access = list(13,65)
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "tz" = (
 /turf/simulated/floor/tiled/white/brown_platform,
@@ -3859,7 +3859,7 @@
 "tN" = (
 /obj/structure/low_wall,
 /obj/item/clothing/head/hairflower,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "tP" = (
 /obj/machinery/conveyor/west{
@@ -3871,7 +3871,7 @@
 /area/outpost/abandoned_fortress/powered)
 "tQ" = (
 /obj/landmark/corpse/generic/prisoner,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "tR" = (
 /turf/simulated/floor/tiled/white/cargo,
@@ -3892,7 +3892,7 @@
 /area/outpost/abandoned_fortress/powered)
 "tV" = (
 /obj/structure/reagent_dispensers/fueltank,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "tW" = (
 /obj/structure/table/woodentable,
@@ -3916,7 +3916,7 @@
 /area/outpost/abandoned_fortress/powered)
 "ub" = (
 /obj/effect/floor_decal/industrial/hatch,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/techmaint,
 /area/awaymission/spacebattle/syndicate7)
@@ -3955,7 +3955,7 @@
 "um" = (
 /obj/structure/table/standard,
 /obj/item/device/lighting/toggleable/lamp,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "un" = (
 /obj/structure/shuttle_part/cargo{
@@ -3982,7 +3982,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "ur" = (
 /obj/machinery/light{
@@ -4002,11 +4002,11 @@
 /area/outpost/abandoned_fortress/powered)
 "uv" = (
 /obj/machinery/space_heater,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "uw" = (
 /obj/machinery/chemical_dispenser/coffee_master,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/tiled/cafe,
 /area/awaymission/spacebattle/syndicate7)
 "ux" = (
@@ -4017,7 +4017,7 @@
 /turf/simulated/floor/plating/under,
 /area/space)
 "uy" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/junkfood/low_chance,
 /turf/simulated/floor/tiled/techmaint,
 /area/outpost/abandoned_fortress/powered)
@@ -4120,9 +4120,9 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/space)
 "uV" = (
-/obj/structure/table/steel,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/structure/table/aluminium,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/machinery/light{
 	dir = 8;
 	icon_state = "tube1";
@@ -4204,7 +4204,7 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/handcuffs,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/outpost/abandoned_fortress/powered)
 "vx" = (
 /turf/simulated/shuttle/wall/cargo{
@@ -4265,7 +4265,7 @@
 /obj/machinery/atmospherics/pipe/simple/visible{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "vJ" = (
 /obj/item/storage/deferred/crate/alcohol,
@@ -4340,16 +4340,16 @@
 /obj/item/clothing/shoes/magboots/merc,
 /obj/item/clothing/shoes/magboots/merc,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "wb" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "wc" = (
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "wd" = (
 /obj/machinery/status_display{
@@ -4391,7 +4391,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "wk" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/outpost/abandoned_fortress/powered)
 "wl" = (
 /obj/structure/catwalk,
@@ -4477,7 +4477,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "wL" = (
 /obj/machinery/door/window{
@@ -4519,7 +4519,7 @@
 /obj/random/rations,
 /obj/random/junkfood,
 /obj/random/junkfood,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "wS" = (
 /obj/structure/bed/padded,
@@ -4565,7 +4565,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "xb" = (
 /obj/structure/closet/crate,
@@ -4580,7 +4580,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "xd" = (
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "xf" = (
 /obj/random/mob/carp/low_chance,
@@ -4630,7 +4630,7 @@
 	id = "QMLoad"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "xt" = (
 /obj/structure/disposalpipe/segment,
@@ -4674,7 +4674,7 @@
 	dir = 8;
 	tag = "icon-railing0 (WEST)"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "xG" = (
 /obj/machinery/door/airlock/security{
@@ -4685,7 +4685,7 @@
 /area/outpost/abandoned_fortress/powered)
 "xH" = (
 /mob/living/carbon/superior_animal/human/prisoner/elite,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "xJ" = (
 /obj/item/clothing/mask/gas,
@@ -4699,7 +4699,7 @@
 "xL" = (
 /obj/structure/table/rack,
 /obj/random/powercell/small_safe_lonestar,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "xM" = (
 /obj/machinery/disposal,
@@ -4707,11 +4707,11 @@
 /obj/machinery/firealarm{
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "xN" = (
 /obj/landmark/corpse/security/prisonguard,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "xO" = (
 /obj/structure/catwalk,
@@ -4753,7 +4753,7 @@
 "xY" = (
 /obj/structure/table/standard,
 /obj/machinery/recharger,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "xZ" = (
 /obj/structure/catwalk,
@@ -4776,7 +4776,7 @@
 "ye" = (
 /obj/structure/table/standard,
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "yf" = (
 /obj/structure/bed/chair{
@@ -4818,14 +4818,14 @@
 /obj/item/circuitboard/broken,
 /obj/structure/door_assembly/door_assembly_maint_cargo,
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "ym" = (
 /obj/structure/sign/department/bridge,
 /turf/simulated/wall/r_wall,
 /area/awaymission/spacebattle/syndicate7)
 "yr" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/rock,
 /area/space)
 "yt" = (
@@ -4834,7 +4834,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "yu" = (
 /obj/machinery/telecomms/server/presets/centcom,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "yv" = (
 /obj/machinery/button/remote/blast_door{
@@ -4843,7 +4843,7 @@
 	pixel_x = 24;
 	pixel_y = 5
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "yw" = (
 /obj/structure/table/standard,
@@ -4936,7 +4936,7 @@
 /obj/item/modular_computer/console/preset/engineering/alarms{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "zd" = (
 /mob/living/carbon/superior_animal/human/excelsior/excel_ppsh,
@@ -4945,7 +4945,7 @@
 "ze" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "zf" = (
 /mob/living/carbon/superior_animal/human/marine/shield,
@@ -4973,7 +4973,7 @@
 	icon_state = "pipe-c"
 	},
 /mob/living/carbon/superior_animal/human/prisoner/elite,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "zk" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -5041,7 +5041,7 @@
 	icon_state = "tube1";
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "zw" = (
 /obj/structure/bed/chair/comfy/purp{
@@ -5141,7 +5141,7 @@
 	pixel_x = 3;
 	pixel_y = 3
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "zU" = (
 /mob/living/carbon/superior_animal/human/prisoner/melee,
@@ -5174,7 +5174,7 @@
 "An" = (
 /obj/structure/catwalk,
 /obj/item/storage/firstaid/surgery/combat,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/plating/under,
 /area/awaymission/spacebattle/syndicate7)
 "Ap" = (
@@ -5219,7 +5219,7 @@
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Az" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/chemical_dispenser/beer,
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate1)
@@ -5252,7 +5252,7 @@
 "AJ" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "AK" = (
 /obj/random/scrap/dense_weighted/low_chance,
@@ -5268,7 +5268,7 @@
 	id = "QMLoad2"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "AP" = (
 /obj/structure/multiz/stairs/enter,
@@ -5330,7 +5330,7 @@
 /turf/simulated/floor/reinforced,
 /area/outpost/abandoned_fortress/powered)
 "Bl" = (
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "Bo" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -5366,7 +5366,7 @@
 /obj/item/modular_computer/console/preset/engineering/atmos{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "BB" = (
 /obj/machinery/autolathe/organ_fabricator/loaded,
@@ -5396,7 +5396,7 @@
 /area/outpost/abandoned_fortress/powered)
 "BK" = (
 /obj/machinery/telecomms/processor/preset_cent,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "BM" = (
 /obj/structure/cable{
@@ -5429,7 +5429,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "BT" = (
 /obj/item/tool/screwdriver,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/deferred/pouches,
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
@@ -5446,18 +5446,18 @@
 /area/outpost/abandoned_fortress/powered)
 "BZ" = (
 /mob/living/carbon/superior_animal/human/prisoner/melee,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Cd" = (
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/pot,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/bowl,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/box/donkpockets,
 /turf/simulated/floor/tiled/cafe,
 /area/awaymission/spacebattle/syndicate7)
 "Cg" = (
 /obj/item/stool,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Ch" = (
 /obj/structure/closet,
@@ -5466,7 +5466,7 @@
 /obj/item/storage/backpack/military,
 /obj/item/storage/backpack/military,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "Ci" = (
 /obj/machinery/light{
@@ -5489,7 +5489,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Ck" = (
 /obj/machinery/door/firedoor,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "Cl" = (
 /turf/simulated/floor/tiled/white,
@@ -5516,7 +5516,7 @@
 	dir = 1;
 	pixel_y = -23
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Cq" = (
 /obj/structure/table/reinforced,
@@ -5550,7 +5550,7 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/outpost/abandoned_fortress/powered)
 "Cy" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/box/donkpockets,
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = 4
@@ -5562,7 +5562,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "CA" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "CB" = (
 /obj/machinery/dna_scannernew,
@@ -5608,7 +5608,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "CK" = (
 /obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "CM" = (
 /turf/simulated/shuttle/wall/cargo{
@@ -5617,7 +5617,7 @@
 	},
 /area/outpost/abandoned_fortress/powered)
 "CN" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "CO" = (
 /obj/structure/closet/secure_closet/personal,
@@ -5636,7 +5636,7 @@
 /area/outpost/abandoned_fortress/powered)
 "CR" = (
 /obj/machinery/vending/tool,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "CX" = (
 /obj/structure/railing,
@@ -5684,14 +5684,14 @@
 	id = "QMLoad"
 	},
 /obj/machinery/door/blast/regular,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "Di" = (
 /obj/machinery/firealarm{
 	dir = 4;
 	pixel_x = 28
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Dj" = (
 /obj/effect/gibspawner/human,
@@ -5710,7 +5710,7 @@
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "Dm" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/ammo_magazine/ammobox/antim,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
@@ -5747,7 +5747,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Dt" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Du" = (
 /obj/structure/disposalpipe/segment{
@@ -5756,7 +5756,7 @@
 /turf/simulated/wall/r_wall,
 /area/space)
 "Dv" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/stack/material/cardboard/random,
 /obj/item/stack/material/cardboard/random,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -5798,7 +5798,7 @@
 /obj/item/tank/emergency_oxygen,
 /obj/item/tank/emergency_oxygen,
 /obj/item/tank/emergency_oxygen,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "DD" = (
 /obj/structure/window/reinforced/crescent{
@@ -5808,16 +5808,16 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "DE" = (
-/obj/structure/table/steel,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
+/obj/structure/table/aluminium,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "DF" = (
 /obj/item/modular_computer/console/preset/engineering/rcon{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "DH" = (
 /obj/landmark/corpse/doctor,
@@ -5831,7 +5831,7 @@
 	pixel_x = 24;
 	pixel_y = 5
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "DN" = (
 /obj/effect/floor_decal/industrial/hatch,
@@ -5871,7 +5871,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "DU" = (
 /obj/machinery/telecomms/server/presets/unused,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "DW" = (
 /obj/structure/table/standard{
@@ -5903,12 +5903,12 @@
 /area/space)
 "Ee" = (
 /obj/structure/bed/chair,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Ei" = (
 /obj/machinery/door/window/brigdoor/northleft,
 /obj/structure/table/reinforced,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Ej" = (
 /obj/machinery/conveyor/east,
@@ -5920,7 +5920,7 @@
 	dir = 8;
 	icon_state = "pipe-j2"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "El" = (
 /obj/machinery/door/airlock/hatch{
@@ -5956,7 +5956,7 @@
 /turf/space,
 /area/space)
 "Eu" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /mob/living/carbon/superior_animal/human/marine,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
@@ -5974,7 +5974,7 @@
 /turf/simulated/floor/reinforced,
 /area/outpost/abandoned_fortress/powered)
 "Ez" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "EB" = (
@@ -5982,11 +5982,11 @@
 /obj/machinery/door/airlock/multi_tile/metal{
 	dir = 2
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "EG" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/awaymission/spacebattle/syndicate7)
 "EK" = (
 /obj/random/scrap,
@@ -6028,7 +6028,7 @@
 /area/outpost/abandoned_fortress/powered)
 "EV" = (
 /obj/item/device/radio/beacon,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "EX" = (
 /mob/living/carbon/superior_animal/human/prisoner/elite,
@@ -6050,7 +6050,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "Fb" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Fc" = (
 /obj/random/junk/low_chance,
@@ -6062,7 +6062,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "Fe" = (
 /mob/living/carbon/superior_animal/human/prisoner,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Ff" = (
 /obj/effect/decal/cleanable/blood,
@@ -6117,7 +6117,7 @@
 /obj/machinery/conveyor/east{
 	id = "QMLoad"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "Fv" = (
 /obj/machinery/light{
@@ -6128,13 +6128,13 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "Fy" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/awaymission/spacebattle/syndicate7)
 "Fz" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -6178,11 +6178,11 @@
 /area/outpost/abandoned_fortress/powered)
 "FJ" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "FK" = (
 /obj/machinery/photocopier,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "FM" = (
 /obj/structure/salvageable/autolathe_os,
@@ -6208,13 +6208,13 @@
 	dir = 8;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "FQ" = (
 /obj/machinery/conveyor/west{
 	id = "QMLoad2"
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "FR" = (
 /turf/simulated/shuttle/wall/cargo{
@@ -6277,7 +6277,7 @@
 /obj/item/cell/large/excelsior,
 /obj/item/cell/large/excelsior,
 /obj/item/cell/large/excelsior,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/item/rcd/excelsior,
 /obj/item/cell/small/excelsior,
@@ -6297,7 +6297,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Gl" = (
 /obj/random/scrap,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Gm" = (
 /obj/structure/bed/chair{
@@ -6357,7 +6357,7 @@
 	dir = 4
 	},
 /obj/machinery/chemical_dispenser/soda,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/tiled/cafe,
 /area/awaymission/spacebattle/syndicate7)
 "GA" = (
@@ -6373,7 +6373,7 @@
 /obj/machinery/firealarm{
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "GE" = (
 /obj/machinery/alarm{
@@ -6385,7 +6385,7 @@
 /turf/simulated/floor/tiled/white/violetcorener,
 /area/outpost/abandoned_fortress/powered)
 "GG" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/deferred/lights,
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
@@ -6396,7 +6396,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "GJ" = (
 /obj/machinery/vending/printomat,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "GN" = (
 /obj/random/scrap,
@@ -6412,7 +6412,7 @@
 /obj/item/packageWrap,
 /obj/item/packageWrap,
 /obj/item/device/destTagger,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "GQ" = (
 /obj/landmark/corpse/doctor,
@@ -6499,13 +6499,13 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "HA" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "HB" = (
 /obj/structure/disposalpipe/up,
@@ -6532,13 +6532,13 @@
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "HJ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/rations/low_chance,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "HK" = (
 /obj/machinery/door/airlock/maintenance_cargo,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "HL" = (
 /turf/simulated/floor/reinforced,
@@ -6609,7 +6609,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/space)
 "Ia" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
 "Ib" = (
@@ -6623,7 +6623,7 @@
 	dir = 4;
 	pixel_x = -26
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Ie" = (
 /mob/living/carbon/superior_animal/human/marine/specialist,
@@ -6641,7 +6641,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Ii" = (
 /obj/structure/table/reinforced,
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "Im" = (
@@ -6661,7 +6661,7 @@
 /area/space)
 "Iq" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "Is" = (
 /obj/machinery/light{
@@ -6720,11 +6720,11 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/outpost/abandoned_fortress/powered)
 "ID" = (
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
 /obj/item/stack/material/glass{
 	amount = 120
 	},
-/obj/item/stack/material/plasteel{
+/obj/item/stack/material/indsteel{
 	amount = 60
 	},
 /obj/random/material,
@@ -6737,7 +6737,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "IE" = (
 /obj/machinery/telecomms/hub/preset_cent,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "IG" = (
 /turf/simulated/floor/reinforced,
@@ -6757,7 +6757,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "IL" = (
 /obj/structure/table/standard,
@@ -6787,7 +6787,7 @@
 	name = "Cargo Booth Lockdown";
 	opacity = 0
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "IP" = (
 /obj/structure/table/reinforced,
@@ -6843,7 +6843,7 @@
 /obj/item/modular_computer/console/preset/engineering/power{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Jc" = (
 /mob/living/carbon/superior_animal/human/marine,
@@ -6853,7 +6853,7 @@
 /obj/structure/table/rack,
 /obj/random/rations,
 /obj/random/junkfood,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "Je" = (
 /obj/structure/sign/department/prison,
@@ -6882,7 +6882,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/outpost/abandoned_fortress/powered)
 "Jl" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/device/lighting/toggleable/lamp,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
@@ -6899,7 +6899,7 @@
 	dir = 1
 	},
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Jq" = (
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech/ranged,
@@ -6928,7 +6928,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Jx" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden{
@@ -7007,7 +7007,7 @@
 /obj/item/modular_computer/console/preset/engineering/supermatter{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "JP" = (
 /mob/living/carbon/superior_animal/human/voidwolf/elite,
@@ -7066,7 +7066,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "Kc" = (
 /obj/structure/flora/pottedplant/redshoot,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "Kd" = (
 /obj/machinery/access_button{
@@ -7087,7 +7087,7 @@
 	req_access = list(13)
 	},
 /obj/machinery/shield_diffuser,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "Kf" = (
 /obj/item/rig/eva,
@@ -7150,7 +7150,7 @@
 "Kr" = (
 /obj/structure/table/standard,
 /obj/item/paper_bin,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Kv" = (
 /obj/machinery/bodyscanner,
@@ -7174,7 +7174,7 @@
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate1)
 "Ky" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light,
 /obj/random/rations/crayon,
 /turf/simulated/floor/tiled/dark/bluecorner,
@@ -7195,7 +7195,7 @@
 	icon_state = "pipe-c"
 	},
 /obj/structure/plasticflaps,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "KE" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
@@ -7205,7 +7205,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/awaymission/spacebattle/syndicate7)
 "KF" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "KG" = (
@@ -7220,7 +7220,7 @@
 "KH" = (
 /mob/living/carbon/superior_animal/human/marine,
 /obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "KK" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume,
@@ -7340,10 +7340,10 @@
 "Lu" = (
 /obj/structure/catwalk,
 /obj/structure/closet/crate,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/tiled/techmaint,
 /area/outpost/abandoned_fortress/powered)
 "Lv" = (
@@ -7389,7 +7389,7 @@
 	dir = 2;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "LJ" = (
 /obj/effect/window_lwall_spawn,
@@ -7410,7 +7410,7 @@
 /obj/structure/table/rack,
 /obj/random/rig_module/low_chance,
 /obj/random/rig_module/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "LN" = (
 /obj/machinery/door/airlock/centcom{
@@ -7424,7 +7424,7 @@
 /obj/structure/table/reinforced,
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "LR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7439,7 +7439,7 @@
 "LS" = (
 /obj/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "LT" = (
 /obj/structure/toilet{
@@ -7464,7 +7464,7 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "LZ" = (
 /obj/effect/decal/cleanable/blood,
@@ -7473,12 +7473,12 @@
 /area/space)
 "Ma" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Mb" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "Mc" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -7555,7 +7555,7 @@
 "MD" = (
 /obj/effect/floor_decal/industrial/botleft,
 /obj/machinery/recharge_station,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/awaymission/spacebattle/syndicate1)
 "MG" = (
 /obj/machinery/vending/tool,
@@ -7567,14 +7567,14 @@
 	},
 /obj/structure/table/rack,
 /obj/random/rations,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "MJ" = (
 /obj/random/mob/carp/low_chance,
 /turf/simulated/floor/rock,
 /area/space)
 "MM" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -7590,7 +7590,7 @@
 "MP" = (
 /obj/structure/table/reinforced,
 /obj/machinery/recharger,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "MQ" = (
 /obj/landmark/corpse/antagonist/pirate/gunner,
@@ -7642,7 +7642,7 @@
 "Nd" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/science,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "Ne" = (
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
@@ -7705,7 +7705,7 @@
 	pixel_x = -26
 	},
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "Ny" = (
 /obj/item/material/harpoon,
@@ -7747,11 +7747,11 @@
 /obj/machinery/atmospherics/pipe/simple/hidden{
 	dir = 6
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "NG" = (
 /obj/machinery/suit_storage_unit/standard_unit,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "NH" = (
 /obj/structure/catwalk,
@@ -7821,7 +7821,7 @@
 /obj/structure/railing/grey{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Oe" = (
 /obj/effect/window_lwall_spawn/reinforced,
@@ -7846,7 +7846,7 @@
 /obj/machinery/light,
 /obj/random/material_rare/low_chance,
 /obj/random/material_rare/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "Oi" = (
 /mob/living/carbon/superior_animal/human/prisoner/melee,
@@ -7866,7 +7866,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "Om" = (
 /obj/structure/salvageable/autolathe,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "On" = (
 /obj/machinery/papershredder,
@@ -7876,10 +7876,10 @@
 /obj/structure/table/reinforced,
 /obj/item/storage/box/monkeycubes,
 /obj/item/storage/box/monkeycubes,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Oq" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/computer_hardware/hard_drive/portable/design/security,
 /obj/item/computer_hardware/hard_drive/portable/design/lethal_ammo,
 /obj/item/computer_hardware/hard_drive/portable/design/guns/lamia,
@@ -7916,7 +7916,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Ow" = (
 /obj/machinery/telecomms/server/presets/command,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "Ox" = (
 /obj/machinery/door/blast/regular,
@@ -8010,7 +8010,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "OW" = (
 /obj/machinery/portable_atmospherics/powered/scrubber,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "OX" = (
 /obj/item/storage/deferred/toolmod,
@@ -8031,7 +8031,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Pe" = (
 /obj/machinery/airlock_sensor{
@@ -8096,7 +8096,7 @@
 /obj/machinery/alarm{
 	pixel_y = 26
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Po" = (
 /obj/structure/table/standard,
@@ -8114,7 +8114,7 @@
 	req_access = list(33)
 	},
 /obj/machinery/door/window/northright,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/outpost/abandoned_fortress/powered)
 "Pw" = (
 /obj/random/material_ore,
@@ -8124,7 +8124,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/outpost/abandoned_fortress/powered)
 "Pz" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/board,
 /turf/simulated/floor/tiled/cafe,
 /area/awaymission/spacebattle/syndicate7)
@@ -8165,7 +8165,7 @@
 /obj/machinery/atmospherics/pipe/manifold/hidden{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "PH" = (
 /obj/machinery/light{
@@ -8225,11 +8225,11 @@
 	},
 /obj/item/storage/deferred/rations,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "PX" = (
 /obj/landmark/corpse/antagonist/pirate,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Qa" = (
 /turf/simulated/floor/tiled/white,
@@ -8269,7 +8269,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "Qg" = (
 /obj/machinery/telecomms/bus/preset_cent,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "Qh" = (
 /obj/structure/table/glass,
@@ -8301,7 +8301,7 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/outpost/abandoned_fortress/powered)
 "Qq" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/chemical_dispenser/soda,
 /obj/machinery/light{
 	dir = 4
@@ -8393,7 +8393,7 @@
 /obj/item/modular_computer/console/preset/civilian{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "QT" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -8418,7 +8418,7 @@
 /obj/structure/railing/grey{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "QZ" = (
 /obj/random/scrap/sparse_weighted,
@@ -8654,7 +8654,7 @@
 "Sa" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/boxes/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Sb" = (
 /obj/machinery/door/airlock/centcom{
@@ -8708,7 +8708,7 @@
 "Sy" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/boxes,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "Sz" = (
 /obj/machinery/light{
@@ -8763,7 +8763,7 @@
 /turf/simulated/floor/tiled/white/cargo,
 /area/outpost/abandoned_fortress/powered)
 "SH" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/reagent_containers/cooking_with_jane/cooking_container/pan,
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = 4
@@ -8791,7 +8791,7 @@
 "SK" = (
 /obj/structure/table/rack,
 /obj/random/prothesis,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "SL" = (
 /obj/structure/table/standard,
@@ -8800,7 +8800,7 @@
 /area/awaymission/spacebattle/syndicate2)
 "SM" = (
 /obj/machinery/telecomms/server/presets/security,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "SQ" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -8812,13 +8812,13 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "SS" = (
-/obj/item/material/shard/plasma,
+/obj/item/material/shard/mend,
 /turf/simulated/floor/plating/under,
 /area/space)
 "ST" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/closet_tech/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "SV" = (
 /obj/machinery/atmospherics/pipe/simple/visible{
@@ -8891,7 +8891,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "Tj" = (
 /obj/machinery/door/firedoor,
@@ -8899,7 +8899,7 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/mining,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/outpost/abandoned_fortress/powered)
 "Tl" = (
 /mob/living/carbon/superior_animal/human/marine,
@@ -8911,7 +8911,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "Tn" = (
 /obj/machinery/porta_turret/excelsior/preloaded,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "Tp" = (
 /obj/landmark/corpse/antagonist/pirate,
@@ -8924,7 +8924,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/computer_hardware/hard_drive/portable/design/misc,
 /turf/simulated/floor/tiled/dark/golden,
 /area/awaymission/spacebattle/syndicate1)
@@ -8955,14 +8955,14 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "TC" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
 	icon_state = "pipe-c"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "TD" = (
 /obj/machinery/vending/wallmed{
@@ -9056,13 +9056,13 @@
 /area/awaymission/spacebattle/syndicate7)
 "TY" = (
 /obj/machinery/telecomms/server/presets/prospector,
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "Ua" = (
 /obj/effect/floor_decal/industrial/loading,
 /obj/machinery/door/window/brigdoor/northright,
 /obj/machinery/door/window/brigdoor/southright,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Ub" = (
 /obj/structure/shuttle_part/cargo{
@@ -9082,7 +9082,7 @@
 /turf/simulated/floor/rock,
 /area/space)
 "Ug" = (
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Ui" = (
 /obj/random/closet_tech,
@@ -9123,7 +9123,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "Um" = (
 /obj/structure/table/rack/shelf,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Un" = (
 /obj/structure/disposalpipe/up{
@@ -9169,7 +9169,7 @@
 /turf/simulated/floor/tiled/dark/techfloor_grid,
 /area/space)
 "Uw" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/light,
 /turf/simulated/floor/tiled/dark/bluecorner,
 /area/awaymission/spacebattle/syndicate7)
@@ -9183,7 +9183,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "Uz" = (
 /mob/living/carbon/superior_animal/human/marine,
@@ -9216,12 +9216,12 @@
 /area/awaymission/spacebattle/syndicate7)
 "UD" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "UG" = (
 /obj/structure/table/rack,
 /obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "UH" = (
 /obj/effect/floor_decal/spline/wood{
@@ -9270,7 +9270,7 @@
 /turf/simulated/shuttle/wall/cargo,
 /area/outpost/abandoned_fortress/powered)
 "Va" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/chemical_dispenser/coffee_master,
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate1)
@@ -9286,7 +9286,7 @@
 	req_access = list(33)
 	},
 /obj/machinery/door/window/northleft,
-/turf/simulated/floor/tiled/steel/techfloor,
+/turf/simulated/floor/tiled/aluminium/techfloor,
 /area/outpost/abandoned_fortress/powered)
 "Ve" = (
 /obj/effect/floor_decal/industrial/outline,
@@ -9311,13 +9311,13 @@
 /area/awaymission/spacebattle/syndicate7)
 "Vo" = (
 /mob/living/carbon/superior_animal/human/xiang/ronin,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/awaymission/spacebattle/syndicate1)
 "Vp" = (
 /obj/machinery/firealarm{
 	pixel_y = 28
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Vr" = (
 /obj/landmark/corpse/excelsior,
@@ -9345,7 +9345,7 @@
 /area/awaymission/spacebattle/syndicate1)
 "Vw" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/awaymission/spacebattle/syndicate7)
 "Vy" = (
 /obj/machinery/door/airlock/research,
@@ -9370,7 +9370,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "VH" = (
 /obj/structure/dispenser/oxygen,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "VI" = (
 /obj/machinery/atmospherics/pipe/tank/air,
@@ -9419,7 +9419,7 @@
 /turf/space,
 /area/space)
 "VU" = (
-/turf/simulated/floor/tiled/steel/bar_light,
+/turf/simulated/floor/tiled/aluminium/bar_light,
 /area/awaymission/spacebattle/syndicate7)
 "VV" = (
 /obj/structure/shuttle/engine/propulsion{
@@ -9438,7 +9438,7 @@
 "Wa" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/closet,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Wc" = (
 /obj/machinery/access_button{
@@ -9452,7 +9452,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "Wd" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -9464,7 +9464,7 @@
 /turf/simulated/floor/tiled/white/techfloor_grid,
 /area/outpost/abandoned_fortress/powered)
 "Wi" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/item/storage/deferred/comms,
 /turf/simulated/floor/tiled/techmaint,
@@ -9482,7 +9482,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Wl" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/outpost/abandoned_fortress/powered)
 "Wm" = (
 /obj/structure/catwalk,
@@ -9491,7 +9491,7 @@
 /area/outpost/abandoned_fortress/powered)
 "Wp" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/awaymission/spacebattle/syndicate1)
 "Ws" = (
 /obj/structure/closet/secure_closet/injection,
@@ -9518,7 +9518,7 @@
 	name = "remote shutter control";
 	req_access = newlist()
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/reinforced,
 /area/awaymission/spacebattle/syndicate1)
 "Wz" = (
@@ -9570,7 +9570,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "WJ" = (
 /obj/item/deck/cards,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/pill_bottle/dice_nerd,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/awaymission/spacebattle/syndicate1)
@@ -9609,7 +9609,7 @@
 /obj/item/tool/tape_roll,
 /obj/item/tool/tape_roll,
 /obj/item/tool/tape_roll,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "WV" = (
 /obj/machinery/door/blast/regular/open,
@@ -9683,7 +9683,7 @@
 /obj/random/junkfood/low_chance,
 /obj/random/junkfood/low_chance,
 /obj/random/junkfood,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/outpost/abandoned_fortress/powered)
 "Xj" = (
 /obj/item/device/radio/intercom{
@@ -9783,7 +9783,7 @@
 /obj/machinery/door/window/brigdoor/northright,
 /obj/machinery/door/window/brigdoor/southright,
 /obj/effect/decal/cleanable/blood,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "XH" = (
 /obj/structure/shuttle_part/cargo{
@@ -9814,7 +9814,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/bar_flat,
+/turf/simulated/floor/tiled/aluminium/bar_flat,
 /area/awaymission/spacebattle/syndicate7)
 "XU" = (
 /obj/structure/closet,
@@ -9836,7 +9836,7 @@
 /obj/effect/floor_decal/industrial/loading{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress/powered)
 "XY" = (
 /obj/structure/catwalk,
@@ -9853,11 +9853,11 @@
 /turf/simulated/floor/plating/under,
 /area/space)
 "Yb" = (
-/obj/structure/table/steel,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/steel/random,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/structure/table/aluminium,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/aluminium/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /obj/item/stack/material/cardboard/random,
 /obj/item/stack/material/cardboard/random,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -9910,7 +9910,7 @@
 /obj/item/storage/belt/security,
 /obj/item/storage/pouch/large_generic,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/awaymission/spacebattle/syndicate7)
 "Ym" = (
 /obj/structure/bed/chair{
@@ -9933,7 +9933,7 @@
 /area/space)
 "Ys" = (
 /obj/effect/floor_decal/industrial/outline/yellow,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress/powered)
 "Yt" = (
 /turf/simulated/floor/rock,
@@ -9942,14 +9942,14 @@
 /obj/machinery/conveyor/north{
 	id = "minetocargo"
 	},
-/turf/simulated/floor/tiled/steel/danger,
+/turf/simulated/floor/tiled/aluminium/danger,
 /area/outpost/abandoned_fortress/powered)
 "Yv" = (
 /turf/simulated/floor/tiled/dark/cargo,
 /area/awaymission/spacebattle/syndicate7)
 "Yw" = (
 /obj/structure/flora/pottedplant/minitree,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "Yx" = (
 /obj/structure/urinal{
@@ -9963,7 +9963,7 @@
 /area/outpost/abandoned_fortress/powered)
 "YA" = (
 /obj/machinery/hologram/holopad,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "YB" = (
 /obj/structure/disposalpipe/segment,
@@ -9971,7 +9971,7 @@
 	dir = 8;
 	pixel_x = 22
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "YC" = (
 /obj/structure/low_wall,
@@ -10100,7 +10100,7 @@
 	dir = 8;
 	pixel_x = 22
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "Zt" = (
 /mob/living/carbon/superior_animal/human/prisoner,
@@ -10125,7 +10125,7 @@
 	name = "Genetics Containment Blast Doors";
 	pixel_x = -24
 	},
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/outpost/abandoned_fortress/powered)
 "Zz" = (
 /obj/random/junk/nondense,
@@ -10140,7 +10140,7 @@
 /area/awaymission/spacebattle/syndicate7)
 "ZC" = (
 /mob/living/carbon/superior_animal/human/prisoner/elite,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress/powered)
 "ZD" = (
 /obj/structure/table/glass,
@@ -10157,7 +10157,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/awaymission/spacebattle/syndicate1)
 "ZI" = (
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/awaymission/spacebattle/syndicate7)
 "ZJ" = (
 /obj/machinery/light/small{

@@ -899,9 +899,9 @@ area/space/atmosalert()
 		Process()
 
 /area/crystal_field/Entered(atom/movable/Obj, atom/newloc)
-	if(istype(Obj, /mob/living) && !istype(Obj, /mob/living/carbon/superior_animal/ameridian_golem)) // If a mob enter the area, start processing, except if it is a golem
+	if(istype(Obj, /mob/living) && !istype(Obj, /mob/living/carbon/superior_animal/nacre_golem)) // If a mob enter the area, start processing, except if it is a golem
 		start_crystal_processing()
-		//to_chat(usr, "The crystals seems to wake up") // TODO, better sentence and have it only be visible to psions -R4d6
+		//to_chat(usr, "The crystals seems to wake up") // TODO, better sentence and have it only be visible to psions -R4d6 // Never going to happen. Not here, not ever. -Monochrome
 
 /area/crystal_field/Exited(atom/movable/Obj, atom/newloc)
 	if(!check_contents()) // If we don't have any mobs inside the area, stop processing the crystals
@@ -916,22 +916,22 @@ area/space/atmosalert()
 	spawn(process_delay) .() // We loop forever
 
 // Check the area for living non-golem mobs
-// Return TRUE if there is any living mob that isn't an Ameridian golem
+// Return TRUE if there is any living mob that isn't an nacre golem
 /area/crystal_field/proc/check_contents()
 	. = FALSE // Default return value is false by default
 	for(var/mob/living/L in contents) // Check every mob
-		if(!istype(L, /mob/living/carbon/superior_animal/ameridian_golem) && L.stat != DEAD) // Ignore golems & dead people
+		if(!istype(L, /mob/living/carbon/superior_animal/nacre_golem) && L.stat != DEAD) // Ignore golems & dead people
 			. = TRUE
 			break // No need to check further
 
 // Iterate through every crystal in the area and prevent it from processing
 /area/crystal_field/proc/stop_crystal_processing()
-	for(var/obj/structure/ameridian_crystal/AC in contents)
+	for(var/obj/structure/nacre_crystal/AC in contents)
 		if(AC.is_processing) // Safety check to make sure the crystals are processing before shutting them
 			STOP_PROCESSING(SSobj, AC) // Make the crystal stop processing
 
 /area/crystal_field/proc/start_crystal_processing()
-	for(var/obj/structure/ameridian_crystal/AC in contents)
+	for(var/obj/structure/nacre_crystal/AC in contents)
 		if(!AC.is_processing) // Safety check to make sure the crystals are not processing before starting them
 			START_PROCESSING(SSobj, AC) // Make the crystal start processing
 

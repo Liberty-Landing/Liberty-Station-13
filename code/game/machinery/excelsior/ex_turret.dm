@@ -275,7 +275,7 @@
 						if(prob(50))
 							new /obj/item/circuitboard/artificer_turret(loc)
 						if(prob(50))
-							new /obj/item/stack/material/steel(loc, rand(1,4))
+							new /obj/item/stack/material/aluminium(loc, rand(1,4))
 						if(prob(50))
 							new /obj/item/device/assembly/prox_sensor(loc)
 					else
@@ -459,7 +459,7 @@
 						if(prob(50))
 							new /obj/item/circuitboard/artificer_turret/opifex(loc)
 						if(prob(50))
-							new /obj/item/stack/material/steel(loc, rand(1,4))
+							new /obj/item/stack/material/aluminium(loc, rand(1,4))
 						if(prob(50))
 							new /obj/item/device/assembly/prox_sensor(loc)
 					else

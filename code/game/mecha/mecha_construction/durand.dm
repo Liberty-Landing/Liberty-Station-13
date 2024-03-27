@@ -46,7 +46,7 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The windshield hangs loose in the chassis, and must be screwed into place."),
 		//4
-		list("key"=/obj/item/stack/material/glass/reinforced,
+		list("key"=/obj/item/stack/material/glass/laminated,
 			//"backkey"=QUALITY_WELDING,
 			"desc"="External armor is installed. 5 sheets of reinforced glass are needed for the windshield."),
 		//5
@@ -78,9 +78,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The circuit shielding has been placed in the chassis, but needs to be bolted down."),
 		//12
-		list("key"=/obj/item/stack/material/plasteel,
+		list("key"=/obj/item/stack/material/indsteel,
 			//"backkey"=QUALITY_SCREW_DRIVING,
-			"desc"="The advanced capacitor is secured and the internal circutry is complete. 5 sheets of plasteel are needed to shield the circuitry."),
+			"desc"="The advanced capacitor is secured and the internal circutry is complete. 5 sheets of indsteel are needed to shield the circuitry."),
 		//13
 		list("key"=QUALITY_SCREW_DRIVING,
 			//"backkey"=QUALITY_PRYING,
@@ -429,7 +429,7 @@
 						"You pry the circuit shielding from the [holder]."
 					)
 					holder.icon_state = "durand14"
-					new /obj/item/stack/material/plasteel (get_turf(holder), 5)
+					new /obj/item/stack/material/indsteel (get_turf(holder), 5)
 			if(11)
 				if(diff==FORWARD)
 					usr.visible_message(
@@ -536,7 +536,7 @@
 						"You remove the windshield from the [holder]."
 					)
 					holder.icon_state = "durand19"
-					new /obj/item/stack/material/glass/reinforced (get_turf(holder), 5)
+					new /obj/item/stack/material/glass/laminated (get_turf(holder), 5)
 			if(3)
 				if(diff==FORWARD)
 					usr.visible_message(

@@ -282,12 +282,12 @@
 	desc = "A robot part, broken beyond repair. Can be recycled in an autolathe."
 	icon = 'icons/obj/robot_component.dmi'
 	icon_state = "broken"
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 
 /obj/item/robot_parts/robot_component
 	icon = 'icons/obj/robot_component.dmi'
 	icon_state = "working"
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	var/brute = 0
 	var/burn = 0
 	var/icon_state_broken = "broken"
@@ -314,13 +314,13 @@
 	name = "Mark II armour plating"
 	icon_state = "armormk2"
 	icon_state_broken = "armormk2_broken"
-	matter = list(MATERIAL_STEEL = 25)
+	matter = list(MATERIAL_ALUMINIUM = 25)
 
 /obj/item/robot_parts/robot_component/armour/mkv
 	name = "Mark V armour plating"
 	icon_state = "armormk5"
 	icon_state_broken = "armormk5_broken"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 10)
 
 /obj/item/robot_parts/robot_component/camera
 	name = "camera"
@@ -347,4 +347,4 @@
 	icon = 'icons/obj/tank.dmi'
 	icon_state = "jetpack-black"
 	icon_state_broken = "jetpack-black"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASMA = 10, MATERIAL_SILVER = 20)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_HYDROGENC = 10, MATERIAL_SILVER = 20)

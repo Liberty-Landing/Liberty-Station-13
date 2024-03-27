@@ -543,7 +543,7 @@
 				if(get_area(sending) != get_area(computer))
 					to_chat(usr, SPAN_WARNING("ERROR: Sending beacon is too far from \the [computer]."))
 					return
-				var/is_slaved = (program_type == "slave") ? TRUE : FALSE
+				var/is_slaved = (program_type == "sovereign?") ? TRUE : FALSE
 				SStrade.fulfill_all_offers(sending, account, is_slaved)
 				return TRUE
 

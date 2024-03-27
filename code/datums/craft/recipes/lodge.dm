@@ -74,7 +74,7 @@
 	result = /obj/item/tool/knife/dagger/skinning
 	icon_state = "woodworking"
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 60),
 		list(CRAFT_MATERIAL, 2, MATERIAL_WOOD, "time" = 20),
 		list(QUALITY_SAWING, 10, "time" = 60),
 		list(QUALITY_SCREW_DRIVING, 20, "time" = 30),
@@ -99,7 +99,7 @@
 	result = /obj/item/tool/sword/cleaver
 	icon_state = "woodworking"
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_WELDING, 15, "time" = 60),
 		list(QUALITY_HAMMERING, 15, "time" = 60),
 		list(QUALITY_WELDING, 15, "time" = 60),
@@ -116,7 +116,7 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 10, MATERIAL_LEATHER, "time" = 60),
 		list(QUALITY_CUTTING, 10, "time" = 50),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 40),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 40),
 		list(/obj/item/stack/cable_coil, 10, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 15, 30)
 	)
@@ -128,7 +128,7 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 20, MATERIAL_LEATHER, "time" = 60),
 		list(QUALITY_CUTTING, 15, "time" = 50),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_WELDING, 20, "time" = 90),
 		list(/obj/item/stack/cable_coil, 10, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 15, 30),
@@ -152,7 +152,7 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/armor/hunter, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_SCREW_DRIVING, 15, "time" = 50),
 		list(/obj/item/stack/cable_coil, 10, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 15, 30),

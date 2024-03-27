@@ -49,8 +49,8 @@
 	icon_state = "coin_uranium"
 
 /obj/item/coin/platinum
-	name = COIN_PLATINUM
-	desc = "A platinum coin."
+	name = COIN_TITANIUM
+	desc = "A titanium coin."
 	icon_state = "coin_adamantine"
 
 /obj/item/coin/attackby(obj/item/W as obj, mob/user as mob)

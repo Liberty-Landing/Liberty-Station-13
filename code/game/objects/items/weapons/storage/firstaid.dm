@@ -542,7 +542,7 @@
 /obj/item/storage/pill_bottle/spaceacillin
 	name = "bottle of Spaceacillin pills"
 	icon_state = "pill_white"
-	desc = "A theta-lactam antibiotic. Effective against many diseases likely to be encountered in space."
+	desc = "A theta-lactam antibiotic. Effective against many diseases likely to be encountered on colonial grounds."
 	prespawn_item = /obj/item/reagent_containers/pill/spaceacillin
 
 /obj/item/storage/pill_bottle/tramadol
@@ -619,7 +619,7 @@
 	icon_state = "freezer"
 	item_state = "medicalpack"
 	max_w_class = ITEM_SIZE_NORMAL
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 2)
 	can_hold = list(/obj/item/organ, /obj/item/modification/organ, /obj/item/reagent_containers/food, /obj/item/reagent_containers/glass)
 	max_storage_space = DEFAULT_NORMAL_STORAGE
 	use_to_pickup = TRUE
@@ -629,5 +629,5 @@
 	desc = "A red-colored, compact cryogenic box for holding organs for safe transportation preserving their integrity. This one has expanded capacity."
 	icon_state = "freezer_red"
 	item_state = "medicalpack"
-	matter = list(MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 2)
 	max_storage_space = DEFAULT_NORMAL_STORAGE * 1.25

@@ -46,7 +46,7 @@ var/changelog_hash			= ""
 var/game_year				= (text2num(time2text(world.realtime, "YYYY")) + 700)
 
 var/round_progressing = 1
-var/master_storyteller       = "shitgenerator"
+var/master_storyteller       = "schrizolore" //We don't need the absurd amount of "Shit"-word throw around my dudes. Schrizo is funnier
 
 var/host = null //only here until check @ code\modules\ghosttrap\trap.dm:112 is fixed
 

@@ -11,5 +11,5 @@
 	w_class = ITEM_SIZE_SMALL
 	attack_verb = list("called", "rang")
 	hitsound = 'sound/weapons/ring.ogg'
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 4)
-	preloaded_reagents = list("plasticide" = 20, "copper" = 6, "silicon" = 10)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 4)
+	preloaded_reagents = list("microplastic" = 20, "copper" = 6, "silicon" = 10)

@@ -14,7 +14,7 @@
 	slot_flags = SLOT_BELT|SLOT_BACK
 	init_recoil = HMG_RECOIL(0.6)
 	price_tag = 500
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 20, MATERIAL_WOOD = 5)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_ALUMINIUM = 20, MATERIAL_WOOD = 5)
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2, TECH_ILLEGAL = 3)
 	saw_off = FALSE
 	serial_type = "INDEX"

@@ -8,13 +8,13 @@
 	name = "Bastion Shield"
 	result = /obj/item/shield/riot/bastion
 	steps = list(
-	list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 	list(QUALITY_SAWING, 30, "time" = 60),
-	list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 30),
 	list(QUALITY_WELDING, 35, "time"= 60),
 	list(/obj/item/shield/riot, 1, "time" = 30),
 	list(QUALITY_HAMMERING, 45, "time" = 40),
-	list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS, "time" = 30)
+	list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS, "time" = 30)
 	)
 
 // High-end toolmods
@@ -24,7 +24,7 @@
 	name = "Booster"
 	result = /obj/item/tool_upgrade/productivity/booster
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(/obj/item/circuitboard, 1),
 		list(QUALITY_SCREW_DRIVING, 25, "time" = 90),
@@ -41,11 +41,11 @@
 	name = "plasma injector"
 	result = /obj/item/tool_upgrade/productivity/injector
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_DRILLING, 30, "time" = 40),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASMA, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_HYDROGENC, "time" = 30),
 		list(QUALITY_WELDING, 30, "time" = 40),
 		list(/obj/item/stock_parts/capacitor/super, 1, "time" = 30),
 		list(QUALITY_SCREW_DRIVING, 25, "time" = 90),
@@ -59,7 +59,7 @@
 	result = /obj/item/tool_upgrade/productivity/rocket_engine
 	icon_state = "electronic"
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 60),
 		list(CRAFT_MATERIAL, 1, MATERIAL_GOLD, "time" = 20),
 		list(QUALITY_CUTTING, 30, "time" = 40),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
@@ -76,11 +76,11 @@
 	icon_state = "gun"
 	steps = list(
 		list(/obj/item/gun_upgrade/scope/acog, 1), // So we rely upon Watch or a sec disk to make
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(QUALITY_WELDING, 35, "time" = 40),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASMAGLASS, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_LBGLASS, "time" = 30),
 		list(CRAFT_MATERIAL, 2, MATERIAL_URANIUM, "time" = 30),
 		list(QUALITY_CUTTING, 25, "time" = 90)
 	)
@@ -93,8 +93,8 @@
 	steps = list(
 		list(/obj/item/stock_parts/matter_bin/super, 1),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL), //Quite useless in most cases so were cheaper
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL), //Quite useless in most cases so were cheaper
+		list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(QUALITY_HAMMERING, 30),
@@ -107,7 +107,7 @@
 	steps = list(
 		list(/obj/item/stock_parts/manipulator/pico, 1),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL), //Are main thing were exspensive do to being the main crafted item
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL), //Are main thing were exspensive do to being the main crafted item
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
@@ -122,8 +122,8 @@
 	steps = list(
 		list(/obj/item/stock_parts/micro_laser/ultra, 1),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS),
-		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
+		list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS),
+		list(CRAFT_MATERIAL, 1, MATERIAL_LGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(QUALITY_SAWING, 30)
@@ -161,8 +161,8 @@
 	steps = list(
 		list(/obj/item/stock_parts/matter_bin/super, 4),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASMAGLASS),
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_LBGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(QUALITY_HAMMERING, 40),
@@ -176,7 +176,7 @@
 	steps = list(
 		list(/obj/item/stock_parts/manipulator/pico, 4),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 8, MATERIAL_INDSTEEL),
 		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTIC),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
@@ -192,8 +192,8 @@
 	steps = list(
 		list(/obj/item/stock_parts/micro_laser/ultra, 4),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASMAGLASS),
-		list(CRAFT_MATERIAL, 4, MATERIAL_RGLASS),
+		list(CRAFT_MATERIAL, 4, MATERIAL_LBGLASS),
+		list(CRAFT_MATERIAL, 4, MATERIAL_LGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(QUALITY_SAWING, 60),

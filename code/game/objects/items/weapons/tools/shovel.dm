@@ -9,7 +9,7 @@
 	throwforce = WEAPON_FORCE_WEAK
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1, TECH_ENGINEERING = 1)
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	attack_verb = list("bashed", "bludgeoned", "thrashed", "whacked")
 	sharp = FALSE
 	edge = TRUE
@@ -39,13 +39,13 @@
 
 /obj/item/tool/shovel/combat
 	name = "combat crovel"
-	desc = "A plasteel crovel with a sharp head, serrated side, crowbar lever on the pommel, and a fold-able winch for easy transport. For when you need to dig out trenches, hammer barricades together, cave in skulls, and cut your steak."
+	desc = "A indsteel crovel with a sharp head, serrated side, crowbar lever on the pommel, and a fold-able winch for easy transport. For when you need to dig out trenches, hammer barricades together, cave in skulls, and cut your steak."
 	icon_state = "combat_shovel"
 	force = WEAPON_FORCE_DANGEROUS
 	throwforce = WEAPON_FORCE_DANGEROUS
 	w_class = ITEM_SIZE_SMALL
 	armor_penetration = ARMOR_PEN_SHALLOW
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTEEL = 6)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 6)
 	tool_qualities = list(QUALITY_SHOVELING = 45, QUALITY_DIGGING = 45, QUALITY_PRYING = 30, QUALITY_CUTTING = 10, QUALITY_SAWING = 5)
 	workspeed = 1.2
 	price_tag = 175
@@ -58,7 +58,7 @@
 	throwforce = WEAPON_FORCE_DANGEROUS
 	w_class = ITEM_SIZE_SMALL
 	armor_penetration = ARMOR_PEN_SHALLOW
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTEEL = 6)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 6)
 	tool_qualities = list(QUALITY_SHOVELING = 85, QUALITY_DIGGING = 85, QUALITY_PRYING = 70, QUALITY_CUTTING = 30, QUALITY_SAWING = 45)
 	workspeed = 1.5
 	price_tag = 2875
@@ -69,7 +69,7 @@
 	icon_state = "one_star_shovel"
 	force = WEAPON_FORCE_DANGEROUS
 	throwforce = WEAPON_FORCE_DANGEROUS
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTEEL = 6, MATERIAL_PLATINUM = 3)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 6, MATERIAL_TITANIUMRTC = 3)
 	tool_qualities = list(QUALITY_SHOVELING = 60, QUALITY_DIGGING = 45, QUALITY_EXCAVATION = 45)
 	workspeed = 1.4
 	degradation = 2
@@ -85,7 +85,7 @@
 	force = WEAPON_FORCE_NORMAL
 	throwforce = WEAPON_FORCE_HARMLESS
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	tool_qualities = list(QUALITY_SHOVELING = 20, QUALITY_DIGGING = 20, QUALITY_EXCAVATION = 10)
 	max_upgrades = 2
 	price_tag = 60
@@ -98,7 +98,7 @@
 	force = WEAPON_FORCE_PAINFUL
 	throwforce = WEAPON_FORCE_WEAK
 	w_class = ITEM_SIZE_NORMAL
-	matter = list(MATERIAL_PLASTEEL = 6,  MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 6,  MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	tool_qualities = list(QUALITY_SHOVELING = 60, QUALITY_DIGGING = 45, QUALITY_EXCAVATION = 20)
 	workspeed = 1.3
 	use_power_cost = 0.8

@@ -8,7 +8,7 @@
 	can_dual = TRUE
 	fire_sound = 'sound/weapons/energy/laser_pistol.ogg'
 	charge_cost = 100
-	matter = list(MATERIAL_PLASTEEL = 13, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 6)
+	matter = list(MATERIAL_INDSTEEL = 13, MATERIAL_PLASTIC = 6, MATERIAL_SILVER = 6)
 	price_tag = 450
 
 	projectile_type = /obj/item/projectile/beam/stun
@@ -46,7 +46,7 @@
 	projectile_type = /obj/item/projectile/beam
 	charge_cost = 50
 	can_dual = TRUE
-	matter = list(MATERIAL_PLASTEEL = 4, MATERIAL_WOOD = 4, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_INDSTEEL = 4, MATERIAL_WOOD = 4, MATERIAL_SILVER = 2)
 	price_tag = 200
 	init_firemodes = list(
 		LETHAL,

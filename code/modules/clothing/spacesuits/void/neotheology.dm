@@ -18,7 +18,7 @@
 	icon_state = "acolyte"
 	item_state = "acolyte"
 	slowdown = 0.15
-	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 25, MATERIAL_BIOMATTER = 40)
+	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_ALUMINIUM = 25, MATERIAL_BIOMATTER = 40)
 	armor_list = list(
 		melee = 25,
 		bullet = 25,
@@ -49,7 +49,7 @@
 	icon_state = "botanist"
 	item_state = "botanist"
 	slowdown = 0
-	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 15, MATERIAL_BIOMATTER = 40)
+	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_ALUMINIUM = 15, MATERIAL_BIOMATTER = 40)
 	armor_list = list(
 		melee = 25,
 		bullet = 25,
@@ -81,7 +81,7 @@
 	icon_state = "custodian"
 	item_state = "custodian"
 	slowdown = 0.05
-	matter = list(MATERIAL_PLASTIC = 40, MATERIAL_STEEL = 15, MATERIAL_BIOMATTER = 40)
+	matter = list(MATERIAL_PLASTIC = 40, MATERIAL_ALUMINIUM = 15, MATERIAL_BIOMATTER = 40)
 	armor_list = list(
 		melee = 25,
 		bullet = 25,
@@ -102,9 +102,9 @@
 	brightness_on = 4 //luminosity when on
 	armor_list = list(
 		melee = 40,
-		bullet = 30,
-		energy = 30,
-		bomb = 30,
+		bullet = 40,
+		energy = 40,
+		bomb = 40,
 		bio = 100,
 		rad = 50
 	)
@@ -112,17 +112,17 @@
 	light_overlay = "helmet_light"
 
 /obj/item/clothing/suit/space/void/huscarl
-	name = "huscarl voidsuit"
+	name = "huscarl voidsuit" //remember to change this name to be non-nordid
 	desc = "A voidsuit designed by the Custodians using a mix of Bio-Silk and Carbon Fiber."
 	icon_state = "huscarl_voidsuit"
 	item_state = "huscarl_voidsuit"
-	matter = list(MATERIAL_STEEL = 45, MATERIAL_SILVER = 6, MATERIAL_PLASTEEL = 24, MATERIAL_BIO_SILK = 45, MATERIAL_PLASTIC = 30, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
+	matter = list(MATERIAL_ALUMINIUM = 45, MATERIAL_SILVER = 6, MATERIAL_INDSTEEL = 24, MATERIAL_BIO_SILK = 45, MATERIAL_PLASTIC = 30, MATERIAL_WOOD = 10, MATERIAL_CARBON_FIBER = 15)
 	slowdown = 0.15
 	armor_list = list(
 		melee = 40,
-		bullet = 30,
-		energy = 30,
-		bomb = 30,
+		bullet = 40,
+		energy = 40,
+		bomb = 40,
 		bio = 100,
 		rad = 50
 	)

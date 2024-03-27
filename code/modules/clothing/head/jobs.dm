@@ -273,13 +273,14 @@
 	icon_state = "divisor_cap"
 	item_state = "divisor_cap"
 
+
 //Black Bolt Logistics
 /obj/item/clothing/head/helmet/blackbolt/leader
 	name = "Reinforced Scrap Cap"
 	desc = "An Intimidating Scrap Metal Cap Made By Black Bolt Able to Deflect bullets, lasers, Rocks and a lot of things more, it comes with a flashlight to illuminate your way and see if your scrappers aren't beating an stone or stop them from scrapping a landmine for parts then lose an arm you got to pay!"
 	icon_state = "black_bolt_leader"
 	item_state = "black_bolt_leader"
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_STEEL = 30) //worth stealing//rebalanced with more realistic materials
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 10, MATERIAL_ALUMINIUM = 30, MATERIAL_SILVER = 12) //worth stealing
 	price_tag = 1200
 	armor_list = list(
 		melee = 40,

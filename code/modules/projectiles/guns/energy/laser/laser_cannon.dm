@@ -12,7 +12,7 @@
 	projectile_type = /obj/item/projectile/beam/heavylaser
 	charge_cost = 100
 	fire_delay = 20
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_SILVER = 6)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_SILVER = 6)
 	price_tag = 650
 	init_recoil = CARBINE_RECOIL(1)
 	twohanded = TRUE
@@ -37,7 +37,7 @@
 	desc = "A outdated and abandoned design for an energy weapon, revamped by Phokorus Institute. The lasing medium is enclosed in a tube lined with uranium-235 and subjected to high neutron flux in a nuclear reactor core. \
 		This incredible technology packed inside let it stand on it's own has one of the markets best laser cannon for turret defense and firepower! "
 	icon = 'icons/obj/guns/energy/si_lascannon.dmi'
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_SILVER = 4, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_SILVER = 4, MATERIAL_URANIUM = 1)
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 3, TECH_POWER = 3)
 	price_tag = 1500
 	init_firemodes = list(

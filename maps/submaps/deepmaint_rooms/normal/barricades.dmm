@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/deepmaint)
 "b" = (
 /obj/random/mob/psi_monster/low_chance,
@@ -91,7 +91,7 @@
 /area/deepmaint)
 "B" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/monofloor,
+/turf/simulated/floor/tiled/aluminium/monofloor,
 /area/deepmaint)
 "T" = (
 /obj/random/mob/psi_monster/low_chance,

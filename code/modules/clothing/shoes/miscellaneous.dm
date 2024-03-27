@@ -23,7 +23,7 @@
 	force = WEAPON_FORCE_WEAK
 	siemens_coefficient = 0.6
 	can_hold_knife = TRUE
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 15, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 15, MATERIAL_DILATANT = 2)
 
 /obj/item/clothing/shoes/ablasive/iron_lock_security
 	name = "outdated jackboots"

@@ -227,7 +227,7 @@
 					to_chat(user, "Remove all components from \the [src] before disassembling it.")
 					return
 				if(tool.use_tool(user, src, WORKTIME_SLOW, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_COG))
-					new /obj/item/stack/material/steel( get_turf(src.loc), steel_sheet_cost )
+					new /obj/item/stack/material/aluminium( get_turf(src.loc), steel_sheet_cost )
 					src.visible_message("\The [src] has been disassembled by [user].")
 					qdel(src)
 					return

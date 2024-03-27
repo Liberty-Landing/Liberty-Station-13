@@ -27,3 +27,7 @@
 		icon_state = "emp_off"
 		desc = "[initial(desc)] It has already been used."
 	return
+
+/obj/item/grenade/empgrenade/low_yield/nt
+	name = "Bonfire EMP Grenade \"Dark Nights\""
+	desc = "A weaker variant of the \"Ionstorm\" ion grenade, with lesser radius."

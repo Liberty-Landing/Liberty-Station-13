@@ -18,12 +18,13 @@
 
 /obj/item/device/mmi
 	name = "man-machine interface"
-	desc = "The Warrior's bland acronym, MMI, obscures the true horror of this monstrosity. Under no circumstances should this be placed in anything except a cyborg chassis. Reminder, synthetic designs made by Phokorus Institute and the Terra-Therma Worker's Union are not cyborgs."
+	desc = "The Warrior's bland acronym, MMI, obscures the true horror of this monstrosity. Under no circumstances should this be placed in anything except a cyborg chassis. Reminder, synthetic designs made by Phokorus Institute and the Terra-Therma Worker's Union are not cyborgs. \
+	Keep the unconsented use of this far away from the Custodians if you do not desire to start a legal, or illegal fight."
 	icon = 'icons/obj/assemblies.dmi'
 	icon_state = "mmi_empty"
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_BIO = 3)
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 3)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_GLASS = 3)
 	req_access = list(access_robotics)
 
 	//Revised. Brainmob is now contained directly within object of transfer. MMI in this case.
@@ -134,7 +135,8 @@
 
 /obj/item/device/mmi/radio_enabled
 	name = "radio-enabled man-machine interface"
-	desc = "The Warrior's bland acronym, MMI, obscures the true horror of this monstrosity. This one comes with a built-in radio."
+	desc = "The Warrior's bland acronym, MMI, obscures the true horror of this monstrosity. This one comes with a built-in radio. \
+	Keep the unconsented use of this far away from the Custodians if you do not desire to start a legal, or illegal fight."
 	origin_tech = list(TECH_BIO = 4)
 
 	var/obj/item/device/radio/radio = null//Let's give it a radio.

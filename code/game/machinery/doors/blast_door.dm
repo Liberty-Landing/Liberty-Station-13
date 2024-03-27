@@ -111,7 +111,7 @@
 // Proc: attackby()
 // Parameters: 2 (C - Item this object was clicked with, user - Mob which clicked this object)
 // Description: If we are clicked with crowbar or wielded fire axe, try to manually open the door.
-// This only works on broken doors or doors without power. Also allows repair with Plasteel.
+// This only works on broken doors or doors without power. Also allows repair with indsteel.
 /obj/machinery/door/blast/attackby(obj/item/I, mob/user)
 	src.add_fingerprint(user)
 	if(QUALITY_PRYING in I.tool_qualities)
@@ -121,7 +121,7 @@
 			else
 				to_chat(usr, SPAN_NOTICE("[src]'s motors resist your effort."))
 		return
-	if(istype(I, /obj/item/stack/material) && I.get_material_name() == "plasteel")
+	if(istype(I, /obj/item/stack/material) && I.get_material_name() == "indsteel")
 		var/amt = CEILING((maxHealth - health)/150, 1)
 		if(!amt)
 			to_chat(usr, SPAN_NOTICE("\The [src] is already fully repaired."))

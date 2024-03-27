@@ -181,7 +181,7 @@
 	armor = list(melee = 20, bullet = 30, energy = 50, bomb = 50, bio = 100, rad = 0)
 
 //Loot related variables
-	ore = /obj/item/stack/ore/plasma
+	ore = /obj/item/stack/ore/hydrogenc
 
 //Diamond Wurm - melee, doesn't give a fuck, high-damage
 /mob/living/carbon/superior_animal/termite_no_despawn/diamond
@@ -242,4 +242,4 @@
 	armor = list(melee = 50, bullet = 30, energy = 40, bomb = 50, bio = 100, rad = 0)
 
 //Loot related variables
-	ore = /obj/item/stack/ore/osmium
+	ore = /obj/item/stack/ore/niobium

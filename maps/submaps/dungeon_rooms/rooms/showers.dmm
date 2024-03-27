@@ -15,7 +15,7 @@
 /obj/effect/floor_decal/industrial/outline/yellow,
 /obj/random/medical/low_chance,
 /obj/random/medical_lowcost/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/crawler)
 "e" = (
 /turf/simulated/floor/tiled/derelict,
@@ -31,7 +31,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/crawler)
 "h" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/crawler)
 "i" = (
 /obj/crawler/crawler_wallbreaker/vertical,
@@ -43,7 +43,7 @@
 /obj/machinery/light/floor,
 /obj/random/medical/low_chance,
 /obj/random/medical_lowcost/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/crawler)
 "k" = (
 /obj/machinery/shower{
@@ -53,7 +53,7 @@
 /area/crawler)
 "m" = (
 /obj/random/mob/roomba,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/crawler)
 "n" = (
 /obj/structure/railing/grey{

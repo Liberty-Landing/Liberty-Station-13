@@ -3,9 +3,9 @@
  *		Grass
  *		Wood
  *		Carpet
- *		Steel
+ *		aluminium
  *		Plastic
- *		More Steel
+ *		More aluminium
  */
 
 /obj/item/stack/tile
@@ -145,7 +145,7 @@
 	icon_state = "tile"
 	force = WEAPON_FORCE_NORMAL
 	throwforce = WEAPON_FORCE_PAINFUL
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	flags = CONDUCT
 
 /obj/item/stack/tile/floor/cyborg
@@ -159,20 +159,20 @@
 	build_type = /obj/item/stack/tile/floor
 
 	var/list/cyborg_floor = list(
-		"steel techfloor" = /obj/item/stack/tile/floor/steel/techfloor,
-		"gray platform" =  /obj/item/stack/tile/floor/steel/gray_platform,
+		"aluminium techfloor" = /obj/item/stack/tile/floor/aluminium/techfloor,
+		"gray platform" =  /obj/item/stack/tile/floor/aluminium/gray_platform,
 		"cafe floor tile" = /obj/item/stack/tile/floor/cafe,
 		"maint floor tile" = /obj/item/stack/tile/floor/techmaint,
 		"perforated maint floor tile" = /obj/item/stack/tile/floor/techmaint/perforated,
 		"panel maint floor tile" = /obj/item/stack/tile/floor/techmaint/panels,
 		"cargo maint floor tile" = /obj/item/stack/tile/floor/techmaint/cargo,
-		"steel techfloor tile with vents" = /obj/item/stack/tile/floor/steel/techfloor_grid,
-		"steel brown perforated tile" = /obj/item/stack/tile/floor/steel/brown_perforated,
-		"steel gray perforated tile" = /obj/item/stack/tile/floor/steel/gray_perforated,
-		"steel cargo tile" = /obj/item/stack/tile/floor/steel/cargo,
-		"steel bar flat tile" = /obj/item/stack/tile/floor/steel/bar_flat,
-		"steel bar dance tile" = /obj/item/stack/tile/floor/steel/bar_dance,
-		"steel bar light tile" = /obj/item/stack/tile/floor/steel/bar_light,
+		"aluminium techfloor tile with vents" = /obj/item/stack/tile/floor/aluminium/techfloor_grid,
+		"aluminium brown perforated tile" = /obj/item/stack/tile/floor/aluminium/brown_perforated,
+		"aluminium gray perforated tile" = /obj/item/stack/tile/floor/aluminium/gray_perforated,
+		"aluminium cargo tile" = /obj/item/stack/tile/floor/aluminium/cargo,
+		"aluminium bar flat tile" = /obj/item/stack/tile/floor/aluminium/bar_flat,
+		"aluminium bar dance tile" = /obj/item/stack/tile/floor/aluminium/bar_dance,
+		"aluminium bar light tile" = /obj/item/stack/tile/floor/aluminium/bar_light,
 		"white floor tile" = /obj/item/stack/tile/floor/white,
 		"white cargo tile" = /obj/item/stack/tile/floor/white/cargo,
 		"red carpet" = /obj/item/stack/tile/carpet,
@@ -210,7 +210,7 @@
 	name = "maint floor tile"
 	singular_name = "maint floor tile"
 	icon_state = "tile_techmaint"
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/stack/tile/floor/techmaint/perforated
 	name = "perforated maint floor tile"
@@ -228,11 +228,11 @@
 	icon_state = "tile_techmaint_cargo"
 
 /*
- * Steel
+ * aluminium
  */
 
-// Cyborg tile stack can copy steel tiles by clicking on them (for easy reconstruction)
-/obj/item/stack/tile/floor/steel/AltClick(var/mob/living/user)
+// Cyborg tile stack can copy aluminium tiles by clicking on them (for easy reconstruction)
+/obj/item/stack/tile/floor/aluminium/AltClick(var/mob/living/user)
 	var/obj/item/I = user.get_active_hand()
 	if(istype(I, /obj/item/stack/tile/floor/cyborg))
 		var/obj/item/stack/tile/floor/cyborg/C = I
@@ -242,105 +242,105 @@
 	else
 		..()
 
-/obj/item/stack/tile/floor/steel
-	name = "steel floor tile"
-	singular_name = "steel floor tile"
+/obj/item/stack/tile/floor/aluminium
+	name = "aluminium floor tile"
+	singular_name = "aluminium floor tile"
 	icon_state = "tile_steel"
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
-/obj/item/stack/tile/floor/steel/panels
-	name = "steel panel tile"
-	singular_name = "steel panel tile"
+/obj/item/stack/tile/floor/aluminium/panels
+	name = "aluminium panel tile"
+	singular_name = "aluminium panel tile"
 	icon_state = "tile_steel_panels"
 
-/obj/item/stack/tile/floor/steel/techfloor
-	name = "steel techfloor tile"
-	singular_name = "steel techfloor tile"
+/obj/item/stack/tile/floor/aluminium/techfloor
+	name = "aluminium techfloor tile"
+	singular_name = "aluminium techfloor tile"
 	icon_state = "tile_steel_techfloor"
 
-/obj/item/stack/tile/floor/steel/techfloor_grid
-	name = "steel techfloor tile with vents"
-	singular_name = "steel techfloor tile with vents"
+/obj/item/stack/tile/floor/aluminium/techfloor_grid
+	name = "aluminium techfloor tile with vents"
+	singular_name = "aluminium techfloor tile with vents"
 	icon_state = "tile_steel_techfloor_grid"
 
-/obj/item/stack/tile/floor/steel/brown_perforated
-	name = "steel brown perforated tile"
-	singular_name = "steel brown perforated tile"
+/obj/item/stack/tile/floor/aluminium/brown_perforated
+	name = "aluminium brown perforated tile"
+	singular_name = "aluminium brown perforated tile"
 	icon_state = "tile_steel_brownperforated"
 
-/obj/item/stack/tile/floor/steel/gray_perforated
-	name = "steel gray perforated tile"
-	singular_name = "steel gray perforated tile"
+/obj/item/stack/tile/floor/aluminium/gray_perforated
+	name = "aluminium gray perforated tile"
+	singular_name = "aluminium gray perforated tile"
 	icon_state = "tile_steel_grayperforated"
 
-/obj/item/stack/tile/floor/steel/cargo
-	name = "steel cargo tile"
-	singular_name = "steel cargo tiles"
+/obj/item/stack/tile/floor/aluminium/cargo
+	name = "aluminium cargo tile"
+	singular_name = "aluminium cargo tiles"
 	icon_state = "tile_steel_cargo"
 
-/obj/item/stack/tile/floor/steel/brown_platform
-	name = "steel brown platform tiles"
-	singular_name = "steel brown platform tile"
+/obj/item/stack/tile/floor/aluminium/brown_platform
+	name = "aluminium brown platform tiles"
+	singular_name = "aluminium brown platform tile"
 	icon_state = "tile_steel_brownplatform"
 
-/obj/item/stack/tile/floor/steel/gray_platform
-	name = "steel gray platform tiles"
-	singular_name = "steel gray platform tile"
+/obj/item/stack/tile/floor/aluminium/gray_platform
+	name = "aluminium gray platform tiles"
+	singular_name = "aluminium gray platform tile"
 	icon_state = "tile_steel_grayplatform"
 
-/obj/item/stack/tile/floor/steel/danger
-	name = "steel danger tiles"
-	singular_name = "steel danger tile"
+/obj/item/stack/tile/floor/aluminium/danger
+	name = "aluminium danger tiles"
+	singular_name = "aluminium danger tile"
 	icon_state = "tile_steel_danger"
 
-/obj/item/stack/tile/floor/steel/golden
-	name = "steel golden tiles"
-	singular_name = "steel golden tile"
+/obj/item/stack/tile/floor/aluminium/golden
+	name = "aluminium golden tiles"
+	singular_name = "aluminium golden tile"
 	icon_state = "tile_steel_golden"
 
-/obj/item/stack/tile/floor/steel/bluecorner
-	name = "steel blue corner tile"
-	singular_name = "steel blue corner tiles"
+/obj/item/stack/tile/floor/aluminium/bluecorner
+	name = "aluminium blue corner tile"
+	singular_name = "aluminium blue corner tiles"
 	icon_state = "tile_steel_bluecorner"
 
-/obj/item/stack/tile/floor/steel/orangecorner
-	name = "steel orange corner tiles"
-	singular_name = "steel orange corner tilee"
+/obj/item/stack/tile/floor/aluminium/orangecorner
+	name = "aluminium orange corner tiles"
+	singular_name = "aluminium orange corner tilee"
 	icon_state = "tile_steel_orangecorner"
 
-/obj/item/stack/tile/floor/steel/greencorner
-	name = "steel green corner tiles"
-	singular_name = "steel green corner tile"
+/obj/item/stack/tile/floor/aluminium/greencorner
+	name = "aluminium green corner tiles"
+	singular_name = "aluminium green corner tile"
 	icon_state = "tile_steel_greencorner"
 
-/obj/item/stack/tile/floor/steel/violetcorener
-	name = "steel violet corner tiles"
-	singular_name = "steel violet corner tile"
+/obj/item/stack/tile/floor/aluminium/violetcorener
+	name = "aluminium violet corner tiles"
+	singular_name = "aluminium violet corner tile"
 	icon_state = "tile_steel_violetcorner"
 
-/obj/item/stack/tile/floor/steel/cyancorner
-	name = "steel cyan corner tiles"
-	singular_name = "steel cyan corner tile"
+/obj/item/stack/tile/floor/aluminium/cyancorner
+	name = "aluminium cyan corner tiles"
+	singular_name = "aluminium cyan corner tile"
 	icon_state = "tile_steel_cyancorner"
 
-/obj/item/stack/tile/floor/steel/monofloor
-	name = "steel monofloor tile"
-	singular_name = "steel monofloor tile"
+/obj/item/stack/tile/floor/aluminium/monofloor
+	name = "aluminium monofloor tile"
+	singular_name = "aluminium monofloor tile"
 	icon_state = "tile_steel_monofloor"
 
-/obj/item/stack/tile/floor/steel/bar_flat
-	name = "steel bar flat tile"
-	singular_name = "steel bar flat tile"
+/obj/item/stack/tile/floor/aluminium/bar_flat
+	name = "aluminium bar flat tile"
+	singular_name = "aluminium bar flat tile"
 	icon_state = "tile_steel_bar_flat"
 
-/obj/item/stack/tile/floor/steel/bar_dance
-	name = "steel bar dance tile"
-	singular_name = "steel bar dance tile"
+/obj/item/stack/tile/floor/aluminium/bar_dance
+	name = "aluminium bar dance tile"
+	singular_name = "aluminium bar dance tile"
 	icon_state = "tile_steel_bar_dance"
 
-/obj/item/stack/tile/floor/steel/bar_light
-	name = "steel bar light tile"
-	singular_name = "steel bar light tile"
+/obj/item/stack/tile/floor/aluminium/bar_light
+	name = "aluminium bar light tile"
+	singular_name = "aluminium bar light tile"
 	icon_state = "tile_steel_bar_light"
 
 /*
@@ -435,13 +435,13 @@
 	icon_state = "tile_white_monofloor"
 
 /*
- * Steel
+ * aluminium
  */
 /obj/item/stack/tile/floor/dark
 	name = "dark floor tile"
 	singular_name = "dark floor tile"
 	icon_state = "tile_dark"
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/stack/tile/floor/dark/panels
 	name = "dark panel tile"

@@ -195,7 +195,7 @@
 /turf/simulated/floor,
 /area/testing/first)
 "aI" = (
-/obj/item/stack/material/steel{
+/obj/item/stack/material/aluminium{
 	amount = 50
 	},
 /turf/simulated/floor,

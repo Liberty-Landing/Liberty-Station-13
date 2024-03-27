@@ -12,7 +12,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_COMBAT = 2, TECH_PLASMA = 1)
 	slot_flags = SLOT_BELT
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	var/throw_amount = 50
 	var/lit = FALSE	//on or off
 	var/operating = 0//cooldown

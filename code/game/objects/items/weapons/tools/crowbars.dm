@@ -8,7 +8,7 @@
 	worksound = WORKSOUND_EASY_CROWBAR
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_ENGINEERING = 1)
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	attack_verb = list("attacked", "bashed", "battered", "bludgeoned", "whacked")
 	hitsound = 'sound/weapons/smash.ogg'
 	tool_qualities = list(QUALITY_PRYING = 35, QUALITY_DIGGING = 10, QUALITY_HAMMERING = 10)
@@ -43,7 +43,7 @@
 	desc = "Looks like a classic one, but more durable."
 	icon_state = "one_star_crowbar"
 	item_state = "onestar_crowbar"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_TITANIUMRTC = 1)
 	tool_qualities = list(QUALITY_PRYING = 60, QUALITY_DIGGING = 20, QUALITY_HAMMERING = 20)
 	origin_tech = list(TECH_ENGINEERING = 1, TECH_MATERIAL = 2)
 	degradation = 2
@@ -59,7 +59,7 @@
 	desc = "When you really need to crack open something."
 	icon_state = "pneumo_crowbar"
 	item_state = "pneumo_crowbar"
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 2)
 	tool_qualities = list(QUALITY_PRYING = 45, QUALITY_DIGGING = 35)
 	degradation = 0.7
 	use_power_cost = 0.8

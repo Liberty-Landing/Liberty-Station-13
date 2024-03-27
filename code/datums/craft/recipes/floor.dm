@@ -1,7 +1,7 @@
 /datum/craft_recipe/floor
 	category = "Floors"
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 	)
 	flags = CRAFT_BATCH
 	time = 1 //Crafting individual tiles is fast
@@ -13,7 +13,7 @@
 	time = WORKTIME_SLOW
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	steps = list(
-		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 15, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_MEC)
 
@@ -23,7 +23,7 @@
 	time = WORKTIME_FAST
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	steps = list(
-		list(CRAFT_MATERIAL, 8, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 8, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_MEC)
 
@@ -94,109 +94,109 @@
 	name = "maintenance floor tile"
 	result = /obj/item/stack/tile/floor/techmaint
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/floor/techmaint_perforated
 	name = "perforated maintenance floor tile"
 	result = /obj/item/stack/tile/floor/techmaint/perforated
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/floor/techmaint_panels
 	name = "panels maintenance floor tile"
 	result = /obj/item/stack/tile/floor/techmaint/panels
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/floor/techmaint_cargo
 	name = "cargo maintenance floor tile"
 	result = /obj/item/stack/tile/floor/techmaint/cargo
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
-/datum/craft_recipe/floor/steel
-	name = "regular steel floor tile"
-	result = /obj/item/stack/tile/floor/steel
+/datum/craft_recipe/floor/aluminium
+	name = "regular aluminium floor tile"
+	result = /obj/item/stack/tile/floor/aluminium
 
-/datum/craft_recipe/floor/steel/panels
-	name = "steel panel tile"
-	result = /obj/item/stack/tile/floor/steel/panels
+/datum/craft_recipe/floor/aluminium/panels
+	name = "aluminium panel tile"
+	result = /obj/item/stack/tile/floor/aluminium/panels
 
-/datum/craft_recipe/floor/steel/techfloor
-	name = "steel tech-floor tile"
-	result = /obj/item/stack/tile/floor/steel/techfloor
+/datum/craft_recipe/floor/aluminium/techfloor
+	name = "aluminium tech-floor tile"
+	result = /obj/item/stack/tile/floor/aluminium/techfloor
 
-/datum/craft_recipe/floor/steel/techfloor_grid
-	name = "steel tech-floor tile with vents"
-	result = /obj/item/stack/tile/floor/steel/techfloor_grid
+/datum/craft_recipe/floor/aluminium/techfloor_grid
+	name = "aluminium tech-floor tile with vents"
+	result = /obj/item/stack/tile/floor/aluminium/techfloor_grid
 
-/datum/craft_recipe/floor/steel/brown_perforated
-	name = "steel brown perforated tile"
-	result = /obj/item/stack/tile/floor/steel/brown_perforated
+/datum/craft_recipe/floor/aluminium/brown_perforated
+	name = "aluminium brown perforated tile"
+	result = /obj/item/stack/tile/floor/aluminium/brown_perforated
 
-/datum/craft_recipe/floor/steel/gray_perforated
-	name = "steel gray perforated tile"
-	result = /obj/item/stack/tile/floor/steel/gray_perforated
+/datum/craft_recipe/floor/aluminium/gray_perforated
+	name = "aluminium gray perforated tile"
+	result = /obj/item/stack/tile/floor/aluminium/gray_perforated
 
-/datum/craft_recipe/floor/steel/cargo
-	name = "steel cargo tile"
-	result = /obj/item/stack/tile/floor/steel/cargo
+/datum/craft_recipe/floor/aluminium/cargo
+	name = "aluminium cargo tile"
+	result = /obj/item/stack/tile/floor/aluminium/cargo
 
-/datum/craft_recipe/floor/steel/brown_platform
-	name = "steel brown platform tile"
-	result = /obj/item/stack/tile/floor/steel/brown_platform
+/datum/craft_recipe/floor/aluminium/brown_platform
+	name = "aluminium brown platform tile"
+	result = /obj/item/stack/tile/floor/aluminium/brown_platform
 
-/datum/craft_recipe/floor/steel/gray_platform
-	name = "steel gray platform tile"
-	result = /obj/item/stack/tile/floor/steel/gray_platform
+/datum/craft_recipe/floor/aluminium/gray_platform
+	name = "aluminium gray platform tile"
+	result = /obj/item/stack/tile/floor/aluminium/gray_platform
 
-/datum/craft_recipe/floor/steel/danger
-	name = "steel danger tile"
-	result = /obj/item/stack/tile/floor/steel/danger
+/datum/craft_recipe/floor/aluminium/danger
+	name = "aluminium danger tile"
+	result = /obj/item/stack/tile/floor/aluminium/danger
 
-/datum/craft_recipe/floor/steel/golden
-	name = "steel golden tile"
-	result = /obj/item/stack/tile/floor/steel/golden
+/datum/craft_recipe/floor/aluminium/golden
+	name = "aluminium golden tile"
+	result = /obj/item/stack/tile/floor/aluminium/golden
 
-/datum/craft_recipe/floor/steel/bluecorner
-	name = "steel blue corner tile"
-	result = /obj/item/stack/tile/floor/steel/bluecorner
+/datum/craft_recipe/floor/aluminium/bluecorner
+	name = "aluminium blue corner tile"
+	result = /obj/item/stack/tile/floor/aluminium/bluecorner
 
-/datum/craft_recipe/floor/steel/orangecorner
-	name = "steel orange corner tile"
-	result = /obj/item/stack/tile/floor/steel/orangecorner
+/datum/craft_recipe/floor/aluminium/orangecorner
+	name = "aluminium orange corner tile"
+	result = /obj/item/stack/tile/floor/aluminium/orangecorner
 
-/datum/craft_recipe/floor/steel/greencorner
-	name = "steel green corner tile"
-	result = /obj/item/stack/tile/floor/steel/greencorner
+/datum/craft_recipe/floor/aluminium/greencorner
+	name = "aluminium green corner tile"
+	result = /obj/item/stack/tile/floor/aluminium/greencorner
 
-/datum/craft_recipe/floor/steel/violetcorener
-	name = "steel violet corner tile"
-	result = /obj/item/stack/tile/floor/steel/violetcorener
+/datum/craft_recipe/floor/aluminium/violetcorener
+	name = "aluminium violet corner tile"
+	result = /obj/item/stack/tile/floor/aluminium/violetcorener
 
-/datum/craft_recipe/floor/steel/cyancorner
-	name = "steel cyan corner tile"
-	result = /obj/item/stack/tile/floor/steel/cyancorner
+/datum/craft_recipe/floor/aluminium/cyancorner
+	name = "aluminium cyan corner tile"
+	result = /obj/item/stack/tile/floor/aluminium/cyancorner
 
-/datum/craft_recipe/floor/steel/monofloor
-	name = "steel mono-floor tile"
-	result = /obj/item/stack/tile/floor/steel/monofloor
+/datum/craft_recipe/floor/aluminium/monofloor
+	name = "aluminium mono-floor tile"
+	result = /obj/item/stack/tile/floor/aluminium/monofloor
 
-/datum/craft_recipe/floor/steel/bar_flat
-	name = "steel bar flat tile"
-	result = /obj/item/stack/tile/floor/steel/bar_flat
+/datum/craft_recipe/floor/aluminium/bar_flat
+	name = "aluminium bar flat tile"
+	result = /obj/item/stack/tile/floor/aluminium/bar_flat
 
-/datum/craft_recipe/floor/steel/bar_dance
-	name = "steel bar dance tile"
-	result = /obj/item/stack/tile/floor/steel/bar_dance
+/datum/craft_recipe/floor/aluminium/bar_dance
+	name = "aluminium bar dance tile"
+	result = /obj/item/stack/tile/floor/aluminium/bar_dance
 
-/datum/craft_recipe/floor/steel/bar_light
-	name = "steel bar light tile"
-	result = /obj/item/stack/tile/floor/steel/bar_light
+/datum/craft_recipe/floor/aluminium/bar_light
+	name = "aluminium bar light tile"
+	result = /obj/item/stack/tile/floor/aluminium/bar_light
 
 
 /datum/craft_recipe/floor/white
@@ -344,7 +344,7 @@
 	result = /obj/machinery/floor_light
 	steps = list(
 		list(CRAFT_MATERIAL, 3, MATERIAL_GLASS, "time" = 30),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 10),
 		list(QUALITY_SCREW_DRIVING, 10, 80),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(QUALITY_PULSING, 30, 80)

@@ -144,7 +144,7 @@
 	name = "Bonfire knightly belt"
 	desc = "Waist-held utility for the prepared knight."
 	icon_state = "bonfire_belt"
-	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_BIO_SILK = 10, MATERIAL_ALUMINIUM = 5)
 	can_hold_extra = list(
 		/obj/item/book/lectures, // Parent so that off duty Custodians can make use of it.
 		/obj/item/implant/core_implant/hearthcore,
@@ -333,7 +333,7 @@
 	storage_slots = 14
 	max_w_class = ITEM_SIZE_BULKY
 	max_storage_space = DEFAULT_HUGE_STORAGE * 1.25
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_GOLD = 6, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 3)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_GOLD = 6, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 3)
 	origin_tech = list(TECH_BLUESPACE = 4)
 
 /obj/item/storage/belt/holding/New()

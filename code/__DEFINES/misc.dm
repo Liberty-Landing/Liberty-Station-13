@@ -117,9 +117,9 @@
 #define COIN_SILVER "Silver coin"
 #define COIN_DIAMOND "Diamond coin"
 #define COIN_IRON "Iron coin"
-#define COIN_PLASMA "Solid plasma coin"
+#define COIN_PLASMA "Solid hydrogen coin"
 #define COIN_URANIUM "Uranium coin"
-#define COIN_PLATINUM "Platunum coin"
+#define COIN_TITANIUM "Titanium coin"
 
 #define SHARD_SHARD "shard"
 #define SHARD_SHRAPNEL "shrapnel"
@@ -203,25 +203,30 @@
 #define CORE_ACTIVATED /datum/core_module/activatable
 
 //Hearthcore modules, think of them like flags that can hold ritual types
-#define HEARTHCORE_COMMON /datum/core_module/lectures/hearthcore/base
-#define HEARTHCORE_CUSTODIAN /datum/core_module/lectures/hearthcore/custodian
-#define HEARTHCORE_OATHBOUND /datum/core_module/lectures/hearthcore/oathbound
-#define HEARTHCORE_ENKINDLED /datum/core_module/lectures/hearthcore/enkindled
-#define HEARTHCORE_FORGEMASTER /datum/core_module/lectures/hearthcore/forgemaster
-#define HEARTHCORE_OATHPLEDGE /datum/core_module/lectures/hearthcore/oathpledge
+#define HEARTHCORE_COMMON       /datum/core_module/lectures/hearthcore/base
+#define HEARTHCORE_SPECIAL      /datum/core_module/lectures/hearthcore/special
+#define HEARTHCORE_CUSTODIAN    /datum/core_module/lectures/hearthcore/custodian
+#define HEARTHCORE_OATHBOUND    /datum/core_module/lectures/hearthcore/oathbound
+#define HEARTHCORE_ENKINDLED    /datum/core_module/lectures/hearthcore/enkindled
+#define HEARTHCORE_FORGEMASTER  /datum/core_module/lectures/hearthcore/forgemaster
+#define HEARTHCORE_OATHPLEDGE   /datum/core_module/lectures/hearthcore/oathpledge
 #define HEARTHCORE_ANTI_SCRYING /datum/core_module/lectures/hearthcore/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
-#define HEARTHCORE_DAMAGED /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again //Someone needs to make this upgrade to never appear in case you die, only when you are revived with the lecture.
+#define HEARTHCORE_DAMAGED      /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again //Someone needs to make this upgrade to never appear in case you die, only when you are revived with the lecture.
+
+#define HEARTHCORE_CATAPHRACT /datum/core_module/lectures/hearthcore/cataphract
+#define HEARTHCORE_HUSSAR     /datum/core_module/lectures/hearthcore/hussar
+#define HEARTHCORE_DRAGOON    /datum/core_module/lectures/hearthcore/dragoon
+#define HEARTHCORE_GRENADIER  /datum/core_module/lectures/hearthcore/grenadier
 
 #define HEARTHCORE_UPLINK /datum/core_module/hearthcore/uplink
 #define HEARTHCORE_CLONING /datum/core_module/hearthcore/cloning
 
-#define CUPGRADE_NATURES_BLESSING /obj/item/hearthcore_upgrade/natures_blessing
 #define CUPGRADE_BLAZING_AEGIS /obj/item/hearthcore_upgrade/blazing_aegis
-#define CUPGRADE_CLEANSING_PSESENCE /obj/item/hearthcore_upgrade/cleansing_flames
-#define CUPGRADE_MARTYR_GIFT /obj/item/hearthcore_upgrade/martyr_gift
+#define CUPGRADE_ATONEMENT_GIFT /obj/item/hearthcore_upgrade/atonement_gift
 #define CUPGRADE_BURNING_FURY /obj/item/hearthcore_upgrade/burning_fury
 #define CUPGRADE_EMBERS_OF_SWIFTNESS /obj/item/hearthcore_upgrade/embers_of_swiftness
 #define CUPGRADE_PHOENIX_EDICT /obj/item/hearthcore_upgrade/phoenix_edict
+#define CUPGRADE_INFLUX /obj/item/hearthcore_upgrade/influx
 
 //https://secure.byond.com/docs/ref/info.html#/atom/var/mouse_opacity
 #define MOUSE_OPACITY_TRANSPARENT 0

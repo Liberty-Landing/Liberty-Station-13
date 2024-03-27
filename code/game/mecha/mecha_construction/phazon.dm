@@ -57,9 +57,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The circuit shielding has been placed in the chassis, but needs to be bolted down."),
 		//7
-		list("key"=/obj/item/stack/material/plasteel,
+		list("key"=/obj/item/stack/material/indsteel,
 			//"backkey"=QUALITY_SCREW_DRIVING,
-			"desc"="The ansible crystal is wired and the internal circuitry is complete. 5 sheets of plasteel are needed to shield the circuitry."),
+			"desc"="The ansible crystal is wired and the internal circuitry is complete. 5 sheets of indsteel are needed to shield the circuitry."),
 		//8
 		list("key"=QUALITY_SCREW_DRIVING,
 			//"backkey"=QUALITY_WIRE_CUTTING,
@@ -411,7 +411,7 @@
 						"[usr] pries the phase armor layer from the [holder].", \
 						"You pry the phase armor layer from the [holder]."
 					)
-					new /obj/item/stack/material/plasteel (get_turf(holder), 5)
+					new /obj/item/stack/material/indsteel (get_turf(holder), 5)
 					holder.icon_state = "phazon17"
 			if(5)
 				if(diff==FORWARD)

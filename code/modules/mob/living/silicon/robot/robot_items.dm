@@ -826,7 +826,7 @@
 	icon = 'icons/obj/mining.dmi'
 	max_storage_space = DEFAULT_HUGE_STORAGE * 10
 	max_w_class = ITEM_SIZE_BULKY
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_GOLD = 4, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_GOLD = 4, MATERIAL_DIAMOND = 2, MATERIAL_URANIUM = 2)
 	origin_tech = list(TECH_BLUESPACE = 4)
 	can_hold = list(/obj/item/stack/ore,
 	                /obj/item/reagent_containers/food/snacks/grown,

@@ -33,7 +33,7 @@
 	name = "Oil Canister"
 	result = /obj/item/weldpack/canister/oil
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, 3),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, 3),
 		list(/obj/item/reagent_containers/food/snacks/meat, 10), // 10u oil per meat
 		list(QUALITY_HEATING, 5, 80)
 	)
@@ -280,7 +280,7 @@
 	result = /obj/item/reagent_containers/glass/bottle/tungsten
 	steps = list(
 		list(/obj/item/reagent_containers/glass, 1),
-		list(/obj/item/stack/ore/coal, 1),
+		list(/obj/item/stack/ore/lignite, 1),
 		list(/obj/item/stack/ore, 1),
 		list(QUALITY_HEATING, 5, 10)
 	)

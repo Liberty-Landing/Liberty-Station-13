@@ -2,7 +2,7 @@
 	name = "Hearthcore"
 	phrase = null
 	implant_type = /obj/item/implant/core_implant/hearthcore
-	fail_message = "The Hearthcore feels cold against your back."
+	fail_message = "The Hearthcore feels cold on your spine."
 	category = "EOTP"
 	ignore_stuttering = TRUE //required for ignoring things like : and other symbols in phrases
 
@@ -81,9 +81,9 @@
 	return FALSE
 
 /datum/lecture/hearthcore/custodian/offering/buy_item
-	name = "Order Armaments"
-	phrase = "Oxidate Lecture: Order Armaments"
-	desc = "Allows you to spend armament reserves to order specialized weaponry from the lower Stronghold."
+	name = "Manifest Neural Links"
+	phrase = "Oxidate Lecture: Manifest neural links"
+	desc = "Powered by raw ectoderms, it is possible to manifest advanced equipments and infusing neurons either for complex custodian artisanwork."
 
 /datum/lecture/hearthcore/custodian/offering/buy_item/perform(mob/living/carbon/human/H, obj/item/implant/core_implant/C, targets)
 	var/list/OBJS = get_front(H)
@@ -115,7 +115,7 @@
 /datum/lecture/hearthcore/custodian/offering/holy_guidance
 	name = "Sparking Guidance"
 	phrase = "Oxidate Lecture: Sparking Guidance."
-	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering an oddity and forty bio-silk to guide its power towards enhancing Hearthcore Radiance regeneration among users. \
+	desc = "Make an appeal to the Embers of Theoretical Philosophy by offering an oddity and forty bio-silk to guide its power towards enhancing Hearthcore Radiance Mitosis among users. \
 	Your offering also increases the EOTP's armaments reserves."
 	req_offerings = list(/obj/item/oddity = 1, /obj/item/stack/material/biopolymer_silk = 40)
 	miracles = list(ENERGY_REWARD)

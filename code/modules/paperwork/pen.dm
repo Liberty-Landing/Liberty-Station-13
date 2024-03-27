@@ -20,7 +20,7 @@
 	w_class = ITEM_SIZE_TINY
 	throw_speed = 7
 	throw_range = 15
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	preloaded_reagents = list("acetone" = 9,"aluminum"= 3, "tungsten" = 5)
 	var/colour = "black"	//what colour the ink is!
 

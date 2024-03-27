@@ -18,7 +18,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	var/equip_preview_mob = EQUIP_PREVIEW_ALL
 
 	var/icon/bgstate = "black"
-	var/list/bgstate_options = list("steel", "dark_steel", "white_tiles", "black_tiles", "wood", "carpet", "white", "black")
+	var/list/bgstate_options = list("aluminium", "dark_steel", "white_tiles", "black_tiles", "wood", "carpet", "white", "black")
 //	var/has_conback = FALSE
 
 	var/size_multiplier = RESIZE_NORMAL

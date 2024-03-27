@@ -6,7 +6,7 @@
 	icon = 'icons/obj/guns/projectile/solmarine.dmi'
 	icon_state = "solmarine"
 	item_state = "solmarine"
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 6)
 	w_class = ITEM_SIZE_BULKY
 	mag_well = MAG_WELL_RIFLE
 	caliber = CAL_SRIFLE
@@ -83,7 +83,7 @@
 	price_tag = 650
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_PLASTEEL = 6, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_INDSTEEL = 6, MATERIAL_PLASTIC = 3)
 	can_dual = TRUE
 	init_recoil = CARBINE_RECOIL(1.2)
 	init_firemodes = list(
@@ -99,7 +99,7 @@
 		 Unlike other old stocks this one was always intented to be a 6.5mm.\
 		 Someone butchered this thing beyond recognition! At least it fits in a holster now."
 	icon = 'icons/obj/guns/projectile/sawnoff/solmarine.dmi'
-	matter = list(MATERIAL_IRON = 10, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_TITANIUM = 10, MATERIAL_PLASTIC = 8)
 	init_recoil = CARBINE_RECOIL(1.2)
 	damage_multiplier = 0.8
 	price_tag = 650
@@ -119,7 +119,7 @@
 	icon = 'icons/obj/guns/projectile/martian.dmi'
 	icon_state = "service"
 	item_state = "service"
-	matter = list(MATERIAL_IRON = 20, MATERIAL_PLASTIC = 16)
+	matter = list(MATERIAL_TITANIUM = 20, MATERIAL_PLASTIC = 16)
 	shotgun_haver = FALSE
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/automatic/omnirifle/solmarine/shotgunless_sawn
@@ -153,7 +153,7 @@
 	name = "Solmarine frame"
 	desc = "A Solmarine carbine frame. For those who want to LARP 600 years in the past."
 	icon_state = "frame_sol"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/omnirifle/solmarine/shotgunless
 	gripvars = list(/obj/item/part/gun/grip/serb, /obj/item/part/gun/grip/black)
 	resultvars = list(/obj/item/gun/projectile/automatic/omnirifle/solmarine, /obj/item/gun/projectile/automatic/omnirifle/solmarine/shotgunless)

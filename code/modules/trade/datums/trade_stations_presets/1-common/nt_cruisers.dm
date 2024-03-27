@@ -2,10 +2,10 @@
 	icon_states = "nt_cruiser"
 	markup = RARE_GOODS	// dept-specific stuff should be more expensive for guild
 	name_pool = list(
-		"CAV 'Faith'" = "Absolutism Vessel 'Faith': \"We are currently resupplying from Liberty, but we can sell a few items from our stock.\"",
-		"CAV 'Hope'" = "Absolutism Vessel 'Hope': \"We're in the system for the next few hours before we make a round trip to the confederacy, we're certainly willing to sell our goods.\""
+		"GAV 'Frontline'" = "Gatepyre Assault Vessel 'Frontline': \"Selling assets for the colony is not an standard activity, yet for you we can make an exception. Just don't ask how we got guns to sell.\"",
+		"GAV 'Champion'" = "Gatepyre Assault Vessel 'Champion': \"You know we are getting these guns from your fellow void pirates we just killed, right? No problem with that? Then come get these goods back with thy coins.\""
 		)
-	icon_states = list("nt_frigate", "ship")
+	icon_states = list("nt_cruiser", "ship")
 	uid = "nt_basic"
 	tree_x = 0.34
 	tree_y = 0.9

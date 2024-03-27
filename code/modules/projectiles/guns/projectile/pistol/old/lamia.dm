@@ -10,7 +10,7 @@
 	can_dual = TRUE
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 8)
 	price_tag = 1000
 	unload_sound 	= 'sound/weapons/guns/interact/hpistol_magout.ogg'
 	reload_sound 	= 'sound/weapons/guns/interact/hpistol_magin.ogg'
@@ -50,7 +50,7 @@
 	desc = "The M6D \"Gemini\", a heavy pistol manufactured on Mars and often used by Terran enforcers and commissars, fitted with a smart-linked optic and stabilizer. Uses 12mm."
 	icon_state = "scoped_dark_lamia"
 	item_state = "scoped_dark_lamia"
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3)
 	zoom_factors = list(0.4)
 	init_recoil = HANDGUN_RECOIL(0.7)
 	damage_multiplier = 1.3
@@ -66,7 +66,7 @@
 	desc = "Seinemetall Defense GmbH handgun 12mm \"Argos\" Based on the \"Lamia\" heavy pistol, it's fit for high ranking enforcers; fitted with a smart-linked optic and stabilizer. Uses 12mm."
 	icon_state = "scoped_lamia"
 	item_state = "scoped_lamia"
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5, MATERIAL_SILVER = 5)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5, MATERIAL_SILVER = 5)
 	auto_eject = 1
 	auto_eject_sound = 'sound/weapons/smg_empty_alarm.ogg'
 	zoom_factors = list(0.4)
@@ -83,7 +83,7 @@
 	desc = "The M6C SOCOM, a variant of the M6 \"Naga\", it's a highly specialized and advanced handgun developed for the Solar Federation Special Operations Command. This one is fitted with a smart-linked optic and integrated suppressor. Uses 12mm."
 	icon_state = "socom"
 	item_state = "socom"
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3)
 	init_recoil = HANDGUN_RECOIL(0.1)
 	zoom_factors = list(0.5)
 	silenced = TRUE
@@ -100,7 +100,7 @@
 	icon_state = "amnesty"
 	item_state = "amnesty"
 	price_tag = 1200
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 8, MATERIAL_GLASS = 4)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 8, MATERIAL_GLASS = 4)
 	damage_multiplier = 1.4
 	penetration_multiplier = 1.2
 	zoom_factors = list(0.2)

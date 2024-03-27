@@ -13,7 +13,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 1000
 	fire_sound = 'sound/weapons/guns/fire/NM_PARA.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -39,7 +39,7 @@
 	name = "Nationale frame"
 	desc = "An Nationale rifle frame. The right arm of free space."
 	icon_state = "frame_ak"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/nationale
 	gripvars = list(/obj/item/part/gun/grip/serb, /obj/item/part/gun/grip/rubber)
 	resultvars = list(/obj/item/gun/projectile/automatic/nationale, /obj/item/gun/projectile/automatic/nationale/dragon)
@@ -81,7 +81,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|SPEEDLOADER|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 1000
 	fire_sound = 'sound/weapons/guns/fire/python.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'

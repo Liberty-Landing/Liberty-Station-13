@@ -183,17 +183,17 @@
 
 /obj/item/material/shard/shrapnel/New(loc)
 
-	..(loc, MATERIAL_STEEL)
+	..(loc, MATERIAL_ALUMINIUM)
 
 /obj/item/material/shard/shrapnel/scrap
 	name = "scrap metal"
 	amount = 1
 
-/obj/item/material/shard/plasma/New(loc)
-	..(loc, MATERIAL_PLASMAGLASS)
+/obj/item/material/shard/mend/New(loc)
+	..(loc, MATERIAL_LBGLASS)
 
-/obj/item/material/shard/ameridian
-	name = "ameridian"
+/obj/item/material/shard/nacre
+	name = "cosmic nacre"
 
-/obj/item/material/shard/ameridian/New(loc)
-	..(loc, MATERIAL_AMERIDIAN)
+/obj/item/material/shard/nacre/New(loc)
+	..(loc, MATERIAL_NACRE)

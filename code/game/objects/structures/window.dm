@@ -569,22 +569,22 @@
 	resistance = RESISTANCE_FLIMSY
 	flags = null
 
-/obj/structure/window/plasmabasic
-	name = "plasma window"
-	desc = "A borosilicate alloy window. It seems to be quite strong."
-	basestate = "pwindow"
-	icon_state = "plasmawindow"
-	shardtype = /obj/item/material/shard/plasma
-	glasstype = /obj/item/stack/material/glass/plasmaglass
+/obj/structure/window/mendsilicate
+	name = "mendsilicate window"
+	desc = "A window containing microrganisms constantly mending the glass together after impact. It does not heal over time. It seems to be quite strong."
+	basestate = "mwindow"
+	icon_state = "mendwindow"
+	shardtype = /obj/item/material/shard/mend
+	glasstype = /obj/item/stack/material/glass/mendsilicate
 	maximal_heat = T0C + 5227  // Safe use temperature at 5500 kelvin. Easy to remember.
 	damage_per_fire_tick = 1.5 // Lowest per-tick damage so overheated supermatter chambers have some time to respond to it. Will still shatter before a delam.
 	maxHealth = 150
 	resistance = RESISTANCE_AVERAGE
 
-/obj/structure/window/plasmabasic/full
+/obj/structure/window/mendsilicatebasic/full
 	dir = SOUTH|EAST
 	icon = 'icons/obj/structures/windows.dmi'
-	icon_state = "plasmawindow_mask"
+	icon_state = "mendwindow_mask"
 	alpha = 150
 	maxHealth = 200
 	resistance = RESISTANCE_AVERAGE
@@ -598,7 +598,7 @@
 	reinf = 1
 	maximal_heat = T0C + 750	// Fused quartz.
 	damage_per_fire_tick = 2.0
-	glasstype = /obj/item/stack/material/glass/reinforced
+	glasstype = /obj/item/stack/material/glass/laminated
 
 	maxHealth = 50
 	resistance = RESISTANCE_FRAGILE
@@ -619,19 +619,19 @@
 	resistance = RESISTANCE_FRAGILE
 	flags = null
 
-/obj/structure/window/reinforced/plasma
-	name = "reinforced plasma window"
-	desc = "A borosilicate alloy window, with rods supporting it. It seems to be very strong."
+/obj/structure/window/reinforced/mendsilicate
+	name = "reinforced mendsilicate window"
+	desc = "A window containing microrganisms constantly mending the glass together after impact. It is reinforced with rods. You will struggle to break this apart."
 	basestate = "rpwindow"
 	icon_state = "rpwindow"
-	shardtype = /obj/item/material/shard/plasma
-	glasstype = /obj/item/stack/material/glass/plasmarglass
+	shardtype = /obj/item/material/shard/mend
+	glasstype = /obj/item/stack/material/glass/laminated
 	maximal_heat = T0C + 99453 // Safe use temperature at 100,000 kelvin. I think?
 	damage_per_fire_tick = 1.5
 	maxHealth = 200
 	resistance = RESISTANCE_TOUGH
 
-/obj/structure/window/reinforced/plasma/full
+/obj/structure/window/reinforced/mendsilicate/full
 	dir = SOUTH|EAST
 	icon = 'icons/obj/structures/windows.dmi'
 	icon_state = "plasmarwindow_mask"

@@ -44,7 +44,7 @@ Disabled do to being a bit to unfun to deal with
 		wormhole_tiles.Add(T)
 
 /datum/event/wormholes/announce()
-	command_announcement.Announce("Space-time anomalies detected on the colony. There is no additional data.", "Anomaly Alert", new_sound = 'sound/AI/spanomalies.ogg')
+	command_announcement.Announce("Space-time anomalies detected on the colony. Avoid moving if you value your safety.", "Anomaly Alert", new_sound = 'sound/AI/spanomalies.ogg')
 
 
 /datum/event/wormholes/start()

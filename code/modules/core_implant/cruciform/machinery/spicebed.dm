@@ -146,7 +146,8 @@
 
 /obj/item/spice_plant/ginger_root
 	name = "ginger root"
-	desc = "A white root that lost most of its flavour and turned as hard as rocks through culitivation."
+	desc = "Ginger roots are extensively employed in food and drink brewing, primarily to maintain the Enkindled Calderon's flasks at a consistent temperature, \
+	preventing heat dissipation until the flask is broken. This ensures the flask retains its heat throughout the process."
 	icon_state = "ginger_root"
 	amount_to_harvest = 4
 	growthrate = 2
@@ -155,7 +156,7 @@
 
 /obj/item/spice_plant/spikenard
 	name = "spikenard bundle"
-	desc = "A branch of spikenard used in brewing, has fast growthrate do to its uses as decrations."
+	desc = "Spikenard, which was employed as a perfume and a wine spice during the Early Roman Empire and even referenced in the Bible, is utilized by the Custodians as an essential oil in numerous fast-burning flasks."
 	icon_state = "spikenard"
 	amount_to_harvest = 2
 	growthrate = 10
@@ -165,7 +166,7 @@
 
 /obj/item/spice_plant/clove
 	name = "clove root"
-	desc = "A brown root that lost most of its cooking unitly after decades of culitivation."
+	desc = "Due to the presence of eugenol, clove brews are widely recognized for their analgesic properties and effectiveness as an insect repellent. Numerous clove-based brews can have a highly toxic effect on insects."
 	icon_state = "clove"
 	amount_to_harvest = 3
 	growthrate = 5
@@ -173,8 +174,8 @@
 	Qi = "cr"
 
 /obj/item/spice_plant/cinnamon
-	name = "sinnamon branch"
-	desc = "A brother of cinnamon but without any flavours, used in brewing and culitivation."
+	name = "cinnamon branch"
+	desc = "Although it has no direct impact on health, cinnamon is commonly added to custodian brews to facilitate the absorption of the brew by the body, enabling chemicals to reach areas beyond the stomach. It is widely utilized in various custodian healing liqueurs."
 	icon_state = "cinnamon"
 	amount_to_harvest = 3
 	growthrate = 5
@@ -183,7 +184,7 @@
 
 /obj/item/spice_plant/rosemary
 	name = "rosemary bundle"
-	desc = "A branch of rosemary used in brewing or as decrations."
+	desc = "A fragrant herb esteemed by Custodians, celebrated for enhancing memory and concentration, promoting vitality and resilience - but mostly used for culinary purposes."
 	icon_state = "rosemary"
 	amount_to_harvest = 2
 	growthrate = 10
@@ -193,7 +194,8 @@
 
 /obj/item/spice_plant/cumin
 	name = "cumin bims"
-	desc = "The leftover seedlings of cumin that are unable to grow after a successful harvest, used in brewing."
+	desc = "Cumin, a spice abundant in antioxidants like flavonoids, plays a vital role in countering the adverse effects of potions. It is often found alongside potions containing Clove as the main ingredient. \
+	Strangely enough, most custodians highly dislike Cumin for its soapy taste, but its usefulness remains as their sole reason for its inclusion."
 	icon_state = "cumin"
 	amount_to_harvest = 6
 	growthrate = 5
@@ -202,7 +204,7 @@
 
 /obj/item/spice_plant/lilyflower
 	name = "lily flower"
-	desc = "A large head of a lily flower, can be used for brewing or decration."
+	desc = "The Lily Flower is widely recognized for its ability to alleviate the discomfort caused by burns, ulcers, and cough. It has also come to symbolize perseverance within the Custodian community, often adorning their walls as a symbolic representation."
 	icon_state = "lilyflower"
 	amount_to_harvest = 2
 	growthrate = 2
@@ -212,7 +214,8 @@
 
 /obj/item/spice_plant/marigold
 	name = "marigold flower"
-	desc = "A large branch of a marigold, can be used for brewing or decration."
+	desc = "Marigold, renowned for its antiseptic properties and historical use in wound treatment before the advent of chemical synthesis, plays a crucial role for the Custodians. \
+	It holds special significance within enkindled communities, symbolizing a culture where gifting a Marigold to another Enkindled signifies either a lovely flirt or celebrating for one's health."
 	icon_state = "marigold"
 	amount_to_harvest = 2
 	growthrate = 2
@@ -222,7 +225,8 @@
 
 /obj/item/spice_plant/yerbamate
 	name = "yerba mate branch"
-	desc = "A small branch of yerba mate, can be used for brewing."
+	desc = "Coming from the Custodian's south american first colonial reaches centuries ago, the Yerba Mate still remains very present on their culture, possessing beneficial properties that aid in digestion, \
+	provide relief from respiratory ailments and body energy. It is extensively utilized in advanced custodian brews to enhance the oxygen levels circulating in the veins, thereby optimizing muscular activity and endurance."
 	icon_state = "yerbamate"
 	amount_to_harvest = 3
 	growthrate = 5
@@ -231,7 +235,9 @@
 
 /obj/item/spice_plant/coriander
 	name = "coriander leaf"
-	desc = "A small handful of leaves from a coriander bed, can be used for brewing as cultivation methods of this plant has rendered its edibility questionable."
+	desc = "Coriander, long known for its potential to ease gastrointestinal issues, is used by the Enkindled in potion production. \
+	This process denatures coriander's chemicals, enabling targeted muscular tension in specific body areas. \
+	Crafted potions were believed to enhance blood circulation independently of the heart, a forgotten Enkindled secret."
 	icon_state = "coriander"
 	amount_to_harvest = 3
 	growthrate = 5
@@ -249,14 +255,14 @@
 
 /obj/item/reagent_containers/food/drinks/flask/gourdflask
 	name = "gourd flask"
-	desc = "A coverted gourd blump into a basically thermos or flask."
+	desc = "A gourd utilized as a flask for easy access. Not really better than the average flask, but it is lightweight and gives anything a tasteful oak taste - and making sure you are not drinking microplastics or aluminium ions."
 	icon = 'icons/obj/neotheology_spicebed.dmi'
 	icon_state = "drinkable_gourd"
 	volume = 60
 
 /obj/item/stack/thrown/gourd
 	name = "throwable gourd"
-	desc = "A gourd that has been bolded by use of biosilk to become a throwable seed."
+	desc = "A gourd fastened with biosilk to be easily throwed against any victim. There is aluminium wrappings and radiance inside that breaks the gourd when a suitable impact reaches it. Being shot at doesn't trigger any explosion."
 	icon_state = "throwable_gourd"
 	icon = 'icons/obj/neotheology_spicebed.dmi'
 	amount = 1
@@ -404,3 +410,337 @@
 
 	active = FALSE
 	icon_state = "potionmaker"
+
+/datum/reagent/medicine/potion/tincture
+	name = "Healing Tincture"
+	id = "tincture"
+	description = "The healing potion of the custodian shows its ways by increasing the patient’s skin recovery, proliferating endothelial cells and fibroblasts \
+	to better improve wound healing. The Tincture is a vasodilator - so it doesn’t only have the symptoms of sildenafil, but also increases blood loss from open wounds."
+	taste_description = "peppery anise"
+	taste_mult = 3
+	reagent_state = LIQUID
+	color = "#BF0000"
+	overdose = REAGENTS_OVERDOSE
+	scannable = FALSE
+	metabolism = 0.2
+	nerve_system_accumulations = 0 // Potions do not increase nerve system accumulations, but gives a downside and don't replace chems.
+
+/datum/reagent/medicine/potion/tincture/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	M.heal_organ_damage(0.15 * effect_multiplier, 0, 3 * effect_multiplier)
+	M.add_chemical_effect(CE_BLOODCLOT, -0.30) //I'm sure this will not goddamn work, but I need to see.
+
+// Aggressive Enkindled Potions
+
+/datum/reagent/waterpotion //I think this can have 12 alts
+	name = "Boiling Water"
+	id = "waterpotion"
+	description = "A single gourd filled with pure boiling water, there’s a mysterious orange covering \
+	in the internal areas of the flask that avoids the heat from leaving the glass itself - leaving the water eternally boiling."
+	taste_description = "bitter demise"
+	reagent_state = LIQUID //Water is, in fact, dry.
+	color = "#0064C877"
+	scannable = TRUE
+	appear_in_default_catalog = FALSE
+	metabolism = REM * 10
+	taste_description = "water"
+	glass_icon_state = "glass_clear"
+
+/datum/reagent/waterpotion/affect_blood(mob/living/carbon/M)
+	M.adjust.adjustFireLoss(15)
+	M.add_chemical_effect(CE_TOXIN, 1)
+
+/datum/reagent/waterpotion/affect_ingest(mob/living/carbon/M)
+	M.adjust.adjustFireLoss(10)
+
+/datum/reagent/waterpotion/on_mob_add(mob/living/L)
+	. = ..()
+	L.damage_through_armor(15, BURN, attack_flag = ARMOR_BIO)
+
+/datum/reagent/waterpotion/affect_touch(mob/living/L)
+	on_mob_add(L)
+
+/datum/reagent/waterpotion //I think this can have 12 alts
+	name = "Boiling Water"
+	id = "waterpotion"
+	description = "A single gourd filled with a mysterious brown boiling oil, there’s a mysterious, almost undetectable covering in the internal areas of the flask that avoid the heat from leaving the glass itself - leaving the oil eternally boiling."
+	taste_description = "bitter demise"
+	reagent_state = LIQUID //Water is, in fact, dry.
+	color = "#0064C877"
+	scannable = TRUE
+	appear_in_default_catalog = FALSE
+	metabolism = REM * 10
+	taste_description = "water"
+	glass_icon_state = "glass_clear"
+
+/datum/reagent/waterpotion/affect_blood(mob/living/carbon/M)
+	M.adjust.adjustFireLoss(15)
+	M.add_chemical_effect(CE_TOXIN, 1)
+
+/datum/reagent/waterpotion/affect_ingest(mob/living/carbon/M)
+	M.adjust.adjustFireLoss(10)
+
+/datum/reagent/waterpotion/on_mob_add(mob/living/L)
+	. = ..()
+	L.damage_through_armor(15, BURN, attack_flag = ARMOR_BIO)
+
+/datum/reagent/waterpotion/affect_touch(mob/living/L)
+	on_mob_add(L)
+
+
+/datum/reagent/burns
+	name = "Burning Oils"
+	id = "burns"
+	description = "Heated oils with fibers of iron and salt. While it's cold inside the glass, contact with skin, chitin or any dermis tissue makes its temperature violently react..."
+	taste_description = "liquid fire"
+	reagent_state = LIQUID //for sake of simple
+	color = "#642424"
+	scannable = FALSE
+	appear_in_default_catalog = FALSE
+	metabolism = 0.1
+	overdose = 5
+
+/datum/reagent/burns/overdose(mob/living/carbon/M)
+	M.adjustFireLoss(7)
+
+/datum/reagent/burns/affect_blood(mob/living/carbon/M)
+	M.adjustFireLoss(3)
+
+/datum/reagent/burns/affect_ingest(mob/living/carbon/M)
+	M.adjustFireLoss(5)
+
+/datum/reagent/burns/on_mob_add(mob/living/L)
+	. = ..()
+	if(!ishuman(L))
+		L.damage_through_armor(230, BURN, attack_flag = ARMOR_BIO)
+		L.adjust_fire_stacks(4)
+		L.IgniteMob()
+		return
+	L.damage_through_armor(20, BURN, attack_flag = ARMOR_BIO)
+	L.adjust_fire_stacks(2)
+	L.IgniteMob() // It reacts violently against flesh and chitin, so it ignites naturally in contact with it, and O2 in the atmosphere.
+
+/datum/reagent/silversthread
+	name = "Silversthread Brew"
+	id = "silversthread_brew"
+	description = "A mix of metals and salts boiled into one another, said to be able to make people take more physical punishment, \
+				   with the drawback of making your metallic coating more vulnerable to fire. It also makes breathing harder..."
+	taste_description = "salt of metal"
+	reagent_state = LIQUID
+	color = "#4e3f3f"
+	scannable = FALSE
+	appear_in_default_catalog = FALSE
+	metabolism = 0.001 //Takes a long time to remove
+	overdose = 3
+
+/datum/reagent/iron_skin_brew/overdose(mob/living/carbon/M, alien)
+	M.adjustCloneLoss(1) //The body breaks apart
+
+/datum/reagent/iron_skin_brew/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	M.add_chemical_effect(CE_TOXIN, 3)
+
+/datum/reagent/iron_skin_brew/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+	return // The chemical is meant to be ingested, but unless we do this, we'll get poisoned
+
+/datum/reagent/iron_skin_brew/on_mob_add(mob/living/L)
+	. = ..()
+	var/mob/living/carbon/human/ironskin = L
+	if(!ishuman(L))
+		if(ironskin.species.reagent_tag == IS_CHTMANT) // This turns skin into iron, Cht'mant get horribly tortured by it
+			ironskin.add_chemical_effect(CE_TOXIN, 0.4)
+			ironskin.paralysis = max(L.paralysis, 5)
+			ironskin.adjustCloneLoss(2)
+			return
+	ironskin.mob_bomb_defense += 25
+	ironskin.falls_mod -= 0.4
+	ironskin.brute_mod_perk -= 0.2
+	ironskin.burn_mod_perk += 0.2
+	ironskin.oxy_mod_perk  += 2 //Iron casket
+
+/datum/reagent/iron_skin_brew/on_mob_delete(mob/living/L)
+	. = ..()
+	var/mob/living/carbon/human/ironskin = L
+	if(!ishuman(L))
+		return
+	ironskin.mob_bomb_defense -= 25
+	ironskin.falls_mod += 0.4
+	ironskin.Paralyse(3)
+	ironskin.burn_mod_perk -= 0.2
+	ironskin.brute_mod_perk += 0.2
+	ironskin.oxy_mod_perk  -= 2
+
+/datum/reagent/toxin_draft
+	name = "Noxious Sludge"
+	id = "toxin_draft"
+	description = " A nefarious concoction toxic to all living beings."
+	taste_description = "bitter demise"
+	reagent_state = LIQUID
+	color = "#365f3f"
+	scannable = FALSE
+	appear_in_default_catalog = FALSE
+	metabolism = 0.1
+	overdose = 5
+
+/datum/reagent/toxin_draft/overdose(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 5)
+
+/datum/reagent/toxin_draft/affect_blood(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 1)
+
+/datum/reagent/toxin_draft/affect_ingest(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 3)
+
+/datum/reagent/toxin_draft/on_mob_add(mob/living/L)
+	. = ..()
+	if(!ishuman(L))
+		L.adjustToxLoss(180)
+		L.adjustCloneLoss(120)
+		return
+	L.adjustFireLoss(20)
+	L.adjustCloneLoss(10)
+
+/datum/reagent/toxin_draft/affect_touch(mob/living/L)
+	on_mob_add(L)
+
+/datum/reagent/sight_dram
+	name = "Ocular Remedy"
+	id = "sight_dram"
+	description = "A mix of common compounds to repair sight."
+	taste_description = "charcoal"
+	reagent_state = LIQUID
+	color = "#629ac0"
+	scannable = FALSE
+	appear_in_default_catalog = FALSE
+	metabolism = 0.1
+	overdose = 3
+
+/datum/reagent/sight_dram/overdose(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 2)
+
+/datum/reagent/sight_dram/affect_blood(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 5) //DONT INJECT IT
+
+/datum/reagent/sight_dram/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+	M.eye_blurry = max(M.eye_blurry - (5 * effect_multiplier), 0)
+	M.eye_blind = max(M.eye_blind - (5 * effect_multiplier), 0)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/internal/eyes/E = H.random_organ_by_process(OP_EYES)
+		if(E && istype(E))
+			if(E.damage > 0)
+				E.damage = max(E.damage - (5), 0)
+
+/datum/reagent/harms
+	name = "Ch'alla Volkn"
+	id = "harms"
+	description = "A mix of solid sharp sands and metal designed to cut down whoever they are thrown at." // POCKET SAND!
+	taste_description = "bitter demise"
+	reagent_state = SOLID //for sake of simple
+	color = "#b9af1f"
+	scannable = FALSE
+	appear_in_default_catalog = FALSE
+	metabolism = 0.1
+	overdose = 5
+
+/datum/reagent/harms/overdose(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 5)
+
+/datum/reagent/harms/affect_blood(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 1)
+
+/datum/reagent/harms/affect_ingest(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 3)
+
+/datum/reagent/harms/on_mob_add(mob/living/L)
+	. = ..()
+	if(!ishuman(L))
+		L.damage_through_armor(230, BRUTE, attack_flag = ARMOR_BIO)
+		return
+	L.damage_through_armor(20, BRUTE, attack_flag = ARMOR_BIO)
+
+/datum/reagent/harms/affect_touch(mob/living/L)
+	on_mob_add(L)
+
+
+/datum/reagent/red_heart
+	name = "Vitaurum"
+	id = "red_heart"
+	description = "A small droplet of red gold created by an alchemist \
+				   who could not cope with the loss of their familiar. \
+				   Said to have the power to revive beasts."
+	taste_description = "zapping away your taste buds"
+	reagent_state = LIQUID //for sake of simple
+	color = "#da4a12"
+	scannable = FALSE
+	appear_in_default_catalog = FALSE
+	metabolism = 1
+	overdose = 2
+
+/datum/reagent/red_heart/overdose(mob/living/carbon/M)
+	M.adjustCloneLoss(3)
+
+/datum/reagent/red_heart/affect_blood(mob/living/carbon/M)
+	M.add_chemical_effect(CE_TOXIN, 3)
+
+/datum/reagent/red_heart/affect_ingest(mob/living/carbon/M, alien, effect_multiplier)
+	return
+
+/datum/reagent/red_heart/on_mob_add(mob/living/L)
+	. = ..()
+	if(L.stat == DEAD) //Anti-cheat so you dont inject this into a mob to deal 80% damage
+		if(!ishuman(L))
+			L.revive()
+			L.adjustBruteLoss(L.get_health() * 0.8) //takes away 80% health
+			return
+
+
+/datum/reagent/toxin/slimetoxin/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(H.species.name != SPECIES_SLIME && !H.isSynthetic()) //cannot transform if already a slime perosn or lack flesh to transform
+			if(istype(H.get_core_implant(), /obj/item/implant/core_implant/cruciform))
+				H.gib() //Deus saves
+			else
+				to_chat(M, SPAN_DANGER("Your flesh rapidly mutates!"))
+				for(var/obj/item/W in H) //Check all items on the person
+					if(istype(W, /obj/item/organ/external/robotic) || istype(W, /obj/item/implant)) //drop prosthetic limbs and implants, you are a slime now.
+						W.dropped()
+				H.set_species(SPECIES_SLIME)
+
+
+/*ASSETS AREA
+/obj/item/material/shard/Crossed(AM as mob|obj)
+	..()
+	if(isliving(AM))
+		var/mob/M = AM
+
+		if(M.buckled) //wheelchairs, office chairs, rollerbeds
+			return
+
+		playsound(src.loc, 'sound/effects/glass_step.ogg', 50, 1) // not sure how to handle metal shards with sounds
+		if(ishuman(M))
+			var/mob/living/carbon/human/H = M
+
+			if(H.species.siemens_coefficient<0.5) //Thick skin.
+				return
+
+			if(H.shoes)
+				return
+
+			to_chat(M, SPAN_DANGER("You step on \the [src]!"))
+
+			var/list/check = list(BP_L_LEG, BP_R_LEG)
+			while(check.len)
+				var/picked = pick(check)
+				var/obj/item/organ/external/affecting = H.get_organ(picked)
+				if(affecting)
+					if(BP_IS_ROBOTIC(affecting))
+						return
+					if(affecting.take_damage(5, BRUTE))
+						H.UpdateDamageIcon()
+					H.updatehealth()
+					if(!(H.species.flags & NO_PAIN))
+						H.Weaken(3)
+					return
+				check -= picked
+			return
+*/

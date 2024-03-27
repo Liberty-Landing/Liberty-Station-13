@@ -6,7 +6,7 @@
 	item_state = "riotgun"
 	w_class = ITEM_SIZE_BULKY
 	force = WEAPON_FORCE_PAINFUL
-	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_WOOD = 10)
+	matter = list(MATERIAL_INDSTEEL = 30, MATERIAL_WOOD = 10)
 	caliber = CAL_GRENADE
 	load_method = SINGLE_CASING
 	origin_tech = list(TECH_COMBAT = 7, TECH_MATERIAL = 2)
@@ -21,7 +21,7 @@
 	var/throw_distance = 7
 	var/release_force = 5
 	twohanded = TRUE
-	serial_type = "Bonfire"
+	serial_type = "Circhosian"
 
 	wield_delay = 1.5 SECOND
 	wield_delay_factor = 0.6 // 60 vig , heavy stuff

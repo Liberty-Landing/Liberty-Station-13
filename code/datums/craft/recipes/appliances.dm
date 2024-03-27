@@ -24,7 +24,7 @@
 	result = /obj/machinery/portable_atmospherics/canister/empty
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_MEC)
 
@@ -33,7 +33,7 @@
 	result = /obj/item/cannonframe
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_MEC)
 
@@ -45,7 +45,7 @@
 	steps = list(
 		list(/obj/item/stack/rods, 20),
 		list(QUALITY_SCREW_DRIVING, 10, 60),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 40),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 40),
 		list(QUALITY_BOLT_TURNING, 10, 60),
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC, "time" = 40),
 		list(QUALITY_BOLT_TURNING, 10, 60)
@@ -93,7 +93,7 @@
 	name = "wheelchair"
 	result = /obj/structure/bed/chair/wheelchair
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM),
 	)
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
 	related_stats = list(STAT_MEC)

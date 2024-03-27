@@ -910,7 +910,7 @@
 /obj/structure/jtb_pillar
 	name = "Lesser Wormhole Gatepyre"
 	desc = "This machine under custodian autonomy employs wormhole gateway technology. it generates and stabilizes micro-wormholes, while avoiding matter encoding by injecting unbroken matter into a gravitational field generator, utilizing the wormhole as a conduit between entry and destination. \
-	The technology has been granted by the Gatepyre order to the Bonfire Order. Thus, it is far less powerful than the original."
+	The technology has been granted by the Gatepyre order to the Bonfire Order. Thus, it is far less powerful than the original. It was used as a way to deter pirates during the expeditions."
 	icon = 'icons/obj/structures/junk_tractor_beam.dmi'
 	icon_state = "pillar"
 	layer = ABOVE_MOB_LAYER

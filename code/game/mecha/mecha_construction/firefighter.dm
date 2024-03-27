@@ -37,7 +37,7 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The windshield hangs loose in the chassis, and must be screwed into place."),
 		//3
-		list("key"=/obj/item/stack/material/glass/reinforced,
+		list("key"=/obj/item/stack/material/glass/laminated,
 			//"backkey"=QUALITY_WELDING,
 			"desc"="External armor is installed. 5 sheets of reinforced glass are needed for the windshield."),
 		//4
@@ -49,9 +49,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The External armor plating leaves a gap for a heatsink to be installed."),
 		//6
-		list("key"=/obj/item/stack/material/plasteel,
+		list("key"=/obj/item/stack/material/indsteel,
 			//"backkey"=QUALITY_WELDING,
-			"desc"="The insulation is finished and can be covered. 5 sheets of plasteel are needed to form the external armor."),
+			"desc"="The insulation is finished and can be covered. 5 sheets of indsteel are needed to form the external armor."),
 		//7
 		list("key"=QUALITY_WELDING,
 			//"backkey"=QUALITY_BOLT_TURNING,
@@ -73,9 +73,9 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="The circuit shielding has been placed in the chassis, but needs to be bolted down."),
 		//12
-		list("key"=/obj/item/stack/material/steel,
+		list("key"=/obj/item/stack/material/aluminium,
 			//"backkey"=QUALITY_SCREW_DRIVING,
-			"desc"="The internal circutry is installed. 5 sheets of steel are needed to shield it."),
+			"desc"="The internal circutry is installed. 5 sheets of aluminium are needed to shield it."),
 		//13
 		list("key"=QUALITY_SCREW_DRIVING,
 			//"backkey"=QUALITY_PRYING,
@@ -303,7 +303,7 @@
 						"[usr] pries the circuit shielding from the [holder].", \
 						"You pry the circuit shielding from the [holder]."
 					)
-					new /obj/item/stack/material/steel (get_turf(holder), 5)
+					new /obj/item/stack/material/aluminium (get_turf(holder), 5)
 					holder.icon_state = "firefighter7"
 			if(11)
 				if(diff==FORWARD)
@@ -386,7 +386,7 @@
 						"[usr] removes the external armor layer from the [holder].", \
 						"You remove the external armor layer from the [holder]."
 					)
-					new /obj/item/stack/material/plasteel (get_turf(holder), 5)
+					new /obj/item/stack/material/indsteel (get_turf(holder), 5)
 					holder.icon_state = "firefighter10"
 			if(5)
 				if(diff==FORWARD)
@@ -427,7 +427,7 @@
 						"You remove the windshield from the [holder]."
 					)
 					holder.icon_state = "firefirefighter13"
-					new /obj/item/stack/material/glass/reinforced (get_turf(holder), 5)
+					new /obj/item/stack/material/glass/laminated (get_turf(holder), 5)
 			if(2)
 				if(diff==FORWARD)
 					usr.visible_message(

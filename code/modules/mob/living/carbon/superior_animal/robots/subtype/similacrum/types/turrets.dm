@@ -108,7 +108,7 @@
 	desc = "A Simulacrum-alloyed fuel rod, filled to the brim with plasma."
 
 	origin_tech = list(TECH_POWER = 6, TECH_PLASMA = 4, TECH_ENGINEERING = 4)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASMA = 5, MATERIAL_PLASMAGLASS = 1, MATERIAL_DIAMOND = 2, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_HYDROGENC = 5, MATERIAL_LBGLASS = 1, MATERIAL_DIAMOND = 2, MATERIAL_TITANIUMRTC = 1)
 
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "fuel_rod"
@@ -120,7 +120,7 @@
 	desc = "A empty Simulacrum-alloyed fuel rod, previously having contained some combustable substance. Presumably."
 
 	origin_tech = list(TECH_POWER = 3, TECH_PLASMA = 2, TECH_ENGINEERING = 2)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASMAGLASS = 1, MATERIAL_DIAMOND = 2, MATERIAL_PLATINUM = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_LBGLASS = 1, MATERIAL_DIAMOND = 2, MATERIAL_TITANIUMRTC = 1)
 
 	icon_state = "fuel_rod_depleted"
 
@@ -181,7 +181,7 @@
 		drop1 = /obj/item/stalker_fuel_rod
 
 	if (prob(45))
-		drop2 = /obj/item/stack/material/plasteel/random
+		drop2 = /obj/item/stack/material/indsteel/random
 
 	if (cell_drop)
 		cell_drop = /obj/item/cell/large/simulacrum

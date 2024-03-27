@@ -180,7 +180,7 @@
 
 /obj/item/integrated_circuit/time/clock/bluespace
 	name = "integrated clock (Bluespace Bonfire Time)"
-	desc = "Tells you what the time is, in Bluespace Bonfire Time, unaffected by local time dilation or other phenomenon."
+	desc = "Tells you what the time is, in Bluespace Bonfire Time, unaffected by local time dilation or other phenomenon. Whatever the Custodian technology has to do with it, you do not know." //I'm genuinely curious on how the hell this was named 'bonfire' previously. Should I remove this? -Monochrome
 
 /obj/item/integrated_circuit/time/clock/bluespace/get_time()
 	return REALTIMEOFDAY

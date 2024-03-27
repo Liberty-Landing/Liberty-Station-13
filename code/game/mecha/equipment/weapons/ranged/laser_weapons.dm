@@ -20,7 +20,7 @@
 	name = "\improper MHM \"Pacifier\" mounted taser" //Minerva Heavy Manufacturing
 	desc = "An old classic of Sol peacekeeper forces for when not even rifles help, while outdated by modern standards it still packs a massive punch making sure most people think twice before getting back up."
 	icon_state = "mecha_taser"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_SILVER  = 5)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 10, MATERIAL_SILVER  = 5)
 	energy_drain = 90
 	equip_cooldown = 15
 	projectile = /obj/item/projectile/energy/electrode/stunshot
@@ -52,7 +52,7 @@
 	name = "\improper MHM \"Immolator\" mining laser"
 	desc = "A heavy duty mining laser with safeties overriden meaning it won't mine much besides hard metal off those unfortunate at the end of it."
 	icon_state = "mecha_laser"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 10, MATERIAL_SILVER  = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 10, MATERIAL_SILVER  = 10)
 	energy_drain = 30
 	projectile = /obj/item/projectile/beam
 	fire_sound = 'sound/mecha/weapons/laser.ogg'
@@ -65,7 +65,7 @@
 	name = "\improper MHM-MS \"Solaris\" heavy laser cannon" //Minerva Heavy Manufacturing - Milispec
 	desc = "A heavy mech laser in use by most professional mercenary groups despite it's dated design, packs a massive punch for it's size while not draining much power."
 	icon_state = "mecha_laser_mil"
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 15, MATERIAL_SILVER  =10)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_INDSTEEL = 15, MATERIAL_SILVER  =10)
 	energy_drain = 100
 	projectile = /obj/item/projectile/beam/heavylaser
 	fire_sound = 'sound/mecha/weapons/laser_military.ogg'
@@ -79,7 +79,7 @@
 	name = "\improper MHM-MS \"Scorcher\" pulse laser cannon"
 	desc = "A heavy mech laser restructured to 'pulse' instead of delivering a constant beam making it much more energy intensive but perfect for dealing with multiple targets."
 	icon_state = "mecha_auto_laser"
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTEEL = 5, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_INDSTEEL = 5, MATERIAL_SILVER = 1)
 	energy_drain = 250 //less efficient than its constituent parts but more punchy per burst
 	projectile = /obj/item/projectile/beam/heavylaser
 	projectiles = 9
@@ -93,7 +93,7 @@
 	name = "\improper PHM \"MPL-3 MK2\" pulse cannon"
 	desc = "A heavy experimental cannon built in mind with pulsing unlike it's predecesor leading to it being more energy efficient and faster firing."
 	icon_state = "mecha_pulse"
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 10, MATERIAL_URANIUM  =5)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 10, MATERIAL_URANIUM  =5)
 	projectiles = 6
 	projectiles_per_shot = 3
 	deviation = 3
@@ -110,7 +110,7 @@
 	icon_state = "hydrogen_cannon"
 	energy_drain = 1000
 	fire_cooldown = 25
-	matter = list(MATERIAL_PLASTEEL = 30, MATERIAL_MHYDROGEN = 6, MATERIAL_TRITIUM = 6)
+	matter = list(MATERIAL_TITANIUMRTC = 30, MATERIAL_HYDROGENC = 6, MATERIAL_TRITIUM = 6)
 	origin_tech = list(TECH_COMBAT = 9, TECH_MATERIAL = 7, TECH_PLASMA = 10)
 	projectile = /obj/item/projectile/hydrogen/cannon/max
 	fire_sound = 'sound/weapons/energy/hydrogen_heavy.ogg'

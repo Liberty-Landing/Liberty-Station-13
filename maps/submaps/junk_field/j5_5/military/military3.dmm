@@ -4,14 +4,14 @@
 /area/template_noop)
 "c" = (
 /obj/effect/window_lwall_spawn/smartspawn,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "i" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "j" = (
 /obj/structure/bed/chair,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "x" = (
 /turf/simulated/wall/r_wall,
@@ -20,19 +20,19 @@
 /obj/item/modular_computer/console{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "N" = (
 /obj/structure/table/standard,
 /obj/item/folder/blue,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 "Z" = (
 /obj/machinery/door/airlock/glass_security{
 	name = "Airlock";
 	req_access = list(1)
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/template_noop)
 
 (1,1,1) = {"

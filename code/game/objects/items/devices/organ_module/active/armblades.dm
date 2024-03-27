@@ -17,7 +17,7 @@
 	desc = "A mechanical blade designed to be inserted into an arm. Gives you a nice advantage in a brawl."
 	verb_name = "Deploy armblade"
 	icon_state = "armblade"
-	matter = list(MATERIAL_STEEL = 16)
+	matter = list(MATERIAL_ALUMINIUM = 16)
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
 	holding_type = /obj/item/tool/armblade
 	price_tag = 200 //Just some metal
@@ -43,7 +43,7 @@
 	verb_name = "Deploy energyblade"
 	icon_state = "energyblade"
 	origin_tech = list(TECH_MAGNET = 3, TECH_ILLEGAL = 4)
-	matter = list(MATERIAL_PLASTEEL = 16, MATERIAL_SILVER = 10, MATERIAL_GOLD = 3, )
+	matter = list(MATERIAL_INDSTEEL = 16, MATERIAL_SILVER = 10, MATERIAL_GOLD = 3, )
 	holding_type = /obj/item/melee/energy/blade/organ_module
 
 /obj/item/organ_module/active/simple/armblade/bs_tomahawk
@@ -51,16 +51,16 @@
 	desc = "A Tactical Tomahawk designed to be inserted into an arm. Gives you a nice advantage in CQC."
 	verb_name = "Deploy Tomahawk"
 	icon_state = "armblade"
-	matter = list(MATERIAL_STEEL = 16)
+	matter = list(MATERIAL_ALUMINIUM = 16)
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
 	holding_type = /obj/item/tool/fireaxe/militia_tomahawk
 
-/obj/item/organ_module/active/simple/armblade/longsword
-	name = "Embedded Longsword"
-	desc = "A longsword designed to be inserted into an arm. You can't expect God to do all the work."
-	verb_name = "Deploy longsword"
-	icon_state = "nt_longsword"
-	matter = list(MATERIAL_BIOMATTER = 25, MATERIAL_STEEL = 5)
+/obj/item/organ_module/active/simple/armblade/custodianblade
+	name = "Embedded Blade"
+	desc = "A blade made out of nano machines that stays hidden underneath the muscle fibers, it is released at the person's will. You can't expect the old philosophers to do all the quoting when you can bleed someone instead."
+	verb_name = "Deploy Custodian Blade"
+	icon_state = "horseaxe"
+	matter = list(MATERIAL_CARBON_FIBER = 25, MATERIAL_INDSTEEL = 15)
 	allowed_organs = list(BP_R_ARM, BP_L_ARM)
 	holding_type = /obj/item/tool/sword/custodian/horseaxe
 

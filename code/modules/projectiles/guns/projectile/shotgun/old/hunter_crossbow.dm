@@ -11,7 +11,7 @@
 	caliber = CAL_CROSSBOW
 	damage_multiplier = 1
 	ammo_type = /obj/item/ammo_casing/crossbow_bolts
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 6)
 	price_tag = 750
 	init_recoil = RIFLE_RECOIL(0.3)
 	saw_off = FALSE
@@ -54,7 +54,7 @@
 	caliber = CAL_CROSSBOW
 	damage_multiplier = 1
 	ammo_type = /obj/item/ammo_casing/crossbow_bolts
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 6)
 	price_tag = 750
 	init_recoil = EMBEDDED_RECOIL(0.1)
 	saw_off = FALSE

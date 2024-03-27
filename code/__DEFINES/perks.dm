@@ -72,6 +72,8 @@
 #define PERK_APOTHECARY /datum/perk/job/apothecary
 #define PERK_ARTIFICER /datum/perk/job/artificer
 #define PERK_PHOENIX /datum/perk/job/phoenix_rekindlement
+#define PERK_INFLUX /datum/perk/job/influx
+
 
 // Medical
 #define PERK_CHEMIST /datum/perk/job/chemist
@@ -90,6 +92,10 @@
 // Hunter
 #define PERK_BUTCHER /datum/perk/job/butcher
 #define PERK_MASTER_HERBALIST /datum/perk/job/master_herbalist
+
+// OUTSIDER OR ANTAG
+#define PERK_TRIBAL /datum/perk/job/tribal
+#define PERK_PRECURSOR_HERITAGE /datum/perk/job/cultist
 
 //////////////
 //Race Perks//
@@ -188,7 +194,7 @@
 #define PERK_GUNSLINGER /datum/perk/oddity/gunslinger
 #define PERK_TERRIBLE_FATE /datum/perk/oddity/terrible_fate
 #define PERK_TOXIC_REVENGER /datum/perk/oddity/toxic_revenger
-#define PERK_BALLS_OF_PLASTEEL /datum/perk/oddity/balls_of_plasteel
+#define PERK_BALLS_OF_STEEL /datum/perk/oddity/balls_of_steel
 #define PERK_WEAK_MIND /datum/perk/oddity/weak_mind
 #define PERK_HARDEN /datum/perk/oddity/harden
 #define PERK_THIN_SKIN /datum/perk/oddity/thin_skin
@@ -200,7 +206,6 @@
 #define PERK_STRANGTH /datum/perk/oddity/strangth
 #define PERK_MIND_OF_MATTER /datum/perk/oddity/mind_of_matter
 #define PERK_IRON_WILL /datum/perk/oddity/iron_will
-#define PERK_HOLY_LIGHT /datum/perk/nt_oddity/holy_light
 #define PERK_LUNGS_OF_IRON /datum/perk/oddity/lungs_of_iron
 #define PERK_BLOOD_OF_LEAD /datum/perk/oddity/blood_of_lead
 #define PERK_NIGHTCRAWLER /datum/perk/oddity/nightcrawler
@@ -211,7 +216,7 @@
 #define PERK_SIDE_LOADING /datum/perk/oddity/side_loading
 
 
-#define GOOD_ODDITY_PERKS list(PERK_FAST_WALKER, PERK_GUNSLINGER, PERK_BALLS_OF_PLASTEEL, PERK_HARDEN, PERK_BETTER_TOXINS, PERK_SHARP_MIND, PERK_STRANGTH, PERK_IRON_WILL, PERK_SNACKIVORE, PERK_SIDE_LOADING)
+#define GOOD_ODDITY_PERKS list(PERK_FAST_WALKER, PERK_GUNSLINGER, PERK_BALLS_OF_STEEL, PERK_HARDEN, PERK_BETTER_TOXINS, PERK_SHARP_MIND, PERK_STRANGTH, PERK_IRON_WILL, PERK_SNACKIVORE, PERK_SIDE_LOADING)
 
 ////////////////////
 //Specilized Perks//

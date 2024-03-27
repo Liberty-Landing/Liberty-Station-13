@@ -1,4 +1,4 @@
-/obj/item/gun/energy/ionrifle
+/obj/item/gun/energy/ionrifle //remember to make something else here
 	name = "\"Halicon\" ion-rifle"
 	desc = "The OT IR Halicon is a man-portable anti-armor weapon designed to disable mechanical threats, produced by Old Testament. Not the best of its type, but gets the job done."
 	icon = 'icons/obj/guns/energy/iongun.dmi'
@@ -12,7 +12,7 @@
 	flags = CONDUCT
 	slot_flags = SLOT_BACK
 	charge_cost = 200
-	matter = list(MATERIAL_PLASTEEL = 24, MATERIAL_WOOD = 8, MATERIAL_SILVER = 10)
+	matter = list(MATERIAL_INDSTEEL = 24, MATERIAL_WOOD = 8, MATERIAL_SILVER = 10)
 	price_tag = 1500
 	projectile_type = /obj/item/projectile/ion
 	init_recoil = CARBINE_RECOIL(1.6)

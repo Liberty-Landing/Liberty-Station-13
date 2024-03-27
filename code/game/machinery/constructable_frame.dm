@@ -13,7 +13,7 @@
 /obj/machinery/constructable_frame/machine_frame //Made into a seperate type to make future revisions easier.
 	name = "machine frame"
 	icon_state = "box_0"
-	matter = list(MATERIAL_STEEL = 8)
+	matter = list(MATERIAL_ALUMINIUM = 8)
 	var/base_state = "box"			//base icon for creating subtypes of machine frame
 	var/list/components = null
 	var/list/req_components = null

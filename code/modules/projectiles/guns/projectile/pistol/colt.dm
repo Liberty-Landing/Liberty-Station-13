@@ -6,7 +6,7 @@
 	item_state = "colt"
 	caliber = CAL_MAGNUM
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 5)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_WOOD = 5)
 	price_tag = 450
 	fire_sound = 'sound/weapons/guns/fire/pistol_fire.ogg'
 	can_dual = TRUE
@@ -31,7 +31,7 @@
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 8)
+	matter = list(MATERIAL_INDSTEEL = 18, MATERIAL_PLASTIC = 8)
 	price_tag = 550
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL

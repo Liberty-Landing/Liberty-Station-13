@@ -13,7 +13,7 @@
 	throw_speed = WEAPON_FORCE_WEAK
 	max_health = 100
 	origin_tech = list(TECH_MATERIAL = 1, TECH_BIO = 1)
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	tool_qualities = list(QUALITY_CUTTING = 35, QUALITY_WIRE_CUTTING = 10)
 	price_tag = 45
@@ -22,7 +22,7 @@
 	name = "advanced scalpel"
 	desc = "Made of more expensive materials, sharper and generally more reliable."
 	icon_state = "scalpel_t4"
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_INDSTEEL = 1)
 	tool_qualities = list(QUALITY_CUTTING = 45, QUALITY_WIRE_CUTTING = 10)
 	degradation = 0.12
 	max_upgrades = 4
@@ -38,7 +38,7 @@
 	damtype = BURN
 	force = WEAPON_FORCE_DANGEROUS
 	armor_penetration = ARMOR_PEN_MODERATE
-	matter = list(MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_INDSTEEL = 1, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 1)
 	tool_qualities = list(QUALITY_CUTTING = 60, QUALITY_WIRE_CUTTING = 20, QUALITY_LASER_CUTTING = 60, QUALITY_CAUTERIZING = 20)
 	degradation = 0.11
 	use_power_cost = 0.12

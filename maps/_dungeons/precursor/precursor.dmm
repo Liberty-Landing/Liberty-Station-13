@@ -3,15 +3,15 @@
 /obj/structure/table/reinforced,
 /obj/random/gun_normal,
 /obj/machinery/recharger,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "aB" = (
 /obj/machinery/bodyscanner,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "aD" = (
 /obj/structure/anomaly_container,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "aH" = (
 /obj/structure/table/woodentable,
@@ -36,7 +36,7 @@
 /area/precursor/mini_base)
 "cX" = (
 /obj/machinery/sleeper,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "dt" = (
 /obj/structure/table/bench/wooden,
@@ -54,14 +54,14 @@
 /area/precursor/mini_base)
 "dW" = (
 /obj/machinery/optable,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "es" = (
 /obj/item/stack/medical/ointment,
 /obj/item/stack/medical/ointment,
 /obj/item/stack/medical/ointment,
 /obj/structure/table/glass,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "eu" = (
 /obj/structure/table/gamblingtable,
@@ -83,20 +83,20 @@
 /area/precursor/mini_base)
 "jQ" = (
 /obj/machinery/body_scanconsole,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "jZ" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "ki" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_fancy,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "kv" = (
 /obj/machinery/floodlight,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "kP" = (
 /obj/effect/floor_decal/industrial_plant/steel_grate_alt,
@@ -120,21 +120,21 @@
 "mu" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/bodybags,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "mD" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "no" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_cheap,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "np" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_shotgun,
 /obj/machinery/recharger,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "nQ" = (
 /turf/unsimulated/mineral,
@@ -159,7 +159,7 @@
 "qI" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/fire,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "qM" = (
 /turf/simulated/floor/wood/wild1,
@@ -169,7 +169,7 @@
 /obj/item/clothing/head/helmet/space/anomaly,
 /obj/item/clothing/head/helmet/space/anomaly,
 /obj/item/clothing/head/helmet/space/anomaly,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "rp" = (
 /obj/machinery/artifact_scanpad/precursor,
@@ -177,15 +177,15 @@
 /area/precursor/mini_base)
 "rW" = (
 /obj/structure/medical_stand/anesthetic,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "sY" = (
 /obj/structure/curtain/medical,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "tu" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "tx" = (
 /obj/effect/floor_decal/industrial_plant/steel_grate_alt,
@@ -198,7 +198,7 @@
 /area/precursor/mini_base)
 "tP" = (
 /obj/structure/medical_stand,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "tX" = (
 /obj/structure/table/woodentable,
@@ -207,7 +207,7 @@
 "uz" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/adv,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "xf" = (
 /obj/machinery/light/floor,
@@ -228,7 +228,7 @@
 /obj/item/tank/air,
 /obj/item/tank/air,
 /obj/item/tank/air,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "xI" = (
 /obj/structure/reagent_dispensers/fueltank/huge/derelict,
@@ -243,11 +243,11 @@
 "ya" = (
 /obj/item/storage/firstaid/surgery,
 /obj/structure/table/glass,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "yB" = (
 /obj/structure/closet/secure_closet/freezer/blood,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "yM" = (
 /turf/simulated/mineral,
@@ -269,7 +269,7 @@
 /obj/item/stack/medical/bruise_pack,
 /obj/item/stack/medical/bruise_pack,
 /obj/structure/table/glass,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "Ca" = (
 /obj/structure/table/reinforced,
@@ -283,7 +283,7 @@
 /area/precursor/mini_base)
 "DF" = (
 /obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/precursor/mini_base)
 "Ed" = (
 /obj/structure/table/reinforced,
@@ -292,7 +292,7 @@
 "Eq" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_combat,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "Fk" = (
 /obj/structure/table/bench/wooden,
@@ -300,7 +300,7 @@
 /area/precursor/mini_base)
 "Gc" = (
 /obj/structure/table/glass,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "GC" = (
 /obj/effect/floor_decal/industrial_plant/steel_grate_alt,
@@ -310,7 +310,7 @@
 "GD" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/o2,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "Ii" = (
 /obj/structure/table/gamblingtable,
@@ -324,7 +324,7 @@
 /area/precursor/mini_base)
 "IQ" = (
 /obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "Ju" = (
 /obj/structure/inflatable/door,
@@ -339,35 +339,35 @@
 "LM" = (
 /obj/effect/floor_decal/industrial_plant/steel_grate,
 /obj/effect/floor_decal/industrial_plant/steel_grate_warning,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/precursor/mini_base)
 "LR" = (
 /obj/item/stack/medical/splint,
 /obj/item/stack/medical/splint,
 /obj/item/stack/medical/splint,
 /obj/structure/table/glass,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "Mg" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_normal,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "MY" = (
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor/mini_base)
 "Nk" = (
 /obj/structure/table/glass,
 /obj/item/storage/firstaid/toxin,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "NU" = (
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/precursor/mini_base)
 "Op" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_shotgun,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "PN" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil,
@@ -376,7 +376,7 @@
 /area/precursor/mini_base)
 "QX" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/precursor/mini_base)
 "Tk" = (
 /obj/structure/table/rack/shelf,
@@ -386,20 +386,20 @@
 /obj/random/ammo,
 /obj/random/ammo,
 /obj/random/ammo,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "UM" = (
 /turf/unsimulated/mineral,
 /area/precursor/mini_base)
 "WS" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "XJ" = (
 /obj/structure/table/bench/wooden,
 /obj/item/clothing/suit/space/anomaly,
 /obj/item/clothing/suit/space/anomaly,
 /obj/item/clothing/suit/space/anomaly,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "Yi" = (
 /mob/living/simple_animal/snail,
@@ -408,11 +408,11 @@
 "YH" = (
 /obj/structure/table/reinforced,
 /obj/random/gun_energy_cheap,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/precursor/mini_base)
 "YO" = (
 /obj/structure/table/bench/wooden,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/precursor/mini_base)
 "Zj" = (
 /obj/structure/table/gamblingtable,

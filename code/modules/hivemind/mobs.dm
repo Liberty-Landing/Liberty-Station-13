@@ -1,11 +1,12 @@
 
-///////////Hive mobs//////////
-//Some of them can be too tough and dangerous, but they must be so. Also don't forget, they are really rare thing.
-//Just bring corpses from wires away, and little mobs is not a problem
-//Mechiver have 15% chance to spawn from machinery. With failure chance calculation, this is rare depending where the hive shows up.
-//But if players get some of these 'big guys', only teamwork, fast legs and trickery will works fine
-//So combine all of that to defeat them
-
+///////////Neurophyta mobs//////////
+//The extension of the old Precursor gods, praised by the Circhosian cult - yet still hostile to them due to the 'embracing' nature of Neurophyta.
+//The enemies are tough and dangerous, but they must be so. Neurophyta must only appear in events, where the Fleshlings will be the weaker, round-spawning version.
+//These enemies must always be unique both in codework and spritework to convey danger and how exotic these enemies are. Each one much focus on fitting a combat niche.
+//Players can destroy Neurophyta with teamwork, or make use of non-convenctional weaponry such as fire to deal more damage.
+//Perhaps the Neurophyta can transform normal human player bodies into Neurophyta enemies, but after killed, it will drop their recoverable body.
+//plans to make Neurophyta a disease draw by pollen can be made by any willing coder, something that happens with gas. This can either weaken the player, or slowly turn them into a Neurophyta enemy.
+//To avoid Neurophyta disease, one must use a mask.
 
 /mob/living/simple_animal/hostile/hivemind
 	name = "creature"
@@ -18,7 +19,7 @@
 	faction = "hive"
 	attacktext = "attacks"
 	universal_speak = TRUE
-	speak_chance = 5
+	speak_chance = 10
 	var/malfunction_chance = 5
 	var/ability_cooldown = 30 SECONDS
 	var/list/target_speak = list()			//this is like speak list, but when we see our target
@@ -229,9 +230,9 @@
 	//corrupted speak imitation
 	var/phrase_amount = rand(2, 5)
 	for(var/count = 1 to phrase_amount)
-		var/first_word = pick("You should", "I", "They", "The hive will", "My flesh will", "We", "Your friend", "Your meat will", "Your mind will")
+		var/first_word = pick("You should", "I", "They", "The overlords will", "My flesh will", "We", "Your friend", "Your meat will", "Your mind will")
 		var/second_word = pick("embrace", "submit to", "transform", "love", "rebuild", "fix", "help", "rework", "burn")
-		var/third_word = pick("them", "me", "progress", "death", "us", "the hive", "the machines", "this new colony")
+		var/third_word = pick("them", "me", "progress", "death", "us", "the divines", "the Petaline", "this new colony")
 		var/end_symbol = pick("...", ".", "?", "!")
 		var/phrase = "[first_word] [second_word] [third_word][end_symbol]"
 		speak.Add(phrase)
@@ -384,7 +385,7 @@
 	ability_cooldown = 60 SECONDS
 	speak = list(
 				"No more leaks, no more pain!",
-				"Steel is strong.",
+				"aluminium is strong.",
 				"All humankind is good for - is to serve the Hivemind.",
 				"I'm still working on those bioreactors I promised!",
 				"I have finally arisen!",
@@ -554,19 +555,19 @@
 	var/fake_death_cooldown = 0
 
 	speak = list(
-				"The dreams. The dreams.",
-				"Nothing hurts anymore.",
-				"Pain feels good now. Its like I've been rewired.",
-				"I wanted to cry at first, but I can't.",
-				"They took away all misery.",
-				"This isn't so bad. This isn't so bad."
+				"If only you could know this pleasure...",
+				"The truth is hidden, obscured by lies.",
+				"The truth is out there.",
+				"The walls have ears, and they're listening.",
+				"Codes in the mundane, messages in plain sight.",
+				"Invisible hands pull the strings of fate."
 				)
 	target_speak = list(
-						"Don't try and fix me! We love this!",
-						"Just make it easy on yourself!",
-						"Stop fighting progress!",
+						"Haha! Don't you fear it? The shine of death's sickle?",
+						"Petaline will bring you into her arms.",
+						"Accept your fate!",
 						"Join us! Receive these gifts!",
-						"Yes! Hit me! It feels fantastic!",
+						"There's more from where this comes from!",
 						"Come on coward, take a swing!"
 						)
 
@@ -667,7 +668,7 @@
 		L.attack_generic(src, rand(15, 25)) //stealth attack
 		L.Weaken(5)
 		visible_emote("suddenly heals its wounds and grabs [L] by the legs, forcing them down onto the floor!") //Nanomachines son!
-		var/msg = pick("MORE! I'M NOT DONE YET!", "MORE PAIN!", "THE DREAMS OVERTAKE ME!", "GOD, YES! HURT ME!")
+		var/msg = pick("I TOLD YOU! PETALINE BRINGS ME IMORTALITY!", "YOU CANNOT STOP ME!", "YOUR FLESH IS MY NUTRIMENTS!", "You thought plants DON'T GET PROTEINS? HAH!")
 		say(msg)
 	destroy_surroundings = TRUE
 	icon_state = "himan-damaged"
@@ -706,30 +707,30 @@
 	var/hatch_closed = TRUE
 	//default speaking
 	speak = list(
-				"A shame this form isn't more fitting.",
-				"A girl can get so lonely with no-one to play with...",
-				"Beauty is within.")
+				"The truth is elusive, dancing just out of reach.",
+				"Illusions crumble, reveals the stark reality...",
+				"Every step is traced, every thought intercepted.")
 	target_speak = list(
-				"What a lovely body. Lay it down intact.",
-				"Come here, lover.",
-				"First time? I can be gentle, unless you like it rough.",
-				"What use is that flesh if you don't enjoy it?",
-				"Mine is the caress of steel.",
-				"I offer you the ecstasy of union, and yet you tremble.")
+				"Trust crumbles like sand, slipping through our fingers.",
+				"Normalcy is a charade, a grand masquerade.",
+				"The world is a stage, and we are the puppets.",
+				"The eyes of the unseen never blink.",
+				"Paranoia is wisdom in a world of deception.",
+				"Question your memories, for they may be manipulated.")
 	//speaking with pilot
 	var/list/common_answers = list(
-								"Of course, lover.",
-								"In sweet time.",
+								"Petaline hears you, my dear.",
+								"As her manifestation in flesh, I say yes.",
 								"Mmm.",
 								"But of course darling.",
-								"Shh, rest now.",
-								"Hush now, child.")
+								"Shh, you've fighted for so long, rest now.",
+								"Dear of mine, breath in the spores and accept Petaline's embrace.")
 	var/list/other_answers = list(
-								"There's room for one more!",
-								"Don't be jealous. I can love you both.",
+								"Petaline loves all!",
+								"Don't be jealous. Petaline can love you both.",
 								"Come to bed, you.",
 								"Slide over a little for them.",
-								"Don't mind the blood, they didn't need it anymore.")
+								"Don't mind the blood, the other one has love replacing it.")
 	//pilot quotes
 	var/list/pilot_target_speak = list(
 						"Three's a crowd, call for help and make it a party!",

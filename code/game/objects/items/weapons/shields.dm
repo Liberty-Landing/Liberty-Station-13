@@ -210,7 +210,7 @@
 	w_class = ITEM_SIZE_BULKY
 	origin_tech = list(TECH_MATERIAL = 2)
 	armor_list = list(melee = 20, bullet = 25, energy = 10, bomb = 0, bio = 0, rad = 0)
-	matter = list(MATERIAL_GLASS = 5, MATERIAL_STEEL = 5, MATERIAL_PLASTEEL = 12)
+	matter = list(MATERIAL_GLASS = 5, MATERIAL_ALUMINIUM = 5, MATERIAL_INDSTEEL = 12)
 	price_tag = 100
 	attack_verb = list("shoved", "bashed")
 	max_durability = 120 //So we can brake and need healing time to time
@@ -271,7 +271,7 @@
 	throw_range = 4
 	w_class = ITEM_SIZE_HUGE
 	origin_tech = list(TECH_MATERIAL = 2)
-	matter = list(MATERIAL_GLASS = 20, MATERIAL_STEEL = 10, MATERIAL_PLASTEEL = 15)
+	matter = list(MATERIAL_GLASS = 20, MATERIAL_ALUMINIUM = 10, MATERIAL_INDSTEEL = 15)
 	price_tag = 230
 	base_block_chance = 60
 	attack_verb = list("shoved", "bashed")
@@ -377,7 +377,7 @@
 	throw_speed = 2
 	throw_range = 2
 	durability = 70
-	matter = list(MATERIAL_STEEL = 8)
+	matter = list(MATERIAL_ALUMINIUM = 8)
 	force = WEAPON_FORCE_DANGEROUS
 	hitsound = 'sound/weapons/shield/shieldbash_polymer.ogg'
 	base_block_chance = 40
@@ -400,7 +400,7 @@
 	throw_speed = 1
 	throw_range = 4
 	w_class = ITEM_SIZE_HUGE
-	matter = list(MATERIAL_STEEL = 16, MATERIAL_PLASTEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 16, MATERIAL_INDSTEEL = 10)
 	price_tag = 200
 	base_block_chance = 55
 	max_durability = 200
@@ -507,7 +507,7 @@
 	flags = null
 	throw_speed = 2
 	throw_range = 6
-	matter = list(MATERIAL_STEEL = 6)
+	matter = list(MATERIAL_ALUMINIUM = 6)
 	base_block_chance = 40
 	force = WEAPON_FORCE_PAINFUL
 	throwforce = WEAPON_FORCE_PAINFUL
@@ -565,7 +565,7 @@
 	hitsound = 'sound/weapons/shield/shieldbash_metal.ogg'
 	throw_speed = 2
 	throw_range = 4
-	matter = list(MATERIAL_STEEL = 4)
+	matter = list(MATERIAL_ALUMINIUM = 4)
 	base_block_chance = 50
 	max_durability = 90 //So we can brake and need healing time to time
 	durability = 90
@@ -703,7 +703,7 @@
 	throw_range = 6
 	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 5)
 	armor_list = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 2)
 	price_tag = 250
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	max_durability = 35 //So we can brake and need healing time to time

@@ -21,7 +21,7 @@
 	nature = MODIFICATION_SILICON
 	organ_efficiency = list(OP_MUSCLE = 100)
 	specific_organ_size = 1
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/organ/internal/muscle/super_muscle
 	name = "super muscle"

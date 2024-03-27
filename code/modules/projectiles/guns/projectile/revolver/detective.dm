@@ -10,7 +10,7 @@
 	caliber = CAL_PISTOL
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
 	fire_sound = 'sound/weapons/Gunshot_light.ogg'
-	matter = list(MATERIAL_PLASTEEL = 4, MATERIAL_STEEL = 8, MATERIAL_WOOD = 6)
+	matter = list(MATERIAL_INDSTEEL = 4, MATERIAL_ALUMINIUM = 8, MATERIAL_WOOD = 6)
 	price_tag = 200 //cheap civ peashooter revolver
 	damage_multiplier = 1.15 //because it's a revolver
 	penetration_multiplier = 1.2

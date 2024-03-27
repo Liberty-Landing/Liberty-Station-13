@@ -45,7 +45,7 @@
 
 /obj/item/clothing/shoes/jackboots/duty
 	name = "duty jackboots"
-	desc = "A pair of standard-issue police steel-toed boots. For when you really need to remind the criminals what the law is."
+	desc = "A pair of standard-issue police aluminium-toed boots. For when you really need to remind the criminals what the law is."
 	icon_state = "duty"
 	armor_list = list(melee = 15, bullet = 10, energy = 10, bomb = 0, bio = 25, rad = 0)
 	siemens_coefficient = 0.8
@@ -105,7 +105,7 @@
 
 /obj/item/clothing/shoes/workboots
 	name = "workboots"
-	desc = "A pair of steel-toed utility workboots."
+	desc = "A pair of aluminium-toed utility workboots."
 	icon_state = "workboots"
 	item_state = "workboots"
 	armor_list = list(melee = 10, bullet = 0, energy = 10, bomb = 0, bio = 0, rad = 0) //Worse than jackboots and reinforced boots due to granting shock immunity to legs

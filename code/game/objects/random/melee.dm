@@ -30,7 +30,7 @@
 /obj/random/mat_katana/item_to_spawn()
 	return pickweight(list(/obj/item/material/sword/katana = 2,
 				/obj/item/material/sword/katana/iron = 3,
-				/obj/item/material/sword/katana/plasteel = 3,
+				/obj/item/material/sword/katana/indsteel = 3,
 				/obj/item/material/sword/katana/silver = 2,
 				/obj/item/material/sword/katana/gold = 2,
 				/obj/item/material/sword/katana/platinum = 1,
@@ -45,7 +45,7 @@
 /obj/random/claymore/item_to_spawn()
 	return pickweight(list(/obj/item/material/sword = 2,
 				/obj/item/material/sword/iron = 3,
-				/obj/item/material/sword/plasteel = 3,
+				/obj/item/material/sword/indsteel = 3,
 				/obj/item/material/sword/silver = 2,
 				/obj/item/material/sword/gold = 2,
 				/obj/item/material/sword/platinum = 1,

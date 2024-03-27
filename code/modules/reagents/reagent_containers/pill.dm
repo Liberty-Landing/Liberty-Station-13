@@ -257,7 +257,7 @@
 					list("stoxin" = 15, "chloralhydrate" = 15) = 1,\
 					list("coolant" = 50) = 1,\
 					list("fuel" = 50) = 1,\
-					list("plasticide" = 15) = 1,\
+					list("microplastic" = 15) = 1,\
 					list("oil" = 15) = 1,\
 					list("amatoxin" = 15) = 1,\
 					list("water" = 15) = 1,\

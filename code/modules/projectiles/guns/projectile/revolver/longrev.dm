@@ -8,7 +8,7 @@
 	slot_flags = SLOT_BACK|SLOT_BELT	//Can't fit a holster due to length
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	max_shells = 6
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 6)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_WOOD = 6)
 	price_tag = 1250 //It's a novelty item.
 	damage_multiplier = 1.4 // One of the highest damage multipliers
 	penetration_multiplier = 1.4
@@ -18,5 +18,5 @@
 	serial_type = "LG"
 	wield_delay = 0.5 SECOND
 	wield_delay_factor = 0.5 // 50 vig
-	gun_parts = list(/obj/item/stack/material/steel = 10)
+	gun_parts = list(/obj/item/stack/material/aluminium = 10)
 

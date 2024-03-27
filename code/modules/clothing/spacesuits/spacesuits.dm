@@ -74,7 +74,7 @@
 	permeability_coefficient = 0.02
 	item_flags = STOPPRESSUREDAMAGE|THICKMATERIAL|COVER_PREVENT_MANIPULATION|DRAG_AND_DROP_UNEQUIP
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
-	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_PLASTIC = 30, MATERIAL_ALUMINIUM = 10)
 	slowdown = 3
 	armor_list = list(
 		melee = 10,

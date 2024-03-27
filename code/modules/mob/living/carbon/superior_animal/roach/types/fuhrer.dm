@@ -1,7 +1,7 @@
-//Fuhrer roach is a colossal, slow moving leader
+//Fuhrer roach is a colossal, slow moving leader.
 /mob/living/carbon/superior_animal/roach/fuhrer
-	name = "Overlord Roach"
-	desc = "A glorious leader of cockroaches. Watch out for his deafening scream!"
+	name = "Megaloblatta Roach"
+	desc = "A new species, the glorious leader of cockroaches, heavily mutated by the Perniciosus viral agent and low degree of carcinization evolution. It uses screams to communicate with other roaches."
 	icon_state = "fuhrer"
 
 	turns_per_move = 4

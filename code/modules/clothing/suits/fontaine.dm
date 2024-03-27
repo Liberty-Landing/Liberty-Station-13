@@ -18,7 +18,7 @@
 		bio = 0,
 		rad = 0
 	)
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_ALUMINIUM = 10)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -33,7 +33,7 @@
 	desc = "A Heavy Robust Leather Coat Made By Black Bolt Logistics For his Scrappers, it has an Improved Plate carrier on the front, durable enough to deflect Bullets and Laser shots of low power, it also has some big pouches to carry supplies or extra ammunitions, with this totally trusty protection you can loot the world Scrapper! "
 	icon_state = "black_bolt_scrapper_coat"
 	item_state = "black_bolt_scrapper_coat"
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_STEEL = 10)//the materials get rebalanced because this isn't made with platinum or glass?
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_GLASS = 10, MATERIAL_ALUMINIUM = 10, MATERIAL_COPPER = 2)
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS//is a leather coat that covers the whole body
 	cold_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
 	heat_protection = UPPER_TORSO|LOWER_TORSO|ARMS|LEGS
@@ -109,8 +109,8 @@
 /obj/item/clothing/suit/greatcoat/trapper/prismatic
 	name = "Prismatic Furred Coat"
 	desc = "A warm, crystal-embellished woolen coat adorned with the emblem of Fontaine. The crystals ability to bend/disperse light and absorb plasma beams is far too great to not be used even if the armor itself looks horrible to wear. This amerydian armor has been properly sterilized to avoid spreading. Do not hug people while using this if you want to avoid getting people free acupuncture."
-	icon_state = "furcoat_ameridian"
-	item_state = "furcoat_ameridian"
+	icon_state = "furcoat_nacre"
+	item_state = "furcoat_nacre"
 	armor_list = list(
 		melee = 55,
 		bullet = 25,

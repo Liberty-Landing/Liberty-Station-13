@@ -422,25 +422,25 @@
 	build_path = /obj/item/circuitboard/tesla_turret
 	category = CAT_POWER
 
-/datum/design/research/circuit/ameridian_refinery
-	name = "ameridian refinery"
-	build_path = /obj/item/circuitboard/ameridian_refinery
-	category = CAT_AMERIDIAN
+/datum/design/research/circuit/nacre_refinery
+	name = "nacre refinery"
+	build_path = /obj/item/circuitboard/nacre_refinery
+	category = CAT_NACRE
 
-/datum/design/research/circuit/liquid_ameridian_processor
-	name = "liquid ameridian processor"
-	build_path = /obj/item/circuitboard/liquid_ameridian_processor
-	category = CAT_AMERIDIAN
+/datum/design/research/circuit/liquid_nacre_processor
+	name = "liquid nacre processor"
+	build_path = /obj/item/circuitboard/liquid_nacre_processor
+	category = CAT_NACRE
 
-/datum/design/research/circuit/ameridian_analyzer
-	name = "liquid ameridian analyzer"
-	build_path = /obj/item/circuitboard/ameridian_analyzer
-	category = CAT_AMERIDIAN
+/datum/design/research/circuit/nacre_analyzer
+	name = "liquid nacre analyzer"
+	build_path = /obj/item/circuitboard/nacre_analyzer
+	category = CAT_NACRE
 
-/datum/design/research/circuit/ameridianshieldwallgen
+/datum/design/research/circuit/nacreshieldwallgen
 	name = "sonic fence generator"
-	build_path = /obj/item/circuitboard/ameridianshieldwallgen
-	category = CAT_AMERIDIAN
+	build_path = /obj/item/circuitboard/nacreshieldwallgen
+	category = CAT_NACRE
 
 
 

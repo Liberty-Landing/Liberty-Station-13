@@ -94,11 +94,11 @@
 /area/deepmaint)
 "au" = (
 /obj/machinery/mining/drill,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "av" = (
 /obj/machinery/mining/brace,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "aw" = (
 /obj/machinery/button/remote/blast_door{
@@ -109,21 +109,21 @@
 	req_access = null
 	},
 /obj/machinery/mining/brace,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "ax" = (
 /obj/machinery/mining/brace,
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "ay" = (
 /obj/machinery/floodlight,
 /turf/simulated/floor/asteroid,
 /area/deepmaint)
 "aA" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "aB" = (
 /obj/structure/table/standard,
@@ -131,21 +131,21 @@
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot/low_chance,
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "aC" = (
 /obj/random/structures,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aD" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aF" = (
 /obj/structure/table/standard,
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aI" = (
 /obj/random/junk,
@@ -161,14 +161,14 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aK" = (
 /obj/machinery/light{
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aL" = (
 /obj/machinery/light{
@@ -181,19 +181,19 @@
 /obj/random/material,
 /obj/random/material,
 /obj/random/material,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aN" = (
 /obj/structure/table/standard,
 /obj/random/material_rare,
 /obj/random/material_rare,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aO" = (
 /obj/structure/table/standard,
 /obj/random/material_resources,
 /obj/random/material_resources,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aP" = (
 /obj/structure/reagent_dispensers/watertank/huge,
@@ -239,7 +239,7 @@
 /turf/simulated/floor/carpet,
 /area/deepmaint)
 "aY" = (
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/deepmaint)
 "aZ" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -250,7 +250,7 @@
 /area/deepmaint)
 "bb" = (
 /obj/machinery/door/airlock,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "bc" = (
 /obj/structure/table/woodentable,
@@ -274,7 +274,7 @@
 	dir = 8
 	},
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/deepmaint)
 "bg" = (
 /obj/random/junk,
@@ -303,7 +303,7 @@
 /area/deepmaint)
 "kT" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "on" = (
 /obj/random/mob/psi_monster/low_chance,

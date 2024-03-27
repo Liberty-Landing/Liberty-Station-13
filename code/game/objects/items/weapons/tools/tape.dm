@@ -11,7 +11,7 @@
 	max_stock = 100
 	degradation = 0 //its consumable anyway
 	flags = NOBLUDGEON //Its not a weapon
-	preloaded_reagents = list("glue" = 1, "plasticide" = 2)
+	preloaded_reagents = list("glue" = 1, "microplastic" = 2)
 	max_upgrades = 0 //These are consumable, so no wasting upgrades on them
 	price_tag = 15
 
@@ -38,13 +38,13 @@
 
 /obj/item/tool/tape_roll/fiber
 	name = "fiber tape"
-	desc = "A roll of flexible adhesive polymer mesh, which sets as strong as welded steel."
+	desc = "A roll of flexible adhesive polymer mesh, which sets as strong as welded aluminium."
 	icon_state = "fiber_tape"
 	tool_qualities = list(QUALITY_ADHESIVE = 50, QUALITY_SEALING = 50)
 	matter = list(MATERIAL_PLASTIC = 20)
 	use_stock_cost = 0.10
 	max_stock = 100
-	preloaded_reagents = list("glue" = 15, "plasticide" = 5)
+	preloaded_reagents = list("glue" = 15, "microplastic" = 5)
 	price_tag = 30
 
 /obj/item/tool/tape_roll/repair_goo
@@ -55,7 +55,7 @@
 	matter = list(MATERIAL_PLASTIC = 20)
 	use_stock_cost = 0.10
 	max_stock = 100
-	preloaded_reagents = list("glue" = 15, "plasticide" = 5)
+	preloaded_reagents = list("glue" = 15, "microplastic" = 5)
 
 /obj/item/tool/tape_roll/flextape
 	name = "flex tape"
@@ -64,7 +64,7 @@
 	tool_qualities = list(QUALITY_ADHESIVE = 100, QUALITY_SEALING = 100)
 	matter = list(MATERIAL_PLASTIC = 40)
 	use_stock_cost = 0.10
-	preloaded_reagents = list("glue" = 200, "plasticide" = 50) //A bucket
+	preloaded_reagents = list("glue" = 200, "microplastic" = 50) //A bucket
 	max_stock = 100
 	price_tag = 1000 // Mythical
 

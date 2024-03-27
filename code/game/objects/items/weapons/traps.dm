@@ -9,7 +9,7 @@
 	throwforce = 0
 	w_class = ITEM_SIZE_NORMAL
 	origin_tech = list(TECH_MATERIAL = 1)
-	matter = list(MATERIAL_STEEL = 25)
+	matter = list(MATERIAL_ALUMINIUM = 25)
 	edge = TRUE
 	sharp = TRUE
 	var/deployed = FALSE
@@ -259,7 +259,7 @@ Freeing yourself is much harder than freeing someone else. Calling for help is a
 			to_chat(user, SPAN_NOTICE("You failed to release the trap. There was a [round(100 - difficulty)]% chance of success"))
 
 
-/obj/item/beartrap/proc/attack_mob(mob/living/L)
+/obj/item/beartrap/proc/attack_mob(mob/living/L) //make changes here
 	//Small mobs won't trigger the trap
 	//Imagine a mouse running harmlessly over it
 	if (!L || L.mob_size < min_size)
@@ -285,7 +285,7 @@ Freeing yourself is much harder than freeing someone else. Calling for help is a
 	set_dir(L.dir)
 	can_buckle = TRUE
 	buckle_mob(L)
-	to_chat(L, SPAN_DANGER("The steel jaws of \the [src] bite into you, trapping you in place!"))
+	to_chat(L, SPAN_DANGER("The aluminium jaws of \the [src] bite into you, trapping you in place!"))
 
 	//If the victim is nonhuman and has no client, start processing.
 	if (!ishuman(L) && !L.client)
@@ -367,7 +367,7 @@ Very rarely it might escape
 	base_damage = 30
 	fail_damage = 20
 	base_difficulty = 80
-	matter = list(MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 15)
 	var/integrity = 100
 
 //It takes 5 damage whenever it snaps onto a mob
@@ -392,7 +392,7 @@ Very rarely it might escape
 
 /obj/item/beartrap/makeshift/proc/break_apart()
 	visible_message(SPAN_DANGER("\the [src] shatters into fragments!"))
-	new /obj/item/stack/material/steel(loc, 10)
+	new /obj/item/stack/material/aluminium(loc, 10)
 	new /obj/item/material/shard/shrapnel(loc)
 	new /obj/item/material/shard/shrapnel(loc)
 	qdel(src)

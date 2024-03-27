@@ -63,7 +63,7 @@
 /turf/simulated/floor/tiled/white/panels,
 /area/deepmaint)
 "o" = (
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/deepmaint)
 "p" = (
 /obj/structure/table/standard,

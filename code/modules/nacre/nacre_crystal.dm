@@ -1,8 +1,8 @@
-/obj/structure/ameridian_crystal
-	name = "ameridian crystal"
+/obj/structure/nacre_crystal
+	name = "nacre crystal"
 	desc = "A strange crystal formation that seems to grow on its own..."
-	icon = 'icons/obj/ameridian.dmi'
-	icon_state = "ameridian_crystal"
+	icon = 'icons/obj/nacre.dmi'
+	icon_state = "nacre_crystal"
 	anchored = TRUE					// Its growing in the ground
 	density = FALSE					// We can walk through them
 	light_range = 1					// Glow in the dark
@@ -31,14 +31,14 @@
 	var/rad_range = 3				// Radius that the crystal irradiate
 	var/rad_amounts = 4				// Amount of Radition the crystal will produce if its activated to do so
 
-/obj/structure/ameridian_crystal/spreading
+/obj/structure/nacre_crystal/spreading
 	is_growing = TRUE
 
-/obj/structure/ameridian_crystal/Initialize(mapload, ...)
+/obj/structure/nacre_crystal/Initialize(mapload, ...)
 	update_icon()
 	. = ..()
 
-/obj/structure/ameridian_crystal/New()
+/obj/structure/nacre_crystal/New()
 	..()
 	update_icon()
 	if(is_growing)
@@ -48,19 +48,19 @@
 		return
 	if(prob(33))
 		colour_type = "BLUE"
-		icon_state = "ameridian_crystal_blue"
+		icon_state = "nacre_crystal_blue"
 		fast_improvement = 120
 		slow_improvement = 220
 	else if(prob(33))
 		colour_type = "RED"
-		icon_state = "ameridian_crystal_red"
+		icon_state = "nacre_crystal_red"
 		fast_improvement = 60
 		slow_improvement = 90
 	gooners()
 	self_improvements()
 
 
-/obj/structure/ameridian_crystal/proc/self_improvements()
+/obj/structure/nacre_crystal/proc/self_improvements()
 	light_range = growth //More growth = more light
 	if(!self_improvement)
 		return
@@ -71,10 +71,10 @@
 	growth += 1
 	update_icon()
 
-/obj/structure/ameridian_crystal/proc/add_rads()
+/obj/structure/nacre_crystal/proc/add_rads()
 	AddRadSource(src, rad_amounts, rad_range)
 
-/obj/structure/ameridian_crystal/proc/gooners()
+/obj/structure/nacre_crystal/proc/gooners()
 	if(colour_type == "BLUE") //Slower but less danger - kinda this needs to be better worked on
 		new /obj/random/mob/golem/high_chance (src.loc)
 		growth = pick(1,1,1,1,2,2,2,3,3,3,3,4,5)
@@ -91,29 +91,29 @@
 	if(colour_type == "PURPLE")
 		growth = 5 // A just in case to allow us to still spread and grow.
 		light_color = COLOR_LIGHTING_PURPLE_BRIGHT
-		icon_state = "ameridian_crystal_purple"
+		icon_state = "nacre_crystal_purple"
 		new /obj/random/cluster/golem_hoard(src.loc)
 	if(colour_type == "FAKE")
 		growth = 5 // A just in case to allow us to still spread and grow.
 		light_color = COLOR_LIGHTING_PURPLE_DARK
-		icon_state = "ameridian_crystal_purple"
+		icon_state = "nacre_crystal_purple"
 	update_icon()
 
-/obj/structure/ameridian_crystal/add_initial_transforms()
+/obj/structure/nacre_crystal/add_initial_transforms()
 	if (resize)
-		add_new_transformation(/datum/transform_type/ameridian_structures/crystal_resizing)
+		add_new_transformation(/datum/transform_type/nacre_structures/crystal_resizing)
 	. = ..()
 
-/obj/structure/ameridian_crystal/Destroy()
+/obj/structure/nacre_crystal/Destroy()
 	. = ..()
 
-/obj/structure/ameridian_crystal/update_icon()
+/obj/structure/nacre_crystal/update_icon()
 	set_light(growth, growth)
 	underlays.Cut()
 	underlays += ("crystal_floor_[clamp(round(REMAP(growth, 1, max_growth, 1, 5)), 1, 5)]")
 	. = ..()
 
-/obj/structure/ameridian_crystal/attackby(obj/item/I, mob/user)
+/obj/structure/nacre_crystal/attackby(obj/item/I, mob/user)
 	if(user.a_intent == I_HELP && user.Adjacent(src))
 		var/tool_type = I.get_tool_type(user, list(QUALITY_EXCAVATION, QUALITY_DIGGING, QUALITY_SHOVELING), src)
 		if(tool_type)
@@ -125,7 +125,7 @@
 	else
 		..()
 
-/obj/structure/ameridian_crystal/bullet_act(var/obj/item/projectile/Proj)
+/obj/structure/nacre_crystal/bullet_act(var/obj/item/projectile/Proj)
 	if(istype(Proj, /obj/item/projectile/sonic_bolt))
 		if (!(Proj.testing))
 			visible_message("[src] shatters.")
@@ -133,18 +133,18 @@
 	else
 		..()
 
-/obj/structure/ameridian_crystal/ex_act(severity)
+/obj/structure/nacre_crystal/ex_act(severity)
 	if(severity)
 		harvest_crystals(src)
 
-/obj/structure/ameridian_crystal/proc/harvest_crystals()
-	var/obj/item/stack/material/ameridian/T = new(get_turf(src))
+/obj/structure/nacre_crystal/proc/harvest_crystals()
+	var/obj/item/stack/material/nacre/T = new(get_turf(src))
 	T.amount = growth // Drop more crystal the further along we are
 	activate_mobs_in_range(src, 7) // Wake up the nearby golems
 	qdel(src)
 
 
-/obj/structure/ameridian_crystal/proc/spread()
+/obj/structure/nacre_crystal/proc/spread()
 	if(!src) //Just in case
 		return
 	if(!is_growing)
@@ -160,10 +160,10 @@
 		var/turf/T = pick(turf_list)
 		var/crystal
 
-		crystal = /obj/structure/ameridian_crystal // We spread are basic type
+		crystal = /obj/structure/nacre_crystal // We spread are basic type
 
 		if(grower_helper)
-			crystal = /obj/structure/ameridian_crystal/spreading
+			crystal = /obj/structure/nacre_crystal/spreading
 
 		if(crystal)
 			new crystal(T) // We spread
@@ -171,5 +171,5 @@
 
 	addtimer(CALLBACK(src, .proc/spread), rand(spread_speed_slow,spread_speed_high)) //This constantly gets recalled by self. Thus to give people time to combat the shards they will get some time
 
-/obj/structure/ameridian_crystal/proc/toggle_growing()
+/obj/structure/nacre_crystal/proc/toggle_growing()
 	is_growing = !is_growing

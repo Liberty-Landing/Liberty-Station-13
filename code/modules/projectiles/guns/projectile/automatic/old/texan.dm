@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BELT
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_SMG
-	matter = list(MATERIAL_PLASTEEL = 16, MATERIAL_WOOD = 4)
+	matter = list(MATERIAL_INDSTEEL = 16, MATERIAL_WOOD = 4)
 	price_tag = 800
 	damage_multiplier = 0.9
 	penetration_multiplier = 1.5

@@ -1,13 +1,13 @@
 // Placeholder name
-/mob/living/carbon/superior_animal/ameridian_golem/ameridian_shooter
-	name = "ameridian shooter"
-	desc = "A weird creature made of ameridian. It is quadruped and seems to shoot ameridian shards."
+/mob/living/carbon/superior_animal/nacre_golem/nacre_shooter
+	name = "nacre shooter"
+	desc = "A weird creature made of nacre. It is quadruped and seems to shoot nacre shards."
 	health = 50
 	maxHealth = 50
 	armor = list(melee = 10, bullet = 50, energy = 55, bomb = 30, bio = 100, rad = 100) //We want to be rushed in melee, not shot.
 	ranged = TRUE
 	rapid = TRUE
-	projectiletype = /obj/item/projectile/ameridian_shard/golem
+	projectiletype = /obj/item/projectile/nacre_shard/golem
 	melee_damage_lower = 10
 	melee_damage_upper = 15
 

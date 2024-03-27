@@ -297,7 +297,7 @@ Union RIG
 	drain = 35 //Costs in power
 	offline_slowdown = 3 //You better be on
 	offline_vision_restriction = 1
-	matter = list(MATERIAL_STEEL = 30, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10, MATERIAL_GOLD = 5, MATERIAL_SILVER = 5, MATERIAL_PLASMA = 10) //Costly!
+	matter = list(MATERIAL_ALUMINIUM = 30, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10, MATERIAL_GOLD = 5, MATERIAL_SILVER = 5, MATERIAL_HYDROGENC = 10) //Costly!
 	chest_type = /obj/item/clothing/suit/space/rig/advhazmat
 	helm_type =  /obj/item/clothing/head/helmet/space/rig/advhazmat
 	boot_type =  /obj/item/clothing/shoes/magboots/rig/advhazmat

@@ -119,8 +119,8 @@
 	icon_state = "bottle"
 	preloaded_reagents = list("lithium" = 60)
 
-/obj/item/reagent_containers/glass/bottle/ameridian
-	name = "liquid ameridian bottle"
-	desc = "A small bottle. Contains liquid ameridian."
+/obj/item/reagent_containers/glass/bottle/nacre
+	name = "liquid nacre bottle"
+	desc = "A small bottle. Contains liquid nacre."
 	icon_state = "bottle"
-	preloaded_reagents = list(MATERIAL_AMERIDIAN = 60)
+	preloaded_reagents = list(MATERIAL_NACRE = 60)

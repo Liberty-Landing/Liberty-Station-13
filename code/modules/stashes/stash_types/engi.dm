@@ -24,11 +24,11 @@
 	/obj/item/stack/material/compressed_matter/random = 5)
 
 /datum/stash/engi/inspection
-	contents_list_extra = list(/obj/item/stack/material/steel/full = 2,
+	contents_list_extra = list(/obj/item/stack/material/aluminium/full = 2,
 	/obj/item/stack/material/glass = 2,
 	/obj/item/stack/material/plastic = 2,
 	/obj/random/pouch = 1,
-	/obj/item/stack/material/plasteel/random = 1,
+	/obj/item/stack/material/indsteel/random = 1,
 	)
 
 /datum/stash/engi/illicit_trade
@@ -43,14 +43,14 @@
 	/obj/random/pouch = 1,
 	/obj/random/tool_upgrade = 1,
 	/obj/random/tool_upgrade/rare = 1,
-	/obj/item/stack/material/plasteel/random = 3,
+	/obj/item/stack/material/indsteel/random = 3,
 	)
 
 /datum/stash/engi/handoff
 	contents_list_extra = list(
 	/obj/item/rcd = 1,
 	/obj/item/stack/material/compressed_matter/random = 3,
-	/obj/item/stack/material/plasteel/random = 1,
+	/obj/item/stack/material/indsteel/random = 1,
 	)
 
 /datum/stash/engi/restock

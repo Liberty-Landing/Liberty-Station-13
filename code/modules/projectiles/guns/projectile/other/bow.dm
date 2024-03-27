@@ -116,12 +116,39 @@
 
 /obj/item/gun/projectile/bow/xbow
 	name = "\"Whaler\" heavy compound bow"
-	desc = "A heavy compound bow made from plastic, with a plasteel riser. Not originally an Terra-Therma Union design, but the tight tolerances and high skill required to construct means that they remain the only group capable of manufacturing them. \
+	desc = "A heavy compound bow made from plastic, with a indsteel riser. Not originally an Terra-Therma Union design, but the tight tolerances and high skill required to construct means that they remain the only group capable of manufacturing them. \
 	A scope is attached to the riser, with arrow drop markers for various weights of arrow present."
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_PLASTIC = 40, MATERIAL_PLASMAGLASS = 2)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_PLASTIC = 40, MATERIAL_LBGLASS = 2)
 	damage_multiplier = 1.2
 	penetration_multiplier = 1.2
 	gun_tags = list(ARROW_FIRING)
 	max_upgrades = 4
 	zoom_factors = list(1.4)
 	extra_damage_mult_scoped = 0.1
+
+/obj/item/gun/projectile/bow/radiantbow //not working like I wanted it to. The idea is for it to have its own unique arrow when pressed Z on it, and said arrow can't be removed.
+	name = "Radiance Bow Prototype"
+	icon_state = "radiantbow"
+	desc = "A bundle of interconnected radiances that resembles a bow. Used by Hussars in reconnaissance expeditions, it is essentially a hearthcore-powered implant bow. The arrow and the string is made from radiance. \
+	at least that's the plan if it wasn't a prototype, that somehow arrows does not properly fit the bow, because of custodian whateverneuralmagic. \
+	The weakness of this bow was supposed to be the fact it can only use one type of arrow, what pays for it's high damage and precision."
+	matter = list()
+	damage_multiplier = 1.2
+	penetration_multiplier = 1.5
+	gun_tags = list(ARROW_FIRING)
+	zoom_factors = list(1.6) // Sniper.
+	extra_damage_mult_scoped = 0.2
+	overcharge_timer_step = 4
+	price_tag = 1200
+
+
+/*var/obj/item/ammo_casing/arrow/radiant = null // The arrow the bow uses
+
+/obj/item/gun/projectile/bow/radiantbow/Initialize()
+	..()
+	ammo_type = new /obj/item/ammo_casing/arrow/radiant(src) // start with shit
+
+/obj/item/gun/projectile/bow/radiantbow/attack_self(mob/user) //Someone overrode attackself for this class, soooo.
+	..()
+	new /obj/item/ammo_casing/arrow/radiant(src)
+*/

@@ -8,14 +8,14 @@
 	name = "bed"
 	result = /obj/structure/bed
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/furniture/doublebed
 	name = "double bed"
 	result = /obj/structure/bed/double/padded
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/furniture/bonfire
@@ -71,7 +71,7 @@
 	name = "table frame"
 	result = /obj/structure/table
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM)
 	)
 
 //Custom chairs
@@ -79,17 +79,17 @@
 	name = "chair, bar"
 	result = /obj/structure/bed/chair/custom/bar_special
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM),
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC),
 		list(QUALITY_BOLT_TURNING, 10, 20)
 	)
 
 //Common chairs
 /datum/craft_recipe/furniture/chair
-	name = "chair, steel"
+	name = "chair, aluminium"
 	result = /obj/structure/bed/chair
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/furniture/wooden_chair
@@ -105,7 +105,7 @@
 	name = "chair, office dark"
 	result = /obj/structure/bed/chair/office/dark
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/furniture/office_chair/light
@@ -117,7 +117,7 @@
 	name = "comfy chair, beige"
 	result = /obj/structure/bed/chair/comfy/beige
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/furniture/comfy_chair/black
@@ -157,7 +157,7 @@
 	result = /obj/item/stool
 	time = 30
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 	flags = null
 
@@ -166,7 +166,7 @@
 	result = /obj/item/stool/custom/bar_special
 	time = 30
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 		list(/obj/item/stack/rods, 3),
 		list(QUALITY_WELDING, 10, 20)
 	)
@@ -195,7 +195,7 @@
 	name = "burn barrel"
 	result = /obj/machinery/microwave/burnbarrel
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM),
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD),
 	)
 

@@ -24,7 +24,7 @@
 	throw_speed = 4
 	throw_range = 20
 	matter = list(MATERIAL_PLASTIC = 3)
-	preloaded_reagents = list("plasticide" = 12)
+	preloaded_reagents = list("microplastic" = 12)
 	force = NONE
 	price_tag = 10
 
@@ -732,11 +732,29 @@
 	icon_state = "serbian"
 	toysay = "\"Vodka!\""
 
-/obj/item/toy/figure/character/bobblehead/acolyte
+/obj/item/toy/figure/character/bobblehead/oathbound
 	name = "custodian figurine"
-	desc = "Custodians of Bonfire \"New Life\" brand figurine of an oathbound, protected both physically and mentally from that which would lead them astray."
+	desc = "Custodians of Bonfire \"accolade\" brand figurine of an Oathbound, protected both physically and mentally from that which would lead them astray."
+	icon_state = "oathbound"
+	toysay = "\"You're the king? Well. I didn't vote for you...\"" //Mounty Python and the Holy Grail reference
+
+/obj/item/toy/figure/character/bobblehead/forgemaster
+	name = "custodian figurine"
+	desc = "Custodians of Bonfire \"accolade\" brand figurine of an Forgemaster, ready to punch metal into shape rather than bending it with a hammer."
+	icon_state = "forgemaster"
+	toysay = "\"We found a witch! May we burn her?\""
+
+/obj/item/toy/figure/character/bobblehead/enkindled
+	name = "custodian figurine"
+	desc = "Custodians of Bonfire \"accolade\" brand figurine of an Enkindled, likely too drunk from their potions or in severe different state of mind."
 	icon_state = "acolyte"
-	toysay = "\"Brotherhood.\""
+	toysay = "\"Potions don't kill people, I do! Mwa-Hahahaha!\""
+
+/obj/item/toy/figure/character/bobblehead/elohopean
+	name = "custodian figurine"
+	desc = "Custodians of Bonfire \"accolade\" brand figurine of an Elohopean protagonist from some kind of videogame or movie, you cannot really tell."
+	icon_state = "darkisouz"
+	toysay = "\"You must never go hollow.\""
 
 /obj/item/toy/figure/character/bobblehead/carrion
 	name = "carrion figurine"
@@ -1453,7 +1471,7 @@
 	price_tag = 60
 
 /obj/item/toy/consumer/product
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	name = " Notably Generic Consumer Product"
 	desc = "Do NOT produce."
 	icon = 'icons/obj/crafts_consumergood.dmi'

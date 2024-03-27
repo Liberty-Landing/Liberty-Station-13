@@ -145,3 +145,25 @@
 	min_cost = 80
 	discount_increase = 0
 	path = /obj/item/dog_armor
+
+/datum/armament/item/granule_neuron
+	name = "Infusive Granule Neuron"
+	cost = 30
+	min_cost = 20
+	discount_increase = 5
+	path = /obj/item/mold/granule_neuron
+
+/datum/armament/item/renshaw_neuron
+	name = "Infusive Renshaw Neuron"
+	cost = 65
+	min_cost = 40
+	discount_increase = 5
+	path = /obj/item/mold/renshaw_neuron
+
+/datum/armament/item/cartwheel_neuron
+	name = "Infusive Cartwheel Neuron"
+	cost = 100
+	min_cost = 60
+	discount_increase = 5
+	path = /obj/item/mold/cartwheel_neuron
+

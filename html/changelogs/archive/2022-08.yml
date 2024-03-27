@@ -133,7 +133,7 @@
   - rscdel: Removed a reference to the old crossbow in centcomm.dmm
   - rscdel: Deleted the old Crossbow and RXB dmi files
   - tweak: Recipe for RXD moved to guns section
-  - tweak: RXD recipe edited to include steel and need a multitool applied for crafting,
+  - tweak: RXD recipe edited to include aluminium and need a multitool applied for crafting,
       this is supposed to represent making the bow and hacking the RCD respectively
   - code_imp: Made an new entry for the RXD under energy guns
   maikilangiolo:
@@ -211,5 +211,5 @@
   - tweak: tweaked .40 ammo pile and ammo packet size
   - balance: rebalanced armor part and ammo crafting cost
   - balance: rebalanced magazine crafting costs
-  - tweak: changed ammo packet recycle cost to avoid steel multiplication
+  - tweak: changed ammo packet recycle cost to avoid aluminium multiplication
   - tweak: fixed wrong .25 caseless pistol mag category and name in crafting station

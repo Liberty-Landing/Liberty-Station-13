@@ -17,7 +17,7 @@
 /obj/item/trash/material/circuit,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "ah" = (
 /obj/random/pack/tech_loot,
@@ -104,12 +104,12 @@
 /obj/item/trash/material/device,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "aD" = (
 /obj/machinery/door/airlock/vault/bolted,
 /obj/item/mine_old,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "aE" = (
 /obj/machinery/light,
@@ -122,7 +122,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/salvageable/server,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "aH" = (
 /obj/machinery/telecomms/relay,
@@ -134,7 +134,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "aI" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -151,7 +151,7 @@
 /obj/item/remains/human,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "aK" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -254,12 +254,12 @@
 /obj/item/stack/cable_coil/green,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "bd" = (
 /obj/structure/inflatable/door,
 /obj/item/mine/improvised,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bf" = (
 /obj/item/circuitboard/telecomms/processor,
@@ -342,7 +342,7 @@
 /obj/item/stack/cable_coil/orange,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "bs" = (
 /obj/structure/foamedmetal,
@@ -430,7 +430,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/computer_hardware/network_card/advanced,
 /obj/item/storage/box/data_disk/basic,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "bG" = (
 /obj/random/closet_tech,
@@ -443,7 +443,7 @@
 /obj/item/circuitboard/broken,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "bJ" = (
 /obj/item/circuitboard/telecomms/server,
@@ -451,14 +451,14 @@
 /obj/item/stack/cable_coil/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "bK" = (
 /obj/item/stack/material/plastic/random,
 /obj/random/techpart,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "bL" = (
 /obj/item/trash/material/circuit,
@@ -636,7 +636,7 @@
 /area/precursor)
 "cq" = (
 /obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "cr" = (
 /obj/structure/foamedmetal,
@@ -659,7 +659,7 @@
 "gC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cluster/psi_monster,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "jU" = (
 /turf/simulated/floor/beach/water/coastwater{
@@ -668,7 +668,7 @@
 /area/precursor)
 "ko" = (
 /obj/structure/salvageable/computer,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "kS" = (
 /obj/random/techpart,
@@ -681,7 +681,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/computer_hardware/card_slot,
 /mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "nb" = (
 /turf/simulated/floor/beach/water/coastwater,
@@ -690,7 +690,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "ns" = (
 /obj/random/pack/tech_loot,
@@ -714,7 +714,7 @@
 /obj/item/trash/material/metal,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "px" = (
 /obj/effect/decal/cleanable/dirt,
@@ -773,7 +773,7 @@
 /obj/structure/AIcore,
 /obj/item/device/aicard,
 /obj/item/computer_hardware/hard_drive/portable/advanced/shady,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "CF" = (
 /obj/random/junkfood,
@@ -806,7 +806,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/computer_hardware/ai_slot,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "HN" = (
 /obj/structure/foamedmetal,
@@ -833,7 +833,7 @@
 /obj/random/techpart,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/precursor)
 "Pp" = (
 /obj/random/pack/tech_loot,

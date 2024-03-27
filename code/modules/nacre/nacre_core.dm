@@ -1,7 +1,7 @@
-// Ameridian Core, a snow-flake item used in all objects fueled by ameridian.
-/obj/item/ameridian_core
-	name = "ameridian core"
-	desc = "A sphere of the purest compressed ameridian. It is the core component of all ameridian-based technology."
+// Nacre Core, a snow-flake item used in all objects fueled by nacre.
+/obj/item/nacre_core
+	name = "nacre core"
+	desc = "A sphere of the purest compressed nacre. It is the core component of all nacre-based technology."
 	icon = 'icons/mob/slimes.dmi'
 	icon_state = "green slime extract"
 	force = 1

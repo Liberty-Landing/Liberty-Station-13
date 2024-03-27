@@ -11,7 +11,7 @@
 	item_state = "pickaxe"
 	max_health = 500
 	w_class = ITEM_SIZE_NORMAL
-	matter = list(MATERIAL_STEEL = 6)
+	matter = list(MATERIAL_ALUMINIUM = 6)
 	tool_qualities = list(QUALITY_EXCAVATION = 10, QUALITY_PRYING = 20) //So it still shares its switch off quality despite not yet being used.
 	switched_off_qualities = list(QUALITY_EXCAVATION = 10, QUALITY_PRYING = 20)
 	switched_on_qualities = list(QUALITY_DIGGING = 35, QUALITY_PRYING = 20)
@@ -46,9 +46,9 @@
 	..()
 
 /obj/item/tool/pickaxe/upgraded
-	name = "plasteel-head pickaxe"
-	desc = "A normal-looking pickaxe with the head replaced with plasteel."
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 2)
+	name = "indsteel-head pickaxe"
+	desc = "A normal-looking pickaxe with the head replaced with indsteel."
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_INDSTEEL = 2)
 	tool_qualities = list(QUALITY_EXCAVATION = 20, QUALITY_PRYING = 20)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 20, QUALITY_PRYING = 20)
 	switched_on_qualities = list(QUALITY_DIGGING = 40, QUALITY_PRYING = 20)
@@ -59,7 +59,7 @@
 	desc = "A standard Simulacrum Robotics digging tool. Whatever secrets they used to make this so powerful and cheap is a mystery."
 	icon_state = "one_star_pickaxe"
 	item_state = "pickaxe"
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLATINUM = 2, MATERIAL_DIAMOND = 2)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_TITANIUMRTC = 2, MATERIAL_DIAMOND = 2)
 	price_tag = 900 //Diamond and fancy.
 	origin_tech = list(TECH_MATERIAL = 3, TECH_ENGINEERING = 2, TECH_POWER = 3)
 	switched_on_forcemult = 1.3 //26
@@ -92,7 +92,7 @@
 	desc = "Cracks rocks with blasts, perfect for killing cave lizards."
 	icon_state = "jackhammer"
 	item_state = "jackhammer"
-	matter = list(MATERIAL_STEEL = 6, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 6, MATERIAL_PLASTIC = 2)
 	tool_qualities = list(QUALITY_EXCAVATION = 35)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 35)
 	switched_on_qualities = list(QUALITY_DIGGING = 45)
@@ -108,7 +108,7 @@
 	desc = "A heavy Simulacrum Robotics tool that cracks rocks with blasts, perfect for killing capitalist pigs."
 	icon_state = "one_star_jackhammer"
 	item_state = "jackhammer"
-	matter = list(MATERIAL_STEEL = 7, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 7, MATERIAL_TITANIUMRTC = 2)
 	tool_qualities = list(QUALITY_EXCAVATION = 35)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 35)
 	switched_on_qualities = list(QUALITY_DIGGING = 75)
@@ -127,7 +127,7 @@
 	tool_qualities = list(QUALITY_EXCAVATION = 10, QUALITY_DRILLING = 15)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 10, QUALITY_DRILLING = 15)
 	switched_on_qualities = list(QUALITY_DIGGING = 40, QUALITY_DRILLING = 40)
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_PLASTIC = 2)
 	origin_tech = list(TECH_MATERIAL = 2, TECH_POWER = 3, TECH_ENGINEERING = 2)
 	degradation = 0.7
 	use_fuel_cost = 0.07
@@ -141,7 +141,7 @@
 	tool_qualities = list(QUALITY_EXCAVATION = 20, QUALITY_DRILLING = 20)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 20, QUALITY_DRILLING = 20)
 	switched_on_qualities = list(QUALITY_DIGGING = 60, QUALITY_DRILLING = 60)
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLATINUM = 2)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_TITANIUMRTC = 2)
 	origin_tech = list(TECH_MATERIAL = 4, TECH_POWER = 3, TECH_ENGINEERING = 2)
 	degradation = 0.6
 	workspeed = 1.7
@@ -159,7 +159,7 @@
 	tool_qualities = list(QUALITY_EXCAVATION = 10, QUALITY_DRILLING = 20)
 	switched_off_qualities = list(QUALITY_EXCAVATION = 10, QUALITY_DRILLING = 20)
 	switched_on_qualities = list(QUALITY_DIGGING = 50, QUALITY_DRILLING = 50)
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_DIAMOND = 1)
 	origin_tech = list(TECH_MATERIAL = 6, TECH_POWER = 4, TECH_ENGINEERING = 5)
 	max_upgrades = 4
 	degradation = 0.1
@@ -183,5 +183,5 @@
 	switched_off_qualities = list(QUALITY_EXCAVATION = 50, QUALITY_PRYING = 15)
 	switched_on_qualities = list(QUALITY_DIGGING = 15, QUALITY_PRYING = 15)
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	price_tag = 70

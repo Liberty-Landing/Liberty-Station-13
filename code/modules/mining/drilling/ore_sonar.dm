@@ -6,7 +6,7 @@
 	slot_flags = SLOT_BELT
 	w_class = ITEM_SIZE_SMALL
 	origin_tech = list(TECH_MAGNET = 2, TECH_ENGINEERING = 2)
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_STEEL = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_ALUMINIUM = 2, MATERIAL_GLASS = 1, MATERIAL_SILVER = 2)
 	var/cooldowntime = 0
 
 /obj/item/device/ore_sonar/attack_self(mob/living/carbon/user as mob)
@@ -34,7 +34,7 @@
 				mineralmapss.DrawBox(rgb(204,102,0),TA.x,TA.y,TA.x, TA.y)
 				//addbrown and continue
 				continue
-			if(istype(TA.mineral, /ore/coal))
+			if(istype(TA.mineral, /ore/lignite))
 				//adddarkgrey and continue
 				mineralmapss.DrawBox(rgb(89,89,89),TA.x,TA.y,TA.x, TA.y)
 				continue
@@ -42,7 +42,7 @@
 				mineralmapss.DrawBox(rgb(255,255,153),TA.x,TA.y,TA.x, TA.y)
 				continue
 				//addyellow and continue
-			if(istype(TA.mineral, /ore/plasma))
+			if(istype(TA.mineral, /ore/hydrogenc))
 				mineralmapss.DrawBox(rgb(204,51,255),TA.x,TA.y,TA.x, TA.y)
 				continue
 				//addpurple and continue
@@ -58,11 +58,11 @@
 				mineralmapss.DrawBox(rgb(255,64,142),TA.x,TA.y,TA.x, TA.y)
 				continue
 				//addblueish and continue
-			if(istype(TA.mineral, /ore/platinum))
+			if(istype(TA.mineral, /ore/titanium))
 				mineralmapss.DrawBox(rgb(0,0,255),TA.x,TA.y,TA.x, TA.y)
 				continue
 				//addgreysih and continue
-			if(istype(TA.mineral, /ore/hydrogen))
+			if(istype(TA.mineral, /ore/hydrogenc))
 				mineralmapss.DrawBox(rgb(124,143,90),TA.x,TA.y,TA.x, TA.y)
 				continue
 				//adddarkishcolor and continue
@@ -71,8 +71,8 @@
 			var/turf/simulated/floor/asteroid/TA = T
 			mineralmapss.DrawBox(rgb(255,248,220),TA.x,TA.y,TA.x, TA.y)
 			for(var/c in TA.contents)
-				var/obj/structure/ameridian_crystal/CA = c
-				if(istype(CA, /obj/structure/ameridian_crystal))
+				var/obj/structure/nacre_crystal/CA = c
+				if(istype(CA, /obj/structure/nacre_crystal))
 					mineralmapss.DrawBox(rgb(0,255,255),CA.x,CA.y,CA.x, CA.y)
 			continue
 		//Now we add areself
@@ -93,7 +93,7 @@
 	G.info += "<font color='#FF408E'>Diamond</font> Cute Pink<br>"
 	G.info += "<font color='#0000FF'>Platinum</font> Slick Blue<br>"
 	G.info += "<font color='#7C8E5A'>Hydrogen</font> Army Green<br>"
-	G.info += "<font color='#00FFFF'>Ameridian Growth</font> Neon Cyan<br>"
+	G.info += "<font color='#00FFFF'>nacre Growth</font> Neon Cyan<br>"
 	G.info += "<font color='#964B00'>Dirt Flooring</font> Light Cream<br>"
 	G.info += "<font color='#FF0000'>Your location</font> Angry Red<br>"
 	G.update_icon()

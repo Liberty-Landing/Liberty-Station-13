@@ -40,7 +40,9 @@
 				/obj/item/toy/figure/character/moebius/paramedic,\
 				/obj/item/toy/figure/character/bobblehead/excelsior,\
 				/obj/item/toy/figure/character/bobblehead/serbian,\
-				/obj/item/toy/figure/character/bobblehead/acolyte,\
+				/obj/item/toy/figure/character/bobblehead/oathbound,\
+				/obj/item/toy/figure/character/bobblehead/oathbound,\
+				/obj/item/toy/figure/character/bobblehead/oathbound,\
 				/obj/item/toy/figure/character/bobblehead/carrion,\
 				/obj/item/toy/figure/character/bobblehead/roach,\
 				/obj/item/toy/figure/character/bobblehead/vagabond,\

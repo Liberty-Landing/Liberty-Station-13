@@ -1,6 +1,6 @@
 
 /obj/item/clothing/gloves/dusters
-	name = "steel knuckle dusters"
+	name = "aluminium knuckle dusters"
 	desc = "More pain for them, less for you."
 	description_info = "Have to be worn in your gloves slot to increase your punch damage."
 	icon_state = "dusters"
@@ -39,11 +39,11 @@
 	psi_blocking = 10
 	price_tag = 30
 
-/obj/item/clothing/gloves/dusters/plasteel
-	name = "plasteel knuckle dusters"
+/obj/item/clothing/gloves/dusters/indsteel
+	name = "indsteel knuckle dusters"
 	desc = "More pain for them, now doubled."
-	icon_state = "dusters_plasteel"
-	item_state = "dusters_plasteel"
+	icon_state = "dusters_indsteel"
+	item_state = "dusters_indsteel"
 	punch_increase = 10
 	armor = list(
 		melee = 15, //Just a litttttle bit of armor so your not defenceless
@@ -57,7 +57,7 @@
 
 /obj/item/clothing/gloves/dusters/scav_gloves
 	name = "scavenged gloves"
-	desc = "A pair of fluffy, reinforced combat gloves with plasteel knuckle dusters. \
+	desc = "A pair of fluffy, reinforced combat gloves with indsteel knuckle dusters. \
 			A jury-rigged work of art for those that value protection from whatever \
 			they can scrap on the field, and throwing deadlier punches."
 	icon_state = "scav_gloves"
@@ -65,14 +65,14 @@
 	min_cold_protection_temperature = T0C - 5 // Gloves, not just dusters
 	punch_increase = 10 // They're an upgrade, but let's not get out of hand.
 	armor_list = list(
-		melee = 35, // 10 more than combat, Plasteel reinforced
+		melee = 35, // 10 more than combat, indsteel reinforced
 		bullet = 15,
 		energy = 20, // No ablative materials means energy protection stays the same
-		bomb = 10, // Plasteel protects a little bit against bombs
+		bomb = 10, // indsteel protects a little bit against bombs
 		bio = 0,
 		rad = 0
 	)
-	price_tag = 200 // Combat gloves + plasteel knuckles price
+	price_tag = 200 // Combat gloves + indsteel knuckles price
 
 /obj/item/clothing/gloves/dusters/gold
 	name = "golden knuckle dusters"
@@ -83,17 +83,43 @@
 	price_tag = 50
 
 /obj/item/clothing/gloves/dusters/platinum
-	name = "spiked platinum knuckle dusters"
+	name = "spiked titanium knuckle dusters"
 	desc = "Hurt like hell, and stylish as well."
 	icon_state = "dusters_platinum"
 	item_state = "dusters_platinum"
-	punch_increase = 15 // Made of platinum and are crafted with spikes, extra damage.
+	punch_increase = 15 // Made of titanium and are crafted with spikes, extra damage.
 	price_tag = 30
+
+// Custodian Hussar-exclusive cestus. Ignites all living carbon forms in flames when punches connect.
+/obj/item/clothing/gloves/dusters/flamecestus
+	name = "Hussar flame cestus"
+	desc = "Silvery wrapping with hollow tubes for radiance. Coats the enemy in radiance to ignite."
+	icon_state = "dusters_radiance"
+	item_state = "dusters_radiance"
+	punch_increase = 5 // Just a little extra damage, already strong by being able to light non-robots on fire.
+	price_tag = 0
+
+/obj/item/clothing/gloves/dusters/flamecestus/update_dusters(mob/living/carbon/human/user)
+	if(istype(user))
+		// Give us the flag that causes us to light people on fire with unarmed attacks.
+		if(user.gloves == src && !dusters_givith)
+			user.punch_damage_increase += punch_increase
+			dusters_givith = TRUE
+			to_remove_givith = TRUE
+			user.shining_finger = TRUE
+			user.fire_punch += 1
+		// Remove the flag from us when we take off our gloves.
+		if(to_remove_givith && !(user.gloves == src))
+			user.punch_damage_increase -= punch_increase
+			dusters_givith = FALSE
+			to_remove_givith = FALSE
+			user.shining_finger = FALSE
+			user.fire_punch -= 1
 
 /obj/item/clothing/gloves/dusters/gloves
 	name = "knuckle gloves"
 	desc = "Gloves with additional reinforcment on the knuckles. \
-	These have plasteel powder sewn into the knuckles, adding more kinetic energy to your punches."
+	These have indsteel powder sewn into the knuckles, adding more kinetic energy to your punches."
 	icon_state = "knuckles"
 	item_state = "knuckles"
 	min_cold_protection_temperature = T0C - 5 // Gloves, not just dusters
@@ -149,3 +175,4 @@
 		update_wear_icon()
 		usr.update_action_buttons()
 		return TRUE
+//

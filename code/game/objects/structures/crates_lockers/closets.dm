@@ -6,7 +6,7 @@
 	density = TRUE
 	layer = BELOW_OBJ_LAYER
 	w_class = ITEM_SIZE_GARGANTUAN
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 	var/locked = FALSE
 	var/broken = FALSE
 	var/horizontal = FALSE

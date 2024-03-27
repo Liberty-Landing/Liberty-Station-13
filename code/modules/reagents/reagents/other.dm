@@ -238,13 +238,17 @@
 	reagent_state = SOLID
 	color = "#D0D0D0"
 
-/datum/reagent/metal/gold/affect_ingest(var/mob/living/carbon/M, var/alien)
+/datum/reagent/metal/silver/affect_ingest(var/mob/living/carbon/M, var/alien) //it was "gold" previously. Surprisingly no one fix that, so I did. -Monochrome
 	if(M.species.reagent_tag == IS_CHTMANT)
 		M.add_chemical_effect(CE_TOXIN, 0.1) //Small damage to Chtmants nothing too too lethal
 
 	if(M.stats.getPerk(PERK_NANITE_METAL_EATER))
 		M.add_chemical_effect(CE_BLOODCLOT, 0.2)
 		M.adjustNutrition(0.8) //used in a lot of crafting
+
+/*	if(holder.get_core_implant(/obj/item/implant/core_implant/hearthcore))
+	M.adjust
+*/
 
 /datum/reagent/metal/uranium
 	name ="Uranium"
@@ -269,16 +273,16 @@
 			return TRUE
 	return TRUE
 
-/datum/reagent/liquid_ameridian
-	name = "Liquid Ameridian"
-	id = MATERIAL_AMERIDIAN
+/datum/reagent/liquid_nacre
+	name = "Liquid nacre"
+	id = MATERIAL_NACRE
 	description = "A green liquid with small crystals floating in it."
 	taste_description = "crystalline crystals"
 	reagent_state = SOLID
 	color = "#5FE45E"
 	metabolism = 5
 
-/datum/reagent/liquid_ameridian/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
+/datum/reagent/liquid_nacre/affect_blood(mob/living/carbon/M, alien, effect_multiplier)
 	M.apply_effect(effect_multiplier, IRRADIATE, 0, 0) // We ignore physical protection because we're inside
 
 /datum/reagent/adrenaline

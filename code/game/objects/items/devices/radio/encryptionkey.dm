@@ -11,8 +11,8 @@
 	var/translate_hive = 0
 	var/syndie = 0
 	var/list/channels = list()
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("silicon" = 6, "copper" = 5, "plasticide" = 9)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1)
+	preloaded_reagents = list("silicon" = 6, "copper" = 5, "microplastic" = 9)
 
 /obj/item/device/encryptionkey/attackby(obj/item/W as obj, mob/user as mob)
 
@@ -26,7 +26,7 @@
 	icon_state = "cypherkey"
 	translate_binary = 1
 	origin_tech = list(TECH_ILLEGAL = 3)
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2)
 
 /obj/item/device/encryptionkey/headset_bs //Unused BS headset
 	name = "blackshield radio encryption key"

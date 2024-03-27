@@ -5,7 +5,7 @@
 	name = "standard processor board"
 	desc = "A CPU board used in most computers. It can run up to three programs simultaneously."
 	icon_state = "cpuboard"
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 2)
 	matter_reagents = list("silicon" = 20)
 	hardware_size = 2
 	power_usage = 50
@@ -19,7 +19,7 @@
 	name = "standard microprocessor"
 	desc = "A miniaturised CPU used in most portable devices. It can run up to two programs simultaneously."
 	icon_state = "cpu"
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1)
 	hardware_size = 1
 	power_usage = 25
 	max_programs = 2
@@ -29,7 +29,7 @@
 	name = "advanced processor board"
 	desc = "An advanced CPU board. It can run up to four programs simultaneously."
 	icon_state = "cpuboard_adv"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2)
 	matter_reagents = list("silicon" = 30)
 	power_usage = 100
 	max_programs = 4
@@ -40,7 +40,7 @@
 	name = "advanced microprocessor"
 	desc = "An advanced CPU for use in portable devices. It can run up to three programs simultaneously."
 	icon_state = "cpu_adv"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 1)
 	hardware_size = 1
 	power_usage = 40
 	max_programs = 3
@@ -50,7 +50,7 @@
 	name = "photonic processor board"
 	desc = "A photonic CPU board prototype. It can run up to five programs simultaneously, but uses a lot of power."
 	icon_state = "cpuboard_super"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 2, MATERIAL_PLASMA = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 2, MATERIAL_GLASS = 2, MATERIAL_HYDROGENC = 2)
 	matter_reagents = list("silicon" = 40)
 	hardware_size = 2
 	power_usage = 250
@@ -62,7 +62,7 @@
 	name = "photonic microprocessor"
 	desc = "A photonic CPU prototype for portable devices. It can run up to four programs simultaneously."
 	icon_state = "cpu_super"
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 2, MATERIAL_PLASMA = 2)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_PLASTIC = 1, MATERIAL_GLASS = 2, MATERIAL_HYDROGENC = 2)
 	hardware_size = 1
 	power_usage = 75
 	max_programs = 4

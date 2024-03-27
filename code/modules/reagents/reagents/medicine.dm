@@ -477,7 +477,7 @@ We don't use this but we might find use for it. Porting it since it was updated 
 	if(prob(5 - (2 * M.stats.getMult(STAT_TGH))))
 		M.Stun(5)
 
-/* Church related chemicals */
+/* Church related chemicals. We are not supposed to use these. */
 /datum/reagent/medicine/nepenthe  //Monomial super-painkiller
 	name = "Nepenthe"
 	id = "nepenthe"

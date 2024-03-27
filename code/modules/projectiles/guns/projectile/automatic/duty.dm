@@ -13,7 +13,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|SPEEDLOADER|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10)
 	price_tag = 1000
 	fire_sound = 'sound/weapons/guns/fire/batrifle_fire.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -40,7 +40,7 @@
 	name = "Duty frame"
 	desc = "A Duty marksman carbine frame. Perfect for small game."
 	icon_state = "frame_ak"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/duty
 	gripvars = list(/obj/item/part/gun/grip/wood)
 	resultvars = list(/obj/item/gun/projectile/automatic/duty)

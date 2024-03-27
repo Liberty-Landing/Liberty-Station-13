@@ -2,7 +2,7 @@
 //-----------------Enforcement---------------------
 //----------------------------------------------
 //Gun crate cost should be all gun prices added together /2 for the crate price. Ergo cargo buys for 50% then sells for 100%. Or just sell for 50 :/
-// The surplus tag prevents them from abusing this. The prices are somewhat high to prevent buying to recycle for plasteel and to slightly encourage buying from marshal armory. -Kaz
+// The surplus tag prevents them from abusing this. The prices are somewhat high to prevent buying to recycle for indsteel and to slightly encourage buying from marshal armory. -Kaz
 /datum/supply_pack/specialops
 	name = "Special Ops Crate"
 	contains = list(/obj/item/storage/box/emps,

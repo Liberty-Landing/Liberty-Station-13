@@ -3,7 +3,7 @@
 
 /obj/structure/decor_spark_statue
 	name = "Spark Liekki statue"
-	desc = "A statue of Spark Liekki, a prominent member in Custodian history."
+	desc = "A statue of Spark Liekki, a prominent member in Custodian history. The main creator of the Hearthcore and founder of the Elohopean orders, died while fighting cancer at the age of 98."
 	icon = 'icons/obj/structures/custodian_decorations.dmi'
 	icon_state = "decor_spark_liekki"
 	density = TRUE
@@ -11,7 +11,7 @@
 
 /obj/structure/decor_edvard_statue
 	name = "Edvard Livonen statue"
-	desc = "A statue of Edvard Iivonen, a prominent member in Custodian history."
+	desc = "A statue of Edvard Iivonen, a prominent member in Custodian history. The still living founder and leader of the Custodians of Bonfire, as bald as he was a living menace."
 	icon = 'icons/obj/structures/custodian_decorations.dmi'
 	icon_state = "decor_edvard_iivonen"
 	density = TRUE

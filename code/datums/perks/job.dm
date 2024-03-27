@@ -88,7 +88,6 @@
 	desc = "Training (and an ear implant) given to you as a Ranger makes it hard for secrets to escape your ears. Beware, loud noises are especially dangerous to you as a side effect."
 	icon_state = "ear" // https://game-icons.net
 
-// TODO: Make this revival perk obtainable through Hearthcore upgrades once implemented
 /datum/perk/job/phoenix_rekindlement
 	name = "Phoenix Rekindlement"
 	desc = "Your Hearthcore is more than just an emblem of knighthood. \
@@ -313,6 +312,35 @@
 			all within a single vial."
 	icon_state = "alchemy"
 
+/datum/perk/job/influx //Perhaps we can nerf this making it related to how much radiance you have later down the line. Something you activate until the radiance reaches 0, no less.
+	name = "Healing Influx"
+	desc = "Deep within your bloodstream, radiant nanobots diligently mend and heal both yours and hearthcore bearers's wounds. \
+	It relies on the hearthcore for transportation using Li-Fi systems, and does not seem to work with non-knight personnel."
+	icon_state = "healinginflux" // https://game-icons.net/1x1/lorc/kindle.html
+	var/healing_power = 0.1
+	var/cooldown = 1 SECONDS // Just to make sure that perk don't go berserk.
+	var/initial_time
+
+/datum/perk/job/influx/assign(mob/living/carbon/human/H)
+	..()
+	initial_time = world.time
+
+/datum/perk/job/influx/on_process()
+	if(!..())
+		return
+	if(!holder.get_core_implant(/obj/item/implant/core_implant/hearthcore))
+		return
+	if(world.time < initial_time + cooldown)
+		return
+	initial_time = world.time
+	for(var/mob/living/L in viewers(holder, 7))
+		if(ishuman(L))
+			var/mob/living/carbon/human/H = L
+			if(H.stat == DEAD || !(H.get_core_implant(/obj/item/implant/core_implant/hearthcore)))
+				continue
+			H.adjustBruteLoss(-healing_power)
+			H.adjustFireLoss(-healing_power)
+
 /datum/perk/job/codespeak
 	name = "Codespeak"
 	desc = "You know Watchman codes."
@@ -366,3 +394,19 @@
 	desc = "You are a professional gunsmith, your knowledge allows to not only repair firearms but expertly craft them. \
 			This includes the machines required to do so, including the bullet fabricator."
 	icon_state = "guns" // https://game-icons.net/1x1/delapouite/shotgun-rounds.html
+
+
+// Outsider Perks
+
+/datum/perk/job/tribal
+	name = "Tribal Erudition"
+	desc = "The Abyssal Mother Eris granted your people with knowledge. You saw the ones before you create wonders with the most basic of equipments. \
+			From weapons, clothes, armor, equipments, guns and even a source of power. You have the knowledge to bring down the long darkness."
+	icon_state = "tribal" // https://game-icons.net/1x1/delapouite/hut.html
+
+/datum/perk/job/cultist
+	name = "Precursor Heritage"
+	desc = "Your faith comes with many blessings, and your inner psionic rays are by no means different. You've been granted the all-knowing eye. \
+			You can manipulate what remains from the precursors as you see fit - the blood is by all means a delight to be controlled by the fingertips. \
+			All you need to do is remain steadfast on your faith, and prove to the enlightened the alien races deserves to stay within the embrace of predestination."
+	icon_state = "cult" // https://game-icons.net/1x1/lorc/holy-symbol.html

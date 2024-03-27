@@ -124,7 +124,7 @@
 	icon_state = "soapwhite"
 	how_many_times_we_can_pull_a_pro_clown_gamer_move = 4
 	clean_speed = 40 // Plasma isn't red! But makes it go fasta!
-	matter = list(MATERIAL_BIOMATTER = 11, MATERIAL_PLASMA = 1)
+	matter = list(MATERIAL_BIOMATTER = 11, MATERIAL_HYDROGENC = 1)
 
 /obj/item/soap/deluxe
 	name = "deluxe soap"
@@ -193,7 +193,7 @@
 	clean_speed = 15 // 2x faster then a mop
 	reagent_storage = 60 //2x more then a mop
 	slip_power = 10 //Long fall
-	matter = list(MATERIAL_BIOMATTER = 10, MATERIAL_PLASMA = 3, MATERIAL_GOLD = 3, MATERIAL_SILVER = 3, MATERIAL_DIAMOND = 3)
+	matter = list(MATERIAL_BIOMATTER = 10, MATERIAL_HYDROGENC = 3, MATERIAL_GOLD = 3, MATERIAL_SILVER = 3, MATERIAL_DIAMOND = 3)
 	cleaning_reagent = "sterilizine" //We use something that removes blood
 
 /obj/item/soap/bluespace/New()

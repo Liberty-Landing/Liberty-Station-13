@@ -170,7 +170,7 @@
 
 /mob/living/carbon/superior_animal/psi_monster/daskvey_follower/cleaver
 	name = "Daskveyian Wall Breaker"
-	desc = "A basic footsoldier of the Hand of Daskvey. Donning the mask of the warrior, the agressive souls of former criminals find themselves too enraged to naught but strike their enemies down with furious rage. Flesh or steel, the axe will smash its way through."
+	desc = "A basic footsoldier of the Hand of Daskvey. Donning the mask of the warrior, the agressive souls of former criminals find themselves too enraged to naught but strike their enemies down with furious rage. Flesh or aluminium, the axe will smash its way through."
 	icon_state = "psisolder_hm_axe"
 	icon_living = "psisolder_hm_axe"
 	maxHealth = 250
@@ -306,7 +306,7 @@
 
 /mob/living/carbon/superior_animal/psi_monster/daskvey_follower/shield
 	name = "Daskveyian Juggernaut"
-	desc = "A soul of strength and integrity, recovered from the ravages laid upon it. Outfitted in heavy armor, it protects those in its shadow with unbending steel, for they are the wall that holds back any that seek to harm their kin."
+	desc = "A soul of strength and integrity, recovered from the ravages laid upon it. Outfitted in heavy armor, it protects those in its shadow with unbending aluminium, for they are the wall that holds back any that seek to harm their kin."
 	icon_state = "psi_juggernaut_glass_Shield"
 	icon_living = "psi_juggernaut_glass_Shield"
 	maxHealth = 300

@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "b" = (
 /turf/simulated/wall,
@@ -56,7 +56,7 @@
 /turf/simulated/floor/wood,
 /area/deepmaint)
 "n" = (
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "o" = (
 /obj/machinery/door/airlock/glass{
@@ -66,11 +66,11 @@
 /turf/simulated/floor/wood,
 /area/deepmaint)
 "p" = (
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/deepmaint)
 "q" = (
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/panels,
+/turf/simulated/floor/tiled/aluminium/panels,
 /area/deepmaint)
 "r" = (
 /obj/structure/table/woodentable,
@@ -97,15 +97,15 @@
 /area/deepmaint)
 "I" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "N" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "Q" = (
 /obj/random/mob/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "S" = (
 /obj/random/mob/psi_monster/low_chance,

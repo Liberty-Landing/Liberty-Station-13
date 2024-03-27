@@ -104,7 +104,7 @@
 	var/apply_prefix = 1
 	if(prob(40))
 		material_descriptor = pick("rusted ","dusty ","archaic ","fragile ")
-	source_material = pick("cordite","quadrinium",MATERIAL_STEEL,"titanium","aluminium","ferritic-alloy","plasteel","duranium")
+	source_material = pick("cordite","quadrinium",MATERIAL_ALUMINIUM,"titanium","aluminium","ferritic-alloy","indsteel","duranium")
 
 	var/talkative = 0
 	if(prob(5))
@@ -250,11 +250,11 @@
 		if(14)
 			apply_material_decorations = 0
 			var/list/possible_spawns = list()
-			possible_spawns += /obj/item/stack/material/steel
-			possible_spawns += /obj/item/stack/material/plasteel
+			possible_spawns += /obj/item/stack/material/aluminium
+			possible_spawns += /obj/item/stack/material/indsteel
 			possible_spawns += /obj/item/stack/material/glass
-			possible_spawns += /obj/item/stack/material/glass/reinforced
-			possible_spawns += /obj/item/stack/material/plasma
+			possible_spawns += /obj/item/stack/material/glass/laminated
+			possible_spawns += /obj/item/stack/material/hydrogenc
 			possible_spawns += /obj/item/stack/material/gold
 			possible_spawns += /obj/item/stack/material/silver
 			possible_spawns += /obj/item/stack/material/uranium
@@ -308,7 +308,7 @@
 			if(prob(50))
 				new_item = new /obj/item/material/shard(src.loc)
 			else
-				new_item = new /obj/item/material/shard/plasma(src.loc)
+				new_item = new /obj/item/material/shard/mend(src.loc)
 			apply_prefix = 0
 			apply_image_decorations = 0
 			apply_material_decorations = 0
@@ -478,7 +478,7 @@
 
 	var/decorations = ""
 	if(apply_material_decorations)
-		source_material = pick("cordite","quadrinium",MATERIAL_STEEL,"titanium","aluminium","ferritic-alloy","plasteel","duranium")
+		source_material = pick("cordite","quadrinium",MATERIAL_ALUMINIUM,"titanium","aluminium","ferritic-alloy","indsteel","duranium")
 		desc = "A [material_descriptor ? "[material_descriptor] " : ""][item_type] made of [source_material], all craftsmanship is of [pick("the lowest","low","average","high","the highest")] quality."
 
 		var/list/descriptors = list()
@@ -487,9 +487,9 @@
 		if(prob(30))
 			descriptors.Add("is studded with [pick("gold","gold","aluminium","titanium")]")
 		if(prob(30))
-			descriptors.Add("is encircled with bands of [pick("quadrinium","cordite","ferritic-alloy","plasteel","duranium")]")
+			descriptors.Add("is encircled with bands of [pick("quadrinium","cordite","ferritic-alloy","indsteel","duranium")]")
 		if(prob(30))
-			descriptors.Add("menaces with spikes of [pick("solid plasma",MATERIAL_URANIUM,"white pearl","black steel")]")
+			descriptors.Add("menaces with spikes of [pick("solid plasma",MATERIAL_URANIUM,"white pearl","black aluminium")]")
 		if(descriptors.len > 0)
 			decorations = "It "
 			for(var/index=1, index <= descriptors.len, index++)

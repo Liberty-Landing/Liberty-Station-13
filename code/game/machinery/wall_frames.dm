@@ -7,7 +7,7 @@
 	var/build_machine_type
 	var/build_floormachine_type
 	var/refund_amt = 2
-	var/refund_type = /obj/item/stack/material/steel
+	var/refund_type = /obj/item/stack/material/aluminium
 	var/reverse = 0 //if resulting object faces opposite its dir (like light fixtures)
 
 /obj/item/frame/attackby(obj/item/I, mob/user)

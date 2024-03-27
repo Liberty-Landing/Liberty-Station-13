@@ -2,7 +2,7 @@
 
 #define TECH_MATERIAL "materials"
 #define TECH_ENGINEERING "engineering"
-#define TECH_PLASMA "plasma tech"
+#define TECH_PLASMA "states of matter tech"
 #define TECH_POWER "power storage"
 #define TECH_BLUESPACE "bluespace"
 #define TECH_BIO "bio tech"
@@ -12,6 +12,7 @@
 #define TECH_ILLEGAL "syndicate"
 #define TECH_ARCANE "arcane"
 #define TECH_SIMULACRUM "simulacrum"
+#define TECH_INTERFACTION  "interfaction"
 
 //used in design to specify which machine can build it
 #define IMPRINTER		(1<<0)	//For circuits. Uses glass/chemicals.
@@ -33,10 +34,11 @@
 #define RESEARCH_EXOSUIT	   /datum/tech/exosuit
 #define RESEARCH_SIMULACRUM    /datum/tech/simulacrum
 #define RESEARCH_ILLEGAL       /datum/tech/illegal
+#define RESEARCH_INTERFACTION  /datum/tech/interfaction
 
 
 // Design categories
-#define CAT_AMERIDIAN    "Ameridian"
+#define CAT_NACRE    "Mending Nacre"
 #define CAT_MISC        "Misc"
 #define CAT_COMP        "Computers"
 #define CAT_AI          "AI"

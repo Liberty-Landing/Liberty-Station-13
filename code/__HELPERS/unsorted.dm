@@ -1377,8 +1377,7 @@ GLOBAL_DATUM_INIT(dview_mob, /mob/dview, new)
 		return 0
 
 //gives us the stack trace from CRASH() without ending the current proc.
-/proc/stack_trace(msg)
-	CRASH(msg)
+/proc/stack_trace(msg)	CRASH(msg)
 
 /datum/proc/stack_trace(msg)
 	CRASH(msg)

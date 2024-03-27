@@ -9,7 +9,7 @@
 			Anyone who is around you at the moment of your death must roll a Willpower sanity check. If they fail, their sanity will instantly be dropped to 0."
 	icon_state = "terrible_fate" // https://game-icons.net/1x1/lorc/death-zone.html
 
-/datum/perk/oddity/toxic_revenger
+/datum/perk/oddity/toxic_revenger //this will likely become an disease in another system.
 	name = "Fungal Host"
 	desc = "A small hostile fungal spores were on the oddity, hijacking your lungs and forcing them to emit toxins harmful to everyone around you every half hour. It will be a long time before your body can fight this off..."
 	gain_text = "You feel a terrible aching pain in your lungs - an anomalous fungus on the oddity has infused your body!"
@@ -46,7 +46,7 @@
 	gain_text = "Your trigger finger feels more relaxed than ever..."
 	icon_state = "gunslinger" // https://game-icons.net/1x1/delapouite/reload-gun-barrel.html
 
-/datum/perk/oddity/balls_of_plasteel
+/datum/perk/oddity/balls_of_steel
 	name = "True Grit"
 	desc = "Pain comes and goes, you feel as though can withstand far worse than ever before."
 	gain_text = "Pain is merely weakness leaving the body."
@@ -67,7 +67,7 @@
 	name = "Natural Armor"
 	desc = "Your skin has become harder, more durable, able to accept blunt force and endure."
 	gain_text = "After all you've endured, you can't help but feel tougher than normal, your skin feels like iron."
-	icon_state = "armor" // This one is good enough. Abs of steel.
+	icon_state = "armor" // This one is good enough. Abs of aluminium.
 
 /datum/perk/oddity/harden/assign(mob/living/carbon/human/H)
 	..()
@@ -306,37 +306,6 @@
 ///////////////////////////////////////
 //////// JOB ODDITYS PERKS ////////////
 ///////////////////////////////////////
-
-/datum/perk/nt_oddity
-	gain_text = "You are filled with philosophical inspiration."
-
-/datum/perk/nt_oddity/holy_light
-	name = "Radiant Light"
-	desc = "You now provide a weak healing aura, healing both brute and burn damage to any Hearthcore users nearby as well as yourself."
-	icon_state = "third_eye"  //https://game-icons.net/1x1/lorc/third-eye.html
-	var/healing_power = 0.1
-	var/cooldown = 1 SECONDS // Just to make sure that perk don't go berserk.
-	var/initial_time
-
-/datum/perk/nt_oddity/holy_light/assign(mob/living/carbon/human/H)
-	..()
-	initial_time = world.time
-
-/datum/perk/nt_oddity/holy_light/on_process()
-	if(!..())
-		return
-	if(!holder.get_core_implant(/obj/item/implant/core_implant/hearthcore))
-		return
-	if(world.time < initial_time + cooldown)
-		return
-	initial_time = world.time
-	for(var/mob/living/L in viewers(holder, 7))
-		if(ishuman(L))
-			var/mob/living/carbon/human/H = L
-			if(H.stat == DEAD || !(H.get_core_implant(/obj/item/implant/core_implant/hearthcore)))
-				continue
-			H.adjustBruteLoss(-healing_power)
-			H.adjustFireLoss(-healing_power)
 
 /datum/perk/bluespace
 	name = "Bluespace Alignement"

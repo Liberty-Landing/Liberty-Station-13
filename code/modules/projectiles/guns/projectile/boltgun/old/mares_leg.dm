@@ -14,7 +14,7 @@
 	penetration_multiplier = 0.9
 	zoom_factors = list()
 	extra_damage_mult_scoped = 0.2
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_WOOD = 6, MATERIAL_PLASTEEL = 7)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_WOOD = 6, MATERIAL_INDSTEEL = 7)
 	serial_type = "INDEX"
 	extra_bulk = -2
 	gun_tags = list(GUN_PROJECTILE, GUN_INTERNAL_MAG, GUN_SCOPE)
@@ -26,5 +26,5 @@
 	icon_state = "bounty"
 	item_state = "bounty"
 	price_tag = 950
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTIC = 6, MATERIAL_PLASTEEL = 7)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_PLASTIC = 6, MATERIAL_INDSTEEL = 7)
 	serial_type = "NM"

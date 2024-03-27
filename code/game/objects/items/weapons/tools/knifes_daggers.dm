@@ -16,7 +16,7 @@
 	armor_penetration = ARMOR_PEN_SHALLOW
 	max_upgrades = 2
 	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 5)
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 1)
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/sharphit.ogg'
 	slot_flags = SLOT_BELT
@@ -59,17 +59,17 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "tacknife"
 	item_state = "knife"
-	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 1)
 	force = WEAPON_FORCE_PAINFUL
 	backstab_damage = 14
 	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 15)
 
 /obj/item/tool/knife/hook
 	name = "meat hook"
-	desc = "A sharp plasteel butcher's hook used to hold dressed game in place to butcher. It has quite the sharpened tip to embed more easily in flesh."
+	desc = "A sharp indsteel butcher's hook used to hold dressed game in place to butcher. It has quite the sharpened tip to embed more easily in flesh."
 	icon_state = "hook_knife"
 	item_state = "hook_knife"
-	matter = list(MATERIAL_PLASTEEL = 5, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_INDSTEEL = 5, MATERIAL_PLASTIC = 2)
 	force = WEAPON_FORCE_DANGEROUS
 	backstab_damage = 8
 	armor_penetration = ARMOR_PEN_EXTREME //Should be countered be embedding
@@ -110,7 +110,7 @@
 	backstab_damage = 8
 	armor_penetration = ARMOR_PEN_MODERATE
 	attack_verb = list("cleaved", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_PLASTIC = 1)
 	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 15)
 	price_tag = 14
 
@@ -121,7 +121,7 @@
 	icon_state = "tacknife_guard"
 	item_state = "knife"
 	backstab_damage = 14
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 2)
 	force = WEAPON_FORCE_DANGEROUS // Serrated combat knife
 	tool_qualities = list(QUALITY_CUTTING = 20,  QUALITY_WIRE_CUTTING = 10, QUALITY_SCREW_DRIVING = 5,  QUALITY_SAWING = 5)
 	armor_penetration = ARMOR_PEN_MODERATE
@@ -136,7 +136,7 @@
 	icon = 'icons/obj/weapons.dmi'
 	icon_state = "dagger"
 	item_state = "dagger"
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 2)
 	force = 13
 	backstab_damage = 15
 	armor_penetration = ARMOR_PEN_HALF
@@ -152,7 +152,7 @@
 	force = WEAPON_FORCE_DANGEROUS // Sharpened with a whetstone and high cutting quality
 	armor_penetration = ARMOR_PEN_DEEP
 	tool_qualities = list(QUALITY_CUTTING = 50)
-	matter = list(MATERIAL_PLASTEEL = 8, MATERIAL_WOOD = 2, MATERIAL_DIAMOND = 3) // 5 plasteel + 2 wood, then +3 plasteel +3 diamond from whetstone.
+	matter = list(MATERIAL_INDSTEEL = 8, MATERIAL_WOOD = 2, MATERIAL_DIAMOND = 3) // 5 indsteel + 2 wood, then +3 indsteel +3 diamond from whetstone.
 	price_tag = 500 // Takes diamond to make and very rare.
 
 /obj/item/tool/knife/dagger/ceremonial
@@ -160,7 +160,7 @@
 	desc = "Given to high ranking officers as a signature of office, while it isn't meant to be a weapon it certainly does the job."
 	icon_state = "fancydagger"
 	item_state = "fancydagger"
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 1, MATERIAL_SILVER = 1)
 	embed_mult = 0.6
 	max_upgrades = 4
 	price_tag = 300 // Fancy expensive paper weight.
@@ -170,7 +170,7 @@
 	desc = "This dagger was given to generations of family members that once hunted as a faint memory of trust and hope, while it isn't meant to be a weapon it certainly does the job of cutting things. Extremely handy not exactly valuable yet precious."
 	icon_state = "general_skinningknife"
 	item_state = "fancydagger"
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 1)
 	embed_mult = 0.7
 	max_upgrades = 0
 	price_tag = 50 // Fancy expensive heirloom.... it is not exactly meant to be upgradable nor sold but the value that it holds is somehow more symbolic than material.
@@ -185,7 +185,7 @@
 	desc = "A teleportation matrix attached to a dagger, for sending things you stab it into very far away."
 	icon_state = "bluespace_dagger"
 	item_state = "bluespace_dagger"
-	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 10, MATERIAL_GOLD = 5, MATERIAL_PLASMA = 20)
+	matter = list(MATERIAL_INDSTEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 10, MATERIAL_GOLD = 5, MATERIAL_HYDROGENC = 20)
 	price_tag = 1200 // It teleports.
 	force = WEAPON_FORCE_NORMAL+1
 	embed_mult = 50 //You WANT it to embed

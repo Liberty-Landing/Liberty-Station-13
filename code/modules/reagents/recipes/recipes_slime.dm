@@ -104,10 +104,10 @@
 	required = /obj/item/slime_extract/metal
 
 /datum/chemical_reaction/slime/metal/on_reaction(var/datum/reagents/holder)
-	var/obj/item/stack/material/steel/M = new /obj/item/stack/material/steel
+	var/obj/item/stack/material/aluminium/M = new /obj/item/stack/material/aluminium
 	M.amount = 15
 	M.loc = get_turf(holder.my_atom)
-	var/obj/item/stack/material/plasteel/P = new /obj/item/stack/material/plasteel
+	var/obj/item/stack/material/indsteel/P = new /obj/item/stack/material/indsteel
 	P.amount = 5
 	P.loc = get_turf(holder.my_atom)
 	..()
@@ -224,7 +224,7 @@
 	var/obj/item/stack/material/glass/G = new /obj/item/stack/material/glass
 	G.amount = 15
 	G.loc = get_turf(holder.my_atom)
-	var/obj/item/stack/material/glass/plasmaglass/P = new /obj/item/stack/material/glass/plasmaglass
+	var/obj/item/stack/material/glass/mendsilicate/P = new /obj/item/stack/material/glass/mendsilicate
 	P.amount = 5
 	P.loc = get_turf(holder.my_atom)
 	..()
@@ -353,7 +353,7 @@
 
 /datum/chemical_reaction/slime/plasma/on_reaction(var/datum/reagents/holder)
 	..()
-	var/obj/item/stack/material/plasma/P = new /obj/item/stack/material/plasma
+	var/obj/item/stack/material/hydrogenc/P = new /obj/item/stack/material/hydrogenc
 	P.amount = 10
 	P.loc = get_turf(holder.my_atom)
 
@@ -383,11 +383,11 @@
 	result_amount = 1
 	required = /obj/item/slime_extract/red
 
-/datum/chemical_reaction/slime/osmium/on_reaction(var/datum/reagents/holder)
-	var/obj/item/stack/material/osmium/O = new /obj/item/stack/material/osmium
+/datum/chemical_reaction/slime/composite/on_reaction(var/datum/reagents/holder)
+	var/obj/item/stack/material/composite/O = new /obj/item/stack/material/composite
 	O.amount = 15
 	O.loc = get_turf(holder.my_atom)
-	var/obj/item/stack/material/mhydrogen/H = new /obj/item/stack/material/mhydrogen
+	var/obj/item/stack/material/hydrogenc/H = new /obj/item/stack/material/hydrogenc
 	H.amount = 5
 	H.loc = get_turf(holder.my_atom)
 	..()
@@ -517,7 +517,7 @@
 //Peace thru a iron fist~
 /datum/chemical_reaction/slime/slaughto
 	result = null
-	required_reagents = list("plasticide" = 5)
+	required_reagents = list("microplastic" = 5)
 	result_amount = 1
 	required = /obj/item/slime_extract/lightpink
 	mix_message = "The slime extract begins to twist and bend!"
@@ -580,7 +580,7 @@
 
 /datum/chemical_reaction/slime/platinum/on_reaction(var/datum/reagents/holder)
 	..()
-	var/obj/item/stack/material/platinum/P = new /obj/item/stack/material/platinum
+	var/obj/item/stack/material/titanium/P = new /obj/item/stack/material/titanium
 	P.amount = 5
 	P.loc = get_turf(holder.my_atom)
 

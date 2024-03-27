@@ -2,7 +2,7 @@
 	name = "ashtray"
 	result = /obj/item/material/ashtray
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 	related_stats = list(STAT_COG)
 
@@ -10,7 +10,7 @@
 	name = "dinner tray"
 	result = /obj/item/tray
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 40),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 40),
 		list(QUALITY_WIRE_CUTTING, 10, 120)
 	)
 	related_stats = list(STAT_COG)
@@ -55,7 +55,7 @@
 	result = /obj/item/stack/rods
 	time = 0
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 	flags = CRAFT_BATCH
 	related_stats = list(STAT_COG)
@@ -89,21 +89,21 @@
 		list(QUALITY_CUTTING, 15, "time" = 30)
 	)
 
-/datum/craft_recipe/ameridian_spire
-	name = "ameridian growth"
+/datum/craft_recipe/nacre_spire
+	name = "nacre cluster"
 	flags = CRAFT_ON_FLOOR|CRAFT_ONE_PER_TURF
-	result = /obj/structure/ameridian_crystal/spire/fake
+	result = /obj/structure/nacre_crystal/spire/fake
 	icon_state = "device"
 	steps = list(
-		list(/obj/item/ameridian_core, 1, "time" = 25),
-		list(CRAFT_MATERIAL, 60, MATERIAL_AMERIDIAN, "time" = 25)
+		list(/obj/item/nacre_core, 1, "time" = 25),
+		list(CRAFT_MATERIAL, 60, MATERIAL_NACRE, "time" = 25)
 	)
 
 /datum/craft_recipe/hair_pin
 	name = "hair pin"
 	result = /obj/item/clothing/head/pin
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
 // Leaving the following commented out until Consumer crafts are finally coded

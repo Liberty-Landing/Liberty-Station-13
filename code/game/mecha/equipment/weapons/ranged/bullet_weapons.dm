@@ -129,7 +129,7 @@
 	desc = "A downsized spaceship autocannon rechambered in 60mm is a true weapon of terror capable of annihilating anything in it's path with deadly precision. This version features a ballistic computer to dampen the recoil."
 	icon_state = "mecha_cannon"
 	equip_cooldown = 25
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_INDSTEEL = 15)
 
 	fire_sound = 'sound/mecha/weapons/autocannon.ogg'
 	projectile = /obj/item/projectile/bullet/mech_autocannon
@@ -150,7 +150,7 @@
 	desc = "An autocannon made with mechs in mind boasting only 30mm as a tradeoff being able to shoot two times in a row reliably without jamming. Due to the smaller caliber it is capable of firing at higher distances than the 60mm version."
 	icon_state = "mecha_burstcannon"
 	equip_cooldown = 10
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_INDSTEEL = 15)
 	projectile = /obj/item/projectile/bullet/mech_burstcannon
 	ammo_type = CAL_MECH_ULTRACANNON
 	fire_sound = 'sound/mecha/weapons/burstautocannon.ogg'
@@ -169,7 +169,7 @@
 	desc = "An anti-air autocannon using flak rounds instead of standard ones but not losing out on any of the precision that it comes with. In contrary to how most flak weapons operate this one concentrates most of it's shots in single place."
 	icon_state = "mecha_scatter"
 	equip_cooldown = 25 // we fire fairly slow, but do a LOT of damage up close.
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_PLASTEEL = 15)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_INDSTEEL = 15)
 	projectile = /obj/item/projectile/bullet/pellet/mech_flak/military
 	ammo_type = CAL_MECH_SHOTGUN
 	fire_sound = 'sound/mecha/weapons/scatterautocannon.ogg'

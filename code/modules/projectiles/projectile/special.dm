@@ -351,7 +351,7 @@
 /obj/item/projectile/bullet/flare/choas //MEWHEHEHE, can be any colour
 	chaos = TRUE
 
-// Special projectile that one-shot ameridian-related stuff
+// Special projectile that one-shot nacre-related stuff
 /obj/item/projectile/sonic_bolt
 	name = "sonic bolt"
 	icon_state = "energy2"
@@ -359,7 +359,7 @@
 	armor_penetration = 30 // It is a sound-wave liquifing organs I guess
 	kill_count = 7
 	check_armour = ARMOR_ENERGY
-	var/golem_damage_bonus = 20 // Damage multiplier against ameridians.
+	var/golem_damage_bonus = 20 // Damage multiplier against nacres.
 	recoil = 7
 
 /obj/item/projectile/sonic_bolt/heavy

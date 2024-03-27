@@ -16,7 +16,7 @@
 /obj/machinery/door/unpowered/simple/New(var/newloc, var/material_name)
 	..()
 	if(!material_name)
-		material_name = MATERIAL_STEEL
+		material_name = MATERIAL_ALUMINIUM
 	material = get_material_by_name(material_name)
 	if(!material)
 		qdel(src)

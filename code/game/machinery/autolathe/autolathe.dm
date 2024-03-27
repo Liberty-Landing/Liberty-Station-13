@@ -8,8 +8,8 @@
 
 
 /obj/machinery/autolathe
-	name = "autolathe"
-	desc = "It produces items using metal and glass."
+	name = "Dynamic 'Autolathe' Stereofab"
+	desc = "A non-industrial standard 3dprinter possessing high-precision machining with a hybrid system of Stereolithographic and CNC system due to real-time sensors. It cannot work with exotic material such as Biomatter, and struggles to use non-thermoplastic polymers such as Kevlar."
 	icon = 'icons/obj/machines/autolathe.dmi'
 	icon_state = "autolathe"
 	density = 1
@@ -1086,7 +1086,7 @@
 // A version with some materials already loaded, to be used on map spawn
 /obj/machinery/autolathe/loaded
 	stored_material = list(
-		MATERIAL_STEEL = 15,
+		MATERIAL_ALUMINIUM = 15,
 		MATERIAL_PLASTIC = 15,
 		MATERIAL_GLASS = 15,
 		)

@@ -411,15 +411,15 @@
 				R.amount = rand(5,25)
 
 			if(2)
-				var/obj/item/stack/material/plasteel/R = new(src)
+				var/obj/item/stack/material/indsteel/R = new(src)
 				R.amount = rand(5,25)
 
 			if(3)
-				var/obj/item/stack/material/steel/R = new(src)
+				var/obj/item/stack/material/aluminium/R = new(src)
 				R.amount = rand(5,25)
 
 			if(4)
-				var/obj/item/stack/material/plasteel/R = new(src)
+				var/obj/item/stack/material/indsteel/R = new(src)
 				R.amount = rand(5,25)
 
 			if(5)
@@ -430,7 +430,7 @@
 			if(6)
 				var/quantity = rand(1,3)
 				for(var/i=0, i<quantity, i++)
-					new /obj/item/material/shard/plasma(src)
+					new /obj/item/material/shard/mend(src)
 
 			if(7)
 				var/obj/item/stack/material/uranium/R = new(src)
@@ -438,7 +438,7 @@
 
 /turf/simulated/mineral/random
 	name = "Mineral deposit"
-	var/mineralSpawnChanceList = list(ORE_URANIUM = 5, ORE_PLATINUM = 5, ORE_IRON = 35, ORE_CARBON = 35, ORE_DIAMOND = 1, ORE_GOLD = 5, ORE_SILVER = 5, ORE_PLASMA = 10, ORE_HYDROGEN = 1)
+	var/mineralSpawnChanceList = list(ORE_URANIUM = 5, ORE_TITANIUM = 5, ORE_IRON = 20, ORE_LIGNITE = 20, ORE_DIAMOND = 1, ORE_GOLD = 5, ORE_SILVER = 5, ORE_CLATHRATES = 10, ORE_COPPER = 25, ORE_ALUMINIUM = 30)
 	var/mineralChance = 100 //10 //means 10% chance of this plot changing to a mineral deposit
 
 /turf/simulated/mineral/random/New()
@@ -456,7 +456,7 @@
 
 /turf/simulated/mineral/random/high_chance
 	mineralChance = 100 //25
-	mineralSpawnChanceList = list(ORE_URANIUM = 10, ORE_PLATINUM = 10, ORE_IRON = 20, ORE_CARBON = 20, ORE_DIAMOND = 2, ORE_GOLD = 10, ORE_SILVER = 10, ORE_PLASMA = 20, ORE_HYDROGEN = 1)
+	mineralSpawnChanceList = list(ORE_URANIUM = 10, ORE_TITANIUM = 10, ORE_IRON = 20, ORE_CARBON = 20, ORE_DIAMOND = 2, ORE_GOLD = 10, ORE_SILVER = 10, ORE_PLASMA = 20, ORE_HYDROGENC = 1)
 
 /********************** Planet **************************/
 

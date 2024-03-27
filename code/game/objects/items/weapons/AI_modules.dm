@@ -3,7 +3,7 @@ CONTAINS:
 AI MODULES
 
 */
-
+//-Remember to ask Trilby or another coder that have enough time to make the aiModules chooseable roundstart by the player.
 // AI module
 
 /obj/item/aiModule
@@ -63,7 +63,7 @@ AI MODULES
 		if (comp.current.stat == 2 || comp.current.HasTrait(CYBORG_TRAIT_EMAGGED))
 			to_chat(usr, "Upload failed. No signal is being detected from the robot.")
 		else if (comp.current.connected_ai)
-			to_chat(usr, "Upload failed. The robot is slaved to an AI.")
+			to_chat(usr, "Upload failed. The robot is sovereigned to an AI.")
 		else
 			src.transmitInstructions(comp.current, usr)
 			to_chat(comp.current, "These are your laws now:")

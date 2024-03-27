@@ -624,21 +624,9 @@
 
  /* // Commented out as it does not fit Bonfire lore, but might become repurposed in the future
 
-/obj/item/oddity/nt/seal
-	name = "Cartographer's Seal"
-	desc = "A badge carrying the seal of the cartographer of the Church of Bonfire, said to be marked with a tithe of blood as proof of its sacred nature. An extremely rare sight, as many of these seals are thought to be lost. Merely holding one is said to inspire divine right. The church would be immensely interested in this."
-	icon_state = "nt_seal"
-	oddity_stats = list(
-		STAT_TGH = 12,
-		STAT_VIG = 12,
-		STAT_ROB = 12
-	)
-	price_tag = 8000
-	perk = PERK_HOLY_LIGHT
-
 /obj/item/oddity/nt/pyramid
 	name = "Pyramid"
-	desc = "A small sandstone pyramid, covered in bizzare engravings. The Cartographer of the Church of the Bonfire has declared relics like this holy beyond any doubt, though none know exactly why."
+	desc = "A small sandstone pyramid, covered in bizzare engravings. The Cartographer of the Church of the NOT Bonfire has declared relics like this holy beyond any doubt, though none know exactly why."
 	icon_state = "pyramid"
 	oddity_stats = list(
 		STAT_TGH = 16
@@ -661,11 +649,11 @@
 	perk = PERK_HARDEN
 
 /obj/item/oddity/si_bluespace_scanner
-	name = "Bluespace Tuning Device"
-	desc = "An anomalous, experimental tool produced by the CAPSA to get accurate readings of local and global Bluespace entropy." // It's a lie that it stabilizes Bluespace.
+	name = "Cosmic Tuning Device"
+	desc = "An anomalous, experimental tool produced by the CAPSA to get accurate readings of local and global Cosmic entropy." // It's a lie that it stabilizes the cosmos.
 	icon_state = "si_scan"
 	item_state = "si_scan"
-	matter = list(MATERIAL_PLASTIC = 15, MATERIAL_STEEL = 10, MATERIAL_PLASMAGLASS = 2, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_PLASMA = 5, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_PLASTIC = 15, MATERIAL_ALUMINIUM = 10, MATERIAL_LBGLASS = 2, MATERIAL_GOLD = 10, MATERIAL_SILVER = 10, MATERIAL_HYDROGENC = 5, MATERIAL_DIAMOND = 1)
 	oddity_stats = list(
 		STAT_COG = 2, //trash stats for mass-printed trash
 		STAT_MEC = 2
@@ -825,9 +813,9 @@
 /obj/item/oddity/ls/kriosan_sword
 	name = "Kriosan Officer Sword" //double-check and add desc
 	desc = "A replica of the blades given to Kriosan military officers, as a reward for their loyal service."
-	icon_state = "kriosan_sword"
-	item_state = "saber"
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5)
+	icon_state = "kriosan_wakizashi" //change this to be a wakizachi or something. Kriosans are weebs now.
+	item_state = "wakizashi"
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 5)
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
 	force = WEAPON_FORCE_DANGEROUS
 	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")

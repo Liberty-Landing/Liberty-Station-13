@@ -1,6 +1,6 @@
-/datum/storyteller/ghostship
-	config_tag = "ghostship"
-	name = "Ghost Town"
-	welcome = "Welcome to the ghost town known as the Liberty Colony. Is anyone here?"
-	description = "This storyteller doesn't require any crew to start."
+/datum/storyteller/emptycolony
+	config_tag = "emptycolony"
+	name = "Minimal Workforce"
+	welcome = "Welcome to the colony. Today, due to current financial strain and lack of need, the workforce will be low. No enemy desires to waste their time attacking the surface branch with such low-income."
+	description = "This storyteller doesn't require any workforce to start."
 

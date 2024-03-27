@@ -96,7 +96,7 @@
 	desc = "A power generator that runs on solid plasma sheets. Rated for 60kW max safe output."
 
 	var/sheet_name = "Plasma Sheets"
-	var/sheet_path = /obj/item/stack/material/plasma
+	var/sheet_path = /obj/item/stack/material/hydrogenc
 	circuit = /obj/item/circuitboard/pacman
 
 	/*

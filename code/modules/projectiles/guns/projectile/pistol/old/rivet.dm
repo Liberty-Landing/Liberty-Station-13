@@ -12,7 +12,7 @@
 	caliber = CAL_MAGNUM
 	can_dual = TRUE
 	silenced = FALSE
-	matter = list(MATERIAL_PLASTEEL = 18, MATERIAL_PLASTIC = 6, MATERIAL_PLATINUM = 9)
+	matter = list(MATERIAL_INDSTEEL = 18, MATERIAL_PLASTIC = 6, MATERIAL_TITANIUMRTC = 9)
 	fire_sound = 'sound/weapons/guns/fire/pistol_fire.ogg'
 	load_method = SINGLE_CASING|MAGAZINE
 	gun_tags = list(GUN_PROJECTILE, GUN_SILENCABLE, GUN_MAGWELL)

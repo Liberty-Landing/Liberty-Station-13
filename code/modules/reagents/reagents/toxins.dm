@@ -42,15 +42,15 @@
 		else
 			M.add_chemical_effect(CE_TOXIN, strength * dose / 4)
 
-/datum/reagent/toxin/plasticide
-	name = "Plasticide"
-	id = "plasticide"
-	description = "Liquid plastic used in creation of plastic sheets."
+/datum/reagent/toxin/microplastic
+	name = "microplastic"
+	id = "microplastic"
+	description = "Microplastics coming from broken down plastic or fossil fuel, used in creation of plastic sheets - or trash intoxicating practically everyone."
 	taste_description = "plastic"
-	reagent_state = LIQUID
+	reagent_state = SOLID
 	color = "#CF3600"
 	strength = 6
-	nerve_system_accumulations = 45 //Plastic in blood or stomic is going to make you rather sick
+	nerve_system_accumulations = 45 //Plastic in blood or stomic is going to make you rather sick. also Bisphenol A from plastic unironically mimics estrogen, that's a way to become a femboy
 
 /datum/reagent/toxin/oil
 	name = "Oil"

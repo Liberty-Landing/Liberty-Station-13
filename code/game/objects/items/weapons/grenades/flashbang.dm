@@ -6,7 +6,7 @@
 	item_state = "flashbang"
 	origin_tech = list(TECH_MATERIAL = 2, TECH_COMBAT = 1)
 	var/banglet = 0
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_SILVER = 1)
+	matter = list(MATERIAL_ALUMINIUM = 2, MATERIAL_SILVER = 1)
 
 /obj/item/grenade/flashbang/prime()
 	..()
@@ -149,15 +149,15 @@
 	M.update_icons()
 
 /obj/item/grenade/flashbang/nt
-	name = "NT FBG \"Holy Light\""
-	desc = "An \"Bonfire\" branded flashbang grenade, to spread the light of god."
+	name = "Circhosian FBG \"Holy Light\""
+	desc = "An \"Circhosian\" branded flashbang grenade, to spread the light of god."
 	icon_state = "flashbang_nt"
 	item_state = "flashbang_nt"
 	matter = list(MATERIAL_BIOMATTER = 15)
 
 /obj/item/grenade/flashbang/nt/flashbang_without_the_bang(turf/T, mob/living/carbon/M)
 	if(M.get_core_implant(/obj/item/implant/core_implant/hearthcore))
-		to_chat(M, span_singing("You are blinded by the Bonfire\' light!"))
+		to_chat(M, span_singing("You are blinded by the Crustor\' light!"))
 		M.flash(0, FALSE, FALSE , FALSE, 0) // angel light , non-harmfull other than the overlay
 		return
 	..()

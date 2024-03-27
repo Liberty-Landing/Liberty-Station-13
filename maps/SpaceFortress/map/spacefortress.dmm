@@ -16,7 +16,7 @@
 /turf/simulated/floor/plating,
 /area/outpost/abandoned_fortress)
 "af" = (
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "ag" = (
 /obj/effect/overmap/sector/fortress,
@@ -35,7 +35,7 @@
 /obj/machinery/door/airlock/centcom{
 	name = "Fortress Airlock"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "ak" = (
 /obj/machinery/door/airlock/centcom{
@@ -43,7 +43,7 @@
 	locked = 1;
 	name = "Fortress Airlock"
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "al" = (
 /obj/structure/closet/crate,
@@ -117,7 +117,7 @@
 	name = "Fortress Airlock"
 	},
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "aw" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -217,7 +217,7 @@
 /turf/simulated/floor/tiled,
 /area/outpost/abandoned_fortress)
 "aQ" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/outpost/abandoned_fortress)
 "aR" = (
@@ -305,7 +305,7 @@
 /obj/random/rig/damaged/low_chance,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "bf" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
@@ -331,7 +331,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom,
 /obj/random/lowkeyrandom/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "bj" = (
 /obj/structure/girder,
@@ -344,11 +344,11 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "bl" = (
 /obj/random/structures,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "bm" = (
 /obj/structure/closet/emcloset,
@@ -395,7 +395,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "bt" = (
 /obj/structure/closet/l3closet/general,
@@ -423,7 +423,7 @@
 /obj/random/powercell/low_chance,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "bw" = (
 /obj/structure/table/rack/shelf,
@@ -440,7 +440,7 @@
 /obj/random/powercell/low_chance,
 /obj/random/powercell/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "bx" = (
 /obj/random/closet_maintloot,
@@ -1000,7 +1000,7 @@
 /obj/random/rig/damaged/low_chance,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "dm" = (
 /obj/machinery/atmospherics/pipe/manifold/visible{
@@ -1235,10 +1235,10 @@
 /area/outpost/abandoned_fortress)
 "dV" = (
 /obj/random/structures/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "dW" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool/advanced/low_chance,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -1277,7 +1277,7 @@
 /obj/random/tool/low_chance,
 /obj/random/tool/low_chance,
 /obj/random/powercell/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "ee" = (
 /obj/structure/salvageable/autolathe,
@@ -1292,7 +1292,7 @@
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "eh" = (
 /obj/random/scrap,
@@ -1320,7 +1320,7 @@
 /obj/random/traps/low_chance,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "em" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1374,7 +1374,7 @@
 /obj/random/rig/damaged/low_chance,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "et" = (
 /obj/structure/table/reinforced,
@@ -1390,7 +1390,7 @@
 /obj/random/rig/damaged/low_chance,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "eu" = (
 /obj/structure/table/reinforced,
@@ -1408,14 +1408,14 @@
 /obj/random/science/low_chance,
 /obj/random/rig/damaged/low_chance,
 /obj/random/tool_upgrade/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "ev" = (
 /obj/random/structures,
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "ew" = (
 /obj/structure/salvageable/autolathe,
@@ -1449,10 +1449,10 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/circuitboard,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "eA" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/lowkeyrandom,
 /obj/random/tool/advanced/low_chance,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -1516,7 +1516,7 @@
 /turf/simulated/floor/tiled/dark/gray_platform,
 /area/outpost/abandoned_fortress)
 "eJ" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/tool_upgrade/low_chance,
 /obj/random/tool_upgrade/rare/low_chance,
 /turf/simulated/floor/tiled/dark/gray_platform,
@@ -1540,7 +1540,7 @@
 /area/outpost/abandoned_fortress)
 "eO" = (
 /obj/machinery/door/airlock/medical,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "eP" = (
 /obj/machinery/light/small{
@@ -1704,7 +1704,7 @@
 /obj/structure/fireaxecabinet{
 	pixel_y = 30
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "ft" = (
 /obj/structure/table/rack,
@@ -1718,7 +1718,7 @@
 /obj/item/clothing/suit/space/void/engineering,
 /obj/item/clothing/head/helmet/space/void/engineering,
 /obj/item/tank/jetpack/oxygen,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fu" = (
 /obj/structure/table/rack,
@@ -1738,10 +1738,10 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fv" = (
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fw" = (
 /obj/structure/table/rack,
@@ -1751,7 +1751,7 @@
 	},
 /obj/item/circuitboard/scan_consolenew,
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fx" = (
 /obj/structure/table/rack,
@@ -1770,7 +1770,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fy" = (
 /obj/structure/table/rack,
@@ -1782,7 +1782,7 @@
 /obj/item/device/t_scanner,
 /obj/item/tool/multitool,
 /obj/item/tool/multitool,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fz" = (
 /obj/structure/reagent_dispensers/fueltank/huge,
@@ -1819,7 +1819,7 @@
 /obj/machinery/portable_atmospherics/hydroponics{
 	pixel_y = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "fF" = (
 /obj/machinery/light/small{
@@ -1833,7 +1833,7 @@
 	pixel_x = -2;
 	pixel_y = 2
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fH" = (
 /obj/structure/table/standard,
@@ -1861,7 +1861,7 @@
 /obj/random/tool/low_chance,
 /obj/random/tool/low_chance,
 /obj/random/techpart,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fM" = (
 /obj/structure/table/rack,
@@ -1871,7 +1871,7 @@
 	},
 /obj/item/tool/multitool,
 /obj/item/clothing/glasses/powered/meson,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fN" = (
 /obj/structure/catwalk,
@@ -1892,7 +1892,7 @@
 /obj/item/circuitboard/destructive_analyzer,
 /obj/item/circuitboard/protolathe,
 /obj/item/circuitboard/aifixer,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fP" = (
 /obj/structure/table/rack/shelf,
@@ -1918,7 +1918,7 @@
 	pixel_y = 8
 	},
 /obj/effect/floor_decal/industrial/danger,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress)
 "fR" = (
 /obj/machinery/smartfridge,
@@ -1947,7 +1947,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fW" = (
 /obj/structure/table/rack,
@@ -1962,7 +1962,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "fX" = (
 /obj/machinery/light/small{
@@ -1998,7 +1998,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/danger,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress)
 "gb" = (
 /obj/structure/reagent_dispensers/watertank,
@@ -2006,7 +2006,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/danger,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress)
 "gc" = (
 /obj/structure/closet/crate/hydroponics,
@@ -2027,7 +2027,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/danger,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress)
 "gd" = (
 /obj/structure/closet/crate/hydroponics,
@@ -2043,7 +2043,7 @@
 	dir = 1
 	},
 /obj/effect/floor_decal/industrial/danger,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/outpost/abandoned_fortress)
 "ge" = (
 /obj/random/cluster/xenomorphs,
@@ -2059,7 +2059,7 @@
 /obj/item/circuitboard/message_monitor{
 	pixel_y = -5
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "gg" = (
 /obj/machinery/light/small{
@@ -2097,29 +2097,29 @@
 	pixel_x = -2;
 	pixel_y = -2
 	},
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "gl" = (
 /obj/structure/dispenser/oxygen,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "gm" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "gn" = (
 /obj/structure/table/rack/shelf,
 /obj/random/tool/low_chance,
 /obj/random/tool/low_chance,
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "go" = (
 /obj/structure/table/rack/shelf,
 /obj/random/tool/low_chance,
 /obj/random/tool/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "gp" = (
 /obj/structure/table/rack/shelf,
@@ -2165,7 +2165,7 @@
 /area/outpost/abandoned_fortress)
 "gv" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "gw" = (
 /obj/machinery/light/small{
@@ -2396,7 +2396,7 @@
 "hc" = (
 /obj/machinery/door/airlock/centcom,
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "hd" = (
 /obj/machinery/light/small{
@@ -2440,7 +2440,7 @@
 	name = "Fortress Airlock"
 	},
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "hj" = (
 /obj/structure/closet/emcloset,
@@ -2582,7 +2582,7 @@
 "hI" = (
 /obj/machinery/telepad,
 /obj/effect/step_trigger/ironcompound_to_abandonedfortress_2_A,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "hJ" = (
 /obj/machinery/light/small{
@@ -2612,7 +2612,7 @@
 /area/outpost/abandoned_fortress)
 "hN" = (
 /obj/random/scrap/dense_weighted,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "hO" = (
 /obj/machinery/door/airlock/centcom{
@@ -2620,7 +2620,7 @@
 	},
 /obj/random/traps/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "hP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2937,7 +2937,7 @@
 /turf/simulated/floor/tiled/white/brown_perforated,
 /area/outpost/abandoned_fortress)
 "iN" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/brown_platform,
@@ -3163,7 +3163,7 @@
 /turf/simulated/floor/tiled,
 /area/outpost/abandoned_fortress)
 "jv" = (
-/obj/structure/table/bench/steel,
+/obj/structure/table/bench/aluminium,
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/outpost/abandoned_fortress)
@@ -3395,7 +3395,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "kl" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3495,7 +3495,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/circuitboard,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "kw" = (
 /obj/structure/table/rack,
@@ -3942,7 +3942,7 @@
 /area/outpost/abandoned_fortress)
 "lH" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "lI" = (
 /obj/random/cluster/xenomorphs/low_chance,
@@ -3972,7 +3972,7 @@
 	pixel_y = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "lN" = (
 /obj/effect/decal/cleanable/blood/gibs,
@@ -4010,7 +4010,7 @@
 /obj/random/tool/low_chance,
 /obj/random/techpart,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "lT" = (
 /obj/effect/decal/cleanable/blood/gibs/limb,
@@ -4024,7 +4024,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "lV" = (
 /obj/effect/decal/cleanable/blood/gibs/up,
@@ -4068,7 +4068,7 @@
 "mb" = (
 /obj/random/structures/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "mc" = (
 /obj/structure/table/rack/shelf,
@@ -4104,7 +4104,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "mh" = (
 /obj/structure/table/rack/shelf,
@@ -4147,9 +4147,9 @@
 	pixel_y = 4
 	},
 /obj/item/device/radio/off,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "mm" = (
 /obj/random/cluster/xenomorphs/low_chance,
@@ -4162,7 +4162,7 @@
 /obj/random/structures/low_chance,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "mo" = (
 /obj/random/cluster/xenomorphs/low_chance,
@@ -4190,7 +4190,7 @@
 /obj/item/storage/briefcase/inflatable,
 /obj/structure/table/steel_reinforced,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/outpost/abandoned_fortress)
 "ms" = (
 /obj/structure/ore_box,
@@ -4468,7 +4468,7 @@
 "nm" = (
 /obj/effect/decal/cleanable/blood/gibs/core,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/outpost/abandoned_fortress)
 "nn" = (
 /obj/structure/table/rack,
@@ -4507,10 +4507,10 @@
 /obj/machinery/drone_fabricator/derelict{
 	fabricator_tag = "Space Fortress"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress)
 "nv" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/outpost/abandoned_fortress)
 "nw" = (
 /obj/structure/table/reinforced,

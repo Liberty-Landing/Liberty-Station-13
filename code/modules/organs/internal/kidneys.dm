@@ -46,7 +46,7 @@
 	icon_state = "kidneys-prosthetic"
 	price_tag = 100
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 	organ_efficiency = list(OP_KIDNEYS = 50)
 
 /obj/item/organ/internal/kidney/prosthetic/left

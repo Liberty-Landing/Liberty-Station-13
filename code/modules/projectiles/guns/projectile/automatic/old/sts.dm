@@ -11,7 +11,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 12)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 12)
 	price_tag = 850
 	fire_sound = 'sound/weapons/guns/fire/ltrifle_fire.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'
@@ -61,7 +61,7 @@
 	item_state = "sts"
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_NORMAL
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_WOOD = 6)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_WOOD = 6)
 	price_tag = 600
 	init_recoil = RIFLE_RECOIL(1.2)
 	saw_off = FALSE
@@ -108,7 +108,7 @@
 	penetration_multiplier = 1.0
 	init_recoil = RIFLE_RECOIL(1.4)
 	saw_off = FALSE
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 6)
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY,
 		BURST_2_ROUND,
@@ -164,7 +164,7 @@
 	saw_off = FALSE
 	max_upgrades = 2 // We got good baseline lets not get out of hand here
 	fire_sound = 'sound/weapons/guns/fire/NM_PARA.ogg'
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 6)
 	serial_type = "NM"
 
 	blacklist_upgrades = list(/obj/item/tool_upgrade/augment/expansion = TRUE,
@@ -184,7 +184,7 @@
 	name = "STS rifle frame"
 	desc = "An STS rifle frame. Cheap, effective, and replaceable."
 	icon_state = "frame_sts"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/sts/rifle
 	gripvars = list(/obj/item/part/gun/grip/serb, /obj/item/part/gun/grip/rubber)
 	resultvars = list(/obj/item/gun/projectile/automatic/sts/rifle, /obj/item/gun/projectile/automatic/sts/rifle/blackshield)

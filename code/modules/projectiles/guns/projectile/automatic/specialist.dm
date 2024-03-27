@@ -12,7 +12,7 @@
 	ammo_type = /obj/item/ammo_casing/pistol_35
 	load_method = MAGAZINE
 	mag_well = MAG_WELL_PISTOL|MAG_WELL_H_PISTOL|MAG_WELL_SMG|MAG_WELL_DRUM
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5, MATERIAL_WOOD = 12)
 	init_firemodes = list(
 		FULL_AUTO_600_NOLOSS,
 		BURST_3_ROUND_NOLOSS,
@@ -36,7 +36,7 @@
 	name = "Five-Oh frame"
 	desc = "A Five-Oh SMG. A hallway pirate's best dream."
 	icon_state = "frame_luty"
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	resultvars = list(/obj/item/gun/projectile/automatic/specialist)
 	gripvars = list(/obj/item/part/gun/grip/rubber)
 	mechanismvar = /obj/item/part/gun/mechanism/smg

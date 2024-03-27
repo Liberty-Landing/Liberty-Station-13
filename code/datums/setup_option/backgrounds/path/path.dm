@@ -105,6 +105,7 @@
 
 	stat_modifiers = list(STAT_TGH = -5, STAT_WIL = 5)
 
+//put the funny special hearthcore module here
 /*
 /datum/category_item/setup_option/background/habit/psi_sufficiency
 	name = "Enlightened Scholar"

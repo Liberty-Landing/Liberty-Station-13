@@ -111,7 +111,7 @@
 				if (src.stage == 1)
 					to_chat(user, "You begin deconstructing \a [src].")
 					if(I.use_tool(user, src, WORKTIME_NORMAL, tool_type, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
-						new /obj/item/stack/material/steel( get_turf(src.loc), sheets_refunded )
+						new /obj/item/stack/material/aluminium( get_turf(src.loc), sheets_refunded )
 						user.visible_message("[user.name] deconstructs [src].", \
 							"You deconstruct [src].", "You hear a noise.")
 						qdel(src)

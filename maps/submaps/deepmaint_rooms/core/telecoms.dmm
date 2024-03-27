@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ab" = (
 /turf/simulated/wall/r_wall,
@@ -15,7 +15,7 @@
 /obj/item/trash/material/circuit,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "ah" = (
 /obj/random/pack/tech_loot,
@@ -48,7 +48,7 @@
 /area/deepmaint)
 "ap" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ar" = (
 /obj/item/circuitboard/broken,
@@ -101,12 +101,12 @@
 /obj/item/trash/material/device,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "aD" = (
 /obj/machinery/door/airlock/vault/bolted,
 /obj/item/mine_old,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aE" = (
 /obj/machinery/light,
@@ -119,7 +119,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/salvageable/server,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "aH" = (
 /obj/machinery/telecomms/relay,
@@ -131,7 +131,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "aI" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -148,7 +148,7 @@
 /obj/item/remains/human,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "aK" = (
 /obj/machinery/constructable_frame/machine_frame,
@@ -251,12 +251,12 @@
 /obj/item/stack/cable_coil/green,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bd" = (
 /obj/structure/inflatable/door,
 /obj/item/mine/improvised,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bf" = (
 /obj/item/circuitboard/telecomms/processor,
@@ -339,7 +339,7 @@
 /obj/item/stack/cable_coil/orange,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bs" = (
 /obj/structure/foamedmetal,
@@ -427,7 +427,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/computer_hardware/network_card/advanced,
 /obj/item/storage/box/data_disk/basic,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bG" = (
 /obj/random/closet_tech,
@@ -440,7 +440,7 @@
 /obj/item/circuitboard/broken,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bJ" = (
 /obj/item/circuitboard/telecomms/server,
@@ -448,14 +448,14 @@
 /obj/item/stack/cable_coil/white,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bK" = (
 /obj/item/stack/material/plastic/random,
 /obj/random/techpart,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "bL" = (
 /obj/item/trash/material/circuit,
@@ -580,7 +580,7 @@
 /area/deepmaint)
 "ch" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ci" = (
 /obj/structure/firedoor_assembly,
@@ -590,7 +590,7 @@
 /area/deepmaint)
 "cj" = (
 /obj/machinery/light/floor/built,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ck" = (
 /obj/random/techpart,
@@ -630,11 +630,11 @@
 /area/deepmaint)
 "cp" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cq" = (
 /obj/effect/window_lwall_spawn/reinforced,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "cr" = (
 /obj/structure/foamedmetal,
@@ -645,7 +645,7 @@
 "cs" = (
 /obj/machinery/door/blast/regular/open,
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "eg" = (
 /obj/machinery/light/floor/built,
@@ -655,11 +655,11 @@
 "gC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/cluster/psi_monster,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ko" = (
 /obj/structure/salvageable/computer,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "kS" = (
 /obj/random/techpart,
@@ -672,13 +672,13 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/computer_hardware/card_slot,
 /mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "nc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/hivebot/range,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "ns" = (
 /obj/random/pack/tech_loot,
@@ -697,7 +697,7 @@
 /obj/item/trash/material/metal,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "px" = (
 /obj/effect/decal/cleanable/dirt,
@@ -724,7 +724,7 @@
 "tC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/salvageable/computer,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ww" = (
 /obj/structure/foamedmetal,
@@ -746,11 +746,11 @@
 /obj/structure/AIcore,
 /obj/item/device/aicard,
 /obj/item/computer_hardware/hard_drive/portable/advanced/shady,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "CF" = (
 /obj/random/junkfood,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "Ds" = (
 /obj/machinery/door/airlock/vault/bolted,
@@ -766,7 +766,7 @@
 /area/deepmaint)
 "Hd" = (
 /obj/random/cluster/psi_monster,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "HK" = (
 /obj/item/circuitboard/broken,
@@ -774,7 +774,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/computer_hardware/ai_slot,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "HW" = (
 /obj/effect/decal/cleanable/dirt,
@@ -796,7 +796,7 @@
 /obj/random/techpart,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel/bar_dance,
+/turf/simulated/floor/tiled/aluminium/bar_dance,
 /area/deepmaint)
 "Pp" = (
 /obj/random/pack/tech_loot,
@@ -824,7 +824,7 @@
 /area/deepmaint)
 "Td" = (
 /obj/structure/foamedmetal,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "VS" = (
 /obj/item/trash/material/metal,

@@ -208,9 +208,9 @@
 	hoodtype = /obj/item/clothing/head/hood/techpriest
 
 /obj/item/clothing/suit/hooded/absolutecloak
-	name = "absolutist cloak"
+	name = "cultist cloak"
 	icon_state = "absolutecloak"
-	desc = "A simple charcoal cloak with gold livery for showing off your Bonfire devotion. Comes with a large hood."
+	desc = "A simple charcoal cloak with gold livery for showing off your Cultist devotion. Comes with a large hood."
 	w_class = ITEM_SIZE_SMALL
 	armor_list = list(
 		melee = 0,

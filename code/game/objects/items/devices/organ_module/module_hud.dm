@@ -3,7 +3,7 @@
 	desc = "If you see this hud in game, congratulation!"
 	verb_name = "Activate Hud"
 	icon_state = "hud"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_GLASS = 2)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 2)
 	allowed_organs = list(BP_HEAD)
 	var/obj/item/clothing/glasses/holding = null
 	var/holding_type = null

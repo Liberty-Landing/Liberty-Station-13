@@ -53,32 +53,36 @@
 		/obj/item/rig_module/maneuvering_jets,
 		/obj/item/rig_module/storage
 		)
-/* Pending CustodianIRR sprites later
-/obj/item/rig/combat/knight
-	name = "hussar hardsuit control module"
-	desc = "A RIG module for a \"Hussar\" model hardsuit, jointly manufactured by Divisors and Numericals of the New Testament. \
-	The Tau Cross shining brightly upon its shoulder, it offers moderate combat protection against many a type of threat to the Bonfire."
-	icon_state = "hussar_rig" //Rig modula by Gundam Tanaka#9565
-	suit_type = "hussar rig"
+/*
+Pending CustodianIRR sprites later
+/obj/item/rig/combat/custodianirr
+	name = "Heavy CustodianIRR RIG"
+	desc = " A cherished Custodian creation, the design of this heavy Rigsuit has became the base for many next generation Federation RIGs.\
+	While its protection surpasses many modern Rigs, it remains unmodifiable, adhering to Custodian armor constraints. \
+	Despite its artificial muscles, the suit is slower due to its substantial weight. \
+	However, it provides comfort and would be even heavier without such innovation. \
+	Crafted out of fear of a potential coalition attack in the past, it predates Elohopea's time before they were under the Federation's flag."
+	icon_state = "custodianirr"
+	suit_type = "custodianirr" // Rig Sprite still going to be made
 	armor_list = list(
-		melee = 50,
-		bullet = 45,
-		energy = 30,
-		bomb = 50,
+		melee = 60,
+		bullet = 66,
+		energy = 60,
+		bomb = 60,
 		bio = 100,
 		rad = 50
 	)
-	slowdown = 0.3
-	drain = 4
-	offline_slowdown = 3
+	slowdown = 0.6
+	drain = 5
+	offline_slowdown = 5 //unpowered, it is the WORST thing in the world. There is practically a mountain on your back.
 	offline_vision_restriction = 1
-	max_upgrades = 1
-	chest_type = /obj/item/clothing/suit/space/rig/combat/knight
-	helm_type =  /obj/item/clothing/head/helmet/space/rig/combat/knight
-	boot_type =  /obj/item/clothing/shoes/magboots/rig/combat/knight
-	glove_type = /obj/item/clothing/gloves/rig/combat/knight
+	max_upgrades = 0
+	chest_type = /obj/item/clothing/suit/space/rig/combat/custodianirr
+	helm_type =  /obj/item/clothing/head/helmet/space/rig/combat/custodianirr
+	boot_type =  /obj/item/clothing/shoes/magboots/rig/combat/custodianirr
+	glove_type = /obj/item/clothing/gloves/rig/combat/custodianirr
 
-/obj/item/rig/combat/knight/equipped
+/obj/item/rig/combat/custodianirr/equipped
 	initial_modules = list(
 		/obj/item/rig_module/storage,
 		/obj/item/rig_module/device/flash,
@@ -86,23 +90,23 @@
 		/obj/item/rig_module/held/shield
 		)
 
-/obj/item/clothing/suit/space/rig/combat/knight //Suit by Polyushko#0323
-	name = "hussar hardsuit breastplate"
+/obj/item/clothing/suit/space/rig/combat/knight
+	name = "custodianirr hardsuit breastplate"
 
-/obj/item/clothing/gloves/rig/combat/knight //Gloves by Gundam Tanaka#9565
-	name = "hussar hardsuit gauntlets"
+/obj/item/clothing/gloves/rig/combat/knight //I LOVE Gundam Tanaka#9565 PLATONICALLY!!!
+	name = "custodianirr hardsuit gauntlets"
 
-/obj/item/clothing/shoes/magboots/rig/combat/knight //Boots by Gundam Tanaka#9565
-	name = "hussar hardsuit greaves"
+/obj/item/clothing/shoes/magboots/rig/combat/custodianirr //I LOVE Gundam Tanaka#9565 PLATONICALLY!!!
+	name = "custodianirr hardsuit greaves"
 
-/obj/item/clothing/head/helmet/space/rig/combat/knight //Helm by Polyushko#0323
-	name = "hussar hardsuit full helm"
-	desc = "One's spirit is generally the greatest shield."
+/obj/item/clothing/head/helmet/space/rig/combat/custodianirr
+	name = "Custodianirr Oval Helmet"
+	desc = "A helmet of genuine skull-protection goodness. You better hope this will never go unpowered, otherwise you got a mountain weighting down your spine."
 	light_overlay = "helmet_light_dual"
 	armor_list = list(
 		melee = 50,
-		bullet = 40,
-		energy = 30,
+		bullet = 50,
+		energy = 50,
 		bomb = 50,
 		bio = 100,
 		rad = 50

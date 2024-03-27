@@ -50,7 +50,7 @@
 	name = "cryostasis beaker"
 	desc = "A cryostasis beaker that allows for chemical storage without reactions."
 	icon_state = "beakernoreact"
-	matter = list(MATERIAL_GLASS = 1, MATERIAL_STEEL = 2)
+	matter = list(MATERIAL_GLASS = 1, MATERIAL_ALUMINIUM = 2)
 	volume = 60
 	amount_per_transfer_from_this = 10
 	reagent_flags = OPENCONTAINER | NO_REACT
@@ -59,7 +59,7 @@
 	name = "bluespace beaker"
 	desc = "A bluespace beaker, powered by experimental bluespace technology."
 	icon_state = "beakerbluespace"
-	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASMA = 1)
+	matter = list(MATERIAL_ALUMINIUM = 4, MATERIAL_HYDROGENC = 1)
 	volume = 300
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list(5,10,15,25,30,60,100,120,300)
@@ -184,6 +184,6 @@
 
 /obj/item/reagent_containers/glass/urn/veteran
 	name = "Martyr's Urn"
-	desc = "An urn filled with mixed ashes from the faithful defenders of New Byzantine. Only a very small number of bodies could be retrieved from the planet after its occupation by Terran forces, each one coming at terrible risk. Augustine has declared the ashes a relic of all those who died in defense of the faith. Do not spill."
+	desc = "An urn filled with mixed ashes from many circhosian cultists. This has been captured by the custodians and sometimes they spill it out for fun. Nothing better than degrade the bodies of your enemies, right?"
 	icon_state = "saint_urn"
 	preloaded_reagents = list("carbon" = 30)

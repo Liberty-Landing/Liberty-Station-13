@@ -8,7 +8,7 @@
 	w_class = ITEM_SIZE_HUGE
 	force = WEAPON_FORCE_ROBUST
 	slot_flags = SLOT_BACK
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_STEEL = 15)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_ALUMINIUM = 15)
 	proj_step_multiplier = 1.2
 	ammo_type = /obj/item/ammo_casing/shotgun/pellet/scrap
 	price_tag = 750

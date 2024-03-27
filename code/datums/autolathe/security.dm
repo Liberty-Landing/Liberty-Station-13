@@ -33,12 +33,12 @@
 /datum/design/autolathe/sec/acog
 	name = "acog scope"
 	build_path = /obj/item/gun_upgrade/scope/acog
-	materials = list(MATERIAL_GLASS = 4, MATERIAL_STEEL = 2) // Double materials, prevents obtaining more than used.
+	materials = list(MATERIAL_GLASS = 4, MATERIAL_ALUMINIUM = 2) // Double materials, prevents obtaining more than used.
 
 /datum/design/autolathe/sec/gun_case
 	name = "gun case"
 	build_path = /obj/item/storage/backpack/guncase
-	materials = list(MATERIAL_PLASTIC = 7, MATERIAL_STEEL = 2)
+	materials = list(MATERIAL_PLASTIC = 7, MATERIAL_ALUMINIUM = 2)
 
 /datum/design/autolathe/sec/hailer
 	name = "hailer"
@@ -72,4 +72,4 @@
 /datum/design/autolathe/sec/bastion
 	name = "bastion shield"
 	build_path = /obj/item/shield/riot/bastion
-	materials = list(MATERIAL_PLASMAGLASS = 3, MATERIAL_OSMIUM = 1) //So making it at the guild is objectively always better
+	materials = list(MATERIAL_LBGLASS = 3, MATERIAL_COMPOSITE = 1) //So making it at the guild is objectively always better

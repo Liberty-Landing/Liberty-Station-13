@@ -13,7 +13,7 @@
 	projectile_color = "#0000FF"
 	origin_tech = list(TECH_COMBAT = 5, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
-	matter = list(MATERIAL_PLASTEEL = 13, MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_GLASS = 4)
+	matter = list(MATERIAL_INDSTEEL = 13, MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 2, MATERIAL_SILVER = 2, MATERIAL_GLASS = 4)
 	price_tag = 850
 	damage_multiplier = 0.8
 	init_recoil = CARBINE_RECOIL(0.2)

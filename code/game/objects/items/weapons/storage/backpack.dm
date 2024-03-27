@@ -85,7 +85,7 @@
 	icon_state = "holdingpack"
 	max_w_class = ITEM_SIZE_BULKY
 	max_storage_space = DEFAULT_HUGE_STORAGE * 2
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_GOLD = 10, MATERIAL_DIAMOND = 5, MATERIAL_URANIUM = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GOLD = 10, MATERIAL_DIAMOND = 5, MATERIAL_URANIUM = 5)
 	var/bluespace_safe = FALSE
 
 /obj/item/storage/backpack/holding/New()
@@ -235,7 +235,7 @@
 	can_hold = list(/obj/item/gun,
 		/obj/item/ammo_magazine
 		)
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_PLASTIC = 4)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_PLASTIC = 4)
 
 /*
  * Backsport Types (alternative style)

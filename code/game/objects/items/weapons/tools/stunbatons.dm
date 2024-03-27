@@ -27,7 +27,7 @@
 	cell = /obj/item/cell/medium/high
 	var/slime_killer = FALSE
 	structure_damage_factor = STRUCTURE_DAMAGE_BLUNT
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 1, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GLASS = 1, MATERIAL_PLASTIC = 10)
 
 /obj/item/tool/baton/maul
 	name = "shock maul"
@@ -56,7 +56,7 @@
 	glow_color = COLOR_LIGHTING_ORANGE_BRIGHT
 	cell = /obj/item/cell/large/high
 	structure_damage_factor = STRUCTURE_DAMAGE_BLUNT
-	matter = list(MATERIAL_STEEL = 20, MATERIAL_PLASTEEL = 15, MATERIAL_SILVER = 10)
+	matter = list(MATERIAL_ALUMINIUM = 20, MATERIAL_INDSTEEL = 15, MATERIAL_SILVER = 10)
 
 /obj/item/tool/baton/maul/attack()
 	..()
@@ -81,7 +81,7 @@
 	use_power_cost = 0.4
 	suitable_cell = /obj/item/cell/small
 	cell = /obj/item/cell/small/high
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 1, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_GLASS = 1, MATERIAL_PLASTIC = 5)
 
 /obj/item/tool/baton/turn_on(mob/user)
 	if (cell && cell.charge > 0)
@@ -249,12 +249,12 @@
 	attack_verb = list("battered")
 	slot_flags = SLOT_BELT
 	structure_damage_factor = STRUCTURE_DAMAGE_NORMAL
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_INDSTEEL = 5)
 	cell = /obj/item/cell/medium/excelsior
 
 /obj/item/tool/baton/slimebaton
 	name = "xenobio baton"
-	desc = "A stunbaton that is designed against slimes and other lab misstakes."
+	desc = "A stunbaton that is designed against slimes and other lab mistakes."
 	icon_state = "prod_si"
 	item_state = "prod_si"
 	force = WEAPON_FORCE_NORMAL
@@ -266,7 +266,7 @@
 	slime_killer = TRUE
 	slot_flags = null
 	cell = null
-	matter = list(MATERIAL_STEEL = 13, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 13)
+	matter = list(MATERIAL_ALUMINIUM = 13, MATERIAL_GLASS = 2, MATERIAL_PLASTIC = 13)
 
 //Arc Welder both a welder and a stunbaton in one
 
@@ -279,7 +279,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	worksound = WORKSOUND_WELDING
 	switched_on_qualities = list(QUALITY_WELDING = 45, QUALITY_PULSING = 30, QUALITY_WIRE_CUTTING = 15, QUALITY_CAUTERIZING = 10)
-	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 3)
 	price_tag = 1000 //valuable given its design
 	use_power_cost = 1.2
 	sparks_on_use = TRUE
@@ -303,7 +303,7 @@
 	w_class = ITEM_SIZE_NORMAL
 	worksound = WORKSOUND_WELDING
 	switched_on_qualities = list(QUALITY_WELDING = 85, QUALITY_PULSING = 70, QUALITY_WIRE_CUTTING = 25, QUALITY_CAUTERIZING = 40)
-	matter = list(MATERIAL_PLASTEEL = 2, MATERIAL_PLASTIC = 3)
+	matter = list(MATERIAL_INDSTEEL = 2, MATERIAL_PLASTIC = 3)
 	price_tag = 7000 //valuable given its design
 	use_power_cost = 0.2
 	sparks_on_use = FALSE

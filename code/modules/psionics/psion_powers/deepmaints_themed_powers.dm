@@ -81,16 +81,16 @@
 
 /obj/item/organ/internal/psionic_tumor/proc/merge_flesh_and_steel()
 	set category = "Psionic powers"
-	set name = "Merge Flesh and Steel (10)"
+	set name = "Merge Flesh and aluminium (10)"
 	set desc = "Expend a massive pool of ten psi points and your own body to become something greater. To grasp at perfection, one must make sacrifices..."
 	psi_point_cost = 10
 
 
 	if(pay_power_cost(psi_point_cost))
-		if(alert(usr, "Are you sure you want to do this? It will absoutely kill you.", "Merge Flesh and Steel", "Yes", "No") == "Yes")
+		if(alert(usr, "Are you sure you want to do this? It will absoutely kill you.", "Merge Flesh and aluminium", "Yes", "No") == "Yes")
 			new /obj/machinery/hivemind_machine/node(owner.loc)
 			owner.gib()
-			log_and_message_admins("[owner] has merged flesh and steel and become a hivemind node!")
+			log_and_message_admins("[owner] has merged flesh and aluminium and become a hivemind node!")
 
 
 /obj/item/organ/internal/psionic_tumor/proc/ascend_another()

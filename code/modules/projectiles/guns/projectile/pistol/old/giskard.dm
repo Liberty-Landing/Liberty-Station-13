@@ -13,7 +13,7 @@
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3)
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL | MAG_WELL_H_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 4)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 4)
 	price_tag = 300
 	damage_multiplier = 1
 	penetration_multiplier = 0.8

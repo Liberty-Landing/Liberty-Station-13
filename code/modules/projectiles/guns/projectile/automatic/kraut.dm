@@ -12,7 +12,7 @@
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_RIFLE
 	auto_eject = 1
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 15)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_PLASTIC = 15)
 	price_tag = 1200	//Caseless, scope, that shit.
 	fire_sound = 'sound/weapons/guns/fire/m41_shoot.ogg'
 	unload_sound 	= 'sound/weapons/guns/interact/ltrifle_magout.ogg'

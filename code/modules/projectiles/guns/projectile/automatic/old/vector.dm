@@ -18,7 +18,7 @@
 	slot_flags = SLOT_BELT|SLOT_HOLSTER
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_SMG|MAG_WELL_PISTOL
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3, MATERIAL_PLASMA = 2, MATERIAL_GOLD = 1) //Some rare ones so they dont just mass make this shift start without some good rng
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_PLASTIC = 12, MATERIAL_GLASS = 5, MATERIAL_SILVER = 3, MATERIAL_HYDROGENC = 2, MATERIAL_GOLD = 1) //Some rare ones so they dont just mass make this shift start without some good rng
 	price_tag = 1000
 	damage_multiplier = 0.7 //Not the best gun in the world
 	init_recoil = SMG_RECOIL(1)

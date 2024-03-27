@@ -203,7 +203,7 @@
 
 /obj/item/clothing/suit/storage/neotheosports
 	name = "church sports jacket"
-	desc = "Bonfire styled sports jacket to keep the faithful always on their feet."
+	desc = "Bonfire styled sports jacket to keep the knights always on their feet."
 	icon_state = "nt_sportsjacket"
 	item_state = "nt_sportsjacket"
 	body_parts_covered = UPPER_TORSO|ARMS

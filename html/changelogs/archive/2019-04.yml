@@ -79,7 +79,7 @@
   - tweak: Adjusted a lot of cargo prices, especially in engineering.
   - tweak: Separated the surplus RIG and surplus space suit into two different categories
       and added a rig module crate.
-  - tweak: Added an expensive plasteel crate to engineering in cargo.
+  - tweak: Added an expensive indsteel crate to engineering in cargo.
   - tweak: Switched damage values of 10mm and .45.
   soslow4u:
   - bugfix: Fixed Magboots movement.

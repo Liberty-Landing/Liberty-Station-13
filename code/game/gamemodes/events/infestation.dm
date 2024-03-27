@@ -178,15 +178,15 @@ It focuses on spawning large numbers of moderate-to-weak monsters, and includes 
 			chosen_mob_classification[/obj/effect/spider/eggcluster] = 0.2
 			chosen_mob_classification[/obj/structure/spider_nest] = 0.1
 		if(INFESTATION_SPIDERS)
-			event_name = "Spider Infestation"
+			event_name = "Perniciosus Spider Infestation"
 			chosen_verb = "have burrowed into"
 			chosen_mob_classification += /obj/random/mob/spiders
 		if(INFESTATION_ROACHES)
-			event_name = "Giant Roach Infestation"
+			event_name = "Giant Perniciosus Roach Infestation"
 			chosen_verb = "have burrowed into"
 			chosen_mob_classification += /obj/random/mob/roaches
 		if(INFESTATION_TERMIE)
-			event_name = "Giant Termite Infestation"
+			event_name = "Giant Perniciosus Termite Infestation"
 			chosen_verb = "have burrowed into"
 			chosen_mob_classification += /obj/random/mob/termite_no_despawn
 /*		if(INFESTATION_YITHIAN)
@@ -246,8 +246,8 @@ It focuses on spawning large numbers of moderate-to-weak monsters, and includes 
 		if (areanames.len)
 			switch(severity)
 				if (EVENT_LEVEL_MUNDANE)
-					command_announcement.Announce("Bioscans indicate that [chosen_mob] [chosen_verb] [english_list(areanames)]. Clear them out before this starts to affect productivity.", event_name, new_sound = 'sound/AI/vermin.ogg')
+					command_announcement.Announce("Attention. Bioscans indicate that [chosen_mob] [chosen_verb] [english_list(areanames)]. Clear them out before this starts to affect productivity.", event_name, new_sound = 'sound/AI/vermin.ogg')
 				if (EVENT_LEVEL_MODERATE)
-					command_announcement.Announce("Bioscans indicate that [chosen_mob] [chosen_verb] [english_list(areanames)]. Security are advised to approach with caution.", event_name, new_sound = 'sound/AI/vermin.ogg')
+					command_announcement.Announce("Bioscans indicate that [chosen_mob] [chosen_verb] [english_list(areanames)]. Custodians are advised to engage for pest control.", event_name, new_sound = 'sound/AI/vermin.ogg')
 				if (EVENT_LEVEL_MAJOR)
-					command_announcement.Announce("Colony Wide Alert: Bioscans indicate that [chosen_mob] [chosen_verb] [english_list(areanames)]. Crew are advised to evacuate those areas immediately.", event_name, new_sound = 'sound/AI/vermin.ogg')
+					command_announcement.Announce("Colony Wide Alert: Bioscans indicate that [chosen_mob] [chosen_verb] [english_list(areanames)]. Crew are advised to evacuate those areas immediately as Custodian pest control takes place.", event_name, new_sound = 'sound/AI/vermin.ogg')

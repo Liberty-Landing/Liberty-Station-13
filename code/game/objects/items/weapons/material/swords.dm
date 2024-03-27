@@ -8,15 +8,15 @@
 	item_state = "claymore"
 	slot_flags = SLOT_BELT
 	armor_penetration = ARMOR_PEN_EXTREME
-	force_divisor = 0.7 // 42 when wielded with hardnes 60 (steel)
-	thrown_force_divisor = 0.5 // 10 when thrown with weight 20 (steel)
+	force_divisor = 0.7 // 42 when wielded with hardnes 60 (aluminium)
+	thrown_force_divisor = 0.5 // 10 when thrown with weight 20 (aluminium)
 	sharp = 1
 	edge = 1
 	attack_verb = list("attacked", "slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	tool_qualities = list(QUALITY_CUTTING = 10)
 	structure_damage_factor = STRUCTURE_DAMAGE_BLADE
-	default_material = MATERIAL_STEEL
+	default_material = MATERIAL_ALUMINIUM
 	has_alt_mode = TRUE
 	alt_mode_toggle = "flips their grip to use the blunt side of the blade"
 	alt_mode_lossrate = 1
@@ -39,14 +39,17 @@
 /obj/item/material/sword/uranium
 	default_material = MATERIAL_URANIUM
 
-/obj/item/material/sword/plasteel
-	default_material = MATERIAL_PLASTEEL
+/obj/item/material/sword/indsteel
+	default_material = MATERIAL_INDSTEEL
 
 /obj/item/material/sword/platinum
-	default_material = MATERIAL_PLATINUM
+	default_material = MATERIAL_TITANIUM
 
 /obj/item/material/sword/iron
 	default_material = MATERIAL_IRON
+
+/obj/item/material/sword/niobium
+	default_material = MATERIAL_NIOBIUM
 
 /obj/item/material/sword/silver
 	default_material = MATERIAL_SILVER
@@ -82,14 +85,17 @@
 /obj/item/material/sword/katana/uranium
 	default_material = MATERIAL_URANIUM
 
-/obj/item/material/sword/katana/plasteel
-	default_material = MATERIAL_PLASTEEL
+/obj/item/material/sword/katana/indsteel
+	default_material = MATERIAL_INDSTEEL
 
 /obj/item/material/sword/katana/platinum
-	default_material = MATERIAL_PLATINUM
+	default_material = MATERIAL_TITANIUM
 
 /obj/item/material/sword/katana/iron
 	default_material = MATERIAL_IRON
+
+/obj/item/material/sword/katana/niobium
+	default_material = MATERIAL_NIOBIUM
 
 /obj/item/material/sword/katana/silver
 	default_material = MATERIAL_SILVER

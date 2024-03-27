@@ -106,7 +106,7 @@
 	icon_state = "syrette_inopravoline"
 	item_state = "syrette_inopravoline"
 	amount_per_transfer_from_this = 5
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 1)
 	reagent_flags = INJECTABLE | DRAINABLE | AMOUNT_VISIBLE | REFILLABLE
 	volume = 5
 	preloaded_reagents = list("inaprovaline" = 5)

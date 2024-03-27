@@ -275,6 +275,17 @@
 			real_damage *= damage_multiplier
 			real_damage += H.punch_damage_increase
 			stat_damage *= damage_multiplier
+			if(frost_punch > 0)
+				frost += frost_punch
+			if(fire_punch > 0)
+				fire_stacks += fire_punch
+				fire_act()
+			if(water_punch > 0)
+				fire_stacks -= water_punch
+				fire_act()
+			if(eletric_punch > 0)
+				damage_through_armor(real_damage, (attack.deal_halloss ? HALLOSS : BURN), affecting, ARMOR_ENERGY, sharp = attack.sharp, edge = attack.edge)
+
 			if(HULK in H.mutations)
 				real_damage *= 2 // Hulks do twice the damage
 				stat_damage *= 2
@@ -286,6 +297,12 @@
 			// Finally, apply damage to target
 			damage_through_armor(real_damage, (attack.deal_halloss ? HALLOSS : BRUTE), affecting, ARMOR_MELEE, sharp = attack.sharp, edge = attack.edge)
 			hit_impact(real_damage, get_step(H, src))
+
+// Check if we're wearing custodian cestus, and cause a scorch attack on our target if so.
+			if(H.shining_finger)
+				msg_admin_attack("[key_name(M)] lit [src.name] ([src.ckey]) in fire using a flame cestus.")
+				visible_message(SPAN_DANGER("[H]'s punch lights [src] up in flames!"))
+				scorch_attack(src, 15)
 
 		if(I_DISARM)
 			M.attack_log += text("\[[time_stamp()]\] <font color='red'>Disarmed [src.name] ([src.ckey])</font>")
@@ -490,3 +507,4 @@
 	claws/strong/attack_name = "strong claws"
 	horns/attack_name = "horns"
 	tail/attack_name = "tail strike"
+//

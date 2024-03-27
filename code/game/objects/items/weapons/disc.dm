@@ -7,7 +7,7 @@
 	flags = CONDUCT
 	force = WEAPON_FORCE_WEAK
 	throwforce = WEAPON_FORCE_WEAK
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_ALUMINIUM = 1)
 
 //The return of data disks?? Just for transferring between genetics machine/cloning machine.
 //TO-DO: Make the genetics machine accept them.

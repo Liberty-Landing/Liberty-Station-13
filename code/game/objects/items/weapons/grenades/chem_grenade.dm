@@ -11,7 +11,7 @@
 	force = WEAPON_FORCE_HARMLESS
 	det_time = null
 	unacidable = 1
-	matter = list(MATERIAL_STEEL = 3)
+	matter = list(MATERIAL_ALUMINIUM = 3)
 	variance = 0.25
 
 	var/can_be_modified = TRUE
@@ -194,7 +194,7 @@
 	allowed_containers = list(/obj/item/reagent_containers/glass, )
 	origin_tech = list(TECH_COMBAT = 3, TECH_MATERIAL = 3)
 	affected_area = 4
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 
 /obj/item/grenade/chem_grenade/large/moebius
 	name = "large Phokorus Institute chem grenade"
@@ -312,7 +312,7 @@
 	name = "Bonfire \"Kudzu Killer\""
 	desc = "Custodians-brand weedkiller grenades. Designed to deal with vine infestations."
 	icon_state = "foam"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_PLASTIC = 2, MATERIAL_BIO_SILK = 5)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_PLASTIC = 2, MATERIAL_BIO_SILK = 5)
 	matter_reagents = list("water" = 30)
 
 /obj/item/grenade/chem_grenade/cleaner
@@ -327,7 +327,7 @@
 	name = "Bonfire \"Cleanse Capsule\""
 	desc = "Custodians-brand cleaner grenades. Designed to deal with scorch accidents and the aftermaths of wildlife hordes in the colony."
 	icon_state = "foam"
-	matter = list(MATERIAL_STEEL = 3, MATERIAL_BIOMATTER = 5)
+	matter = list(MATERIAL_ALUMINIUM = 3, MATERIAL_BIOMATTER = 5)
 	matter_reagents = list("water" = 30)
 
 /obj/item/grenade/chem_grenade/cleaner/Initialize()
@@ -367,6 +367,10 @@
 
 	beakers += B1
 	beakers += B2
+
+/obj/item/grenade/chem_grenade/teargas/nt
+	name = "Bonfire TGG \"Red Mist\""
+	desc = "Concentrated Capsaicin teargas grenade. Contents under pressure. Use with caution."
 
 #undef EMPTY
 #undef WIRED

@@ -186,7 +186,7 @@
   - balance: Hormone speed boost effect increased to 0.25
   assortedbeads:
   - tweak: Techno Rig has the Light_Slowdown Flag now, same as the TE Rig
-  - tweak: Armor parts now recycle for 10 steel and 10 plastic, same as the cost to
+  - tweak: Armor parts now recycle for 10 aluminium and 10 plastic, same as the cost to
       print them.
   maikilangiolo:
   - bugfix: fixed .20 scrap stripper clip icons
@@ -235,8 +235,8 @@
   - refactor: refactored frame assembly code
   - rscadd: addedd new crafting recipies for all makeshift gun frames
   - tweak: now makeshift guns are assembled from frames and regular gun parts
-  - balance: rebalanced ammo hardcase steel cost 20 -> 15
-  - balance: reduced flare shotgun steel cost
+  - balance: rebalanced ammo hardcase aluminium cost 20 -> 15
+  - balance: reduced flare shotgun aluminium cost
 2022-09-20:
   Pink-Chink:
   - rscadd: Added a placeholder sprite for tool mods

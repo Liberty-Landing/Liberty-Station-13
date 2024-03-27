@@ -214,7 +214,7 @@
 	name = "Abandoned Pool"
 	icon_state = "erisblue"
 
-/area/liberty/maintenance/caveameridian
+/area/liberty/maintenance/cavenacre
 	name = "Underground Floor 2 North Anomalous Cave"
 	icon_state = "erisblue"
 
@@ -1775,8 +1775,8 @@ area/liberty/medical/medbaymeeting
 	name = "\improper Xenoflora Lab"
 	icon_state = "xeno_f_lab"
 
-/area/liberty/rnd/xenobiology/ameridian
-	name = "\improper Ameridian Lab"
+/area/liberty/rnd/xenobiology/nacre
+	name = "\improper nacre Lab"
 	icon_state = "xeno_lab"
 
 /area/liberty/rnd/storage

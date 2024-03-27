@@ -29,6 +29,14 @@
 	var/amount = 1
 	// amount of germs in the wound
 	var/germ_level = 0
+	// Liberty Homebrew. amount of cryospore in the body
+	var/cryospore
+	// Liberty Homebrew. amount of neurophyta in the body
+	var/neurophyta_level
+	// Liberty Homebrew. amount of ixovirus in the body.
+	var/ixovirus_level
+	// Liberty Homebrew. amount of perniciosus in the body.
+	var/perniciosus_level
 
 	/*  These are defined by the wound type and should not be changed */
 

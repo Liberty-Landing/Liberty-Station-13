@@ -185,7 +185,7 @@
 			if (destroy_hits <= 0)
 				visible_message(SPAN_DANGER("\The [name] disintegrates!"))
 				if(Proj.damage_types[BRUTE] > Proj.damage_types[BURN])
-					new /obj/item/stack/material/steel(loc, 2)
+					new /obj/item/stack/material/aluminium(loc, 2)
 					new /obj/item/stack/rods(loc, 3)
 				else
 					new /obj/effect/decal/cleanable/ash(loc) // Turn it to ashes!

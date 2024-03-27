@@ -28,6 +28,13 @@
 	build_path = /obj/item/device/science_tool
 	category = "Misc"
 
+/* Make the TitaniumRTC here
+/datum/design/research/item/science_tool
+	name = "science tool"
+	build_path = /obj/item/device/science_tool
+	category = "Misc"
+*/
+
 /datum/design/research/item/clothing/security
 	name = "security records"
 	build_path = /obj/item/clothing/glasses/hud/security
@@ -56,7 +63,7 @@
 	name = "Relay Positioning Device"
 	desc = "Triangulates the approximate co-ordinates."
 	build_path = /obj/item/device/gps
-	materials = list(MATERIAL_STEEL = 25, MATERIAL_GLASS = 5)
+	materials = list(MATERIAL_ALUMINIUM = 25, MATERIAL_GLASS = 5)
 	category = "Bluespace Telecoms"
 
 /datum/design/research/item/bs_snare

@@ -84,7 +84,7 @@
 	name = "bone braces"
 	result = /obj/item/modification/organ/internal/electromechanical/bone_braces
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 20, 50),
 		list(QUALITY_WIRE_CUTTING, 10, 120)
 	)
@@ -104,7 +104,7 @@
 	name = "Junktech prosthetic left leg"
 	result = /obj/item/organ/external/robotic/junktech/l_leg
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 0),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 0),
 		list(QUALITY_CUTTING, 10, 10),
 		list(QUALITY_WELDING, 10, 10),
 		list(/obj/item/stack/cable_coil, 5, "time" = 0),
@@ -123,7 +123,7 @@
 	name = "Junktech prosthetic left arm"
 	result = /obj/item/organ/external/robotic/junktech/l_arm
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 0),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 0),
 		list(QUALITY_CUTTING, 10, 10),
 		list(QUALITY_WELDING, 10, 10),
 		list(/obj/item/stack/cable_coil, 5, "time" = 0),

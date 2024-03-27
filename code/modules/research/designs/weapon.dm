@@ -77,7 +77,7 @@
 /datum/design/research/item/clothing/pirsarmorchest
 	name = "'Mark II' environmental protection suit"
 	desc = "For working in hazardous environments. While its built for most environments, one of those is not space. This suit is a cheap and badly made copy of the Terra-Therma Worker's Unions original design. \
-	Unlike its superior, it offers significantly less armor but it is made out of basic steel, making it a cheaper, easier alternative to build."
+	Unlike its superior, it offers significantly less armor but it is made out of basic aluminium, making it a cheaper, easier alternative to build."
 	build_path = /obj/item/clothing/suit/armor/vest/pirssuit
 
 /datum/design/research/item/clothing/pirsarmorhead
@@ -141,10 +141,12 @@
 	name = "Hydrogen \"Sollex\" Cannon"
 	build_path = /obj/item/gun/hydrogen/cannon
 
+/* Commented until fixed.
 /datum/design/research/item/weapon/hydrogrenade
 	name = "Hydrogen Grenade"
 	desc = "A hilt that can support an hydrogen fuel cell. It has a flimsy safe guard that prevents it from exploding from the weakest impact."
 	build_path = /obj/item/hydrogen_grenade
+*/
 
 // Ammo
 /datum/design/research/item/ammo
@@ -155,55 +157,55 @@
 	name = "SMG Magazine 9mm (Empty) "
 	desc = "A magazine for 9mm, used in smgs."
 	build_path = /obj/item/ammo_magazine/smg_35/empty
-	materials = list(MATERIAL_STEEL = 15)
+	materials = list(MATERIAL_ALUMINIUM = 15)
 
 /datum/design/research/item/ammo/smg_mag/lethal
 	name = "SMG Magazine 9mm"
 	desc = "A magazine for 9mm, used in smgs."
 	build_path = /obj/item/ammo_magazine/smg_35
-	materials = list(MATERIAL_STEEL = 30)
+	materials = list(MATERIAL_ALUMINIUM = 30)
 
 /datum/design/research/item/ammo/smg_mag/rubber
 	name = "SMG Magazine 9mm (Rubber)"
 	desc = "A magazine for 9mm (Rubber), used in smgs."
 	build_path = /obj/item/ammo_magazine/smg_35/rubber
-	materials = list(MATERIAL_STEEL = 15, MATERIAL_PLASTIC = 5)
+	materials = list(MATERIAL_ALUMINIUM = 15, MATERIAL_PLASTIC = 5)
 
 /datum/design/research/item/ammo/pistol_laser
 	name = "Specialized Magaine 9mm, laser"
 	desc = "Auto 9mm cases fitted with a one time use laser payload."
 	build_path = /obj/item/ammo_magazine/ammobox/pistol_35/laser
-	materials = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
+	materials = list(MATERIAL_ALUMINIUM = 5, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
 
 /datum/design/research/item/ammo/magum_laser
 	name = "Magnum 10mm, laser case"
 	desc = "Magnum 10mm cases fitted with a one time use laser payload."
 	build_path = /obj/item/ammo_magazine/ammobox/magnum_40/laser
-	materials = list(MATERIAL_STEEL = 5, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
+	materials = list(MATERIAL_ALUMINIUM = 5, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
 
 /datum/design/research/item/ammo/light_rifle_257
 	name = "Light rifle 6.5mm laser casing."
 	desc = "6.5mm casings fitted with a one time use laser payload."
 	build_path = /obj/item/ammo_magazine/ammobox/light_rifle_257_small/laser
-	materials = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
+	materials = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
 
 /datum/design/research/item/ammo/rifle_75
 	name = "Rifle 7.62mm laser casing."
 	desc = "7.62mm casings fitted with a one time use laser payload."
 	build_path = /obj/item/ammo_magazine/ammobox/rifle_75_small/laser
-	materials = list(MATERIAL_STEEL = 10, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
+	materials = list(MATERIAL_ALUMINIUM = 10, MATERIAL_GLASS = 2.5, MATERIAL_GOLD = 2.5)
 
 /datum/design/research/item/ammo/fancy_dart
 	name = "carbine chem dart"
 	desc = "A hollow dart that loads into a cartridge."
 	build_path = /obj/item/ammo_casing/chemdart
-	materials = list(MATERIAL_STEEL = 3)
+	materials = list(MATERIAL_ALUMINIUM = 3)
 
 /datum/design/research/item/ammo/dart_mag
 	name = "dart cartridge"
 	desc = "A rack of hollow darts."
 	build_path = /obj/item/ammo_magazine/chemdart
-	materials = list(MATERIAL_STEEL = 3)
+	materials = list(MATERIAL_ALUMINIUM = 3)
 
 // Shotgun Ammo
 
@@ -211,20 +213,20 @@
 	name = "Shotgun ammo (Stun)"
 	desc = "Stunning shells for a shotgun."
 	build_path = /obj/item/ammo_casing/shotgun/stunshell/prespawned
-	materials = list(MATERIAL_STEEL = 4, MATERIAL_SILVER = 5)
+	materials = list(MATERIAL_ALUMINIUM = 4, MATERIAL_SILVER = 5)
 
 /datum/design/research/item/ammo/shotgun_fire
 	name = "Shotgun ammo (Incendiary)"
 	desc = "Incendiary shells for a shotgun."
 	build_path = /obj/item/ammo_casing/shotgun/incendiary/prespawned
-	materials = list(MATERIAL_STEEL = 4, MATERIAL_PLASMA = 5)
+	materials = list(MATERIAL_ALUMINIUM = 4, MATERIAL_HYDROGENC = 5)
 
 
 /datum/design/research/item/ammo/shotgun_laser
 	name = "Shotgun ammo (Laser Case)"
 	desc = "Laser based shells for a shotgun."
 	build_path = /obj/item/ammo_casing/shotgun/laser/prespawned
-	materials = list(MATERIAL_STEEL = 4, MATERIAL_SILVER = 4, MATERIAL_GOLD = 4)
+	materials = list(MATERIAL_ALUMINIUM = 4, MATERIAL_SILVER = 4, MATERIAL_GOLD = 4)
 
 // Misc Ammo
 
@@ -246,7 +248,7 @@
 /datum/design/research/item/weapon/bastion
 	name = "bastion shield"
 	build_path = /obj/item/shield/riot/bastion
-	materials = list(MATERIAL_PLASMAGLASS = 3, MATERIAL_OSMIUM = 1) //So making it at the guild is objectively always better
+	materials = list(MATERIAL_LBGLASS = 3, MATERIAL_COMPOSITE = 1) //So making it at the guild is objectively always better
 
 //Weapon mods
 /datum/design/research/item/weapon/weapon_upgrade

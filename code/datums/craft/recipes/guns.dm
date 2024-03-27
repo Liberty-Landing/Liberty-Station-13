@@ -9,7 +9,7 @@
 	icon_state = "woodworking"
 	steps = list(
 		list(/obj/item/stack/rods, 5, "time" = 60),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 60),
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD, "time" = 60),
 		list(/obj/item/tool/wirecutters/improvised, 1, "time" = 60),
 		list(QUALITY_WELDING, 15, "time" = 30),
@@ -23,7 +23,7 @@
 	name = "handmade 6.5mm carbine stripper clip"
 	result = /obj/item/ammo_magazine/speed_loader_light_rifle_257/empty
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_SAWING, 10, "time" = 30), // Cut the unneeded corners...
 		list(QUALITY_HAMMERING, 10, "time" = 30) // ...and hammer them into shape!
 	)
@@ -32,7 +32,7 @@
 	name = "handmade 7.62mm rifle stripper clip"
 	result = /obj/item/ammo_magazine/speed_loader_rifle_75/empty
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_SAWING, 10, "time" = 30),
 		list(QUALITY_HAMMERING, 10, "time" = 30)
 	)
@@ -44,7 +44,7 @@
 	flags = CRAFT_BATCH
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 10),
 		list(CRAFT_MATERIAL, 1, MATERIAL_CARDBOARD, "time" = 10)
 	)
 
@@ -61,7 +61,7 @@
 	result = /obj/item/ammo_casing/arrow/broadhead/bulk
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 10),
 		list(QUALITY_HAMMERING, 10, "time" = 20), // Flatten the tip so it's broad
 		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 10),
 	)
@@ -71,7 +71,7 @@
 	result = /obj/item/ammo_casing/arrow/serrated/bulk
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_WOOD, "time" = 10),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 10),
 		list(QUALITY_SAWING, 10, "time" = 20), // Serrate the tip so that it penetrates better
 		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC, "time" = 10),
 	)
@@ -81,7 +81,7 @@
 	result = /obj/item/ammo_casing/arrow/empty_payload/bulk
 	icon_state = "woodworking"
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 1),
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL, "time" = 1),
 		list(QUALITY_WELDING, 40, "time" = 5),
 		list(CRAFT_MATERIAL, 8, MATERIAL_PLASTIC, "time" = 1),
 		list(QUALITY_CUTTING, 40, "time" = 5)
@@ -161,9 +161,9 @@
 	name = "Handmade Revolver"
 	result = /obj/item/gun/projectile/revolver/handmade
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL),
 		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 15, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
 		list(QUALITY_SCREW_DRIVING, 10)
@@ -173,7 +173,7 @@
 	name = "Handmade pistol \"Partizaner\""
 	result = /obj/item/gun/projectile/partizaner
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 6, MATERIAL_WOOD),
 		list(QUALITY_SCREW_DRIVING, 10),
@@ -185,7 +185,7 @@
 	name = "Handmade SMG \"Luty\""
 	result = /obj/item/gun/projectile/automatic/luty
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC),
 		list(QUALITY_SCREW_DRIVING, 10),
@@ -200,7 +200,7 @@
 	steps = list(
 		list(/obj/item/gun/projectile/automatic/luty, 1),
 		list(QUALITY_HAMMERING, 10),
-		list(CRAFT_MATERIAL, 12, MATERIAL_PLASTEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 12, MATERIAL_INDSTEEL, "time" = 10),
 		list(QUALITY_WELDING, 10, "time" = 40),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 10),
@@ -212,9 +212,9 @@
 	name = "slide barrel shotgun"
 	result = /obj/item/gun/projectile/shotgun/slidebarrel
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL),
 		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
 		list(QUALITY_SCREW_DRIVING, 10)
@@ -224,9 +224,9 @@
 	name = "Handmade bolt action rifle"
 	result = /obj/item/gun/projectile/boltgun/handmade
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL),
 		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 5, MATERIAL_WOOD),
 		list(QUALITY_SCREW_DRIVING, 10)
@@ -236,7 +236,7 @@
 	name = "Makeshift 7.62 \"Kalash\""
 	result = /obj/item/gun/projectile/automatic/ak47/makeshift
 	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC),
 		list(QUALITY_SCREW_DRIVING, 10),
@@ -251,9 +251,9 @@
 	name = "makeshift grenade launcher"
 	result = /obj/item/gun/projectile/shotgun/pump/china/makeshift
 	steps = list(
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL),
 		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD),
 		list(QUALITY_SCREW_DRIVING, 10)
@@ -264,8 +264,8 @@
 	result = /obj/item/gun/energy/shrapnel
 	icon_state = "gun"
 	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 8, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 20, MATERIAL_INDSTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 8, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_CUTTING, 20, "time" = 40),
 		list(QUALITY_HAMMERING, 20, "time" = 40),
 		list(/obj/item/stack/cable_coil, 10, "time" = 20),
@@ -278,9 +278,9 @@
 	name = "makeshift laser carbine"
 	result = /obj/item/gun/energy/laser/makeshift
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTIC),
 		list(/obj/item/stock_parts/micro_laser , 4),
@@ -293,9 +293,9 @@
 	steps = list(
 		list(/obj/item/mecha_parts/mecha_equipment/ranged_weapon/energy/laser/heavy, 1, "time" = 60),
 		list(QUALITY_WELDING, 30, "time" = 180),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_ADHESIVE, 15, 70),
-		list(CRAFT_MATERIAL, 20, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 20, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 20),
 		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTIC),
 		list(/obj/item/stock_parts/micro_laser , 4),

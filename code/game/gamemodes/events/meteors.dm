@@ -43,10 +43,10 @@ disabled
 /datum/event/meteor_wave/announce()
 	switch(severity)
 		if(EVENT_LEVEL_MAJOR)
-			command_announcement.Announce("Meteors have been detected on collision course with the colony. ETA 3 minutes until impact. Colonist are advised to seek shelter, be advised, objects coming from orbit may penetrate the ground and hit lower colony levels.", "Meteor Alert", new_sound = 'sound/AI/meteors.ogg')
+			command_announcement.Announce("Artillery fire have been detected on collision course with the colony. ETA 3 minutes until impact. Denizens are advised to seek shelter immediately, be advised, shells may penetrate the surface's layer and reach downstairs.", "Artillery Alert", new_sound = 'sound/AI/meteors.ogg')
 
 		else
-			command_announcement.Announce("Meteors have been detected on collision course with the colony. ETA 3 minutes until impact. Colonist are advised to seek shelter, be advised, objects coming from orbit may penetrate the ground and hit lower colony levels.", "Meteor Alert", new_sound = 'sound/AI/meteors.ogg')
+			command_announcement.Announce("Artillery fire have been detected on collision course with the colony. ETA 3 minutes until impact. Denizens are advised to seek shelter immediately, be advised, shells may penetrate the surface's layer and reach downstairs.", "Artillery Alert", new_sound = 'sound/AI/meteors.ogg')
 
 /datum/event/meteor_wave/tick()
 	if(activeFor >= next_meteor)
@@ -59,9 +59,9 @@ disabled
 /datum/event/meteor_wave/end()
 	switch(severity)
 		if(EVENT_LEVEL_MAJOR)
-			command_announcement.Announce("The meteor storm has ended.", "Meteor Alert")
+			command_announcement.Announce("The artillery barrage has ended.", "Artillery Alert")
 		else
-			command_announcement.Announce("The meteor storm has ended.", "Meteor Alert")
+			command_announcement.Announce("The artillery barrage has ended.", "Artillery Alert")
 
 /datum/event/meteor_wave/proc/get_meteors()
 	switch(severity)
@@ -86,7 +86,7 @@ disabled
 	. = ..()
 
 /datum/event/meteor_wave/overmap/announce()
-	command_announcement.Announce("Alert: Meteors are about to hit the colony. Brace for impact", "Asteroid Alert", new_sound = 'sound/AI/meteors.ogg')
+	command_announcement.Announce("Alert: Artillery shells are about to hit the colony. Brace for impact or activate energy shields.", "Asteroid Alert", new_sound = 'sound/AI/meteors.ogg')
 
 
 /*
@@ -114,62 +114,41 @@ disabled
 // Dust, used by space dust event and during earliest stages of meteor mode.
 /var/list/meteors_dust = list(/obj/effect/meteor/dust)
 
+/*Warning: The meteor system has been REPLACED by SHELLS. Not only the colony is protected against meteors due to its atmosphere,
+but there is precursor, psionic defenses upheld ready to burst down any kind of incoming meteor. */
+
 // Standard meteors, used during early stages of the meteor gamemode.
 /var/list/meteors_normal = list(\
-		/obj/effect/meteor/medium=8,\
-		/obj/effect/meteor/dust=3,\
-		/obj/effect/meteor/irradiated=3,\
-		/obj/effect/meteor/big=3,\
-		/obj/effect/meteor/flaming=1,\
-		/obj/effect/meteor/golden=1,\
-		/obj/effect/meteor/silver=1\
+		/obj/effect/meteor/shell/tempest=8\
 		)
 
 // Threatening meteors, used during the meteor gamemode.
 /var/list/meteors_threatening = list(\
-		/obj/effect/meteor/big=10,\
-		/obj/effect/meteor/medium=5,\
-		/obj/effect/meteor/golden=3,\
-		/obj/effect/meteor/silver=3,\
-		/obj/effect/meteor/flaming=3,\
-		/obj/effect/meteor/irradiated=3,\
-		/obj/effect/meteor/emp=3\
+		/obj/effect/meteor/shell/tempest=9,\
+		/obj/effect/meteor/shell/eradication=3\
 		)
 
 // Catastrophic meteors, pretty dangerous without shields and used during the meteor gamemode.
 /var/list/meteors_catastrophic = list(\
-		/obj/effect/meteor/big=75,\
-		/obj/effect/meteor/flaming=10,\
-		/obj/effect/meteor/irradiated=10,\
-		/obj/effect/meteor/emp=10,\
-		/obj/effect/meteor/medium=5,\
-		/obj/effect/meteor/golden=4,\
-		/obj/effect/meteor/silver=4,\
-		/obj/effect/meteor/tunguska=1\
+		/obj/effect/meteor/shell/tempest=75,\
+		/obj/effect/meteor/shell/eradication=10,\
+		/obj/effect/meteor/shell/nona=1\
 		)
 
 // Armageddon meteors, very dangerous, and currently used only during the meteor gamemode.
 /var/list/meteors_armageddon = list(\
-		/obj/effect/meteor/big=25,\
-		/obj/effect/meteor/flaming=10,\
-		/obj/effect/meteor/irradiated=10,\
-		/obj/effect/meteor/emp=10,\
-		/obj/effect/meteor/medium=3,\
-		/obj/effect/meteor/tunguska=3,\
-		/obj/effect/meteor/golden=2,\
-		/obj/effect/meteor/silver=2\
+		/obj/effect/meteor/shell/tempest=60,\
+		/obj/effect/meteor/shell/eradication=20,\
+		/obj/effect/meteor/shell/nona=10,\
+		/obj/effect/meteor/shell/tzar=5\
 		)
 
 // Cataclysm meteor selection. Very very dangerous and effective even against shields. Used in late game meteor gamemode only.
 /var/list/meteors_cataclysm = list(\
-		/obj/effect/meteor/big=40,\
-		/obj/effect/meteor/emp=20,\
-		/obj/effect/meteor/tunguska=20,\
-		/obj/effect/meteor/irradiated=10,\
-		/obj/effect/meteor/golden=10,\
-		/obj/effect/meteor/silver=10,\
-		/obj/effect/meteor/flaming=10,\
-		/obj/effect/meteor/supermatter=1\
+		/obj/effect/meteor/shell/tempest=30,\
+		/obj/effect/meteor/shell/eradication=30,\
+		/obj/effect/meteor/shell/nona=25,\
+		/obj/effect/meteor/shell/tzar=15\
 		)
 
 
@@ -437,12 +416,12 @@ disabled
 	meteordrop = /obj/item/material/shard
 
 /obj/effect/meteor/dust/rods
-	name = "steel rod"
+	name = "aluminium rod"
 	meteordrop = /obj/item/stack/rods
 
 /obj/effect/meteor/dust/metal
-	name = "steel wreck"
-	meteordrop = /obj/item/stack/material/steel
+	name = "metal wreck"
+	meteordrop = /obj/item/stack/material/aluminium
 
 //Medium-sized
 /obj/effect/meteor/medium
@@ -471,7 +450,7 @@ disabled
 	icon_state = "flaming"
 	hits = 5
 	heavy = 1
-	meteordrop = /obj/item/stack/ore/plasma
+	meteordrop = /obj/item/stack/ore/hydrogenc
 
 /obj/effect/meteor/flaming/meteor_effect()
 	..()
@@ -506,7 +485,7 @@ disabled
 	name = "conducting meteor"
 	icon_state = "glowing_blue"
 	desc = "Hide your floppies!"
-	meteordrop = /obj/item/stack/ore/osmium
+	meteordrop = /obj/item/stack/ore/niobium
 	dropamt = 2
 
 /obj/effect/meteor/emp/meteor_effect()
@@ -547,3 +526,50 @@ disabled
 
 /obj/effect/meteor/supermatter/get_shield_damage()
 	return ..() * rand(80, 120)
+
+//Artillery Shells, what makes more sense for our server.
+
+/obj/effect/meteor/shell/tempest
+	name = "105×570mmR TS"
+	desc = "The 105×570mmR Tempest Shell design. Handmade, Cheap, weak and massproduced by 3dprinting technologies, \
+	and it is used by obsolete counter-battery pieces and assembled artillery recycling battle tank's gunnery."
+	icon_state = "105mm_TS"
+	meteordrop = null
+	hits = 1
+	hitpwr = 3
+
+/obj/effect/meteor/shell/eradication
+	name = "125×617mm Eradication Rail"
+	desc = "A cheap but reliable shell, but relies on machinery to be produced and used by field guns on a battlefield, not very accurate but very efficient to make rubbles out of walls."
+	meteordrop = null
+	icon_state = "125mm_er"
+
+/obj/effect/meteor/shell/eradication/meteor_effect()
+	..()
+	explosion(src.loc, 0, 1, 2, 3, 0)
+
+/obj/effect/meteor/shell/nona
+	name = "Nona 8-inch Shell"
+	desc = "Military grade artillery shell user by ground artillery and space ships to destroy smaller assets. Well sold everywhere, found anywhere, but still fairly costy.."
+	meteordrop = null
+	icon_state = "203mm_nona"
+	hits = 6
+	heavy = 1
+	dropamt = 3
+
+/obj/effect/meteor/shell/nona/meteor_effect()
+	..()
+	explosion(src.loc, 1, 2, 3, 4, 0)
+
+/obj/effect/meteor/shell/tzar
+	name = "242mm tzar bomba"
+	desc = "Military grade thermonuclear shell with radioactive isotopes. Dangerous, intoxicating and based on the ancient Tzar Bomb."
+	meteordrop = null
+	icon_state = "242mm_tzar"
+	hits = 10
+	hitpwr = 1
+	heavy = 1
+
+/obj/effect/meteor/shell/tzar/meteor_effect()
+	..()
+	explosion(src.loc, 3, 6, 9, 20, 0)

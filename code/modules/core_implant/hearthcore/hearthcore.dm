@@ -71,7 +71,7 @@ var/list/disciples = list()
 	disciples.Remove(wearer)
 	..()
 
-/obj/item/implant/core_implant/hearthcore/Process()
+/obj/item/implant/core_implant/hearthcore/Process() //remember to change here, -monochrome
 	..()
 	if(wearer && wearer.stat == DEAD || wearer.is_mannequin) //If were dead or a mannequin we do not actively process our hearthcore
 		deactivate()

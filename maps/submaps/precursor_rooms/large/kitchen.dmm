@@ -383,7 +383,7 @@
 /area/precursor)
 "bV" = (
 /obj/effect/window_lwall_spawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/precursor)
 "bW" = (
 /obj/structure/bed/chair/custom/onestar{

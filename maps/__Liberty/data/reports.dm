@@ -308,7 +308,7 @@ Don't add : at end of the fields as the program does it automatically even durin
 	add_field(/datum/report_field/instruction, "Ores/Material in this Shipment")
 	add_field(/datum/report_field/simple_text, "Iron Ore")
 	add_field(/datum/report_field/simple_text, "Metal")
-	add_field(/datum/report_field/simple_text, "Plasteel")
+	add_field(/datum/report_field/simple_text, "indsteel")
 	add_field(/datum/report_field/simple_text, "Sand")
 	add_field(/datum/report_field/simple_text, "Glass")
 	add_field(/datum/report_field/simple_text, "Reinforced Glass")

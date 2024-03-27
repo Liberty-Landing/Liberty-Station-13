@@ -4,7 +4,7 @@
 	icon_state = "cargoshwall8";
 	tag = "icon-cargoshwall8"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "ab" = (
 /turf/unsimulated/wall,
@@ -114,7 +114,7 @@
 	icon_state = "cargoshwall9";
 	tag = "icon-cargoshwall9"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "ay" = (
 /obj/machinery/light{
@@ -176,7 +176,7 @@
 	icon_state = "cargoshwall12";
 	tag = "icon-cargoshwall12"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "aK" = (
 /obj/structure/window/reinforced/holowindow{
@@ -304,7 +304,7 @@
 	icon_state = "cargoshwall14";
 	tag = "icon-cargoshwall14"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bd" = (
 /obj/machinery/door/airlock/maintenance{
@@ -365,7 +365,7 @@
 	icon_state = "cargoshwall16";
 	tag = "icon-cargoshwall16"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bn" = (
 /turf/simulated/floor/holofloor/tiled,
@@ -375,14 +375,14 @@
 	icon_state = "cargoshwall19";
 	tag = "icon-cargoshwall19"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bp" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall21";
 	tag = "icon-cargoshwall21"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bq" = (
 /turf/simulated/floor/holofloor/carpet,
@@ -415,14 +415,14 @@
 	icon_state = "cargoshwall23";
 	tag = "icon-cargoshwall23"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bv" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall26";
 	tag = "icon-cargoshwall26"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bw" = (
 /turf/simulated/shuttle/wall/cargo{
@@ -435,21 +435,21 @@
 	icon_state = "cargoshwall34";
 	tag = "icon-cargoshwall34"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "by" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall35";
 	tag = "icon-cargoshwall35"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bz" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall36";
 	tag = "icon-cargoshwall36"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bA" = (
 /turf/simulated/shuttle/wall/cargo{
@@ -462,35 +462,35 @@
 	icon_state = "cargoshwall37";
 	tag = "icon-cargoshwall37"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bC" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall38";
 	tag = "icon-cargoshwall38"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bD" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall39";
 	tag = "icon-cargoshwall39"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bE" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall40";
 	tag = "icon-cargoshwall40"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bF" = (
 /obj/structure/shuttle_part/cargo{
 	icon_state = "cargoshwall41";
 	tag = "icon-cargoshwall41"
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/space)
 "bG" = (
 /obj/effect/shuttle_landmark/transit/surface_transport,
@@ -1047,7 +1047,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/shuttle/skipjack_area)
 "dv" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/computer_hardware/hard_drive/portable/advanced/shady,
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
@@ -1210,7 +1210,7 @@
 /area/holodeck/source_thunderdomecourt)
 "dZ" = (
 /obj/machinery/door/airlock/glass_command,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/centcom/evac)
 "ea" = (
 /turf/space,
@@ -1241,7 +1241,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/shuttle/skipjack_area)
 "ee" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/box/donkpockets,
 /obj/item/reagent_containers/food/condiment/saltshaker{
 	pixel_x = 4
@@ -1252,7 +1252,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
 "ef" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/shuttle/skipjack_area)
 "eg" = (
 /obj/item/modular_computer/console/preset/medical/records,
@@ -1303,7 +1303,7 @@
 /turf/simulated/floor/holofloor/tiled,
 /area/holodeck/source_boxingcourt)
 "ep" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/recharger,
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
@@ -1818,7 +1818,7 @@
 /turf/space/transit/north/shuttlespace_ns11,
 /area/space)
 "fE" = (
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "fF" = (
 /obj/effect/step_trigger/thrower{
@@ -1985,7 +1985,7 @@
 /turf/space/transit/north/shuttlespace_ns2,
 /area/space)
 "gb" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/chemical_dispenser/coffee_master,
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
@@ -2003,7 +2003,7 @@
 /area/shuttle/syndicate_elite/mothership)
 "gd" = (
 /obj/machinery/light/floor,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/shuttle/skipjack_area)
 "ge" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -2016,7 +2016,7 @@
 /obj/structure/bed/chair/comfy/black{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "gg" = (
 /turf/unsimulated/floor{
@@ -2033,7 +2033,7 @@
 	},
 /area/centcom/small_base)
 "gi" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/chemical_dispenser/beer,
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
@@ -2043,7 +2043,7 @@
 	name = "remote shutter control";
 	req_access = newlist()
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
 "gk" = (
@@ -2111,7 +2111,7 @@
 	},
 /area/shuttle/syndicate_elite/mothership)
 "gr" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/dark/golden,
 /area/shuttle/skipjack_area)
@@ -2132,13 +2132,13 @@
 /turf/space/transit/north/shuttlespace_ns14,
 /area/space)
 "gv" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/computer_hardware/hard_drive/portable/design/security,
 /obj/item/computer_hardware/hard_drive/portable/design/lethal_ammo,
 /turf/simulated/floor/tiled/dark/golden,
 /area/shuttle/skipjack_area)
 "gw" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/microwave,
 /obj/machinery/light{
 	dir = 8;
@@ -2258,7 +2258,7 @@
 /area/space)
 "gL" = (
 /obj/item/deck/cards,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/pill_bottle/dice_nerd,
 /turf/simulated/floor/tiled/dark/cargo,
 /area/shuttle/skipjack_area)
@@ -2269,7 +2269,7 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/shuttle/skipjack_area)
 "gN" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/chemical_dispenser/soda,
 /obj/machinery/light{
 	dir = 4
@@ -2295,7 +2295,7 @@
 /area/shuttle/skipjack_area)
 "gQ" = (
 /obj/structure/table/standard,
-/obj/item/stack/material/steel{
+/obj/item/stack/material/aluminium{
 	amount = 50
 	},
 /obj/item/stack/material/glass{
@@ -2305,10 +2305,10 @@
 /obj/item/tool/crowbar,
 /obj/item/reagent_containers/spray/krag_b_gone,
 /obj/item/tool/tape_roll/fiber,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/tiled/dark/golden,
 /area/shuttle/skipjack_area)
 "gR" = (
@@ -2568,7 +2568,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/computer_hardware/hard_drive/portable/design/misc,
 /turf/simulated/floor/tiled/dark/golden,
 /area/shuttle/skipjack_area)
@@ -2577,7 +2577,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/skipjack_area)
 "hw" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/flame/lighter/zippo,
 /obj/item/storage/fancy/cigarettes,
 /turf/simulated/floor/tiled/dark/cargo,
@@ -2659,7 +2659,7 @@
 	opacity = 1;
 	req_access = list(150)
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/centcom/merc_base)
 "hG" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -2697,7 +2697,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "hN" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/cyan,
@@ -2770,7 +2770,7 @@
 /obj/structure/table/reinforced,
 /obj/item/stack/cable_coil/pink,
 /obj/item/stack/cable_coil/pink,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
 /obj/item/stack/material/glass/full,
 /obj/item/stack/material/plastic/full,
 /turf/simulated/floor/tiled/dark/gray_perforated,
@@ -2797,12 +2797,12 @@
 "id" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/effect/floor_decal/industrial/botleft,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/shuttle/skipjack_area)
 "ie" = (
 /obj/machinery/portable_atmospherics/hydroponics,
 /obj/effect/floor_decal/industrial/botright,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/shuttle/skipjack_area)
 "if" = (
 /obj/machinery/bodyscanner,
@@ -2974,7 +2974,7 @@
 /obj/item/clothing/shoes/magboots/merc,
 /obj/item/clothing/shoes/magboots/merc,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "iA" = (
 /obj/machinery/door/airlock/centcom{
@@ -2982,7 +2982,7 @@
 	opacity = 1;
 	req_access = list(150)
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/centcom/merc_base)
 "iB" = (
 /turf/simulated/floor/tiled/dark/danger,
@@ -3041,7 +3041,7 @@
 /obj/item/storage/belt/security,
 /obj/item/storage/pouch/large_generic,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "iJ" = (
 /obj/structure/shuttle/engine/propulsion,
@@ -3060,7 +3060,7 @@
 	pixel_x = -25
 	},
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "iM" = (
 /obj/structure/bed/chair{
@@ -3132,7 +3132,7 @@
 /obj/item/storage/backpack/military,
 /obj/item/storage/backpack/military,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "iX" = (
 /obj/machinery/light{
@@ -3344,7 +3344,7 @@
 	},
 /obj/item/storage/deferred/rations,
 /obj/effect/floor_decal/industrial/hatch,
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "jB" = (
 /obj/machinery/optable,
@@ -3384,7 +3384,7 @@
 	name = "Bathroom";
 	opacity = 1
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/centcom/merc_base)
 "jH" = (
 /obj/structure/closet/secure_closet/personal,
@@ -3447,7 +3447,7 @@
 	icon_state = "bsposter50";
 	pixel_x = -32
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "jR" = (
 /obj/structure/toilet{
@@ -3579,7 +3579,7 @@
 	dir = 1;
 	pixel_y = -22
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "kg" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -3725,7 +3725,7 @@
 	name = "Armory";
 	req_access = list(150)
 	},
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/centcom/merc_base)
 "kv" = (
 /obj/machinery/atmospherics/unary/vent_pump/high_volume{
@@ -3797,7 +3797,7 @@
 	icon_state = "tube1";
 	pixel_y = 0
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "kD" = (
 /obj/machinery/vending/assist{
@@ -3808,7 +3808,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "kE" = (
 /obj/structure/window/reinforced/crescent,
@@ -4063,7 +4063,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "lf" = (
 /obj/machinery/light{
@@ -4132,7 +4132,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "ll" = (
 /obj/machinery/light{
@@ -4141,7 +4141,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/shuttle/mercshuttle_area)
 "lm" = (
 /obj/machinery/portable_atmospherics/canister/nitrogen,
@@ -4160,19 +4160,19 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/mercshuttle_area)
 "lo" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/item/storage/deferred/comms,
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/mercshuttle_area)
 "lp" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/item/storage/fancy/crayons,
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/mercshuttle_area)
 "lq" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/deferred/lights,
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
@@ -4181,7 +4181,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /obj/machinery/recharger,
 /turf/simulated/floor/tiled/techmaint,
@@ -4229,7 +4229,7 @@
 /area/shuttle/mercshuttle_area)
 "lz" = (
 /obj/item/tool/screwdriver,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/deferred/pouches,
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
@@ -4281,7 +4281,7 @@
 /turf/simulated/floor/reinforced,
 /area/shuttle/mercshuttle_area)
 "lH" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/deferred/toolmod,
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
@@ -4325,7 +4325,7 @@
 /area/shuttle/mercshuttle_area)
 "lN" = (
 /obj/item/device/aicard,
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/effect/floor_decal/industrial/hatch,
 /turf/simulated/floor/tiled/techmaint,
 /area/shuttle/mercshuttle_area)
@@ -4980,7 +4980,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/centcom/raider_base)
 "ny" = (
 /obj/machinery/shower{
@@ -5019,7 +5019,7 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/centcom/raider_base)
 "nD" = (
 /obj/structure/table/standard,
@@ -5073,8 +5073,8 @@
 	},
 /area/wizard_station)
 "nJ" = (
-/obj/structure/table/steel,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/obj/structure/table/aluminium,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/centcom/raider_base)
 "nK" = (
 /obj/machinery/autolathe,
@@ -5082,11 +5082,11 @@
 /turf/simulated/floor/tiled/white/gray_platform,
 /area/shuttle/mercshuttle_area)
 "nL" = (
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
 /obj/item/stack/material/glass{
 	amount = 120
 	},
-/obj/item/stack/material/plasteel{
+/obj/item/stack/material/indsteel{
 	amount = 60
 	},
 /obj/random/material,
@@ -5315,7 +5315,7 @@
 /area/centcom/raider_base)
 "ov" = (
 /obj/machinery/door/airlock/external,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/centcom/raider_base)
 "ow" = (
 /obj/effect/step_trigger/thrower{
@@ -5630,9 +5630,9 @@
 /turf/space/transit/north/shuttlespace_ns6,
 /area/space)
 "rN" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/storage/deferred/crate/alcohol,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/centcom/raider_base)
 "rR" = (
 /turf/simulated/floor/tiled/dark,
@@ -5860,7 +5860,7 @@
 /area/centcom/evac)
 "xm" = (
 /obj/machinery/door/airlock/hatch,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/centcom/raider_base)
 "xx" = (
 /obj/structure/reagent_dispensers/fueltank/huge/derelict,
@@ -5966,7 +5966,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/centcom/raider_base)
 "zA" = (
 /turf/simulated/floor/fixed/fgrass,
@@ -6014,9 +6014,9 @@
 /turf/simulated/floor/carpet/blucarpet,
 /area/centcom/raider_base)
 "AD" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/booze,
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/centcom/raider_base)
 "AU" = (
 /obj/machinery/portable_atmospherics/hydroponics,
@@ -6027,7 +6027,7 @@
 	name = "hacked Robust Softdrinks";
 	prices = list()
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/centcom/raider_base)
 "Bi" = (
 /obj/machinery/door/airlock/hatch,
@@ -6106,7 +6106,7 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/centcom/raider_base)
 "BY" = (
 /obj/machinery/door/airlock/hatch,
@@ -7123,7 +7123,7 @@
 /area/centcom/raider_base)
 "Wr" = (
 /obj/machinery/computer/arcade,
-/turf/simulated/floor/tiled/steel/orangecorner,
+/turf/simulated/floor/tiled/aluminium/orangecorner,
 /area/centcom/raider_base)
 "Wy" = (
 /obj/machinery/vending/snack,
@@ -7313,7 +7313,7 @@
 /turf/simulated/floor/tiled/dark/golden,
 /area/centcom/evac)
 "ZT" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/machinery/chemical_dispenser/beer,
 /turf/simulated/floor/tiled/cafe,
 /area/centcom/raider_base)

@@ -11,10 +11,10 @@
 	result = /obj/item/tool_upgrade/armor/handmade
 	icon_state = "armor_part"
 	steps = list(
-		list(CRAFT_MATERIAL, 25, MATERIAL_STEEL, "time" = 40),
+		list(CRAFT_MATERIAL, 25, MATERIAL_ALUMINIUM, "time" = 40),
 		list(QUALITY_WELDING, 35, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 60),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, 40),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, 40),
 		list(QUALITY_WELDING, 35, "time" = 40),
 		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 20),
 		list(QUALITY_WELDING, 35, "time" = 60),
@@ -31,7 +31,7 @@
 	result = /obj/item/tool_upgrade/armor/melee
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 30, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 30, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_WELDING, 35, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 180),
 		list(QUALITY_HAMMERING, 30, "time" = 180),
@@ -46,9 +46,9 @@
 	result = /obj/item/tool_upgrade/armor/bullet
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTIC , "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 20),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 20),
 		list(QUALITY_WELDING, 35, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 180),
 		list(QUALITY_HAMMERING, 30, "time" = 180),
@@ -63,7 +63,7 @@
 	result = /obj/item/tool_upgrade/armor/energy
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLATINUM, "time" = 30),
+		list(CRAFT_MATERIAL, 2, MATERIAL_TITANIUMRTC, "time" = 30),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC , "time" = 30),
 		list(QUALITY_WELDING, 35, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 180),
@@ -79,8 +79,8 @@
 	result = /obj/item/tool_upgrade/armor/bomb
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
-		list(CRAFT_MATERIAL, 30, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 30, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_WELDING, 35, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 180),
 		list(QUALITY_HAMMERING, 30, "time" = 180),
@@ -93,13 +93,13 @@
 //Material Craft ------------------
 
 /datum/craft_recipe/terra/plasma_glass
-	name = "borosilicate glass"
-	result = /obj/item/stack/material/glass/plasmaglass
+	name = "mendsilicate glass"
+	result = /obj/item/stack/material/glass/mendsilicate
 	icon_state = "clothing"
 	steps = list(
 		list(CRAFT_MATERIAL, 2, MATERIAL_GLASS, "time" = 1),
 		list(QUALITY_WELDING, 40, "time" = 5), //Insainly quick do tobeing 1 sheet a time
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMA, "time" = 1),
+		list(CRAFT_MATERIAL, 1, MATERIAL_HYDROGENC, "time" = 1),
 		list(QUALITY_WELDING, 40, "time" = 5),
 		list(QUALITY_SAWING, 30, "time" = 5)
 	)
@@ -109,7 +109,7 @@
 	name = "arc welder"
 	result = /obj/item/tool/baton/arcwelder
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_CUTTING, 20, "time" = 40),
 		list(QUALITY_HAMMERING, 25, "time" = 40),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
@@ -122,7 +122,7 @@
 	name = "Munchkin 5000"
 	result = /obj/item/tool/omnitool
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_CUTTING, 20, "time" = 40),
 		list(QUALITY_HAMMERING, 25, "time" = 40),
 		list(/obj/item/stack/cable_coil, 15, "time" = 20),
@@ -153,7 +153,7 @@
 		list(/obj/item/tool/shovel, 1),
 		list(QUALITY_SAWING, 20, "time" = 40),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 6, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_SCREW_DRIVING, 20, "time" = 30),
 		list(/obj/item/tool_upgrade/augment/spikes, 1),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 10)
@@ -168,7 +168,7 @@
 		list(QUALITY_CUTTING, 20, "time" = 40),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 20),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 20, 30),
 		list(QUALITY_SCREW_DRIVING, 20, "time" = 60),
 		list(QUALITY_BOLT_TURNING, 30, "time" = 40)
@@ -178,12 +178,12 @@
 	name = "\"Little Helper\" Omnitool"
 	result = /obj/item/tool/engimultitool
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, 60),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, 60),
 		list(QUALITY_WELDING, 30, 20),
 		list(/obj/item/circuitboard, 1),
 		list(QUALITY_SCREW_DRIVING, 20, 40),
 		list(QUALITY_WIRE_CUTTING, 20, 40),
-		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL, 20),
+		list(CRAFT_MATERIAL, 3, MATERIAL_ALUMINIUM, 20),
 		list(QUALITY_BOLT_TURNING, 30, 40),
 		list(QUALITY_HAMMERING, 30, 20),
 		list(/obj/item/stack/cable_coil, 30, 20),
@@ -200,7 +200,7 @@
 	name = "MKI Forger compressed-matter pistol"
 	result = /obj/item/gun/projectile/matter_gun
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 15),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 15),
 		list(QUALITY_CUTTING, 30, "time" = 10),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 15),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 20),
@@ -220,7 +220,7 @@
 	result = /obj/item/gun/projectile/matter_gun/shotgun
 	steps = list(
 		list(/obj/item/gun/projectile/matter_gun, 1, "time" = 15),
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 15),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 15),
 		list(QUALITY_CUTTING, 30, "time" = 10),
 		list(CRAFT_MATERIAL, 12, MATERIAL_PLASTIC, "time" = 15),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 20),
@@ -240,9 +240,9 @@
 	name ="abdicator energy shotgun"
 	result = /obj/item/gun/energy/laser/railgun/abdicator
 	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 15),
+		list(CRAFT_MATERIAL, 20, MATERIAL_INDSTEEL, "time" = 15),
 		list(QUALITY_CUTTING, 30, "time" = 10),
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASMA, "time" = 15),
+		list(CRAFT_MATERIAL, 4, MATERIAL_HYDROGENC, "time" = 15),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 20),
 		list(QUALITY_HAMMERING, 10, "time" = 20),
 		list(/obj/item/stock_parts/smes_coil, 1, "time" = 5),
@@ -255,16 +255,16 @@
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
 		list(CRAFT_MATERIAL, 10, MATERIAL_WOOD, "time" = 20),
 		list(QUALITY_HAMMERING, 30, "time" = 20),
-		list(CRAFT_MATERIAL, 6, MATERIAL_RGLASS, "time" = 10),
+		list(CRAFT_MATERIAL, 6, MATERIAL_LGLASS, "time" = 10),
 		list(/obj/item/stock_parts/capacitor/adv, 1, "time" = 10),
 		list(/obj/item/stock_parts/micro_laser/high, 1, "time" = 10),
 		list(/obj/item/computer_hardware/tesla_link, 1, "time" = 10),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS, "time" = 20),
+		list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS, "time" = 20),
 		list(CRAFT_MATERIAL, 1, MATERIAL_URANIUM, "time" = 20),
 		list(QUALITY_HAMMERING, 40, "time" = 30),
 		list(CRAFT_MATERIAL, 15, MATERIAL_PLASTIC, "time" = 20),
-		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 4, MATERIAL_ALUMINIUM, "time" = 5),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 5)
 	)
 */
@@ -273,9 +273,9 @@
 	name = "Combat Mace"
 	result = /obj/item/tool/hammer/mace
 	steps = list(
-		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 15, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(QUALITY_WELDING, 40, "time" = 60)
 	)
@@ -284,7 +284,7 @@
 	name = "Combat Sword"
 	result = /obj/item/tool/sword/union
 	steps = list(
-		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 15, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(QUALITY_WELDING, 40, "time" = 60)
@@ -294,7 +294,7 @@
 	name = "machete"
 	result = /obj/item/tool/sword/machete
 	steps = list(
-		list(CRAFT_MATERIAL, 15, MATERIAL_STEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 15, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
 		list(QUALITY_HAMMERING, 30, "time" = 40),
 		list(QUALITY_WELDING, 40, "time" = 60)
@@ -304,9 +304,9 @@
 	name = "Diamond Edge Sword"
 	result = /obj/item/tool/sword/katana/union
 	steps = list(
-	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_SAWING, 30, "time" = 60),
-	list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 30),
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(CRAFT_MATERIAL, 1, MATERIAL_DIAMOND, "time" = 30),
 		list(QUALITY_HAMMERING, 45, "time" = 40),
@@ -317,9 +317,9 @@
 	name = "Firebrand"
 	result = /obj/item/tool/sword/katana/firebrand
 	steps = list(
-	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 30),
 	list(QUALITY_SAWING, 30, "time" = 60),
-	list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 30),
 	list(QUALITY_WELDING, 40, "time"= 60),
 	list(/obj/item/tool_upgrade/productivity/oxyjet, 1, "time" = 30),
 	list(QUALITY_HAMMERING, 45, "time" = 40),
@@ -330,13 +330,13 @@
 	name = "Bastion Shield"
 	result = /obj/item/shield/riot/bastion
 	steps = list(
-	list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 	list(QUALITY_SAWING, 30, "time" = 60),
-	list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 30),
 	list(QUALITY_WELDING, 40, "time"= 60),
-	list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 30),
+	list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 30),
 	list(QUALITY_HAMMERING, 45, "time" = 40),
-	list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS, "time" = 30)
+	list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS, "time" = 30)
 	)
 
 /datum/craft_recipe/terra/safety_clamp
@@ -349,7 +349,7 @@
 		list(QUALITY_SCREW_DRIVING, 10, 70),
 		list(/obj/item/tool_upgrade/augment/hydraulic, 1, "time" = 60),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
-		list(CRAFT_MATERIAL, 6, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 6, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 30, "time" = 40),
 		list(/obj/item/tool_upgrade/augment/spikes, 1, "time" = 60)
 	)
@@ -361,9 +361,9 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/glasses/powered/meson, 1, "time" = 30),
-		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
+		list(CRAFT_MATERIAL, 1, MATERIAL_LGLASS),
 		list(QUALITY_WELDING, 40, "time"= 60),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL, "time" = 30),
 		list(QUALITY_BOLT_TURNING, 40, "time" = 40),
 		list(CRAFT_MATERIAL, 1, MATERIAL_URANIUM, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 30),
@@ -377,7 +377,7 @@
 	result = /obj/item/clothing/suit/armor/vest/technomancersuit
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 20, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 20, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_SAWING, 35, "time" = 60),
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 40),
@@ -393,12 +393,12 @@
 	result = /obj/item/clothing/head/helmet/technomancersuit
 	icon_state = "clothing"
 	steps = list(
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL, "time" = 60),
 		list(QUALITY_SAWING, 35, "time" = 60),
 		list(QUALITY_WELDING, 40, "time" = 60),
 		list(QUALITY_CUTTING, 30, "time" = 40),
 		list(QUALITY_HAMMERING, 45, "time" = 40),
-		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS, "time" = 20),
+		list(CRAFT_MATERIAL, 2, MATERIAL_LGLASS, "time" = 20),
 		list(/obj/item/stack/cable_coil, 15, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 40, 30),
 		list(QUALITY_BOLT_TURNING, 35, "time" = 40),
@@ -412,15 +412,15 @@
 	steps = list(
 		list(/obj/item/clothing/suit/armor/vest/technomancersuit, 1, "time" = 20),
 		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTIC, "time" = 5),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 5),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 45, "time" = 10),
 		list(/obj/item/clothing/head/helmet/technomancersuit, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 5),
-		list(CRAFT_MATERIAL, 3, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 3, MATERIAL_ALUMINIUM, "time" = 5),
 		list(/obj/item/device/lighting/toggleable/flashlight/heavy, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS),
+		list(CRAFT_MATERIAL, 2, MATERIAL_LGLASS),
 		list(QUALITY_WIRE_CUTTING, 30, 5),
 		list(QUALITY_SCREW_DRIVING, 30, "time" = 20)
 	)
@@ -431,8 +431,8 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 35, "time" = 10),
 		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 20),//someone forgot that the union can't craft melee armor upgrades
@@ -446,7 +446,7 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 35, "time" = 10),
 		list(/obj/item/clothing/head/helmet/space/void/union, 1, "time" = 20),
@@ -462,8 +462,8 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union/tminer_suit, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 45, "time" = 10),
 		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 5),
@@ -477,7 +477,7 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(/obj/item/device/lighting/toggleable/flashlight/heavy, 1, "time" = 20),//why someone previously added a flashlight that isn't craftable by the union
 		list(QUALITY_HAMMERING, 45, "time" = 10),,
@@ -492,8 +492,8 @@
 	icon_state = "clothing"
 	steps = list(
 		list(/obj/item/clothing/suit/space/void/union/chief_suit, 1, "time" = 20),
-		list(CRAFT_MATERIAL, 10, MATERIAL_STEEL, "time" = 5),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 5),
+		list(CRAFT_MATERIAL, 10, MATERIAL_ALUMINIUM, "time" = 5),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 5),
 		list(QUALITY_WELDING, 40, "time" = 15),
 		list(QUALITY_HAMMERING, 45, "time" = 10),
 		list(/obj/item/tool_upgrade/reinforcement/plating, 1, "time" = 20),
@@ -512,7 +512,7 @@
 		list(QUALITY_CUTTING, 15, 10),
 		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTIC), //So if we use buget we have a reason to think its really shock proof
 		list(QUALITY_WELDING, 10, "time" = 40),
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 		list(QUALITY_HAMMERING, 15, 10)
 	)
 
@@ -534,10 +534,10 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 4, MATERIAL_WOOD, "time" = 30),
 		list(QUALITY_SCREW_DRIVING, 40, "time" = 20),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 60),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 60),
 		list(QUALITY_ADHESIVE, 10, "time" = 60),
 		list(/obj/item/stack/cable_coil, 30, "time" = 30),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 30),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 30),
 	)
 
 // Crafting a stack of sandbags material to convert into sandbag items,
@@ -596,7 +596,7 @@
 	result = /obj/item/grenade/smokebomb
 	icon_state = "gun_part_7"
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 30), // This one is actually terrible so let's make it easier
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 30), // This one is actually terrible so let's make it easier
 		list(/obj/item/wp_block, 1),
 		list(/obj/item/device/assembly/timer, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
@@ -640,7 +640,7 @@
 	steps = list(
 		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/rdx_block, 1),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASMA, "time" = 30),
+		list(CRAFT_MATERIAL, 5, MATERIAL_HYDROGENC, "time" = 30),
 		list(/obj/item/device/assembly/timer, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 30),
@@ -683,7 +683,7 @@
 		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
 		list(/obj/item/tool_upgrade/augment/fuel_tank, 1),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASMA, "time" = 30), // Very lethal
+		list(CRAFT_MATERIAL, 5, MATERIAL_HYDROGENC, "time" = 30), // Very lethal
 		list(/obj/item/device/assembly/timer, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 30),
@@ -697,7 +697,7 @@
 	steps = list(
 		list(/obj/item/grenade/chem_grenade/large/moebius, 1, "time" = 30),
 		list(/obj/item/wp_block, 1),
-		list(CRAFT_MATERIAL, 5, MATERIAL_OSMIUM, "time" = 30), // Balance purposes
+		list(CRAFT_MATERIAL, 5, MATERIAL_TRITIUM, "time" = 30), // Balance purposes
 		list(/obj/item/device/assembly/timer, 1),
 		list(/obj/item/stack/cable_coil, 5, "time" = 20),
 		list(QUALITY_WIRE_CUTTING, 30, "time" = 30),
@@ -735,8 +735,8 @@
 	steps = list(
 		list(/obj/item/computer_hardware/processor_unit, 1, "time" = 120),
 		list(QUALITY_SCREW_DRIVING, 20, 70, "time" = 10),
-		list(CRAFT_MATERIAL, 12, MATERIAL_PLASTEEL, "time" = 90),
-		list(CRAFT_MATERIAL, 2, MATERIAL_RGLASS, "time" = 20),
+		list(CRAFT_MATERIAL, 12, MATERIAL_INDSTEEL, "time" = 90),
+		list(CRAFT_MATERIAL, 2, MATERIAL_LGLASS, "time" = 20),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 30, "time" = 90),
 		list(/obj/item/stack/cable_coil, 10, "time" = 90),
@@ -757,8 +757,8 @@
 	steps = list(
 		list(/obj/item/stock_parts/matter_bin/super, 1),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASTEEL), //Quite useless in most cases so were cheaper
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS),
+		list(CRAFT_MATERIAL, 1, MATERIAL_INDSTEEL), //Quite useless in most cases so were cheaper
+		list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(QUALITY_HAMMERING, 30),
@@ -771,7 +771,7 @@
 	steps = list(
 		list(/obj/item/stock_parts/manipulator/pico, 1),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL), //Are main thing were exspensive do to being the main crafted item
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL), //Are main thing were exspensive do to being the main crafted item
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
@@ -786,8 +786,8 @@
 	steps = list(
 		list(/obj/item/stock_parts/micro_laser/ultra, 1),
 		list(QUALITY_SCREW_DRIVING, 35, 70),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMAGLASS),
-		list(CRAFT_MATERIAL, 1, MATERIAL_RGLASS),
+		list(CRAFT_MATERIAL, 1, MATERIAL_LBGLASS),
+		list(CRAFT_MATERIAL, 1, MATERIAL_LGLASS),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(QUALITY_WELDING, 35),
 		list(QUALITY_SAWING, 30)

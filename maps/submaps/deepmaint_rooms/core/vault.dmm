@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "aa" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ab" = (
 /turf/simulated/wall/r_wall,
@@ -10,14 +10,14 @@
 /area/deepmaint)
 "ad" = (
 /obj/machinery/door/airlock/glass,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "ae" = (
 /turf/simulated/floor/plating/under,
 /area/deepmaint)
 "af" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ag" = (
 /obj/effect/window_lwall_spawn/smartspawn,
@@ -28,14 +28,14 @@
 /area/deepmaint)
 "ai" = (
 /obj/machinery/light,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aj" = (
 /obj/machinery/door/airlock/maintenance_common{
 	name = "Service Maintenance";
 	req_access = list(12)
 	},
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "ak" = (
 /obj/structure/disposalpipe/segment,
@@ -58,11 +58,11 @@
 /area/deepmaint)
 "ao" = (
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "ap" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "aq" = (
 /obj/structure/railing{
@@ -82,12 +82,12 @@
 	icon_state = "pipe-s";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "at" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/girder,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "au" = (
 /obj/machinery/door/airlock/maintenance_common{
@@ -97,13 +97,13 @@
 /turf/simulated/floor/tiled/dark/cargo,
 /area/deepmaint)
 "av" = (
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "aw" = (
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "ax" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "ay" = (
 /obj/random/junk,
@@ -115,13 +115,13 @@
 /area/deepmaint)
 "az" = (
 /obj/item/modular_computer/console/preset/security/records,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "aA" = (
 /obj/structure/bed/chair{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "aB" = (
 /obj/structure/disposalpipe/segment{
@@ -141,7 +141,7 @@
 	name = "Security Checkpoint";
 	req_access = list(1)
 	},
-/turf/simulated/floor/tiled/steel/techfloor_grid,
+/turf/simulated/floor/tiled/aluminium/techfloor_grid,
 /area/deepmaint)
 "aD" = (
 /turf/simulated/floor/tiled/dark/techfloor_grid,
@@ -150,7 +150,7 @@
 /obj/item/modular_computer/console/preset/command{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "aF" = (
 /obj/machinery/door/airlock,
@@ -205,12 +205,12 @@
 /area/deepmaint)
 "aN" = (
 /obj/machinery/washing_machine,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aO" = (
 /obj/structure/table/standard,
 /obj/structure/bedsheetbin,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aP" = (
 /obj/random/junk,
@@ -273,7 +273,7 @@
 /obj/random/pack/tech_loot,
 /obj/random/pack/tech_loot/low_chance,
 /obj/random/pack/tech_loot/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aX" = (
 /obj/structure/table/standard,
@@ -281,7 +281,7 @@
 /obj/random/pack/cloth,
 /obj/random/pack/cloth/low_chance,
 /obj/random/pack/cloth/low_chance,
-/turf/simulated/floor/tiled/steel/gray_platform,
+/turf/simulated/floor/tiled/aluminium/gray_platform,
 /area/deepmaint)
 "aY" = (
 /obj/machinery/door/firedoor,
@@ -313,13 +313,13 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bc" = (
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bd" = (
 /obj/random/junk,
@@ -423,15 +423,15 @@
 /area/deepmaint)
 "br" = (
 /obj/random/cluster/psi_monster/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "bs" = (
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "bt" = (
 /obj/random/junk,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "bu" = (
 /obj/structure/catwalk,
@@ -452,12 +452,12 @@
 /area/deepmaint)
 "bw" = (
 /obj/structure/girder,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "bx" = (
 /obj/structure/girder,
 /obj/structure/girder,
-/turf/simulated/floor/tiled/steel/brown_platform,
+/turf/simulated/floor/tiled/aluminium/brown_platform,
 /area/deepmaint)
 "by" = (
 /obj/structure/disposalpipe/segment{
@@ -487,11 +487,11 @@
 "bB" = (
 /obj/machinery/door/airlock/glass,
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "bC" = (
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bD" = (
 /obj/machinery/door/airlock/maintenance_common{
@@ -499,7 +499,7 @@
 	req_access = list(12)
 	},
 /obj/structure/disposalpipe/segment,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "bE" = (
 /obj/structure/catwalk,
@@ -526,14 +526,14 @@
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
 /obj/random/pack/gun_loot/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bI" = (
 /obj/item/device/radio/intercom{
 	dir = 2;
 	pixel_y = 24
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "bJ" = (
 /turf/simulated/floor/tiled/cafe,
@@ -547,7 +547,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bM" = (
 /obj/structure/bed/chair/office/dark{
@@ -557,7 +557,7 @@
 /obj/random/pack/cloth,
 /obj/random/pack/cloth,
 /obj/random/pack/gun_loot,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bN" = (
 /obj/structure/bed/chair{
@@ -567,7 +567,7 @@
 	dir = 4;
 	icon_state = "tube1"
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "bO" = (
 /obj/random/junk,
@@ -592,7 +592,7 @@
 "bR" = (
 /obj/structure/table/reinforced,
 /obj/random/pack/rare/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bS" = (
 /obj/structure/catwalk,
@@ -623,7 +623,7 @@
 /area/deepmaint)
 "bV" = (
 /obj/random/traps/low_chance,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/deepmaint)
 "bW" = (
 /obj/random/junk,
@@ -633,7 +633,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel/brown_perforated,
+/turf/simulated/floor/tiled/aluminium/brown_perforated,
 /area/deepmaint)
 "bY" = (
 /obj/structure/disposalpipe/junction{
@@ -711,25 +711,25 @@
 /area/deepmaint)
 "cj" = (
 /obj/machinery/vending/coffee,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "ck" = (
 /obj/machinery/vending/snack,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "cl" = (
 /obj/machinery/vending/cigarette,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "cm" = (
 /obj/machinery/vending/cola,
-/turf/simulated/floor/tiled/steel/cargo,
+/turf/simulated/floor/tiled/aluminium/cargo,
 /area/deepmaint)
 "cn" = (
 /obj/machinery/light{
 	dir = 1
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/deepmaint)
 "co" = (
 /obj/structure/catwalk,

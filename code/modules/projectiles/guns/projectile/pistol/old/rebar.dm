@@ -1,6 +1,6 @@
 /obj/item/gun/projectile/rebar
 	name = "\"Rebar\" heavy pistol"
-	desc = "A SR heavy pistol that could punch a whole into several layers of plasteel. Uses 12mm rounds. Also has the ablity to have a Master Unmaker integrated into it."
+	desc = "A SR heavy pistol that could punch a whole into several layers of indsteel. Uses 12mm rounds. Also has the ablity to have a Master Unmaker integrated into it."
 	icon = 'icons/obj/guns/projectile/rebar.dmi'
 	icon_state = "type_90"
 	item_state = "type_90"
@@ -8,7 +8,7 @@
 	caliber = CAL_50
 	can_dual = TRUE
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 28, MATERIAL_PLASTIC = 6, MATERIAL_PLATINUM = 18)
+	matter = list(MATERIAL_INDSTEEL = 28, MATERIAL_PLASTIC = 6, MATERIAL_TITANIUMRTC = 18)
 	price_tag = 2250
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_PISTOL

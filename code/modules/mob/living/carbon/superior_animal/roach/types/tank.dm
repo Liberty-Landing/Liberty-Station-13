@@ -1,6 +1,6 @@
 /mob/living/carbon/superior_animal/roach/tank
-	name = "Exoskeleton Roach"
-	desc = "A monstrous, dog-sized cockroach. This one looks more robust than others."
+	name = "Titanoblatta Roach"
+	desc = "A monstrous, mutated dog-sized cockroach. Armored with laminated chitin plates, it can shrug off intense blows."
 	icon_state = "panzer"
 	meat_amount = 4
 	turns_per_move = 2

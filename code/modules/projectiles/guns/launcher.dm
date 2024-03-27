@@ -49,7 +49,7 @@
 	w_class = ITEM_SIZE_BULKY
 	fire_sound = 'sound/weapons/guns/fire/GLfire.ogg'
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3, TECH_BIO = 8, TECH_ILLEGAL = 1)
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_PLASTIC = 20)
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_PLASTIC = 20)
 	matter_type = MATERIAL_WOOD
 
 	stored_matter = 5
@@ -83,9 +83,8 @@
 	w_class = ITEM_SIZE_BULKY
 	fire_sound = 'sound/weapons/guns/fire/GLfire.ogg'
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 3, TECH_BIO = 8, TECH_ILLEGAL = 1)
-	matter = list(MATERIAL_PLASTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_PLASTIC = 20)
-	matter_type = MATERIAL_COMPRESSED_MATTER//this way it might be used more often
-
+	matter = list(MATERIAL_INDSTEEL = 10, MATERIAL_WOOD = 5, MATERIAL_PLASTIC = 20)
+	matter_type = MATERIAL_WOOD
 	stored_matter = 0
 	projectile_cost = 1
 	projectile_type = /obj/item/arrow/reclaiming

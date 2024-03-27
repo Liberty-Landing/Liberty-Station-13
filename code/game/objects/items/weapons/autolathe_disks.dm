@@ -4,7 +4,7 @@
 	icon_state = "yellow"
 	max_capacity = 1024	// Up to 255 designs, automatically reduced to the nearest power of 2
 	origin_tech = list(TECH_DATA = 3) // Most design disks end up being 64 to 128 GQ
-	matter = list(MATERIAL_STEEL = 1, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 0.5)
+	matter = list(MATERIAL_ALUMINIUM = 1, MATERIAL_PLASTIC = 2, MATERIAL_GOLD = 0.5)
 	license = -1
 	var/list/designs = list()
 

@@ -73,7 +73,7 @@
 
 /tipsAndTricks/jobs/scrap_stuff
     jobs_list = list(JOBS_PROSPECTOR)
-    tipText = "Broken Devices, Scrap Metal, and Burnt Boards are all worth grabbing, as they can have random materials or at least some steel, glass and/or plastic."
+    tipText = "Broken Devices, Scrap Metal, and Burnt Boards are all worth grabbing, as they can have random materials or at least some aluminium, glass and/or plastic."
 
 /tipsAndTricks/jobs/scrap_ammo_uses
     jobs_list = list(JOBS_PROSPECTOR)
@@ -304,15 +304,15 @@
 
 /tipsAndTricks/jobs/wall_obelisk
     jobs_list = list(JOBS_CHURCH)
-    tipText = "Around some parts of the colony their are wall obelisks; they run on biomatter, so it might be wise to check them and refill them from time to time."
+    tipText = "Scorch can be collected from filled Scorch Canisters after being connected to the Bonfire. The liquid scorch can be splashed on the ground with the container as needed, making any area hazarduous."
 
 /tipsAndTricks/jobs/church_wine_anti_toxin
     jobs_list = list(JOBS_CHURCH)
-    tipText = "The Bonfire Cahors Wine can be drank to help combat toxin damage or injected to be a mild painkiller."
+    tipText = "The Custodian Alcoholic drinks can be drank to help combat toxin damage or injected to be a mild painkiller. Just don't ask CAPSA for an explanation on how that works."
 
 /tipsAndTricks/jobs/best_dagger_ever
     jobs_list = list(JOBS_CHURCH)
-    tipText = "The Bonfire ritual knife can be thrown, this is useful for embedding the knife into someone's back. If thrown into someone that is also a follower of Bonfire, it is less likely to embed."
+    tipText = "The Bonfire small sword can be thrown, this is useful for embedding the knife into someone's back. If thrown into someone that is also a Knight, it is less likely to embed."
 
 /tipsAndTricks/jobs/skyfall_timer
     jobs_list = list(JOBS_CHURCH)
@@ -320,8 +320,8 @@
 
 /tipsAndTricks/jobs/plants_n_meat
     jobs_list = list(JOBS_CHURCH)
-    tipText = "If you're ever in need of biomatter, you can always buy or trade for plants and meat with Hunters or Gardener."
+    tipText = "If you are out of scorch, kill for it. You are here to shrink down the plague population, not buy its flesh."
 
 /tipsAndTricks/jobs/cleaning_carbine
     jobs_list = list(JOBS_CHURCH)
-    tipText = "The cleansing carbine as the name suggests fires cleaning pellets that when hit something will make a small bit of slippery foam that cleans. This can be used both defensively as lasting slip to get away from bigger foes and to normally clean the station if theirs no janitor around."
+    tipText = "You can adquire neurons by using your lantern on burrows."

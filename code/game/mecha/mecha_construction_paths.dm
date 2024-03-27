@@ -160,7 +160,7 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="External armor is installed."),
 		//3
-		list("key"=/obj/item/stack/material/plasteel,
+		list("key"=/obj/item/stack/material/indsteel,
 			//"backkey"=QUALITY_WELDING,
 			"desc"="Internal armor is welded."),
 		//4
@@ -188,7 +188,7 @@
 			//"backkey"=QUALITY_PRYING,
 			"desc"="Internal armor is installed, but needs plastic fittings."),
 		//10
-		list("key"=/obj/item/stack/material/steel,
+		list("key"=/obj/item/stack/material/aluminium,
 			//"backkey"=QUALITY_SCREW_DRIVING,
 			"desc"="Peripherals control module is secured"),
 		//11
@@ -356,7 +356,7 @@
 						"[user] pries internal armor layer from [holder].",
 						"You prie internal armor layer from [holder]."
 					)
-					new /obj/item/stack/material/steel (get_turf(holder), 5)
+					new /obj/item/stack/material/aluminium (get_turf(holder), 5)
 					holder.icon_state = "example8"
 			if(4)
 				if(diff==FORWARD)
@@ -392,7 +392,7 @@
 					)
 					holder.icon_state = "example13"
 				else
-					var/obj/item/stack/material/plasteel/MS = new (get_turf(holder), 5)// Unlike coil we keep are sheets as theirs 0 loss
+					var/obj/item/stack/material/indsteel/MS = new (get_turf(holder), 5)// Unlike coil we keep are sheets as theirs 0 loss
 					user.visible_message(
 						"[user] pries [MS] from [holder].",
 						"You prie [MS] from [holder]."

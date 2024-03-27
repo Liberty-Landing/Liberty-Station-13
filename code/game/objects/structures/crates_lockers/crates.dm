@@ -1,11 +1,11 @@
 /obj/structure/closet/crate
 	name = "crate"
-	desc = "A rectangular steel crate."
+	desc = "A rectangular aluminium crate."
 	icon = 'icons/obj/crate.dmi'
 	icon_state = "crate"
 	climbable = TRUE
 	dense_when_open = TRUE
-	matter = list(MATERIAL_STEEL = 10)
+	matter = list(MATERIAL_ALUMINIUM = 10)
 	open_sound = 'sound/machines/click.ogg'
 	close_sound = 'sound/machines/click.ogg'
 	price_tag = 50
@@ -112,7 +112,7 @@
 	name = "trash cart"
 	desc = "A heavy, metal trashcart with wheels."
 	icon_state = "trashcart"
-	matter = list(MATERIAL_PLASTEEL = 10)
+	matter = list(MATERIAL_INDSTEEL = 10)
 	storage_capacity = 6 * MOB_MEDIUM //3x Storage
 	max_mob_size = 4 //2 more mobs then normal. Makes clearing mobs faster
 

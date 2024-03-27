@@ -11,8 +11,8 @@
 	attack_verb = list("attacked", "stabbed", "poked")
 	sharp = 1
 	edge = 1
-	force_divisor = 0.1 // 6 when wielded with hardness 60 (steel)
-	thrown_force_divisor = 0.25 // 5 when thrown with weight 20 (steel)
+	force_divisor = 0.1 // 6 when wielded with hardness 60 (aluminium)
+	thrown_force_divisor = 0.25 // 5 when thrown with weight 20 (aluminium)
 	var/loaded      //Descriptive string for currently loaded food object.
 	var/scoop_food = 1
 	structure_damage_factor = STRUCTURE_DAMAGE_WEAK
@@ -74,7 +74,7 @@
 	attack_verb = list("attacked", "poked")
 	edge = 0
 	sharp = 0
-	force_divisor = 0.1 //2 when wielded with weight 20 (steel)
+	force_divisor = 0.1 //2 when wielded with weight 20 (aluminium)
 
 /obj/item/material/kitchen/utensil/spoon/plastic
 	default_material = MATERIAL_PLASTIC

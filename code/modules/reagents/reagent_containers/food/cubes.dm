@@ -65,7 +65,7 @@
 	bitesize = 12
 	filling_color = "#ADAC7F"
 	center_of_mass = list("x"=16, "y"=14)
-	preloaded_reagents = list("plasticide" = 10)
+	preloaded_reagents = list("microplastic" = 10)
 	//taste_tag = list(MEAT_FOOD,BLAND_FOOD)
 	grow_into = /obj/item/gun/projectile/automatic/slaught_o_matic
 

@@ -8,7 +8,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "aJ" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -24,7 +24,7 @@
 	icon_state = "window"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "aP" = (
 /obj/structure/table/rack/shelf,
@@ -127,7 +127,7 @@
 	dir = 1;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "eq" = (
 /obj/structure/window/basic,
@@ -137,7 +137,7 @@
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "er" = (
 /obj/structure/table/standard,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "eu" = (
 /obj/machinery/mech_recharger,
@@ -152,7 +152,7 @@
 "fi" = (
 /obj/effect/decal/cleanable/generic,
 /obj/landmark/storyevent/midgame_stash_spawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "fE" = (
 /obj/structure/flora/ausbushes/stalkybush,
@@ -185,7 +185,7 @@
 	icon_state = "window"
 	},
 /obj/random/structures/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "ij" = (
 /obj/structure/table/woodentable,
@@ -226,7 +226,7 @@
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "lE" = (
 /obj/random/mob/roomba/any,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "ma" = (
 /obj/effect/decal/cleanable/dirt,
@@ -268,7 +268,7 @@
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "nv" = (
 /obj/structure/closet/onestar/tier1/medical,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "od" = (
 /obj/effect/decal/cleanable/dirt,
@@ -307,7 +307,7 @@
 /obj/machinery/door/airlock/maintenance_interior{
 	name = "Airlock"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "pv" = (
 /obj/random/medical/low_chance,
@@ -318,7 +318,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "pz" = (
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "pM" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -334,7 +334,7 @@
 "qn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/roomba/any,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "qH" = (
 /obj/structure/sink{
@@ -360,7 +360,7 @@
 "qM" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "rm" = (
 /obj/structure/flora/big/bush3,
@@ -406,7 +406,7 @@
 	dir = 1
 	},
 /obj/random/structures/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "tm" = (
 /obj/item/stack/rods/random,
@@ -432,7 +432,7 @@
 	pixel_y = 32
 	},
 /obj/random/structures/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "vy" = (
 /obj/structure/closet/crate/trashcart,
@@ -448,7 +448,7 @@
 /area/nadezhda/outside/forest)
 "wG" = (
 /obj/structure/closet/onestar/tier3/medical,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "wH" = (
 /obj/structure/table/woodentable,
@@ -468,7 +468,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/random/turret/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "xm" = (
 /obj/structure/table/rack/shelf,
@@ -490,7 +490,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/random/structures/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "xW" = (
 /obj/structure/table/rack/shelf,
@@ -509,7 +509,7 @@
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "zx" = (
 /obj/structure/closet/onestar/tier1/normal,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "zA" = (
 /obj/structure/bed/chair{
@@ -524,14 +524,14 @@
 "zJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/structures/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Ag" = (
 /turf/simulated/floor/asteroid/dirt,
 /area/nadezhda/outside/forest)
 "Ah" = (
 /obj/structure/closet/onestar/tier1/special,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Au" = (
 /obj/effect/decal/cleanable/dirt,
@@ -542,7 +542,7 @@
 "Ba" = (
 /obj/machinery/light/small,
 /obj/machinery/vending/one_star/health,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Bm" = (
 /obj/structure/flora/small/lavarock2,
@@ -571,7 +571,7 @@
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Cj" = (
 /obj/random/structures/os,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Cz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -616,7 +616,7 @@
 	dir = 8;
 	icon_state = "warning"
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "EH" = (
 /obj/structure/bed,
@@ -637,7 +637,7 @@
 "Ft" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/frame/apc,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Fz" = (
 /obj/random/flora/jungle_tree,
@@ -668,16 +668,16 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "IG" = (
 /obj/machinery/light/small,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "IH" = (
 /obj/random/junk/low_chance,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "IM" = (
 /obj/structure/table/rack/shelf,
@@ -694,7 +694,7 @@
 /area/nadezhda/outside/forest)
 "Ko" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Ks" = (
 /obj/effect/decal/cleanable/dirt,
@@ -768,7 +768,7 @@
 	dir = 1
 	},
 /obj/structure/closet/onestar/tier3/medical,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "OJ" = (
 /obj/random/turret/os,
@@ -792,12 +792,12 @@
 "PA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/onestar/tier1/normal,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "PF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/roomba/range,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "PN" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -811,7 +811,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/random/mob/roomba/any,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Rn" = (
 /obj/structure/flora/ausbushes/lavendergrass,
@@ -828,7 +828,7 @@
 "RW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "RZ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -868,7 +868,7 @@
 "UH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/landmark/storyevent/midgame_stash_spawn,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "UR" = (
 /obj/structure/table/woodentable,
@@ -920,7 +920,7 @@
 	icon_state = "warning"
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Zh" = (
 /obj/machinery/power/port_gen/os_generator,
@@ -937,12 +937,12 @@
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Zi" = (
 /obj/structure/table/onestar,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Zk" = (
 /obj/effect/floor_decal/industrial/warning,
 /obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "Zt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -950,7 +950,7 @@
 	dir = 1
 	},
 /obj/structure/closet/onestar/tier3/mineral,
-/turf/simulated/floor/tiled/steel,
+/turf/simulated/floor/tiled/aluminium,
 /area/nadezhda/dungeon/outside/abandoned_outpost)
 "ZJ" = (
 /obj/structure/table/rack/shelf,

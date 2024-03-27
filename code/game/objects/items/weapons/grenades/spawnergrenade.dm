@@ -48,7 +48,7 @@
 /obj/item/grenade/spawnergrenade/manhacks/colony
 	name = "colony-locked manhack grenade"
 	desc = "Deploys a swarm of floating robots that will attack animals and non-colony humanoids nearby. "
-	spawner_type = /mob/living/simple_animal/hostile/viscerator/colony
+	spawner_type = /mob/living/simple_animal/hostile/viscerator/unstable_radiance
 
 //Troll grenade
 /obj/item/grenade/spawnergrenade/blob
@@ -64,7 +64,7 @@
 	deliveryamt = 1
 	icon_state = "screamer"
 	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/junkbot
-	matter = list(MATERIAL_STEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 5)
 	will_flash = FALSE
 
 //Simulacrum spawner grenades
@@ -74,7 +74,7 @@
 	deliveryamt = 1
 	icon_state = "similacrum_nade_small"
 	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/roomba/allied
-	matter = list(MATERIAL_STEEL = 5, MATERIAL_SILVER = 2, MATERIAL_GOLD = 1)
+	matter = list(MATERIAL_ALUMINIUM = 5, MATERIAL_SILVER = 2, MATERIAL_GOLD = 1)
 	will_flash = FALSE
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/trippers
@@ -83,7 +83,7 @@
 	deliveryamt = 1
 	icon_state = "similacrum_nade_small"
 	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/roomba/trip/armored/allied
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_SILVER = 2, MATERIAL_GOLD = 1, MATERIAL_PLASTEEL = 6) //3 plasteel per baton
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_SILVER = 2, MATERIAL_GOLD = 1, MATERIAL_INDSTEEL = 6) //3 indsteel per baton
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/sword
 	name = "\improper SR-PI sword drone grenade"
@@ -91,7 +91,7 @@
 	deliveryamt = 1
 	icon_state = "similacrum_nade_medium"
 	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied
-	matter = list(MATERIAL_STEEL = 15, MATERIAL_SILVER = 6, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 5)
+	matter = list(MATERIAL_ALUMINIUM = 15, MATERIAL_SILVER = 6, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 5)
 
 /obj/item/grenade/spawnergrenade/manhacks/roomba/mantis
 	name = "\improper SR-PI mantis drone grenade"
@@ -99,4 +99,12 @@
 	deliveryamt = 1
 	icon_state = "similacrum_nade_large"
 	spawner_type = /mob/living/carbon/superior_animal/robot/simulacrum/synthetic/allied/advanced
-	matter = list(MATERIAL_STEEL = 25, MATERIAL_SILVER = 8, MATERIAL_GOLD = 5, MATERIAL_PLASTEEL = 9)
+	matter = list(MATERIAL_ALUMINIUM = 25, MATERIAL_SILVER = 8, MATERIAL_GOLD = 5, MATERIAL_INDSTEEL = 9)
+
+//Grenadier Knights
+/obj/item/grenade/spawnergrenade/manhacks/radiance
+	name = "\improper Unstable Radiance grenade"
+	desc = "Deploys a poor, confused and desperate radiance-made viscerator in search for its heartless grenadier owner as it practically suffocates to death. Despite its plight, the radiance attacks indiscriminately. The Custodians didn't made that lecture, YOU did. You monster."
+	deliveryamt = 1
+	icon_state = "unstable_radiance"
+	spawner_type = /mob/living/simple_animal/hostile/viscerator/colony

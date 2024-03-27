@@ -15,7 +15,7 @@
 	layer = ABOVE_MOB_LAYER
 	nature = MODIFICATION_SILICON //Why wasn't this done by default?
 	origin_tech = list(TECH_ENGINEERING = 15, TECH_BIO = 5, TECH_DATA = 10)
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_GOLD = 4, MATERIAL_SILVER = 4, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 1)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_GOLD = 4, MATERIAL_SILVER = 4, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 1)
 	attack_verb = list("attacked", "slapped", "whacked")
 	price_tag = 12000
 	var/nanite_points = 10
@@ -51,7 +51,7 @@ obj/item/organ/internal/nanogate/Union
 	desc = "A custom built nanogate designed from the far superior opifex blueprints. It is implanted right where the spine meets the skull and provides a wide variety of nanite based uses. This \
 	particular design is made by the Terra-Therma Worker's Union, able to store more nanites for additional uses."
 	nanite_points = 15
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_GOLD = 8, MATERIAL_SILVER = 9, MATERIAL_PLASTIC = 20, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 2)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_GOLD = 8, MATERIAL_SILVER = 9, MATERIAL_PLASTIC = 20, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 2)
 	origin_tech = list(TECH_ENGINEERING = 20, TECH_BIO = 10, TECH_DATA = 20)
 
 
@@ -63,7 +63,7 @@ obj/item/organ/internal/nanogate/Union
 	icon_state = "nanogate_opi" //TODO: Replace this with a proper sprite. Opifex branded.
 	price_tag = 20000 // Better than the standard one.
 	nanite_points = 20
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_GOLD = 12, MATERIAL_SILVER = 12, MATERIAL_PLASTIC = 20, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 3)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_GOLD = 12, MATERIAL_SILVER = 12, MATERIAL_PLASTIC = 20, MATERIAL_GLASS = 15, MATERIAL_DIAMOND = 3)
 	origin_tech = list(TECH_ENGINEERING = 25, TECH_BIO = 15, TECH_DATA = 10)
 
 	owner_verbs = list(

@@ -565,7 +565,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/grey,
-/obj/item/stack/ore/coal,
+/obj/item/stack/ore/lignite,
 /obj/structure/bonfire/permanent,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -573,7 +573,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/grey,
-/obj/item/stack/ore/coal,
+/obj/item/stack/ore/lignite,
 /obj/structure/bonfire/permanent,
 /turf/simulated/floor/asteroid/dirt/burned,
 /area/liberty/outside/forest/hunting_lodge_dark)
@@ -587,8 +587,8 @@
 /obj/item/stack/material/wood/random,
 /obj/item/stack/material/wood/random,
 /obj/structure/table/rack,
-/obj/item/stack/ore/coal,
-/obj/item/stack/ore/coal,
+/obj/item/stack/ore/lignite,
+/obj/item/stack/ore/lignite,
 /obj/item/newspaper,
 /obj/item/newspaper,
 /turf/simulated/floor/tiled/dark,
@@ -1910,7 +1910,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "fT" = (
@@ -2064,8 +2064,8 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gr" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gs" = (
@@ -2137,7 +2137,7 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gD" = (
 /obj/structure/table/rack/shelf,
-/obj/item/stack/material/steel/full,
+/obj/item/stack/material/aluminium/full,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "gE" = (
@@ -3063,7 +3063,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -3773,7 +3773,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "Ob" = (

@@ -8,7 +8,7 @@
 	w_class = ITEM_SIZE_SMALL	//"Pocket-sand!"
 	caliber = CAL_PISTOL
 	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2)
-	matter = list(MATERIAL_PLASTEEL = 12, MATERIAL_WOOD = 5)
+	matter = list(MATERIAL_INDSTEEL = 12, MATERIAL_WOOD = 5)
 	price_tag = 50
 	fire_sound = 'sound/weapons/guns/fire/9mm_pistol.ogg'
 	can_dual = TRUE
@@ -22,7 +22,7 @@
 
 	wield_delay = 0 SECOND
 	wield_delay_factor = 0		//It's bad.
-	gun_parts = list(/obj/item/part/gun/frame/partizaner = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/pistol/steel = 1, /obj/item/part/gun/barrel/pistol/steel = 1)
+	gun_parts = list(/obj/item/part/gun/frame/partizaner = 1, /obj/item/part/gun/grip/wood = 1, /obj/item/part/gun/mechanism/pistol/aluminium = 1, /obj/item/part/gun/barrel/pistol/aluminium = 1)
 
 /obj/item/part/gun/frame/partizaner
 	name = "Partizaner frame"
@@ -31,8 +31,8 @@
 	result = /obj/item/gun/projectile/partizaner
 	resultvars = list(/obj/item/gun/projectile/partizaner)
 	gripvars = list(/obj/item/part/gun/grip/wood)
-	mechanismvar = /obj/item/part/gun/mechanism/pistol/steel
-	barrelvars = list(/obj/item/part/gun/barrel/pistol/steel, /obj/item/part/gun/barrel/magnum/steel)	//9mm or 10mm.
+	mechanismvar = /obj/item/part/gun/mechanism/pistol/aluminium
+	barrelvars = list(/obj/item/part/gun/barrel/pistol/aluminium, /obj/item/part/gun/barrel/magnum/aluminium)	//9mm or 10mm.
 	nra = FALSE		//This controls if the weapon checks for barrels or not. If you want a gun to have MULTIPLE calibers that it can be chambered in, put FALSE.
 
 /obj/item/gun/projectile/partizaner/update_icon()

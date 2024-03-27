@@ -144,7 +144,7 @@ A more player-friendly version of the Belvoix scanner, reports basic information
 	icon_state = "dna_scanner"
 	item_state = "analyzer"
 	origin_tech = list(TECH_BIO = 10, TECH_PLASMA = 5)
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_STEEL = 1, MATERIAL_GLASS = 1, MATERIAL_PLASMA = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_ALUMINIUM = 1, MATERIAL_GLASS = 1, MATERIAL_HYDROGENC = 1)
 	charge_per_use = 0
 	var/datum/genetics/genetics_holder/held_mutations
 
@@ -231,7 +231,7 @@ It also resets instability to 0 so bad things don't happen.
 	throw_speed = 1
 	throw_range = 5
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_STEEL = 1, MATERIAL_URANIUM = 1)
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_ALUMINIUM = 1, MATERIAL_URANIUM = 1)
 	origin_tech = list(TECH_MATERIAL = 2, TECH_MAGNET = 4, TECH_BIO = 6)
 	var/used = FALSE
 	var/datum/genetics/genetics_holder/held_mutations
@@ -324,7 +324,7 @@ Can also be loaded into a (Syringe probably) and injected into people. But that 
 	var/obj/item/genetics/sample/loaded_sample
 
 	w_class = ITEM_SIZE_SMALL
-	matter = list(MATERIAL_GLASS = 1, MATERIAL_PLASTIC = 1, MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_GLASS = 1, MATERIAL_PLASTIC = 1, MATERIAL_ALUMINIUM = 1)
 
 /obj/item/genetics/mut_injector/attack(mob/living/target, mob/living/user)
 	if(!istype(target))

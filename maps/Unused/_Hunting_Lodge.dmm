@@ -703,7 +703,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/random/lowkeyrandom/low_chance,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/wood/wild2,
@@ -1092,7 +1092,7 @@
 "fG" = (
 /obj/structure/table/rack/shelf,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/random/lowkeyrandom/low_chance,
 /obj/item/stack/rods/random,
 /turf/simulated/floor/wood/wild2,
@@ -3459,7 +3459,7 @@
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
 /obj/random/lowkeyrandom/low_chance,
-/obj/item/stack/material/steel/random,
+/obj/item/stack/material/aluminium/random,
 /obj/random/lowkeyrandom/low_chance,
 /obj/machinery/light{
 	dir = 8;
@@ -3938,8 +3938,8 @@
 /area/liberty/outside/forest/hunting_lodge_dark)
 "Pn" = (
 /obj/structure/table/reinforced,
-/obj/item/stack/material/plasteel/random,
-/obj/item/stack/material/plasteel/random,
+/obj/item/stack/material/indsteel/random,
+/obj/item/stack/material/indsteel/random,
 /turf/simulated/floor/wood,
 /area/liberty/outside/forest/hunting_lodge_dark)
 "Ps" = (

@@ -16,7 +16,7 @@
 	caliber = CAL_SHOTGUN
 	var/reload = 1
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 4)
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 6)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 6)
 	price_tag = 1000
 	damage_multiplier = 0.75
 	penetration_multiplier = 0.75
@@ -55,7 +55,7 @@
 	item_state = "PW"
 	w_class = ITEM_SIZE_HUGE
 	max_shells = 8
-	matter = list(MATERIAL_PLASTEEL = 25, MATERIAL_PLASTIC = 10)
+	matter = list(MATERIAL_INDSTEEL = 25, MATERIAL_PLASTIC = 10)
 	price_tag = 1500
 	damage_multiplier = 0.9
 	penetration_multiplier = 0.9

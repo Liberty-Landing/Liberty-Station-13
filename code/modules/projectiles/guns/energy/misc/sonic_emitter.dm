@@ -1,12 +1,12 @@
 /obj/item/gun/energy/sonic_emitter
 	name = "handheld sonic emitter"
-	desc = "A sonic weapon prototype specially designed to counter ameridian-based lifeforms by targeting the crystal's resonant frequency. \
+	desc = "A sonic weapon prototype specially designed to counter nacre-based lifeforms by targeting the crystal's resonant frequency. \
 			It is, however, very power-intensive and slow to shoot. It take large cells."
 	icon = 'icons/obj/guns/energy/sonic_emitter.dmi'
 	icon_state = "sonic_emitter"
 	item_state = "sonic_emitter"
 	charge_meter = FALSE
-	matter = list(MATERIAL_STEEL = 10, MATERIAL_PLASTIC = 5)
+	matter = list(MATERIAL_ALUMINIUM = 10, MATERIAL_PLASTIC = 5)
 	price_tag = 500
 	charge_cost = 1000
 	fire_sound = 'sound/effects/basscannon.ogg'

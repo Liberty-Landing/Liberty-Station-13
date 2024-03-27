@@ -129,7 +129,7 @@
   - balance: Blast doors no longer open upon being broken
   - balance: Blast doors now have a very high resistance against ballisitics, by 20.
   - balance: All doors now reduce damage from bullets by 4
-  - balance: High security doors now cost 10 plasteel , but are far tougher against
+  - balance: High security doors now cost 10 indsteel , but are far tougher against
       ballistics.
   - bugfix: Fixed huds for versions past 514.16
   - rscadd: Added a verb to toggle walk or run . Not binded , has to be macroed ,
@@ -143,7 +143,7 @@
   - balance: Rebalanced mech armor, mech melee, mech-fab costs, adds a new chassis
       type
   - soundadd: Ports a tank tread sound from Aurora
-  - rscadd: Adds a steel/glass walkway above RnD, now with 99% more firelocks!
+  - rscadd: Adds a aluminium/glass walkway above RnD, now with 99% more firelocks!
   - rscdel: Removes the exposed catwalk above RnD
   - tweak: Added R-Windows to xenobiology, exterior MoeSci windows, and the server
       room, reshuffles the base RnD area for (hopefully) more convenience.

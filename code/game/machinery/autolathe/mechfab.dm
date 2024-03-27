@@ -78,7 +78,7 @@
 // A version with some materials already loaded, to be used on map spawn
 /obj/machinery/autolathe/mechfab/loaded
 	stored_material = list(
-		MATERIAL_STEEL = 30,
+		MATERIAL_ALUMINIUM = 30,
 		MATERIAL_PLASTIC = 30,
 		MATERIAL_GLASS = 30,
 		)

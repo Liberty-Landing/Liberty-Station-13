@@ -1,6 +1,6 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "c" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_combat/low_chance,
 /obj/random/ammo/low_chance,
 /obj/random/ammo/low_chance,
@@ -8,12 +8,12 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/template_noop)
 "e" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/item/device/binoculars,
 /turf/simulated/floor/tiled/techmaint,
 /area/template_noop)
 "g" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_energy_cheap,
 /obj/random/powercell,
 /obj/random/powercell,
@@ -28,7 +28,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/template_noop)
 "j" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/structure/salvageable/personal,
 /turf/simulated/floor/tiled/techmaint,
 /area/template_noop)
@@ -43,7 +43,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/template_noop)
 "N" = (
-/obj/structure/table/steel,
+/obj/structure/table/aluminium,
 /obj/random/gun_normal/low_chance,
 /obj/random/ammo/low_chance,
 /obj/random/ammo/low_chance,

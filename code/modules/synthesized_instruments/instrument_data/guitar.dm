@@ -4,7 +4,7 @@
 
 
 /datum/instrument/guitar/steel_crisis
-	name = "Crisis Steel String Guitar"
+	name = "Crisis aluminium String Guitar"
 	id = "csteelgt"
 	samples = list("36"='sound/synthesized_instruments/guitar/crisis_steel/c2.ogg',
 				   "48"='sound/synthesized_instruments/guitar/crisis_steel/c3.ogg',

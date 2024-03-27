@@ -7,7 +7,7 @@
 	icon = 'icons/obj/trash.dmi'
 	w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_PLASTIC = 1)
-	preloaded_reagents = list("plasticide" = 4)
+	preloaded_reagents = list("microplastic" = 4)
 
 /obj/item/trash/attack(mob/M, mob/living/user)
 	return
@@ -108,7 +108,7 @@
 	name = "tray"
 	desc = "An empty tray."
 	icon_state = "tray"
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/trash/candle
 	name = "candle"

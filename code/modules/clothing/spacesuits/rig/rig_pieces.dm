@@ -11,7 +11,7 @@
 	cold_protection =    HEAD|FACE|EYES
 	brightness_on = 4
 	max_upgrades = 0 //RIG modules are upgraded, not the rig pieces
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/clothing/gloves/rig
 	name = "gauntlets"
@@ -22,7 +22,7 @@
 	cold_protection =    ARMS
 	species_restricted = null
 	gender = PLURAL
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/clothing/shoes/magboots/rig
 	name = "boots"
@@ -33,7 +33,7 @@
 	species_restricted = null
 	gender = PLURAL
 	icon_base = null
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/clothing/suit/space/rig
 	name = "chestpiece"
@@ -51,7 +51,7 @@
 	retract_while_active = TRUE
 	extra_allowed = list(/obj/item/storage/backpack)
 	max_upgrades = 0 //RIG modules are upgraded, not the rig pieces
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/clothing/suit/space/rig/handle_shield(mob/user, damage, atom/damage_source = null, mob/attacker = null, def_zone = null, attack_text = "the attack")
 	if(istype(damage_source, /obj/item/projectile/bullet))
@@ -102,7 +102,7 @@
 	heat_protection =    HEAD|FACE|EYES
 	cold_protection =    HEAD|FACE|EYES
 	flags =              THICKMATERIAL|AIRTIGHT|COVER_PREVENT_MANIPULATION
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/clothing/suit/lightrig
 	name = "suit"
@@ -112,7 +112,7 @@
 	flags_inv =          HIDEJUMPSUIT
 	flags =              THICKMATERIAL|COVER_PREVENT_MANIPULATION
 	extra_allowed = list(/obj/item/storage/backpack) //Light rigs are also allowed a backpack on their suit slot.
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/clothing/shoes/lightrig
 	name = "boots"
@@ -121,7 +121,7 @@
 	heat_protection = LEGS
 	species_restricted = null
 	gender = PLURAL
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)
 
 /obj/item/clothing/gloves/lightrig
 	name = "gloves"
@@ -131,4 +131,4 @@
 	cold_protection =    ARMS
 	species_restricted = null
 	gender = PLURAL
-	matter = list(MATERIAL_STEEL = 1)
+	matter = list(MATERIAL_ALUMINIUM = 1)

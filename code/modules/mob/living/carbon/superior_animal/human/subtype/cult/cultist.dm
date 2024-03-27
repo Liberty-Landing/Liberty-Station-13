@@ -1,7 +1,15 @@
 /mob/living/carbon/superior_animal/human/lighteater_cultist
-	name = "Lighteater Cultist"
+	name = "Lighteater Vehement Cultist"
 	desc = "Zealous cultist consumed by a haunting reminder of the terror lurking beneath the ice, subjected to unholy transformation \
 			- its body fused with chitinous, crab-like limbs. The smell of pollen is too strong to endure."
+	description_info = "Binomial Nomenclature: Homo Sapiens Sapiens:\n\n\
+						A member of the Illegal Circhosian Cult, coming from the radical Vehement religious branch ever since Lucca Argyros's mysterious disappearence. \
+						This individual is a devout believer in fate, viewing death as an inevitable part of existence to be embraced rather than feared. \
+						Formerly a normal colonist, likely a scientist deeply immersed in Lucca Argyros's teachings, they underwent enlightenment through carcinification procedures. \
+						This particular cultist is of elite status, having received the Crustor's heart implanted in their occipital lobe, similar to the hearthcore but powered by neurophyta instead of a plasmacore. \
+						By harnessing light they can shroud environments in darkness at will, what result in constant 'demon whispers' and secondary voices punishing them with insults and dares, coming from the radiance. \
+						This condition leads to a range of debilitating symptoms, including hallucinations, loss of vision, ringing in the ears, itching, vomiting, nausea, and suicidal tendencies, \
+						What further proofs the Radiance's nature surrounding their unique personalities, and what they adapt with their owner."
 	icon = 'icons/mob/mobs-humanoid.dmi'
 	icon_state = "lighteater_cultist"
 	icon_dead = "lighteater_cultist_dead"
@@ -78,10 +86,17 @@
 
 
 /mob/living/carbon/superior_animal/human/lighteater_cultist/ranged
-	name = "Ranged Lighteater Cultist"
+	name = "Ranged Lighteater Vehement Cultist"
 	desc = "Zealous cultist consumed by a haunting reminder of the terror lurking beneath the ice, subjected to unholy transformation \
 			- its body fused with chitinous, crab-like limbs. The smell of pollen is too strong to endure. \
 			This one appears to have kept the ability to crudely handle a shotgun in its meaty claws."
+	description_info = "Binomial Nomenclature: Homo Sapiens Sapiens:\n\n\
+						A member of the Illegal Circhosian Cult, coming from the radical Vehement religious branch ever since Lucca Argyros's mysterious disappearence. \
+						This individual is a devout believer in fate, viewing death as an inevitable part of existence to be embraced rather than feared. \
+						This man or woman were a normal colonist previously - most likely a scientist - who dwelled too deep within the directions of Lucca Argyros, \
+						soon enough, received the 'enlightement' from carcinification procedures, either from natural Precursor psionic influence or biomatter infusions considered 'holy rituals'. \
+						This one is a lighteater cultist possessing a weaker form of the Crustor Heart, one that the radiance has been removed and completely lacks neurophyta, \
+						this results in less options for power while being fueled by welding fuel alone. The entire thing is flamming hot, unstable and not versatile, likely to explode any moment."
 	icon_state = "lighteater_cultist_range"
 	icon_dead = "lighteater_cultist_range_dead"
 	maxHealth = 100

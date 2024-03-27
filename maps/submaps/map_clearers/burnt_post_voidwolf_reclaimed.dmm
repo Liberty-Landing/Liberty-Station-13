@@ -241,7 +241,7 @@
 /area/nadezhda/dungeon/outside/burned_outpost)
 "AE" = (
 /obj/item/storage/deferred/crate/cells,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "Cf" = (
 /obj/structure/flora/small/grassb4,
@@ -302,7 +302,7 @@
 /area/nadezhda/dungeon/outside/burned_outpost)
 "GL" = (
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech/ranged,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "GR" = (
 /obj/structure/closet/secure_closet/rare_loot,
@@ -334,7 +334,7 @@
 /area/nadezhda/outside/forest)
 "Iz" = (
 /mob/living/carbon/superior_animal/human/voidwolf/fieldtech,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "IO" = (
 /obj/effect/floor_decal/industrial/hatch,
@@ -416,7 +416,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "Pu" = (
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "Qe" = (
 /obj/structure/flora/big/bush3,
@@ -428,7 +428,7 @@
 /area/nadezhda/outside/forest)
 "Ry" = (
 /obj/random/mob/voidwolf,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "RE" = (
 /obj/effect/floor_decal/industrial/loading/white{
@@ -438,7 +438,7 @@
 /area/nadezhda/dungeon/outside/burned_outpost)
 "Sw" = (
 /obj/effect/decal/cleanable/blood/oil,
-/turf/simulated/floor/tiled/steel/gray_perforated,
+/turf/simulated/floor/tiled/aluminium/gray_perforated,
 /area/nadezhda/dungeon/outside/burned_outpost)
 "Sy" = (
 /obj/structure/flora/small/grassb1,

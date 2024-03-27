@@ -46,7 +46,7 @@
 			if(state == 0)
 				if(I.use_tool(user, src, WORKTIME_FAST, tool_type, FAILCHANCE_HARD, required_stat = STAT_MEC))
 					to_chat(user, SPAN_NOTICE("You deconstruct the frame."))
-					new /obj/item/stack/material/plasteel( loc, 8)
+					new /obj/item/stack/material/indsteel( loc, 8)
 					qdel(src)
 					return
 			return
@@ -75,7 +75,7 @@
 						icon_state = "3b"
 					else
 						icon_state = "3"
-					new /obj/item/stack/material/glass/reinforced( loc, 2 )
+					new /obj/item/stack/material/glass/laminated( loc, 2 )
 					return
 			return
 
@@ -148,7 +148,7 @@
 						to_chat(user, SPAN_NOTICE("You add cables to the frame."))
 				return
 		if(3)
-			if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_RGLASS)
+			if(istype(I, /obj/item/stack/material) && I.get_material_name() == MATERIAL_LGLASS)
 				var/obj/item/stack/RG = I
 				if (RG.get_amount() < 2)
 					to_chat(user, SPAN_WARNING("You need two sheets of glass to put in the glass panel."))

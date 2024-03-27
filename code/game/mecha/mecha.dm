@@ -1426,7 +1426,7 @@ assassination method if you time it right*/
 		to_chat(user, SPAN_WARNING("You can't climb into the exosuit while buckled!"))
 		return
 /* This is gonna be useful later - Lamasmaster
-	if(istype(user.get_equipped_item(slot_back), /obj/item/rig/ameridian_knight))
+	if(istype(user.get_equipped_item(slot_back), /obj/item/rig/nacre_knight))
 		to_chat(user, SPAN_WARNING("Your armor is too bulky to fit in the exosuit!"))
 		return
 */

@@ -1,25 +1,25 @@
 /*
-	A vast number of ameridian spawn around the colony. Will heavily stress the shields
+	A vast number of nacre spawn around the colony. Will heavily stress the shields
 	They eventually go away
 */
-/datum/storyevent/ameridian_migration
-	id = "ameridian_migration"
-	name = "ameridian growth"
+/datum/storyevent/nacre_migration
+	id = "nacre_migration"
+	name = "nacre growth"
 
-	event_type =/datum/event/ameridian_migration
+	event_type =/datum/event/nacre_migration
 	event_pools = list(EVENT_LEVEL_MAJOR = POOL_THRESHOLD_MAJOR)
 	tags = list(TAG_COMMUNAL, TAG_COMBAT, TAG_DESTRUCTIVE, TAG_SCARY, TAG_EXTERNAL)
 
 //////////////////////////////////////////////////////////
 
-/datum/event/ameridian_migration
+/datum/event/nacre_migration
 	announceWhen	= 50
 	endWhen 		= 60
 	var/list/viable_turfs = list()
-	var/list/spawned_ameridian = list()
+	var/list/spawned_nacre = list()
 
 
-/datum/event/ameridian_migration/setup()
+/datum/event/nacre_migration/setup()
 	var/area/forest = locate(/area/liberty/outside/forest) in world //pick tiles outside colony walls in that same z-level
 	for (var/turf/T in forest)
 		if (locate(/obj/effect/shield) in T)
@@ -39,36 +39,36 @@
 	announceWhen = rand(40, 60)
 	endWhen = rand(600,1200)
 
-/datum/event/ameridian_migration/announce()
+/datum/event/nacre_migration/announce()
 	var/announcement = ""
 	if(severity == EVENT_LEVEL_MAJOR)
-		announcement = "Massive growth of Ameridian has been detected outside colony walls, please stand-by."
+		announcement = "Massive growth of Nacre has been detected outside colony walls, please stand-by."
 	else
-		announcement = "Ameridian [spawned_ameridian.len == 1 ? "growth has" : "growths have"] been detected outside the colony."
+		announcement = "Nacre [spawned_nacre.len == 1 ? "growth has" : "growths have"] been detected outside the colony."
 
 	command_announcement.Announce(announcement, "Lifesign Alert")
 
-/datum/event/ameridian_migration/start()
+/datum/event/nacre_migration/start()
 	if(severity == EVENT_LEVEL_MAJOR)
-		spawn_ameridian(70)
+		spawn_nacre(70)
 	else if(severity == EVENT_LEVEL_MODERATE)
-		spawn_ameridian(35)
+		spawn_nacre(35)
 
-/datum/event/ameridian_migration/proc/spawn_ameridian(var/number)
+/datum/event/nacre_migration/proc/spawn_nacre(var/number)
 	var/list/spawn_locations = pickweight_mult(viable_turfs, number)
 
 	for(var/turf/T in spawn_locations)
 		if(prob(70))
-			spawned_ameridian.Add(new /obj/random/structures/ameridian_crystal(T))
+			spawned_nacre.Add(new /obj/random/structures/nacre_crystal(T))
 
-/datum/event/ameridian_migration/end()
-	for(var/obj/structure/ameridian_crystal/a in spawned_ameridian)
+/datum/event/nacre_migration/end()
+	for(var/obj/structure/nacre_crystal/a in spawned_nacre)
 		if(prob(85)) //20% chance to stay
 			if(!a.stat)
 				var/turf/T = get_turf(a)
 				if(istype(T, /turf/space)) //If they end up outside the map then we remove them on end
-					spawned_ameridian.Remove(a)
+					spawned_nacre.Remove(a)
 					qdel(a)
 				if(istype(T, /turf/unsimulated/wall/jungle))
-					spawned_ameridian.Remove(a)
+					spawned_nacre.Remove(a)
 					qdel(a)

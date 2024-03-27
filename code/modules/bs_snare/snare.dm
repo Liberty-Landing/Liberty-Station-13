@@ -11,7 +11,7 @@
 
 /obj/item/clothing/accessory/bs_silk/New()
 	. = ..()
-	matter = list(MATERIAL_STEEL = 8, MATERIAL_GLASS = 5, MATERIAL_SILVER = 10)
+	matter = list(MATERIAL_ALUMINIUM = 8, MATERIAL_GLASS = 5, MATERIAL_SILVER = 10)
 /*/obj/item/clothing/accessory/bs_silk/proc/toggle_lock()
 	removable = !removable*/
 

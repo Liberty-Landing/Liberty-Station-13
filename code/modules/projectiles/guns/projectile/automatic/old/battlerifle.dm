@@ -15,7 +15,7 @@
 	slot_flags = SLOT_BACK
 	load_method = SINGLE_CASING|MAGAZINE
 	mag_well = MAG_WELL_HRIFLE|MAG_WELL_DRUM
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5)
 	price_tag = 1500
 	penetration_multiplier = 1.0
 	damage_multiplier = 1.0
@@ -71,7 +71,7 @@
 	icon = 'icons/obj/guns/projectile/DMR.dmi'
 	icon_state = "DMR"
 	item_state = "DMR"
-	matter = list(MATERIAL_PLASTEEL = 20, MATERIAL_PLASTIC = 15, MATERIAL_GLASS = 10)
+	matter = list(MATERIAL_INDSTEEL = 20, MATERIAL_PLASTIC = 15, MATERIAL_GLASS = 10)
 	mag_well = MAG_WELL_HRIFLE
 	price_tag = 2000
 	damage_multiplier = 1.2
@@ -98,7 +98,7 @@
 	icon = 'icons/obj/guns/projectile/Warthog.dmi'
 	icon_state = "warthog"
 	item_state = "warthog"
-	matter = list(MATERIAL_PLASTEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5)
+	matter = list(MATERIAL_INDSTEEL = 15, MATERIAL_PLASTIC = 10, MATERIAL_GLASS = 5)
 	mag_well = MAG_WELL_HRIFLE|MAG_WELL_DRUM
 	price_tag = 1750
 	penetration_multiplier = 1.2
@@ -118,7 +118,7 @@
 	name = "Omnirifle frame"
 	desc = "An Omnirifle frame. The ex-war criminal's delight."
 	icon_state = "frame_omni"
-	matter = list(MATERIAL_PLASTEEL = 8)
+	matter = list(MATERIAL_INDSTEEL = 8)
 	result = /obj/item/gun/projectile/automatic/omnirifle
 	gripvars = list(/obj/item/part/gun/grip/black, /obj/item/part/gun/grip/rubber)
 	resultvars = list(/obj/item/gun/projectile/automatic/omnirifle, /obj/item/gun/projectile/automatic/omnirifle/rds)

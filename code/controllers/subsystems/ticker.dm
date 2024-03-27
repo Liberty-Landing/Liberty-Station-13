@@ -261,7 +261,7 @@ SUBSYSTEM_DEF(ticker)
 	// no, block the main thread.
 	GLOB.storyteller.set_up()
 	to_chat(world, "<FONT color='blue'><B>Enjoy the game!</B></FONT>")
-	SEND_SOUND(world, sound('sound/AI/welcome.ogg')) // Skie
+	SEND_SOUND(world, sound('sound/AI/welcome.ogg')) // Skie //This is not working.
 	//Holiday Round-start stuff	~Carn
 	Holiday_Game_Start()
 	SSvote.start_restart_vote_loop()
@@ -489,7 +489,7 @@ SUBSYSTEM_DEF(ticker)
 					else
 						to_chat(Player, "<font color='green'><b>You managed to survive today's events on the [station_name()] as [Player.real_name].</b></font>")
 				else if(isAdminLevel(playerTurf.z))
-					to_chat(Player, "<font color='green'><b>You successfully underwent crew transfer after events on [station_name()] as [Player.real_name].</b></font>")
+					to_chat(Player, "<font color='green'><b>You successfully underwent denizen transfer after events on [station_name()] as [Player.real_name].</b></font>")
 				else if(issilicon(Player))
 					to_chat(Player, "<font color='green'><b>You remained operational after today's events on the [station_name()] as [Player.real_name].</b></font>")
 				else

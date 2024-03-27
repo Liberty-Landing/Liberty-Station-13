@@ -45,7 +45,7 @@
 	)
 
 /obj/item/organ/external/robotic/moebius
-	price_tag = 450 //Has plasteel
+	price_tag = 450 //Has indsteel
 
 /obj/item/organ/external/robotic/blackshield
 	price_tag = 750 //Has blackmarket

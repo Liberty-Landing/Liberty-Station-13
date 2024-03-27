@@ -23,7 +23,7 @@
 	name = "throwing knife"
 	result = /obj/item/stack/thrown/throwing_knife
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(QUALITY_HAMMERING, 10, "time" = 20)
 	)
@@ -32,7 +32,7 @@
 	name = "parrying dagger"
 	result = /obj/item/shield/parrying
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(QUALITY_HAMMERING, 10, "time" = 20),
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC, "time" = 10)
@@ -42,14 +42,14 @@
 	name = "butterfly knife blade"
 	result = /obj/item/material/butterflyblade
 	steps = list(
-		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 6, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/weapon/knife_grip
 	name = "butterfly knife grip"
 	result = /obj/item/material/butterflyhandle
 	steps = list(
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL)
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL)
 	)
 
 /datum/craft_recipe/weapon/flamethrower
@@ -65,14 +65,14 @@
 	name = "fork"
 	result = /obj/item/material/kitchen/utensil/fork
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/weapon/grenade_casing
 	name = "grenade casing"
 	result = /obj/item/grenade/chem_grenade
 	steps = list(
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/weapon/kenny
@@ -96,7 +96,7 @@
 	steps = list(
 		list(CRAFT_MATERIAL, 12, MATERIAL_WOOD),
 		list(/obj/item/stack/rods, 4, "time" = 10),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/weapon/handmade_lid_shield
@@ -120,11 +120,11 @@
 	name = "bulldozer shield"
 	result = /obj/item/shield/riot/dozershield
 	steps = list (
-		list(CRAFT_MATERIAL, 6, MATERIAL_STEEL), // Frame
+		list(CRAFT_MATERIAL, 6, MATERIAL_ALUMINIUM), // Frame
 		list(/obj/structure/closet, 1, "time" = 30), // We need its door
 		list(QUALITY_WELDING, 10, 20), // Take the closet's door out
 		list(QUALITY_SAWING, 10, 20), // Weld it to the frame
-		list(CRAFT_MATERIAL, 10, MATERIAL_PLASTEEL), // Reinforce with anti ballistics
+		list(CRAFT_MATERIAL, 10, MATERIAL_INDSTEEL), // Reinforce with anti ballistics
 		list(QUALITY_WELDING, 10, 20)) // Weld the "kevlar" to finish
 
 /datum/craft_recipe/weapon/bo_staff
@@ -140,12 +140,12 @@
 	)
 
 /datum/craft_recipe/weapon/junkblade
-	name = "plasteel junkblade"
+	name = "Industrial aluminium junkblade"
 	result = /obj/item/tool/sword/handmade
 	steps = list(
 		list(/obj/item/stack/rods, 2),
 		list(QUALITY_WELDING, 10, "time" = 30),
-		list(CRAFT_MATERIAL, 5, MATERIAL_PLASTEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 5, MATERIAL_INDSTEEL, "time" = 10),
 		list(QUALITY_ADHESIVE, 15, 30)
 	)
 
@@ -155,7 +155,7 @@
 	steps = list(
 		list(/obj/item/stack/rods, 3),
 		list(QUALITY_WELDING, 10, "time" = 10),
-		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 3, MATERIAL_INDSTEEL, "time" = 10),
 		list(QUALITY_HAMMERING, 10, "time" = 10),
 		list(QUALITY_WELDING, 10, "time" = 10),
 		list(QUALITY_ADHESIVE, 10, "time" = 5)
@@ -166,7 +166,7 @@
 	result = /obj/item/tool/spear/makeshift_halberd
 	steps = list(
 		list(/obj/item/tool/hammer/makeshift_staff, 1, "time" = 15),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM, "time" = 10),
 		list(QUALITY_HAMMERING, 10, "time" = 10),
 		list(QUALITY_ADHESIVE, 10, "time" = 5)
 	)
@@ -176,7 +176,7 @@
 	result = /obj/item/tool/hammer/homewrecker
 	steps = list(
 		list(/obj/item/stack/rods, 12, "time" = 30),
-		list(CRAFT_MATERIAL, 30, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 30, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, "time" = 30)
 	)
 
@@ -187,7 +187,7 @@
 	steps = list(
 		list(/obj/item/tool/saw, 1, "time" = 20),
 		list(QUALITY_SCREW_DRIVING, 10, 70),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM),
 		list(QUALITY_BOLT_TURNING, 10, 70),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10)
 	)
@@ -208,14 +208,14 @@
 	name = "kitchen knife"
 	result = /obj/item/tool/knife
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)
 
 /datum/craft_recipe/weapon/hook
-	name = "steel meat hook"
+	name = "aluminium meat hook"
 	result = /obj/item/tool/knife/hook
 	steps = list(
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM),
 		list(QUALITY_HAMMERING, 15, 10),
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC),
 		list(QUALITY_CUTTING, 10, 10)
@@ -227,7 +227,7 @@
 	icon_state = "gun"
 	steps = list(
 		list(/obj/item/trash/material/e_sword_cutlass, 1, "time" = 5), // Recycling!
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, 10), // Repairing the core e-sword we're using
 		list(/obj/item/cell/small/moebius/nuclear, 1), // Size doesn't justify an M-cell
 		list(/obj/item/stack/cable_coil, 10, "time" = 5),
@@ -240,7 +240,7 @@
 	icon_state = "gun"
 	steps = list(
 		list(/obj/item/trash/material/e_sword_cutlass, 1, "time" = 5), // Repurposing!
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM),
 		list(QUALITY_SAWING, 15, 10), // Reduce the size
 		list(CRAFT_MATERIAL, 3, MATERIAL_PLASTIC),
 		list(QUALITY_HAMMERING, 10, 10), // Adjust the new shape
@@ -254,7 +254,7 @@
 	result = /obj/item/tool/hammer/mace/makeshift
 	steps = list(
 		list(/obj/item/stack/rods, 5, "time" = 15),
-		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 5, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10)
 	)
@@ -264,7 +264,7 @@
 	result = /obj/item/tool/sword/katana_makeshift
 	steps = list(
 		list(/obj/item/stack/rods, 3, "time" = 15),
-		list(CRAFT_MATERIAL, 7, MATERIAL_STEEL),
+		list(CRAFT_MATERIAL, 7, MATERIAL_ALUMINIUM),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10)
 	)
@@ -300,24 +300,24 @@
 	)
 
 /datum/craft_recipe/weapon/steel_spear
-	name = "steel spear"
-	result = /obj/item/tool/spear/steel
+	name = "aluminium spear"
+	result = /obj/item/tool/spear/aluminium
 	steps = list(
 		list(/obj/item/stack/rods, 2, "time" = 30),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 10),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(QUALITY_HAMMERING, 5, 10))
 
-/datum/craft_recipe/weapon/plasteel_spear
-	name = "plasteel spear"
-	result = /obj/item/tool/spear/plasteel
+/datum/craft_recipe/weapon/indsteel_spear
+	name = "industrial aluminium spear"
+	result = /obj/item/tool/spear/indsteel
 	steps = list(
 		list(/obj/item/stack/rods, 2, "time" = 30),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL, "time" = 10),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(QUALITY_HAMMERING, 5, 10))
 
@@ -328,7 +328,7 @@
 		list(/obj/item/stack/rods, 2, "time" = 30),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/stack/cable_coil, 2, "time" = 10),
-		list(CRAFT_MATERIAL, 2, MATERIAL_STEEL, "time" = 10),
+		list(CRAFT_MATERIAL, 2, MATERIAL_ALUMINIUM, "time" = 10),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(CRAFT_MATERIAL, 1, MATERIAL_URANIUM, "time" = 10),
 		list(QUALITY_WELDING, 10, "time" = 30),
@@ -372,10 +372,10 @@
 	icon_state = "electronic"
 	steps = list(
 		list(/obj/item/tool/hammer/homewrecker, 1, "time" = 120), //Get a homewrecker
-		list(CRAFT_MATERIAL, 4, MATERIAL_PLASTEEL), //Shore it up with some plasteel
+		list(CRAFT_MATERIAL, 4, MATERIAL_INDSTEEL), //Shore it up with some indsteel
 		list(/obj/item/tool_upgrade/productivity/rocket_engine, 1, "time" = 30),	//Attach a rocket engine
 		list(QUALITY_WELDING, 10, "time" = 30),//Weld it on
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASMA),//Fuel it up
+		list(CRAFT_MATERIAL, 2, MATERIAL_HYDROGENC),//Fuel it up
 		list(/obj/item/tool_upgrade/augment/cell_mount, 1, "time" = 30),//Attach a cell-mount
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 50), //Secure it
 		list(/obj/item/stack/cable_coil, 2, "time" = 10), //Wire it up
@@ -397,9 +397,9 @@
 	steps = list(
 		list(/obj/item/cell/small, 1),
 		list(QUALITY_SAWING, 10),
-		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTEEL),
+		list(CRAFT_MATERIAL, 2, MATERIAL_INDSTEEL),
 		list(QUALITY_WELDING, 10, "time" = 30),
-		list(CRAFT_MATERIAL, 1, MATERIAL_PLASMA),
+		list(CRAFT_MATERIAL, 1, MATERIAL_HYDROGENC),
 		list(QUALITY_WELDING, 10, "time" = 30),
 		list(/obj/item/device/assembly/igniter, 1),
 		list(QUALITY_SCREW_DRIVING, 10, "time" = 30),
@@ -409,5 +409,5 @@
 	name = "spoon"
 	result = /obj/item/material/kitchen/utensil/spoon
 	steps = list(
-		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL)
+		list(CRAFT_MATERIAL, 1, MATERIAL_ALUMINIUM)
 	)

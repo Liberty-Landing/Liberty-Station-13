@@ -5,8 +5,8 @@
 	item_state = "signaler"
 	var/code = "electronic"
 	origin_tech = list(TECH_BLUESPACE = 1)
-	matter = list (MATERIAL_STEEL = 3, MATERIAL_GLASS = 1)
-	preloaded_reagents = list("silicon" = 20, "copper" = 5, "plasticide" = 12)
+	matter = list (MATERIAL_ALUMINIUM = 3, MATERIAL_GLASS = 1)
+	preloaded_reagents = list("silicon" = 20, "copper" = 5, "microplastic" = 12)
 
 /obj/item/device/radio/beacon/hear_talk()
 	return

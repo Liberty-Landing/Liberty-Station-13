@@ -267,7 +267,7 @@
 
 /datum/stat/aiming
 	name = STAT_VIG
-	desc = "Be pure! Be vigilant! But never behave. Having sharp eyes and nerves of steel improves your proficiency with guns, among other feats."
+	desc = "Be pure! Be vigilant! But never behave. Having sharp eyes and nerves of aluminium improves your proficiency with guns, among other feats."
 
 
 // Use to perform stat checks
