@@ -6,6 +6,6 @@
 	if(!.)
 		return
 	if (get_storyteller())
-		alert("The storyteller is [get_storyteller().name]")
+		alert("The current strife is: [get_storyteller().name]")
 	else
 		alert("For some reason there's a ticker, but not a game mode")

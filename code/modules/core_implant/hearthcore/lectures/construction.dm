@@ -661,17 +661,6 @@ So you can't just make it because yeah why not
 	)
 	build_time = 8 SECONDS
 
-/datum/custodian_blueprint/strong/wrath_of_god
-	name = "Hearthcore Upgrade - \"Burning Fury\""
-	build_path = /obj/item/hearthcore_upgrade/burning_fury
-	materials = list(
-		/obj/item/stack/material/indsteel = 10,
-		/obj/item/stack/material/biopolymer_silk = 50,
-		/obj/item/stack/material/carbon_fiber = 50,
-		/obj/item/stack/material/silver = 5
-	)
-	build_time = 8 SECONDS
-
 /datum/custodian_blueprint/strong/embers_of_swiftness
 	name = "Hearthcore Upgrade - \"Embers of Swiftness\""
 	build_path = /obj/item/hearthcore_upgrade/embers_of_swiftness

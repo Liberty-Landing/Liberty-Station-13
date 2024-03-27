@@ -3,9 +3,9 @@
 /obj/item/gun/siege_blazelance
 	name = "Siege Blazelance"
 	desc = "Radiance in aggressive form, this one is explosive and ready to perform its favourite activity."
-	icon = 'icons/obj/guns/projectile/firelance.dmi'
-	icon_state = "firelance_discharger"
-	item_state = "firelance_discharger"
+	icon = 'icons/obj/guns/projectile/blazelance.dmi'
+	icon_state = "blazelance"
+	item_state = "blazelance"
 	origin_tech = list()
 	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
 	fire_sound_text = "fireball"
@@ -137,21 +137,20 @@
 	desc = "The true essence of the Grenadier Knight in form of lecture, unstability beyond redemption. This power manifests pressured radiance with random portions of chemicals acquired from the body and air, which will react like no different of a grenade - beyond being literally any grenade at random, without having the right to choose. \
 	However, this lecture still is a prototype."
 	power = 70
-	var/list/spawn_list = list(/obj/item/grenade/spawnergrenade/manhacks/radiance,
-	/obj/item/grenade/smokebomb/nt,
-	/obj/item/grenade/empgrenade/low_yield/nt,
-	/obj/item/grenade/flashbang/nt,
-	/obj/item/grenade/frag/nt,
-	/obj/item/grenade/heatwave/nt,
-	/obj/item/grenade/explosive/nt,
-	/obj/item/grenade/chem_grenade/teargas/nt,
-	/obj/item/grenade/chem_grenade/cleaner/nt_cleaner)
 
 /datum/lecture/hearthcore/grenadier/grenadiercurse/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
-	var/chosen_one = pick(spawn_list)
-	var/grenadier_rng_nade = new chosen_one
-	if(lecturer.equip_to_slot_if_possible(grenadier_rng_nade, lecturer.get_active_hand()))
-		return TRUE
-	to_chat(lecturer, "<span class='info'>You need your active hand to be free!.</span>")
-	qdel(grenadier_rng_nade)
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob >= 40) //You need 40 robustness at minimum to use this lecture
+		var/flame = new /obj/item/grenade/pocketchaos(lecturer)
+		if(lecturer.put_in_active_hand(flame))
+			lecturer.visible_message(
+				"As [lecturer] speaks, as threads of radiance covers their hands and slice their wrist before mending it back together, leaving behind a reddish polygon on their hand.",
+				"You've done it, you've enslaved your own radiance and forced them to hurt you. This is the feeling of power, control and destruction. To no longer be limited by the radiance, one must embrace Chaos."
+			)
+			playsound(usr.loc, pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg'), 50, 1, -3)
+			return TRUE
+		qdel(flame)
+		to_chat(lecturer, "<span class='info'>You need your active hand to be free!.</span>")
+		return FALSE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons, but this time you think this is for the best.</span>")
 	return FALSE

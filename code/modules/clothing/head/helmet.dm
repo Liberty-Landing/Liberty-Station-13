@@ -342,20 +342,25 @@
 	matter = list(MATERIAL_BIO_SILK = 10)
 
 /obj/item/clothing/head/helmet/custodian/oathbound
-	name = "oathbound helmet"
-	desc = "A forged helm made for the front lines of the Custodians, the Oathbound. The unique design and materials keep the fire at bay."
+	name = "Warhound \"Oathbound\" helmet"
+	desc = "A forget helmet made for the frontline units of the custodians, the Oathbounds. The materials and design ensures protection against weapons and fire. \
+	The helmet design has the similarity to Custodian's giant borzoi warhounds to not only intimidate the enemies with the monstrous appearance while portraying loyalty, \
+	but to take advantage of the hounskull-style of the visor so damage can glance to the sides and lose major portion of the impact, very important against fast moving projectiles."
 	icon_state = "oathbound_helmet"
 	item_state = "oathbound_helmet"
 
 /obj/item/clothing/head/helmet/custodian/enkindled
-	name = "enkindled helmet"
-	desc = "A helmet design tooled after ancient healing legends, made for the Enkindled, incredibly resistant to fire."
+	name = "Plague Doctor \"Enkindled\" helmet"
+	desc = "A helmet design tooled after ancient healing legends, made for the Enkindled to keep fire at bay. The helmet design is unique, as it keeps the protective metal inside, \
+	while the silk and foam remains outside. This is done to focus less on reflecting damage, but absorbing it like a trampoline so less impact reaches the neck and skull. \
+	The helmet is based on Plague Doctors during medieval age so people can easily identify to who ask for help in the battlefield. The same design can be found on CSO's helmet."
 	icon_state = "enkindled_helmet"
 	item_state = "enkindled_helmet"
 
 /obj/item/clothing/head/helmet/custodian/forgemaster
-	name = "forgemaster helmet"
-	desc = "A helmet designed to keep the user safe from hot sparks and searing heat, made for the Forgemasters."
+	name = "Steelmason \"Forgemaster\" helmet"
+	desc = "A helmet designed to keep the user safe from hot sparks and searing heat, made for the Forgemasters, from Forgemasters. The design focuses on helping in identification, \
+	as the upper portion of the helmet looks like an armored hard hat with nasal and cheek protection. The nasal layer is made of pure radiance to better improve the user's sight."
 	icon_state = "forgemaster_helmet"
 	item_state = "forgemaster_helmet"
 

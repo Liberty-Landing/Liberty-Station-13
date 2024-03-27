@@ -11,7 +11,7 @@
 	difficulty = "Medium."
 	alt_titles = list("High Constable", "Lionheart", "Grandmaster", "Stronghold Baron")
 	selection_color = "#caaa42"
-	ideal_character_age = 40
+	ideal_character_age = 30  //Oathpledge is not the highest rank from the Custodians lorewise + Combative role + Flag bearer
 	minimum_character_age = 25
 	playtimerequired = 1200
 	security_clearance = CLEARANCE_ORDER

@@ -242,10 +242,6 @@
 	name = "Atonement's gift"
 	build_path = /obj/item/hearthcore_upgrade/atonement_gift
 
-/datum/design/autolathe/hearthcore_upgrade/burning_fury
-	name = "Wrath of god"
-	build_path = /obj/item/hearthcore_upgrade/burning_fury
-
 /datum/design/autolathe/hearthcore_upgrade/embers_of_swiftness
 	name = "Speed of the chosen"
 	build_path = /obj/item/hearthcore_upgrade/embers_of_swiftness

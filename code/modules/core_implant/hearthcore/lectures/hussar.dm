@@ -25,9 +25,6 @@ datum/lecture/hearthcore/hussar/skirmish/perform(mob/living/carbon/human/lecture
 	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
 	return FALSE
 
-//(talk with Trilby to see what suits more. Making the Hussar invisible by human standards like the cloaker spiders, or have something that allows them to put a "teleporter" in a place(only one) which they can teleport into after a delay.
-
-
 /obj/item/projectile/hussar
 	damage_types = list(HALLOSS = WEAPON_FORCE_HARMLESS)
 	mob_hit_sound = list('sound/effects/gore/sear.ogg')
@@ -83,9 +80,9 @@ datum/lecture/hearthcore/hussar/skirmish/perform(mob/living/carbon/human/lecture
 /obj/item/gun/misery //Miseries used by knights with Hussar specialization.
 	name = "Pain Overloader"
 	desc = "This radiance is curiously shaped, no longer shaped like a little hearthcore, but rather a Y. It seems to use this shape to overload the nerves of any creature to their biddings, sometimes making the pain relatable to ovarian or testicular torsion."
-	icon = 'icons/obj/guns/projectile/firelance.dmi'
-	icon_state = "firelance_discharger"
-	item_state = "firelance_discharger"
+	icon = 'icons/obj/guns/projectile/blazelance.dmi'
+	icon_state = "blazelance"
+	item_state = "blazelance"
 	origin_tech = list()
 	fire_sound = 'sound/effects/magic/fireball.ogg' // Proper fireball firing sound courtesy of tg
 	fire_sound_text = "fireball"
@@ -137,13 +134,48 @@ datum/lecture/hearthcore/hussar/skirmish/perform(mob/living/carbon/human/lecture
 	name = "Radiance Bow Prototype"
 	phrase = "Radiance, assemble the Radiance Bow"
 	desc = "A sniper-bow prototype. Meant to be an bow that produces arrows from the knight's own radiance, however, the forgemasters are still working on this."
+	power = 100
 	cooldown = TRUE
-	cooldown_time = 160 MINUTES
-	power = 60
+	cooldown_time = 4 HOURS
+	cooldown_category = "radiance_bow"
+
+/datum/lecture/hearthcore/hussar/radiantbow/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob >= 40) //You need 40 robustness at minimum to use this lecture
+		var/flame = new /obj/item/gun/projectile/bow/radiantbow(lecturer)
+		if(lecturer.put_in_active_hand(flame))
+			lecturer.visible_message(
+			"As [lecturer] chants, silvery nanites floods their veins, escaping and forging a silvery bow on [lecturer.get_gender() == MALE ? "his" : lecturer.get_gender() == FEMALE ? "her" : "their"] hands.",
+			"The radiance sacrificed itself forging a new bow for your use, materializing unto your hands. Your hearthcore is tired. You cannot do this lecture again any time soon."
+			)
+			return TRUE
+		qdel(flame)
+		to_chat(lecturer, "<span class='info'>You need your active hand to be free!.</span>")
+		return FALSE
+	to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons, but this time you think this is for the best.</span>")
+	return FALSE
 
 
-/datum/lecture/hearthcore/hussar/thinking
-	name = "The Forgemasters are still thinking on a design."
-	phrase = "null"
-	desc = "null"
-	power = 0
+/datum/lecture/hearthcore/hussar/flamecestus
+	name = "Produce Flame Cestus"
+	phrase = "Oxidate Lecture: Produce Flame Cestus."
+	desc = "By performing deionisation of the silver in the hands with a hollow pathway for the radiance, it is possible to make Flame Cestus. Each punch covers the enemy in fiery radiance, igniting them."
+	power = 100
+	cooldown = TRUE
+	cooldown_time = 4 HOURS
+	cooldown_category = "flamecestus"
+
+/datum/lecture/hearthcore/hussar/flamecestus/perform(mob/living/carbon/human/lecturer, obj/item/implant/core_implant/C)
+	var/rob = lecturer.stats.getStat(STAT_ROB)
+	if(rob >= 30) //You need 30 robustness at minimum to use this lecture
+		var/flame = new /obj/item/clothing/gloves/dusters/flamecestus(src, lecturer)
+		usr.put_in_hands(flame)
+		lecturer.visible_message(
+		"As [lecturer] chants, a flame cestus materializes from their bloodstream, covering [lecturer.get_gender() == MALE ? "his" : lecturer.get_gender() == FEMALE ? "her" : "their"] hands in fiery layers of silver.",
+		"The radiance sacrificed itself forging a new cestus for your use, materializing unto your hands. Your hearthcore is tired. You cannot do this lecture again any time soon."
+		)
+		return TRUE
+	else
+		to_chat(lecturer, "<span class='info'>It feels the same as adding a new color to the light spectrum. Your body does not have the robustness to train your silvery neurons.</span>")
+		return FALSE
+

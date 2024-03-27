@@ -10,7 +10,6 @@
 	/obj/item/hearthcore_upgrade,
 	/obj/item/hearthcore_upgrade/blazing_aegis,
 	/obj/item/hearthcore_upgrade/atonement_gift,
-	/obj/item/hearthcore_upgrade/burning_fury,
 	/obj/item/hearthcore_upgrade/embers_of_swiftness
 	)
 	var/list/available_slots = list()

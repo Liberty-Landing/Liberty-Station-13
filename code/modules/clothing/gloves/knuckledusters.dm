@@ -90,9 +90,9 @@
 	punch_increase = 15 // Made of titanium and are crafted with spikes, extra damage.
 	price_tag = 30
 
-// Custodian Druzhina-exclusive cestus. Ignites all living carbon forms in flames when punches connect.
+// Custodian Hussar-exclusive cestus. Ignites all living carbon forms in flames when punches connect.
 /obj/item/clothing/gloves/dusters/flamecestus
-	name = "Druzhina flame cestus"
+	name = "Hussar flame cestus"
 	desc = "Silvery wrapping with hollow tubes for radiance. Coats the enemy in radiance to ignite."
 	icon_state = "dusters_radiance"
 	item_state = "dusters_radiance"

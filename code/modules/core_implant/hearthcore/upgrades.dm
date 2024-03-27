@@ -154,6 +154,7 @@
 	hearthcore.remove_module(HEARTHCORE_GRENADIER)
 	to_chat(wearer, SPAN_NOTICE("Your trained radiance is stripped bare from knowledge, and you can feel it breathing underneath your skin, relieved rather than angry. Hold it. You've been torturing your own neurons this entire time?!f"))
 
+/* With Oathbounds, Burning_furry would end up either replacing them, or become useless since they have more or less the same powers/foundations. So it was removed
 /obj/item/hearthcore_upgrade/burning_fury
 	name = "Druzhina Expansion - Burning Fury"
 	desc = "The Druzhina Knights stand with allies, a beacon of power that punishes enemies without burning those held dear with fiery wrath. \
@@ -184,6 +185,7 @@
 	wearer.species.oxy_mod -= receive_damage_mod
 	wearer.species.toxins_mod -= receive_damage_mod
 	wearer.species.radiation_mod -= receive_damage_mod
+*/
 
 /obj/item/hearthcore_upgrade/embers_of_swiftness
 	name = "Hussar Expansion - Embers of Swiftness"

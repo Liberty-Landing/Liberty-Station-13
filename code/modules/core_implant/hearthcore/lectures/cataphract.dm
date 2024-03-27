@@ -101,9 +101,9 @@
 	name = "Genuine Purification Prototype"
 	desc = "The beloved, benevolent purification of the body, to allow these maintenance pests and mutants to finally rest in piece. \
 	However, it is still a prototype. After spending the radiance, it does not get back to your bloodstream. Somehow, the radiance becomes alveolar cells and just remains there."
-	icon = 'icons/obj/guns/projectile/firelance.dmi'
-	icon_state = "firelance_discharger"
-	item_state = "firelance_discharger"
+	icon = 'icons/obj/guns/projectile/blazelance.dmi'
+	icon_state = "blazelance"
+	item_state = "blazelance"
 	projectile_type = /obj/item/projectile/flamer_lob/flamethrower // What does it shoot
 	use_amount = 4 // How many times the gun can shoot
 	fire_sound = 'sound/weapons/flamethrower_fire.ogg'

@@ -213,7 +213,6 @@
 #define HEARTHCORE_ANTI_SCRYING /datum/core_module/lectures/hearthcore/anti_scrying //Used for the toggleable lecture Anti-Scrying to prevent scrying attempts
 #define HEARTHCORE_DAMAGED      /datum/core_module/lectures/hearthcore/damaged //Used in the Revival lecture to force a costly repair before you can revive the user again //Someone needs to make this upgrade to never appear in case you die, only when you are revived with the lecture.
 
-#define HEARTHCORE_DRUZHINA   /datum/core_module/lectures/hearthcore/druzhina
 #define HEARTHCORE_CATAPHRACT /datum/core_module/lectures/hearthcore/cataphract
 #define HEARTHCORE_HUSSAR     /datum/core_module/lectures/hearthcore/hussar
 #define HEARTHCORE_DRAGOON    /datum/core_module/lectures/hearthcore/dragoon

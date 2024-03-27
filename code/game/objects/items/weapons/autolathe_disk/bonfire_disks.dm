@@ -86,7 +86,6 @@
 	designs = list(
 		/datum/design/autolathe/hearthcore_upgrade/embers_of_swiftness,
 		/datum/design/autolathe/hearthcore_upgrade/blazing_aegis,
-		/datum/design/autolathe/hearthcore_upgrade/burning_fury,
 		/datum/design/autolathe/hearthcore_upgrade/atonement_gift,
 		/datum/design/autolathe/hearthcore_upgrade/phoenix_edict
 	)
@@ -94,6 +93,7 @@
 
 // Eris NeoTheo stuff. Mostly imbalanced and should not be accessible by players
 // Leaving it not commented out for adminspawn testing purposes.
+//Abyssal Frontier information: By lore, these bioaugments shouldn't exist.
 /obj/item/computer_hardware/hard_drive/portable/design/nt/bioaugment
 	disk_name = "Strange Disk"
 	desc = "Now,where did this come from?"

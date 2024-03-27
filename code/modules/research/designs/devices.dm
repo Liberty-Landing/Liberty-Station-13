@@ -28,6 +28,13 @@
 	build_path = /obj/item/device/science_tool
 	category = "Misc"
 
+/* Make the TitaniumRTC here
+/datum/design/research/item/science_tool
+	name = "science tool"
+	build_path = /obj/item/device/science_tool
+	category = "Misc"
+*/
+
 /datum/design/research/item/clothing/security
 	name = "security records"
 	build_path = /obj/item/clothing/glasses/hud/security

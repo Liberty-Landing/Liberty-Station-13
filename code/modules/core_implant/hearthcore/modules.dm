@@ -85,9 +85,6 @@
 	/datum/lecture/targeted/hearthcore/oathpledge)
 
 
-/datum/core_module/lectures/hearthcore/druzhina
-	ritual_types = list(/datum/lecture/hearthcore/druzhina)
-
 /datum/core_module/lectures/hearthcore/cataphract
 	ritual_types = list(/datum/lecture/hearthcore/cataphract)
 
